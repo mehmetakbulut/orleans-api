@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.TelemetryConsumers.AI
+  commentId: N:Orleans.TelemetryConsumers.AI
+  id: Orleans.TelemetryConsumers.AI
+  children:
+  - Orleans.TelemetryConsumers.AI.AITelemetryConsumer
+  langs:
+  - csharp
+  - vb
+  name: Orleans.TelemetryConsumers.AI
+  nameWithType: Orleans.TelemetryConsumers.AI
+  fullName: Orleans.TelemetryConsumers.AI
+  type: Namespace
+  assemblies:
+  - Orleans.TelemetryConsumers.AI
+references:
+- uid: Orleans.TelemetryConsumers.AI.AITelemetryConsumer
+  commentId: T:Orleans.TelemetryConsumers.AI.AITelemetryConsumer
+  isExternal: false
+  name: AITelemetryConsumer
+  nameWithType: AITelemetryConsumer
+  fullName: Orleans.TelemetryConsumers.AI.AITelemetryConsumer

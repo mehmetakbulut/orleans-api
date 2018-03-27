@@ -1,0 +1,398 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.EventSourcing.Common.SubmissionEntry`1
+  commentId: T:Orleans.EventSourcing.Common.SubmissionEntry`1
+  id: SubmissionEntry`1
+  parent: Orleans.EventSourcing.Common
+  children:
+  - Orleans.EventSourcing.Common.SubmissionEntry`1.ConditionalPosition
+  - Orleans.EventSourcing.Common.SubmissionEntry`1.Entry
+  - Orleans.EventSourcing.Common.SubmissionEntry`1.ResultPromise
+  - Orleans.EventSourcing.Common.SubmissionEntry`1.SubmissionTime
+  langs:
+  - csharp
+  - vb
+  name: SubmissionEntry<TLogEntry>
+  nameWithType: SubmissionEntry<TLogEntry>
+  fullName: Orleans.EventSourcing.Common.SubmissionEntry<TLogEntry>
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SubmissionEntry
+    path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+    startLine: 890
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  summary: "\nBase class for submission entries stored in pending queue. \n"
+  example: []
+  syntax:
+    content: 'public class SubmissionEntry<TLogEntry> : object'
+    typeParameters:
+    - id: TLogEntry
+      description: The type of entry for this submission
+    content.vb: >-
+      Public Class SubmissionEntry(Of TLogEntry)
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.EventSourcing.Common.SubmissionEntry`1.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  nameWithType.vb: SubmissionEntry(Of TLogEntry)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: Orleans.EventSourcing.Common.SubmissionEntry(Of TLogEntry)
+  name.vb: SubmissionEntry(Of TLogEntry)
+- uid: Orleans.EventSourcing.Common.SubmissionEntry`1.Entry
+  commentId: F:Orleans.EventSourcing.Common.SubmissionEntry`1.Entry
+  id: Entry
+  parent: Orleans.EventSourcing.Common.SubmissionEntry`1
+  langs:
+  - csharp
+  - vb
+  name: Entry
+  nameWithType: SubmissionEntry<TLogEntry>.Entry
+  fullName: Orleans.EventSourcing.Common.SubmissionEntry<TLogEntry>.Entry
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Entry
+    path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+    startLine: 893
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  summary: 'The log entry that is submitted. '
+  example: []
+  syntax:
+    content: public TLogEntry Entry
+    return:
+      type: '{TLogEntry}'
+    content.vb: Public Entry As TLogEntry
+  nameWithType.vb: SubmissionEntry(Of TLogEntry).Entry
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.EventSourcing.Common.SubmissionEntry(Of TLogEntry).Entry
+- uid: Orleans.EventSourcing.Common.SubmissionEntry`1.SubmissionTime
+  commentId: F:Orleans.EventSourcing.Common.SubmissionEntry`1.SubmissionTime
+  id: SubmissionTime
+  parent: Orleans.EventSourcing.Common.SubmissionEntry`1
+  langs:
+  - csharp
+  - vb
+  name: SubmissionTime
+  nameWithType: SubmissionEntry<TLogEntry>.SubmissionTime
+  fullName: Orleans.EventSourcing.Common.SubmissionEntry<TLogEntry>.SubmissionTime
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SubmissionTime
+    path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+    startLine: 896
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  summary: 'A timestamp for this submission. '
+  example: []
+  syntax:
+    content: public DateTime SubmissionTime
+    return:
+      type: DateTime
+    content.vb: Public SubmissionTime As DateTime
+  nameWithType.vb: SubmissionEntry(Of TLogEntry).SubmissionTime
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.EventSourcing.Common.SubmissionEntry(Of TLogEntry).SubmissionTime
+- uid: Orleans.EventSourcing.Common.SubmissionEntry`1.ResultPromise
+  commentId: F:Orleans.EventSourcing.Common.SubmissionEntry`1.ResultPromise
+  id: ResultPromise
+  parent: Orleans.EventSourcing.Common.SubmissionEntry`1
+  langs:
+  - csharp
+  - vb
+  name: ResultPromise
+  nameWithType: SubmissionEntry<TLogEntry>.ResultPromise
+  fullName: Orleans.EventSourcing.Common.SubmissionEntry<TLogEntry>.ResultPromise
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ResultPromise
+    path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+    startLine: 899
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  summary: For conditional updates, a promise that resolves once it is known whether the update was successful or not.
+  example: []
+  syntax:
+    content: public TaskCompletionSource<bool> ResultPromise
+    return:
+      type: TaskCompletionSource{System.Boolean}
+    content.vb: Public ResultPromise As TaskCompletionSource(Of Boolean)
+  nameWithType.vb: SubmissionEntry(Of TLogEntry).ResultPromise
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.EventSourcing.Common.SubmissionEntry(Of TLogEntry).ResultPromise
+- uid: Orleans.EventSourcing.Common.SubmissionEntry`1.ConditionalPosition
+  commentId: F:Orleans.EventSourcing.Common.SubmissionEntry`1.ConditionalPosition
+  id: ConditionalPosition
+  parent: Orleans.EventSourcing.Common.SubmissionEntry`1
+  langs:
+  - csharp
+  - vb
+  name: ConditionalPosition
+  nameWithType: SubmissionEntry<TLogEntry>.ConditionalPosition
+  fullName: Orleans.EventSourcing.Common.SubmissionEntry<TLogEntry>.ConditionalPosition
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ConditionalPosition
+    path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+    startLine: 902
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  summary: 'For conditional updates, the log position at which this update is supposed to be applied. '
+  example: []
+  syntax:
+    content: public int ConditionalPosition
+    return:
+      type: System.Int32
+    content.vb: Public ConditionalPosition As Integer
+  nameWithType.vb: SubmissionEntry(Of TLogEntry).ConditionalPosition
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.EventSourcing.Common.SubmissionEntry(Of TLogEntry).ConditionalPosition
+references:
+- uid: Orleans.EventSourcing.Common
+  commentId: N:Orleans.EventSourcing.Common
+  isExternal: false
+  name: Orleans.EventSourcing.Common
+  nameWithType: Orleans.EventSourcing.Common
+  fullName: Orleans.EventSourcing.Common
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.EventSourcing.Common.SubmissionEntry`1.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<SubmissionEntry<TLogEntry>>()
+  nameWithType: ImmutableExt.AsImmutable<SubmissionEntry<TLogEntry>>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.EventSourcing.Common.SubmissionEntry<TLogEntry>>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of SubmissionEntry(Of TLogEntry))()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.EventSourcing.Common.SubmissionEntry(Of TLogEntry))()
+  name.vb: AsImmutable(Of SubmissionEntry(Of TLogEntry))()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<SubmissionEntry<TLogEntry>>
+    nameWithType: ImmutableExt.AsImmutable<SubmissionEntry<TLogEntry>>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.EventSourcing.Common.SubmissionEntry<TLogEntry>>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of SubmissionEntry(Of TLogEntry))
+    nameWithType: ImmutableExt.AsImmutable(Of SubmissionEntry(Of TLogEntry))
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.EventSourcing.Common.SubmissionEntry(Of TLogEntry))
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: '{TLogEntry}'
+  commentId: '!:TLogEntry'
+  definition: TLogEntry
+  name: TLogEntry
+  nameWithType: TLogEntry
+  fullName: TLogEntry
+- uid: TLogEntry
+  isExternal: false
+  name: TLogEntry
+  nameWithType: TLogEntry
+  fullName: TLogEntry
+- uid: DateTime
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: DateTime
+- uid: TaskCompletionSource{System.Boolean}
+  commentId: '!:TaskCompletionSource{System.Boolean}'
+  definition: TaskCompletionSource`1
+  name: TaskCompletionSource<Boolean>
+  nameWithType: TaskCompletionSource<Boolean>
+  fullName: TaskCompletionSource<System.Boolean>
+  nameWithType.vb: TaskCompletionSource(Of Boolean)
+  fullName.vb: TaskCompletionSource(Of System.Boolean)
+  name.vb: TaskCompletionSource(Of Boolean)
+  spec.csharp:
+  - uid: TaskCompletionSource`1
+    name: TaskCompletionSource
+    nameWithType: TaskCompletionSource
+    fullName: TaskCompletionSource
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: TaskCompletionSource`1
+    name: TaskCompletionSource
+    nameWithType: TaskCompletionSource
+    fullName: TaskCompletionSource
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TaskCompletionSource`1
+  commentId: '!:TaskCompletionSource`1'
+  isExternal: true
+  name: TaskCompletionSource<>
+  nameWithType: TaskCompletionSource<>
+  fullName: TaskCompletionSource<>
+  nameWithType.vb: TaskCompletionSource(Of )
+  fullName.vb: TaskCompletionSource(Of )
+  name.vb: TaskCompletionSource(Of )
+  spec.csharp:
+  - uid: TaskCompletionSource`1
+    name: TaskCompletionSource
+    nameWithType: TaskCompletionSource
+    fullName: TaskCompletionSource
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: TaskCompletionSource`1
+    name: TaskCompletionSource
+    nameWithType: TaskCompletionSource
+    fullName: TaskCompletionSource
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32

@@ -1,0 +1,2036 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Streams.StreamSubscriptionHandle`1
+  commentId: T:Orleans.Streams.StreamSubscriptionHandle`1
+  id: StreamSubscriptionHandle`1
+  parent: Orleans.Streams
+  children:
+  - Orleans.Streams.StreamSubscriptionHandle`1.Equals(Orleans.Streams.StreamSubscriptionHandle{`0})
+  - Orleans.Streams.StreamSubscriptionHandle`1.HandleId
+  - Orleans.Streams.StreamSubscriptionHandle`1.ProviderName
+  - Orleans.Streams.StreamSubscriptionHandle`1.ResumeAsync(Orleans.Streams.IAsyncObserver{`0},Orleans.Streams.StreamSequenceToken)
+  - Orleans.Streams.StreamSubscriptionHandle`1.StreamIdentity
+  - Orleans.Streams.StreamSubscriptionHandle`1.UnsubscribeAsync
+  langs:
+  - csharp
+  - vb
+  name: StreamSubscriptionHandle<T>
+  nameWithType: StreamSubscriptionHandle<T>
+  fullName: Orleans.Streams.StreamSubscriptionHandle<T>
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Streams/Core/StreamSubscriptionHandle.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: StreamSubscriptionHandle
+    path: src/Orleans.Core.Abstractions/Streams/Core/StreamSubscriptionHandle.cs
+    startLine: 10
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Streams
+  summary: "\nHandle representing this subsription.\nConsumer may serialize and store the handle in order to unsubsribe later, for example\nin another activation on this grain.\n"
+  example: []
+  syntax:
+    content: 'public abstract class StreamSubscriptionHandle<T> : IEquatable<StreamSubscriptionHandle<T>>'
+    typeParameters:
+    - id: T
+    content.vb: >-
+      Public MustInherit Class StreamSubscriptionHandle(Of T)
+
+          Inherits IEquatable(Of StreamSubscriptionHandle(Of T))
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.Streams.StreamSubscriptionHandle`1.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  - Orleans.Streams.StreamSubscriptionHandle`1.Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync``1(Func{{T},Orleans.Streams.StreamSequenceToken,Task},Func{Exception,Task},Func{Task},Orleans.Streams.StreamSequenceToken)
+  - Orleans.Streams.StreamSubscriptionHandle`1.Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync``1(Func{{T},Orleans.Streams.StreamSequenceToken,Task},Func{Exception,Task},Orleans.Streams.StreamSequenceToken)
+  - Orleans.Streams.StreamSubscriptionHandle`1.Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync``1(Func{{T},Orleans.Streams.StreamSequenceToken,Task},Func{Task},Orleans.Streams.StreamSequenceToken)
+  - Orleans.Streams.StreamSubscriptionHandle`1.Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync``1(Func{{T},Orleans.Streams.StreamSequenceToken,Task},Orleans.Streams.StreamSequenceToken)
+  nameWithType.vb: StreamSubscriptionHandle(Of T)
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+  fullName.vb: Orleans.Streams.StreamSubscriptionHandle(Of T)
+  name.vb: StreamSubscriptionHandle(Of T)
+- uid: Orleans.Streams.StreamSubscriptionHandle`1.StreamIdentity
+  commentId: P:Orleans.Streams.StreamSubscriptionHandle`1.StreamIdentity
+  id: StreamIdentity
+  parent: Orleans.Streams.StreamSubscriptionHandle`1
+  langs:
+  - csharp
+  - vb
+  name: StreamIdentity
+  nameWithType: StreamSubscriptionHandle<T>.StreamIdentity
+  fullName: Orleans.Streams.StreamSubscriptionHandle<T>.StreamIdentity
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Streams/Core/StreamSubscriptionHandle.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: StreamIdentity
+    path: src/Orleans.Core.Abstractions/Streams/Core/StreamSubscriptionHandle.cs
+    startLine: 13
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Streams
+  syntax:
+    content: public abstract IStreamIdentity StreamIdentity { get; }
+    parameters: []
+    return:
+      type: Orleans.Streams.IStreamIdentity
+    content.vb: Public MustOverride ReadOnly Property StreamIdentity As IStreamIdentity
+  overload: Orleans.Streams.StreamSubscriptionHandle`1.StreamIdentity*
+  nameWithType.vb: StreamSubscriptionHandle(Of T).StreamIdentity
+  modifiers.csharp:
+  - public
+  - abstract
+  - get
+  modifiers.vb:
+  - Public
+  - MustOverride
+  - ReadOnly
+  fullName.vb: Orleans.Streams.StreamSubscriptionHandle(Of T).StreamIdentity
+- uid: Orleans.Streams.StreamSubscriptionHandle`1.ProviderName
+  commentId: P:Orleans.Streams.StreamSubscriptionHandle`1.ProviderName
+  id: ProviderName
+  parent: Orleans.Streams.StreamSubscriptionHandle`1
+  langs:
+  - csharp
+  - vb
+  name: ProviderName
+  nameWithType: StreamSubscriptionHandle<T>.ProviderName
+  fullName: Orleans.Streams.StreamSubscriptionHandle<T>.ProviderName
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Streams/Core/StreamSubscriptionHandle.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ProviderName
+    path: src/Orleans.Core.Abstractions/Streams/Core/StreamSubscriptionHandle.cs
+    startLine: 15
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Streams
+  syntax:
+    content: public abstract string ProviderName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public MustOverride ReadOnly Property ProviderName As String
+  overload: Orleans.Streams.StreamSubscriptionHandle`1.ProviderName*
+  nameWithType.vb: StreamSubscriptionHandle(Of T).ProviderName
+  modifiers.csharp:
+  - public
+  - abstract
+  - get
+  modifiers.vb:
+  - Public
+  - MustOverride
+  - ReadOnly
+  fullName.vb: Orleans.Streams.StreamSubscriptionHandle(Of T).ProviderName
+- uid: Orleans.Streams.StreamSubscriptionHandle`1.HandleId
+  commentId: P:Orleans.Streams.StreamSubscriptionHandle`1.HandleId
+  id: HandleId
+  parent: Orleans.Streams.StreamSubscriptionHandle`1
+  langs:
+  - csharp
+  - vb
+  name: HandleId
+  nameWithType: StreamSubscriptionHandle<T>.HandleId
+  fullName: Orleans.Streams.StreamSubscriptionHandle<T>.HandleId
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Streams/Core/StreamSubscriptionHandle.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: HandleId
+    path: src/Orleans.Core.Abstractions/Streams/Core/StreamSubscriptionHandle.cs
+    startLine: 19
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Streams
+  summary: "\nUnique identifier for this StreamSubscriptionHandle\n"
+  example: []
+  syntax:
+    content: public abstract Guid HandleId { get; }
+    parameters: []
+    return:
+      type: Guid
+    content.vb: Public MustOverride ReadOnly Property HandleId As Guid
+  overload: Orleans.Streams.StreamSubscriptionHandle`1.HandleId*
+  nameWithType.vb: StreamSubscriptionHandle(Of T).HandleId
+  modifiers.csharp:
+  - public
+  - abstract
+  - get
+  modifiers.vb:
+  - Public
+  - MustOverride
+  - ReadOnly
+  fullName.vb: Orleans.Streams.StreamSubscriptionHandle(Of T).HandleId
+- uid: Orleans.Streams.StreamSubscriptionHandle`1.UnsubscribeAsync
+  commentId: M:Orleans.Streams.StreamSubscriptionHandle`1.UnsubscribeAsync
+  id: UnsubscribeAsync
+  parent: Orleans.Streams.StreamSubscriptionHandle`1
+  langs:
+  - csharp
+  - vb
+  name: UnsubscribeAsync()
+  nameWithType: StreamSubscriptionHandle<T>.UnsubscribeAsync()
+  fullName: Orleans.Streams.StreamSubscriptionHandle<T>.UnsubscribeAsync()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Streams/Core/StreamSubscriptionHandle.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: UnsubscribeAsync
+    path: src/Orleans.Core.Abstractions/Streams/Core/StreamSubscriptionHandle.cs
+    startLine: 26
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Streams
+  summary: "\nUnsubscribe a stream consumer from this observable.\n"
+  example: []
+  syntax:
+    content: public abstract Task UnsubscribeAsync()
+    return:
+      type: Task
+      description: >
+        A promise to unsubscription action.
+    content.vb: Public MustOverride Function UnsubscribeAsync As Task
+  overload: Orleans.Streams.StreamSubscriptionHandle`1.UnsubscribeAsync*
+  nameWithType.vb: StreamSubscriptionHandle(Of T).UnsubscribeAsync()
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+  fullName.vb: Orleans.Streams.StreamSubscriptionHandle(Of T).UnsubscribeAsync()
+- uid: Orleans.Streams.StreamSubscriptionHandle`1.ResumeAsync(Orleans.Streams.IAsyncObserver{`0},Orleans.Streams.StreamSequenceToken)
+  commentId: M:Orleans.Streams.StreamSubscriptionHandle`1.ResumeAsync(Orleans.Streams.IAsyncObserver{`0},Orleans.Streams.StreamSequenceToken)
+  id: ResumeAsync(Orleans.Streams.IAsyncObserver{`0},Orleans.Streams.StreamSequenceToken)
+  parent: Orleans.Streams.StreamSubscriptionHandle`1
+  langs:
+  - csharp
+  - vb
+  name: ResumeAsync(IAsyncObserver<T>, StreamSequenceToken)
+  nameWithType: StreamSubscriptionHandle<T>.ResumeAsync(IAsyncObserver<T>, StreamSequenceToken)
+  fullName: Orleans.Streams.StreamSubscriptionHandle<T>.ResumeAsync(Orleans.Streams.IAsyncObserver<T>, Orleans.Streams.StreamSequenceToken)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Streams/Core/StreamSubscriptionHandle.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ResumeAsync
+    path: src/Orleans.Core.Abstractions/Streams/Core/StreamSubscriptionHandle.cs
+    startLine: 35
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Streams
+  summary: "\nResumed consumption from a subscription to a stream.\n"
+  example: []
+  syntax:
+    content: public abstract Task<StreamSubscriptionHandle<T>> ResumeAsync(IAsyncObserver<T> observer, StreamSequenceToken token = null)
+    parameters:
+    - id: observer
+      type: Orleans.Streams.IAsyncObserver{{T}}
+      description: The Observer object.
+    - id: token
+      type: Orleans.Streams.StreamSequenceToken
+      description: The stream sequence to be used as an offset to start the subscription from.
+    return:
+      type: Task{Orleans.Streams.StreamSubscriptionHandle`1}
+      description: >
+        A promise with an updates subscription handle.
+    content.vb: Public MustOverride Function ResumeAsync(observer As IAsyncObserver(Of T), token As StreamSequenceToken = Nothing) As Task(Of StreamSubscriptionHandle(Of T))
+  overload: Orleans.Streams.StreamSubscriptionHandle`1.ResumeAsync*
+  nameWithType.vb: StreamSubscriptionHandle(Of T).ResumeAsync(IAsyncObserver(Of T), StreamSequenceToken)
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+  fullName.vb: Orleans.Streams.StreamSubscriptionHandle(Of T).ResumeAsync(Orleans.Streams.IAsyncObserver(Of T), Orleans.Streams.StreamSequenceToken)
+  name.vb: ResumeAsync(IAsyncObserver(Of T), StreamSequenceToken)
+- uid: Orleans.Streams.StreamSubscriptionHandle`1.Equals(Orleans.Streams.StreamSubscriptionHandle{`0})
+  commentId: M:Orleans.Streams.StreamSubscriptionHandle`1.Equals(Orleans.Streams.StreamSubscriptionHandle{`0})
+  id: Equals(Orleans.Streams.StreamSubscriptionHandle{`0})
+  parent: Orleans.Streams.StreamSubscriptionHandle`1
+  langs:
+  - csharp
+  - vb
+  name: Equals(StreamSubscriptionHandle<T>)
+  nameWithType: StreamSubscriptionHandle<T>.Equals(StreamSubscriptionHandle<T>)
+  fullName: Orleans.Streams.StreamSubscriptionHandle<T>.Equals(Orleans.Streams.StreamSubscriptionHandle<T>)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Streams/Core/StreamSubscriptionHandle.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Equals
+    path: src/Orleans.Core.Abstractions/Streams/Core/StreamSubscriptionHandle.cs
+    startLine: 39
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Streams
+  syntax:
+    content: public abstract bool Equals(StreamSubscriptionHandle<T> other)
+    parameters:
+    - id: other
+      type: Orleans.Streams.StreamSubscriptionHandle`1
+    return:
+      type: System.Boolean
+    content.vb: Public MustOverride Function Equals(other As StreamSubscriptionHandle(Of T)) As Boolean
+  overload: Orleans.Streams.StreamSubscriptionHandle`1.Equals*
+  nameWithType.vb: StreamSubscriptionHandle(Of T).Equals(StreamSubscriptionHandle(Of T))
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+  fullName.vb: Orleans.Streams.StreamSubscriptionHandle(Of T).Equals(Orleans.Streams.StreamSubscriptionHandle(Of T))
+  name.vb: Equals(StreamSubscriptionHandle(Of T))
+references:
+- uid: Orleans.Streams
+  commentId: N:Orleans.Streams
+  isExternal: false
+  name: Orleans.Streams
+  nameWithType: Orleans.Streams
+  fullName: Orleans.Streams
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Streams.StreamSubscriptionHandle`1.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<StreamSubscriptionHandle<T>>()
+  nameWithType: ImmutableExt.AsImmutable<StreamSubscriptionHandle<T>>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Streams.StreamSubscriptionHandle<T>>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of StreamSubscriptionHandle(Of T))()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Streams.StreamSubscriptionHandle(Of T))()
+  name.vb: AsImmutable(Of StreamSubscriptionHandle(Of T))()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<StreamSubscriptionHandle<T>>
+    nameWithType: ImmutableExt.AsImmutable<StreamSubscriptionHandle<T>>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Streams.StreamSubscriptionHandle<T>>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of StreamSubscriptionHandle(Of T))
+    nameWithType: ImmutableExt.AsImmutable(Of StreamSubscriptionHandle(Of T))
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Streams.StreamSubscriptionHandle(Of T))
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Streams.StreamSubscriptionHandle`1.Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync``1(Func{{T},Orleans.Streams.StreamSequenceToken,Task},Func{Exception,Task},Func{Task},Orleans.Streams.StreamSequenceToken)
+  commentId: M:Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync``1(Orleans.Streams.StreamSubscriptionHandle{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task},Func{Exception,Task},Func{Task},Orleans.Streams.StreamSequenceToken)
+  parent: Orleans.Streams.StreamSubscriptionHandleExtensions
+  definition: Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync``1(Orleans.Streams.StreamSubscriptionHandle{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task},Func{Exception,Task},Func{Task},Orleans.Streams.StreamSequenceToken)
+  name: ResumeAsync<T>(Func<T, StreamSequenceToken, Task>, Func<Exception, Task>, Func<Task>, StreamSequenceToken)
+  nameWithType: StreamSubscriptionHandleExtensions.ResumeAsync<T>(Func<T, StreamSequenceToken, Task>, Func<Exception, Task>, Func<Task>, StreamSequenceToken)
+  fullName: Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync<T>(Func<T, Orleans.Streams.StreamSequenceToken, Task>, Func<Exception, Task>, Func<Task>, Orleans.Streams.StreamSequenceToken)
+  nameWithType.vb: StreamSubscriptionHandleExtensions.ResumeAsync(Of T)(Func(Of T, StreamSequenceToken, Task), Func(Of Exception, Task), Func(Of Task), StreamSequenceToken)
+  fullName.vb: Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync(Of T)(Func(Of T, Orleans.Streams.StreamSequenceToken, Task), Func(Of Exception, Task), Func(Of Task), Orleans.Streams.StreamSequenceToken)
+  name.vb: ResumeAsync(Of T)(Func(Of T, StreamSequenceToken, Task), Func(Of Exception, Task), Func(Of Task), StreamSequenceToken)
+  spec.csharp:
+  - uid: Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync``1(Func{``0,Orleans.Streams.StreamSequenceToken,Task},Func{Exception,Task},Func{Task},Orleans.Streams.StreamSequenceToken)
+    name: ResumeAsync<T>
+    nameWithType: StreamSubscriptionHandleExtensions.ResumeAsync<T>
+    fullName: Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Func`3
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.Streams.StreamSequenceToken
+    name: StreamSequenceToken
+    nameWithType: StreamSequenceToken
+    fullName: Orleans.Streams.StreamSequenceToken
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: Exception
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Func`1
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.Streams.StreamSequenceToken
+    name: StreamSequenceToken
+    nameWithType: StreamSequenceToken
+    fullName: Orleans.Streams.StreamSequenceToken
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync``1(Func{``0,Orleans.Streams.StreamSequenceToken,Task},Func{Exception,Task},Func{Task},Orleans.Streams.StreamSequenceToken)
+    name: ResumeAsync(Of T)
+    nameWithType: StreamSubscriptionHandleExtensions.ResumeAsync(Of T)
+    fullName: Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Func`3
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.Streams.StreamSequenceToken
+    name: StreamSequenceToken
+    nameWithType: StreamSequenceToken
+    fullName: Orleans.Streams.StreamSequenceToken
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: Exception
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Func`1
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.Streams.StreamSequenceToken
+    name: StreamSequenceToken
+    nameWithType: StreamSequenceToken
+    fullName: Orleans.Streams.StreamSequenceToken
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Streams.StreamSubscriptionHandle`1.Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync``1(Func{{T},Orleans.Streams.StreamSequenceToken,Task},Func{Exception,Task},Orleans.Streams.StreamSequenceToken)
+  commentId: M:Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync``1(Orleans.Streams.StreamSubscriptionHandle{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task},Func{Exception,Task},Orleans.Streams.StreamSequenceToken)
+  parent: Orleans.Streams.StreamSubscriptionHandleExtensions
+  definition: Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync``1(Orleans.Streams.StreamSubscriptionHandle{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task},Func{Exception,Task},Orleans.Streams.StreamSequenceToken)
+  name: ResumeAsync<T>(Func<T, StreamSequenceToken, Task>, Func<Exception, Task>, StreamSequenceToken)
+  nameWithType: StreamSubscriptionHandleExtensions.ResumeAsync<T>(Func<T, StreamSequenceToken, Task>, Func<Exception, Task>, StreamSequenceToken)
+  fullName: Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync<T>(Func<T, Orleans.Streams.StreamSequenceToken, Task>, Func<Exception, Task>, Orleans.Streams.StreamSequenceToken)
+  nameWithType.vb: StreamSubscriptionHandleExtensions.ResumeAsync(Of T)(Func(Of T, StreamSequenceToken, Task), Func(Of Exception, Task), StreamSequenceToken)
+  fullName.vb: Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync(Of T)(Func(Of T, Orleans.Streams.StreamSequenceToken, Task), Func(Of Exception, Task), Orleans.Streams.StreamSequenceToken)
+  name.vb: ResumeAsync(Of T)(Func(Of T, StreamSequenceToken, Task), Func(Of Exception, Task), StreamSequenceToken)
+  spec.csharp:
+  - uid: Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync``1(Func{``0,Orleans.Streams.StreamSequenceToken,Task},Func{Exception,Task},Orleans.Streams.StreamSequenceToken)
+    name: ResumeAsync<T>
+    nameWithType: StreamSubscriptionHandleExtensions.ResumeAsync<T>
+    fullName: Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Func`3
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.Streams.StreamSequenceToken
+    name: StreamSequenceToken
+    nameWithType: StreamSequenceToken
+    fullName: Orleans.Streams.StreamSequenceToken
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: Exception
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.Streams.StreamSequenceToken
+    name: StreamSequenceToken
+    nameWithType: StreamSequenceToken
+    fullName: Orleans.Streams.StreamSequenceToken
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync``1(Func{``0,Orleans.Streams.StreamSequenceToken,Task},Func{Exception,Task},Orleans.Streams.StreamSequenceToken)
+    name: ResumeAsync(Of T)
+    nameWithType: StreamSubscriptionHandleExtensions.ResumeAsync(Of T)
+    fullName: Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Func`3
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.Streams.StreamSequenceToken
+    name: StreamSequenceToken
+    nameWithType: StreamSequenceToken
+    fullName: Orleans.Streams.StreamSequenceToken
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: Exception
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.Streams.StreamSequenceToken
+    name: StreamSequenceToken
+    nameWithType: StreamSequenceToken
+    fullName: Orleans.Streams.StreamSequenceToken
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Streams.StreamSubscriptionHandle`1.Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync``1(Func{{T},Orleans.Streams.StreamSequenceToken,Task},Func{Task},Orleans.Streams.StreamSequenceToken)
+  commentId: M:Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync``1(Orleans.Streams.StreamSubscriptionHandle{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task},Func{Task},Orleans.Streams.StreamSequenceToken)
+  parent: Orleans.Streams.StreamSubscriptionHandleExtensions
+  definition: Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync``1(Orleans.Streams.StreamSubscriptionHandle{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task},Func{Task},Orleans.Streams.StreamSequenceToken)
+  name: ResumeAsync<T>(Func<T, StreamSequenceToken, Task>, Func<Task>, StreamSequenceToken)
+  nameWithType: StreamSubscriptionHandleExtensions.ResumeAsync<T>(Func<T, StreamSequenceToken, Task>, Func<Task>, StreamSequenceToken)
+  fullName: Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync<T>(Func<T, Orleans.Streams.StreamSequenceToken, Task>, Func<Task>, Orleans.Streams.StreamSequenceToken)
+  nameWithType.vb: StreamSubscriptionHandleExtensions.ResumeAsync(Of T)(Func(Of T, StreamSequenceToken, Task), Func(Of Task), StreamSequenceToken)
+  fullName.vb: Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync(Of T)(Func(Of T, Orleans.Streams.StreamSequenceToken, Task), Func(Of Task), Orleans.Streams.StreamSequenceToken)
+  name.vb: ResumeAsync(Of T)(Func(Of T, StreamSequenceToken, Task), Func(Of Task), StreamSequenceToken)
+  spec.csharp:
+  - uid: Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync``1(Func{``0,Orleans.Streams.StreamSequenceToken,Task},Func{Task},Orleans.Streams.StreamSequenceToken)
+    name: ResumeAsync<T>
+    nameWithType: StreamSubscriptionHandleExtensions.ResumeAsync<T>
+    fullName: Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Func`3
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.Streams.StreamSequenceToken
+    name: StreamSequenceToken
+    nameWithType: StreamSequenceToken
+    fullName: Orleans.Streams.StreamSequenceToken
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Func`1
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.Streams.StreamSequenceToken
+    name: StreamSequenceToken
+    nameWithType: StreamSequenceToken
+    fullName: Orleans.Streams.StreamSequenceToken
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync``1(Func{``0,Orleans.Streams.StreamSequenceToken,Task},Func{Task},Orleans.Streams.StreamSequenceToken)
+    name: ResumeAsync(Of T)
+    nameWithType: StreamSubscriptionHandleExtensions.ResumeAsync(Of T)
+    fullName: Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Func`3
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.Streams.StreamSequenceToken
+    name: StreamSequenceToken
+    nameWithType: StreamSequenceToken
+    fullName: Orleans.Streams.StreamSequenceToken
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Func`1
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.Streams.StreamSequenceToken
+    name: StreamSequenceToken
+    nameWithType: StreamSequenceToken
+    fullName: Orleans.Streams.StreamSequenceToken
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Streams.StreamSubscriptionHandle`1.Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync``1(Func{{T},Orleans.Streams.StreamSequenceToken,Task},Orleans.Streams.StreamSequenceToken)
+  commentId: M:Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync``1(Orleans.Streams.StreamSubscriptionHandle{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task},Orleans.Streams.StreamSequenceToken)
+  parent: Orleans.Streams.StreamSubscriptionHandleExtensions
+  definition: Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync``1(Orleans.Streams.StreamSubscriptionHandle{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task},Orleans.Streams.StreamSequenceToken)
+  name: ResumeAsync<T>(Func<T, StreamSequenceToken, Task>, StreamSequenceToken)
+  nameWithType: StreamSubscriptionHandleExtensions.ResumeAsync<T>(Func<T, StreamSequenceToken, Task>, StreamSequenceToken)
+  fullName: Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync<T>(Func<T, Orleans.Streams.StreamSequenceToken, Task>, Orleans.Streams.StreamSequenceToken)
+  nameWithType.vb: StreamSubscriptionHandleExtensions.ResumeAsync(Of T)(Func(Of T, StreamSequenceToken, Task), StreamSequenceToken)
+  fullName.vb: Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync(Of T)(Func(Of T, Orleans.Streams.StreamSequenceToken, Task), Orleans.Streams.StreamSequenceToken)
+  name.vb: ResumeAsync(Of T)(Func(Of T, StreamSequenceToken, Task), StreamSequenceToken)
+  spec.csharp:
+  - uid: Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync``1(Func{``0,Orleans.Streams.StreamSequenceToken,Task},Orleans.Streams.StreamSequenceToken)
+    name: ResumeAsync<T>
+    nameWithType: StreamSubscriptionHandleExtensions.ResumeAsync<T>
+    fullName: Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Func`3
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.Streams.StreamSequenceToken
+    name: StreamSequenceToken
+    nameWithType: StreamSequenceToken
+    fullName: Orleans.Streams.StreamSequenceToken
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.Streams.StreamSequenceToken
+    name: StreamSequenceToken
+    nameWithType: StreamSequenceToken
+    fullName: Orleans.Streams.StreamSequenceToken
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync``1(Func{``0,Orleans.Streams.StreamSequenceToken,Task},Orleans.Streams.StreamSequenceToken)
+    name: ResumeAsync(Of T)
+    nameWithType: StreamSubscriptionHandleExtensions.ResumeAsync(Of T)
+    fullName: Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Func`3
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.Streams.StreamSequenceToken
+    name: StreamSequenceToken
+    nameWithType: StreamSequenceToken
+    fullName: Orleans.Streams.StreamSequenceToken
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.Streams.StreamSequenceToken
+    name: StreamSequenceToken
+    nameWithType: StreamSequenceToken
+    fullName: Orleans.Streams.StreamSequenceToken
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync``1(Orleans.Streams.StreamSubscriptionHandle{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task},Func{Exception,Task},Func{Task},Orleans.Streams.StreamSequenceToken)
+  commentId: M:Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync``1(Orleans.Streams.StreamSubscriptionHandle{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task},Func{Exception,Task},Func{Task},Orleans.Streams.StreamSequenceToken)
+  isExternal: true
+  name: ResumeAsync<T>(StreamSubscriptionHandle<T>, Func<T, StreamSequenceToken, Task>, Func<Exception, Task>, Func<Task>, StreamSequenceToken)
+  nameWithType: StreamSubscriptionHandleExtensions.ResumeAsync<T>(StreamSubscriptionHandle<T>, Func<T, StreamSequenceToken, Task>, Func<Exception, Task>, Func<Task>, StreamSequenceToken)
+  fullName: Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync<T>(Orleans.Streams.StreamSubscriptionHandle<T>, Func<T, Orleans.Streams.StreamSequenceToken, Task>, Func<Exception, Task>, Func<Task>, Orleans.Streams.StreamSequenceToken)
+  nameWithType.vb: StreamSubscriptionHandleExtensions.ResumeAsync(Of T)(StreamSubscriptionHandle(Of T), Func(Of T, StreamSequenceToken, Task), Func(Of Exception, Task), Func(Of Task), StreamSequenceToken)
+  fullName.vb: Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync(Of T)(Orleans.Streams.StreamSubscriptionHandle(Of T), Func(Of T, Orleans.Streams.StreamSequenceToken, Task), Func(Of Exception, Task), Func(Of Task), Orleans.Streams.StreamSequenceToken)
+  name.vb: ResumeAsync(Of T)(StreamSubscriptionHandle(Of T), Func(Of T, StreamSequenceToken, Task), Func(Of Exception, Task), Func(Of Task), StreamSequenceToken)
+  spec.csharp:
+  - uid: Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync``1(Orleans.Streams.StreamSubscriptionHandle{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task},Func{Exception,Task},Func{Task},Orleans.Streams.StreamSequenceToken)
+    name: ResumeAsync<T>
+    nameWithType: StreamSubscriptionHandleExtensions.ResumeAsync<T>
+    fullName: Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Streams.StreamSubscriptionHandle`1
+    name: StreamSubscriptionHandle
+    nameWithType: StreamSubscriptionHandle
+    fullName: Orleans.Streams.StreamSubscriptionHandle
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Func`3
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.Streams.StreamSequenceToken
+    name: StreamSequenceToken
+    nameWithType: StreamSequenceToken
+    fullName: Orleans.Streams.StreamSequenceToken
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: Exception
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Func`1
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.Streams.StreamSequenceToken
+    name: StreamSequenceToken
+    nameWithType: StreamSequenceToken
+    fullName: Orleans.Streams.StreamSequenceToken
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync``1(Orleans.Streams.StreamSubscriptionHandle{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task},Func{Exception,Task},Func{Task},Orleans.Streams.StreamSequenceToken)
+    name: ResumeAsync(Of T)
+    nameWithType: StreamSubscriptionHandleExtensions.ResumeAsync(Of T)
+    fullName: Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Streams.StreamSubscriptionHandle`1
+    name: StreamSubscriptionHandle
+    nameWithType: StreamSubscriptionHandle
+    fullName: Orleans.Streams.StreamSubscriptionHandle
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Func`3
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.Streams.StreamSequenceToken
+    name: StreamSequenceToken
+    nameWithType: StreamSequenceToken
+    fullName: Orleans.Streams.StreamSequenceToken
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: Exception
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Func`1
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.Streams.StreamSequenceToken
+    name: StreamSequenceToken
+    nameWithType: StreamSequenceToken
+    fullName: Orleans.Streams.StreamSequenceToken
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Streams.StreamSubscriptionHandleExtensions
+  commentId: T:Orleans.Streams.StreamSubscriptionHandleExtensions
+  parent: Orleans.Streams
+  isExternal: false
+  name: StreamSubscriptionHandleExtensions
+  nameWithType: StreamSubscriptionHandleExtensions
+  fullName: Orleans.Streams.StreamSubscriptionHandleExtensions
+- uid: Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync``1(Orleans.Streams.StreamSubscriptionHandle{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task},Func{Exception,Task},Orleans.Streams.StreamSequenceToken)
+  commentId: M:Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync``1(Orleans.Streams.StreamSubscriptionHandle{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task},Func{Exception,Task},Orleans.Streams.StreamSequenceToken)
+  isExternal: true
+  name: ResumeAsync<T>(StreamSubscriptionHandle<T>, Func<T, StreamSequenceToken, Task>, Func<Exception, Task>, StreamSequenceToken)
+  nameWithType: StreamSubscriptionHandleExtensions.ResumeAsync<T>(StreamSubscriptionHandle<T>, Func<T, StreamSequenceToken, Task>, Func<Exception, Task>, StreamSequenceToken)
+  fullName: Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync<T>(Orleans.Streams.StreamSubscriptionHandle<T>, Func<T, Orleans.Streams.StreamSequenceToken, Task>, Func<Exception, Task>, Orleans.Streams.StreamSequenceToken)
+  nameWithType.vb: StreamSubscriptionHandleExtensions.ResumeAsync(Of T)(StreamSubscriptionHandle(Of T), Func(Of T, StreamSequenceToken, Task), Func(Of Exception, Task), StreamSequenceToken)
+  fullName.vb: Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync(Of T)(Orleans.Streams.StreamSubscriptionHandle(Of T), Func(Of T, Orleans.Streams.StreamSequenceToken, Task), Func(Of Exception, Task), Orleans.Streams.StreamSequenceToken)
+  name.vb: ResumeAsync(Of T)(StreamSubscriptionHandle(Of T), Func(Of T, StreamSequenceToken, Task), Func(Of Exception, Task), StreamSequenceToken)
+  spec.csharp:
+  - uid: Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync``1(Orleans.Streams.StreamSubscriptionHandle{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task},Func{Exception,Task},Orleans.Streams.StreamSequenceToken)
+    name: ResumeAsync<T>
+    nameWithType: StreamSubscriptionHandleExtensions.ResumeAsync<T>
+    fullName: Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Streams.StreamSubscriptionHandle`1
+    name: StreamSubscriptionHandle
+    nameWithType: StreamSubscriptionHandle
+    fullName: Orleans.Streams.StreamSubscriptionHandle
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Func`3
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.Streams.StreamSequenceToken
+    name: StreamSequenceToken
+    nameWithType: StreamSequenceToken
+    fullName: Orleans.Streams.StreamSequenceToken
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: Exception
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.Streams.StreamSequenceToken
+    name: StreamSequenceToken
+    nameWithType: StreamSequenceToken
+    fullName: Orleans.Streams.StreamSequenceToken
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync``1(Orleans.Streams.StreamSubscriptionHandle{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task},Func{Exception,Task},Orleans.Streams.StreamSequenceToken)
+    name: ResumeAsync(Of T)
+    nameWithType: StreamSubscriptionHandleExtensions.ResumeAsync(Of T)
+    fullName: Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Streams.StreamSubscriptionHandle`1
+    name: StreamSubscriptionHandle
+    nameWithType: StreamSubscriptionHandle
+    fullName: Orleans.Streams.StreamSubscriptionHandle
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Func`3
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.Streams.StreamSequenceToken
+    name: StreamSequenceToken
+    nameWithType: StreamSequenceToken
+    fullName: Orleans.Streams.StreamSequenceToken
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: Exception
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.Streams.StreamSequenceToken
+    name: StreamSequenceToken
+    nameWithType: StreamSequenceToken
+    fullName: Orleans.Streams.StreamSequenceToken
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync``1(Orleans.Streams.StreamSubscriptionHandle{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task},Func{Task},Orleans.Streams.StreamSequenceToken)
+  commentId: M:Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync``1(Orleans.Streams.StreamSubscriptionHandle{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task},Func{Task},Orleans.Streams.StreamSequenceToken)
+  isExternal: true
+  name: ResumeAsync<T>(StreamSubscriptionHandle<T>, Func<T, StreamSequenceToken, Task>, Func<Task>, StreamSequenceToken)
+  nameWithType: StreamSubscriptionHandleExtensions.ResumeAsync<T>(StreamSubscriptionHandle<T>, Func<T, StreamSequenceToken, Task>, Func<Task>, StreamSequenceToken)
+  fullName: Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync<T>(Orleans.Streams.StreamSubscriptionHandle<T>, Func<T, Orleans.Streams.StreamSequenceToken, Task>, Func<Task>, Orleans.Streams.StreamSequenceToken)
+  nameWithType.vb: StreamSubscriptionHandleExtensions.ResumeAsync(Of T)(StreamSubscriptionHandle(Of T), Func(Of T, StreamSequenceToken, Task), Func(Of Task), StreamSequenceToken)
+  fullName.vb: Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync(Of T)(Orleans.Streams.StreamSubscriptionHandle(Of T), Func(Of T, Orleans.Streams.StreamSequenceToken, Task), Func(Of Task), Orleans.Streams.StreamSequenceToken)
+  name.vb: ResumeAsync(Of T)(StreamSubscriptionHandle(Of T), Func(Of T, StreamSequenceToken, Task), Func(Of Task), StreamSequenceToken)
+  spec.csharp:
+  - uid: Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync``1(Orleans.Streams.StreamSubscriptionHandle{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task},Func{Task},Orleans.Streams.StreamSequenceToken)
+    name: ResumeAsync<T>
+    nameWithType: StreamSubscriptionHandleExtensions.ResumeAsync<T>
+    fullName: Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Streams.StreamSubscriptionHandle`1
+    name: StreamSubscriptionHandle
+    nameWithType: StreamSubscriptionHandle
+    fullName: Orleans.Streams.StreamSubscriptionHandle
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Func`3
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.Streams.StreamSequenceToken
+    name: StreamSequenceToken
+    nameWithType: StreamSequenceToken
+    fullName: Orleans.Streams.StreamSequenceToken
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Func`1
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.Streams.StreamSequenceToken
+    name: StreamSequenceToken
+    nameWithType: StreamSequenceToken
+    fullName: Orleans.Streams.StreamSequenceToken
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync``1(Orleans.Streams.StreamSubscriptionHandle{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task},Func{Task},Orleans.Streams.StreamSequenceToken)
+    name: ResumeAsync(Of T)
+    nameWithType: StreamSubscriptionHandleExtensions.ResumeAsync(Of T)
+    fullName: Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Streams.StreamSubscriptionHandle`1
+    name: StreamSubscriptionHandle
+    nameWithType: StreamSubscriptionHandle
+    fullName: Orleans.Streams.StreamSubscriptionHandle
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Func`3
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.Streams.StreamSequenceToken
+    name: StreamSequenceToken
+    nameWithType: StreamSequenceToken
+    fullName: Orleans.Streams.StreamSequenceToken
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Func`1
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.Streams.StreamSequenceToken
+    name: StreamSequenceToken
+    nameWithType: StreamSequenceToken
+    fullName: Orleans.Streams.StreamSequenceToken
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync``1(Orleans.Streams.StreamSubscriptionHandle{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task},Orleans.Streams.StreamSequenceToken)
+  commentId: M:Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync``1(Orleans.Streams.StreamSubscriptionHandle{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task},Orleans.Streams.StreamSequenceToken)
+  isExternal: true
+  name: ResumeAsync<T>(StreamSubscriptionHandle<T>, Func<T, StreamSequenceToken, Task>, StreamSequenceToken)
+  nameWithType: StreamSubscriptionHandleExtensions.ResumeAsync<T>(StreamSubscriptionHandle<T>, Func<T, StreamSequenceToken, Task>, StreamSequenceToken)
+  fullName: Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync<T>(Orleans.Streams.StreamSubscriptionHandle<T>, Func<T, Orleans.Streams.StreamSequenceToken, Task>, Orleans.Streams.StreamSequenceToken)
+  nameWithType.vb: StreamSubscriptionHandleExtensions.ResumeAsync(Of T)(StreamSubscriptionHandle(Of T), Func(Of T, StreamSequenceToken, Task), StreamSequenceToken)
+  fullName.vb: Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync(Of T)(Orleans.Streams.StreamSubscriptionHandle(Of T), Func(Of T, Orleans.Streams.StreamSequenceToken, Task), Orleans.Streams.StreamSequenceToken)
+  name.vb: ResumeAsync(Of T)(StreamSubscriptionHandle(Of T), Func(Of T, StreamSequenceToken, Task), StreamSequenceToken)
+  spec.csharp:
+  - uid: Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync``1(Orleans.Streams.StreamSubscriptionHandle{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task},Orleans.Streams.StreamSequenceToken)
+    name: ResumeAsync<T>
+    nameWithType: StreamSubscriptionHandleExtensions.ResumeAsync<T>
+    fullName: Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Streams.StreamSubscriptionHandle`1
+    name: StreamSubscriptionHandle
+    nameWithType: StreamSubscriptionHandle
+    fullName: Orleans.Streams.StreamSubscriptionHandle
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Func`3
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.Streams.StreamSequenceToken
+    name: StreamSequenceToken
+    nameWithType: StreamSequenceToken
+    fullName: Orleans.Streams.StreamSequenceToken
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.Streams.StreamSequenceToken
+    name: StreamSequenceToken
+    nameWithType: StreamSequenceToken
+    fullName: Orleans.Streams.StreamSequenceToken
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync``1(Orleans.Streams.StreamSubscriptionHandle{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task},Orleans.Streams.StreamSequenceToken)
+    name: ResumeAsync(Of T)
+    nameWithType: StreamSubscriptionHandleExtensions.ResumeAsync(Of T)
+    fullName: Orleans.Streams.StreamSubscriptionHandleExtensions.ResumeAsync(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Streams.StreamSubscriptionHandle`1
+    name: StreamSubscriptionHandle
+    nameWithType: StreamSubscriptionHandle
+    fullName: Orleans.Streams.StreamSubscriptionHandle
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Func`3
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.Streams.StreamSequenceToken
+    name: StreamSequenceToken
+    nameWithType: StreamSequenceToken
+    fullName: Orleans.Streams.StreamSequenceToken
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.Streams.StreamSequenceToken
+    name: StreamSequenceToken
+    nameWithType: StreamSequenceToken
+    fullName: Orleans.Streams.StreamSequenceToken
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Streams.StreamSubscriptionHandle`1.StreamIdentity*
+  commentId: Overload:Orleans.Streams.StreamSubscriptionHandle`1.StreamIdentity
+  isExternal: false
+  name: StreamIdentity
+  nameWithType: StreamSubscriptionHandle<T>.StreamIdentity
+  fullName: Orleans.Streams.StreamSubscriptionHandle<T>.StreamIdentity
+  nameWithType.vb: StreamSubscriptionHandle(Of T).StreamIdentity
+  fullName.vb: Orleans.Streams.StreamSubscriptionHandle(Of T).StreamIdentity
+- uid: Orleans.Streams.IStreamIdentity
+  commentId: T:Orleans.Streams.IStreamIdentity
+  parent: Orleans.Streams
+  isExternal: false
+  name: IStreamIdentity
+  nameWithType: IStreamIdentity
+  fullName: Orleans.Streams.IStreamIdentity
+- uid: Orleans.Streams.StreamSubscriptionHandle`1.ProviderName*
+  commentId: Overload:Orleans.Streams.StreamSubscriptionHandle`1.ProviderName
+  isExternal: false
+  name: ProviderName
+  nameWithType: StreamSubscriptionHandle<T>.ProviderName
+  fullName: Orleans.Streams.StreamSubscriptionHandle<T>.ProviderName
+  nameWithType.vb: StreamSubscriptionHandle(Of T).ProviderName
+  fullName.vb: Orleans.Streams.StreamSubscriptionHandle(Of T).ProviderName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Orleans.Streams.StreamSubscriptionHandle`1.HandleId*
+  commentId: Overload:Orleans.Streams.StreamSubscriptionHandle`1.HandleId
+  isExternal: false
+  name: HandleId
+  nameWithType: StreamSubscriptionHandle<T>.HandleId
+  fullName: Orleans.Streams.StreamSubscriptionHandle<T>.HandleId
+  nameWithType.vb: StreamSubscriptionHandle(Of T).HandleId
+  fullName.vb: Orleans.Streams.StreamSubscriptionHandle(Of T).HandleId
+- uid: Guid
+  isExternal: true
+  name: Guid
+  nameWithType: Guid
+  fullName: Guid
+- uid: Orleans.Streams.StreamSubscriptionHandle`1.UnsubscribeAsync*
+  commentId: Overload:Orleans.Streams.StreamSubscriptionHandle`1.UnsubscribeAsync
+  isExternal: false
+  name: UnsubscribeAsync
+  nameWithType: StreamSubscriptionHandle<T>.UnsubscribeAsync
+  fullName: Orleans.Streams.StreamSubscriptionHandle<T>.UnsubscribeAsync
+  nameWithType.vb: StreamSubscriptionHandle(Of T).UnsubscribeAsync
+  fullName.vb: Orleans.Streams.StreamSubscriptionHandle(Of T).UnsubscribeAsync
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task
+- uid: Orleans.Streams.StreamSubscriptionHandle`1.ResumeAsync*
+  commentId: Overload:Orleans.Streams.StreamSubscriptionHandle`1.ResumeAsync
+  isExternal: false
+  name: ResumeAsync
+  nameWithType: StreamSubscriptionHandle<T>.ResumeAsync
+  fullName: Orleans.Streams.StreamSubscriptionHandle<T>.ResumeAsync
+  nameWithType.vb: StreamSubscriptionHandle(Of T).ResumeAsync
+  fullName.vb: Orleans.Streams.StreamSubscriptionHandle(Of T).ResumeAsync
+- uid: Orleans.Streams.IAsyncObserver{{T}}
+  commentId: T:Orleans.Streams.IAsyncObserver{`0}
+  parent: Orleans.Streams
+  definition: Orleans.Streams.IAsyncObserver`1
+  name: IAsyncObserver<T>
+  nameWithType: IAsyncObserver<T>
+  fullName: Orleans.Streams.IAsyncObserver<T>
+  nameWithType.vb: IAsyncObserver(Of T)
+  fullName.vb: Orleans.Streams.IAsyncObserver(Of T)
+  name.vb: IAsyncObserver(Of T)
+  spec.csharp:
+  - uid: Orleans.Streams.IAsyncObserver`1
+    name: IAsyncObserver
+    nameWithType: IAsyncObserver
+    fullName: Orleans.Streams.IAsyncObserver
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Orleans.Streams.IAsyncObserver`1
+    name: IAsyncObserver
+    nameWithType: IAsyncObserver
+    fullName: Orleans.Streams.IAsyncObserver
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Streams.StreamSequenceToken
+  commentId: T:Orleans.Streams.StreamSequenceToken
+  parent: Orleans.Streams
+  isExternal: false
+  name: StreamSequenceToken
+  nameWithType: StreamSequenceToken
+  fullName: Orleans.Streams.StreamSequenceToken
+- uid: Task{Orleans.Streams.StreamSubscriptionHandle`1}
+  commentId: '!:Task{Orleans.Streams.StreamSubscriptionHandle`1}'
+  definition: Task`1
+  name: Task<StreamSubscriptionHandle<T>>
+  nameWithType: Task<StreamSubscriptionHandle<T>>
+  fullName: Task<Orleans.Streams.StreamSubscriptionHandle<T>>
+  nameWithType.vb: Task(Of StreamSubscriptionHandle(Of T))
+  fullName.vb: Task(Of Orleans.Streams.StreamSubscriptionHandle(Of T))
+  name.vb: Task(Of StreamSubscriptionHandle(Of T))
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Orleans.Streams.StreamSubscriptionHandle`1
+    name: StreamSubscriptionHandle
+    nameWithType: StreamSubscriptionHandle
+    fullName: Orleans.Streams.StreamSubscriptionHandle
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Orleans.Streams.StreamSubscriptionHandle`1
+    name: StreamSubscriptionHandle
+    nameWithType: StreamSubscriptionHandle
+    fullName: Orleans.Streams.StreamSubscriptionHandle
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Streams.IAsyncObserver`1
+  commentId: T:Orleans.Streams.IAsyncObserver`1
+  isExternal: false
+  name: IAsyncObserver<T>
+  nameWithType: IAsyncObserver<T>
+  fullName: Orleans.Streams.IAsyncObserver<T>
+  nameWithType.vb: IAsyncObserver(Of T)
+  fullName.vb: Orleans.Streams.IAsyncObserver(Of T)
+  name.vb: IAsyncObserver(Of T)
+  spec.csharp:
+  - uid: Orleans.Streams.IAsyncObserver`1
+    name: IAsyncObserver
+    nameWithType: IAsyncObserver
+    fullName: Orleans.Streams.IAsyncObserver
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Orleans.Streams.IAsyncObserver`1
+    name: IAsyncObserver
+    nameWithType: IAsyncObserver
+    fullName: Orleans.Streams.IAsyncObserver
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Streams.StreamSubscriptionHandle`1.Equals*
+  commentId: Overload:Orleans.Streams.StreamSubscriptionHandle`1.Equals
+  isExternal: false
+  name: Equals
+  nameWithType: StreamSubscriptionHandle<T>.Equals
+  fullName: Orleans.Streams.StreamSubscriptionHandle<T>.Equals
+  nameWithType.vb: StreamSubscriptionHandle(Of T).Equals
+  fullName.vb: Orleans.Streams.StreamSubscriptionHandle(Of T).Equals
+- uid: Orleans.Streams.StreamSubscriptionHandle`1
+  commentId: T:Orleans.Streams.StreamSubscriptionHandle`1
+  parent: Orleans.Streams
+  isExternal: false
+  name: StreamSubscriptionHandle<T>
+  nameWithType: StreamSubscriptionHandle<T>
+  fullName: Orleans.Streams.StreamSubscriptionHandle<T>
+  nameWithType.vb: StreamSubscriptionHandle(Of T)
+  fullName.vb: Orleans.Streams.StreamSubscriptionHandle(Of T)
+  name.vb: StreamSubscriptionHandle(Of T)
+  spec.csharp:
+  - uid: Orleans.Streams.StreamSubscriptionHandle`1
+    name: StreamSubscriptionHandle
+    nameWithType: StreamSubscriptionHandle
+    fullName: Orleans.Streams.StreamSubscriptionHandle
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Orleans.Streams.StreamSubscriptionHandle`1
+    name: StreamSubscriptionHandle
+    nameWithType: StreamSubscriptionHandle
+    fullName: Orleans.Streams.StreamSubscriptionHandle
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

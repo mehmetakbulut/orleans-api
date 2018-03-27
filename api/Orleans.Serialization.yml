@@ -1,0 +1,209 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Serialization
+  commentId: N:Orleans.Serialization
+  id: Orleans.Serialization
+  children:
+  - Orleans.Serialization.BondSerializer
+  - Orleans.Serialization.DeepCopier
+  - Orleans.Serialization.Deserializer
+  - Orleans.Serialization.IBinaryTokenStreamReader
+  - Orleans.Serialization.IBinaryTokenStreamWriter
+  - Orleans.Serialization.ICopyContext
+  - Orleans.Serialization.IDeserializationContext
+  - Orleans.Serialization.IFieldUtils
+  - Orleans.Serialization.IOnDeserialized
+  - Orleans.Serialization.ISerializationContext
+  - Orleans.Serialization.ISerializerContext
+  - Orleans.Serialization.ProtobufSerializer
+  - Orleans.Serialization.Serializer
+  - Orleans.Serialization.SerializerDelegateMetadata
+  - Orleans.Serialization.SerializerFeature
+  - Orleans.Serialization.SerializerKnownTypeMetadata
+  - Orleans.Serialization.SerializerMethods
+  - Orleans.Serialization.SerializerTypeMetadata
+  - Orleans.Serialization.ValueTypeSetter`2
+  langs:
+  - csharp
+  - vb
+  name: Orleans.Serialization
+  nameWithType: Orleans.Serialization
+  fullName: Orleans.Serialization
+  type: Namespace
+  assemblies:
+  - Orleans.Core.Abstractions
+references:
+- uid: Orleans.Serialization.IOnDeserialized
+  commentId: T:Orleans.Serialization.IOnDeserialized
+  parent: Orleans.Serialization
+  isExternal: false
+  name: IOnDeserialized
+  nameWithType: IOnDeserialized
+  fullName: Orleans.Serialization.IOnDeserialized
+- uid: Orleans.Serialization.IBinaryTokenStreamReader
+  commentId: T:Orleans.Serialization.IBinaryTokenStreamReader
+  parent: Orleans.Serialization
+  isExternal: false
+  name: IBinaryTokenStreamReader
+  nameWithType: IBinaryTokenStreamReader
+  fullName: Orleans.Serialization.IBinaryTokenStreamReader
+- uid: Orleans.Serialization.IBinaryTokenStreamWriter
+  commentId: T:Orleans.Serialization.IBinaryTokenStreamWriter
+  parent: Orleans.Serialization
+  isExternal: false
+  name: IBinaryTokenStreamWriter
+  nameWithType: IBinaryTokenStreamWriter
+  fullName: Orleans.Serialization.IBinaryTokenStreamWriter
+- uid: Orleans.Serialization.ValueTypeSetter`2
+  commentId: T:Orleans.Serialization.ValueTypeSetter`2
+  isExternal: false
+  name: ValueTypeSetter<TDeclaring, TField>
+  nameWithType: ValueTypeSetter<TDeclaring, TField>
+  fullName: Orleans.Serialization.ValueTypeSetter<TDeclaring, TField>
+  nameWithType.vb: ValueTypeSetter(Of TDeclaring, TField)
+  fullName.vb: Orleans.Serialization.ValueTypeSetter(Of TDeclaring, TField)
+  name.vb: ValueTypeSetter(Of TDeclaring, TField)
+  spec.csharp:
+  - uid: Orleans.Serialization.ValueTypeSetter`2
+    name: ValueTypeSetter
+    nameWithType: ValueTypeSetter
+    fullName: Orleans.Serialization.ValueTypeSetter
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDeclaring
+    nameWithType: TDeclaring
+    fullName: TDeclaring
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TField
+    nameWithType: TField
+    fullName: TField
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Orleans.Serialization.ValueTypeSetter`2
+    name: ValueTypeSetter
+    nameWithType: ValueTypeSetter
+    fullName: Orleans.Serialization.ValueTypeSetter
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDeclaring
+    nameWithType: TDeclaring
+    fullName: TDeclaring
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TField
+    nameWithType: TField
+    fullName: TField
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Serialization.IFieldUtils
+  commentId: T:Orleans.Serialization.IFieldUtils
+  isExternal: false
+  name: IFieldUtils
+  nameWithType: IFieldUtils
+  fullName: Orleans.Serialization.IFieldUtils
+- uid: Orleans.Serialization.ISerializerContext
+  commentId: T:Orleans.Serialization.ISerializerContext
+  parent: Orleans.Serialization
+  isExternal: false
+  name: ISerializerContext
+  nameWithType: ISerializerContext
+  fullName: Orleans.Serialization.ISerializerContext
+- uid: Orleans.Serialization.ICopyContext
+  commentId: T:Orleans.Serialization.ICopyContext
+  parent: Orleans.Serialization
+  isExternal: false
+  name: ICopyContext
+  nameWithType: ICopyContext
+  fullName: Orleans.Serialization.ICopyContext
+- uid: Orleans.Serialization.ISerializationContext
+  commentId: T:Orleans.Serialization.ISerializationContext
+  parent: Orleans.Serialization
+  isExternal: false
+  name: ISerializationContext
+  nameWithType: ISerializationContext
+  fullName: Orleans.Serialization.ISerializationContext
+- uid: Orleans.Serialization.IDeserializationContext
+  commentId: T:Orleans.Serialization.IDeserializationContext
+  parent: Orleans.Serialization
+  isExternal: false
+  name: IDeserializationContext
+  nameWithType: IDeserializationContext
+  fullName: Orleans.Serialization.IDeserializationContext
+- uid: Orleans.Serialization.Deserializer
+  commentId: T:Orleans.Serialization.Deserializer
+  parent: Orleans.Serialization
+  isExternal: false
+  name: Deserializer
+  nameWithType: Deserializer
+  fullName: Orleans.Serialization.Deserializer
+- uid: Orleans.Serialization.Serializer
+  commentId: T:Orleans.Serialization.Serializer
+  parent: Orleans.Serialization
+  isExternal: false
+  name: Serializer
+  nameWithType: Serializer
+  fullName: Orleans.Serialization.Serializer
+- uid: Orleans.Serialization.DeepCopier
+  commentId: T:Orleans.Serialization.DeepCopier
+  parent: Orleans.Serialization
+  isExternal: false
+  name: DeepCopier
+  nameWithType: DeepCopier
+  fullName: Orleans.Serialization.DeepCopier
+- uid: Orleans.Serialization.SerializerMethods
+  commentId: T:Orleans.Serialization.SerializerMethods
+  parent: Orleans.Serialization
+  isExternal: false
+  name: SerializerMethods
+  nameWithType: SerializerMethods
+  fullName: Orleans.Serialization.SerializerMethods
+- uid: Orleans.Serialization.SerializerFeature
+  commentId: T:Orleans.Serialization.SerializerFeature
+  isExternal: false
+  name: SerializerFeature
+  nameWithType: SerializerFeature
+  fullName: Orleans.Serialization.SerializerFeature
+- uid: Orleans.Serialization.SerializerTypeMetadata
+  commentId: T:Orleans.Serialization.SerializerTypeMetadata
+  isExternal: false
+  name: SerializerTypeMetadata
+  nameWithType: SerializerTypeMetadata
+  fullName: Orleans.Serialization.SerializerTypeMetadata
+- uid: Orleans.Serialization.SerializerDelegateMetadata
+  commentId: T:Orleans.Serialization.SerializerDelegateMetadata
+  isExternal: false
+  name: SerializerDelegateMetadata
+  nameWithType: SerializerDelegateMetadata
+  fullName: Orleans.Serialization.SerializerDelegateMetadata
+- uid: Orleans.Serialization.SerializerKnownTypeMetadata
+  commentId: T:Orleans.Serialization.SerializerKnownTypeMetadata
+  isExternal: false
+  name: SerializerKnownTypeMetadata
+  nameWithType: SerializerKnownTypeMetadata
+  fullName: Orleans.Serialization.SerializerKnownTypeMetadata
+- uid: Orleans.Serialization.ProtobufSerializer
+  commentId: T:Orleans.Serialization.ProtobufSerializer
+  isExternal: false
+  name: ProtobufSerializer
+  nameWithType: ProtobufSerializer
+  fullName: Orleans.Serialization.ProtobufSerializer
+- uid: Orleans.Serialization.BondSerializer
+  commentId: T:Orleans.Serialization.BondSerializer
+  isExternal: false
+  name: BondSerializer
+  nameWithType: BondSerializer
+  fullName: Orleans.Serialization.BondSerializer
+- uid: Orleans.Serialization
+  commentId: N:Orleans.Serialization
+  isExternal: false
+  name: Orleans.Serialization
+  nameWithType: Orleans.Serialization
+  fullName: Orleans.Serialization

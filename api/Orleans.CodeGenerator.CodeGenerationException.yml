@@ -1,0 +1,329 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.CodeGenerator.CodeGenerationException
+  commentId: T:Orleans.CodeGenerator.CodeGenerationException
+  id: CodeGenerationException
+  parent: Orleans.CodeGenerator
+  children:
+  - Orleans.CodeGenerator.CodeGenerationException.#ctor
+  - Orleans.CodeGenerator.CodeGenerationException.#ctor(SerializationInfo,StreamingContext)
+  - Orleans.CodeGenerator.CodeGenerationException.#ctor(System.String)
+  - Orleans.CodeGenerator.CodeGenerationException.#ctor(System.String,Exception)
+  langs:
+  - csharp
+  - vb
+  name: CodeGenerationException
+  nameWithType: CodeGenerationException
+  fullName: Orleans.CodeGenerator.CodeGenerationException
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.CodeGeneration/CodeGenerationException.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: CodeGenerationException
+    path: src/Orleans.CodeGeneration/CodeGenerationException.cs
+    startLine: 8
+  assemblies:
+  - Orleans.CodeGeneration
+  namespace: Orleans.CodeGenerator
+  summary: "\nThe code generation exception.\n"
+  example: []
+  syntax:
+    content: 'public class CodeGenerationException : Exception'
+    content.vb: >-
+      Public Class CodeGenerationException
+
+          Inherits Exception
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.CodeGenerator.CodeGenerationException.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.CodeGenerator.CodeGenerationException.#ctor
+  commentId: M:Orleans.CodeGenerator.CodeGenerationException.#ctor
+  id: '#ctor'
+  parent: Orleans.CodeGenerator.CodeGenerationException
+  langs:
+  - csharp
+  - vb
+  name: CodeGenerationException()
+  nameWithType: CodeGenerationException.CodeGenerationException()
+  fullName: Orleans.CodeGenerator.CodeGenerationException.CodeGenerationException()
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.CodeGeneration/CodeGenerationException.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.CodeGeneration/CodeGenerationException.cs
+    startLine: 14
+  assemblies:
+  - Orleans.CodeGeneration
+  namespace: Orleans.CodeGenerator
+  summary: "\nInitializes a new instance of the <xref href=\"Orleans.CodeGenerator.CodeGenerationException\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public CodeGenerationException()
+    content.vb: Public Sub New
+  overload: Orleans.CodeGenerator.CodeGenerationException.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.CodeGenerator.CodeGenerationException.#ctor(System.String)
+  commentId: M:Orleans.CodeGenerator.CodeGenerationException.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Orleans.CodeGenerator.CodeGenerationException
+  langs:
+  - csharp
+  - vb
+  name: CodeGenerationException(String)
+  nameWithType: CodeGenerationException.CodeGenerationException(String)
+  fullName: Orleans.CodeGenerator.CodeGenerationException.CodeGenerationException(System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.CodeGeneration/CodeGenerationException.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.CodeGeneration/CodeGenerationException.cs
+    startLine: 24
+  assemblies:
+  - Orleans.CodeGeneration
+  namespace: Orleans.CodeGenerator
+  summary: "\nInitializes a new instance of the <xref href=\"Orleans.CodeGenerator.CodeGenerationException\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public CodeGenerationException(string message)
+    parameters:
+    - id: message
+      type: System.String
+      description: "\nThe message.\n"
+    content.vb: Public Sub New(message As String)
+  overload: Orleans.CodeGenerator.CodeGenerationException.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.CodeGenerator.CodeGenerationException.#ctor(System.String,Exception)
+  commentId: M:Orleans.CodeGenerator.CodeGenerationException.#ctor(System.String,Exception)
+  id: '#ctor(System.String,Exception)'
+  parent: Orleans.CodeGenerator.CodeGenerationException
+  langs:
+  - csharp
+  - vb
+  name: CodeGenerationException(String, Exception)
+  nameWithType: CodeGenerationException.CodeGenerationException(String, Exception)
+  fullName: Orleans.CodeGenerator.CodeGenerationException.CodeGenerationException(System.String, Exception)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.CodeGeneration/CodeGenerationException.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.CodeGeneration/CodeGenerationException.cs
+    startLine: 38
+  assemblies:
+  - Orleans.CodeGeneration
+  namespace: Orleans.CodeGenerator
+  summary: "\nInitializes a new instance of the <xref href=\"Orleans.CodeGenerator.CodeGenerationException\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public CodeGenerationException(string message, Exception innerException)
+    parameters:
+    - id: message
+      type: System.String
+      description: "\nThe message.\n"
+    - id: innerException
+      type: Exception
+      description: "\nThe inner exception.\n"
+    content.vb: Public Sub New(message As String, innerException As Exception)
+  overload: Orleans.CodeGenerator.CodeGenerationException.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.CodeGenerator.CodeGenerationException.#ctor(SerializationInfo,StreamingContext)
+  commentId: M:Orleans.CodeGenerator.CodeGenerationException.#ctor(SerializationInfo,StreamingContext)
+  id: '#ctor(SerializationInfo,StreamingContext)'
+  parent: Orleans.CodeGenerator.CodeGenerationException
+  langs:
+  - csharp
+  - vb
+  name: CodeGenerationException(SerializationInfo, StreamingContext)
+  nameWithType: CodeGenerationException.CodeGenerationException(SerializationInfo, StreamingContext)
+  fullName: Orleans.CodeGenerator.CodeGenerationException.CodeGenerationException(SerializationInfo, StreamingContext)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.CodeGeneration/CodeGenerationException.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.CodeGeneration/CodeGenerationException.cs
+    startLine: 52
+  assemblies:
+  - Orleans.CodeGeneration
+  namespace: Orleans.CodeGenerator
+  summary: "\nInitializes a new instance of the <xref href=\"Orleans.CodeGenerator.CodeGenerationException\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: protected CodeGenerationException(SerializationInfo info, StreamingContext context)
+    parameters:
+    - id: info
+      type: SerializationInfo
+      description: "\nThe info.\n"
+    - id: context
+      type: StreamingContext
+      description: "\nThe context.\n"
+    content.vb: Protected Sub New(info As SerializationInfo, context As StreamingContext)
+  overload: Orleans.CodeGenerator.CodeGenerationException.#ctor*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+references:
+- uid: Orleans.CodeGenerator
+  commentId: N:Orleans.CodeGenerator
+  isExternal: false
+  name: Orleans.CodeGenerator
+  nameWithType: Orleans.CodeGenerator
+  fullName: Orleans.CodeGenerator
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.CodeGenerator.CodeGenerationException.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<CodeGenerationException>()
+  nameWithType: ImmutableExt.AsImmutable<CodeGenerationException>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.CodeGenerator.CodeGenerationException>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of CodeGenerationException)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.CodeGenerator.CodeGenerationException)()
+  name.vb: AsImmutable(Of CodeGenerationException)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<CodeGenerationException>
+    nameWithType: ImmutableExt.AsImmutable<CodeGenerationException>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.CodeGenerator.CodeGenerationException>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of CodeGenerationException)
+    nameWithType: ImmutableExt.AsImmutable(Of CodeGenerationException)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.CodeGenerator.CodeGenerationException)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.CodeGenerator.CodeGenerationException
+  commentId: T:Orleans.CodeGenerator.CodeGenerationException
+  isExternal: false
+  name: CodeGenerationException
+  nameWithType: CodeGenerationException
+  fullName: Orleans.CodeGenerator.CodeGenerationException
+- uid: Orleans.CodeGenerator.CodeGenerationException.#ctor*
+  commentId: Overload:Orleans.CodeGenerator.CodeGenerationException.#ctor
+  isExternal: false
+  name: CodeGenerationException
+  nameWithType: CodeGenerationException.CodeGenerationException
+  fullName: Orleans.CodeGenerator.CodeGenerationException.CodeGenerationException
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Exception
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: Exception
+- uid: SerializationInfo
+  isExternal: true
+  name: SerializationInfo
+  nameWithType: SerializationInfo
+  fullName: SerializationInfo
+- uid: StreamingContext
+  isExternal: true
+  name: StreamingContext
+  nameWithType: StreamingContext
+  fullName: StreamingContext

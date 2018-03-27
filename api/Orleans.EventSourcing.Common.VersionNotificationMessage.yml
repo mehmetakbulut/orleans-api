@@ -1,0 +1,219 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.EventSourcing.Common.VersionNotificationMessage
+  commentId: T:Orleans.EventSourcing.Common.VersionNotificationMessage
+  id: VersionNotificationMessage
+  parent: Orleans.EventSourcing.Common
+  children:
+  - Orleans.EventSourcing.Common.VersionNotificationMessage.Version
+  langs:
+  - csharp
+  - vb
+  name: VersionNotificationMessage
+  nameWithType: VersionNotificationMessage
+  fullName: Orleans.EventSourcing.Common.VersionNotificationMessage
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/NotificationMessage.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: VersionNotificationMessage
+    path: src/Orleans.EventSourcing/Common/NotificationMessage.cs
+    startLine: 23
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  summary: A simple notification message containing only the version.
+  example: []
+  syntax:
+    content: 'public class VersionNotificationMessage : object, INotificationMessage, ILogConsistencyProtocolMessage'
+    content.vb: >-
+      Public Class VersionNotificationMessage
+
+          Inherits Object
+
+          Implements INotificationMessage, ILogConsistencyProtocolMessage
+  inheritance:
+  - System.Object
+  implements:
+  - Orleans.EventSourcing.Common.INotificationMessage
+  - ILogConsistencyProtocolMessage
+  extensionMethods:
+  - Orleans.EventSourcing.Common.VersionNotificationMessage.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.EventSourcing.Common.VersionNotificationMessage.Version
+  commentId: P:Orleans.EventSourcing.Common.VersionNotificationMessage.Version
+  id: Version
+  parent: Orleans.EventSourcing.Common.VersionNotificationMessage
+  langs:
+  - csharp
+  - vb
+  name: Version
+  nameWithType: VersionNotificationMessage.Version
+  fullName: Orleans.EventSourcing.Common.VersionNotificationMessage.Version
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/NotificationMessage.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Version
+    path: src/Orleans.EventSourcing/Common/NotificationMessage.cs
+    startLine: 27
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  example: []
+  syntax:
+    content: public int Version { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Version As Integer
+  overload: Orleans.EventSourcing.Common.VersionNotificationMessage.Version*
+  implements:
+  - Orleans.EventSourcing.Common.INotificationMessage.Version
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans.EventSourcing.Common
+  commentId: N:Orleans.EventSourcing.Common
+  isExternal: false
+  name: Orleans.EventSourcing.Common
+  nameWithType: Orleans.EventSourcing.Common
+  fullName: Orleans.EventSourcing.Common
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.EventSourcing.Common.INotificationMessage
+  commentId: T:Orleans.EventSourcing.Common.INotificationMessage
+  parent: Orleans.EventSourcing.Common
+  isExternal: false
+  name: INotificationMessage
+  nameWithType: INotificationMessage
+  fullName: Orleans.EventSourcing.Common.INotificationMessage
+- uid: ILogConsistencyProtocolMessage
+  isExternal: true
+  name: ILogConsistencyProtocolMessage
+  nameWithType: ILogConsistencyProtocolMessage
+  fullName: ILogConsistencyProtocolMessage
+- uid: Orleans.EventSourcing.Common.VersionNotificationMessage.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<VersionNotificationMessage>()
+  nameWithType: ImmutableExt.AsImmutable<VersionNotificationMessage>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.EventSourcing.Common.VersionNotificationMessage>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of VersionNotificationMessage)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.EventSourcing.Common.VersionNotificationMessage)()
+  name.vb: AsImmutable(Of VersionNotificationMessage)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<VersionNotificationMessage>
+    nameWithType: ImmutableExt.AsImmutable<VersionNotificationMessage>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.EventSourcing.Common.VersionNotificationMessage>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of VersionNotificationMessage)
+    nameWithType: ImmutableExt.AsImmutable(Of VersionNotificationMessage)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.EventSourcing.Common.VersionNotificationMessage)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.EventSourcing.Common.VersionNotificationMessage.Version*
+  commentId: Overload:Orleans.EventSourcing.Common.VersionNotificationMessage.Version
+  isExternal: false
+  name: Version
+  nameWithType: VersionNotificationMessage.Version
+  fullName: Orleans.EventSourcing.Common.VersionNotificationMessage.Version
+- uid: Orleans.EventSourcing.Common.INotificationMessage.Version
+  commentId: P:Orleans.EventSourcing.Common.INotificationMessage.Version
+  parent: Orleans.EventSourcing.Common.INotificationMessage
+  isExternal: false
+  name: Version
+  nameWithType: INotificationMessage.Version
+  fullName: Orleans.EventSourcing.Common.INotificationMessage.Version
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32

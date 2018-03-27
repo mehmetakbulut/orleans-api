@@ -1,0 +1,218 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.CodeGeneration.GrainReferenceAttribute
+  commentId: T:Orleans.CodeGeneration.GrainReferenceAttribute
+  id: GrainReferenceAttribute
+  parent: Orleans.CodeGeneration
+  children:
+  - Orleans.CodeGeneration.GrainReferenceAttribute.#ctor(Type)
+  langs:
+  - csharp
+  - vb
+  name: GrainReferenceAttribute
+  nameWithType: GrainReferenceAttribute
+  fullName: Orleans.CodeGeneration.GrainReferenceAttribute
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/CodeGeneration/ActivationAttribute.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GrainReferenceAttribute
+    path: src/Orleans.Core.Abstractions/CodeGeneration/ActivationAttribute.cs
+    startLine: 46
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.CodeGeneration
+  summary: Identifies a concrete grain reference to an interface ID
+  example: []
+  syntax:
+    content: 'public sealed class GrainReferenceAttribute : GrainSupportClassAttribute'
+    content.vb: >-
+      Public NotInheritable Class GrainReferenceAttribute
+
+          Inherits GrainSupportClassAttribute
+  inheritance:
+  - System.Object
+  - Orleans.CodeGeneration.GrainSupportClassAttribute
+  inheritedMembers:
+  - Orleans.CodeGeneration.GrainSupportClassAttribute.TargetType
+  extensionMethods:
+  - Orleans.CodeGeneration.GrainReferenceAttribute.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Orleans.CodeGeneration.GrainReferenceAttribute.#ctor(Type)
+  commentId: M:Orleans.CodeGeneration.GrainReferenceAttribute.#ctor(Type)
+  id: '#ctor(Type)'
+  parent: Orleans.CodeGeneration.GrainReferenceAttribute
+  langs:
+  - csharp
+  - vb
+  name: GrainReferenceAttribute(Type)
+  nameWithType: GrainReferenceAttribute.GrainReferenceAttribute(Type)
+  fullName: Orleans.CodeGeneration.GrainReferenceAttribute.GrainReferenceAttribute(Type)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/CodeGeneration/ActivationAttribute.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Core.Abstractions/CodeGeneration/ActivationAttribute.cs
+    startLine: 53
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.CodeGeneration
+  summary: "\nInitializes a new instance of the <xref href=\"Orleans.CodeGeneration.GrainReferenceAttribute\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public GrainReferenceAttribute(Type targetType)
+    parameters:
+    - id: targetType
+      type: Type
+      description: The type which this implementation applies to.
+    content.vb: Public Sub New(targetType As Type)
+  overload: Orleans.CodeGeneration.GrainReferenceAttribute.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans.CodeGeneration
+  commentId: N:Orleans.CodeGeneration
+  isExternal: false
+  name: Orleans.CodeGeneration
+  nameWithType: Orleans.CodeGeneration
+  fullName: Orleans.CodeGeneration
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.CodeGeneration.GrainSupportClassAttribute
+  commentId: T:Orleans.CodeGeneration.GrainSupportClassAttribute
+  parent: Orleans.CodeGeneration
+  isExternal: false
+  name: GrainSupportClassAttribute
+  nameWithType: GrainSupportClassAttribute
+  fullName: Orleans.CodeGeneration.GrainSupportClassAttribute
+- uid: Orleans.CodeGeneration.GrainSupportClassAttribute.TargetType
+  commentId: P:Orleans.CodeGeneration.GrainSupportClassAttribute.TargetType
+  parent: Orleans.CodeGeneration.GrainSupportClassAttribute
+  isExternal: false
+  name: TargetType
+  nameWithType: GrainSupportClassAttribute.TargetType
+  fullName: Orleans.CodeGeneration.GrainSupportClassAttribute.TargetType
+- uid: Orleans.CodeGeneration.GrainReferenceAttribute.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<GrainReferenceAttribute>()
+  nameWithType: ImmutableExt.AsImmutable<GrainReferenceAttribute>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.CodeGeneration.GrainReferenceAttribute>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of GrainReferenceAttribute)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.CodeGeneration.GrainReferenceAttribute)()
+  name.vb: AsImmutable(Of GrainReferenceAttribute)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<GrainReferenceAttribute>
+    nameWithType: ImmutableExt.AsImmutable<GrainReferenceAttribute>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.CodeGeneration.GrainReferenceAttribute>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of GrainReferenceAttribute)
+    nameWithType: ImmutableExt.AsImmutable(Of GrainReferenceAttribute)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.CodeGeneration.GrainReferenceAttribute)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.CodeGeneration.GrainReferenceAttribute
+  commentId: T:Orleans.CodeGeneration.GrainReferenceAttribute
+  isExternal: false
+  name: GrainReferenceAttribute
+  nameWithType: GrainReferenceAttribute
+  fullName: Orleans.CodeGeneration.GrainReferenceAttribute
+- uid: Orleans.CodeGeneration.GrainReferenceAttribute.#ctor*
+  commentId: Overload:Orleans.CodeGeneration.GrainReferenceAttribute.#ctor
+  isExternal: false
+  name: GrainReferenceAttribute
+  nameWithType: GrainReferenceAttribute.GrainReferenceAttribute
+  fullName: Orleans.CodeGeneration.GrainReferenceAttribute.GrainReferenceAttribute
+- uid: Type
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: Type

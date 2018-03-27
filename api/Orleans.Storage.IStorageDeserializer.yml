@@ -1,0 +1,383 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Storage.IStorageDeserializer
+  commentId: T:Orleans.Storage.IStorageDeserializer
+  id: IStorageDeserializer
+  parent: Orleans.Storage
+  children:
+  - Orleans.Storage.IStorageDeserializer.CanStream
+  - Orleans.Storage.IStorageDeserializer.Deserialize(Stream,Type)
+  - Orleans.Storage.IStorageDeserializer.Deserialize(System.Object,Type)
+  - Orleans.Storage.IStorageDeserializer.Deserialize(TextReader,Type)
+  - Orleans.Storage.IStorageDeserializer.Tag
+  langs:
+  - csharp
+  - vb
+  name: IStorageDeserializer
+  nameWithType: IStorageDeserializer
+  fullName: Orleans.Storage.IStorageDeserializer
+  type: Interface
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/IStorageDeserializer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IStorageDeserializer
+    path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/IStorageDeserializer.cs
+    startLine: 9
+  assemblies:
+  - Orleans.Persistence.AdoNet
+  namespace: Orleans.Storage
+  summary: "\nA canonical interface for a storage provider deserializer.\n"
+  example: []
+  syntax:
+    content: public interface IStorageDeserializer
+    content.vb: Public Interface IStorageDeserializer
+  extensionMethods:
+  - Orleans.Storage.IStorageDeserializer.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Orleans.Storage.IStorageDeserializer.CanStream
+  commentId: P:Orleans.Storage.IStorageDeserializer.CanStream
+  id: CanStream
+  parent: Orleans.Storage.IStorageDeserializer
+  langs:
+  - csharp
+  - vb
+  name: CanStream
+  nameWithType: IStorageDeserializer.CanStream
+  fullName: Orleans.Storage.IStorageDeserializer.CanStream
+  type: Property
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/IStorageDeserializer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: CanStream
+    path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/IStorageDeserializer.cs
+    startLine: 14
+  assemblies:
+  - Orleans.Persistence.AdoNet
+  namespace: Orleans.Storage
+  summary: "\nCan this provider stream data.\n"
+  example: []
+  syntax:
+    content: bool CanStream { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property CanStream As Boolean
+  overload: Orleans.Storage.IStorageDeserializer.CanStream*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Orleans.Storage.IStorageDeserializer.Tag
+  commentId: P:Orleans.Storage.IStorageDeserializer.Tag
+  id: Tag
+  parent: Orleans.Storage.IStorageDeserializer
+  langs:
+  - csharp
+  - vb
+  name: Tag
+  nameWithType: IStorageDeserializer.Tag
+  fullName: Orleans.Storage.IStorageDeserializer.Tag
+  type: Property
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/IStorageDeserializer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Tag
+    path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/IStorageDeserializer.cs
+    startLine: 19
+  assemblies:
+  - Orleans.Persistence.AdoNet
+  namespace: Orleans.Storage
+  summary: "\nAn optional tag that a <xref href=\"Orleans.Storage.IStorageSerializationPicker\" data-throw-if-not-resolved=\"false\"></xref> or <see cref=\"!:IStorageProvider\"></see> provider can use to pick a deserializer.\n"
+  example: []
+  syntax:
+    content: string Tag { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property Tag As String
+  overload: Orleans.Storage.IStorageDeserializer.Tag*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Orleans.Storage.IStorageDeserializer.Deserialize(System.Object,Type)
+  commentId: M:Orleans.Storage.IStorageDeserializer.Deserialize(System.Object,Type)
+  id: Deserialize(System.Object,Type)
+  parent: Orleans.Storage.IStorageDeserializer
+  langs:
+  - csharp
+  - vb
+  name: Deserialize(Object, Type)
+  nameWithType: IStorageDeserializer.Deserialize(Object, Type)
+  fullName: Orleans.Storage.IStorageDeserializer.Deserialize(System.Object, Type)
+  type: Method
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/IStorageDeserializer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Deserialize
+    path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/IStorageDeserializer.cs
+    startLine: 27
+  assemblies:
+  - Orleans.Persistence.AdoNet
+  namespace: Orleans.Storage
+  summary: "\nDeserializes the given data.\n"
+  example: []
+  syntax:
+    content: object Deserialize(object data, Type grainStateType)
+    parameters:
+    - id: data
+      type: System.Object
+      description: The data to be serialized.
+    - id: grainStateType
+      type: Type
+      description: The type of the grain state.
+    return:
+      type: System.Object
+      description: The deserialized object.
+    content.vb: Function Deserialize(data As Object, grainStateType As Type) As Object
+  overload: Orleans.Storage.IStorageDeserializer.Deserialize*
+- uid: Orleans.Storage.IStorageDeserializer.Deserialize(Stream,Type)
+  commentId: M:Orleans.Storage.IStorageDeserializer.Deserialize(Stream,Type)
+  id: Deserialize(Stream,Type)
+  parent: Orleans.Storage.IStorageDeserializer
+  langs:
+  - csharp
+  - vb
+  name: Deserialize(Stream, Type)
+  nameWithType: IStorageDeserializer.Deserialize(Stream, Type)
+  fullName: Orleans.Storage.IStorageDeserializer.Deserialize(Stream, Type)
+  type: Method
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/IStorageDeserializer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Deserialize
+    path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/IStorageDeserializer.cs
+    startLine: 35
+  assemblies:
+  - Orleans.Persistence.AdoNet
+  namespace: Orleans.Storage
+  summary: "\nDeserializes the given data from a stream.\n"
+  example: []
+  syntax:
+    content: object Deserialize(Stream dataStream, Type grainStateType)
+    parameters:
+    - id: dataStream
+      type: Stream
+      description: The stream from which to serialize.
+    - id: grainStateType
+      type: Type
+      description: The type of the grain state.
+    return:
+      type: System.Object
+      description: The deserialized object.
+    content.vb: Function Deserialize(dataStream As Stream, grainStateType As Type) As Object
+  overload: Orleans.Storage.IStorageDeserializer.Deserialize*
+- uid: Orleans.Storage.IStorageDeserializer.Deserialize(TextReader,Type)
+  commentId: M:Orleans.Storage.IStorageDeserializer.Deserialize(TextReader,Type)
+  id: Deserialize(TextReader,Type)
+  parent: Orleans.Storage.IStorageDeserializer
+  langs:
+  - csharp
+  - vb
+  name: Deserialize(TextReader, Type)
+  nameWithType: IStorageDeserializer.Deserialize(TextReader, Type)
+  fullName: Orleans.Storage.IStorageDeserializer.Deserialize(TextReader, Type)
+  type: Method
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/IStorageDeserializer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Deserialize
+    path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/IStorageDeserializer.cs
+    startLine: 43
+  assemblies:
+  - Orleans.Persistence.AdoNet
+  namespace: Orleans.Storage
+  summary: "\nDeserializes the given data from a text stream.\n"
+  example: []
+  syntax:
+    content: object Deserialize(TextReader reader, Type grainStateType)
+    parameters:
+    - id: reader
+      type: TextReader
+      description: The text stream from which to serialize.
+    - id: grainStateType
+      type: Type
+      description: The type of the grain state.
+    return:
+      type: System.Object
+      description: The deserialized object.
+    content.vb: Function Deserialize(reader As TextReader, grainStateType As Type) As Object
+  overload: Orleans.Storage.IStorageDeserializer.Deserialize*
+references:
+- uid: Orleans.Storage
+  commentId: N:Orleans.Storage
+  isExternal: false
+  name: Orleans.Storage
+  nameWithType: Orleans.Storage
+  fullName: Orleans.Storage
+- uid: Orleans.Storage.IStorageDeserializer.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<IStorageDeserializer>()
+  nameWithType: ImmutableExt.AsImmutable<IStorageDeserializer>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Storage.IStorageDeserializer>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of IStorageDeserializer)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Storage.IStorageDeserializer)()
+  name.vb: AsImmutable(Of IStorageDeserializer)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<IStorageDeserializer>
+    nameWithType: ImmutableExt.AsImmutable<IStorageDeserializer>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Storage.IStorageDeserializer>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of IStorageDeserializer)
+    nameWithType: ImmutableExt.AsImmutable(Of IStorageDeserializer)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Storage.IStorageDeserializer)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Storage.IStorageDeserializer.CanStream*
+  commentId: Overload:Orleans.Storage.IStorageDeserializer.CanStream
+  isExternal: false
+  name: CanStream
+  nameWithType: IStorageDeserializer.CanStream
+  fullName: Orleans.Storage.IStorageDeserializer.CanStream
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Storage.IStorageSerializationPicker
+  commentId: T:Orleans.Storage.IStorageSerializationPicker
+  parent: Orleans.Storage
+  isExternal: false
+  name: IStorageSerializationPicker
+  nameWithType: IStorageSerializationPicker
+  fullName: Orleans.Storage.IStorageSerializationPicker
+- uid: Orleans.Storage.IStorageDeserializer.Tag*
+  commentId: Overload:Orleans.Storage.IStorageDeserializer.Tag
+  isExternal: false
+  name: Tag
+  nameWithType: IStorageDeserializer.Tag
+  fullName: Orleans.Storage.IStorageDeserializer.Tag
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Orleans.Storage.IStorageDeserializer.Deserialize*
+  commentId: Overload:Orleans.Storage.IStorageDeserializer.Deserialize
+  isExternal: false
+  name: Deserialize
+  nameWithType: IStorageDeserializer.Deserialize
+  fullName: Orleans.Storage.IStorageDeserializer.Deserialize
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Type
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: Type
+- uid: Stream
+  isExternal: true
+  name: Stream
+  nameWithType: Stream
+  fullName: Stream
+- uid: TextReader
+  isExternal: true
+  name: TextReader
+  nameWithType: TextReader
+  fullName: TextReader

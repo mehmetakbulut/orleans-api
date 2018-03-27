@@ -1,0 +1,182 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Runtime.IGrainReminder
+  commentId: T:Orleans.Runtime.IGrainReminder
+  id: IGrainReminder
+  parent: Orleans.Runtime
+  children:
+  - Orleans.Runtime.IGrainReminder.ReminderName
+  langs:
+  - csharp
+  - vb
+  name: IGrainReminder
+  nameWithType: IGrainReminder
+  fullName: Orleans.Runtime.IGrainReminder
+  type: Interface
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Timers/IRemindable.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IGrainReminder
+    path: src/Orleans.Core.Abstractions/Timers/IRemindable.cs
+    startLine: 25
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  summary: "\nHandle for a persistent Reminder.\n"
+  example: []
+  syntax:
+    content: public interface IGrainReminder
+    content.vb: Public Interface IGrainReminder
+  extensionMethods:
+  - Orleans.Runtime.IGrainReminder.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Orleans.Runtime.IGrainReminder.ReminderName
+  commentId: P:Orleans.Runtime.IGrainReminder.ReminderName
+  id: ReminderName
+  parent: Orleans.Runtime.IGrainReminder
+  langs:
+  - csharp
+  - vb
+  name: ReminderName
+  nameWithType: IGrainReminder.ReminderName
+  fullName: Orleans.Runtime.IGrainReminder.ReminderName
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Timers/IRemindable.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ReminderName
+    path: src/Orleans.Core.Abstractions/Timers/IRemindable.cs
+    startLine: 28
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  summary: 'Name of this Reminder. '
+  example: []
+  syntax:
+    content: string ReminderName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property ReminderName As String
+  overload: Orleans.Runtime.IGrainReminder.ReminderName*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+references:
+- uid: Orleans.Runtime
+  commentId: N:Orleans.Runtime
+  isExternal: false
+  name: Orleans.Runtime
+  nameWithType: Orleans.Runtime
+  fullName: Orleans.Runtime
+- uid: Orleans.Runtime.IGrainReminder.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<IGrainReminder>()
+  nameWithType: ImmutableExt.AsImmutable<IGrainReminder>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.IGrainReminder>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of IGrainReminder)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.IGrainReminder)()
+  name.vb: AsImmutable(Of IGrainReminder)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<IGrainReminder>
+    nameWithType: ImmutableExt.AsImmutable<IGrainReminder>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.IGrainReminder>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of IGrainReminder)
+    nameWithType: ImmutableExt.AsImmutable(Of IGrainReminder)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.IGrainReminder)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Runtime.IGrainReminder.ReminderName*
+  commentId: Overload:Orleans.Runtime.IGrainReminder.ReminderName
+  isExternal: false
+  name: ReminderName
+  nameWithType: IGrainReminder.ReminderName
+  fullName: Orleans.Runtime.IGrainReminder.ReminderName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System

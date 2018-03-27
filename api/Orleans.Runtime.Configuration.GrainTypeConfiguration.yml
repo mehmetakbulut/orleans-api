@@ -1,0 +1,563 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Runtime.Configuration.GrainTypeConfiguration
+  commentId: T:Orleans.Runtime.Configuration.GrainTypeConfiguration
+  id: GrainTypeConfiguration
+  parent: Orleans.Runtime.Configuration
+  children:
+  - Orleans.Runtime.Configuration.GrainTypeConfiguration.#ctor(System.String)
+  - Orleans.Runtime.Configuration.GrainTypeConfiguration.#ctor(System.String,System.Nullable{TimeSpan})
+  - Orleans.Runtime.Configuration.GrainTypeConfiguration.AreDefaults
+  - Orleans.Runtime.Configuration.GrainTypeConfiguration.CollectionAgeLimit
+  - Orleans.Runtime.Configuration.GrainTypeConfiguration.FullTypeName
+  - Orleans.Runtime.Configuration.GrainTypeConfiguration.Load(XmlElement)
+  - Orleans.Runtime.Configuration.GrainTypeConfiguration.SetCollectionAgeLimit(System.Nullable{TimeSpan})
+  langs:
+  - csharp
+  - vb
+  name: GrainTypeConfiguration
+  nameWithType: GrainTypeConfiguration
+  fullName: Orleans.Runtime.Configuration.GrainTypeConfiguration
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ApplicationConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GrainTypeConfiguration
+    path: src/Orleans.Core.Legacy/Configuration/ApplicationConfiguration.cs
+    startLine: 241
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nGrain type specific application configuration.\n"
+  example: []
+  syntax:
+    content: 'public class GrainTypeConfiguration : object'
+    content.vb: >-
+      Public Class GrainTypeConfiguration
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.Runtime.Configuration.GrainTypeConfiguration.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.Runtime.Configuration.GrainTypeConfiguration.FullTypeName
+  commentId: P:Orleans.Runtime.Configuration.GrainTypeConfiguration.FullTypeName
+  id: FullTypeName
+  parent: Orleans.Runtime.Configuration.GrainTypeConfiguration
+  langs:
+  - csharp
+  - vb
+  name: FullTypeName
+  nameWithType: GrainTypeConfiguration.FullTypeName
+  fullName: Orleans.Runtime.Configuration.GrainTypeConfiguration.FullTypeName
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ApplicationConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: FullTypeName
+    path: src/Orleans.Core.Legacy/Configuration/ApplicationConfiguration.cs
+    startLine: 247
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nThe type of the grain of this configuration.\n"
+  example: []
+  syntax:
+    content: public string FullTypeName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property FullTypeName As String
+  overload: Orleans.Runtime.Configuration.GrainTypeConfiguration.FullTypeName*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Runtime.Configuration.GrainTypeConfiguration.AreDefaults
+  commentId: P:Orleans.Runtime.Configuration.GrainTypeConfiguration.AreDefaults
+  id: AreDefaults
+  parent: Orleans.Runtime.Configuration.GrainTypeConfiguration
+  langs:
+  - csharp
+  - vb
+  name: AreDefaults
+  nameWithType: GrainTypeConfiguration.AreDefaults
+  fullName: Orleans.Runtime.Configuration.GrainTypeConfiguration.AreDefaults
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ApplicationConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AreDefaults
+    path: src/Orleans.Core.Legacy/Configuration/ApplicationConfiguration.cs
+    startLine: 252
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nWhether this is a defualt configuration that applies to all grain types.\n"
+  example: []
+  syntax:
+    content: public bool AreDefaults { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property AreDefaults As Boolean
+  overload: Orleans.Runtime.Configuration.GrainTypeConfiguration.AreDefaults*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Runtime.Configuration.GrainTypeConfiguration.CollectionAgeLimit
+  commentId: P:Orleans.Runtime.Configuration.GrainTypeConfiguration.CollectionAgeLimit
+  id: CollectionAgeLimit
+  parent: Orleans.Runtime.Configuration.GrainTypeConfiguration
+  langs:
+  - csharp
+  - vb
+  name: CollectionAgeLimit
+  nameWithType: GrainTypeConfiguration.CollectionAgeLimit
+  fullName: Orleans.Runtime.Configuration.GrainTypeConfiguration.CollectionAgeLimit
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ApplicationConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: CollectionAgeLimit
+    path: src/Orleans.Core.Legacy/Configuration/ApplicationConfiguration.cs
+    startLine: 257
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nThe time period used to collect in-active activations of this type.\n"
+  example: []
+  syntax:
+    content: public TimeSpan? CollectionAgeLimit { get; }
+    parameters: []
+    return:
+      type: System.Nullable{TimeSpan}
+    content.vb: Public ReadOnly Property CollectionAgeLimit As TimeSpan?
+  overload: Orleans.Runtime.Configuration.GrainTypeConfiguration.CollectionAgeLimit*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Runtime.Configuration.GrainTypeConfiguration.#ctor(System.String)
+  commentId: M:Orleans.Runtime.Configuration.GrainTypeConfiguration.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Orleans.Runtime.Configuration.GrainTypeConfiguration
+  langs:
+  - csharp
+  - vb
+  name: GrainTypeConfiguration(String)
+  nameWithType: GrainTypeConfiguration.GrainTypeConfiguration(String)
+  fullName: Orleans.Runtime.Configuration.GrainTypeConfiguration.GrainTypeConfiguration(System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ApplicationConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Core.Legacy/Configuration/ApplicationConfiguration.cs
+    startLine: 265
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nConstructor.\n"
+  example: []
+  syntax:
+    content: public GrainTypeConfiguration(string type)
+    parameters:
+    - id: type
+      type: System.String
+      description: Grain type of this configuration.
+    content.vb: Public Sub New(type As String)
+  overload: Orleans.Runtime.Configuration.GrainTypeConfiguration.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GrainTypeConfiguration.#ctor(System.String,System.Nullable{TimeSpan})
+  commentId: M:Orleans.Runtime.Configuration.GrainTypeConfiguration.#ctor(System.String,System.Nullable{TimeSpan})
+  id: '#ctor(System.String,System.Nullable{TimeSpan})'
+  parent: Orleans.Runtime.Configuration.GrainTypeConfiguration
+  langs:
+  - csharp
+  - vb
+  name: GrainTypeConfiguration(String, Nullable<TimeSpan>)
+  nameWithType: GrainTypeConfiguration.GrainTypeConfiguration(String, Nullable<TimeSpan>)
+  fullName: Orleans.Runtime.Configuration.GrainTypeConfiguration.GrainTypeConfiguration(System.String, System.Nullable<TimeSpan>)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ApplicationConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Core.Legacy/Configuration/ApplicationConfiguration.cs
+    startLine: 275
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nConstructor.\n"
+  example: []
+  syntax:
+    content: public GrainTypeConfiguration(string type, TimeSpan? ageLimit)
+    parameters:
+    - id: type
+      type: System.String
+      description: Grain type of this configuration.
+    - id: ageLimit
+      type: System.Nullable{TimeSpan}
+      description: Age limit for this type.
+    content.vb: Public Sub New(type As String, ageLimit As TimeSpan?)
+  overload: Orleans.Runtime.Configuration.GrainTypeConfiguration.#ctor*
+  nameWithType.vb: GrainTypeConfiguration.GrainTypeConfiguration(String, Nullable(Of TimeSpan))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.Runtime.Configuration.GrainTypeConfiguration.GrainTypeConfiguration(System.String, System.Nullable(Of TimeSpan))
+  name.vb: GrainTypeConfiguration(String, Nullable(Of TimeSpan))
+- uid: Orleans.Runtime.Configuration.GrainTypeConfiguration.SetCollectionAgeLimit(System.Nullable{TimeSpan})
+  commentId: M:Orleans.Runtime.Configuration.GrainTypeConfiguration.SetCollectionAgeLimit(System.Nullable{TimeSpan})
+  id: SetCollectionAgeLimit(System.Nullable{TimeSpan})
+  parent: Orleans.Runtime.Configuration.GrainTypeConfiguration
+  langs:
+  - csharp
+  - vb
+  name: SetCollectionAgeLimit(Nullable<TimeSpan>)
+  nameWithType: GrainTypeConfiguration.SetCollectionAgeLimit(Nullable<TimeSpan>)
+  fullName: Orleans.Runtime.Configuration.GrainTypeConfiguration.SetCollectionAgeLimit(System.Nullable<TimeSpan>)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ApplicationConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SetCollectionAgeLimit
+    path: src/Orleans.Core.Legacy/Configuration/ApplicationConfiguration.cs
+    startLine: 283
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: Sets a custom collection age limit for a grain type.
+  example: []
+  syntax:
+    content: public void SetCollectionAgeLimit(TimeSpan? ageLimit)
+    parameters:
+    - id: ageLimit
+      type: System.Nullable{TimeSpan}
+      description: Age limit for this type.
+    content.vb: Public Sub SetCollectionAgeLimit(ageLimit As TimeSpan?)
+  overload: Orleans.Runtime.Configuration.GrainTypeConfiguration.SetCollectionAgeLimit*
+  nameWithType.vb: GrainTypeConfiguration.SetCollectionAgeLimit(Nullable(Of TimeSpan))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.Runtime.Configuration.GrainTypeConfiguration.SetCollectionAgeLimit(System.Nullable(Of TimeSpan))
+  name.vb: SetCollectionAgeLimit(Nullable(Of TimeSpan))
+- uid: Orleans.Runtime.Configuration.GrainTypeConfiguration.Load(XmlElement)
+  commentId: M:Orleans.Runtime.Configuration.GrainTypeConfiguration.Load(XmlElement)
+  id: Load(XmlElement)
+  parent: Orleans.Runtime.Configuration.GrainTypeConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Load(XmlElement)
+  nameWithType: GrainTypeConfiguration.Load(XmlElement)
+  fullName: Orleans.Runtime.Configuration.GrainTypeConfiguration.Load(XmlElement)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ApplicationConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Load
+    path: src/Orleans.Core.Legacy/Configuration/ApplicationConfiguration.cs
+    startLine: 305
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nLoad this configuration from xml element.\n"
+  example: []
+  syntax:
+    content: public static GrainTypeConfiguration Load(XmlElement xmlElement)
+    parameters:
+    - id: xmlElement
+      type: XmlElement
+      description: ''
+    return:
+      type: Orleans.Runtime.Configuration.GrainTypeConfiguration
+    content.vb: Public Shared Function Load(xmlElement As XmlElement) As GrainTypeConfiguration
+  overload: Orleans.Runtime.Configuration.GrainTypeConfiguration.Load*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Orleans.Runtime.Configuration
+  commentId: N:Orleans.Runtime.Configuration
+  isExternal: false
+  name: Orleans.Runtime.Configuration
+  nameWithType: Orleans.Runtime.Configuration
+  fullName: Orleans.Runtime.Configuration
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Runtime.Configuration.GrainTypeConfiguration.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<GrainTypeConfiguration>()
+  nameWithType: ImmutableExt.AsImmutable<GrainTypeConfiguration>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.Configuration.GrainTypeConfiguration>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of GrainTypeConfiguration)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.Configuration.GrainTypeConfiguration)()
+  name.vb: AsImmutable(Of GrainTypeConfiguration)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<GrainTypeConfiguration>
+    nameWithType: ImmutableExt.AsImmutable<GrainTypeConfiguration>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.Configuration.GrainTypeConfiguration>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of GrainTypeConfiguration)
+    nameWithType: ImmutableExt.AsImmutable(Of GrainTypeConfiguration)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.Configuration.GrainTypeConfiguration)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Runtime.Configuration.GrainTypeConfiguration.FullTypeName*
+  commentId: Overload:Orleans.Runtime.Configuration.GrainTypeConfiguration.FullTypeName
+  isExternal: false
+  name: FullTypeName
+  nameWithType: GrainTypeConfiguration.FullTypeName
+  fullName: Orleans.Runtime.Configuration.GrainTypeConfiguration.FullTypeName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Orleans.Runtime.Configuration.GrainTypeConfiguration.AreDefaults*
+  commentId: Overload:Orleans.Runtime.Configuration.GrainTypeConfiguration.AreDefaults
+  isExternal: false
+  name: AreDefaults
+  nameWithType: GrainTypeConfiguration.AreDefaults
+  fullName: Orleans.Runtime.Configuration.GrainTypeConfiguration.AreDefaults
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Orleans.Runtime.Configuration.GrainTypeConfiguration.CollectionAgeLimit*
+  commentId: Overload:Orleans.Runtime.Configuration.GrainTypeConfiguration.CollectionAgeLimit
+  isExternal: false
+  name: CollectionAgeLimit
+  nameWithType: GrainTypeConfiguration.CollectionAgeLimit
+  fullName: Orleans.Runtime.Configuration.GrainTypeConfiguration.CollectionAgeLimit
+- uid: System.Nullable{TimeSpan}
+  commentId: '!:System.Nullable{TimeSpan}'
+  definition: System.Nullable`1
+  name: Nullable<TimeSpan>
+  nameWithType: Nullable<TimeSpan>
+  fullName: System.Nullable<TimeSpan>
+  nameWithType.vb: Nullable(Of TimeSpan)
+  fullName.vb: System.Nullable(Of TimeSpan)
+  name.vb: Nullable(Of TimeSpan)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: TimeSpan
+    name: TimeSpan
+    nameWithType: TimeSpan
+    fullName: TimeSpan
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: TimeSpan
+    name: TimeSpan
+    nameWithType: TimeSpan
+    fullName: TimeSpan
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  isExternal: true
+  name: Nullable<>
+  nameWithType: Nullable<>
+  fullName: System.Nullable<>
+  nameWithType.vb: Nullable(Of )
+  fullName.vb: System.Nullable(Of )
+  name.vb: Nullable(Of )
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.Configuration.GrainTypeConfiguration.#ctor*
+  commentId: Overload:Orleans.Runtime.Configuration.GrainTypeConfiguration.#ctor
+  isExternal: false
+  name: GrainTypeConfiguration
+  nameWithType: GrainTypeConfiguration.GrainTypeConfiguration
+  fullName: Orleans.Runtime.Configuration.GrainTypeConfiguration.GrainTypeConfiguration
+- uid: Orleans.Runtime.Configuration.GrainTypeConfiguration.SetCollectionAgeLimit*
+  commentId: Overload:Orleans.Runtime.Configuration.GrainTypeConfiguration.SetCollectionAgeLimit
+  isExternal: false
+  name: SetCollectionAgeLimit
+  nameWithType: GrainTypeConfiguration.SetCollectionAgeLimit
+  fullName: Orleans.Runtime.Configuration.GrainTypeConfiguration.SetCollectionAgeLimit
+- uid: Orleans.Runtime.Configuration.GrainTypeConfiguration.Load*
+  commentId: Overload:Orleans.Runtime.Configuration.GrainTypeConfiguration.Load
+  isExternal: false
+  name: Load
+  nameWithType: GrainTypeConfiguration.Load
+  fullName: Orleans.Runtime.Configuration.GrainTypeConfiguration.Load
+- uid: XmlElement
+  isExternal: true
+  name: XmlElement
+  nameWithType: XmlElement
+  fullName: XmlElement
+- uid: Orleans.Runtime.Configuration.GrainTypeConfiguration
+  commentId: T:Orleans.Runtime.Configuration.GrainTypeConfiguration
+  parent: Orleans.Runtime.Configuration
+  isExternal: false
+  name: GrainTypeConfiguration
+  nameWithType: GrainTypeConfiguration
+  fullName: Orleans.Runtime.Configuration.GrainTypeConfiguration

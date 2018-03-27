@@ -1,0 +1,366 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.ImplicitStreamSubscriptionAttribute
+  commentId: T:Orleans.ImplicitStreamSubscriptionAttribute
+  id: ImplicitStreamSubscriptionAttribute
+  parent: Orleans
+  children:
+  - Orleans.ImplicitStreamSubscriptionAttribute.#ctor
+  - Orleans.ImplicitStreamSubscriptionAttribute.#ctor(Orleans.Streams.IStreamNamespacePredicate)
+  - Orleans.ImplicitStreamSubscriptionAttribute.#ctor(System.String)
+  - Orleans.ImplicitStreamSubscriptionAttribute.#ctor(Type)
+  - Orleans.ImplicitStreamSubscriptionAttribute.Predicate
+  langs:
+  - csharp
+  - vb
+  name: ImplicitStreamSubscriptionAttribute
+  nameWithType: ImplicitStreamSubscriptionAttribute
+  fullName: Orleans.ImplicitStreamSubscriptionAttribute
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Streams/Predicates/StreamSubscriptionAttributes.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ImplicitStreamSubscriptionAttribute
+    path: src/Orleans.Core.Abstractions/Streams/Predicates/StreamSubscriptionAttributes.cs
+    startLine: 9
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nThe [Orleans.ImplicitStreamSubscription] attribute is used to mark grains as implicit stream subscriptions.\n"
+  example: []
+  syntax:
+    content: 'public class ImplicitStreamSubscriptionAttribute : Attribute'
+    content.vb: >-
+      Public Class ImplicitStreamSubscriptionAttribute
+
+          Inherits Attribute
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Orleans.RegexImplicitStreamSubscriptionAttribute
+  extensionMethods:
+  - Orleans.ImplicitStreamSubscriptionAttribute.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.ImplicitStreamSubscriptionAttribute.Predicate
+  commentId: P:Orleans.ImplicitStreamSubscriptionAttribute.Predicate
+  id: Predicate
+  parent: Orleans.ImplicitStreamSubscriptionAttribute
+  langs:
+  - csharp
+  - vb
+  name: Predicate
+  nameWithType: ImplicitStreamSubscriptionAttribute.Predicate
+  fullName: Orleans.ImplicitStreamSubscriptionAttribute.Predicate
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Streams/Predicates/StreamSubscriptionAttributes.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Predicate
+    path: src/Orleans.Core.Abstractions/Streams/Predicates/StreamSubscriptionAttributes.cs
+    startLine: 15
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nGets the stream namespace filter predicate.\n"
+  example: []
+  syntax:
+    content: public IStreamNamespacePredicate Predicate { get; }
+    parameters: []
+    return:
+      type: Orleans.Streams.IStreamNamespacePredicate
+    content.vb: Public ReadOnly Property Predicate As IStreamNamespacePredicate
+  overload: Orleans.ImplicitStreamSubscriptionAttribute.Predicate*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.ImplicitStreamSubscriptionAttribute.#ctor
+  commentId: M:Orleans.ImplicitStreamSubscriptionAttribute.#ctor
+  id: '#ctor'
+  parent: Orleans.ImplicitStreamSubscriptionAttribute
+  langs:
+  - csharp
+  - vb
+  name: ImplicitStreamSubscriptionAttribute()
+  nameWithType: ImplicitStreamSubscriptionAttribute.ImplicitStreamSubscriptionAttribute()
+  fullName: Orleans.ImplicitStreamSubscriptionAttribute.ImplicitStreamSubscriptionAttribute()
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Streams/Predicates/StreamSubscriptionAttributes.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Core.Abstractions/Streams/Predicates/StreamSubscriptionAttributes.cs
+    startLine: 20
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nUsed to subscribe to all stream namespaces.\n"
+  example: []
+  syntax:
+    content: public ImplicitStreamSubscriptionAttribute()
+    content.vb: Public Sub New
+  overload: Orleans.ImplicitStreamSubscriptionAttribute.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.ImplicitStreamSubscriptionAttribute.#ctor(System.String)
+  commentId: M:Orleans.ImplicitStreamSubscriptionAttribute.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Orleans.ImplicitStreamSubscriptionAttribute
+  langs:
+  - csharp
+  - vb
+  name: ImplicitStreamSubscriptionAttribute(String)
+  nameWithType: ImplicitStreamSubscriptionAttribute.ImplicitStreamSubscriptionAttribute(String)
+  fullName: Orleans.ImplicitStreamSubscriptionAttribute.ImplicitStreamSubscriptionAttribute(System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Streams/Predicates/StreamSubscriptionAttributes.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Core.Abstractions/Streams/Predicates/StreamSubscriptionAttributes.cs
+    startLine: 29
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nUsed to subscribe to the specified stream namespace.\n"
+  example: []
+  syntax:
+    content: public ImplicitStreamSubscriptionAttribute(string streamNamespace)
+    parameters:
+    - id: streamNamespace
+      type: System.String
+      description: The stream namespace to subscribe.
+    content.vb: Public Sub New(streamNamespace As String)
+  overload: Orleans.ImplicitStreamSubscriptionAttribute.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.ImplicitStreamSubscriptionAttribute.#ctor(Type)
+  commentId: M:Orleans.ImplicitStreamSubscriptionAttribute.#ctor(Type)
+  id: '#ctor(Type)'
+  parent: Orleans.ImplicitStreamSubscriptionAttribute
+  langs:
+  - csharp
+  - vb
+  name: ImplicitStreamSubscriptionAttribute(Type)
+  nameWithType: ImplicitStreamSubscriptionAttribute.ImplicitStreamSubscriptionAttribute(Type)
+  fullName: Orleans.ImplicitStreamSubscriptionAttribute.ImplicitStreamSubscriptionAttribute(Type)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Streams/Predicates/StreamSubscriptionAttributes.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Core.Abstractions/Streams/Predicates/StreamSubscriptionAttributes.cs
+    startLine: 39
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nAllows to pass an arbitrary predicate type to filter stream namespaces to subscribe. The predicate type \nmust have a constructor without parameters.\n"
+  example: []
+  syntax:
+    content: public ImplicitStreamSubscriptionAttribute(Type predicateType)
+    parameters:
+    - id: predicateType
+      type: Type
+      description: The stream namespace predicate type.
+    content.vb: Public Sub New(predicateType As Type)
+  overload: Orleans.ImplicitStreamSubscriptionAttribute.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.ImplicitStreamSubscriptionAttribute.#ctor(Orleans.Streams.IStreamNamespacePredicate)
+  commentId: M:Orleans.ImplicitStreamSubscriptionAttribute.#ctor(Orleans.Streams.IStreamNamespacePredicate)
+  id: '#ctor(Orleans.Streams.IStreamNamespacePredicate)'
+  parent: Orleans.ImplicitStreamSubscriptionAttribute
+  langs:
+  - csharp
+  - vb
+  name: ImplicitStreamSubscriptionAttribute(IStreamNamespacePredicate)
+  nameWithType: ImplicitStreamSubscriptionAttribute.ImplicitStreamSubscriptionAttribute(IStreamNamespacePredicate)
+  fullName: Orleans.ImplicitStreamSubscriptionAttribute.ImplicitStreamSubscriptionAttribute(Orleans.Streams.IStreamNamespacePredicate)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Streams/Predicates/StreamSubscriptionAttributes.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Core.Abstractions/Streams/Predicates/StreamSubscriptionAttributes.cs
+    startLine: 50
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nAllows to pass an instance of the stream namespace predicate. To be used mainly as an extensibility point\nvia inheriting attributes.\n"
+  example: []
+  syntax:
+    content: public ImplicitStreamSubscriptionAttribute(IStreamNamespacePredicate predicate)
+    parameters:
+    - id: predicate
+      type: Orleans.Streams.IStreamNamespacePredicate
+      description: The stream namespace predicate.
+    content.vb: Public Sub New(predicate As IStreamNamespacePredicate)
+  overload: Orleans.ImplicitStreamSubscriptionAttribute.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans
+  commentId: N:Orleans
+  isExternal: false
+  name: Orleans
+  nameWithType: Orleans
+  fullName: Orleans
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.ImplicitStreamSubscriptionAttribute.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<ImplicitStreamSubscriptionAttribute>()
+  nameWithType: ImmutableExt.AsImmutable<ImplicitStreamSubscriptionAttribute>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.ImplicitStreamSubscriptionAttribute>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of ImplicitStreamSubscriptionAttribute)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.ImplicitStreamSubscriptionAttribute)()
+  name.vb: AsImmutable(Of ImplicitStreamSubscriptionAttribute)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<ImplicitStreamSubscriptionAttribute>
+    nameWithType: ImmutableExt.AsImmutable<ImplicitStreamSubscriptionAttribute>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.ImplicitStreamSubscriptionAttribute>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of ImplicitStreamSubscriptionAttribute)
+    nameWithType: ImmutableExt.AsImmutable(Of ImplicitStreamSubscriptionAttribute)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.ImplicitStreamSubscriptionAttribute)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.ImplicitStreamSubscriptionAttribute.Predicate*
+  commentId: Overload:Orleans.ImplicitStreamSubscriptionAttribute.Predicate
+  isExternal: false
+  name: Predicate
+  nameWithType: ImplicitStreamSubscriptionAttribute.Predicate
+  fullName: Orleans.ImplicitStreamSubscriptionAttribute.Predicate
+- uid: Orleans.Streams.IStreamNamespacePredicate
+  commentId: T:Orleans.Streams.IStreamNamespacePredicate
+  parent: Orleans.Streams
+  isExternal: false
+  name: IStreamNamespacePredicate
+  nameWithType: IStreamNamespacePredicate
+  fullName: Orleans.Streams.IStreamNamespacePredicate
+- uid: Orleans.Streams
+  commentId: N:Orleans.Streams
+  isExternal: false
+  name: Orleans.Streams
+  nameWithType: Orleans.Streams
+  fullName: Orleans.Streams
+- uid: Orleans.ImplicitStreamSubscriptionAttribute.#ctor*
+  commentId: Overload:Orleans.ImplicitStreamSubscriptionAttribute.#ctor
+  isExternal: false
+  name: ImplicitStreamSubscriptionAttribute
+  nameWithType: ImplicitStreamSubscriptionAttribute.ImplicitStreamSubscriptionAttribute
+  fullName: Orleans.ImplicitStreamSubscriptionAttribute.ImplicitStreamSubscriptionAttribute
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Type
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: Type

@@ -1,0 +1,149 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Versions.Selector.VersionSelectorStrategy
+  commentId: T:Orleans.Versions.Selector.VersionSelectorStrategy
+  id: VersionSelectorStrategy
+  parent: Orleans.Versions.Selector
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: VersionSelectorStrategy
+  nameWithType: VersionSelectorStrategy
+  fullName: Orleans.Versions.Selector.VersionSelectorStrategy
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Versions/Selector/IVersionSelector.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: VersionSelectorStrategy
+    path: src/Orleans.Core.Abstractions/Versions/Selector/IVersionSelector.cs
+    startLine: 11
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Versions.Selector
+  syntax:
+    content: 'public abstract class VersionSelectorStrategy : object'
+    content.vb: >-
+      Public MustInherit Class VersionSelectorStrategy
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Orleans.Versions.Selector.AllCompatibleVersions
+  - Orleans.Versions.Selector.LatestVersion
+  - Orleans.Versions.Selector.MinimumVersion
+  extensionMethods:
+  - Orleans.Versions.Selector.VersionSelectorStrategy.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+references:
+- uid: Orleans.Versions.Selector
+  commentId: N:Orleans.Versions.Selector
+  isExternal: false
+  name: Orleans.Versions.Selector
+  nameWithType: Orleans.Versions.Selector
+  fullName: Orleans.Versions.Selector
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Versions.Selector.VersionSelectorStrategy.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<VersionSelectorStrategy>()
+  nameWithType: ImmutableExt.AsImmutable<VersionSelectorStrategy>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Versions.Selector.VersionSelectorStrategy>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of VersionSelectorStrategy)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Versions.Selector.VersionSelectorStrategy)()
+  name.vb: AsImmutable(Of VersionSelectorStrategy)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<VersionSelectorStrategy>
+    nameWithType: ImmutableExt.AsImmutable<VersionSelectorStrategy>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Versions.Selector.VersionSelectorStrategy>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of VersionSelectorStrategy)
+    nameWithType: ImmutableExt.AsImmutable(Of VersionSelectorStrategy)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Versions.Selector.VersionSelectorStrategy)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency

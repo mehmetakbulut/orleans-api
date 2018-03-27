@@ -1,0 +1,784 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Runtime.IGrainRuntime
+  commentId: T:Orleans.Runtime.IGrainRuntime
+  id: IGrainRuntime
+  parent: Orleans.Runtime
+  children:
+  - Orleans.Runtime.IGrainRuntime.DeactivateOnIdle(Orleans.Grain)
+  - Orleans.Runtime.IGrainRuntime.DelayDeactivation(Orleans.Grain,TimeSpan)
+  - Orleans.Runtime.IGrainRuntime.GetStorage``1(Orleans.Grain)
+  - Orleans.Runtime.IGrainRuntime.GrainFactory
+  - Orleans.Runtime.IGrainRuntime.ReminderRegistry
+  - Orleans.Runtime.IGrainRuntime.ServiceId
+  - Orleans.Runtime.IGrainRuntime.ServiceProvider
+  - Orleans.Runtime.IGrainRuntime.SiloAddress
+  - Orleans.Runtime.IGrainRuntime.SiloIdentity
+  - Orleans.Runtime.IGrainRuntime.TimerRegistry
+  langs:
+  - csharp
+  - vb
+  name: IGrainRuntime
+  nameWithType: IGrainRuntime
+  fullName: Orleans.Runtime.IGrainRuntime
+  type: Interface
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Runtime/IGrainRuntime.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IGrainRuntime
+    path: src/Orleans.Core.Abstractions/Runtime/IGrainRuntime.cs
+    startLine: 10
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  summary: "\nThe gateway of the <xref href=\"Orleans.Grain\" data-throw-if-not-resolved=\"false\"></xref> to the Orleans runtime. The <xref href=\"Orleans.Grain\" data-throw-if-not-resolved=\"false\"></xref> should only interact with the runtime through this interface.\n"
+  example: []
+  syntax:
+    content: public interface IGrainRuntime
+    content.vb: Public Interface IGrainRuntime
+  extensionMethods:
+  - Orleans.Runtime.IGrainRuntime.Orleans.Runtime.LoggerExtensionMethods.GetLogger(System.String)
+  - Orleans.Runtime.IGrainRuntime.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Orleans.Runtime.IGrainRuntime.ServiceId
+  commentId: P:Orleans.Runtime.IGrainRuntime.ServiceId
+  id: ServiceId
+  parent: Orleans.Runtime.IGrainRuntime
+  langs:
+  - csharp
+  - vb
+  name: ServiceId
+  nameWithType: IGrainRuntime.ServiceId
+  fullName: Orleans.Runtime.IGrainRuntime.ServiceId
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Runtime/IGrainRuntime.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ServiceId
+    path: src/Orleans.Core.Abstractions/Runtime/IGrainRuntime.cs
+    startLine: 18
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  summary: "\nProvides the ServiceId this cluster is running as.\nServiceId&apos;s are intended to be long lived Id values for a particular service which will remain constant \neven if the service is started / redeployed multiple times during its operations life.\n"
+  example: []
+  syntax:
+    content: Guid ServiceId { get; }
+    parameters: []
+    return:
+      type: Guid
+      description: ServiceID Guid for this service.
+    content.vb: ReadOnly Property ServiceId As Guid
+  overload: Orleans.Runtime.IGrainRuntime.ServiceId*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Orleans.Runtime.IGrainRuntime.SiloIdentity
+  commentId: P:Orleans.Runtime.IGrainRuntime.SiloIdentity
+  id: SiloIdentity
+  parent: Orleans.Runtime.IGrainRuntime
+  langs:
+  - csharp
+  - vb
+  name: SiloIdentity
+  nameWithType: IGrainRuntime.SiloIdentity
+  fullName: Orleans.Runtime.IGrainRuntime.SiloIdentity
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Runtime/IGrainRuntime.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SiloIdentity
+    path: src/Orleans.Core.Abstractions/Runtime/IGrainRuntime.cs
+    startLine: 24
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  summary: "\nA unique identifier for the current silo.\nThere is no semantic content to this string, but it may be useful for logging.\n"
+  example: []
+  syntax:
+    content: string SiloIdentity { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property SiloIdentity As String
+  overload: Orleans.Runtime.IGrainRuntime.SiloIdentity*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Orleans.Runtime.IGrainRuntime.SiloAddress
+  commentId: P:Orleans.Runtime.IGrainRuntime.SiloAddress
+  id: SiloAddress
+  parent: Orleans.Runtime.IGrainRuntime
+  langs:
+  - csharp
+  - vb
+  name: SiloAddress
+  nameWithType: IGrainRuntime.SiloAddress
+  fullName: Orleans.Runtime.IGrainRuntime.SiloAddress
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Runtime/IGrainRuntime.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SiloAddress
+    path: src/Orleans.Core.Abstractions/Runtime/IGrainRuntime.cs
+    startLine: 26
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  syntax:
+    content: SiloAddress SiloAddress { get; }
+    parameters: []
+    return:
+      type: Orleans.Runtime.SiloAddress
+    content.vb: ReadOnly Property SiloAddress As SiloAddress
+  overload: Orleans.Runtime.IGrainRuntime.SiloAddress*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Orleans.Runtime.IGrainRuntime.GrainFactory
+  commentId: P:Orleans.Runtime.IGrainRuntime.GrainFactory
+  id: GrainFactory
+  parent: Orleans.Runtime.IGrainRuntime
+  langs:
+  - csharp
+  - vb
+  name: GrainFactory
+  nameWithType: IGrainRuntime.GrainFactory
+  fullName: Orleans.Runtime.IGrainRuntime.GrainFactory
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Runtime/IGrainRuntime.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GrainFactory
+    path: src/Orleans.Core.Abstractions/Runtime/IGrainRuntime.cs
+    startLine: 28
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  syntax:
+    content: IGrainFactory GrainFactory { get; }
+    parameters: []
+    return:
+      type: Orleans.IGrainFactory
+    content.vb: ReadOnly Property GrainFactory As IGrainFactory
+  overload: Orleans.Runtime.IGrainRuntime.GrainFactory*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Orleans.Runtime.IGrainRuntime.TimerRegistry
+  commentId: P:Orleans.Runtime.IGrainRuntime.TimerRegistry
+  id: TimerRegistry
+  parent: Orleans.Runtime.IGrainRuntime
+  langs:
+  - csharp
+  - vb
+  name: TimerRegistry
+  nameWithType: IGrainRuntime.TimerRegistry
+  fullName: Orleans.Runtime.IGrainRuntime.TimerRegistry
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Runtime/IGrainRuntime.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: TimerRegistry
+    path: src/Orleans.Core.Abstractions/Runtime/IGrainRuntime.cs
+    startLine: 30
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  syntax:
+    content: ITimerRegistry TimerRegistry { get; }
+    parameters: []
+    return:
+      type: Orleans.Timers.ITimerRegistry
+    content.vb: ReadOnly Property TimerRegistry As ITimerRegistry
+  overload: Orleans.Runtime.IGrainRuntime.TimerRegistry*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Orleans.Runtime.IGrainRuntime.ReminderRegistry
+  commentId: P:Orleans.Runtime.IGrainRuntime.ReminderRegistry
+  id: ReminderRegistry
+  parent: Orleans.Runtime.IGrainRuntime
+  langs:
+  - csharp
+  - vb
+  name: ReminderRegistry
+  nameWithType: IGrainRuntime.ReminderRegistry
+  fullName: Orleans.Runtime.IGrainRuntime.ReminderRegistry
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Runtime/IGrainRuntime.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ReminderRegistry
+    path: src/Orleans.Core.Abstractions/Runtime/IGrainRuntime.cs
+    startLine: 32
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  syntax:
+    content: IReminderRegistry ReminderRegistry { get; }
+    parameters: []
+    return:
+      type: Orleans.Timers.IReminderRegistry
+    content.vb: ReadOnly Property ReminderRegistry As IReminderRegistry
+  overload: Orleans.Runtime.IGrainRuntime.ReminderRegistry*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Orleans.Runtime.IGrainRuntime.ServiceProvider
+  commentId: P:Orleans.Runtime.IGrainRuntime.ServiceProvider
+  id: ServiceProvider
+  parent: Orleans.Runtime.IGrainRuntime
+  langs:
+  - csharp
+  - vb
+  name: ServiceProvider
+  nameWithType: IGrainRuntime.ServiceProvider
+  fullName: Orleans.Runtime.IGrainRuntime.ServiceProvider
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Runtime/IGrainRuntime.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ServiceProvider
+    path: src/Orleans.Core.Abstractions/Runtime/IGrainRuntime.cs
+    startLine: 34
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  syntax:
+    content: IServiceProvider ServiceProvider { get; }
+    parameters: []
+    return:
+      type: IServiceProvider
+    content.vb: ReadOnly Property ServiceProvider As IServiceProvider
+  overload: Orleans.Runtime.IGrainRuntime.ServiceProvider*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Orleans.Runtime.IGrainRuntime.DeactivateOnIdle(Orleans.Grain)
+  commentId: M:Orleans.Runtime.IGrainRuntime.DeactivateOnIdle(Orleans.Grain)
+  id: DeactivateOnIdle(Orleans.Grain)
+  parent: Orleans.Runtime.IGrainRuntime
+  langs:
+  - csharp
+  - vb
+  name: DeactivateOnIdle(Grain)
+  nameWithType: IGrainRuntime.DeactivateOnIdle(Grain)
+  fullName: Orleans.Runtime.IGrainRuntime.DeactivateOnIdle(Orleans.Grain)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Runtime/IGrainRuntime.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: DeactivateOnIdle
+    path: src/Orleans.Core.Abstractions/Runtime/IGrainRuntime.cs
+    startLine: 36
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  syntax:
+    content: void DeactivateOnIdle(Grain grain)
+    parameters:
+    - id: grain
+      type: Orleans.Grain
+    content.vb: Sub DeactivateOnIdle(grain As Grain)
+  overload: Orleans.Runtime.IGrainRuntime.DeactivateOnIdle*
+- uid: Orleans.Runtime.IGrainRuntime.DelayDeactivation(Orleans.Grain,TimeSpan)
+  commentId: M:Orleans.Runtime.IGrainRuntime.DelayDeactivation(Orleans.Grain,TimeSpan)
+  id: DelayDeactivation(Orleans.Grain,TimeSpan)
+  parent: Orleans.Runtime.IGrainRuntime
+  langs:
+  - csharp
+  - vb
+  name: DelayDeactivation(Grain, TimeSpan)
+  nameWithType: IGrainRuntime.DelayDeactivation(Grain, TimeSpan)
+  fullName: Orleans.Runtime.IGrainRuntime.DelayDeactivation(Orleans.Grain, TimeSpan)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Runtime/IGrainRuntime.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: DelayDeactivation
+    path: src/Orleans.Core.Abstractions/Runtime/IGrainRuntime.cs
+    startLine: 38
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  syntax:
+    content: void DelayDeactivation(Grain grain, TimeSpan timeSpan)
+    parameters:
+    - id: grain
+      type: Orleans.Grain
+    - id: timeSpan
+      type: TimeSpan
+    content.vb: Sub DelayDeactivation(grain As Grain, timeSpan As TimeSpan)
+  overload: Orleans.Runtime.IGrainRuntime.DelayDeactivation*
+- uid: Orleans.Runtime.IGrainRuntime.GetStorage``1(Orleans.Grain)
+  commentId: M:Orleans.Runtime.IGrainRuntime.GetStorage``1(Orleans.Grain)
+  id: GetStorage``1(Orleans.Grain)
+  parent: Orleans.Runtime.IGrainRuntime
+  langs:
+  - csharp
+  - vb
+  name: GetStorage<TGrainState>(Grain)
+  nameWithType: IGrainRuntime.GetStorage<TGrainState>(Grain)
+  fullName: Orleans.Runtime.IGrainRuntime.GetStorage<TGrainState>(Orleans.Grain)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Runtime/IGrainRuntime.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetStorage
+    path: src/Orleans.Core.Abstractions/Runtime/IGrainRuntime.cs
+    startLine: 40
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  syntax:
+    content: 'IStorage<TGrainState> GetStorage<TGrainState>(Grain grain)where TGrainState : new ()'
+    parameters:
+    - id: grain
+      type: Orleans.Grain
+    typeParameters:
+    - id: TGrainState
+    return:
+      type: Orleans.Core.IStorage{{TGrainState}}
+    content.vb: Function GetStorage(Of TGrainState As New)(grain As Grain) As IStorage(Of TGrainState)
+  overload: Orleans.Runtime.IGrainRuntime.GetStorage*
+  nameWithType.vb: IGrainRuntime.GetStorage(Of TGrainState)(Grain)
+  fullName.vb: Orleans.Runtime.IGrainRuntime.GetStorage(Of TGrainState)(Orleans.Grain)
+  name.vb: GetStorage(Of TGrainState)(Grain)
+references:
+- uid: Orleans.Grain
+  commentId: T:Orleans.Grain
+  parent: Orleans
+  isExternal: false
+  name: Grain
+  nameWithType: Grain
+  fullName: Orleans.Grain
+- uid: Orleans.Runtime
+  commentId: N:Orleans.Runtime
+  isExternal: false
+  name: Orleans.Runtime
+  nameWithType: Orleans.Runtime
+  fullName: Orleans.Runtime
+- uid: Orleans.Runtime.IGrainRuntime.Orleans.Runtime.LoggerExtensionMethods.GetLogger(System.String)
+  commentId: M:Orleans.Runtime.LoggerExtensionMethods.GetLogger(Orleans.Runtime.IGrainRuntime,System.String)
+  parent: Orleans.Runtime.LoggerExtensionMethods
+  definition: Orleans.Runtime.LoggerExtensionMethods.GetLogger(Orleans.Runtime.IGrainRuntime,System.String)
+  name: GetLogger(String)
+  nameWithType: LoggerExtensionMethods.GetLogger(String)
+  fullName: Orleans.Runtime.LoggerExtensionMethods.GetLogger(System.String)
+  spec.csharp:
+  - uid: Orleans.Runtime.LoggerExtensionMethods.GetLogger(System.String)
+    name: GetLogger
+    nameWithType: LoggerExtensionMethods.GetLogger
+    fullName: Orleans.Runtime.LoggerExtensionMethods.GetLogger
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.LoggerExtensionMethods.GetLogger(System.String)
+    name: GetLogger
+    nameWithType: LoggerExtensionMethods.GetLogger
+    fullName: Orleans.Runtime.LoggerExtensionMethods.GetLogger
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.IGrainRuntime.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<IGrainRuntime>()
+  nameWithType: ImmutableExt.AsImmutable<IGrainRuntime>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.IGrainRuntime>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of IGrainRuntime)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.IGrainRuntime)()
+  name.vb: AsImmutable(Of IGrainRuntime)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<IGrainRuntime>
+    nameWithType: ImmutableExt.AsImmutable<IGrainRuntime>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.IGrainRuntime>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of IGrainRuntime)
+    nameWithType: ImmutableExt.AsImmutable(Of IGrainRuntime)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.IGrainRuntime)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans
+  commentId: N:Orleans
+  isExternal: false
+  name: Orleans
+  nameWithType: Orleans
+  fullName: Orleans
+- uid: Orleans.Runtime.LoggerExtensionMethods.GetLogger(Orleans.Runtime.IGrainRuntime,System.String)
+  commentId: M:Orleans.Runtime.LoggerExtensionMethods.GetLogger(Orleans.Runtime.IGrainRuntime,System.String)
+  isExternal: true
+  name: GetLogger(IGrainRuntime, String)
+  nameWithType: LoggerExtensionMethods.GetLogger(IGrainRuntime, String)
+  fullName: Orleans.Runtime.LoggerExtensionMethods.GetLogger(Orleans.Runtime.IGrainRuntime, System.String)
+  spec.csharp:
+  - uid: Orleans.Runtime.LoggerExtensionMethods.GetLogger(Orleans.Runtime.IGrainRuntime,System.String)
+    name: GetLogger
+    nameWithType: LoggerExtensionMethods.GetLogger
+    fullName: Orleans.Runtime.LoggerExtensionMethods.GetLogger
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.IGrainRuntime
+    name: IGrainRuntime
+    nameWithType: IGrainRuntime
+    fullName: Orleans.Runtime.IGrainRuntime
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.LoggerExtensionMethods.GetLogger(Orleans.Runtime.IGrainRuntime,System.String)
+    name: GetLogger
+    nameWithType: LoggerExtensionMethods.GetLogger
+    fullName: Orleans.Runtime.LoggerExtensionMethods.GetLogger
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.IGrainRuntime
+    name: IGrainRuntime
+    nameWithType: IGrainRuntime
+    fullName: Orleans.Runtime.IGrainRuntime
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.LoggerExtensionMethods
+  commentId: T:Orleans.Runtime.LoggerExtensionMethods
+  parent: Orleans.Runtime
+  isExternal: false
+  name: LoggerExtensionMethods
+  nameWithType: LoggerExtensionMethods
+  fullName: Orleans.Runtime.LoggerExtensionMethods
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Runtime.IGrainRuntime.ServiceId*
+  commentId: Overload:Orleans.Runtime.IGrainRuntime.ServiceId
+  isExternal: false
+  name: ServiceId
+  nameWithType: IGrainRuntime.ServiceId
+  fullName: Orleans.Runtime.IGrainRuntime.ServiceId
+- uid: Guid
+  isExternal: true
+  name: Guid
+  nameWithType: Guid
+  fullName: Guid
+- uid: Orleans.Runtime.IGrainRuntime.SiloIdentity*
+  commentId: Overload:Orleans.Runtime.IGrainRuntime.SiloIdentity
+  isExternal: false
+  name: SiloIdentity
+  nameWithType: IGrainRuntime.SiloIdentity
+  fullName: Orleans.Runtime.IGrainRuntime.SiloIdentity
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Runtime.IGrainRuntime.SiloAddress*
+  commentId: Overload:Orleans.Runtime.IGrainRuntime.SiloAddress
+  isExternal: false
+  name: SiloAddress
+  nameWithType: IGrainRuntime.SiloAddress
+  fullName: Orleans.Runtime.IGrainRuntime.SiloAddress
+- uid: Orleans.Runtime.SiloAddress
+  commentId: T:Orleans.Runtime.SiloAddress
+  parent: Orleans.Runtime
+  isExternal: false
+  name: SiloAddress
+  nameWithType: SiloAddress
+  fullName: Orleans.Runtime.SiloAddress
+- uid: Orleans.Runtime.IGrainRuntime.GrainFactory*
+  commentId: Overload:Orleans.Runtime.IGrainRuntime.GrainFactory
+  isExternal: false
+  name: GrainFactory
+  nameWithType: IGrainRuntime.GrainFactory
+  fullName: Orleans.Runtime.IGrainRuntime.GrainFactory
+- uid: Orleans.IGrainFactory
+  commentId: T:Orleans.IGrainFactory
+  parent: Orleans
+  isExternal: false
+  name: IGrainFactory
+  nameWithType: IGrainFactory
+  fullName: Orleans.IGrainFactory
+- uid: Orleans.Runtime.IGrainRuntime.TimerRegistry*
+  commentId: Overload:Orleans.Runtime.IGrainRuntime.TimerRegistry
+  isExternal: false
+  name: TimerRegistry
+  nameWithType: IGrainRuntime.TimerRegistry
+  fullName: Orleans.Runtime.IGrainRuntime.TimerRegistry
+- uid: Orleans.Timers.ITimerRegistry
+  commentId: T:Orleans.Timers.ITimerRegistry
+  parent: Orleans.Timers
+  isExternal: false
+  name: ITimerRegistry
+  nameWithType: ITimerRegistry
+  fullName: Orleans.Timers.ITimerRegistry
+- uid: Orleans.Timers
+  commentId: N:Orleans.Timers
+  isExternal: false
+  name: Orleans.Timers
+  nameWithType: Orleans.Timers
+  fullName: Orleans.Timers
+- uid: Orleans.Runtime.IGrainRuntime.ReminderRegistry*
+  commentId: Overload:Orleans.Runtime.IGrainRuntime.ReminderRegistry
+  isExternal: false
+  name: ReminderRegistry
+  nameWithType: IGrainRuntime.ReminderRegistry
+  fullName: Orleans.Runtime.IGrainRuntime.ReminderRegistry
+- uid: Orleans.Timers.IReminderRegistry
+  commentId: T:Orleans.Timers.IReminderRegistry
+  parent: Orleans.Timers
+  isExternal: false
+  name: IReminderRegistry
+  nameWithType: IReminderRegistry
+  fullName: Orleans.Timers.IReminderRegistry
+- uid: Orleans.Runtime.IGrainRuntime.ServiceProvider*
+  commentId: Overload:Orleans.Runtime.IGrainRuntime.ServiceProvider
+  isExternal: false
+  name: ServiceProvider
+  nameWithType: IGrainRuntime.ServiceProvider
+  fullName: Orleans.Runtime.IGrainRuntime.ServiceProvider
+- uid: IServiceProvider
+  isExternal: true
+  name: IServiceProvider
+  nameWithType: IServiceProvider
+  fullName: IServiceProvider
+- uid: Orleans.Runtime.IGrainRuntime.DeactivateOnIdle*
+  commentId: Overload:Orleans.Runtime.IGrainRuntime.DeactivateOnIdle
+  isExternal: false
+  name: DeactivateOnIdle
+  nameWithType: IGrainRuntime.DeactivateOnIdle
+  fullName: Orleans.Runtime.IGrainRuntime.DeactivateOnIdle
+- uid: Orleans.Runtime.IGrainRuntime.DelayDeactivation*
+  commentId: Overload:Orleans.Runtime.IGrainRuntime.DelayDeactivation
+  isExternal: false
+  name: DelayDeactivation
+  nameWithType: IGrainRuntime.DelayDeactivation
+  fullName: Orleans.Runtime.IGrainRuntime.DelayDeactivation
+- uid: TimeSpan
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: TimeSpan
+- uid: Orleans.Runtime.IGrainRuntime.GetStorage*
+  commentId: Overload:Orleans.Runtime.IGrainRuntime.GetStorage
+  isExternal: false
+  name: GetStorage
+  nameWithType: IGrainRuntime.GetStorage
+  fullName: Orleans.Runtime.IGrainRuntime.GetStorage
+- uid: Orleans.Core.IStorage{{TGrainState}}
+  commentId: T:Orleans.Core.IStorage{`0}
+  parent: Orleans.Core
+  definition: Orleans.Core.IStorage`1
+  name: IStorage<TGrainState>
+  nameWithType: IStorage<TGrainState>
+  fullName: Orleans.Core.IStorage<TGrainState>
+  nameWithType.vb: IStorage(Of TGrainState)
+  fullName.vb: Orleans.Core.IStorage(Of TGrainState)
+  name.vb: IStorage(Of TGrainState)
+  spec.csharp:
+  - uid: Orleans.Core.IStorage`1
+    name: IStorage
+    nameWithType: IStorage
+    fullName: Orleans.Core.IStorage
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TGrainState
+    nameWithType: TGrainState
+    fullName: TGrainState
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Orleans.Core.IStorage`1
+    name: IStorage
+    nameWithType: IStorage
+    fullName: Orleans.Core.IStorage
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TGrainState
+    nameWithType: TGrainState
+    fullName: TGrainState
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Core.IStorage`1
+  commentId: T:Orleans.Core.IStorage`1
+  isExternal: false
+  name: IStorage<TState>
+  nameWithType: IStorage<TState>
+  fullName: Orleans.Core.IStorage<TState>
+  nameWithType.vb: IStorage(Of TState)
+  fullName.vb: Orleans.Core.IStorage(Of TState)
+  name.vb: IStorage(Of TState)
+  spec.csharp:
+  - uid: Orleans.Core.IStorage`1
+    name: IStorage
+    nameWithType: IStorage
+    fullName: Orleans.Core.IStorage
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TState
+    nameWithType: TState
+    fullName: TState
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Orleans.Core.IStorage`1
+    name: IStorage
+    nameWithType: IStorage
+    fullName: Orleans.Core.IStorage
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TState
+    nameWithType: TState
+    fullName: TState
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Core
+  commentId: N:Orleans.Core
+  isExternal: false
+  name: Orleans.Core
+  nameWithType: Orleans.Core
+  fullName: Orleans.Core

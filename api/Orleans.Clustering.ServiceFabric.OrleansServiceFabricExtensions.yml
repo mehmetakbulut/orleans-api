@@ -1,0 +1,296 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Clustering.ServiceFabric.OrleansServiceFabricExtensions
+  commentId: T:Orleans.Clustering.ServiceFabric.OrleansServiceFabricExtensions
+  id: OrleansServiceFabricExtensions
+  parent: Orleans.Clustering.ServiceFabric
+  children:
+  - Orleans.Clustering.ServiceFabric.OrleansServiceFabricExtensions.UseServiceFabricClustering(IClientBuilder,System.String)
+  - Orleans.Clustering.ServiceFabric.OrleansServiceFabricExtensions.UseServiceFabricClustering(IClientBuilder,Uri)
+  - Orleans.Clustering.ServiceFabric.OrleansServiceFabricExtensions.UseServiceFabricClustering(IServiceCollection,ServiceContext)
+  - Orleans.Clustering.ServiceFabric.OrleansServiceFabricExtensions.UseServiceFabricClustering(ISiloHostBuilder,ServiceContext)
+  langs:
+  - csharp
+  - vb
+  name: OrleansServiceFabricExtensions
+  nameWithType: OrleansServiceFabricExtensions
+  fullName: Orleans.Clustering.ServiceFabric.OrleansServiceFabricExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Clustering.ServiceFabric/OrleansServiceFabricExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: OrleansServiceFabricExtensions
+    path: src/Orleans.Clustering.ServiceFabric/OrleansServiceFabricExtensions.cs
+    startLine: 15
+  assemblies:
+  - Orleans.Clustering.ServiceFabric
+  namespace: Orleans.Clustering.ServiceFabric
+  summary: "\nExtensions for hosting Orleans on Service Fabric.\n"
+  example: []
+  syntax:
+    content: 'public static class OrleansServiceFabricExtensions : object'
+    content.vb: >-
+      Public Module OrleansServiceFabricExtensions
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Orleans.Clustering.ServiceFabric.OrleansServiceFabricExtensions.UseServiceFabricClustering(ISiloHostBuilder,ServiceContext)
+  commentId: M:Orleans.Clustering.ServiceFabric.OrleansServiceFabricExtensions.UseServiceFabricClustering(ISiloHostBuilder,ServiceContext)
+  id: UseServiceFabricClustering(ISiloHostBuilder,ServiceContext)
+  isExtensionMethod: true
+  parent: Orleans.Clustering.ServiceFabric.OrleansServiceFabricExtensions
+  langs:
+  - csharp
+  - vb
+  name: UseServiceFabricClustering(ISiloHostBuilder, ServiceContext)
+  nameWithType: OrleansServiceFabricExtensions.UseServiceFabricClustering(ISiloHostBuilder, ServiceContext)
+  fullName: Orleans.Clustering.ServiceFabric.OrleansServiceFabricExtensions.UseServiceFabricClustering(ISiloHostBuilder, ServiceContext)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Clustering.ServiceFabric/OrleansServiceFabricExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: UseServiceFabricClustering
+    path: src/Orleans.Clustering.ServiceFabric/OrleansServiceFabricExtensions.cs
+    startLine: 23
+  assemblies:
+  - Orleans.Clustering.ServiceFabric
+  namespace: Orleans.Clustering.ServiceFabric
+  summary: "\nAdds Service Fabric cluster membership support.\n"
+  example: []
+  syntax:
+    content: public static ISiloHostBuilder UseServiceFabricClustering(this ISiloHostBuilder builder, ServiceContext serviceContext)
+    parameters:
+    - id: builder
+      type: ISiloHostBuilder
+      description: The host builder.
+    - id: serviceContext
+      type: ServiceContext
+      description: The Service Fabric service context.
+    return:
+      type: ISiloHostBuilder
+      description: The provided service collection.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function UseServiceFabricClustering(builder As ISiloHostBuilder, serviceContext As ServiceContext) As ISiloHostBuilder
+  overload: Orleans.Clustering.ServiceFabric.OrleansServiceFabricExtensions.UseServiceFabricClustering*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.Clustering.ServiceFabric.OrleansServiceFabricExtensions.UseServiceFabricClustering(IServiceCollection,ServiceContext)
+  commentId: M:Orleans.Clustering.ServiceFabric.OrleansServiceFabricExtensions.UseServiceFabricClustering(IServiceCollection,ServiceContext)
+  id: UseServiceFabricClustering(IServiceCollection,ServiceContext)
+  isExtensionMethod: true
+  parent: Orleans.Clustering.ServiceFabric.OrleansServiceFabricExtensions
+  langs:
+  - csharp
+  - vb
+  name: UseServiceFabricClustering(IServiceCollection, ServiceContext)
+  nameWithType: OrleansServiceFabricExtensions.UseServiceFabricClustering(IServiceCollection, ServiceContext)
+  fullName: Orleans.Clustering.ServiceFabric.OrleansServiceFabricExtensions.UseServiceFabricClustering(IServiceCollection, ServiceContext)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Clustering.ServiceFabric/OrleansServiceFabricExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: UseServiceFabricClustering
+    path: src/Orleans.Clustering.ServiceFabric/OrleansServiceFabricExtensions.cs
+    startLine: 36
+  assemblies:
+  - Orleans.Clustering.ServiceFabric
+  namespace: Orleans.Clustering.ServiceFabric
+  summary: "\nAdds Service Fabric cluster membership support.\n"
+  example: []
+  syntax:
+    content: public static IServiceCollection UseServiceFabricClustering(this IServiceCollection serviceCollection, ServiceContext serviceContext)
+    parameters:
+    - id: serviceCollection
+      type: IServiceCollection
+      description: The service collection.
+    - id: serviceContext
+      type: ServiceContext
+      description: The Service Fabric service context.
+    return:
+      type: IServiceCollection
+      description: The provided service collection.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function UseServiceFabricClustering(serviceCollection As IServiceCollection, serviceContext As ServiceContext) As IServiceCollection
+  overload: Orleans.Clustering.ServiceFabric.OrleansServiceFabricExtensions.UseServiceFabricClustering*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.Clustering.ServiceFabric.OrleansServiceFabricExtensions.UseServiceFabricClustering(IClientBuilder,System.String)
+  commentId: M:Orleans.Clustering.ServiceFabric.OrleansServiceFabricExtensions.UseServiceFabricClustering(IClientBuilder,System.String)
+  id: UseServiceFabricClustering(IClientBuilder,System.String)
+  isExtensionMethod: true
+  parent: Orleans.Clustering.ServiceFabric.OrleansServiceFabricExtensions
+  langs:
+  - csharp
+  - vb
+  name: UseServiceFabricClustering(IClientBuilder, String)
+  nameWithType: OrleansServiceFabricExtensions.UseServiceFabricClustering(IClientBuilder, String)
+  fullName: Orleans.Clustering.ServiceFabric.OrleansServiceFabricExtensions.UseServiceFabricClustering(IClientBuilder, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Clustering.ServiceFabric/OrleansServiceFabricExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: UseServiceFabricClustering
+    path: src/Orleans.Clustering.ServiceFabric/OrleansServiceFabricExtensions.cs
+    startLine: 52
+  assemblies:
+  - Orleans.Clustering.ServiceFabric
+  namespace: Orleans.Clustering.ServiceFabric
+  summary: "\nAdds support for connecting to a cluster hosted in Service Fabric.\n"
+  example: []
+  syntax:
+    content: public static IClientBuilder UseServiceFabricClustering(this IClientBuilder clientBuilder, string serviceName)
+    parameters:
+    - id: clientBuilder
+      type: IClientBuilder
+      description: The client builder.
+    - id: serviceName
+      type: System.String
+      description: The Service Fabric service name.
+    return:
+      type: IClientBuilder
+      description: The provided client builder.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function UseServiceFabricClustering(clientBuilder As IClientBuilder, serviceName As String) As IClientBuilder
+  overload: Orleans.Clustering.ServiceFabric.OrleansServiceFabricExtensions.UseServiceFabricClustering*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.Clustering.ServiceFabric.OrleansServiceFabricExtensions.UseServiceFabricClustering(IClientBuilder,Uri)
+  commentId: M:Orleans.Clustering.ServiceFabric.OrleansServiceFabricExtensions.UseServiceFabricClustering(IClientBuilder,Uri)
+  id: UseServiceFabricClustering(IClientBuilder,Uri)
+  isExtensionMethod: true
+  parent: Orleans.Clustering.ServiceFabric.OrleansServiceFabricExtensions
+  langs:
+  - csharp
+  - vb
+  name: UseServiceFabricClustering(IClientBuilder, Uri)
+  nameWithType: OrleansServiceFabricExtensions.UseServiceFabricClustering(IClientBuilder, Uri)
+  fullName: Orleans.Clustering.ServiceFabric.OrleansServiceFabricExtensions.UseServiceFabricClustering(IClientBuilder, Uri)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Clustering.ServiceFabric/OrleansServiceFabricExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: UseServiceFabricClustering
+    path: src/Orleans.Clustering.ServiceFabric/OrleansServiceFabricExtensions.cs
+    startLine: 65
+  assemblies:
+  - Orleans.Clustering.ServiceFabric
+  namespace: Orleans.Clustering.ServiceFabric
+  summary: "\nAdds support for connecting to a cluster hosted in Service Fabric.\n"
+  example: []
+  syntax:
+    content: public static IClientBuilder UseServiceFabricClustering(this IClientBuilder clientBuilder, Uri serviceName)
+    parameters:
+    - id: clientBuilder
+      type: IClientBuilder
+      description: The client builder.
+    - id: serviceName
+      type: Uri
+      description: The Service Fabric service name.
+    return:
+      type: IClientBuilder
+      description: The provided client builder.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function UseServiceFabricClustering(clientBuilder As IClientBuilder, serviceName As Uri) As IClientBuilder
+  overload: Orleans.Clustering.ServiceFabric.OrleansServiceFabricExtensions.UseServiceFabricClustering*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Orleans.Clustering.ServiceFabric
+  commentId: N:Orleans.Clustering.ServiceFabric
+  isExternal: false
+  name: Orleans.Clustering.ServiceFabric
+  nameWithType: Orleans.Clustering.ServiceFabric
+  fullName: Orleans.Clustering.ServiceFabric
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Clustering.ServiceFabric.OrleansServiceFabricExtensions.UseServiceFabricClustering*
+  commentId: Overload:Orleans.Clustering.ServiceFabric.OrleansServiceFabricExtensions.UseServiceFabricClustering
+  isExternal: false
+  name: UseServiceFabricClustering
+  nameWithType: OrleansServiceFabricExtensions.UseServiceFabricClustering
+  fullName: Orleans.Clustering.ServiceFabric.OrleansServiceFabricExtensions.UseServiceFabricClustering
+- uid: ISiloHostBuilder
+  isExternal: true
+  name: ISiloHostBuilder
+  nameWithType: ISiloHostBuilder
+  fullName: ISiloHostBuilder
+- uid: ServiceContext
+  isExternal: true
+  name: ServiceContext
+  nameWithType: ServiceContext
+  fullName: ServiceContext
+- uid: IServiceCollection
+  isExternal: true
+  name: IServiceCollection
+  nameWithType: IServiceCollection
+  fullName: IServiceCollection
+- uid: IClientBuilder
+  isExternal: true
+  name: IClientBuilder
+  nameWithType: IClientBuilder
+  fullName: IClientBuilder
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Uri
+  isExternal: true
+  name: Uri
+  nameWithType: Uri
+  fullName: Uri

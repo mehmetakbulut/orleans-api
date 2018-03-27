@@ -1,0 +1,192 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Configuration.ApplicationInsightsTelemetryConsumerOptions
+  commentId: T:Orleans.Configuration.ApplicationInsightsTelemetryConsumerOptions
+  id: ApplicationInsightsTelemetryConsumerOptions
+  parent: Orleans.Configuration
+  children:
+  - Orleans.Configuration.ApplicationInsightsTelemetryConsumerOptions.InstrumentationKey
+  langs:
+  - csharp
+  - vb
+  name: ApplicationInsightsTelemetryConsumerOptions
+  nameWithType: ApplicationInsightsTelemetryConsumerOptions
+  fullName: Orleans.Configuration.ApplicationInsightsTelemetryConsumerOptions
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.TelemetryConsumers.AI/ApplicationInsightsTelemetryConsumerOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ApplicationInsightsTelemetryConsumerOptions
+    path: src/Orleans.TelemetryConsumers.AI/ApplicationInsightsTelemetryConsumerOptions.cs
+    startLine: 3
+  assemblies:
+  - Orleans.TelemetryConsumers.AI
+  namespace: Orleans.Configuration
+  syntax:
+    content: 'public class ApplicationInsightsTelemetryConsumerOptions : object'
+    content.vb: >-
+      Public Class ApplicationInsightsTelemetryConsumerOptions
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.Configuration.ApplicationInsightsTelemetryConsumerOptions.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.Configuration.ApplicationInsightsTelemetryConsumerOptions.InstrumentationKey
+  commentId: P:Orleans.Configuration.ApplicationInsightsTelemetryConsumerOptions.InstrumentationKey
+  id: InstrumentationKey
+  parent: Orleans.Configuration.ApplicationInsightsTelemetryConsumerOptions
+  langs:
+  - csharp
+  - vb
+  name: InstrumentationKey
+  nameWithType: ApplicationInsightsTelemetryConsumerOptions.InstrumentationKey
+  fullName: Orleans.Configuration.ApplicationInsightsTelemetryConsumerOptions.InstrumentationKey
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.TelemetryConsumers.AI/ApplicationInsightsTelemetryConsumerOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: InstrumentationKey
+    path: src/Orleans.TelemetryConsumers.AI/ApplicationInsightsTelemetryConsumerOptions.cs
+    startLine: 5
+  assemblies:
+  - Orleans.TelemetryConsumers.AI
+  namespace: Orleans.Configuration
+  syntax:
+    content: public string InstrumentationKey { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property InstrumentationKey As String
+  overload: Orleans.Configuration.ApplicationInsightsTelemetryConsumerOptions.InstrumentationKey*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans.Configuration
+  commentId: N:Orleans.Configuration
+  isExternal: false
+  name: Orleans.Configuration
+  nameWithType: Orleans.Configuration
+  fullName: Orleans.Configuration
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Configuration.ApplicationInsightsTelemetryConsumerOptions.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<ApplicationInsightsTelemetryConsumerOptions>()
+  nameWithType: ImmutableExt.AsImmutable<ApplicationInsightsTelemetryConsumerOptions>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Configuration.ApplicationInsightsTelemetryConsumerOptions>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of ApplicationInsightsTelemetryConsumerOptions)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Configuration.ApplicationInsightsTelemetryConsumerOptions)()
+  name.vb: AsImmutable(Of ApplicationInsightsTelemetryConsumerOptions)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<ApplicationInsightsTelemetryConsumerOptions>
+    nameWithType: ImmutableExt.AsImmutable<ApplicationInsightsTelemetryConsumerOptions>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Configuration.ApplicationInsightsTelemetryConsumerOptions>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of ApplicationInsightsTelemetryConsumerOptions)
+    nameWithType: ImmutableExt.AsImmutable(Of ApplicationInsightsTelemetryConsumerOptions)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Configuration.ApplicationInsightsTelemetryConsumerOptions)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Configuration.ApplicationInsightsTelemetryConsumerOptions.InstrumentationKey*
+  commentId: Overload:Orleans.Configuration.ApplicationInsightsTelemetryConsumerOptions.InstrumentationKey
+  isExternal: false
+  name: InstrumentationKey
+  nameWithType: ApplicationInsightsTelemetryConsumerOptions.InstrumentationKey
+  fullName: Orleans.Configuration.ApplicationInsightsTelemetryConsumerOptions.InstrumentationKey
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Versions
+  commentId: N:Orleans.Versions
+  id: Orleans.Versions
+  children:
+  - Orleans.Versions.IVersionStore
+  langs:
+  - csharp
+  - vb
+  name: Orleans.Versions
+  nameWithType: Orleans.Versions
+  fullName: Orleans.Versions
+  type: Namespace
+  assemblies:
+  - Orleans.Core.Abstractions
+references:
+- uid: Orleans.Versions.IVersionStore
+  commentId: T:Orleans.Versions.IVersionStore
+  isExternal: false
+  name: IVersionStore
+  nameWithType: IVersionStore
+  fullName: Orleans.Versions.IVersionStore

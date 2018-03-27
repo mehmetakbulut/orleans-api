@@ -1,0 +1,130 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Providers.IBootstrapProvider
+  commentId: T:Orleans.Providers.IBootstrapProvider
+  id: IBootstrapProvider
+  parent: Orleans.Providers
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: IBootstrapProvider
+  nameWithType: IBootstrapProvider
+  fullName: Orleans.Providers.IBootstrapProvider
+  type: Interface
+  source:
+    remote:
+      path: src/Orleans.Runtime.Legacy/Providers/IBootstrapProvider.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IBootstrapProvider
+    path: src/Orleans.Runtime.Legacy/Providers/IBootstrapProvider.cs
+    startLine: 5
+  assemblies:
+  - Orleans.Runtime.Legacy
+  namespace: Orleans.Providers
+  summary: "\nMarker interface to be implemented by any app bootstrap classes that want to be loaded and auto-run during silo startup\n"
+  example: []
+  syntax:
+    content: 'public interface IBootstrapProvider : IProvider'
+    content.vb: >-
+      Public Interface IBootstrapProvider
+
+          Inherits IProvider
+  extensionMethods:
+  - Orleans.Providers.IBootstrapProvider.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+references:
+- uid: Orleans.Providers
+  commentId: N:Orleans.Providers
+  isExternal: false
+  name: Orleans.Providers
+  nameWithType: Orleans.Providers
+  fullName: Orleans.Providers
+- uid: Orleans.Providers.IBootstrapProvider.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<IBootstrapProvider>()
+  nameWithType: ImmutableExt.AsImmutable<IBootstrapProvider>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Providers.IBootstrapProvider>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of IBootstrapProvider)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Providers.IBootstrapProvider)()
+  name.vb: AsImmutable(Of IBootstrapProvider)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<IBootstrapProvider>
+    nameWithType: ImmutableExt.AsImmutable<IBootstrapProvider>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Providers.IBootstrapProvider>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of IBootstrapProvider)
+    nameWithType: ImmutableExt.AsImmutable(Of IBootstrapProvider)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Providers.IBootstrapProvider)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency

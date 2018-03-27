@@ -1,0 +1,391 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.EventSourcing.Common.RecordedConnectionIssue
+  commentId: T:Orleans.EventSourcing.Common.RecordedConnectionIssue
+  id: RecordedConnectionIssue
+  parent: Orleans.EventSourcing.Common
+  children:
+  - Orleans.EventSourcing.Common.RecordedConnectionIssue.DelayBeforeRetry
+  - Orleans.EventSourcing.Common.RecordedConnectionIssue.Issue
+  - Orleans.EventSourcing.Common.RecordedConnectionIssue.Record(Orleans.LogConsistency.ConnectionIssue,IConnectionIssueListener,ILogConsistencyProtocolServices)
+  - Orleans.EventSourcing.Common.RecordedConnectionIssue.Resolve(IConnectionIssueListener,ILogConsistencyProtocolServices)
+  - Orleans.EventSourcing.Common.RecordedConnectionIssue.ToString
+  langs:
+  - csharp
+  - vb
+  name: RecordedConnectionIssue
+  nameWithType: RecordedConnectionIssue
+  fullName: Orleans.EventSourcing.Common.RecordedConnectionIssue
+  type: Struct
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/RecordedConnectionIssue.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: RecordedConnectionIssue
+    path: src/Orleans.EventSourcing/Common/RecordedConnectionIssue.cs
+    startLine: 13
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  summary: "\nUtility class for recording connection issues.\nIt is public, not internal, because it is a useful building block for implementing other consistency providers.\n"
+  example: []
+  syntax:
+    content: public struct RecordedConnectionIssue
+    content.vb: Public Structure RecordedConnectionIssue
+  extensionMethods:
+  - Orleans.EventSourcing.Common.RecordedConnectionIssue.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: Orleans.EventSourcing.Common.RecordedConnectionIssue.Issue
+  commentId: P:Orleans.EventSourcing.Common.RecordedConnectionIssue.Issue
+  id: Issue
+  parent: Orleans.EventSourcing.Common.RecordedConnectionIssue
+  langs:
+  - csharp
+  - vb
+  name: Issue
+  nameWithType: RecordedConnectionIssue.Issue
+  fullName: Orleans.EventSourcing.Common.RecordedConnectionIssue.Issue
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/RecordedConnectionIssue.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Issue
+    path: src/Orleans.EventSourcing/Common/RecordedConnectionIssue.cs
+    startLine: 18
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  summary: "\nThe recorded connection issue, or null if none\n"
+  example: []
+  syntax:
+    content: public ConnectionIssue Issue { get; }
+    parameters: []
+    return:
+      type: Orleans.LogConsistency.ConnectionIssue
+    content.vb: Public ReadOnly Property Issue As ConnectionIssue
+  overload: Orleans.EventSourcing.Common.RecordedConnectionIssue.Issue*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.EventSourcing.Common.RecordedConnectionIssue.Record(Orleans.LogConsistency.ConnectionIssue,IConnectionIssueListener,ILogConsistencyProtocolServices)
+  commentId: M:Orleans.EventSourcing.Common.RecordedConnectionIssue.Record(Orleans.LogConsistency.ConnectionIssue,IConnectionIssueListener,ILogConsistencyProtocolServices)
+  id: Record(Orleans.LogConsistency.ConnectionIssue,IConnectionIssueListener,ILogConsistencyProtocolServices)
+  parent: Orleans.EventSourcing.Common.RecordedConnectionIssue
+  langs:
+  - csharp
+  - vb
+  name: Record(ConnectionIssue, IConnectionIssueListener, ILogConsistencyProtocolServices)
+  nameWithType: RecordedConnectionIssue.Record(ConnectionIssue, IConnectionIssueListener, ILogConsistencyProtocolServices)
+  fullName: Orleans.EventSourcing.Common.RecordedConnectionIssue.Record(Orleans.LogConsistency.ConnectionIssue, IConnectionIssueListener, ILogConsistencyProtocolServices)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/RecordedConnectionIssue.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Record
+    path: src/Orleans.EventSourcing/Common/RecordedConnectionIssue.cs
+    startLine: 27
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  summary: "\nrecord a connection issue, filling in timestamps etc.\nand notify the listener\n"
+  example: []
+  syntax:
+    content: public void Record(ConnectionIssue newIssue, IConnectionIssueListener listener, ILogConsistencyProtocolServices services)
+    parameters:
+    - id: newIssue
+      type: Orleans.LogConsistency.ConnectionIssue
+      description: the connection issue to be recorded
+    - id: listener
+      type: IConnectionIssueListener
+      description: the listener for connection issues
+    - id: services
+      type: ILogConsistencyProtocolServices
+      description: for reporting exceptions in listener
+    content.vb: Public Sub Record(newIssue As ConnectionIssue, listener As IConnectionIssueListener, services As ILogConsistencyProtocolServices)
+  overload: Orleans.EventSourcing.Common.RecordedConnectionIssue.Record*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.EventSourcing.Common.RecordedConnectionIssue.Resolve(IConnectionIssueListener,ILogConsistencyProtocolServices)
+  commentId: M:Orleans.EventSourcing.Common.RecordedConnectionIssue.Resolve(IConnectionIssueListener,ILogConsistencyProtocolServices)
+  id: Resolve(IConnectionIssueListener,ILogConsistencyProtocolServices)
+  parent: Orleans.EventSourcing.Common.RecordedConnectionIssue
+  langs:
+  - csharp
+  - vb
+  name: Resolve(IConnectionIssueListener, ILogConsistencyProtocolServices)
+  nameWithType: RecordedConnectionIssue.Resolve(IConnectionIssueListener, ILogConsistencyProtocolServices)
+  fullName: Orleans.EventSourcing.Common.RecordedConnectionIssue.Resolve(IConnectionIssueListener, ILogConsistencyProtocolServices)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/RecordedConnectionIssue.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Resolve
+    path: src/Orleans.EventSourcing/Common/RecordedConnectionIssue.cs
+    startLine: 57
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  summary: "\nif there is a recorded issue, notify listener and clear it.\n"
+  example: []
+  syntax:
+    content: public void Resolve(IConnectionIssueListener listener, ILogConsistencyProtocolServices services)
+    parameters:
+    - id: listener
+      type: IConnectionIssueListener
+      description: the listener for connection issues
+    - id: services
+      type: ILogConsistencyProtocolServices
+      description: for reporting exceptions in listener
+    content.vb: Public Sub Resolve(listener As IConnectionIssueListener, services As ILogConsistencyProtocolServices)
+  overload: Orleans.EventSourcing.Common.RecordedConnectionIssue.Resolve*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.EventSourcing.Common.RecordedConnectionIssue.DelayBeforeRetry
+  commentId: M:Orleans.EventSourcing.Common.RecordedConnectionIssue.DelayBeforeRetry
+  id: DelayBeforeRetry
+  parent: Orleans.EventSourcing.Common.RecordedConnectionIssue
+  langs:
+  - csharp
+  - vb
+  name: DelayBeforeRetry()
+  nameWithType: RecordedConnectionIssue.DelayBeforeRetry()
+  fullName: Orleans.EventSourcing.Common.RecordedConnectionIssue.DelayBeforeRetry()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/RecordedConnectionIssue.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: DelayBeforeRetry
+    path: src/Orleans.EventSourcing/Common/RecordedConnectionIssue.cs
+    startLine: 77
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  summary: "\ndelays if there was an issue in last attempt, for the duration specified by the retry delay\n"
+  example: []
+  syntax:
+    content: public Task DelayBeforeRetry()
+    return:
+      type: Task
+      description: ''
+    content.vb: Public Function DelayBeforeRetry As Task
+  overload: Orleans.EventSourcing.Common.RecordedConnectionIssue.DelayBeforeRetry*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.EventSourcing.Common.RecordedConnectionIssue.ToString
+  commentId: M:Orleans.EventSourcing.Common.RecordedConnectionIssue.ToString
+  id: ToString
+  parent: Orleans.EventSourcing.Common.RecordedConnectionIssue
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: RecordedConnectionIssue.ToString()
+  fullName: Orleans.EventSourcing.Common.RecordedConnectionIssue.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/RecordedConnectionIssue.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ToString
+    path: src/Orleans.EventSourcing/Common/RecordedConnectionIssue.cs
+    startLine: 86
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overload: Orleans.EventSourcing.Common.RecordedConnectionIssue.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: Orleans.EventSourcing.Common
+  commentId: N:Orleans.EventSourcing.Common
+  isExternal: false
+  name: Orleans.EventSourcing.Common
+  nameWithType: Orleans.EventSourcing.Common
+  fullName: Orleans.EventSourcing.Common
+- uid: Orleans.EventSourcing.Common.RecordedConnectionIssue.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<RecordedConnectionIssue>()
+  nameWithType: ImmutableExt.AsImmutable<RecordedConnectionIssue>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.EventSourcing.Common.RecordedConnectionIssue>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of RecordedConnectionIssue)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.EventSourcing.Common.RecordedConnectionIssue)()
+  name.vb: AsImmutable(Of RecordedConnectionIssue)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<RecordedConnectionIssue>
+    nameWithType: ImmutableExt.AsImmutable<RecordedConnectionIssue>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.EventSourcing.Common.RecordedConnectionIssue>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of RecordedConnectionIssue)
+    nameWithType: ImmutableExt.AsImmutable(Of RecordedConnectionIssue)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.EventSourcing.Common.RecordedConnectionIssue)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.EventSourcing.Common.RecordedConnectionIssue.Issue*
+  commentId: Overload:Orleans.EventSourcing.Common.RecordedConnectionIssue.Issue
+  isExternal: false
+  name: Issue
+  nameWithType: RecordedConnectionIssue.Issue
+  fullName: Orleans.EventSourcing.Common.RecordedConnectionIssue.Issue
+- uid: Orleans.LogConsistency.ConnectionIssue
+  commentId: T:Orleans.LogConsistency.ConnectionIssue
+  parent: Orleans.LogConsistency
+  isExternal: false
+  name: ConnectionIssue
+  nameWithType: ConnectionIssue
+  fullName: Orleans.LogConsistency.ConnectionIssue
+- uid: Orleans.LogConsistency
+  commentId: N:Orleans.LogConsistency
+  isExternal: false
+  name: Orleans.LogConsistency
+  nameWithType: Orleans.LogConsistency
+  fullName: Orleans.LogConsistency
+- uid: Orleans.EventSourcing.Common.RecordedConnectionIssue.Record*
+  commentId: Overload:Orleans.EventSourcing.Common.RecordedConnectionIssue.Record
+  isExternal: false
+  name: Record
+  nameWithType: RecordedConnectionIssue.Record
+  fullName: Orleans.EventSourcing.Common.RecordedConnectionIssue.Record
+- uid: IConnectionIssueListener
+  isExternal: true
+  name: IConnectionIssueListener
+  nameWithType: IConnectionIssueListener
+  fullName: IConnectionIssueListener
+- uid: ILogConsistencyProtocolServices
+  isExternal: true
+  name: ILogConsistencyProtocolServices
+  nameWithType: ILogConsistencyProtocolServices
+  fullName: ILogConsistencyProtocolServices
+- uid: Orleans.EventSourcing.Common.RecordedConnectionIssue.Resolve*
+  commentId: Overload:Orleans.EventSourcing.Common.RecordedConnectionIssue.Resolve
+  isExternal: false
+  name: Resolve
+  nameWithType: RecordedConnectionIssue.Resolve
+  fullName: Orleans.EventSourcing.Common.RecordedConnectionIssue.Resolve
+- uid: Orleans.EventSourcing.Common.RecordedConnectionIssue.DelayBeforeRetry*
+  commentId: Overload:Orleans.EventSourcing.Common.RecordedConnectionIssue.DelayBeforeRetry
+  isExternal: false
+  name: DelayBeforeRetry
+  nameWithType: RecordedConnectionIssue.DelayBeforeRetry
+  fullName: Orleans.EventSourcing.Common.RecordedConnectionIssue.DelayBeforeRetry
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task
+- uid: Orleans.EventSourcing.Common.RecordedConnectionIssue.ToString*
+  commentId: Overload:Orleans.EventSourcing.Common.RecordedConnectionIssue.ToString
+  isExternal: false
+  name: ToString
+  nameWithType: RecordedConnectionIssue.ToString
+  fullName: Orleans.EventSourcing.Common.RecordedConnectionIssue.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System

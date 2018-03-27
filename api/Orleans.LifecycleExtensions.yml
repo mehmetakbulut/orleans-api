@@ -1,0 +1,612 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.LifecycleExtensions
+  commentId: T:Orleans.LifecycleExtensions
+  id: LifecycleExtensions
+  parent: Orleans
+  children:
+  - Orleans.LifecycleExtensions.OnStart(Orleans.ILifecycleObserver)
+  - Orleans.LifecycleExtensions.OnStop(Orleans.ILifecycleObserver)
+  - Orleans.LifecycleExtensions.Subscribe(Orleans.ILifecycleObservable,System.Int32,Orleans.ILifecycleObserver)
+  - Orleans.LifecycleExtensions.Subscribe(Orleans.ILifecycleObservable,System.String,System.Int32,Func{CancellationToken,Task})
+  - Orleans.LifecycleExtensions.Subscribe(Orleans.ILifecycleObservable,System.String,System.Int32,Func{CancellationToken,Task},Func{CancellationToken,Task})
+  - Orleans.LifecycleExtensions.Subscribe``1(Orleans.ILifecycleObservable,System.Int32,Func{CancellationToken,Task})
+  - Orleans.LifecycleExtensions.Subscribe``1(Orleans.ILifecycleObservable,System.Int32,Func{CancellationToken,Task},Func{CancellationToken,Task})
+  - Orleans.LifecycleExtensions.Subscribe``1(Orleans.ILifecycleObservable,System.Int32,Orleans.ILifecycleObserver)
+  langs:
+  - csharp
+  - vb
+  name: LifecycleExtensions
+  nameWithType: LifecycleExtensions
+  fullName: Orleans.LifecycleExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Lifecycle/LifecycleExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: LifecycleExtensions
+    path: src/Orleans.Core.Abstractions/Lifecycle/LifecycleExtensions.cs
+    startLine: 6
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  syntax:
+    content: 'public static class LifecycleExtensions : object'
+    content.vb: >-
+      Public Module LifecycleExtensions
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Orleans.LifecycleExtensions.Subscribe(Orleans.ILifecycleObservable,System.String,System.Int32,Func{CancellationToken,Task},Func{CancellationToken,Task})
+  commentId: M:Orleans.LifecycleExtensions.Subscribe(Orleans.ILifecycleObservable,System.String,System.Int32,Func{CancellationToken,Task},Func{CancellationToken,Task})
+  id: Subscribe(Orleans.ILifecycleObservable,System.String,System.Int32,Func{CancellationToken,Task},Func{CancellationToken,Task})
+  isExtensionMethod: true
+  parent: Orleans.LifecycleExtensions
+  langs:
+  - csharp
+  - vb
+  name: Subscribe(ILifecycleObservable, String, Int32, Func<CancellationToken, Task>, Func<CancellationToken, Task>)
+  nameWithType: LifecycleExtensions.Subscribe(ILifecycleObservable, String, Int32, Func<CancellationToken, Task>, Func<CancellationToken, Task>)
+  fullName: Orleans.LifecycleExtensions.Subscribe(Orleans.ILifecycleObservable, System.String, System.Int32, Func<CancellationToken, Task>, Func<CancellationToken, Task>)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Lifecycle/LifecycleExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Subscribe
+    path: src/Orleans.Core.Abstractions/Lifecycle/LifecycleExtensions.cs
+    startLine: 10
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  syntax:
+    content: public static IDisposable Subscribe(this ILifecycleObservable observable, string observerName, int stage, Func<CancellationToken, Task> onStart, Func<CancellationToken, Task> onStop)
+    parameters:
+    - id: observable
+      type: Orleans.ILifecycleObservable
+    - id: observerName
+      type: System.String
+    - id: stage
+      type: System.Int32
+    - id: onStart
+      type: Func{CancellationToken,Task}
+    - id: onStop
+      type: Func{CancellationToken,Task}
+    return:
+      type: IDisposable
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Subscribe(observable As ILifecycleObservable, observerName As String, stage As Integer, onStart As Func(Of CancellationToken, Task), onStop As Func(Of CancellationToken, Task)) As IDisposable
+  overload: Orleans.LifecycleExtensions.Subscribe*
+  nameWithType.vb: LifecycleExtensions.Subscribe(ILifecycleObservable, String, Int32, Func(Of CancellationToken, Task), Func(Of CancellationToken, Task))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.LifecycleExtensions.Subscribe(Orleans.ILifecycleObservable, System.String, System.Int32, Func(Of CancellationToken, Task), Func(Of CancellationToken, Task))
+  name.vb: Subscribe(ILifecycleObservable, String, Int32, Func(Of CancellationToken, Task), Func(Of CancellationToken, Task))
+- uid: Orleans.LifecycleExtensions.Subscribe(Orleans.ILifecycleObservable,System.String,System.Int32,Func{CancellationToken,Task})
+  commentId: M:Orleans.LifecycleExtensions.Subscribe(Orleans.ILifecycleObservable,System.String,System.Int32,Func{CancellationToken,Task})
+  id: Subscribe(Orleans.ILifecycleObservable,System.String,System.Int32,Func{CancellationToken,Task})
+  isExtensionMethod: true
+  parent: Orleans.LifecycleExtensions
+  langs:
+  - csharp
+  - vb
+  name: Subscribe(ILifecycleObservable, String, Int32, Func<CancellationToken, Task>)
+  nameWithType: LifecycleExtensions.Subscribe(ILifecycleObservable, String, Int32, Func<CancellationToken, Task>)
+  fullName: Orleans.LifecycleExtensions.Subscribe(Orleans.ILifecycleObservable, System.String, System.Int32, Func<CancellationToken, Task>)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Lifecycle/LifecycleExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Subscribe
+    path: src/Orleans.Core.Abstractions/Lifecycle/LifecycleExtensions.cs
+    startLine: 19
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  syntax:
+    content: public static IDisposable Subscribe(this ILifecycleObservable observable, string observerName, int stage, Func<CancellationToken, Task> onStart)
+    parameters:
+    - id: observable
+      type: Orleans.ILifecycleObservable
+    - id: observerName
+      type: System.String
+    - id: stage
+      type: System.Int32
+    - id: onStart
+      type: Func{CancellationToken,Task}
+    return:
+      type: IDisposable
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Subscribe(observable As ILifecycleObservable, observerName As String, stage As Integer, onStart As Func(Of CancellationToken, Task)) As IDisposable
+  overload: Orleans.LifecycleExtensions.Subscribe*
+  nameWithType.vb: LifecycleExtensions.Subscribe(ILifecycleObservable, String, Int32, Func(Of CancellationToken, Task))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.LifecycleExtensions.Subscribe(Orleans.ILifecycleObservable, System.String, System.Int32, Func(Of CancellationToken, Task))
+  name.vb: Subscribe(ILifecycleObservable, String, Int32, Func(Of CancellationToken, Task))
+- uid: Orleans.LifecycleExtensions.Subscribe``1(Orleans.ILifecycleObservable,System.Int32,Orleans.ILifecycleObserver)
+  commentId: M:Orleans.LifecycleExtensions.Subscribe``1(Orleans.ILifecycleObservable,System.Int32,Orleans.ILifecycleObserver)
+  id: Subscribe``1(Orleans.ILifecycleObservable,System.Int32,Orleans.ILifecycleObserver)
+  isExtensionMethod: true
+  parent: Orleans.LifecycleExtensions
+  langs:
+  - csharp
+  - vb
+  name: Subscribe<TObserver>(ILifecycleObservable, Int32, ILifecycleObserver)
+  nameWithType: LifecycleExtensions.Subscribe<TObserver>(ILifecycleObservable, Int32, ILifecycleObserver)
+  fullName: Orleans.LifecycleExtensions.Subscribe<TObserver>(Orleans.ILifecycleObservable, System.Int32, Orleans.ILifecycleObserver)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Lifecycle/LifecycleExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Subscribe
+    path: src/Orleans.Core.Abstractions/Lifecycle/LifecycleExtensions.cs
+    startLine: 24
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  syntax:
+    content: public static IDisposable Subscribe<TObserver>(this ILifecycleObservable observable, int stage, ILifecycleObserver observer)
+    parameters:
+    - id: observable
+      type: Orleans.ILifecycleObservable
+    - id: stage
+      type: System.Int32
+    - id: observer
+      type: Orleans.ILifecycleObserver
+    typeParameters:
+    - id: TObserver
+    return:
+      type: IDisposable
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Subscribe(Of TObserver)(observable As ILifecycleObservable, stage As Integer, observer As ILifecycleObserver) As IDisposable
+  overload: Orleans.LifecycleExtensions.Subscribe*
+  nameWithType.vb: LifecycleExtensions.Subscribe(Of TObserver)(ILifecycleObservable, Int32, ILifecycleObserver)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.LifecycleExtensions.Subscribe(Of TObserver)(Orleans.ILifecycleObservable, System.Int32, Orleans.ILifecycleObserver)
+  name.vb: Subscribe(Of TObserver)(ILifecycleObservable, Int32, ILifecycleObserver)
+- uid: Orleans.LifecycleExtensions.Subscribe``1(Orleans.ILifecycleObservable,System.Int32,Func{CancellationToken,Task},Func{CancellationToken,Task})
+  commentId: M:Orleans.LifecycleExtensions.Subscribe``1(Orleans.ILifecycleObservable,System.Int32,Func{CancellationToken,Task},Func{CancellationToken,Task})
+  id: Subscribe``1(Orleans.ILifecycleObservable,System.Int32,Func{CancellationToken,Task},Func{CancellationToken,Task})
+  isExtensionMethod: true
+  parent: Orleans.LifecycleExtensions
+  langs:
+  - csharp
+  - vb
+  name: Subscribe<TObserver>(ILifecycleObservable, Int32, Func<CancellationToken, Task>, Func<CancellationToken, Task>)
+  nameWithType: LifecycleExtensions.Subscribe<TObserver>(ILifecycleObservable, Int32, Func<CancellationToken, Task>, Func<CancellationToken, Task>)
+  fullName: Orleans.LifecycleExtensions.Subscribe<TObserver>(Orleans.ILifecycleObservable, System.Int32, Func<CancellationToken, Task>, Func<CancellationToken, Task>)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Lifecycle/LifecycleExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Subscribe
+    path: src/Orleans.Core.Abstractions/Lifecycle/LifecycleExtensions.cs
+    startLine: 29
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  syntax:
+    content: public static IDisposable Subscribe<TObserver>(this ILifecycleObservable observable, int stage, Func<CancellationToken, Task> onStart, Func<CancellationToken, Task> onStop)
+    parameters:
+    - id: observable
+      type: Orleans.ILifecycleObservable
+    - id: stage
+      type: System.Int32
+    - id: onStart
+      type: Func{CancellationToken,Task}
+    - id: onStop
+      type: Func{CancellationToken,Task}
+    typeParameters:
+    - id: TObserver
+    return:
+      type: IDisposable
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Subscribe(Of TObserver)(observable As ILifecycleObservable, stage As Integer, onStart As Func(Of CancellationToken, Task), onStop As Func(Of CancellationToken, Task)) As IDisposable
+  overload: Orleans.LifecycleExtensions.Subscribe*
+  nameWithType.vb: LifecycleExtensions.Subscribe(Of TObserver)(ILifecycleObservable, Int32, Func(Of CancellationToken, Task), Func(Of CancellationToken, Task))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.LifecycleExtensions.Subscribe(Of TObserver)(Orleans.ILifecycleObservable, System.Int32, Func(Of CancellationToken, Task), Func(Of CancellationToken, Task))
+  name.vb: Subscribe(Of TObserver)(ILifecycleObservable, Int32, Func(Of CancellationToken, Task), Func(Of CancellationToken, Task))
+- uid: Orleans.LifecycleExtensions.Subscribe``1(Orleans.ILifecycleObservable,System.Int32,Func{CancellationToken,Task})
+  commentId: M:Orleans.LifecycleExtensions.Subscribe``1(Orleans.ILifecycleObservable,System.Int32,Func{CancellationToken,Task})
+  id: Subscribe``1(Orleans.ILifecycleObservable,System.Int32,Func{CancellationToken,Task})
+  isExtensionMethod: true
+  parent: Orleans.LifecycleExtensions
+  langs:
+  - csharp
+  - vb
+  name: Subscribe<TObserver>(ILifecycleObservable, Int32, Func<CancellationToken, Task>)
+  nameWithType: LifecycleExtensions.Subscribe<TObserver>(ILifecycleObservable, Int32, Func<CancellationToken, Task>)
+  fullName: Orleans.LifecycleExtensions.Subscribe<TObserver>(Orleans.ILifecycleObservable, System.Int32, Func<CancellationToken, Task>)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Lifecycle/LifecycleExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Subscribe
+    path: src/Orleans.Core.Abstractions/Lifecycle/LifecycleExtensions.cs
+    startLine: 34
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  syntax:
+    content: public static IDisposable Subscribe<TObserver>(this ILifecycleObservable observable, int stage, Func<CancellationToken, Task> onStart)
+    parameters:
+    - id: observable
+      type: Orleans.ILifecycleObservable
+    - id: stage
+      type: System.Int32
+    - id: onStart
+      type: Func{CancellationToken,Task}
+    typeParameters:
+    - id: TObserver
+    return:
+      type: IDisposable
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Subscribe(Of TObserver)(observable As ILifecycleObservable, stage As Integer, onStart As Func(Of CancellationToken, Task)) As IDisposable
+  overload: Orleans.LifecycleExtensions.Subscribe*
+  nameWithType.vb: LifecycleExtensions.Subscribe(Of TObserver)(ILifecycleObservable, Int32, Func(Of CancellationToken, Task))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.LifecycleExtensions.Subscribe(Of TObserver)(Orleans.ILifecycleObservable, System.Int32, Func(Of CancellationToken, Task))
+  name.vb: Subscribe(Of TObserver)(ILifecycleObservable, Int32, Func(Of CancellationToken, Task))
+- uid: Orleans.LifecycleExtensions.Subscribe(Orleans.ILifecycleObservable,System.Int32,Orleans.ILifecycleObserver)
+  commentId: M:Orleans.LifecycleExtensions.Subscribe(Orleans.ILifecycleObservable,System.Int32,Orleans.ILifecycleObserver)
+  id: Subscribe(Orleans.ILifecycleObservable,System.Int32,Orleans.ILifecycleObserver)
+  isExtensionMethod: true
+  parent: Orleans.LifecycleExtensions
+  langs:
+  - csharp
+  - vb
+  name: Subscribe(ILifecycleObservable, Int32, ILifecycleObserver)
+  nameWithType: LifecycleExtensions.Subscribe(ILifecycleObservable, Int32, ILifecycleObserver)
+  fullName: Orleans.LifecycleExtensions.Subscribe(Orleans.ILifecycleObservable, System.Int32, Orleans.ILifecycleObserver)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Lifecycle/LifecycleExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Subscribe
+    path: src/Orleans.Core.Abstractions/Lifecycle/LifecycleExtensions.cs
+    startLine: 39
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  syntax:
+    content: public static IDisposable Subscribe(this ILifecycleObservable observable, int stage, ILifecycleObserver observer)
+    parameters:
+    - id: observable
+      type: Orleans.ILifecycleObservable
+    - id: stage
+      type: System.Int32
+    - id: observer
+      type: Orleans.ILifecycleObserver
+    return:
+      type: IDisposable
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Subscribe(observable As ILifecycleObservable, stage As Integer, observer As ILifecycleObserver) As IDisposable
+  overload: Orleans.LifecycleExtensions.Subscribe*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.LifecycleExtensions.OnStart(Orleans.ILifecycleObserver)
+  commentId: M:Orleans.LifecycleExtensions.OnStart(Orleans.ILifecycleObserver)
+  id: OnStart(Orleans.ILifecycleObserver)
+  isExtensionMethod: true
+  parent: Orleans.LifecycleExtensions
+  langs:
+  - csharp
+  - vb
+  name: OnStart(ILifecycleObserver)
+  nameWithType: LifecycleExtensions.OnStart(ILifecycleObserver)
+  fullName: Orleans.LifecycleExtensions.OnStart(Orleans.ILifecycleObserver)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Lifecycle/LifecycleExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: OnStart
+    path: src/Orleans.Core.Abstractions/Lifecycle/LifecycleExtensions.cs
+    startLine: 44
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  syntax:
+    content: public static Task OnStart(this ILifecycleObserver observer)
+    parameters:
+    - id: observer
+      type: Orleans.ILifecycleObserver
+    return:
+      type: Task
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function OnStart(observer As ILifecycleObserver) As Task
+  overload: Orleans.LifecycleExtensions.OnStart*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.LifecycleExtensions.OnStop(Orleans.ILifecycleObserver)
+  commentId: M:Orleans.LifecycleExtensions.OnStop(Orleans.ILifecycleObserver)
+  id: OnStop(Orleans.ILifecycleObserver)
+  isExtensionMethod: true
+  parent: Orleans.LifecycleExtensions
+  langs:
+  - csharp
+  - vb
+  name: OnStop(ILifecycleObserver)
+  nameWithType: LifecycleExtensions.OnStop(ILifecycleObserver)
+  fullName: Orleans.LifecycleExtensions.OnStop(Orleans.ILifecycleObserver)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Lifecycle/LifecycleExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: OnStop
+    path: src/Orleans.Core.Abstractions/Lifecycle/LifecycleExtensions.cs
+    startLine: 49
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  syntax:
+    content: public static Task OnStop(this ILifecycleObserver observer)
+    parameters:
+    - id: observer
+      type: Orleans.ILifecycleObserver
+    return:
+      type: Task
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function OnStop(observer As ILifecycleObserver) As Task
+  overload: Orleans.LifecycleExtensions.OnStop*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Orleans
+  commentId: N:Orleans
+  isExternal: false
+  name: Orleans
+  nameWithType: Orleans
+  fullName: Orleans
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.LifecycleExtensions.Subscribe*
+  commentId: Overload:Orleans.LifecycleExtensions.Subscribe
+  isExternal: false
+  name: Subscribe
+  nameWithType: LifecycleExtensions.Subscribe
+  fullName: Orleans.LifecycleExtensions.Subscribe
+- uid: Orleans.ILifecycleObservable
+  commentId: T:Orleans.ILifecycleObservable
+  parent: Orleans
+  isExternal: false
+  name: ILifecycleObservable
+  nameWithType: ILifecycleObservable
+  fullName: Orleans.ILifecycleObservable
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Func{CancellationToken,Task}
+  commentId: '!:Func{CancellationToken,Task}'
+  definition: Func`2
+  name: Func<CancellationToken, Task>
+  nameWithType: Func<CancellationToken, Task>
+  fullName: Func<CancellationToken, Task>
+  nameWithType.vb: Func(Of CancellationToken, Task)
+  fullName.vb: Func(Of CancellationToken, Task)
+  name.vb: Func(Of CancellationToken, Task)
+  spec.csharp:
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: CancellationToken
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: CancellationToken
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IDisposable
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: IDisposable
+- uid: Func`2
+  isExternal: true
+  name: Func<, >
+  nameWithType: Func<, >
+  fullName: Func<, >
+  nameWithType.vb: Func(Of , )
+  fullName.vb: Func(Of , )
+  name.vb: Func(Of , )
+  spec.csharp:
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.ILifecycleObserver
+  commentId: T:Orleans.ILifecycleObserver
+  parent: Orleans
+  isExternal: false
+  name: ILifecycleObserver
+  nameWithType: ILifecycleObserver
+  fullName: Orleans.ILifecycleObserver
+- uid: Orleans.LifecycleExtensions.OnStart*
+  commentId: Overload:Orleans.LifecycleExtensions.OnStart
+  isExternal: false
+  name: OnStart
+  nameWithType: LifecycleExtensions.OnStart
+  fullName: Orleans.LifecycleExtensions.OnStart
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task
+- uid: Orleans.LifecycleExtensions.OnStop*
+  commentId: Overload:Orleans.LifecycleExtensions.OnStop
+  isExternal: false
+  name: OnStop
+  nameWithType: LifecycleExtensions.OnStop
+  fullName: Orleans.LifecycleExtensions.OnStop

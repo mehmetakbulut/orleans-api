@@ -1,0 +1,379 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType
+  commentId: T:Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType
+  id: GlobalConfiguration.ReminderServiceProviderType
+  parent: Orleans.Runtime.Configuration
+  children:
+  - Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType.AdoNet
+  - Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType.AzureTable
+  - Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType.Custom
+  - Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType.Disabled
+  - Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType.MockTable
+  - Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType.NotSpecified
+  - Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType.ReminderTableGrain
+  langs:
+  - csharp
+  - vb
+  name: GlobalConfiguration.ReminderServiceProviderType
+  nameWithType: GlobalConfiguration.ReminderServiceProviderType
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType
+  type: Enum
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ReminderServiceProviderType
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 66
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nReminders configuration that controls the type of the protocol that silo use to implement Reminders.\n"
+  example: []
+  syntax:
+    content: 'public enum ReminderServiceProviderType : int'
+    content.vb: Public Enum ReminderServiceProviderType As Integer
+  extensionMethods:
+  - Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType.NotSpecified
+  commentId: F:Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType.NotSpecified
+  id: NotSpecified
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType
+  langs:
+  - csharp
+  - vb
+  name: NotSpecified
+  nameWithType: GlobalConfiguration.ReminderServiceProviderType.NotSpecified
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType.NotSpecified
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: NotSpecified
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 69
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: Default value to allow discrimination of override values.
+  example: []
+  syntax:
+    content: NotSpecified = 0
+    return:
+      type: Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType.ReminderTableGrain
+  commentId: F:Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType.ReminderTableGrain
+  id: ReminderTableGrain
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType
+  langs:
+  - csharp
+  - vb
+  name: ReminderTableGrain
+  nameWithType: GlobalConfiguration.ReminderServiceProviderType.ReminderTableGrain
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType.ReminderTableGrain
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ReminderTableGrain
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 72
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "Grain is used to store reminders information. \nThis option is not reliable and thus should only be used in local development setting."
+  example: []
+  syntax:
+    content: ReminderTableGrain = 1
+    return:
+      type: Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType.AzureTable
+  commentId: F:Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType.AzureTable
+  id: AzureTable
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType
+  langs:
+  - csharp
+  - vb
+  name: AzureTable
+  nameWithType: GlobalConfiguration.ReminderServiceProviderType.AzureTable
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType.AzureTable
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AzureTable
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 75
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "AzureTable is used to store reminders information. \nThis option can be used in production."
+  example: []
+  syntax:
+    content: AzureTable = 2
+    return:
+      type: Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType.AdoNet
+  commentId: F:Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType.AdoNet
+  id: AdoNet
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType
+  langs:
+  - csharp
+  - vb
+  name: AdoNet
+  nameWithType: GlobalConfiguration.ReminderServiceProviderType.AdoNet
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType.AdoNet
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AdoNet
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 78
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "ADO.NET is used to store reminders information. \nThis option can be used in production."
+  example: []
+  syntax:
+    content: AdoNet = 3
+    return:
+      type: Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType.MockTable
+  commentId: F:Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType.MockTable
+  id: MockTable
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType
+  langs:
+  - csharp
+  - vb
+  name: MockTable
+  nameWithType: GlobalConfiguration.ReminderServiceProviderType.MockTable
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType.MockTable
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: MockTable
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 80
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: Used for benchmarking; it simply delays for a specified delay during each operation.
+  example: []
+  syntax:
+    content: MockTable = 4
+    return:
+      type: Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType.Disabled
+  commentId: F:Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType.Disabled
+  id: Disabled
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType
+  langs:
+  - csharp
+  - vb
+  name: Disabled
+  nameWithType: GlobalConfiguration.ReminderServiceProviderType.Disabled
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType.Disabled
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Disabled
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 82
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: Reminder Service is disabled.
+  example: []
+  syntax:
+    content: Disabled = 5
+    return:
+      type: Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType.Custom
+  commentId: F:Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType.Custom
+  id: Custom
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType
+  langs:
+  - csharp
+  - vb
+  name: Custom
+  nameWithType: GlobalConfiguration.ReminderServiceProviderType.Custom
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType.Custom
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Custom
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 84
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: Use custom Reminder Service from third-party assembly
+  example: []
+  syntax:
+    content: Custom = 6
+    return:
+      type: Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Orleans.Runtime.Configuration
+  commentId: N:Orleans.Runtime.Configuration
+  isExternal: false
+  name: Orleans.Runtime.Configuration
+  nameWithType: Orleans.Runtime.Configuration
+  fullName: Orleans.Runtime.Configuration
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<GlobalConfiguration.ReminderServiceProviderType>()
+  nameWithType: ImmutableExt.AsImmutable<GlobalConfiguration.ReminderServiceProviderType>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of GlobalConfiguration.ReminderServiceProviderType)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType)()
+  name.vb: AsImmutable(Of GlobalConfiguration.ReminderServiceProviderType)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<GlobalConfiguration.ReminderServiceProviderType>
+    nameWithType: ImmutableExt.AsImmutable<GlobalConfiguration.ReminderServiceProviderType>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of GlobalConfiguration.ReminderServiceProviderType)
+    nameWithType: ImmutableExt.AsImmutable(Of GlobalConfiguration.ReminderServiceProviderType)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType
+  commentId: T:Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType
+  parent: Orleans.Runtime.Configuration
+  isExternal: false
+  name: GlobalConfiguration.ReminderServiceProviderType
+  nameWithType: GlobalConfiguration.ReminderServiceProviderType
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType

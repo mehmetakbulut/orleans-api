@@ -1,0 +1,324 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Serialization.SerializerMethods
+  commentId: T:Orleans.Serialization.SerializerMethods
+  id: SerializerMethods
+  parent: Orleans.Serialization
+  children:
+  - Orleans.Serialization.SerializerMethods.#ctor(Orleans.Serialization.DeepCopier,Orleans.Serialization.Serializer,Orleans.Serialization.Deserializer)
+  - Orleans.Serialization.SerializerMethods.DeepCopy
+  - Orleans.Serialization.SerializerMethods.Deserialize
+  - Orleans.Serialization.SerializerMethods.Serialize
+  langs:
+  - csharp
+  - vb
+  name: SerializerMethods
+  nameWithType: SerializerMethods
+  fullName: Orleans.Serialization.SerializerMethods
+  type: Struct
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Serialization/SerializerDelegates.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SerializerMethods
+    path: src/Orleans.Core.Abstractions/Serialization/SerializerDelegates.cs
+    startLine: 29
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Serialization
+  summary: "\nContains delegates for serialization.\n"
+  example: []
+  syntax:
+    content: public struct SerializerMethods
+    content.vb: Public Structure SerializerMethods
+  extensionMethods:
+  - Orleans.Serialization.SerializerMethods.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: Orleans.Serialization.SerializerMethods.#ctor(Orleans.Serialization.DeepCopier,Orleans.Serialization.Serializer,Orleans.Serialization.Deserializer)
+  commentId: M:Orleans.Serialization.SerializerMethods.#ctor(Orleans.Serialization.DeepCopier,Orleans.Serialization.Serializer,Orleans.Serialization.Deserializer)
+  id: '#ctor(Orleans.Serialization.DeepCopier,Orleans.Serialization.Serializer,Orleans.Serialization.Deserializer)'
+  parent: Orleans.Serialization.SerializerMethods
+  langs:
+  - csharp
+  - vb
+  name: SerializerMethods(DeepCopier, Serializer, Deserializer)
+  nameWithType: SerializerMethods.SerializerMethods(DeepCopier, Serializer, Deserializer)
+  fullName: Orleans.Serialization.SerializerMethods.SerializerMethods(Orleans.Serialization.DeepCopier, Orleans.Serialization.Serializer, Orleans.Serialization.Deserializer)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Serialization/SerializerDelegates.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Core.Abstractions/Serialization/SerializerDelegates.cs
+    startLine: 31
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Serialization
+  syntax:
+    content: public SerializerMethods(DeepCopier deepCopy, Serializer serialize, Deserializer deserialize)
+    parameters:
+    - id: deepCopy
+      type: Orleans.Serialization.DeepCopier
+    - id: serialize
+      type: Orleans.Serialization.Serializer
+    - id: deserialize
+      type: Orleans.Serialization.Deserializer
+    content.vb: Public Sub New(deepCopy As DeepCopier, serialize As Serializer, deserialize As Deserializer)
+  overload: Orleans.Serialization.SerializerMethods.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Serialization.SerializerMethods.DeepCopy
+  commentId: P:Orleans.Serialization.SerializerMethods.DeepCopy
+  id: DeepCopy
+  parent: Orleans.Serialization.SerializerMethods
+  langs:
+  - csharp
+  - vb
+  name: DeepCopy
+  nameWithType: SerializerMethods.DeepCopy
+  fullName: Orleans.Serialization.SerializerMethods.DeepCopy
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Serialization/SerializerDelegates.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: DeepCopy
+    path: src/Orleans.Core.Abstractions/Serialization/SerializerDelegates.cs
+    startLine: 41
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Serialization
+  summary: "\nGets the deep copier delegate.\n"
+  example: []
+  syntax:
+    content: public DeepCopier DeepCopy { get; }
+    parameters: []
+    return:
+      type: Orleans.Serialization.DeepCopier
+    content.vb: Public ReadOnly Property DeepCopy As DeepCopier
+  overload: Orleans.Serialization.SerializerMethods.DeepCopy*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Serialization.SerializerMethods.Serialize
+  commentId: P:Orleans.Serialization.SerializerMethods.Serialize
+  id: Serialize
+  parent: Orleans.Serialization.SerializerMethods
+  langs:
+  - csharp
+  - vb
+  name: Serialize
+  nameWithType: SerializerMethods.Serialize
+  fullName: Orleans.Serialization.SerializerMethods.Serialize
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Serialization/SerializerDelegates.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Serialize
+    path: src/Orleans.Core.Abstractions/Serialization/SerializerDelegates.cs
+    startLine: 46
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Serialization
+  summary: "\nGets the serializer delegate.\n"
+  example: []
+  syntax:
+    content: public Serializer Serialize { get; }
+    parameters: []
+    return:
+      type: Orleans.Serialization.Serializer
+    content.vb: Public ReadOnly Property Serialize As Serializer
+  overload: Orleans.Serialization.SerializerMethods.Serialize*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Serialization.SerializerMethods.Deserialize
+  commentId: P:Orleans.Serialization.SerializerMethods.Deserialize
+  id: Deserialize
+  parent: Orleans.Serialization.SerializerMethods
+  langs:
+  - csharp
+  - vb
+  name: Deserialize
+  nameWithType: SerializerMethods.Deserialize
+  fullName: Orleans.Serialization.SerializerMethods.Deserialize
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Serialization/SerializerDelegates.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Deserialize
+    path: src/Orleans.Core.Abstractions/Serialization/SerializerDelegates.cs
+    startLine: 51
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Serialization
+  summary: "\nGets the deserializer delegate.\n"
+  example: []
+  syntax:
+    content: public Deserializer Deserialize { get; }
+    parameters: []
+    return:
+      type: Orleans.Serialization.Deserializer
+    content.vb: Public ReadOnly Property Deserialize As Deserializer
+  overload: Orleans.Serialization.SerializerMethods.Deserialize*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: Orleans.Serialization
+  commentId: N:Orleans.Serialization
+  isExternal: false
+  name: Orleans.Serialization
+  nameWithType: Orleans.Serialization
+  fullName: Orleans.Serialization
+- uid: Orleans.Serialization.SerializerMethods.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<SerializerMethods>()
+  nameWithType: ImmutableExt.AsImmutable<SerializerMethods>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Serialization.SerializerMethods>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of SerializerMethods)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Serialization.SerializerMethods)()
+  name.vb: AsImmutable(Of SerializerMethods)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<SerializerMethods>
+    nameWithType: ImmutableExt.AsImmutable<SerializerMethods>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Serialization.SerializerMethods>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of SerializerMethods)
+    nameWithType: ImmutableExt.AsImmutable(Of SerializerMethods)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Serialization.SerializerMethods)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Serialization.SerializerMethods.#ctor*
+  commentId: Overload:Orleans.Serialization.SerializerMethods.#ctor
+  isExternal: false
+  name: SerializerMethods
+  nameWithType: SerializerMethods.SerializerMethods
+  fullName: Orleans.Serialization.SerializerMethods.SerializerMethods
+- uid: Orleans.Serialization.DeepCopier
+  commentId: T:Orleans.Serialization.DeepCopier
+  parent: Orleans.Serialization
+  isExternal: false
+  name: DeepCopier
+  nameWithType: DeepCopier
+  fullName: Orleans.Serialization.DeepCopier
+- uid: Orleans.Serialization.Serializer
+  commentId: T:Orleans.Serialization.Serializer
+  parent: Orleans.Serialization
+  isExternal: false
+  name: Serializer
+  nameWithType: Serializer
+  fullName: Orleans.Serialization.Serializer
+- uid: Orleans.Serialization.Deserializer
+  commentId: T:Orleans.Serialization.Deserializer
+  parent: Orleans.Serialization
+  isExternal: false
+  name: Deserializer
+  nameWithType: Deserializer
+  fullName: Orleans.Serialization.Deserializer
+- uid: Orleans.Serialization.SerializerMethods.DeepCopy*
+  commentId: Overload:Orleans.Serialization.SerializerMethods.DeepCopy
+  isExternal: false
+  name: DeepCopy
+  nameWithType: SerializerMethods.DeepCopy
+  fullName: Orleans.Serialization.SerializerMethods.DeepCopy
+- uid: Orleans.Serialization.SerializerMethods.Serialize*
+  commentId: Overload:Orleans.Serialization.SerializerMethods.Serialize
+  isExternal: false
+  name: Serialize
+  nameWithType: SerializerMethods.Serialize
+  fullName: Orleans.Serialization.SerializerMethods.Serialize
+- uid: Orleans.Serialization.SerializerMethods.Deserialize*
+  commentId: Overload:Orleans.Serialization.SerializerMethods.Deserialize
+  isExternal: false
+  name: Deserialize
+  nameWithType: SerializerMethods.Deserialize
+  fullName: Orleans.Serialization.SerializerMethods.Deserialize

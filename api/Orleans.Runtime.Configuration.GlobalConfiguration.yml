@@ -1,0 +1,4529 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration
+  commentId: T:Orleans.Runtime.Configuration.GlobalConfiguration
+  id: GlobalConfiguration
+  parent: Orleans.Runtime.Configuration
+  children:
+  - Orleans.Runtime.Configuration.GlobalConfiguration.#ctor
+  - Orleans.Runtime.Configuration.GlobalConfiguration.ActivationCountBasedPlacementChooseOutOf
+  - Orleans.Runtime.Configuration.GlobalConfiguration.AdoInvariant
+  - Orleans.Runtime.Configuration.GlobalConfiguration.AdoInvariantForReminders
+  - Orleans.Runtime.Configuration.GlobalConfiguration.AllowCallChainReentrancy
+  - Orleans.Runtime.Configuration.GlobalConfiguration.Application
+  - Orleans.Runtime.Configuration.GlobalConfiguration.AssumeHomogenousSilosForTesting
+  - Orleans.Runtime.Configuration.GlobalConfiguration.BackgroundGossipInterval
+  - Orleans.Runtime.Configuration.GlobalConfiguration.CacheSize
+  - Orleans.Runtime.Configuration.GlobalConfiguration.CacheTTLExtensionFactor
+  - Orleans.Runtime.Configuration.GlobalConfiguration.ClientRegistrationRefresh
+  - Orleans.Runtime.Configuration.GlobalConfiguration.ClusterId
+  - Orleans.Runtime.Configuration.GlobalConfiguration.CollectionQuantum
+  - Orleans.Runtime.Configuration.GlobalConfiguration.DataConnectionString
+  - Orleans.Runtime.Configuration.GlobalConfiguration.DataConnectionStringForReminders
+  - Orleans.Runtime.Configuration.GlobalConfiguration.DeathVoteExpirationTimeout
+  - Orleans.Runtime.Configuration.GlobalConfiguration.DEFAULT_MULTICLUSTER_REGISTRATION_STRATEGY
+  - Orleans.Runtime.Configuration.GlobalConfiguration.DefaultCompatibilityStrategy
+  - Orleans.Runtime.Configuration.GlobalConfiguration.DefaultMultiCluster
+  - Orleans.Runtime.Configuration.GlobalConfiguration.DefaultPlacementStrategy
+  - Orleans.Runtime.Configuration.GlobalConfiguration.DefaultVersionSelectorStrategy
+  - Orleans.Runtime.Configuration.GlobalConfiguration.DeploymentId
+  - Orleans.Runtime.Configuration.GlobalConfiguration.DeploymentLoadPublisherRefreshTime
+  - Orleans.Runtime.Configuration.GlobalConfiguration.DirectoryCachingStrategy
+  - Orleans.Runtime.Configuration.GlobalConfiguration.DirectoryLazyDeregistrationDelay
+  - Orleans.Runtime.Configuration.GlobalConfiguration.ENFORCE_MINIMUM_REQUIREMENT_FOR_AGE_LIMIT
+  - Orleans.Runtime.Configuration.GlobalConfiguration.ExpectedClusterSize
+  - Orleans.Runtime.Configuration.GlobalConfiguration.GetAllProviderConfigurations
+  - Orleans.Runtime.Configuration.GlobalConfiguration.GlobalSingleInstanceNumberRetries
+  - Orleans.Runtime.Configuration.GlobalConfiguration.GlobalSingleInstanceRetryInterval
+  - Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannels
+  - Orleans.Runtime.Configuration.GlobalConfiguration.GrainServiceConfigurations
+  - Orleans.Runtime.Configuration.GlobalConfiguration.HasMultiClusterNetwork
+  - Orleans.Runtime.Configuration.GlobalConfiguration.IAmAliveTablePublishTimeout
+  - Orleans.Runtime.Configuration.GlobalConfiguration.InitialCacheTTL
+  - Orleans.Runtime.Configuration.GlobalConfiguration.LivenessEnabled
+  - Orleans.Runtime.Configuration.GlobalConfiguration.LivenessType
+  - Orleans.Runtime.Configuration.GlobalConfiguration.MaximumCacheTTL
+  - Orleans.Runtime.Configuration.GlobalConfiguration.MaxJoinAttemptTime
+  - Orleans.Runtime.Configuration.GlobalConfiguration.MaxMultiClusterGateways
+  - Orleans.Runtime.Configuration.GlobalConfiguration.MaxRequestProcessingTime
+  - Orleans.Runtime.Configuration.GlobalConfiguration.MaxStorageBusyRetries
+  - Orleans.Runtime.Configuration.GlobalConfiguration.MembershipTableAssembly
+  - Orleans.Runtime.Configuration.GlobalConfiguration.MockReminderTableTimeout
+  - Orleans.Runtime.Configuration.GlobalConfiguration.NumMissedProbesLimit
+  - Orleans.Runtime.Configuration.GlobalConfiguration.NumMissedTableIAmAliveLimit
+  - Orleans.Runtime.Configuration.GlobalConfiguration.NumProbedSilos
+  - Orleans.Runtime.Configuration.GlobalConfiguration.NumVirtualBucketsConsistentRing
+  - Orleans.Runtime.Configuration.GlobalConfiguration.NumVotesForDeathDeclaration
+  - Orleans.Runtime.Configuration.GlobalConfiguration.PerformDeadlockDetection
+  - Orleans.Runtime.Configuration.GlobalConfiguration.PrimaryNodeIsRequired
+  - Orleans.Runtime.Configuration.GlobalConfiguration.ProbeTimeout
+  - Orleans.Runtime.Configuration.GlobalConfiguration.ProviderConfigurations
+  - Orleans.Runtime.Configuration.GlobalConfiguration.RegisterGrainService(System.String,System.String,IDictionary{System.String,System.String})
+  - Orleans.Runtime.Configuration.GlobalConfiguration.RegisterLogConsistencyProvider(System.String,System.String,IDictionary{System.String,System.String})
+  - Orleans.Runtime.Configuration.GlobalConfiguration.RegisterLogConsistencyProvider``1(System.String,IDictionary{System.String,System.String})
+  - Orleans.Runtime.Configuration.GlobalConfiguration.RegisterStorageProvider(System.String,System.String,IDictionary{System.String,System.String})
+  - Orleans.Runtime.Configuration.GlobalConfiguration.RegisterStorageProvider``1(System.String,IDictionary{System.String,System.String})
+  - Orleans.Runtime.Configuration.GlobalConfiguration.RegisterStreamProvider(System.String,System.String,IDictionary{System.String,System.String})
+  - Orleans.Runtime.Configuration.GlobalConfiguration.RegisterStreamProvider``1(System.String,IDictionary{System.String,System.String})
+  - Orleans.Runtime.Configuration.GlobalConfiguration.Remap(Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelType)
+  - Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceType
+  - Orleans.Runtime.Configuration.GlobalConfiguration.ReminderTableAssembly
+  - Orleans.Runtime.Configuration.GlobalConfiguration.SeedNodes
+  - Orleans.Runtime.Configuration.GlobalConfiguration.ServiceId
+  - Orleans.Runtime.Configuration.GlobalConfiguration.Subnet
+  - Orleans.Runtime.Configuration.GlobalConfiguration.TableRefreshTimeout
+  - Orleans.Runtime.Configuration.GlobalConfiguration.ToString
+  - Orleans.Runtime.Configuration.GlobalConfiguration.TryGetProviderConfiguration(System.String,System.String,IProviderConfiguration@)
+  - Orleans.Runtime.Configuration.GlobalConfiguration.TypeMapRefreshInterval
+  - Orleans.Runtime.Configuration.GlobalConfiguration.UseAdoNetSystemStore
+  - Orleans.Runtime.Configuration.GlobalConfiguration.UseAzureSystemStore
+  - Orleans.Runtime.Configuration.GlobalConfiguration.UseGlobalSingleInstanceByDefault
+  - Orleans.Runtime.Configuration.GlobalConfiguration.UseLivenessGossip
+  - Orleans.Runtime.Configuration.GlobalConfiguration.UseVirtualBucketsConsistentRing
+  - Orleans.Runtime.Configuration.GlobalConfiguration.ValidateInitialConnectivity
+  langs:
+  - csharp
+  - vb
+  name: GlobalConfiguration
+  nameWithType: GlobalConfiguration
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GlobalConfiguration
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 35
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nData object holding Silo global configuration parameters.\n"
+  example: []
+  syntax:
+    content: 'public class GlobalConfiguration : MessagingConfiguration'
+    content.vb: >-
+      Public Class GlobalConfiguration
+
+          Inherits MessagingConfiguration
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.Runtime.Configuration.GlobalConfiguration.Orleans.Runtime.Configuration.BootstrapProviderConfiguration.RegisterBootstrapProvider``1(System.String,IDictionary{System.String,System.String})
+  - Orleans.Runtime.Configuration.GlobalConfiguration.Orleans.Runtime.Configuration.BootstrapProviderConfiguration.RegisterBootstrapProvider(System.String,System.String,IDictionary{System.String,System.String})
+  - Orleans.Runtime.Configuration.GlobalConfiguration.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.Remap(Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelType)
+  commentId: M:Orleans.Runtime.Configuration.GlobalConfiguration.Remap(Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelType)
+  id: Remap(Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelType)
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Remap(GlobalConfiguration.GossipChannelType)
+  nameWithType: GlobalConfiguration.Remap(GlobalConfiguration.GossipChannelType)
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.Remap(Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelType)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Remap
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 99
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  syntax:
+    content: public static string Remap(GlobalConfiguration.GossipChannelType type)
+    parameters:
+    - id: type
+      type: Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelType
+    return:
+      type: System.String
+    content.vb: Public Shared Function Remap(type As GlobalConfiguration.GossipChannelType) As String
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.Remap*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.Application
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.Application
+  id: Application
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Application
+  nameWithType: GlobalConfiguration.Application
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.Application
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Application
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 138
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  syntax:
+    content: public ApplicationConfiguration Application { get; }
+    parameters: []
+    return:
+      type: Orleans.Runtime.Configuration.ApplicationConfiguration
+    content.vb: Public ReadOnly Property Application As ApplicationConfiguration
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.Application*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.SeedNodes
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.SeedNodes
+  id: SeedNodes
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: SeedNodes
+  nameWithType: GlobalConfiguration.SeedNodes
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.SeedNodes
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SeedNodes
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 144
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nSeedNodes are only used in local development setting with LivenessProviderType.MembershipTableGrain\nSeedNodes are never used in production.\n"
+  example: []
+  syntax:
+    content: public IList<IPEndPoint> SeedNodes { get; }
+    parameters: []
+    return:
+      type: IList{IPEndPoint}
+    content.vb: Public ReadOnly Property SeedNodes As IList(Of IPEndPoint)
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.SeedNodes*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.Subnet
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.Subnet
+  id: Subnet
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Subnet
+  nameWithType: GlobalConfiguration.Subnet
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.Subnet
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Subnet
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 150
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nThe subnet on which the silos run. \nThis option should only be used when running on multi-homed cluster. It should not be used when running in Azure.\n"
+  example: []
+  syntax:
+    content: public byte[] Subnet { get; set; }
+    parameters: []
+    return:
+      type: System.Byte[]
+    content.vb: Public Property Subnet As Byte()
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.Subnet*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.PrimaryNodeIsRequired
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.PrimaryNodeIsRequired
+  id: PrimaryNodeIsRequired
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: PrimaryNodeIsRequired
+  nameWithType: GlobalConfiguration.PrimaryNodeIsRequired
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.PrimaryNodeIsRequired
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: PrimaryNodeIsRequired
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 156
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nDetermines if primary node is required to be configured as a seed node.\nTrue if LivenessType is set to MembershipTableGrain, false otherwise.\n"
+  example: []
+  syntax:
+    content: public bool PrimaryNodeIsRequired { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property PrimaryNodeIsRequired As Boolean
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.PrimaryNodeIsRequired*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.LivenessEnabled
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.LivenessEnabled
+  id: LivenessEnabled
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: LivenessEnabled
+  nameWithType: GlobalConfiguration.LivenessEnabled
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.LivenessEnabled
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: LivenessEnabled
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 169
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nGlobal switch to disable silo liveness protocol (should be used only for testing).\nThe LivenessEnabled attribute, if provided and set to &quot;false&quot;, suppresses liveness enforcement.\nIf a silo is suspected to be dead, but this attribute is set to &quot;false&quot;, the suspicions will not propagated to the system and enforced,\nThis parameter is intended for use only for testing and troubleshooting.\nIn production, liveness should always be enabled.\nDefault is true (eanabled)\n"
+  example: []
+  syntax:
+    content: public bool LivenessEnabled { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property LivenessEnabled As Boolean
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.LivenessEnabled*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.ProbeTimeout
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.ProbeTimeout
+  id: ProbeTimeout
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: ProbeTimeout
+  nameWithType: GlobalConfiguration.ProbeTimeout
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.ProbeTimeout
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ProbeTimeout
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 173
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nThe number of seconds to periodically probe other silos for their liveness or for the silo to send &quot;I am alive&quot; heartbeat  messages about itself.\n"
+  example: []
+  syntax:
+    content: public TimeSpan ProbeTimeout { get; set; }
+    parameters: []
+    return:
+      type: TimeSpan
+    content.vb: Public Property ProbeTimeout As TimeSpan
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.ProbeTimeout*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.TableRefreshTimeout
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.TableRefreshTimeout
+  id: TableRefreshTimeout
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: TableRefreshTimeout
+  nameWithType: GlobalConfiguration.TableRefreshTimeout
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.TableRefreshTimeout
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: TableRefreshTimeout
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 177
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nThe number of seconds to periodically fetch updates from the membership table.\n"
+  example: []
+  syntax:
+    content: public TimeSpan TableRefreshTimeout { get; set; }
+    parameters: []
+    return:
+      type: TimeSpan
+    content.vb: Public Property TableRefreshTimeout As TimeSpan
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.TableRefreshTimeout*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.DeathVoteExpirationTimeout
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.DeathVoteExpirationTimeout
+  id: DeathVoteExpirationTimeout
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: DeathVoteExpirationTimeout
+  nameWithType: GlobalConfiguration.DeathVoteExpirationTimeout
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.DeathVoteExpirationTimeout
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: DeathVoteExpirationTimeout
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 181
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nExpiration time in seconds for death vote in the membership table.\n"
+  example: []
+  syntax:
+    content: public TimeSpan DeathVoteExpirationTimeout { get; set; }
+    parameters: []
+    return:
+      type: TimeSpan
+    content.vb: Public Property DeathVoteExpirationTimeout As TimeSpan
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.DeathVoteExpirationTimeout*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.IAmAliveTablePublishTimeout
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.IAmAliveTablePublishTimeout
+  id: IAmAliveTablePublishTimeout
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: IAmAliveTablePublishTimeout
+  nameWithType: GlobalConfiguration.IAmAliveTablePublishTimeout
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.IAmAliveTablePublishTimeout
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IAmAliveTablePublishTimeout
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 185
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nThe number of seconds to periodically write in the membership table that this silo is alive. Used ony for diagnostics.\n"
+  example: []
+  syntax:
+    content: public TimeSpan IAmAliveTablePublishTimeout { get; set; }
+    parameters: []
+    return:
+      type: TimeSpan
+    content.vb: Public Property IAmAliveTablePublishTimeout As TimeSpan
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.IAmAliveTablePublishTimeout*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.MaxJoinAttemptTime
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.MaxJoinAttemptTime
+  id: MaxJoinAttemptTime
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: MaxJoinAttemptTime
+  nameWithType: GlobalConfiguration.MaxJoinAttemptTime
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.MaxJoinAttemptTime
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: MaxJoinAttemptTime
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 189
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nThe number of seconds to attempt to join a cluster of silos before giving up.\n"
+  example: []
+  syntax:
+    content: public TimeSpan MaxJoinAttemptTime { get; set; }
+    parameters: []
+    return:
+      type: TimeSpan
+    content.vb: Public Property MaxJoinAttemptTime As TimeSpan
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.MaxJoinAttemptTime*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.TypeMapRefreshInterval
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.TypeMapRefreshInterval
+  id: TypeMapRefreshInterval
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: TypeMapRefreshInterval
+  nameWithType: GlobalConfiguration.TypeMapRefreshInterval
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.TypeMapRefreshInterval
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: TypeMapRefreshInterval
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 193
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nThe number of seconds to refresh the cluster grain interface map\n"
+  example: []
+  syntax:
+    content: public TimeSpan TypeMapRefreshInterval { get; set; }
+    parameters: []
+    return:
+      type: TimeSpan
+    content.vb: Public Property TypeMapRefreshInterval As TimeSpan
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.TypeMapRefreshInterval*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.ExpectedClusterSize
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.ExpectedClusterSize
+  id: ExpectedClusterSize
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: ExpectedClusterSize
+  nameWithType: GlobalConfiguration.ExpectedClusterSize
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.ExpectedClusterSize
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ExpectedClusterSize
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 198
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nThe expected size of a cluster. Need not be very accurate, can be an overestimate.\n"
+  example: []
+  syntax:
+    content: public int ExpectedClusterSize { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property ExpectedClusterSize As Integer
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.ExpectedClusterSize*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.NumMissedProbesLimit
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.NumMissedProbesLimit
+  id: NumMissedProbesLimit
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: NumMissedProbesLimit
+  nameWithType: GlobalConfiguration.NumMissedProbesLimit
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.NumMissedProbesLimit
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: NumMissedProbesLimit
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 202
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nThe number of missed &quot;I am alive&quot; heartbeat messages from a silo or number of un-replied probes that lead to suspecting this silo as dead.\n"
+  example: []
+  syntax:
+    content: public int NumMissedProbesLimit { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property NumMissedProbesLimit As Integer
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.NumMissedProbesLimit*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.NumProbedSilos
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.NumProbedSilos
+  id: NumProbedSilos
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: NumProbedSilos
+  nameWithType: GlobalConfiguration.NumProbedSilos
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.NumProbedSilos
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: NumProbedSilos
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 206
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nThe number of silos each silo probes for liveness.\n"
+  example: []
+  syntax:
+    content: public int NumProbedSilos { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property NumProbedSilos As Integer
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.NumProbedSilos*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.NumVotesForDeathDeclaration
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.NumVotesForDeathDeclaration
+  id: NumVotesForDeathDeclaration
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: NumVotesForDeathDeclaration
+  nameWithType: GlobalConfiguration.NumVotesForDeathDeclaration
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.NumVotesForDeathDeclaration
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: NumVotesForDeathDeclaration
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 210
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nThe number of non-expired votes that are needed to declare some silo as dead (should be at most NumMissedProbesLimit)\n"
+  example: []
+  syntax:
+    content: public int NumVotesForDeathDeclaration { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property NumVotesForDeathDeclaration As Integer
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.NumVotesForDeathDeclaration*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.NumMissedTableIAmAliveLimit
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.NumMissedTableIAmAliveLimit
+  id: NumMissedTableIAmAliveLimit
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: NumMissedTableIAmAliveLimit
+  nameWithType: GlobalConfiguration.NumMissedTableIAmAliveLimit
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.NumMissedTableIAmAliveLimit
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: NumMissedTableIAmAliveLimit
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 214
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nThe number of missed &quot;I am alive&quot; updates  in the table from a silo that causes warning to be logged. Does not impact the liveness protocol.\n"
+  example: []
+  syntax:
+    content: public int NumMissedTableIAmAliveLimit { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property NumMissedTableIAmAliveLimit As Integer
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.NumMissedTableIAmAliveLimit*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.UseLivenessGossip
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.UseLivenessGossip
+  id: UseLivenessGossip
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: UseLivenessGossip
+  nameWithType: GlobalConfiguration.UseLivenessGossip
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.UseLivenessGossip
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: UseLivenessGossip
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 218
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nWhether to use the gossip optimization to speed up spreading liveness information.\n"
+  example: []
+  syntax:
+    content: public bool UseLivenessGossip { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property UseLivenessGossip As Boolean
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.UseLivenessGossip*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.ValidateInitialConnectivity
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.ValidateInitialConnectivity
+  id: ValidateInitialConnectivity
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: ValidateInitialConnectivity
+  nameWithType: GlobalConfiguration.ValidateInitialConnectivity
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.ValidateInitialConnectivity
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ValidateInitialConnectivity
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 222
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nWhether new silo that joins the cluster has to validate the initial connectivity with all other Active silos.\n"
+  example: []
+  syntax:
+    content: public bool ValidateInitialConnectivity { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property ValidateInitialConnectivity As Boolean
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.ValidateInitialConnectivity*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.ServiceId
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.ServiceId
+  id: ServiceId
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: ServiceId
+  nameWithType: GlobalConfiguration.ServiceId
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.ServiceId
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ServiceId
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 227
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nService Id.\n"
+  example: []
+  syntax:
+    content: public Guid ServiceId { get; set; }
+    parameters: []
+    return:
+      type: Guid
+    content.vb: Public Property ServiceId As Guid
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.ServiceId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.ClusterId
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.ClusterId
+  id: ClusterId
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: ClusterId
+  nameWithType: GlobalConfiguration.ClusterId
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.ClusterId
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ClusterId
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 234
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nCluster identity. Silos with the same cluster identity will join together. \nWhen deploying different versions of the application simultaneously, be sure to change the ID if they should not join the same logical cluster.\nIn a multi-cluster network, the cluster ID must be unique for each cluster.\n"
+  example: []
+  syntax:
+    content: public string ClusterId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ClusterId As String
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.ClusterId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.DeploymentId
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.DeploymentId
+  id: DeploymentId
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: DeploymentId
+  nameWithType: GlobalConfiguration.DeploymentId
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.DeploymentId
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: DeploymentId
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 239
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nDeployment Id. This is the same as ClusterId and has been deprecated in favor of it.\n"
+  example: []
+  syntax:
+    content: public string DeploymentId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DeploymentId As String
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.DeploymentId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.HasMultiClusterNetwork
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.HasMultiClusterNetwork
+  id: HasMultiClusterNetwork
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: HasMultiClusterNetwork
+  nameWithType: GlobalConfiguration.HasMultiClusterNetwork
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.HasMultiClusterNetwork
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: HasMultiClusterNetwork
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 251
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nWhether this cluster is configured to be part of a multicluster network\n"
+  example: []
+  syntax:
+    content: public bool HasMultiClusterNetwork { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property HasMultiClusterNetwork As Boolean
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.HasMultiClusterNetwork*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.DefaultMultiCluster
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.DefaultMultiCluster
+  id: DefaultMultiCluster
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: DefaultMultiCluster
+  nameWithType: GlobalConfiguration.DefaultMultiCluster
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.DefaultMultiCluster
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: DefaultMultiCluster
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 256
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nA list of cluster ids, to be used if no multicluster configuration is found in gossip channels.\n"
+  example: []
+  syntax:
+    content: public IReadOnlyList<string> DefaultMultiCluster { get; set; }
+    parameters: []
+    return:
+      type: IReadOnlyList{System.String}
+    content.vb: Public Property DefaultMultiCluster As IReadOnlyList(Of String)
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.DefaultMultiCluster*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.MaxMultiClusterGateways
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.MaxMultiClusterGateways
+  id: MaxMultiClusterGateways
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: MaxMultiClusterGateways
+  nameWithType: GlobalConfiguration.MaxMultiClusterGateways
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.MaxMultiClusterGateways
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: MaxMultiClusterGateways
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 261
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nThe maximum number of silos per cluster should be designated to serve as gateways.\n"
+  example: []
+  syntax:
+    content: public int MaxMultiClusterGateways { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property MaxMultiClusterGateways As Integer
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.MaxMultiClusterGateways*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.BackgroundGossipInterval
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.BackgroundGossipInterval
+  id: BackgroundGossipInterval
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: BackgroundGossipInterval
+  nameWithType: GlobalConfiguration.BackgroundGossipInterval
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.BackgroundGossipInterval
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: BackgroundGossipInterval
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 266
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nThe time between background gossips.\n"
+  example: []
+  syntax:
+    content: public TimeSpan BackgroundGossipInterval { get; set; }
+    parameters: []
+    return:
+      type: TimeSpan
+    content.vb: Public Property BackgroundGossipInterval As TimeSpan
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.BackgroundGossipInterval*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.UseGlobalSingleInstanceByDefault
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.UseGlobalSingleInstanceByDefault
+  id: UseGlobalSingleInstanceByDefault
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: UseGlobalSingleInstanceByDefault
+  nameWithType: GlobalConfiguration.UseGlobalSingleInstanceByDefault
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.UseGlobalSingleInstanceByDefault
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: UseGlobalSingleInstanceByDefault
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 272
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nWhether to use the global single instance protocol as the default\nmulticluster registration strategy.\n"
+  example: []
+  syntax:
+    content: public bool UseGlobalSingleInstanceByDefault { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property UseGlobalSingleInstanceByDefault As Boolean
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.UseGlobalSingleInstanceByDefault*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.GlobalSingleInstanceNumberRetries
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.GlobalSingleInstanceNumberRetries
+  id: GlobalSingleInstanceNumberRetries
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: GlobalSingleInstanceNumberRetries
+  nameWithType: GlobalConfiguration.GlobalSingleInstanceNumberRetries
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.GlobalSingleInstanceNumberRetries
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GlobalSingleInstanceNumberRetries
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 277
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nThe number of quick retries before going into DOUBTFUL state.\n"
+  example: []
+  syntax:
+    content: public int GlobalSingleInstanceNumberRetries { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property GlobalSingleInstanceNumberRetries As Integer
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.GlobalSingleInstanceNumberRetries*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.GlobalSingleInstanceRetryInterval
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.GlobalSingleInstanceRetryInterval
+  id: GlobalSingleInstanceRetryInterval
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: GlobalSingleInstanceRetryInterval
+  nameWithType: GlobalConfiguration.GlobalSingleInstanceRetryInterval
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.GlobalSingleInstanceRetryInterval
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GlobalSingleInstanceRetryInterval
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 282
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nThe time between the slow retries for DOUBTFUL activations.\n"
+  example: []
+  syntax:
+    content: public TimeSpan GlobalSingleInstanceRetryInterval { get; set; }
+    parameters: []
+    return:
+      type: TimeSpan
+    content.vb: Public Property GlobalSingleInstanceRetryInterval As TimeSpan
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.GlobalSingleInstanceRetryInterval*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannels
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannels
+  id: GossipChannels
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: GossipChannels
+  nameWithType: GlobalConfiguration.GossipChannels
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannels
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GossipChannels
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 288
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nA list of connection strings for gossip channels.\n"
+  example: []
+  syntax:
+    content: public IReadOnlyList<GlobalConfiguration.GossipChannelConfiguration> GossipChannels { get; set; }
+    parameters: []
+    return:
+      type: IReadOnlyList{Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelConfiguration}
+    content.vb: Public Property GossipChannels As IReadOnlyList(Of GlobalConfiguration.GossipChannelConfiguration)
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannels*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.DataConnectionString
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.DataConnectionString
+  id: DataConnectionString
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: DataConnectionString
+  nameWithType: GlobalConfiguration.DataConnectionString
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.DataConnectionString
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: DataConnectionString
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 296
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nConnection string for the underlying data provider for liveness and reminders. eg. Azure Storage, ZooKeeper, SQL Server, ect.\nIn order to override this value for reminders set <xref href=\"Orleans.Runtime.Configuration.GlobalConfiguration.DataConnectionStringForReminders\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public string DataConnectionString { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DataConnectionString As String
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.DataConnectionString*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.AdoInvariant
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.AdoInvariant
+  id: AdoInvariant
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: AdoInvariant
+  nameWithType: GlobalConfiguration.AdoInvariant
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.AdoInvariant
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AdoInvariant
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 304
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nWhen using ADO, identifies the underlying data provider for liveness and reminders. This three-part naming syntax is also used \nwhen creating a new factory and for identifying the provider in an application configuration file so that the provider name, \nalong with its associated connection string, can be retrieved at run time. https://msdn.microsoft.com/en-us/library/dd0w4a2z%28v=vs.110%29.aspx\nIn order to override this value for reminders set <xref href=\"Orleans.Runtime.Configuration.GlobalConfiguration.AdoInvariantForReminders\" data-throw-if-not-resolved=\"false\"></xref> \n"
+  example: []
+  syntax:
+    content: public string AdoInvariant { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property AdoInvariant As String
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.AdoInvariant*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.DataConnectionStringForReminders
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.DataConnectionStringForReminders
+  id: DataConnectionStringForReminders
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: DataConnectionStringForReminders
+  nameWithType: GlobalConfiguration.DataConnectionStringForReminders
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.DataConnectionStringForReminders
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: DataConnectionStringForReminders
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 309
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nSet this property to override <xref href=\"Orleans.Runtime.Configuration.GlobalConfiguration.DataConnectionString\" data-throw-if-not-resolved=\"false\"></xref> for reminders.\n"
+  example: []
+  syntax:
+    content: public string DataConnectionStringForReminders { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DataConnectionStringForReminders As String
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.DataConnectionStringForReminders*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.AdoInvariantForReminders
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.AdoInvariantForReminders
+  id: AdoInvariantForReminders
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: AdoInvariantForReminders
+  nameWithType: GlobalConfiguration.AdoInvariantForReminders
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.AdoInvariantForReminders
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AdoInvariantForReminders
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 321
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nSet this property to override <xref href=\"Orleans.Runtime.Configuration.GlobalConfiguration.AdoInvariant\" data-throw-if-not-resolved=\"false\"></xref> for reminders.\n"
+  example: []
+  syntax:
+    content: public string AdoInvariantForReminders { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property AdoInvariantForReminders As String
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.AdoInvariantForReminders*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.CollectionQuantum
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.CollectionQuantum
+  id: CollectionQuantum
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: CollectionQuantum
+  nameWithType: GlobalConfiguration.CollectionQuantum
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.CollectionQuantum
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: CollectionQuantum
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 330
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  syntax:
+    content: public TimeSpan CollectionQuantum { get; set; }
+    parameters: []
+    return:
+      type: TimeSpan
+    content.vb: Public Property CollectionQuantum As TimeSpan
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.CollectionQuantum*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.MaxRequestProcessingTime
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.MaxRequestProcessingTime
+  id: MaxRequestProcessingTime
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: MaxRequestProcessingTime
+  nameWithType: GlobalConfiguration.MaxRequestProcessingTime
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.MaxRequestProcessingTime
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: MaxRequestProcessingTime
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 335
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nSpecifies the maximum time that a request can take before the activation is reported as &quot;blocked&quot;\n"
+  example: []
+  syntax:
+    content: public TimeSpan MaxRequestProcessingTime { get; set; }
+    parameters: []
+    return:
+      type: TimeSpan
+    content.vb: Public Property MaxRequestProcessingTime As TimeSpan
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.MaxRequestProcessingTime*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.CacheSize
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.CacheSize
+  id: CacheSize
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: CacheSize
+  nameWithType: GlobalConfiguration.CacheSize
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.CacheSize
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: CacheSize
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 340
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nThe CacheSize attribute specifies the maximum number of grains to cache directory information for.\n"
+  example: []
+  syntax:
+    content: public int CacheSize { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property CacheSize As Integer
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.CacheSize*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.InitialCacheTTL
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.InitialCacheTTL
+  id: InitialCacheTTL
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: InitialCacheTTL
+  nameWithType: GlobalConfiguration.InitialCacheTTL
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.InitialCacheTTL
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: InitialCacheTTL
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 344
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nThe InitialTTL attribute specifies the initial (minimum) time, in seconds, to keep a cache entry before revalidating.\n"
+  example: []
+  syntax:
+    content: public TimeSpan InitialCacheTTL { get; set; }
+    parameters: []
+    return:
+      type: TimeSpan
+    content.vb: Public Property InitialCacheTTL As TimeSpan
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.InitialCacheTTL*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.MaximumCacheTTL
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.MaximumCacheTTL
+  id: MaximumCacheTTL
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: MaximumCacheTTL
+  nameWithType: GlobalConfiguration.MaximumCacheTTL
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.MaximumCacheTTL
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: MaximumCacheTTL
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 348
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nThe MaximumTTL attribute specifies the maximum time, in seconds, to keep a cache entry before revalidating.\n"
+  example: []
+  syntax:
+    content: public TimeSpan MaximumCacheTTL { get; set; }
+    parameters: []
+    return:
+      type: TimeSpan
+    content.vb: Public Property MaximumCacheTTL As TimeSpan
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.MaximumCacheTTL*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.CacheTTLExtensionFactor
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.CacheTTLExtensionFactor
+  id: CacheTTLExtensionFactor
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: CacheTTLExtensionFactor
+  nameWithType: GlobalConfiguration.CacheTTLExtensionFactor
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.CacheTTLExtensionFactor
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: CacheTTLExtensionFactor
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 352
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nThe TTLExtensionFactor attribute specifies the factor by which cache entry TTLs should be extended when they are found to be stable.\n"
+  example: []
+  syntax:
+    content: public double CacheTTLExtensionFactor { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property CacheTTLExtensionFactor As Double
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.CacheTTLExtensionFactor*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.MaxStorageBusyRetries
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.MaxStorageBusyRetries
+  id: MaxStorageBusyRetries
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: MaxStorageBusyRetries
+  nameWithType: GlobalConfiguration.MaxStorageBusyRetries
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.MaxStorageBusyRetries
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: MaxStorageBusyRetries
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 356
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nRetry count for Azure Table operations. \n"
+  example: []
+  syntax:
+    content: public int MaxStorageBusyRetries { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property MaxStorageBusyRetries As Integer
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.MaxStorageBusyRetries*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.DirectoryCachingStrategy
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.DirectoryCachingStrategy
+  id: DirectoryCachingStrategy
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: DirectoryCachingStrategy
+  nameWithType: GlobalConfiguration.DirectoryCachingStrategy
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.DirectoryCachingStrategy
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: DirectoryCachingStrategy
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 365
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nThe DirectoryCachingStrategy attribute specifies the caching strategy to use.\nThe options are None, which means don&apos;t cache directory entries locally;\nLRU, which indicates that a standard fixed-size least recently used strategy should be used; and\nAdaptive, which indicates that an adaptive strategy with a fixed maximum size should be used.\nThe Adaptive strategy is used by default.\n"
+  example: []
+  syntax:
+    content: public GlobalConfiguration.DirectoryCachingStrategyType DirectoryCachingStrategy { get; set; }
+    parameters: []
+    return:
+      type: Orleans.Runtime.Configuration.GlobalConfiguration.DirectoryCachingStrategyType
+    content.vb: Public Property DirectoryCachingStrategy As GlobalConfiguration.DirectoryCachingStrategyType
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.DirectoryCachingStrategy*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.UseVirtualBucketsConsistentRing
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.UseVirtualBucketsConsistentRing
+  id: UseVirtualBucketsConsistentRing
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: UseVirtualBucketsConsistentRing
+  nameWithType: GlobalConfiguration.UseVirtualBucketsConsistentRing
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.UseVirtualBucketsConsistentRing
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: UseVirtualBucketsConsistentRing
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 367
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  syntax:
+    content: public bool UseVirtualBucketsConsistentRing { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property UseVirtualBucketsConsistentRing As Boolean
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.UseVirtualBucketsConsistentRing*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.NumVirtualBucketsConsistentRing
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.NumVirtualBucketsConsistentRing
+  id: NumVirtualBucketsConsistentRing
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: NumVirtualBucketsConsistentRing
+  nameWithType: GlobalConfiguration.NumVirtualBucketsConsistentRing
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.NumVirtualBucketsConsistentRing
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: NumVirtualBucketsConsistentRing
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 368
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  syntax:
+    content: public int NumVirtualBucketsConsistentRing { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property NumVirtualBucketsConsistentRing As Integer
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.NumVirtualBucketsConsistentRing*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.LivenessType
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.LivenessType
+  id: LivenessType
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: LivenessType
+  nameWithType: GlobalConfiguration.LivenessType
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.LivenessType
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: LivenessType
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 374
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  syntax:
+    content: public GlobalConfiguration.LivenessProviderType LivenessType { get; set; }
+    parameters: []
+    return:
+      type: Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType
+    content.vb: Public Property LivenessType As GlobalConfiguration.LivenessProviderType
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.LivenessType*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.MembershipTableAssembly
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.MembershipTableAssembly
+  id: MembershipTableAssembly
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: MembershipTableAssembly
+  nameWithType: GlobalConfiguration.MembershipTableAssembly
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.MembershipTableAssembly
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: MembershipTableAssembly
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 392
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nAssembly to use for custom MembershipTable implementation\n"
+  example: []
+  syntax:
+    content: public string MembershipTableAssembly { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property MembershipTableAssembly As String
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.MembershipTableAssembly*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.ReminderTableAssembly
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.ReminderTableAssembly
+  id: ReminderTableAssembly
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: ReminderTableAssembly
+  nameWithType: GlobalConfiguration.ReminderTableAssembly
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.ReminderTableAssembly
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ReminderTableAssembly
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 397
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nAssembly to use for custom ReminderTable implementation\n"
+  example: []
+  syntax:
+    content: public string ReminderTableAssembly { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ReminderTableAssembly As String
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.ReminderTableAssembly*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceType
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceType
+  id: ReminderServiceType
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: ReminderServiceType
+  nameWithType: GlobalConfiguration.ReminderServiceType
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceType
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ReminderServiceType
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 403
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  syntax:
+    content: public GlobalConfiguration.ReminderServiceProviderType ReminderServiceType { get; set; }
+    parameters: []
+    return:
+      type: Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType
+    content.vb: Public Property ReminderServiceType As GlobalConfiguration.ReminderServiceProviderType
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceType*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.MockReminderTableTimeout
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.MockReminderTableTimeout
+  id: MockReminderTableTimeout
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: MockReminderTableTimeout
+  nameWithType: GlobalConfiguration.MockReminderTableTimeout
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.MockReminderTableTimeout
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: MockReminderTableTimeout
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 425
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  syntax:
+    content: public TimeSpan MockReminderTableTimeout { get; set; }
+    parameters: []
+    return:
+      type: TimeSpan
+    content.vb: Public Property MockReminderTableTimeout As TimeSpan
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.MockReminderTableTimeout*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.ProviderConfigurations
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.ProviderConfigurations
+  id: ProviderConfigurations
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: ProviderConfigurations
+  nameWithType: GlobalConfiguration.ProviderConfigurations
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.ProviderConfigurations
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ProviderConfigurations
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 431
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nConfiguration for various runtime providers.\n"
+  example: []
+  syntax:
+    content: public IDictionary<string, ProviderCategoryConfiguration> ProviderConfigurations { get; set; }
+    parameters: []
+    return:
+      type: IDictionary{System.String,ProviderCategoryConfiguration}
+    content.vb: Public Property ProviderConfigurations As IDictionary(Of String, ProviderCategoryConfiguration)
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.ProviderConfigurations*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.GrainServiceConfigurations
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.GrainServiceConfigurations
+  id: GrainServiceConfigurations
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: GrainServiceConfigurations
+  nameWithType: GlobalConfiguration.GrainServiceConfigurations
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.GrainServiceConfigurations
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GrainServiceConfigurations
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 436
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nConfiguration for grain services.\n"
+  example: []
+  syntax:
+    content: public GrainServiceConfigurations GrainServiceConfigurations { get; set; }
+    parameters: []
+    return:
+      type: Orleans.Runtime.Configuration.GrainServiceConfigurations
+    content.vb: Public Property GrainServiceConfigurations As GrainServiceConfigurations
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.GrainServiceConfigurations*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.DirectoryLazyDeregistrationDelay
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.DirectoryLazyDeregistrationDelay
+  id: DirectoryLazyDeregistrationDelay
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: DirectoryLazyDeregistrationDelay
+  nameWithType: GlobalConfiguration.DirectoryLazyDeregistrationDelay
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.DirectoryLazyDeregistrationDelay
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: DirectoryLazyDeregistrationDelay
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 445
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nThe time span between when we have added an entry for an activation to the grain directory and when we are allowed\nto conditionally remove that entry. \nConditional deregistration is used for lazy clean-up of activations whose prompt deregistration failed for some reason (e.g., message failure).\nThis should always be at least one minute, since we compare the times on the directory partition, so message delays and clcks skues have\nto be allowed.\n"
+  example: []
+  syntax:
+    content: public TimeSpan DirectoryLazyDeregistrationDelay { get; set; }
+    parameters: []
+    return:
+      type: TimeSpan
+    content.vb: Public Property DirectoryLazyDeregistrationDelay As TimeSpan
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.DirectoryLazyDeregistrationDelay*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.ClientRegistrationRefresh
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.ClientRegistrationRefresh
+  id: ClientRegistrationRefresh
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: ClientRegistrationRefresh
+  nameWithType: GlobalConfiguration.ClientRegistrationRefresh
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.ClientRegistrationRefresh
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ClientRegistrationRefresh
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 447
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  syntax:
+    content: public TimeSpan ClientRegistrationRefresh { get; set; }
+    parameters: []
+    return:
+      type: TimeSpan
+    content.vb: Public Property ClientRegistrationRefresh As TimeSpan
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.ClientRegistrationRefresh*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.PerformDeadlockDetection
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.PerformDeadlockDetection
+  id: PerformDeadlockDetection
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: PerformDeadlockDetection
+  nameWithType: GlobalConfiguration.PerformDeadlockDetection
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.PerformDeadlockDetection
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: PerformDeadlockDetection
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 449
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  syntax:
+    content: public bool PerformDeadlockDetection { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property PerformDeadlockDetection As Boolean
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.PerformDeadlockDetection*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.AllowCallChainReentrancy
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.AllowCallChainReentrancy
+  id: AllowCallChainReentrancy
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: AllowCallChainReentrancy
+  nameWithType: GlobalConfiguration.AllowCallChainReentrancy
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.AllowCallChainReentrancy
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AllowCallChainReentrancy
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 451
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  syntax:
+    content: public bool AllowCallChainReentrancy { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property AllowCallChainReentrancy As Boolean
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.AllowCallChainReentrancy*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.DefaultPlacementStrategy
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.DefaultPlacementStrategy
+  id: DefaultPlacementStrategy
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: DefaultPlacementStrategy
+  nameWithType: GlobalConfiguration.DefaultPlacementStrategy
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.DefaultPlacementStrategy
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: DefaultPlacementStrategy
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 453
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  syntax:
+    content: public string DefaultPlacementStrategy { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DefaultPlacementStrategy As String
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.DefaultPlacementStrategy*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.DefaultCompatibilityStrategy
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.DefaultCompatibilityStrategy
+  id: DefaultCompatibilityStrategy
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: DefaultCompatibilityStrategy
+  nameWithType: GlobalConfiguration.DefaultCompatibilityStrategy
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.DefaultCompatibilityStrategy
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: DefaultCompatibilityStrategy
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 455
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  syntax:
+    content: public CompatibilityStrategy DefaultCompatibilityStrategy { get; set; }
+    parameters: []
+    return:
+      type: Orleans.Versions.Compatibility.CompatibilityStrategy
+    content.vb: Public Property DefaultCompatibilityStrategy As CompatibilityStrategy
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.DefaultCompatibilityStrategy*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.DefaultVersionSelectorStrategy
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.DefaultVersionSelectorStrategy
+  id: DefaultVersionSelectorStrategy
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: DefaultVersionSelectorStrategy
+  nameWithType: GlobalConfiguration.DefaultVersionSelectorStrategy
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.DefaultVersionSelectorStrategy
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: DefaultVersionSelectorStrategy
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 457
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  syntax:
+    content: public VersionSelectorStrategy DefaultVersionSelectorStrategy { get; set; }
+    parameters: []
+    return:
+      type: Orleans.Versions.Selector.VersionSelectorStrategy
+    content.vb: Public Property DefaultVersionSelectorStrategy As VersionSelectorStrategy
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.DefaultVersionSelectorStrategy*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.DeploymentLoadPublisherRefreshTime
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.DeploymentLoadPublisherRefreshTime
+  id: DeploymentLoadPublisherRefreshTime
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: DeploymentLoadPublisherRefreshTime
+  nameWithType: GlobalConfiguration.DeploymentLoadPublisherRefreshTime
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.DeploymentLoadPublisherRefreshTime
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: DeploymentLoadPublisherRefreshTime
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 459
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  syntax:
+    content: public TimeSpan DeploymentLoadPublisherRefreshTime { get; set; }
+    parameters: []
+    return:
+      type: TimeSpan
+    content.vb: Public Property DeploymentLoadPublisherRefreshTime As TimeSpan
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.DeploymentLoadPublisherRefreshTime*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.ActivationCountBasedPlacementChooseOutOf
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.ActivationCountBasedPlacementChooseOutOf
+  id: ActivationCountBasedPlacementChooseOutOf
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: ActivationCountBasedPlacementChooseOutOf
+  nameWithType: GlobalConfiguration.ActivationCountBasedPlacementChooseOutOf
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.ActivationCountBasedPlacementChooseOutOf
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ActivationCountBasedPlacementChooseOutOf
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 461
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  syntax:
+    content: public int ActivationCountBasedPlacementChooseOutOf { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property ActivationCountBasedPlacementChooseOutOf As Integer
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.ActivationCountBasedPlacementChooseOutOf*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.AssumeHomogenousSilosForTesting
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.AssumeHomogenousSilosForTesting
+  id: AssumeHomogenousSilosForTesting
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: AssumeHomogenousSilosForTesting
+  nameWithType: GlobalConfiguration.AssumeHomogenousSilosForTesting
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.AssumeHomogenousSilosForTesting
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AssumeHomogenousSilosForTesting
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 463
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  syntax:
+    content: public bool AssumeHomogenousSilosForTesting { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property AssumeHomogenousSilosForTesting As Boolean
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.AssumeHomogenousSilosForTesting*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.UseAdoNetSystemStore
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.UseAdoNetSystemStore
+  id: UseAdoNetSystemStore
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: UseAdoNetSystemStore
+  nameWithType: GlobalConfiguration.UseAdoNetSystemStore
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.UseAdoNetSystemStore
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: UseAdoNetSystemStore
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 469
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nDetermines if ADO should be used for storage of Membership and Reminders info.\nTrue if either or both of LivenessType and ReminderServiceType are set to SqlServer, false otherwise.\n"
+  example: []
+  syntax:
+    content: public bool UseAdoNetSystemStore { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property UseAdoNetSystemStore As Boolean
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.UseAdoNetSystemStore*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.UseAzureSystemStore
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.UseAzureSystemStore
+  id: UseAzureSystemStore
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: UseAzureSystemStore
+  nameWithType: GlobalConfiguration.UseAzureSystemStore
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.UseAzureSystemStore
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: UseAzureSystemStore
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 496
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nDetermines if Azure Storage should be used for storage of Membership and Reminders info.\nTrue if either or both of LivenessType and ReminderServiceType are set to AzureTable, false otherwise.\n"
+  example: []
+  syntax:
+    content: public bool UseAzureSystemStore { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property UseAzureSystemStore As Boolean
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.UseAzureSystemStore*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.ENFORCE_MINIMUM_REQUIREMENT_FOR_AGE_LIMIT
+  commentId: F:Orleans.Runtime.Configuration.GlobalConfiguration.ENFORCE_MINIMUM_REQUIREMENT_FOR_AGE_LIMIT
+  id: ENFORCE_MINIMUM_REQUIREMENT_FOR_AGE_LIMIT
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: ENFORCE_MINIMUM_REQUIREMENT_FOR_AGE_LIMIT
+  nameWithType: GlobalConfiguration.ENFORCE_MINIMUM_REQUIREMENT_FOR_AGE_LIMIT
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.ENFORCE_MINIMUM_REQUIREMENT_FOR_AGE_LIMIT
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ENFORCE_MINIMUM_REQUIREMENT_FOR_AGE_LIMIT
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 508
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  syntax:
+    content: public static bool ENFORCE_MINIMUM_REQUIREMENT_FOR_AGE_LIMIT
+    return:
+      type: System.Boolean
+    content.vb: Public Shared ENFORCE_MINIMUM_REQUIREMENT_FOR_AGE_LIMIT As Boolean
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.DEFAULT_MULTICLUSTER_REGISTRATION_STRATEGY
+  commentId: F:Orleans.Runtime.Configuration.GlobalConfiguration.DEFAULT_MULTICLUSTER_REGISTRATION_STRATEGY
+  id: DEFAULT_MULTICLUSTER_REGISTRATION_STRATEGY
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: DEFAULT_MULTICLUSTER_REGISTRATION_STRATEGY
+  nameWithType: GlobalConfiguration.DEFAULT_MULTICLUSTER_REGISTRATION_STRATEGY
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.DEFAULT_MULTICLUSTER_REGISTRATION_STRATEGY
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: DEFAULT_MULTICLUSTER_REGISTRATION_STRATEGY
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 509
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  syntax:
+    content: public static readonly string DEFAULT_MULTICLUSTER_REGISTRATION_STRATEGY
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly DEFAULT_MULTICLUSTER_REGISTRATION_STRATEGY As String
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.#ctor
+  commentId: M:Orleans.Runtime.Configuration.GlobalConfiguration.#ctor
+  id: '#ctor'
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: GlobalConfiguration()
+  nameWithType: GlobalConfiguration.GlobalConfiguration()
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.GlobalConfiguration()
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 514
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  syntax:
+    content: public GlobalConfiguration()
+    content.vb: Public Sub New
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.ToString
+  commentId: M:Orleans.Runtime.Configuration.GlobalConfiguration.ToString
+  id: ToString
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: GlobalConfiguration.ToString()
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ToString
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 575
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.RegisterStreamProvider``1(System.String,IDictionary{System.String,System.String})
+  commentId: M:Orleans.Runtime.Configuration.GlobalConfiguration.RegisterStreamProvider``1(System.String,IDictionary{System.String,System.String})
+  id: RegisterStreamProvider``1(System.String,IDictionary{System.String,System.String})
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: RegisterStreamProvider<T>(String, IDictionary<String, String>)
+  nameWithType: GlobalConfiguration.RegisterStreamProvider<T>(String, IDictionary<String, String>)
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.RegisterStreamProvider<T>(System.String, IDictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: RegisterStreamProvider
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 1019
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nRegisters a given type of <code data-dev-comment-type=\"typeparamref\" class=\"typeparamref\">T</code> where <code data-dev-comment-type=\"typeparamref\" class=\"typeparamref\">T</code> is stream provider\n"
+  example: []
+  syntax:
+    content: 'public void RegisterStreamProvider<T>(string providerName, IDictionary<string, string> properties = null)where T : IStreamProvider'
+    parameters:
+    - id: providerName
+      type: System.String
+      description: Name of the stream provider
+    - id: properties
+      type: IDictionary{System.String,System.String}
+      description: Properties that will be passed to stream provider upon initialization
+    typeParameters:
+    - id: T
+      description: Non-abstract type which implements <xref href="Orleans.Streams.IStreamProvider" data-throw-if-not-resolved="false"></xref> stream
+    content.vb: Public Sub RegisterStreamProvider(Of T As IStreamProvider)(providerName As String, properties As IDictionary(Of String, String) = Nothing)
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.RegisterStreamProvider*
+  nameWithType.vb: GlobalConfiguration.RegisterStreamProvider(Of T)(String, IDictionary(Of String, String))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.Runtime.Configuration.GlobalConfiguration.RegisterStreamProvider(Of T)(System.String, IDictionary(Of System.String, System.String))
+  name.vb: RegisterStreamProvider(Of T)(String, IDictionary(Of String, String))
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.RegisterStreamProvider(System.String,System.String,IDictionary{System.String,System.String})
+  commentId: M:Orleans.Runtime.Configuration.GlobalConfiguration.RegisterStreamProvider(System.String,System.String,IDictionary{System.String,System.String})
+  id: RegisterStreamProvider(System.String,System.String,IDictionary{System.String,System.String})
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: RegisterStreamProvider(String, String, IDictionary<String, String>)
+  nameWithType: GlobalConfiguration.RegisterStreamProvider(String, String, IDictionary<String, String>)
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.RegisterStreamProvider(System.String, System.String, IDictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: RegisterStreamProvider
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 1037
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nRegisters a given stream provider.\n"
+  example: []
+  syntax:
+    content: public void RegisterStreamProvider(string providerTypeFullName, string providerName, IDictionary<string, string> properties = null)
+    parameters:
+    - id: providerTypeFullName
+      type: System.String
+      description: Full name of the stream provider type
+    - id: providerName
+      type: System.String
+      description: Name of the stream provider
+    - id: properties
+      type: IDictionary{System.String,System.String}
+      description: 'Properties that will be passed to the stream provider upon initialization '
+    content.vb: Public Sub RegisterStreamProvider(providerTypeFullName As String, providerName As String, properties As IDictionary(Of String, String) = Nothing)
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.RegisterStreamProvider*
+  nameWithType.vb: GlobalConfiguration.RegisterStreamProvider(String, String, IDictionary(Of String, String))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.Runtime.Configuration.GlobalConfiguration.RegisterStreamProvider(System.String, System.String, IDictionary(Of System.String, System.String))
+  name.vb: RegisterStreamProvider(String, String, IDictionary(Of String, String))
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.RegisterStorageProvider``1(System.String,IDictionary{System.String,System.String})
+  commentId: M:Orleans.Runtime.Configuration.GlobalConfiguration.RegisterStorageProvider``1(System.String,IDictionary{System.String,System.String})
+  id: RegisterStorageProvider``1(System.String,IDictionary{System.String,System.String})
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: RegisterStorageProvider<T>(String, IDictionary<String, String>)
+  nameWithType: GlobalConfiguration.RegisterStorageProvider<T>(String, IDictionary<String, String>)
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.RegisterStorageProvider<T>(System.String, IDictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: RegisterStorageProvider
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 1048
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nRegisters a given type of <code data-dev-comment-type=\"typeparamref\" class=\"typeparamref\">T</code> where <code data-dev-comment-type=\"typeparamref\" class=\"typeparamref\">T</code> is storage provider\n"
+  example: []
+  syntax:
+    content: 'public void RegisterStorageProvider<T>(string providerName, IDictionary<string, string> properties = null)where T : IStorageProvider'
+    parameters:
+    - id: providerName
+      type: System.String
+      description: Name of the storage provider
+    - id: properties
+      type: IDictionary{System.String,System.String}
+      description: Properties that will be passed to storage provider upon initialization
+    typeParameters:
+    - id: T
+      description: Non-abstract type which implements <see cref="!:IStorageProvider"></see> storage
+    content.vb: Public Sub RegisterStorageProvider(Of T As IStorageProvider)(providerName As String, properties As IDictionary(Of String, String) = Nothing)
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.RegisterStorageProvider*
+  nameWithType.vb: GlobalConfiguration.RegisterStorageProvider(Of T)(String, IDictionary(Of String, String))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.Runtime.Configuration.GlobalConfiguration.RegisterStorageProvider(Of T)(System.String, IDictionary(Of System.String, System.String))
+  name.vb: RegisterStorageProvider(Of T)(String, IDictionary(Of String, String))
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.RegisterStorageProvider(System.String,System.String,IDictionary{System.String,System.String})
+  commentId: M:Orleans.Runtime.Configuration.GlobalConfiguration.RegisterStorageProvider(System.String,System.String,IDictionary{System.String,System.String})
+  id: RegisterStorageProvider(System.String,System.String,IDictionary{System.String,System.String})
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: RegisterStorageProvider(String, String, IDictionary<String, String>)
+  nameWithType: GlobalConfiguration.RegisterStorageProvider(String, String, IDictionary<String, String>)
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.RegisterStorageProvider(System.String, System.String, IDictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: RegisterStorageProvider
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 1066
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nRegisters a given storage provider.\n"
+  example: []
+  syntax:
+    content: public void RegisterStorageProvider(string providerTypeFullName, string providerName, IDictionary<string, string> properties = null)
+    parameters:
+    - id: providerTypeFullName
+      type: System.String
+      description: Full name of the storage provider type
+    - id: providerName
+      type: System.String
+      description: Name of the storage provider
+    - id: properties
+      type: IDictionary{System.String,System.String}
+      description: 'Properties that will be passed to the storage provider upon initialization '
+    content.vb: Public Sub RegisterStorageProvider(providerTypeFullName As String, providerName As String, properties As IDictionary(Of String, String) = Nothing)
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.RegisterStorageProvider*
+  nameWithType.vb: GlobalConfiguration.RegisterStorageProvider(String, String, IDictionary(Of String, String))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.Runtime.Configuration.GlobalConfiguration.RegisterStorageProvider(System.String, System.String, IDictionary(Of System.String, System.String))
+  name.vb: RegisterStorageProvider(String, String, IDictionary(Of String, String))
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.RegisterLogConsistencyProvider(System.String,System.String,IDictionary{System.String,System.String})
+  commentId: M:Orleans.Runtime.Configuration.GlobalConfiguration.RegisterLogConsistencyProvider(System.String,System.String,IDictionary{System.String,System.String})
+  id: RegisterLogConsistencyProvider(System.String,System.String,IDictionary{System.String,System.String})
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: RegisterLogConsistencyProvider(String, String, IDictionary<String, String>)
+  nameWithType: GlobalConfiguration.RegisterLogConsistencyProvider(String, String, IDictionary<String, String>)
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.RegisterLogConsistencyProvider(System.String, System.String, IDictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: RegisterLogConsistencyProvider
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 1077
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nRegisters a given log-consistency provider.\n"
+  example: []
+  syntax:
+    content: public void RegisterLogConsistencyProvider(string providerTypeFullName, string providerName, IDictionary<string, string> properties = null)
+    parameters:
+    - id: providerTypeFullName
+      type: System.String
+      description: Full name of the log-consistency provider type
+    - id: providerName
+      type: System.String
+      description: Name of the log-consistency provider
+    - id: properties
+      type: IDictionary{System.String,System.String}
+      description: 'Properties that will be passed to the log-consistency provider upon initialization '
+    content.vb: Public Sub RegisterLogConsistencyProvider(providerTypeFullName As String, providerName As String, properties As IDictionary(Of String, String) = Nothing)
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.RegisterLogConsistencyProvider*
+  nameWithType.vb: GlobalConfiguration.RegisterLogConsistencyProvider(String, String, IDictionary(Of String, String))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.Runtime.Configuration.GlobalConfiguration.RegisterLogConsistencyProvider(System.String, System.String, IDictionary(Of System.String, System.String))
+  name.vb: RegisterLogConsistencyProvider(String, String, IDictionary(Of String, String))
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.RegisterLogConsistencyProvider``1(System.String,IDictionary{System.String,System.String})
+  commentId: M:Orleans.Runtime.Configuration.GlobalConfiguration.RegisterLogConsistencyProvider``1(System.String,IDictionary{System.String,System.String})
+  id: RegisterLogConsistencyProvider``1(System.String,IDictionary{System.String,System.String})
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: RegisterLogConsistencyProvider<T>(String, IDictionary<String, String>)
+  nameWithType: GlobalConfiguration.RegisterLogConsistencyProvider<T>(String, IDictionary<String, String>)
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.RegisterLogConsistencyProvider<T>(System.String, IDictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: RegisterLogConsistencyProvider
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 1089
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nRegisters a given type of <code data-dev-comment-type=\"typeparamref\" class=\"typeparamref\">T</code> where <code data-dev-comment-type=\"typeparamref\" class=\"typeparamref\">T</code> is a log-consistency provider\n"
+  example: []
+  syntax:
+    content: 'public void RegisterLogConsistencyProvider<T>(string providerName, IDictionary<string, string> properties = null)where T : ILogConsistencyProvider'
+    parameters:
+    - id: providerName
+      type: System.String
+      description: Name of the log-consistency provider
+    - id: properties
+      type: IDictionary{System.String,System.String}
+      description: Properties that will be passed to log-consistency provider upon initialization
+    typeParameters:
+    - id: T
+      description: Non-abstract type which implements <see cref="!:ILogConsistencyProvider"></see> a log-consistency storage interface
+    content.vb: Public Sub RegisterLogConsistencyProvider(Of T As ILogConsistencyProvider)(providerName As String, properties As IDictionary(Of String, String) = Nothing)
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.RegisterLogConsistencyProvider*
+  nameWithType.vb: GlobalConfiguration.RegisterLogConsistencyProvider(Of T)(String, IDictionary(Of String, String))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.Runtime.Configuration.GlobalConfiguration.RegisterLogConsistencyProvider(Of T)(System.String, IDictionary(Of System.String, System.String))
+  name.vb: RegisterLogConsistencyProvider(Of T)(String, IDictionary(Of String, String))
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.TryGetProviderConfiguration(System.String,System.String,IProviderConfiguration@)
+  commentId: M:Orleans.Runtime.Configuration.GlobalConfiguration.TryGetProviderConfiguration(System.String,System.String,IProviderConfiguration@)
+  id: TryGetProviderConfiguration(System.String,System.String,IProviderConfiguration@)
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: TryGetProviderConfiguration(String, String, out IProviderConfiguration)
+  nameWithType: GlobalConfiguration.TryGetProviderConfiguration(String, String, out IProviderConfiguration)
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.TryGetProviderConfiguration(System.String, System.String, out IProviderConfiguration)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: TryGetProviderConfiguration
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 1109
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nRetrieves an existing provider configuration\n"
+  example: []
+  syntax:
+    content: public bool TryGetProviderConfiguration(string providerTypeFullName, string providerName, out IProviderConfiguration config)
+    parameters:
+    - id: providerTypeFullName
+      type: System.String
+      description: Full name of the stream provider type
+    - id: providerName
+      type: System.String
+      description: Name of the stream provider
+    - id: config
+      type: IProviderConfiguration
+      description: The provider configuration, if exists
+    return:
+      type: System.Boolean
+      description: True if a configuration for this provider already exists, false otherwise.
+    content.vb: Public Function TryGetProviderConfiguration(providerTypeFullName As String, providerName As String, ByRef config As IProviderConfiguration) As Boolean
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.TryGetProviderConfiguration*
+  nameWithType.vb: GlobalConfiguration.TryGetProviderConfiguration(String, String, ByRef IProviderConfiguration)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.Runtime.Configuration.GlobalConfiguration.TryGetProviderConfiguration(System.String, System.String, ByRef IProviderConfiguration)
+  name.vb: TryGetProviderConfiguration(String, String, ByRef IProviderConfiguration)
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.GetAllProviderConfigurations
+  commentId: M:Orleans.Runtime.Configuration.GlobalConfiguration.GetAllProviderConfigurations
+  id: GetAllProviderConfigurations
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: GetAllProviderConfigurations()
+  nameWithType: GlobalConfiguration.GetAllProviderConfigurations()
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.GetAllProviderConfigurations()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetAllProviderConfigurations
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 1118
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nRetrieves an enumeration of all currently configured provider configurations.\n"
+  example: []
+  syntax:
+    content: public IEnumerable<IProviderConfiguration> GetAllProviderConfigurations()
+    return:
+      type: IEnumerable{IProviderConfiguration}
+      description: An enumeration of all currently configured provider configurations.
+    content.vb: Public Function GetAllProviderConfigurations As IEnumerable(Of IProviderConfiguration)
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.GetAllProviderConfigurations*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.RegisterGrainService(System.String,System.String,IDictionary{System.String,System.String})
+  commentId: M:Orleans.Runtime.Configuration.GlobalConfiguration.RegisterGrainService(System.String,System.String,IDictionary{System.String,System.String})
+  id: RegisterGrainService(System.String,System.String,IDictionary{System.String,System.String})
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: RegisterGrainService(String, String, IDictionary<String, String>)
+  nameWithType: GlobalConfiguration.RegisterGrainService(String, String, IDictionary<String, String>)
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.RegisterGrainService(System.String, System.String, IDictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: RegisterGrainService
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 1123
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  syntax:
+    content: public void RegisterGrainService(string serviceName, string serviceType, IDictionary<string, string> properties = null)
+    parameters:
+    - id: serviceName
+      type: System.String
+    - id: serviceType
+      type: System.String
+    - id: properties
+      type: IDictionary{System.String,System.String}
+    content.vb: Public Sub RegisterGrainService(serviceName As String, serviceType As String, properties As IDictionary(Of String, String) = Nothing)
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.RegisterGrainService*
+  nameWithType.vb: GlobalConfiguration.RegisterGrainService(String, String, IDictionary(Of String, String))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.Runtime.Configuration.GlobalConfiguration.RegisterGrainService(System.String, System.String, IDictionary(Of System.String, System.String))
+  name.vb: RegisterGrainService(String, String, IDictionary(Of String, String))
+references:
+- uid: Orleans.Runtime.Configuration
+  commentId: N:Orleans.Runtime.Configuration
+  isExternal: false
+  name: Orleans.Runtime.Configuration
+  nameWithType: Orleans.Runtime.Configuration
+  fullName: Orleans.Runtime.Configuration
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.Orleans.Runtime.Configuration.BootstrapProviderConfiguration.RegisterBootstrapProvider``1(System.String,IDictionary{System.String,System.String})
+  commentId: M:Orleans.Runtime.Configuration.BootstrapProviderConfiguration.RegisterBootstrapProvider``1(Orleans.Runtime.Configuration.GlobalConfiguration,System.String,IDictionary{System.String,System.String})
+  parent: Orleans.Runtime.Configuration.BootstrapProviderConfiguration
+  definition: Orleans.Runtime.Configuration.BootstrapProviderConfiguration.RegisterBootstrapProvider``1(Orleans.Runtime.Configuration.GlobalConfiguration,System.String,IDictionary{System.String,System.String})
+  name: RegisterBootstrapProvider<T>(String, IDictionary<String, String>)
+  nameWithType: BootstrapProviderConfiguration.RegisterBootstrapProvider<T>(String, IDictionary<String, String>)
+  fullName: Orleans.Runtime.Configuration.BootstrapProviderConfiguration.RegisterBootstrapProvider<T>(System.String, IDictionary<System.String, System.String>)
+  nameWithType.vb: BootstrapProviderConfiguration.RegisterBootstrapProvider(Of T)(String, IDictionary(Of String, String))
+  fullName.vb: Orleans.Runtime.Configuration.BootstrapProviderConfiguration.RegisterBootstrapProvider(Of T)(System.String, IDictionary(Of System.String, System.String))
+  name.vb: RegisterBootstrapProvider(Of T)(String, IDictionary(Of String, String))
+  spec.csharp:
+  - uid: Orleans.Runtime.Configuration.BootstrapProviderConfiguration.RegisterBootstrapProvider``1(System.String,IDictionary{System.String,System.String})
+    name: RegisterBootstrapProvider<T>
+    nameWithType: BootstrapProviderConfiguration.RegisterBootstrapProvider<T>
+    fullName: Orleans.Runtime.Configuration.BootstrapProviderConfiguration.RegisterBootstrapProvider<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.Configuration.BootstrapProviderConfiguration.RegisterBootstrapProvider``1(System.String,IDictionary{System.String,System.String})
+    name: RegisterBootstrapProvider(Of T)
+    nameWithType: BootstrapProviderConfiguration.RegisterBootstrapProvider(Of T)
+    fullName: Orleans.Runtime.Configuration.BootstrapProviderConfiguration.RegisterBootstrapProvider(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.Orleans.Runtime.Configuration.BootstrapProviderConfiguration.RegisterBootstrapProvider(System.String,System.String,IDictionary{System.String,System.String})
+  commentId: M:Orleans.Runtime.Configuration.BootstrapProviderConfiguration.RegisterBootstrapProvider(Orleans.Runtime.Configuration.GlobalConfiguration,System.String,System.String,IDictionary{System.String,System.String})
+  parent: Orleans.Runtime.Configuration.BootstrapProviderConfiguration
+  definition: Orleans.Runtime.Configuration.BootstrapProviderConfiguration.RegisterBootstrapProvider(Orleans.Runtime.Configuration.GlobalConfiguration,System.String,System.String,IDictionary{System.String,System.String})
+  name: RegisterBootstrapProvider(String, String, IDictionary<String, String>)
+  nameWithType: BootstrapProviderConfiguration.RegisterBootstrapProvider(String, String, IDictionary<String, String>)
+  fullName: Orleans.Runtime.Configuration.BootstrapProviderConfiguration.RegisterBootstrapProvider(System.String, System.String, IDictionary<System.String, System.String>)
+  nameWithType.vb: BootstrapProviderConfiguration.RegisterBootstrapProvider(String, String, IDictionary(Of String, String))
+  fullName.vb: Orleans.Runtime.Configuration.BootstrapProviderConfiguration.RegisterBootstrapProvider(System.String, System.String, IDictionary(Of System.String, System.String))
+  name.vb: RegisterBootstrapProvider(String, String, IDictionary(Of String, String))
+  spec.csharp:
+  - uid: Orleans.Runtime.Configuration.BootstrapProviderConfiguration.RegisterBootstrapProvider(System.String,System.String,IDictionary{System.String,System.String})
+    name: RegisterBootstrapProvider
+    nameWithType: BootstrapProviderConfiguration.RegisterBootstrapProvider
+    fullName: Orleans.Runtime.Configuration.BootstrapProviderConfiguration.RegisterBootstrapProvider
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.Configuration.BootstrapProviderConfiguration.RegisterBootstrapProvider(System.String,System.String,IDictionary{System.String,System.String})
+    name: RegisterBootstrapProvider
+    nameWithType: BootstrapProviderConfiguration.RegisterBootstrapProvider
+    fullName: Orleans.Runtime.Configuration.BootstrapProviderConfiguration.RegisterBootstrapProvider
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<GlobalConfiguration>()
+  nameWithType: ImmutableExt.AsImmutable<GlobalConfiguration>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.Configuration.GlobalConfiguration>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of GlobalConfiguration)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.Configuration.GlobalConfiguration)()
+  name.vb: AsImmutable(Of GlobalConfiguration)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<GlobalConfiguration>
+    nameWithType: ImmutableExt.AsImmutable<GlobalConfiguration>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.Configuration.GlobalConfiguration>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of GlobalConfiguration)
+    nameWithType: ImmutableExt.AsImmutable(Of GlobalConfiguration)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.Configuration.GlobalConfiguration)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Runtime.Configuration.BootstrapProviderConfiguration.RegisterBootstrapProvider``1(Orleans.Runtime.Configuration.GlobalConfiguration,System.String,IDictionary{System.String,System.String})
+  commentId: M:Orleans.Runtime.Configuration.BootstrapProviderConfiguration.RegisterBootstrapProvider``1(Orleans.Runtime.Configuration.GlobalConfiguration,System.String,IDictionary{System.String,System.String})
+  isExternal: true
+  name: RegisterBootstrapProvider<T>(GlobalConfiguration, String, IDictionary<String, String>)
+  nameWithType: BootstrapProviderConfiguration.RegisterBootstrapProvider<T>(GlobalConfiguration, String, IDictionary<String, String>)
+  fullName: Orleans.Runtime.Configuration.BootstrapProviderConfiguration.RegisterBootstrapProvider<T>(Orleans.Runtime.Configuration.GlobalConfiguration, System.String, IDictionary<System.String, System.String>)
+  nameWithType.vb: BootstrapProviderConfiguration.RegisterBootstrapProvider(Of T)(GlobalConfiguration, String, IDictionary(Of String, String))
+  fullName.vb: Orleans.Runtime.Configuration.BootstrapProviderConfiguration.RegisterBootstrapProvider(Of T)(Orleans.Runtime.Configuration.GlobalConfiguration, System.String, IDictionary(Of System.String, System.String))
+  name.vb: RegisterBootstrapProvider(Of T)(GlobalConfiguration, String, IDictionary(Of String, String))
+  spec.csharp:
+  - uid: Orleans.Runtime.Configuration.BootstrapProviderConfiguration.RegisterBootstrapProvider``1(Orleans.Runtime.Configuration.GlobalConfiguration,System.String,IDictionary{System.String,System.String})
+    name: RegisterBootstrapProvider<T>
+    nameWithType: BootstrapProviderConfiguration.RegisterBootstrapProvider<T>
+    fullName: Orleans.Runtime.Configuration.BootstrapProviderConfiguration.RegisterBootstrapProvider<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.Configuration.GlobalConfiguration
+    name: GlobalConfiguration
+    nameWithType: GlobalConfiguration
+    fullName: Orleans.Runtime.Configuration.GlobalConfiguration
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.Configuration.BootstrapProviderConfiguration.RegisterBootstrapProvider``1(Orleans.Runtime.Configuration.GlobalConfiguration,System.String,IDictionary{System.String,System.String})
+    name: RegisterBootstrapProvider(Of T)
+    nameWithType: BootstrapProviderConfiguration.RegisterBootstrapProvider(Of T)
+    fullName: Orleans.Runtime.Configuration.BootstrapProviderConfiguration.RegisterBootstrapProvider(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.Configuration.GlobalConfiguration
+    name: GlobalConfiguration
+    nameWithType: GlobalConfiguration
+    fullName: Orleans.Runtime.Configuration.GlobalConfiguration
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.Configuration.BootstrapProviderConfiguration
+  commentId: T:Orleans.Runtime.Configuration.BootstrapProviderConfiguration
+  parent: Orleans.Runtime.Configuration
+  isExternal: false
+  name: BootstrapProviderConfiguration
+  nameWithType: BootstrapProviderConfiguration
+  fullName: Orleans.Runtime.Configuration.BootstrapProviderConfiguration
+- uid: Orleans.Runtime.Configuration.BootstrapProviderConfiguration.RegisterBootstrapProvider(Orleans.Runtime.Configuration.GlobalConfiguration,System.String,System.String,IDictionary{System.String,System.String})
+  commentId: M:Orleans.Runtime.Configuration.BootstrapProviderConfiguration.RegisterBootstrapProvider(Orleans.Runtime.Configuration.GlobalConfiguration,System.String,System.String,IDictionary{System.String,System.String})
+  isExternal: true
+  name: RegisterBootstrapProvider(GlobalConfiguration, String, String, IDictionary<String, String>)
+  nameWithType: BootstrapProviderConfiguration.RegisterBootstrapProvider(GlobalConfiguration, String, String, IDictionary<String, String>)
+  fullName: Orleans.Runtime.Configuration.BootstrapProviderConfiguration.RegisterBootstrapProvider(Orleans.Runtime.Configuration.GlobalConfiguration, System.String, System.String, IDictionary<System.String, System.String>)
+  nameWithType.vb: BootstrapProviderConfiguration.RegisterBootstrapProvider(GlobalConfiguration, String, String, IDictionary(Of String, String))
+  fullName.vb: Orleans.Runtime.Configuration.BootstrapProviderConfiguration.RegisterBootstrapProvider(Orleans.Runtime.Configuration.GlobalConfiguration, System.String, System.String, IDictionary(Of System.String, System.String))
+  name.vb: RegisterBootstrapProvider(GlobalConfiguration, String, String, IDictionary(Of String, String))
+  spec.csharp:
+  - uid: Orleans.Runtime.Configuration.BootstrapProviderConfiguration.RegisterBootstrapProvider(Orleans.Runtime.Configuration.GlobalConfiguration,System.String,System.String,IDictionary{System.String,System.String})
+    name: RegisterBootstrapProvider
+    nameWithType: BootstrapProviderConfiguration.RegisterBootstrapProvider
+    fullName: Orleans.Runtime.Configuration.BootstrapProviderConfiguration.RegisterBootstrapProvider
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.Configuration.GlobalConfiguration
+    name: GlobalConfiguration
+    nameWithType: GlobalConfiguration
+    fullName: Orleans.Runtime.Configuration.GlobalConfiguration
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.Configuration.BootstrapProviderConfiguration.RegisterBootstrapProvider(Orleans.Runtime.Configuration.GlobalConfiguration,System.String,System.String,IDictionary{System.String,System.String})
+    name: RegisterBootstrapProvider
+    nameWithType: BootstrapProviderConfiguration.RegisterBootstrapProvider
+    fullName: Orleans.Runtime.Configuration.BootstrapProviderConfiguration.RegisterBootstrapProvider
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.Configuration.GlobalConfiguration
+    name: GlobalConfiguration
+    nameWithType: GlobalConfiguration
+    fullName: Orleans.Runtime.Configuration.GlobalConfiguration
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.Remap*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.Remap
+  isExternal: false
+  name: Remap
+  nameWithType: GlobalConfiguration.Remap
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.Remap
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelType
+  commentId: T:Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelType
+  parent: Orleans.Runtime.Configuration
+  isExternal: false
+  name: GlobalConfiguration.GossipChannelType
+  nameWithType: GlobalConfiguration.GossipChannelType
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelType
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.Application*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.Application
+  isExternal: false
+  name: Application
+  nameWithType: GlobalConfiguration.Application
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.Application
+- uid: Orleans.Runtime.Configuration.ApplicationConfiguration
+  commentId: T:Orleans.Runtime.Configuration.ApplicationConfiguration
+  parent: Orleans.Runtime.Configuration
+  isExternal: false
+  name: ApplicationConfiguration
+  nameWithType: ApplicationConfiguration
+  fullName: Orleans.Runtime.Configuration.ApplicationConfiguration
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.SeedNodes*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.SeedNodes
+  isExternal: false
+  name: SeedNodes
+  nameWithType: GlobalConfiguration.SeedNodes
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.SeedNodes
+- uid: IList{IPEndPoint}
+  commentId: '!:IList{IPEndPoint}'
+  definition: IList`1
+  name: IList<IPEndPoint>
+  nameWithType: IList<IPEndPoint>
+  fullName: IList<IPEndPoint>
+  nameWithType.vb: IList(Of IPEndPoint)
+  fullName.vb: IList(Of IPEndPoint)
+  name.vb: IList(Of IPEndPoint)
+  spec.csharp:
+  - uid: IList`1
+    name: IList
+    nameWithType: IList
+    fullName: IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: IPEndPoint
+    name: IPEndPoint
+    nameWithType: IPEndPoint
+    fullName: IPEndPoint
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IList`1
+    name: IList
+    nameWithType: IList
+    fullName: IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: IPEndPoint
+    name: IPEndPoint
+    nameWithType: IPEndPoint
+    fullName: IPEndPoint
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IList`1
+  isExternal: true
+  name: IList<>
+  nameWithType: IList<>
+  fullName: IList<>
+  nameWithType.vb: IList(Of )
+  fullName.vb: IList(Of )
+  name.vb: IList(Of )
+  spec.csharp:
+  - uid: IList`1
+    name: IList
+    nameWithType: IList
+    fullName: IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IList`1
+    name: IList
+    nameWithType: IList
+    fullName: IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.Subnet*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.Subnet
+  isExternal: false
+  name: Subnet
+  nameWithType: GlobalConfiguration.Subnet
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.Subnet
+- uid: System.Byte[]
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.PrimaryNodeIsRequired*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.PrimaryNodeIsRequired
+  isExternal: false
+  name: PrimaryNodeIsRequired
+  nameWithType: GlobalConfiguration.PrimaryNodeIsRequired
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.PrimaryNodeIsRequired
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.LivenessEnabled*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.LivenessEnabled
+  isExternal: false
+  name: LivenessEnabled
+  nameWithType: GlobalConfiguration.LivenessEnabled
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.LivenessEnabled
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.ProbeTimeout*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.ProbeTimeout
+  isExternal: false
+  name: ProbeTimeout
+  nameWithType: GlobalConfiguration.ProbeTimeout
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.ProbeTimeout
+- uid: TimeSpan
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: TimeSpan
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.TableRefreshTimeout*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.TableRefreshTimeout
+  isExternal: false
+  name: TableRefreshTimeout
+  nameWithType: GlobalConfiguration.TableRefreshTimeout
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.TableRefreshTimeout
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.DeathVoteExpirationTimeout*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.DeathVoteExpirationTimeout
+  isExternal: false
+  name: DeathVoteExpirationTimeout
+  nameWithType: GlobalConfiguration.DeathVoteExpirationTimeout
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.DeathVoteExpirationTimeout
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.IAmAliveTablePublishTimeout*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.IAmAliveTablePublishTimeout
+  isExternal: false
+  name: IAmAliveTablePublishTimeout
+  nameWithType: GlobalConfiguration.IAmAliveTablePublishTimeout
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.IAmAliveTablePublishTimeout
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.MaxJoinAttemptTime*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.MaxJoinAttemptTime
+  isExternal: false
+  name: MaxJoinAttemptTime
+  nameWithType: GlobalConfiguration.MaxJoinAttemptTime
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.MaxJoinAttemptTime
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.TypeMapRefreshInterval*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.TypeMapRefreshInterval
+  isExternal: false
+  name: TypeMapRefreshInterval
+  nameWithType: GlobalConfiguration.TypeMapRefreshInterval
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.TypeMapRefreshInterval
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.ExpectedClusterSize*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.ExpectedClusterSize
+  isExternal: false
+  name: ExpectedClusterSize
+  nameWithType: GlobalConfiguration.ExpectedClusterSize
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.ExpectedClusterSize
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.NumMissedProbesLimit*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.NumMissedProbesLimit
+  isExternal: false
+  name: NumMissedProbesLimit
+  nameWithType: GlobalConfiguration.NumMissedProbesLimit
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.NumMissedProbesLimit
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.NumProbedSilos*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.NumProbedSilos
+  isExternal: false
+  name: NumProbedSilos
+  nameWithType: GlobalConfiguration.NumProbedSilos
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.NumProbedSilos
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.NumVotesForDeathDeclaration*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.NumVotesForDeathDeclaration
+  isExternal: false
+  name: NumVotesForDeathDeclaration
+  nameWithType: GlobalConfiguration.NumVotesForDeathDeclaration
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.NumVotesForDeathDeclaration
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.NumMissedTableIAmAliveLimit*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.NumMissedTableIAmAliveLimit
+  isExternal: false
+  name: NumMissedTableIAmAliveLimit
+  nameWithType: GlobalConfiguration.NumMissedTableIAmAliveLimit
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.NumMissedTableIAmAliveLimit
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.UseLivenessGossip*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.UseLivenessGossip
+  isExternal: false
+  name: UseLivenessGossip
+  nameWithType: GlobalConfiguration.UseLivenessGossip
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.UseLivenessGossip
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.ValidateInitialConnectivity*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.ValidateInitialConnectivity
+  isExternal: false
+  name: ValidateInitialConnectivity
+  nameWithType: GlobalConfiguration.ValidateInitialConnectivity
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.ValidateInitialConnectivity
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.ServiceId*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.ServiceId
+  isExternal: false
+  name: ServiceId
+  nameWithType: GlobalConfiguration.ServiceId
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.ServiceId
+- uid: Guid
+  isExternal: true
+  name: Guid
+  nameWithType: Guid
+  fullName: Guid
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.ClusterId*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.ClusterId
+  isExternal: false
+  name: ClusterId
+  nameWithType: GlobalConfiguration.ClusterId
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.ClusterId
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.DeploymentId*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.DeploymentId
+  isExternal: false
+  name: DeploymentId
+  nameWithType: GlobalConfiguration.DeploymentId
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.DeploymentId
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.HasMultiClusterNetwork*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.HasMultiClusterNetwork
+  isExternal: false
+  name: HasMultiClusterNetwork
+  nameWithType: GlobalConfiguration.HasMultiClusterNetwork
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.HasMultiClusterNetwork
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.DefaultMultiCluster*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.DefaultMultiCluster
+  isExternal: false
+  name: DefaultMultiCluster
+  nameWithType: GlobalConfiguration.DefaultMultiCluster
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.DefaultMultiCluster
+- uid: IReadOnlyList{System.String}
+  commentId: '!:IReadOnlyList{System.String}'
+  definition: IReadOnlyList`1
+  name: IReadOnlyList<String>
+  nameWithType: IReadOnlyList<String>
+  fullName: IReadOnlyList<System.String>
+  nameWithType.vb: IReadOnlyList(Of String)
+  fullName.vb: IReadOnlyList(Of System.String)
+  name.vb: IReadOnlyList(Of String)
+  spec.csharp:
+  - uid: IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: IReadOnlyList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: IReadOnlyList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IReadOnlyList`1
+  isExternal: true
+  name: IReadOnlyList<>
+  nameWithType: IReadOnlyList<>
+  fullName: IReadOnlyList<>
+  nameWithType.vb: IReadOnlyList(Of )
+  fullName.vb: IReadOnlyList(Of )
+  name.vb: IReadOnlyList(Of )
+  spec.csharp:
+  - uid: IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: IReadOnlyList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: IReadOnlyList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.MaxMultiClusterGateways*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.MaxMultiClusterGateways
+  isExternal: false
+  name: MaxMultiClusterGateways
+  nameWithType: GlobalConfiguration.MaxMultiClusterGateways
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.MaxMultiClusterGateways
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.BackgroundGossipInterval*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.BackgroundGossipInterval
+  isExternal: false
+  name: BackgroundGossipInterval
+  nameWithType: GlobalConfiguration.BackgroundGossipInterval
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.BackgroundGossipInterval
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.UseGlobalSingleInstanceByDefault*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.UseGlobalSingleInstanceByDefault
+  isExternal: false
+  name: UseGlobalSingleInstanceByDefault
+  nameWithType: GlobalConfiguration.UseGlobalSingleInstanceByDefault
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.UseGlobalSingleInstanceByDefault
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.GlobalSingleInstanceNumberRetries*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.GlobalSingleInstanceNumberRetries
+  isExternal: false
+  name: GlobalSingleInstanceNumberRetries
+  nameWithType: GlobalConfiguration.GlobalSingleInstanceNumberRetries
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.GlobalSingleInstanceNumberRetries
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.GlobalSingleInstanceRetryInterval*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.GlobalSingleInstanceRetryInterval
+  isExternal: false
+  name: GlobalSingleInstanceRetryInterval
+  nameWithType: GlobalConfiguration.GlobalSingleInstanceRetryInterval
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.GlobalSingleInstanceRetryInterval
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannels*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannels
+  isExternal: false
+  name: GossipChannels
+  nameWithType: GlobalConfiguration.GossipChannels
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannels
+- uid: IReadOnlyList{Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelConfiguration}
+  commentId: '!:IReadOnlyList{Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelConfiguration}'
+  definition: IReadOnlyList`1
+  name: IReadOnlyList<GlobalConfiguration.GossipChannelConfiguration>
+  nameWithType: IReadOnlyList<GlobalConfiguration.GossipChannelConfiguration>
+  fullName: IReadOnlyList<Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelConfiguration>
+  nameWithType.vb: IReadOnlyList(Of GlobalConfiguration.GossipChannelConfiguration)
+  fullName.vb: IReadOnlyList(Of Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelConfiguration)
+  name.vb: IReadOnlyList(Of GlobalConfiguration.GossipChannelConfiguration)
+  spec.csharp:
+  - uid: IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: IReadOnlyList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelConfiguration
+    name: GlobalConfiguration.GossipChannelConfiguration
+    nameWithType: GlobalConfiguration.GossipChannelConfiguration
+    fullName: Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelConfiguration
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: IReadOnlyList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelConfiguration
+    name: GlobalConfiguration.GossipChannelConfiguration
+    nameWithType: GlobalConfiguration.GossipChannelConfiguration
+    fullName: Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelConfiguration
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.DataConnectionStringForReminders
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.DataConnectionStringForReminders
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.DataConnectionString*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.DataConnectionString
+  isExternal: false
+  name: DataConnectionString
+  nameWithType: GlobalConfiguration.DataConnectionString
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.DataConnectionString
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.AdoInvariantForReminders
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.AdoInvariantForReminders
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.AdoInvariant*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.AdoInvariant
+  isExternal: false
+  name: AdoInvariant
+  nameWithType: GlobalConfiguration.AdoInvariant
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.AdoInvariant
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.DataConnectionString
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.DataConnectionString
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.DataConnectionStringForReminders*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.DataConnectionStringForReminders
+  isExternal: false
+  name: DataConnectionStringForReminders
+  nameWithType: GlobalConfiguration.DataConnectionStringForReminders
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.DataConnectionStringForReminders
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.AdoInvariant
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.AdoInvariant
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.AdoInvariantForReminders*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.AdoInvariantForReminders
+  isExternal: false
+  name: AdoInvariantForReminders
+  nameWithType: GlobalConfiguration.AdoInvariantForReminders
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.AdoInvariantForReminders
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.CollectionQuantum*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.CollectionQuantum
+  isExternal: false
+  name: CollectionQuantum
+  nameWithType: GlobalConfiguration.CollectionQuantum
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.CollectionQuantum
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.MaxRequestProcessingTime*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.MaxRequestProcessingTime
+  isExternal: false
+  name: MaxRequestProcessingTime
+  nameWithType: GlobalConfiguration.MaxRequestProcessingTime
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.MaxRequestProcessingTime
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.CacheSize*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.CacheSize
+  isExternal: false
+  name: CacheSize
+  nameWithType: GlobalConfiguration.CacheSize
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.CacheSize
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.InitialCacheTTL*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.InitialCacheTTL
+  isExternal: false
+  name: InitialCacheTTL
+  nameWithType: GlobalConfiguration.InitialCacheTTL
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.InitialCacheTTL
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.MaximumCacheTTL*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.MaximumCacheTTL
+  isExternal: false
+  name: MaximumCacheTTL
+  nameWithType: GlobalConfiguration.MaximumCacheTTL
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.MaximumCacheTTL
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.CacheTTLExtensionFactor*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.CacheTTLExtensionFactor
+  isExternal: false
+  name: CacheTTLExtensionFactor
+  nameWithType: GlobalConfiguration.CacheTTLExtensionFactor
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.CacheTTLExtensionFactor
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.MaxStorageBusyRetries*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.MaxStorageBusyRetries
+  isExternal: false
+  name: MaxStorageBusyRetries
+  nameWithType: GlobalConfiguration.MaxStorageBusyRetries
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.MaxStorageBusyRetries
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.DirectoryCachingStrategy*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.DirectoryCachingStrategy
+  isExternal: false
+  name: DirectoryCachingStrategy
+  nameWithType: GlobalConfiguration.DirectoryCachingStrategy
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.DirectoryCachingStrategy
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.DirectoryCachingStrategyType
+  commentId: T:Orleans.Runtime.Configuration.GlobalConfiguration.DirectoryCachingStrategyType
+  parent: Orleans.Runtime.Configuration
+  isExternal: false
+  name: GlobalConfiguration.DirectoryCachingStrategyType
+  nameWithType: GlobalConfiguration.DirectoryCachingStrategyType
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.DirectoryCachingStrategyType
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.UseVirtualBucketsConsistentRing*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.UseVirtualBucketsConsistentRing
+  isExternal: false
+  name: UseVirtualBucketsConsistentRing
+  nameWithType: GlobalConfiguration.UseVirtualBucketsConsistentRing
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.UseVirtualBucketsConsistentRing
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.NumVirtualBucketsConsistentRing*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.NumVirtualBucketsConsistentRing
+  isExternal: false
+  name: NumVirtualBucketsConsistentRing
+  nameWithType: GlobalConfiguration.NumVirtualBucketsConsistentRing
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.NumVirtualBucketsConsistentRing
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.LivenessType*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.LivenessType
+  isExternal: false
+  name: LivenessType
+  nameWithType: GlobalConfiguration.LivenessType
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.LivenessType
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType
+  commentId: T:Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType
+  parent: Orleans.Runtime.Configuration
+  isExternal: false
+  name: GlobalConfiguration.LivenessProviderType
+  nameWithType: GlobalConfiguration.LivenessProviderType
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.MembershipTableAssembly*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.MembershipTableAssembly
+  isExternal: false
+  name: MembershipTableAssembly
+  nameWithType: GlobalConfiguration.MembershipTableAssembly
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.MembershipTableAssembly
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.ReminderTableAssembly*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.ReminderTableAssembly
+  isExternal: false
+  name: ReminderTableAssembly
+  nameWithType: GlobalConfiguration.ReminderTableAssembly
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.ReminderTableAssembly
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceType*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceType
+  isExternal: false
+  name: ReminderServiceType
+  nameWithType: GlobalConfiguration.ReminderServiceType
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceType
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType
+  commentId: T:Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType
+  parent: Orleans.Runtime.Configuration
+  isExternal: false
+  name: GlobalConfiguration.ReminderServiceProviderType
+  nameWithType: GlobalConfiguration.ReminderServiceProviderType
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.MockReminderTableTimeout*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.MockReminderTableTimeout
+  isExternal: false
+  name: MockReminderTableTimeout
+  nameWithType: GlobalConfiguration.MockReminderTableTimeout
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.MockReminderTableTimeout
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.ProviderConfigurations*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.ProviderConfigurations
+  isExternal: false
+  name: ProviderConfigurations
+  nameWithType: GlobalConfiguration.ProviderConfigurations
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.ProviderConfigurations
+- uid: IDictionary{System.String,ProviderCategoryConfiguration}
+  commentId: '!:IDictionary{System.String,ProviderCategoryConfiguration}'
+  definition: IDictionary`2
+  name: IDictionary<String, ProviderCategoryConfiguration>
+  nameWithType: IDictionary<String, ProviderCategoryConfiguration>
+  fullName: IDictionary<System.String, ProviderCategoryConfiguration>
+  nameWithType.vb: IDictionary(Of String, ProviderCategoryConfiguration)
+  fullName.vb: IDictionary(Of System.String, ProviderCategoryConfiguration)
+  name.vb: IDictionary(Of String, ProviderCategoryConfiguration)
+  spec.csharp:
+  - uid: IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: ProviderCategoryConfiguration
+    name: ProviderCategoryConfiguration
+    nameWithType: ProviderCategoryConfiguration
+    fullName: ProviderCategoryConfiguration
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: ProviderCategoryConfiguration
+    name: ProviderCategoryConfiguration
+    nameWithType: ProviderCategoryConfiguration
+    fullName: ProviderCategoryConfiguration
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IDictionary`2
+  isExternal: true
+  name: IDictionary<, >
+  nameWithType: IDictionary<, >
+  fullName: IDictionary<, >
+  nameWithType.vb: IDictionary(Of , )
+  fullName.vb: IDictionary(Of , )
+  name.vb: IDictionary(Of , )
+  spec.csharp:
+  - uid: IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.GrainServiceConfigurations*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.GrainServiceConfigurations
+  isExternal: false
+  name: GrainServiceConfigurations
+  nameWithType: GlobalConfiguration.GrainServiceConfigurations
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.GrainServiceConfigurations
+- uid: Orleans.Runtime.Configuration.GrainServiceConfigurations
+  commentId: T:Orleans.Runtime.Configuration.GrainServiceConfigurations
+  parent: Orleans.Runtime.Configuration
+  isExternal: false
+  name: GrainServiceConfigurations
+  nameWithType: GrainServiceConfigurations
+  fullName: Orleans.Runtime.Configuration.GrainServiceConfigurations
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.DirectoryLazyDeregistrationDelay*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.DirectoryLazyDeregistrationDelay
+  isExternal: false
+  name: DirectoryLazyDeregistrationDelay
+  nameWithType: GlobalConfiguration.DirectoryLazyDeregistrationDelay
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.DirectoryLazyDeregistrationDelay
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.ClientRegistrationRefresh*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.ClientRegistrationRefresh
+  isExternal: false
+  name: ClientRegistrationRefresh
+  nameWithType: GlobalConfiguration.ClientRegistrationRefresh
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.ClientRegistrationRefresh
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.PerformDeadlockDetection*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.PerformDeadlockDetection
+  isExternal: false
+  name: PerformDeadlockDetection
+  nameWithType: GlobalConfiguration.PerformDeadlockDetection
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.PerformDeadlockDetection
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.AllowCallChainReentrancy*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.AllowCallChainReentrancy
+  isExternal: false
+  name: AllowCallChainReentrancy
+  nameWithType: GlobalConfiguration.AllowCallChainReentrancy
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.AllowCallChainReentrancy
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.DefaultPlacementStrategy*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.DefaultPlacementStrategy
+  isExternal: false
+  name: DefaultPlacementStrategy
+  nameWithType: GlobalConfiguration.DefaultPlacementStrategy
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.DefaultPlacementStrategy
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.DefaultCompatibilityStrategy*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.DefaultCompatibilityStrategy
+  isExternal: false
+  name: DefaultCompatibilityStrategy
+  nameWithType: GlobalConfiguration.DefaultCompatibilityStrategy
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.DefaultCompatibilityStrategy
+- uid: Orleans.Versions.Compatibility.CompatibilityStrategy
+  commentId: T:Orleans.Versions.Compatibility.CompatibilityStrategy
+  parent: Orleans.Versions.Compatibility
+  isExternal: false
+  name: CompatibilityStrategy
+  nameWithType: CompatibilityStrategy
+  fullName: Orleans.Versions.Compatibility.CompatibilityStrategy
+- uid: Orleans.Versions.Compatibility
+  commentId: N:Orleans.Versions.Compatibility
+  isExternal: false
+  name: Orleans.Versions.Compatibility
+  nameWithType: Orleans.Versions.Compatibility
+  fullName: Orleans.Versions.Compatibility
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.DefaultVersionSelectorStrategy*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.DefaultVersionSelectorStrategy
+  isExternal: false
+  name: DefaultVersionSelectorStrategy
+  nameWithType: GlobalConfiguration.DefaultVersionSelectorStrategy
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.DefaultVersionSelectorStrategy
+- uid: Orleans.Versions.Selector.VersionSelectorStrategy
+  commentId: T:Orleans.Versions.Selector.VersionSelectorStrategy
+  parent: Orleans.Versions.Selector
+  isExternal: false
+  name: VersionSelectorStrategy
+  nameWithType: VersionSelectorStrategy
+  fullName: Orleans.Versions.Selector.VersionSelectorStrategy
+- uid: Orleans.Versions.Selector
+  commentId: N:Orleans.Versions.Selector
+  isExternal: false
+  name: Orleans.Versions.Selector
+  nameWithType: Orleans.Versions.Selector
+  fullName: Orleans.Versions.Selector
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.DeploymentLoadPublisherRefreshTime*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.DeploymentLoadPublisherRefreshTime
+  isExternal: false
+  name: DeploymentLoadPublisherRefreshTime
+  nameWithType: GlobalConfiguration.DeploymentLoadPublisherRefreshTime
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.DeploymentLoadPublisherRefreshTime
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.ActivationCountBasedPlacementChooseOutOf*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.ActivationCountBasedPlacementChooseOutOf
+  isExternal: false
+  name: ActivationCountBasedPlacementChooseOutOf
+  nameWithType: GlobalConfiguration.ActivationCountBasedPlacementChooseOutOf
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.ActivationCountBasedPlacementChooseOutOf
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.AssumeHomogenousSilosForTesting*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.AssumeHomogenousSilosForTesting
+  isExternal: false
+  name: AssumeHomogenousSilosForTesting
+  nameWithType: GlobalConfiguration.AssumeHomogenousSilosForTesting
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.AssumeHomogenousSilosForTesting
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.UseAdoNetSystemStore*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.UseAdoNetSystemStore
+  isExternal: false
+  name: UseAdoNetSystemStore
+  nameWithType: GlobalConfiguration.UseAdoNetSystemStore
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.UseAdoNetSystemStore
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.UseAzureSystemStore*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.UseAzureSystemStore
+  isExternal: false
+  name: UseAzureSystemStore
+  nameWithType: GlobalConfiguration.UseAzureSystemStore
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.UseAzureSystemStore
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.#ctor*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.#ctor
+  isExternal: false
+  name: GlobalConfiguration
+  nameWithType: GlobalConfiguration.GlobalConfiguration
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.GlobalConfiguration
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.ToString*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.ToString
+  isExternal: false
+  name: ToString
+  nameWithType: GlobalConfiguration.ToString
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.ToString
+- uid: Orleans.Streams.IStreamProvider
+  commentId: T:Orleans.Streams.IStreamProvider
+  parent: Orleans.Streams
+  isExternal: false
+  name: IStreamProvider
+  nameWithType: IStreamProvider
+  fullName: Orleans.Streams.IStreamProvider
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.RegisterStreamProvider*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.RegisterStreamProvider
+  isExternal: false
+  name: RegisterStreamProvider
+  nameWithType: GlobalConfiguration.RegisterStreamProvider
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.RegisterStreamProvider
+- uid: IDictionary{System.String,System.String}
+  commentId: '!:IDictionary{System.String,System.String}'
+  definition: IDictionary`2
+  name: IDictionary<String, String>
+  nameWithType: IDictionary<String, String>
+  fullName: IDictionary<System.String, System.String>
+  nameWithType.vb: IDictionary(Of String, String)
+  fullName.vb: IDictionary(Of System.String, System.String)
+  name.vb: IDictionary(Of String, String)
+  spec.csharp:
+  - uid: IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Streams
+  commentId: N:Orleans.Streams
+  isExternal: false
+  name: Orleans.Streams
+  nameWithType: Orleans.Streams
+  fullName: Orleans.Streams
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.RegisterStorageProvider*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.RegisterStorageProvider
+  isExternal: false
+  name: RegisterStorageProvider
+  nameWithType: GlobalConfiguration.RegisterStorageProvider
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.RegisterStorageProvider
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.RegisterLogConsistencyProvider*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.RegisterLogConsistencyProvider
+  isExternal: false
+  name: RegisterLogConsistencyProvider
+  nameWithType: GlobalConfiguration.RegisterLogConsistencyProvider
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.RegisterLogConsistencyProvider
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.TryGetProviderConfiguration*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.TryGetProviderConfiguration
+  isExternal: false
+  name: TryGetProviderConfiguration
+  nameWithType: GlobalConfiguration.TryGetProviderConfiguration
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.TryGetProviderConfiguration
+- uid: IProviderConfiguration
+  isExternal: true
+  name: IProviderConfiguration
+  nameWithType: IProviderConfiguration
+  fullName: IProviderConfiguration
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.GetAllProviderConfigurations*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.GetAllProviderConfigurations
+  isExternal: false
+  name: GetAllProviderConfigurations
+  nameWithType: GlobalConfiguration.GetAllProviderConfigurations
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.GetAllProviderConfigurations
+- uid: IEnumerable{IProviderConfiguration}
+  commentId: '!:IEnumerable{IProviderConfiguration}'
+  definition: IEnumerable`1
+  name: IEnumerable<IProviderConfiguration>
+  nameWithType: IEnumerable<IProviderConfiguration>
+  fullName: IEnumerable<IProviderConfiguration>
+  nameWithType.vb: IEnumerable(Of IProviderConfiguration)
+  fullName.vb: IEnumerable(Of IProviderConfiguration)
+  name.vb: IEnumerable(Of IProviderConfiguration)
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: IProviderConfiguration
+    name: IProviderConfiguration
+    nameWithType: IProviderConfiguration
+    fullName: IProviderConfiguration
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: IProviderConfiguration
+    name: IProviderConfiguration
+    nameWithType: IProviderConfiguration
+    fullName: IProviderConfiguration
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IEnumerable`1
+  isExternal: true
+  name: IEnumerable<>
+  nameWithType: IEnumerable<>
+  fullName: IEnumerable<>
+  nameWithType.vb: IEnumerable(Of )
+  fullName.vb: IEnumerable(Of )
+  name.vb: IEnumerable(Of )
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.RegisterGrainService*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.RegisterGrainService
+  isExternal: false
+  name: RegisterGrainService
+  nameWithType: GlobalConfiguration.RegisterGrainService
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.RegisterGrainService

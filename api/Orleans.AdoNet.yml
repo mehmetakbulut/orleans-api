@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.AdoNet
+  commentId: N:Orleans.AdoNet
+  id: Orleans.AdoNet
+  children:
+  - Orleans.AdoNet.LegacyAdoNetClusteringConfigurator
+  langs:
+  - csharp
+  - vb
+  name: Orleans.AdoNet
+  nameWithType: Orleans.AdoNet
+  fullName: Orleans.AdoNet
+  type: Namespace
+  assemblies:
+  - Orleans.Clustering.AdoNet
+references:
+- uid: Orleans.AdoNet.LegacyAdoNetClusteringConfigurator
+  commentId: T:Orleans.AdoNet.LegacyAdoNetClusteringConfigurator
+  isExternal: false
+  name: LegacyAdoNetClusteringConfigurator
+  nameWithType: LegacyAdoNetClusteringConfigurator
+  fullName: Orleans.AdoNet.LegacyAdoNetClusteringConfigurator

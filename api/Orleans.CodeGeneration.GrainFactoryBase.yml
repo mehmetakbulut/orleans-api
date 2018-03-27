@@ -1,0 +1,121 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.CodeGeneration.GrainFactoryBase
+  commentId: T:Orleans.CodeGeneration.GrainFactoryBase
+  id: GrainFactoryBase
+  parent: Orleans.CodeGeneration
+  children:
+  - Orleans.CodeGeneration.GrainFactoryBase.CheckGrainObserverParamInternal(Orleans.IGrainObserver)
+  langs:
+  - csharp
+  - vb
+  name: GrainFactoryBase
+  nameWithType: GrainFactoryBase
+  fullName: Orleans.CodeGeneration.GrainFactoryBase
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/CodeGeneration/GrainFactoryBase.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GrainFactoryBase
+    path: src/Orleans.Core.Abstractions/CodeGeneration/GrainFactoryBase.cs
+    startLine: 11
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.CodeGeneration
+  summary: "\nAbstract base class for all grain proxy factory classes.\n"
+  remarks: "\nThese methods are used from generated code.\n"
+  example: []
+  syntax:
+    content: 'public static class GrainFactoryBase : object'
+    content.vb: >-
+      Public Module GrainFactoryBase
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Orleans.CodeGeneration.GrainFactoryBase.CheckGrainObserverParamInternal(Orleans.IGrainObserver)
+  commentId: M:Orleans.CodeGeneration.GrainFactoryBase.CheckGrainObserverParamInternal(Orleans.IGrainObserver)
+  id: CheckGrainObserverParamInternal(Orleans.IGrainObserver)
+  parent: Orleans.CodeGeneration.GrainFactoryBase
+  langs:
+  - csharp
+  - vb
+  name: CheckGrainObserverParamInternal(IGrainObserver)
+  nameWithType: GrainFactoryBase.CheckGrainObserverParamInternal(IGrainObserver)
+  fullName: Orleans.CodeGeneration.GrainFactoryBase.CheckGrainObserverParamInternal(Orleans.IGrainObserver)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/CodeGeneration/GrainFactoryBase.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: CheckGrainObserverParamInternal
+    path: src/Orleans.Core.Abstractions/CodeGeneration/GrainFactoryBase.cs
+    startLine: 19
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.CodeGeneration
+  summary: "\nCheck that a grain observer parameter is of the correct underlying concrent type -- either extending from <code>GrainRefereence</code> or <code>Grain</code>\n"
+  example: []
+  syntax:
+    content: public static void CheckGrainObserverParamInternal(IGrainObserver grainObserver)
+    parameters:
+    - id: grainObserver
+      type: Orleans.IGrainObserver
+      description: Grain observer parameter to be checked.
+    content.vb: Public Shared Sub CheckGrainObserverParamInternal(grainObserver As IGrainObserver)
+  overload: Orleans.CodeGeneration.GrainFactoryBase.CheckGrainObserverParamInternal*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Orleans.CodeGeneration
+  commentId: N:Orleans.CodeGeneration
+  isExternal: false
+  name: Orleans.CodeGeneration
+  nameWithType: Orleans.CodeGeneration
+  fullName: Orleans.CodeGeneration
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.CodeGeneration.GrainFactoryBase.CheckGrainObserverParamInternal*
+  commentId: Overload:Orleans.CodeGeneration.GrainFactoryBase.CheckGrainObserverParamInternal
+  isExternal: false
+  name: CheckGrainObserverParamInternal
+  nameWithType: GrainFactoryBase.CheckGrainObserverParamInternal
+  fullName: Orleans.CodeGeneration.GrainFactoryBase.CheckGrainObserverParamInternal
+- uid: Orleans.IGrainObserver
+  commentId: T:Orleans.IGrainObserver
+  parent: Orleans
+  isExternal: false
+  name: IGrainObserver
+  nameWithType: IGrainObserver
+  fullName: Orleans.IGrainObserver
+- uid: Orleans
+  commentId: N:Orleans
+  isExternal: false
+  name: Orleans
+  nameWithType: Orleans
+  fullName: Orleans

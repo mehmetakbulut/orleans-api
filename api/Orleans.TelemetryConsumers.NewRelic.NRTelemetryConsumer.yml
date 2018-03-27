@@ -1,0 +1,930 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer
+  commentId: T:Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer
+  id: NRTelemetryConsumer
+  parent: Orleans.TelemetryConsumers.NewRelic
+  children:
+  - Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.#ctor
+  - Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.Close
+  - Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.DecrementMetric(System.String)
+  - Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.DecrementMetric(System.String,System.Double)
+  - Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.Flush
+  - Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.IncrementMetric(System.String)
+  - Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.IncrementMetric(System.String,System.Double)
+  - Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.TrackDependency(System.String,System.String,System.DateTimeOffset,System.TimeSpan,System.Boolean)
+  - Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.TrackEvent(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.Double})
+  - Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.TrackException(System.Exception,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.Double})
+  - Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.TrackMetric(System.String,System.Double,System.Collections.Generic.IDictionary{System.String,System.String})
+  - Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.TrackMetric(System.String,System.TimeSpan,System.Collections.Generic.IDictionary{System.String,System.String})
+  - Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.TrackRequest(System.String,System.DateTimeOffset,System.TimeSpan,System.String,System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: NRTelemetryConsumer
+  nameWithType: NRTelemetryConsumer
+  fullName: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.TelemetryConsumers.NewRelic/NRTelemetryConsumer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: NRTelemetryConsumer
+    path: src/Orleans.TelemetryConsumers.NewRelic/NRTelemetryConsumer.cs
+    startLine: 8
+  assemblies:
+  - Orleans.TelemetryConsumers.NewRelic
+  namespace: Orleans.TelemetryConsumers.NewRelic
+  syntax:
+    content: 'public class NRTelemetryConsumer : IEventTelemetryConsumer, IExceptionTelemetryConsumer, IDependencyTelemetryConsumer, IMetricTelemetryConsumer, IRequestTelemetryConsumer'
+    content.vb: >-
+      Public Class NRTelemetryConsumer
+
+          Inherits IEventTelemetryConsumer
+
+          Implements IExceptionTelemetryConsumer, IDependencyTelemetryConsumer, IMetricTelemetryConsumer, IRequestTelemetryConsumer
+  inheritance:
+  - System.Object
+  implements:
+  - IExceptionTelemetryConsumer
+  - IDependencyTelemetryConsumer
+  - IMetricTelemetryConsumer
+  - IRequestTelemetryConsumer
+  extensionMethods:
+  - Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.#ctor
+  commentId: M:Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.#ctor
+  id: '#ctor'
+  parent: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer
+  langs:
+  - csharp
+  - vb
+  name: NRTelemetryConsumer()
+  nameWithType: NRTelemetryConsumer.NRTelemetryConsumer()
+  fullName: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.NRTelemetryConsumer()
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.TelemetryConsumers.NewRelic/NRTelemetryConsumer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.TelemetryConsumers.NewRelic/NRTelemetryConsumer.cs
+    startLine: 11
+  assemblies:
+  - Orleans.TelemetryConsumers.NewRelic
+  namespace: Orleans.TelemetryConsumers.NewRelic
+  syntax:
+    content: public NRTelemetryConsumer()
+    content.vb: Public Sub New
+  overload: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.DecrementMetric(System.String)
+  commentId: M:Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.DecrementMetric(System.String)
+  id: DecrementMetric(System.String)
+  parent: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer
+  langs:
+  - csharp
+  - vb
+  name: DecrementMetric(String)
+  nameWithType: NRTelemetryConsumer.DecrementMetric(String)
+  fullName: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.DecrementMetric(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.TelemetryConsumers.NewRelic/NRTelemetryConsumer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: DecrementMetric
+    path: src/Orleans.TelemetryConsumers.NewRelic/NRTelemetryConsumer.cs
+    startLine: 16
+  assemblies:
+  - Orleans.TelemetryConsumers.NewRelic
+  namespace: Orleans.TelemetryConsumers.NewRelic
+  syntax:
+    content: public void DecrementMetric(string name)
+    parameters:
+    - id: name
+      type: System.String
+    content.vb: Public Sub DecrementMetric(name As String)
+  overload: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.DecrementMetric*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.DecrementMetric(System.String,System.Double)
+  commentId: M:Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.DecrementMetric(System.String,System.Double)
+  id: DecrementMetric(System.String,System.Double)
+  parent: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer
+  langs:
+  - csharp
+  - vb
+  name: DecrementMetric(String, Double)
+  nameWithType: NRTelemetryConsumer.DecrementMetric(String, Double)
+  fullName: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.DecrementMetric(System.String, System.Double)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.TelemetryConsumers.NewRelic/NRTelemetryConsumer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: DecrementMetric
+    path: src/Orleans.TelemetryConsumers.NewRelic/NRTelemetryConsumer.cs
+    startLine: 21
+  assemblies:
+  - Orleans.TelemetryConsumers.NewRelic
+  namespace: Orleans.TelemetryConsumers.NewRelic
+  syntax:
+    content: public void DecrementMetric(string name, double value)
+    parameters:
+    - id: name
+      type: System.String
+    - id: value
+      type: System.Double
+    content.vb: Public Sub DecrementMetric(name As String, value As Double)
+  overload: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.DecrementMetric*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.IncrementMetric(System.String)
+  commentId: M:Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.IncrementMetric(System.String)
+  id: IncrementMetric(System.String)
+  parent: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer
+  langs:
+  - csharp
+  - vb
+  name: IncrementMetric(String)
+  nameWithType: NRTelemetryConsumer.IncrementMetric(String)
+  fullName: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.IncrementMetric(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.TelemetryConsumers.NewRelic/NRTelemetryConsumer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IncrementMetric
+    path: src/Orleans.TelemetryConsumers.NewRelic/NRTelemetryConsumer.cs
+    startLine: 26
+  assemblies:
+  - Orleans.TelemetryConsumers.NewRelic
+  namespace: Orleans.TelemetryConsumers.NewRelic
+  syntax:
+    content: public void IncrementMetric(string name)
+    parameters:
+    - id: name
+      type: System.String
+    content.vb: Public Sub IncrementMetric(name As String)
+  overload: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.IncrementMetric*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.IncrementMetric(System.String,System.Double)
+  commentId: M:Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.IncrementMetric(System.String,System.Double)
+  id: IncrementMetric(System.String,System.Double)
+  parent: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer
+  langs:
+  - csharp
+  - vb
+  name: IncrementMetric(String, Double)
+  nameWithType: NRTelemetryConsumer.IncrementMetric(String, Double)
+  fullName: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.IncrementMetric(System.String, System.Double)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.TelemetryConsumers.NewRelic/NRTelemetryConsumer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IncrementMetric
+    path: src/Orleans.TelemetryConsumers.NewRelic/NRTelemetryConsumer.cs
+    startLine: 32
+  assemblies:
+  - Orleans.TelemetryConsumers.NewRelic
+  namespace: Orleans.TelemetryConsumers.NewRelic
+  syntax:
+    content: public void IncrementMetric(string name, double value)
+    parameters:
+    - id: name
+      type: System.String
+    - id: value
+      type: System.Double
+    content.vb: Public Sub IncrementMetric(name As String, value As Double)
+  overload: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.IncrementMetric*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.TrackDependency(System.String,System.String,System.DateTimeOffset,System.TimeSpan,System.Boolean)
+  commentId: M:Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.TrackDependency(System.String,System.String,System.DateTimeOffset,System.TimeSpan,System.Boolean)
+  id: TrackDependency(System.String,System.String,System.DateTimeOffset,System.TimeSpan,System.Boolean)
+  parent: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer
+  langs:
+  - csharp
+  - vb
+  name: TrackDependency(String, String, DateTimeOffset, TimeSpan, Boolean)
+  nameWithType: NRTelemetryConsumer.TrackDependency(String, String, DateTimeOffset, TimeSpan, Boolean)
+  fullName: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.TrackDependency(System.String, System.String, System.DateTimeOffset, System.TimeSpan, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.TelemetryConsumers.NewRelic/NRTelemetryConsumer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: TrackDependency
+    path: src/Orleans.TelemetryConsumers.NewRelic/NRTelemetryConsumer.cs
+    startLine: 37
+  assemblies:
+  - Orleans.TelemetryConsumers.NewRelic
+  namespace: Orleans.TelemetryConsumers.NewRelic
+  syntax:
+    content: public void TrackDependency(string dependencyName, string commandName, DateTimeOffset startTime, TimeSpan duration, bool success)
+    parameters:
+    - id: dependencyName
+      type: System.String
+    - id: commandName
+      type: System.String
+    - id: startTime
+      type: System.DateTimeOffset
+    - id: duration
+      type: System.TimeSpan
+    - id: success
+      type: System.Boolean
+    content.vb: Public Sub TrackDependency(dependencyName As String, commandName As String, startTime As DateTimeOffset, duration As TimeSpan, success As Boolean)
+  overload: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.TrackDependency*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.TrackEvent(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.Double})
+  commentId: M:Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.TrackEvent(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.Double})
+  id: TrackEvent(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.Double})
+  parent: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer
+  langs:
+  - csharp
+  - vb
+  name: TrackEvent(String, IDictionary<String, String>, IDictionary<String, Double>)
+  nameWithType: NRTelemetryConsumer.TrackEvent(String, IDictionary<String, String>, IDictionary<String, Double>)
+  fullName: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.TrackEvent(System.String, System.Collections.Generic.IDictionary<System.String, System.String>, System.Collections.Generic.IDictionary<System.String, System.Double>)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.TelemetryConsumers.NewRelic/NRTelemetryConsumer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: TrackEvent
+    path: src/Orleans.TelemetryConsumers.NewRelic/NRTelemetryConsumer.cs
+    startLine: 42
+  assemblies:
+  - Orleans.TelemetryConsumers.NewRelic
+  namespace: Orleans.TelemetryConsumers.NewRelic
+  syntax:
+    content: public void TrackEvent(string eventName, IDictionary<string, string> properties = null, IDictionary<string, double> metrics = null)
+    parameters:
+    - id: eventName
+      type: System.String
+    - id: properties
+      type: System.Collections.Generic.IDictionary{System.String,System.String}
+    - id: metrics
+      type: System.Collections.Generic.IDictionary{System.String,System.Double}
+    content.vb: Public Sub TrackEvent(eventName As String, properties As IDictionary(Of String, String) = Nothing, metrics As IDictionary(Of String, Double) = Nothing)
+  overload: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.TrackEvent*
+  nameWithType.vb: NRTelemetryConsumer.TrackEvent(String, IDictionary(Of String, String), IDictionary(Of String, Double))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.TrackEvent(System.String, System.Collections.Generic.IDictionary(Of System.String, System.String), System.Collections.Generic.IDictionary(Of System.String, System.Double))
+  name.vb: TrackEvent(String, IDictionary(Of String, String), IDictionary(Of String, Double))
+- uid: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.TrackException(System.Exception,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.Double})
+  commentId: M:Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.TrackException(System.Exception,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.Double})
+  id: TrackException(System.Exception,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.Double})
+  parent: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer
+  langs:
+  - csharp
+  - vb
+  name: TrackException(Exception, IDictionary<String, String>, IDictionary<String, Double>)
+  nameWithType: NRTelemetryConsumer.TrackException(Exception, IDictionary<String, String>, IDictionary<String, Double>)
+  fullName: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.TrackException(System.Exception, System.Collections.Generic.IDictionary<System.String, System.String>, System.Collections.Generic.IDictionary<System.String, System.Double>)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.TelemetryConsumers.NewRelic/NRTelemetryConsumer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: TrackException
+    path: src/Orleans.TelemetryConsumers.NewRelic/NRTelemetryConsumer.cs
+    startLine: 49
+  assemblies:
+  - Orleans.TelemetryConsumers.NewRelic
+  namespace: Orleans.TelemetryConsumers.NewRelic
+  syntax:
+    content: public void TrackException(Exception exception, IDictionary<string, string> properties = null, IDictionary<string, double> metrics = null)
+    parameters:
+    - id: exception
+      type: System.Exception
+    - id: properties
+      type: System.Collections.Generic.IDictionary{System.String,System.String}
+    - id: metrics
+      type: System.Collections.Generic.IDictionary{System.String,System.Double}
+    content.vb: Public Sub TrackException(exception As Exception, properties As IDictionary(Of String, String) = Nothing, metrics As IDictionary(Of String, Double) = Nothing)
+  overload: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.TrackException*
+  nameWithType.vb: NRTelemetryConsumer.TrackException(Exception, IDictionary(Of String, String), IDictionary(Of String, Double))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.TrackException(System.Exception, System.Collections.Generic.IDictionary(Of System.String, System.String), System.Collections.Generic.IDictionary(Of System.String, System.Double))
+  name.vb: TrackException(Exception, IDictionary(Of String, String), IDictionary(Of String, Double))
+- uid: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.TrackMetric(System.String,System.TimeSpan,System.Collections.Generic.IDictionary{System.String,System.String})
+  commentId: M:Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.TrackMetric(System.String,System.TimeSpan,System.Collections.Generic.IDictionary{System.String,System.String})
+  id: TrackMetric(System.String,System.TimeSpan,System.Collections.Generic.IDictionary{System.String,System.String})
+  parent: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer
+  langs:
+  - csharp
+  - vb
+  name: TrackMetric(String, TimeSpan, IDictionary<String, String>)
+  nameWithType: NRTelemetryConsumer.TrackMetric(String, TimeSpan, IDictionary<String, String>)
+  fullName: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.TrackMetric(System.String, System.TimeSpan, System.Collections.Generic.IDictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.TelemetryConsumers.NewRelic/NRTelemetryConsumer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: TrackMetric
+    path: src/Orleans.TelemetryConsumers.NewRelic/NRTelemetryConsumer.cs
+    startLine: 55
+  assemblies:
+  - Orleans.TelemetryConsumers.NewRelic
+  namespace: Orleans.TelemetryConsumers.NewRelic
+  syntax:
+    content: public void TrackMetric(string name, TimeSpan value, IDictionary<string, string> properties = null)
+    parameters:
+    - id: name
+      type: System.String
+    - id: value
+      type: System.TimeSpan
+    - id: properties
+      type: System.Collections.Generic.IDictionary{System.String,System.String}
+    content.vb: Public Sub TrackMetric(name As String, value As TimeSpan, properties As IDictionary(Of String, String) = Nothing)
+  overload: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.TrackMetric*
+  nameWithType.vb: NRTelemetryConsumer.TrackMetric(String, TimeSpan, IDictionary(Of String, String))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.TrackMetric(System.String, System.TimeSpan, System.Collections.Generic.IDictionary(Of System.String, System.String))
+  name.vb: TrackMetric(String, TimeSpan, IDictionary(Of String, String))
+- uid: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.TrackMetric(System.String,System.Double,System.Collections.Generic.IDictionary{System.String,System.String})
+  commentId: M:Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.TrackMetric(System.String,System.Double,System.Collections.Generic.IDictionary{System.String,System.String})
+  id: TrackMetric(System.String,System.Double,System.Collections.Generic.IDictionary{System.String,System.String})
+  parent: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer
+  langs:
+  - csharp
+  - vb
+  name: TrackMetric(String, Double, IDictionary<String, String>)
+  nameWithType: NRTelemetryConsumer.TrackMetric(String, Double, IDictionary<String, String>)
+  fullName: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.TrackMetric(System.String, System.Double, System.Collections.Generic.IDictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.TelemetryConsumers.NewRelic/NRTelemetryConsumer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: TrackMetric
+    path: src/Orleans.TelemetryConsumers.NewRelic/NRTelemetryConsumer.cs
+    startLine: 61
+  assemblies:
+  - Orleans.TelemetryConsumers.NewRelic
+  namespace: Orleans.TelemetryConsumers.NewRelic
+  syntax:
+    content: public void TrackMetric(string name, double value, IDictionary<string, string> properties = null)
+    parameters:
+    - id: name
+      type: System.String
+    - id: value
+      type: System.Double
+    - id: properties
+      type: System.Collections.Generic.IDictionary{System.String,System.String}
+    content.vb: Public Sub TrackMetric(name As String, value As Double, properties As IDictionary(Of String, String) = Nothing)
+  overload: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.TrackMetric*
+  nameWithType.vb: NRTelemetryConsumer.TrackMetric(String, Double, IDictionary(Of String, String))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.TrackMetric(System.String, System.Double, System.Collections.Generic.IDictionary(Of System.String, System.String))
+  name.vb: TrackMetric(String, Double, IDictionary(Of String, String))
+- uid: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.TrackRequest(System.String,System.DateTimeOffset,System.TimeSpan,System.String,System.Boolean)
+  commentId: M:Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.TrackRequest(System.String,System.DateTimeOffset,System.TimeSpan,System.String,System.Boolean)
+  id: TrackRequest(System.String,System.DateTimeOffset,System.TimeSpan,System.String,System.Boolean)
+  parent: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer
+  langs:
+  - csharp
+  - vb
+  name: TrackRequest(String, DateTimeOffset, TimeSpan, String, Boolean)
+  nameWithType: NRTelemetryConsumer.TrackRequest(String, DateTimeOffset, TimeSpan, String, Boolean)
+  fullName: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.TrackRequest(System.String, System.DateTimeOffset, System.TimeSpan, System.String, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.TelemetryConsumers.NewRelic/NRTelemetryConsumer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: TrackRequest
+    path: src/Orleans.TelemetryConsumers.NewRelic/NRTelemetryConsumer.cs
+    startLine: 67
+  assemblies:
+  - Orleans.TelemetryConsumers.NewRelic
+  namespace: Orleans.TelemetryConsumers.NewRelic
+  syntax:
+    content: public void TrackRequest(string name, DateTimeOffset startTime, TimeSpan duration, string responseCode, bool success)
+    parameters:
+    - id: name
+      type: System.String
+    - id: startTime
+      type: System.DateTimeOffset
+    - id: duration
+      type: System.TimeSpan
+    - id: responseCode
+      type: System.String
+    - id: success
+      type: System.Boolean
+    content.vb: Public Sub TrackRequest(name As String, startTime As DateTimeOffset, duration As TimeSpan, responseCode As String, success As Boolean)
+  overload: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.TrackRequest*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.Flush
+  commentId: M:Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.Flush
+  id: Flush
+  parent: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer
+  langs:
+  - csharp
+  - vb
+  name: Flush()
+  nameWithType: NRTelemetryConsumer.Flush()
+  fullName: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.Flush()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.TelemetryConsumers.NewRelic/NRTelemetryConsumer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Flush
+    path: src/Orleans.TelemetryConsumers.NewRelic/NRTelemetryConsumer.cs
+    startLine: 101
+  assemblies:
+  - Orleans.TelemetryConsumers.NewRelic
+  namespace: Orleans.TelemetryConsumers.NewRelic
+  syntax:
+    content: public void Flush()
+    content.vb: Public Sub Flush
+  overload: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.Flush*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.Close
+  commentId: M:Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.Close
+  id: Close
+  parent: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer
+  langs:
+  - csharp
+  - vb
+  name: Close()
+  nameWithType: NRTelemetryConsumer.Close()
+  fullName: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.Close()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.TelemetryConsumers.NewRelic/NRTelemetryConsumer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Close
+    path: src/Orleans.TelemetryConsumers.NewRelic/NRTelemetryConsumer.cs
+    startLine: 105
+  assemblies:
+  - Orleans.TelemetryConsumers.NewRelic
+  namespace: Orleans.TelemetryConsumers.NewRelic
+  syntax:
+    content: public void Close()
+    content.vb: Public Sub Close
+  overload: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.Close*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans.TelemetryConsumers.NewRelic
+  commentId: N:Orleans.TelemetryConsumers.NewRelic
+  isExternal: false
+  name: Orleans.TelemetryConsumers.NewRelic
+  nameWithType: Orleans.TelemetryConsumers.NewRelic
+  fullName: Orleans.TelemetryConsumers.NewRelic
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: IExceptionTelemetryConsumer
+  isExternal: true
+  name: IExceptionTelemetryConsumer
+  nameWithType: IExceptionTelemetryConsumer
+  fullName: IExceptionTelemetryConsumer
+- uid: IDependencyTelemetryConsumer
+  isExternal: true
+  name: IDependencyTelemetryConsumer
+  nameWithType: IDependencyTelemetryConsumer
+  fullName: IDependencyTelemetryConsumer
+- uid: IMetricTelemetryConsumer
+  isExternal: true
+  name: IMetricTelemetryConsumer
+  nameWithType: IMetricTelemetryConsumer
+  fullName: IMetricTelemetryConsumer
+- uid: IRequestTelemetryConsumer
+  isExternal: true
+  name: IRequestTelemetryConsumer
+  nameWithType: IRequestTelemetryConsumer
+  fullName: IRequestTelemetryConsumer
+- uid: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<NRTelemetryConsumer>()
+  nameWithType: ImmutableExt.AsImmutable<NRTelemetryConsumer>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of NRTelemetryConsumer)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer)()
+  name.vb: AsImmutable(Of NRTelemetryConsumer)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<NRTelemetryConsumer>
+    nameWithType: ImmutableExt.AsImmutable<NRTelemetryConsumer>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of NRTelemetryConsumer)
+    nameWithType: ImmutableExt.AsImmutable(Of NRTelemetryConsumer)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.#ctor*
+  commentId: Overload:Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.#ctor
+  isExternal: false
+  name: NRTelemetryConsumer
+  nameWithType: NRTelemetryConsumer.NRTelemetryConsumer
+  fullName: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.NRTelemetryConsumer
+- uid: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.DecrementMetric*
+  commentId: Overload:Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.DecrementMetric
+  isExternal: false
+  name: DecrementMetric
+  nameWithType: NRTelemetryConsumer.DecrementMetric
+  fullName: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.DecrementMetric
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.IncrementMetric*
+  commentId: Overload:Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.IncrementMetric
+  isExternal: false
+  name: IncrementMetric
+  nameWithType: NRTelemetryConsumer.IncrementMetric
+  fullName: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.IncrementMetric
+- uid: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.TrackDependency*
+  commentId: Overload:Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.TrackDependency
+  isExternal: false
+  name: TrackDependency
+  nameWithType: NRTelemetryConsumer.TrackDependency
+  fullName: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.TrackDependency
+- uid: System.DateTimeOffset
+  commentId: T:System.DateTimeOffset
+  parent: System
+  isExternal: true
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.TrackEvent*
+  commentId: Overload:Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.TrackEvent
+  isExternal: false
+  name: TrackEvent
+  nameWithType: NRTelemetryConsumer.TrackEvent
+  fullName: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.TrackEvent
+- uid: System.Collections.Generic.IDictionary{System.String,System.String}
+  commentId: T:System.Collections.Generic.IDictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  name: IDictionary<String, String>
+  nameWithType: IDictionary<String, String>
+  fullName: System.Collections.Generic.IDictionary<System.String, System.String>
+  nameWithType.vb: IDictionary(Of String, String)
+  fullName.vb: System.Collections.Generic.IDictionary(Of System.String, System.String)
+  name.vb: IDictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IDictionary{System.String,System.Double}
+  commentId: T:System.Collections.Generic.IDictionary{System.String,System.Double}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  name: IDictionary<String, Double>
+  nameWithType: IDictionary<String, Double>
+  fullName: System.Collections.Generic.IDictionary<System.String, System.Double>
+  nameWithType.vb: IDictionary(Of String, Double)
+  fullName.vb: System.Collections.Generic.IDictionary(Of System.String, System.Double)
+  name.vb: IDictionary(Of String, Double)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IDictionary`2
+  commentId: T:System.Collections.Generic.IDictionary`2
+  isExternal: true
+  name: IDictionary<TKey, TValue>
+  nameWithType: IDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  nameWithType.vb: IDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  name.vb: IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.TrackException*
+  commentId: Overload:Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.TrackException
+  isExternal: false
+  name: TrackException
+  nameWithType: NRTelemetryConsumer.TrackException
+  fullName: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.TrackException
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.TrackMetric*
+  commentId: Overload:Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.TrackMetric
+  isExternal: false
+  name: TrackMetric
+  nameWithType: NRTelemetryConsumer.TrackMetric
+  fullName: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.TrackMetric
+- uid: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.TrackRequest*
+  commentId: Overload:Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.TrackRequest
+  isExternal: false
+  name: TrackRequest
+  nameWithType: NRTelemetryConsumer.TrackRequest
+  fullName: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.TrackRequest
+- uid: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.Flush*
+  commentId: Overload:Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.Flush
+  isExternal: false
+  name: Flush
+  nameWithType: NRTelemetryConsumer.Flush
+  fullName: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.Flush
+- uid: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.Close*
+  commentId: Overload:Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.Close
+  isExternal: false
+  name: Close
+  nameWithType: NRTelemetryConsumer.Close
+  fullName: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.Close

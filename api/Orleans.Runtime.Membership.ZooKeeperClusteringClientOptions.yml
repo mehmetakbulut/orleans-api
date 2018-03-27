@@ -1,0 +1,726 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions
+  commentId: T:Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions
+  id: ZooKeeperClusteringClientOptions
+  parent: Orleans.Runtime.Membership
+  children:
+  - Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions.#ctor(ILogger{Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions},IOptions{Orleans.Configuration.ZooKeeperGatewayListProviderOptions},IOptions{GatewayOptions},IOptions{ClusterOptions})
+  - Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions.GetGateways
+  - Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions.InitializeGatewayListProvider
+  - Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions.IsUpdatable
+  - Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions.MaxStaleness
+  langs:
+  - csharp
+  - vb
+  name: ZooKeeperClusteringClientOptions
+  nameWithType: ZooKeeperClusteringClientOptions
+  fullName: Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Clustering.ZooKeeper/ZooKeeperClusteringClientOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ZooKeeperClusteringClientOptions
+    path: src/Orleans.Clustering.ZooKeeper/ZooKeeperClusteringClientOptions.cs
+    startLine: 12
+  assemblies:
+  - Orleans.Clustering.ZooKeeper
+  namespace: Orleans.Runtime.Membership
+  syntax:
+    content: 'public class ZooKeeperClusteringClientOptions : IGatewayListProvider'
+    content.vb: >-
+      Public Class ZooKeeperClusteringClientOptions
+
+          Inherits IGatewayListProvider
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions.#ctor(ILogger{Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions},IOptions{Orleans.Configuration.ZooKeeperGatewayListProviderOptions},IOptions{GatewayOptions},IOptions{ClusterOptions})
+  commentId: M:Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions.#ctor(ILogger{Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions},IOptions{Orleans.Configuration.ZooKeeperGatewayListProviderOptions},IOptions{GatewayOptions},IOptions{ClusterOptions})
+  id: '#ctor(ILogger{Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions},IOptions{Orleans.Configuration.ZooKeeperGatewayListProviderOptions},IOptions{GatewayOptions},IOptions{ClusterOptions})'
+  parent: Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions
+  langs:
+  - csharp
+  - vb
+  name: ZooKeeperClusteringClientOptions(ILogger<ZooKeeperClusteringClientOptions>, IOptions<ZooKeeperGatewayListProviderOptions>, IOptions<GatewayOptions>, IOptions<ClusterOptions>)
+  nameWithType: ZooKeeperClusteringClientOptions.ZooKeeperClusteringClientOptions(ILogger<ZooKeeperClusteringClientOptions>, IOptions<ZooKeeperGatewayListProviderOptions>, IOptions<GatewayOptions>, IOptions<ClusterOptions>)
+  fullName: Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions.ZooKeeperClusteringClientOptions(ILogger<Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions>, IOptions<Orleans.Configuration.ZooKeeperGatewayListProviderOptions>, IOptions<GatewayOptions>, IOptions<ClusterOptions>)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Clustering.ZooKeeper/ZooKeeperClusteringClientOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Clustering.ZooKeeper/ZooKeeperClusteringClientOptions.cs
+    startLine: 25
+  assemblies:
+  - Orleans.Clustering.ZooKeeper
+  namespace: Orleans.Runtime.Membership
+  syntax:
+    content: public ZooKeeperClusteringClientOptions(ILogger<ZooKeeperClusteringClientOptions> logger, IOptions<ZooKeeperGatewayListProviderOptions> options, IOptions<GatewayOptions> gatewayOptions, IOptions<ClusterOptions> clusterOptions)
+    parameters:
+    - id: logger
+      type: ILogger{Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions}
+    - id: options
+      type: IOptions{Orleans.Configuration.ZooKeeperGatewayListProviderOptions}
+    - id: gatewayOptions
+      type: IOptions{GatewayOptions}
+    - id: clusterOptions
+      type: IOptions{ClusterOptions}
+    content.vb: Public Sub New(logger As ILogger(Of ZooKeeperClusteringClientOptions), options As IOptions(Of ZooKeeperGatewayListProviderOptions), gatewayOptions As IOptions(Of GatewayOptions), clusterOptions As IOptions(Of ClusterOptions))
+  overload: Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions.#ctor*
+  nameWithType.vb: ZooKeeperClusteringClientOptions.ZooKeeperClusteringClientOptions(ILogger(Of ZooKeeperClusteringClientOptions), IOptions(Of ZooKeeperGatewayListProviderOptions), IOptions(Of GatewayOptions), IOptions(Of ClusterOptions))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions.ZooKeeperClusteringClientOptions(ILogger(Of Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions), IOptions(Of Orleans.Configuration.ZooKeeperGatewayListProviderOptions), IOptions(Of GatewayOptions), IOptions(Of ClusterOptions))
+  name.vb: ZooKeeperClusteringClientOptions(ILogger(Of ZooKeeperClusteringClientOptions), IOptions(Of ZooKeeperGatewayListProviderOptions), IOptions(Of GatewayOptions), IOptions(Of ClusterOptions))
+- uid: Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions.InitializeGatewayListProvider
+  commentId: M:Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions.InitializeGatewayListProvider
+  id: InitializeGatewayListProvider
+  parent: Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions
+  langs:
+  - csharp
+  - vb
+  name: InitializeGatewayListProvider()
+  nameWithType: ZooKeeperClusteringClientOptions.InitializeGatewayListProvider()
+  fullName: Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions.InitializeGatewayListProvider()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Clustering.ZooKeeper/ZooKeeperClusteringClientOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: InitializeGatewayListProvider
+    path: src/Orleans.Clustering.ZooKeeper/ZooKeeperClusteringClientOptions.cs
+    startLine: 41
+  assemblies:
+  - Orleans.Clustering.ZooKeeper
+  namespace: Orleans.Runtime.Membership
+  summary: "\nInitializes the ZooKeeper based gateway provider\n"
+  example: []
+  syntax:
+    content: public Task InitializeGatewayListProvider()
+    return:
+      type: Task
+    content.vb: Public Function InitializeGatewayListProvider As Task
+  overload: Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions.InitializeGatewayListProvider*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions.GetGateways
+  commentId: M:Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions.GetGateways
+  id: GetGateways
+  parent: Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions
+  langs:
+  - csharp
+  - vb
+  name: GetGateways()
+  nameWithType: ZooKeeperClusteringClientOptions.GetGateways()
+  fullName: Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions.GetGateways()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Clustering.ZooKeeper/ZooKeeperClusteringClientOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetGateways
+    path: src/Orleans.Clustering.ZooKeeper/ZooKeeperClusteringClientOptions.cs
+    startLine: 50
+  assemblies:
+  - Orleans.Clustering.ZooKeeper
+  namespace: Orleans.Runtime.Membership
+  summary: "\nReturns the list of gateways (silos) that can be used by a client to connect to Orleans cluster.\nThe Uri is in the form of: &quot;gwy.tcp://IP:port/Generation&quot;. See Utils.ToGatewayUri and Utils.ToSiloAddress for more details about Uri format.\n"
+  example: []
+  syntax:
+    content: public Task<IList<Uri>> GetGateways()
+    return:
+      type: Task{IList{Uri}}
+    content.vb: Public Function GetGateways As Task(Of IList(Of Uri))
+  overload: Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions.GetGateways*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions.MaxStaleness
+  commentId: P:Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions.MaxStaleness
+  id: MaxStaleness
+  parent: Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions
+  langs:
+  - csharp
+  - vb
+  name: MaxStaleness
+  nameWithType: ZooKeeperClusteringClientOptions.MaxStaleness
+  fullName: Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions.MaxStaleness
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Clustering.ZooKeeper/ZooKeeperClusteringClientOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: MaxStaleness
+    path: src/Orleans.Clustering.ZooKeeper/ZooKeeperClusteringClientOptions.cs
+    startLine: 65
+  assemblies:
+  - Orleans.Clustering.ZooKeeper
+  namespace: Orleans.Runtime.Membership
+  summary: "\nSpecifies how often this IGatewayListProvider is refreshed, to have a bound on max staleness of its returned infomation.\n"
+  example: []
+  syntax:
+    content: public TimeSpan MaxStaleness { get; }
+    parameters: []
+    return:
+      type: TimeSpan
+    content.vb: Public ReadOnly Property MaxStaleness As TimeSpan
+  overload: Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions.MaxStaleness*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions.IsUpdatable
+  commentId: P:Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions.IsUpdatable
+  id: IsUpdatable
+  parent: Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions
+  langs:
+  - csharp
+  - vb
+  name: IsUpdatable
+  nameWithType: ZooKeeperClusteringClientOptions.IsUpdatable
+  fullName: Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions.IsUpdatable
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Clustering.ZooKeeper/ZooKeeperClusteringClientOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IsUpdatable
+    path: src/Orleans.Clustering.ZooKeeper/ZooKeeperClusteringClientOptions.cs
+    startLine: 74
+  assemblies:
+  - Orleans.Clustering.ZooKeeper
+  namespace: Orleans.Runtime.Membership
+  summary: "\nSpecifies whether this IGatewayListProvider ever refreshes its returned infomation, or always returns the same gw list.\n(currently only the static config based StaticGatewayListProvider is not updatable. All others are.)\n"
+  example: []
+  syntax:
+    content: public bool IsUpdatable { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsUpdatable As Boolean
+  overload: Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions.IsUpdatable*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: Orleans.Runtime.Membership
+  commentId: N:Orleans.Runtime.Membership
+  isExternal: false
+  name: Orleans.Runtime.Membership
+  nameWithType: Orleans.Runtime.Membership
+  fullName: Orleans.Runtime.Membership
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<ZooKeeperClusteringClientOptions>()
+  nameWithType: ImmutableExt.AsImmutable<ZooKeeperClusteringClientOptions>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of ZooKeeperClusteringClientOptions)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions)()
+  name.vb: AsImmutable(Of ZooKeeperClusteringClientOptions)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<ZooKeeperClusteringClientOptions>
+    nameWithType: ImmutableExt.AsImmutable<ZooKeeperClusteringClientOptions>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of ZooKeeperClusteringClientOptions)
+    nameWithType: ImmutableExt.AsImmutable(Of ZooKeeperClusteringClientOptions)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions.#ctor*
+  commentId: Overload:Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions.#ctor
+  isExternal: false
+  name: ZooKeeperClusteringClientOptions
+  nameWithType: ZooKeeperClusteringClientOptions.ZooKeeperClusteringClientOptions
+  fullName: Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions.ZooKeeperClusteringClientOptions
+- uid: ILogger{Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions}
+  commentId: '!:ILogger{Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions}'
+  definition: ILogger`1
+  name: ILogger<ZooKeeperClusteringClientOptions>
+  nameWithType: ILogger<ZooKeeperClusteringClientOptions>
+  fullName: ILogger<Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions>
+  nameWithType.vb: ILogger(Of ZooKeeperClusteringClientOptions)
+  fullName.vb: ILogger(Of Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions)
+  name.vb: ILogger(Of ZooKeeperClusteringClientOptions)
+  spec.csharp:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions
+    name: ZooKeeperClusteringClientOptions
+    nameWithType: ZooKeeperClusteringClientOptions
+    fullName: Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions
+    name: ZooKeeperClusteringClientOptions
+    nameWithType: ZooKeeperClusteringClientOptions
+    fullName: Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IOptions{Orleans.Configuration.ZooKeeperGatewayListProviderOptions}
+  commentId: '!:IOptions{Orleans.Configuration.ZooKeeperGatewayListProviderOptions}'
+  definition: IOptions`1
+  name: IOptions<ZooKeeperGatewayListProviderOptions>
+  nameWithType: IOptions<ZooKeeperGatewayListProviderOptions>
+  fullName: IOptions<Orleans.Configuration.ZooKeeperGatewayListProviderOptions>
+  nameWithType.vb: IOptions(Of ZooKeeperGatewayListProviderOptions)
+  fullName.vb: IOptions(Of Orleans.Configuration.ZooKeeperGatewayListProviderOptions)
+  name.vb: IOptions(Of ZooKeeperGatewayListProviderOptions)
+  spec.csharp:
+  - uid: IOptions`1
+    name: IOptions
+    nameWithType: IOptions
+    fullName: IOptions
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Orleans.Configuration.ZooKeeperGatewayListProviderOptions
+    name: ZooKeeperGatewayListProviderOptions
+    nameWithType: ZooKeeperGatewayListProviderOptions
+    fullName: Orleans.Configuration.ZooKeeperGatewayListProviderOptions
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IOptions`1
+    name: IOptions
+    nameWithType: IOptions
+    fullName: IOptions
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Orleans.Configuration.ZooKeeperGatewayListProviderOptions
+    name: ZooKeeperGatewayListProviderOptions
+    nameWithType: ZooKeeperGatewayListProviderOptions
+    fullName: Orleans.Configuration.ZooKeeperGatewayListProviderOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IOptions{GatewayOptions}
+  commentId: '!:IOptions{GatewayOptions}'
+  definition: IOptions`1
+  name: IOptions<GatewayOptions>
+  nameWithType: IOptions<GatewayOptions>
+  fullName: IOptions<GatewayOptions>
+  nameWithType.vb: IOptions(Of GatewayOptions)
+  fullName.vb: IOptions(Of GatewayOptions)
+  name.vb: IOptions(Of GatewayOptions)
+  spec.csharp:
+  - uid: IOptions`1
+    name: IOptions
+    nameWithType: IOptions
+    fullName: IOptions
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: GatewayOptions
+    name: GatewayOptions
+    nameWithType: GatewayOptions
+    fullName: GatewayOptions
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IOptions`1
+    name: IOptions
+    nameWithType: IOptions
+    fullName: IOptions
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: GatewayOptions
+    name: GatewayOptions
+    nameWithType: GatewayOptions
+    fullName: GatewayOptions
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IOptions{ClusterOptions}
+  commentId: '!:IOptions{ClusterOptions}'
+  definition: IOptions`1
+  name: IOptions<ClusterOptions>
+  nameWithType: IOptions<ClusterOptions>
+  fullName: IOptions<ClusterOptions>
+  nameWithType.vb: IOptions(Of ClusterOptions)
+  fullName.vb: IOptions(Of ClusterOptions)
+  name.vb: IOptions(Of ClusterOptions)
+  spec.csharp:
+  - uid: IOptions`1
+    name: IOptions
+    nameWithType: IOptions
+    fullName: IOptions
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: ClusterOptions
+    name: ClusterOptions
+    nameWithType: ClusterOptions
+    fullName: ClusterOptions
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IOptions`1
+    name: IOptions
+    nameWithType: IOptions
+    fullName: IOptions
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: ClusterOptions
+    name: ClusterOptions
+    nameWithType: ClusterOptions
+    fullName: ClusterOptions
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: ILogger`1
+  isExternal: true
+  name: ILogger<>
+  nameWithType: ILogger<>
+  fullName: ILogger<>
+  nameWithType.vb: ILogger(Of )
+  fullName.vb: ILogger(Of )
+  name.vb: ILogger(Of )
+  spec.csharp:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IOptions`1
+  isExternal: true
+  name: IOptions<>
+  nameWithType: IOptions<>
+  fullName: IOptions<>
+  nameWithType.vb: IOptions(Of )
+  fullName.vb: IOptions(Of )
+  name.vb: IOptions(Of )
+  spec.csharp:
+  - uid: IOptions`1
+    name: IOptions
+    nameWithType: IOptions
+    fullName: IOptions
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IOptions`1
+    name: IOptions
+    nameWithType: IOptions
+    fullName: IOptions
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions.InitializeGatewayListProvider*
+  commentId: Overload:Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions.InitializeGatewayListProvider
+  isExternal: false
+  name: InitializeGatewayListProvider
+  nameWithType: ZooKeeperClusteringClientOptions.InitializeGatewayListProvider
+  fullName: Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions.InitializeGatewayListProvider
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task
+- uid: Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions.GetGateways*
+  commentId: Overload:Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions.GetGateways
+  isExternal: false
+  name: GetGateways
+  nameWithType: ZooKeeperClusteringClientOptions.GetGateways
+  fullName: Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions.GetGateways
+- uid: Task{IList{Uri}}
+  commentId: '!:Task{IList{Uri}}'
+  definition: Task`1
+  name: Task<IList<Uri>>
+  nameWithType: Task<IList<Uri>>
+  fullName: Task<IList<Uri>>
+  nameWithType.vb: Task(Of IList(Of Uri))
+  fullName.vb: Task(Of IList(Of Uri))
+  name.vb: Task(Of IList(Of Uri))
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: IList`1
+    name: IList
+    nameWithType: IList
+    fullName: IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Uri
+    name: Uri
+    nameWithType: Uri
+    fullName: Uri
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: IList`1
+    name: IList
+    nameWithType: IList
+    fullName: IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Uri
+    name: Uri
+    nameWithType: Uri
+    fullName: Uri
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions.MaxStaleness*
+  commentId: Overload:Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions.MaxStaleness
+  isExternal: false
+  name: MaxStaleness
+  nameWithType: ZooKeeperClusteringClientOptions.MaxStaleness
+  fullName: Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions.MaxStaleness
+- uid: TimeSpan
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: TimeSpan
+- uid: Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions.IsUpdatable*
+  commentId: Overload:Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions.IsUpdatable
+  isExternal: false
+  name: IsUpdatable
+  nameWithType: ZooKeeperClusteringClientOptions.IsUpdatable
+  fullName: Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions.IsUpdatable
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

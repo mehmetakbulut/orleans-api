@@ -1,0 +1,302 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Configuration.AzureTransactionLogOptionsValidator
+  commentId: T:Orleans.Configuration.AzureTransactionLogOptionsValidator
+  id: AzureTransactionLogOptionsValidator
+  parent: Orleans.Configuration
+  children:
+  - Orleans.Configuration.AzureTransactionLogOptionsValidator.#ctor(IOptions{Orleans.Configuration.AzureTransactionLogOptions})
+  - Orleans.Configuration.AzureTransactionLogOptionsValidator.ValidateConfiguration
+  langs:
+  - csharp
+  - vb
+  name: AzureTransactionLogOptionsValidator
+  nameWithType: AzureTransactionLogOptionsValidator
+  fullName: Orleans.Configuration.AzureTransactionLogOptionsValidator
+  type: Class
+  source:
+    remote:
+      path: src/Azure/Orleans.Transactions.AzureStorage/Storage/AzureTransactionLogOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AzureTransactionLogOptionsValidator
+    path: src/Azure/Orleans.Transactions.AzureStorage/Storage/AzureTransactionLogOptions.cs
+    startLine: 14
+  assemblies:
+  - Orleans.Transactions.AzureStorage
+  namespace: Orleans.Configuration
+  syntax:
+    content: 'public class AzureTransactionLogOptionsValidator : IConfigurationValidator'
+    content.vb: >-
+      Public Class AzureTransactionLogOptionsValidator
+
+          Inherits IConfigurationValidator
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.Configuration.AzureTransactionLogOptionsValidator.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.Configuration.AzureTransactionLogOptionsValidator.#ctor(IOptions{Orleans.Configuration.AzureTransactionLogOptions})
+  commentId: M:Orleans.Configuration.AzureTransactionLogOptionsValidator.#ctor(IOptions{Orleans.Configuration.AzureTransactionLogOptions})
+  id: '#ctor(IOptions{Orleans.Configuration.AzureTransactionLogOptions})'
+  parent: Orleans.Configuration.AzureTransactionLogOptionsValidator
+  langs:
+  - csharp
+  - vb
+  name: AzureTransactionLogOptionsValidator(IOptions<AzureTransactionLogOptions>)
+  nameWithType: AzureTransactionLogOptionsValidator.AzureTransactionLogOptionsValidator(IOptions<AzureTransactionLogOptions>)
+  fullName: Orleans.Configuration.AzureTransactionLogOptionsValidator.AzureTransactionLogOptionsValidator(IOptions<Orleans.Configuration.AzureTransactionLogOptions>)
+  type: Constructor
+  source:
+    remote:
+      path: src/Azure/Orleans.Transactions.AzureStorage/Storage/AzureTransactionLogOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Azure/Orleans.Transactions.AzureStorage/Storage/AzureTransactionLogOptions.cs
+    startLine: 18
+  assemblies:
+  - Orleans.Transactions.AzureStorage
+  namespace: Orleans.Configuration
+  syntax:
+    content: public AzureTransactionLogOptionsValidator(IOptions<AzureTransactionLogOptions> configurationOptions)
+    parameters:
+    - id: configurationOptions
+      type: IOptions{Orleans.Configuration.AzureTransactionLogOptions}
+    content.vb: Public Sub New(configurationOptions As IOptions(Of AzureTransactionLogOptions))
+  overload: Orleans.Configuration.AzureTransactionLogOptionsValidator.#ctor*
+  nameWithType.vb: AzureTransactionLogOptionsValidator.AzureTransactionLogOptionsValidator(IOptions(Of AzureTransactionLogOptions))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.Configuration.AzureTransactionLogOptionsValidator.AzureTransactionLogOptionsValidator(IOptions(Of Orleans.Configuration.AzureTransactionLogOptions))
+  name.vb: AzureTransactionLogOptionsValidator(IOptions(Of AzureTransactionLogOptions))
+- uid: Orleans.Configuration.AzureTransactionLogOptionsValidator.ValidateConfiguration
+  commentId: M:Orleans.Configuration.AzureTransactionLogOptionsValidator.ValidateConfiguration
+  id: ValidateConfiguration
+  parent: Orleans.Configuration.AzureTransactionLogOptionsValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateConfiguration()
+  nameWithType: AzureTransactionLogOptionsValidator.ValidateConfiguration()
+  fullName: Orleans.Configuration.AzureTransactionLogOptionsValidator.ValidateConfiguration()
+  type: Method
+  source:
+    remote:
+      path: src/Azure/Orleans.Transactions.AzureStorage/Storage/AzureTransactionLogOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ValidateConfiguration
+    path: src/Azure/Orleans.Transactions.AzureStorage/Storage/AzureTransactionLogOptions.cs
+    startLine: 23
+  assemblies:
+  - Orleans.Transactions.AzureStorage
+  namespace: Orleans.Configuration
+  syntax:
+    content: public void ValidateConfiguration()
+    content.vb: Public Sub ValidateConfiguration
+  overload: Orleans.Configuration.AzureTransactionLogOptionsValidator.ValidateConfiguration*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans.Configuration
+  commentId: N:Orleans.Configuration
+  isExternal: false
+  name: Orleans.Configuration
+  nameWithType: Orleans.Configuration
+  fullName: Orleans.Configuration
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Configuration.AzureTransactionLogOptionsValidator.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<AzureTransactionLogOptionsValidator>()
+  nameWithType: ImmutableExt.AsImmutable<AzureTransactionLogOptionsValidator>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Configuration.AzureTransactionLogOptionsValidator>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of AzureTransactionLogOptionsValidator)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Configuration.AzureTransactionLogOptionsValidator)()
+  name.vb: AsImmutable(Of AzureTransactionLogOptionsValidator)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<AzureTransactionLogOptionsValidator>
+    nameWithType: ImmutableExt.AsImmutable<AzureTransactionLogOptionsValidator>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Configuration.AzureTransactionLogOptionsValidator>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of AzureTransactionLogOptionsValidator)
+    nameWithType: ImmutableExt.AsImmutable(Of AzureTransactionLogOptionsValidator)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Configuration.AzureTransactionLogOptionsValidator)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Configuration.AzureTransactionLogOptionsValidator.#ctor*
+  commentId: Overload:Orleans.Configuration.AzureTransactionLogOptionsValidator.#ctor
+  isExternal: false
+  name: AzureTransactionLogOptionsValidator
+  nameWithType: AzureTransactionLogOptionsValidator.AzureTransactionLogOptionsValidator
+  fullName: Orleans.Configuration.AzureTransactionLogOptionsValidator.AzureTransactionLogOptionsValidator
+- uid: IOptions{Orleans.Configuration.AzureTransactionLogOptions}
+  commentId: '!:IOptions{Orleans.Configuration.AzureTransactionLogOptions}'
+  definition: IOptions`1
+  name: IOptions<AzureTransactionLogOptions>
+  nameWithType: IOptions<AzureTransactionLogOptions>
+  fullName: IOptions<Orleans.Configuration.AzureTransactionLogOptions>
+  nameWithType.vb: IOptions(Of AzureTransactionLogOptions)
+  fullName.vb: IOptions(Of Orleans.Configuration.AzureTransactionLogOptions)
+  name.vb: IOptions(Of AzureTransactionLogOptions)
+  spec.csharp:
+  - uid: IOptions`1
+    name: IOptions
+    nameWithType: IOptions
+    fullName: IOptions
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Orleans.Configuration.AzureTransactionLogOptions
+    name: AzureTransactionLogOptions
+    nameWithType: AzureTransactionLogOptions
+    fullName: Orleans.Configuration.AzureTransactionLogOptions
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IOptions`1
+    name: IOptions
+    nameWithType: IOptions
+    fullName: IOptions
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Orleans.Configuration.AzureTransactionLogOptions
+    name: AzureTransactionLogOptions
+    nameWithType: AzureTransactionLogOptions
+    fullName: Orleans.Configuration.AzureTransactionLogOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IOptions`1
+  isExternal: true
+  name: IOptions<>
+  nameWithType: IOptions<>
+  fullName: IOptions<>
+  nameWithType.vb: IOptions(Of )
+  fullName.vb: IOptions(Of )
+  name.vb: IOptions(Of )
+  spec.csharp:
+  - uid: IOptions`1
+    name: IOptions
+    nameWithType: IOptions
+    fullName: IOptions
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IOptions`1
+    name: IOptions
+    nameWithType: IOptions
+    fullName: IOptions
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Configuration.AzureTransactionLogOptionsValidator.ValidateConfiguration*
+  commentId: Overload:Orleans.Configuration.AzureTransactionLogOptionsValidator.ValidateConfiguration
+  isExternal: false
+  name: ValidateConfiguration
+  nameWithType: AzureTransactionLogOptionsValidator.ValidateConfiguration
+  fullName: Orleans.Configuration.AzureTransactionLogOptionsValidator.ValidateConfiguration

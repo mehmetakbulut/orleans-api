@@ -1,0 +1,530 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Hosting.ConsulUtilsHostingExtensions
+  commentId: T:Orleans.Hosting.ConsulUtilsHostingExtensions
+  id: ConsulUtilsHostingExtensions
+  parent: Orleans.Hosting
+  children:
+  - Orleans.Hosting.ConsulUtilsHostingExtensions.UseConsulClustering(IClientBuilder,Action{OptionsBuilder{Orleans.Configuration.ConsulClusteringClientOptions}})
+  - Orleans.Hosting.ConsulUtilsHostingExtensions.UseConsulClustering(IClientBuilder,Action{Orleans.Configuration.ConsulClusteringClientOptions})
+  - Orleans.Hosting.ConsulUtilsHostingExtensions.UseConsulClustering(ISiloHostBuilder,Action{OptionsBuilder{Orleans.Configuration.ConsulClusteringSiloOptions}})
+  - Orleans.Hosting.ConsulUtilsHostingExtensions.UseConsulClustering(ISiloHostBuilder,Action{Orleans.Configuration.ConsulClusteringSiloOptions})
+  langs:
+  - csharp
+  - vb
+  name: ConsulUtilsHostingExtensions
+  nameWithType: ConsulUtilsHostingExtensions
+  fullName: Orleans.Hosting.ConsulUtilsHostingExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Clustering.Consul/ConsulUtilsHostingExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ConsulUtilsHostingExtensions
+    path: src/Orleans.Clustering.Consul/ConsulUtilsHostingExtensions.cs
+    startLine: 8
+  assemblies:
+  - Orleans.Clustering.Consul
+  namespace: Orleans.Hosting
+  syntax:
+    content: 'public static class ConsulUtilsHostingExtensions : object'
+    content.vb: >-
+      Public Module ConsulUtilsHostingExtensions
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Orleans.Hosting.ConsulUtilsHostingExtensions.UseConsulClustering(ISiloHostBuilder,Action{Orleans.Configuration.ConsulClusteringSiloOptions})
+  commentId: M:Orleans.Hosting.ConsulUtilsHostingExtensions.UseConsulClustering(ISiloHostBuilder,Action{Orleans.Configuration.ConsulClusteringSiloOptions})
+  id: UseConsulClustering(ISiloHostBuilder,Action{Orleans.Configuration.ConsulClusteringSiloOptions})
+  isExtensionMethod: true
+  parent: Orleans.Hosting.ConsulUtilsHostingExtensions
+  langs:
+  - csharp
+  - vb
+  name: UseConsulClustering(ISiloHostBuilder, Action<ConsulClusteringSiloOptions>)
+  nameWithType: ConsulUtilsHostingExtensions.UseConsulClustering(ISiloHostBuilder, Action<ConsulClusteringSiloOptions>)
+  fullName: Orleans.Hosting.ConsulUtilsHostingExtensions.UseConsulClustering(ISiloHostBuilder, Action<Orleans.Configuration.ConsulClusteringSiloOptions>)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Clustering.Consul/ConsulUtilsHostingExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: UseConsulClustering
+    path: src/Orleans.Clustering.Consul/ConsulUtilsHostingExtensions.cs
+    startLine: 22
+  assemblies:
+  - Orleans.Clustering.Consul
+  namespace: Orleans.Hosting
+  summary: "\nConfigures the silo to use Consul for clustering.\n"
+  example: []
+  syntax:
+    content: public static ISiloHostBuilder UseConsulClustering(this ISiloHostBuilder builder, Action<ConsulClusteringSiloOptions> configureOptions)
+    parameters:
+    - id: builder
+      type: ISiloHostBuilder
+      description: "\nThe builder.\n"
+    - id: configureOptions
+      type: Action{Orleans.Configuration.ConsulClusteringSiloOptions}
+      description: "\nThe configuration delegate.\n"
+    return:
+      type: ISiloHostBuilder
+      description: "\nThe provided <see cref=\"!:ISiloHostBuilder\"></see>.\n"
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function UseConsulClustering(builder As ISiloHostBuilder, configureOptions As Action(Of ConsulClusteringSiloOptions)) As ISiloHostBuilder
+  overload: Orleans.Hosting.ConsulUtilsHostingExtensions.UseConsulClustering*
+  nameWithType.vb: ConsulUtilsHostingExtensions.UseConsulClustering(ISiloHostBuilder, Action(Of ConsulClusteringSiloOptions))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.Hosting.ConsulUtilsHostingExtensions.UseConsulClustering(ISiloHostBuilder, Action(Of Orleans.Configuration.ConsulClusteringSiloOptions))
+  name.vb: UseConsulClustering(ISiloHostBuilder, Action(Of ConsulClusteringSiloOptions))
+- uid: Orleans.Hosting.ConsulUtilsHostingExtensions.UseConsulClustering(ISiloHostBuilder,Action{OptionsBuilder{Orleans.Configuration.ConsulClusteringSiloOptions}})
+  commentId: M:Orleans.Hosting.ConsulUtilsHostingExtensions.UseConsulClustering(ISiloHostBuilder,Action{OptionsBuilder{Orleans.Configuration.ConsulClusteringSiloOptions}})
+  id: UseConsulClustering(ISiloHostBuilder,Action{OptionsBuilder{Orleans.Configuration.ConsulClusteringSiloOptions}})
+  isExtensionMethod: true
+  parent: Orleans.Hosting.ConsulUtilsHostingExtensions
+  langs:
+  - csharp
+  - vb
+  name: UseConsulClustering(ISiloHostBuilder, Action<OptionsBuilder<ConsulClusteringSiloOptions>>)
+  nameWithType: ConsulUtilsHostingExtensions.UseConsulClustering(ISiloHostBuilder, Action<OptionsBuilder<ConsulClusteringSiloOptions>>)
+  fullName: Orleans.Hosting.ConsulUtilsHostingExtensions.UseConsulClustering(ISiloHostBuilder, Action<OptionsBuilder<Orleans.Configuration.ConsulClusteringSiloOptions>>)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Clustering.Consul/ConsulUtilsHostingExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: UseConsulClustering
+    path: src/Orleans.Clustering.Consul/ConsulUtilsHostingExtensions.cs
+    startLine: 50
+  assemblies:
+  - Orleans.Clustering.Consul
+  namespace: Orleans.Hosting
+  summary: "\nConfigures the silo to use Consul for clustering.\n"
+  example: []
+  syntax:
+    content: public static ISiloHostBuilder UseConsulClustering(this ISiloHostBuilder builder, Action<OptionsBuilder<ConsulClusteringSiloOptions>> configureOptions)
+    parameters:
+    - id: builder
+      type: ISiloHostBuilder
+      description: "\nThe builder.\n"
+    - id: configureOptions
+      type: Action{OptionsBuilder{Orleans.Configuration.ConsulClusteringSiloOptions}}
+      description: "\nThe configuration delegate.\n"
+    return:
+      type: ISiloHostBuilder
+      description: "\nThe provided <see cref=\"!:ISiloHostBuilder\"></see>.\n"
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function UseConsulClustering(builder As ISiloHostBuilder, configureOptions As Action(Of OptionsBuilder(Of ConsulClusteringSiloOptions))) As ISiloHostBuilder
+  overload: Orleans.Hosting.ConsulUtilsHostingExtensions.UseConsulClustering*
+  nameWithType.vb: ConsulUtilsHostingExtensions.UseConsulClustering(ISiloHostBuilder, Action(Of OptionsBuilder(Of ConsulClusteringSiloOptions)))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.Hosting.ConsulUtilsHostingExtensions.UseConsulClustering(ISiloHostBuilder, Action(Of OptionsBuilder(Of Orleans.Configuration.ConsulClusteringSiloOptions)))
+  name.vb: UseConsulClustering(ISiloHostBuilder, Action(Of OptionsBuilder(Of ConsulClusteringSiloOptions)))
+- uid: Orleans.Hosting.ConsulUtilsHostingExtensions.UseConsulClustering(IClientBuilder,Action{Orleans.Configuration.ConsulClusteringClientOptions})
+  commentId: M:Orleans.Hosting.ConsulUtilsHostingExtensions.UseConsulClustering(IClientBuilder,Action{Orleans.Configuration.ConsulClusteringClientOptions})
+  id: UseConsulClustering(IClientBuilder,Action{Orleans.Configuration.ConsulClusteringClientOptions})
+  isExtensionMethod: true
+  parent: Orleans.Hosting.ConsulUtilsHostingExtensions
+  langs:
+  - csharp
+  - vb
+  name: UseConsulClustering(IClientBuilder, Action<ConsulClusteringClientOptions>)
+  nameWithType: ConsulUtilsHostingExtensions.UseConsulClustering(IClientBuilder, Action<ConsulClusteringClientOptions>)
+  fullName: Orleans.Hosting.ConsulUtilsHostingExtensions.UseConsulClustering(IClientBuilder, Action<Orleans.Configuration.ConsulClusteringClientOptions>)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Clustering.Consul/ConsulUtilsHostingExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: UseConsulClustering
+    path: src/Orleans.Clustering.Consul/ConsulUtilsHostingExtensions.cs
+    startLine: 74
+  assemblies:
+  - Orleans.Clustering.Consul
+  namespace: Orleans.Hosting
+  summary: "\nConfigures the client to use Consul for clustering.\n"
+  example: []
+  syntax:
+    content: public static IClientBuilder UseConsulClustering(this IClientBuilder builder, Action<ConsulClusteringClientOptions> configureOptions)
+    parameters:
+    - id: builder
+      type: IClientBuilder
+      description: "\nThe builder.\n"
+    - id: configureOptions
+      type: Action{Orleans.Configuration.ConsulClusteringClientOptions}
+      description: "\nThe configuration delegate.\n"
+    return:
+      type: IClientBuilder
+      description: "\nThe provided <see cref=\"!:IClientBuilder\"></see>.\n"
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function UseConsulClustering(builder As IClientBuilder, configureOptions As Action(Of ConsulClusteringClientOptions)) As IClientBuilder
+  overload: Orleans.Hosting.ConsulUtilsHostingExtensions.UseConsulClustering*
+  nameWithType.vb: ConsulUtilsHostingExtensions.UseConsulClustering(IClientBuilder, Action(Of ConsulClusteringClientOptions))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.Hosting.ConsulUtilsHostingExtensions.UseConsulClustering(IClientBuilder, Action(Of Orleans.Configuration.ConsulClusteringClientOptions))
+  name.vb: UseConsulClustering(IClientBuilder, Action(Of ConsulClusteringClientOptions))
+- uid: Orleans.Hosting.ConsulUtilsHostingExtensions.UseConsulClustering(IClientBuilder,Action{OptionsBuilder{Orleans.Configuration.ConsulClusteringClientOptions}})
+  commentId: M:Orleans.Hosting.ConsulUtilsHostingExtensions.UseConsulClustering(IClientBuilder,Action{OptionsBuilder{Orleans.Configuration.ConsulClusteringClientOptions}})
+  id: UseConsulClustering(IClientBuilder,Action{OptionsBuilder{Orleans.Configuration.ConsulClusteringClientOptions}})
+  isExtensionMethod: true
+  parent: Orleans.Hosting.ConsulUtilsHostingExtensions
+  langs:
+  - csharp
+  - vb
+  name: UseConsulClustering(IClientBuilder, Action<OptionsBuilder<ConsulClusteringClientOptions>>)
+  nameWithType: ConsulUtilsHostingExtensions.UseConsulClustering(IClientBuilder, Action<OptionsBuilder<ConsulClusteringClientOptions>>)
+  fullName: Orleans.Hosting.ConsulUtilsHostingExtensions.UseConsulClustering(IClientBuilder, Action<OptionsBuilder<Orleans.Configuration.ConsulClusteringClientOptions>>)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Clustering.Consul/ConsulUtilsHostingExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: UseConsulClustering
+    path: src/Orleans.Clustering.Consul/ConsulUtilsHostingExtensions.cs
+    startLine: 101
+  assemblies:
+  - Orleans.Clustering.Consul
+  namespace: Orleans.Hosting
+  summary: "\nConfigures the client to use Consul for clustering.\n"
+  example: []
+  syntax:
+    content: public static IClientBuilder UseConsulClustering(this IClientBuilder builder, Action<OptionsBuilder<ConsulClusteringClientOptions>> configureOptions)
+    parameters:
+    - id: builder
+      type: IClientBuilder
+      description: "\nThe builder.\n"
+    - id: configureOptions
+      type: Action{OptionsBuilder{Orleans.Configuration.ConsulClusteringClientOptions}}
+      description: "\nThe configuration delegate.\n"
+    return:
+      type: IClientBuilder
+      description: "\nThe provided <see cref=\"!:IClientBuilder\"></see>.\n"
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function UseConsulClustering(builder As IClientBuilder, configureOptions As Action(Of OptionsBuilder(Of ConsulClusteringClientOptions))) As IClientBuilder
+  overload: Orleans.Hosting.ConsulUtilsHostingExtensions.UseConsulClustering*
+  nameWithType.vb: ConsulUtilsHostingExtensions.UseConsulClustering(IClientBuilder, Action(Of OptionsBuilder(Of ConsulClusteringClientOptions)))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.Hosting.ConsulUtilsHostingExtensions.UseConsulClustering(IClientBuilder, Action(Of OptionsBuilder(Of Orleans.Configuration.ConsulClusteringClientOptions)))
+  name.vb: UseConsulClustering(IClientBuilder, Action(Of OptionsBuilder(Of ConsulClusteringClientOptions)))
+references:
+- uid: Orleans.Hosting
+  commentId: N:Orleans.Hosting
+  isExternal: false
+  name: Orleans.Hosting
+  nameWithType: Orleans.Hosting
+  fullName: Orleans.Hosting
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Hosting.ConsulUtilsHostingExtensions.UseConsulClustering*
+  commentId: Overload:Orleans.Hosting.ConsulUtilsHostingExtensions.UseConsulClustering
+  isExternal: false
+  name: UseConsulClustering
+  nameWithType: ConsulUtilsHostingExtensions.UseConsulClustering
+  fullName: Orleans.Hosting.ConsulUtilsHostingExtensions.UseConsulClustering
+- uid: ISiloHostBuilder
+  isExternal: true
+  name: ISiloHostBuilder
+  nameWithType: ISiloHostBuilder
+  fullName: ISiloHostBuilder
+- uid: Action{Orleans.Configuration.ConsulClusteringSiloOptions}
+  commentId: '!:Action{Orleans.Configuration.ConsulClusteringSiloOptions}'
+  definition: Action`1
+  name: Action<ConsulClusteringSiloOptions>
+  nameWithType: Action<ConsulClusteringSiloOptions>
+  fullName: Action<Orleans.Configuration.ConsulClusteringSiloOptions>
+  nameWithType.vb: Action(Of ConsulClusteringSiloOptions)
+  fullName.vb: Action(Of Orleans.Configuration.ConsulClusteringSiloOptions)
+  name.vb: Action(Of ConsulClusteringSiloOptions)
+  spec.csharp:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Orleans.Configuration.ConsulClusteringSiloOptions
+    name: ConsulClusteringSiloOptions
+    nameWithType: ConsulClusteringSiloOptions
+    fullName: Orleans.Configuration.ConsulClusteringSiloOptions
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Orleans.Configuration.ConsulClusteringSiloOptions
+    name: ConsulClusteringSiloOptions
+    nameWithType: ConsulClusteringSiloOptions
+    fullName: Orleans.Configuration.ConsulClusteringSiloOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Action`1
+  isExternal: true
+  name: Action<>
+  nameWithType: Action<>
+  fullName: Action<>
+  nameWithType.vb: Action(Of )
+  fullName.vb: Action(Of )
+  name.vb: Action(Of )
+  spec.csharp:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Action{OptionsBuilder{Orleans.Configuration.ConsulClusteringSiloOptions}}
+  commentId: '!:Action{OptionsBuilder{Orleans.Configuration.ConsulClusteringSiloOptions}}'
+  definition: Action`1
+  name: Action<OptionsBuilder<ConsulClusteringSiloOptions>>
+  nameWithType: Action<OptionsBuilder<ConsulClusteringSiloOptions>>
+  fullName: Action<OptionsBuilder<Orleans.Configuration.ConsulClusteringSiloOptions>>
+  nameWithType.vb: Action(Of OptionsBuilder(Of ConsulClusteringSiloOptions))
+  fullName.vb: Action(Of OptionsBuilder(Of Orleans.Configuration.ConsulClusteringSiloOptions))
+  name.vb: Action(Of OptionsBuilder(Of ConsulClusteringSiloOptions))
+  spec.csharp:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: OptionsBuilder`1
+    name: OptionsBuilder
+    nameWithType: OptionsBuilder
+    fullName: OptionsBuilder
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Orleans.Configuration.ConsulClusteringSiloOptions
+    name: ConsulClusteringSiloOptions
+    nameWithType: ConsulClusteringSiloOptions
+    fullName: Orleans.Configuration.ConsulClusteringSiloOptions
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: OptionsBuilder`1
+    name: OptionsBuilder
+    nameWithType: OptionsBuilder
+    fullName: OptionsBuilder
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Orleans.Configuration.ConsulClusteringSiloOptions
+    name: ConsulClusteringSiloOptions
+    nameWithType: ConsulClusteringSiloOptions
+    fullName: Orleans.Configuration.ConsulClusteringSiloOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IClientBuilder
+  isExternal: true
+  name: IClientBuilder
+  nameWithType: IClientBuilder
+  fullName: IClientBuilder
+- uid: Action{Orleans.Configuration.ConsulClusteringClientOptions}
+  commentId: '!:Action{Orleans.Configuration.ConsulClusteringClientOptions}'
+  definition: Action`1
+  name: Action<ConsulClusteringClientOptions>
+  nameWithType: Action<ConsulClusteringClientOptions>
+  fullName: Action<Orleans.Configuration.ConsulClusteringClientOptions>
+  nameWithType.vb: Action(Of ConsulClusteringClientOptions)
+  fullName.vb: Action(Of Orleans.Configuration.ConsulClusteringClientOptions)
+  name.vb: Action(Of ConsulClusteringClientOptions)
+  spec.csharp:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Orleans.Configuration.ConsulClusteringClientOptions
+    name: ConsulClusteringClientOptions
+    nameWithType: ConsulClusteringClientOptions
+    fullName: Orleans.Configuration.ConsulClusteringClientOptions
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Orleans.Configuration.ConsulClusteringClientOptions
+    name: ConsulClusteringClientOptions
+    nameWithType: ConsulClusteringClientOptions
+    fullName: Orleans.Configuration.ConsulClusteringClientOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Action{OptionsBuilder{Orleans.Configuration.ConsulClusteringClientOptions}}
+  commentId: '!:Action{OptionsBuilder{Orleans.Configuration.ConsulClusteringClientOptions}}'
+  definition: Action`1
+  name: Action<OptionsBuilder<ConsulClusteringClientOptions>>
+  nameWithType: Action<OptionsBuilder<ConsulClusteringClientOptions>>
+  fullName: Action<OptionsBuilder<Orleans.Configuration.ConsulClusteringClientOptions>>
+  nameWithType.vb: Action(Of OptionsBuilder(Of ConsulClusteringClientOptions))
+  fullName.vb: Action(Of OptionsBuilder(Of Orleans.Configuration.ConsulClusteringClientOptions))
+  name.vb: Action(Of OptionsBuilder(Of ConsulClusteringClientOptions))
+  spec.csharp:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: OptionsBuilder`1
+    name: OptionsBuilder
+    nameWithType: OptionsBuilder
+    fullName: OptionsBuilder
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Orleans.Configuration.ConsulClusteringClientOptions
+    name: ConsulClusteringClientOptions
+    nameWithType: ConsulClusteringClientOptions
+    fullName: Orleans.Configuration.ConsulClusteringClientOptions
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: OptionsBuilder`1
+    name: OptionsBuilder
+    nameWithType: OptionsBuilder
+    fullName: OptionsBuilder
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Orleans.Configuration.ConsulClusteringClientOptions
+    name: ConsulClusteringClientOptions
+    nameWithType: ConsulClusteringClientOptions
+    fullName: Orleans.Configuration.ConsulClusteringClientOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )

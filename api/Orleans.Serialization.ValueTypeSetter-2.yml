@@ -1,0 +1,166 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Serialization.ValueTypeSetter`2
+  commentId: T:Orleans.Serialization.ValueTypeSetter`2
+  id: ValueTypeSetter`2
+  parent: Orleans.Serialization
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: ValueTypeSetter<TDeclaring, TField>
+  nameWithType: ValueTypeSetter<TDeclaring, TField>
+  fullName: Orleans.Serialization.ValueTypeSetter<TDeclaring, TField>
+  type: Delegate
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Serialization/IFieldUtils.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ValueTypeSetter
+    path: src/Orleans.Core.Abstractions/Serialization/IFieldUtils.cs
+    startLine: 12
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Serialization
+  summary: "\nThe delegate used to set fields in value types.\n"
+  example: []
+  syntax:
+    content: public delegate void ValueTypeSetter<TDeclaring, in TField>(ref TDeclaring instance, TField value);
+    parameters:
+    - id: instance
+      type: '{TDeclaring}'
+      description: The instance having its field set.
+    - id: value
+      type: '{TField}'
+      description: The value being set.
+    typeParameters:
+    - id: TDeclaring
+      description: The declaring type of the field.
+    - id: TField
+      description: The field type.
+    content.vb: Public Delegate Sub ValueTypeSetter(Of TDeclaring, In TField)(ByRef instance As TDeclaring, value As TField)
+  extensionMethods:
+  - Orleans.Serialization.ValueTypeSetter`2.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  nameWithType.vb: ValueTypeSetter(Of TDeclaring, TField)
+  modifiers.csharp:
+  - public
+  - delegate
+  modifiers.vb:
+  - Public
+  - Delegate
+  fullName.vb: Orleans.Serialization.ValueTypeSetter(Of TDeclaring, TField)
+  name.vb: ValueTypeSetter(Of TDeclaring, TField)
+references:
+- uid: Orleans.Serialization
+  commentId: N:Orleans.Serialization
+  isExternal: false
+  name: Orleans.Serialization
+  nameWithType: Orleans.Serialization
+  fullName: Orleans.Serialization
+- uid: Orleans.Serialization.ValueTypeSetter`2.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<ValueTypeSetter<TDeclaring, TField>>()
+  nameWithType: ImmutableExt.AsImmutable<ValueTypeSetter<TDeclaring, TField>>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Serialization.ValueTypeSetter<TDeclaring, TField>>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of ValueTypeSetter(Of TDeclaring, TField))()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Serialization.ValueTypeSetter(Of TDeclaring, TField))()
+  name.vb: AsImmutable(Of ValueTypeSetter(Of TDeclaring, TField))()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<ValueTypeSetter<TDeclaring, TField>>
+    nameWithType: ImmutableExt.AsImmutable<ValueTypeSetter<TDeclaring, TField>>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Serialization.ValueTypeSetter<TDeclaring, TField>>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of ValueTypeSetter(Of TDeclaring, TField))
+    nameWithType: ImmutableExt.AsImmutable(Of ValueTypeSetter(Of TDeclaring, TField))
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Serialization.ValueTypeSetter(Of TDeclaring, TField))
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: '{TDeclaring}'
+  commentId: '!:TDeclaring'
+  definition: TDeclaring
+  name: TDeclaring
+  nameWithType: TDeclaring
+  fullName: TDeclaring
+- uid: '{TField}'
+  commentId: '!:TField'
+  definition: TField
+  name: TField
+  nameWithType: TField
+  fullName: TField
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: TDeclaring
+  commentId: '!:TDeclaring'
+  isExternal: false
+  name: TDeclaring
+  nameWithType: TDeclaring
+  fullName: TDeclaring
+- uid: TField
+  commentId: '!:TField'
+  isExternal: false
+  name: TField
+  nameWithType: TField
+  fullName: TField
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency

@@ -1,0 +1,393 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.IGrainCallContext
+  commentId: T:Orleans.IGrainCallContext
+  id: IGrainCallContext
+  parent: Orleans
+  children:
+  - Orleans.IGrainCallContext.Arguments
+  - Orleans.IGrainCallContext.Grain
+  - Orleans.IGrainCallContext.Invoke
+  - Orleans.IGrainCallContext.Method
+  - Orleans.IGrainCallContext.Result
+  langs:
+  - csharp
+  - vb
+  name: IGrainCallContext
+  nameWithType: IGrainCallContext
+  fullName: Orleans.IGrainCallContext
+  type: Interface
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/IGrainCallContext.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IGrainCallContext
+    path: src/Orleans.Core.Abstractions/Core/IGrainCallContext.cs
+    startLine: 16
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nRepresents a method invocation as well as the result of invocation.\n"
+  example: []
+  syntax:
+    content: public interface IGrainCallContext
+    content.vb: Public Interface IGrainCallContext
+  extensionMethods:
+  - Orleans.IGrainCallContext.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Orleans.IGrainCallContext.Grain
+  commentId: P:Orleans.IGrainCallContext.Grain
+  id: Grain
+  parent: Orleans.IGrainCallContext
+  langs:
+  - csharp
+  - vb
+  name: Grain
+  nameWithType: IGrainCallContext.Grain
+  fullName: Orleans.IGrainCallContext.Grain
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/IGrainCallContext.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Grain
+    path: src/Orleans.Core.Abstractions/Core/IGrainCallContext.cs
+    startLine: 21
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nGets the grain being invoked.\n"
+  example: []
+  syntax:
+    content: IAddressable Grain { get; }
+    parameters: []
+    return:
+      type: Orleans.Runtime.IAddressable
+    content.vb: ReadOnly Property Grain As IAddressable
+  overload: Orleans.IGrainCallContext.Grain*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Orleans.IGrainCallContext.Method
+  commentId: P:Orleans.IGrainCallContext.Method
+  id: Method
+  parent: Orleans.IGrainCallContext
+  langs:
+  - csharp
+  - vb
+  name: Method
+  nameWithType: IGrainCallContext.Method
+  fullName: Orleans.IGrainCallContext.Method
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/IGrainCallContext.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Method
+    path: src/Orleans.Core.Abstractions/Core/IGrainCallContext.cs
+    startLine: 26
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nGets the <see cref=\"!:MethodInfo\"></see> of the method being invoked.\n"
+  example: []
+  syntax:
+    content: MethodInfo Method { get; }
+    parameters: []
+    return:
+      type: MethodInfo
+    content.vb: ReadOnly Property Method As MethodInfo
+  overload: Orleans.IGrainCallContext.Method*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Orleans.IGrainCallContext.Arguments
+  commentId: P:Orleans.IGrainCallContext.Arguments
+  id: Arguments
+  parent: Orleans.IGrainCallContext
+  langs:
+  - csharp
+  - vb
+  name: Arguments
+  nameWithType: IGrainCallContext.Arguments
+  fullName: Orleans.IGrainCallContext.Arguments
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/IGrainCallContext.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Arguments
+    path: src/Orleans.Core.Abstractions/Core/IGrainCallContext.cs
+    startLine: 31
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nGets the arguments for this method invocation.\n"
+  example: []
+  syntax:
+    content: object[] Arguments { get; }
+    parameters: []
+    return:
+      type: System.Object[]
+    content.vb: ReadOnly Property Arguments As Object()
+  overload: Orleans.IGrainCallContext.Arguments*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Orleans.IGrainCallContext.Invoke
+  commentId: M:Orleans.IGrainCallContext.Invoke
+  id: Invoke
+  parent: Orleans.IGrainCallContext
+  langs:
+  - csharp
+  - vb
+  name: Invoke()
+  nameWithType: IGrainCallContext.Invoke()
+  fullName: Orleans.IGrainCallContext.Invoke()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/IGrainCallContext.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Invoke
+    path: src/Orleans.Core.Abstractions/Core/IGrainCallContext.cs
+    startLine: 36
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nInvokes the request.\n"
+  example: []
+  syntax:
+    content: Task Invoke()
+    return:
+      type: Task
+    content.vb: Function Invoke As Task
+  overload: Orleans.IGrainCallContext.Invoke*
+- uid: Orleans.IGrainCallContext.Result
+  commentId: P:Orleans.IGrainCallContext.Result
+  id: Result
+  parent: Orleans.IGrainCallContext
+  langs:
+  - csharp
+  - vb
+  name: Result
+  nameWithType: IGrainCallContext.Result
+  fullName: Orleans.IGrainCallContext.Result
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/IGrainCallContext.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Result
+    path: src/Orleans.Core.Abstractions/Core/IGrainCallContext.cs
+    startLine: 41
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nGets or sets the result.\n"
+  example: []
+  syntax:
+    content: object Result { get; set; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: Property Result As Object
+  overload: Orleans.IGrainCallContext.Result*
+  modifiers.csharp:
+  - get
+  - set
+references:
+- uid: Orleans
+  commentId: N:Orleans
+  isExternal: false
+  name: Orleans
+  nameWithType: Orleans
+  fullName: Orleans
+- uid: Orleans.IGrainCallContext.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<IGrainCallContext>()
+  nameWithType: ImmutableExt.AsImmutable<IGrainCallContext>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.IGrainCallContext>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of IGrainCallContext)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.IGrainCallContext)()
+  name.vb: AsImmutable(Of IGrainCallContext)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<IGrainCallContext>
+    nameWithType: ImmutableExt.AsImmutable<IGrainCallContext>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.IGrainCallContext>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of IGrainCallContext)
+    nameWithType: ImmutableExt.AsImmutable(Of IGrainCallContext)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.IGrainCallContext)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.IGrainCallContext.Grain*
+  commentId: Overload:Orleans.IGrainCallContext.Grain
+  isExternal: false
+  name: Grain
+  nameWithType: IGrainCallContext.Grain
+  fullName: Orleans.IGrainCallContext.Grain
+- uid: Orleans.Runtime.IAddressable
+  commentId: T:Orleans.Runtime.IAddressable
+  parent: Orleans.Runtime
+  isExternal: false
+  name: IAddressable
+  nameWithType: IAddressable
+  fullName: Orleans.Runtime.IAddressable
+- uid: Orleans.Runtime
+  commentId: N:Orleans.Runtime
+  isExternal: false
+  name: Orleans.Runtime
+  nameWithType: Orleans.Runtime
+  fullName: Orleans.Runtime
+- uid: Orleans.IGrainCallContext.Method*
+  commentId: Overload:Orleans.IGrainCallContext.Method
+  isExternal: false
+  name: Method
+  nameWithType: IGrainCallContext.Method
+  fullName: Orleans.IGrainCallContext.Method
+- uid: MethodInfo
+  commentId: '!:MethodInfo'
+  isExternal: true
+  name: MethodInfo
+  nameWithType: MethodInfo
+  fullName: MethodInfo
+- uid: Orleans.IGrainCallContext.Arguments*
+  commentId: Overload:Orleans.IGrainCallContext.Arguments
+  isExternal: false
+  name: Arguments
+  nameWithType: IGrainCallContext.Arguments
+  fullName: Orleans.IGrainCallContext.Arguments
+- uid: System.Object[]
+  name: Object[]
+  nameWithType: Object[]
+  fullName: System.Object[]
+  nameWithType.vb: Object()
+  fullName.vb: System.Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Orleans.IGrainCallContext.Invoke*
+  commentId: Overload:Orleans.IGrainCallContext.Invoke
+  isExternal: false
+  name: Invoke
+  nameWithType: IGrainCallContext.Invoke
+  fullName: Orleans.IGrainCallContext.Invoke
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task
+- uid: Orleans.IGrainCallContext.Result*
+  commentId: Overload:Orleans.IGrainCallContext.Result
+  isExternal: false
+  name: Result
+  nameWithType: IGrainCallContext.Result
+  fullName: Orleans.IGrainCallContext.Result
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System

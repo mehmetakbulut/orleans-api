@@ -1,0 +1,187 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.ILifecycleParticipant`1
+  commentId: T:Orleans.ILifecycleParticipant`1
+  id: ILifecycleParticipant`1
+  parent: Orleans
+  children:
+  - Orleans.ILifecycleParticipant`1.Participate(`0)
+  langs:
+  - csharp
+  - vb
+  name: ILifecycleParticipant<TLifecycleObservable>
+  nameWithType: ILifecycleParticipant<TLifecycleObservable>
+  fullName: Orleans.ILifecycleParticipant<TLifecycleObservable>
+  type: Interface
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Lifecycle/ILifecycleParticipant.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ILifecycleParticipant
+    path: src/Orleans.Core.Abstractions/Lifecycle/ILifecycleParticipant.cs
+    startLine: 7
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nProvides hook to take part in lifecycle.\nAlso may act as a signal interface indicating that an object can take part in lifecycle.\n"
+  example: []
+  syntax:
+    content: >-
+      public interface ILifecycleParticipant<TLifecycleObservable>
+
+          where TLifecycleObservable : ILifecycleObservable
+    typeParameters:
+    - id: TLifecycleObservable
+    content.vb: Public Interface ILifecycleParticipant(Of TLifecycleObservable As ILifecycleObservable)
+  extensionMethods:
+  - Orleans.ILifecycleParticipant`1.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  nameWithType.vb: ILifecycleParticipant(Of TLifecycleObservable)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+  fullName.vb: Orleans.ILifecycleParticipant(Of TLifecycleObservable)
+  name.vb: ILifecycleParticipant(Of TLifecycleObservable)
+- uid: Orleans.ILifecycleParticipant`1.Participate(`0)
+  commentId: M:Orleans.ILifecycleParticipant`1.Participate(`0)
+  id: Participate(`0)
+  parent: Orleans.ILifecycleParticipant`1
+  langs:
+  - csharp
+  - vb
+  name: Participate(TLifecycleObservable)
+  nameWithType: ILifecycleParticipant<TLifecycleObservable>.Participate(TLifecycleObservable)
+  fullName: Orleans.ILifecycleParticipant<TLifecycleObservable>.Participate(TLifecycleObservable)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Lifecycle/ILifecycleParticipant.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Participate
+    path: src/Orleans.Core.Abstractions/Lifecycle/ILifecycleParticipant.cs
+    startLine: 10
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  syntax:
+    content: void Participate(TLifecycleObservable lifecycle)
+    parameters:
+    - id: lifecycle
+      type: '{TLifecycleObservable}'
+    content.vb: Sub Participate(lifecycle As TLifecycleObservable)
+  overload: Orleans.ILifecycleParticipant`1.Participate*
+  nameWithType.vb: ILifecycleParticipant(Of TLifecycleObservable).Participate(TLifecycleObservable)
+  fullName.vb: Orleans.ILifecycleParticipant(Of TLifecycleObservable).Participate(TLifecycleObservable)
+references:
+- uid: Orleans
+  commentId: N:Orleans
+  isExternal: false
+  name: Orleans
+  nameWithType: Orleans
+  fullName: Orleans
+- uid: Orleans.ILifecycleParticipant`1.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<ILifecycleParticipant<TLifecycleObservable>>()
+  nameWithType: ImmutableExt.AsImmutable<ILifecycleParticipant<TLifecycleObservable>>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.ILifecycleParticipant<TLifecycleObservable>>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of ILifecycleParticipant(Of TLifecycleObservable))()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.ILifecycleParticipant(Of TLifecycleObservable))()
+  name.vb: AsImmutable(Of ILifecycleParticipant(Of TLifecycleObservable))()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<ILifecycleParticipant<TLifecycleObservable>>
+    nameWithType: ImmutableExt.AsImmutable<ILifecycleParticipant<TLifecycleObservable>>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.ILifecycleParticipant<TLifecycleObservable>>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of ILifecycleParticipant(Of TLifecycleObservable))
+    nameWithType: ImmutableExt.AsImmutable(Of ILifecycleParticipant(Of TLifecycleObservable))
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.ILifecycleParticipant(Of TLifecycleObservable))
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.ILifecycleParticipant`1.Participate*
+  commentId: Overload:Orleans.ILifecycleParticipant`1.Participate
+  isExternal: false
+  name: Participate
+  nameWithType: ILifecycleParticipant<TLifecycleObservable>.Participate
+  fullName: Orleans.ILifecycleParticipant<TLifecycleObservable>.Participate
+  nameWithType.vb: ILifecycleParticipant(Of TLifecycleObservable).Participate
+  fullName.vb: Orleans.ILifecycleParticipant(Of TLifecycleObservable).Participate
+- uid: '{TLifecycleObservable}'
+  commentId: '!:TLifecycleObservable'
+  definition: TLifecycleObservable
+  name: TLifecycleObservable
+  nameWithType: TLifecycleObservable
+  fullName: TLifecycleObservable
+- uid: TLifecycleObservable
+  commentId: '!:TLifecycleObservable'
+  isExternal: false
+  name: TLifecycleObservable
+  nameWithType: TLifecycleObservable
+  fullName: TLifecycleObservable

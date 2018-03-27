@@ -1,0 +1,141 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Concurrency.ReentrantAttribute
+  commentId: T:Orleans.Concurrency.ReentrantAttribute
+  id: ReentrantAttribute
+  parent: Orleans.Concurrency
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: ReentrantAttribute
+  nameWithType: ReentrantAttribute
+  fullName: Orleans.Concurrency.ReentrantAttribute
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Concurrency/GrainAttributeConcurrency.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ReentrantAttribute
+    path: src/Orleans.Core.Abstractions/Concurrency/GrainAttributeConcurrency.cs
+    startLine: 28
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Concurrency
+  summary: "\nThe Reentrant attribute is used to mark grain implementation classes that allow request interleaving within a task.\n<p>\nThis is an advanced feature and should not be used unless the implications are fully understood.\nThat said, allowing request interleaving allows the run-time system to perform a number of optimizations\nthat may significantly improve the performance of your application.\n</p>\n"
+  example: []
+  syntax:
+    content: 'public sealed class ReentrantAttribute : Attribute'
+    content.vb: >-
+      Public NotInheritable Class ReentrantAttribute
+
+          Inherits Attribute
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.Concurrency.ReentrantAttribute.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+references:
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Concurrency.ReentrantAttribute.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<ReentrantAttribute>()
+  nameWithType: ImmutableExt.AsImmutable<ReentrantAttribute>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Concurrency.ReentrantAttribute>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of ReentrantAttribute)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Concurrency.ReentrantAttribute)()
+  name.vb: AsImmutable(Of ReentrantAttribute)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<ReentrantAttribute>
+    nameWithType: ImmutableExt.AsImmutable<ReentrantAttribute>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Concurrency.ReentrantAttribute>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of ReentrantAttribute)
+    nameWithType: ImmutableExt.AsImmutable(Of ReentrantAttribute)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Concurrency.ReentrantAttribute)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt

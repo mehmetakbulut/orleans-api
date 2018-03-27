@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Streams.Core
+  commentId: N:Orleans.Streams.Core
+  id: Orleans.Streams.Core
+  children:
+  - Orleans.Streams.Core.IStreamSubscriptionHandleFactory
+  - Orleans.Streams.Core.IStreamSubscriptionObserver
+  langs:
+  - csharp
+  - vb
+  name: Orleans.Streams.Core
+  nameWithType: Orleans.Streams.Core
+  fullName: Orleans.Streams.Core
+  type: Namespace
+  assemblies:
+  - Orleans.Core.Abstractions
+references:
+- uid: Orleans.Streams.Core.IStreamSubscriptionHandleFactory
+  commentId: T:Orleans.Streams.Core.IStreamSubscriptionHandleFactory
+  parent: Orleans.Streams.Core
+  isExternal: false
+  name: IStreamSubscriptionHandleFactory
+  nameWithType: IStreamSubscriptionHandleFactory
+  fullName: Orleans.Streams.Core.IStreamSubscriptionHandleFactory
+- uid: Orleans.Streams.Core.IStreamSubscriptionObserver
+  commentId: T:Orleans.Streams.Core.IStreamSubscriptionObserver
+  isExternal: false
+  name: IStreamSubscriptionObserver
+  nameWithType: IStreamSubscriptionObserver
+  fullName: Orleans.Streams.Core.IStreamSubscriptionObserver
+- uid: Orleans.Streams.Core
+  commentId: N:Orleans.Streams.Core
+  isExternal: false
+  name: Orleans.Streams.Core
+  nameWithType: Orleans.Streams.Core
+  fullName: Orleans.Streams.Core

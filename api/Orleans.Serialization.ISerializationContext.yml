@@ -1,0 +1,766 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Serialization.ISerializationContext
+  commentId: T:Orleans.Serialization.ISerializationContext
+  id: ISerializationContext
+  parent: Orleans.Serialization
+  children:
+  - Orleans.Serialization.ISerializationContext.CheckObjectWhileSerializing(System.Object)
+  - Orleans.Serialization.ISerializationContext.CurrentOffset
+  - Orleans.Serialization.ISerializationContext.RecordObject(System.Object,System.Int32)
+  - Orleans.Serialization.ISerializationContext.SerializeInner(System.Object,Type)
+  - Orleans.Serialization.ISerializationContext.StreamWriter
+  langs:
+  - csharp
+  - vb
+  name: ISerializationContext
+  nameWithType: ISerializationContext
+  fullName: Orleans.Serialization.ISerializationContext
+  type: Interface
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Serialization/ISerializerContext.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ISerializationContext
+    path: src/Orleans.Core.Abstractions/Serialization/ISerializerContext.cs
+    startLine: 33
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Serialization
+  syntax:
+    content: 'public interface ISerializationContext : ISerializerContext'
+    content.vb: >-
+      Public Interface ISerializationContext
+
+          Inherits ISerializerContext
+  inheritedMembers:
+  - Orleans.Serialization.ISerializerContext.ServiceProvider
+  - Orleans.Serialization.ISerializerContext.AdditionalContext
+  extensionMethods:
+  - Orleans.Serialization.ISerializationContext.Orleans.Serialization.SerializationContextExtensions.RecordObject(System.Object)
+  - Orleans.Serialization.ISerializationContext.Orleans.Serialization.SerializationContextExtensions.CreateNestedContext(System.Int32,Orleans.Serialization.BinaryTokenStreamWriter)
+  - Orleans.Serialization.ISerializationContext.Orleans.Serialization.SerializationContextExtensions.SerializeInner``1({T})
+  - Orleans.Serialization.ISerializerContext.Orleans.Serialization.SerializerContextExtensions.GetSerializationManager
+  - Orleans.Serialization.ISerializationContext.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Orleans.Serialization.ISerializationContext.StreamWriter
+  commentId: P:Orleans.Serialization.ISerializationContext.StreamWriter
+  id: StreamWriter
+  parent: Orleans.Serialization.ISerializationContext
+  langs:
+  - csharp
+  - vb
+  name: StreamWriter
+  nameWithType: ISerializationContext.StreamWriter
+  fullName: Orleans.Serialization.ISerializationContext.StreamWriter
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Serialization/ISerializerContext.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: StreamWriter
+    path: src/Orleans.Core.Abstractions/Serialization/ISerializerContext.cs
+    startLine: 38
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Serialization
+  summary: "\nGets the stream writer.\n"
+  example: []
+  syntax:
+    content: IBinaryTokenStreamWriter StreamWriter { get; }
+    parameters: []
+    return:
+      type: Orleans.Serialization.IBinaryTokenStreamWriter
+    content.vb: ReadOnly Property StreamWriter As IBinaryTokenStreamWriter
+  overload: Orleans.Serialization.ISerializationContext.StreamWriter*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Orleans.Serialization.ISerializationContext.RecordObject(System.Object,System.Int32)
+  commentId: M:Orleans.Serialization.ISerializationContext.RecordObject(System.Object,System.Int32)
+  id: RecordObject(System.Object,System.Int32)
+  parent: Orleans.Serialization.ISerializationContext
+  langs:
+  - csharp
+  - vb
+  name: RecordObject(Object, Int32)
+  nameWithType: ISerializationContext.RecordObject(Object, Int32)
+  fullName: Orleans.Serialization.ISerializationContext.RecordObject(System.Object, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Serialization/ISerializerContext.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: RecordObject
+    path: src/Orleans.Core.Abstractions/Serialization/ISerializerContext.cs
+    startLine: 45
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Serialization
+  summary: "\nRecords the provided object at the specified offset into <xref href=\"Orleans.Serialization.ISerializationContext.StreamWriter\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: void RecordObject(object original, int offset)
+    parameters:
+    - id: original
+      type: System.Object
+      description: ''
+    - id: offset
+      type: System.Int32
+      description: ''
+    content.vb: Sub RecordObject(original As Object, offset As Integer)
+  overload: Orleans.Serialization.ISerializationContext.RecordObject*
+- uid: Orleans.Serialization.ISerializationContext.CheckObjectWhileSerializing(System.Object)
+  commentId: M:Orleans.Serialization.ISerializationContext.CheckObjectWhileSerializing(System.Object)
+  id: CheckObjectWhileSerializing(System.Object)
+  parent: Orleans.Serialization.ISerializationContext
+  langs:
+  - csharp
+  - vb
+  name: CheckObjectWhileSerializing(Object)
+  nameWithType: ISerializationContext.CheckObjectWhileSerializing(Object)
+  fullName: Orleans.Serialization.ISerializationContext.CheckObjectWhileSerializing(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Serialization/ISerializerContext.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: CheckObjectWhileSerializing
+    path: src/Orleans.Core.Abstractions/Serialization/ISerializerContext.cs
+    startLine: 47
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Serialization
+  syntax:
+    content: int CheckObjectWhileSerializing(object raw)
+    parameters:
+    - id: raw
+      type: System.Object
+    return:
+      type: System.Int32
+    content.vb: Function CheckObjectWhileSerializing(raw As Object) As Integer
+  overload: Orleans.Serialization.ISerializationContext.CheckObjectWhileSerializing*
+- uid: Orleans.Serialization.ISerializationContext.CurrentOffset
+  commentId: P:Orleans.Serialization.ISerializationContext.CurrentOffset
+  id: CurrentOffset
+  parent: Orleans.Serialization.ISerializationContext
+  langs:
+  - csharp
+  - vb
+  name: CurrentOffset
+  nameWithType: ISerializationContext.CurrentOffset
+  fullName: Orleans.Serialization.ISerializationContext.CurrentOffset
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Serialization/ISerializerContext.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: CurrentOffset
+    path: src/Orleans.Core.Abstractions/Serialization/ISerializerContext.cs
+    startLine: 49
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Serialization
+  syntax:
+    content: int CurrentOffset { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property CurrentOffset As Integer
+  overload: Orleans.Serialization.ISerializationContext.CurrentOffset*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Orleans.Serialization.ISerializationContext.SerializeInner(System.Object,Type)
+  commentId: M:Orleans.Serialization.ISerializationContext.SerializeInner(System.Object,Type)
+  id: SerializeInner(System.Object,Type)
+  parent: Orleans.Serialization.ISerializationContext
+  langs:
+  - csharp
+  - vb
+  name: SerializeInner(Object, Type)
+  nameWithType: ISerializationContext.SerializeInner(Object, Type)
+  fullName: Orleans.Serialization.ISerializationContext.SerializeInner(System.Object, Type)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Serialization/ISerializerContext.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SerializeInner
+    path: src/Orleans.Core.Abstractions/Serialization/ISerializerContext.cs
+    startLine: 51
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Serialization
+  syntax:
+    content: void SerializeInner(object obj, Type expected)
+    parameters:
+    - id: obj
+      type: System.Object
+    - id: expected
+      type: Type
+    content.vb: Sub SerializeInner(obj As Object, expected As Type)
+  overload: Orleans.Serialization.ISerializationContext.SerializeInner*
+references:
+- uid: Orleans.Serialization
+  commentId: N:Orleans.Serialization
+  isExternal: false
+  name: Orleans.Serialization
+  nameWithType: Orleans.Serialization
+  fullName: Orleans.Serialization
+- uid: Orleans.Serialization.ISerializerContext.ServiceProvider
+  commentId: P:Orleans.Serialization.ISerializerContext.ServiceProvider
+  parent: Orleans.Serialization.ISerializerContext
+  isExternal: false
+  name: ServiceProvider
+  nameWithType: ISerializerContext.ServiceProvider
+  fullName: Orleans.Serialization.ISerializerContext.ServiceProvider
+- uid: Orleans.Serialization.ISerializerContext.AdditionalContext
+  commentId: P:Orleans.Serialization.ISerializerContext.AdditionalContext
+  parent: Orleans.Serialization.ISerializerContext
+  isExternal: false
+  name: AdditionalContext
+  nameWithType: ISerializerContext.AdditionalContext
+  fullName: Orleans.Serialization.ISerializerContext.AdditionalContext
+- uid: Orleans.Serialization.ISerializationContext.Orleans.Serialization.SerializationContextExtensions.RecordObject(System.Object)
+  commentId: M:Orleans.Serialization.SerializationContextExtensions.RecordObject(Orleans.Serialization.ISerializationContext,System.Object)
+  parent: Orleans.Serialization.SerializationContextExtensions
+  definition: Orleans.Serialization.SerializationContextExtensions.RecordObject(Orleans.Serialization.ISerializationContext,System.Object)
+  name: RecordObject(Object)
+  nameWithType: SerializationContextExtensions.RecordObject(Object)
+  fullName: Orleans.Serialization.SerializationContextExtensions.RecordObject(System.Object)
+  spec.csharp:
+  - uid: Orleans.Serialization.SerializationContextExtensions.RecordObject(System.Object)
+    name: RecordObject
+    nameWithType: SerializationContextExtensions.RecordObject
+    fullName: Orleans.Serialization.SerializationContextExtensions.RecordObject
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Serialization.SerializationContextExtensions.RecordObject(System.Object)
+    name: RecordObject
+    nameWithType: SerializationContextExtensions.RecordObject
+    fullName: Orleans.Serialization.SerializationContextExtensions.RecordObject
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Serialization.ISerializationContext.Orleans.Serialization.SerializationContextExtensions.CreateNestedContext(System.Int32,Orleans.Serialization.BinaryTokenStreamWriter)
+  commentId: M:Orleans.Serialization.SerializationContextExtensions.CreateNestedContext(Orleans.Serialization.ISerializationContext,System.Int32,Orleans.Serialization.BinaryTokenStreamWriter)
+  parent: Orleans.Serialization.SerializationContextExtensions
+  definition: Orleans.Serialization.SerializationContextExtensions.CreateNestedContext(Orleans.Serialization.ISerializationContext,System.Int32,Orleans.Serialization.BinaryTokenStreamWriter)
+  name: CreateNestedContext(Int32, BinaryTokenStreamWriter)
+  nameWithType: SerializationContextExtensions.CreateNestedContext(Int32, BinaryTokenStreamWriter)
+  fullName: Orleans.Serialization.SerializationContextExtensions.CreateNestedContext(System.Int32, Orleans.Serialization.BinaryTokenStreamWriter)
+  spec.csharp:
+  - uid: Orleans.Serialization.SerializationContextExtensions.CreateNestedContext(System.Int32,Orleans.Serialization.BinaryTokenStreamWriter)
+    name: CreateNestedContext
+    nameWithType: SerializationContextExtensions.CreateNestedContext
+    fullName: Orleans.Serialization.SerializationContextExtensions.CreateNestedContext
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.Serialization.BinaryTokenStreamWriter
+    name: BinaryTokenStreamWriter
+    nameWithType: BinaryTokenStreamWriter
+    fullName: Orleans.Serialization.BinaryTokenStreamWriter
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Serialization.SerializationContextExtensions.CreateNestedContext(System.Int32,Orleans.Serialization.BinaryTokenStreamWriter)
+    name: CreateNestedContext
+    nameWithType: SerializationContextExtensions.CreateNestedContext
+    fullName: Orleans.Serialization.SerializationContextExtensions.CreateNestedContext
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.Serialization.BinaryTokenStreamWriter
+    name: BinaryTokenStreamWriter
+    nameWithType: BinaryTokenStreamWriter
+    fullName: Orleans.Serialization.BinaryTokenStreamWriter
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Serialization.ISerializationContext.Orleans.Serialization.SerializationContextExtensions.SerializeInner``1({T})
+  commentId: M:Orleans.Serialization.SerializationContextExtensions.SerializeInner``1(Orleans.Serialization.ISerializationContext,``0)
+  parent: Orleans.Serialization.SerializationContextExtensions
+  definition: Orleans.Serialization.SerializationContextExtensions.SerializeInner``1(Orleans.Serialization.ISerializationContext,``0)
+  name: SerializeInner<T>(T)
+  nameWithType: SerializationContextExtensions.SerializeInner<T>(T)
+  fullName: Orleans.Serialization.SerializationContextExtensions.SerializeInner<T>(T)
+  nameWithType.vb: SerializationContextExtensions.SerializeInner(Of T)(T)
+  fullName.vb: Orleans.Serialization.SerializationContextExtensions.SerializeInner(Of T)(T)
+  name.vb: SerializeInner(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Serialization.SerializationContextExtensions.SerializeInner``1(``0)
+    name: SerializeInner<T>
+    nameWithType: SerializationContextExtensions.SerializeInner<T>
+    fullName: Orleans.Serialization.SerializationContextExtensions.SerializeInner<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Serialization.SerializationContextExtensions.SerializeInner``1(``0)
+    name: SerializeInner(Of T)
+    nameWithType: SerializationContextExtensions.SerializeInner(Of T)
+    fullName: Orleans.Serialization.SerializationContextExtensions.SerializeInner(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Serialization.ISerializerContext.Orleans.Serialization.SerializerContextExtensions.GetSerializationManager
+  commentId: M:Orleans.Serialization.SerializerContextExtensions.GetSerializationManager(Orleans.Serialization.ISerializerContext)
+  parent: Orleans.Serialization.SerializerContextExtensions
+  definition: Orleans.Serialization.SerializerContextExtensions.GetSerializationManager(Orleans.Serialization.ISerializerContext)
+  name: GetSerializationManager()
+  nameWithType: SerializerContextExtensions.GetSerializationManager()
+  fullName: Orleans.Serialization.SerializerContextExtensions.GetSerializationManager()
+  spec.csharp:
+  - uid: Orleans.Serialization.SerializerContextExtensions.GetSerializationManager
+    name: GetSerializationManager
+    nameWithType: SerializerContextExtensions.GetSerializationManager
+    fullName: Orleans.Serialization.SerializerContextExtensions.GetSerializationManager
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Serialization.SerializerContextExtensions.GetSerializationManager
+    name: GetSerializationManager
+    nameWithType: SerializerContextExtensions.GetSerializationManager
+    fullName: Orleans.Serialization.SerializerContextExtensions.GetSerializationManager
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Serialization.ISerializationContext.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<ISerializationContext>()
+  nameWithType: ImmutableExt.AsImmutable<ISerializationContext>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Serialization.ISerializationContext>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of ISerializationContext)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Serialization.ISerializationContext)()
+  name.vb: AsImmutable(Of ISerializationContext)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<ISerializationContext>
+    nameWithType: ImmutableExt.AsImmutable<ISerializationContext>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Serialization.ISerializationContext>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of ISerializationContext)
+    nameWithType: ImmutableExt.AsImmutable(Of ISerializationContext)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Serialization.ISerializationContext)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Serialization.ISerializerContext
+  commentId: T:Orleans.Serialization.ISerializerContext
+  parent: Orleans.Serialization
+  isExternal: false
+  name: ISerializerContext
+  nameWithType: ISerializerContext
+  fullName: Orleans.Serialization.ISerializerContext
+- uid: Orleans.Serialization.SerializationContextExtensions.RecordObject(Orleans.Serialization.ISerializationContext,System.Object)
+  commentId: M:Orleans.Serialization.SerializationContextExtensions.RecordObject(Orleans.Serialization.ISerializationContext,System.Object)
+  isExternal: true
+  name: RecordObject(ISerializationContext, Object)
+  nameWithType: SerializationContextExtensions.RecordObject(ISerializationContext, Object)
+  fullName: Orleans.Serialization.SerializationContextExtensions.RecordObject(Orleans.Serialization.ISerializationContext, System.Object)
+  spec.csharp:
+  - uid: Orleans.Serialization.SerializationContextExtensions.RecordObject(Orleans.Serialization.ISerializationContext,System.Object)
+    name: RecordObject
+    nameWithType: SerializationContextExtensions.RecordObject
+    fullName: Orleans.Serialization.SerializationContextExtensions.RecordObject
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Serialization.ISerializationContext
+    name: ISerializationContext
+    nameWithType: ISerializationContext
+    fullName: Orleans.Serialization.ISerializationContext
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Serialization.SerializationContextExtensions.RecordObject(Orleans.Serialization.ISerializationContext,System.Object)
+    name: RecordObject
+    nameWithType: SerializationContextExtensions.RecordObject
+    fullName: Orleans.Serialization.SerializationContextExtensions.RecordObject
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Serialization.ISerializationContext
+    name: ISerializationContext
+    nameWithType: ISerializationContext
+    fullName: Orleans.Serialization.ISerializationContext
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Serialization.SerializationContextExtensions
+  commentId: T:Orleans.Serialization.SerializationContextExtensions
+  parent: Orleans.Serialization
+  isExternal: false
+  name: SerializationContextExtensions
+  nameWithType: SerializationContextExtensions
+  fullName: Orleans.Serialization.SerializationContextExtensions
+- uid: Orleans.Serialization.SerializationContextExtensions.CreateNestedContext(Orleans.Serialization.ISerializationContext,System.Int32,Orleans.Serialization.BinaryTokenStreamWriter)
+  commentId: M:Orleans.Serialization.SerializationContextExtensions.CreateNestedContext(Orleans.Serialization.ISerializationContext,System.Int32,Orleans.Serialization.BinaryTokenStreamWriter)
+  isExternal: true
+  name: CreateNestedContext(ISerializationContext, Int32, BinaryTokenStreamWriter)
+  nameWithType: SerializationContextExtensions.CreateNestedContext(ISerializationContext, Int32, BinaryTokenStreamWriter)
+  fullName: Orleans.Serialization.SerializationContextExtensions.CreateNestedContext(Orleans.Serialization.ISerializationContext, System.Int32, Orleans.Serialization.BinaryTokenStreamWriter)
+  spec.csharp:
+  - uid: Orleans.Serialization.SerializationContextExtensions.CreateNestedContext(Orleans.Serialization.ISerializationContext,System.Int32,Orleans.Serialization.BinaryTokenStreamWriter)
+    name: CreateNestedContext
+    nameWithType: SerializationContextExtensions.CreateNestedContext
+    fullName: Orleans.Serialization.SerializationContextExtensions.CreateNestedContext
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Serialization.ISerializationContext
+    name: ISerializationContext
+    nameWithType: ISerializationContext
+    fullName: Orleans.Serialization.ISerializationContext
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.Serialization.BinaryTokenStreamWriter
+    name: BinaryTokenStreamWriter
+    nameWithType: BinaryTokenStreamWriter
+    fullName: Orleans.Serialization.BinaryTokenStreamWriter
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Serialization.SerializationContextExtensions.CreateNestedContext(Orleans.Serialization.ISerializationContext,System.Int32,Orleans.Serialization.BinaryTokenStreamWriter)
+    name: CreateNestedContext
+    nameWithType: SerializationContextExtensions.CreateNestedContext
+    fullName: Orleans.Serialization.SerializationContextExtensions.CreateNestedContext
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Serialization.ISerializationContext
+    name: ISerializationContext
+    nameWithType: ISerializationContext
+    fullName: Orleans.Serialization.ISerializationContext
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.Serialization.BinaryTokenStreamWriter
+    name: BinaryTokenStreamWriter
+    nameWithType: BinaryTokenStreamWriter
+    fullName: Orleans.Serialization.BinaryTokenStreamWriter
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Serialization.SerializationContextExtensions.SerializeInner``1(Orleans.Serialization.ISerializationContext,``0)
+  commentId: M:Orleans.Serialization.SerializationContextExtensions.SerializeInner``1(Orleans.Serialization.ISerializationContext,``0)
+  isExternal: false
+  name: SerializeInner<T>(ISerializationContext, T)
+  nameWithType: SerializationContextExtensions.SerializeInner<T>(ISerializationContext, T)
+  fullName: Orleans.Serialization.SerializationContextExtensions.SerializeInner<T>(Orleans.Serialization.ISerializationContext, T)
+  nameWithType.vb: SerializationContextExtensions.SerializeInner(Of T)(ISerializationContext, T)
+  fullName.vb: Orleans.Serialization.SerializationContextExtensions.SerializeInner(Of T)(Orleans.Serialization.ISerializationContext, T)
+  name.vb: SerializeInner(Of T)(ISerializationContext, T)
+  spec.csharp:
+  - uid: Orleans.Serialization.SerializationContextExtensions.SerializeInner``1(Orleans.Serialization.ISerializationContext,``0)
+    name: SerializeInner<T>
+    nameWithType: SerializationContextExtensions.SerializeInner<T>
+    fullName: Orleans.Serialization.SerializationContextExtensions.SerializeInner<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Serialization.ISerializationContext
+    name: ISerializationContext
+    nameWithType: ISerializationContext
+    fullName: Orleans.Serialization.ISerializationContext
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Serialization.SerializationContextExtensions.SerializeInner``1(Orleans.Serialization.ISerializationContext,``0)
+    name: SerializeInner(Of T)
+    nameWithType: SerializationContextExtensions.SerializeInner(Of T)
+    fullName: Orleans.Serialization.SerializationContextExtensions.SerializeInner(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Serialization.ISerializationContext
+    name: ISerializationContext
+    nameWithType: ISerializationContext
+    fullName: Orleans.Serialization.ISerializationContext
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Serialization.SerializerContextExtensions.GetSerializationManager(Orleans.Serialization.ISerializerContext)
+  commentId: M:Orleans.Serialization.SerializerContextExtensions.GetSerializationManager(Orleans.Serialization.ISerializerContext)
+  isExternal: false
+  name: GetSerializationManager(ISerializerContext)
+  nameWithType: SerializerContextExtensions.GetSerializationManager(ISerializerContext)
+  fullName: Orleans.Serialization.SerializerContextExtensions.GetSerializationManager(Orleans.Serialization.ISerializerContext)
+  spec.csharp:
+  - uid: Orleans.Serialization.SerializerContextExtensions.GetSerializationManager(Orleans.Serialization.ISerializerContext)
+    name: GetSerializationManager
+    nameWithType: SerializerContextExtensions.GetSerializationManager
+    fullName: Orleans.Serialization.SerializerContextExtensions.GetSerializationManager
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Serialization.ISerializerContext
+    name: ISerializerContext
+    nameWithType: ISerializerContext
+    fullName: Orleans.Serialization.ISerializerContext
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Serialization.SerializerContextExtensions.GetSerializationManager(Orleans.Serialization.ISerializerContext)
+    name: GetSerializationManager
+    nameWithType: SerializerContextExtensions.GetSerializationManager
+    fullName: Orleans.Serialization.SerializerContextExtensions.GetSerializationManager
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Serialization.ISerializerContext
+    name: ISerializerContext
+    nameWithType: ISerializerContext
+    fullName: Orleans.Serialization.ISerializerContext
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Serialization.SerializerContextExtensions
+  commentId: T:Orleans.Serialization.SerializerContextExtensions
+  parent: Orleans.Serialization
+  isExternal: false
+  name: SerializerContextExtensions
+  nameWithType: SerializerContextExtensions
+  fullName: Orleans.Serialization.SerializerContextExtensions
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Serialization.ISerializationContext.StreamWriter*
+  commentId: Overload:Orleans.Serialization.ISerializationContext.StreamWriter
+  isExternal: false
+  name: StreamWriter
+  nameWithType: ISerializationContext.StreamWriter
+  fullName: Orleans.Serialization.ISerializationContext.StreamWriter
+- uid: Orleans.Serialization.IBinaryTokenStreamWriter
+  commentId: T:Orleans.Serialization.IBinaryTokenStreamWriter
+  parent: Orleans.Serialization
+  isExternal: false
+  name: IBinaryTokenStreamWriter
+  nameWithType: IBinaryTokenStreamWriter
+  fullName: Orleans.Serialization.IBinaryTokenStreamWriter
+- uid: Orleans.Serialization.ISerializationContext.StreamWriter
+  commentId: P:Orleans.Serialization.ISerializationContext.StreamWriter
+- uid: Orleans.Serialization.ISerializationContext.RecordObject*
+  commentId: Overload:Orleans.Serialization.ISerializationContext.RecordObject
+  isExternal: false
+  name: RecordObject
+  nameWithType: ISerializationContext.RecordObject
+  fullName: Orleans.Serialization.ISerializationContext.RecordObject
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Serialization.ISerializationContext.CheckObjectWhileSerializing*
+  commentId: Overload:Orleans.Serialization.ISerializationContext.CheckObjectWhileSerializing
+  isExternal: false
+  name: CheckObjectWhileSerializing
+  nameWithType: ISerializationContext.CheckObjectWhileSerializing
+  fullName: Orleans.Serialization.ISerializationContext.CheckObjectWhileSerializing
+- uid: Orleans.Serialization.ISerializationContext.CurrentOffset*
+  commentId: Overload:Orleans.Serialization.ISerializationContext.CurrentOffset
+  isExternal: false
+  name: CurrentOffset
+  nameWithType: ISerializationContext.CurrentOffset
+  fullName: Orleans.Serialization.ISerializationContext.CurrentOffset
+- uid: Orleans.Serialization.ISerializationContext.SerializeInner*
+  commentId: Overload:Orleans.Serialization.ISerializationContext.SerializeInner
+  isExternal: false
+  name: SerializeInner
+  nameWithType: ISerializationContext.SerializeInner
+  fullName: Orleans.Serialization.ISerializationContext.SerializeInner
+- uid: Type
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: Type

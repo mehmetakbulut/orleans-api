@@ -1,0 +1,296 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Logging.Legacy.OrleansLoggerSeverityOverrides
+  commentId: T:Orleans.Logging.Legacy.OrleansLoggerSeverityOverrides
+  id: OrleansLoggerSeverityOverrides
+  parent: Orleans.Logging.Legacy
+  children:
+  - Orleans.Logging.Legacy.OrleansLoggerSeverityOverrides.LoggerSeverityOverrides
+  langs:
+  - csharp
+  - vb
+  name: OrleansLoggerSeverityOverrides
+  nameWithType: OrleansLoggerSeverityOverrides
+  fullName: Orleans.Logging.Legacy.OrleansLoggerSeverityOverrides
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Logging/LegacyOrleansLoggerProvider.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: OrleansLoggerSeverityOverrides
+    path: src/Orleans.Core.Legacy/Logging/LegacyOrleansLoggerProvider.cs
+    startLine: 73
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Logging.Legacy
+  summary: "\nOrleans severity overrides on a per logger base\n"
+  example: []
+  syntax:
+    content: 'public class OrleansLoggerSeverityOverrides : object'
+    content.vb: >-
+      Public Class OrleansLoggerSeverityOverrides
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.Logging.Legacy.OrleansLoggerSeverityOverrides.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.Logging.Legacy.OrleansLoggerSeverityOverrides.LoggerSeverityOverrides
+  commentId: P:Orleans.Logging.Legacy.OrleansLoggerSeverityOverrides.LoggerSeverityOverrides
+  id: LoggerSeverityOverrides
+  parent: Orleans.Logging.Legacy.OrleansLoggerSeverityOverrides
+  langs:
+  - csharp
+  - vb
+  name: LoggerSeverityOverrides
+  nameWithType: OrleansLoggerSeverityOverrides.LoggerSeverityOverrides
+  fullName: Orleans.Logging.Legacy.OrleansLoggerSeverityOverrides.LoggerSeverityOverrides
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Logging/LegacyOrleansLoggerProvider.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: LoggerSeverityOverrides
+    path: src/Orleans.Core.Legacy/Logging/LegacyOrleansLoggerProvider.cs
+    startLine: 79
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Logging.Legacy
+  summary: "\nLoggerSeverityOverrides, which key being logger category name, value being its overrided severity\n"
+  example: []
+  syntax:
+    content: public Dictionary<string, Severity> LoggerSeverityOverrides { get; set; }
+    parameters: []
+    return:
+      type: Dictionary{System.String,Orleans.Runtime.Severity}
+    content.vb: Public Property LoggerSeverityOverrides As Dictionary(Of String, Severity)
+  overload: Orleans.Logging.Legacy.OrleansLoggerSeverityOverrides.LoggerSeverityOverrides*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans.Logging.Legacy
+  commentId: N:Orleans.Logging.Legacy
+  isExternal: false
+  name: Orleans.Logging.Legacy
+  nameWithType: Orleans.Logging.Legacy
+  fullName: Orleans.Logging.Legacy
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Logging.Legacy.OrleansLoggerSeverityOverrides.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<OrleansLoggerSeverityOverrides>()
+  nameWithType: ImmutableExt.AsImmutable<OrleansLoggerSeverityOverrides>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Logging.Legacy.OrleansLoggerSeverityOverrides>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of OrleansLoggerSeverityOverrides)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Logging.Legacy.OrleansLoggerSeverityOverrides)()
+  name.vb: AsImmutable(Of OrleansLoggerSeverityOverrides)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<OrleansLoggerSeverityOverrides>
+    nameWithType: ImmutableExt.AsImmutable<OrleansLoggerSeverityOverrides>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Logging.Legacy.OrleansLoggerSeverityOverrides>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of OrleansLoggerSeverityOverrides)
+    nameWithType: ImmutableExt.AsImmutable(Of OrleansLoggerSeverityOverrides)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Logging.Legacy.OrleansLoggerSeverityOverrides)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Logging.Legacy.OrleansLoggerSeverityOverrides.LoggerSeverityOverrides*
+  commentId: Overload:Orleans.Logging.Legacy.OrleansLoggerSeverityOverrides.LoggerSeverityOverrides
+  isExternal: false
+  name: LoggerSeverityOverrides
+  nameWithType: OrleansLoggerSeverityOverrides.LoggerSeverityOverrides
+  fullName: Orleans.Logging.Legacy.OrleansLoggerSeverityOverrides.LoggerSeverityOverrides
+- uid: Dictionary{System.String,Orleans.Runtime.Severity}
+  commentId: '!:Dictionary{System.String,Orleans.Runtime.Severity}'
+  definition: Dictionary`2
+  name: Dictionary<String, Severity>
+  nameWithType: Dictionary<String, Severity>
+  fullName: Dictionary<System.String, Orleans.Runtime.Severity>
+  nameWithType.vb: Dictionary(Of String, Severity)
+  fullName.vb: Dictionary(Of System.String, Orleans.Runtime.Severity)
+  name.vb: Dictionary(Of String, Severity)
+  spec.csharp:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.Runtime.Severity
+    name: Severity
+    nameWithType: Severity
+    fullName: Orleans.Runtime.Severity
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.Runtime.Severity
+    name: Severity
+    nameWithType: Severity
+    fullName: Orleans.Runtime.Severity
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Dictionary`2
+  isExternal: true
+  name: Dictionary<, >
+  nameWithType: Dictionary<, >
+  fullName: Dictionary<, >
+  nameWithType.vb: Dictionary(Of , )
+  fullName.vb: Dictionary(Of , )
+  name.vb: Dictionary(Of , )
+  spec.csharp:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )

@@ -1,0 +1,235 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Providers.LogConsistencyProviderAttribute
+  commentId: T:Orleans.Providers.LogConsistencyProviderAttribute
+  id: LogConsistencyProviderAttribute
+  parent: Orleans.Providers
+  children:
+  - Orleans.Providers.LogConsistencyProviderAttribute.#ctor
+  - Orleans.Providers.LogConsistencyProviderAttribute.ProviderName
+  langs:
+  - csharp
+  - vb
+  name: LogConsistencyProviderAttribute
+  nameWithType: LogConsistencyProviderAttribute
+  fullName: Orleans.Providers.LogConsistencyProviderAttribute
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Providers/ProviderGrainAttributes.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: LogConsistencyProviderAttribute
+    path: src/Orleans.Core.Abstractions/Providers/ProviderGrainAttributes.cs
+    startLine: 39
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Providers
+  summary: "\nThe [Orleans.Providers.LogConsistencyProvider] attribute is used to define which consistency provider to use for grains using the log-view state abstraction.\n<p>\nSpecifying [Orleans.Providers.LogConsistencyProvider] property is recommended for all grains that derive\nfrom LogConsistentGrain, such as JournaledGrain.\nIf no [Orleans.Providers.LogConsistencyProvider] attribute is  specified, then the runtime tries to locate\none as follows. First, it looks for a\n&quot;Default&quot; provider in the configuration file, then it checks if the grain type defines a default.\nIf a consistency provider cannot be located for this grain, then the grain will fail to load into the Silo.\n</p>\n"
+  example: []
+  syntax:
+    content: 'public sealed class LogConsistencyProviderAttribute : Attribute'
+    content.vb: >-
+      Public NotInheritable Class LogConsistencyProviderAttribute
+
+          Inherits Attribute
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.Providers.LogConsistencyProviderAttribute.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Orleans.Providers.LogConsistencyProviderAttribute.ProviderName
+  commentId: P:Orleans.Providers.LogConsistencyProviderAttribute.ProviderName
+  id: ProviderName
+  parent: Orleans.Providers.LogConsistencyProviderAttribute
+  langs:
+  - csharp
+  - vb
+  name: ProviderName
+  nameWithType: LogConsistencyProviderAttribute.ProviderName
+  fullName: Orleans.Providers.LogConsistencyProviderAttribute.ProviderName
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Providers/ProviderGrainAttributes.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ProviderName
+    path: src/Orleans.Core.Abstractions/Providers/ProviderGrainAttributes.cs
+    startLine: 45
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Providers
+  summary: "\nThe name of the provider to be used for consistency\n"
+  example: []
+  syntax:
+    content: public string ProviderName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ProviderName As String
+  overload: Orleans.Providers.LogConsistencyProviderAttribute.ProviderName*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Providers.LogConsistencyProviderAttribute.#ctor
+  commentId: M:Orleans.Providers.LogConsistencyProviderAttribute.#ctor
+  id: '#ctor'
+  parent: Orleans.Providers.LogConsistencyProviderAttribute
+  langs:
+  - csharp
+  - vb
+  name: LogConsistencyProviderAttribute()
+  nameWithType: LogConsistencyProviderAttribute.LogConsistencyProviderAttribute()
+  fullName: Orleans.Providers.LogConsistencyProviderAttribute.LogConsistencyProviderAttribute()
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Providers/ProviderGrainAttributes.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Core.Abstractions/Providers/ProviderGrainAttributes.cs
+    startLine: 47
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Providers
+  syntax:
+    content: public LogConsistencyProviderAttribute()
+    content.vb: Public Sub New
+  overload: Orleans.Providers.LogConsistencyProviderAttribute.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans.Providers
+  commentId: N:Orleans.Providers
+  isExternal: false
+  name: Orleans.Providers
+  nameWithType: Orleans.Providers
+  fullName: Orleans.Providers
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Providers.LogConsistencyProviderAttribute.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<LogConsistencyProviderAttribute>()
+  nameWithType: ImmutableExt.AsImmutable<LogConsistencyProviderAttribute>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Providers.LogConsistencyProviderAttribute>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of LogConsistencyProviderAttribute)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Providers.LogConsistencyProviderAttribute)()
+  name.vb: AsImmutable(Of LogConsistencyProviderAttribute)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<LogConsistencyProviderAttribute>
+    nameWithType: ImmutableExt.AsImmutable<LogConsistencyProviderAttribute>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Providers.LogConsistencyProviderAttribute>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of LogConsistencyProviderAttribute)
+    nameWithType: ImmutableExt.AsImmutable(Of LogConsistencyProviderAttribute)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Providers.LogConsistencyProviderAttribute)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Providers.LogConsistencyProviderAttribute.ProviderName*
+  commentId: Overload:Orleans.Providers.LogConsistencyProviderAttribute.ProviderName
+  isExternal: false
+  name: ProviderName
+  nameWithType: LogConsistencyProviderAttribute.ProviderName
+  fullName: Orleans.Providers.LogConsistencyProviderAttribute.ProviderName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Orleans.Providers.LogConsistencyProviderAttribute.#ctor*
+  commentId: Overload:Orleans.Providers.LogConsistencyProviderAttribute.#ctor
+  isExternal: false
+  name: LogConsistencyProviderAttribute
+  nameWithType: LogConsistencyProviderAttribute.LogConsistencyProviderAttribute
+  fullName: Orleans.Providers.LogConsistencyProviderAttribute.LogConsistencyProviderAttribute

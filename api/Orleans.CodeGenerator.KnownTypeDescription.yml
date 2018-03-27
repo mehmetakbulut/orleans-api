@@ -1,0 +1,234 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.CodeGenerator.KnownTypeDescription
+  commentId: T:Orleans.CodeGenerator.KnownTypeDescription
+  id: KnownTypeDescription
+  parent: Orleans.CodeGenerator
+  children:
+  - Orleans.CodeGenerator.KnownTypeDescription.Type
+  - Orleans.CodeGenerator.KnownTypeDescription.TypeKey
+  langs:
+  - csharp
+  - vb
+  name: KnownTypeDescription
+  nameWithType: KnownTypeDescription
+  fullName: Orleans.CodeGenerator.KnownTypeDescription
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.CodeGeneration/GrainInterfaceDescription.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: KnownTypeDescription
+    path: src/Orleans.CodeGeneration/GrainInterfaceDescription.cs
+    startLine: 30
+  assemblies:
+  - Orleans.CodeGeneration
+  namespace: Orleans.CodeGenerator
+  syntax:
+    content: 'public class KnownTypeDescription : object'
+    content.vb: >-
+      Public Class KnownTypeDescription
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.CodeGenerator.KnownTypeDescription.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.CodeGenerator.KnownTypeDescription.Type
+  commentId: P:Orleans.CodeGenerator.KnownTypeDescription.Type
+  id: Type
+  parent: Orleans.CodeGenerator.KnownTypeDescription
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: KnownTypeDescription.Type
+  fullName: Orleans.CodeGenerator.KnownTypeDescription.Type
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.CodeGeneration/GrainInterfaceDescription.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Type
+    path: src/Orleans.CodeGeneration/GrainInterfaceDescription.cs
+    startLine: 32
+  assemblies:
+  - Orleans.CodeGeneration
+  namespace: Orleans.CodeGenerator
+  syntax:
+    content: public string Type { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Type As String
+  overload: Orleans.CodeGenerator.KnownTypeDescription.Type*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.CodeGenerator.KnownTypeDescription.TypeKey
+  commentId: P:Orleans.CodeGenerator.KnownTypeDescription.TypeKey
+  id: TypeKey
+  parent: Orleans.CodeGenerator.KnownTypeDescription
+  langs:
+  - csharp
+  - vb
+  name: TypeKey
+  nameWithType: KnownTypeDescription.TypeKey
+  fullName: Orleans.CodeGenerator.KnownTypeDescription.TypeKey
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.CodeGeneration/GrainInterfaceDescription.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: TypeKey
+    path: src/Orleans.CodeGeneration/GrainInterfaceDescription.cs
+    startLine: 33
+  assemblies:
+  - Orleans.CodeGeneration
+  namespace: Orleans.CodeGenerator
+  syntax:
+    content: public string TypeKey { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property TypeKey As String
+  overload: Orleans.CodeGenerator.KnownTypeDescription.TypeKey*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans.CodeGenerator
+  commentId: N:Orleans.CodeGenerator
+  isExternal: false
+  name: Orleans.CodeGenerator
+  nameWithType: Orleans.CodeGenerator
+  fullName: Orleans.CodeGenerator
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.CodeGenerator.KnownTypeDescription.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<KnownTypeDescription>()
+  nameWithType: ImmutableExt.AsImmutable<KnownTypeDescription>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.CodeGenerator.KnownTypeDescription>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of KnownTypeDescription)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.CodeGenerator.KnownTypeDescription)()
+  name.vb: AsImmutable(Of KnownTypeDescription)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<KnownTypeDescription>
+    nameWithType: ImmutableExt.AsImmutable<KnownTypeDescription>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.CodeGenerator.KnownTypeDescription>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of KnownTypeDescription)
+    nameWithType: ImmutableExt.AsImmutable(Of KnownTypeDescription)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.CodeGenerator.KnownTypeDescription)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.CodeGenerator.KnownTypeDescription.Type*
+  commentId: Overload:Orleans.CodeGenerator.KnownTypeDescription.Type
+  isExternal: false
+  name: Type
+  nameWithType: KnownTypeDescription.Type
+  fullName: Orleans.CodeGenerator.KnownTypeDescription.Type
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Orleans.CodeGenerator.KnownTypeDescription.TypeKey*
+  commentId: Overload:Orleans.CodeGenerator.KnownTypeDescription.TypeKey
+  isExternal: false
+  name: TypeKey
+  nameWithType: KnownTypeDescription.TypeKey
+  fullName: Orleans.CodeGenerator.KnownTypeDescription.TypeKey

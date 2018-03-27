@@ -1,0 +1,323 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.IVersionManager
+  commentId: T:Orleans.IVersionManager
+  id: IVersionManager
+  parent: Orleans
+  children:
+  - Orleans.IVersionManager.SetCompatibilityStrategy(Orleans.Versions.Compatibility.CompatibilityStrategy)
+  - Orleans.IVersionManager.SetCompatibilityStrategy(System.Int32,Orleans.Versions.Compatibility.CompatibilityStrategy)
+  - Orleans.IVersionManager.SetSelectorStrategy(Orleans.Versions.Selector.VersionSelectorStrategy)
+  - Orleans.IVersionManager.SetSelectorStrategy(System.Int32,Orleans.Versions.Selector.VersionSelectorStrategy)
+  langs:
+  - csharp
+  - vb
+  name: IVersionManager
+  nameWithType: IVersionManager
+  fullName: Orleans.IVersionManager
+  type: Interface
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/SystemTargetInterfaces/IVersionManager.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IVersionManager
+    path: src/Orleans.Core.Abstractions/SystemTargetInterfaces/IVersionManager.cs
+    startLine: 6
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  syntax:
+    content: public interface IVersionManager
+    content.vb: Public Interface IVersionManager
+  extensionMethods:
+  - Orleans.IVersionManager.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Orleans.IVersionManager.SetCompatibilityStrategy(Orleans.Versions.Compatibility.CompatibilityStrategy)
+  commentId: M:Orleans.IVersionManager.SetCompatibilityStrategy(Orleans.Versions.Compatibility.CompatibilityStrategy)
+  id: SetCompatibilityStrategy(Orleans.Versions.Compatibility.CompatibilityStrategy)
+  parent: Orleans.IVersionManager
+  langs:
+  - csharp
+  - vb
+  name: SetCompatibilityStrategy(CompatibilityStrategy)
+  nameWithType: IVersionManager.SetCompatibilityStrategy(CompatibilityStrategy)
+  fullName: Orleans.IVersionManager.SetCompatibilityStrategy(Orleans.Versions.Compatibility.CompatibilityStrategy)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/SystemTargetInterfaces/IVersionManager.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SetCompatibilityStrategy
+    path: src/Orleans.Core.Abstractions/SystemTargetInterfaces/IVersionManager.cs
+    startLine: 13
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nSet the compatibility strategy\n"
+  example: []
+  syntax:
+    content: Task SetCompatibilityStrategy(CompatibilityStrategy strategy)
+    parameters:
+    - id: strategy
+      type: Orleans.Versions.Compatibility.CompatibilityStrategy
+      description: The strategy to set. Set to null to revert to the default strategy provided in configuration
+    return:
+      type: Task
+      description: ''
+    content.vb: Function SetCompatibilityStrategy(strategy As CompatibilityStrategy) As Task
+  overload: Orleans.IVersionManager.SetCompatibilityStrategy*
+- uid: Orleans.IVersionManager.SetSelectorStrategy(Orleans.Versions.Selector.VersionSelectorStrategy)
+  commentId: M:Orleans.IVersionManager.SetSelectorStrategy(Orleans.Versions.Selector.VersionSelectorStrategy)
+  id: SetSelectorStrategy(Orleans.Versions.Selector.VersionSelectorStrategy)
+  parent: Orleans.IVersionManager
+  langs:
+  - csharp
+  - vb
+  name: SetSelectorStrategy(VersionSelectorStrategy)
+  nameWithType: IVersionManager.SetSelectorStrategy(VersionSelectorStrategy)
+  fullName: Orleans.IVersionManager.SetSelectorStrategy(Orleans.Versions.Selector.VersionSelectorStrategy)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/SystemTargetInterfaces/IVersionManager.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SetSelectorStrategy
+    path: src/Orleans.Core.Abstractions/SystemTargetInterfaces/IVersionManager.cs
+    startLine: 20
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nSet the selector strategy\n"
+  example: []
+  syntax:
+    content: Task SetSelectorStrategy(VersionSelectorStrategy strategy)
+    parameters:
+    - id: strategy
+      type: Orleans.Versions.Selector.VersionSelectorStrategy
+      description: The strategy to set. Set to null to revert to the default strategy provided in configuration
+    return:
+      type: Task
+      description: ''
+    content.vb: Function SetSelectorStrategy(strategy As VersionSelectorStrategy) As Task
+  overload: Orleans.IVersionManager.SetSelectorStrategy*
+- uid: Orleans.IVersionManager.SetCompatibilityStrategy(System.Int32,Orleans.Versions.Compatibility.CompatibilityStrategy)
+  commentId: M:Orleans.IVersionManager.SetCompatibilityStrategy(System.Int32,Orleans.Versions.Compatibility.CompatibilityStrategy)
+  id: SetCompatibilityStrategy(System.Int32,Orleans.Versions.Compatibility.CompatibilityStrategy)
+  parent: Orleans.IVersionManager
+  langs:
+  - csharp
+  - vb
+  name: SetCompatibilityStrategy(Int32, CompatibilityStrategy)
+  nameWithType: IVersionManager.SetCompatibilityStrategy(Int32, CompatibilityStrategy)
+  fullName: Orleans.IVersionManager.SetCompatibilityStrategy(System.Int32, Orleans.Versions.Compatibility.CompatibilityStrategy)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/SystemTargetInterfaces/IVersionManager.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SetCompatibilityStrategy
+    path: src/Orleans.Core.Abstractions/SystemTargetInterfaces/IVersionManager.cs
+    startLine: 28
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nSet the compatibility strategy for a specific interface\n"
+  example: []
+  syntax:
+    content: Task SetCompatibilityStrategy(int interfaceId, CompatibilityStrategy strategy)
+    parameters:
+    - id: interfaceId
+      type: System.Int32
+      description: The ID of the interface
+    - id: strategy
+      type: Orleans.Versions.Compatibility.CompatibilityStrategy
+      description: The strategy to set. Set to null to revert to the default strategy provided in configuration
+    return:
+      type: Task
+      description: ''
+    content.vb: Function SetCompatibilityStrategy(interfaceId As Integer, strategy As CompatibilityStrategy) As Task
+  overload: Orleans.IVersionManager.SetCompatibilityStrategy*
+- uid: Orleans.IVersionManager.SetSelectorStrategy(System.Int32,Orleans.Versions.Selector.VersionSelectorStrategy)
+  commentId: M:Orleans.IVersionManager.SetSelectorStrategy(System.Int32,Orleans.Versions.Selector.VersionSelectorStrategy)
+  id: SetSelectorStrategy(System.Int32,Orleans.Versions.Selector.VersionSelectorStrategy)
+  parent: Orleans.IVersionManager
+  langs:
+  - csharp
+  - vb
+  name: SetSelectorStrategy(Int32, VersionSelectorStrategy)
+  nameWithType: IVersionManager.SetSelectorStrategy(Int32, VersionSelectorStrategy)
+  fullName: Orleans.IVersionManager.SetSelectorStrategy(System.Int32, Orleans.Versions.Selector.VersionSelectorStrategy)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/SystemTargetInterfaces/IVersionManager.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SetSelectorStrategy
+    path: src/Orleans.Core.Abstractions/SystemTargetInterfaces/IVersionManager.cs
+    startLine: 36
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nSet the selector strategy for a specific interface\n"
+  example: []
+  syntax:
+    content: Task SetSelectorStrategy(int interfaceId, VersionSelectorStrategy strategy)
+    parameters:
+    - id: interfaceId
+      type: System.Int32
+      description: The ID of the interface
+    - id: strategy
+      type: Orleans.Versions.Selector.VersionSelectorStrategy
+      description: The strategy to set. Set to null to revert to the default strategy provided in configuration
+    return:
+      type: Task
+      description: ''
+    content.vb: Function SetSelectorStrategy(interfaceId As Integer, strategy As VersionSelectorStrategy) As Task
+  overload: Orleans.IVersionManager.SetSelectorStrategy*
+references:
+- uid: Orleans
+  commentId: N:Orleans
+  isExternal: false
+  name: Orleans
+  nameWithType: Orleans
+  fullName: Orleans
+- uid: Orleans.IVersionManager.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<IVersionManager>()
+  nameWithType: ImmutableExt.AsImmutable<IVersionManager>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.IVersionManager>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of IVersionManager)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.IVersionManager)()
+  name.vb: AsImmutable(Of IVersionManager)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<IVersionManager>
+    nameWithType: ImmutableExt.AsImmutable<IVersionManager>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.IVersionManager>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of IVersionManager)
+    nameWithType: ImmutableExt.AsImmutable(Of IVersionManager)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.IVersionManager)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.IVersionManager.SetCompatibilityStrategy*
+  commentId: Overload:Orleans.IVersionManager.SetCompatibilityStrategy
+  isExternal: false
+  name: SetCompatibilityStrategy
+  nameWithType: IVersionManager.SetCompatibilityStrategy
+  fullName: Orleans.IVersionManager.SetCompatibilityStrategy
+- uid: Orleans.Versions.Compatibility.CompatibilityStrategy
+  commentId: T:Orleans.Versions.Compatibility.CompatibilityStrategy
+  parent: Orleans.Versions.Compatibility
+  isExternal: false
+  name: CompatibilityStrategy
+  nameWithType: CompatibilityStrategy
+  fullName: Orleans.Versions.Compatibility.CompatibilityStrategy
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task
+- uid: Orleans.Versions.Compatibility
+  commentId: N:Orleans.Versions.Compatibility
+  isExternal: false
+  name: Orleans.Versions.Compatibility
+  nameWithType: Orleans.Versions.Compatibility
+  fullName: Orleans.Versions.Compatibility
+- uid: Orleans.IVersionManager.SetSelectorStrategy*
+  commentId: Overload:Orleans.IVersionManager.SetSelectorStrategy
+  isExternal: false
+  name: SetSelectorStrategy
+  nameWithType: IVersionManager.SetSelectorStrategy
+  fullName: Orleans.IVersionManager.SetSelectorStrategy
+- uid: Orleans.Versions.Selector.VersionSelectorStrategy
+  commentId: T:Orleans.Versions.Selector.VersionSelectorStrategy
+  parent: Orleans.Versions.Selector
+  isExternal: false
+  name: VersionSelectorStrategy
+  nameWithType: VersionSelectorStrategy
+  fullName: Orleans.Versions.Selector.VersionSelectorStrategy
+- uid: Orleans.Versions.Selector
+  commentId: N:Orleans.Versions.Selector
+  isExternal: false
+  name: Orleans.Versions.Selector
+  nameWithType: Orleans.Versions.Selector
+  fullName: Orleans.Versions.Selector
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32

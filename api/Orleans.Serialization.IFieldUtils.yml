@@ -1,0 +1,258 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Serialization.IFieldUtils
+  commentId: T:Orleans.Serialization.IFieldUtils
+  id: IFieldUtils
+  parent: Orleans.Serialization
+  children:
+  - Orleans.Serialization.IFieldUtils.GetGetter(FieldInfo)
+  - Orleans.Serialization.IFieldUtils.GetReferenceSetter(FieldInfo)
+  - Orleans.Serialization.IFieldUtils.GetValueSetter(FieldInfo)
+  langs:
+  - csharp
+  - vb
+  name: IFieldUtils
+  nameWithType: IFieldUtils
+  fullName: Orleans.Serialization.IFieldUtils
+  type: Interface
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Serialization/IFieldUtils.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IFieldUtils
+    path: src/Orleans.Core.Abstractions/Serialization/IFieldUtils.cs
+    startLine: 14
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Serialization
+  syntax:
+    content: public interface IFieldUtils
+    content.vb: Public Interface IFieldUtils
+  extensionMethods:
+  - Orleans.Serialization.IFieldUtils.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Orleans.Serialization.IFieldUtils.GetGetter(FieldInfo)
+  commentId: M:Orleans.Serialization.IFieldUtils.GetGetter(FieldInfo)
+  id: GetGetter(FieldInfo)
+  parent: Orleans.Serialization.IFieldUtils
+  langs:
+  - csharp
+  - vb
+  name: GetGetter(FieldInfo)
+  nameWithType: IFieldUtils.GetGetter(FieldInfo)
+  fullName: Orleans.Serialization.IFieldUtils.GetGetter(FieldInfo)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Serialization/IFieldUtils.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetGetter
+    path: src/Orleans.Core.Abstractions/Serialization/IFieldUtils.cs
+    startLine: 20
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Serialization
+  summary: "\nReturns a delegate to get the value of a specified field.\n"
+  example: []
+  syntax:
+    content: Delegate GetGetter(FieldInfo field)
+    parameters:
+    - id: field
+      type: FieldInfo
+    return:
+      type: Delegate
+      description: A delegate to get the value of a specified field.
+    content.vb: 'Function GetGetter(field As FieldInfo) As '
+  overload: Orleans.Serialization.IFieldUtils.GetGetter*
+- uid: Orleans.Serialization.IFieldUtils.GetReferenceSetter(FieldInfo)
+  commentId: M:Orleans.Serialization.IFieldUtils.GetReferenceSetter(FieldInfo)
+  id: GetReferenceSetter(FieldInfo)
+  parent: Orleans.Serialization.IFieldUtils
+  langs:
+  - csharp
+  - vb
+  name: GetReferenceSetter(FieldInfo)
+  nameWithType: IFieldUtils.GetReferenceSetter(FieldInfo)
+  fullName: Orleans.Serialization.IFieldUtils.GetReferenceSetter(FieldInfo)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Serialization/IFieldUtils.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetReferenceSetter
+    path: src/Orleans.Core.Abstractions/Serialization/IFieldUtils.cs
+    startLine: 26
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Serialization
+  summary: "\nReturns a delegate to set the value of this field for an instance.\n"
+  example: []
+  syntax:
+    content: Delegate GetReferenceSetter(FieldInfo field)
+    parameters:
+    - id: field
+      type: FieldInfo
+    return:
+      type: Delegate
+      description: A delegate to set the value of this field for an instance.
+    content.vb: 'Function GetReferenceSetter(field As FieldInfo) As '
+  overload: Orleans.Serialization.IFieldUtils.GetReferenceSetter*
+- uid: Orleans.Serialization.IFieldUtils.GetValueSetter(FieldInfo)
+  commentId: M:Orleans.Serialization.IFieldUtils.GetValueSetter(FieldInfo)
+  id: GetValueSetter(FieldInfo)
+  parent: Orleans.Serialization.IFieldUtils
+  langs:
+  - csharp
+  - vb
+  name: GetValueSetter(FieldInfo)
+  nameWithType: IFieldUtils.GetValueSetter(FieldInfo)
+  fullName: Orleans.Serialization.IFieldUtils.GetValueSetter(FieldInfo)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Serialization/IFieldUtils.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetValueSetter
+    path: src/Orleans.Core.Abstractions/Serialization/IFieldUtils.cs
+    startLine: 32
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Serialization
+  summary: "\nReturns a delegate to set the value of this field for an instance.\n"
+  example: []
+  syntax:
+    content: Delegate GetValueSetter(FieldInfo field)
+    parameters:
+    - id: field
+      type: FieldInfo
+    return:
+      type: Delegate
+      description: A delegate to set the value of this field for an instance.
+    content.vb: 'Function GetValueSetter(field As FieldInfo) As '
+  overload: Orleans.Serialization.IFieldUtils.GetValueSetter*
+references:
+- uid: Orleans.Serialization
+  commentId: N:Orleans.Serialization
+  isExternal: false
+  name: Orleans.Serialization
+  nameWithType: Orleans.Serialization
+  fullName: Orleans.Serialization
+- uid: Orleans.Serialization.IFieldUtils.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<IFieldUtils>()
+  nameWithType: ImmutableExt.AsImmutable<IFieldUtils>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Serialization.IFieldUtils>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of IFieldUtils)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Serialization.IFieldUtils)()
+  name.vb: AsImmutable(Of IFieldUtils)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<IFieldUtils>
+    nameWithType: ImmutableExt.AsImmutable<IFieldUtils>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Serialization.IFieldUtils>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of IFieldUtils)
+    nameWithType: ImmutableExt.AsImmutable(Of IFieldUtils)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Serialization.IFieldUtils)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Serialization.IFieldUtils.GetGetter*
+  commentId: Overload:Orleans.Serialization.IFieldUtils.GetGetter
+  isExternal: false
+  name: GetGetter
+  nameWithType: IFieldUtils.GetGetter
+  fullName: Orleans.Serialization.IFieldUtils.GetGetter
+- uid: FieldInfo
+  isExternal: true
+  name: FieldInfo
+  nameWithType: FieldInfo
+  fullName: FieldInfo
+- uid: Delegate
+  isExternal: true
+  name: Delegate
+  nameWithType: Delegate
+  fullName: Delegate
+- uid: Orleans.Serialization.IFieldUtils.GetReferenceSetter*
+  commentId: Overload:Orleans.Serialization.IFieldUtils.GetReferenceSetter
+  isExternal: false
+  name: GetReferenceSetter
+  nameWithType: IFieldUtils.GetReferenceSetter
+  fullName: Orleans.Serialization.IFieldUtils.GetReferenceSetter
+- uid: Orleans.Serialization.IFieldUtils.GetValueSetter*
+  commentId: Overload:Orleans.Serialization.IFieldUtils.GetValueSetter
+  isExternal: false
+  name: GetValueSetter
+  nameWithType: IFieldUtils.GetValueSetter
+  fullName: Orleans.Serialization.IFieldUtils.GetValueSetter

@@ -1,0 +1,459 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Timers.IReminderRegistry
+  commentId: T:Orleans.Timers.IReminderRegistry
+  id: IReminderRegistry
+  parent: Orleans.Timers
+  children:
+  - Orleans.Timers.IReminderRegistry.GetReminder(System.String)
+  - Orleans.Timers.IReminderRegistry.GetReminders
+  - Orleans.Timers.IReminderRegistry.RegisterOrUpdateReminder(System.String,TimeSpan,TimeSpan)
+  - Orleans.Timers.IReminderRegistry.UnregisterReminder(Orleans.Runtime.IGrainReminder)
+  langs:
+  - csharp
+  - vb
+  name: IReminderRegistry
+  nameWithType: IReminderRegistry
+  fullName: Orleans.Timers.IReminderRegistry
+  type: Interface
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Timers/IReminderRegistry.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IReminderRegistry
+    path: src/Orleans.Core.Abstractions/Timers/IReminderRegistry.cs
+    startLine: 8
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Timers
+  syntax:
+    content: 'public interface IReminderRegistry : IGrainServiceClient<IReminderService>'
+    content.vb: >-
+      Public Interface IReminderRegistry
+
+          Inherits IGrainServiceClient(Of IReminderService)
+  extensionMethods:
+  - Orleans.Timers.IReminderRegistry.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Orleans.Timers.IReminderRegistry.RegisterOrUpdateReminder(System.String,TimeSpan,TimeSpan)
+  commentId: M:Orleans.Timers.IReminderRegistry.RegisterOrUpdateReminder(System.String,TimeSpan,TimeSpan)
+  id: RegisterOrUpdateReminder(System.String,TimeSpan,TimeSpan)
+  parent: Orleans.Timers.IReminderRegistry
+  langs:
+  - csharp
+  - vb
+  name: RegisterOrUpdateReminder(String, TimeSpan, TimeSpan)
+  nameWithType: IReminderRegistry.RegisterOrUpdateReminder(String, TimeSpan, TimeSpan)
+  fullName: Orleans.Timers.IReminderRegistry.RegisterOrUpdateReminder(System.String, TimeSpan, TimeSpan)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Timers/IReminderRegistry.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: RegisterOrUpdateReminder
+    path: src/Orleans.Core.Abstractions/Timers/IReminderRegistry.cs
+    startLine: 10
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Timers
+  syntax:
+    content: Task<IGrainReminder> RegisterOrUpdateReminder(string reminderName, TimeSpan dueTime, TimeSpan period)
+    parameters:
+    - id: reminderName
+      type: System.String
+    - id: dueTime
+      type: TimeSpan
+    - id: period
+      type: TimeSpan
+    return:
+      type: Task{Orleans.Runtime.IGrainReminder}
+    content.vb: Function RegisterOrUpdateReminder(reminderName As String, dueTime As TimeSpan, period As TimeSpan) As Task(Of IGrainReminder)
+  overload: Orleans.Timers.IReminderRegistry.RegisterOrUpdateReminder*
+- uid: Orleans.Timers.IReminderRegistry.UnregisterReminder(Orleans.Runtime.IGrainReminder)
+  commentId: M:Orleans.Timers.IReminderRegistry.UnregisterReminder(Orleans.Runtime.IGrainReminder)
+  id: UnregisterReminder(Orleans.Runtime.IGrainReminder)
+  parent: Orleans.Timers.IReminderRegistry
+  langs:
+  - csharp
+  - vb
+  name: UnregisterReminder(IGrainReminder)
+  nameWithType: IReminderRegistry.UnregisterReminder(IGrainReminder)
+  fullName: Orleans.Timers.IReminderRegistry.UnregisterReminder(Orleans.Runtime.IGrainReminder)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Timers/IReminderRegistry.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: UnregisterReminder
+    path: src/Orleans.Core.Abstractions/Timers/IReminderRegistry.cs
+    startLine: 12
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Timers
+  syntax:
+    content: Task UnregisterReminder(IGrainReminder reminder)
+    parameters:
+    - id: reminder
+      type: Orleans.Runtime.IGrainReminder
+    return:
+      type: Task
+    content.vb: Function UnregisterReminder(reminder As IGrainReminder) As Task
+  overload: Orleans.Timers.IReminderRegistry.UnregisterReminder*
+- uid: Orleans.Timers.IReminderRegistry.GetReminder(System.String)
+  commentId: M:Orleans.Timers.IReminderRegistry.GetReminder(System.String)
+  id: GetReminder(System.String)
+  parent: Orleans.Timers.IReminderRegistry
+  langs:
+  - csharp
+  - vb
+  name: GetReminder(String)
+  nameWithType: IReminderRegistry.GetReminder(String)
+  fullName: Orleans.Timers.IReminderRegistry.GetReminder(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Timers/IReminderRegistry.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetReminder
+    path: src/Orleans.Core.Abstractions/Timers/IReminderRegistry.cs
+    startLine: 14
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Timers
+  syntax:
+    content: Task<IGrainReminder> GetReminder(string reminderName)
+    parameters:
+    - id: reminderName
+      type: System.String
+    return:
+      type: Task{Orleans.Runtime.IGrainReminder}
+    content.vb: Function GetReminder(reminderName As String) As Task(Of IGrainReminder)
+  overload: Orleans.Timers.IReminderRegistry.GetReminder*
+- uid: Orleans.Timers.IReminderRegistry.GetReminders
+  commentId: M:Orleans.Timers.IReminderRegistry.GetReminders
+  id: GetReminders
+  parent: Orleans.Timers.IReminderRegistry
+  langs:
+  - csharp
+  - vb
+  name: GetReminders()
+  nameWithType: IReminderRegistry.GetReminders()
+  fullName: Orleans.Timers.IReminderRegistry.GetReminders()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Timers/IReminderRegistry.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetReminders
+    path: src/Orleans.Core.Abstractions/Timers/IReminderRegistry.cs
+    startLine: 16
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Timers
+  syntax:
+    content: Task<List<IGrainReminder>> GetReminders()
+    return:
+      type: Task{List{Orleans.Runtime.IGrainReminder}}
+    content.vb: Function GetReminders As Task(Of List(Of IGrainReminder))
+  overload: Orleans.Timers.IReminderRegistry.GetReminders*
+references:
+- uid: Orleans.Timers
+  commentId: N:Orleans.Timers
+  isExternal: false
+  name: Orleans.Timers
+  nameWithType: Orleans.Timers
+  fullName: Orleans.Timers
+- uid: Orleans.Timers.IReminderRegistry.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<IReminderRegistry>()
+  nameWithType: ImmutableExt.AsImmutable<IReminderRegistry>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Timers.IReminderRegistry>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of IReminderRegistry)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Timers.IReminderRegistry)()
+  name.vb: AsImmutable(Of IReminderRegistry)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<IReminderRegistry>
+    nameWithType: ImmutableExt.AsImmutable<IReminderRegistry>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Timers.IReminderRegistry>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of IReminderRegistry)
+    nameWithType: ImmutableExt.AsImmutable(Of IReminderRegistry)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Timers.IReminderRegistry)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Timers.IReminderRegistry.RegisterOrUpdateReminder*
+  commentId: Overload:Orleans.Timers.IReminderRegistry.RegisterOrUpdateReminder
+  isExternal: false
+  name: RegisterOrUpdateReminder
+  nameWithType: IReminderRegistry.RegisterOrUpdateReminder
+  fullName: Orleans.Timers.IReminderRegistry.RegisterOrUpdateReminder
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: TimeSpan
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: TimeSpan
+- uid: Task{Orleans.Runtime.IGrainReminder}
+  commentId: '!:Task{Orleans.Runtime.IGrainReminder}'
+  definition: Task`1
+  name: Task<IGrainReminder>
+  nameWithType: Task<IGrainReminder>
+  fullName: Task<Orleans.Runtime.IGrainReminder>
+  nameWithType.vb: Task(Of IGrainReminder)
+  fullName.vb: Task(Of Orleans.Runtime.IGrainReminder)
+  name.vb: Task(Of IGrainReminder)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Orleans.Runtime.IGrainReminder
+    name: IGrainReminder
+    nameWithType: IGrainReminder
+    fullName: Orleans.Runtime.IGrainReminder
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Orleans.Runtime.IGrainReminder
+    name: IGrainReminder
+    nameWithType: IGrainReminder
+    fullName: Orleans.Runtime.IGrainReminder
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Timers.IReminderRegistry.UnregisterReminder*
+  commentId: Overload:Orleans.Timers.IReminderRegistry.UnregisterReminder
+  isExternal: false
+  name: UnregisterReminder
+  nameWithType: IReminderRegistry.UnregisterReminder
+  fullName: Orleans.Timers.IReminderRegistry.UnregisterReminder
+- uid: Orleans.Runtime.IGrainReminder
+  commentId: T:Orleans.Runtime.IGrainReminder
+  parent: Orleans.Runtime
+  isExternal: false
+  name: IGrainReminder
+  nameWithType: IGrainReminder
+  fullName: Orleans.Runtime.IGrainReminder
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task
+- uid: Orleans.Runtime
+  commentId: N:Orleans.Runtime
+  isExternal: false
+  name: Orleans.Runtime
+  nameWithType: Orleans.Runtime
+  fullName: Orleans.Runtime
+- uid: Orleans.Timers.IReminderRegistry.GetReminder*
+  commentId: Overload:Orleans.Timers.IReminderRegistry.GetReminder
+  isExternal: false
+  name: GetReminder
+  nameWithType: IReminderRegistry.GetReminder
+  fullName: Orleans.Timers.IReminderRegistry.GetReminder
+- uid: Orleans.Timers.IReminderRegistry.GetReminders*
+  commentId: Overload:Orleans.Timers.IReminderRegistry.GetReminders
+  isExternal: false
+  name: GetReminders
+  nameWithType: IReminderRegistry.GetReminders
+  fullName: Orleans.Timers.IReminderRegistry.GetReminders
+- uid: Task{List{Orleans.Runtime.IGrainReminder}}
+  commentId: '!:Task{List{Orleans.Runtime.IGrainReminder}}'
+  definition: Task`1
+  name: Task<List<IGrainReminder>>
+  nameWithType: Task<List<IGrainReminder>>
+  fullName: Task<List<Orleans.Runtime.IGrainReminder>>
+  nameWithType.vb: Task(Of List(Of IGrainReminder))
+  fullName.vb: Task(Of List(Of Orleans.Runtime.IGrainReminder))
+  name.vb: Task(Of List(Of IGrainReminder))
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Orleans.Runtime.IGrainReminder
+    name: IGrainReminder
+    nameWithType: IGrainReminder
+    fullName: Orleans.Runtime.IGrainReminder
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Orleans.Runtime.IGrainReminder
+    name: IGrainReminder
+    nameWithType: IGrainReminder
+    fullName: Orleans.Runtime.IGrainReminder
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )

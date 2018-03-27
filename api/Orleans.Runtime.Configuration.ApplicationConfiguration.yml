@@ -1,0 +1,843 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Runtime.Configuration.ApplicationConfiguration
+  commentId: T:Orleans.Runtime.Configuration.ApplicationConfiguration
+  id: ApplicationConfiguration
+  parent: Orleans.Runtime.Configuration
+  children:
+  - Orleans.Runtime.Configuration.ApplicationConfiguration.#ctor(System.Nullable{TimeSpan})
+  - Orleans.Runtime.Configuration.ApplicationConfiguration.ClassSpecific
+  - Orleans.Runtime.Configuration.ApplicationConfiguration.DefaultCollectionAgeLimit
+  - Orleans.Runtime.Configuration.ApplicationConfiguration.GetCollectionAgeLimit(System.String)
+  - Orleans.Runtime.Configuration.ApplicationConfiguration.GetCollectionAgeLimit(Type)
+  - Orleans.Runtime.Configuration.ApplicationConfiguration.Load(XmlElement)
+  - Orleans.Runtime.Configuration.ApplicationConfiguration.ResetCollectionAgeLimitToDefault(System.String)
+  - Orleans.Runtime.Configuration.ApplicationConfiguration.ResetCollectionAgeLimitToDefault(Type)
+  - Orleans.Runtime.Configuration.ApplicationConfiguration.SetCollectionAgeLimit(System.String,TimeSpan)
+  - Orleans.Runtime.Configuration.ApplicationConfiguration.SetCollectionAgeLimit(Type,TimeSpan)
+  - Orleans.Runtime.Configuration.ApplicationConfiguration.SetDefaultCollectionAgeLimit(TimeSpan)
+  - Orleans.Runtime.Configuration.ApplicationConfiguration.ToString
+  langs:
+  - csharp
+  - vb
+  name: ApplicationConfiguration
+  nameWithType: ApplicationConfiguration
+  fullName: Orleans.Runtime.Configuration.ApplicationConfiguration
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ApplicationConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ApplicationConfiguration
+    path: src/Orleans.Core.Legacy/Configuration/ApplicationConfiguration.cs
+    startLine: 13
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nOrleans application configuration parameters.\n"
+  example: []
+  syntax:
+    content: 'public class ApplicationConfiguration : object'
+    content.vb: >-
+      Public Class ApplicationConfiguration
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.Runtime.Configuration.ApplicationConfiguration.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.Runtime.Configuration.ApplicationConfiguration.DefaultCollectionAgeLimit
+  commentId: P:Orleans.Runtime.Configuration.ApplicationConfiguration.DefaultCollectionAgeLimit
+  id: DefaultCollectionAgeLimit
+  parent: Orleans.Runtime.Configuration.ApplicationConfiguration
+  langs:
+  - csharp
+  - vb
+  name: DefaultCollectionAgeLimit
+  nameWithType: ApplicationConfiguration.DefaultCollectionAgeLimit
+  fullName: Orleans.Runtime.Configuration.ApplicationConfiguration.DefaultCollectionAgeLimit
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ApplicationConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: DefaultCollectionAgeLimit
+    path: src/Orleans.Core.Legacy/Configuration/ApplicationConfiguration.cs
+    startLine: 23
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nThe default time period used to collect in-active activations.\nApplies to all grain types.\n"
+  example: []
+  syntax:
+    content: public TimeSpan DefaultCollectionAgeLimit { get; }
+    parameters: []
+    return:
+      type: TimeSpan
+    content.vb: Public ReadOnly Property DefaultCollectionAgeLimit As TimeSpan
+  overload: Orleans.Runtime.Configuration.ApplicationConfiguration.DefaultCollectionAgeLimit*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Runtime.Configuration.ApplicationConfiguration.#ctor(System.Nullable{TimeSpan})
+  commentId: M:Orleans.Runtime.Configuration.ApplicationConfiguration.#ctor(System.Nullable{TimeSpan})
+  id: '#ctor(System.Nullable{TimeSpan})'
+  parent: Orleans.Runtime.Configuration.ApplicationConfiguration
+  langs:
+  - csharp
+  - vb
+  name: ApplicationConfiguration(Nullable<TimeSpan>)
+  nameWithType: ApplicationConfiguration.ApplicationConfiguration(Nullable<TimeSpan>)
+  fullName: Orleans.Runtime.Configuration.ApplicationConfiguration.ApplicationConfiguration(System.Nullable<TimeSpan>)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ApplicationConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Core.Legacy/Configuration/ApplicationConfiguration.cs
+    startLine: 49
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nConstructor.\n"
+  example: []
+  syntax:
+    content: public ApplicationConfiguration(TimeSpan? defaultCollectionAgeLimit = null)
+    parameters:
+    - id: defaultCollectionAgeLimit
+      type: System.Nullable{TimeSpan}
+      description: The default time period used to collect in-active activations.
+    content.vb: Public Sub New(defaultCollectionAgeLimit As TimeSpan? = Nothing)
+  overload: Orleans.Runtime.Configuration.ApplicationConfiguration.#ctor*
+  nameWithType.vb: ApplicationConfiguration.ApplicationConfiguration(Nullable(Of TimeSpan))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.Runtime.Configuration.ApplicationConfiguration.ApplicationConfiguration(System.Nullable(Of TimeSpan))
+  name.vb: ApplicationConfiguration(Nullable(Of TimeSpan))
+- uid: Orleans.Runtime.Configuration.ApplicationConfiguration.ClassSpecific
+  commentId: P:Orleans.Runtime.Configuration.ApplicationConfiguration.ClassSpecific
+  id: ClassSpecific
+  parent: Orleans.Runtime.Configuration.ApplicationConfiguration
+  langs:
+  - csharp
+  - vb
+  name: ClassSpecific
+  nameWithType: ApplicationConfiguration.ClassSpecific
+  fullName: Orleans.Runtime.Configuration.ApplicationConfiguration.ClassSpecific
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ApplicationConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ClassSpecific
+    path: src/Orleans.Core.Legacy/Configuration/ApplicationConfiguration.cs
+    startLine: 58
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nIEnumerable of all configurations for different grain types.\n"
+  example: []
+  syntax:
+    content: public IEnumerable<GrainTypeConfiguration> ClassSpecific { get; }
+    parameters: []
+    return:
+      type: IEnumerable{Orleans.Runtime.Configuration.GrainTypeConfiguration}
+    content.vb: Public ReadOnly Property ClassSpecific As IEnumerable(Of GrainTypeConfiguration)
+  overload: Orleans.Runtime.Configuration.ApplicationConfiguration.ClassSpecific*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Runtime.Configuration.ApplicationConfiguration.Load(XmlElement)
+  commentId: M:Orleans.Runtime.Configuration.ApplicationConfiguration.Load(XmlElement)
+  id: Load(XmlElement)
+  parent: Orleans.Runtime.Configuration.ApplicationConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Load(XmlElement)
+  nameWithType: ApplicationConfiguration.Load(XmlElement)
+  fullName: Orleans.Runtime.Configuration.ApplicationConfiguration.Load(XmlElement)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ApplicationConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Load
+    path: src/Orleans.Core.Legacy/Configuration/ApplicationConfiguration.cs
+    startLine: 64
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nLoad this configuratin from xml element.\n"
+  example: []
+  syntax:
+    content: public void Load(XmlElement xmlElement)
+    parameters:
+    - id: xmlElement
+      type: XmlElement
+      description: ''
+    content.vb: Public Sub Load(xmlElement As XmlElement)
+  overload: Orleans.Runtime.Configuration.ApplicationConfiguration.Load*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.ApplicationConfiguration.GetCollectionAgeLimit(Type)
+  commentId: M:Orleans.Runtime.Configuration.ApplicationConfiguration.GetCollectionAgeLimit(Type)
+  id: GetCollectionAgeLimit(Type)
+  parent: Orleans.Runtime.Configuration.ApplicationConfiguration
+  langs:
+  - csharp
+  - vb
+  name: GetCollectionAgeLimit(Type)
+  nameWithType: ApplicationConfiguration.GetCollectionAgeLimit(Type)
+  fullName: Orleans.Runtime.Configuration.ApplicationConfiguration.GetCollectionAgeLimit(Type)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ApplicationConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetCollectionAgeLimit
+    path: src/Orleans.Core.Legacy/Configuration/ApplicationConfiguration.cs
+    startLine: 98
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nReturns the time period used to collect in-active activations of a given type.\n"
+  example: []
+  syntax:
+    content: public TimeSpan GetCollectionAgeLimit(Type type)
+    parameters:
+    - id: type
+      type: Type
+      description: Grain type.
+    return:
+      type: TimeSpan
+      description: ''
+    content.vb: Public Function GetCollectionAgeLimit(type As Type) As TimeSpan
+  overload: Orleans.Runtime.Configuration.ApplicationConfiguration.GetCollectionAgeLimit*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.ApplicationConfiguration.GetCollectionAgeLimit(System.String)
+  commentId: M:Orleans.Runtime.Configuration.ApplicationConfiguration.GetCollectionAgeLimit(System.String)
+  id: GetCollectionAgeLimit(System.String)
+  parent: Orleans.Runtime.Configuration.ApplicationConfiguration
+  langs:
+  - csharp
+  - vb
+  name: GetCollectionAgeLimit(String)
+  nameWithType: ApplicationConfiguration.GetCollectionAgeLimit(String)
+  fullName: Orleans.Runtime.Configuration.ApplicationConfiguration.GetCollectionAgeLimit(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ApplicationConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetCollectionAgeLimit
+    path: src/Orleans.Core.Legacy/Configuration/ApplicationConfiguration.cs
+    startLine: 112
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nReturns the time period used to collect in-active activations of a given type.\n"
+  example: []
+  syntax:
+    content: public TimeSpan GetCollectionAgeLimit(string grainTypeFullName)
+    parameters:
+    - id: grainTypeFullName
+      type: System.String
+      description: Grain type full name.
+    return:
+      type: TimeSpan
+      description: ''
+    content.vb: Public Function GetCollectionAgeLimit(grainTypeFullName As String) As TimeSpan
+  overload: Orleans.Runtime.Configuration.ApplicationConfiguration.GetCollectionAgeLimit*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.ApplicationConfiguration.SetCollectionAgeLimit(Type,TimeSpan)
+  commentId: M:Orleans.Runtime.Configuration.ApplicationConfiguration.SetCollectionAgeLimit(Type,TimeSpan)
+  id: SetCollectionAgeLimit(Type,TimeSpan)
+  parent: Orleans.Runtime.Configuration.ApplicationConfiguration
+  langs:
+  - csharp
+  - vb
+  name: SetCollectionAgeLimit(Type, TimeSpan)
+  nameWithType: ApplicationConfiguration.SetCollectionAgeLimit(Type, TimeSpan)
+  fullName: Orleans.Runtime.Configuration.ApplicationConfiguration.SetCollectionAgeLimit(Type, TimeSpan)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ApplicationConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SetCollectionAgeLimit
+    path: src/Orleans.Core.Legacy/Configuration/ApplicationConfiguration.cs
+    startLine: 129
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nSets the time period  to collect in-active activations for a given type.\n"
+  example: []
+  syntax:
+    content: public void SetCollectionAgeLimit(Type type, TimeSpan ageLimit)
+    parameters:
+    - id: type
+      type: Type
+      description: Grain type full name.
+    - id: ageLimit
+      type: TimeSpan
+      description: The age limit to use.
+    content.vb: Public Sub SetCollectionAgeLimit(type As Type, ageLimit As TimeSpan)
+  overload: Orleans.Runtime.Configuration.ApplicationConfiguration.SetCollectionAgeLimit*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.ApplicationConfiguration.SetCollectionAgeLimit(System.String,TimeSpan)
+  commentId: M:Orleans.Runtime.Configuration.ApplicationConfiguration.SetCollectionAgeLimit(System.String,TimeSpan)
+  id: SetCollectionAgeLimit(System.String,TimeSpan)
+  parent: Orleans.Runtime.Configuration.ApplicationConfiguration
+  langs:
+  - csharp
+  - vb
+  name: SetCollectionAgeLimit(String, TimeSpan)
+  nameWithType: ApplicationConfiguration.SetCollectionAgeLimit(String, TimeSpan)
+  fullName: Orleans.Runtime.Configuration.ApplicationConfiguration.SetCollectionAgeLimit(System.String, TimeSpan)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ApplicationConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SetCollectionAgeLimit
+    path: src/Orleans.Core.Legacy/Configuration/ApplicationConfiguration.cs
+    startLine: 143
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nSets the time period  to collect in-active activations for a given type.\n"
+  example: []
+  syntax:
+    content: public void SetCollectionAgeLimit(string grainTypeFullName, TimeSpan ageLimit)
+    parameters:
+    - id: grainTypeFullName
+      type: System.String
+      description: Grain type full name string.
+    - id: ageLimit
+      type: TimeSpan
+      description: The age limit to use.
+    content.vb: Public Sub SetCollectionAgeLimit(grainTypeFullName As String, ageLimit As TimeSpan)
+  overload: Orleans.Runtime.Configuration.ApplicationConfiguration.SetCollectionAgeLimit*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.ApplicationConfiguration.ResetCollectionAgeLimitToDefault(Type)
+  commentId: M:Orleans.Runtime.Configuration.ApplicationConfiguration.ResetCollectionAgeLimitToDefault(Type)
+  id: ResetCollectionAgeLimitToDefault(Type)
+  parent: Orleans.Runtime.Configuration.ApplicationConfiguration
+  langs:
+  - csharp
+  - vb
+  name: ResetCollectionAgeLimitToDefault(Type)
+  nameWithType: ApplicationConfiguration.ResetCollectionAgeLimitToDefault(Type)
+  fullName: Orleans.Runtime.Configuration.ApplicationConfiguration.ResetCollectionAgeLimitToDefault(Type)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ApplicationConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ResetCollectionAgeLimitToDefault
+    path: src/Orleans.Core.Legacy/Configuration/ApplicationConfiguration.cs
+    startLine: 165
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nResets the time period to collect in-active activations for a given type to a default value.\n"
+  example: []
+  syntax:
+    content: public void ResetCollectionAgeLimitToDefault(Type type)
+    parameters:
+    - id: type
+      type: Type
+      description: Grain type full name.
+    content.vb: Public Sub ResetCollectionAgeLimitToDefault(type As Type)
+  overload: Orleans.Runtime.Configuration.ApplicationConfiguration.ResetCollectionAgeLimitToDefault*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.ApplicationConfiguration.ResetCollectionAgeLimitToDefault(System.String)
+  commentId: M:Orleans.Runtime.Configuration.ApplicationConfiguration.ResetCollectionAgeLimitToDefault(System.String)
+  id: ResetCollectionAgeLimitToDefault(System.String)
+  parent: Orleans.Runtime.Configuration.ApplicationConfiguration
+  langs:
+  - csharp
+  - vb
+  name: ResetCollectionAgeLimitToDefault(String)
+  nameWithType: ApplicationConfiguration.ResetCollectionAgeLimitToDefault(String)
+  fullName: Orleans.Runtime.Configuration.ApplicationConfiguration.ResetCollectionAgeLimitToDefault(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ApplicationConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ResetCollectionAgeLimitToDefault
+    path: src/Orleans.Core.Legacy/Configuration/ApplicationConfiguration.cs
+    startLine: 178
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nResets the time period to collect in-active activations for a given type to a default value.\n"
+  example: []
+  syntax:
+    content: public void ResetCollectionAgeLimitToDefault(string grainTypeFullName)
+    parameters:
+    - id: grainTypeFullName
+      type: System.String
+      description: Grain type full name.
+    content.vb: Public Sub ResetCollectionAgeLimitToDefault(grainTypeFullName As String)
+  overload: Orleans.Runtime.Configuration.ApplicationConfiguration.ResetCollectionAgeLimitToDefault*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.ApplicationConfiguration.SetDefaultCollectionAgeLimit(TimeSpan)
+  commentId: M:Orleans.Runtime.Configuration.ApplicationConfiguration.SetDefaultCollectionAgeLimit(TimeSpan)
+  id: SetDefaultCollectionAgeLimit(TimeSpan)
+  parent: Orleans.Runtime.Configuration.ApplicationConfiguration
+  langs:
+  - csharp
+  - vb
+  name: SetDefaultCollectionAgeLimit(TimeSpan)
+  nameWithType: ApplicationConfiguration.SetDefaultCollectionAgeLimit(TimeSpan)
+  fullName: Orleans.Runtime.Configuration.ApplicationConfiguration.SetDefaultCollectionAgeLimit(TimeSpan)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ApplicationConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SetDefaultCollectionAgeLimit
+    path: src/Orleans.Core.Legacy/Configuration/ApplicationConfiguration.cs
+    startLine: 194
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nSets the default time period  to collect in-active activations for all grain type.\n"
+  example: []
+  syntax:
+    content: public void SetDefaultCollectionAgeLimit(TimeSpan ageLimit)
+    parameters:
+    - id: ageLimit
+      type: TimeSpan
+      description: The age limit to use.
+    content.vb: Public Sub SetDefaultCollectionAgeLimit(ageLimit As TimeSpan)
+  overload: Orleans.Runtime.Configuration.ApplicationConfiguration.SetDefaultCollectionAgeLimit*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.ApplicationConfiguration.ToString
+  commentId: M:Orleans.Runtime.Configuration.ApplicationConfiguration.ToString
+  id: ToString
+  parent: Orleans.Runtime.Configuration.ApplicationConfiguration
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: ApplicationConfiguration.ToString()
+  fullName: Orleans.Runtime.Configuration.ApplicationConfiguration.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ApplicationConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ToString
+    path: src/Orleans.Core.Legacy/Configuration/ApplicationConfiguration.cs
+    startLine: 217
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nPrints the current application configuration.\n"
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Public Overrides Function ToString As String
+  overload: Orleans.Runtime.Configuration.ApplicationConfiguration.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: Orleans.Runtime.Configuration
+  commentId: N:Orleans.Runtime.Configuration
+  isExternal: false
+  name: Orleans.Runtime.Configuration
+  nameWithType: Orleans.Runtime.Configuration
+  fullName: Orleans.Runtime.Configuration
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Runtime.Configuration.ApplicationConfiguration.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<ApplicationConfiguration>()
+  nameWithType: ImmutableExt.AsImmutable<ApplicationConfiguration>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.Configuration.ApplicationConfiguration>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of ApplicationConfiguration)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.Configuration.ApplicationConfiguration)()
+  name.vb: AsImmutable(Of ApplicationConfiguration)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<ApplicationConfiguration>
+    nameWithType: ImmutableExt.AsImmutable<ApplicationConfiguration>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.Configuration.ApplicationConfiguration>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of ApplicationConfiguration)
+    nameWithType: ImmutableExt.AsImmutable(Of ApplicationConfiguration)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.Configuration.ApplicationConfiguration)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Runtime.Configuration.ApplicationConfiguration.DefaultCollectionAgeLimit*
+  commentId: Overload:Orleans.Runtime.Configuration.ApplicationConfiguration.DefaultCollectionAgeLimit
+  isExternal: false
+  name: DefaultCollectionAgeLimit
+  nameWithType: ApplicationConfiguration.DefaultCollectionAgeLimit
+  fullName: Orleans.Runtime.Configuration.ApplicationConfiguration.DefaultCollectionAgeLimit
+- uid: TimeSpan
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: TimeSpan
+- uid: Orleans.Runtime.Configuration.ApplicationConfiguration.#ctor*
+  commentId: Overload:Orleans.Runtime.Configuration.ApplicationConfiguration.#ctor
+  isExternal: false
+  name: ApplicationConfiguration
+  nameWithType: ApplicationConfiguration.ApplicationConfiguration
+  fullName: Orleans.Runtime.Configuration.ApplicationConfiguration.ApplicationConfiguration
+- uid: System.Nullable{TimeSpan}
+  commentId: '!:System.Nullable{TimeSpan}'
+  definition: System.Nullable`1
+  name: Nullable<TimeSpan>
+  nameWithType: Nullable<TimeSpan>
+  fullName: System.Nullable<TimeSpan>
+  nameWithType.vb: Nullable(Of TimeSpan)
+  fullName.vb: System.Nullable(Of TimeSpan)
+  name.vb: Nullable(Of TimeSpan)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: TimeSpan
+    name: TimeSpan
+    nameWithType: TimeSpan
+    fullName: TimeSpan
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: TimeSpan
+    name: TimeSpan
+    nameWithType: TimeSpan
+    fullName: TimeSpan
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  isExternal: true
+  name: Nullable<>
+  nameWithType: Nullable<>
+  fullName: System.Nullable<>
+  nameWithType.vb: Nullable(Of )
+  fullName.vb: System.Nullable(Of )
+  name.vb: Nullable(Of )
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.Configuration.ApplicationConfiguration.ClassSpecific*
+  commentId: Overload:Orleans.Runtime.Configuration.ApplicationConfiguration.ClassSpecific
+  isExternal: false
+  name: ClassSpecific
+  nameWithType: ApplicationConfiguration.ClassSpecific
+  fullName: Orleans.Runtime.Configuration.ApplicationConfiguration.ClassSpecific
+- uid: IEnumerable{Orleans.Runtime.Configuration.GrainTypeConfiguration}
+  commentId: '!:IEnumerable{Orleans.Runtime.Configuration.GrainTypeConfiguration}'
+  definition: IEnumerable`1
+  name: IEnumerable<GrainTypeConfiguration>
+  nameWithType: IEnumerable<GrainTypeConfiguration>
+  fullName: IEnumerable<Orleans.Runtime.Configuration.GrainTypeConfiguration>
+  nameWithType.vb: IEnumerable(Of GrainTypeConfiguration)
+  fullName.vb: IEnumerable(Of Orleans.Runtime.Configuration.GrainTypeConfiguration)
+  name.vb: IEnumerable(Of GrainTypeConfiguration)
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Orleans.Runtime.Configuration.GrainTypeConfiguration
+    name: GrainTypeConfiguration
+    nameWithType: GrainTypeConfiguration
+    fullName: Orleans.Runtime.Configuration.GrainTypeConfiguration
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Orleans.Runtime.Configuration.GrainTypeConfiguration
+    name: GrainTypeConfiguration
+    nameWithType: GrainTypeConfiguration
+    fullName: Orleans.Runtime.Configuration.GrainTypeConfiguration
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IEnumerable`1
+  isExternal: true
+  name: IEnumerable<>
+  nameWithType: IEnumerable<>
+  fullName: IEnumerable<>
+  nameWithType.vb: IEnumerable(Of )
+  fullName.vb: IEnumerable(Of )
+  name.vb: IEnumerable(Of )
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.Configuration.ApplicationConfiguration.Load*
+  commentId: Overload:Orleans.Runtime.Configuration.ApplicationConfiguration.Load
+  isExternal: false
+  name: Load
+  nameWithType: ApplicationConfiguration.Load
+  fullName: Orleans.Runtime.Configuration.ApplicationConfiguration.Load
+- uid: XmlElement
+  isExternal: true
+  name: XmlElement
+  nameWithType: XmlElement
+  fullName: XmlElement
+- uid: Orleans.Runtime.Configuration.ApplicationConfiguration.GetCollectionAgeLimit*
+  commentId: Overload:Orleans.Runtime.Configuration.ApplicationConfiguration.GetCollectionAgeLimit
+  isExternal: false
+  name: GetCollectionAgeLimit
+  nameWithType: ApplicationConfiguration.GetCollectionAgeLimit
+  fullName: Orleans.Runtime.Configuration.ApplicationConfiguration.GetCollectionAgeLimit
+- uid: Type
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: Type
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Orleans.Runtime.Configuration.ApplicationConfiguration.SetCollectionAgeLimit*
+  commentId: Overload:Orleans.Runtime.Configuration.ApplicationConfiguration.SetCollectionAgeLimit
+  isExternal: false
+  name: SetCollectionAgeLimit
+  nameWithType: ApplicationConfiguration.SetCollectionAgeLimit
+  fullName: Orleans.Runtime.Configuration.ApplicationConfiguration.SetCollectionAgeLimit
+- uid: Orleans.Runtime.Configuration.ApplicationConfiguration.ResetCollectionAgeLimitToDefault*
+  commentId: Overload:Orleans.Runtime.Configuration.ApplicationConfiguration.ResetCollectionAgeLimitToDefault
+  isExternal: false
+  name: ResetCollectionAgeLimitToDefault
+  nameWithType: ApplicationConfiguration.ResetCollectionAgeLimitToDefault
+  fullName: Orleans.Runtime.Configuration.ApplicationConfiguration.ResetCollectionAgeLimitToDefault
+- uid: Orleans.Runtime.Configuration.ApplicationConfiguration.SetDefaultCollectionAgeLimit*
+  commentId: Overload:Orleans.Runtime.Configuration.ApplicationConfiguration.SetDefaultCollectionAgeLimit
+  isExternal: false
+  name: SetDefaultCollectionAgeLimit
+  nameWithType: ApplicationConfiguration.SetDefaultCollectionAgeLimit
+  fullName: Orleans.Runtime.Configuration.ApplicationConfiguration.SetDefaultCollectionAgeLimit
+- uid: Orleans.Runtime.Configuration.ApplicationConfiguration.ToString*
+  commentId: Overload:Orleans.Runtime.Configuration.ApplicationConfiguration.ToString
+  isExternal: false
+  name: ToString
+  nameWithType: ApplicationConfiguration.ToString
+  fullName: Orleans.Runtime.Configuration.ApplicationConfiguration.ToString

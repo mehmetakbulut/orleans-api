@@ -1,0 +1,352 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.CodeGeneration.IGrainExtensionMethodInvoker
+  commentId: T:Orleans.CodeGeneration.IGrainExtensionMethodInvoker
+  id: IGrainExtensionMethodInvoker
+  parent: Orleans.CodeGeneration
+  children:
+  - Orleans.CodeGeneration.IGrainExtensionMethodInvoker.Invoke(Orleans.Runtime.IGrainExtension,Orleans.CodeGeneration.InvokeMethodRequest)
+  langs:
+  - csharp
+  - vb
+  name: IGrainExtensionMethodInvoker
+  nameWithType: IGrainExtensionMethodInvoker
+  fullName: Orleans.CodeGeneration.IGrainExtensionMethodInvoker
+  type: Interface
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/CodeGeneration/IGrainMethodInvoker.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IGrainExtensionMethodInvoker
+    path: src/Orleans.Core.Abstractions/CodeGeneration/IGrainMethodInvoker.cs
+    startLine: 28
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.CodeGeneration
+  summary: "\nAn implementation of this interface is generated for every grain extension as part of the client-side code generation.\n"
+  example: []
+  syntax:
+    content: 'public interface IGrainExtensionMethodInvoker : IGrainMethodInvoker'
+    content.vb: >-
+      Public Interface IGrainExtensionMethodInvoker
+
+          Inherits IGrainMethodInvoker
+  inheritedMembers:
+  - Orleans.CodeGeneration.IGrainMethodInvoker.InterfaceId
+  - Orleans.CodeGeneration.IGrainMethodInvoker.InterfaceVersion
+  - Orleans.CodeGeneration.IGrainMethodInvoker.Invoke(Orleans.Runtime.IAddressable,Orleans.CodeGeneration.InvokeMethodRequest)
+  extensionMethods:
+  - Orleans.CodeGeneration.IGrainExtensionMethodInvoker.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Orleans.CodeGeneration.IGrainExtensionMethodInvoker.Invoke(Orleans.Runtime.IGrainExtension,Orleans.CodeGeneration.InvokeMethodRequest)
+  commentId: M:Orleans.CodeGeneration.IGrainExtensionMethodInvoker.Invoke(Orleans.Runtime.IGrainExtension,Orleans.CodeGeneration.InvokeMethodRequest)
+  id: Invoke(Orleans.Runtime.IGrainExtension,Orleans.CodeGeneration.InvokeMethodRequest)
+  parent: Orleans.CodeGeneration.IGrainExtensionMethodInvoker
+  langs:
+  - csharp
+  - vb
+  name: Invoke(IGrainExtension, InvokeMethodRequest)
+  nameWithType: IGrainExtensionMethodInvoker.Invoke(IGrainExtension, InvokeMethodRequest)
+  fullName: Orleans.CodeGeneration.IGrainExtensionMethodInvoker.Invoke(Orleans.Runtime.IGrainExtension, Orleans.CodeGeneration.InvokeMethodRequest)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/CodeGeneration/IGrainMethodInvoker.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Invoke
+    path: src/Orleans.Core.Abstractions/CodeGeneration/IGrainMethodInvoker.cs
+    startLine: 36
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.CodeGeneration
+  summary: "\nInvoke a grain extension method.\n"
+  example: []
+  syntax:
+    content: Task<object> Invoke(IGrainExtension extension, InvokeMethodRequest request)
+    parameters:
+    - id: extension
+      type: Orleans.Runtime.IGrainExtension
+      description: Reference to the extension to be invoked.
+    - id: request
+      type: Orleans.CodeGeneration.InvokeMethodRequest
+      description: The request being invoked.
+    return:
+      type: Task{System.Object}
+      description: Value promise for the result of the method invoke.
+    content.vb: Function Invoke(extension As IGrainExtension, request As InvokeMethodRequest) As Task(Of Object)
+  overload: Orleans.CodeGeneration.IGrainExtensionMethodInvoker.Invoke*
+references:
+- uid: Orleans.CodeGeneration
+  commentId: N:Orleans.CodeGeneration
+  isExternal: false
+  name: Orleans.CodeGeneration
+  nameWithType: Orleans.CodeGeneration
+  fullName: Orleans.CodeGeneration
+- uid: Orleans.CodeGeneration.IGrainMethodInvoker.InterfaceId
+  commentId: P:Orleans.CodeGeneration.IGrainMethodInvoker.InterfaceId
+  parent: Orleans.CodeGeneration.IGrainMethodInvoker
+  isExternal: false
+  name: InterfaceId
+  nameWithType: IGrainMethodInvoker.InterfaceId
+  fullName: Orleans.CodeGeneration.IGrainMethodInvoker.InterfaceId
+- uid: Orleans.CodeGeneration.IGrainMethodInvoker.InterfaceVersion
+  commentId: P:Orleans.CodeGeneration.IGrainMethodInvoker.InterfaceVersion
+  parent: Orleans.CodeGeneration.IGrainMethodInvoker
+  isExternal: false
+  name: InterfaceVersion
+  nameWithType: IGrainMethodInvoker.InterfaceVersion
+  fullName: Orleans.CodeGeneration.IGrainMethodInvoker.InterfaceVersion
+- uid: Orleans.CodeGeneration.IGrainMethodInvoker.Invoke(Orleans.Runtime.IAddressable,Orleans.CodeGeneration.InvokeMethodRequest)
+  commentId: M:Orleans.CodeGeneration.IGrainMethodInvoker.Invoke(Orleans.Runtime.IAddressable,Orleans.CodeGeneration.InvokeMethodRequest)
+  parent: Orleans.CodeGeneration.IGrainMethodInvoker
+  isExternal: false
+  name: Invoke(IAddressable, InvokeMethodRequest)
+  nameWithType: IGrainMethodInvoker.Invoke(IAddressable, InvokeMethodRequest)
+  fullName: Orleans.CodeGeneration.IGrainMethodInvoker.Invoke(Orleans.Runtime.IAddressable, Orleans.CodeGeneration.InvokeMethodRequest)
+  spec.csharp:
+  - uid: Orleans.CodeGeneration.IGrainMethodInvoker.Invoke(Orleans.Runtime.IAddressable,Orleans.CodeGeneration.InvokeMethodRequest)
+    name: Invoke
+    nameWithType: IGrainMethodInvoker.Invoke
+    fullName: Orleans.CodeGeneration.IGrainMethodInvoker.Invoke
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.IAddressable
+    name: IAddressable
+    nameWithType: IAddressable
+    fullName: Orleans.Runtime.IAddressable
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.CodeGeneration.InvokeMethodRequest
+    name: InvokeMethodRequest
+    nameWithType: InvokeMethodRequest
+    fullName: Orleans.CodeGeneration.InvokeMethodRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.CodeGeneration.IGrainMethodInvoker.Invoke(Orleans.Runtime.IAddressable,Orleans.CodeGeneration.InvokeMethodRequest)
+    name: Invoke
+    nameWithType: IGrainMethodInvoker.Invoke
+    fullName: Orleans.CodeGeneration.IGrainMethodInvoker.Invoke
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.IAddressable
+    name: IAddressable
+    nameWithType: IAddressable
+    fullName: Orleans.Runtime.IAddressable
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.CodeGeneration.InvokeMethodRequest
+    name: InvokeMethodRequest
+    nameWithType: InvokeMethodRequest
+    fullName: Orleans.CodeGeneration.InvokeMethodRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.CodeGeneration.IGrainExtensionMethodInvoker.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<IGrainExtensionMethodInvoker>()
+  nameWithType: ImmutableExt.AsImmutable<IGrainExtensionMethodInvoker>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.CodeGeneration.IGrainExtensionMethodInvoker>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of IGrainExtensionMethodInvoker)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.CodeGeneration.IGrainExtensionMethodInvoker)()
+  name.vb: AsImmutable(Of IGrainExtensionMethodInvoker)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<IGrainExtensionMethodInvoker>
+    nameWithType: ImmutableExt.AsImmutable<IGrainExtensionMethodInvoker>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.CodeGeneration.IGrainExtensionMethodInvoker>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of IGrainExtensionMethodInvoker)
+    nameWithType: ImmutableExt.AsImmutable(Of IGrainExtensionMethodInvoker)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.CodeGeneration.IGrainExtensionMethodInvoker)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.CodeGeneration.IGrainMethodInvoker
+  commentId: T:Orleans.CodeGeneration.IGrainMethodInvoker
+  parent: Orleans.CodeGeneration
+  isExternal: false
+  name: IGrainMethodInvoker
+  nameWithType: IGrainMethodInvoker
+  fullName: Orleans.CodeGeneration.IGrainMethodInvoker
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.CodeGeneration.IGrainExtensionMethodInvoker.Invoke*
+  commentId: Overload:Orleans.CodeGeneration.IGrainExtensionMethodInvoker.Invoke
+  isExternal: false
+  name: Invoke
+  nameWithType: IGrainExtensionMethodInvoker.Invoke
+  fullName: Orleans.CodeGeneration.IGrainExtensionMethodInvoker.Invoke
+- uid: Orleans.Runtime.IGrainExtension
+  commentId: T:Orleans.Runtime.IGrainExtension
+  parent: Orleans.Runtime
+  isExternal: false
+  name: IGrainExtension
+  nameWithType: IGrainExtension
+  fullName: Orleans.Runtime.IGrainExtension
+- uid: Orleans.CodeGeneration.InvokeMethodRequest
+  commentId: T:Orleans.CodeGeneration.InvokeMethodRequest
+  parent: Orleans.CodeGeneration
+  isExternal: false
+  name: InvokeMethodRequest
+  nameWithType: InvokeMethodRequest
+  fullName: Orleans.CodeGeneration.InvokeMethodRequest
+- uid: Task{System.Object}
+  commentId: '!:Task{System.Object}'
+  definition: Task`1
+  name: Task<Object>
+  nameWithType: Task<Object>
+  fullName: Task<System.Object>
+  nameWithType.vb: Task(Of Object)
+  fullName.vb: Task(Of System.Object)
+  name.vb: Task(Of Object)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime
+  commentId: N:Orleans.Runtime
+  isExternal: false
+  name: Orleans.Runtime
+  nameWithType: Orleans.Runtime
+  fullName: Orleans.Runtime
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )

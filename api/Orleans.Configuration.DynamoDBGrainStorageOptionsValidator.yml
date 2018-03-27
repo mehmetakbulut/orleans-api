@@ -1,0 +1,242 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Configuration.DynamoDBGrainStorageOptionsValidator
+  commentId: T:Orleans.Configuration.DynamoDBGrainStorageOptionsValidator
+  id: DynamoDBGrainStorageOptionsValidator
+  parent: Orleans.Configuration
+  children:
+  - Orleans.Configuration.DynamoDBGrainStorageOptionsValidator.#ctor(Orleans.Configuration.DynamoDBStorageOptions,System.String)
+  - Orleans.Configuration.DynamoDBGrainStorageOptionsValidator.ValidateConfiguration
+  langs:
+  - csharp
+  - vb
+  name: DynamoDBGrainStorageOptionsValidator
+  nameWithType: DynamoDBGrainStorageOptionsValidator
+  fullName: Orleans.Configuration.DynamoDBGrainStorageOptionsValidator
+  type: Class
+  source:
+    remote:
+      path: src/AWS/Orleans.Persistence.DynamoDB/Options/DynamoDBStorageOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: DynamoDBGrainStorageOptionsValidator
+    path: src/AWS/Orleans.Persistence.DynamoDB/Options/DynamoDBStorageOptions.cs
+    startLine: 68
+  assemblies:
+  - Orleans.Persistence.DynamoDB
+  namespace: Orleans.Configuration
+  summary: "\nConfiguration validator for DynamoDBStorageOptions\n"
+  example: []
+  syntax:
+    content: 'public class DynamoDBGrainStorageOptionsValidator : IConfigurationValidator'
+    content.vb: >-
+      Public Class DynamoDBGrainStorageOptionsValidator
+
+          Inherits IConfigurationValidator
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.Configuration.DynamoDBGrainStorageOptionsValidator.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.Configuration.DynamoDBGrainStorageOptionsValidator.#ctor(Orleans.Configuration.DynamoDBStorageOptions,System.String)
+  commentId: M:Orleans.Configuration.DynamoDBGrainStorageOptionsValidator.#ctor(Orleans.Configuration.DynamoDBStorageOptions,System.String)
+  id: '#ctor(Orleans.Configuration.DynamoDBStorageOptions,System.String)'
+  parent: Orleans.Configuration.DynamoDBGrainStorageOptionsValidator
+  langs:
+  - csharp
+  - vb
+  name: DynamoDBGrainStorageOptionsValidator(DynamoDBStorageOptions, String)
+  nameWithType: DynamoDBGrainStorageOptionsValidator.DynamoDBGrainStorageOptionsValidator(DynamoDBStorageOptions, String)
+  fullName: Orleans.Configuration.DynamoDBGrainStorageOptionsValidator.DynamoDBGrainStorageOptionsValidator(Orleans.Configuration.DynamoDBStorageOptions, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/AWS/Orleans.Persistence.DynamoDB/Options/DynamoDBStorageOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/AWS/Orleans.Persistence.DynamoDB/Options/DynamoDBStorageOptions.cs
+    startLine: 78
+  assemblies:
+  - Orleans.Persistence.DynamoDB
+  namespace: Orleans.Configuration
+  summary: "\nConstructor\n"
+  example: []
+  syntax:
+    content: public DynamoDBGrainStorageOptionsValidator(DynamoDBStorageOptions options, string name)
+    parameters:
+    - id: options
+      type: Orleans.Configuration.DynamoDBStorageOptions
+      description: The option to be validated.
+    - id: name
+      type: System.String
+      description: The option name to be validated.
+    content.vb: Public Sub New(options As DynamoDBStorageOptions, name As String)
+  overload: Orleans.Configuration.DynamoDBGrainStorageOptionsValidator.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Configuration.DynamoDBGrainStorageOptionsValidator.ValidateConfiguration
+  commentId: M:Orleans.Configuration.DynamoDBGrainStorageOptionsValidator.ValidateConfiguration
+  id: ValidateConfiguration
+  parent: Orleans.Configuration.DynamoDBGrainStorageOptionsValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateConfiguration()
+  nameWithType: DynamoDBGrainStorageOptionsValidator.ValidateConfiguration()
+  fullName: Orleans.Configuration.DynamoDBGrainStorageOptionsValidator.ValidateConfiguration()
+  type: Method
+  source:
+    remote:
+      path: src/AWS/Orleans.Persistence.DynamoDB/Options/DynamoDBStorageOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ValidateConfiguration
+    path: src/AWS/Orleans.Persistence.DynamoDB/Options/DynamoDBStorageOptions.cs
+    startLine: 84
+  assemblies:
+  - Orleans.Persistence.DynamoDB
+  namespace: Orleans.Configuration
+  syntax:
+    content: public void ValidateConfiguration()
+    content.vb: Public Sub ValidateConfiguration
+  overload: Orleans.Configuration.DynamoDBGrainStorageOptionsValidator.ValidateConfiguration*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans.Configuration
+  commentId: N:Orleans.Configuration
+  isExternal: false
+  name: Orleans.Configuration
+  nameWithType: Orleans.Configuration
+  fullName: Orleans.Configuration
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Configuration.DynamoDBGrainStorageOptionsValidator.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<DynamoDBGrainStorageOptionsValidator>()
+  nameWithType: ImmutableExt.AsImmutable<DynamoDBGrainStorageOptionsValidator>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Configuration.DynamoDBGrainStorageOptionsValidator>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of DynamoDBGrainStorageOptionsValidator)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Configuration.DynamoDBGrainStorageOptionsValidator)()
+  name.vb: AsImmutable(Of DynamoDBGrainStorageOptionsValidator)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<DynamoDBGrainStorageOptionsValidator>
+    nameWithType: ImmutableExt.AsImmutable<DynamoDBGrainStorageOptionsValidator>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Configuration.DynamoDBGrainStorageOptionsValidator>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of DynamoDBGrainStorageOptionsValidator)
+    nameWithType: ImmutableExt.AsImmutable(Of DynamoDBGrainStorageOptionsValidator)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Configuration.DynamoDBGrainStorageOptionsValidator)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Configuration.DynamoDBGrainStorageOptionsValidator.#ctor*
+  commentId: Overload:Orleans.Configuration.DynamoDBGrainStorageOptionsValidator.#ctor
+  isExternal: false
+  name: DynamoDBGrainStorageOptionsValidator
+  nameWithType: DynamoDBGrainStorageOptionsValidator.DynamoDBGrainStorageOptionsValidator
+  fullName: Orleans.Configuration.DynamoDBGrainStorageOptionsValidator.DynamoDBGrainStorageOptionsValidator
+- uid: Orleans.Configuration.DynamoDBStorageOptions
+  commentId: T:Orleans.Configuration.DynamoDBStorageOptions
+  parent: Orleans.Configuration
+  isExternal: false
+  name: DynamoDBStorageOptions
+  nameWithType: DynamoDBStorageOptions
+  fullName: Orleans.Configuration.DynamoDBStorageOptions
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Orleans.Configuration.DynamoDBGrainStorageOptionsValidator.ValidateConfiguration*
+  commentId: Overload:Orleans.Configuration.DynamoDBGrainStorageOptionsValidator.ValidateConfiguration
+  isExternal: false
+  name: ValidateConfiguration
+  nameWithType: DynamoDBGrainStorageOptionsValidator.ValidateConfiguration
+  fullName: Orleans.Configuration.DynamoDBGrainStorageOptionsValidator.ValidateConfiguration

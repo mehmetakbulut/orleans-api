@@ -1,0 +1,61 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Versions.Selector
+  commentId: N:Orleans.Versions.Selector
+  id: Orleans.Versions.Selector
+  children:
+  - Orleans.Versions.Selector.AllCompatibleVersions
+  - Orleans.Versions.Selector.IVersionSelector
+  - Orleans.Versions.Selector.LatestVersion
+  - Orleans.Versions.Selector.MinimumVersion
+  - Orleans.Versions.Selector.VersionSelectorStrategy
+  langs:
+  - csharp
+  - vb
+  name: Orleans.Versions.Selector
+  nameWithType: Orleans.Versions.Selector
+  fullName: Orleans.Versions.Selector
+  type: Namespace
+  assemblies:
+  - Orleans.Core.Abstractions
+references:
+- uid: Orleans.Versions.Selector.AllCompatibleVersions
+  commentId: T:Orleans.Versions.Selector.AllCompatibleVersions
+  parent: Orleans.Versions.Selector
+  isExternal: false
+  name: AllCompatibleVersions
+  nameWithType: AllCompatibleVersions
+  fullName: Orleans.Versions.Selector.AllCompatibleVersions
+- uid: Orleans.Versions.Selector.IVersionSelector
+  commentId: T:Orleans.Versions.Selector.IVersionSelector
+  isExternal: false
+  name: IVersionSelector
+  nameWithType: IVersionSelector
+  fullName: Orleans.Versions.Selector.IVersionSelector
+- uid: Orleans.Versions.Selector.VersionSelectorStrategy
+  commentId: T:Orleans.Versions.Selector.VersionSelectorStrategy
+  parent: Orleans.Versions.Selector
+  isExternal: false
+  name: VersionSelectorStrategy
+  nameWithType: VersionSelectorStrategy
+  fullName: Orleans.Versions.Selector.VersionSelectorStrategy
+- uid: Orleans.Versions.Selector.LatestVersion
+  commentId: T:Orleans.Versions.Selector.LatestVersion
+  parent: Orleans.Versions.Selector
+  isExternal: false
+  name: LatestVersion
+  nameWithType: LatestVersion
+  fullName: Orleans.Versions.Selector.LatestVersion
+- uid: Orleans.Versions.Selector.MinimumVersion
+  commentId: T:Orleans.Versions.Selector.MinimumVersion
+  parent: Orleans.Versions.Selector
+  isExternal: false
+  name: MinimumVersion
+  nameWithType: MinimumVersion
+  fullName: Orleans.Versions.Selector.MinimumVersion
+- uid: Orleans.Versions.Selector
+  commentId: N:Orleans.Versions.Selector
+  isExternal: false
+  name: Orleans.Versions.Selector
+  nameWithType: Orleans.Versions.Selector
+  fullName: Orleans.Versions.Selector

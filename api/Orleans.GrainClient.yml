@@ -1,0 +1,906 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.GrainClient
+  commentId: T:Orleans.GrainClient
+  id: GrainClient
+  parent: Orleans
+  children:
+  - Orleans.GrainClient.ClientInvokeCallback
+  - Orleans.GrainClient.ClusterConnectionLost
+  - Orleans.GrainClient.ConfigureLoggingDelegate
+  - Orleans.GrainClient.GetResponseTimeout
+  - Orleans.GrainClient.GetStreamProvider(System.String)
+  - Orleans.GrainClient.GrainFactory
+  - Orleans.GrainClient.HardKill
+  - Orleans.GrainClient.Initialize
+  - Orleans.GrainClient.Initialize(FileInfo)
+  - Orleans.GrainClient.Initialize(IPEndPoint,System.Boolean)
+  - Orleans.GrainClient.Initialize(Orleans.Runtime.Configuration.ClientConfiguration)
+  - Orleans.GrainClient.Initialize(System.String)
+  - Orleans.GrainClient.Instance
+  - Orleans.GrainClient.IsInitialized
+  - Orleans.GrainClient.SetResponseTimeout(TimeSpan)
+  - Orleans.GrainClient.Uninitialize
+  langs:
+  - csharp
+  - vb
+  name: GrainClient
+  nameWithType: GrainClient
+  fullName: Orleans.GrainClient
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Core/GrainClient.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GrainClient
+    path: src/Orleans.Core.Legacy/Core/GrainClient.cs
+    startLine: 17
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans
+  summary: "\nClient runtime for connecting to Orleans system\n"
+  example: []
+  syntax:
+    content: 'public static class GrainClient : object'
+    content.vb: >-
+      Public Module GrainClient
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Orleans.GrainClient.IsInitialized
+  commentId: P:Orleans.GrainClient.IsInitialized
+  id: IsInitialized
+  parent: Orleans.GrainClient
+  langs:
+  - csharp
+  - vb
+  name: IsInitialized
+  nameWithType: GrainClient.IsInitialized
+  fullName: Orleans.GrainClient.IsInitialized
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Core/GrainClient.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IsInitialized
+    path: src/Orleans.Core.Legacy/Core/GrainClient.cs
+    startLine: 26
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans
+  summary: "\nWhether the client runtime has already been initialized\n"
+  example: []
+  syntax:
+    content: public static bool IsInitialized { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: <code>true</code> if client runtime is already initialized
+    content.vb: Public Shared ReadOnly Property IsInitialized As Boolean
+  overload: Orleans.GrainClient.IsInitialized*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Orleans.GrainClient.Instance
+  commentId: P:Orleans.GrainClient.Instance
+  id: Instance
+  parent: Orleans.GrainClient
+  langs:
+  - csharp
+  - vb
+  name: Instance
+  nameWithType: GrainClient.Instance
+  fullName: Orleans.GrainClient.Instance
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Core/GrainClient.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Instance
+    path: src/Orleans.Core.Legacy/Core/GrainClient.cs
+    startLine: 38
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans
+  syntax:
+    content: public static IClusterClient Instance { get; }
+    parameters: []
+    return:
+      type: IClusterClient
+    content.vb: Public Shared ReadOnly Property Instance As IClusterClient
+  overload: Orleans.GrainClient.Instance*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Orleans.GrainClient.GrainFactory
+  commentId: P:Orleans.GrainClient.GrainFactory
+  id: GrainFactory
+  parent: Orleans.GrainClient
+  langs:
+  - csharp
+  - vb
+  name: GrainFactory
+  nameWithType: GrainClient.GrainFactory
+  fullName: Orleans.GrainClient.GrainFactory
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Core/GrainClient.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GrainFactory
+    path: src/Orleans.Core.Legacy/Core/GrainClient.cs
+    startLine: 41
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans
+  syntax:
+    content: public static IGrainFactory GrainFactory { get; }
+    parameters: []
+    return:
+      type: Orleans.IGrainFactory
+    content.vb: Public Shared ReadOnly Property GrainFactory As IGrainFactory
+  overload: Orleans.GrainClient.GrainFactory*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Orleans.GrainClient.ConfigureLoggingDelegate
+  commentId: P:Orleans.GrainClient.ConfigureLoggingDelegate
+  id: ConfigureLoggingDelegate
+  parent: Orleans.GrainClient
+  langs:
+  - csharp
+  - vb
+  name: ConfigureLoggingDelegate
+  nameWithType: GrainClient.ConfigureLoggingDelegate
+  fullName: Orleans.GrainClient.ConfigureLoggingDelegate
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Core/GrainClient.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ConfigureLoggingDelegate
+    path: src/Orleans.Core.Legacy/Core/GrainClient.cs
+    startLine: 45
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans
+  summary: delegate to configure logging, default to none logger configured
+  example: []
+  syntax:
+    content: public static Action<ILoggingBuilder> ConfigureLoggingDelegate { get; set; }
+    parameters: []
+    return:
+      type: Action{ILoggingBuilder}
+    content.vb: Public Shared Property ConfigureLoggingDelegate As Action(Of ILoggingBuilder)
+  overload: Orleans.GrainClient.ConfigureLoggingDelegate*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.GrainClient.Initialize
+  commentId: M:Orleans.GrainClient.Initialize
+  id: Initialize
+  parent: Orleans.GrainClient
+  langs:
+  - csharp
+  - vb
+  name: Initialize()
+  nameWithType: GrainClient.Initialize()
+  fullName: Orleans.GrainClient.Initialize()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Core/GrainClient.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Initialize
+    path: src/Orleans.Core.Legacy/Core/GrainClient.cs
+    startLine: 60
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans
+  summary: "\nInitializes the client runtime from the standard client configuration file.\n"
+  example: []
+  syntax:
+    content: public static void Initialize()
+    content.vb: Public Shared Sub Initialize
+  overload: Orleans.GrainClient.Initialize*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.GrainClient.Initialize(System.String)
+  commentId: M:Orleans.GrainClient.Initialize(System.String)
+  id: Initialize(System.String)
+  parent: Orleans.GrainClient
+  langs:
+  - csharp
+  - vb
+  name: Initialize(String)
+  nameWithType: GrainClient.Initialize(String)
+  fullName: Orleans.GrainClient.Initialize(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Core/GrainClient.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Initialize
+    path: src/Orleans.Core.Legacy/Core/GrainClient.cs
+    startLine: 82
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans
+  summary: "\nInitializes the client runtime from the provided client configuration file.\nIf an error occurs reading the specified configuration file, the initialization fails.\n"
+  example: []
+  syntax:
+    content: public static void Initialize(string configFilePath)
+    parameters:
+    - id: configFilePath
+      type: System.String
+      description: A relative or absolute pathname for the client configuration file.
+    content.vb: Public Shared Sub Initialize(configFilePath As String)
+  overload: Orleans.GrainClient.Initialize*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.GrainClient.Initialize(FileInfo)
+  commentId: M:Orleans.GrainClient.Initialize(FileInfo)
+  id: Initialize(FileInfo)
+  parent: Orleans.GrainClient
+  langs:
+  - csharp
+  - vb
+  name: Initialize(FileInfo)
+  nameWithType: GrainClient.Initialize(FileInfo)
+  fullName: Orleans.GrainClient.Initialize(FileInfo)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Core/GrainClient.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Initialize
+    path: src/Orleans.Core.Legacy/Core/GrainClient.cs
+    startLine: 93
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans
+  summary: "\nInitializes the client runtime from the provided client configuration file.\nIf an error occurs reading the specified configuration file, the initialization fails.\n"
+  example: []
+  syntax:
+    content: public static void Initialize(FileInfo configFile)
+    parameters:
+    - id: configFile
+      type: FileInfo
+      description: The client configuration file.
+    content.vb: Public Shared Sub Initialize(configFile As FileInfo)
+  overload: Orleans.GrainClient.Initialize*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.GrainClient.Initialize(Orleans.Runtime.Configuration.ClientConfiguration)
+  commentId: M:Orleans.GrainClient.Initialize(Orleans.Runtime.Configuration.ClientConfiguration)
+  id: Initialize(Orleans.Runtime.Configuration.ClientConfiguration)
+  parent: Orleans.GrainClient
+  langs:
+  - csharp
+  - vb
+  name: Initialize(ClientConfiguration)
+  nameWithType: GrainClient.Initialize(ClientConfiguration)
+  fullName: Orleans.GrainClient.Initialize(Orleans.Runtime.Configuration.ClientConfiguration)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Core/GrainClient.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Initialize
+    path: src/Orleans.Core.Legacy/Core/GrainClient.cs
+    startLine: 125
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans
+  summary: "\nInitializes the client runtime from the provided client configuration object.\nIf the configuration object is null, the initialization fails.\n"
+  example: []
+  syntax:
+    content: public static void Initialize(ClientConfiguration config)
+    parameters:
+    - id: config
+      type: Orleans.Runtime.Configuration.ClientConfiguration
+      description: A ClientConfiguration object.
+    content.vb: Public Shared Sub Initialize(config As ClientConfiguration)
+  overload: Orleans.GrainClient.Initialize*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.GrainClient.Initialize(IPEndPoint,System.Boolean)
+  commentId: M:Orleans.GrainClient.Initialize(IPEndPoint,System.Boolean)
+  id: Initialize(IPEndPoint,System.Boolean)
+  parent: Orleans.GrainClient
+  langs:
+  - csharp
+  - vb
+  name: Initialize(IPEndPoint, Boolean)
+  nameWithType: GrainClient.Initialize(IPEndPoint, Boolean)
+  fullName: Orleans.GrainClient.Initialize(IPEndPoint, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Core/GrainClient.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Initialize
+    path: src/Orleans.Core.Legacy/Core/GrainClient.cs
+    startLine: 147
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans
+  summary: "\nInitializes the client runtime from the standard client configuration file using the provided gateway address.\nAny gateway addresses specified in the config file will be ignored and the provided gateway address wil be used instead.\n"
+  example: []
+  syntax:
+    content: public static void Initialize(IPEndPoint gatewayAddress, bool overrideConfig = true)
+    parameters:
+    - id: gatewayAddress
+      type: IPEndPoint
+      description: IP address and port of the gateway silo
+    - id: overrideConfig
+      type: System.Boolean
+      description: Whether the specified gateway endpoint should override / replace the values from config file, or be additive
+    content.vb: Public Shared Sub Initialize(gatewayAddress As IPEndPoint, overrideConfig As Boolean = True)
+  overload: Orleans.GrainClient.Initialize*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.GrainClient.Uninitialize
+  commentId: M:Orleans.GrainClient.Uninitialize
+  id: Uninitialize
+  parent: Orleans.GrainClient
+  langs:
+  - csharp
+  - vb
+  name: Uninitialize()
+  nameWithType: GrainClient.Uninitialize()
+  fullName: Orleans.GrainClient.Uninitialize()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Core/GrainClient.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Uninitialize
+    path: src/Orleans.Core.Legacy/Core/GrainClient.cs
+    startLine: 229
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans
+  summary: "\nUninitializes client runtime.\n"
+  example: []
+  syntax:
+    content: public static void Uninitialize()
+    content.vb: Public Shared Sub Uninitialize
+  overload: Orleans.GrainClient.Uninitialize*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.GrainClient.HardKill
+  commentId: M:Orleans.GrainClient.HardKill
+  id: HardKill
+  parent: Orleans.GrainClient
+  langs:
+  - csharp
+  - vb
+  name: HardKill()
+  nameWithType: GrainClient.HardKill()
+  fullName: Orleans.GrainClient.HardKill()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Core/GrainClient.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: HardKill
+    path: src/Orleans.Core.Legacy/Core/GrainClient.cs
+    startLine: 241
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans
+  summary: "\nTest hook to uninitialize client without cleanup\n"
+  example: []
+  syntax:
+    content: public static void HardKill()
+    content.vb: Public Shared Sub HardKill
+  overload: Orleans.GrainClient.HardKill*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.GrainClient.SetResponseTimeout(TimeSpan)
+  commentId: M:Orleans.GrainClient.SetResponseTimeout(TimeSpan)
+  id: SetResponseTimeout(TimeSpan)
+  parent: Orleans.GrainClient
+  langs:
+  - csharp
+  - vb
+  name: SetResponseTimeout(TimeSpan)
+  nameWithType: GrainClient.SetResponseTimeout(TimeSpan)
+  fullName: Orleans.GrainClient.SetResponseTimeout(TimeSpan)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Core/GrainClient.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SetResponseTimeout
+    path: src/Orleans.Core.Legacy/Core/GrainClient.cs
+    startLine: 299
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans
+  summary: "\nSet a timeout for responses on this Orleans client.\n"
+  example: []
+  syntax:
+    content: public static void SetResponseTimeout(TimeSpan timeout)
+    parameters:
+    - id: timeout
+      type: TimeSpan
+      description: ''
+    content.vb: Public Shared Sub SetResponseTimeout(timeout As TimeSpan)
+  overload: Orleans.GrainClient.SetResponseTimeout*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.GrainClient.GetResponseTimeout
+  commentId: M:Orleans.GrainClient.GetResponseTimeout
+  id: GetResponseTimeout
+  parent: Orleans.GrainClient
+  langs:
+  - csharp
+  - vb
+  name: GetResponseTimeout()
+  nameWithType: GrainClient.GetResponseTimeout()
+  fullName: Orleans.GrainClient.GetResponseTimeout()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Core/GrainClient.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetResponseTimeout
+    path: src/Orleans.Core.Legacy/Core/GrainClient.cs
+    startLine: 311
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans
+  summary: "\nGet a timeout of responses on this Orleans client.\n"
+  example: []
+  syntax:
+    content: public static TimeSpan GetResponseTimeout()
+    return:
+      type: TimeSpan
+      description: The response timeout.
+    content.vb: Public Shared Function GetResponseTimeout As TimeSpan
+  overload: Orleans.GrainClient.GetResponseTimeout*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.GrainClient.ClientInvokeCallback
+  commentId: P:Orleans.GrainClient.ClientInvokeCallback
+  id: ClientInvokeCallback
+  parent: Orleans.GrainClient
+  langs:
+  - csharp
+  - vb
+  name: ClientInvokeCallback
+  nameWithType: GrainClient.ClientInvokeCallback
+  fullName: Orleans.GrainClient.ClientInvokeCallback
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Core/GrainClient.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ClientInvokeCallback
+    path: src/Orleans.Core.Legacy/Core/GrainClient.cs
+    startLine: 327
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans
+  summary: "\nGlobal pre-call interceptor function\nSynchronous callback made just before a message is about to be constructed and sent by a client to a grain.\nThis call will be made from the same thread that constructs the message to be sent, so any thread-local settings\nsuch as <code>Orleans.RequestContext</code> will be picked up.\nThe action receives an InvokeMethodRequest with details of the method to be invoked, including InterfaceId and MethodId,\nand a <xref href=\"Orleans.IGrain\" data-throw-if-not-resolved=\"false\"></xref> which is the GrainReference this request is being sent through\n"
+  remarks: This callback method should return promptly and do a minimum of work, to avoid blocking calling thread or impacting throughput.
+  example: []
+  syntax:
+    content: public static ClientInvokeCallback ClientInvokeCallback { get; set; }
+    parameters: []
+    return:
+      type: ClientInvokeCallback
+    content.vb: Public Shared Property ClientInvokeCallback As ClientInvokeCallback
+  overload: Orleans.GrainClient.ClientInvokeCallback*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.GrainClient.GetStreamProvider(System.String)
+  commentId: M:Orleans.GrainClient.GetStreamProvider(System.String)
+  id: GetStreamProvider(System.String)
+  parent: Orleans.GrainClient
+  langs:
+  - csharp
+  - vb
+  name: GetStreamProvider(String)
+  nameWithType: GrainClient.GetStreamProvider(String)
+  fullName: Orleans.GrainClient.GetStreamProvider(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Core/GrainClient.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetStreamProvider
+    path: src/Orleans.Core.Legacy/Core/GrainClient.cs
+    startLine: 351
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans
+  syntax:
+    content: public static IStreamProvider GetStreamProvider(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: Orleans.Streams.IStreamProvider
+    content.vb: Public Shared Function GetStreamProvider(name As String) As IStreamProvider
+  overload: Orleans.GrainClient.GetStreamProvider*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.GrainClient.ClusterConnectionLost
+  commentId: E:Orleans.GrainClient.ClusterConnectionLost
+  id: ClusterConnectionLost
+  parent: Orleans.GrainClient
+  langs:
+  - csharp
+  - vb
+  name: ClusterConnectionLost
+  nameWithType: GrainClient.ClusterConnectionLost
+  fullName: Orleans.GrainClient.ClusterConnectionLost
+  type: Event
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Core/GrainClient.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ClusterConnectionLost
+    path: src/Orleans.Core.Legacy/Core/GrainClient.cs
+    startLine: 358
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans
+  syntax:
+    content: public static event ConnectionToClusterLostHandler ClusterConnectionLost
+    return:
+      type: ConnectionToClusterLostHandler
+    content.vb: Public Shared Event ClusterConnectionLost As ConnectionToClusterLostHandler
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Orleans
+  commentId: N:Orleans
+  isExternal: false
+  name: Orleans
+  nameWithType: Orleans
+  fullName: Orleans
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.GrainClient.IsInitialized*
+  commentId: Overload:Orleans.GrainClient.IsInitialized
+  isExternal: false
+  name: IsInitialized
+  nameWithType: GrainClient.IsInitialized
+  fullName: Orleans.GrainClient.IsInitialized
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Orleans.GrainClient.Instance*
+  commentId: Overload:Orleans.GrainClient.Instance
+  isExternal: false
+  name: Instance
+  nameWithType: GrainClient.Instance
+  fullName: Orleans.GrainClient.Instance
+- uid: IClusterClient
+  isExternal: true
+  name: IClusterClient
+  nameWithType: IClusterClient
+  fullName: IClusterClient
+- uid: Orleans.GrainClient.GrainFactory*
+  commentId: Overload:Orleans.GrainClient.GrainFactory
+  isExternal: false
+  name: GrainFactory
+  nameWithType: GrainClient.GrainFactory
+  fullName: Orleans.GrainClient.GrainFactory
+- uid: Orleans.IGrainFactory
+  commentId: T:Orleans.IGrainFactory
+  parent: Orleans
+  isExternal: false
+  name: IGrainFactory
+  nameWithType: IGrainFactory
+  fullName: Orleans.IGrainFactory
+- uid: Orleans.GrainClient.ConfigureLoggingDelegate*
+  commentId: Overload:Orleans.GrainClient.ConfigureLoggingDelegate
+  isExternal: false
+  name: ConfigureLoggingDelegate
+  nameWithType: GrainClient.ConfigureLoggingDelegate
+  fullName: Orleans.GrainClient.ConfigureLoggingDelegate
+- uid: Action{ILoggingBuilder}
+  commentId: '!:Action{ILoggingBuilder}'
+  definition: Action`1
+  name: Action<ILoggingBuilder>
+  nameWithType: Action<ILoggingBuilder>
+  fullName: Action<ILoggingBuilder>
+  nameWithType.vb: Action(Of ILoggingBuilder)
+  fullName.vb: Action(Of ILoggingBuilder)
+  name.vb: Action(Of ILoggingBuilder)
+  spec.csharp:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: ILoggingBuilder
+    name: ILoggingBuilder
+    nameWithType: ILoggingBuilder
+    fullName: ILoggingBuilder
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: ILoggingBuilder
+    name: ILoggingBuilder
+    nameWithType: ILoggingBuilder
+    fullName: ILoggingBuilder
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Action`1
+  isExternal: true
+  name: Action<>
+  nameWithType: Action<>
+  fullName: Action<>
+  nameWithType.vb: Action(Of )
+  fullName.vb: Action(Of )
+  name.vb: Action(Of )
+  spec.csharp:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.GrainClient.Initialize*
+  commentId: Overload:Orleans.GrainClient.Initialize
+  isExternal: false
+  name: Initialize
+  nameWithType: GrainClient.Initialize
+  fullName: Orleans.GrainClient.Initialize
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: FileInfo
+  isExternal: true
+  name: FileInfo
+  nameWithType: FileInfo
+  fullName: FileInfo
+- uid: Orleans.Runtime.Configuration.ClientConfiguration
+  commentId: T:Orleans.Runtime.Configuration.ClientConfiguration
+  parent: Orleans.Runtime.Configuration
+  isExternal: false
+  name: ClientConfiguration
+  nameWithType: ClientConfiguration
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration
+- uid: Orleans.Runtime.Configuration
+  commentId: N:Orleans.Runtime.Configuration
+  isExternal: false
+  name: Orleans.Runtime.Configuration
+  nameWithType: Orleans.Runtime.Configuration
+  fullName: Orleans.Runtime.Configuration
+- uid: IPEndPoint
+  isExternal: true
+  name: IPEndPoint
+  nameWithType: IPEndPoint
+  fullName: IPEndPoint
+- uid: Orleans.GrainClient.Uninitialize*
+  commentId: Overload:Orleans.GrainClient.Uninitialize
+  isExternal: false
+  name: Uninitialize
+  nameWithType: GrainClient.Uninitialize
+  fullName: Orleans.GrainClient.Uninitialize
+- uid: Orleans.GrainClient.HardKill*
+  commentId: Overload:Orleans.GrainClient.HardKill
+  isExternal: false
+  name: HardKill
+  nameWithType: GrainClient.HardKill
+  fullName: Orleans.GrainClient.HardKill
+- uid: Orleans.GrainClient.SetResponseTimeout*
+  commentId: Overload:Orleans.GrainClient.SetResponseTimeout
+  isExternal: false
+  name: SetResponseTimeout
+  nameWithType: GrainClient.SetResponseTimeout
+  fullName: Orleans.GrainClient.SetResponseTimeout
+- uid: TimeSpan
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: TimeSpan
+- uid: Orleans.GrainClient.GetResponseTimeout*
+  commentId: Overload:Orleans.GrainClient.GetResponseTimeout
+  isExternal: false
+  name: GetResponseTimeout
+  nameWithType: GrainClient.GetResponseTimeout
+  fullName: Orleans.GrainClient.GetResponseTimeout
+- uid: Orleans.IGrain
+  commentId: T:Orleans.IGrain
+  parent: Orleans
+  isExternal: false
+  name: IGrain
+  nameWithType: IGrain
+  fullName: Orleans.IGrain
+- uid: Orleans.GrainClient.ClientInvokeCallback*
+  commentId: Overload:Orleans.GrainClient.ClientInvokeCallback
+  isExternal: false
+  name: ClientInvokeCallback
+  nameWithType: GrainClient.ClientInvokeCallback
+  fullName: Orleans.GrainClient.ClientInvokeCallback
+- uid: ClientInvokeCallback
+  commentId: '!:ClientInvokeCallback'
+  isExternal: true
+  name: ClientInvokeCallback
+  nameWithType: ClientInvokeCallback
+  fullName: ClientInvokeCallback
+- uid: Orleans.GrainClient.GetStreamProvider*
+  commentId: Overload:Orleans.GrainClient.GetStreamProvider
+  isExternal: false
+  name: GetStreamProvider
+  nameWithType: GrainClient.GetStreamProvider
+  fullName: Orleans.GrainClient.GetStreamProvider
+- uid: Orleans.Streams.IStreamProvider
+  commentId: T:Orleans.Streams.IStreamProvider
+  parent: Orleans.Streams
+  isExternal: false
+  name: IStreamProvider
+  nameWithType: IStreamProvider
+  fullName: Orleans.Streams.IStreamProvider
+- uid: Orleans.Streams
+  commentId: N:Orleans.Streams
+  isExternal: false
+  name: Orleans.Streams
+  nameWithType: Orleans.Streams
+  fullName: Orleans.Streams
+- uid: ConnectionToClusterLostHandler
+  commentId: '!:ConnectionToClusterLostHandler'
+  isExternal: true
+  name: ConnectionToClusterLostHandler
+  nameWithType: ConnectionToClusterLostHandler
+  fullName: ConnectionToClusterLostHandler

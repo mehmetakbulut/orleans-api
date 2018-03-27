@@ -1,0 +1,419 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Configuration.DynamoDBClusteringOptions
+  commentId: T:Orleans.Configuration.DynamoDBClusteringOptions
+  id: DynamoDBClusteringOptions
+  parent: Orleans.Configuration
+  children:
+  - Orleans.Configuration.DynamoDBClusteringOptions.AccessKey
+  - Orleans.Configuration.DynamoDBClusteringOptions.ReadCapacityUnits
+  - Orleans.Configuration.DynamoDBClusteringOptions.SecretKey
+  - Orleans.Configuration.DynamoDBClusteringOptions.Service
+  - Orleans.Configuration.DynamoDBClusteringOptions.TableName
+  - Orleans.Configuration.DynamoDBClusteringOptions.WriteCapacityUnits
+  langs:
+  - csharp
+  - vb
+  name: DynamoDBClusteringOptions
+  nameWithType: DynamoDBClusteringOptions
+  fullName: Orleans.Configuration.DynamoDBClusteringOptions
+  type: Class
+  source:
+    remote:
+      path: src/AWS/Orleans.Clustering.DynamoDB/Options/DynamoDBClusteringOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: DynamoDBClusteringOptions
+    path: src/AWS/Orleans.Clustering.DynamoDB/Options/DynamoDBClusteringOptions.cs
+    startLine: 4
+  assemblies:
+  - Orleans.Clustering.DynamoDB
+  namespace: Orleans.Configuration
+  syntax:
+    content: 'public class DynamoDBClusteringOptions : object'
+    content.vb: >-
+      Public Class DynamoDBClusteringOptions
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.Configuration.DynamoDBClusteringOptions.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.Configuration.DynamoDBClusteringOptions.AccessKey
+  commentId: P:Orleans.Configuration.DynamoDBClusteringOptions.AccessKey
+  id: AccessKey
+  parent: Orleans.Configuration.DynamoDBClusteringOptions
+  langs:
+  - csharp
+  - vb
+  name: AccessKey
+  nameWithType: DynamoDBClusteringOptions.AccessKey
+  fullName: Orleans.Configuration.DynamoDBClusteringOptions.AccessKey
+  type: Property
+  source:
+    remote:
+      path: src/AWS/Orleans.Clustering.DynamoDB/Options/DynamoDBClusteringOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AccessKey
+    path: src/AWS/Orleans.Clustering.DynamoDB/Options/DynamoDBClusteringOptions.cs
+    startLine: 9
+  assemblies:
+  - Orleans.Clustering.DynamoDB
+  namespace: Orleans.Configuration
+  summary: "\nAccessKey string for DynamoDB Storage\n"
+  example: []
+  syntax:
+    content: public string AccessKey { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property AccessKey As String
+  overload: Orleans.Configuration.DynamoDBClusteringOptions.AccessKey*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Configuration.DynamoDBClusteringOptions.SecretKey
+  commentId: P:Orleans.Configuration.DynamoDBClusteringOptions.SecretKey
+  id: SecretKey
+  parent: Orleans.Configuration.DynamoDBClusteringOptions
+  langs:
+  - csharp
+  - vb
+  name: SecretKey
+  nameWithType: DynamoDBClusteringOptions.SecretKey
+  fullName: Orleans.Configuration.DynamoDBClusteringOptions.SecretKey
+  type: Property
+  source:
+    remote:
+      path: src/AWS/Orleans.Clustering.DynamoDB/Options/DynamoDBClusteringOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SecretKey
+    path: src/AWS/Orleans.Clustering.DynamoDB/Options/DynamoDBClusteringOptions.cs
+    startLine: 15
+  assemblies:
+  - Orleans.Clustering.DynamoDB
+  namespace: Orleans.Configuration
+  summary: "\nSecret key for DynamoDB storage\n"
+  example: []
+  syntax:
+    content: public string SecretKey { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property SecretKey As String
+  overload: Orleans.Configuration.DynamoDBClusteringOptions.SecretKey*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Configuration.DynamoDBClusteringOptions.Service
+  commentId: P:Orleans.Configuration.DynamoDBClusteringOptions.Service
+  id: Service
+  parent: Orleans.Configuration.DynamoDBClusteringOptions
+  langs:
+  - csharp
+  - vb
+  name: Service
+  nameWithType: DynamoDBClusteringOptions.Service
+  fullName: Orleans.Configuration.DynamoDBClusteringOptions.Service
+  type: Property
+  source:
+    remote:
+      path: src/AWS/Orleans.Clustering.DynamoDB/Options/DynamoDBClusteringOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Service
+    path: src/AWS/Orleans.Clustering.DynamoDB/Options/DynamoDBClusteringOptions.cs
+    startLine: 21
+  assemblies:
+  - Orleans.Clustering.DynamoDB
+  namespace: Orleans.Configuration
+  summary: "\nDynamoDB Service name \n"
+  example: []
+  syntax:
+    content: public string Service { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Service As String
+  overload: Orleans.Configuration.DynamoDBClusteringOptions.Service*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Configuration.DynamoDBClusteringOptions.ReadCapacityUnits
+  commentId: P:Orleans.Configuration.DynamoDBClusteringOptions.ReadCapacityUnits
+  id: ReadCapacityUnits
+  parent: Orleans.Configuration.DynamoDBClusteringOptions
+  langs:
+  - csharp
+  - vb
+  name: ReadCapacityUnits
+  nameWithType: DynamoDBClusteringOptions.ReadCapacityUnits
+  fullName: Orleans.Configuration.DynamoDBClusteringOptions.ReadCapacityUnits
+  type: Property
+  source:
+    remote:
+      path: src/AWS/Orleans.Clustering.DynamoDB/Options/DynamoDBClusteringOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ReadCapacityUnits
+    path: src/AWS/Orleans.Clustering.DynamoDB/Options/DynamoDBClusteringOptions.cs
+    startLine: 26
+  assemblies:
+  - Orleans.Clustering.DynamoDB
+  namespace: Orleans.Configuration
+  summary: "\nRead capacity unit for DynamoDB storage\n"
+  example: []
+  syntax:
+    content: public int ReadCapacityUnits { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property ReadCapacityUnits As Integer
+  overload: Orleans.Configuration.DynamoDBClusteringOptions.ReadCapacityUnits*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Configuration.DynamoDBClusteringOptions.WriteCapacityUnits
+  commentId: P:Orleans.Configuration.DynamoDBClusteringOptions.WriteCapacityUnits
+  id: WriteCapacityUnits
+  parent: Orleans.Configuration.DynamoDBClusteringOptions
+  langs:
+  - csharp
+  - vb
+  name: WriteCapacityUnits
+  nameWithType: DynamoDBClusteringOptions.WriteCapacityUnits
+  fullName: Orleans.Configuration.DynamoDBClusteringOptions.WriteCapacityUnits
+  type: Property
+  source:
+    remote:
+      path: src/AWS/Orleans.Clustering.DynamoDB/Options/DynamoDBClusteringOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: WriteCapacityUnits
+    path: src/AWS/Orleans.Clustering.DynamoDB/Options/DynamoDBClusteringOptions.cs
+    startLine: 31
+  assemblies:
+  - Orleans.Clustering.DynamoDB
+  namespace: Orleans.Configuration
+  summary: "\nWrite capacity unit for DynamoDB storage\n"
+  example: []
+  syntax:
+    content: public int WriteCapacityUnits { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property WriteCapacityUnits As Integer
+  overload: Orleans.Configuration.DynamoDBClusteringOptions.WriteCapacityUnits*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Configuration.DynamoDBClusteringOptions.TableName
+  commentId: P:Orleans.Configuration.DynamoDBClusteringOptions.TableName
+  id: TableName
+  parent: Orleans.Configuration.DynamoDBClusteringOptions
+  langs:
+  - csharp
+  - vb
+  name: TableName
+  nameWithType: DynamoDBClusteringOptions.TableName
+  fullName: Orleans.Configuration.DynamoDBClusteringOptions.TableName
+  type: Property
+  source:
+    remote:
+      path: src/AWS/Orleans.Clustering.DynamoDB/Options/DynamoDBClusteringOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: TableName
+    path: src/AWS/Orleans.Clustering.DynamoDB/Options/DynamoDBClusteringOptions.cs
+    startLine: 37
+  assemblies:
+  - Orleans.Clustering.DynamoDB
+  namespace: Orleans.Configuration
+  summary: "\nDynamoDB table name.\nDefaults to &apos;OrleansSilos&apos;.\n"
+  example: []
+  syntax:
+    content: public string TableName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property TableName As String
+  overload: Orleans.Configuration.DynamoDBClusteringOptions.TableName*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans.Configuration
+  commentId: N:Orleans.Configuration
+  isExternal: false
+  name: Orleans.Configuration
+  nameWithType: Orleans.Configuration
+  fullName: Orleans.Configuration
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Configuration.DynamoDBClusteringOptions.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<DynamoDBClusteringOptions>()
+  nameWithType: ImmutableExt.AsImmutable<DynamoDBClusteringOptions>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Configuration.DynamoDBClusteringOptions>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of DynamoDBClusteringOptions)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Configuration.DynamoDBClusteringOptions)()
+  name.vb: AsImmutable(Of DynamoDBClusteringOptions)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<DynamoDBClusteringOptions>
+    nameWithType: ImmutableExt.AsImmutable<DynamoDBClusteringOptions>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Configuration.DynamoDBClusteringOptions>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of DynamoDBClusteringOptions)
+    nameWithType: ImmutableExt.AsImmutable(Of DynamoDBClusteringOptions)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Configuration.DynamoDBClusteringOptions)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Configuration.DynamoDBClusteringOptions.AccessKey*
+  commentId: Overload:Orleans.Configuration.DynamoDBClusteringOptions.AccessKey
+  isExternal: false
+  name: AccessKey
+  nameWithType: DynamoDBClusteringOptions.AccessKey
+  fullName: Orleans.Configuration.DynamoDBClusteringOptions.AccessKey
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Orleans.Configuration.DynamoDBClusteringOptions.SecretKey*
+  commentId: Overload:Orleans.Configuration.DynamoDBClusteringOptions.SecretKey
+  isExternal: false
+  name: SecretKey
+  nameWithType: DynamoDBClusteringOptions.SecretKey
+  fullName: Orleans.Configuration.DynamoDBClusteringOptions.SecretKey
+- uid: Orleans.Configuration.DynamoDBClusteringOptions.Service*
+  commentId: Overload:Orleans.Configuration.DynamoDBClusteringOptions.Service
+  isExternal: false
+  name: Service
+  nameWithType: DynamoDBClusteringOptions.Service
+  fullName: Orleans.Configuration.DynamoDBClusteringOptions.Service
+- uid: Orleans.Configuration.DynamoDBClusteringOptions.ReadCapacityUnits*
+  commentId: Overload:Orleans.Configuration.DynamoDBClusteringOptions.ReadCapacityUnits
+  isExternal: false
+  name: ReadCapacityUnits
+  nameWithType: DynamoDBClusteringOptions.ReadCapacityUnits
+  fullName: Orleans.Configuration.DynamoDBClusteringOptions.ReadCapacityUnits
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Orleans.Configuration.DynamoDBClusteringOptions.WriteCapacityUnits*
+  commentId: Overload:Orleans.Configuration.DynamoDBClusteringOptions.WriteCapacityUnits
+  isExternal: false
+  name: WriteCapacityUnits
+  nameWithType: DynamoDBClusteringOptions.WriteCapacityUnits
+  fullName: Orleans.Configuration.DynamoDBClusteringOptions.WriteCapacityUnits
+- uid: Orleans.Configuration.DynamoDBClusteringOptions.TableName*
+  commentId: Overload:Orleans.Configuration.DynamoDBClusteringOptions.TableName
+  isExternal: false
+  name: TableName
+  nameWithType: DynamoDBClusteringOptions.TableName
+  fullName: Orleans.Configuration.DynamoDBClusteringOptions.TableName

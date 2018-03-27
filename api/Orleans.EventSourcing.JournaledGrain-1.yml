@@ -1,0 +1,2057 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.EventSourcing.JournaledGrain`1
+  commentId: T:Orleans.EventSourcing.JournaledGrain`1
+  id: JournaledGrain`1
+  parent: Orleans.EventSourcing
+  children:
+  - Orleans.EventSourcing.JournaledGrain`1.#ctor
+  - Orleans.EventSourcing.JournaledGrain`1.#ctor(Orleans.Core.IGrainIdentity,Orleans.Runtime.IGrainRuntime)
+  langs:
+  - csharp
+  - vb
+  name: JournaledGrain<TGrainState>
+  nameWithType: JournaledGrain<TGrainState>
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState>
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/JournaledGrain.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: JournaledGrain
+    path: src/Orleans.EventSourcing/JournaledGrain.cs
+    startLine: 17
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing
+  summary: "\nA base class for log-consistent grains using standard event-sourcing terminology.\nAll operations are reentrancy-safe.\n<typeparam name=\"TGrainState\">The type for the grain state, i.e. the aggregate view of the event log.</typeparam>\n"
+  example: []
+  syntax:
+    content: 'public abstract class JournaledGrain<TGrainState> : JournaledGrain<TGrainState, object>, ILogConsistencyProtocolParticipant, ILogViewAdaptorHost<TGrainState, object> where TGrainState : class, new ()'
+    typeParameters:
+    - id: TGrainState
+    content.vb: >-
+      Public MustInherit Class JournaledGrain(Of TGrainState As {Class, New})
+
+          Inherits JournaledGrain(Of TGrainState, Object)
+
+          Implements ILogConsistencyProtocolParticipant, ILogViewAdaptorHost(Of TGrainState, Object)
+  inheritance:
+  - System.Object
+  - Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}
+  implements:
+  - ILogConsistencyProtocolParticipant
+  - ILogViewAdaptorHost{{TGrainState},System.Object}
+  inheritedMembers:
+  - Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}.RaiseEvent``1({TEvent})
+  - Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}.RaiseEvents``1(IEnumerable{{TEvent}})
+  - Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}.RaiseConditionalEvent``1({TEvent})
+  - Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}.RaiseConditionalEvents``1(IEnumerable{{TEvent}})
+  - Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}.State
+  - Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}.Version
+  - Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}.OnTentativeStateChanged
+  - Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}.TentativeState
+  - Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}.OnStateChanged
+  - Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}.ConfirmEvents
+  - Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}.RefreshNow
+  - Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}.UnconfirmedEvents
+  - Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}.OnActivateAsync
+  - Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}.RetrieveConfirmedEvents(System.Int32,System.Int32)
+  - Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}.OnConnectionIssue(Orleans.LogConsistency.ConnectionIssue)
+  - Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}.OnConnectionIssueResolved(Orleans.LogConsistency.ConnectionIssue)
+  - Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}.UnresolvedConnectionIssues
+  - Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}.EnableStatsCollection
+  - Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}.DisableStatsCollection
+  - Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}.GetStats
+  - Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}.TransitionState({TGrainState},System.Object)
+  - Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}.InstallAdaptor(ILogViewAdaptorFactory,System.Object,System.String,IGrainStorage,ILogConsistencyProtocolServices)
+  - Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}.DefaultAdaptorFactory
+  extensionMethods:
+  - Orleans.EventSourcing.JournaledGrain`1.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  nameWithType.vb: JournaledGrain(Of TGrainState)
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState)
+  name.vb: JournaledGrain(Of TGrainState)
+- uid: Orleans.EventSourcing.JournaledGrain`1.#ctor
+  commentId: M:Orleans.EventSourcing.JournaledGrain`1.#ctor
+  id: '#ctor'
+  parent: Orleans.EventSourcing.JournaledGrain`1
+  langs:
+  - csharp
+  - vb
+  name: JournaledGrain()
+  nameWithType: JournaledGrain<TGrainState>.JournaledGrain()
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState>.JournaledGrain()
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/JournaledGrain.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.EventSourcing/JournaledGrain.cs
+    startLine: 20
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing
+  syntax:
+    content: protected JournaledGrain()
+    content.vb: Protected Sub New
+  overload: Orleans.EventSourcing.JournaledGrain`1.#ctor*
+  nameWithType.vb: JournaledGrain(Of TGrainState).JournaledGrain()
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState).JournaledGrain()
+- uid: Orleans.EventSourcing.JournaledGrain`1.#ctor(Orleans.Core.IGrainIdentity,Orleans.Runtime.IGrainRuntime)
+  commentId: M:Orleans.EventSourcing.JournaledGrain`1.#ctor(Orleans.Core.IGrainIdentity,Orleans.Runtime.IGrainRuntime)
+  id: '#ctor(Orleans.Core.IGrainIdentity,Orleans.Runtime.IGrainRuntime)'
+  parent: Orleans.EventSourcing.JournaledGrain`1
+  langs:
+  - csharp
+  - vb
+  name: JournaledGrain(IGrainIdentity, IGrainRuntime)
+  nameWithType: JournaledGrain<TGrainState>.JournaledGrain(IGrainIdentity, IGrainRuntime)
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState>.JournaledGrain(Orleans.Core.IGrainIdentity, Orleans.Runtime.IGrainRuntime)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/JournaledGrain.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.EventSourcing/JournaledGrain.cs
+    startLine: 26
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing
+  summary: "\nThis constructor is particularly useful for unit testing where test code can create a Grain and replace\nthe IGrainIdentity, IGrainRuntime and State with test doubles (mocks/stubs).\n"
+  example: []
+  syntax:
+    content: protected JournaledGrain(IGrainIdentity identity, IGrainRuntime runtime)
+    parameters:
+    - id: identity
+      type: Orleans.Core.IGrainIdentity
+    - id: runtime
+      type: Orleans.Runtime.IGrainRuntime
+    content.vb: Protected Sub New(identity As IGrainIdentity, runtime As IGrainRuntime)
+  overload: Orleans.EventSourcing.JournaledGrain`1.#ctor*
+  nameWithType.vb: JournaledGrain(Of TGrainState).JournaledGrain(IGrainIdentity, IGrainRuntime)
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState).JournaledGrain(Orleans.Core.IGrainIdentity, Orleans.Runtime.IGrainRuntime)
+references:
+- uid: Orleans.EventSourcing
+  commentId: N:Orleans.EventSourcing
+  isExternal: false
+  name: Orleans.EventSourcing
+  nameWithType: Orleans.EventSourcing
+  fullName: Orleans.EventSourcing
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}
+  commentId: T:Orleans.EventSourcing.JournaledGrain{`0,System.Object}
+  parent: Orleans.EventSourcing
+  definition: Orleans.EventSourcing.JournaledGrain`2
+  name: JournaledGrain<TGrainState, Object>
+  nameWithType: JournaledGrain<TGrainState, Object>
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, System.Object>
+  nameWithType.vb: JournaledGrain(Of TGrainState, Object)
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, System.Object)
+  name.vb: JournaledGrain(Of TGrainState, Object)
+  spec.csharp:
+  - uid: Orleans.EventSourcing.JournaledGrain`2
+    name: JournaledGrain
+    nameWithType: JournaledGrain
+    fullName: Orleans.EventSourcing.JournaledGrain
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TGrainState
+    nameWithType: TGrainState
+    fullName: TGrainState
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Orleans.EventSourcing.JournaledGrain`2
+    name: JournaledGrain
+    nameWithType: JournaledGrain
+    fullName: Orleans.EventSourcing.JournaledGrain
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TGrainState
+    nameWithType: TGrainState
+    fullName: TGrainState
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: ILogConsistencyProtocolParticipant
+  isExternal: true
+  name: ILogConsistencyProtocolParticipant
+  nameWithType: ILogConsistencyProtocolParticipant
+  fullName: ILogConsistencyProtocolParticipant
+- uid: ILogViewAdaptorHost{{TGrainState},System.Object}
+  commentId: '!:ILogViewAdaptorHost{`0,System.Object}'
+  definition: ILogViewAdaptorHost`2
+  name: ILogViewAdaptorHost<TGrainState, Object>
+  nameWithType: ILogViewAdaptorHost<TGrainState, Object>
+  fullName: ILogViewAdaptorHost<TGrainState, System.Object>
+  nameWithType.vb: ILogViewAdaptorHost(Of TGrainState, Object)
+  fullName.vb: ILogViewAdaptorHost(Of TGrainState, System.Object)
+  name.vb: ILogViewAdaptorHost(Of TGrainState, Object)
+  spec.csharp:
+  - uid: ILogViewAdaptorHost`2
+    name: ILogViewAdaptorHost
+    nameWithType: ILogViewAdaptorHost
+    fullName: ILogViewAdaptorHost
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TGrainState
+    nameWithType: TGrainState
+    fullName: TGrainState
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ILogViewAdaptorHost`2
+    name: ILogViewAdaptorHost
+    nameWithType: ILogViewAdaptorHost
+    fullName: ILogViewAdaptorHost
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TGrainState
+    nameWithType: TGrainState
+    fullName: TGrainState
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}.RaiseEvent``1({TEvent})
+  commentId: M:Orleans.EventSourcing.JournaledGrain{`0,System.Object}.RaiseEvent``1(``0)
+  parent: Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}
+  definition: Orleans.EventSourcing.JournaledGrain`2.RaiseEvent``1(``0)
+  name: RaiseEvent<TEvent>(TEvent)
+  nameWithType: JournaledGrain<TGrainState, Object>.RaiseEvent<TEvent>(TEvent)
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, System.Object>.RaiseEvent<TEvent>(TEvent)
+  nameWithType.vb: JournaledGrain(Of TGrainState, Object).RaiseEvent(Of TEvent)(TEvent)
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, System.Object).RaiseEvent(Of TEvent)(TEvent)
+  name.vb: RaiseEvent(Of TEvent)(TEvent)
+  spec.csharp:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.RaiseEvent``1(``0)
+    name: RaiseEvent<TEvent>
+    nameWithType: JournaledGrain<TGrainState, Object>.RaiseEvent<TEvent>
+    fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, System.Object>.RaiseEvent<TEvent>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEvent
+    nameWithType: TEvent
+    fullName: TEvent
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.RaiseEvent``1(``0)
+    name: RaiseEvent(Of TEvent)
+    nameWithType: JournaledGrain(Of TGrainState, Object).RaiseEvent(Of TEvent)
+    fullName: Orleans.EventSourcing.JournaledGrain(Of TGrainState, System.Object).RaiseEvent(Of TEvent)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEvent
+    nameWithType: TEvent
+    fullName: TEvent
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}.RaiseEvents``1(IEnumerable{{TEvent}})
+  commentId: M:Orleans.EventSourcing.JournaledGrain{`0,System.Object}.RaiseEvents``1(IEnumerable{``0})
+  parent: Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}
+  definition: Orleans.EventSourcing.JournaledGrain`2.RaiseEvents``1(IEnumerable{``0})
+  name: RaiseEvents<TEvent>(IEnumerable<TEvent>)
+  nameWithType: JournaledGrain<TGrainState, Object>.RaiseEvents<TEvent>(IEnumerable<TEvent>)
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, System.Object>.RaiseEvents<TEvent>(IEnumerable<TEvent>)
+  nameWithType.vb: JournaledGrain(Of TGrainState, Object).RaiseEvents(Of TEvent)(IEnumerable(Of TEvent))
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, System.Object).RaiseEvents(Of TEvent)(IEnumerable(Of TEvent))
+  name.vb: RaiseEvents(Of TEvent)(IEnumerable(Of TEvent))
+  spec.csharp:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.RaiseEvents``1(IEnumerable{``0})
+    name: RaiseEvents<TEvent>
+    nameWithType: JournaledGrain<TGrainState, Object>.RaiseEvents<TEvent>
+    fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, System.Object>.RaiseEvents<TEvent>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEvent
+    nameWithType: TEvent
+    fullName: TEvent
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.RaiseEvents``1(IEnumerable{``0})
+    name: RaiseEvents(Of TEvent)
+    nameWithType: JournaledGrain(Of TGrainState, Object).RaiseEvents(Of TEvent)
+    fullName: Orleans.EventSourcing.JournaledGrain(Of TGrainState, System.Object).RaiseEvents(Of TEvent)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEvent
+    nameWithType: TEvent
+    fullName: TEvent
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}.RaiseConditionalEvent``1({TEvent})
+  commentId: M:Orleans.EventSourcing.JournaledGrain{`0,System.Object}.RaiseConditionalEvent``1(``0)
+  parent: Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}
+  definition: Orleans.EventSourcing.JournaledGrain`2.RaiseConditionalEvent``1(``0)
+  name: RaiseConditionalEvent<TEvent>(TEvent)
+  nameWithType: JournaledGrain<TGrainState, Object>.RaiseConditionalEvent<TEvent>(TEvent)
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, System.Object>.RaiseConditionalEvent<TEvent>(TEvent)
+  nameWithType.vb: JournaledGrain(Of TGrainState, Object).RaiseConditionalEvent(Of TEvent)(TEvent)
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, System.Object).RaiseConditionalEvent(Of TEvent)(TEvent)
+  name.vb: RaiseConditionalEvent(Of TEvent)(TEvent)
+  spec.csharp:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.RaiseConditionalEvent``1(``0)
+    name: RaiseConditionalEvent<TEvent>
+    nameWithType: JournaledGrain<TGrainState, Object>.RaiseConditionalEvent<TEvent>
+    fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, System.Object>.RaiseConditionalEvent<TEvent>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEvent
+    nameWithType: TEvent
+    fullName: TEvent
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.RaiseConditionalEvent``1(``0)
+    name: RaiseConditionalEvent(Of TEvent)
+    nameWithType: JournaledGrain(Of TGrainState, Object).RaiseConditionalEvent(Of TEvent)
+    fullName: Orleans.EventSourcing.JournaledGrain(Of TGrainState, System.Object).RaiseConditionalEvent(Of TEvent)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEvent
+    nameWithType: TEvent
+    fullName: TEvent
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}.RaiseConditionalEvents``1(IEnumerable{{TEvent}})
+  commentId: M:Orleans.EventSourcing.JournaledGrain{`0,System.Object}.RaiseConditionalEvents``1(IEnumerable{``0})
+  parent: Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}
+  definition: Orleans.EventSourcing.JournaledGrain`2.RaiseConditionalEvents``1(IEnumerable{``0})
+  name: RaiseConditionalEvents<TEvent>(IEnumerable<TEvent>)
+  nameWithType: JournaledGrain<TGrainState, Object>.RaiseConditionalEvents<TEvent>(IEnumerable<TEvent>)
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, System.Object>.RaiseConditionalEvents<TEvent>(IEnumerable<TEvent>)
+  nameWithType.vb: JournaledGrain(Of TGrainState, Object).RaiseConditionalEvents(Of TEvent)(IEnumerable(Of TEvent))
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, System.Object).RaiseConditionalEvents(Of TEvent)(IEnumerable(Of TEvent))
+  name.vb: RaiseConditionalEvents(Of TEvent)(IEnumerable(Of TEvent))
+  spec.csharp:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.RaiseConditionalEvents``1(IEnumerable{``0})
+    name: RaiseConditionalEvents<TEvent>
+    nameWithType: JournaledGrain<TGrainState, Object>.RaiseConditionalEvents<TEvent>
+    fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, System.Object>.RaiseConditionalEvents<TEvent>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEvent
+    nameWithType: TEvent
+    fullName: TEvent
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.RaiseConditionalEvents``1(IEnumerable{``0})
+    name: RaiseConditionalEvents(Of TEvent)
+    nameWithType: JournaledGrain(Of TGrainState, Object).RaiseConditionalEvents(Of TEvent)
+    fullName: Orleans.EventSourcing.JournaledGrain(Of TGrainState, System.Object).RaiseConditionalEvents(Of TEvent)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEvent
+    nameWithType: TEvent
+    fullName: TEvent
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}.State
+  commentId: P:Orleans.EventSourcing.JournaledGrain{`0,System.Object}.State
+  parent: Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}
+  definition: Orleans.EventSourcing.JournaledGrain`2.State
+  name: State
+  nameWithType: JournaledGrain<TGrainState, Object>.State
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, System.Object>.State
+  nameWithType.vb: JournaledGrain(Of TGrainState, Object).State
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, System.Object).State
+- uid: Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}.Version
+  commentId: P:Orleans.EventSourcing.JournaledGrain{`0,System.Object}.Version
+  parent: Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}
+  definition: Orleans.EventSourcing.JournaledGrain`2.Version
+  name: Version
+  nameWithType: JournaledGrain<TGrainState, Object>.Version
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, System.Object>.Version
+  nameWithType.vb: JournaledGrain(Of TGrainState, Object).Version
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, System.Object).Version
+- uid: Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}.OnTentativeStateChanged
+  commentId: M:Orleans.EventSourcing.JournaledGrain{`0,System.Object}.OnTentativeStateChanged
+  parent: Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}
+  definition: Orleans.EventSourcing.JournaledGrain`2.OnTentativeStateChanged
+  name: OnTentativeStateChanged()
+  nameWithType: JournaledGrain<TGrainState, Object>.OnTentativeStateChanged()
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, System.Object>.OnTentativeStateChanged()
+  nameWithType.vb: JournaledGrain(Of TGrainState, Object).OnTentativeStateChanged()
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, System.Object).OnTentativeStateChanged()
+  spec.csharp:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.OnTentativeStateChanged
+    name: OnTentativeStateChanged
+    nameWithType: JournaledGrain<TGrainState, Object>.OnTentativeStateChanged
+    fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, System.Object>.OnTentativeStateChanged
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.OnTentativeStateChanged
+    name: OnTentativeStateChanged
+    nameWithType: JournaledGrain(Of TGrainState, Object).OnTentativeStateChanged
+    fullName: Orleans.EventSourcing.JournaledGrain(Of TGrainState, System.Object).OnTentativeStateChanged
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}.TentativeState
+  commentId: P:Orleans.EventSourcing.JournaledGrain{`0,System.Object}.TentativeState
+  parent: Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}
+  definition: Orleans.EventSourcing.JournaledGrain`2.TentativeState
+  name: TentativeState
+  nameWithType: JournaledGrain<TGrainState, Object>.TentativeState
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, System.Object>.TentativeState
+  nameWithType.vb: JournaledGrain(Of TGrainState, Object).TentativeState
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, System.Object).TentativeState
+- uid: Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}.OnStateChanged
+  commentId: M:Orleans.EventSourcing.JournaledGrain{`0,System.Object}.OnStateChanged
+  parent: Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}
+  definition: Orleans.EventSourcing.JournaledGrain`2.OnStateChanged
+  name: OnStateChanged()
+  nameWithType: JournaledGrain<TGrainState, Object>.OnStateChanged()
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, System.Object>.OnStateChanged()
+  nameWithType.vb: JournaledGrain(Of TGrainState, Object).OnStateChanged()
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, System.Object).OnStateChanged()
+  spec.csharp:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.OnStateChanged
+    name: OnStateChanged
+    nameWithType: JournaledGrain<TGrainState, Object>.OnStateChanged
+    fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, System.Object>.OnStateChanged
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.OnStateChanged
+    name: OnStateChanged
+    nameWithType: JournaledGrain(Of TGrainState, Object).OnStateChanged
+    fullName: Orleans.EventSourcing.JournaledGrain(Of TGrainState, System.Object).OnStateChanged
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}.ConfirmEvents
+  commentId: M:Orleans.EventSourcing.JournaledGrain{`0,System.Object}.ConfirmEvents
+  parent: Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}
+  definition: Orleans.EventSourcing.JournaledGrain`2.ConfirmEvents
+  name: ConfirmEvents()
+  nameWithType: JournaledGrain<TGrainState, Object>.ConfirmEvents()
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, System.Object>.ConfirmEvents()
+  nameWithType.vb: JournaledGrain(Of TGrainState, Object).ConfirmEvents()
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, System.Object).ConfirmEvents()
+  spec.csharp:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.ConfirmEvents
+    name: ConfirmEvents
+    nameWithType: JournaledGrain<TGrainState, Object>.ConfirmEvents
+    fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, System.Object>.ConfirmEvents
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.ConfirmEvents
+    name: ConfirmEvents
+    nameWithType: JournaledGrain(Of TGrainState, Object).ConfirmEvents
+    fullName: Orleans.EventSourcing.JournaledGrain(Of TGrainState, System.Object).ConfirmEvents
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}.RefreshNow
+  commentId: M:Orleans.EventSourcing.JournaledGrain{`0,System.Object}.RefreshNow
+  parent: Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}
+  definition: Orleans.EventSourcing.JournaledGrain`2.RefreshNow
+  name: RefreshNow()
+  nameWithType: JournaledGrain<TGrainState, Object>.RefreshNow()
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, System.Object>.RefreshNow()
+  nameWithType.vb: JournaledGrain(Of TGrainState, Object).RefreshNow()
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, System.Object).RefreshNow()
+  spec.csharp:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.RefreshNow
+    name: RefreshNow
+    nameWithType: JournaledGrain<TGrainState, Object>.RefreshNow
+    fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, System.Object>.RefreshNow
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.RefreshNow
+    name: RefreshNow
+    nameWithType: JournaledGrain(Of TGrainState, Object).RefreshNow
+    fullName: Orleans.EventSourcing.JournaledGrain(Of TGrainState, System.Object).RefreshNow
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}.UnconfirmedEvents
+  commentId: P:Orleans.EventSourcing.JournaledGrain{`0,System.Object}.UnconfirmedEvents
+  parent: Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}
+  definition: Orleans.EventSourcing.JournaledGrain`2.UnconfirmedEvents
+  name: UnconfirmedEvents
+  nameWithType: JournaledGrain<TGrainState, Object>.UnconfirmedEvents
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, System.Object>.UnconfirmedEvents
+  nameWithType.vb: JournaledGrain(Of TGrainState, Object).UnconfirmedEvents
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, System.Object).UnconfirmedEvents
+- uid: Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}.OnActivateAsync
+  commentId: M:Orleans.EventSourcing.JournaledGrain{`0,System.Object}.OnActivateAsync
+  parent: Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}
+  definition: Orleans.EventSourcing.JournaledGrain`2.OnActivateAsync
+  name: OnActivateAsync()
+  nameWithType: JournaledGrain<TGrainState, Object>.OnActivateAsync()
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, System.Object>.OnActivateAsync()
+  nameWithType.vb: JournaledGrain(Of TGrainState, Object).OnActivateAsync()
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, System.Object).OnActivateAsync()
+  spec.csharp:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.OnActivateAsync
+    name: OnActivateAsync
+    nameWithType: JournaledGrain<TGrainState, Object>.OnActivateAsync
+    fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, System.Object>.OnActivateAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.OnActivateAsync
+    name: OnActivateAsync
+    nameWithType: JournaledGrain(Of TGrainState, Object).OnActivateAsync
+    fullName: Orleans.EventSourcing.JournaledGrain(Of TGrainState, System.Object).OnActivateAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}.RetrieveConfirmedEvents(System.Int32,System.Int32)
+  commentId: M:Orleans.EventSourcing.JournaledGrain{`0,System.Object}.RetrieveConfirmedEvents(System.Int32,System.Int32)
+  parent: Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}
+  definition: Orleans.EventSourcing.JournaledGrain`2.RetrieveConfirmedEvents(System.Int32,System.Int32)
+  name: RetrieveConfirmedEvents(Int32, Int32)
+  nameWithType: JournaledGrain<TGrainState, Object>.RetrieveConfirmedEvents(Int32, Int32)
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, System.Object>.RetrieveConfirmedEvents(System.Int32, System.Int32)
+  nameWithType.vb: JournaledGrain(Of TGrainState, Object).RetrieveConfirmedEvents(Int32, Int32)
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, System.Object).RetrieveConfirmedEvents(System.Int32, System.Int32)
+  spec.csharp:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.RetrieveConfirmedEvents(System.Int32,System.Int32)
+    name: RetrieveConfirmedEvents
+    nameWithType: JournaledGrain<TGrainState, Object>.RetrieveConfirmedEvents
+    fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, System.Object>.RetrieveConfirmedEvents
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.RetrieveConfirmedEvents(System.Int32,System.Int32)
+    name: RetrieveConfirmedEvents
+    nameWithType: JournaledGrain(Of TGrainState, Object).RetrieveConfirmedEvents
+    fullName: Orleans.EventSourcing.JournaledGrain(Of TGrainState, System.Object).RetrieveConfirmedEvents
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}.OnConnectionIssue(Orleans.LogConsistency.ConnectionIssue)
+  commentId: M:Orleans.EventSourcing.JournaledGrain{`0,System.Object}.OnConnectionIssue(Orleans.LogConsistency.ConnectionIssue)
+  parent: Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}
+  definition: Orleans.EventSourcing.JournaledGrain`2.OnConnectionIssue(Orleans.LogConsistency.ConnectionIssue)
+  name: OnConnectionIssue(ConnectionIssue)
+  nameWithType: JournaledGrain<TGrainState, Object>.OnConnectionIssue(ConnectionIssue)
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, System.Object>.OnConnectionIssue(Orleans.LogConsistency.ConnectionIssue)
+  nameWithType.vb: JournaledGrain(Of TGrainState, Object).OnConnectionIssue(ConnectionIssue)
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, System.Object).OnConnectionIssue(Orleans.LogConsistency.ConnectionIssue)
+  spec.csharp:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.OnConnectionIssue(Orleans.LogConsistency.ConnectionIssue)
+    name: OnConnectionIssue
+    nameWithType: JournaledGrain<TGrainState, Object>.OnConnectionIssue
+    fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, System.Object>.OnConnectionIssue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.LogConsistency.ConnectionIssue
+    name: ConnectionIssue
+    nameWithType: ConnectionIssue
+    fullName: Orleans.LogConsistency.ConnectionIssue
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.OnConnectionIssue(Orleans.LogConsistency.ConnectionIssue)
+    name: OnConnectionIssue
+    nameWithType: JournaledGrain(Of TGrainState, Object).OnConnectionIssue
+    fullName: Orleans.EventSourcing.JournaledGrain(Of TGrainState, System.Object).OnConnectionIssue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.LogConsistency.ConnectionIssue
+    name: ConnectionIssue
+    nameWithType: ConnectionIssue
+    fullName: Orleans.LogConsistency.ConnectionIssue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}.OnConnectionIssueResolved(Orleans.LogConsistency.ConnectionIssue)
+  commentId: M:Orleans.EventSourcing.JournaledGrain{`0,System.Object}.OnConnectionIssueResolved(Orleans.LogConsistency.ConnectionIssue)
+  parent: Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}
+  definition: Orleans.EventSourcing.JournaledGrain`2.OnConnectionIssueResolved(Orleans.LogConsistency.ConnectionIssue)
+  name: OnConnectionIssueResolved(ConnectionIssue)
+  nameWithType: JournaledGrain<TGrainState, Object>.OnConnectionIssueResolved(ConnectionIssue)
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, System.Object>.OnConnectionIssueResolved(Orleans.LogConsistency.ConnectionIssue)
+  nameWithType.vb: JournaledGrain(Of TGrainState, Object).OnConnectionIssueResolved(ConnectionIssue)
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, System.Object).OnConnectionIssueResolved(Orleans.LogConsistency.ConnectionIssue)
+  spec.csharp:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.OnConnectionIssueResolved(Orleans.LogConsistency.ConnectionIssue)
+    name: OnConnectionIssueResolved
+    nameWithType: JournaledGrain<TGrainState, Object>.OnConnectionIssueResolved
+    fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, System.Object>.OnConnectionIssueResolved
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.LogConsistency.ConnectionIssue
+    name: ConnectionIssue
+    nameWithType: ConnectionIssue
+    fullName: Orleans.LogConsistency.ConnectionIssue
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.OnConnectionIssueResolved(Orleans.LogConsistency.ConnectionIssue)
+    name: OnConnectionIssueResolved
+    nameWithType: JournaledGrain(Of TGrainState, Object).OnConnectionIssueResolved
+    fullName: Orleans.EventSourcing.JournaledGrain(Of TGrainState, System.Object).OnConnectionIssueResolved
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.LogConsistency.ConnectionIssue
+    name: ConnectionIssue
+    nameWithType: ConnectionIssue
+    fullName: Orleans.LogConsistency.ConnectionIssue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}.UnresolvedConnectionIssues
+  commentId: P:Orleans.EventSourcing.JournaledGrain{`0,System.Object}.UnresolvedConnectionIssues
+  parent: Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}
+  definition: Orleans.EventSourcing.JournaledGrain`2.UnresolvedConnectionIssues
+  name: UnresolvedConnectionIssues
+  nameWithType: JournaledGrain<TGrainState, Object>.UnresolvedConnectionIssues
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, System.Object>.UnresolvedConnectionIssues
+  nameWithType.vb: JournaledGrain(Of TGrainState, Object).UnresolvedConnectionIssues
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, System.Object).UnresolvedConnectionIssues
+- uid: Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}.EnableStatsCollection
+  commentId: M:Orleans.EventSourcing.JournaledGrain{`0,System.Object}.EnableStatsCollection
+  parent: Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}
+  definition: Orleans.EventSourcing.JournaledGrain`2.EnableStatsCollection
+  name: EnableStatsCollection()
+  nameWithType: JournaledGrain<TGrainState, Object>.EnableStatsCollection()
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, System.Object>.EnableStatsCollection()
+  nameWithType.vb: JournaledGrain(Of TGrainState, Object).EnableStatsCollection()
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, System.Object).EnableStatsCollection()
+  spec.csharp:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.EnableStatsCollection
+    name: EnableStatsCollection
+    nameWithType: JournaledGrain<TGrainState, Object>.EnableStatsCollection
+    fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, System.Object>.EnableStatsCollection
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.EnableStatsCollection
+    name: EnableStatsCollection
+    nameWithType: JournaledGrain(Of TGrainState, Object).EnableStatsCollection
+    fullName: Orleans.EventSourcing.JournaledGrain(Of TGrainState, System.Object).EnableStatsCollection
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}.DisableStatsCollection
+  commentId: M:Orleans.EventSourcing.JournaledGrain{`0,System.Object}.DisableStatsCollection
+  parent: Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}
+  definition: Orleans.EventSourcing.JournaledGrain`2.DisableStatsCollection
+  name: DisableStatsCollection()
+  nameWithType: JournaledGrain<TGrainState, Object>.DisableStatsCollection()
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, System.Object>.DisableStatsCollection()
+  nameWithType.vb: JournaledGrain(Of TGrainState, Object).DisableStatsCollection()
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, System.Object).DisableStatsCollection()
+  spec.csharp:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.DisableStatsCollection
+    name: DisableStatsCollection
+    nameWithType: JournaledGrain<TGrainState, Object>.DisableStatsCollection
+    fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, System.Object>.DisableStatsCollection
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.DisableStatsCollection
+    name: DisableStatsCollection
+    nameWithType: JournaledGrain(Of TGrainState, Object).DisableStatsCollection
+    fullName: Orleans.EventSourcing.JournaledGrain(Of TGrainState, System.Object).DisableStatsCollection
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}.GetStats
+  commentId: M:Orleans.EventSourcing.JournaledGrain{`0,System.Object}.GetStats
+  parent: Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}
+  definition: Orleans.EventSourcing.JournaledGrain`2.GetStats
+  name: GetStats()
+  nameWithType: JournaledGrain<TGrainState, Object>.GetStats()
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, System.Object>.GetStats()
+  nameWithType.vb: JournaledGrain(Of TGrainState, Object).GetStats()
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, System.Object).GetStats()
+  spec.csharp:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.GetStats
+    name: GetStats
+    nameWithType: JournaledGrain<TGrainState, Object>.GetStats
+    fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, System.Object>.GetStats
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.GetStats
+    name: GetStats
+    nameWithType: JournaledGrain(Of TGrainState, Object).GetStats
+    fullName: Orleans.EventSourcing.JournaledGrain(Of TGrainState, System.Object).GetStats
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}.TransitionState({TGrainState},System.Object)
+  commentId: M:Orleans.EventSourcing.JournaledGrain{`0,System.Object}.TransitionState(`0,System.Object)
+  parent: Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}
+  definition: Orleans.EventSourcing.JournaledGrain`2.TransitionState(`0,`1)
+  name: TransitionState(TGrainState, Object)
+  nameWithType: JournaledGrain<TGrainState, Object>.TransitionState(TGrainState, Object)
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, System.Object>.TransitionState(TGrainState, System.Object)
+  nameWithType.vb: JournaledGrain(Of TGrainState, Object).TransitionState(TGrainState, Object)
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, System.Object).TransitionState(TGrainState, System.Object)
+  spec.csharp:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.TransitionState(`0,`1)
+    name: TransitionState
+    nameWithType: JournaledGrain<TGrainState, Object>.TransitionState
+    fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, System.Object>.TransitionState
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TGrainState
+    nameWithType: TGrainState
+    fullName: TGrainState
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.TransitionState(`0,`1)
+    name: TransitionState
+    nameWithType: JournaledGrain(Of TGrainState, Object).TransitionState
+    fullName: Orleans.EventSourcing.JournaledGrain(Of TGrainState, System.Object).TransitionState
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TGrainState
+    nameWithType: TGrainState
+    fullName: TGrainState
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}.InstallAdaptor(ILogViewAdaptorFactory,System.Object,System.String,IGrainStorage,ILogConsistencyProtocolServices)
+  commentId: M:Orleans.EventSourcing.JournaledGrain{`0,System.Object}.InstallAdaptor(ILogViewAdaptorFactory,System.Object,System.String,IGrainStorage,ILogConsistencyProtocolServices)
+  parent: Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}
+  definition: Orleans.EventSourcing.JournaledGrain`2.InstallAdaptor(ILogViewAdaptorFactory,System.Object,System.String,IGrainStorage,ILogConsistencyProtocolServices)
+  name: InstallAdaptor(ILogViewAdaptorFactory, Object, String, IGrainStorage, ILogConsistencyProtocolServices)
+  nameWithType: JournaledGrain<TGrainState, Object>.InstallAdaptor(ILogViewAdaptorFactory, Object, String, IGrainStorage, ILogConsistencyProtocolServices)
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, System.Object>.InstallAdaptor(ILogViewAdaptorFactory, System.Object, System.String, IGrainStorage, ILogConsistencyProtocolServices)
+  nameWithType.vb: JournaledGrain(Of TGrainState, Object).InstallAdaptor(ILogViewAdaptorFactory, Object, String, IGrainStorage, ILogConsistencyProtocolServices)
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, System.Object).InstallAdaptor(ILogViewAdaptorFactory, System.Object, System.String, IGrainStorage, ILogConsistencyProtocolServices)
+  spec.csharp:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.InstallAdaptor(ILogViewAdaptorFactory,System.Object,System.String,IGrainStorage,ILogConsistencyProtocolServices)
+    name: InstallAdaptor
+    nameWithType: JournaledGrain<TGrainState, Object>.InstallAdaptor
+    fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, System.Object>.InstallAdaptor
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: ILogViewAdaptorFactory
+    name: ILogViewAdaptorFactory
+    nameWithType: ILogViewAdaptorFactory
+    fullName: ILogViewAdaptorFactory
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: IGrainStorage
+    name: IGrainStorage
+    nameWithType: IGrainStorage
+    fullName: IGrainStorage
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: ILogConsistencyProtocolServices
+    name: ILogConsistencyProtocolServices
+    nameWithType: ILogConsistencyProtocolServices
+    fullName: ILogConsistencyProtocolServices
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.InstallAdaptor(ILogViewAdaptorFactory,System.Object,System.String,IGrainStorage,ILogConsistencyProtocolServices)
+    name: InstallAdaptor
+    nameWithType: JournaledGrain(Of TGrainState, Object).InstallAdaptor
+    fullName: Orleans.EventSourcing.JournaledGrain(Of TGrainState, System.Object).InstallAdaptor
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: ILogViewAdaptorFactory
+    name: ILogViewAdaptorFactory
+    nameWithType: ILogViewAdaptorFactory
+    fullName: ILogViewAdaptorFactory
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: IGrainStorage
+    name: IGrainStorage
+    nameWithType: IGrainStorage
+    fullName: IGrainStorage
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: ILogConsistencyProtocolServices
+    name: ILogConsistencyProtocolServices
+    nameWithType: ILogConsistencyProtocolServices
+    fullName: ILogConsistencyProtocolServices
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}.DefaultAdaptorFactory
+  commentId: P:Orleans.EventSourcing.JournaledGrain{`0,System.Object}.DefaultAdaptorFactory
+  parent: Orleans.EventSourcing.JournaledGrain{{TGrainState},System.Object}
+  definition: Orleans.EventSourcing.JournaledGrain`2.DefaultAdaptorFactory
+  name: DefaultAdaptorFactory
+  nameWithType: JournaledGrain<TGrainState, Object>.DefaultAdaptorFactory
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, System.Object>.DefaultAdaptorFactory
+  nameWithType.vb: JournaledGrain(Of TGrainState, Object).DefaultAdaptorFactory
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, System.Object).DefaultAdaptorFactory
+- uid: Orleans.EventSourcing.JournaledGrain`1.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<JournaledGrain<TGrainState>>()
+  nameWithType: ImmutableExt.AsImmutable<JournaledGrain<TGrainState>>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.EventSourcing.JournaledGrain<TGrainState>>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of JournaledGrain(Of TGrainState))()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.EventSourcing.JournaledGrain(Of TGrainState))()
+  name.vb: AsImmutable(Of JournaledGrain(Of TGrainState))()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<JournaledGrain<TGrainState>>
+    nameWithType: ImmutableExt.AsImmutable<JournaledGrain<TGrainState>>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.EventSourcing.JournaledGrain<TGrainState>>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of JournaledGrain(Of TGrainState))
+    nameWithType: ImmutableExt.AsImmutable(Of JournaledGrain(Of TGrainState))
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.EventSourcing.JournaledGrain(Of TGrainState))
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.EventSourcing.JournaledGrain`2
+  commentId: T:Orleans.EventSourcing.JournaledGrain`2
+  isExternal: false
+  name: JournaledGrain<TGrainState, TEventBase>
+  nameWithType: JournaledGrain<TGrainState, TEventBase>
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase)
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase)
+  name.vb: JournaledGrain(Of TGrainState, TEventBase)
+  spec.csharp:
+  - uid: Orleans.EventSourcing.JournaledGrain`2
+    name: JournaledGrain
+    nameWithType: JournaledGrain
+    fullName: Orleans.EventSourcing.JournaledGrain
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TGrainState
+    nameWithType: TGrainState
+    fullName: TGrainState
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEventBase
+    nameWithType: TEventBase
+    fullName: TEventBase
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Orleans.EventSourcing.JournaledGrain`2
+    name: JournaledGrain
+    nameWithType: JournaledGrain
+    fullName: Orleans.EventSourcing.JournaledGrain
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TGrainState
+    nameWithType: TGrainState
+    fullName: TGrainState
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEventBase
+    nameWithType: TEventBase
+    fullName: TEventBase
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: ILogViewAdaptorHost`2
+  isExternal: true
+  name: ILogViewAdaptorHost<, >
+  nameWithType: ILogViewAdaptorHost<, >
+  fullName: ILogViewAdaptorHost<, >
+  nameWithType.vb: ILogViewAdaptorHost(Of , )
+  fullName.vb: ILogViewAdaptorHost(Of , )
+  name.vb: ILogViewAdaptorHost(Of , )
+  spec.csharp:
+  - uid: ILogViewAdaptorHost`2
+    name: ILogViewAdaptorHost
+    nameWithType: ILogViewAdaptorHost
+    fullName: ILogViewAdaptorHost
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ILogViewAdaptorHost`2
+    name: ILogViewAdaptorHost
+    nameWithType: ILogViewAdaptorHost
+    fullName: ILogViewAdaptorHost
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.JournaledGrain`2.RaiseEvent``1(``0)
+  commentId: M:Orleans.EventSourcing.JournaledGrain`2.RaiseEvent``1(``0)
+  isExternal: false
+  name: RaiseEvent<TEvent>(TEvent)
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.RaiseEvent<TEvent>(TEvent)
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.RaiseEvent<TEvent>(TEvent)
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).RaiseEvent(Of TEvent)(TEvent)
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).RaiseEvent(Of TEvent)(TEvent)
+  name.vb: RaiseEvent(Of TEvent)(TEvent)
+  spec.csharp:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.RaiseEvent``1(``0)
+    name: RaiseEvent<TEvent>
+    nameWithType: JournaledGrain<TGrainState, TEventBase>.RaiseEvent<TEvent>
+    fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.RaiseEvent<TEvent>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEvent
+    nameWithType: TEvent
+    fullName: TEvent
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.RaiseEvent``1(``0)
+    name: RaiseEvent(Of TEvent)
+    nameWithType: JournaledGrain(Of TGrainState, TEventBase).RaiseEvent(Of TEvent)
+    fullName: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).RaiseEvent(Of TEvent)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEvent
+    nameWithType: TEvent
+    fullName: TEvent
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.JournaledGrain`2.RaiseEvents``1(IEnumerable{``0})
+  commentId: M:Orleans.EventSourcing.JournaledGrain`2.RaiseEvents``1(IEnumerable{``0})
+  isExternal: true
+  name: RaiseEvents<TEvent>(IEnumerable<TEvent>)
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.RaiseEvents<TEvent>(IEnumerable<TEvent>)
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.RaiseEvents<TEvent>(IEnumerable<TEvent>)
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).RaiseEvents(Of TEvent)(IEnumerable(Of TEvent))
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).RaiseEvents(Of TEvent)(IEnumerable(Of TEvent))
+  name.vb: RaiseEvents(Of TEvent)(IEnumerable(Of TEvent))
+  spec.csharp:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.RaiseEvents``1(IEnumerable{``0})
+    name: RaiseEvents<TEvent>
+    nameWithType: JournaledGrain<TGrainState, TEventBase>.RaiseEvents<TEvent>
+    fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.RaiseEvents<TEvent>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEvent
+    nameWithType: TEvent
+    fullName: TEvent
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.RaiseEvents``1(IEnumerable{``0})
+    name: RaiseEvents(Of TEvent)
+    nameWithType: JournaledGrain(Of TGrainState, TEventBase).RaiseEvents(Of TEvent)
+    fullName: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).RaiseEvents(Of TEvent)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEvent
+    nameWithType: TEvent
+    fullName: TEvent
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.JournaledGrain`2.RaiseConditionalEvent``1(``0)
+  commentId: M:Orleans.EventSourcing.JournaledGrain`2.RaiseConditionalEvent``1(``0)
+  isExternal: false
+  name: RaiseConditionalEvent<TEvent>(TEvent)
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.RaiseConditionalEvent<TEvent>(TEvent)
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.RaiseConditionalEvent<TEvent>(TEvent)
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).RaiseConditionalEvent(Of TEvent)(TEvent)
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).RaiseConditionalEvent(Of TEvent)(TEvent)
+  name.vb: RaiseConditionalEvent(Of TEvent)(TEvent)
+  spec.csharp:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.RaiseConditionalEvent``1(``0)
+    name: RaiseConditionalEvent<TEvent>
+    nameWithType: JournaledGrain<TGrainState, TEventBase>.RaiseConditionalEvent<TEvent>
+    fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.RaiseConditionalEvent<TEvent>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEvent
+    nameWithType: TEvent
+    fullName: TEvent
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.RaiseConditionalEvent``1(``0)
+    name: RaiseConditionalEvent(Of TEvent)
+    nameWithType: JournaledGrain(Of TGrainState, TEventBase).RaiseConditionalEvent(Of TEvent)
+    fullName: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).RaiseConditionalEvent(Of TEvent)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEvent
+    nameWithType: TEvent
+    fullName: TEvent
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.JournaledGrain`2.RaiseConditionalEvents``1(IEnumerable{``0})
+  commentId: M:Orleans.EventSourcing.JournaledGrain`2.RaiseConditionalEvents``1(IEnumerable{``0})
+  isExternal: true
+  name: RaiseConditionalEvents<TEvent>(IEnumerable<TEvent>)
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.RaiseConditionalEvents<TEvent>(IEnumerable<TEvent>)
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.RaiseConditionalEvents<TEvent>(IEnumerable<TEvent>)
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).RaiseConditionalEvents(Of TEvent)(IEnumerable(Of TEvent))
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).RaiseConditionalEvents(Of TEvent)(IEnumerable(Of TEvent))
+  name.vb: RaiseConditionalEvents(Of TEvent)(IEnumerable(Of TEvent))
+  spec.csharp:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.RaiseConditionalEvents``1(IEnumerable{``0})
+    name: RaiseConditionalEvents<TEvent>
+    nameWithType: JournaledGrain<TGrainState, TEventBase>.RaiseConditionalEvents<TEvent>
+    fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.RaiseConditionalEvents<TEvent>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEvent
+    nameWithType: TEvent
+    fullName: TEvent
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.RaiseConditionalEvents``1(IEnumerable{``0})
+    name: RaiseConditionalEvents(Of TEvent)
+    nameWithType: JournaledGrain(Of TGrainState, TEventBase).RaiseConditionalEvents(Of TEvent)
+    fullName: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).RaiseConditionalEvents(Of TEvent)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEvent
+    nameWithType: TEvent
+    fullName: TEvent
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.JournaledGrain`2.State
+  commentId: P:Orleans.EventSourcing.JournaledGrain`2.State
+  isExternal: false
+  name: State
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.State
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.State
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).State
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).State
+- uid: Orleans.EventSourcing.JournaledGrain`2.Version
+  commentId: P:Orleans.EventSourcing.JournaledGrain`2.Version
+  isExternal: false
+  name: Version
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.Version
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.Version
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).Version
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).Version
+- uid: Orleans.EventSourcing.JournaledGrain`2.OnTentativeStateChanged
+  commentId: M:Orleans.EventSourcing.JournaledGrain`2.OnTentativeStateChanged
+  isExternal: false
+  name: OnTentativeStateChanged()
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.OnTentativeStateChanged()
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.OnTentativeStateChanged()
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).OnTentativeStateChanged()
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).OnTentativeStateChanged()
+  spec.csharp:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.OnTentativeStateChanged
+    name: OnTentativeStateChanged
+    nameWithType: JournaledGrain<TGrainState, TEventBase>.OnTentativeStateChanged
+    fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.OnTentativeStateChanged
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.OnTentativeStateChanged
+    name: OnTentativeStateChanged
+    nameWithType: JournaledGrain(Of TGrainState, TEventBase).OnTentativeStateChanged
+    fullName: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).OnTentativeStateChanged
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.JournaledGrain`2.TentativeState
+  commentId: P:Orleans.EventSourcing.JournaledGrain`2.TentativeState
+  isExternal: false
+  name: TentativeState
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.TentativeState
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.TentativeState
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).TentativeState
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).TentativeState
+- uid: Orleans.EventSourcing.JournaledGrain`2.OnStateChanged
+  commentId: M:Orleans.EventSourcing.JournaledGrain`2.OnStateChanged
+  isExternal: false
+  name: OnStateChanged()
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.OnStateChanged()
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.OnStateChanged()
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).OnStateChanged()
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).OnStateChanged()
+  spec.csharp:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.OnStateChanged
+    name: OnStateChanged
+    nameWithType: JournaledGrain<TGrainState, TEventBase>.OnStateChanged
+    fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.OnStateChanged
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.OnStateChanged
+    name: OnStateChanged
+    nameWithType: JournaledGrain(Of TGrainState, TEventBase).OnStateChanged
+    fullName: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).OnStateChanged
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.JournaledGrain`2.ConfirmEvents
+  commentId: M:Orleans.EventSourcing.JournaledGrain`2.ConfirmEvents
+  isExternal: false
+  name: ConfirmEvents()
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.ConfirmEvents()
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.ConfirmEvents()
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).ConfirmEvents()
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).ConfirmEvents()
+  spec.csharp:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.ConfirmEvents
+    name: ConfirmEvents
+    nameWithType: JournaledGrain<TGrainState, TEventBase>.ConfirmEvents
+    fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.ConfirmEvents
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.ConfirmEvents
+    name: ConfirmEvents
+    nameWithType: JournaledGrain(Of TGrainState, TEventBase).ConfirmEvents
+    fullName: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).ConfirmEvents
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.JournaledGrain`2.RefreshNow
+  commentId: M:Orleans.EventSourcing.JournaledGrain`2.RefreshNow
+  isExternal: false
+  name: RefreshNow()
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.RefreshNow()
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.RefreshNow()
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).RefreshNow()
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).RefreshNow()
+  spec.csharp:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.RefreshNow
+    name: RefreshNow
+    nameWithType: JournaledGrain<TGrainState, TEventBase>.RefreshNow
+    fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.RefreshNow
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.RefreshNow
+    name: RefreshNow
+    nameWithType: JournaledGrain(Of TGrainState, TEventBase).RefreshNow
+    fullName: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).RefreshNow
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.JournaledGrain`2.UnconfirmedEvents
+  commentId: P:Orleans.EventSourcing.JournaledGrain`2.UnconfirmedEvents
+  isExternal: false
+  name: UnconfirmedEvents
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.UnconfirmedEvents
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.UnconfirmedEvents
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).UnconfirmedEvents
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).UnconfirmedEvents
+- uid: Orleans.EventSourcing.JournaledGrain`2.OnActivateAsync
+  commentId: M:Orleans.EventSourcing.JournaledGrain`2.OnActivateAsync
+  isExternal: false
+  name: OnActivateAsync()
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.OnActivateAsync()
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.OnActivateAsync()
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).OnActivateAsync()
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).OnActivateAsync()
+  spec.csharp:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.OnActivateAsync
+    name: OnActivateAsync
+    nameWithType: JournaledGrain<TGrainState, TEventBase>.OnActivateAsync
+    fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.OnActivateAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.OnActivateAsync
+    name: OnActivateAsync
+    nameWithType: JournaledGrain(Of TGrainState, TEventBase).OnActivateAsync
+    fullName: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).OnActivateAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.JournaledGrain`2.RetrieveConfirmedEvents(System.Int32,System.Int32)
+  commentId: M:Orleans.EventSourcing.JournaledGrain`2.RetrieveConfirmedEvents(System.Int32,System.Int32)
+  isExternal: true
+  name: RetrieveConfirmedEvents(Int32, Int32)
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.RetrieveConfirmedEvents(Int32, Int32)
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.RetrieveConfirmedEvents(System.Int32, System.Int32)
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).RetrieveConfirmedEvents(Int32, Int32)
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).RetrieveConfirmedEvents(System.Int32, System.Int32)
+  spec.csharp:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.RetrieveConfirmedEvents(System.Int32,System.Int32)
+    name: RetrieveConfirmedEvents
+    nameWithType: JournaledGrain<TGrainState, TEventBase>.RetrieveConfirmedEvents
+    fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.RetrieveConfirmedEvents
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.RetrieveConfirmedEvents(System.Int32,System.Int32)
+    name: RetrieveConfirmedEvents
+    nameWithType: JournaledGrain(Of TGrainState, TEventBase).RetrieveConfirmedEvents
+    fullName: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).RetrieveConfirmedEvents
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.JournaledGrain`2.OnConnectionIssue(Orleans.LogConsistency.ConnectionIssue)
+  commentId: M:Orleans.EventSourcing.JournaledGrain`2.OnConnectionIssue(Orleans.LogConsistency.ConnectionIssue)
+  isExternal: false
+  name: OnConnectionIssue(ConnectionIssue)
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.OnConnectionIssue(ConnectionIssue)
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.OnConnectionIssue(Orleans.LogConsistency.ConnectionIssue)
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).OnConnectionIssue(ConnectionIssue)
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).OnConnectionIssue(Orleans.LogConsistency.ConnectionIssue)
+  spec.csharp:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.OnConnectionIssue(Orleans.LogConsistency.ConnectionIssue)
+    name: OnConnectionIssue
+    nameWithType: JournaledGrain<TGrainState, TEventBase>.OnConnectionIssue
+    fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.OnConnectionIssue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.LogConsistency.ConnectionIssue
+    name: ConnectionIssue
+    nameWithType: ConnectionIssue
+    fullName: Orleans.LogConsistency.ConnectionIssue
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.OnConnectionIssue(Orleans.LogConsistency.ConnectionIssue)
+    name: OnConnectionIssue
+    nameWithType: JournaledGrain(Of TGrainState, TEventBase).OnConnectionIssue
+    fullName: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).OnConnectionIssue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.LogConsistency.ConnectionIssue
+    name: ConnectionIssue
+    nameWithType: ConnectionIssue
+    fullName: Orleans.LogConsistency.ConnectionIssue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.JournaledGrain`2.OnConnectionIssueResolved(Orleans.LogConsistency.ConnectionIssue)
+  commentId: M:Orleans.EventSourcing.JournaledGrain`2.OnConnectionIssueResolved(Orleans.LogConsistency.ConnectionIssue)
+  isExternal: false
+  name: OnConnectionIssueResolved(ConnectionIssue)
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.OnConnectionIssueResolved(ConnectionIssue)
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.OnConnectionIssueResolved(Orleans.LogConsistency.ConnectionIssue)
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).OnConnectionIssueResolved(ConnectionIssue)
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).OnConnectionIssueResolved(Orleans.LogConsistency.ConnectionIssue)
+  spec.csharp:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.OnConnectionIssueResolved(Orleans.LogConsistency.ConnectionIssue)
+    name: OnConnectionIssueResolved
+    nameWithType: JournaledGrain<TGrainState, TEventBase>.OnConnectionIssueResolved
+    fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.OnConnectionIssueResolved
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.LogConsistency.ConnectionIssue
+    name: ConnectionIssue
+    nameWithType: ConnectionIssue
+    fullName: Orleans.LogConsistency.ConnectionIssue
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.OnConnectionIssueResolved(Orleans.LogConsistency.ConnectionIssue)
+    name: OnConnectionIssueResolved
+    nameWithType: JournaledGrain(Of TGrainState, TEventBase).OnConnectionIssueResolved
+    fullName: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).OnConnectionIssueResolved
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.LogConsistency.ConnectionIssue
+    name: ConnectionIssue
+    nameWithType: ConnectionIssue
+    fullName: Orleans.LogConsistency.ConnectionIssue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.JournaledGrain`2.UnresolvedConnectionIssues
+  commentId: P:Orleans.EventSourcing.JournaledGrain`2.UnresolvedConnectionIssues
+  isExternal: false
+  name: UnresolvedConnectionIssues
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.UnresolvedConnectionIssues
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.UnresolvedConnectionIssues
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).UnresolvedConnectionIssues
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).UnresolvedConnectionIssues
+- uid: Orleans.EventSourcing.JournaledGrain`2.EnableStatsCollection
+  commentId: M:Orleans.EventSourcing.JournaledGrain`2.EnableStatsCollection
+  isExternal: false
+  name: EnableStatsCollection()
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.EnableStatsCollection()
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.EnableStatsCollection()
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).EnableStatsCollection()
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).EnableStatsCollection()
+  spec.csharp:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.EnableStatsCollection
+    name: EnableStatsCollection
+    nameWithType: JournaledGrain<TGrainState, TEventBase>.EnableStatsCollection
+    fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.EnableStatsCollection
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.EnableStatsCollection
+    name: EnableStatsCollection
+    nameWithType: JournaledGrain(Of TGrainState, TEventBase).EnableStatsCollection
+    fullName: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).EnableStatsCollection
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.JournaledGrain`2.DisableStatsCollection
+  commentId: M:Orleans.EventSourcing.JournaledGrain`2.DisableStatsCollection
+  isExternal: false
+  name: DisableStatsCollection()
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.DisableStatsCollection()
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.DisableStatsCollection()
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).DisableStatsCollection()
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).DisableStatsCollection()
+  spec.csharp:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.DisableStatsCollection
+    name: DisableStatsCollection
+    nameWithType: JournaledGrain<TGrainState, TEventBase>.DisableStatsCollection
+    fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.DisableStatsCollection
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.DisableStatsCollection
+    name: DisableStatsCollection
+    nameWithType: JournaledGrain(Of TGrainState, TEventBase).DisableStatsCollection
+    fullName: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).DisableStatsCollection
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.JournaledGrain`2.GetStats
+  commentId: M:Orleans.EventSourcing.JournaledGrain`2.GetStats
+  isExternal: false
+  name: GetStats()
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.GetStats()
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.GetStats()
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).GetStats()
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).GetStats()
+  spec.csharp:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.GetStats
+    name: GetStats
+    nameWithType: JournaledGrain<TGrainState, TEventBase>.GetStats
+    fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.GetStats
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.GetStats
+    name: GetStats
+    nameWithType: JournaledGrain(Of TGrainState, TEventBase).GetStats
+    fullName: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).GetStats
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.JournaledGrain`2.TransitionState(`0,`1)
+  commentId: M:Orleans.EventSourcing.JournaledGrain`2.TransitionState(`0,`1)
+  isExternal: false
+  name: TransitionState(TGrainState, TEventBase)
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.TransitionState(TGrainState, TEventBase)
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.TransitionState(TGrainState, TEventBase)
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).TransitionState(TGrainState, TEventBase)
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).TransitionState(TGrainState, TEventBase)
+  spec.csharp:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.TransitionState(`0,`1)
+    name: TransitionState
+    nameWithType: JournaledGrain<TGrainState, TEventBase>.TransitionState
+    fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.TransitionState
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TGrainState
+    nameWithType: TGrainState
+    fullName: TGrainState
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEventBase
+    nameWithType: TEventBase
+    fullName: TEventBase
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.TransitionState(`0,`1)
+    name: TransitionState
+    nameWithType: JournaledGrain(Of TGrainState, TEventBase).TransitionState
+    fullName: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).TransitionState
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TGrainState
+    nameWithType: TGrainState
+    fullName: TGrainState
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEventBase
+    nameWithType: TEventBase
+    fullName: TEventBase
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.JournaledGrain`2.InstallAdaptor(ILogViewAdaptorFactory,System.Object,System.String,IGrainStorage,ILogConsistencyProtocolServices)
+  commentId: M:Orleans.EventSourcing.JournaledGrain`2.InstallAdaptor(ILogViewAdaptorFactory,System.Object,System.String,IGrainStorage,ILogConsistencyProtocolServices)
+  isExternal: true
+  name: InstallAdaptor(ILogViewAdaptorFactory, Object, String, IGrainStorage, ILogConsistencyProtocolServices)
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.InstallAdaptor(ILogViewAdaptorFactory, Object, String, IGrainStorage, ILogConsistencyProtocolServices)
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.InstallAdaptor(ILogViewAdaptorFactory, System.Object, System.String, IGrainStorage, ILogConsistencyProtocolServices)
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).InstallAdaptor(ILogViewAdaptorFactory, Object, String, IGrainStorage, ILogConsistencyProtocolServices)
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).InstallAdaptor(ILogViewAdaptorFactory, System.Object, System.String, IGrainStorage, ILogConsistencyProtocolServices)
+  spec.csharp:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.InstallAdaptor(ILogViewAdaptorFactory,System.Object,System.String,IGrainStorage,ILogConsistencyProtocolServices)
+    name: InstallAdaptor
+    nameWithType: JournaledGrain<TGrainState, TEventBase>.InstallAdaptor
+    fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.InstallAdaptor
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: ILogViewAdaptorFactory
+    name: ILogViewAdaptorFactory
+    nameWithType: ILogViewAdaptorFactory
+    fullName: ILogViewAdaptorFactory
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: IGrainStorage
+    name: IGrainStorage
+    nameWithType: IGrainStorage
+    fullName: IGrainStorage
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: ILogConsistencyProtocolServices
+    name: ILogConsistencyProtocolServices
+    nameWithType: ILogConsistencyProtocolServices
+    fullName: ILogConsistencyProtocolServices
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.EventSourcing.JournaledGrain`2.InstallAdaptor(ILogViewAdaptorFactory,System.Object,System.String,IGrainStorage,ILogConsistencyProtocolServices)
+    name: InstallAdaptor
+    nameWithType: JournaledGrain(Of TGrainState, TEventBase).InstallAdaptor
+    fullName: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).InstallAdaptor
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: ILogViewAdaptorFactory
+    name: ILogViewAdaptorFactory
+    nameWithType: ILogViewAdaptorFactory
+    fullName: ILogViewAdaptorFactory
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: IGrainStorage
+    name: IGrainStorage
+    nameWithType: IGrainStorage
+    fullName: IGrainStorage
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: ILogConsistencyProtocolServices
+    name: ILogConsistencyProtocolServices
+    nameWithType: ILogConsistencyProtocolServices
+    fullName: ILogConsistencyProtocolServices
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.JournaledGrain`2.DefaultAdaptorFactory
+  commentId: P:Orleans.EventSourcing.JournaledGrain`2.DefaultAdaptorFactory
+  isExternal: false
+  name: DefaultAdaptorFactory
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.DefaultAdaptorFactory
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.DefaultAdaptorFactory
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).DefaultAdaptorFactory
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).DefaultAdaptorFactory
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.EventSourcing.JournaledGrain`1.#ctor*
+  commentId: Overload:Orleans.EventSourcing.JournaledGrain`1.#ctor
+  isExternal: false
+  name: JournaledGrain
+  nameWithType: JournaledGrain<TGrainState>.JournaledGrain
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState>.JournaledGrain
+  nameWithType.vb: JournaledGrain(Of TGrainState).JournaledGrain
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState).JournaledGrain
+- uid: Orleans.Core.IGrainIdentity
+  commentId: T:Orleans.Core.IGrainIdentity
+  parent: Orleans.Core
+  isExternal: false
+  name: IGrainIdentity
+  nameWithType: IGrainIdentity
+  fullName: Orleans.Core.IGrainIdentity
+- uid: Orleans.Runtime.IGrainRuntime
+  commentId: T:Orleans.Runtime.IGrainRuntime
+  parent: Orleans.Runtime
+  isExternal: false
+  name: IGrainRuntime
+  nameWithType: IGrainRuntime
+  fullName: Orleans.Runtime.IGrainRuntime
+- uid: Orleans.Core
+  commentId: N:Orleans.Core
+  isExternal: false
+  name: Orleans.Core
+  nameWithType: Orleans.Core
+  fullName: Orleans.Core
+- uid: Orleans.Runtime
+  commentId: N:Orleans.Runtime
+  isExternal: false
+  name: Orleans.Runtime
+  nameWithType: Orleans.Runtime
+  fullName: Orleans.Runtime

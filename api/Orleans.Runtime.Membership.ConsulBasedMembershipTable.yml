@@ -1,0 +1,955 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Runtime.Membership.ConsulBasedMembershipTable
+  commentId: T:Orleans.Runtime.Membership.ConsulBasedMembershipTable
+  id: ConsulBasedMembershipTable
+  parent: Orleans.Runtime.Membership
+  children:
+  - Orleans.Runtime.Membership.ConsulBasedMembershipTable.#ctor(ILogger{Orleans.Runtime.Membership.ConsulBasedMembershipTable},IOptions{Orleans.Configuration.ConsulClusteringSiloOptions},IOptions{ClusterOptions})
+  - Orleans.Runtime.Membership.ConsulBasedMembershipTable._tableVersion
+  - Orleans.Runtime.Membership.ConsulBasedMembershipTable.DeleteMembershipTableEntries(String)
+  - Orleans.Runtime.Membership.ConsulBasedMembershipTable.InitializeMembershipTable(System.Boolean)
+  - Orleans.Runtime.Membership.ConsulBasedMembershipTable.InsertRow(MembershipEntry,TableVersion)
+  - Orleans.Runtime.Membership.ConsulBasedMembershipTable.ReadAll
+  - Orleans.Runtime.Membership.ConsulBasedMembershipTable.ReadAll(ConsulClient,System.String,ILogger)
+  - Orleans.Runtime.Membership.ConsulBasedMembershipTable.ReadRow(Orleans.Runtime.SiloAddress)
+  - Orleans.Runtime.Membership.ConsulBasedMembershipTable.UpdateIAmAlive(MembershipEntry)
+  - Orleans.Runtime.Membership.ConsulBasedMembershipTable.UpdateRow(MembershipEntry,String,TableVersion)
+  langs:
+  - csharp
+  - vb
+  name: ConsulBasedMembershipTable
+  nameWithType: ConsulBasedMembershipTable
+  fullName: Orleans.Runtime.Membership.ConsulBasedMembershipTable
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Clustering.Consul/ConsulBasedMembershipTable.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ConsulBasedMembershipTable
+    path: src/Orleans.Clustering.Consul/ConsulBasedMembershipTable.cs
+    startLine: 15
+  assemblies:
+  - Orleans.Clustering.Consul
+  namespace: Orleans.Runtime.Membership
+  summary: "\nA Membership Table implementation using Consul 0.6.0  https://consul.io/\n"
+  example: []
+  syntax:
+    content: 'public class ConsulBasedMembershipTable : IMembershipTable'
+    content.vb: >-
+      Public Class ConsulBasedMembershipTable
+
+          Inherits IMembershipTable
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.Runtime.Membership.ConsulBasedMembershipTable.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.Runtime.Membership.ConsulBasedMembershipTable._tableVersion
+  commentId: F:Orleans.Runtime.Membership.ConsulBasedMembershipTable._tableVersion
+  id: _tableVersion
+  parent: Orleans.Runtime.Membership.ConsulBasedMembershipTable
+  langs:
+  - csharp
+  - vb
+  name: _tableVersion
+  nameWithType: ConsulBasedMembershipTable._tableVersion
+  fullName: Orleans.Runtime.Membership.ConsulBasedMembershipTable._tableVersion
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.Clustering.Consul/ConsulBasedMembershipTable.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: _tableVersion
+    path: src/Orleans.Clustering.Consul/ConsulBasedMembershipTable.cs
+    startLine: 18
+  assemblies:
+  - Orleans.Clustering.Consul
+  namespace: Orleans.Runtime.Membership
+  syntax:
+    content: public static readonly TableVersion _tableVersion
+    return:
+      type: TableVersion
+    content.vb: Public Shared ReadOnly _tableVersion As TableVersion
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Orleans.Runtime.Membership.ConsulBasedMembershipTable.#ctor(ILogger{Orleans.Runtime.Membership.ConsulBasedMembershipTable},IOptions{Orleans.Configuration.ConsulClusteringSiloOptions},IOptions{ClusterOptions})
+  commentId: M:Orleans.Runtime.Membership.ConsulBasedMembershipTable.#ctor(ILogger{Orleans.Runtime.Membership.ConsulBasedMembershipTable},IOptions{Orleans.Configuration.ConsulClusteringSiloOptions},IOptions{ClusterOptions})
+  id: '#ctor(ILogger{Orleans.Runtime.Membership.ConsulBasedMembershipTable},IOptions{Orleans.Configuration.ConsulClusteringSiloOptions},IOptions{ClusterOptions})'
+  parent: Orleans.Runtime.Membership.ConsulBasedMembershipTable
+  langs:
+  - csharp
+  - vb
+  name: ConsulBasedMembershipTable(ILogger<ConsulBasedMembershipTable>, IOptions<ConsulClusteringSiloOptions>, IOptions<ClusterOptions>)
+  nameWithType: ConsulBasedMembershipTable.ConsulBasedMembershipTable(ILogger<ConsulBasedMembershipTable>, IOptions<ConsulClusteringSiloOptions>, IOptions<ClusterOptions>)
+  fullName: Orleans.Runtime.Membership.ConsulBasedMembershipTable.ConsulBasedMembershipTable(ILogger<Orleans.Runtime.Membership.ConsulBasedMembershipTable>, IOptions<Orleans.Configuration.ConsulClusteringSiloOptions>, IOptions<ClusterOptions>)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Clustering.Consul/ConsulBasedMembershipTable.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Clustering.Consul/ConsulBasedMembershipTable.cs
+    startLine: 25
+  assemblies:
+  - Orleans.Clustering.Consul
+  namespace: Orleans.Runtime.Membership
+  syntax:
+    content: public ConsulBasedMembershipTable(ILogger<ConsulBasedMembershipTable> logger, IOptions<ConsulClusteringSiloOptions> membershipTableOptions, IOptions<ClusterOptions> clusterOptions)
+    parameters:
+    - id: logger
+      type: ILogger{Orleans.Runtime.Membership.ConsulBasedMembershipTable}
+    - id: membershipTableOptions
+      type: IOptions{Orleans.Configuration.ConsulClusteringSiloOptions}
+    - id: clusterOptions
+      type: IOptions{ClusterOptions}
+    content.vb: Public Sub New(logger As ILogger(Of ConsulBasedMembershipTable), membershipTableOptions As IOptions(Of ConsulClusteringSiloOptions), clusterOptions As IOptions(Of ClusterOptions))
+  overload: Orleans.Runtime.Membership.ConsulBasedMembershipTable.#ctor*
+  nameWithType.vb: ConsulBasedMembershipTable.ConsulBasedMembershipTable(ILogger(Of ConsulBasedMembershipTable), IOptions(Of ConsulClusteringSiloOptions), IOptions(Of ClusterOptions))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.Runtime.Membership.ConsulBasedMembershipTable.ConsulBasedMembershipTable(ILogger(Of Orleans.Runtime.Membership.ConsulBasedMembershipTable), IOptions(Of Orleans.Configuration.ConsulClusteringSiloOptions), IOptions(Of ClusterOptions))
+  name.vb: ConsulBasedMembershipTable(ILogger(Of ConsulBasedMembershipTable), IOptions(Of ConsulClusteringSiloOptions), IOptions(Of ClusterOptions))
+- uid: Orleans.Runtime.Membership.ConsulBasedMembershipTable.InitializeMembershipTable(System.Boolean)
+  commentId: M:Orleans.Runtime.Membership.ConsulBasedMembershipTable.InitializeMembershipTable(System.Boolean)
+  id: InitializeMembershipTable(System.Boolean)
+  parent: Orleans.Runtime.Membership.ConsulBasedMembershipTable
+  langs:
+  - csharp
+  - vb
+  name: InitializeMembershipTable(Boolean)
+  nameWithType: ConsulBasedMembershipTable.InitializeMembershipTable(Boolean)
+  fullName: Orleans.Runtime.Membership.ConsulBasedMembershipTable.InitializeMembershipTable(System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Clustering.Consul/ConsulBasedMembershipTable.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: InitializeMembershipTable
+    path: src/Orleans.Clustering.Consul/ConsulBasedMembershipTable.cs
+    startLine: 46
+  assemblies:
+  - Orleans.Clustering.Consul
+  namespace: Orleans.Runtime.Membership
+  summary: "\nInitializes the Consul based membership table.\n"
+  remarks: "\nConsul Membership Provider does not support the extended Membership Protocol,\ntherefore there is no MembershipTable to Initialise\n"
+  example: []
+  syntax:
+    content: public Task InitializeMembershipTable(bool tryInitTableVersion)
+    parameters:
+    - id: tryInitTableVersion
+      type: System.Boolean
+      description: 'Will be ignored: Consul does not support the extended Membership Protocol TableVersion'
+    return:
+      type: Task
+      description: ''
+    content.vb: Public Function InitializeMembershipTable(tryInitTableVersion As Boolean) As Task
+  overload: Orleans.Runtime.Membership.ConsulBasedMembershipTable.InitializeMembershipTable*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Membership.ConsulBasedMembershipTable.ReadRow(Orleans.Runtime.SiloAddress)
+  commentId: M:Orleans.Runtime.Membership.ConsulBasedMembershipTable.ReadRow(Orleans.Runtime.SiloAddress)
+  id: ReadRow(Orleans.Runtime.SiloAddress)
+  parent: Orleans.Runtime.Membership.ConsulBasedMembershipTable
+  langs:
+  - csharp
+  - vb
+  name: ReadRow(SiloAddress)
+  nameWithType: ConsulBasedMembershipTable.ReadRow(SiloAddress)
+  fullName: Orleans.Runtime.Membership.ConsulBasedMembershipTable.ReadRow(Orleans.Runtime.SiloAddress)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Clustering.Consul/ConsulBasedMembershipTable.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ReadRow
+    path: src/Orleans.Clustering.Consul/ConsulBasedMembershipTable.cs
+    startLine: 52
+  assemblies:
+  - Orleans.Clustering.Consul
+  namespace: Orleans.Runtime.Membership
+  syntax:
+    content: public Task<MembershipTableData> ReadRow(SiloAddress siloAddress)
+    parameters:
+    - id: siloAddress
+      type: Orleans.Runtime.SiloAddress
+    return:
+      type: Task{MembershipTableData}
+    content.vb: Public Function ReadRow(siloAddress As SiloAddress) As Task(Of MembershipTableData)
+  overload: Orleans.Runtime.Membership.ConsulBasedMembershipTable.ReadRow*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Membership.ConsulBasedMembershipTable.ReadAll
+  commentId: M:Orleans.Runtime.Membership.ConsulBasedMembershipTable.ReadAll
+  id: ReadAll
+  parent: Orleans.Runtime.Membership.ConsulBasedMembershipTable
+  langs:
+  - csharp
+  - vb
+  name: ReadAll()
+  nameWithType: ConsulBasedMembershipTable.ReadAll()
+  fullName: Orleans.Runtime.Membership.ConsulBasedMembershipTable.ReadAll()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Clustering.Consul/ConsulBasedMembershipTable.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ReadAll
+    path: src/Orleans.Clustering.Consul/ConsulBasedMembershipTable.cs
+    startLine: 59
+  assemblies:
+  - Orleans.Clustering.Consul
+  namespace: Orleans.Runtime.Membership
+  syntax:
+    content: public Task<MembershipTableData> ReadAll()
+    return:
+      type: Task{MembershipTableData}
+    content.vb: Public Function ReadAll As Task(Of MembershipTableData)
+  overload: Orleans.Runtime.Membership.ConsulBasedMembershipTable.ReadAll*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Membership.ConsulBasedMembershipTable.ReadAll(ConsulClient,System.String,ILogger)
+  commentId: M:Orleans.Runtime.Membership.ConsulBasedMembershipTable.ReadAll(ConsulClient,System.String,ILogger)
+  id: ReadAll(ConsulClient,System.String,ILogger)
+  parent: Orleans.Runtime.Membership.ConsulBasedMembershipTable
+  langs:
+  - csharp
+  - vb
+  name: ReadAll(ConsulClient, String, ILogger)
+  nameWithType: ConsulBasedMembershipTable.ReadAll(ConsulClient, String, ILogger)
+  fullName: Orleans.Runtime.Membership.ConsulBasedMembershipTable.ReadAll(ConsulClient, System.String, ILogger)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Clustering.Consul/ConsulBasedMembershipTable.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ReadAll
+    path: src/Orleans.Clustering.Consul/ConsulBasedMembershipTable.cs
+    startLine: 64
+  assemblies:
+  - Orleans.Clustering.Consul
+  namespace: Orleans.Runtime.Membership
+  syntax:
+    content: public static Task<MembershipTableData> ReadAll(ConsulClient consulClient, string clusterId, ILogger logger)
+    parameters:
+    - id: consulClient
+      type: ConsulClient
+    - id: clusterId
+      type: System.String
+    - id: logger
+      type: ILogger
+    return:
+      type: Task{MembershipTableData}
+    content.vb: Public Shared Function ReadAll(consulClient As ConsulClient, clusterId As String, logger As ILogger) As Task(Of MembershipTableData)
+  overload: Orleans.Runtime.Membership.ConsulBasedMembershipTable.ReadAll*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.Runtime.Membership.ConsulBasedMembershipTable.InsertRow(MembershipEntry,TableVersion)
+  commentId: M:Orleans.Runtime.Membership.ConsulBasedMembershipTable.InsertRow(MembershipEntry,TableVersion)
+  id: InsertRow(MembershipEntry,TableVersion)
+  parent: Orleans.Runtime.Membership.ConsulBasedMembershipTable
+  langs:
+  - csharp
+  - vb
+  name: InsertRow(MembershipEntry, TableVersion)
+  nameWithType: ConsulBasedMembershipTable.InsertRow(MembershipEntry, TableVersion)
+  fullName: Orleans.Runtime.Membership.ConsulBasedMembershipTable.InsertRow(MembershipEntry, TableVersion)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Clustering.Consul/ConsulBasedMembershipTable.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: InsertRow
+    path: src/Orleans.Clustering.Consul/ConsulBasedMembershipTable.cs
+    startLine: 85
+  assemblies:
+  - Orleans.Clustering.Consul
+  namespace: Orleans.Runtime.Membership
+  syntax:
+    content: public Task<Boolean> InsertRow(MembershipEntry entry, TableVersion tableVersion)
+    parameters:
+    - id: entry
+      type: MembershipEntry
+    - id: tableVersion
+      type: TableVersion
+    return:
+      type: Task{Boolean}
+    content.vb: Public Function InsertRow(entry As MembershipEntry, tableVersion As TableVersion) As Task(Of Boolean)
+  overload: Orleans.Runtime.Membership.ConsulBasedMembershipTable.InsertRow*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Membership.ConsulBasedMembershipTable.UpdateRow(MembershipEntry,String,TableVersion)
+  commentId: M:Orleans.Runtime.Membership.ConsulBasedMembershipTable.UpdateRow(MembershipEntry,String,TableVersion)
+  id: UpdateRow(MembershipEntry,String,TableVersion)
+  parent: Orleans.Runtime.Membership.ConsulBasedMembershipTable
+  langs:
+  - csharp
+  - vb
+  name: UpdateRow(MembershipEntry, String, TableVersion)
+  nameWithType: ConsulBasedMembershipTable.UpdateRow(MembershipEntry, String, TableVersion)
+  fullName: Orleans.Runtime.Membership.ConsulBasedMembershipTable.UpdateRow(MembershipEntry, String, TableVersion)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Clustering.Consul/ConsulBasedMembershipTable.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: UpdateRow
+    path: src/Orleans.Clustering.Consul/ConsulBasedMembershipTable.cs
+    startLine: 109
+  assemblies:
+  - Orleans.Clustering.Consul
+  namespace: Orleans.Runtime.Membership
+  syntax:
+    content: public Task<Boolean> UpdateRow(MembershipEntry entry, String etag, TableVersion tableVersion)
+    parameters:
+    - id: entry
+      type: MembershipEntry
+    - id: etag
+      type: String
+    - id: tableVersion
+      type: TableVersion
+    return:
+      type: Task{Boolean}
+    content.vb: Public Function UpdateRow(entry As MembershipEntry, etag As String, tableVersion As TableVersion) As Task(Of Boolean)
+  overload: Orleans.Runtime.Membership.ConsulBasedMembershipTable.UpdateRow*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Membership.ConsulBasedMembershipTable.UpdateIAmAlive(MembershipEntry)
+  commentId: M:Orleans.Runtime.Membership.ConsulBasedMembershipTable.UpdateIAmAlive(MembershipEntry)
+  id: UpdateIAmAlive(MembershipEntry)
+  parent: Orleans.Runtime.Membership.ConsulBasedMembershipTable
+  langs:
+  - csharp
+  - vb
+  name: UpdateIAmAlive(MembershipEntry)
+  nameWithType: ConsulBasedMembershipTable.UpdateIAmAlive(MembershipEntry)
+  fullName: Orleans.Runtime.Membership.ConsulBasedMembershipTable.UpdateIAmAlive(MembershipEntry)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Clustering.Consul/ConsulBasedMembershipTable.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: UpdateIAmAlive
+    path: src/Orleans.Clustering.Consul/ConsulBasedMembershipTable.cs
+    startLine: 135
+  assemblies:
+  - Orleans.Clustering.Consul
+  namespace: Orleans.Runtime.Membership
+  syntax:
+    content: public Task UpdateIAmAlive(MembershipEntry entry)
+    parameters:
+    - id: entry
+      type: MembershipEntry
+    return:
+      type: Task
+    content.vb: Public Function UpdateIAmAlive(entry As MembershipEntry) As Task
+  overload: Orleans.Runtime.Membership.ConsulBasedMembershipTable.UpdateIAmAlive*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Membership.ConsulBasedMembershipTable.DeleteMembershipTableEntries(String)
+  commentId: M:Orleans.Runtime.Membership.ConsulBasedMembershipTable.DeleteMembershipTableEntries(String)
+  id: DeleteMembershipTableEntries(String)
+  parent: Orleans.Runtime.Membership.ConsulBasedMembershipTable
+  langs:
+  - csharp
+  - vb
+  name: DeleteMembershipTableEntries(String)
+  nameWithType: ConsulBasedMembershipTable.DeleteMembershipTableEntries(String)
+  fullName: Orleans.Runtime.Membership.ConsulBasedMembershipTable.DeleteMembershipTableEntries(String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Clustering.Consul/ConsulBasedMembershipTable.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: DeleteMembershipTableEntries
+    path: src/Orleans.Clustering.Consul/ConsulBasedMembershipTable.cs
+    startLine: 141
+  assemblies:
+  - Orleans.Clustering.Consul
+  namespace: Orleans.Runtime.Membership
+  syntax:
+    content: public Task DeleteMembershipTableEntries(String clusterId)
+    parameters:
+    - id: clusterId
+      type: String
+    return:
+      type: Task
+    content.vb: Public Function DeleteMembershipTableEntries(clusterId As String) As Task
+  overload: Orleans.Runtime.Membership.ConsulBasedMembershipTable.DeleteMembershipTableEntries*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans.Runtime.Membership
+  commentId: N:Orleans.Runtime.Membership
+  isExternal: false
+  name: Orleans.Runtime.Membership
+  nameWithType: Orleans.Runtime.Membership
+  fullName: Orleans.Runtime.Membership
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Runtime.Membership.ConsulBasedMembershipTable.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<ConsulBasedMembershipTable>()
+  nameWithType: ImmutableExt.AsImmutable<ConsulBasedMembershipTable>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.Membership.ConsulBasedMembershipTable>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of ConsulBasedMembershipTable)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.Membership.ConsulBasedMembershipTable)()
+  name.vb: AsImmutable(Of ConsulBasedMembershipTable)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<ConsulBasedMembershipTable>
+    nameWithType: ImmutableExt.AsImmutable<ConsulBasedMembershipTable>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.Membership.ConsulBasedMembershipTable>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of ConsulBasedMembershipTable)
+    nameWithType: ImmutableExt.AsImmutable(Of ConsulBasedMembershipTable)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.Membership.ConsulBasedMembershipTable)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: TableVersion
+  isExternal: true
+  name: TableVersion
+  nameWithType: TableVersion
+  fullName: TableVersion
+- uid: Orleans.Runtime.Membership.ConsulBasedMembershipTable.#ctor*
+  commentId: Overload:Orleans.Runtime.Membership.ConsulBasedMembershipTable.#ctor
+  isExternal: false
+  name: ConsulBasedMembershipTable
+  nameWithType: ConsulBasedMembershipTable.ConsulBasedMembershipTable
+  fullName: Orleans.Runtime.Membership.ConsulBasedMembershipTable.ConsulBasedMembershipTable
+- uid: ILogger{Orleans.Runtime.Membership.ConsulBasedMembershipTable}
+  commentId: '!:ILogger{Orleans.Runtime.Membership.ConsulBasedMembershipTable}'
+  definition: ILogger`1
+  name: ILogger<ConsulBasedMembershipTable>
+  nameWithType: ILogger<ConsulBasedMembershipTable>
+  fullName: ILogger<Orleans.Runtime.Membership.ConsulBasedMembershipTable>
+  nameWithType.vb: ILogger(Of ConsulBasedMembershipTable)
+  fullName.vb: ILogger(Of Orleans.Runtime.Membership.ConsulBasedMembershipTable)
+  name.vb: ILogger(Of ConsulBasedMembershipTable)
+  spec.csharp:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Orleans.Runtime.Membership.ConsulBasedMembershipTable
+    name: ConsulBasedMembershipTable
+    nameWithType: ConsulBasedMembershipTable
+    fullName: Orleans.Runtime.Membership.ConsulBasedMembershipTable
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Orleans.Runtime.Membership.ConsulBasedMembershipTable
+    name: ConsulBasedMembershipTable
+    nameWithType: ConsulBasedMembershipTable
+    fullName: Orleans.Runtime.Membership.ConsulBasedMembershipTable
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IOptions{Orleans.Configuration.ConsulClusteringSiloOptions}
+  commentId: '!:IOptions{Orleans.Configuration.ConsulClusteringSiloOptions}'
+  definition: IOptions`1
+  name: IOptions<ConsulClusteringSiloOptions>
+  nameWithType: IOptions<ConsulClusteringSiloOptions>
+  fullName: IOptions<Orleans.Configuration.ConsulClusteringSiloOptions>
+  nameWithType.vb: IOptions(Of ConsulClusteringSiloOptions)
+  fullName.vb: IOptions(Of Orleans.Configuration.ConsulClusteringSiloOptions)
+  name.vb: IOptions(Of ConsulClusteringSiloOptions)
+  spec.csharp:
+  - uid: IOptions`1
+    name: IOptions
+    nameWithType: IOptions
+    fullName: IOptions
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Orleans.Configuration.ConsulClusteringSiloOptions
+    name: ConsulClusteringSiloOptions
+    nameWithType: ConsulClusteringSiloOptions
+    fullName: Orleans.Configuration.ConsulClusteringSiloOptions
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IOptions`1
+    name: IOptions
+    nameWithType: IOptions
+    fullName: IOptions
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Orleans.Configuration.ConsulClusteringSiloOptions
+    name: ConsulClusteringSiloOptions
+    nameWithType: ConsulClusteringSiloOptions
+    fullName: Orleans.Configuration.ConsulClusteringSiloOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IOptions{ClusterOptions}
+  commentId: '!:IOptions{ClusterOptions}'
+  definition: IOptions`1
+  name: IOptions<ClusterOptions>
+  nameWithType: IOptions<ClusterOptions>
+  fullName: IOptions<ClusterOptions>
+  nameWithType.vb: IOptions(Of ClusterOptions)
+  fullName.vb: IOptions(Of ClusterOptions)
+  name.vb: IOptions(Of ClusterOptions)
+  spec.csharp:
+  - uid: IOptions`1
+    name: IOptions
+    nameWithType: IOptions
+    fullName: IOptions
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: ClusterOptions
+    name: ClusterOptions
+    nameWithType: ClusterOptions
+    fullName: ClusterOptions
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IOptions`1
+    name: IOptions
+    nameWithType: IOptions
+    fullName: IOptions
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: ClusterOptions
+    name: ClusterOptions
+    nameWithType: ClusterOptions
+    fullName: ClusterOptions
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: ILogger`1
+  isExternal: true
+  name: ILogger<>
+  nameWithType: ILogger<>
+  fullName: ILogger<>
+  nameWithType.vb: ILogger(Of )
+  fullName.vb: ILogger(Of )
+  name.vb: ILogger(Of )
+  spec.csharp:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IOptions`1
+  isExternal: true
+  name: IOptions<>
+  nameWithType: IOptions<>
+  fullName: IOptions<>
+  nameWithType.vb: IOptions(Of )
+  fullName.vb: IOptions(Of )
+  name.vb: IOptions(Of )
+  spec.csharp:
+  - uid: IOptions`1
+    name: IOptions
+    nameWithType: IOptions
+    fullName: IOptions
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IOptions`1
+    name: IOptions
+    nameWithType: IOptions
+    fullName: IOptions
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.Membership.ConsulBasedMembershipTable.InitializeMembershipTable*
+  commentId: Overload:Orleans.Runtime.Membership.ConsulBasedMembershipTable.InitializeMembershipTable
+  isExternal: false
+  name: InitializeMembershipTable
+  nameWithType: ConsulBasedMembershipTable.InitializeMembershipTable
+  fullName: Orleans.Runtime.Membership.ConsulBasedMembershipTable.InitializeMembershipTable
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task
+- uid: Orleans.Runtime.Membership.ConsulBasedMembershipTable.ReadRow*
+  commentId: Overload:Orleans.Runtime.Membership.ConsulBasedMembershipTable.ReadRow
+  isExternal: false
+  name: ReadRow
+  nameWithType: ConsulBasedMembershipTable.ReadRow
+  fullName: Orleans.Runtime.Membership.ConsulBasedMembershipTable.ReadRow
+- uid: Orleans.Runtime.SiloAddress
+  commentId: T:Orleans.Runtime.SiloAddress
+  parent: Orleans.Runtime
+  isExternal: false
+  name: SiloAddress
+  nameWithType: SiloAddress
+  fullName: Orleans.Runtime.SiloAddress
+- uid: Task{MembershipTableData}
+  commentId: '!:Task{MembershipTableData}'
+  definition: Task`1
+  name: Task<MembershipTableData>
+  nameWithType: Task<MembershipTableData>
+  fullName: Task<MembershipTableData>
+  nameWithType.vb: Task(Of MembershipTableData)
+  fullName.vb: Task(Of MembershipTableData)
+  name.vb: Task(Of MembershipTableData)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MembershipTableData
+    name: MembershipTableData
+    nameWithType: MembershipTableData
+    fullName: MembershipTableData
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MembershipTableData
+    name: MembershipTableData
+    nameWithType: MembershipTableData
+    fullName: MembershipTableData
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime
+  commentId: N:Orleans.Runtime
+  isExternal: false
+  name: Orleans.Runtime
+  nameWithType: Orleans.Runtime
+  fullName: Orleans.Runtime
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.Membership.ConsulBasedMembershipTable.ReadAll*
+  commentId: Overload:Orleans.Runtime.Membership.ConsulBasedMembershipTable.ReadAll
+  isExternal: false
+  name: ReadAll
+  nameWithType: ConsulBasedMembershipTable.ReadAll
+  fullName: Orleans.Runtime.Membership.ConsulBasedMembershipTable.ReadAll
+- uid: ConsulClient
+  commentId: '!:ConsulClient'
+  isExternal: true
+  name: ConsulClient
+  nameWithType: ConsulClient
+  fullName: ConsulClient
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: ILogger
+  isExternal: true
+  name: ILogger
+  nameWithType: ILogger
+  fullName: ILogger
+- uid: Orleans.Runtime.Membership.ConsulBasedMembershipTable.InsertRow*
+  commentId: Overload:Orleans.Runtime.Membership.ConsulBasedMembershipTable.InsertRow
+  isExternal: false
+  name: InsertRow
+  nameWithType: ConsulBasedMembershipTable.InsertRow
+  fullName: Orleans.Runtime.Membership.ConsulBasedMembershipTable.InsertRow
+- uid: MembershipEntry
+  isExternal: true
+  name: MembershipEntry
+  nameWithType: MembershipEntry
+  fullName: MembershipEntry
+- uid: Task{Boolean}
+  commentId: '!:Task{Boolean}'
+  definition: Task`1
+  name: Task<Boolean>
+  nameWithType: Task<Boolean>
+  fullName: Task<Boolean>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: Task(Of Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.Membership.ConsulBasedMembershipTable.UpdateRow*
+  commentId: Overload:Orleans.Runtime.Membership.ConsulBasedMembershipTable.UpdateRow
+  isExternal: false
+  name: UpdateRow
+  nameWithType: ConsulBasedMembershipTable.UpdateRow
+  fullName: Orleans.Runtime.Membership.ConsulBasedMembershipTable.UpdateRow
+- uid: String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: String
+- uid: Orleans.Runtime.Membership.ConsulBasedMembershipTable.UpdateIAmAlive*
+  commentId: Overload:Orleans.Runtime.Membership.ConsulBasedMembershipTable.UpdateIAmAlive
+  isExternal: false
+  name: UpdateIAmAlive
+  nameWithType: ConsulBasedMembershipTable.UpdateIAmAlive
+  fullName: Orleans.Runtime.Membership.ConsulBasedMembershipTable.UpdateIAmAlive
+- uid: Orleans.Runtime.Membership.ConsulBasedMembershipTable.DeleteMembershipTableEntries*
+  commentId: Overload:Orleans.Runtime.Membership.ConsulBasedMembershipTable.DeleteMembershipTableEntries
+  isExternal: false
+  name: DeleteMembershipTableEntries
+  nameWithType: ConsulBasedMembershipTable.DeleteMembershipTableEntries
+  fullName: Orleans.Runtime.Membership.ConsulBasedMembershipTable.DeleteMembershipTableEntries

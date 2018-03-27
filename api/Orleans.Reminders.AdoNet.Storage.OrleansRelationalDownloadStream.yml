@@ -1,0 +1,1026 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream
+  commentId: T:Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream
+  id: OrleansRelationalDownloadStream
+  parent: Orleans.Reminders.AdoNet.Storage
+  children:
+  - Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.#ctor(DbDataReader,System.Int32)
+  - Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.CanRead
+  - Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.CanSeek
+  - Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.CanTimeout
+  - Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.CanWrite
+  - Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.CopyToAsync(Stream,System.Int32,CancellationToken)
+  - Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.Dispose(System.Boolean)
+  - Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.Flush
+  - Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.Length
+  - Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.Position
+  - Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.Read(System.Byte[],System.Int32,System.Int32)
+  - Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.ReadAsync(System.Byte[],System.Int32,System.Int32,CancellationToken)
+  - Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.Seek(System.Int64,SeekOrigin)
+  - Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.SetLength(System.Int64)
+  - Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.Write(System.Byte[],System.Int32,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: OrleansRelationalDownloadStream
+  nameWithType: OrleansRelationalDownloadStream
+  fullName: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream
+  type: Class
+  source:
+    remote:
+      path: src/AdoNet/Shared/Storage/OrleansRelationalDownloadStream.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: OrleansRelationalDownloadStream
+    path: src/AdoNet/Shared/Storage/OrleansRelationalDownloadStream.cs
+    startLine: 22
+  assemblies:
+  - Orleans.Reminders.AdoNet
+  namespace: Orleans.Reminders.AdoNet.Storage
+  summary: "\nThis is a chunked read implementation for ADO.NET providers which do\nnot otherwise implement <see cref=\"!:DbDataReader.GetStream(int)\"></see> natively.\n"
+  example: []
+  syntax:
+    content: 'public class OrleansRelationalDownloadStream : Stream'
+    content.vb: >-
+      Public Class OrleansRelationalDownloadStream
+
+          Inherits Stream
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.#ctor(DbDataReader,System.Int32)
+  commentId: M:Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.#ctor(DbDataReader,System.Int32)
+  id: '#ctor(DbDataReader,System.Int32)'
+  parent: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream
+  langs:
+  - csharp
+  - vb
+  name: OrleansRelationalDownloadStream(DbDataReader, Int32)
+  nameWithType: OrleansRelationalDownloadStream.OrleansRelationalDownloadStream(DbDataReader, Int32)
+  fullName: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.OrleansRelationalDownloadStream(DbDataReader, System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: src/AdoNet/Shared/Storage/OrleansRelationalDownloadStream.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/AdoNet/Shared/Storage/OrleansRelationalDownloadStream.cs
+    startLine: 63
+  assemblies:
+  - Orleans.Reminders.AdoNet
+  namespace: Orleans.Reminders.AdoNet.Storage
+  summary: "\nThe default constructor.\n"
+  example: []
+  syntax:
+    content: public OrleansRelationalDownloadStream(DbDataReader reader, int ordinal)
+    parameters:
+    - id: reader
+      type: DbDataReader
+      description: The reader to use to read from the database.
+    - id: ordinal
+      type: System.Int32
+      description: The column ordinal to read from.
+    content.vb: Public Sub New(reader As DbDataReader, ordinal As Integer)
+  overload: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.CanRead
+  commentId: P:Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.CanRead
+  id: CanRead
+  parent: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream
+  langs:
+  - csharp
+  - vb
+  name: CanRead
+  nameWithType: OrleansRelationalDownloadStream.CanRead
+  fullName: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.CanRead
+  type: Property
+  source:
+    remote:
+      path: src/AdoNet/Shared/Storage/OrleansRelationalDownloadStream.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: CanRead
+    path: src/AdoNet/Shared/Storage/OrleansRelationalDownloadStream.cs
+    startLine: 76
+  assemblies:
+  - Orleans.Reminders.AdoNet
+  namespace: Orleans.Reminders.AdoNet.Storage
+  summary: "\nCan the stream be read.\n"
+  example: []
+  syntax:
+    content: public override bool CanRead { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides ReadOnly Property CanRead As Boolean
+  overload: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.CanRead*
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+- uid: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.CanSeek
+  commentId: P:Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.CanSeek
+  id: CanSeek
+  parent: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream
+  langs:
+  - csharp
+  - vb
+  name: CanSeek
+  nameWithType: OrleansRelationalDownloadStream.CanSeek
+  fullName: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.CanSeek
+  type: Property
+  source:
+    remote:
+      path: src/AdoNet/Shared/Storage/OrleansRelationalDownloadStream.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: CanSeek
+    path: src/AdoNet/Shared/Storage/OrleansRelationalDownloadStream.cs
+    startLine: 86
+  assemblies:
+  - Orleans.Reminders.AdoNet
+  namespace: Orleans.Reminders.AdoNet.Storage
+  summary: "\nAre seeks supported.\n"
+  remarks: Returns <em>FALSE</em>.
+  example: []
+  syntax:
+    content: public override bool CanSeek { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides ReadOnly Property CanSeek As Boolean
+  overload: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.CanSeek*
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+- uid: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.CanTimeout
+  commentId: P:Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.CanTimeout
+  id: CanTimeout
+  parent: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream
+  langs:
+  - csharp
+  - vb
+  name: CanTimeout
+  nameWithType: OrleansRelationalDownloadStream.CanTimeout
+  fullName: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.CanTimeout
+  type: Property
+  source:
+    remote:
+      path: src/AdoNet/Shared/Storage/OrleansRelationalDownloadStream.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: CanTimeout
+    path: src/AdoNet/Shared/Storage/OrleansRelationalDownloadStream.cs
+    startLine: 96
+  assemblies:
+  - Orleans.Reminders.AdoNet
+  namespace: Orleans.Reminders.AdoNet.Storage
+  summary: "\nCan the stream timeout.\n"
+  remarks: Returns <em>FALSE</em>.
+  example: []
+  syntax:
+    content: public override bool CanTimeout { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides ReadOnly Property CanTimeout As Boolean
+  overload: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.CanTimeout*
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+- uid: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.CanWrite
+  commentId: P:Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.CanWrite
+  id: CanWrite
+  parent: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream
+  langs:
+  - csharp
+  - vb
+  name: CanWrite
+  nameWithType: OrleansRelationalDownloadStream.CanWrite
+  fullName: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.CanWrite
+  type: Property
+  source:
+    remote:
+      path: src/AdoNet/Shared/Storage/OrleansRelationalDownloadStream.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: CanWrite
+    path: src/AdoNet/Shared/Storage/OrleansRelationalDownloadStream.cs
+    startLine: 106
+  assemblies:
+  - Orleans.Reminders.AdoNet
+  namespace: Orleans.Reminders.AdoNet.Storage
+  summary: "\nCan the stream write.\n"
+  remarks: Returns <em>FALSE</em>.
+  example: []
+  syntax:
+    content: public override bool CanWrite { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides ReadOnly Property CanWrite As Boolean
+  overload: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.CanWrite*
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+- uid: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.Length
+  commentId: P:Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.Length
+  id: Length
+  parent: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream
+  langs:
+  - csharp
+  - vb
+  name: Length
+  nameWithType: OrleansRelationalDownloadStream.Length
+  fullName: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.Length
+  type: Property
+  source:
+    remote:
+      path: src/AdoNet/Shared/Storage/OrleansRelationalDownloadStream.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Length
+    path: src/AdoNet/Shared/Storage/OrleansRelationalDownloadStream.cs
+    startLine: 115
+  assemblies:
+  - Orleans.Reminders.AdoNet
+  namespace: Orleans.Reminders.AdoNet.Storage
+  summary: "\nThe length of the stream.\n"
+  example: []
+  syntax:
+    content: public override long Length { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public Overrides ReadOnly Property Length As Long
+  overload: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.Length*
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+- uid: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.Position
+  commentId: P:Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.Position
+  id: Position
+  parent: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream
+  langs:
+  - csharp
+  - vb
+  name: Position
+  nameWithType: OrleansRelationalDownloadStream.Position
+  fullName: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.Position
+  type: Property
+  source:
+    remote:
+      path: src/AdoNet/Shared/Storage/OrleansRelationalDownloadStream.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Position
+    path: src/AdoNet/Shared/Storage/OrleansRelationalDownloadStream.cs
+    startLine: 124
+  assemblies:
+  - Orleans.Reminders.AdoNet
+  namespace: Orleans.Reminders.AdoNet.Storage
+  summary: "\nThe current position in the stream.\n"
+  example: []
+  syntax:
+    content: public override long Position { get; set; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public Overrides Property Position As Long
+  overload: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.Position*
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.Flush
+  commentId: M:Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.Flush
+  id: Flush
+  parent: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream
+  langs:
+  - csharp
+  - vb
+  name: Flush()
+  nameWithType: OrleansRelationalDownloadStream.Flush()
+  fullName: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.Flush()
+  type: Method
+  source:
+    remote:
+      path: src/AdoNet/Shared/Storage/OrleansRelationalDownloadStream.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Flush
+    path: src/AdoNet/Shared/Storage/OrleansRelationalDownloadStream.cs
+    startLine: 135
+  assemblies:
+  - Orleans.Reminders.AdoNet
+  namespace: Orleans.Reminders.AdoNet.Storage
+  summary: "\nThrows <exception cref=\"!:NotSupportedException\"></exception>.\n"
+  example: []
+  syntax:
+    content: public override void Flush()
+    content.vb: Public Overrides Sub Flush
+  overload: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.Flush*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.Read(System.Byte[],System.Int32,System.Int32)
+  commentId: M:Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.Read(System.Byte[],System.Int32,System.Int32)
+  id: Read(System.Byte[],System.Int32,System.Int32)
+  parent: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream
+  langs:
+  - csharp
+  - vb
+  name: Read(Byte[], Int32, Int32)
+  nameWithType: OrleansRelationalDownloadStream.Read(Byte[], Int32, Int32)
+  fullName: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.Read(System.Byte[], System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/AdoNet/Shared/Storage/OrleansRelationalDownloadStream.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Read
+    path: src/AdoNet/Shared/Storage/OrleansRelationalDownloadStream.cs
+    startLine: 148
+  assemblies:
+  - Orleans.Reminders.AdoNet
+  namespace: Orleans.Reminders.AdoNet.Storage
+  summary: "\nReads the stream.\n"
+  example: []
+  syntax:
+    content: public override int Read(byte[] buffer, int offset, int count)
+    parameters:
+    - id: buffer
+      type: System.Byte[]
+      description: The buffer to read to.
+    - id: offset
+      type: System.Int32
+      description: The offset to the buffer to stat reading.
+    - id: count
+      type: System.Int32
+      description: The count of bytes to read to.
+    return:
+      type: System.Int32
+      description: The number of actual bytes read from the stream.
+    content.vb: Public Overrides Function Read(buffer As Byte(), offset As Integer, count As Integer) As Integer
+  overload: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.Read*
+  nameWithType.vb: OrleansRelationalDownloadStream.Read(Byte(), Int32, Int32)
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.Read(System.Byte(), System.Int32, System.Int32)
+  name.vb: Read(Byte(), Int32, Int32)
+- uid: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.ReadAsync(System.Byte[],System.Int32,System.Int32,CancellationToken)
+  commentId: M:Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.ReadAsync(System.Byte[],System.Int32,System.Int32,CancellationToken)
+  id: ReadAsync(System.Byte[],System.Int32,System.Int32,CancellationToken)
+  parent: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream
+  langs:
+  - csharp
+  - vb
+  name: ReadAsync(Byte[], Int32, Int32, CancellationToken)
+  nameWithType: OrleansRelationalDownloadStream.ReadAsync(Byte[], Int32, Int32, CancellationToken)
+  fullName: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.ReadAsync(System.Byte[], System.Int32, System.Int32, CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/AdoNet/Shared/Storage/OrleansRelationalDownloadStream.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ReadAsync
+    path: src/AdoNet/Shared/Storage/OrleansRelationalDownloadStream.cs
+    startLine: 181
+  assemblies:
+  - Orleans.Reminders.AdoNet
+  namespace: Orleans.Reminders.AdoNet.Storage
+  summary: "\nReads the stream.\n"
+  example: []
+  syntax:
+    content: public override Task<int> ReadAsync(byte[] buffer, int offset, int count, CancellationToken cancellationToken)
+    parameters:
+    - id: buffer
+      type: System.Byte[]
+      description: The buffer to read to.
+    - id: offset
+      type: System.Int32
+      description: The offset to the buffer to stat reading.
+    - id: count
+      type: System.Int32
+      description: The count of bytes to read to.
+    - id: cancellationToken
+      type: CancellationToken
+      description: The cancellation token.
+    return:
+      type: Task{System.Int32}
+      description: The number of actual bytes read from the stream.
+    content.vb: Public Overrides Function ReadAsync(buffer As Byte(), offset As Integer, count As Integer, cancellationToken As CancellationToken) As Task(Of Integer)
+  overload: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.ReadAsync*
+  nameWithType.vb: OrleansRelationalDownloadStream.ReadAsync(Byte(), Int32, Int32, CancellationToken)
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.ReadAsync(System.Byte(), System.Int32, System.Int32, CancellationToken)
+  name.vb: ReadAsync(Byte(), Int32, Int32, CancellationToken)
+- uid: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.CopyToAsync(Stream,System.Int32,CancellationToken)
+  commentId: M:Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.CopyToAsync(Stream,System.Int32,CancellationToken)
+  id: CopyToAsync(Stream,System.Int32,CancellationToken)
+  parent: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream
+  langs:
+  - csharp
+  - vb
+  name: CopyToAsync(Stream, Int32, CancellationToken)
+  nameWithType: OrleansRelationalDownloadStream.CopyToAsync(Stream, Int32, CancellationToken)
+  fullName: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.CopyToAsync(Stream, System.Int32, CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/AdoNet/Shared/Storage/OrleansRelationalDownloadStream.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: CopyToAsync
+    path: src/AdoNet/Shared/Storage/OrleansRelationalDownloadStream.cs
+    startLine: 220
+  assemblies:
+  - Orleans.Reminders.AdoNet
+  namespace: Orleans.Reminders.AdoNet.Storage
+  summary: "\nA buffer copy operation from database to the destination stream.\n"
+  remarks: Reading from the underlying ADO.NET provider is currently synchro
+  example: []
+  syntax:
+    content: public override Task CopyToAsync(Stream destination, int bufferSize, CancellationToken cancellationToken)
+    parameters:
+    - id: destination
+      type: Stream
+      description: The destination stream.
+    - id: bufferSize
+      type: System.Int32
+      description: The buffer size.
+    - id: cancellationToken
+      type: CancellationToken
+      description: The cancellation token.
+    return:
+      type: Task
+    content.vb: Public Overrides Function CopyToAsync(destination As Stream, bufferSize As Integer, cancellationToken As CancellationToken) As Task
+  overload: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.CopyToAsync*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.Seek(System.Int64,SeekOrigin)
+  commentId: M:Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.Seek(System.Int64,SeekOrigin)
+  id: Seek(System.Int64,SeekOrigin)
+  parent: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream
+  langs:
+  - csharp
+  - vb
+  name: Seek(Int64, SeekOrigin)
+  nameWithType: OrleansRelationalDownloadStream.Seek(Int64, SeekOrigin)
+  fullName: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.Seek(System.Int64, SeekOrigin)
+  type: Method
+  source:
+    remote:
+      path: src/AdoNet/Shared/Storage/OrleansRelationalDownloadStream.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Seek
+    path: src/AdoNet/Shared/Storage/OrleansRelationalDownloadStream.cs
+    startLine: 246
+  assemblies:
+  - Orleans.Reminders.AdoNet
+  namespace: Orleans.Reminders.AdoNet.Storage
+  summary: "\nThrows <exception cref=\"!:NotSupportedException\"></exception>.\n"
+  example: []
+  syntax:
+    content: public override long Seek(long offset, SeekOrigin origin)
+    parameters:
+    - id: offset
+      type: System.Int64
+      description: The offset to the stream.
+    - id: origin
+      type: SeekOrigin
+      description: The origin.
+    return:
+      type: System.Int64
+      description: Throws <exception cref="!:NotSupportedException"></exception>.
+    content.vb: Public Overrides Function Seek(offset As Long, origin As SeekOrigin) As Long
+  overload: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.Seek*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.SetLength(System.Int64)
+  commentId: M:Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.SetLength(System.Int64)
+  id: SetLength(System.Int64)
+  parent: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream
+  langs:
+  - csharp
+  - vb
+  name: SetLength(Int64)
+  nameWithType: OrleansRelationalDownloadStream.SetLength(Int64)
+  fullName: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.SetLength(System.Int64)
+  type: Method
+  source:
+    remote:
+      path: src/AdoNet/Shared/Storage/OrleansRelationalDownloadStream.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SetLength
+    path: src/AdoNet/Shared/Storage/OrleansRelationalDownloadStream.cs
+    startLine: 257
+  assemblies:
+  - Orleans.Reminders.AdoNet
+  namespace: Orleans.Reminders.AdoNet.Storage
+  summary: "\nThrows <exception cref=\"!:NotSupportedException\"></exception>. \n"
+  example: []
+  syntax:
+    content: public override void SetLength(long value)
+    parameters:
+    - id: value
+      type: System.Int64
+    content.vb: Public Overrides Sub SetLength(value As Long)
+  overload: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.SetLength*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.Write(System.Byte[],System.Int32,System.Int32)
+  commentId: M:Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.Write(System.Byte[],System.Int32,System.Int32)
+  id: Write(System.Byte[],System.Int32,System.Int32)
+  parent: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream
+  langs:
+  - csharp
+  - vb
+  name: Write(Byte[], Int32, Int32)
+  nameWithType: OrleansRelationalDownloadStream.Write(Byte[], Int32, Int32)
+  fullName: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.Write(System.Byte[], System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/AdoNet/Shared/Storage/OrleansRelationalDownloadStream.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Write
+    path: src/AdoNet/Shared/Storage/OrleansRelationalDownloadStream.cs
+    startLine: 269
+  assemblies:
+  - Orleans.Reminders.AdoNet
+  namespace: Orleans.Reminders.AdoNet.Storage
+  summary: "\nThrows <exception cref=\"!:NotSupportedException\"></exception>. \n"
+  example: []
+  syntax:
+    content: public override void Write(byte[] buffer, int offset, int count)
+    parameters:
+    - id: buffer
+      type: System.Byte[]
+      description: The buffer.
+    - id: offset
+      type: System.Int32
+      description: The offset to the buffer.
+    - id: count
+      type: System.Int32
+      description: The count of bytes to read.
+    content.vb: Public Overrides Sub Write(buffer As Byte(), offset As Integer, count As Integer)
+  overload: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.Write*
+  nameWithType.vb: OrleansRelationalDownloadStream.Write(Byte(), Int32, Int32)
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.Write(System.Byte(), System.Int32, System.Int32)
+  name.vb: Write(Byte(), Int32, Int32)
+- uid: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.Dispose(System.Boolean)
+  commentId: M:Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream
+  langs:
+  - csharp
+  - vb
+  name: Dispose(Boolean)
+  nameWithType: OrleansRelationalDownloadStream.Dispose(Boolean)
+  fullName: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.Dispose(System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/AdoNet/Shared/Storage/OrleansRelationalDownloadStream.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Dispose
+    path: src/AdoNet/Shared/Storage/OrleansRelationalDownloadStream.cs
+    startLine: 279
+  assemblies:
+  - Orleans.Reminders.AdoNet
+  namespace: Orleans.Reminders.AdoNet.Storage
+  summary: "\nDispose.\n"
+  example: []
+  syntax:
+    content: protected override void Dispose(bool disposing)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+      description: Whether is disposing or not.
+    content.vb: Protected Overrides Sub Dispose(disposing As Boolean)
+  overload: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.Dispose*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+references:
+- uid: Orleans.Reminders.AdoNet.Storage
+  commentId: N:Orleans.Reminders.AdoNet.Storage
+  isExternal: false
+  name: Orleans.Reminders.AdoNet.Storage
+  nameWithType: Orleans.Reminders.AdoNet.Storage
+  fullName: Orleans.Reminders.AdoNet.Storage
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<OrleansRelationalDownloadStream>()
+  nameWithType: ImmutableExt.AsImmutable<OrleansRelationalDownloadStream>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of OrleansRelationalDownloadStream)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream)()
+  name.vb: AsImmutable(Of OrleansRelationalDownloadStream)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<OrleansRelationalDownloadStream>
+    nameWithType: ImmutableExt.AsImmutable<OrleansRelationalDownloadStream>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of OrleansRelationalDownloadStream)
+    nameWithType: ImmutableExt.AsImmutable(Of OrleansRelationalDownloadStream)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.#ctor*
+  commentId: Overload:Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.#ctor
+  isExternal: false
+  name: OrleansRelationalDownloadStream
+  nameWithType: OrleansRelationalDownloadStream.OrleansRelationalDownloadStream
+  fullName: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.OrleansRelationalDownloadStream
+- uid: DbDataReader
+  isExternal: true
+  name: DbDataReader
+  nameWithType: DbDataReader
+  fullName: DbDataReader
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.CanRead*
+  commentId: Overload:Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.CanRead
+  isExternal: false
+  name: CanRead
+  nameWithType: OrleansRelationalDownloadStream.CanRead
+  fullName: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.CanRead
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.CanSeek*
+  commentId: Overload:Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.CanSeek
+  isExternal: false
+  name: CanSeek
+  nameWithType: OrleansRelationalDownloadStream.CanSeek
+  fullName: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.CanSeek
+- uid: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.CanTimeout*
+  commentId: Overload:Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.CanTimeout
+  isExternal: false
+  name: CanTimeout
+  nameWithType: OrleansRelationalDownloadStream.CanTimeout
+  fullName: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.CanTimeout
+- uid: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.CanWrite*
+  commentId: Overload:Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.CanWrite
+  isExternal: false
+  name: CanWrite
+  nameWithType: OrleansRelationalDownloadStream.CanWrite
+  fullName: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.CanWrite
+- uid: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.Length*
+  commentId: Overload:Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.Length
+  isExternal: false
+  name: Length
+  nameWithType: OrleansRelationalDownloadStream.Length
+  fullName: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.Length
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
+- uid: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.Position*
+  commentId: Overload:Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.Position
+  isExternal: false
+  name: Position
+  nameWithType: OrleansRelationalDownloadStream.Position
+  fullName: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.Position
+- uid: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.Flush*
+  commentId: Overload:Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.Flush
+  isExternal: false
+  name: Flush
+  nameWithType: OrleansRelationalDownloadStream.Flush
+  fullName: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.Flush
+- uid: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.Read*
+  commentId: Overload:Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.Read
+  isExternal: false
+  name: Read
+  nameWithType: OrleansRelationalDownloadStream.Read
+  fullName: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.Read
+- uid: System.Byte[]
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.ReadAsync*
+  commentId: Overload:Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.ReadAsync
+  isExternal: false
+  name: ReadAsync
+  nameWithType: OrleansRelationalDownloadStream.ReadAsync
+  fullName: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.ReadAsync
+- uid: CancellationToken
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: CancellationToken
+- uid: Task{System.Int32}
+  commentId: '!:Task{System.Int32}'
+  definition: Task`1
+  name: Task<Int32>
+  nameWithType: Task<Int32>
+  fullName: Task<System.Int32>
+  nameWithType.vb: Task(Of Int32)
+  fullName.vb: Task(Of System.Int32)
+  name.vb: Task(Of Int32)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.CopyToAsync*
+  commentId: Overload:Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.CopyToAsync
+  isExternal: false
+  name: CopyToAsync
+  nameWithType: OrleansRelationalDownloadStream.CopyToAsync
+  fullName: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.CopyToAsync
+- uid: Stream
+  isExternal: true
+  name: Stream
+  nameWithType: Stream
+  fullName: Stream
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task
+- uid: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.Seek*
+  commentId: Overload:Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.Seek
+  isExternal: false
+  name: Seek
+  nameWithType: OrleansRelationalDownloadStream.Seek
+  fullName: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.Seek
+- uid: SeekOrigin
+  isExternal: true
+  name: SeekOrigin
+  nameWithType: SeekOrigin
+  fullName: SeekOrigin
+- uid: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.SetLength*
+  commentId: Overload:Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.SetLength
+  isExternal: false
+  name: SetLength
+  nameWithType: OrleansRelationalDownloadStream.SetLength
+  fullName: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.SetLength
+- uid: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.Write*
+  commentId: Overload:Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.Write
+  isExternal: false
+  name: Write
+  nameWithType: OrleansRelationalDownloadStream.Write
+  fullName: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.Write
+- uid: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.Dispose*
+  commentId: Overload:Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.Dispose
+  isExternal: false
+  name: Dispose
+  nameWithType: OrleansRelationalDownloadStream.Dispose
+  fullName: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.Dispose

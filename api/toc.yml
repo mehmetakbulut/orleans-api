@@ -1,0 +1,868 @@
+### YamlMime:TableOfContent
+- uid: Orleans
+  name: Orleans
+  items:
+  - uid: Orleans.ClientBuilderExtensions
+    name: ClientBuilderExtensions
+  - uid: Orleans.Grain
+    name: Grain
+  - uid: Orleans.Grain`1
+    name: Grain<TGrainState>
+    name.vb: Grain(Of TGrainState)
+  - uid: Orleans.GrainCallFilterDelegate
+    name: GrainCallFilterDelegate
+  - uid: Orleans.GrainCancellationToken
+    name: GrainCancellationToken
+  - uid: Orleans.GrainCancellationTokenSource
+    name: GrainCancellationTokenSource
+  - uid: Orleans.GrainClient
+    name: GrainClient
+  - uid: Orleans.GrainExtensions
+    name: GrainExtensions
+  - uid: Orleans.IGrain
+    name: IGrain
+  - uid: Orleans.IGrainCallContext
+    name: IGrainCallContext
+  - uid: Orleans.IGrainCallFilter
+    name: IGrainCallFilter
+  - uid: Orleans.IGrainFactory
+    name: IGrainFactory
+  - uid: Orleans.IGrainObserver
+    name: IGrainObserver
+  - uid: Orleans.IGrainWithGuidCompoundKey
+    name: IGrainWithGuidCompoundKey
+  - uid: Orleans.IGrainWithGuidKey
+    name: IGrainWithGuidKey
+  - uid: Orleans.IGrainWithIntegerCompoundKey
+    name: IGrainWithIntegerCompoundKey
+  - uid: Orleans.IGrainWithIntegerKey
+    name: IGrainWithIntegerKey
+  - uid: Orleans.IGrainWithStringKey
+    name: IGrainWithStringKey
+  - uid: Orleans.IIncomingGrainCallFilter
+    name: IIncomingGrainCallFilter
+  - uid: Orleans.ILifecycleObservable
+    name: ILifecycleObservable
+  - uid: Orleans.ILifecycleObserver
+    name: ILifecycleObserver
+  - uid: Orleans.ILifecycleParticipant`1
+    name: ILifecycleParticipant<TLifecycleObservable>
+    name.vb: ILifecycleParticipant(Of TLifecycleObservable)
+  - uid: Orleans.ILifecycleSubject
+    name: ILifecycleSubject
+  - uid: Orleans.ImplicitStreamSubscriptionAttribute
+    name: ImplicitStreamSubscriptionAttribute
+  - uid: Orleans.IOutgoingGrainCallFilter
+    name: IOutgoingGrainCallFilter
+  - uid: Orleans.IRemindable
+    name: IRemindable
+  - uid: Orleans.IReminderService
+    name: IReminderService
+  - uid: Orleans.ISystemTarget
+    name: ISystemTarget
+  - uid: Orleans.IVersionManager
+    name: IVersionManager
+  - uid: Orleans.JenkinsHash
+    name: JenkinsHash
+  - uid: Orleans.LifecycleExtensions
+    name: LifecycleExtensions
+  - uid: Orleans.ObserverSubscriptionManager`1
+    name: ObserverSubscriptionManager<T>
+    name.vb: ObserverSubscriptionManager(Of T)
+  - uid: Orleans.PublicOrleansTaskExtensions
+    name: PublicOrleansTaskExtensions
+  - uid: Orleans.RegexImplicitStreamSubscriptionAttribute
+    name: RegexImplicitStreamSubscriptionAttribute
+  - uid: Orleans.TransactionAttribute
+    name: TransactionAttribute
+  - uid: Orleans.TransactionOption
+    name: TransactionOption
+- uid: Orleans.AdoNet
+  name: Orleans.AdoNet
+  items:
+  - uid: Orleans.AdoNet.LegacyAdoNetClusteringConfigurator
+    name: LegacyAdoNetClusteringConfigurator
+- uid: Orleans.AdoNet.Messaging
+  name: Orleans.AdoNet.Messaging
+  items:
+  - uid: Orleans.AdoNet.Messaging.LegacyAdoNetGatewayListProviderConfigurator
+    name: LegacyAdoNetGatewayListProviderConfigurator
+- uid: Orleans.Clustering.AdoNet.Storage
+  name: Orleans.Clustering.AdoNet.Storage
+  items:
+  - uid: Orleans.Clustering.AdoNet.Storage.OrleansRelationalDownloadStream
+    name: OrleansRelationalDownloadStream
+- uid: Orleans.Clustering.DynamoDB
+  name: Orleans.Clustering.DynamoDB
+  items:
+  - uid: Orleans.Clustering.DynamoDB.LegacyDynamoDBGatewayListProviderConfigurator
+    name: LegacyDynamoDBGatewayListProviderConfigurator
+  - uid: Orleans.Clustering.DynamoDB.LegacyDynamoDBMembershipConfigurator
+    name: LegacyDynamoDBMembershipConfigurator
+- uid: Orleans.Clustering.ServiceFabric
+  name: Orleans.Clustering.ServiceFabric
+  items:
+  - uid: Orleans.Clustering.ServiceFabric.OrleansServiceFabricExtensions
+    name: OrleansServiceFabricExtensions
+- uid: Orleans.CodeGeneration
+  name: Orleans.CodeGeneration
+  items:
+  - uid: Orleans.CodeGeneration.ConsiderForCodeGenerationAttribute
+    name: ConsiderForCodeGenerationAttribute
+  - uid: Orleans.CodeGeneration.CopierMethodAttribute
+    name: CopierMethodAttribute
+  - uid: Orleans.CodeGeneration.DeserializerMethodAttribute
+    name: DeserializerMethodAttribute
+  - uid: Orleans.CodeGeneration.GenerateSerializerAttribute
+    name: GenerateSerializerAttribute
+  - uid: Orleans.CodeGeneration.GrainFactoryBase
+    name: GrainFactoryBase
+  - uid: Orleans.CodeGeneration.GrainReferenceAttribute
+    name: GrainReferenceAttribute
+  - uid: Orleans.CodeGeneration.GrainSupportClassAttribute
+    name: GrainSupportClassAttribute
+  - uid: Orleans.CodeGeneration.IGrainExtensionMap
+    name: IGrainExtensionMap
+  - uid: Orleans.CodeGeneration.IGrainExtensionMethodInvoker
+    name: IGrainExtensionMethodInvoker
+  - uid: Orleans.CodeGeneration.IGrainMethodInvoker
+    name: IGrainMethodInvoker
+  - uid: Orleans.CodeGeneration.InvokeMethodOptions
+    name: InvokeMethodOptions
+  - uid: Orleans.CodeGeneration.InvokeMethodRequest
+    name: InvokeMethodRequest
+  - uid: Orleans.CodeGeneration.KnownAssemblyAttribute
+    name: KnownAssemblyAttribute
+  - uid: Orleans.CodeGeneration.KnownBaseTypeAttribute
+    name: KnownBaseTypeAttribute
+  - uid: Orleans.CodeGeneration.KnownTypeAttribute
+    name: KnownTypeAttribute
+  - uid: Orleans.CodeGeneration.MethodIdAttribute
+    name: MethodIdAttribute
+  - uid: Orleans.CodeGeneration.MethodInvokerAttribute
+    name: MethodInvokerAttribute
+  - uid: Orleans.CodeGeneration.OrleansCodeGenerationTargetAttribute
+    name: OrleansCodeGenerationTargetAttribute
+  - uid: Orleans.CodeGeneration.SerializerAttribute
+    name: SerializerAttribute
+  - uid: Orleans.CodeGeneration.SerializerMethodAttribute
+    name: SerializerMethodAttribute
+  - uid: Orleans.CodeGeneration.SkipCodeGenerationAttribute
+    name: SkipCodeGenerationAttribute
+  - uid: Orleans.CodeGeneration.TypeCodeOverrideAttribute
+    name: TypeCodeOverrideAttribute
+  - uid: Orleans.CodeGeneration.VersionAttribute
+    name: VersionAttribute
+- uid: Orleans.CodeGenerator
+  name: Orleans.CodeGenerator
+  items:
+  - uid: Orleans.CodeGenerator.CodeGenerationException
+    name: CodeGenerationException
+  - uid: Orleans.CodeGenerator.KnownTypeDescription
+    name: KnownTypeDescription
+  - uid: Orleans.CodeGenerator.RoslynCodeGenerator
+    name: RoslynCodeGenerator
+  - uid: Orleans.CodeGenerator.SerializerGenerator
+    name: SerializerGenerator
+- uid: Orleans.Concurrency
+  name: Orleans.Concurrency
+  items:
+  - uid: Orleans.Concurrency.AlwaysInterleaveAttribute
+    name: AlwaysInterleaveAttribute
+  - uid: Orleans.Concurrency.Immutable`1
+    name: Immutable<T>
+    name.vb: Immutable(Of T)
+  - uid: Orleans.Concurrency.ImmutableAttribute
+    name: ImmutableAttribute
+  - uid: Orleans.Concurrency.ImmutableExt
+    name: ImmutableExt
+  - uid: Orleans.Concurrency.MayInterleaveAttribute
+    name: MayInterleaveAttribute
+  - uid: Orleans.Concurrency.OneWayAttribute
+    name: OneWayAttribute
+  - uid: Orleans.Concurrency.ReentrantAttribute
+    name: ReentrantAttribute
+  - uid: Orleans.Concurrency.StatelessWorkerAttribute
+    name: StatelessWorkerAttribute
+  - uid: Orleans.Concurrency.UnorderedAttribute
+    name: UnorderedAttribute
+- uid: Orleans.Configuration
+  name: Orleans.Configuration
+  items:
+  - uid: Orleans.Configuration.AdoNetClusteringClientOptions
+    name: AdoNetClusteringClientOptions
+  - uid: Orleans.Configuration.AdoNetClusteringClientOptionsValidator
+    name: AdoNetClusteringClientOptionsValidator
+  - uid: Orleans.Configuration.AdoNetClusteringSiloOptions
+    name: AdoNetClusteringSiloOptions
+  - uid: Orleans.Configuration.AdoNetClusteringSiloOptionsValidator
+    name: AdoNetClusteringSiloOptionsValidator
+  - uid: Orleans.Configuration.AdoNetGrainStorageOptions
+    name: AdoNetGrainStorageOptions
+  - uid: Orleans.Configuration.AdoNetGrainStorageOptionsValidator
+    name: AdoNetGrainStorageOptionsValidator
+  - uid: Orleans.Configuration.AdoNetReminderTableOptions
+    name: AdoNetReminderTableOptions
+  - uid: Orleans.Configuration.AdoNetReminderTableOptionsValidator
+    name: AdoNetReminderTableOptionsValidator
+  - uid: Orleans.Configuration.ApplicationInsightsTelemetryConsumerOptions
+    name: ApplicationInsightsTelemetryConsumerOptions
+  - uid: Orleans.Configuration.AzureTransactionLogOptions
+    name: AzureTransactionLogOptions
+  - uid: Orleans.Configuration.AzureTransactionLogOptionsValidator
+    name: AzureTransactionLogOptionsValidator
+  - uid: Orleans.Configuration.ConsulClusteringClientOptions
+    name: ConsulClusteringClientOptions
+  - uid: Orleans.Configuration.ConsulClusteringSiloOptions
+    name: ConsulClusteringSiloOptions
+  - uid: Orleans.Configuration.DynamoDBClusteringOptions
+    name: DynamoDBClusteringOptions
+  - uid: Orleans.Configuration.DynamoDBClusteringSiloOptions
+    name: DynamoDBClusteringSiloOptions
+  - uid: Orleans.Configuration.DynamoDBGatewayOptions
+    name: DynamoDBGatewayOptions
+  - uid: Orleans.Configuration.DynamoDBGrainStorageOptionsValidator
+    name: DynamoDBGrainStorageOptionsValidator
+  - uid: Orleans.Configuration.DynamoDBReminderStorageOptions
+    name: DynamoDBReminderStorageOptions
+  - uid: Orleans.Configuration.DynamoDBReminderTableOptions
+    name: DynamoDBReminderTableOptions
+  - uid: Orleans.Configuration.DynamoDBStorageOptions
+    name: DynamoDBStorageOptions
+  - uid: Orleans.Configuration.LegacyConfigurationExtensions
+    name: LegacyConfigurationExtensions
+  - uid: Orleans.Configuration.NewRelicTelemetryConsumerOptions
+    name: NewRelicTelemetryConsumerOptions
+  - uid: Orleans.Configuration.PubSubOptions
+    name: PubSubOptions
+  - uid: Orleans.Configuration.ServiceFabricClusteringOptions
+    name: ServiceFabricClusteringOptions
+  - uid: Orleans.Configuration.SqsOptions
+    name: SqsOptions
+  - uid: Orleans.Configuration.ZooKeeperClusteringSiloOptions
+    name: ZooKeeperClusteringSiloOptions
+  - uid: Orleans.Configuration.ZooKeeperGatewayListProviderOptions
+    name: ZooKeeperGatewayListProviderOptions
+- uid: Orleans.ConsulUtils
+  name: Orleans.ConsulUtils
+  items:
+  - uid: Orleans.ConsulUtils.LegacyConsulGatewayListProviderConfigurator
+    name: LegacyConsulGatewayListProviderConfigurator
+- uid: Orleans.Core
+  name: Orleans.Core
+  items:
+  - uid: Orleans.Core.IGrainIdentity
+    name: IGrainIdentity
+  - uid: Orleans.Core.IStorage`1
+    name: IStorage<TState>
+    name.vb: IStorage(Of TState)
+- uid: Orleans.EventSourcing
+  name: Orleans.EventSourcing
+  items:
+  - uid: Orleans.EventSourcing.JournaledGrain`2
+    name: JournaledGrain<TGrainState, TEventBase>
+    name.vb: JournaledGrain(Of TGrainState, TEventBase)
+  - uid: Orleans.EventSourcing.JournaledGrain`1
+    name: JournaledGrain<TGrainState>
+    name.vb: JournaledGrain(Of TGrainState)
+- uid: Orleans.EventSourcing.Common
+  name: Orleans.EventSourcing.Common
+  items:
+  - uid: Orleans.EventSourcing.Common.BatchedNotificationMessage
+    name: BatchedNotificationMessage
+  - uid: Orleans.EventSourcing.Common.INotificationMessage
+    name: INotificationMessage
+  - uid: Orleans.EventSourcing.Common.NotificationFailed
+    name: NotificationFailed
+  - uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3
+    name: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>
+    name.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry)
+  - uid: Orleans.EventSourcing.Common.PrimaryOperationFailed
+    name: PrimaryOperationFailed
+  - uid: Orleans.EventSourcing.Common.RecordedConnectionIssue
+    name: RecordedConnectionIssue
+  - uid: Orleans.EventSourcing.Common.StringEncodedWriteVector
+    name: StringEncodedWriteVector
+  - uid: Orleans.EventSourcing.Common.SubmissionEntry`1
+    name: SubmissionEntry<TLogEntry>
+    name.vb: SubmissionEntry(Of TLogEntry)
+  - uid: Orleans.EventSourcing.Common.VersionNotificationMessage
+    name: VersionNotificationMessage
+- uid: Orleans.EventSourcing.CustomStorage
+  name: Orleans.EventSourcing.CustomStorage
+  items:
+  - uid: Orleans.EventSourcing.CustomStorage.ICustomStorageInterface`2
+    name: ICustomStorageInterface<TState, TDelta>
+    name.vb: ICustomStorageInterface(Of TState, TDelta)
+  - uid: Orleans.EventSourcing.CustomStorage.LogConsistencyProvider
+    name: LogConsistencyProvider
+- uid: Orleans.EventSourcing.LogStorage
+  name: Orleans.EventSourcing.LogStorage
+  items:
+  - uid: Orleans.EventSourcing.LogStorage.LogConsistencyProvider
+    name: LogConsistencyProvider
+  - uid: Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1
+    name: LogStateWithMetaData<TEntry>
+    name.vb: LogStateWithMetaData(Of TEntry)
+  - uid: Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag`1
+    name: LogStateWithMetaDataAndETag<TEntry>
+    name.vb: LogStateWithMetaDataAndETag(Of TEntry)
+- uid: Orleans.EventSourcing.StateStorage
+  name: Orleans.EventSourcing.StateStorage
+  items:
+  - uid: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1
+    name: GrainStateWithMetaData<TView>
+    name.vb: GrainStateWithMetaData(Of TView)
+  - uid: Orleans.EventSourcing.StateStorage.GrainStateWithMetaDataAndETag`1
+    name: GrainStateWithMetaDataAndETag<TView>
+    name.vb: GrainStateWithMetaDataAndETag(Of TView)
+  - uid: Orleans.EventSourcing.StateStorage.LogConsistencyProvider
+    name: LogConsistencyProvider
+- uid: Orleans.Extensions.Logging
+  name: Orleans.Extensions.Logging
+  items:
+  - uid: Orleans.Extensions.Logging.TelemetryLogConsumer
+    name: TelemetryLogConsumer
+- uid: Orleans.GrainDirectory
+  name: Orleans.GrainDirectory
+  items:
+  - uid: Orleans.GrainDirectory.IMultiClusterRegistrationStrategy
+    name: IMultiClusterRegistrationStrategy
+- uid: Orleans.Hosting
+  name: Orleans.Hosting
+  items:
+  - uid: Orleans.Hosting.AdoNetHostingExtensions
+    name: AdoNetHostingExtensions
+  - uid: Orleans.Hosting.AITelemetryConsumerConfigurationExtensions
+    name: AITelemetryConsumerConfigurationExtensions
+  - uid: Orleans.Hosting.ApplicationPartManagerCodeGenExtensions
+    name: ApplicationPartManagerCodeGenExtensions
+  - uid: Orleans.Hosting.AwsUtilsHostingExtensions
+    name: AwsUtilsHostingExtensions
+  - uid: Orleans.Hosting.ClientBuilderExtensions
+    name: ClientBuilderExtensions
+  - uid: Orleans.Hosting.ConsulUtilsHostingExtensions
+    name: ConsulUtilsHostingExtensions
+  - uid: Orleans.Hosting.DynamoDBSiloBuilderExtensions
+    name: DynamoDBSiloBuilderExtensions
+  - uid: Orleans.Hosting.LegacyClusterConfigurationExtensions
+    name: LegacyClusterConfigurationExtensions
+  - uid: Orleans.Hosting.NRTelemetryConsumerConfigurationExtensions
+    name: NRTelemetryConsumerConfigurationExtensions
+  - uid: Orleans.Hosting.PerfCountersConfigurationExtensions
+    name: PerfCountersConfigurationExtensions
+  - uid: Orleans.Hosting.ServiceFabricConfigurationExtensions
+    name: ServiceFabricConfigurationExtensions
+  - uid: Orleans.Hosting.SiloBuilderExtensions
+    name: SiloBuilderExtensions
+  - uid: Orleans.Hosting.SiloHostBuilderReminderExtensions
+    name: SiloHostBuilderReminderExtensions
+  - uid: Orleans.Hosting.ZooKeeperHostingExtensions
+    name: ZooKeeperHostingExtensions
+- uid: Orleans.Hosting.ServiceFabric
+  name: Orleans.Hosting.ServiceFabric
+  items:
+  - uid: Orleans.Hosting.ServiceFabric.OrleansCommunicationListener
+    name: OrleansCommunicationListener
+  - uid: Orleans.Hosting.ServiceFabric.OrleansServiceListener
+    name: OrleansServiceListener
+- uid: Orleans.LogConsistency
+  name: Orleans.LogConsistency
+  items:
+  - uid: Orleans.LogConsistency.ConnectionIssue
+    name: ConnectionIssue
+  - uid: Orleans.LogConsistency.NotificationFailed
+    name: NotificationFailed
+- uid: Orleans.Logging.Legacy
+  name: Orleans.Logging.Legacy
+  items:
+  - uid: Orleans.Logging.Legacy.EventBulkingDecoratorLogger
+    name: EventBulkingDecoratorLogger
+  - uid: Orleans.Logging.Legacy.EventBulkingLoggerProvider`1
+    name: EventBulkingLoggerProvider<TDecoratedLoggerProvider>
+    name.vb: EventBulkingLoggerProvider(Of TDecoratedLoggerProvider)
+  - uid: Orleans.Logging.Legacy.EventBulkingOptions
+    name: EventBulkingOptions
+  - uid: Orleans.Logging.Legacy.LegacyFileLogConsumer
+    name: LegacyFileLogConsumer
+  - uid: Orleans.Logging.Legacy.LegacyOrleansLogger
+    name: LegacyOrleansLogger
+  - uid: Orleans.Logging.Legacy.LegacyOrleansLoggerProvider
+    name: LegacyOrleansLoggerProvider
+  - uid: Orleans.Logging.Legacy.LegacyOrleansLoggingFactoryExtensions
+    name: LegacyOrleansLoggingFactoryExtensions
+  - uid: Orleans.Logging.Legacy.OrleansLoggerSeverityOverrides
+    name: OrleansLoggerSeverityOverrides
+  - uid: Orleans.Logging.Legacy.OrleansLoggingUtils
+    name: OrleansLoggingUtils
+- uid: Orleans.Metadata
+  name: Orleans.Metadata
+  items:
+  - uid: Orleans.Metadata.FeaturePopulatorAttribute
+    name: FeaturePopulatorAttribute
+  - uid: Orleans.Metadata.GrainClassFeature
+    name: GrainClassFeature
+  - uid: Orleans.Metadata.GrainClassMetadata
+    name: GrainClassMetadata
+  - uid: Orleans.Metadata.GrainInterfaceFeature
+    name: GrainInterfaceFeature
+  - uid: Orleans.Metadata.GrainInterfaceMetadata
+    name: GrainInterfaceMetadata
+  - uid: Orleans.Metadata.IFeaturePopulator`1
+    name: IFeaturePopulator<TFeature>
+    name.vb: IFeaturePopulator(Of TFeature)
+- uid: Orleans.MultiCluster
+  name: Orleans.MultiCluster
+  items:
+  - uid: Orleans.MultiCluster.GlobalSingleInstanceAttribute
+    name: GlobalSingleInstanceAttribute
+  - uid: Orleans.MultiCluster.OneInstancePerClusterAttribute
+    name: OneInstancePerClusterAttribute
+  - uid: Orleans.MultiCluster.RegistrationAttribute
+    name: RegistrationAttribute
+- uid: Orleans.Persistence.AdoNet.Storage
+  name: Orleans.Persistence.AdoNet.Storage
+  items:
+  - uid: Orleans.Persistence.AdoNet.Storage.OrleansRelationalDownloadStream
+    name: OrleansRelationalDownloadStream
+- uid: Orleans.Placement
+  name: Orleans.Placement
+  items:
+  - uid: Orleans.Placement.ActivationCountBasedPlacementAttribute
+    name: ActivationCountBasedPlacementAttribute
+  - uid: Orleans.Placement.HashBasedPlacementAttribute
+    name: HashBasedPlacementAttribute
+  - uid: Orleans.Placement.PlacementAttribute
+    name: PlacementAttribute
+  - uid: Orleans.Placement.PreferLocalPlacementAttribute
+    name: PreferLocalPlacementAttribute
+  - uid: Orleans.Placement.RandomPlacementAttribute
+    name: RandomPlacementAttribute
+- uid: Orleans.Providers
+  name: Orleans.Providers
+  items:
+  - uid: Orleans.Providers.IBootstrapProvider
+    name: IBootstrapProvider
+  - uid: Orleans.Providers.LogConsistencyProviderAttribute
+    name: LogConsistencyProviderAttribute
+  - uid: Orleans.Providers.ProviderConstants
+    name: ProviderConstants
+  - uid: Orleans.Providers.StorageProviderAttribute
+    name: StorageProviderAttribute
+- uid: Orleans.Providers.GCP.Streams.PubSub
+  name: Orleans.Providers.GCP.Streams.PubSub
+  items:
+  - uid: Orleans.Providers.GCP.Streams.PubSub.IPubSubDataAdapter
+    name: IPubSubDataAdapter
+  - uid: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1
+    name: PubSubAdapterFactory<TDataAdapter>
+    name.vb: PubSubAdapterFactory(Of TDataAdapter)
+  - uid: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver
+    name: PubSubAdapterReceiver
+  - uid: Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer
+    name: PubSubBatchContainer
+  - uid: Orleans.Providers.GCP.Streams.PubSub.PubSubDataAdapter
+    name: PubSubDataAdapter
+  - uid: Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager
+    name: PubSubDataManager
+- uid: Orleans.Reminders.AdoNet.Storage
+  name: Orleans.Reminders.AdoNet.Storage
+  items:
+  - uid: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream
+    name: OrleansRelationalDownloadStream
+- uid: Orleans.Runtime
+  name: Orleans.Runtime
+  items:
+  - uid: Orleans.Runtime.ClientNotAvailableException
+    name: ClientNotAvailableException
+  - uid: Orleans.Runtime.DeadlockException
+    name: DeadlockException
+  - uid: Orleans.Runtime.GatewayTooBusyException
+    name: GatewayTooBusyException
+  - uid: Orleans.Runtime.GrainExtensionNotInstalledException
+    name: GrainExtensionNotInstalledException
+  - uid: Orleans.Runtime.GrainLifecycleStage
+    name: GrainLifecycleStage
+  - uid: Orleans.Runtime.GrainReference
+    name: GrainReference
+  - uid: Orleans.Runtime.GrainReferenceNotBoundException
+    name: GrainReferenceNotBoundException
+  - uid: Orleans.Runtime.GuidId
+    name: GuidId
+  - uid: Orleans.Runtime.IAddressable
+    name: IAddressable
+  - uid: Orleans.Runtime.ICloseableLogConsumer
+    name: ICloseableLogConsumer
+  - uid: Orleans.Runtime.IFlushableLogConsumer
+    name: IFlushableLogConsumer
+  - uid: Orleans.Runtime.IGrainExtension
+    name: IGrainExtension
+  - uid: Orleans.Runtime.IGrainLifecycle
+    name: IGrainLifecycle
+  - uid: Orleans.Runtime.IGrainReferenceRuntime
+    name: IGrainReferenceRuntime
+  - uid: Orleans.Runtime.IGrainReminder
+    name: IGrainReminder
+  - uid: Orleans.Runtime.IGrainRuntime
+    name: IGrainRuntime
+  - uid: Orleans.Runtime.IKeyedService`2
+    name: IKeyedService<TKey, TService>
+    name.vb: IKeyedService(Of TKey, TService)
+  - uid: Orleans.Runtime.IKeyedServiceCollection`2
+    name: IKeyedServiceCollection<TKey, TService>
+    name.vb: IKeyedServiceCollection(Of TKey, TService)
+  - uid: Orleans.Runtime.ILogConsumer
+    name: ILogConsumer
+  - uid: Orleans.Runtime.KeyedServiceCollectionExtensions
+    name: KeyedServiceCollectionExtensions
+  - uid: Orleans.Runtime.LimitExceededException
+    name: LimitExceededException
+  - uid: Orleans.Runtime.Logger
+    name: Logger
+  - uid: Orleans.Runtime.LoggerExtensionMethods
+    name: LoggerExtensionMethods
+  - uid: Orleans.Runtime.LoggerExtensions
+    name: LoggerExtensions
+  - uid: Orleans.Runtime.LoggerType
+    name: LoggerType
+  - uid: Orleans.Runtime.OrleansConfigurationException
+    name: OrleansConfigurationException
+  - uid: Orleans.Runtime.OrleansException
+    name: OrleansException
+  - uid: Orleans.Runtime.OrleansLifecycleCanceledException
+    name: OrleansLifecycleCanceledException
+  - uid: Orleans.Runtime.OrleansMessageRejectionException
+    name: OrleansMessageRejectionException
+  - uid: Orleans.Runtime.PlacementStrategy
+    name: PlacementStrategy
+  - uid: Orleans.Runtime.ReminderException
+    name: ReminderException
+  - uid: Orleans.Runtime.RequestContext
+    name: RequestContext
+  - uid: Orleans.Runtime.Severity
+    name: Severity
+  - uid: Orleans.Runtime.SiloAddress
+    name: SiloAddress
+  - uid: Orleans.Runtime.SiloUnavailableException
+    name: SiloUnavailableException
+  - uid: Orleans.Runtime.TickStatus
+    name: TickStatus
+- uid: Orleans.Runtime.Configuration
+  name: Orleans.Runtime.Configuration
+  items:
+  - uid: Orleans.Runtime.Configuration.ApplicationConfiguration
+    name: ApplicationConfiguration
+  - uid: Orleans.Runtime.Configuration.BootstrapProviderConfiguration
+    name: BootstrapProviderConfiguration
+  - uid: Orleans.Runtime.Configuration.ClientConfiguration
+    name: ClientConfiguration
+  - uid: Orleans.Runtime.Configuration.ClientConfiguration.GatewayProviderType
+    name: ClientConfiguration.GatewayProviderType
+  - uid: Orleans.Runtime.Configuration.ClusterConfiguration
+    name: ClusterConfiguration
+  - uid: Orleans.Runtime.Configuration.ConfigurationExtensions
+    name: ConfigurationExtensions
+  - uid: Orleans.Runtime.Configuration.GlobalConfiguration
+    name: GlobalConfiguration
+  - uid: Orleans.Runtime.Configuration.GlobalConfiguration.DirectoryCachingStrategyType
+    name: GlobalConfiguration.DirectoryCachingStrategyType
+  - uid: Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelConfiguration
+    name: GlobalConfiguration.GossipChannelConfiguration
+  - uid: Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelType
+    name: GlobalConfiguration.GossipChannelType
+  - uid: Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType
+    name: GlobalConfiguration.LivenessProviderType
+  - uid: Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType
+    name: GlobalConfiguration.ReminderServiceProviderType
+  - uid: Orleans.Runtime.Configuration.GrainServiceConfiguration
+    name: GrainServiceConfiguration
+  - uid: Orleans.Runtime.Configuration.GrainServiceConfigurations
+    name: GrainServiceConfigurations
+  - uid: Orleans.Runtime.Configuration.GrainTypeConfiguration
+    name: GrainTypeConfiguration
+  - uid: Orleans.Runtime.Configuration.IGrainServiceConfiguration
+    name: IGrainServiceConfiguration
+  - uid: Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions
+    name: LogConsistencyConfigurationExtensions
+  - uid: Orleans.Runtime.Configuration.NodeConfiguration
+    name: NodeConfiguration
+  - uid: Orleans.Runtime.Configuration.PerfCountersConfigurationExtensions
+    name: PerfCountersConfigurationExtensions
+- uid: Orleans.Runtime.Host
+  name: Orleans.Runtime.Host
+  items:
+  - uid: Orleans.Runtime.Host.ConsulSiloRegistration
+    name: ConsulSiloRegistration
+  - uid: Orleans.Runtime.Host.SiloHost
+    name: SiloHost
+  - uid: Orleans.Runtime.Host.SuspectingSilo
+    name: SuspectingSilo
+- uid: Orleans.Runtime.Membership
+  name: Orleans.Runtime.Membership
+  items:
+  - uid: Orleans.Runtime.Membership.AdoNetGatewayListProvider
+    name: AdoNetGatewayListProvider
+  - uid: Orleans.Runtime.Membership.ConsulBasedMembershipTable
+    name: ConsulBasedMembershipTable
+  - uid: Orleans.Runtime.Membership.ConsulGatewayListProvider
+    name: ConsulGatewayListProvider
+  - uid: Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable
+    name: ZooKeeperBasedMembershipTable
+  - uid: Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions
+    name: ZooKeeperClusteringClientOptions
+- uid: Orleans.Runtime.MembershipService
+  name: Orleans.Runtime.MembershipService
+  items:
+  - uid: Orleans.Runtime.MembershipService.AdoNetClusteringTable
+    name: AdoNetClusteringTable
+  - uid: Orleans.Runtime.MembershipService.LegacyConsulMembershipConfigurator
+    name: LegacyConsulMembershipConfigurator
+- uid: Orleans.Serialization
+  name: Orleans.Serialization
+  items:
+  - uid: Orleans.Serialization.BondSerializer
+    name: BondSerializer
+  - uid: Orleans.Serialization.DeepCopier
+    name: DeepCopier
+  - uid: Orleans.Serialization.Deserializer
+    name: Deserializer
+  - uid: Orleans.Serialization.IBinaryTokenStreamReader
+    name: IBinaryTokenStreamReader
+  - uid: Orleans.Serialization.IBinaryTokenStreamWriter
+    name: IBinaryTokenStreamWriter
+  - uid: Orleans.Serialization.ICopyContext
+    name: ICopyContext
+  - uid: Orleans.Serialization.IDeserializationContext
+    name: IDeserializationContext
+  - uid: Orleans.Serialization.IFieldUtils
+    name: IFieldUtils
+  - uid: Orleans.Serialization.IOnDeserialized
+    name: IOnDeserialized
+  - uid: Orleans.Serialization.ISerializationContext
+    name: ISerializationContext
+  - uid: Orleans.Serialization.ISerializerContext
+    name: ISerializerContext
+  - uid: Orleans.Serialization.ProtobufSerializer
+    name: ProtobufSerializer
+  - uid: Orleans.Serialization.Serializer
+    name: Serializer
+  - uid: Orleans.Serialization.SerializerDelegateMetadata
+    name: SerializerDelegateMetadata
+  - uid: Orleans.Serialization.SerializerFeature
+    name: SerializerFeature
+  - uid: Orleans.Serialization.SerializerKnownTypeMetadata
+    name: SerializerKnownTypeMetadata
+  - uid: Orleans.Serialization.SerializerMethods
+    name: SerializerMethods
+  - uid: Orleans.Serialization.SerializerTypeMetadata
+    name: SerializerTypeMetadata
+  - uid: Orleans.Serialization.ValueTypeSetter`2
+    name: ValueTypeSetter<TDeclaring, TField>
+    name.vb: ValueTypeSetter(Of TDeclaring, TField)
+- uid: Orleans.ServiceFabric
+  name: Orleans.ServiceFabric
+  items:
+  - uid: Orleans.ServiceFabric.FabricSiloInfo
+    name: FabricSiloInfo
+  - uid: Orleans.ServiceFabric.ServiceFabricConstants
+    name: ServiceFabricConstants
+- uid: Orleans.Services
+  name: Orleans.Services
+  items:
+  - uid: Orleans.Services.IGrainService
+    name: IGrainService
+  - uid: Orleans.Services.IGrainServiceClient`1
+    name: IGrainServiceClient<TGrainService>
+    name.vb: IGrainServiceClient(Of TGrainService)
+- uid: Orleans.Statistics
+  name: Orleans.Statistics
+  items:
+  - uid: Orleans.Statistics.ClientBuilderExtensions
+    name: ClientBuilderExtensions
+  - uid: Orleans.Statistics.IAppEnvironmentStatistics
+    name: IAppEnvironmentStatistics
+  - uid: Orleans.Statistics.IHostEnvironmentStatistics
+    name: IHostEnvironmentStatistics
+  - uid: Orleans.Statistics.SiloHostBuilderExtensions
+    name: SiloHostBuilderExtensions
+- uid: Orleans.Storage
+  name: Orleans.Storage
+  items:
+  - uid: Orleans.Storage.AdoNetGrainStorage
+    name: AdoNetGrainStorage
+  - uid: Orleans.Storage.AdoNetGrainStorageFactory
+    name: AdoNetGrainStorageFactory
+  - uid: Orleans.Storage.DefaultRelationalStoragePicker
+    name: DefaultRelationalStoragePicker
+  - uid: Orleans.Storage.DynamoDBGrainStorage
+    name: DynamoDBGrainStorage
+  - uid: Orleans.Storage.DynamoDBGrainStorageFactory
+    name: DynamoDBGrainStorageFactory
+  - uid: Orleans.Storage.IHasher
+    name: IHasher
+  - uid: Orleans.Storage.IStorageDeserializer
+    name: IStorageDeserializer
+  - uid: Orleans.Storage.IStorageHasherPicker
+    name: IStorageHasherPicker
+  - uid: Orleans.Storage.IStorageSerializationPicker
+    name: IStorageSerializationPicker
+  - uid: Orleans.Storage.IStorageSerializer
+    name: IStorageSerializer
+  - uid: Orleans.Storage.OrleansDefaultHasher
+    name: OrleansDefaultHasher
+  - uid: Orleans.Storage.OrleansStorageDefaultBinaryDeserializer
+    name: OrleansStorageDefaultBinaryDeserializer
+  - uid: Orleans.Storage.OrleansStorageDefaultBinarySerializer
+    name: OrleansStorageDefaultBinarySerializer
+  - uid: Orleans.Storage.OrleansStorageDefaultJsonDeserializer
+    name: OrleansStorageDefaultJsonDeserializer
+  - uid: Orleans.Storage.OrleansStorageDefaultJsonSerializer
+    name: OrleansStorageDefaultJsonSerializer
+  - uid: Orleans.Storage.OrleansStorageDefaultXmlDeserializer
+    name: OrleansStorageDefaultXmlDeserializer
+  - uid: Orleans.Storage.OrleansStorageDefaultXmlSerializer
+    name: OrleansStorageDefaultXmlSerializer
+  - uid: Orleans.Storage.RelationalStorageProviderQueries
+    name: RelationalStorageProviderQueries
+  - uid: Orleans.Storage.SerializationChoice
+    name: SerializationChoice
+  - uid: Orleans.Storage.StorageHasherPicker
+    name: StorageHasherPicker
+- uid: Orleans.Streams
+  name: Orleans.Streams
+  items:
+  - uid: Orleans.Streams.AsyncObservableExtensions
+    name: AsyncObservableExtensions
+  - uid: Orleans.Streams.ClusterClientPubSubStreamConfigurator`1
+    name: ClusterClientPubSubStreamConfigurator<TDataAdapter>
+    name.vb: ClusterClientPubSubStreamConfigurator(Of TDataAdapter)
+  - uid: Orleans.Streams.ClusterClientSqsStreamConfigurator
+    name: ClusterClientSqsStreamConfigurator
+  - uid: Orleans.Streams.IAsyncBatchObserver`1
+    name: IAsyncBatchObserver<T>
+    name.vb: IAsyncBatchObserver(Of T)
+  - uid: Orleans.Streams.IAsyncObservable`1
+    name: IAsyncObservable<T>
+    name.vb: IAsyncObservable(Of T)
+  - uid: Orleans.Streams.IAsyncObserver`1
+    name: IAsyncObserver<T>
+    name.vb: IAsyncObserver(Of T)
+  - uid: Orleans.Streams.IAsyncStream`1
+    name: IAsyncStream<T>
+    name.vb: IAsyncStream(Of T)
+  - uid: Orleans.Streams.IStreamIdentity
+    name: IStreamIdentity
+  - uid: Orleans.Streams.IStreamNamespacePredicate
+    name: IStreamNamespacePredicate
+  - uid: Orleans.Streams.IStreamProvider
+    name: IStreamProvider
+  - uid: Orleans.Streams.RegexStreamNamespacePredicate
+    name: RegexStreamNamespacePredicate
+  - uid: Orleans.Streams.SiloPubSubStreamConfigurator`1
+    name: SiloPubSubStreamConfigurator<TDataAdapter>
+    name.vb: SiloPubSubStreamConfigurator(Of TDataAdapter)
+  - uid: Orleans.Streams.SiloSqsStreamConfigurator
+    name: SiloSqsStreamConfigurator
+  - uid: Orleans.Streams.StreamFilterPredicate
+    name: StreamFilterPredicate
+  - uid: Orleans.Streams.StreamSequenceToken
+    name: StreamSequenceToken
+  - uid: Orleans.Streams.StreamSequenceTokenUtilities
+    name: StreamSequenceTokenUtilities
+  - uid: Orleans.Streams.StreamSubscriptionHandle`1
+    name: StreamSubscriptionHandle<T>
+    name.vb: StreamSubscriptionHandle(Of T)
+  - uid: Orleans.Streams.StreamSubscriptionHandleExtensions
+    name: StreamSubscriptionHandleExtensions
+- uid: Orleans.Streams.Core
+  name: Orleans.Streams.Core
+  items:
+  - uid: Orleans.Streams.Core.IStreamSubscriptionHandleFactory
+    name: IStreamSubscriptionHandleFactory
+  - uid: Orleans.Streams.Core.IStreamSubscriptionObserver
+    name: IStreamSubscriptionObserver
+- uid: Orleans.TelemetryConsumers.AI
+  name: Orleans.TelemetryConsumers.AI
+  items:
+  - uid: Orleans.TelemetryConsumers.AI.AITelemetryConsumer
+    name: AITelemetryConsumer
+- uid: Orleans.TelemetryConsumers.NewRelic
+  name: Orleans.TelemetryConsumers.NewRelic
+  items:
+  - uid: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer
+    name: NRTelemetryConsumer
+- uid: Orleans.Timers
+  name: Orleans.Timers
+  items:
+  - uid: Orleans.Timers.IReminderRegistry
+    name: IReminderRegistry
+  - uid: Orleans.Timers.ITimerRegistry
+    name: ITimerRegistry
+- uid: Orleans.Transactions.AzureStorage
+  name: Orleans.Transactions.AzureStorage
+  items:
+  - uid: Orleans.Transactions.AzureStorage.AzureTransactionLogConfiguration
+    name: AzureTransactionLogConfiguration
+  - uid: Orleans.Transactions.AzureStorage.AzureTransactionLogStorage
+    name: AzureTransactionLogStorage
+- uid: Orleans.Versions
+  name: Orleans.Versions
+  items:
+  - uid: Orleans.Versions.IVersionStore
+    name: IVersionStore
+- uid: Orleans.Versions.Compatibility
+  name: Orleans.Versions.Compatibility
+  items:
+  - uid: Orleans.Versions.Compatibility.AllVersionsCompatible
+    name: AllVersionsCompatible
+  - uid: Orleans.Versions.Compatibility.BackwardCompatible
+    name: BackwardCompatible
+  - uid: Orleans.Versions.Compatibility.CompatibilityStrategy
+    name: CompatibilityStrategy
+  - uid: Orleans.Versions.Compatibility.ICompatibilityDirector
+    name: ICompatibilityDirector
+  - uid: Orleans.Versions.Compatibility.StrictVersionCompatible
+    name: StrictVersionCompatible
+- uid: Orleans.Versions.Selector
+  name: Orleans.Versions.Selector
+  items:
+  - uid: Orleans.Versions.Selector.AllCompatibleVersions
+    name: AllCompatibleVersions
+  - uid: Orleans.Versions.Selector.IVersionSelector
+    name: IVersionSelector
+  - uid: Orleans.Versions.Selector.LatestVersion
+    name: LatestVersion
+  - uid: Orleans.Versions.Selector.MinimumVersion
+    name: MinimumVersion
+  - uid: Orleans.Versions.Selector.VersionSelectorStrategy
+    name: VersionSelectorStrategy
+- uid: OrleansAWSUtils.Streams
+  name: OrleansAWSUtils.Streams
+  items:
+  - uid: OrleansAWSUtils.Streams.SQSAdapterFactory
+    name: SQSAdapterFactory
+  - uid: OrleansAWSUtils.Streams.SQSStreamProviderUtils
+    name: SQSStreamProviderUtils
+- uid: OrleansPSUtils
+  name: OrleansPSUtils
+  items:
+  - uid: OrleansPSUtils.GetGrain
+    name: GetGrain
+  - uid: OrleansPSUtils.StartGrainClient
+    name: StartGrainClient
+  - uid: OrleansPSUtils.StopGrainClient
+    name: StopGrainClient
+- uid: OrleansTelemetryConsumers.Counters
+  name: OrleansTelemetryConsumers.Counters
+  items:
+  - uid: OrleansTelemetryConsumers.Counters.OrleansPerfCounterTelemetryConsumer
+    name: OrleansPerfCounterTelemetryConsumer
+  - uid: OrleansTelemetryConsumers.Counters.OrleansPerformanceCounterInstaller
+    name: OrleansPerformanceCounterInstaller
+- uid: OrleansZooKeeperUtils
+  name: OrleansZooKeeperUtils
+  items:
+  - uid: OrleansZooKeeperUtils.LegacyZooKeeperGatewayListProviderConfigurator
+    name: LegacyZooKeeperGatewayListProviderConfigurator
+  - uid: OrleansZooKeeperUtils.LegacyZooKeeperMembershipConfigurator
+    name: LegacyZooKeeperMembershipConfigurator

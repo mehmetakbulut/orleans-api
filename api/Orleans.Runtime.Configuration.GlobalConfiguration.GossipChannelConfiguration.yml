@@ -1,0 +1,247 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelConfiguration
+  commentId: T:Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelConfiguration
+  id: GlobalConfiguration.GossipChannelConfiguration
+  parent: Orleans.Runtime.Configuration
+  children:
+  - Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelConfiguration.ChannelType
+  - Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelConfiguration.ConnectionString
+  langs:
+  - csharp
+  - vb
+  name: GlobalConfiguration.GossipChannelConfiguration
+  nameWithType: GlobalConfiguration.GossipChannelConfiguration
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelConfiguration
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GossipChannelConfiguration
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 115
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nGossip channel configuration.\n"
+  example: []
+  syntax:
+    content: 'public class GossipChannelConfiguration : object'
+    content.vb: >-
+      Public Class GossipChannelConfiguration
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelConfiguration.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelConfiguration.ChannelType
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelConfiguration.ChannelType
+  id: ChannelType
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelConfiguration
+  langs:
+  - csharp
+  - vb
+  name: ChannelType
+  nameWithType: GlobalConfiguration.GossipChannelConfiguration.ChannelType
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelConfiguration.ChannelType
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ChannelType
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 119
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: Gets or sets the gossip channel type.
+  example: []
+  syntax:
+    content: public GlobalConfiguration.GossipChannelType ChannelType { get; set; }
+    parameters: []
+    return:
+      type: Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelType
+    content.vb: Public Property ChannelType As GlobalConfiguration.GossipChannelType
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelConfiguration.ChannelType*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelConfiguration.ConnectionString
+  commentId: P:Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelConfiguration.ConnectionString
+  id: ConnectionString
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelConfiguration
+  langs:
+  - csharp
+  - vb
+  name: ConnectionString
+  nameWithType: GlobalConfiguration.GossipChannelConfiguration.ConnectionString
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelConfiguration.ConnectionString
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ConnectionString
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 122
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: Gets or sets the credential information used by the channel implementation.
+  example: []
+  syntax:
+    content: public string ConnectionString { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ConnectionString As String
+  overload: Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelConfiguration.ConnectionString*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans.Runtime.Configuration
+  commentId: N:Orleans.Runtime.Configuration
+  isExternal: false
+  name: Orleans.Runtime.Configuration
+  nameWithType: Orleans.Runtime.Configuration
+  fullName: Orleans.Runtime.Configuration
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelConfiguration.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<GlobalConfiguration.GossipChannelConfiguration>()
+  nameWithType: ImmutableExt.AsImmutable<GlobalConfiguration.GossipChannelConfiguration>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelConfiguration>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of GlobalConfiguration.GossipChannelConfiguration)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelConfiguration)()
+  name.vb: AsImmutable(Of GlobalConfiguration.GossipChannelConfiguration)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<GlobalConfiguration.GossipChannelConfiguration>
+    nameWithType: ImmutableExt.AsImmutable<GlobalConfiguration.GossipChannelConfiguration>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelConfiguration>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of GlobalConfiguration.GossipChannelConfiguration)
+    nameWithType: ImmutableExt.AsImmutable(Of GlobalConfiguration.GossipChannelConfiguration)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelConfiguration)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelConfiguration.ChannelType*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelConfiguration.ChannelType
+  isExternal: false
+  name: ChannelType
+  nameWithType: GlobalConfiguration.GossipChannelConfiguration.ChannelType
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelConfiguration.ChannelType
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelType
+  commentId: T:Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelType
+  parent: Orleans.Runtime.Configuration
+  isExternal: false
+  name: GlobalConfiguration.GossipChannelType
+  nameWithType: GlobalConfiguration.GossipChannelType
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelType
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelConfiguration.ConnectionString*
+  commentId: Overload:Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelConfiguration.ConnectionString
+  isExternal: false
+  name: ConnectionString
+  nameWithType: GlobalConfiguration.GossipChannelConfiguration.ConnectionString
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelConfiguration.ConnectionString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

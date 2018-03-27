@@ -1,0 +1,234 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Configuration.SqsOptions
+  commentId: T:Orleans.Configuration.SqsOptions
+  id: SqsOptions
+  parent: Orleans.Configuration
+  children:
+  - Orleans.Configuration.SqsOptions.ClusterId
+  - Orleans.Configuration.SqsOptions.ConnectionString
+  langs:
+  - csharp
+  - vb
+  name: SqsOptions
+  nameWithType: SqsOptions
+  fullName: Orleans.Configuration.SqsOptions
+  type: Class
+  source:
+    remote:
+      path: src/AWS/Orleans.Streaming.SQS/Streams/SqsStreamOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SqsOptions
+    path: src/AWS/Orleans.Streaming.SQS/Streams/SqsStreamOptions.cs
+    startLine: 3
+  assemblies:
+  - Orleans.Streaming.SQS
+  namespace: Orleans.Configuration
+  syntax:
+    content: 'public class SqsOptions : object'
+    content.vb: >-
+      Public Class SqsOptions
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.Configuration.SqsOptions.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.Configuration.SqsOptions.ClusterId
+  commentId: P:Orleans.Configuration.SqsOptions.ClusterId
+  id: ClusterId
+  parent: Orleans.Configuration.SqsOptions
+  langs:
+  - csharp
+  - vb
+  name: ClusterId
+  nameWithType: SqsOptions.ClusterId
+  fullName: Orleans.Configuration.SqsOptions.ClusterId
+  type: Property
+  source:
+    remote:
+      path: src/AWS/Orleans.Streaming.SQS/Streams/SqsStreamOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ClusterId
+    path: src/AWS/Orleans.Streaming.SQS/Streams/SqsStreamOptions.cs
+    startLine: 5
+  assemblies:
+  - Orleans.Streaming.SQS
+  namespace: Orleans.Configuration
+  syntax:
+    content: public string ClusterId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ClusterId As String
+  overload: Orleans.Configuration.SqsOptions.ClusterId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Configuration.SqsOptions.ConnectionString
+  commentId: P:Orleans.Configuration.SqsOptions.ConnectionString
+  id: ConnectionString
+  parent: Orleans.Configuration.SqsOptions
+  langs:
+  - csharp
+  - vb
+  name: ConnectionString
+  nameWithType: SqsOptions.ConnectionString
+  fullName: Orleans.Configuration.SqsOptions.ConnectionString
+  type: Property
+  source:
+    remote:
+      path: src/AWS/Orleans.Streaming.SQS/Streams/SqsStreamOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ConnectionString
+    path: src/AWS/Orleans.Streaming.SQS/Streams/SqsStreamOptions.cs
+    startLine: 7
+  assemblies:
+  - Orleans.Streaming.SQS
+  namespace: Orleans.Configuration
+  syntax:
+    content: public string ConnectionString { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ConnectionString As String
+  overload: Orleans.Configuration.SqsOptions.ConnectionString*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans.Configuration
+  commentId: N:Orleans.Configuration
+  isExternal: false
+  name: Orleans.Configuration
+  nameWithType: Orleans.Configuration
+  fullName: Orleans.Configuration
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Configuration.SqsOptions.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<SqsOptions>()
+  nameWithType: ImmutableExt.AsImmutable<SqsOptions>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Configuration.SqsOptions>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of SqsOptions)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Configuration.SqsOptions)()
+  name.vb: AsImmutable(Of SqsOptions)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<SqsOptions>
+    nameWithType: ImmutableExt.AsImmutable<SqsOptions>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Configuration.SqsOptions>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of SqsOptions)
+    nameWithType: ImmutableExt.AsImmutable(Of SqsOptions)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Configuration.SqsOptions)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Configuration.SqsOptions.ClusterId*
+  commentId: Overload:Orleans.Configuration.SqsOptions.ClusterId
+  isExternal: false
+  name: ClusterId
+  nameWithType: SqsOptions.ClusterId
+  fullName: Orleans.Configuration.SqsOptions.ClusterId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Orleans.Configuration.SqsOptions.ConnectionString*
+  commentId: Overload:Orleans.Configuration.SqsOptions.ConnectionString
+  isExternal: false
+  name: ConnectionString
+  nameWithType: SqsOptions.ConnectionString
+  fullName: Orleans.Configuration.SqsOptions.ConnectionString

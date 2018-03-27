@@ -1,0 +1,463 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.EventSourcing.CustomStorage.ICustomStorageInterface`2
+  commentId: T:Orleans.EventSourcing.CustomStorage.ICustomStorageInterface`2
+  id: ICustomStorageInterface`2
+  parent: Orleans.EventSourcing.CustomStorage
+  children:
+  - Orleans.EventSourcing.CustomStorage.ICustomStorageInterface`2.ApplyUpdatesToStorage(IReadOnlyList{`1},System.Int32)
+  - Orleans.EventSourcing.CustomStorage.ICustomStorageInterface`2.ReadStateFromStorage
+  langs:
+  - csharp
+  - vb
+  name: ICustomStorageInterface<TState, TDelta>
+  nameWithType: ICustomStorageInterface<TState, TDelta>
+  fullName: Orleans.EventSourcing.CustomStorage.ICustomStorageInterface<TState, TDelta>
+  type: Interface
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/CustomStorage/ICustomStorageInterface.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ICustomStorageInterface
+    path: src/Orleans.EventSourcing/CustomStorage/ICustomStorageInterface.cs
+    startLine: 13
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.CustomStorage
+  summary: "\nThe storage interface exposed by grains that want to use the CustomStorage log-consistency provider\n<typeparam name=\"TState\">The type for the state of the grain.</typeparam>\n<typeparam name=\"TDelta\">The type for delta objects that represent updates to the state.</typeparam>\n"
+  example: []
+  syntax:
+    content: public interface ICustomStorageInterface<TState, TDelta>
+    typeParameters:
+    - id: TState
+    - id: TDelta
+    content.vb: Public Interface ICustomStorageInterface(Of TState, TDelta)
+  extensionMethods:
+  - Orleans.EventSourcing.CustomStorage.ICustomStorageInterface`2.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  nameWithType.vb: ICustomStorageInterface(Of TState, TDelta)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+  fullName.vb: Orleans.EventSourcing.CustomStorage.ICustomStorageInterface(Of TState, TDelta)
+  name.vb: ICustomStorageInterface(Of TState, TDelta)
+- uid: Orleans.EventSourcing.CustomStorage.ICustomStorageInterface`2.ReadStateFromStorage
+  commentId: M:Orleans.EventSourcing.CustomStorage.ICustomStorageInterface`2.ReadStateFromStorage
+  id: ReadStateFromStorage
+  parent: Orleans.EventSourcing.CustomStorage.ICustomStorageInterface`2
+  langs:
+  - csharp
+  - vb
+  name: ReadStateFromStorage()
+  nameWithType: ICustomStorageInterface<TState, TDelta>.ReadStateFromStorage()
+  fullName: Orleans.EventSourcing.CustomStorage.ICustomStorageInterface<TState, TDelta>.ReadStateFromStorage()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/CustomStorage/ICustomStorageInterface.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ReadStateFromStorage
+    path: src/Orleans.EventSourcing/CustomStorage/ICustomStorageInterface.cs
+    startLine: 20
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.CustomStorage
+  summary: "\nReads the current state and version from storage\n(note that the state object may be mutated by the provider, so it must not be shared).\n"
+  example: []
+  syntax:
+    content: Task<KeyValuePair<int, TState>> ReadStateFromStorage()
+    return:
+      type: Task{KeyValuePair{System.Int32,{TState}}}
+      description: the version number and a  state object.
+    content.vb: Function ReadStateFromStorage As Task(Of KeyValuePair(Of Integer, TState))
+  overload: Orleans.EventSourcing.CustomStorage.ICustomStorageInterface`2.ReadStateFromStorage*
+  nameWithType.vb: ICustomStorageInterface(Of TState, TDelta).ReadStateFromStorage()
+  fullName.vb: Orleans.EventSourcing.CustomStorage.ICustomStorageInterface(Of TState, TDelta).ReadStateFromStorage()
+- uid: Orleans.EventSourcing.CustomStorage.ICustomStorageInterface`2.ApplyUpdatesToStorage(IReadOnlyList{`1},System.Int32)
+  commentId: M:Orleans.EventSourcing.CustomStorage.ICustomStorageInterface`2.ApplyUpdatesToStorage(IReadOnlyList{`1},System.Int32)
+  id: ApplyUpdatesToStorage(IReadOnlyList{`1},System.Int32)
+  parent: Orleans.EventSourcing.CustomStorage.ICustomStorageInterface`2
+  langs:
+  - csharp
+  - vb
+  name: ApplyUpdatesToStorage(IReadOnlyList<TDelta>, Int32)
+  nameWithType: ICustomStorageInterface<TState, TDelta>.ApplyUpdatesToStorage(IReadOnlyList<TDelta>, Int32)
+  fullName: Orleans.EventSourcing.CustomStorage.ICustomStorageInterface<TState, TDelta>.ApplyUpdatesToStorage(IReadOnlyList<TDelta>, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/CustomStorage/ICustomStorageInterface.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ApplyUpdatesToStorage
+    path: src/Orleans.EventSourcing/CustomStorage/ICustomStorageInterface.cs
+    startLine: 27
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.CustomStorage
+  summary: "\nApplies the given array of deltas to storage, and returns true, if the version in storage matches the expected version. \nOtherwise, does nothing and returns false. If successful, the version of storage must be increased by the number of deltas.\n"
+  example: []
+  syntax:
+    content: Task<bool> ApplyUpdatesToStorage(IReadOnlyList<TDelta> updates, int expectedversion)
+    parameters:
+    - id: updates
+      type: IReadOnlyList{{TDelta}}
+    - id: expectedversion
+      type: System.Int32
+    return:
+      type: Task{System.Boolean}
+      description: true if the deltas were applied, false otherwise
+    content.vb: Function ApplyUpdatesToStorage(updates As IReadOnlyList(Of TDelta), expectedversion As Integer) As Task(Of Boolean)
+  overload: Orleans.EventSourcing.CustomStorage.ICustomStorageInterface`2.ApplyUpdatesToStorage*
+  nameWithType.vb: ICustomStorageInterface(Of TState, TDelta).ApplyUpdatesToStorage(IReadOnlyList(Of TDelta), Int32)
+  fullName.vb: Orleans.EventSourcing.CustomStorage.ICustomStorageInterface(Of TState, TDelta).ApplyUpdatesToStorage(IReadOnlyList(Of TDelta), System.Int32)
+  name.vb: ApplyUpdatesToStorage(IReadOnlyList(Of TDelta), Int32)
+references:
+- uid: Orleans.EventSourcing.CustomStorage
+  commentId: N:Orleans.EventSourcing.CustomStorage
+  isExternal: false
+  name: Orleans.EventSourcing.CustomStorage
+  nameWithType: Orleans.EventSourcing.CustomStorage
+  fullName: Orleans.EventSourcing.CustomStorage
+- uid: Orleans.EventSourcing.CustomStorage.ICustomStorageInterface`2.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<ICustomStorageInterface<TState, TDelta>>()
+  nameWithType: ImmutableExt.AsImmutable<ICustomStorageInterface<TState, TDelta>>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.EventSourcing.CustomStorage.ICustomStorageInterface<TState, TDelta>>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of ICustomStorageInterface(Of TState, TDelta))()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.EventSourcing.CustomStorage.ICustomStorageInterface(Of TState, TDelta))()
+  name.vb: AsImmutable(Of ICustomStorageInterface(Of TState, TDelta))()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<ICustomStorageInterface<TState, TDelta>>
+    nameWithType: ImmutableExt.AsImmutable<ICustomStorageInterface<TState, TDelta>>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.EventSourcing.CustomStorage.ICustomStorageInterface<TState, TDelta>>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of ICustomStorageInterface(Of TState, TDelta))
+    nameWithType: ImmutableExt.AsImmutable(Of ICustomStorageInterface(Of TState, TDelta))
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.EventSourcing.CustomStorage.ICustomStorageInterface(Of TState, TDelta))
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.EventSourcing.CustomStorage.ICustomStorageInterface`2.ReadStateFromStorage*
+  commentId: Overload:Orleans.EventSourcing.CustomStorage.ICustomStorageInterface`2.ReadStateFromStorage
+  isExternal: false
+  name: ReadStateFromStorage
+  nameWithType: ICustomStorageInterface<TState, TDelta>.ReadStateFromStorage
+  fullName: Orleans.EventSourcing.CustomStorage.ICustomStorageInterface<TState, TDelta>.ReadStateFromStorage
+  nameWithType.vb: ICustomStorageInterface(Of TState, TDelta).ReadStateFromStorage
+  fullName.vb: Orleans.EventSourcing.CustomStorage.ICustomStorageInterface(Of TState, TDelta).ReadStateFromStorage
+- uid: Task{KeyValuePair{System.Int32,{TState}}}
+  commentId: '!:Task{KeyValuePair{System.Int32,`0}}'
+  definition: Task`1
+  name: Task<KeyValuePair<Int32, TState>>
+  nameWithType: Task<KeyValuePair<Int32, TState>>
+  fullName: Task<KeyValuePair<System.Int32, TState>>
+  nameWithType.vb: Task(Of KeyValuePair(Of Int32, TState))
+  fullName.vb: Task(Of KeyValuePair(Of System.Int32, TState))
+  name.vb: Task(Of KeyValuePair(Of Int32, TState))
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: KeyValuePair
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TState
+    nameWithType: TState
+    fullName: TState
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: KeyValuePair
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TState
+    nameWithType: TState
+    fullName: TState
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.CustomStorage.ICustomStorageInterface`2.ApplyUpdatesToStorage*
+  commentId: Overload:Orleans.EventSourcing.CustomStorage.ICustomStorageInterface`2.ApplyUpdatesToStorage
+  isExternal: false
+  name: ApplyUpdatesToStorage
+  nameWithType: ICustomStorageInterface<TState, TDelta>.ApplyUpdatesToStorage
+  fullName: Orleans.EventSourcing.CustomStorage.ICustomStorageInterface<TState, TDelta>.ApplyUpdatesToStorage
+  nameWithType.vb: ICustomStorageInterface(Of TState, TDelta).ApplyUpdatesToStorage
+  fullName.vb: Orleans.EventSourcing.CustomStorage.ICustomStorageInterface(Of TState, TDelta).ApplyUpdatesToStorage
+- uid: IReadOnlyList{{TDelta}}
+  commentId: '!:IReadOnlyList{`1}'
+  definition: IReadOnlyList`1
+  name: IReadOnlyList<TDelta>
+  nameWithType: IReadOnlyList<TDelta>
+  fullName: IReadOnlyList<TDelta>
+  nameWithType.vb: IReadOnlyList(Of TDelta)
+  fullName.vb: IReadOnlyList(Of TDelta)
+  name.vb: IReadOnlyList(Of TDelta)
+  spec.csharp:
+  - uid: IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: IReadOnlyList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDelta
+    nameWithType: TDelta
+    fullName: TDelta
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: IReadOnlyList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDelta
+    nameWithType: TDelta
+    fullName: TDelta
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Task{System.Boolean}
+  commentId: '!:Task{System.Boolean}'
+  definition: Task`1
+  name: Task<Boolean>
+  nameWithType: Task<Boolean>
+  fullName: Task<System.Boolean>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: Task(Of System.Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IReadOnlyList`1
+  isExternal: true
+  name: IReadOnlyList<>
+  nameWithType: IReadOnlyList<>
+  fullName: IReadOnlyList<>
+  nameWithType.vb: IReadOnlyList(Of )
+  fullName.vb: IReadOnlyList(Of )
+  name.vb: IReadOnlyList(Of )
+  spec.csharp:
+  - uid: IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: IReadOnlyList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: IReadOnlyList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )

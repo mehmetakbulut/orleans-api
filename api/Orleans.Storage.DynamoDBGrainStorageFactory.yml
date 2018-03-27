@@ -1,0 +1,123 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Storage.DynamoDBGrainStorageFactory
+  commentId: T:Orleans.Storage.DynamoDBGrainStorageFactory
+  id: DynamoDBGrainStorageFactory
+  parent: Orleans.Storage
+  children:
+  - Orleans.Storage.DynamoDBGrainStorageFactory.Create(IServiceProvider,System.String)
+  langs:
+  - csharp
+  - vb
+  name: DynamoDBGrainStorageFactory
+  nameWithType: DynamoDBGrainStorageFactory
+  fullName: Orleans.Storage.DynamoDBGrainStorageFactory
+  type: Class
+  source:
+    remote:
+      path: src/AWS/Orleans.Persistence.DynamoDB/Provider/DynamoDBGrainStorage.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: DynamoDBGrainStorageFactory
+    path: src/AWS/Orleans.Persistence.DynamoDB/Provider/DynamoDBGrainStorage.cs
+    startLine: 375
+  assemblies:
+  - Orleans.Persistence.DynamoDB
+  namespace: Orleans.Storage
+  syntax:
+    content: 'public static class DynamoDBGrainStorageFactory : object'
+    content.vb: >-
+      Public Module DynamoDBGrainStorageFactory
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Orleans.Storage.DynamoDBGrainStorageFactory.Create(IServiceProvider,System.String)
+  commentId: M:Orleans.Storage.DynamoDBGrainStorageFactory.Create(IServiceProvider,System.String)
+  id: Create(IServiceProvider,System.String)
+  parent: Orleans.Storage.DynamoDBGrainStorageFactory
+  langs:
+  - csharp
+  - vb
+  name: Create(IServiceProvider, String)
+  nameWithType: DynamoDBGrainStorageFactory.Create(IServiceProvider, String)
+  fullName: Orleans.Storage.DynamoDBGrainStorageFactory.Create(IServiceProvider, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/AWS/Orleans.Persistence.DynamoDB/Provider/DynamoDBGrainStorage.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Create
+    path: src/AWS/Orleans.Persistence.DynamoDB/Provider/DynamoDBGrainStorage.cs
+    startLine: 377
+  assemblies:
+  - Orleans.Persistence.DynamoDB
+  namespace: Orleans.Storage
+  syntax:
+    content: public static IGrainStorage Create(IServiceProvider services, string name)
+    parameters:
+    - id: services
+      type: IServiceProvider
+    - id: name
+      type: System.String
+    return:
+      type: IGrainStorage
+    content.vb: Public Shared Function Create(services As IServiceProvider, name As String) As IGrainStorage
+  overload: Orleans.Storage.DynamoDBGrainStorageFactory.Create*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Orleans.Storage
+  commentId: N:Orleans.Storage
+  isExternal: false
+  name: Orleans.Storage
+  nameWithType: Orleans.Storage
+  fullName: Orleans.Storage
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Storage.DynamoDBGrainStorageFactory.Create*
+  commentId: Overload:Orleans.Storage.DynamoDBGrainStorageFactory.Create
+  isExternal: false
+  name: Create
+  nameWithType: DynamoDBGrainStorageFactory.Create
+  fullName: Orleans.Storage.DynamoDBGrainStorageFactory.Create
+- uid: IServiceProvider
+  isExternal: true
+  name: IServiceProvider
+  nameWithType: IServiceProvider
+  fullName: IServiceProvider
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: IGrainStorage
+  isExternal: true
+  name: IGrainStorage
+  nameWithType: IGrainStorage
+  fullName: IGrainStorage

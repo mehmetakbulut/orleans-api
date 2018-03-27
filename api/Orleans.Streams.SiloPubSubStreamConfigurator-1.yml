@@ -1,0 +1,489 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Streams.SiloPubSubStreamConfigurator`1
+  commentId: T:Orleans.Streams.SiloPubSubStreamConfigurator`1
+  id: SiloPubSubStreamConfigurator`1
+  parent: Orleans.Streams
+  children:
+  - Orleans.Streams.SiloPubSubStreamConfigurator`1.#ctor(System.String,ISiloHostBuilder)
+  - Orleans.Streams.SiloPubSubStreamConfigurator`1.ConfigureCache(System.Int32)
+  - Orleans.Streams.SiloPubSubStreamConfigurator`1.ConfigurePartitioning(System.Int32)
+  - Orleans.Streams.SiloPubSubStreamConfigurator`1.ConfigurePubSub(Action{OptionsBuilder{Orleans.Configuration.PubSubOptions}})
+  langs:
+  - csharp
+  - vb
+  name: SiloPubSubStreamConfigurator<TDataAdapter>
+  nameWithType: SiloPubSubStreamConfigurator<TDataAdapter>
+  fullName: Orleans.Streams.SiloPubSubStreamConfigurator<TDataAdapter>
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubStreamConfigurator.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SiloPubSubStreamConfigurator
+    path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubStreamConfigurator.cs
+    startLine: 9
+  assemblies:
+  - Orleans.Streaming.GCP
+  namespace: Orleans.Streams
+  syntax:
+    content: 'public class SiloPubSubStreamConfigurator<TDataAdapter> : SiloPersistentStreamConfigurator where TDataAdapter : IPubSubDataAdapter'
+    typeParameters:
+    - id: TDataAdapter
+    content.vb: >-
+      Public Class SiloPubSubStreamConfigurator(Of TDataAdapter As IPubSubDataAdapter)
+
+          Inherits SiloPersistentStreamConfigurator
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.Streams.SiloPubSubStreamConfigurator`1.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  nameWithType.vb: SiloPubSubStreamConfigurator(Of TDataAdapter)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: Orleans.Streams.SiloPubSubStreamConfigurator(Of TDataAdapter)
+  name.vb: SiloPubSubStreamConfigurator(Of TDataAdapter)
+- uid: Orleans.Streams.SiloPubSubStreamConfigurator`1.#ctor(System.String,ISiloHostBuilder)
+  commentId: M:Orleans.Streams.SiloPubSubStreamConfigurator`1.#ctor(System.String,ISiloHostBuilder)
+  id: '#ctor(System.String,ISiloHostBuilder)'
+  parent: Orleans.Streams.SiloPubSubStreamConfigurator`1
+  langs:
+  - csharp
+  - vb
+  name: SiloPubSubStreamConfigurator(String, ISiloHostBuilder)
+  nameWithType: SiloPubSubStreamConfigurator<TDataAdapter>.SiloPubSubStreamConfigurator(String, ISiloHostBuilder)
+  fullName: Orleans.Streams.SiloPubSubStreamConfigurator<TDataAdapter>.SiloPubSubStreamConfigurator(System.String, ISiloHostBuilder)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubStreamConfigurator.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubStreamConfigurator.cs
+    startLine: 12
+  assemblies:
+  - Orleans.Streaming.GCP
+  namespace: Orleans.Streams
+  syntax:
+    content: public SiloPubSubStreamConfigurator(string name, ISiloHostBuilder builder)
+    parameters:
+    - id: name
+      type: System.String
+    - id: builder
+      type: ISiloHostBuilder
+    content.vb: Public Sub New(name As String, builder As ISiloHostBuilder)
+  overload: Orleans.Streams.SiloPubSubStreamConfigurator`1.#ctor*
+  nameWithType.vb: SiloPubSubStreamConfigurator(Of TDataAdapter).SiloPubSubStreamConfigurator(String, ISiloHostBuilder)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.Streams.SiloPubSubStreamConfigurator(Of TDataAdapter).SiloPubSubStreamConfigurator(System.String, ISiloHostBuilder)
+- uid: Orleans.Streams.SiloPubSubStreamConfigurator`1.ConfigurePubSub(Action{OptionsBuilder{Orleans.Configuration.PubSubOptions}})
+  commentId: M:Orleans.Streams.SiloPubSubStreamConfigurator`1.ConfigurePubSub(Action{OptionsBuilder{Orleans.Configuration.PubSubOptions}})
+  id: ConfigurePubSub(Action{OptionsBuilder{Orleans.Configuration.PubSubOptions}})
+  parent: Orleans.Streams.SiloPubSubStreamConfigurator`1
+  langs:
+  - csharp
+  - vb
+  name: ConfigurePubSub(Action<OptionsBuilder<PubSubOptions>>)
+  nameWithType: SiloPubSubStreamConfigurator<TDataAdapter>.ConfigurePubSub(Action<OptionsBuilder<PubSubOptions>>)
+  fullName: Orleans.Streams.SiloPubSubStreamConfigurator<TDataAdapter>.ConfigurePubSub(Action<OptionsBuilder<Orleans.Configuration.PubSubOptions>>)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubStreamConfigurator.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ConfigurePubSub
+    path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubStreamConfigurator.cs
+    startLine: 25
+  assemblies:
+  - Orleans.Streaming.GCP
+  namespace: Orleans.Streams
+  syntax:
+    content: public SiloPubSubStreamConfigurator<TDataAdapter> ConfigurePubSub(Action<OptionsBuilder<PubSubOptions>> configureOptions)
+    parameters:
+    - id: configureOptions
+      type: Action{OptionsBuilder{Orleans.Configuration.PubSubOptions}}
+    return:
+      type: Orleans.Streams.SiloPubSubStreamConfigurator`1
+    content.vb: Public Function ConfigurePubSub(configureOptions As Action(Of OptionsBuilder(Of PubSubOptions))) As SiloPubSubStreamConfigurator(Of TDataAdapter)
+  overload: Orleans.Streams.SiloPubSubStreamConfigurator`1.ConfigurePubSub*
+  nameWithType.vb: SiloPubSubStreamConfigurator(Of TDataAdapter).ConfigurePubSub(Action(Of OptionsBuilder(Of PubSubOptions)))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.Streams.SiloPubSubStreamConfigurator(Of TDataAdapter).ConfigurePubSub(Action(Of OptionsBuilder(Of Orleans.Configuration.PubSubOptions)))
+  name.vb: ConfigurePubSub(Action(Of OptionsBuilder(Of PubSubOptions)))
+- uid: Orleans.Streams.SiloPubSubStreamConfigurator`1.ConfigureCache(System.Int32)
+  commentId: M:Orleans.Streams.SiloPubSubStreamConfigurator`1.ConfigureCache(System.Int32)
+  id: ConfigureCache(System.Int32)
+  parent: Orleans.Streams.SiloPubSubStreamConfigurator`1
+  langs:
+  - csharp
+  - vb
+  name: ConfigureCache(Int32)
+  nameWithType: SiloPubSubStreamConfigurator<TDataAdapter>.ConfigureCache(Int32)
+  fullName: Orleans.Streams.SiloPubSubStreamConfigurator<TDataAdapter>.ConfigureCache(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubStreamConfigurator.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ConfigureCache
+    path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubStreamConfigurator.cs
+    startLine: 30
+  assemblies:
+  - Orleans.Streaming.GCP
+  namespace: Orleans.Streams
+  syntax:
+    content: public SiloPubSubStreamConfigurator<TDataAdapter> ConfigureCache(int cacheSize = null)
+    parameters:
+    - id: cacheSize
+      type: System.Int32
+    return:
+      type: Orleans.Streams.SiloPubSubStreamConfigurator`1
+    content.vb: Public Function ConfigureCache(cacheSize As Integer = Nothing) As SiloPubSubStreamConfigurator(Of TDataAdapter)
+  overload: Orleans.Streams.SiloPubSubStreamConfigurator`1.ConfigureCache*
+  nameWithType.vb: SiloPubSubStreamConfigurator(Of TDataAdapter).ConfigureCache(Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.Streams.SiloPubSubStreamConfigurator(Of TDataAdapter).ConfigureCache(System.Int32)
+- uid: Orleans.Streams.SiloPubSubStreamConfigurator`1.ConfigurePartitioning(System.Int32)
+  commentId: M:Orleans.Streams.SiloPubSubStreamConfigurator`1.ConfigurePartitioning(System.Int32)
+  id: ConfigurePartitioning(System.Int32)
+  parent: Orleans.Streams.SiloPubSubStreamConfigurator`1
+  langs:
+  - csharp
+  - vb
+  name: ConfigurePartitioning(Int32)
+  nameWithType: SiloPubSubStreamConfigurator<TDataAdapter>.ConfigurePartitioning(Int32)
+  fullName: Orleans.Streams.SiloPubSubStreamConfigurator<TDataAdapter>.ConfigurePartitioning(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubStreamConfigurator.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ConfigurePartitioning
+    path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubStreamConfigurator.cs
+    startLine: 36
+  assemblies:
+  - Orleans.Streaming.GCP
+  namespace: Orleans.Streams
+  syntax:
+    content: public SiloPubSubStreamConfigurator<TDataAdapter> ConfigurePartitioning(int numOfPartitions = null)
+    parameters:
+    - id: numOfPartitions
+      type: System.Int32
+    return:
+      type: Orleans.Streams.SiloPubSubStreamConfigurator`1
+    content.vb: Public Function ConfigurePartitioning(numOfPartitions As Integer = Nothing) As SiloPubSubStreamConfigurator(Of TDataAdapter)
+  overload: Orleans.Streams.SiloPubSubStreamConfigurator`1.ConfigurePartitioning*
+  nameWithType.vb: SiloPubSubStreamConfigurator(Of TDataAdapter).ConfigurePartitioning(Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.Streams.SiloPubSubStreamConfigurator(Of TDataAdapter).ConfigurePartitioning(System.Int32)
+references:
+- uid: Orleans.Streams
+  commentId: N:Orleans.Streams
+  isExternal: false
+  name: Orleans.Streams
+  nameWithType: Orleans.Streams
+  fullName: Orleans.Streams
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Streams.SiloPubSubStreamConfigurator`1.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<SiloPubSubStreamConfigurator<TDataAdapter>>()
+  nameWithType: ImmutableExt.AsImmutable<SiloPubSubStreamConfigurator<TDataAdapter>>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Streams.SiloPubSubStreamConfigurator<TDataAdapter>>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of SiloPubSubStreamConfigurator(Of TDataAdapter))()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Streams.SiloPubSubStreamConfigurator(Of TDataAdapter))()
+  name.vb: AsImmutable(Of SiloPubSubStreamConfigurator(Of TDataAdapter))()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<SiloPubSubStreamConfigurator<TDataAdapter>>
+    nameWithType: ImmutableExt.AsImmutable<SiloPubSubStreamConfigurator<TDataAdapter>>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Streams.SiloPubSubStreamConfigurator<TDataAdapter>>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of SiloPubSubStreamConfigurator(Of TDataAdapter))
+    nameWithType: ImmutableExt.AsImmutable(Of SiloPubSubStreamConfigurator(Of TDataAdapter))
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Streams.SiloPubSubStreamConfigurator(Of TDataAdapter))
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Streams.SiloPubSubStreamConfigurator`1.#ctor*
+  commentId: Overload:Orleans.Streams.SiloPubSubStreamConfigurator`1.#ctor
+  isExternal: false
+  name: SiloPubSubStreamConfigurator
+  nameWithType: SiloPubSubStreamConfigurator<TDataAdapter>.SiloPubSubStreamConfigurator
+  fullName: Orleans.Streams.SiloPubSubStreamConfigurator<TDataAdapter>.SiloPubSubStreamConfigurator
+  nameWithType.vb: SiloPubSubStreamConfigurator(Of TDataAdapter).SiloPubSubStreamConfigurator
+  fullName.vb: Orleans.Streams.SiloPubSubStreamConfigurator(Of TDataAdapter).SiloPubSubStreamConfigurator
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: ISiloHostBuilder
+  isExternal: true
+  name: ISiloHostBuilder
+  nameWithType: ISiloHostBuilder
+  fullName: ISiloHostBuilder
+- uid: Orleans.Streams.SiloPubSubStreamConfigurator`1.ConfigurePubSub*
+  commentId: Overload:Orleans.Streams.SiloPubSubStreamConfigurator`1.ConfigurePubSub
+  isExternal: false
+  name: ConfigurePubSub
+  nameWithType: SiloPubSubStreamConfigurator<TDataAdapter>.ConfigurePubSub
+  fullName: Orleans.Streams.SiloPubSubStreamConfigurator<TDataAdapter>.ConfigurePubSub
+  nameWithType.vb: SiloPubSubStreamConfigurator(Of TDataAdapter).ConfigurePubSub
+  fullName.vb: Orleans.Streams.SiloPubSubStreamConfigurator(Of TDataAdapter).ConfigurePubSub
+- uid: Action{OptionsBuilder{Orleans.Configuration.PubSubOptions}}
+  commentId: '!:Action{OptionsBuilder{Orleans.Configuration.PubSubOptions}}'
+  definition: Action`1
+  name: Action<OptionsBuilder<PubSubOptions>>
+  nameWithType: Action<OptionsBuilder<PubSubOptions>>
+  fullName: Action<OptionsBuilder<Orleans.Configuration.PubSubOptions>>
+  nameWithType.vb: Action(Of OptionsBuilder(Of PubSubOptions))
+  fullName.vb: Action(Of OptionsBuilder(Of Orleans.Configuration.PubSubOptions))
+  name.vb: Action(Of OptionsBuilder(Of PubSubOptions))
+  spec.csharp:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: OptionsBuilder`1
+    name: OptionsBuilder
+    nameWithType: OptionsBuilder
+    fullName: OptionsBuilder
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Orleans.Configuration.PubSubOptions
+    name: PubSubOptions
+    nameWithType: PubSubOptions
+    fullName: Orleans.Configuration.PubSubOptions
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: OptionsBuilder`1
+    name: OptionsBuilder
+    nameWithType: OptionsBuilder
+    fullName: OptionsBuilder
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Orleans.Configuration.PubSubOptions
+    name: PubSubOptions
+    nameWithType: PubSubOptions
+    fullName: Orleans.Configuration.PubSubOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Streams.SiloPubSubStreamConfigurator`1
+  commentId: T:Orleans.Streams.SiloPubSubStreamConfigurator`1
+  parent: Orleans.Streams
+  isExternal: false
+  name: SiloPubSubStreamConfigurator<TDataAdapter>
+  nameWithType: SiloPubSubStreamConfigurator<TDataAdapter>
+  fullName: Orleans.Streams.SiloPubSubStreamConfigurator<TDataAdapter>
+  nameWithType.vb: SiloPubSubStreamConfigurator(Of TDataAdapter)
+  fullName.vb: Orleans.Streams.SiloPubSubStreamConfigurator(Of TDataAdapter)
+  name.vb: SiloPubSubStreamConfigurator(Of TDataAdapter)
+  spec.csharp:
+  - uid: Orleans.Streams.SiloPubSubStreamConfigurator`1
+    name: SiloPubSubStreamConfigurator
+    nameWithType: SiloPubSubStreamConfigurator
+    fullName: Orleans.Streams.SiloPubSubStreamConfigurator
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDataAdapter
+    nameWithType: TDataAdapter
+    fullName: TDataAdapter
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Orleans.Streams.SiloPubSubStreamConfigurator`1
+    name: SiloPubSubStreamConfigurator
+    nameWithType: SiloPubSubStreamConfigurator
+    fullName: Orleans.Streams.SiloPubSubStreamConfigurator
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDataAdapter
+    nameWithType: TDataAdapter
+    fullName: TDataAdapter
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Action`1
+  isExternal: true
+  name: Action<>
+  nameWithType: Action<>
+  fullName: Action<>
+  nameWithType.vb: Action(Of )
+  fullName.vb: Action(Of )
+  name.vb: Action(Of )
+  spec.csharp:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Streams.SiloPubSubStreamConfigurator`1.ConfigureCache*
+  commentId: Overload:Orleans.Streams.SiloPubSubStreamConfigurator`1.ConfigureCache
+  isExternal: false
+  name: ConfigureCache
+  nameWithType: SiloPubSubStreamConfigurator<TDataAdapter>.ConfigureCache
+  fullName: Orleans.Streams.SiloPubSubStreamConfigurator<TDataAdapter>.ConfigureCache
+  nameWithType.vb: SiloPubSubStreamConfigurator(Of TDataAdapter).ConfigureCache
+  fullName.vb: Orleans.Streams.SiloPubSubStreamConfigurator(Of TDataAdapter).ConfigureCache
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Orleans.Streams.SiloPubSubStreamConfigurator`1.ConfigurePartitioning*
+  commentId: Overload:Orleans.Streams.SiloPubSubStreamConfigurator`1.ConfigurePartitioning
+  isExternal: false
+  name: ConfigurePartitioning
+  nameWithType: SiloPubSubStreamConfigurator<TDataAdapter>.ConfigurePartitioning
+  fullName: Orleans.Streams.SiloPubSubStreamConfigurator<TDataAdapter>.ConfigurePartitioning
+  nameWithType.vb: SiloPubSubStreamConfigurator(Of TDataAdapter).ConfigurePartitioning
+  fullName.vb: Orleans.Streams.SiloPubSubStreamConfigurator(Of TDataAdapter).ConfigurePartitioning

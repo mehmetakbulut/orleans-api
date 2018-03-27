@@ -1,0 +1,376 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Hosting.SiloHostBuilderReminderExtensions
+  commentId: T:Orleans.Hosting.SiloHostBuilderReminderExtensions
+  id: SiloHostBuilderReminderExtensions
+  parent: Orleans.Hosting
+  children:
+  - Orleans.Hosting.SiloHostBuilderReminderExtensions.UseAdoNetReminderService(IServiceCollection,Action{OptionsBuilder{Orleans.Configuration.AdoNetReminderTableOptions}})
+  - Orleans.Hosting.SiloHostBuilderReminderExtensions.UseAdoNetReminderService(ISiloHostBuilder,Action{OptionsBuilder{Orleans.Configuration.AdoNetReminderTableOptions}})
+  - Orleans.Hosting.SiloHostBuilderReminderExtensions.UseAdoNetReminderService(ISiloHostBuilder,Action{Orleans.Configuration.AdoNetReminderTableOptions})
+  langs:
+  - csharp
+  - vb
+  name: SiloHostBuilderReminderExtensions
+  nameWithType: SiloHostBuilderReminderExtensions
+  fullName: Orleans.Hosting.SiloHostBuilderReminderExtensions
+  type: Class
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Reminders.AdoNet/SiloHostBuilderReminderExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SiloHostBuilderReminderExtensions
+    path: src/AdoNet/Orleans.Reminders.AdoNet/SiloHostBuilderReminderExtensions.cs
+    startLine: 11
+  assemblies:
+  - Orleans.Reminders.AdoNet
+  namespace: Orleans.Hosting
+  summary: "\nSilo host builder extensions.\n"
+  example: []
+  syntax:
+    content: 'public static class SiloHostBuilderReminderExtensions : object'
+    content.vb: >-
+      Public Module SiloHostBuilderReminderExtensions
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Orleans.Hosting.SiloHostBuilderReminderExtensions.UseAdoNetReminderService(ISiloHostBuilder,Action{Orleans.Configuration.AdoNetReminderTableOptions})
+  commentId: M:Orleans.Hosting.SiloHostBuilderReminderExtensions.UseAdoNetReminderService(ISiloHostBuilder,Action{Orleans.Configuration.AdoNetReminderTableOptions})
+  id: UseAdoNetReminderService(ISiloHostBuilder,Action{Orleans.Configuration.AdoNetReminderTableOptions})
+  isExtensionMethod: true
+  parent: Orleans.Hosting.SiloHostBuilderReminderExtensions
+  langs:
+  - csharp
+  - vb
+  name: UseAdoNetReminderService(ISiloHostBuilder, Action<AdoNetReminderTableOptions>)
+  nameWithType: SiloHostBuilderReminderExtensions.UseAdoNetReminderService(ISiloHostBuilder, Action<AdoNetReminderTableOptions>)
+  fullName: Orleans.Hosting.SiloHostBuilderReminderExtensions.UseAdoNetReminderService(ISiloHostBuilder, Action<Orleans.Configuration.AdoNetReminderTableOptions>)
+  type: Method
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Reminders.AdoNet/SiloHostBuilderReminderExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: UseAdoNetReminderService
+    path: src/AdoNet/Orleans.Reminders.AdoNet/SiloHostBuilderReminderExtensions.cs
+    startLine: 17
+  assemblies:
+  - Orleans.Reminders.AdoNet
+  namespace: Orleans.Hosting
+  summary: Adds reminder storage using ADO.NET.
+  example: []
+  syntax:
+    content: public static ISiloHostBuilder UseAdoNetReminderService(this ISiloHostBuilder builder, Action<AdoNetReminderTableOptions> configureOptions)
+    parameters:
+    - id: builder
+      type: ISiloHostBuilder
+      description: The builder.
+    - id: configureOptions
+      type: Action{Orleans.Configuration.AdoNetReminderTableOptions}
+      description: Configuration delegate.
+    return:
+      type: ISiloHostBuilder
+      description: The provided <see cref="!:ISiloHostBuilder"></see>, for chaining.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function UseAdoNetReminderService(builder As ISiloHostBuilder, configureOptions As Action(Of AdoNetReminderTableOptions)) As ISiloHostBuilder
+  overload: Orleans.Hosting.SiloHostBuilderReminderExtensions.UseAdoNetReminderService*
+  nameWithType.vb: SiloHostBuilderReminderExtensions.UseAdoNetReminderService(ISiloHostBuilder, Action(Of AdoNetReminderTableOptions))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.Hosting.SiloHostBuilderReminderExtensions.UseAdoNetReminderService(ISiloHostBuilder, Action(Of Orleans.Configuration.AdoNetReminderTableOptions))
+  name.vb: UseAdoNetReminderService(ISiloHostBuilder, Action(Of AdoNetReminderTableOptions))
+- uid: Orleans.Hosting.SiloHostBuilderReminderExtensions.UseAdoNetReminderService(ISiloHostBuilder,Action{OptionsBuilder{Orleans.Configuration.AdoNetReminderTableOptions}})
+  commentId: M:Orleans.Hosting.SiloHostBuilderReminderExtensions.UseAdoNetReminderService(ISiloHostBuilder,Action{OptionsBuilder{Orleans.Configuration.AdoNetReminderTableOptions}})
+  id: UseAdoNetReminderService(ISiloHostBuilder,Action{OptionsBuilder{Orleans.Configuration.AdoNetReminderTableOptions}})
+  isExtensionMethod: true
+  parent: Orleans.Hosting.SiloHostBuilderReminderExtensions
+  langs:
+  - csharp
+  - vb
+  name: UseAdoNetReminderService(ISiloHostBuilder, Action<OptionsBuilder<AdoNetReminderTableOptions>>)
+  nameWithType: SiloHostBuilderReminderExtensions.UseAdoNetReminderService(ISiloHostBuilder, Action<OptionsBuilder<AdoNetReminderTableOptions>>)
+  fullName: Orleans.Hosting.SiloHostBuilderReminderExtensions.UseAdoNetReminderService(ISiloHostBuilder, Action<OptionsBuilder<Orleans.Configuration.AdoNetReminderTableOptions>>)
+  type: Method
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Reminders.AdoNet/SiloHostBuilderReminderExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: UseAdoNetReminderService
+    path: src/AdoNet/Orleans.Reminders.AdoNet/SiloHostBuilderReminderExtensions.cs
+    startLine: 28
+  assemblies:
+  - Orleans.Reminders.AdoNet
+  namespace: Orleans.Hosting
+  summary: Adds reminder storage using ADO.NET.
+  example: []
+  syntax:
+    content: public static ISiloHostBuilder UseAdoNetReminderService(this ISiloHostBuilder builder, Action<OptionsBuilder<AdoNetReminderTableOptions>> configureOptions)
+    parameters:
+    - id: builder
+      type: ISiloHostBuilder
+      description: The builder.
+    - id: configureOptions
+      type: Action{OptionsBuilder{Orleans.Configuration.AdoNetReminderTableOptions}}
+      description: Configuration delegate.
+    return:
+      type: ISiloHostBuilder
+      description: The provided <see cref="!:ISiloHostBuilder"></see>, for chaining.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function UseAdoNetReminderService(builder As ISiloHostBuilder, configureOptions As Action(Of OptionsBuilder(Of AdoNetReminderTableOptions))) As ISiloHostBuilder
+  overload: Orleans.Hosting.SiloHostBuilderReminderExtensions.UseAdoNetReminderService*
+  nameWithType.vb: SiloHostBuilderReminderExtensions.UseAdoNetReminderService(ISiloHostBuilder, Action(Of OptionsBuilder(Of AdoNetReminderTableOptions)))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.Hosting.SiloHostBuilderReminderExtensions.UseAdoNetReminderService(ISiloHostBuilder, Action(Of OptionsBuilder(Of Orleans.Configuration.AdoNetReminderTableOptions)))
+  name.vb: UseAdoNetReminderService(ISiloHostBuilder, Action(Of OptionsBuilder(Of AdoNetReminderTableOptions)))
+- uid: Orleans.Hosting.SiloHostBuilderReminderExtensions.UseAdoNetReminderService(IServiceCollection,Action{OptionsBuilder{Orleans.Configuration.AdoNetReminderTableOptions}})
+  commentId: M:Orleans.Hosting.SiloHostBuilderReminderExtensions.UseAdoNetReminderService(IServiceCollection,Action{OptionsBuilder{Orleans.Configuration.AdoNetReminderTableOptions}})
+  id: UseAdoNetReminderService(IServiceCollection,Action{OptionsBuilder{Orleans.Configuration.AdoNetReminderTableOptions}})
+  isExtensionMethod: true
+  parent: Orleans.Hosting.SiloHostBuilderReminderExtensions
+  langs:
+  - csharp
+  - vb
+  name: UseAdoNetReminderService(IServiceCollection, Action<OptionsBuilder<AdoNetReminderTableOptions>>)
+  nameWithType: SiloHostBuilderReminderExtensions.UseAdoNetReminderService(IServiceCollection, Action<OptionsBuilder<AdoNetReminderTableOptions>>)
+  fullName: Orleans.Hosting.SiloHostBuilderReminderExtensions.UseAdoNetReminderService(IServiceCollection, Action<OptionsBuilder<Orleans.Configuration.AdoNetReminderTableOptions>>)
+  type: Method
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Reminders.AdoNet/SiloHostBuilderReminderExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: UseAdoNetReminderService
+    path: src/AdoNet/Orleans.Reminders.AdoNet/SiloHostBuilderReminderExtensions.cs
+    startLine: 39
+  assemblies:
+  - Orleans.Reminders.AdoNet
+  namespace: Orleans.Hosting
+  summary: Adds reminder storage using ADO.NET.
+  example: []
+  syntax:
+    content: public static IServiceCollection UseAdoNetReminderService(this IServiceCollection services, Action<OptionsBuilder<AdoNetReminderTableOptions>> configureOptions)
+    parameters:
+    - id: services
+      type: IServiceCollection
+      description: The service collection.
+    - id: configureOptions
+      type: Action{OptionsBuilder{Orleans.Configuration.AdoNetReminderTableOptions}}
+      description: Configuration delegate.
+    return:
+      type: IServiceCollection
+      description: The provided <see cref="!:ISiloHostBuilder"></see>, for chaining.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function UseAdoNetReminderService(services As IServiceCollection, configureOptions As Action(Of OptionsBuilder(Of AdoNetReminderTableOptions))) As IServiceCollection
+  overload: Orleans.Hosting.SiloHostBuilderReminderExtensions.UseAdoNetReminderService*
+  nameWithType.vb: SiloHostBuilderReminderExtensions.UseAdoNetReminderService(IServiceCollection, Action(Of OptionsBuilder(Of AdoNetReminderTableOptions)))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.Hosting.SiloHostBuilderReminderExtensions.UseAdoNetReminderService(IServiceCollection, Action(Of OptionsBuilder(Of Orleans.Configuration.AdoNetReminderTableOptions)))
+  name.vb: UseAdoNetReminderService(IServiceCollection, Action(Of OptionsBuilder(Of AdoNetReminderTableOptions)))
+references:
+- uid: Orleans.Hosting
+  commentId: N:Orleans.Hosting
+  isExternal: false
+  name: Orleans.Hosting
+  nameWithType: Orleans.Hosting
+  fullName: Orleans.Hosting
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Hosting.SiloHostBuilderReminderExtensions.UseAdoNetReminderService*
+  commentId: Overload:Orleans.Hosting.SiloHostBuilderReminderExtensions.UseAdoNetReminderService
+  isExternal: false
+  name: UseAdoNetReminderService
+  nameWithType: SiloHostBuilderReminderExtensions.UseAdoNetReminderService
+  fullName: Orleans.Hosting.SiloHostBuilderReminderExtensions.UseAdoNetReminderService
+- uid: ISiloHostBuilder
+  isExternal: true
+  name: ISiloHostBuilder
+  nameWithType: ISiloHostBuilder
+  fullName: ISiloHostBuilder
+- uid: Action{Orleans.Configuration.AdoNetReminderTableOptions}
+  commentId: '!:Action{Orleans.Configuration.AdoNetReminderTableOptions}'
+  definition: Action`1
+  name: Action<AdoNetReminderTableOptions>
+  nameWithType: Action<AdoNetReminderTableOptions>
+  fullName: Action<Orleans.Configuration.AdoNetReminderTableOptions>
+  nameWithType.vb: Action(Of AdoNetReminderTableOptions)
+  fullName.vb: Action(Of Orleans.Configuration.AdoNetReminderTableOptions)
+  name.vb: Action(Of AdoNetReminderTableOptions)
+  spec.csharp:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Orleans.Configuration.AdoNetReminderTableOptions
+    name: AdoNetReminderTableOptions
+    nameWithType: AdoNetReminderTableOptions
+    fullName: Orleans.Configuration.AdoNetReminderTableOptions
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Orleans.Configuration.AdoNetReminderTableOptions
+    name: AdoNetReminderTableOptions
+    nameWithType: AdoNetReminderTableOptions
+    fullName: Orleans.Configuration.AdoNetReminderTableOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Action`1
+  isExternal: true
+  name: Action<>
+  nameWithType: Action<>
+  fullName: Action<>
+  nameWithType.vb: Action(Of )
+  fullName.vb: Action(Of )
+  name.vb: Action(Of )
+  spec.csharp:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Action{OptionsBuilder{Orleans.Configuration.AdoNetReminderTableOptions}}
+  commentId: '!:Action{OptionsBuilder{Orleans.Configuration.AdoNetReminderTableOptions}}'
+  definition: Action`1
+  name: Action<OptionsBuilder<AdoNetReminderTableOptions>>
+  nameWithType: Action<OptionsBuilder<AdoNetReminderTableOptions>>
+  fullName: Action<OptionsBuilder<Orleans.Configuration.AdoNetReminderTableOptions>>
+  nameWithType.vb: Action(Of OptionsBuilder(Of AdoNetReminderTableOptions))
+  fullName.vb: Action(Of OptionsBuilder(Of Orleans.Configuration.AdoNetReminderTableOptions))
+  name.vb: Action(Of OptionsBuilder(Of AdoNetReminderTableOptions))
+  spec.csharp:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: OptionsBuilder`1
+    name: OptionsBuilder
+    nameWithType: OptionsBuilder
+    fullName: OptionsBuilder
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Orleans.Configuration.AdoNetReminderTableOptions
+    name: AdoNetReminderTableOptions
+    nameWithType: AdoNetReminderTableOptions
+    fullName: Orleans.Configuration.AdoNetReminderTableOptions
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: OptionsBuilder`1
+    name: OptionsBuilder
+    nameWithType: OptionsBuilder
+    fullName: OptionsBuilder
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Orleans.Configuration.AdoNetReminderTableOptions
+    name: AdoNetReminderTableOptions
+    nameWithType: AdoNetReminderTableOptions
+    fullName: Orleans.Configuration.AdoNetReminderTableOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IServiceCollection
+  isExternal: true
+  name: IServiceCollection
+  nameWithType: IServiceCollection
+  fullName: IServiceCollection

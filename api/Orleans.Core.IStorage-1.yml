@@ -1,0 +1,372 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Core.IStorage`1
+  commentId: T:Orleans.Core.IStorage`1
+  id: IStorage`1
+  parent: Orleans.Core
+  children:
+  - Orleans.Core.IStorage`1.ClearStateAsync
+  - Orleans.Core.IStorage`1.Etag
+  - Orleans.Core.IStorage`1.ReadStateAsync
+  - Orleans.Core.IStorage`1.State
+  - Orleans.Core.IStorage`1.WriteStateAsync
+  langs:
+  - csharp
+  - vb
+  name: IStorage<TState>
+  nameWithType: IStorage<TState>
+  fullName: Orleans.Core.IStorage<TState>
+  type: Interface
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/IStorage.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IStorage
+    path: src/Orleans.Core.Abstractions/Core/IStorage.cs
+    startLine: 4
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Core
+  syntax:
+    content: >-
+      public interface IStorage<TState>
+
+          where TState : new ()
+    typeParameters:
+    - id: TState
+    content.vb: Public Interface IStorage(Of TState As New)
+  extensionMethods:
+  - Orleans.Core.IStorage`1.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  nameWithType.vb: IStorage(Of TState)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+  fullName.vb: Orleans.Core.IStorage(Of TState)
+  name.vb: IStorage(Of TState)
+- uid: Orleans.Core.IStorage`1.State
+  commentId: P:Orleans.Core.IStorage`1.State
+  id: State
+  parent: Orleans.Core.IStorage`1
+  langs:
+  - csharp
+  - vb
+  name: State
+  nameWithType: IStorage<TState>.State
+  fullName: Orleans.Core.IStorage<TState>.State
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/IStorage.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: State
+    path: src/Orleans.Core.Abstractions/Core/IStorage.cs
+    startLine: 7
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Core
+  syntax:
+    content: TState State { get; set; }
+    parameters: []
+    return:
+      type: '{TState}'
+    content.vb: Property State As TState
+  overload: Orleans.Core.IStorage`1.State*
+  nameWithType.vb: IStorage(Of TState).State
+  modifiers.csharp:
+  - get
+  - set
+  fullName.vb: Orleans.Core.IStorage(Of TState).State
+- uid: Orleans.Core.IStorage`1.Etag
+  commentId: P:Orleans.Core.IStorage`1.Etag
+  id: Etag
+  parent: Orleans.Core.IStorage`1
+  langs:
+  - csharp
+  - vb
+  name: Etag
+  nameWithType: IStorage<TState>.Etag
+  fullName: Orleans.Core.IStorage<TState>.Etag
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/IStorage.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Etag
+    path: src/Orleans.Core.Abstractions/Core/IStorage.cs
+    startLine: 9
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Core
+  syntax:
+    content: string Etag { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property Etag As String
+  overload: Orleans.Core.IStorage`1.Etag*
+  nameWithType.vb: IStorage(Of TState).Etag
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+  fullName.vb: Orleans.Core.IStorage(Of TState).Etag
+- uid: Orleans.Core.IStorage`1.ClearStateAsync
+  commentId: M:Orleans.Core.IStorage`1.ClearStateAsync
+  id: ClearStateAsync
+  parent: Orleans.Core.IStorage`1
+  langs:
+  - csharp
+  - vb
+  name: ClearStateAsync()
+  nameWithType: IStorage<TState>.ClearStateAsync()
+  fullName: Orleans.Core.IStorage<TState>.ClearStateAsync()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/IStorage.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ClearStateAsync
+    path: src/Orleans.Core.Abstractions/Core/IStorage.cs
+    startLine: 16
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Core
+  summary: "\nAsync method to cause the current grain state data to be cleared and reset. \nThis will usually mean the state record is deleted from backing store, but the specific behavior is defined by the storage provider instance configured for this grain.\nIf Etags do not match, then this operation will fail; Set Etag = <code>null</code> to indicate &quot;always delete&quot;.\n"
+  example: []
+  syntax:
+    content: Task ClearStateAsync()
+    return:
+      type: Task
+    content.vb: Function ClearStateAsync As Task
+  overload: Orleans.Core.IStorage`1.ClearStateAsync*
+  nameWithType.vb: IStorage(Of TState).ClearStateAsync()
+  fullName.vb: Orleans.Core.IStorage(Of TState).ClearStateAsync()
+- uid: Orleans.Core.IStorage`1.WriteStateAsync
+  commentId: M:Orleans.Core.IStorage`1.WriteStateAsync
+  id: WriteStateAsync
+  parent: Orleans.Core.IStorage`1
+  langs:
+  - csharp
+  - vb
+  name: WriteStateAsync()
+  nameWithType: IStorage<TState>.WriteStateAsync()
+  fullName: Orleans.Core.IStorage<TState>.WriteStateAsync()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/IStorage.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: WriteStateAsync
+    path: src/Orleans.Core.Abstractions/Core/IStorage.cs
+    startLine: 22
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Core
+  summary: "\nAsync method to cause write of the current grain state data into backing store.\nIf Etags do not match, then this operation will fail; Set Etag = <code>null</code> to indicate &quot;always overwrite&quot;.\n"
+  example: []
+  syntax:
+    content: Task WriteStateAsync()
+    return:
+      type: Task
+    content.vb: Function WriteStateAsync As Task
+  overload: Orleans.Core.IStorage`1.WriteStateAsync*
+  nameWithType.vb: IStorage(Of TState).WriteStateAsync()
+  fullName.vb: Orleans.Core.IStorage(Of TState).WriteStateAsync()
+- uid: Orleans.Core.IStorage`1.ReadStateAsync
+  commentId: M:Orleans.Core.IStorage`1.ReadStateAsync
+  id: ReadStateAsync
+  parent: Orleans.Core.IStorage`1
+  langs:
+  - csharp
+  - vb
+  name: ReadStateAsync()
+  nameWithType: IStorage<TState>.ReadStateAsync()
+  fullName: Orleans.Core.IStorage<TState>.ReadStateAsync()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/IStorage.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ReadStateAsync
+    path: src/Orleans.Core.Abstractions/Core/IStorage.cs
+    startLine: 28
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Core
+  summary: "\nAsync method to cause refresh of the current grain state data from backing store.\nAny previous contents of the grain state data will be overwritten.\n"
+  example: []
+  syntax:
+    content: Task ReadStateAsync()
+    return:
+      type: Task
+    content.vb: Function ReadStateAsync As Task
+  overload: Orleans.Core.IStorage`1.ReadStateAsync*
+  nameWithType.vb: IStorage(Of TState).ReadStateAsync()
+  fullName.vb: Orleans.Core.IStorage(Of TState).ReadStateAsync()
+references:
+- uid: Orleans.Core
+  commentId: N:Orleans.Core
+  isExternal: false
+  name: Orleans.Core
+  nameWithType: Orleans.Core
+  fullName: Orleans.Core
+- uid: Orleans.Core.IStorage`1.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<IStorage<TState>>()
+  nameWithType: ImmutableExt.AsImmutable<IStorage<TState>>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Core.IStorage<TState>>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of IStorage(Of TState))()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Core.IStorage(Of TState))()
+  name.vb: AsImmutable(Of IStorage(Of TState))()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<IStorage<TState>>
+    nameWithType: ImmutableExt.AsImmutable<IStorage<TState>>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Core.IStorage<TState>>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of IStorage(Of TState))
+    nameWithType: ImmutableExt.AsImmutable(Of IStorage(Of TState))
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Core.IStorage(Of TState))
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Core.IStorage`1.State*
+  commentId: Overload:Orleans.Core.IStorage`1.State
+  isExternal: false
+  name: State
+  nameWithType: IStorage<TState>.State
+  fullName: Orleans.Core.IStorage<TState>.State
+  nameWithType.vb: IStorage(Of TState).State
+  fullName.vb: Orleans.Core.IStorage(Of TState).State
+- uid: '{TState}'
+  commentId: '!:TState'
+  definition: TState
+  name: TState
+  nameWithType: TState
+  fullName: TState
+- uid: TState
+  isExternal: false
+  name: TState
+  nameWithType: TState
+  fullName: TState
+- uid: Orleans.Core.IStorage`1.Etag*
+  commentId: Overload:Orleans.Core.IStorage`1.Etag
+  isExternal: false
+  name: Etag
+  nameWithType: IStorage<TState>.Etag
+  fullName: Orleans.Core.IStorage<TState>.Etag
+  nameWithType.vb: IStorage(Of TState).Etag
+  fullName.vb: Orleans.Core.IStorage(Of TState).Etag
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Core.IStorage`1.ClearStateAsync*
+  commentId: Overload:Orleans.Core.IStorage`1.ClearStateAsync
+  isExternal: false
+  name: ClearStateAsync
+  nameWithType: IStorage<TState>.ClearStateAsync
+  fullName: Orleans.Core.IStorage<TState>.ClearStateAsync
+  nameWithType.vb: IStorage(Of TState).ClearStateAsync
+  fullName.vb: Orleans.Core.IStorage(Of TState).ClearStateAsync
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task
+- uid: Orleans.Core.IStorage`1.WriteStateAsync*
+  commentId: Overload:Orleans.Core.IStorage`1.WriteStateAsync
+  isExternal: false
+  name: WriteStateAsync
+  nameWithType: IStorage<TState>.WriteStateAsync
+  fullName: Orleans.Core.IStorage<TState>.WriteStateAsync
+  nameWithType.vb: IStorage(Of TState).WriteStateAsync
+  fullName.vb: Orleans.Core.IStorage(Of TState).WriteStateAsync
+- uid: Orleans.Core.IStorage`1.ReadStateAsync*
+  commentId: Overload:Orleans.Core.IStorage`1.ReadStateAsync
+  isExternal: false
+  name: ReadStateAsync
+  nameWithType: IStorage<TState>.ReadStateAsync
+  fullName: Orleans.Core.IStorage<TState>.ReadStateAsync
+  nameWithType.vb: IStorage(Of TState).ReadStateAsync
+  fullName.vb: Orleans.Core.IStorage(Of TState).ReadStateAsync

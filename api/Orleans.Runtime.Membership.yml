@@ -1,0 +1,51 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Runtime.Membership
+  commentId: N:Orleans.Runtime.Membership
+  id: Orleans.Runtime.Membership
+  children:
+  - Orleans.Runtime.Membership.AdoNetGatewayListProvider
+  - Orleans.Runtime.Membership.ConsulBasedMembershipTable
+  - Orleans.Runtime.Membership.ConsulGatewayListProvider
+  - Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable
+  - Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions
+  langs:
+  - csharp
+  - vb
+  name: Orleans.Runtime.Membership
+  nameWithType: Orleans.Runtime.Membership
+  fullName: Orleans.Runtime.Membership
+  type: Namespace
+  assemblies:
+  - Orleans.Clustering.ZooKeeper
+references:
+- uid: Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable
+  commentId: T:Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable
+  isExternal: false
+  name: ZooKeeperBasedMembershipTable
+  nameWithType: ZooKeeperBasedMembershipTable
+  fullName: Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable
+- uid: Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions
+  commentId: T:Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions
+  isExternal: false
+  name: ZooKeeperClusteringClientOptions
+  nameWithType: ZooKeeperClusteringClientOptions
+  fullName: Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions
+- uid: Orleans.Runtime.Membership.AdoNetGatewayListProvider
+  commentId: T:Orleans.Runtime.Membership.AdoNetGatewayListProvider
+  isExternal: false
+  name: AdoNetGatewayListProvider
+  nameWithType: AdoNetGatewayListProvider
+  fullName: Orleans.Runtime.Membership.AdoNetGatewayListProvider
+- uid: Orleans.Runtime.Membership.ConsulBasedMembershipTable
+  commentId: T:Orleans.Runtime.Membership.ConsulBasedMembershipTable
+  isExternal: false
+  name: ConsulBasedMembershipTable
+  nameWithType: ConsulBasedMembershipTable
+  fullName: Orleans.Runtime.Membership.ConsulBasedMembershipTable
+- uid: Orleans.Runtime.Membership.ConsulGatewayListProvider
+  commentId: T:Orleans.Runtime.Membership.ConsulGatewayListProvider
+  isExternal: false
+  name: ConsulGatewayListProvider
+  nameWithType: ConsulGatewayListProvider
+  fullName: Orleans.Runtime.Membership.ConsulGatewayListProvider

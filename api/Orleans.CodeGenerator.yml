@@ -1,0 +1,44 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.CodeGenerator
+  commentId: N:Orleans.CodeGenerator
+  id: Orleans.CodeGenerator
+  children:
+  - Orleans.CodeGenerator.CodeGenerationException
+  - Orleans.CodeGenerator.KnownTypeDescription
+  - Orleans.CodeGenerator.RoslynCodeGenerator
+  - Orleans.CodeGenerator.SerializerGenerator
+  langs:
+  - csharp
+  - vb
+  name: Orleans.CodeGenerator
+  nameWithType: Orleans.CodeGenerator
+  fullName: Orleans.CodeGenerator
+  type: Namespace
+  assemblies:
+  - Orleans.CodeGeneration
+references:
+- uid: Orleans.CodeGenerator.CodeGenerationException
+  commentId: T:Orleans.CodeGenerator.CodeGenerationException
+  isExternal: false
+  name: CodeGenerationException
+  nameWithType: CodeGenerationException
+  fullName: Orleans.CodeGenerator.CodeGenerationException
+- uid: Orleans.CodeGenerator.KnownTypeDescription
+  commentId: T:Orleans.CodeGenerator.KnownTypeDescription
+  isExternal: false
+  name: KnownTypeDescription
+  nameWithType: KnownTypeDescription
+  fullName: Orleans.CodeGenerator.KnownTypeDescription
+- uid: Orleans.CodeGenerator.RoslynCodeGenerator
+  commentId: T:Orleans.CodeGenerator.RoslynCodeGenerator
+  isExternal: false
+  name: RoslynCodeGenerator
+  nameWithType: RoslynCodeGenerator
+  fullName: Orleans.CodeGenerator.RoslynCodeGenerator
+- uid: Orleans.CodeGenerator.SerializerGenerator
+  commentId: T:Orleans.CodeGenerator.SerializerGenerator
+  isExternal: false
+  name: SerializerGenerator
+  nameWithType: SerializerGenerator
+  fullName: Orleans.CodeGenerator.SerializerGenerator

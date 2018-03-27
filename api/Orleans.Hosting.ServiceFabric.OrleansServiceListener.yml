@@ -1,0 +1,344 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Hosting.ServiceFabric.OrleansServiceListener
+  commentId: T:Orleans.Hosting.ServiceFabric.OrleansServiceListener
+  id: OrleansServiceListener
+  parent: Orleans.Hosting.ServiceFabric
+  children:
+  - Orleans.Hosting.ServiceFabric.OrleansServiceListener.CreateStateful(Action{StatefulServiceContext,ISiloHostBuilder})
+  - Orleans.Hosting.ServiceFabric.OrleansServiceListener.CreateStateless(Action{StatelessServiceContext,ISiloHostBuilder})
+  langs:
+  - csharp
+  - vb
+  name: OrleansServiceListener
+  nameWithType: OrleansServiceListener
+  fullName: Orleans.Hosting.ServiceFabric.OrleansServiceListener
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Hosting.ServiceFabric/OrleansServiceListener.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: OrleansServiceListener
+    path: src/Orleans.Hosting.ServiceFabric/OrleansServiceListener.cs
+    startLine: 10
+  assemblies:
+  - Orleans.Hosting.ServiceFabric
+  namespace: Orleans.Hosting.ServiceFabric
+  summary: "\nCreates Service Fabric listeners for Orleans silos.\n"
+  example: []
+  syntax:
+    content: 'public static class OrleansServiceListener : object'
+    content.vb: >-
+      Public Module OrleansServiceListener
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Orleans.Hosting.ServiceFabric.OrleansServiceListener.CreateStateless(Action{StatelessServiceContext,ISiloHostBuilder})
+  commentId: M:Orleans.Hosting.ServiceFabric.OrleansServiceListener.CreateStateless(Action{StatelessServiceContext,ISiloHostBuilder})
+  id: CreateStateless(Action{StatelessServiceContext,ISiloHostBuilder})
+  parent: Orleans.Hosting.ServiceFabric.OrleansServiceListener
+  langs:
+  - csharp
+  - vb
+  name: CreateStateless(Action<StatelessServiceContext, ISiloHostBuilder>)
+  nameWithType: OrleansServiceListener.CreateStateless(Action<StatelessServiceContext, ISiloHostBuilder>)
+  fullName: Orleans.Hosting.ServiceFabric.OrleansServiceListener.CreateStateless(Action<StatelessServiceContext, ISiloHostBuilder>)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Hosting.ServiceFabric/OrleansServiceListener.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: CreateStateless
+    path: src/Orleans.Hosting.ServiceFabric/OrleansServiceListener.cs
+    startLine: 17
+  assemblies:
+  - Orleans.Hosting.ServiceFabric
+  namespace: Orleans.Hosting.ServiceFabric
+  summary: "\nCreates a <see cref=\"!:ServiceInstanceListener\"></see> which manages an Orleans silo for a stateless service.\n"
+  example: []
+  syntax:
+    content: public static ServiceInstanceListener CreateStateless(Action<StatelessServiceContext, ISiloHostBuilder> configure)
+    parameters:
+    - id: configure
+      type: Action{StatelessServiceContext,ISiloHostBuilder}
+      description: The <see cref="!:ISiloHostBuilder"></see> configuration delegate.
+    return:
+      type: ServiceInstanceListener
+      description: A <see cref="!:ServiceInstanceListener"></see> which manages an Orleans silo.
+    content.vb: Public Shared Function CreateStateless(configure As Action(Of StatelessServiceContext, ISiloHostBuilder)) As ServiceInstanceListener
+  overload: Orleans.Hosting.ServiceFabric.OrleansServiceListener.CreateStateless*
+  nameWithType.vb: OrleansServiceListener.CreateStateless(Action(Of StatelessServiceContext, ISiloHostBuilder))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.Hosting.ServiceFabric.OrleansServiceListener.CreateStateless(Action(Of StatelessServiceContext, ISiloHostBuilder))
+  name.vb: CreateStateless(Action(Of StatelessServiceContext, ISiloHostBuilder))
+- uid: Orleans.Hosting.ServiceFabric.OrleansServiceListener.CreateStateful(Action{StatefulServiceContext,ISiloHostBuilder})
+  commentId: M:Orleans.Hosting.ServiceFabric.OrleansServiceListener.CreateStateful(Action{StatefulServiceContext,ISiloHostBuilder})
+  id: CreateStateful(Action{StatefulServiceContext,ISiloHostBuilder})
+  parent: Orleans.Hosting.ServiceFabric.OrleansServiceListener
+  langs:
+  - csharp
+  - vb
+  name: CreateStateful(Action<StatefulServiceContext, ISiloHostBuilder>)
+  nameWithType: OrleansServiceListener.CreateStateful(Action<StatefulServiceContext, ISiloHostBuilder>)
+  fullName: Orleans.Hosting.ServiceFabric.OrleansServiceListener.CreateStateful(Action<StatefulServiceContext, ISiloHostBuilder>)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Hosting.ServiceFabric/OrleansServiceListener.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: CreateStateful
+    path: src/Orleans.Hosting.ServiceFabric/OrleansServiceListener.cs
+    startLine: 29
+  assemblies:
+  - Orleans.Hosting.ServiceFabric
+  namespace: Orleans.Hosting.ServiceFabric
+  summary: "\nCreates a <see cref=\"!:ServiceInstanceListener\"></see> which manages an Orleans silo for a stateless service.\n"
+  example: []
+  syntax:
+    content: public static ServiceReplicaListener CreateStateful(Action<StatefulServiceContext, ISiloHostBuilder> configure)
+    parameters:
+    - id: configure
+      type: Action{StatefulServiceContext,ISiloHostBuilder}
+      description: The <see cref="!:ISiloHostBuilder"></see> configuration delegate.
+    return:
+      type: ServiceReplicaListener
+      description: A <see cref="!:ServiceInstanceListener"></see> which manages an Orleans silo.
+    content.vb: Public Shared Function CreateStateful(configure As Action(Of StatefulServiceContext, ISiloHostBuilder)) As ServiceReplicaListener
+  overload: Orleans.Hosting.ServiceFabric.OrleansServiceListener.CreateStateful*
+  nameWithType.vb: OrleansServiceListener.CreateStateful(Action(Of StatefulServiceContext, ISiloHostBuilder))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.Hosting.ServiceFabric.OrleansServiceListener.CreateStateful(Action(Of StatefulServiceContext, ISiloHostBuilder))
+  name.vb: CreateStateful(Action(Of StatefulServiceContext, ISiloHostBuilder))
+references:
+- uid: Orleans.Hosting.ServiceFabric
+  commentId: N:Orleans.Hosting.ServiceFabric
+  isExternal: false
+  name: Orleans.Hosting.ServiceFabric
+  nameWithType: Orleans.Hosting.ServiceFabric
+  fullName: Orleans.Hosting.ServiceFabric
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Hosting.ServiceFabric.OrleansServiceListener.CreateStateless*
+  commentId: Overload:Orleans.Hosting.ServiceFabric.OrleansServiceListener.CreateStateless
+  isExternal: false
+  name: CreateStateless
+  nameWithType: OrleansServiceListener.CreateStateless
+  fullName: Orleans.Hosting.ServiceFabric.OrleansServiceListener.CreateStateless
+- uid: Action{StatelessServiceContext,ISiloHostBuilder}
+  commentId: '!:Action{StatelessServiceContext,ISiloHostBuilder}'
+  definition: Action`2
+  name: Action<StatelessServiceContext, ISiloHostBuilder>
+  nameWithType: Action<StatelessServiceContext, ISiloHostBuilder>
+  fullName: Action<StatelessServiceContext, ISiloHostBuilder>
+  nameWithType.vb: Action(Of StatelessServiceContext, ISiloHostBuilder)
+  fullName.vb: Action(Of StatelessServiceContext, ISiloHostBuilder)
+  name.vb: Action(Of StatelessServiceContext, ISiloHostBuilder)
+  spec.csharp:
+  - uid: Action`2
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: StatelessServiceContext
+    name: StatelessServiceContext
+    nameWithType: StatelessServiceContext
+    fullName: StatelessServiceContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: ISiloHostBuilder
+    name: ISiloHostBuilder
+    nameWithType: ISiloHostBuilder
+    fullName: ISiloHostBuilder
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`2
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: StatelessServiceContext
+    name: StatelessServiceContext
+    nameWithType: StatelessServiceContext
+    fullName: StatelessServiceContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: ISiloHostBuilder
+    name: ISiloHostBuilder
+    nameWithType: ISiloHostBuilder
+    fullName: ISiloHostBuilder
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: ServiceInstanceListener
+  commentId: '!:ServiceInstanceListener'
+  isExternal: true
+  name: ServiceInstanceListener
+  nameWithType: ServiceInstanceListener
+  fullName: ServiceInstanceListener
+- uid: Action`2
+  isExternal: true
+  name: Action<, >
+  nameWithType: Action<, >
+  fullName: Action<, >
+  nameWithType.vb: Action(Of , )
+  fullName.vb: Action(Of , )
+  name.vb: Action(Of , )
+  spec.csharp:
+  - uid: Action`2
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`2
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Hosting.ServiceFabric.OrleansServiceListener.CreateStateful*
+  commentId: Overload:Orleans.Hosting.ServiceFabric.OrleansServiceListener.CreateStateful
+  isExternal: false
+  name: CreateStateful
+  nameWithType: OrleansServiceListener.CreateStateful
+  fullName: Orleans.Hosting.ServiceFabric.OrleansServiceListener.CreateStateful
+- uid: Action{StatefulServiceContext,ISiloHostBuilder}
+  commentId: '!:Action{StatefulServiceContext,ISiloHostBuilder}'
+  definition: Action`2
+  name: Action<StatefulServiceContext, ISiloHostBuilder>
+  nameWithType: Action<StatefulServiceContext, ISiloHostBuilder>
+  fullName: Action<StatefulServiceContext, ISiloHostBuilder>
+  nameWithType.vb: Action(Of StatefulServiceContext, ISiloHostBuilder)
+  fullName.vb: Action(Of StatefulServiceContext, ISiloHostBuilder)
+  name.vb: Action(Of StatefulServiceContext, ISiloHostBuilder)
+  spec.csharp:
+  - uid: Action`2
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: StatefulServiceContext
+    name: StatefulServiceContext
+    nameWithType: StatefulServiceContext
+    fullName: StatefulServiceContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: ISiloHostBuilder
+    name: ISiloHostBuilder
+    nameWithType: ISiloHostBuilder
+    fullName: ISiloHostBuilder
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`2
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: StatefulServiceContext
+    name: StatefulServiceContext
+    nameWithType: StatefulServiceContext
+    fullName: StatefulServiceContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: ISiloHostBuilder
+    name: ISiloHostBuilder
+    nameWithType: ISiloHostBuilder
+    fullName: ISiloHostBuilder
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: ServiceReplicaListener
+  commentId: '!:ServiceReplicaListener'
+  isExternal: true
+  name: ServiceReplicaListener
+  nameWithType: ServiceReplicaListener
+  fullName: ServiceReplicaListener

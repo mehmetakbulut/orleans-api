@@ -1,0 +1,236 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.CodeGeneration.TypeCodeOverrideAttribute
+  commentId: T:Orleans.CodeGeneration.TypeCodeOverrideAttribute
+  id: TypeCodeOverrideAttribute
+  parent: Orleans.CodeGeneration
+  children:
+  - Orleans.CodeGeneration.TypeCodeOverrideAttribute.#ctor(System.Int32)
+  - Orleans.CodeGeneration.TypeCodeOverrideAttribute.TypeCode
+  langs:
+  - csharp
+  - vb
+  name: TypeCodeOverrideAttribute
+  nameWithType: TypeCodeOverrideAttribute
+  fullName: Orleans.CodeGeneration.TypeCodeOverrideAttribute
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/CodeGeneration/CodeGenGrainAttributes.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: TypeCodeOverrideAttribute
+    path: src/Orleans.Core.Abstractions/CodeGeneration/CodeGenGrainAttributes.cs
+    startLine: 8
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.CodeGeneration
+  summary: "\nThe TypeCodeOverrideAttribute attribute allows to specify the grain interface ID or the grain class type code\nto override the default ones to avoid hash collisions\n"
+  example: []
+  syntax:
+    content: 'public sealed class TypeCodeOverrideAttribute : Attribute'
+    content.vb: >-
+      Public NotInheritable Class TypeCodeOverrideAttribute
+
+          Inherits Attribute
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.CodeGeneration.TypeCodeOverrideAttribute.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Orleans.CodeGeneration.TypeCodeOverrideAttribute.TypeCode
+  commentId: P:Orleans.CodeGeneration.TypeCodeOverrideAttribute.TypeCode
+  id: TypeCode
+  parent: Orleans.CodeGeneration.TypeCodeOverrideAttribute
+  langs:
+  - csharp
+  - vb
+  name: TypeCode
+  nameWithType: TypeCodeOverrideAttribute.TypeCode
+  fullName: Orleans.CodeGeneration.TypeCodeOverrideAttribute.TypeCode
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/CodeGeneration/CodeGenGrainAttributes.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: TypeCode
+    path: src/Orleans.Core.Abstractions/CodeGeneration/CodeGenGrainAttributes.cs
+    startLine: 14
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.CodeGeneration
+  summary: "\nUse a specific grain interface ID or grain class type code (e.g. to avoid hash collisions)\n"
+  example: []
+  syntax:
+    content: public int TypeCode { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property TypeCode As Integer
+  overload: Orleans.CodeGeneration.TypeCodeOverrideAttribute.TypeCode*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.CodeGeneration.TypeCodeOverrideAttribute.#ctor(System.Int32)
+  commentId: M:Orleans.CodeGeneration.TypeCodeOverrideAttribute.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: Orleans.CodeGeneration.TypeCodeOverrideAttribute
+  langs:
+  - csharp
+  - vb
+  name: TypeCodeOverrideAttribute(Int32)
+  nameWithType: TypeCodeOverrideAttribute.TypeCodeOverrideAttribute(Int32)
+  fullName: Orleans.CodeGeneration.TypeCodeOverrideAttribute.TypeCodeOverrideAttribute(System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/CodeGeneration/CodeGenGrainAttributes.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Core.Abstractions/CodeGeneration/CodeGenGrainAttributes.cs
+    startLine: 16
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.CodeGeneration
+  syntax:
+    content: public TypeCodeOverrideAttribute(int typeCode)
+    parameters:
+    - id: typeCode
+      type: System.Int32
+    content.vb: Public Sub New(typeCode As Integer)
+  overload: Orleans.CodeGeneration.TypeCodeOverrideAttribute.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans.CodeGeneration
+  commentId: N:Orleans.CodeGeneration
+  isExternal: false
+  name: Orleans.CodeGeneration
+  nameWithType: Orleans.CodeGeneration
+  fullName: Orleans.CodeGeneration
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.CodeGeneration.TypeCodeOverrideAttribute.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<TypeCodeOverrideAttribute>()
+  nameWithType: ImmutableExt.AsImmutable<TypeCodeOverrideAttribute>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.CodeGeneration.TypeCodeOverrideAttribute>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of TypeCodeOverrideAttribute)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.CodeGeneration.TypeCodeOverrideAttribute)()
+  name.vb: AsImmutable(Of TypeCodeOverrideAttribute)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<TypeCodeOverrideAttribute>
+    nameWithType: ImmutableExt.AsImmutable<TypeCodeOverrideAttribute>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.CodeGeneration.TypeCodeOverrideAttribute>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of TypeCodeOverrideAttribute)
+    nameWithType: ImmutableExt.AsImmutable(Of TypeCodeOverrideAttribute)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.CodeGeneration.TypeCodeOverrideAttribute)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.CodeGeneration.TypeCodeOverrideAttribute.TypeCode*
+  commentId: Overload:Orleans.CodeGeneration.TypeCodeOverrideAttribute.TypeCode
+  isExternal: false
+  name: TypeCode
+  nameWithType: TypeCodeOverrideAttribute.TypeCode
+  fullName: Orleans.CodeGeneration.TypeCodeOverrideAttribute.TypeCode
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Orleans.CodeGeneration.TypeCodeOverrideAttribute.#ctor*
+  commentId: Overload:Orleans.CodeGeneration.TypeCodeOverrideAttribute.#ctor
+  isExternal: false
+  name: TypeCodeOverrideAttribute
+  nameWithType: TypeCodeOverrideAttribute.TypeCodeOverrideAttribute
+  fullName: Orleans.CodeGeneration.TypeCodeOverrideAttribute.TypeCodeOverrideAttribute

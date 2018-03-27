@@ -1,0 +1,407 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.CodeGeneration.InvokeMethodRequest
+  commentId: T:Orleans.CodeGeneration.InvokeMethodRequest
+  id: InvokeMethodRequest
+  parent: Orleans.CodeGeneration
+  children:
+  - Orleans.CodeGeneration.InvokeMethodRequest.Arguments
+  - Orleans.CodeGeneration.InvokeMethodRequest.InterfaceId
+  - Orleans.CodeGeneration.InvokeMethodRequest.InterfaceVersion
+  - Orleans.CodeGeneration.InvokeMethodRequest.MethodId
+  - Orleans.CodeGeneration.InvokeMethodRequest.ToString
+  langs:
+  - csharp
+  - vb
+  name: InvokeMethodRequest
+  nameWithType: InvokeMethodRequest
+  fullName: Orleans.CodeGeneration.InvokeMethodRequest
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/CodeGeneration/InvokeMethodRequest.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: InvokeMethodRequest
+    path: src/Orleans.Core.Abstractions/CodeGeneration/InvokeMethodRequest.cs
+    startLine: 8
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.CodeGeneration
+  summary: "\nData object holding metadata associated with a grain Invoke request.\n"
+  example: []
+  syntax:
+    content: 'public sealed class InvokeMethodRequest : object'
+    content.vb: >-
+      Public NotInheritable Class InvokeMethodRequest
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.CodeGeneration.InvokeMethodRequest.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Orleans.CodeGeneration.InvokeMethodRequest.InterfaceId
+  commentId: P:Orleans.CodeGeneration.InvokeMethodRequest.InterfaceId
+  id: InterfaceId
+  parent: Orleans.CodeGeneration.InvokeMethodRequest
+  langs:
+  - csharp
+  - vb
+  name: InterfaceId
+  nameWithType: InvokeMethodRequest.InterfaceId
+  fullName: Orleans.CodeGeneration.InvokeMethodRequest.InterfaceId
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/CodeGeneration/InvokeMethodRequest.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: InterfaceId
+    path: src/Orleans.Core.Abstractions/CodeGeneration/InvokeMethodRequest.cs
+    startLine: 12
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.CodeGeneration
+  summary: 'InterfaceId for this Invoke request. '
+  example: []
+  syntax:
+    content: public int InterfaceId { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property InterfaceId As Integer
+  overload: Orleans.CodeGeneration.InvokeMethodRequest.InterfaceId*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.CodeGeneration.InvokeMethodRequest.InterfaceVersion
+  commentId: P:Orleans.CodeGeneration.InvokeMethodRequest.InterfaceVersion
+  id: InterfaceVersion
+  parent: Orleans.CodeGeneration.InvokeMethodRequest
+  langs:
+  - csharp
+  - vb
+  name: InterfaceVersion
+  nameWithType: InvokeMethodRequest.InterfaceVersion
+  fullName: Orleans.CodeGeneration.InvokeMethodRequest.InterfaceVersion
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/CodeGeneration/InvokeMethodRequest.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: InterfaceVersion
+    path: src/Orleans.Core.Abstractions/CodeGeneration/InvokeMethodRequest.cs
+    startLine: 13
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.CodeGeneration
+  syntax:
+    content: public ushort InterfaceVersion { get; }
+    parameters: []
+    return:
+      type: System.UInt16
+    content.vb: Public ReadOnly Property InterfaceVersion As UShort
+  overload: Orleans.CodeGeneration.InvokeMethodRequest.InterfaceVersion*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.CodeGeneration.InvokeMethodRequest.MethodId
+  commentId: P:Orleans.CodeGeneration.InvokeMethodRequest.MethodId
+  id: MethodId
+  parent: Orleans.CodeGeneration.InvokeMethodRequest
+  langs:
+  - csharp
+  - vb
+  name: MethodId
+  nameWithType: InvokeMethodRequest.MethodId
+  fullName: Orleans.CodeGeneration.InvokeMethodRequest.MethodId
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/CodeGeneration/InvokeMethodRequest.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: MethodId
+    path: src/Orleans.Core.Abstractions/CodeGeneration/InvokeMethodRequest.cs
+    startLine: 15
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.CodeGeneration
+  summary: 'MethodId for this Invoke request. '
+  example: []
+  syntax:
+    content: public int MethodId { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property MethodId As Integer
+  overload: Orleans.CodeGeneration.InvokeMethodRequest.MethodId*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.CodeGeneration.InvokeMethodRequest.Arguments
+  commentId: P:Orleans.CodeGeneration.InvokeMethodRequest.Arguments
+  id: Arguments
+  parent: Orleans.CodeGeneration.InvokeMethodRequest
+  langs:
+  - csharp
+  - vb
+  name: Arguments
+  nameWithType: InvokeMethodRequest.Arguments
+  fullName: Orleans.CodeGeneration.InvokeMethodRequest.Arguments
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/CodeGeneration/InvokeMethodRequest.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Arguments
+    path: src/Orleans.Core.Abstractions/CodeGeneration/InvokeMethodRequest.cs
+    startLine: 17
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.CodeGeneration
+  summary: 'Arguments for this Invoke request. '
+  example: []
+  syntax:
+    content: public object[] Arguments { get; }
+    parameters: []
+    return:
+      type: System.Object[]
+    content.vb: Public ReadOnly Property Arguments As Object()
+  overload: Orleans.CodeGeneration.InvokeMethodRequest.Arguments*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.CodeGeneration.InvokeMethodRequest.ToString
+  commentId: M:Orleans.CodeGeneration.InvokeMethodRequest.ToString
+  id: ToString
+  parent: Orleans.CodeGeneration.InvokeMethodRequest
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: InvokeMethodRequest.ToString()
+  fullName: Orleans.CodeGeneration.InvokeMethodRequest.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/CodeGeneration/InvokeMethodRequest.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ToString
+    path: src/Orleans.Core.Abstractions/CodeGeneration/InvokeMethodRequest.cs
+    startLine: 33
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.CodeGeneration
+  summary: "\nString representation for this Invoke request. \n"
+  remarks: "\nNote: This is not the serialized wire form of this Invoke request.\n"
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overload: Orleans.CodeGeneration.InvokeMethodRequest.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: Orleans.CodeGeneration
+  commentId: N:Orleans.CodeGeneration
+  isExternal: false
+  name: Orleans.CodeGeneration
+  nameWithType: Orleans.CodeGeneration
+  fullName: Orleans.CodeGeneration
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.CodeGeneration.InvokeMethodRequest.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<InvokeMethodRequest>()
+  nameWithType: ImmutableExt.AsImmutable<InvokeMethodRequest>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.CodeGeneration.InvokeMethodRequest>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of InvokeMethodRequest)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.CodeGeneration.InvokeMethodRequest)()
+  name.vb: AsImmutable(Of InvokeMethodRequest)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<InvokeMethodRequest>
+    nameWithType: ImmutableExt.AsImmutable<InvokeMethodRequest>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.CodeGeneration.InvokeMethodRequest>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of InvokeMethodRequest)
+    nameWithType: ImmutableExt.AsImmutable(Of InvokeMethodRequest)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.CodeGeneration.InvokeMethodRequest)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.CodeGeneration.InvokeMethodRequest.InterfaceId*
+  commentId: Overload:Orleans.CodeGeneration.InvokeMethodRequest.InterfaceId
+  isExternal: false
+  name: InterfaceId
+  nameWithType: InvokeMethodRequest.InterfaceId
+  fullName: Orleans.CodeGeneration.InvokeMethodRequest.InterfaceId
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Orleans.CodeGeneration.InvokeMethodRequest.InterfaceVersion*
+  commentId: Overload:Orleans.CodeGeneration.InvokeMethodRequest.InterfaceVersion
+  isExternal: false
+  name: InterfaceVersion
+  nameWithType: InvokeMethodRequest.InterfaceVersion
+  fullName: Orleans.CodeGeneration.InvokeMethodRequest.InterfaceVersion
+- uid: System.UInt16
+  isExternal: true
+  name: UInt16
+  nameWithType: UInt16
+  fullName: System.UInt16
+- uid: Orleans.CodeGeneration.InvokeMethodRequest.MethodId*
+  commentId: Overload:Orleans.CodeGeneration.InvokeMethodRequest.MethodId
+  isExternal: false
+  name: MethodId
+  nameWithType: InvokeMethodRequest.MethodId
+  fullName: Orleans.CodeGeneration.InvokeMethodRequest.MethodId
+- uid: Orleans.CodeGeneration.InvokeMethodRequest.Arguments*
+  commentId: Overload:Orleans.CodeGeneration.InvokeMethodRequest.Arguments
+  isExternal: false
+  name: Arguments
+  nameWithType: InvokeMethodRequest.Arguments
+  fullName: Orleans.CodeGeneration.InvokeMethodRequest.Arguments
+- uid: System.Object[]
+  name: Object[]
+  nameWithType: Object[]
+  fullName: System.Object[]
+  nameWithType.vb: Object()
+  fullName.vb: System.Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Orleans.CodeGeneration.InvokeMethodRequest.ToString*
+  commentId: Overload:Orleans.CodeGeneration.InvokeMethodRequest.ToString
+  isExternal: false
+  name: ToString
+  nameWithType: InvokeMethodRequest.ToString
+  fullName: Orleans.CodeGeneration.InvokeMethodRequest.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

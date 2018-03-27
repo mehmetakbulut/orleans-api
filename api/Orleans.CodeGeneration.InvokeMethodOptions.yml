@@ -1,0 +1,419 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.CodeGeneration.InvokeMethodOptions
+  commentId: T:Orleans.CodeGeneration.InvokeMethodOptions
+  id: InvokeMethodOptions
+  parent: Orleans.CodeGeneration
+  children:
+  - Orleans.CodeGeneration.InvokeMethodOptions.AlwaysInterleave
+  - Orleans.CodeGeneration.InvokeMethodOptions.DelayForConsistency
+  - Orleans.CodeGeneration.InvokeMethodOptions.None
+  - Orleans.CodeGeneration.InvokeMethodOptions.OneWay
+  - Orleans.CodeGeneration.InvokeMethodOptions.ReadOnly
+  - Orleans.CodeGeneration.InvokeMethodOptions.TransactionRequired
+  - Orleans.CodeGeneration.InvokeMethodOptions.TransactionRequiresNew
+  - Orleans.CodeGeneration.InvokeMethodOptions.Unordered
+  langs:
+  - csharp
+  - vb
+  name: InvokeMethodOptions
+  nameWithType: InvokeMethodOptions
+  fullName: Orleans.CodeGeneration.InvokeMethodOptions
+  type: Enum
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/CodeGeneration/InvokeMethodRequest.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: InvokeMethodOptions
+    path: src/Orleans.Core.Abstractions/CodeGeneration/InvokeMethodRequest.cs
+    startLine: 44
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.CodeGeneration
+  summary: "\nInvoke options for an <code>InvokeMethodRequest</code>\n"
+  remarks: "\nThese flag values are used in Orleans generated invoker code, and should not be altered. "
+  example: []
+  syntax:
+    content: 'public enum InvokeMethodOptions : int'
+    content.vb: Public Enum InvokeMethodOptions As Integer
+  extensionMethods:
+  - Orleans.CodeGeneration.InvokeMethodOptions.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Orleans.CodeGeneration.InvokeMethodOptions.None
+  commentId: F:Orleans.CodeGeneration.InvokeMethodOptions.None
+  id: None
+  parent: Orleans.CodeGeneration.InvokeMethodOptions
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: InvokeMethodOptions.None
+  fullName: Orleans.CodeGeneration.InvokeMethodOptions.None
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/CodeGeneration/InvokeMethodRequest.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: None
+    path: src/Orleans.Core.Abstractions/CodeGeneration/InvokeMethodRequest.cs
+    startLine: 48
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.CodeGeneration
+  summary: No options defined.
+  example: []
+  syntax:
+    content: None = null
+    return:
+      type: Orleans.CodeGeneration.InvokeMethodOptions
+    content.vb: None = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Orleans.CodeGeneration.InvokeMethodOptions.OneWay
+  commentId: F:Orleans.CodeGeneration.InvokeMethodOptions.OneWay
+  id: OneWay
+  parent: Orleans.CodeGeneration.InvokeMethodOptions
+  langs:
+  - csharp
+  - vb
+  name: OneWay
+  nameWithType: InvokeMethodOptions.OneWay
+  fullName: Orleans.CodeGeneration.InvokeMethodOptions.OneWay
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/CodeGeneration/InvokeMethodRequest.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: OneWay
+    path: src/Orleans.Core.Abstractions/CodeGeneration/InvokeMethodRequest.cs
+    startLine: 51
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.CodeGeneration
+  summary: Invocation is one-way with no feedback on whether the call succeeds or fails.
+  example: []
+  syntax:
+    content: OneWay = null
+    return:
+      type: Orleans.CodeGeneration.InvokeMethodOptions
+    content.vb: OneWay = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Orleans.CodeGeneration.InvokeMethodOptions.ReadOnly
+  commentId: F:Orleans.CodeGeneration.InvokeMethodOptions.ReadOnly
+  id: ReadOnly
+  parent: Orleans.CodeGeneration.InvokeMethodOptions
+  langs:
+  - csharp
+  - vb
+  name: ReadOnly
+  nameWithType: InvokeMethodOptions.ReadOnly
+  fullName: Orleans.CodeGeneration.InvokeMethodOptions.ReadOnly
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/CodeGeneration/InvokeMethodRequest.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ReadOnly
+    path: src/Orleans.Core.Abstractions/CodeGeneration/InvokeMethodRequest.cs
+    startLine: 54
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.CodeGeneration
+  summary: Invocation is read-only and can interleave with other read-only invocations.
+  example: []
+  syntax:
+    content: ReadOnly = null
+    return:
+      type: Orleans.CodeGeneration.InvokeMethodOptions
+    content.vb: ReadOnly = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Orleans.CodeGeneration.InvokeMethodOptions.Unordered
+  commentId: F:Orleans.CodeGeneration.InvokeMethodOptions.Unordered
+  id: Unordered
+  parent: Orleans.CodeGeneration.InvokeMethodOptions
+  langs:
+  - csharp
+  - vb
+  name: Unordered
+  nameWithType: InvokeMethodOptions.Unordered
+  fullName: Orleans.CodeGeneration.InvokeMethodOptions.Unordered
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/CodeGeneration/InvokeMethodRequest.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Unordered
+    path: src/Orleans.Core.Abstractions/CodeGeneration/InvokeMethodRequest.cs
+    startLine: 57
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.CodeGeneration
+  summary: Invocation does not care about ordering and can consequently be optimized.
+  example: []
+  syntax:
+    content: Unordered = null
+    return:
+      type: Orleans.CodeGeneration.InvokeMethodOptions
+    content.vb: Unordered = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Orleans.CodeGeneration.InvokeMethodOptions.DelayForConsistency
+  commentId: F:Orleans.CodeGeneration.InvokeMethodOptions.DelayForConsistency
+  id: DelayForConsistency
+  parent: Orleans.CodeGeneration.InvokeMethodOptions
+  langs:
+  - csharp
+  - vb
+  name: DelayForConsistency
+  nameWithType: InvokeMethodOptions.DelayForConsistency
+  fullName: Orleans.CodeGeneration.InvokeMethodOptions.DelayForConsistency
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/CodeGeneration/InvokeMethodRequest.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: DelayForConsistency
+    path: src/Orleans.Core.Abstractions/CodeGeneration/InvokeMethodRequest.cs
+    startLine: 61
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.CodeGeneration
+  summary: Obsolete field.
+  example: []
+  syntax:
+    content: DelayForConsistency = null
+    return:
+      type: Orleans.CodeGeneration.InvokeMethodOptions
+    content.vb: DelayForConsistency = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Orleans.CodeGeneration.InvokeMethodOptions.AlwaysInterleave
+  commentId: F:Orleans.CodeGeneration.InvokeMethodOptions.AlwaysInterleave
+  id: AlwaysInterleave
+  parent: Orleans.CodeGeneration.InvokeMethodOptions
+  langs:
+  - csharp
+  - vb
+  name: AlwaysInterleave
+  nameWithType: InvokeMethodOptions.AlwaysInterleave
+  fullName: Orleans.CodeGeneration.InvokeMethodOptions.AlwaysInterleave
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/CodeGeneration/InvokeMethodRequest.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AlwaysInterleave
+    path: src/Orleans.Core.Abstractions/CodeGeneration/InvokeMethodRequest.cs
+    startLine: 65
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.CodeGeneration
+  summary: The invocation can interleave with any other request type, including write requests.
+  example: []
+  syntax:
+    content: AlwaysInterleave = null
+    return:
+      type: Orleans.CodeGeneration.InvokeMethodOptions
+    content.vb: AlwaysInterleave = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Orleans.CodeGeneration.InvokeMethodOptions.TransactionRequired
+  commentId: F:Orleans.CodeGeneration.InvokeMethodOptions.TransactionRequired
+  id: TransactionRequired
+  parent: Orleans.CodeGeneration.InvokeMethodOptions
+  langs:
+  - csharp
+  - vb
+  name: TransactionRequired
+  nameWithType: InvokeMethodOptions.TransactionRequired
+  fullName: Orleans.CodeGeneration.InvokeMethodOptions.TransactionRequired
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/CodeGeneration/InvokeMethodRequest.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: TransactionRequired
+    path: src/Orleans.Core.Abstractions/CodeGeneration/InvokeMethodRequest.cs
+    startLine: 69
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.CodeGeneration
+  syntax:
+    content: TransactionRequired = null
+    return:
+      type: Orleans.CodeGeneration.InvokeMethodOptions
+    content.vb: TransactionRequired = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Orleans.CodeGeneration.InvokeMethodOptions.TransactionRequiresNew
+  commentId: F:Orleans.CodeGeneration.InvokeMethodOptions.TransactionRequiresNew
+  id: TransactionRequiresNew
+  parent: Orleans.CodeGeneration.InvokeMethodOptions
+  langs:
+  - csharp
+  - vb
+  name: TransactionRequiresNew
+  nameWithType: InvokeMethodOptions.TransactionRequiresNew
+  fullName: Orleans.CodeGeneration.InvokeMethodOptions.TransactionRequiresNew
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/CodeGeneration/InvokeMethodRequest.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: TransactionRequiresNew
+    path: src/Orleans.Core.Abstractions/CodeGeneration/InvokeMethodRequest.cs
+    startLine: 70
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.CodeGeneration
+  syntax:
+    content: TransactionRequiresNew = null
+    return:
+      type: Orleans.CodeGeneration.InvokeMethodOptions
+    content.vb: TransactionRequiresNew = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Orleans.CodeGeneration
+  commentId: N:Orleans.CodeGeneration
+  isExternal: false
+  name: Orleans.CodeGeneration
+  nameWithType: Orleans.CodeGeneration
+  fullName: Orleans.CodeGeneration
+- uid: Orleans.CodeGeneration.InvokeMethodOptions.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<InvokeMethodOptions>()
+  nameWithType: ImmutableExt.AsImmutable<InvokeMethodOptions>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.CodeGeneration.InvokeMethodOptions>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of InvokeMethodOptions)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.CodeGeneration.InvokeMethodOptions)()
+  name.vb: AsImmutable(Of InvokeMethodOptions)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<InvokeMethodOptions>
+    nameWithType: ImmutableExt.AsImmutable<InvokeMethodOptions>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.CodeGeneration.InvokeMethodOptions>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of InvokeMethodOptions)
+    nameWithType: ImmutableExt.AsImmutable(Of InvokeMethodOptions)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.CodeGeneration.InvokeMethodOptions)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.CodeGeneration.InvokeMethodOptions
+  commentId: T:Orleans.CodeGeneration.InvokeMethodOptions
+  parent: Orleans.CodeGeneration
+  isExternal: false
+  name: InvokeMethodOptions
+  nameWithType: InvokeMethodOptions
+  fullName: Orleans.CodeGeneration.InvokeMethodOptions

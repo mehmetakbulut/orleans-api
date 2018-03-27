@@ -1,0 +1,389 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Metadata.GrainInterfaceMetadata
+  commentId: T:Orleans.Metadata.GrainInterfaceMetadata
+  id: GrainInterfaceMetadata
+  parent: Orleans.Metadata
+  children:
+  - Orleans.Metadata.GrainInterfaceMetadata.#ctor(Type,Type,Type,System.Int32)
+  - Orleans.Metadata.GrainInterfaceMetadata.InterfaceId
+  - Orleans.Metadata.GrainInterfaceMetadata.InterfaceType
+  - Orleans.Metadata.GrainInterfaceMetadata.InvokerType
+  - Orleans.Metadata.GrainInterfaceMetadata.ReferenceType
+  langs:
+  - csharp
+  - vb
+  name: GrainInterfaceMetadata
+  nameWithType: GrainInterfaceMetadata
+  fullName: Orleans.Metadata.GrainInterfaceMetadata
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Metadata/GrainInterfaceMetadata.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GrainInterfaceMetadata
+    path: src/Orleans.Core.Abstractions/Metadata/GrainInterfaceMetadata.cs
+    startLine: 8
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Metadata
+  summary: "\nDescribes a grain interface.\n"
+  example: []
+  syntax:
+    content: 'public class GrainInterfaceMetadata : object'
+    content.vb: >-
+      Public Class GrainInterfaceMetadata
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.Metadata.GrainInterfaceMetadata.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.Metadata.GrainInterfaceMetadata.#ctor(Type,Type,Type,System.Int32)
+  commentId: M:Orleans.Metadata.GrainInterfaceMetadata.#ctor(Type,Type,Type,System.Int32)
+  id: '#ctor(Type,Type,Type,System.Int32)'
+  parent: Orleans.Metadata.GrainInterfaceMetadata
+  langs:
+  - csharp
+  - vb
+  name: GrainInterfaceMetadata(Type, Type, Type, Int32)
+  nameWithType: GrainInterfaceMetadata.GrainInterfaceMetadata(Type, Type, Type, Int32)
+  fullName: Orleans.Metadata.GrainInterfaceMetadata.GrainInterfaceMetadata(Type, Type, Type, System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Metadata/GrainInterfaceMetadata.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Core.Abstractions/Metadata/GrainInterfaceMetadata.cs
+    startLine: 18
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Metadata
+  summary: "\nInitializes an instance of the <xref href=\"Orleans.Metadata.GrainInterfaceMetadata\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public GrainInterfaceMetadata(Type interfaceType, Type referenceType, Type invokerType, int interfaceId)
+    parameters:
+    - id: interfaceType
+      type: Type
+      description: The grain interface type
+    - id: referenceType
+      type: Type
+      description: The grain reference type.
+    - id: invokerType
+      type: Type
+      description: The grain method invoker type.
+    - id: interfaceId
+      type: System.Int32
+      description: The interface id.
+    content.vb: Public Sub New(interfaceType As Type, referenceType As Type, invokerType As Type, interfaceId As Integer)
+  overload: Orleans.Metadata.GrainInterfaceMetadata.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Metadata.GrainInterfaceMetadata.InterfaceType
+  commentId: P:Orleans.Metadata.GrainInterfaceMetadata.InterfaceType
+  id: InterfaceType
+  parent: Orleans.Metadata.GrainInterfaceMetadata
+  langs:
+  - csharp
+  - vb
+  name: InterfaceType
+  nameWithType: GrainInterfaceMetadata.InterfaceType
+  fullName: Orleans.Metadata.GrainInterfaceMetadata.InterfaceType
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Metadata/GrainInterfaceMetadata.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: InterfaceType
+    path: src/Orleans.Core.Abstractions/Metadata/GrainInterfaceMetadata.cs
+    startLine: 29
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Metadata
+  summary: "\nGets the interface type.\n"
+  example: []
+  syntax:
+    content: public Type InterfaceType { get; }
+    parameters: []
+    return:
+      type: Type
+    content.vb: Public ReadOnly Property InterfaceType As Type
+  overload: Orleans.Metadata.GrainInterfaceMetadata.InterfaceType*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Metadata.GrainInterfaceMetadata.ReferenceType
+  commentId: P:Orleans.Metadata.GrainInterfaceMetadata.ReferenceType
+  id: ReferenceType
+  parent: Orleans.Metadata.GrainInterfaceMetadata
+  langs:
+  - csharp
+  - vb
+  name: ReferenceType
+  nameWithType: GrainInterfaceMetadata.ReferenceType
+  fullName: Orleans.Metadata.GrainInterfaceMetadata.ReferenceType
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Metadata/GrainInterfaceMetadata.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ReferenceType
+    path: src/Orleans.Core.Abstractions/Metadata/GrainInterfaceMetadata.cs
+    startLine: 34
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Metadata
+  summary: "\nGets the type of the grain reference for this interface.\n"
+  example: []
+  syntax:
+    content: public Type ReferenceType { get; }
+    parameters: []
+    return:
+      type: Type
+    content.vb: Public ReadOnly Property ReferenceType As Type
+  overload: Orleans.Metadata.GrainInterfaceMetadata.ReferenceType*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Metadata.GrainInterfaceMetadata.InvokerType
+  commentId: P:Orleans.Metadata.GrainInterfaceMetadata.InvokerType
+  id: InvokerType
+  parent: Orleans.Metadata.GrainInterfaceMetadata
+  langs:
+  - csharp
+  - vb
+  name: InvokerType
+  nameWithType: GrainInterfaceMetadata.InvokerType
+  fullName: Orleans.Metadata.GrainInterfaceMetadata.InvokerType
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Metadata/GrainInterfaceMetadata.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: InvokerType
+    path: src/Orleans.Core.Abstractions/Metadata/GrainInterfaceMetadata.cs
+    startLine: 39
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Metadata
+  summary: "\nGets the type of the grain method invoker for this interface.\n"
+  example: []
+  syntax:
+    content: public Type InvokerType { get; }
+    parameters: []
+    return:
+      type: Type
+    content.vb: Public ReadOnly Property InvokerType As Type
+  overload: Orleans.Metadata.GrainInterfaceMetadata.InvokerType*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Metadata.GrainInterfaceMetadata.InterfaceId
+  commentId: P:Orleans.Metadata.GrainInterfaceMetadata.InterfaceId
+  id: InterfaceId
+  parent: Orleans.Metadata.GrainInterfaceMetadata
+  langs:
+  - csharp
+  - vb
+  name: InterfaceId
+  nameWithType: GrainInterfaceMetadata.InterfaceId
+  fullName: Orleans.Metadata.GrainInterfaceMetadata.InterfaceId
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Metadata/GrainInterfaceMetadata.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: InterfaceId
+    path: src/Orleans.Core.Abstractions/Metadata/GrainInterfaceMetadata.cs
+    startLine: 44
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Metadata
+  summary: "\nGets the interface id.\n"
+  example: []
+  syntax:
+    content: public int InterfaceId { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property InterfaceId As Integer
+  overload: Orleans.Metadata.GrainInterfaceMetadata.InterfaceId*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: Orleans.Metadata
+  commentId: N:Orleans.Metadata
+  isExternal: false
+  name: Orleans.Metadata
+  nameWithType: Orleans.Metadata
+  fullName: Orleans.Metadata
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Metadata.GrainInterfaceMetadata.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<GrainInterfaceMetadata>()
+  nameWithType: ImmutableExt.AsImmutable<GrainInterfaceMetadata>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Metadata.GrainInterfaceMetadata>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of GrainInterfaceMetadata)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Metadata.GrainInterfaceMetadata)()
+  name.vb: AsImmutable(Of GrainInterfaceMetadata)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<GrainInterfaceMetadata>
+    nameWithType: ImmutableExt.AsImmutable<GrainInterfaceMetadata>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Metadata.GrainInterfaceMetadata>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of GrainInterfaceMetadata)
+    nameWithType: ImmutableExt.AsImmutable(Of GrainInterfaceMetadata)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Metadata.GrainInterfaceMetadata)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Metadata.GrainInterfaceMetadata
+  commentId: T:Orleans.Metadata.GrainInterfaceMetadata
+  isExternal: false
+  name: GrainInterfaceMetadata
+  nameWithType: GrainInterfaceMetadata
+  fullName: Orleans.Metadata.GrainInterfaceMetadata
+- uid: Orleans.Metadata.GrainInterfaceMetadata.#ctor*
+  commentId: Overload:Orleans.Metadata.GrainInterfaceMetadata.#ctor
+  isExternal: false
+  name: GrainInterfaceMetadata
+  nameWithType: GrainInterfaceMetadata.GrainInterfaceMetadata
+  fullName: Orleans.Metadata.GrainInterfaceMetadata.GrainInterfaceMetadata
+- uid: Type
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: Type
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Orleans.Metadata.GrainInterfaceMetadata.InterfaceType*
+  commentId: Overload:Orleans.Metadata.GrainInterfaceMetadata.InterfaceType
+  isExternal: false
+  name: InterfaceType
+  nameWithType: GrainInterfaceMetadata.InterfaceType
+  fullName: Orleans.Metadata.GrainInterfaceMetadata.InterfaceType
+- uid: Orleans.Metadata.GrainInterfaceMetadata.ReferenceType*
+  commentId: Overload:Orleans.Metadata.GrainInterfaceMetadata.ReferenceType
+  isExternal: false
+  name: ReferenceType
+  nameWithType: GrainInterfaceMetadata.ReferenceType
+  fullName: Orleans.Metadata.GrainInterfaceMetadata.ReferenceType
+- uid: Orleans.Metadata.GrainInterfaceMetadata.InvokerType*
+  commentId: Overload:Orleans.Metadata.GrainInterfaceMetadata.InvokerType
+  isExternal: false
+  name: InvokerType
+  nameWithType: GrainInterfaceMetadata.InvokerType
+  fullName: Orleans.Metadata.GrainInterfaceMetadata.InvokerType
+- uid: Orleans.Metadata.GrainInterfaceMetadata.InterfaceId*
+  commentId: Overload:Orleans.Metadata.GrainInterfaceMetadata.InterfaceId
+  isExternal: false
+  name: InterfaceId
+  nameWithType: GrainInterfaceMetadata.InterfaceId
+  fullName: Orleans.Metadata.GrainInterfaceMetadata.InterfaceId

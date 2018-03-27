@@ -1,0 +1,1195 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Runtime.SiloAddress
+  commentId: T:Orleans.Runtime.SiloAddress
+  id: SiloAddress
+  parent: Orleans.Runtime
+  children:
+  - Orleans.Runtime.SiloAddress.AllocateNewGeneration
+  - Orleans.Runtime.SiloAddress.CompareTo(Orleans.Runtime.SiloAddress)
+  - Orleans.Runtime.SiloAddress.CompareTo(System.Object)
+  - Orleans.Runtime.SiloAddress.Endpoint
+  - Orleans.Runtime.SiloAddress.Equals(Orleans.Runtime.SiloAddress)
+  - Orleans.Runtime.SiloAddress.Equals(System.Object)
+  - Orleans.Runtime.SiloAddress.FromParsableString(System.String)
+  - Orleans.Runtime.SiloAddress.Generation
+  - Orleans.Runtime.SiloAddress.GetConsistentHashCode
+  - Orleans.Runtime.SiloAddress.GetHashCode
+  - Orleans.Runtime.SiloAddress.GetUniformHashCodes(System.Int32)
+  - Orleans.Runtime.SiloAddress.IsClient
+  - Orleans.Runtime.SiloAddress.New(IPEndPoint,System.Int32)
+  - Orleans.Runtime.SiloAddress.ToLongString
+  - Orleans.Runtime.SiloAddress.ToParsableString
+  - Orleans.Runtime.SiloAddress.ToString
+  - Orleans.Runtime.SiloAddress.ToStringWithHashCode
+  - Orleans.Runtime.SiloAddress.Zero
+  langs:
+  - csharp
+  - vb
+  name: SiloAddress
+  nameWithType: SiloAddress
+  fullName: Orleans.Runtime.SiloAddress
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/IDs/SiloAddress.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SiloAddress
+    path: src/Orleans.Core.Abstractions/IDs/SiloAddress.cs
+    startLine: 15
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  summary: "\nData class encapsulating the details of silo addresses.\n"
+  example: []
+  syntax:
+    content: 'public class SiloAddress : IEquatable<SiloAddress>, IComparable<SiloAddress>, IComparable'
+    content.vb: >-
+      Public Class SiloAddress
+
+          Inherits IEquatable(Of SiloAddress)
+
+          Implements IComparable(Of SiloAddress), IComparable
+  inheritance:
+  - System.Object
+  implements:
+  - IComparable{Orleans.Runtime.SiloAddress}
+  - IComparable
+  extensionMethods:
+  - Orleans.Runtime.SiloAddress.Orleans.Runtime.Utils.ToGatewayUri
+  - Orleans.Runtime.SiloAddress.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.Runtime.SiloAddress.Zero
+  commentId: P:Orleans.Runtime.SiloAddress.Zero
+  id: Zero
+  parent: Orleans.Runtime.SiloAddress
+  langs:
+  - csharp
+  - vb
+  name: Zero
+  nameWithType: SiloAddress.Zero
+  fullName: Orleans.Runtime.SiloAddress.Zero
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/IDs/SiloAddress.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Zero
+    path: src/Orleans.Core.Abstractions/IDs/SiloAddress.cs
+    startLine: 22
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  summary: 'Special constant value to indicate an empty SiloAddress. '
+  example: []
+  syntax:
+    content: public static SiloAddress Zero { get; }
+    parameters: []
+    return:
+      type: Orleans.Runtime.SiloAddress
+    content.vb: Public Shared ReadOnly Property Zero As SiloAddress
+  overload: Orleans.Runtime.SiloAddress.Zero*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Orleans.Runtime.SiloAddress.Endpoint
+  commentId: P:Orleans.Runtime.SiloAddress.Endpoint
+  id: Endpoint
+  parent: Orleans.Runtime.SiloAddress
+  langs:
+  - csharp
+  - vb
+  name: Endpoint
+  nameWithType: SiloAddress.Endpoint
+  fullName: Orleans.Runtime.SiloAddress.Endpoint
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/IDs/SiloAddress.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Endpoint
+    path: src/Orleans.Core.Abstractions/IDs/SiloAddress.cs
+    startLine: 33
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  syntax:
+    content: public IPEndPoint Endpoint { get; }
+    parameters: []
+    return:
+      type: IPEndPoint
+    content.vb: Public ReadOnly Property Endpoint As IPEndPoint
+  overload: Orleans.Runtime.SiloAddress.Endpoint*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Runtime.SiloAddress.Generation
+  commentId: P:Orleans.Runtime.SiloAddress.Generation
+  id: Generation
+  parent: Orleans.Runtime.SiloAddress
+  langs:
+  - csharp
+  - vb
+  name: Generation
+  nameWithType: SiloAddress.Generation
+  fullName: Orleans.Runtime.SiloAddress.Generation
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/IDs/SiloAddress.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Generation
+    path: src/Orleans.Core.Abstractions/IDs/SiloAddress.cs
+    startLine: 34
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  syntax:
+    content: public int Generation { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Generation As Integer
+  overload: Orleans.Runtime.SiloAddress.Generation*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Runtime.SiloAddress.New(IPEndPoint,System.Int32)
+  commentId: M:Orleans.Runtime.SiloAddress.New(IPEndPoint,System.Int32)
+  id: New(IPEndPoint,System.Int32)
+  parent: Orleans.Runtime.SiloAddress
+  langs:
+  - csharp
+  - vb
+  name: New(IPEndPoint, Int32)
+  nameWithType: SiloAddress.New(IPEndPoint, Int32)
+  fullName: Orleans.Runtime.SiloAddress.New(IPEndPoint, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/IDs/SiloAddress.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: New
+    path: src/Orleans.Core.Abstractions/IDs/SiloAddress.cs
+    startLine: 55
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  summary: "\nFactory for creating new SiloAddresses with specified IP endpoint address and silo generation number.\n"
+  example: []
+  syntax:
+    content: public static SiloAddress New(IPEndPoint ep, int gen)
+    parameters:
+    - id: ep
+      type: IPEndPoint
+      description: IP endpoint address of the silo.
+    - id: gen
+      type: System.Int32
+      description: Generation number of the silo.
+    return:
+      type: Orleans.Runtime.SiloAddress
+      description: SiloAddress object initialized with specified address and silo generation.
+    content.vb: Public Shared Function New(ep As IPEndPoint, gen As Integer) As SiloAddress
+  overload: Orleans.Runtime.SiloAddress.New*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.Runtime.SiloAddress.IsClient
+  commentId: P:Orleans.Runtime.SiloAddress.IsClient
+  id: IsClient
+  parent: Orleans.Runtime.SiloAddress
+  langs:
+  - csharp
+  - vb
+  name: IsClient
+  nameWithType: SiloAddress.IsClient
+  fullName: Orleans.Runtime.SiloAddress.IsClient
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/IDs/SiloAddress.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IsClient
+    path: src/Orleans.Core.Abstractions/IDs/SiloAddress.cs
+    startLine: 67
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  syntax:
+    content: public bool IsClient { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsClient As Boolean
+  overload: Orleans.Runtime.SiloAddress.IsClient*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Runtime.SiloAddress.AllocateNewGeneration
+  commentId: M:Orleans.Runtime.SiloAddress.AllocateNewGeneration
+  id: AllocateNewGeneration
+  parent: Orleans.Runtime.SiloAddress
+  langs:
+  - csharp
+  - vb
+  name: AllocateNewGeneration()
+  nameWithType: SiloAddress.AllocateNewGeneration()
+  fullName: Orleans.Runtime.SiloAddress.AllocateNewGeneration()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/IDs/SiloAddress.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AllocateNewGeneration
+    path: src/Orleans.Core.Abstractions/IDs/SiloAddress.cs
+    startLine: 71
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  summary: 'Allocate a new silo generation number. '
+  example: []
+  syntax:
+    content: public static int AllocateNewGeneration()
+    return:
+      type: System.Int32
+      description: A new silo generation number.
+    content.vb: Public Shared Function AllocateNewGeneration As Integer
+  overload: Orleans.Runtime.SiloAddress.AllocateNewGeneration*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.Runtime.SiloAddress.ToParsableString
+  commentId: M:Orleans.Runtime.SiloAddress.ToParsableString
+  id: ToParsableString
+  parent: Orleans.Runtime.SiloAddress
+  langs:
+  - csharp
+  - vb
+  name: ToParsableString()
+  nameWithType: SiloAddress.ToParsableString()
+  fullName: Orleans.Runtime.SiloAddress.ToParsableString()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/IDs/SiloAddress.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ToParsableString
+    path: src/Orleans.Core.Abstractions/IDs/SiloAddress.cs
+    startLine: 81
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  summary: "\nReturn this SiloAddress in a standard string form, suitable for later use with the <code>FromParsableString</code> method.\n"
+  example: []
+  syntax:
+    content: public string ToParsableString()
+    return:
+      type: System.String
+      description: SiloAddress in a standard string format.
+    content.vb: Public Function ToParsableString As String
+  overload: Orleans.Runtime.SiloAddress.ToParsableString*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.SiloAddress.FromParsableString(System.String)
+  commentId: M:Orleans.Runtime.SiloAddress.FromParsableString(System.String)
+  id: FromParsableString(System.String)
+  parent: Orleans.Runtime.SiloAddress
+  langs:
+  - csharp
+  - vb
+  name: FromParsableString(String)
+  nameWithType: SiloAddress.FromParsableString(String)
+  fullName: Orleans.Runtime.SiloAddress.FromParsableString(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/IDs/SiloAddress.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: FromParsableString
+    path: src/Orleans.Core.Abstractions/IDs/SiloAddress.cs
+    startLine: 94
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  summary: "\nCreate a new SiloAddress object by parsing string in a standard form returned from <code>ToParsableString</code> method.\n"
+  example: []
+  syntax:
+    content: public static SiloAddress FromParsableString(string addr)
+    parameters:
+    - id: addr
+      type: System.String
+      description: String containing the SiloAddress info to be parsed.
+    return:
+      type: Orleans.Runtime.SiloAddress
+      description: New SiloAddress object created from the input data.
+    content.vb: Public Shared Function FromParsableString(addr As String) As SiloAddress
+  overload: Orleans.Runtime.SiloAddress.FromParsableString*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.Runtime.SiloAddress.ToString
+  commentId: M:Orleans.Runtime.SiloAddress.ToString
+  id: ToString
+  parent: Orleans.Runtime.SiloAddress
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: SiloAddress.ToString()
+  fullName: Orleans.Runtime.SiloAddress.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/IDs/SiloAddress.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ToString
+    path: src/Orleans.Core.Abstractions/IDs/SiloAddress.cs
+    startLine: 119
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  summary: 'Object.ToString method override. '
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overload: Orleans.Runtime.SiloAddress.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Orleans.Runtime.SiloAddress.ToLongString
+  commentId: M:Orleans.Runtime.SiloAddress.ToLongString
+  id: ToLongString
+  parent: Orleans.Runtime.SiloAddress
+  langs:
+  - csharp
+  - vb
+  name: ToLongString()
+  nameWithType: SiloAddress.ToLongString()
+  fullName: Orleans.Runtime.SiloAddress.ToLongString()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/IDs/SiloAddress.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ToLongString
+    path: src/Orleans.Core.Abstractions/IDs/SiloAddress.cs
+    startLine: 131
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  summary: "\nReturn a long string representation of this SiloAddress.\n"
+  remarks: "\nNote: This string value is not comparable with the <code>FromParsableString</code> method -- use the <code>ToParsableString</code> method for that purpose.\n"
+  example: []
+  syntax:
+    content: public string ToLongString()
+    return:
+      type: System.String
+      description: String representaiton of this SiloAddress.
+    content.vb: Public Function ToLongString As String
+  overload: Orleans.Runtime.SiloAddress.ToLongString*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.SiloAddress.ToStringWithHashCode
+  commentId: M:Orleans.Runtime.SiloAddress.ToStringWithHashCode
+  id: ToStringWithHashCode
+  parent: Orleans.Runtime.SiloAddress
+  langs:
+  - csharp
+  - vb
+  name: ToStringWithHashCode()
+  nameWithType: SiloAddress.ToStringWithHashCode()
+  fullName: Orleans.Runtime.SiloAddress.ToStringWithHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/IDs/SiloAddress.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ToStringWithHashCode
+    path: src/Orleans.Core.Abstractions/IDs/SiloAddress.cs
+    startLine: 143
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  summary: "\nReturn a long string representation of this SiloAddress, including it&apos;s consistent hash value.\n"
+  remarks: "\nNote: This string value is not comparable with the <code>FromParsableString</code> method -- use the <code>ToParsableString</code> method for that purpose.\n"
+  example: []
+  syntax:
+    content: public string ToStringWithHashCode()
+    return:
+      type: System.String
+      description: String representaiton of this SiloAddress.
+    content.vb: Public Function ToStringWithHashCode As String
+  overload: Orleans.Runtime.SiloAddress.ToStringWithHashCode*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.SiloAddress.Equals(System.Object)
+  commentId: M:Orleans.Runtime.SiloAddress.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Orleans.Runtime.SiloAddress
+  langs:
+  - csharp
+  - vb
+  name: Equals(Object)
+  nameWithType: SiloAddress.Equals(Object)
+  fullName: Orleans.Runtime.SiloAddress.Equals(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/IDs/SiloAddress.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Equals
+    path: src/Orleans.Core.Abstractions/IDs/SiloAddress.cs
+    startLine: 149
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  summary: 'Object.Equals method override. '
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overload: Orleans.Runtime.SiloAddress.Equals*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Orleans.Runtime.SiloAddress.GetHashCode
+  commentId: M:Orleans.Runtime.SiloAddress.GetHashCode
+  id: GetHashCode
+  parent: Orleans.Runtime.SiloAddress
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: SiloAddress.GetHashCode()
+  fullName: Orleans.Runtime.SiloAddress.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/IDs/SiloAddress.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetHashCode
+    path: src/Orleans.Core.Abstractions/IDs/SiloAddress.cs
+    startLine: 155
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  summary: 'Object.GetHashCode method override. '
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode As Integer
+  overload: Orleans.Runtime.SiloAddress.GetHashCode*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Orleans.Runtime.SiloAddress.GetConsistentHashCode
+  commentId: M:Orleans.Runtime.SiloAddress.GetConsistentHashCode
+  id: GetConsistentHashCode
+  parent: Orleans.Runtime.SiloAddress
+  langs:
+  - csharp
+  - vb
+  name: GetConsistentHashCode()
+  nameWithType: SiloAddress.GetConsistentHashCode()
+  fullName: Orleans.Runtime.SiloAddress.GetConsistentHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/IDs/SiloAddress.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetConsistentHashCode
+    path: src/Orleans.Core.Abstractions/IDs/SiloAddress.cs
+    startLine: 163
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  summary: Get a consistent hash value for this silo address.
+  example: []
+  syntax:
+    content: public int GetConsistentHashCode()
+    return:
+      type: System.Int32
+      description: Consistent hash value for this silo address.
+    content.vb: Public Function GetConsistentHashCode As Integer
+  overload: Orleans.Runtime.SiloAddress.GetConsistentHashCode*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.SiloAddress.GetUniformHashCodes(System.Int32)
+  commentId: M:Orleans.Runtime.SiloAddress.GetUniformHashCodes(System.Int32)
+  id: GetUniformHashCodes(System.Int32)
+  parent: Orleans.Runtime.SiloAddress
+  langs:
+  - csharp
+  - vb
+  name: GetUniformHashCodes(Int32)
+  nameWithType: SiloAddress.GetUniformHashCodes(Int32)
+  fullName: Orleans.Runtime.SiloAddress.GetUniformHashCodes(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/IDs/SiloAddress.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetUniformHashCodes
+    path: src/Orleans.Core.Abstractions/IDs/SiloAddress.cs
+    startLine: 196
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  syntax:
+    content: public List<uint> GetUniformHashCodes(int numHashes)
+    parameters:
+    - id: numHashes
+      type: System.Int32
+    return:
+      type: List{System.UInt32}
+    content.vb: Public Function GetUniformHashCodes(numHashes As Integer) As List(Of UInteger)
+  overload: Orleans.Runtime.SiloAddress.GetUniformHashCodes*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.SiloAddress.Equals(Orleans.Runtime.SiloAddress)
+  commentId: M:Orleans.Runtime.SiloAddress.Equals(Orleans.Runtime.SiloAddress)
+  id: Equals(Orleans.Runtime.SiloAddress)
+  parent: Orleans.Runtime.SiloAddress
+  langs:
+  - csharp
+  - vb
+  name: Equals(SiloAddress)
+  nameWithType: SiloAddress.Equals(SiloAddress)
+  fullName: Orleans.Runtime.SiloAddress.Equals(Orleans.Runtime.SiloAddress)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/IDs/SiloAddress.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Equals
+    path: src/Orleans.Core.Abstractions/IDs/SiloAddress.cs
+    startLine: 263
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  summary: 'IEquatable.Equals method override. '
+  example: []
+  syntax:
+    content: public bool Equals(SiloAddress other)
+    parameters:
+    - id: other
+      type: Orleans.Runtime.SiloAddress
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(other As SiloAddress) As Boolean
+  overload: Orleans.Runtime.SiloAddress.Equals*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.SiloAddress.CompareTo(System.Object)
+  commentId: M:Orleans.Runtime.SiloAddress.CompareTo(System.Object)
+  id: CompareTo(System.Object)
+  parent: Orleans.Runtime.SiloAddress
+  langs:
+  - csharp
+  - vb
+  name: CompareTo(Object)
+  nameWithType: SiloAddress.CompareTo(Object)
+  fullName: Orleans.Runtime.SiloAddress.CompareTo(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/IDs/SiloAddress.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: CompareTo
+    path: src/Orleans.Core.Abstractions/IDs/SiloAddress.cs
+    startLine: 273
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  syntax:
+    content: public int CompareTo(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Int32
+    content.vb: Public Function CompareTo(obj As Object) As Integer
+  overload: Orleans.Runtime.SiloAddress.CompareTo*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.SiloAddress.CompareTo(Orleans.Runtime.SiloAddress)
+  commentId: M:Orleans.Runtime.SiloAddress.CompareTo(Orleans.Runtime.SiloAddress)
+  id: CompareTo(Orleans.Runtime.SiloAddress)
+  parent: Orleans.Runtime.SiloAddress
+  langs:
+  - csharp
+  - vb
+  name: CompareTo(SiloAddress)
+  nameWithType: SiloAddress.CompareTo(SiloAddress)
+  fullName: Orleans.Runtime.SiloAddress.CompareTo(Orleans.Runtime.SiloAddress)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/IDs/SiloAddress.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: CompareTo
+    path: src/Orleans.Core.Abstractions/IDs/SiloAddress.cs
+    startLine: 279
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  syntax:
+    content: public int CompareTo(SiloAddress other)
+    parameters:
+    - id: other
+      type: Orleans.Runtime.SiloAddress
+    return:
+      type: System.Int32
+    content.vb: Public Function CompareTo(other As SiloAddress) As Integer
+  overload: Orleans.Runtime.SiloAddress.CompareTo*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans.Runtime
+  commentId: N:Orleans.Runtime
+  isExternal: false
+  name: Orleans.Runtime
+  nameWithType: Orleans.Runtime
+  fullName: Orleans.Runtime
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: IComparable{Orleans.Runtime.SiloAddress}
+  commentId: '!:IComparable{Orleans.Runtime.SiloAddress}'
+  definition: IComparable`1
+  name: IComparable<SiloAddress>
+  nameWithType: IComparable<SiloAddress>
+  fullName: IComparable<Orleans.Runtime.SiloAddress>
+  nameWithType.vb: IComparable(Of SiloAddress)
+  fullName.vb: IComparable(Of Orleans.Runtime.SiloAddress)
+  name.vb: IComparable(Of SiloAddress)
+  spec.csharp:
+  - uid: IComparable`1
+    name: IComparable
+    nameWithType: IComparable
+    fullName: IComparable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Orleans.Runtime.SiloAddress
+    name: SiloAddress
+    nameWithType: SiloAddress
+    fullName: Orleans.Runtime.SiloAddress
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IComparable`1
+    name: IComparable
+    nameWithType: IComparable
+    fullName: IComparable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Orleans.Runtime.SiloAddress
+    name: SiloAddress
+    nameWithType: SiloAddress
+    fullName: Orleans.Runtime.SiloAddress
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IComparable
+  commentId: '!:IComparable'
+  isExternal: true
+  name: IComparable
+  nameWithType: IComparable
+  fullName: IComparable
+- uid: Orleans.Runtime.SiloAddress.Orleans.Runtime.Utils.ToGatewayUri
+  commentId: M:Orleans.Runtime.Utils.ToGatewayUri(Orleans.Runtime.SiloAddress)
+  parent: Orleans.Runtime.Utils
+  definition: Orleans.Runtime.Utils.ToGatewayUri(Orleans.Runtime.SiloAddress)
+  name: ToGatewayUri()
+  nameWithType: Utils.ToGatewayUri()
+  fullName: Orleans.Runtime.Utils.ToGatewayUri()
+  spec.csharp:
+  - uid: Orleans.Runtime.Utils.ToGatewayUri
+    name: ToGatewayUri
+    nameWithType: Utils.ToGatewayUri
+    fullName: Orleans.Runtime.Utils.ToGatewayUri
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.Utils.ToGatewayUri
+    name: ToGatewayUri
+    nameWithType: Utils.ToGatewayUri
+    fullName: Orleans.Runtime.Utils.ToGatewayUri
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.SiloAddress.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<SiloAddress>()
+  nameWithType: ImmutableExt.AsImmutable<SiloAddress>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.SiloAddress>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of SiloAddress)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.SiloAddress)()
+  name.vb: AsImmutable(Of SiloAddress)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<SiloAddress>
+    nameWithType: ImmutableExt.AsImmutable<SiloAddress>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.SiloAddress>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of SiloAddress)
+    nameWithType: ImmutableExt.AsImmutable(Of SiloAddress)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.SiloAddress)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: IComparable`1
+  isExternal: true
+  name: IComparable<>
+  nameWithType: IComparable<>
+  fullName: IComparable<>
+  nameWithType.vb: IComparable(Of )
+  fullName.vb: IComparable(Of )
+  name.vb: IComparable(Of )
+  spec.csharp:
+  - uid: IComparable`1
+    name: IComparable
+    nameWithType: IComparable
+    fullName: IComparable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IComparable`1
+    name: IComparable
+    nameWithType: IComparable
+    fullName: IComparable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.Utils.ToGatewayUri(Orleans.Runtime.SiloAddress)
+  commentId: M:Orleans.Runtime.Utils.ToGatewayUri(Orleans.Runtime.SiloAddress)
+  isExternal: false
+  name: ToGatewayUri(SiloAddress)
+  nameWithType: Utils.ToGatewayUri(SiloAddress)
+  fullName: Orleans.Runtime.Utils.ToGatewayUri(Orleans.Runtime.SiloAddress)
+  spec.csharp:
+  - uid: Orleans.Runtime.Utils.ToGatewayUri(Orleans.Runtime.SiloAddress)
+    name: ToGatewayUri
+    nameWithType: Utils.ToGatewayUri
+    fullName: Orleans.Runtime.Utils.ToGatewayUri
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.SiloAddress
+    name: SiloAddress
+    nameWithType: SiloAddress
+    fullName: Orleans.Runtime.SiloAddress
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.Utils.ToGatewayUri(Orleans.Runtime.SiloAddress)
+    name: ToGatewayUri
+    nameWithType: Utils.ToGatewayUri
+    fullName: Orleans.Runtime.Utils.ToGatewayUri
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.SiloAddress
+    name: SiloAddress
+    nameWithType: SiloAddress
+    fullName: Orleans.Runtime.SiloAddress
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.Utils
+  commentId: T:Orleans.Runtime.Utils
+  parent: Orleans.Runtime
+  isExternal: false
+  name: Utils
+  nameWithType: Utils
+  fullName: Orleans.Runtime.Utils
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Runtime.SiloAddress.Zero*
+  commentId: Overload:Orleans.Runtime.SiloAddress.Zero
+  isExternal: false
+  name: Zero
+  nameWithType: SiloAddress.Zero
+  fullName: Orleans.Runtime.SiloAddress.Zero
+- uid: Orleans.Runtime.SiloAddress
+  commentId: T:Orleans.Runtime.SiloAddress
+  parent: Orleans.Runtime
+  isExternal: false
+  name: SiloAddress
+  nameWithType: SiloAddress
+  fullName: Orleans.Runtime.SiloAddress
+- uid: Orleans.Runtime.SiloAddress.Endpoint*
+  commentId: Overload:Orleans.Runtime.SiloAddress.Endpoint
+  isExternal: false
+  name: Endpoint
+  nameWithType: SiloAddress.Endpoint
+  fullName: Orleans.Runtime.SiloAddress.Endpoint
+- uid: IPEndPoint
+  isExternal: true
+  name: IPEndPoint
+  nameWithType: IPEndPoint
+  fullName: IPEndPoint
+- uid: Orleans.Runtime.SiloAddress.Generation*
+  commentId: Overload:Orleans.Runtime.SiloAddress.Generation
+  isExternal: false
+  name: Generation
+  nameWithType: SiloAddress.Generation
+  fullName: Orleans.Runtime.SiloAddress.Generation
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Orleans.Runtime.SiloAddress.New*
+  commentId: Overload:Orleans.Runtime.SiloAddress.New
+  isExternal: false
+  name: New
+  nameWithType: SiloAddress.New
+  fullName: Orleans.Runtime.SiloAddress.New
+- uid: Orleans.Runtime.SiloAddress.IsClient*
+  commentId: Overload:Orleans.Runtime.SiloAddress.IsClient
+  isExternal: false
+  name: IsClient
+  nameWithType: SiloAddress.IsClient
+  fullName: Orleans.Runtime.SiloAddress.IsClient
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Orleans.Runtime.SiloAddress.AllocateNewGeneration*
+  commentId: Overload:Orleans.Runtime.SiloAddress.AllocateNewGeneration
+  isExternal: false
+  name: AllocateNewGeneration
+  nameWithType: SiloAddress.AllocateNewGeneration
+  fullName: Orleans.Runtime.SiloAddress.AllocateNewGeneration
+- uid: Orleans.Runtime.SiloAddress.ToParsableString*
+  commentId: Overload:Orleans.Runtime.SiloAddress.ToParsableString
+  isExternal: false
+  name: ToParsableString
+  nameWithType: SiloAddress.ToParsableString
+  fullName: Orleans.Runtime.SiloAddress.ToParsableString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Orleans.Runtime.SiloAddress.FromParsableString*
+  commentId: Overload:Orleans.Runtime.SiloAddress.FromParsableString
+  isExternal: false
+  name: FromParsableString
+  nameWithType: SiloAddress.FromParsableString
+  fullName: Orleans.Runtime.SiloAddress.FromParsableString
+- uid: Orleans.Runtime.SiloAddress.ToString*
+  commentId: Overload:Orleans.Runtime.SiloAddress.ToString
+  isExternal: false
+  name: ToString
+  nameWithType: SiloAddress.ToString
+  fullName: Orleans.Runtime.SiloAddress.ToString
+- uid: Orleans.Runtime.SiloAddress.ToLongString*
+  commentId: Overload:Orleans.Runtime.SiloAddress.ToLongString
+  isExternal: false
+  name: ToLongString
+  nameWithType: SiloAddress.ToLongString
+  fullName: Orleans.Runtime.SiloAddress.ToLongString
+- uid: Orleans.Runtime.SiloAddress.ToStringWithHashCode*
+  commentId: Overload:Orleans.Runtime.SiloAddress.ToStringWithHashCode
+  isExternal: false
+  name: ToStringWithHashCode
+  nameWithType: SiloAddress.ToStringWithHashCode
+  fullName: Orleans.Runtime.SiloAddress.ToStringWithHashCode
+- uid: Orleans.Runtime.SiloAddress.Equals*
+  commentId: Overload:Orleans.Runtime.SiloAddress.Equals
+  isExternal: false
+  name: Equals
+  nameWithType: SiloAddress.Equals
+  fullName: Orleans.Runtime.SiloAddress.Equals
+- uid: Orleans.Runtime.SiloAddress.GetHashCode*
+  commentId: Overload:Orleans.Runtime.SiloAddress.GetHashCode
+  isExternal: false
+  name: GetHashCode
+  nameWithType: SiloAddress.GetHashCode
+  fullName: Orleans.Runtime.SiloAddress.GetHashCode
+- uid: Orleans.Runtime.SiloAddress.GetConsistentHashCode*
+  commentId: Overload:Orleans.Runtime.SiloAddress.GetConsistentHashCode
+  isExternal: false
+  name: GetConsistentHashCode
+  nameWithType: SiloAddress.GetConsistentHashCode
+  fullName: Orleans.Runtime.SiloAddress.GetConsistentHashCode
+- uid: Orleans.Runtime.SiloAddress.GetUniformHashCodes*
+  commentId: Overload:Orleans.Runtime.SiloAddress.GetUniformHashCodes
+  isExternal: false
+  name: GetUniformHashCodes
+  nameWithType: SiloAddress.GetUniformHashCodes
+  fullName: Orleans.Runtime.SiloAddress.GetUniformHashCodes
+- uid: List{System.UInt32}
+  commentId: '!:List{System.UInt32}'
+  definition: List`1
+  name: List<UInt32>
+  nameWithType: List<UInt32>
+  fullName: List<System.UInt32>
+  nameWithType.vb: List(Of UInt32)
+  fullName.vb: List(Of System.UInt32)
+  name.vb: List(Of UInt32)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.UInt32
+    name: UInt32
+    nameWithType: UInt32
+    fullName: System.UInt32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.UInt32
+    name: UInt32
+    nameWithType: UInt32
+    fullName: System.UInt32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.SiloAddress.CompareTo*
+  commentId: Overload:Orleans.Runtime.SiloAddress.CompareTo
+  isExternal: false
+  name: CompareTo
+  nameWithType: SiloAddress.CompareTo
+  fullName: Orleans.Runtime.SiloAddress.CompareTo

@@ -1,0 +1,1721 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Grain
+  commentId: T:Orleans.Grain
+  id: Grain
+  parent: Orleans
+  children:
+  - Orleans.Grain.#ctor
+  - Orleans.Grain.#ctor(Orleans.Core.IGrainIdentity,Orleans.Runtime.IGrainRuntime)
+  - Orleans.Grain.DeactivateOnIdle
+  - Orleans.Grain.DelayDeactivation(TimeSpan)
+  - Orleans.Grain.GetReminder(System.String)
+  - Orleans.Grain.GetReminders
+  - Orleans.Grain.GetStreamProvider(System.String)
+  - Orleans.Grain.GrainFactory
+  - Orleans.Grain.GrainReference
+  - Orleans.Grain.IdentityString
+  - Orleans.Grain.OnActivateAsync
+  - Orleans.Grain.OnDeactivateAsync
+  - Orleans.Grain.Participate(Orleans.Runtime.IGrainLifecycle)
+  - Orleans.Grain.RegisterOrUpdateReminder(System.String,TimeSpan,TimeSpan)
+  - Orleans.Grain.RegisterTimer(Func{System.Object,Task},System.Object,TimeSpan,TimeSpan)
+  - Orleans.Grain.RuntimeIdentity
+  - Orleans.Grain.ServiceProvider
+  - Orleans.Grain.UnregisterReminder(Orleans.Runtime.IGrainReminder)
+  langs:
+  - csharp
+  - vb
+  name: Grain
+  nameWithType: Grain
+  fullName: Orleans.Grain
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/Grain.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Grain
+    path: src/Orleans.Core.Abstractions/Core/Grain.cs
+    startLine: 14
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nThe abstract base class for all grain classes.\n"
+  example: []
+  syntax:
+    content: 'public abstract class Grain : object, IAddressable, ILifecycleParticipant<IGrainLifecycle>'
+    content.vb: >-
+      Public MustInherit Class Grain
+
+          Inherits Object
+
+          Implements IAddressable, ILifecycleParticipant(Of IGrainLifecycle)
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Orleans.Grain`1
+  implements:
+  - Orleans.Runtime.IAddressable
+  - Orleans.ILifecycleParticipant{Orleans.Runtime.IGrainLifecycle}
+  extensionMethods:
+  - Orleans.Grain.Orleans.Runtime.LoggerExtensionMethods.GetLogger(System.String)
+  - Orleans.Grain.Orleans.Runtime.LoggerExtensionMethods.GetLogger
+  - Orleans.Grain.Orleans.Storage.GrainStorageExtensions.GetGrainStorage(IServiceProvider)
+  - Orleans.Grain.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: Orleans.Grain.GrainReference
+  commentId: P:Orleans.Grain.GrainReference
+  id: GrainReference
+  parent: Orleans.Grain
+  langs:
+  - csharp
+  - vb
+  name: GrainReference
+  nameWithType: Grain.GrainReference
+  fullName: Orleans.Grain.GrainReference
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/Grain.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GrainReference
+    path: src/Orleans.Core.Abstractions/Core/Grain.cs
+    startLine: 21
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  syntax:
+    content: public GrainReference GrainReference { get; }
+    parameters: []
+    return:
+      type: Orleans.Runtime.GrainReference
+    content.vb: Public ReadOnly Property GrainReference As GrainReference
+  overload: Orleans.Grain.GrainReference*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Grain.GrainFactory
+  commentId: P:Orleans.Grain.GrainFactory
+  id: GrainFactory
+  parent: Orleans.Grain
+  langs:
+  - csharp
+  - vb
+  name: GrainFactory
+  nameWithType: Grain.GrainFactory
+  fullName: Orleans.Grain.GrainFactory
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/Grain.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GrainFactory
+    path: src/Orleans.Core.Abstractions/Core/Grain.cs
+    startLine: 27
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nGets an object which can be used to access other grains. Null if this grain is not associated with a Runtime, such as when created directly for unit testing.\n"
+  example: []
+  syntax:
+    content: protected IGrainFactory GrainFactory { get; }
+    parameters: []
+    return:
+      type: Orleans.IGrainFactory
+    content.vb: Protected ReadOnly Property GrainFactory As IGrainFactory
+  overload: Orleans.Grain.GrainFactory*
+  modifiers.csharp:
+  - protected
+  - get
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Orleans.Grain.ServiceProvider
+  commentId: P:Orleans.Grain.ServiceProvider
+  id: ServiceProvider
+  parent: Orleans.Grain
+  langs:
+  - csharp
+  - vb
+  name: ServiceProvider
+  nameWithType: Grain.ServiceProvider
+  fullName: Orleans.Grain.ServiceProvider
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/Grain.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ServiceProvider
+    path: src/Orleans.Core.Abstractions/Core/Grain.cs
+    startLine: 35
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nGets the IServiceProvider managed by the runtime. Null if this grain is not associated with a Runtime, such as when created directly for unit testing.\n"
+  example: []
+  syntax:
+    content: protected IServiceProvider ServiceProvider { get; }
+    parameters: []
+    return:
+      type: IServiceProvider
+    content.vb: Protected ReadOnly Property ServiceProvider As IServiceProvider
+  overload: Orleans.Grain.ServiceProvider*
+  modifiers.csharp:
+  - protected
+  - get
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Orleans.Grain.#ctor
+  commentId: M:Orleans.Grain.#ctor
+  id: '#ctor'
+  parent: Orleans.Grain
+  langs:
+  - csharp
+  - vb
+  name: Grain()
+  nameWithType: Grain.Grain()
+  fullName: Orleans.Grain.Grain()
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/Grain.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Core.Abstractions/Core/Grain.cs
+    startLine: 46
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nThis constructor should never be invoked. We expose it so that client code (subclasses of Grain) do not have to add a constructor.\nClient code should use the GrainFactory property to get a reference to a Grain.\n"
+  example: []
+  syntax:
+    content: protected Grain()
+    content.vb: Protected Sub New
+  overload: Orleans.Grain.#ctor*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Orleans.Grain.#ctor(Orleans.Core.IGrainIdentity,Orleans.Runtime.IGrainRuntime)
+  commentId: M:Orleans.Grain.#ctor(Orleans.Core.IGrainIdentity,Orleans.Runtime.IGrainRuntime)
+  id: '#ctor(Orleans.Core.IGrainIdentity,Orleans.Runtime.IGrainRuntime)'
+  parent: Orleans.Grain
+  langs:
+  - csharp
+  - vb
+  name: Grain(IGrainIdentity, IGrainRuntime)
+  nameWithType: Grain.Grain(IGrainIdentity, IGrainRuntime)
+  fullName: Orleans.Grain.Grain(Orleans.Core.IGrainIdentity, Orleans.Runtime.IGrainRuntime)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/Grain.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Core.Abstractions/Core/Grain.cs
+    startLine: 55
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nGrain implementers do NOT have to expose this constructor but can choose to do so.\nThis constructor is particularly useful for unit testing where test code can create a Grain and replace\nthe IGrainIdentity and IGrainRuntime with test doubles (mocks/stubs).\n"
+  example: []
+  syntax:
+    content: protected Grain(IGrainIdentity identity, IGrainRuntime runtime)
+    parameters:
+    - id: identity
+      type: Orleans.Core.IGrainIdentity
+    - id: runtime
+      type: Orleans.Runtime.IGrainRuntime
+    content.vb: Protected Sub New(identity As IGrainIdentity, runtime As IGrainRuntime)
+  overload: Orleans.Grain.#ctor*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Orleans.Grain.IdentityString
+  commentId: P:Orleans.Grain.IdentityString
+  id: IdentityString
+  parent: Orleans.Grain
+  langs:
+  - csharp
+  - vb
+  name: IdentityString
+  nameWithType: Grain.IdentityString
+  fullName: Orleans.Grain.IdentityString
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/Grain.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IdentityString
+    path: src/Orleans.Core.Abstractions/Core/Grain.cs
+    startLine: 65
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nString representation of grain&apos;s SiloIdentity including type and primary key.\n"
+  example: []
+  syntax:
+    content: public string IdentityString { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property IdentityString As String
+  overload: Orleans.Grain.IdentityString*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Grain.RuntimeIdentity
+  commentId: P:Orleans.Grain.RuntimeIdentity
+  id: RuntimeIdentity
+  parent: Orleans.Grain
+  langs:
+  - csharp
+  - vb
+  name: RuntimeIdentity
+  nameWithType: Grain.RuntimeIdentity
+  fullName: Orleans.Grain.RuntimeIdentity
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/Grain.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: RuntimeIdentity
+    path: src/Orleans.Core.Abstractions/Core/Grain.cs
+    startLine: 74
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nA unique identifier for the current silo.\nThere is no semantic content to this string, but it may be useful for logging.\n"
+  example: []
+  syntax:
+    content: public string RuntimeIdentity { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property RuntimeIdentity As String
+  overload: Orleans.Grain.RuntimeIdentity*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Grain.RegisterTimer(Func{System.Object,Task},System.Object,TimeSpan,TimeSpan)
+  commentId: M:Orleans.Grain.RegisterTimer(Func{System.Object,Task},System.Object,TimeSpan,TimeSpan)
+  id: RegisterTimer(Func{System.Object,Task},System.Object,TimeSpan,TimeSpan)
+  parent: Orleans.Grain
+  langs:
+  - csharp
+  - vb
+  name: RegisterTimer(Func<Object, Task>, Object, TimeSpan, TimeSpan)
+  nameWithType: Grain.RegisterTimer(Func<Object, Task>, Object, TimeSpan, TimeSpan)
+  fullName: Orleans.Grain.RegisterTimer(Func<System.Object, Task>, System.Object, TimeSpan, TimeSpan)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/Grain.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: RegisterTimer
+    path: src/Orleans.Core.Abstractions/Core/Grain.cs
+    startLine: 112
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nRegisters a timer to send periodic callbacks to this grain.\n"
+  remarks: "\n<p>\nThis timer will not prevent the current grain from being deactivated.\nIf the grain is deactivated, then the timer will be discarded.\n</p>\n<p>\nUntil the Task returned from the asyncCallback is resolved, \nthe next timer tick will not be scheduled. \nThat is to say, timer callbacks never interleave their turns.\n</p>\n<p>\nThe timer may be stopped at any time by calling the <code>Dispose</code> method \non the timer handle returned from this call.\n</p>\n<p>\nAny exceptions thrown by or faulted Task&apos;s returned from the asyncCallback \nwill be logged, but will not prevent the next timer tick from being queued.\n</p>\n"
+  example: []
+  syntax:
+    content: protected IDisposable RegisterTimer(Func<object, Task> asyncCallback, object state, TimeSpan dueTime, TimeSpan period)
+    parameters:
+    - id: asyncCallback
+      type: Func{System.Object,Task}
+      description: Callback function to be invoked when timr ticks.
+    - id: state
+      type: System.Object
+      description: State object that will be passed as argument when calling the asyncCallback.
+    - id: dueTime
+      type: TimeSpan
+      description: Due time for first timer tick.
+    - id: period
+      type: TimeSpan
+      description: Period of subsequent timer ticks.
+    return:
+      type: IDisposable
+      description: Handle for this Timer.
+    content.vb: Protected Function RegisterTimer(asyncCallback As Func(Of Object, Task), state As Object, dueTime As TimeSpan, period As TimeSpan) As IDisposable
+  overload: Orleans.Grain.RegisterTimer*
+  nameWithType.vb: Grain.RegisterTimer(Func(Of Object, Task), Object, TimeSpan, TimeSpan)
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Orleans.Grain.RegisterTimer(Func(Of System.Object, Task), System.Object, TimeSpan, TimeSpan)
+  name.vb: RegisterTimer(Func(Of Object, Task), Object, TimeSpan, TimeSpan)
+- uid: Orleans.Grain.RegisterOrUpdateReminder(System.String,TimeSpan,TimeSpan)
+  commentId: M:Orleans.Grain.RegisterOrUpdateReminder(System.String,TimeSpan,TimeSpan)
+  id: RegisterOrUpdateReminder(System.String,TimeSpan,TimeSpan)
+  parent: Orleans.Grain
+  langs:
+  - csharp
+  - vb
+  name: RegisterOrUpdateReminder(String, TimeSpan, TimeSpan)
+  nameWithType: Grain.RegisterOrUpdateReminder(String, TimeSpan, TimeSpan)
+  fullName: Orleans.Grain.RegisterOrUpdateReminder(System.String, TimeSpan, TimeSpan)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/Grain.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: RegisterOrUpdateReminder
+    path: src/Orleans.Core.Abstractions/Core/Grain.cs
+    startLine: 132
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nRegisters a persistent, reliable reminder to send regular notifications (reminders) to the grain.\nThe grain must implement the <code>Orleans.IRemindable</code> interface, and reminders for this grain will be sent to the <code>ReceiveReminder</code> callback method.\nIf the current grain is deactivated when the timer fires, a new activation of this grain will be created to receive this reminder.\nIf an existing reminder with the same name already exists, that reminder will be overwritten with this new reminder.\nReminders will always be received by one activation of this grain, even if multiple activations exist for this grain.\n"
+  example: []
+  syntax:
+    content: protected Task<IGrainReminder> RegisterOrUpdateReminder(string reminderName, TimeSpan dueTime, TimeSpan period)
+    parameters:
+    - id: reminderName
+      type: System.String
+      description: Name of this reminder
+    - id: dueTime
+      type: TimeSpan
+      description: Due time for this reminder
+    - id: period
+      type: TimeSpan
+      description: Frequence period for this reminder
+    return:
+      type: Task{Orleans.Runtime.IGrainReminder}
+      description: Promise for Reminder handle.
+    content.vb: Protected Function RegisterOrUpdateReminder(reminderName As String, dueTime As TimeSpan, period As TimeSpan) As Task(Of IGrainReminder)
+  overload: Orleans.Grain.RegisterOrUpdateReminder*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Orleans.Grain.UnregisterReminder(Orleans.Runtime.IGrainReminder)
+  commentId: M:Orleans.Grain.UnregisterReminder(Orleans.Runtime.IGrainReminder)
+  id: UnregisterReminder(Orleans.Runtime.IGrainReminder)
+  parent: Orleans.Grain
+  langs:
+  - csharp
+  - vb
+  name: UnregisterReminder(IGrainReminder)
+  nameWithType: Grain.UnregisterReminder(IGrainReminder)
+  fullName: Orleans.Grain.UnregisterReminder(Orleans.Runtime.IGrainReminder)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/Grain.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: UnregisterReminder
+    path: src/Orleans.Core.Abstractions/Core/Grain.cs
+    startLine: 148
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nUnregisters a previously registered reminder.\n"
+  example: []
+  syntax:
+    content: protected Task UnregisterReminder(IGrainReminder reminder)
+    parameters:
+    - id: reminder
+      type: Orleans.Runtime.IGrainReminder
+      description: Reminder to unregister.
+    return:
+      type: Task
+      description: Completion promise for this operation.
+    content.vb: Protected Function UnregisterReminder(reminder As IGrainReminder) As Task
+  overload: Orleans.Grain.UnregisterReminder*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Orleans.Grain.GetReminder(System.String)
+  commentId: M:Orleans.Grain.GetReminder(System.String)
+  id: GetReminder(System.String)
+  parent: Orleans.Grain
+  langs:
+  - csharp
+  - vb
+  name: GetReminder(String)
+  nameWithType: Grain.GetReminder(String)
+  fullName: Orleans.Grain.GetReminder(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/Grain.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetReminder
+    path: src/Orleans.Core.Abstractions/Core/Grain.cs
+    startLine: 162
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nReturns a previously registered reminder.\n"
+  example: []
+  syntax:
+    content: protected Task<IGrainReminder> GetReminder(string reminderName)
+    parameters:
+    - id: reminderName
+      type: System.String
+      description: Reminder to return
+    return:
+      type: Task{Orleans.Runtime.IGrainReminder}
+      description: Promise for Reminder handle.
+    content.vb: Protected Function GetReminder(reminderName As String) As Task(Of IGrainReminder)
+  overload: Orleans.Grain.GetReminder*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Orleans.Grain.GetReminders
+  commentId: M:Orleans.Grain.GetReminders
+  id: GetReminders
+  parent: Orleans.Grain
+  langs:
+  - csharp
+  - vb
+  name: GetReminders()
+  nameWithType: Grain.GetReminders()
+  fullName: Orleans.Grain.GetReminders()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/Grain.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetReminders
+    path: src/Orleans.Core.Abstractions/Core/Grain.cs
+    startLine: 175
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nReturns a list of all reminders registered by the grain.\n"
+  example: []
+  syntax:
+    content: protected Task<List<IGrainReminder>> GetReminders()
+    return:
+      type: Task{List{Orleans.Runtime.IGrainReminder}}
+      description: Promise for list of Reminders registered for this grain.
+    content.vb: Protected Function GetReminders As Task(Of List(Of IGrainReminder))
+  overload: Orleans.Grain.GetReminders*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Orleans.Grain.GetStreamProvider(System.String)
+  commentId: M:Orleans.Grain.GetStreamProvider(System.String)
+  id: GetStreamProvider(System.String)
+  parent: Orleans.Grain
+  langs:
+  - csharp
+  - vb
+  name: GetStreamProvider(String)
+  nameWithType: Grain.GetStreamProvider(String)
+  fullName: Orleans.Grain.GetStreamProvider(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/Grain.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetStreamProvider
+    path: src/Orleans.Core.Abstractions/Core/Grain.cs
+    startLine: 181
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  syntax:
+    content: protected IStreamProvider GetStreamProvider(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: Orleans.Streams.IStreamProvider
+    content.vb: Protected Function GetStreamProvider(name As String) As IStreamProvider
+  overload: Orleans.Grain.GetStreamProvider*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Orleans.Grain.DeactivateOnIdle
+  commentId: M:Orleans.Grain.DeactivateOnIdle
+  id: DeactivateOnIdle
+  parent: Orleans.Grain
+  langs:
+  - csharp
+  - vb
+  name: DeactivateOnIdle()
+  nameWithType: Grain.DeactivateOnIdle()
+  fullName: Orleans.Grain.DeactivateOnIdle()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/Grain.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: DeactivateOnIdle
+    path: src/Orleans.Core.Abstractions/Core/Grain.cs
+    startLine: 195
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nDeactivate this activation of the grain after the current grain method call is completed.\nThis call will mark this activation of the current grain to be deactivated and removed at the end of the current method.\nThe next call to this grain will result in a different activation to be used, which typical means a new activation will be created automatically by the runtime.\n"
+  example: []
+  syntax:
+    content: protected void DeactivateOnIdle()
+    content.vb: Protected Sub DeactivateOnIdle
+  overload: Orleans.Grain.DeactivateOnIdle*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Orleans.Grain.DelayDeactivation(TimeSpan)
+  commentId: M:Orleans.Grain.DelayDeactivation(TimeSpan)
+  id: DelayDeactivation(TimeSpan)
+  parent: Orleans.Grain
+  langs:
+  - csharp
+  - vb
+  name: DelayDeactivation(TimeSpan)
+  nameWithType: Grain.DelayDeactivation(TimeSpan)
+  fullName: Orleans.Grain.DelayDeactivation(TimeSpan)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/Grain.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: DelayDeactivation
+    path: src/Orleans.Core.Abstractions/Core/Grain.cs
+    startLine: 208
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nDelay Deactivation of this activation at least for the specified time duration.\nA positive <code>timeSpan</code> value means “prevent GC of this activation for that time span”.\nA negative <code>timeSpan</code> value means “cancel the previous setting of the DelayDeactivation call and make this activation behave based on the regular Activation Garbage Collection settings”.\nDeactivateOnIdle method would undo / override any current “keep alive” setting, \nmaking this grain immediately available for deactivation.\n"
+  example: []
+  syntax:
+    content: protected void DelayDeactivation(TimeSpan timeSpan)
+    parameters:
+    - id: timeSpan
+      type: TimeSpan
+    content.vb: Protected Sub DelayDeactivation(timeSpan As TimeSpan)
+  overload: Orleans.Grain.DelayDeactivation*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Orleans.Grain.OnActivateAsync
+  commentId: M:Orleans.Grain.OnActivateAsync
+  id: OnActivateAsync
+  parent: Orleans.Grain
+  langs:
+  - csharp
+  - vb
+  name: OnActivateAsync()
+  nameWithType: Grain.OnActivateAsync()
+  fullName: Orleans.Grain.OnActivateAsync()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/Grain.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: OnActivateAsync
+    path: src/Orleans.Core.Abstractions/Core/Grain.cs
+    startLine: 219
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nThis method is called at the end of the process of activating a grain.\nIt is called before any messages have been dispatched to the grain.\nFor grains with declared persistent state, this method is called after the State property has been populated.\n"
+  example: []
+  syntax:
+    content: public virtual Task OnActivateAsync()
+    return:
+      type: Task
+    content.vb: Public Overridable Function OnActivateAsync As Task
+  overload: Orleans.Grain.OnActivateAsync*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Orleans.Grain.OnDeactivateAsync
+  commentId: M:Orleans.Grain.OnDeactivateAsync
+  id: OnDeactivateAsync
+  parent: Orleans.Grain
+  langs:
+  - csharp
+  - vb
+  name: OnDeactivateAsync()
+  nameWithType: Grain.OnDeactivateAsync()
+  fullName: Orleans.Grain.OnDeactivateAsync()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/Grain.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: OnDeactivateAsync
+    path: src/Orleans.Core.Abstractions/Core/Grain.cs
+    startLine: 227
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nThis method is called at the begining of the process of deactivating a grain.\n"
+  example: []
+  syntax:
+    content: public virtual Task OnDeactivateAsync()
+    return:
+      type: Task
+    content.vb: Public Overridable Function OnDeactivateAsync As Task
+  overload: Orleans.Grain.OnDeactivateAsync*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Orleans.Grain.Participate(Orleans.Runtime.IGrainLifecycle)
+  commentId: M:Orleans.Grain.Participate(Orleans.Runtime.IGrainLifecycle)
+  id: Participate(Orleans.Runtime.IGrainLifecycle)
+  parent: Orleans.Grain
+  langs:
+  - csharp
+  - vb
+  name: Participate(IGrainLifecycle)
+  nameWithType: Grain.Participate(IGrainLifecycle)
+  fullName: Orleans.Grain.Participate(Orleans.Runtime.IGrainLifecycle)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/Grain.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Participate
+    path: src/Orleans.Core.Abstractions/Core/Grain.cs
+    startLine: 240
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  syntax:
+    content: public virtual void Participate(IGrainLifecycle lifecycle)
+    parameters:
+    - id: lifecycle
+      type: Orleans.Runtime.IGrainLifecycle
+    content.vb: Public Overridable Sub Participate(lifecycle As IGrainLifecycle)
+  overload: Orleans.Grain.Participate*
+  implements:
+  - Orleans.ILifecycleParticipant{Orleans.Runtime.IGrainLifecycle}.Participate(Orleans.Runtime.IGrainLifecycle)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+references:
+- uid: Orleans
+  commentId: N:Orleans
+  isExternal: false
+  name: Orleans
+  nameWithType: Orleans
+  fullName: Orleans
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Runtime.IAddressable
+  commentId: T:Orleans.Runtime.IAddressable
+  parent: Orleans.Runtime
+  isExternal: false
+  name: IAddressable
+  nameWithType: IAddressable
+  fullName: Orleans.Runtime.IAddressable
+- uid: Orleans.ILifecycleParticipant{Orleans.Runtime.IGrainLifecycle}
+  commentId: T:Orleans.ILifecycleParticipant{Orleans.Runtime.IGrainLifecycle}
+  parent: Orleans
+  definition: Orleans.ILifecycleParticipant`1
+  name: ILifecycleParticipant<IGrainLifecycle>
+  nameWithType: ILifecycleParticipant<IGrainLifecycle>
+  fullName: Orleans.ILifecycleParticipant<Orleans.Runtime.IGrainLifecycle>
+  nameWithType.vb: ILifecycleParticipant(Of IGrainLifecycle)
+  fullName.vb: Orleans.ILifecycleParticipant(Of Orleans.Runtime.IGrainLifecycle)
+  name.vb: ILifecycleParticipant(Of IGrainLifecycle)
+  spec.csharp:
+  - uid: Orleans.ILifecycleParticipant`1
+    name: ILifecycleParticipant
+    nameWithType: ILifecycleParticipant
+    fullName: Orleans.ILifecycleParticipant
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Orleans.Runtime.IGrainLifecycle
+    name: IGrainLifecycle
+    nameWithType: IGrainLifecycle
+    fullName: Orleans.Runtime.IGrainLifecycle
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Orleans.ILifecycleParticipant`1
+    name: ILifecycleParticipant
+    nameWithType: ILifecycleParticipant
+    fullName: Orleans.ILifecycleParticipant
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Orleans.Runtime.IGrainLifecycle
+    name: IGrainLifecycle
+    nameWithType: IGrainLifecycle
+    fullName: Orleans.Runtime.IGrainLifecycle
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Grain.Orleans.Runtime.LoggerExtensionMethods.GetLogger(System.String)
+  commentId: M:Orleans.Runtime.LoggerExtensionMethods.GetLogger(Orleans.Grain,System.String)
+  parent: Orleans.Runtime.LoggerExtensionMethods
+  definition: Orleans.Runtime.LoggerExtensionMethods.GetLogger(Orleans.Grain,System.String)
+  name: GetLogger(String)
+  nameWithType: LoggerExtensionMethods.GetLogger(String)
+  fullName: Orleans.Runtime.LoggerExtensionMethods.GetLogger(System.String)
+  spec.csharp:
+  - uid: Orleans.Runtime.LoggerExtensionMethods.GetLogger(System.String)
+    name: GetLogger
+    nameWithType: LoggerExtensionMethods.GetLogger
+    fullName: Orleans.Runtime.LoggerExtensionMethods.GetLogger
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.LoggerExtensionMethods.GetLogger(System.String)
+    name: GetLogger
+    nameWithType: LoggerExtensionMethods.GetLogger
+    fullName: Orleans.Runtime.LoggerExtensionMethods.GetLogger
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Grain.Orleans.Runtime.LoggerExtensionMethods.GetLogger
+  commentId: M:Orleans.Runtime.LoggerExtensionMethods.GetLogger(Orleans.Grain)
+  parent: Orleans.Runtime.LoggerExtensionMethods
+  definition: Orleans.Runtime.LoggerExtensionMethods.GetLogger(Orleans.Grain)
+  name: GetLogger()
+  nameWithType: LoggerExtensionMethods.GetLogger()
+  fullName: Orleans.Runtime.LoggerExtensionMethods.GetLogger()
+  spec.csharp:
+  - uid: Orleans.Runtime.LoggerExtensionMethods.GetLogger
+    name: GetLogger
+    nameWithType: LoggerExtensionMethods.GetLogger
+    fullName: Orleans.Runtime.LoggerExtensionMethods.GetLogger
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.LoggerExtensionMethods.GetLogger
+    name: GetLogger
+    nameWithType: LoggerExtensionMethods.GetLogger
+    fullName: Orleans.Runtime.LoggerExtensionMethods.GetLogger
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Grain.Orleans.Storage.GrainStorageExtensions.GetGrainStorage(IServiceProvider)
+  commentId: M:Orleans.Storage.GrainStorageExtensions.GetGrainStorage(Orleans.Grain,IServiceProvider)
+  parent: Orleans.Storage.GrainStorageExtensions
+  definition: Orleans.Storage.GrainStorageExtensions.GetGrainStorage(Orleans.Grain,IServiceProvider)
+  name: GetGrainStorage(IServiceProvider)
+  nameWithType: GrainStorageExtensions.GetGrainStorage(IServiceProvider)
+  fullName: Orleans.Storage.GrainStorageExtensions.GetGrainStorage(IServiceProvider)
+  spec.csharp:
+  - uid: Orleans.Storage.GrainStorageExtensions.GetGrainStorage(IServiceProvider)
+    name: GetGrainStorage
+    nameWithType: GrainStorageExtensions.GetGrainStorage
+    fullName: Orleans.Storage.GrainStorageExtensions.GetGrainStorage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: IServiceProvider
+    name: IServiceProvider
+    nameWithType: IServiceProvider
+    fullName: IServiceProvider
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Storage.GrainStorageExtensions.GetGrainStorage(IServiceProvider)
+    name: GetGrainStorage
+    nameWithType: GrainStorageExtensions.GetGrainStorage
+    fullName: Orleans.Storage.GrainStorageExtensions.GetGrainStorage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: IServiceProvider
+    name: IServiceProvider
+    nameWithType: IServiceProvider
+    fullName: IServiceProvider
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Grain.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<Grain>()
+  nameWithType: ImmutableExt.AsImmutable<Grain>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Grain>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of Grain)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Grain)()
+  name.vb: AsImmutable(Of Grain)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<Grain>
+    nameWithType: ImmutableExt.AsImmutable<Grain>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Grain>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of Grain)
+    nameWithType: ImmutableExt.AsImmutable(Of Grain)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Grain)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Runtime
+  commentId: N:Orleans.Runtime
+  isExternal: false
+  name: Orleans.Runtime
+  nameWithType: Orleans.Runtime
+  fullName: Orleans.Runtime
+- uid: Orleans.ILifecycleParticipant`1
+  commentId: T:Orleans.ILifecycleParticipant`1
+  isExternal: false
+  name: ILifecycleParticipant<TLifecycleObservable>
+  nameWithType: ILifecycleParticipant<TLifecycleObservable>
+  fullName: Orleans.ILifecycleParticipant<TLifecycleObservable>
+  nameWithType.vb: ILifecycleParticipant(Of TLifecycleObservable)
+  fullName.vb: Orleans.ILifecycleParticipant(Of TLifecycleObservable)
+  name.vb: ILifecycleParticipant(Of TLifecycleObservable)
+  spec.csharp:
+  - uid: Orleans.ILifecycleParticipant`1
+    name: ILifecycleParticipant
+    nameWithType: ILifecycleParticipant
+    fullName: Orleans.ILifecycleParticipant
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TLifecycleObservable
+    nameWithType: TLifecycleObservable
+    fullName: TLifecycleObservable
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Orleans.ILifecycleParticipant`1
+    name: ILifecycleParticipant
+    nameWithType: ILifecycleParticipant
+    fullName: Orleans.ILifecycleParticipant
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TLifecycleObservable
+    nameWithType: TLifecycleObservable
+    fullName: TLifecycleObservable
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.LoggerExtensionMethods.GetLogger(Orleans.Grain,System.String)
+  commentId: M:Orleans.Runtime.LoggerExtensionMethods.GetLogger(Orleans.Grain,System.String)
+  isExternal: true
+  name: GetLogger(Grain, String)
+  nameWithType: LoggerExtensionMethods.GetLogger(Grain, String)
+  fullName: Orleans.Runtime.LoggerExtensionMethods.GetLogger(Orleans.Grain, System.String)
+  spec.csharp:
+  - uid: Orleans.Runtime.LoggerExtensionMethods.GetLogger(Orleans.Grain,System.String)
+    name: GetLogger
+    nameWithType: LoggerExtensionMethods.GetLogger
+    fullName: Orleans.Runtime.LoggerExtensionMethods.GetLogger
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Grain
+    name: Grain
+    nameWithType: Grain
+    fullName: Orleans.Grain
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.LoggerExtensionMethods.GetLogger(Orleans.Grain,System.String)
+    name: GetLogger
+    nameWithType: LoggerExtensionMethods.GetLogger
+    fullName: Orleans.Runtime.LoggerExtensionMethods.GetLogger
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Grain
+    name: Grain
+    nameWithType: Grain
+    fullName: Orleans.Grain
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.LoggerExtensionMethods
+  commentId: T:Orleans.Runtime.LoggerExtensionMethods
+  parent: Orleans.Runtime
+  isExternal: false
+  name: LoggerExtensionMethods
+  nameWithType: LoggerExtensionMethods
+  fullName: Orleans.Runtime.LoggerExtensionMethods
+- uid: Orleans.Runtime.LoggerExtensionMethods.GetLogger(Orleans.Grain)
+  commentId: M:Orleans.Runtime.LoggerExtensionMethods.GetLogger(Orleans.Grain)
+  isExternal: false
+  name: GetLogger(Grain)
+  nameWithType: LoggerExtensionMethods.GetLogger(Grain)
+  fullName: Orleans.Runtime.LoggerExtensionMethods.GetLogger(Orleans.Grain)
+  spec.csharp:
+  - uid: Orleans.Runtime.LoggerExtensionMethods.GetLogger(Orleans.Grain)
+    name: GetLogger
+    nameWithType: LoggerExtensionMethods.GetLogger
+    fullName: Orleans.Runtime.LoggerExtensionMethods.GetLogger
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Grain
+    name: Grain
+    nameWithType: Grain
+    fullName: Orleans.Grain
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.LoggerExtensionMethods.GetLogger(Orleans.Grain)
+    name: GetLogger
+    nameWithType: LoggerExtensionMethods.GetLogger
+    fullName: Orleans.Runtime.LoggerExtensionMethods.GetLogger
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Grain
+    name: Grain
+    nameWithType: Grain
+    fullName: Orleans.Grain
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Storage.GrainStorageExtensions.GetGrainStorage(Orleans.Grain,IServiceProvider)
+  commentId: M:Orleans.Storage.GrainStorageExtensions.GetGrainStorage(Orleans.Grain,IServiceProvider)
+  isExternal: true
+  name: GetGrainStorage(Grain, IServiceProvider)
+  nameWithType: GrainStorageExtensions.GetGrainStorage(Grain, IServiceProvider)
+  fullName: Orleans.Storage.GrainStorageExtensions.GetGrainStorage(Orleans.Grain, IServiceProvider)
+  spec.csharp:
+  - uid: Orleans.Storage.GrainStorageExtensions.GetGrainStorage(Orleans.Grain,IServiceProvider)
+    name: GetGrainStorage
+    nameWithType: GrainStorageExtensions.GetGrainStorage
+    fullName: Orleans.Storage.GrainStorageExtensions.GetGrainStorage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Grain
+    name: Grain
+    nameWithType: Grain
+    fullName: Orleans.Grain
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: IServiceProvider
+    name: IServiceProvider
+    nameWithType: IServiceProvider
+    fullName: IServiceProvider
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Storage.GrainStorageExtensions.GetGrainStorage(Orleans.Grain,IServiceProvider)
+    name: GetGrainStorage
+    nameWithType: GrainStorageExtensions.GetGrainStorage
+    fullName: Orleans.Storage.GrainStorageExtensions.GetGrainStorage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Grain
+    name: Grain
+    nameWithType: Grain
+    fullName: Orleans.Grain
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: IServiceProvider
+    name: IServiceProvider
+    nameWithType: IServiceProvider
+    fullName: IServiceProvider
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Storage.GrainStorageExtensions
+  commentId: T:Orleans.Storage.GrainStorageExtensions
+  parent: Orleans.Storage
+  isExternal: false
+  name: GrainStorageExtensions
+  nameWithType: GrainStorageExtensions
+  fullName: Orleans.Storage.GrainStorageExtensions
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Storage
+  commentId: N:Orleans.Storage
+  isExternal: false
+  name: Orleans.Storage
+  nameWithType: Orleans.Storage
+  fullName: Orleans.Storage
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Grain.GrainReference*
+  commentId: Overload:Orleans.Grain.GrainReference
+  isExternal: false
+  name: GrainReference
+  nameWithType: Grain.GrainReference
+  fullName: Orleans.Grain.GrainReference
+- uid: Orleans.Runtime.GrainReference
+  commentId: T:Orleans.Runtime.GrainReference
+  parent: Orleans.Runtime
+  isExternal: false
+  name: GrainReference
+  nameWithType: GrainReference
+  fullName: Orleans.Runtime.GrainReference
+- uid: Orleans.Grain.GrainFactory*
+  commentId: Overload:Orleans.Grain.GrainFactory
+  isExternal: false
+  name: GrainFactory
+  nameWithType: Grain.GrainFactory
+  fullName: Orleans.Grain.GrainFactory
+- uid: Orleans.IGrainFactory
+  commentId: T:Orleans.IGrainFactory
+  parent: Orleans
+  isExternal: false
+  name: IGrainFactory
+  nameWithType: IGrainFactory
+  fullName: Orleans.IGrainFactory
+- uid: Orleans.Grain.ServiceProvider*
+  commentId: Overload:Orleans.Grain.ServiceProvider
+  isExternal: false
+  name: ServiceProvider
+  nameWithType: Grain.ServiceProvider
+  fullName: Orleans.Grain.ServiceProvider
+- uid: IServiceProvider
+  isExternal: true
+  name: IServiceProvider
+  nameWithType: IServiceProvider
+  fullName: IServiceProvider
+- uid: Orleans.Grain.#ctor*
+  commentId: Overload:Orleans.Grain.#ctor
+  isExternal: false
+  name: Grain
+  nameWithType: Grain.Grain
+  fullName: Orleans.Grain.Grain
+- uid: Orleans.Core.IGrainIdentity
+  commentId: T:Orleans.Core.IGrainIdentity
+  parent: Orleans.Core
+  isExternal: false
+  name: IGrainIdentity
+  nameWithType: IGrainIdentity
+  fullName: Orleans.Core.IGrainIdentity
+- uid: Orleans.Runtime.IGrainRuntime
+  commentId: T:Orleans.Runtime.IGrainRuntime
+  parent: Orleans.Runtime
+  isExternal: false
+  name: IGrainRuntime
+  nameWithType: IGrainRuntime
+  fullName: Orleans.Runtime.IGrainRuntime
+- uid: Orleans.Core
+  commentId: N:Orleans.Core
+  isExternal: false
+  name: Orleans.Core
+  nameWithType: Orleans.Core
+  fullName: Orleans.Core
+- uid: Orleans.Grain.IdentityString*
+  commentId: Overload:Orleans.Grain.IdentityString
+  isExternal: false
+  name: IdentityString
+  nameWithType: Grain.IdentityString
+  fullName: Orleans.Grain.IdentityString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Orleans.Grain.RuntimeIdentity*
+  commentId: Overload:Orleans.Grain.RuntimeIdentity
+  isExternal: false
+  name: RuntimeIdentity
+  nameWithType: Grain.RuntimeIdentity
+  fullName: Orleans.Grain.RuntimeIdentity
+- uid: Orleans.Grain.RegisterTimer*
+  commentId: Overload:Orleans.Grain.RegisterTimer
+  isExternal: false
+  name: RegisterTimer
+  nameWithType: Grain.RegisterTimer
+  fullName: Orleans.Grain.RegisterTimer
+- uid: Func{System.Object,Task}
+  commentId: '!:Func{System.Object,Task}'
+  definition: Func`2
+  name: Func<Object, Task>
+  nameWithType: Func<Object, Task>
+  fullName: Func<System.Object, Task>
+  nameWithType.vb: Func(Of Object, Task)
+  fullName.vb: Func(Of System.Object, Task)
+  name.vb: Func(Of Object, Task)
+  spec.csharp:
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TimeSpan
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: TimeSpan
+- uid: IDisposable
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: IDisposable
+- uid: Func`2
+  isExternal: true
+  name: Func<, >
+  nameWithType: Func<, >
+  fullName: Func<, >
+  nameWithType.vb: Func(Of , )
+  fullName.vb: Func(Of , )
+  name.vb: Func(Of , )
+  spec.csharp:
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Grain.RegisterOrUpdateReminder*
+  commentId: Overload:Orleans.Grain.RegisterOrUpdateReminder
+  isExternal: false
+  name: RegisterOrUpdateReminder
+  nameWithType: Grain.RegisterOrUpdateReminder
+  fullName: Orleans.Grain.RegisterOrUpdateReminder
+- uid: Task{Orleans.Runtime.IGrainReminder}
+  commentId: '!:Task{Orleans.Runtime.IGrainReminder}'
+  definition: Task`1
+  name: Task<IGrainReminder>
+  nameWithType: Task<IGrainReminder>
+  fullName: Task<Orleans.Runtime.IGrainReminder>
+  nameWithType.vb: Task(Of IGrainReminder)
+  fullName.vb: Task(Of Orleans.Runtime.IGrainReminder)
+  name.vb: Task(Of IGrainReminder)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Orleans.Runtime.IGrainReminder
+    name: IGrainReminder
+    nameWithType: IGrainReminder
+    fullName: Orleans.Runtime.IGrainReminder
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Orleans.Runtime.IGrainReminder
+    name: IGrainReminder
+    nameWithType: IGrainReminder
+    fullName: Orleans.Runtime.IGrainReminder
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Grain.UnregisterReminder*
+  commentId: Overload:Orleans.Grain.UnregisterReminder
+  isExternal: false
+  name: UnregisterReminder
+  nameWithType: Grain.UnregisterReminder
+  fullName: Orleans.Grain.UnregisterReminder
+- uid: Orleans.Runtime.IGrainReminder
+  commentId: T:Orleans.Runtime.IGrainReminder
+  parent: Orleans.Runtime
+  isExternal: false
+  name: IGrainReminder
+  nameWithType: IGrainReminder
+  fullName: Orleans.Runtime.IGrainReminder
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task
+- uid: Orleans.Grain.GetReminder*
+  commentId: Overload:Orleans.Grain.GetReminder
+  isExternal: false
+  name: GetReminder
+  nameWithType: Grain.GetReminder
+  fullName: Orleans.Grain.GetReminder
+- uid: Orleans.Grain.GetReminders*
+  commentId: Overload:Orleans.Grain.GetReminders
+  isExternal: false
+  name: GetReminders
+  nameWithType: Grain.GetReminders
+  fullName: Orleans.Grain.GetReminders
+- uid: Task{List{Orleans.Runtime.IGrainReminder}}
+  commentId: '!:Task{List{Orleans.Runtime.IGrainReminder}}'
+  definition: Task`1
+  name: Task<List<IGrainReminder>>
+  nameWithType: Task<List<IGrainReminder>>
+  fullName: Task<List<Orleans.Runtime.IGrainReminder>>
+  nameWithType.vb: Task(Of List(Of IGrainReminder))
+  fullName.vb: Task(Of List(Of Orleans.Runtime.IGrainReminder))
+  name.vb: Task(Of List(Of IGrainReminder))
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Orleans.Runtime.IGrainReminder
+    name: IGrainReminder
+    nameWithType: IGrainReminder
+    fullName: Orleans.Runtime.IGrainReminder
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Orleans.Runtime.IGrainReminder
+    name: IGrainReminder
+    nameWithType: IGrainReminder
+    fullName: Orleans.Runtime.IGrainReminder
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Grain.GetStreamProvider*
+  commentId: Overload:Orleans.Grain.GetStreamProvider
+  isExternal: false
+  name: GetStreamProvider
+  nameWithType: Grain.GetStreamProvider
+  fullName: Orleans.Grain.GetStreamProvider
+- uid: Orleans.Streams.IStreamProvider
+  commentId: T:Orleans.Streams.IStreamProvider
+  parent: Orleans.Streams
+  isExternal: false
+  name: IStreamProvider
+  nameWithType: IStreamProvider
+  fullName: Orleans.Streams.IStreamProvider
+- uid: Orleans.Streams
+  commentId: N:Orleans.Streams
+  isExternal: false
+  name: Orleans.Streams
+  nameWithType: Orleans.Streams
+  fullName: Orleans.Streams
+- uid: Orleans.Grain.DeactivateOnIdle*
+  commentId: Overload:Orleans.Grain.DeactivateOnIdle
+  isExternal: false
+  name: DeactivateOnIdle
+  nameWithType: Grain.DeactivateOnIdle
+  fullName: Orleans.Grain.DeactivateOnIdle
+- uid: Orleans.Grain.DelayDeactivation*
+  commentId: Overload:Orleans.Grain.DelayDeactivation
+  isExternal: false
+  name: DelayDeactivation
+  nameWithType: Grain.DelayDeactivation
+  fullName: Orleans.Grain.DelayDeactivation
+- uid: Orleans.Grain.OnActivateAsync*
+  commentId: Overload:Orleans.Grain.OnActivateAsync
+  isExternal: false
+  name: OnActivateAsync
+  nameWithType: Grain.OnActivateAsync
+  fullName: Orleans.Grain.OnActivateAsync
+- uid: Orleans.Grain.OnDeactivateAsync*
+  commentId: Overload:Orleans.Grain.OnDeactivateAsync
+  isExternal: false
+  name: OnDeactivateAsync
+  nameWithType: Grain.OnDeactivateAsync
+  fullName: Orleans.Grain.OnDeactivateAsync
+- uid: Orleans.Grain.Participate*
+  commentId: Overload:Orleans.Grain.Participate
+  isExternal: false
+  name: Participate
+  nameWithType: Grain.Participate
+  fullName: Orleans.Grain.Participate
+- uid: Orleans.ILifecycleParticipant{Orleans.Runtime.IGrainLifecycle}.Participate(Orleans.Runtime.IGrainLifecycle)
+  commentId: M:Orleans.ILifecycleParticipant{Orleans.Runtime.IGrainLifecycle}.Participate(Orleans.Runtime.IGrainLifecycle)
+  parent: Orleans.ILifecycleParticipant{Orleans.Runtime.IGrainLifecycle}
+  definition: Orleans.ILifecycleParticipant`1.Participate(`0)
+  name: Participate(IGrainLifecycle)
+  nameWithType: ILifecycleParticipant<IGrainLifecycle>.Participate(IGrainLifecycle)
+  fullName: Orleans.ILifecycleParticipant<Orleans.Runtime.IGrainLifecycle>.Participate(Orleans.Runtime.IGrainLifecycle)
+  nameWithType.vb: ILifecycleParticipant(Of IGrainLifecycle).Participate(IGrainLifecycle)
+  fullName.vb: Orleans.ILifecycleParticipant(Of Orleans.Runtime.IGrainLifecycle).Participate(Orleans.Runtime.IGrainLifecycle)
+  spec.csharp:
+  - uid: Orleans.ILifecycleParticipant`1.Participate(`0)
+    name: Participate
+    nameWithType: ILifecycleParticipant<IGrainLifecycle>.Participate
+    fullName: Orleans.ILifecycleParticipant<Orleans.Runtime.IGrainLifecycle>.Participate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.IGrainLifecycle
+    name: IGrainLifecycle
+    nameWithType: IGrainLifecycle
+    fullName: Orleans.Runtime.IGrainLifecycle
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.ILifecycleParticipant`1.Participate(`0)
+    name: Participate
+    nameWithType: ILifecycleParticipant(Of IGrainLifecycle).Participate
+    fullName: Orleans.ILifecycleParticipant(Of Orleans.Runtime.IGrainLifecycle).Participate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.IGrainLifecycle
+    name: IGrainLifecycle
+    nameWithType: IGrainLifecycle
+    fullName: Orleans.Runtime.IGrainLifecycle
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.IGrainLifecycle
+  commentId: T:Orleans.Runtime.IGrainLifecycle
+  parent: Orleans.Runtime
+  isExternal: false
+  name: IGrainLifecycle
+  nameWithType: IGrainLifecycle
+  fullName: Orleans.Runtime.IGrainLifecycle
+- uid: Orleans.ILifecycleParticipant`1.Participate(`0)
+  commentId: M:Orleans.ILifecycleParticipant`1.Participate(`0)
+  isExternal: false
+  name: Participate(TLifecycleObservable)
+  nameWithType: ILifecycleParticipant<TLifecycleObservable>.Participate(TLifecycleObservable)
+  fullName: Orleans.ILifecycleParticipant<TLifecycleObservable>.Participate(TLifecycleObservable)
+  nameWithType.vb: ILifecycleParticipant(Of TLifecycleObservable).Participate(TLifecycleObservable)
+  fullName.vb: Orleans.ILifecycleParticipant(Of TLifecycleObservable).Participate(TLifecycleObservable)
+  spec.csharp:
+  - uid: Orleans.ILifecycleParticipant`1.Participate(`0)
+    name: Participate
+    nameWithType: ILifecycleParticipant<TLifecycleObservable>.Participate
+    fullName: Orleans.ILifecycleParticipant<TLifecycleObservable>.Participate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TLifecycleObservable
+    nameWithType: TLifecycleObservable
+    fullName: TLifecycleObservable
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.ILifecycleParticipant`1.Participate(`0)
+    name: Participate
+    nameWithType: ILifecycleParticipant(Of TLifecycleObservable).Participate
+    fullName: Orleans.ILifecycleParticipant(Of TLifecycleObservable).Participate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TLifecycleObservable
+    nameWithType: TLifecycleObservable
+    fullName: TLifecycleObservable
+  - name: )
+    nameWithType: )
+    fullName: )

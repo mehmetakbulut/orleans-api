@@ -1,0 +1,350 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.GrainDirectory.IMultiClusterRegistrationStrategy
+  commentId: T:Orleans.GrainDirectory.IMultiClusterRegistrationStrategy
+  id: IMultiClusterRegistrationStrategy
+  parent: Orleans.GrainDirectory
+  children:
+  - Orleans.GrainDirectory.IMultiClusterRegistrationStrategy.GetRemoteInstances(IReadOnlyList{System.String},System.String)
+  langs:
+  - csharp
+  - vb
+  name: IMultiClusterRegistrationStrategy
+  nameWithType: IMultiClusterRegistrationStrategy
+  fullName: Orleans.GrainDirectory.IMultiClusterRegistrationStrategy
+  type: Interface
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/GrainDirectory/IMultiClusterRegistrationStrategy.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IMultiClusterRegistrationStrategy
+    path: src/Orleans.Core.Abstractions/GrainDirectory/IMultiClusterRegistrationStrategy.cs
+    startLine: 8
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.GrainDirectory
+  summary: "\nInterface for multi-cluster registration strategies. Used by protocols that coordinate multiple instances.\n"
+  example: []
+  syntax:
+    content: public interface IMultiClusterRegistrationStrategy
+    content.vb: Public Interface IMultiClusterRegistrationStrategy
+  extensionMethods:
+  - Orleans.GrainDirectory.IMultiClusterRegistrationStrategy.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Orleans.GrainDirectory.IMultiClusterRegistrationStrategy.GetRemoteInstances(IReadOnlyList{System.String},System.String)
+  commentId: M:Orleans.GrainDirectory.IMultiClusterRegistrationStrategy.GetRemoteInstances(IReadOnlyList{System.String},System.String)
+  id: GetRemoteInstances(IReadOnlyList{System.String},System.String)
+  parent: Orleans.GrainDirectory.IMultiClusterRegistrationStrategy
+  langs:
+  - csharp
+  - vb
+  name: GetRemoteInstances(IReadOnlyList<String>, String)
+  nameWithType: IMultiClusterRegistrationStrategy.GetRemoteInstances(IReadOnlyList<String>, String)
+  fullName: Orleans.GrainDirectory.IMultiClusterRegistrationStrategy.GetRemoteInstances(IReadOnlyList<System.String>, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/GrainDirectory/IMultiClusterRegistrationStrategy.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetRemoteInstances
+    path: src/Orleans.Core.Abstractions/GrainDirectory/IMultiClusterRegistrationStrategy.cs
+    startLine: 16
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.GrainDirectory
+  summary: "\nDetermines which remote clusters have instances.\n"
+  example: []
+  syntax:
+    content: IEnumerable<string> GetRemoteInstances(IReadOnlyList<string> clusters, string myClusterId)
+    parameters:
+    - id: clusters
+      type: IReadOnlyList{System.String}
+      description: List of all clusters
+    - id: myClusterId
+      type: System.String
+      description: The cluster id of this cluster
+    return:
+      type: IEnumerable{System.String}
+      description: ''
+    content.vb: Function GetRemoteInstances(clusters As IReadOnlyList(Of String), myClusterId As String) As IEnumerable(Of String)
+  overload: Orleans.GrainDirectory.IMultiClusterRegistrationStrategy.GetRemoteInstances*
+  nameWithType.vb: IMultiClusterRegistrationStrategy.GetRemoteInstances(IReadOnlyList(Of String), String)
+  fullName.vb: Orleans.GrainDirectory.IMultiClusterRegistrationStrategy.GetRemoteInstances(IReadOnlyList(Of System.String), System.String)
+  name.vb: GetRemoteInstances(IReadOnlyList(Of String), String)
+references:
+- uid: Orleans.GrainDirectory
+  commentId: N:Orleans.GrainDirectory
+  isExternal: false
+  name: Orleans.GrainDirectory
+  nameWithType: Orleans.GrainDirectory
+  fullName: Orleans.GrainDirectory
+- uid: Orleans.GrainDirectory.IMultiClusterRegistrationStrategy.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<IMultiClusterRegistrationStrategy>()
+  nameWithType: ImmutableExt.AsImmutable<IMultiClusterRegistrationStrategy>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.GrainDirectory.IMultiClusterRegistrationStrategy>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of IMultiClusterRegistrationStrategy)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.GrainDirectory.IMultiClusterRegistrationStrategy)()
+  name.vb: AsImmutable(Of IMultiClusterRegistrationStrategy)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<IMultiClusterRegistrationStrategy>
+    nameWithType: ImmutableExt.AsImmutable<IMultiClusterRegistrationStrategy>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.GrainDirectory.IMultiClusterRegistrationStrategy>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of IMultiClusterRegistrationStrategy)
+    nameWithType: ImmutableExt.AsImmutable(Of IMultiClusterRegistrationStrategy)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.GrainDirectory.IMultiClusterRegistrationStrategy)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.GrainDirectory.IMultiClusterRegistrationStrategy.GetRemoteInstances*
+  commentId: Overload:Orleans.GrainDirectory.IMultiClusterRegistrationStrategy.GetRemoteInstances
+  isExternal: false
+  name: GetRemoteInstances
+  nameWithType: IMultiClusterRegistrationStrategy.GetRemoteInstances
+  fullName: Orleans.GrainDirectory.IMultiClusterRegistrationStrategy.GetRemoteInstances
+- uid: IReadOnlyList{System.String}
+  commentId: '!:IReadOnlyList{System.String}'
+  definition: IReadOnlyList`1
+  name: IReadOnlyList<String>
+  nameWithType: IReadOnlyList<String>
+  fullName: IReadOnlyList<System.String>
+  nameWithType.vb: IReadOnlyList(Of String)
+  fullName.vb: IReadOnlyList(Of System.String)
+  name.vb: IReadOnlyList(Of String)
+  spec.csharp:
+  - uid: IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: IReadOnlyList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: IReadOnlyList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: IEnumerable{System.String}
+  commentId: '!:IEnumerable{System.String}'
+  definition: IEnumerable`1
+  name: IEnumerable<String>
+  nameWithType: IEnumerable<String>
+  fullName: IEnumerable<System.String>
+  nameWithType.vb: IEnumerable(Of String)
+  fullName.vb: IEnumerable(Of System.String)
+  name.vb: IEnumerable(Of String)
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IReadOnlyList`1
+  isExternal: true
+  name: IReadOnlyList<>
+  nameWithType: IReadOnlyList<>
+  fullName: IReadOnlyList<>
+  nameWithType.vb: IReadOnlyList(Of )
+  fullName.vb: IReadOnlyList(Of )
+  name.vb: IReadOnlyList(Of )
+  spec.csharp:
+  - uid: IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: IReadOnlyList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: IReadOnlyList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: IEnumerable`1
+  isExternal: true
+  name: IEnumerable<>
+  nameWithType: IEnumerable<>
+  fullName: IEnumerable<>
+  nameWithType.vb: IEnumerable(Of )
+  fullName.vb: IEnumerable(Of )
+  name.vb: IEnumerable(Of )
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )

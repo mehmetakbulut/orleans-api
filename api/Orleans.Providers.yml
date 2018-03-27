@@ -1,0 +1,44 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Providers
+  commentId: N:Orleans.Providers
+  id: Orleans.Providers
+  children:
+  - Orleans.Providers.IBootstrapProvider
+  - Orleans.Providers.LogConsistencyProviderAttribute
+  - Orleans.Providers.ProviderConstants
+  - Orleans.Providers.StorageProviderAttribute
+  langs:
+  - csharp
+  - vb
+  name: Orleans.Providers
+  nameWithType: Orleans.Providers
+  fullName: Orleans.Providers
+  type: Namespace
+  assemblies:
+  - Orleans.Core.Abstractions
+references:
+- uid: Orleans.Providers.ProviderConstants
+  commentId: T:Orleans.Providers.ProviderConstants
+  isExternal: false
+  name: ProviderConstants
+  nameWithType: ProviderConstants
+  fullName: Orleans.Providers.ProviderConstants
+- uid: Orleans.Providers.StorageProviderAttribute
+  commentId: T:Orleans.Providers.StorageProviderAttribute
+  isExternal: false
+  name: StorageProviderAttribute
+  nameWithType: StorageProviderAttribute
+  fullName: Orleans.Providers.StorageProviderAttribute
+- uid: Orleans.Providers.LogConsistencyProviderAttribute
+  commentId: T:Orleans.Providers.LogConsistencyProviderAttribute
+  isExternal: false
+  name: LogConsistencyProviderAttribute
+  nameWithType: LogConsistencyProviderAttribute
+  fullName: Orleans.Providers.LogConsistencyProviderAttribute
+- uid: Orleans.Providers.IBootstrapProvider
+  commentId: T:Orleans.Providers.IBootstrapProvider
+  isExternal: false
+  name: IBootstrapProvider
+  nameWithType: IBootstrapProvider
+  fullName: Orleans.Providers.IBootstrapProvider

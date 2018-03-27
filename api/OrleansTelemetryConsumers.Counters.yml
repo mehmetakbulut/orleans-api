@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: OrleansTelemetryConsumers.Counters
+  commentId: N:OrleansTelemetryConsumers.Counters
+  id: OrleansTelemetryConsumers.Counters
+  children:
+  - OrleansTelemetryConsumers.Counters.OrleansPerfCounterTelemetryConsumer
+  - OrleansTelemetryConsumers.Counters.OrleansPerformanceCounterInstaller
+  langs:
+  - csharp
+  - vb
+  name: OrleansTelemetryConsumers.Counters
+  nameWithType: OrleansTelemetryConsumers.Counters
+  fullName: OrleansTelemetryConsumers.Counters
+  type: Namespace
+  assemblies:
+  - Orleans.TelemetryConsumers.Counters
+references:
+- uid: OrleansTelemetryConsumers.Counters.OrleansPerfCounterTelemetryConsumer
+  commentId: T:OrleansTelemetryConsumers.Counters.OrleansPerfCounterTelemetryConsumer
+  isExternal: false
+  name: OrleansPerfCounterTelemetryConsumer
+  nameWithType: OrleansPerfCounterTelemetryConsumer
+  fullName: OrleansTelemetryConsumers.Counters.OrleansPerfCounterTelemetryConsumer
+- uid: OrleansTelemetryConsumers.Counters.OrleansPerformanceCounterInstaller
+  commentId: T:OrleansTelemetryConsumers.Counters.OrleansPerformanceCounterInstaller
+  isExternal: false
+  name: OrleansPerformanceCounterInstaller
+  nameWithType: OrleansPerformanceCounterInstaller
+  fullName: OrleansTelemetryConsumers.Counters.OrleansPerformanceCounterInstaller

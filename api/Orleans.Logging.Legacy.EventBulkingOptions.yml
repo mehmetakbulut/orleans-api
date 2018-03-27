@@ -1,0 +1,317 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Logging.Legacy.EventBulkingOptions
+  commentId: T:Orleans.Logging.Legacy.EventBulkingOptions
+  id: EventBulkingOptions
+  parent: Orleans.Logging.Legacy
+  children:
+  - Orleans.Logging.Legacy.EventBulkingOptions.BulkEventInterval
+  - Orleans.Logging.Legacy.EventBulkingOptions.BulkEventLimit
+  - Orleans.Logging.Legacy.EventBulkingOptions.DefaultBulkEventInterval
+  - Orleans.Logging.Legacy.EventBulkingOptions.DefaultBulkEventLimit
+  langs:
+  - csharp
+  - vb
+  name: EventBulkingOptions
+  nameWithType: EventBulkingOptions
+  fullName: Orleans.Logging.Legacy.EventBulkingOptions
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Logging/EventBulkingDecoratorLogger.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: EventBulkingOptions
+    path: src/Orleans.Core.Legacy/Logging/EventBulkingDecoratorLogger.cs
+    startLine: 13
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Logging.Legacy
+  summary: "\noptions for event bulking feature\n"
+  example: []
+  syntax:
+    content: 'public class EventBulkingOptions : object'
+    content.vb: >-
+      Public Class EventBulkingOptions
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.Logging.Legacy.EventBulkingOptions.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.Logging.Legacy.EventBulkingOptions.BulkEventLimit
+  commentId: P:Orleans.Logging.Legacy.EventBulkingOptions.BulkEventLimit
+  id: BulkEventLimit
+  parent: Orleans.Logging.Legacy.EventBulkingOptions
+  langs:
+  - csharp
+  - vb
+  name: BulkEventLimit
+  nameWithType: EventBulkingOptions.BulkEventLimit
+  fullName: Orleans.Logging.Legacy.EventBulkingOptions.BulkEventLimit
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Logging/EventBulkingDecoratorLogger.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: BulkEventLimit
+    path: src/Orleans.Core.Legacy/Logging/EventBulkingDecoratorLogger.cs
+    startLine: 20
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Logging.Legacy
+  summary: "\nCount limit for bulk event output.\nIf the same event code is written more than <code>BulkEventLimit</code> times in the <code>BulkEventInterval</code> time period, \nthen only the first <code>BulkEventLimit</code> individual events will be written, plus a count of how bulk event suppressed.\n"
+  example: []
+  syntax:
+    content: public int BulkEventLimit { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property BulkEventLimit As Integer
+  overload: Orleans.Logging.Legacy.EventBulkingOptions.BulkEventLimit*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Logging.Legacy.EventBulkingOptions.DefaultBulkEventLimit
+  commentId: F:Orleans.Logging.Legacy.EventBulkingOptions.DefaultBulkEventLimit
+  id: DefaultBulkEventLimit
+  parent: Orleans.Logging.Legacy.EventBulkingOptions
+  langs:
+  - csharp
+  - vb
+  name: DefaultBulkEventLimit
+  nameWithType: EventBulkingOptions.DefaultBulkEventLimit
+  fullName: Orleans.Logging.Legacy.EventBulkingOptions.DefaultBulkEventLimit
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Logging/EventBulkingDecoratorLogger.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: DefaultBulkEventLimit
+    path: src/Orleans.Core.Legacy/Logging/EventBulkingDecoratorLogger.cs
+    startLine: 25
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Logging.Legacy
+  summary: "\nDefault bulk event limit. \n"
+  example: []
+  syntax:
+    content: public const int DefaultBulkEventLimit = null
+    return:
+      type: System.Int32
+    content.vb: Public Const DefaultBulkEventLimit As Integer = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Orleans.Logging.Legacy.EventBulkingOptions.BulkEventInterval
+  commentId: P:Orleans.Logging.Legacy.EventBulkingOptions.BulkEventInterval
+  id: BulkEventInterval
+  parent: Orleans.Logging.Legacy.EventBulkingOptions
+  langs:
+  - csharp
+  - vb
+  name: BulkEventInterval
+  nameWithType: EventBulkingOptions.BulkEventInterval
+  fullName: Orleans.Logging.Legacy.EventBulkingOptions.BulkEventInterval
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Logging/EventBulkingDecoratorLogger.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: BulkEventInterval
+    path: src/Orleans.Core.Legacy/Logging/EventBulkingDecoratorLogger.cs
+    startLine: 32
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Logging.Legacy
+  summary: "\nTime limit for bulk event output.\nIf the same event code is written more than <code>BulkEventLimit</code> times in the <code>BulkEventInterval</code> time period, \nthen only the first <code>BulkEventLimit</code> individual events will be written, plus a count of how bulk event suppressed.\n"
+  example: []
+  syntax:
+    content: public TimeSpan BulkEventInterval { get; set; }
+    parameters: []
+    return:
+      type: TimeSpan
+    content.vb: Public Property BulkEventInterval As TimeSpan
+  overload: Orleans.Logging.Legacy.EventBulkingOptions.BulkEventInterval*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Logging.Legacy.EventBulkingOptions.DefaultBulkEventInterval
+  commentId: F:Orleans.Logging.Legacy.EventBulkingOptions.DefaultBulkEventInterval
+  id: DefaultBulkEventInterval
+  parent: Orleans.Logging.Legacy.EventBulkingOptions
+  langs:
+  - csharp
+  - vb
+  name: DefaultBulkEventInterval
+  nameWithType: EventBulkingOptions.DefaultBulkEventInterval
+  fullName: Orleans.Logging.Legacy.EventBulkingOptions.DefaultBulkEventInterval
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Logging/EventBulkingDecoratorLogger.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: DefaultBulkEventInterval
+    path: src/Orleans.Core.Legacy/Logging/EventBulkingDecoratorLogger.cs
+    startLine: 37
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Logging.Legacy
+  summary: "\nDefault bulk event interval\n"
+  example: []
+  syntax:
+    content: public static readonly TimeSpan DefaultBulkEventInterval
+    return:
+      type: TimeSpan
+    content.vb: Public Shared ReadOnly DefaultBulkEventInterval As TimeSpan
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+references:
+- uid: Orleans.Logging.Legacy
+  commentId: N:Orleans.Logging.Legacy
+  isExternal: false
+  name: Orleans.Logging.Legacy
+  nameWithType: Orleans.Logging.Legacy
+  fullName: Orleans.Logging.Legacy
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Logging.Legacy.EventBulkingOptions.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<EventBulkingOptions>()
+  nameWithType: ImmutableExt.AsImmutable<EventBulkingOptions>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Logging.Legacy.EventBulkingOptions>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of EventBulkingOptions)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Logging.Legacy.EventBulkingOptions)()
+  name.vb: AsImmutable(Of EventBulkingOptions)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<EventBulkingOptions>
+    nameWithType: ImmutableExt.AsImmutable<EventBulkingOptions>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Logging.Legacy.EventBulkingOptions>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of EventBulkingOptions)
+    nameWithType: ImmutableExt.AsImmutable(Of EventBulkingOptions)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Logging.Legacy.EventBulkingOptions)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Logging.Legacy.EventBulkingOptions.BulkEventLimit*
+  commentId: Overload:Orleans.Logging.Legacy.EventBulkingOptions.BulkEventLimit
+  isExternal: false
+  name: BulkEventLimit
+  nameWithType: EventBulkingOptions.BulkEventLimit
+  fullName: Orleans.Logging.Legacy.EventBulkingOptions.BulkEventLimit
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Orleans.Logging.Legacy.EventBulkingOptions.BulkEventInterval*
+  commentId: Overload:Orleans.Logging.Legacy.EventBulkingOptions.BulkEventInterval
+  isExternal: false
+  name: BulkEventInterval
+  nameWithType: EventBulkingOptions.BulkEventInterval
+  fullName: Orleans.Logging.Legacy.EventBulkingOptions.BulkEventInterval
+- uid: TimeSpan
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: TimeSpan

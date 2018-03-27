@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.AdoNet.Messaging
+  commentId: N:Orleans.AdoNet.Messaging
+  id: Orleans.AdoNet.Messaging
+  children:
+  - Orleans.AdoNet.Messaging.LegacyAdoNetGatewayListProviderConfigurator
+  langs:
+  - csharp
+  - vb
+  name: Orleans.AdoNet.Messaging
+  nameWithType: Orleans.AdoNet.Messaging
+  fullName: Orleans.AdoNet.Messaging
+  type: Namespace
+  assemblies:
+  - Orleans.Clustering.AdoNet
+references:
+- uid: Orleans.AdoNet.Messaging.LegacyAdoNetGatewayListProviderConfigurator
+  commentId: T:Orleans.AdoNet.Messaging.LegacyAdoNetGatewayListProviderConfigurator
+  isExternal: false
+  name: LegacyAdoNetGatewayListProviderConfigurator
+  nameWithType: LegacyAdoNetGatewayListProviderConfigurator
+  fullName: Orleans.AdoNet.Messaging.LegacyAdoNetGatewayListProviderConfigurator

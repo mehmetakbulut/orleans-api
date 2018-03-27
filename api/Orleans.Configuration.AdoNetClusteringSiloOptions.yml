@@ -1,0 +1,240 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Configuration.AdoNetClusteringSiloOptions
+  commentId: T:Orleans.Configuration.AdoNetClusteringSiloOptions
+  id: AdoNetClusteringSiloOptions
+  parent: Orleans.Configuration
+  children:
+  - Orleans.Configuration.AdoNetClusteringSiloOptions.ConnectionString
+  - Orleans.Configuration.AdoNetClusteringSiloOptions.Invariant
+  langs:
+  - csharp
+  - vb
+  name: AdoNetClusteringSiloOptions
+  nameWithType: AdoNetClusteringSiloOptions
+  fullName: Orleans.Configuration.AdoNetClusteringSiloOptions
+  type: Class
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Clustering.AdoNet/Options/AdoNetClusteringSiloOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AdoNetClusteringSiloOptions
+    path: src/AdoNet/Orleans.Clustering.AdoNet/Options/AdoNetClusteringSiloOptions.cs
+    startLine: 5
+  assemblies:
+  - Orleans.Clustering.AdoNet
+  namespace: Orleans.Configuration
+  summary: "\nOptions for ADO.NET clustering\n"
+  example: []
+  syntax:
+    content: 'public class AdoNetClusteringSiloOptions : object'
+    content.vb: >-
+      Public Class AdoNetClusteringSiloOptions
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.Configuration.AdoNetClusteringSiloOptions.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.Configuration.AdoNetClusteringSiloOptions.ConnectionString
+  commentId: P:Orleans.Configuration.AdoNetClusteringSiloOptions.ConnectionString
+  id: ConnectionString
+  parent: Orleans.Configuration.AdoNetClusteringSiloOptions
+  langs:
+  - csharp
+  - vb
+  name: ConnectionString
+  nameWithType: AdoNetClusteringSiloOptions.ConnectionString
+  fullName: Orleans.Configuration.AdoNetClusteringSiloOptions.ConnectionString
+  type: Property
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Clustering.AdoNet/Options/AdoNetClusteringSiloOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ConnectionString
+    path: src/AdoNet/Orleans.Clustering.AdoNet/Options/AdoNetClusteringSiloOptions.cs
+    startLine: 10
+  assemblies:
+  - Orleans.Clustering.AdoNet
+  namespace: Orleans.Configuration
+  summary: "\nConnection string for AdoNet Storage\n"
+  example: []
+  syntax:
+    content: public string ConnectionString { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ConnectionString As String
+  overload: Orleans.Configuration.AdoNetClusteringSiloOptions.ConnectionString*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Configuration.AdoNetClusteringSiloOptions.Invariant
+  commentId: P:Orleans.Configuration.AdoNetClusteringSiloOptions.Invariant
+  id: Invariant
+  parent: Orleans.Configuration.AdoNetClusteringSiloOptions
+  langs:
+  - csharp
+  - vb
+  name: Invariant
+  nameWithType: AdoNetClusteringSiloOptions.Invariant
+  fullName: Orleans.Configuration.AdoNetClusteringSiloOptions.Invariant
+  type: Property
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Clustering.AdoNet/Options/AdoNetClusteringSiloOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Invariant
+    path: src/AdoNet/Orleans.Clustering.AdoNet/Options/AdoNetClusteringSiloOptions.cs
+    startLine: 16
+  assemblies:
+  - Orleans.Clustering.AdoNet
+  namespace: Orleans.Configuration
+  summary: "\nThe invariant name of the connector for membership&apos;s database.\n"
+  example: []
+  syntax:
+    content: public string Invariant { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Invariant As String
+  overload: Orleans.Configuration.AdoNetClusteringSiloOptions.Invariant*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans.Configuration
+  commentId: N:Orleans.Configuration
+  isExternal: false
+  name: Orleans.Configuration
+  nameWithType: Orleans.Configuration
+  fullName: Orleans.Configuration
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Configuration.AdoNetClusteringSiloOptions.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<AdoNetClusteringSiloOptions>()
+  nameWithType: ImmutableExt.AsImmutable<AdoNetClusteringSiloOptions>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Configuration.AdoNetClusteringSiloOptions>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of AdoNetClusteringSiloOptions)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Configuration.AdoNetClusteringSiloOptions)()
+  name.vb: AsImmutable(Of AdoNetClusteringSiloOptions)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<AdoNetClusteringSiloOptions>
+    nameWithType: ImmutableExt.AsImmutable<AdoNetClusteringSiloOptions>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Configuration.AdoNetClusteringSiloOptions>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of AdoNetClusteringSiloOptions)
+    nameWithType: ImmutableExt.AsImmutable(Of AdoNetClusteringSiloOptions)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Configuration.AdoNetClusteringSiloOptions)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Configuration.AdoNetClusteringSiloOptions.ConnectionString*
+  commentId: Overload:Orleans.Configuration.AdoNetClusteringSiloOptions.ConnectionString
+  isExternal: false
+  name: ConnectionString
+  nameWithType: AdoNetClusteringSiloOptions.ConnectionString
+  fullName: Orleans.Configuration.AdoNetClusteringSiloOptions.ConnectionString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Orleans.Configuration.AdoNetClusteringSiloOptions.Invariant*
+  commentId: Overload:Orleans.Configuration.AdoNetClusteringSiloOptions.Invariant
+  isExternal: false
+  name: Invariant
+  nameWithType: AdoNetClusteringSiloOptions.Invariant
+  fullName: Orleans.Configuration.AdoNetClusteringSiloOptions.Invariant

@@ -1,0 +1,1473 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Runtime.Configuration.ClusterConfiguration
+  commentId: T:Orleans.Runtime.Configuration.ClusterConfiguration
+  id: ClusterConfiguration
+  parent: Orleans.Runtime.Configuration
+  children:
+  - Orleans.Runtime.Configuration.ClusterConfiguration.#ctor
+  - Orleans.Runtime.Configuration.ClusterConfiguration.#ctor(TextReader)
+  - Orleans.Runtime.Configuration.ClusterConfiguration.CreateNodeConfigurationForSilo(System.String)
+  - Orleans.Runtime.Configuration.ClusterConfiguration.Defaults
+  - Orleans.Runtime.Configuration.ClusterConfiguration.GetOrCreateNodeConfigurationForSilo(System.String)
+  - Orleans.Runtime.Configuration.ClusterConfiguration.Globals
+  - Orleans.Runtime.Configuration.ClusterConfiguration.Load(TextReader)
+  - Orleans.Runtime.Configuration.ClusterConfiguration.LoadFromFile(System.String)
+  - Orleans.Runtime.Configuration.ClusterConfiguration.LocalhostPrimarySilo(System.Int32,System.Int32)
+  - Orleans.Runtime.Configuration.ClusterConfiguration.Overrides
+  - Orleans.Runtime.Configuration.ClusterConfiguration.PrimaryNode
+  - Orleans.Runtime.Configuration.ClusterConfiguration.SourceFile
+  - Orleans.Runtime.Configuration.ClusterConfiguration.StandardLoad
+  - Orleans.Runtime.Configuration.ClusterConfiguration.ToString(System.String)
+  - Orleans.Runtime.Configuration.ClusterConfiguration.TryGetNodeConfigurationForSilo(System.String,Orleans.Runtime.Configuration.NodeConfiguration@)
+  - Orleans.Runtime.Configuration.ClusterConfiguration.Update(System.String)
+  langs:
+  - csharp
+  - vb
+  name: ClusterConfiguration
+  nameWithType: ClusterConfiguration
+  fullName: Orleans.Runtime.Configuration.ClusterConfiguration
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ClusterConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ClusterConfiguration
+    path: src/Orleans.Core.Legacy/Configuration/ClusterConfiguration.cs
+    startLine: 17
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nData object holding Silo configuration parameters.\n"
+  example: []
+  syntax:
+    content: 'public class ClusterConfiguration : object'
+    content.vb: >-
+      Public Class ClusterConfiguration
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.Runtime.Configuration.ClusterConfiguration.Orleans.Runtime.Configuration.ConfigurationExtensions.UseStartupType``1
+  - Orleans.Runtime.Configuration.ClusterConfiguration.Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddLogStorageBasedLogConsistencyProvider(System.String)
+  - Orleans.Runtime.Configuration.ClusterConfiguration.Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddStateStorageBasedLogConsistencyProvider(System.String)
+  - Orleans.Runtime.Configuration.ClusterConfiguration.Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddCustomStorageInterfaceBasedLogConsistencyProvider(System.String,System.String)
+  - Orleans.Runtime.Configuration.ClusterConfiguration.Orleans.Runtime.Configuration.PerfCountersConfigurationExtensions.AddPerfCountersTelemetryConsumer
+  - Orleans.Runtime.Configuration.ClusterConfiguration.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.Runtime.Configuration.ClusterConfiguration.Globals
+  commentId: P:Orleans.Runtime.Configuration.ClusterConfiguration.Globals
+  id: Globals
+  parent: Orleans.Runtime.Configuration.ClusterConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Globals
+  nameWithType: ClusterConfiguration.Globals
+  fullName: Orleans.Runtime.Configuration.ClusterConfiguration.Globals
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ClusterConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Globals
+    path: src/Orleans.Core.Legacy/Configuration/ClusterConfiguration.cs
+    startLine: 23
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nThe global configuration parameters that apply uniformly to all silos.\n"
+  example: []
+  syntax:
+    content: public GlobalConfiguration Globals { get; }
+    parameters: []
+    return:
+      type: Orleans.Runtime.Configuration.GlobalConfiguration
+    content.vb: Public ReadOnly Property Globals As GlobalConfiguration
+  overload: Orleans.Runtime.Configuration.ClusterConfiguration.Globals*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Runtime.Configuration.ClusterConfiguration.Defaults
+  commentId: P:Orleans.Runtime.Configuration.ClusterConfiguration.Defaults
+  id: Defaults
+  parent: Orleans.Runtime.Configuration.ClusterConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Defaults
+  nameWithType: ClusterConfiguration.Defaults
+  fullName: Orleans.Runtime.Configuration.ClusterConfiguration.Defaults
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ClusterConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Defaults
+    path: src/Orleans.Core.Legacy/Configuration/ClusterConfiguration.cs
+    startLine: 29
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nThe default configuration parameters that apply to each and every silo. \nThese can be over-written on a per silo basis.\n"
+  example: []
+  syntax:
+    content: public NodeConfiguration Defaults { get; }
+    parameters: []
+    return:
+      type: Orleans.Runtime.Configuration.NodeConfiguration
+    content.vb: Public ReadOnly Property Defaults As NodeConfiguration
+  overload: Orleans.Runtime.Configuration.ClusterConfiguration.Defaults*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Runtime.Configuration.ClusterConfiguration.SourceFile
+  commentId: P:Orleans.Runtime.Configuration.ClusterConfiguration.SourceFile
+  id: SourceFile
+  parent: Orleans.Runtime.Configuration.ClusterConfiguration
+  langs:
+  - csharp
+  - vb
+  name: SourceFile
+  nameWithType: ClusterConfiguration.SourceFile
+  fullName: Orleans.Runtime.Configuration.ClusterConfiguration.SourceFile
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ClusterConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SourceFile
+    path: src/Orleans.Core.Legacy/Configuration/ClusterConfiguration.cs
+    startLine: 34
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nThe configuration file.\n"
+  example: []
+  syntax:
+    content: public string SourceFile { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property SourceFile As String
+  overload: Orleans.Runtime.Configuration.ClusterConfiguration.SourceFile*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Runtime.Configuration.ClusterConfiguration.PrimaryNode
+  commentId: P:Orleans.Runtime.Configuration.ClusterConfiguration.PrimaryNode
+  id: PrimaryNode
+  parent: Orleans.Runtime.Configuration.ClusterConfiguration
+  langs:
+  - csharp
+  - vb
+  name: PrimaryNode
+  nameWithType: ClusterConfiguration.PrimaryNode
+  fullName: Orleans.Runtime.Configuration.ClusterConfiguration.PrimaryNode
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ClusterConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: PrimaryNode
+    path: src/Orleans.Core.Legacy/Configuration/ClusterConfiguration.cs
+    startLine: 40
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nThe Primary Node IP and port (in dev setting).\n"
+  example: []
+  syntax:
+    content: public IPEndPoint PrimaryNode { get; set; }
+    parameters: []
+    return:
+      type: IPEndPoint
+    content.vb: Public Property PrimaryNode As IPEndPoint
+  overload: Orleans.Runtime.Configuration.ClusterConfiguration.PrimaryNode*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.ClusterConfiguration.Overrides
+  commentId: P:Orleans.Runtime.Configuration.ClusterConfiguration.Overrides
+  id: Overrides
+  parent: Orleans.Runtime.Configuration.ClusterConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Overrides
+  nameWithType: ClusterConfiguration.Overrides
+  fullName: Orleans.Runtime.Configuration.ClusterConfiguration.Overrides
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ClusterConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Overrides
+    path: src/Orleans.Core.Legacy/Configuration/ClusterConfiguration.cs
+    startLine: 45
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nPer silo configuration parameters overrides.\n"
+  example: []
+  syntax:
+    content: public IDictionary<string, NodeConfiguration> Overrides { get; }
+    parameters: []
+    return:
+      type: IDictionary{System.String,Orleans.Runtime.Configuration.NodeConfiguration}
+    content.vb: Public ReadOnly Property Overrides As IDictionary(Of String, NodeConfiguration)
+  overload: Orleans.Runtime.Configuration.ClusterConfiguration.Overrides*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Runtime.Configuration.ClusterConfiguration.#ctor
+  commentId: M:Orleans.Runtime.Configuration.ClusterConfiguration.#ctor
+  id: '#ctor'
+  parent: Orleans.Runtime.Configuration.ClusterConfiguration
+  langs:
+  - csharp
+  - vb
+  name: ClusterConfiguration()
+  nameWithType: ClusterConfiguration.ClusterConfiguration()
+  fullName: Orleans.Runtime.Configuration.ClusterConfiguration.ClusterConfiguration()
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ClusterConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Core.Legacy/Configuration/ClusterConfiguration.cs
+    startLine: 54
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nClusterConfiguration constructor.\n"
+  example: []
+  syntax:
+    content: public ClusterConfiguration()
+    content.vb: Public Sub New
+  overload: Orleans.Runtime.Configuration.ClusterConfiguration.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.ClusterConfiguration.#ctor(TextReader)
+  commentId: M:Orleans.Runtime.Configuration.ClusterConfiguration.#ctor(TextReader)
+  id: '#ctor(TextReader)'
+  parent: Orleans.Runtime.Configuration.ClusterConfiguration
+  langs:
+  - csharp
+  - vb
+  name: ClusterConfiguration(TextReader)
+  nameWithType: ClusterConfiguration.ClusterConfiguration(TextReader)
+  fullName: Orleans.Runtime.Configuration.ClusterConfiguration.ClusterConfiguration(TextReader)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ClusterConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Core.Legacy/Configuration/ClusterConfiguration.cs
+    startLine: 62
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nClusterConfiguration constructor.\n"
+  example: []
+  syntax:
+    content: public ClusterConfiguration(TextReader input)
+    parameters:
+    - id: input
+      type: TextReader
+    content.vb: Public Sub New(input As TextReader)
+  overload: Orleans.Runtime.Configuration.ClusterConfiguration.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.ClusterConfiguration.Load(TextReader)
+  commentId: M:Orleans.Runtime.Configuration.ClusterConfiguration.Load(TextReader)
+  id: Load(TextReader)
+  parent: Orleans.Runtime.Configuration.ClusterConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Load(TextReader)
+  nameWithType: ClusterConfiguration.Load(TextReader)
+  fullName: Orleans.Runtime.Configuration.ClusterConfiguration.Load(TextReader)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ClusterConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Load
+    path: src/Orleans.Core.Legacy/Configuration/ClusterConfiguration.cs
+    startLine: 81
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nLoads configuration from a given input text reader.\n"
+  example: []
+  syntax:
+    content: public void Load(TextReader input)
+    parameters:
+    - id: input
+      type: TextReader
+      description: The TextReader to use.
+    content.vb: Public Sub Load(input As TextReader)
+  overload: Orleans.Runtime.Configuration.ClusterConfiguration.Load*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.ClusterConfiguration.LoadFromFile(System.String)
+  commentId: M:Orleans.Runtime.Configuration.ClusterConfiguration.LoadFromFile(System.String)
+  id: LoadFromFile(System.String)
+  parent: Orleans.Runtime.Configuration.ClusterConfiguration
+  langs:
+  - csharp
+  - vb
+  name: LoadFromFile(String)
+  nameWithType: ClusterConfiguration.LoadFromFile(String)
+  fullName: Orleans.Runtime.Configuration.ClusterConfiguration.LoadFromFile(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ClusterConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: LoadFromFile
+    path: src/Orleans.Core.Legacy/Configuration/ClusterConfiguration.cs
+    startLine: 194
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: Loads the configuration from a file
+  example: []
+  syntax:
+    content: public void LoadFromFile(string fileName)
+    parameters:
+    - id: fileName
+      type: System.String
+      description: The file path.
+    content.vb: Public Sub LoadFromFile(fileName As String)
+  overload: Orleans.Runtime.Configuration.ClusterConfiguration.LoadFromFile*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.ClusterConfiguration.TryGetNodeConfigurationForSilo(System.String,Orleans.Runtime.Configuration.NodeConfiguration@)
+  commentId: M:Orleans.Runtime.Configuration.ClusterConfiguration.TryGetNodeConfigurationForSilo(System.String,Orleans.Runtime.Configuration.NodeConfiguration@)
+  id: TryGetNodeConfigurationForSilo(System.String,Orleans.Runtime.Configuration.NodeConfiguration@)
+  parent: Orleans.Runtime.Configuration.ClusterConfiguration
+  langs:
+  - csharp
+  - vb
+  name: TryGetNodeConfigurationForSilo(String, out NodeConfiguration)
+  nameWithType: ClusterConfiguration.TryGetNodeConfigurationForSilo(String, out NodeConfiguration)
+  fullName: Orleans.Runtime.Configuration.ClusterConfiguration.TryGetNodeConfigurationForSilo(System.String, out Orleans.Runtime.Configuration.NodeConfiguration)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ClusterConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: TryGetNodeConfigurationForSilo
+    path: src/Orleans.Core.Legacy/Configuration/ClusterConfiguration.cs
+    startLine: 209
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nObtains the configuration for a given silo.\n"
+  example: []
+  syntax:
+    content: public bool TryGetNodeConfigurationForSilo(string siloName, out NodeConfiguration siloNode)
+    parameters:
+    - id: siloName
+      type: System.String
+      description: Silo name.
+    - id: siloNode
+      type: Orleans.Runtime.Configuration.NodeConfiguration
+      description: NodeConfiguration associated with the specified silo.
+    return:
+      type: System.Boolean
+      description: true if node was found
+    content.vb: Public Function TryGetNodeConfigurationForSilo(siloName As String, ByRef siloNode As NodeConfiguration) As Boolean
+  overload: Orleans.Runtime.Configuration.ClusterConfiguration.TryGetNodeConfigurationForSilo*
+  nameWithType.vb: ClusterConfiguration.TryGetNodeConfigurationForSilo(String, ByRef NodeConfiguration)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.Runtime.Configuration.ClusterConfiguration.TryGetNodeConfigurationForSilo(System.String, ByRef Orleans.Runtime.Configuration.NodeConfiguration)
+  name.vb: TryGetNodeConfigurationForSilo(String, ByRef NodeConfiguration)
+- uid: Orleans.Runtime.Configuration.ClusterConfiguration.CreateNodeConfigurationForSilo(System.String)
+  commentId: M:Orleans.Runtime.Configuration.ClusterConfiguration.CreateNodeConfigurationForSilo(System.String)
+  id: CreateNodeConfigurationForSilo(System.String)
+  parent: Orleans.Runtime.Configuration.ClusterConfiguration
+  langs:
+  - csharp
+  - vb
+  name: CreateNodeConfigurationForSilo(String)
+  nameWithType: ClusterConfiguration.CreateNodeConfigurationForSilo(String)
+  fullName: Orleans.Runtime.Configuration.ClusterConfiguration.CreateNodeConfigurationForSilo(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ClusterConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: CreateNodeConfigurationForSilo
+    path: src/Orleans.Core.Legacy/Configuration/ClusterConfiguration.cs
+    startLine: 219
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nCreates a configuration node for a given silo.\n"
+  example: []
+  syntax:
+    content: public NodeConfiguration CreateNodeConfigurationForSilo(string siloName)
+    parameters:
+    - id: siloName
+      type: System.String
+      description: Silo name.
+    return:
+      type: Orleans.Runtime.Configuration.NodeConfiguration
+      description: NodeConfiguration associated with the specified silo.
+    content.vb: Public Function CreateNodeConfigurationForSilo(siloName As String) As NodeConfiguration
+  overload: Orleans.Runtime.Configuration.ClusterConfiguration.CreateNodeConfigurationForSilo*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.ClusterConfiguration.GetOrCreateNodeConfigurationForSilo(System.String)
+  commentId: M:Orleans.Runtime.Configuration.ClusterConfiguration.GetOrCreateNodeConfigurationForSilo(System.String)
+  id: GetOrCreateNodeConfigurationForSilo(System.String)
+  parent: Orleans.Runtime.Configuration.ClusterConfiguration
+  langs:
+  - csharp
+  - vb
+  name: GetOrCreateNodeConfigurationForSilo(String)
+  nameWithType: ClusterConfiguration.GetOrCreateNodeConfigurationForSilo(String)
+  fullName: Orleans.Runtime.Configuration.ClusterConfiguration.GetOrCreateNodeConfigurationForSilo(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ClusterConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetOrCreateNodeConfigurationForSilo
+    path: src/Orleans.Core.Legacy/Configuration/ClusterConfiguration.cs
+    startLine: 232
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nCreates a node config for the specified silo if one does not exist.  Returns existing node if one already exists\n"
+  example: []
+  syntax:
+    content: public NodeConfiguration GetOrCreateNodeConfigurationForSilo(string siloName)
+    parameters:
+    - id: siloName
+      type: System.String
+      description: Silo name.
+    return:
+      type: Orleans.Runtime.Configuration.NodeConfiguration
+      description: NodeConfiguration associated with the specified silo.
+    content.vb: Public Function GetOrCreateNodeConfigurationForSilo(siloName As String) As NodeConfiguration
+  overload: Orleans.Runtime.Configuration.ClusterConfiguration.GetOrCreateNodeConfigurationForSilo*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.ClusterConfiguration.StandardLoad
+  commentId: M:Orleans.Runtime.Configuration.ClusterConfiguration.StandardLoad
+  id: StandardLoad
+  parent: Orleans.Runtime.Configuration.ClusterConfiguration
+  langs:
+  - csharp
+  - vb
+  name: StandardLoad()
+  nameWithType: ClusterConfiguration.StandardLoad()
+  fullName: Orleans.Runtime.Configuration.ClusterConfiguration.StandardLoad()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ClusterConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: StandardLoad
+    path: src/Orleans.Core.Legacy/Configuration/ClusterConfiguration.cs
+    startLine: 254
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nLoads the configuration from the standard paths\n"
+  example: []
+  syntax:
+    content: public void StandardLoad()
+    content.vb: Public Sub StandardLoad
+  overload: Orleans.Runtime.Configuration.ClusterConfiguration.StandardLoad*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.ClusterConfiguration.Update(System.String)
+  commentId: M:Orleans.Runtime.Configuration.ClusterConfiguration.Update(System.String)
+  id: Update(System.String)
+  parent: Orleans.Runtime.Configuration.ClusterConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Update(String)
+  nameWithType: ClusterConfiguration.Update(String)
+  fullName: Orleans.Runtime.Configuration.ClusterConfiguration.Update(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ClusterConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Update
+    path: src/Orleans.Core.Legacy/Configuration/ClusterConfiguration.cs
+    startLine: 282
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nUpdates existing configuration.\n"
+  example: []
+  syntax:
+    content: public void Update(string input)
+    parameters:
+    - id: input
+      type: System.String
+      description: The input string in XML format to use to update the existing configuration.
+    content.vb: Public Sub Update(input As String)
+  overload: Orleans.Runtime.Configuration.ClusterConfiguration.Update*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.ClusterConfiguration.ToString(System.String)
+  commentId: M:Orleans.Runtime.Configuration.ClusterConfiguration.ToString(System.String)
+  id: ToString(System.String)
+  parent: Orleans.Runtime.Configuration.ClusterConfiguration
+  langs:
+  - csharp
+  - vb
+  name: ToString(String)
+  nameWithType: ClusterConfiguration.ToString(String)
+  fullName: Orleans.Runtime.Configuration.ClusterConfiguration.ToString(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ClusterConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ToString
+    path: src/Orleans.Core.Legacy/Configuration/ClusterConfiguration.cs
+    startLine: 394
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nPrints the current config for a given silo.\n"
+  example: []
+  syntax:
+    content: public string ToString(string siloName)
+    parameters:
+    - id: siloName
+      type: System.String
+      description: The name of the silo to print its configuration.
+    return:
+      type: System.String
+      description: ''
+    content.vb: Public Function ToString(siloName As String) As String
+  overload: Orleans.Runtime.Configuration.ClusterConfiguration.ToString*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.ClusterConfiguration.LocalhostPrimarySilo(System.Int32,System.Int32)
+  commentId: M:Orleans.Runtime.Configuration.ClusterConfiguration.LocalhostPrimarySilo(System.Int32,System.Int32)
+  id: LocalhostPrimarySilo(System.Int32,System.Int32)
+  parent: Orleans.Runtime.Configuration.ClusterConfiguration
+  langs:
+  - csharp
+  - vb
+  name: LocalhostPrimarySilo(Int32, Int32)
+  nameWithType: ClusterConfiguration.LocalhostPrimarySilo(Int32, Int32)
+  fullName: Orleans.Runtime.Configuration.ClusterConfiguration.LocalhostPrimarySilo(System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ClusterConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: LocalhostPrimarySilo
+    path: src/Orleans.Core.Legacy/Configuration/ClusterConfiguration.cs
+    startLine: 426
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nReturns a prepopulated ClusterConfiguration object for a primary local silo (for testing)\n"
+  example: []
+  syntax:
+    content: public static ClusterConfiguration LocalhostPrimarySilo(int siloPort = 22222, int gatewayPort = 40000)
+    parameters:
+    - id: siloPort
+      type: System.Int32
+      description: TCP port for silo to silo communication
+    - id: gatewayPort
+      type: System.Int32
+      description: Client gateway TCP port
+    return:
+      type: Orleans.Runtime.Configuration.ClusterConfiguration
+      description: ClusterConfiguration object that can be passed to Silo or SiloHost classes for initialization
+    content.vb: Public Shared Function LocalhostPrimarySilo(siloPort As Integer = 22222, gatewayPort As Integer = 40000) As ClusterConfiguration
+  overload: Orleans.Runtime.Configuration.ClusterConfiguration.LocalhostPrimarySilo*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Orleans.Runtime.Configuration
+  commentId: N:Orleans.Runtime.Configuration
+  isExternal: false
+  name: Orleans.Runtime.Configuration
+  nameWithType: Orleans.Runtime.Configuration
+  fullName: Orleans.Runtime.Configuration
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Runtime.Configuration.ClusterConfiguration.Orleans.Runtime.Configuration.ConfigurationExtensions.UseStartupType``1
+  commentId: M:Orleans.Runtime.Configuration.ConfigurationExtensions.UseStartupType``1(Orleans.Runtime.Configuration.ClusterConfiguration)
+  parent: Orleans.Runtime.Configuration.ConfigurationExtensions
+  definition: Orleans.Runtime.Configuration.ConfigurationExtensions.UseStartupType``1(Orleans.Runtime.Configuration.ClusterConfiguration)
+  name: UseStartupType<TStartup>()
+  nameWithType: ConfigurationExtensions.UseStartupType<TStartup>()
+  fullName: Orleans.Runtime.Configuration.ConfigurationExtensions.UseStartupType<TStartup>()
+  nameWithType.vb: ConfigurationExtensions.UseStartupType(Of TStartup)()
+  fullName.vb: Orleans.Runtime.Configuration.ConfigurationExtensions.UseStartupType(Of TStartup)()
+  name.vb: UseStartupType(Of TStartup)()
+  spec.csharp:
+  - uid: Orleans.Runtime.Configuration.ConfigurationExtensions.UseStartupType``1
+    name: UseStartupType<TStartup>
+    nameWithType: ConfigurationExtensions.UseStartupType<TStartup>
+    fullName: Orleans.Runtime.Configuration.ConfigurationExtensions.UseStartupType<TStartup>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.Configuration.ConfigurationExtensions.UseStartupType``1
+    name: UseStartupType(Of TStartup)
+    nameWithType: ConfigurationExtensions.UseStartupType(Of TStartup)
+    fullName: Orleans.Runtime.Configuration.ConfigurationExtensions.UseStartupType(Of TStartup)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.Configuration.ClusterConfiguration.Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddLogStorageBasedLogConsistencyProvider(System.String)
+  commentId: M:Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddLogStorageBasedLogConsistencyProvider(Orleans.Runtime.Configuration.ClusterConfiguration,System.String)
+  parent: Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions
+  definition: Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddLogStorageBasedLogConsistencyProvider(Orleans.Runtime.Configuration.ClusterConfiguration,System.String)
+  name: AddLogStorageBasedLogConsistencyProvider(String)
+  nameWithType: LogConsistencyConfigurationExtensions.AddLogStorageBasedLogConsistencyProvider(String)
+  fullName: Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddLogStorageBasedLogConsistencyProvider(System.String)
+  spec.csharp:
+  - uid: Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddLogStorageBasedLogConsistencyProvider(System.String)
+    name: AddLogStorageBasedLogConsistencyProvider
+    nameWithType: LogConsistencyConfigurationExtensions.AddLogStorageBasedLogConsistencyProvider
+    fullName: Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddLogStorageBasedLogConsistencyProvider
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddLogStorageBasedLogConsistencyProvider(System.String)
+    name: AddLogStorageBasedLogConsistencyProvider
+    nameWithType: LogConsistencyConfigurationExtensions.AddLogStorageBasedLogConsistencyProvider
+    fullName: Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddLogStorageBasedLogConsistencyProvider
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.Configuration.ClusterConfiguration.Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddStateStorageBasedLogConsistencyProvider(System.String)
+  commentId: M:Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddStateStorageBasedLogConsistencyProvider(Orleans.Runtime.Configuration.ClusterConfiguration,System.String)
+  parent: Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions
+  definition: Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddStateStorageBasedLogConsistencyProvider(Orleans.Runtime.Configuration.ClusterConfiguration,System.String)
+  name: AddStateStorageBasedLogConsistencyProvider(String)
+  nameWithType: LogConsistencyConfigurationExtensions.AddStateStorageBasedLogConsistencyProvider(String)
+  fullName: Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddStateStorageBasedLogConsistencyProvider(System.String)
+  spec.csharp:
+  - uid: Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddStateStorageBasedLogConsistencyProvider(System.String)
+    name: AddStateStorageBasedLogConsistencyProvider
+    nameWithType: LogConsistencyConfigurationExtensions.AddStateStorageBasedLogConsistencyProvider
+    fullName: Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddStateStorageBasedLogConsistencyProvider
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddStateStorageBasedLogConsistencyProvider(System.String)
+    name: AddStateStorageBasedLogConsistencyProvider
+    nameWithType: LogConsistencyConfigurationExtensions.AddStateStorageBasedLogConsistencyProvider
+    fullName: Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddStateStorageBasedLogConsistencyProvider
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.Configuration.ClusterConfiguration.Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddCustomStorageInterfaceBasedLogConsistencyProvider(System.String,System.String)
+  commentId: M:Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddCustomStorageInterfaceBasedLogConsistencyProvider(Orleans.Runtime.Configuration.ClusterConfiguration,System.String,System.String)
+  parent: Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions
+  definition: Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddCustomStorageInterfaceBasedLogConsistencyProvider(Orleans.Runtime.Configuration.ClusterConfiguration,System.String,System.String)
+  name: AddCustomStorageInterfaceBasedLogConsistencyProvider(String, String)
+  nameWithType: LogConsistencyConfigurationExtensions.AddCustomStorageInterfaceBasedLogConsistencyProvider(String, String)
+  fullName: Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddCustomStorageInterfaceBasedLogConsistencyProvider(System.String, System.String)
+  spec.csharp:
+  - uid: Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddCustomStorageInterfaceBasedLogConsistencyProvider(System.String,System.String)
+    name: AddCustomStorageInterfaceBasedLogConsistencyProvider
+    nameWithType: LogConsistencyConfigurationExtensions.AddCustomStorageInterfaceBasedLogConsistencyProvider
+    fullName: Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddCustomStorageInterfaceBasedLogConsistencyProvider
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddCustomStorageInterfaceBasedLogConsistencyProvider(System.String,System.String)
+    name: AddCustomStorageInterfaceBasedLogConsistencyProvider
+    nameWithType: LogConsistencyConfigurationExtensions.AddCustomStorageInterfaceBasedLogConsistencyProvider
+    fullName: Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddCustomStorageInterfaceBasedLogConsistencyProvider
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.Configuration.ClusterConfiguration.Orleans.Runtime.Configuration.PerfCountersConfigurationExtensions.AddPerfCountersTelemetryConsumer
+  commentId: M:Orleans.Runtime.Configuration.PerfCountersConfigurationExtensions.AddPerfCountersTelemetryConsumer(Orleans.Runtime.Configuration.ClusterConfiguration)
+  parent: Orleans.Runtime.Configuration.PerfCountersConfigurationExtensions
+  definition: Orleans.Runtime.Configuration.PerfCountersConfigurationExtensions.AddPerfCountersTelemetryConsumer(Orleans.Runtime.Configuration.ClusterConfiguration)
+  name: AddPerfCountersTelemetryConsumer()
+  nameWithType: PerfCountersConfigurationExtensions.AddPerfCountersTelemetryConsumer()
+  fullName: Orleans.Runtime.Configuration.PerfCountersConfigurationExtensions.AddPerfCountersTelemetryConsumer()
+  spec.csharp:
+  - uid: Orleans.Runtime.Configuration.PerfCountersConfigurationExtensions.AddPerfCountersTelemetryConsumer
+    name: AddPerfCountersTelemetryConsumer
+    nameWithType: PerfCountersConfigurationExtensions.AddPerfCountersTelemetryConsumer
+    fullName: Orleans.Runtime.Configuration.PerfCountersConfigurationExtensions.AddPerfCountersTelemetryConsumer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.Configuration.PerfCountersConfigurationExtensions.AddPerfCountersTelemetryConsumer
+    name: AddPerfCountersTelemetryConsumer
+    nameWithType: PerfCountersConfigurationExtensions.AddPerfCountersTelemetryConsumer
+    fullName: Orleans.Runtime.Configuration.PerfCountersConfigurationExtensions.AddPerfCountersTelemetryConsumer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.Configuration.ClusterConfiguration.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<ClusterConfiguration>()
+  nameWithType: ImmutableExt.AsImmutable<ClusterConfiguration>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.Configuration.ClusterConfiguration>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of ClusterConfiguration)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.Configuration.ClusterConfiguration)()
+  name.vb: AsImmutable(Of ClusterConfiguration)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<ClusterConfiguration>
+    nameWithType: ImmutableExt.AsImmutable<ClusterConfiguration>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.Configuration.ClusterConfiguration>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of ClusterConfiguration)
+    nameWithType: ImmutableExt.AsImmutable(Of ClusterConfiguration)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.Configuration.ClusterConfiguration)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Runtime.Configuration.ConfigurationExtensions.UseStartupType``1(Orleans.Runtime.Configuration.ClusterConfiguration)
+  commentId: M:Orleans.Runtime.Configuration.ConfigurationExtensions.UseStartupType``1(Orleans.Runtime.Configuration.ClusterConfiguration)
+  isExternal: false
+  name: UseStartupType<TStartup>(ClusterConfiguration)
+  nameWithType: ConfigurationExtensions.UseStartupType<TStartup>(ClusterConfiguration)
+  fullName: Orleans.Runtime.Configuration.ConfigurationExtensions.UseStartupType<TStartup>(Orleans.Runtime.Configuration.ClusterConfiguration)
+  nameWithType.vb: ConfigurationExtensions.UseStartupType(Of TStartup)(ClusterConfiguration)
+  fullName.vb: Orleans.Runtime.Configuration.ConfigurationExtensions.UseStartupType(Of TStartup)(Orleans.Runtime.Configuration.ClusterConfiguration)
+  name.vb: UseStartupType(Of TStartup)(ClusterConfiguration)
+  spec.csharp:
+  - uid: Orleans.Runtime.Configuration.ConfigurationExtensions.UseStartupType``1(Orleans.Runtime.Configuration.ClusterConfiguration)
+    name: UseStartupType<TStartup>
+    nameWithType: ConfigurationExtensions.UseStartupType<TStartup>
+    fullName: Orleans.Runtime.Configuration.ConfigurationExtensions.UseStartupType<TStartup>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.Configuration.ClusterConfiguration
+    name: ClusterConfiguration
+    nameWithType: ClusterConfiguration
+    fullName: Orleans.Runtime.Configuration.ClusterConfiguration
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.Configuration.ConfigurationExtensions.UseStartupType``1(Orleans.Runtime.Configuration.ClusterConfiguration)
+    name: UseStartupType(Of TStartup)
+    nameWithType: ConfigurationExtensions.UseStartupType(Of TStartup)
+    fullName: Orleans.Runtime.Configuration.ConfigurationExtensions.UseStartupType(Of TStartup)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.Configuration.ClusterConfiguration
+    name: ClusterConfiguration
+    nameWithType: ClusterConfiguration
+    fullName: Orleans.Runtime.Configuration.ClusterConfiguration
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.Configuration.ConfigurationExtensions
+  commentId: T:Orleans.Runtime.Configuration.ConfigurationExtensions
+  parent: Orleans.Runtime.Configuration
+  isExternal: false
+  name: ConfigurationExtensions
+  nameWithType: ConfigurationExtensions
+  fullName: Orleans.Runtime.Configuration.ConfigurationExtensions
+- uid: Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddLogStorageBasedLogConsistencyProvider(Orleans.Runtime.Configuration.ClusterConfiguration,System.String)
+  commentId: M:Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddLogStorageBasedLogConsistencyProvider(Orleans.Runtime.Configuration.ClusterConfiguration,System.String)
+  isExternal: true
+  name: AddLogStorageBasedLogConsistencyProvider(ClusterConfiguration, String)
+  nameWithType: LogConsistencyConfigurationExtensions.AddLogStorageBasedLogConsistencyProvider(ClusterConfiguration, String)
+  fullName: Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddLogStorageBasedLogConsistencyProvider(Orleans.Runtime.Configuration.ClusterConfiguration, System.String)
+  spec.csharp:
+  - uid: Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddLogStorageBasedLogConsistencyProvider(Orleans.Runtime.Configuration.ClusterConfiguration,System.String)
+    name: AddLogStorageBasedLogConsistencyProvider
+    nameWithType: LogConsistencyConfigurationExtensions.AddLogStorageBasedLogConsistencyProvider
+    fullName: Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddLogStorageBasedLogConsistencyProvider
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.Configuration.ClusterConfiguration
+    name: ClusterConfiguration
+    nameWithType: ClusterConfiguration
+    fullName: Orleans.Runtime.Configuration.ClusterConfiguration
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddLogStorageBasedLogConsistencyProvider(Orleans.Runtime.Configuration.ClusterConfiguration,System.String)
+    name: AddLogStorageBasedLogConsistencyProvider
+    nameWithType: LogConsistencyConfigurationExtensions.AddLogStorageBasedLogConsistencyProvider
+    fullName: Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddLogStorageBasedLogConsistencyProvider
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.Configuration.ClusterConfiguration
+    name: ClusterConfiguration
+    nameWithType: ClusterConfiguration
+    fullName: Orleans.Runtime.Configuration.ClusterConfiguration
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions
+  commentId: T:Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions
+  parent: Orleans.Runtime.Configuration
+  isExternal: false
+  name: LogConsistencyConfigurationExtensions
+  nameWithType: LogConsistencyConfigurationExtensions
+  fullName: Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions
+- uid: Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddStateStorageBasedLogConsistencyProvider(Orleans.Runtime.Configuration.ClusterConfiguration,System.String)
+  commentId: M:Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddStateStorageBasedLogConsistencyProvider(Orleans.Runtime.Configuration.ClusterConfiguration,System.String)
+  isExternal: true
+  name: AddStateStorageBasedLogConsistencyProvider(ClusterConfiguration, String)
+  nameWithType: LogConsistencyConfigurationExtensions.AddStateStorageBasedLogConsistencyProvider(ClusterConfiguration, String)
+  fullName: Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddStateStorageBasedLogConsistencyProvider(Orleans.Runtime.Configuration.ClusterConfiguration, System.String)
+  spec.csharp:
+  - uid: Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddStateStorageBasedLogConsistencyProvider(Orleans.Runtime.Configuration.ClusterConfiguration,System.String)
+    name: AddStateStorageBasedLogConsistencyProvider
+    nameWithType: LogConsistencyConfigurationExtensions.AddStateStorageBasedLogConsistencyProvider
+    fullName: Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddStateStorageBasedLogConsistencyProvider
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.Configuration.ClusterConfiguration
+    name: ClusterConfiguration
+    nameWithType: ClusterConfiguration
+    fullName: Orleans.Runtime.Configuration.ClusterConfiguration
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddStateStorageBasedLogConsistencyProvider(Orleans.Runtime.Configuration.ClusterConfiguration,System.String)
+    name: AddStateStorageBasedLogConsistencyProvider
+    nameWithType: LogConsistencyConfigurationExtensions.AddStateStorageBasedLogConsistencyProvider
+    fullName: Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddStateStorageBasedLogConsistencyProvider
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.Configuration.ClusterConfiguration
+    name: ClusterConfiguration
+    nameWithType: ClusterConfiguration
+    fullName: Orleans.Runtime.Configuration.ClusterConfiguration
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddCustomStorageInterfaceBasedLogConsistencyProvider(Orleans.Runtime.Configuration.ClusterConfiguration,System.String,System.String)
+  commentId: M:Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddCustomStorageInterfaceBasedLogConsistencyProvider(Orleans.Runtime.Configuration.ClusterConfiguration,System.String,System.String)
+  isExternal: true
+  name: AddCustomStorageInterfaceBasedLogConsistencyProvider(ClusterConfiguration, String, String)
+  nameWithType: LogConsistencyConfigurationExtensions.AddCustomStorageInterfaceBasedLogConsistencyProvider(ClusterConfiguration, String, String)
+  fullName: Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddCustomStorageInterfaceBasedLogConsistencyProvider(Orleans.Runtime.Configuration.ClusterConfiguration, System.String, System.String)
+  spec.csharp:
+  - uid: Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddCustomStorageInterfaceBasedLogConsistencyProvider(Orleans.Runtime.Configuration.ClusterConfiguration,System.String,System.String)
+    name: AddCustomStorageInterfaceBasedLogConsistencyProvider
+    nameWithType: LogConsistencyConfigurationExtensions.AddCustomStorageInterfaceBasedLogConsistencyProvider
+    fullName: Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddCustomStorageInterfaceBasedLogConsistencyProvider
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.Configuration.ClusterConfiguration
+    name: ClusterConfiguration
+    nameWithType: ClusterConfiguration
+    fullName: Orleans.Runtime.Configuration.ClusterConfiguration
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddCustomStorageInterfaceBasedLogConsistencyProvider(Orleans.Runtime.Configuration.ClusterConfiguration,System.String,System.String)
+    name: AddCustomStorageInterfaceBasedLogConsistencyProvider
+    nameWithType: LogConsistencyConfigurationExtensions.AddCustomStorageInterfaceBasedLogConsistencyProvider
+    fullName: Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddCustomStorageInterfaceBasedLogConsistencyProvider
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.Configuration.ClusterConfiguration
+    name: ClusterConfiguration
+    nameWithType: ClusterConfiguration
+    fullName: Orleans.Runtime.Configuration.ClusterConfiguration
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.Configuration.PerfCountersConfigurationExtensions.AddPerfCountersTelemetryConsumer(Orleans.Runtime.Configuration.ClusterConfiguration)
+  commentId: M:Orleans.Runtime.Configuration.PerfCountersConfigurationExtensions.AddPerfCountersTelemetryConsumer(Orleans.Runtime.Configuration.ClusterConfiguration)
+  isExternal: false
+  name: AddPerfCountersTelemetryConsumer(ClusterConfiguration)
+  nameWithType: PerfCountersConfigurationExtensions.AddPerfCountersTelemetryConsumer(ClusterConfiguration)
+  fullName: Orleans.Runtime.Configuration.PerfCountersConfigurationExtensions.AddPerfCountersTelemetryConsumer(Orleans.Runtime.Configuration.ClusterConfiguration)
+  spec.csharp:
+  - uid: Orleans.Runtime.Configuration.PerfCountersConfigurationExtensions.AddPerfCountersTelemetryConsumer(Orleans.Runtime.Configuration.ClusterConfiguration)
+    name: AddPerfCountersTelemetryConsumer
+    nameWithType: PerfCountersConfigurationExtensions.AddPerfCountersTelemetryConsumer
+    fullName: Orleans.Runtime.Configuration.PerfCountersConfigurationExtensions.AddPerfCountersTelemetryConsumer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.Configuration.ClusterConfiguration
+    name: ClusterConfiguration
+    nameWithType: ClusterConfiguration
+    fullName: Orleans.Runtime.Configuration.ClusterConfiguration
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.Configuration.PerfCountersConfigurationExtensions.AddPerfCountersTelemetryConsumer(Orleans.Runtime.Configuration.ClusterConfiguration)
+    name: AddPerfCountersTelemetryConsumer
+    nameWithType: PerfCountersConfigurationExtensions.AddPerfCountersTelemetryConsumer
+    fullName: Orleans.Runtime.Configuration.PerfCountersConfigurationExtensions.AddPerfCountersTelemetryConsumer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.Configuration.ClusterConfiguration
+    name: ClusterConfiguration
+    nameWithType: ClusterConfiguration
+    fullName: Orleans.Runtime.Configuration.ClusterConfiguration
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.Configuration.PerfCountersConfigurationExtensions
+  commentId: T:Orleans.Runtime.Configuration.PerfCountersConfigurationExtensions
+  parent: Orleans.Runtime.Configuration
+  isExternal: false
+  name: PerfCountersConfigurationExtensions
+  nameWithType: PerfCountersConfigurationExtensions
+  fullName: Orleans.Runtime.Configuration.PerfCountersConfigurationExtensions
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Runtime.Configuration.ClusterConfiguration.Globals*
+  commentId: Overload:Orleans.Runtime.Configuration.ClusterConfiguration.Globals
+  isExternal: false
+  name: Globals
+  nameWithType: ClusterConfiguration.Globals
+  fullName: Orleans.Runtime.Configuration.ClusterConfiguration.Globals
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration
+  commentId: T:Orleans.Runtime.Configuration.GlobalConfiguration
+  parent: Orleans.Runtime.Configuration
+  isExternal: false
+  name: GlobalConfiguration
+  nameWithType: GlobalConfiguration
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration
+- uid: Orleans.Runtime.Configuration.ClusterConfiguration.Defaults*
+  commentId: Overload:Orleans.Runtime.Configuration.ClusterConfiguration.Defaults
+  isExternal: false
+  name: Defaults
+  nameWithType: ClusterConfiguration.Defaults
+  fullName: Orleans.Runtime.Configuration.ClusterConfiguration.Defaults
+- uid: Orleans.Runtime.Configuration.NodeConfiguration
+  commentId: T:Orleans.Runtime.Configuration.NodeConfiguration
+  parent: Orleans.Runtime.Configuration
+  isExternal: false
+  name: NodeConfiguration
+  nameWithType: NodeConfiguration
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration
+- uid: Orleans.Runtime.Configuration.ClusterConfiguration.SourceFile*
+  commentId: Overload:Orleans.Runtime.Configuration.ClusterConfiguration.SourceFile
+  isExternal: false
+  name: SourceFile
+  nameWithType: ClusterConfiguration.SourceFile
+  fullName: Orleans.Runtime.Configuration.ClusterConfiguration.SourceFile
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Orleans.Runtime.Configuration.ClusterConfiguration.PrimaryNode*
+  commentId: Overload:Orleans.Runtime.Configuration.ClusterConfiguration.PrimaryNode
+  isExternal: false
+  name: PrimaryNode
+  nameWithType: ClusterConfiguration.PrimaryNode
+  fullName: Orleans.Runtime.Configuration.ClusterConfiguration.PrimaryNode
+- uid: IPEndPoint
+  isExternal: true
+  name: IPEndPoint
+  nameWithType: IPEndPoint
+  fullName: IPEndPoint
+- uid: Orleans.Runtime.Configuration.ClusterConfiguration.Overrides*
+  commentId: Overload:Orleans.Runtime.Configuration.ClusterConfiguration.Overrides
+  isExternal: false
+  name: Overrides
+  nameWithType: ClusterConfiguration.Overrides
+  fullName: Orleans.Runtime.Configuration.ClusterConfiguration.Overrides
+- uid: IDictionary{System.String,Orleans.Runtime.Configuration.NodeConfiguration}
+  commentId: '!:IDictionary{System.String,Orleans.Runtime.Configuration.NodeConfiguration}'
+  definition: IDictionary`2
+  name: IDictionary<String, NodeConfiguration>
+  nameWithType: IDictionary<String, NodeConfiguration>
+  fullName: IDictionary<System.String, Orleans.Runtime.Configuration.NodeConfiguration>
+  nameWithType.vb: IDictionary(Of String, NodeConfiguration)
+  fullName.vb: IDictionary(Of System.String, Orleans.Runtime.Configuration.NodeConfiguration)
+  name.vb: IDictionary(Of String, NodeConfiguration)
+  spec.csharp:
+  - uid: IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.Runtime.Configuration.NodeConfiguration
+    name: NodeConfiguration
+    nameWithType: NodeConfiguration
+    fullName: Orleans.Runtime.Configuration.NodeConfiguration
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.Runtime.Configuration.NodeConfiguration
+    name: NodeConfiguration
+    nameWithType: NodeConfiguration
+    fullName: Orleans.Runtime.Configuration.NodeConfiguration
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IDictionary`2
+  isExternal: true
+  name: IDictionary<, >
+  nameWithType: IDictionary<, >
+  fullName: IDictionary<, >
+  nameWithType.vb: IDictionary(Of , )
+  fullName.vb: IDictionary(Of , )
+  name.vb: IDictionary(Of , )
+  spec.csharp:
+  - uid: IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.Configuration.ClusterConfiguration.#ctor*
+  commentId: Overload:Orleans.Runtime.Configuration.ClusterConfiguration.#ctor
+  isExternal: false
+  name: ClusterConfiguration
+  nameWithType: ClusterConfiguration.ClusterConfiguration
+  fullName: Orleans.Runtime.Configuration.ClusterConfiguration.ClusterConfiguration
+- uid: TextReader
+  isExternal: true
+  name: TextReader
+  nameWithType: TextReader
+  fullName: TextReader
+- uid: Orleans.Runtime.Configuration.ClusterConfiguration.Load*
+  commentId: Overload:Orleans.Runtime.Configuration.ClusterConfiguration.Load
+  isExternal: false
+  name: Load
+  nameWithType: ClusterConfiguration.Load
+  fullName: Orleans.Runtime.Configuration.ClusterConfiguration.Load
+- uid: Orleans.Runtime.Configuration.ClusterConfiguration.LoadFromFile*
+  commentId: Overload:Orleans.Runtime.Configuration.ClusterConfiguration.LoadFromFile
+  isExternal: false
+  name: LoadFromFile
+  nameWithType: ClusterConfiguration.LoadFromFile
+  fullName: Orleans.Runtime.Configuration.ClusterConfiguration.LoadFromFile
+- uid: Orleans.Runtime.Configuration.ClusterConfiguration.TryGetNodeConfigurationForSilo*
+  commentId: Overload:Orleans.Runtime.Configuration.ClusterConfiguration.TryGetNodeConfigurationForSilo
+  isExternal: false
+  name: TryGetNodeConfigurationForSilo
+  nameWithType: ClusterConfiguration.TryGetNodeConfigurationForSilo
+  fullName: Orleans.Runtime.Configuration.ClusterConfiguration.TryGetNodeConfigurationForSilo
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Orleans.Runtime.Configuration.ClusterConfiguration.CreateNodeConfigurationForSilo*
+  commentId: Overload:Orleans.Runtime.Configuration.ClusterConfiguration.CreateNodeConfigurationForSilo
+  isExternal: false
+  name: CreateNodeConfigurationForSilo
+  nameWithType: ClusterConfiguration.CreateNodeConfigurationForSilo
+  fullName: Orleans.Runtime.Configuration.ClusterConfiguration.CreateNodeConfigurationForSilo
+- uid: Orleans.Runtime.Configuration.ClusterConfiguration.GetOrCreateNodeConfigurationForSilo*
+  commentId: Overload:Orleans.Runtime.Configuration.ClusterConfiguration.GetOrCreateNodeConfigurationForSilo
+  isExternal: false
+  name: GetOrCreateNodeConfigurationForSilo
+  nameWithType: ClusterConfiguration.GetOrCreateNodeConfigurationForSilo
+  fullName: Orleans.Runtime.Configuration.ClusterConfiguration.GetOrCreateNodeConfigurationForSilo
+- uid: Orleans.Runtime.Configuration.ClusterConfiguration.StandardLoad*
+  commentId: Overload:Orleans.Runtime.Configuration.ClusterConfiguration.StandardLoad
+  isExternal: false
+  name: StandardLoad
+  nameWithType: ClusterConfiguration.StandardLoad
+  fullName: Orleans.Runtime.Configuration.ClusterConfiguration.StandardLoad
+- uid: Orleans.Runtime.Configuration.ClusterConfiguration.Update*
+  commentId: Overload:Orleans.Runtime.Configuration.ClusterConfiguration.Update
+  isExternal: false
+  name: Update
+  nameWithType: ClusterConfiguration.Update
+  fullName: Orleans.Runtime.Configuration.ClusterConfiguration.Update
+- uid: Orleans.Runtime.Configuration.ClusterConfiguration.ToString*
+  commentId: Overload:Orleans.Runtime.Configuration.ClusterConfiguration.ToString
+  isExternal: false
+  name: ToString
+  nameWithType: ClusterConfiguration.ToString
+  fullName: Orleans.Runtime.Configuration.ClusterConfiguration.ToString
+- uid: Orleans.Runtime.Configuration.ClusterConfiguration.LocalhostPrimarySilo*
+  commentId: Overload:Orleans.Runtime.Configuration.ClusterConfiguration.LocalhostPrimarySilo
+  isExternal: false
+  name: LocalhostPrimarySilo
+  nameWithType: ClusterConfiguration.LocalhostPrimarySilo
+  fullName: Orleans.Runtime.Configuration.ClusterConfiguration.LocalhostPrimarySilo
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Orleans.Runtime.Configuration.ClusterConfiguration
+  commentId: T:Orleans.Runtime.Configuration.ClusterConfiguration
+  parent: Orleans.Runtime.Configuration
+  isExternal: false
+  name: ClusterConfiguration
+  nameWithType: ClusterConfiguration
+  fullName: Orleans.Runtime.Configuration.ClusterConfiguration

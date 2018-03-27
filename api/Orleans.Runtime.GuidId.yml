@@ -1,0 +1,870 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Runtime.GuidId
+  commentId: T:Orleans.Runtime.GuidId
+  id: GuidId
+  parent: Orleans.Runtime
+  children:
+  - Orleans.Runtime.GuidId.CompareTo(Orleans.Runtime.GuidId)
+  - Orleans.Runtime.GuidId.Equals(Orleans.Runtime.GuidId)
+  - Orleans.Runtime.GuidId.Equals(System.Object)
+  - Orleans.Runtime.GuidId.FromParsableString(System.String)
+  - Orleans.Runtime.GuidId.GetGuidId(Guid)
+  - Orleans.Runtime.GuidId.GetHashCode
+  - Orleans.Runtime.GuidId.GetNewGuidId
+  - Orleans.Runtime.GuidId.GetObjectData(SerializationInfo,StreamingContext)
+  - Orleans.Runtime.GuidId.Guid
+  - Orleans.Runtime.GuidId.op_Equality(Orleans.Runtime.GuidId,Orleans.Runtime.GuidId)
+  - Orleans.Runtime.GuidId.op_Inequality(Orleans.Runtime.GuidId,Orleans.Runtime.GuidId)
+  - Orleans.Runtime.GuidId.SerializeToStream(Orleans.Serialization.IBinaryTokenStreamWriter)
+  - Orleans.Runtime.GuidId.ToParsableString
+  - Orleans.Runtime.GuidId.ToString
+  langs:
+  - csharp
+  - vb
+  name: GuidId
+  nameWithType: GuidId
+  fullName: Orleans.Runtime.GuidId
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/IDs/GuidId.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GuidId
+    path: src/Orleans.Core.Abstractions/IDs/GuidId.cs
+    startLine: 12
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  summary: "\nWrapper object around Guid.\nCan be used in places where Guid is optional and in those cases it can be set to null and will not use the storage of an empty Guid struct.\n"
+  example: []
+  syntax:
+    content: 'public sealed class GuidId : IEquatable<GuidId>, IComparable<GuidId>, ISerializable'
+    content.vb: >-
+      Public NotInheritable Class GuidId
+
+          Inherits IEquatable(Of GuidId)
+
+          Implements IComparable(Of GuidId), ISerializable
+  inheritance:
+  - System.Object
+  implements:
+  - IComparable{Orleans.Runtime.GuidId}
+  - ISerializable
+  extensionMethods:
+  - Orleans.Runtime.GuidId.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Orleans.Runtime.GuidId.Guid
+  commentId: F:Orleans.Runtime.GuidId.Guid
+  id: Guid
+  parent: Orleans.Runtime.GuidId
+  langs:
+  - csharp
+  - vb
+  name: Guid
+  nameWithType: GuidId.Guid
+  fullName: Orleans.Runtime.GuidId.Guid
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/IDs/GuidId.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Guid
+    path: src/Orleans.Core.Abstractions/IDs/GuidId.cs
+    startLine: 19
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  syntax:
+    content: public readonly Guid Guid
+    return:
+      type: Guid
+    content.vb: Public ReadOnly Guid As Guid
+  modifiers.csharp:
+  - public
+  - readonly
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Runtime.GuidId.GetNewGuidId
+  commentId: M:Orleans.Runtime.GuidId.GetNewGuidId
+  id: GetNewGuidId
+  parent: Orleans.Runtime.GuidId
+  langs:
+  - csharp
+  - vb
+  name: GetNewGuidId()
+  nameWithType: GuidId.GetNewGuidId()
+  fullName: Orleans.Runtime.GuidId.GetNewGuidId()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/IDs/GuidId.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetNewGuidId
+    path: src/Orleans.Core.Abstractions/IDs/GuidId.cs
+    startLine: 27
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  syntax:
+    content: public static GuidId GetNewGuidId()
+    return:
+      type: Orleans.Runtime.GuidId
+    content.vb: Public Shared Function GetNewGuidId As GuidId
+  overload: Orleans.Runtime.GuidId.GetNewGuidId*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.Runtime.GuidId.GetGuidId(Guid)
+  commentId: M:Orleans.Runtime.GuidId.GetGuidId(Guid)
+  id: GetGuidId(Guid)
+  parent: Orleans.Runtime.GuidId
+  langs:
+  - csharp
+  - vb
+  name: GetGuidId(Guid)
+  nameWithType: GuidId.GetGuidId(Guid)
+  fullName: Orleans.Runtime.GuidId.GetGuidId(Guid)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/IDs/GuidId.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetGuidId
+    path: src/Orleans.Core.Abstractions/IDs/GuidId.cs
+    startLine: 32
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  syntax:
+    content: public static GuidId GetGuidId(Guid guid)
+    parameters:
+    - id: guid
+      type: Guid
+    return:
+      type: Orleans.Runtime.GuidId
+    content.vb: Public Shared Function GetGuidId(guid As Guid) As GuidId
+  overload: Orleans.Runtime.GuidId.GetGuidId*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.Runtime.GuidId.CompareTo(Orleans.Runtime.GuidId)
+  commentId: M:Orleans.Runtime.GuidId.CompareTo(Orleans.Runtime.GuidId)
+  id: CompareTo(Orleans.Runtime.GuidId)
+  parent: Orleans.Runtime.GuidId
+  langs:
+  - csharp
+  - vb
+  name: CompareTo(GuidId)
+  nameWithType: GuidId.CompareTo(GuidId)
+  fullName: Orleans.Runtime.GuidId.CompareTo(Orleans.Runtime.GuidId)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/IDs/GuidId.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: CompareTo
+    path: src/Orleans.Core.Abstractions/IDs/GuidId.cs
+    startLine: 44
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  syntax:
+    content: public int CompareTo(GuidId other)
+    parameters:
+    - id: other
+      type: Orleans.Runtime.GuidId
+    return:
+      type: System.Int32
+    content.vb: Public Function CompareTo(other As GuidId) As Integer
+  overload: Orleans.Runtime.GuidId.CompareTo*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.GuidId.Equals(Orleans.Runtime.GuidId)
+  commentId: M:Orleans.Runtime.GuidId.Equals(Orleans.Runtime.GuidId)
+  id: Equals(Orleans.Runtime.GuidId)
+  parent: Orleans.Runtime.GuidId
+  langs:
+  - csharp
+  - vb
+  name: Equals(GuidId)
+  nameWithType: GuidId.Equals(GuidId)
+  fullName: Orleans.Runtime.GuidId.Equals(Orleans.Runtime.GuidId)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/IDs/GuidId.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Equals
+    path: src/Orleans.Core.Abstractions/IDs/GuidId.cs
+    startLine: 53
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  syntax:
+    content: public bool Equals(GuidId other)
+    parameters:
+    - id: other
+      type: Orleans.Runtime.GuidId
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(other As GuidId) As Boolean
+  overload: Orleans.Runtime.GuidId.Equals*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.GuidId.Equals(System.Object)
+  commentId: M:Orleans.Runtime.GuidId.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Orleans.Runtime.GuidId
+  langs:
+  - csharp
+  - vb
+  name: Equals(Object)
+  nameWithType: GuidId.Equals(Object)
+  fullName: Orleans.Runtime.GuidId.Equals(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/IDs/GuidId.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Equals
+    path: src/Orleans.Core.Abstractions/IDs/GuidId.cs
+    startLine: 60
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overload: Orleans.Runtime.GuidId.Equals*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Orleans.Runtime.GuidId.GetHashCode
+  commentId: M:Orleans.Runtime.GuidId.GetHashCode
+  id: GetHashCode
+  parent: Orleans.Runtime.GuidId
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: GuidId.GetHashCode()
+  fullName: Orleans.Runtime.GuidId.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/IDs/GuidId.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetHashCode
+    path: src/Orleans.Core.Abstractions/IDs/GuidId.cs
+    startLine: 65
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode As Integer
+  overload: Orleans.Runtime.GuidId.GetHashCode*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Orleans.Runtime.GuidId.ToString
+  commentId: M:Orleans.Runtime.GuidId.ToString
+  id: ToString
+  parent: Orleans.Runtime.GuidId
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: GuidId.ToString()
+  fullName: Orleans.Runtime.GuidId.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/IDs/GuidId.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ToString
+    path: src/Orleans.Core.Abstractions/IDs/GuidId.cs
+    startLine: 70
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overload: Orleans.Runtime.GuidId.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Orleans.Runtime.GuidId.ToParsableString
+  commentId: M:Orleans.Runtime.GuidId.ToParsableString
+  id: ToParsableString
+  parent: Orleans.Runtime.GuidId
+  langs:
+  - csharp
+  - vb
+  name: ToParsableString()
+  nameWithType: GuidId.ToParsableString()
+  fullName: Orleans.Runtime.GuidId.ToParsableString()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/IDs/GuidId.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ToParsableString
+    path: src/Orleans.Core.Abstractions/IDs/GuidId.cs
+    startLine: 80
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  syntax:
+    content: public string ToParsableString()
+    return:
+      type: System.String
+    content.vb: Public Function ToParsableString As String
+  overload: Orleans.Runtime.GuidId.ToParsableString*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.GuidId.FromParsableString(System.String)
+  commentId: M:Orleans.Runtime.GuidId.FromParsableString(System.String)
+  id: FromParsableString(System.String)
+  parent: Orleans.Runtime.GuidId
+  langs:
+  - csharp
+  - vb
+  name: FromParsableString(String)
+  nameWithType: GuidId.FromParsableString(String)
+  fullName: Orleans.Runtime.GuidId.FromParsableString(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/IDs/GuidId.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: FromParsableString
+    path: src/Orleans.Core.Abstractions/IDs/GuidId.cs
+    startLine: 85
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  syntax:
+    content: public static GuidId FromParsableString(string guidId)
+    parameters:
+    - id: guidId
+      type: System.String
+    return:
+      type: Orleans.Runtime.GuidId
+    content.vb: Public Shared Function FromParsableString(guidId As String) As GuidId
+  overload: Orleans.Runtime.GuidId.FromParsableString*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.Runtime.GuidId.SerializeToStream(Orleans.Serialization.IBinaryTokenStreamWriter)
+  commentId: M:Orleans.Runtime.GuidId.SerializeToStream(Orleans.Serialization.IBinaryTokenStreamWriter)
+  id: SerializeToStream(Orleans.Serialization.IBinaryTokenStreamWriter)
+  parent: Orleans.Runtime.GuidId
+  langs:
+  - csharp
+  - vb
+  name: SerializeToStream(IBinaryTokenStreamWriter)
+  nameWithType: GuidId.SerializeToStream(IBinaryTokenStreamWriter)
+  fullName: Orleans.Runtime.GuidId.SerializeToStream(Orleans.Serialization.IBinaryTokenStreamWriter)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/IDs/GuidId.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SerializeToStream
+    path: src/Orleans.Core.Abstractions/IDs/GuidId.cs
+    startLine: 91
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  syntax:
+    content: public void SerializeToStream(IBinaryTokenStreamWriter stream)
+    parameters:
+    - id: stream
+      type: Orleans.Serialization.IBinaryTokenStreamWriter
+    content.vb: Public Sub SerializeToStream(stream As IBinaryTokenStreamWriter)
+  overload: Orleans.Runtime.GuidId.SerializeToStream*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.GuidId.op_Equality(Orleans.Runtime.GuidId,Orleans.Runtime.GuidId)
+  commentId: M:Orleans.Runtime.GuidId.op_Equality(Orleans.Runtime.GuidId,Orleans.Runtime.GuidId)
+  id: op_Equality(Orleans.Runtime.GuidId,Orleans.Runtime.GuidId)
+  parent: Orleans.Runtime.GuidId
+  langs:
+  - csharp
+  - vb
+  name: Equality(GuidId, GuidId)
+  nameWithType: GuidId.Equality(GuidId, GuidId)
+  fullName: Orleans.Runtime.GuidId.Equality(Orleans.Runtime.GuidId, Orleans.Runtime.GuidId)
+  type: Operator
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/IDs/GuidId.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: op_Equality
+    path: src/Orleans.Core.Abstractions/IDs/GuidId.cs
+    startLine: 104
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  syntax:
+    content: public static bool operator ==(GuidId a, GuidId b)
+    parameters:
+    - id: a
+      type: Orleans.Runtime.GuidId
+    - id: b
+      type: Orleans.Runtime.GuidId
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(a As GuidId, b As GuidId) As Boolean
+  overload: Orleans.Runtime.GuidId.op_Equality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.Runtime.GuidId.op_Inequality(Orleans.Runtime.GuidId,Orleans.Runtime.GuidId)
+  commentId: M:Orleans.Runtime.GuidId.op_Inequality(Orleans.Runtime.GuidId,Orleans.Runtime.GuidId)
+  id: op_Inequality(Orleans.Runtime.GuidId,Orleans.Runtime.GuidId)
+  parent: Orleans.Runtime.GuidId
+  langs:
+  - csharp
+  - vb
+  name: Inequality(GuidId, GuidId)
+  nameWithType: GuidId.Inequality(GuidId, GuidId)
+  fullName: Orleans.Runtime.GuidId.Inequality(Orleans.Runtime.GuidId, Orleans.Runtime.GuidId)
+  type: Operator
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/IDs/GuidId.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: op_Inequality
+    path: src/Orleans.Core.Abstractions/IDs/GuidId.cs
+    startLine: 112
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  syntax:
+    content: public static bool operator !=(GuidId a, GuidId b)
+    parameters:
+    - id: a
+      type: Orleans.Runtime.GuidId
+    - id: b
+      type: Orleans.Runtime.GuidId
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(a As GuidId, b As GuidId) As Boolean
+  overload: Orleans.Runtime.GuidId.op_Inequality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.Runtime.GuidId.GetObjectData(SerializationInfo,StreamingContext)
+  commentId: M:Orleans.Runtime.GuidId.GetObjectData(SerializationInfo,StreamingContext)
+  id: GetObjectData(SerializationInfo,StreamingContext)
+  parent: Orleans.Runtime.GuidId
+  langs:
+  - csharp
+  - vb
+  name: GetObjectData(SerializationInfo, StreamingContext)
+  nameWithType: GuidId.GetObjectData(SerializationInfo, StreamingContext)
+  fullName: Orleans.Runtime.GuidId.GetObjectData(SerializationInfo, StreamingContext)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/IDs/GuidId.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetObjectData
+    path: src/Orleans.Core.Abstractions/IDs/GuidId.cs
+    startLine: 121
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  syntax:
+    content: public void GetObjectData(SerializationInfo info, StreamingContext context)
+    parameters:
+    - id: info
+      type: SerializationInfo
+    - id: context
+      type: StreamingContext
+    content.vb: Public Sub GetObjectData(info As SerializationInfo, context As StreamingContext)
+  overload: Orleans.Runtime.GuidId.GetObjectData*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans.Runtime
+  commentId: N:Orleans.Runtime
+  isExternal: false
+  name: Orleans.Runtime
+  nameWithType: Orleans.Runtime
+  fullName: Orleans.Runtime
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: IComparable{Orleans.Runtime.GuidId}
+  commentId: '!:IComparable{Orleans.Runtime.GuidId}'
+  definition: IComparable`1
+  name: IComparable<GuidId>
+  nameWithType: IComparable<GuidId>
+  fullName: IComparable<Orleans.Runtime.GuidId>
+  nameWithType.vb: IComparable(Of GuidId)
+  fullName.vb: IComparable(Of Orleans.Runtime.GuidId)
+  name.vb: IComparable(Of GuidId)
+  spec.csharp:
+  - uid: IComparable`1
+    name: IComparable
+    nameWithType: IComparable
+    fullName: IComparable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Orleans.Runtime.GuidId
+    name: GuidId
+    nameWithType: GuidId
+    fullName: Orleans.Runtime.GuidId
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IComparable`1
+    name: IComparable
+    nameWithType: IComparable
+    fullName: IComparable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Orleans.Runtime.GuidId
+    name: GuidId
+    nameWithType: GuidId
+    fullName: Orleans.Runtime.GuidId
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: ISerializable
+  isExternal: true
+  name: ISerializable
+  nameWithType: ISerializable
+  fullName: ISerializable
+- uid: Orleans.Runtime.GuidId.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<GuidId>()
+  nameWithType: ImmutableExt.AsImmutable<GuidId>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.GuidId>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of GuidId)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.GuidId)()
+  name.vb: AsImmutable(Of GuidId)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<GuidId>
+    nameWithType: ImmutableExt.AsImmutable<GuidId>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.GuidId>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of GuidId)
+    nameWithType: ImmutableExt.AsImmutable(Of GuidId)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.GuidId)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: IComparable`1
+  isExternal: true
+  name: IComparable<>
+  nameWithType: IComparable<>
+  fullName: IComparable<>
+  nameWithType.vb: IComparable(Of )
+  fullName.vb: IComparable(Of )
+  name.vb: IComparable(Of )
+  spec.csharp:
+  - uid: IComparable`1
+    name: IComparable
+    nameWithType: IComparable
+    fullName: IComparable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IComparable`1
+    name: IComparable
+    nameWithType: IComparable
+    fullName: IComparable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Guid
+  isExternal: true
+  name: Guid
+  nameWithType: Guid
+  fullName: Guid
+- uid: Orleans.Runtime.GuidId.GetNewGuidId*
+  commentId: Overload:Orleans.Runtime.GuidId.GetNewGuidId
+  isExternal: false
+  name: GetNewGuidId
+  nameWithType: GuidId.GetNewGuidId
+  fullName: Orleans.Runtime.GuidId.GetNewGuidId
+- uid: Orleans.Runtime.GuidId
+  commentId: T:Orleans.Runtime.GuidId
+  parent: Orleans.Runtime
+  isExternal: false
+  name: GuidId
+  nameWithType: GuidId
+  fullName: Orleans.Runtime.GuidId
+- uid: Orleans.Runtime.GuidId.GetGuidId*
+  commentId: Overload:Orleans.Runtime.GuidId.GetGuidId
+  isExternal: false
+  name: GetGuidId
+  nameWithType: GuidId.GetGuidId
+  fullName: Orleans.Runtime.GuidId.GetGuidId
+- uid: Orleans.Runtime.GuidId.CompareTo*
+  commentId: Overload:Orleans.Runtime.GuidId.CompareTo
+  isExternal: false
+  name: CompareTo
+  nameWithType: GuidId.CompareTo
+  fullName: Orleans.Runtime.GuidId.CompareTo
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Orleans.Runtime.GuidId.Equals*
+  commentId: Overload:Orleans.Runtime.GuidId.Equals
+  isExternal: false
+  name: Equals
+  nameWithType: GuidId.Equals
+  fullName: Orleans.Runtime.GuidId.Equals
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Orleans.Runtime.GuidId.GetHashCode*
+  commentId: Overload:Orleans.Runtime.GuidId.GetHashCode
+  isExternal: false
+  name: GetHashCode
+  nameWithType: GuidId.GetHashCode
+  fullName: Orleans.Runtime.GuidId.GetHashCode
+- uid: Orleans.Runtime.GuidId.ToString*
+  commentId: Overload:Orleans.Runtime.GuidId.ToString
+  isExternal: false
+  name: ToString
+  nameWithType: GuidId.ToString
+  fullName: Orleans.Runtime.GuidId.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Orleans.Runtime.GuidId.ToParsableString*
+  commentId: Overload:Orleans.Runtime.GuidId.ToParsableString
+  isExternal: false
+  name: ToParsableString
+  nameWithType: GuidId.ToParsableString
+  fullName: Orleans.Runtime.GuidId.ToParsableString
+- uid: Orleans.Runtime.GuidId.FromParsableString*
+  commentId: Overload:Orleans.Runtime.GuidId.FromParsableString
+  isExternal: false
+  name: FromParsableString
+  nameWithType: GuidId.FromParsableString
+  fullName: Orleans.Runtime.GuidId.FromParsableString
+- uid: Orleans.Runtime.GuidId.SerializeToStream*
+  commentId: Overload:Orleans.Runtime.GuidId.SerializeToStream
+  isExternal: false
+  name: SerializeToStream
+  nameWithType: GuidId.SerializeToStream
+  fullName: Orleans.Runtime.GuidId.SerializeToStream
+- uid: Orleans.Serialization.IBinaryTokenStreamWriter
+  commentId: T:Orleans.Serialization.IBinaryTokenStreamWriter
+  parent: Orleans.Serialization
+  isExternal: false
+  name: IBinaryTokenStreamWriter
+  nameWithType: IBinaryTokenStreamWriter
+  fullName: Orleans.Serialization.IBinaryTokenStreamWriter
+- uid: Orleans.Serialization
+  commentId: N:Orleans.Serialization
+  isExternal: false
+  name: Orleans.Serialization
+  nameWithType: Orleans.Serialization
+  fullName: Orleans.Serialization
+- uid: Orleans.Runtime.GuidId.op_Equality*
+  commentId: Overload:Orleans.Runtime.GuidId.op_Equality
+  isExternal: false
+  name: Equality
+  nameWithType: GuidId.Equality
+  fullName: Orleans.Runtime.GuidId.Equality
+- uid: Orleans.Runtime.GuidId.op_Inequality*
+  commentId: Overload:Orleans.Runtime.GuidId.op_Inequality
+  isExternal: false
+  name: Inequality
+  nameWithType: GuidId.Inequality
+  fullName: Orleans.Runtime.GuidId.Inequality
+- uid: Orleans.Runtime.GuidId.GetObjectData*
+  commentId: Overload:Orleans.Runtime.GuidId.GetObjectData
+  isExternal: false
+  name: GetObjectData
+  nameWithType: GuidId.GetObjectData
+  fullName: Orleans.Runtime.GuidId.GetObjectData
+- uid: SerializationInfo
+  isExternal: true
+  name: SerializationInfo
+  nameWithType: SerializationInfo
+  fullName: SerializationInfo
+- uid: StreamingContext
+  isExternal: true
+  name: StreamingContext
+  nameWithType: StreamingContext
+  fullName: StreamingContext

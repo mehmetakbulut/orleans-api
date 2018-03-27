@@ -1,0 +1,300 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Serialization.ISerializerContext
+  commentId: T:Orleans.Serialization.ISerializerContext
+  id: ISerializerContext
+  parent: Orleans.Serialization
+  children:
+  - Orleans.Serialization.ISerializerContext.AdditionalContext
+  - Orleans.Serialization.ISerializerContext.ServiceProvider
+  langs:
+  - csharp
+  - vb
+  name: ISerializerContext
+  nameWithType: ISerializerContext
+  fullName: Orleans.Serialization.ISerializerContext
+  type: Interface
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Serialization/ISerializerContext.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ISerializerContext
+    path: src/Orleans.Core.Abstractions/Serialization/ISerializerContext.cs
+    startLine: 4
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Serialization
+  syntax:
+    content: public interface ISerializerContext
+    content.vb: Public Interface ISerializerContext
+  extensionMethods:
+  - Orleans.Serialization.ISerializerContext.Orleans.Serialization.SerializerContextExtensions.GetSerializationManager
+  - Orleans.Serialization.ISerializerContext.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Orleans.Serialization.ISerializerContext.ServiceProvider
+  commentId: P:Orleans.Serialization.ISerializerContext.ServiceProvider
+  id: ServiceProvider
+  parent: Orleans.Serialization.ISerializerContext
+  langs:
+  - csharp
+  - vb
+  name: ServiceProvider
+  nameWithType: ISerializerContext.ServiceProvider
+  fullName: Orleans.Serialization.ISerializerContext.ServiceProvider
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Serialization/ISerializerContext.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ServiceProvider
+    path: src/Orleans.Core.Abstractions/Serialization/ISerializerContext.cs
+    startLine: 9
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Serialization
+  summary: "\nGets the service provider.\n"
+  example: []
+  syntax:
+    content: IServiceProvider ServiceProvider { get; }
+    parameters: []
+    return:
+      type: IServiceProvider
+    content.vb: ReadOnly Property ServiceProvider As IServiceProvider
+  overload: Orleans.Serialization.ISerializerContext.ServiceProvider*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Orleans.Serialization.ISerializerContext.AdditionalContext
+  commentId: P:Orleans.Serialization.ISerializerContext.AdditionalContext
+  id: AdditionalContext
+  parent: Orleans.Serialization.ISerializerContext
+  langs:
+  - csharp
+  - vb
+  name: AdditionalContext
+  nameWithType: ISerializerContext.AdditionalContext
+  fullName: Orleans.Serialization.ISerializerContext.AdditionalContext
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Serialization/ISerializerContext.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AdditionalContext
+    path: src/Orleans.Core.Abstractions/Serialization/ISerializerContext.cs
+    startLine: 14
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Serialization
+  summary: "\nGets additional context associated with this instance.\n"
+  example: []
+  syntax:
+    content: object AdditionalContext { get; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: ReadOnly Property AdditionalContext As Object
+  overload: Orleans.Serialization.ISerializerContext.AdditionalContext*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+references:
+- uid: Orleans.Serialization
+  commentId: N:Orleans.Serialization
+  isExternal: false
+  name: Orleans.Serialization
+  nameWithType: Orleans.Serialization
+  fullName: Orleans.Serialization
+- uid: Orleans.Serialization.ISerializerContext.Orleans.Serialization.SerializerContextExtensions.GetSerializationManager
+  commentId: M:Orleans.Serialization.SerializerContextExtensions.GetSerializationManager(Orleans.Serialization.ISerializerContext)
+  parent: Orleans.Serialization.SerializerContextExtensions
+  definition: Orleans.Serialization.SerializerContextExtensions.GetSerializationManager(Orleans.Serialization.ISerializerContext)
+  name: GetSerializationManager()
+  nameWithType: SerializerContextExtensions.GetSerializationManager()
+  fullName: Orleans.Serialization.SerializerContextExtensions.GetSerializationManager()
+  spec.csharp:
+  - uid: Orleans.Serialization.SerializerContextExtensions.GetSerializationManager
+    name: GetSerializationManager
+    nameWithType: SerializerContextExtensions.GetSerializationManager
+    fullName: Orleans.Serialization.SerializerContextExtensions.GetSerializationManager
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Serialization.SerializerContextExtensions.GetSerializationManager
+    name: GetSerializationManager
+    nameWithType: SerializerContextExtensions.GetSerializationManager
+    fullName: Orleans.Serialization.SerializerContextExtensions.GetSerializationManager
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Serialization.ISerializerContext.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<ISerializerContext>()
+  nameWithType: ImmutableExt.AsImmutable<ISerializerContext>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Serialization.ISerializerContext>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of ISerializerContext)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Serialization.ISerializerContext)()
+  name.vb: AsImmutable(Of ISerializerContext)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<ISerializerContext>
+    nameWithType: ImmutableExt.AsImmutable<ISerializerContext>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Serialization.ISerializerContext>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of ISerializerContext)
+    nameWithType: ImmutableExt.AsImmutable(Of ISerializerContext)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Serialization.ISerializerContext)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Serialization.SerializerContextExtensions.GetSerializationManager(Orleans.Serialization.ISerializerContext)
+  commentId: M:Orleans.Serialization.SerializerContextExtensions.GetSerializationManager(Orleans.Serialization.ISerializerContext)
+  isExternal: false
+  name: GetSerializationManager(ISerializerContext)
+  nameWithType: SerializerContextExtensions.GetSerializationManager(ISerializerContext)
+  fullName: Orleans.Serialization.SerializerContextExtensions.GetSerializationManager(Orleans.Serialization.ISerializerContext)
+  spec.csharp:
+  - uid: Orleans.Serialization.SerializerContextExtensions.GetSerializationManager(Orleans.Serialization.ISerializerContext)
+    name: GetSerializationManager
+    nameWithType: SerializerContextExtensions.GetSerializationManager
+    fullName: Orleans.Serialization.SerializerContextExtensions.GetSerializationManager
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Serialization.ISerializerContext
+    name: ISerializerContext
+    nameWithType: ISerializerContext
+    fullName: Orleans.Serialization.ISerializerContext
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Serialization.SerializerContextExtensions.GetSerializationManager(Orleans.Serialization.ISerializerContext)
+    name: GetSerializationManager
+    nameWithType: SerializerContextExtensions.GetSerializationManager
+    fullName: Orleans.Serialization.SerializerContextExtensions.GetSerializationManager
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Serialization.ISerializerContext
+    name: ISerializerContext
+    nameWithType: ISerializerContext
+    fullName: Orleans.Serialization.ISerializerContext
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Serialization.SerializerContextExtensions
+  commentId: T:Orleans.Serialization.SerializerContextExtensions
+  parent: Orleans.Serialization
+  isExternal: false
+  name: SerializerContextExtensions
+  nameWithType: SerializerContextExtensions
+  fullName: Orleans.Serialization.SerializerContextExtensions
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Serialization.ISerializerContext.ServiceProvider*
+  commentId: Overload:Orleans.Serialization.ISerializerContext.ServiceProvider
+  isExternal: false
+  name: ServiceProvider
+  nameWithType: ISerializerContext.ServiceProvider
+  fullName: Orleans.Serialization.ISerializerContext.ServiceProvider
+- uid: IServiceProvider
+  isExternal: true
+  name: IServiceProvider
+  nameWithType: IServiceProvider
+  fullName: IServiceProvider
+- uid: Orleans.Serialization.ISerializerContext.AdditionalContext*
+  commentId: Overload:Orleans.Serialization.ISerializerContext.AdditionalContext
+  isExternal: false
+  name: AdditionalContext
+  nameWithType: ISerializerContext.AdditionalContext
+  fullName: Orleans.Serialization.ISerializerContext.AdditionalContext
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System

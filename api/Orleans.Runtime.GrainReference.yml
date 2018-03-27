@@ -1,0 +1,1345 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Runtime.GrainReference
+  commentId: T:Orleans.Runtime.GrainReference
+  id: GrainReference
+  parent: Orleans.Runtime
+  children:
+  - Orleans.Runtime.GrainReference.#ctor(Orleans.Runtime.GrainReference)
+  - Orleans.Runtime.GrainReference.#ctor(Orleans.Runtime.GrainReference,Orleans.CodeGeneration.InvokeMethodOptions)
+  - Orleans.Runtime.GrainReference.#ctor(SerializationInfo,StreamingContext)
+  - Orleans.Runtime.GrainReference.Equals(Orleans.Runtime.GrainReference)
+  - Orleans.Runtime.GrainReference.Equals(System.Object)
+  - Orleans.Runtime.GrainReference.GetHashCode
+  - Orleans.Runtime.GrainReference.GetMethodName(System.Int32,System.Int32)
+  - Orleans.Runtime.GrainReference.GetObjectData(SerializationInfo,StreamingContext)
+  - Orleans.Runtime.GrainReference.GetUniformHashCode
+  - Orleans.Runtime.GrainReference.InterfaceId
+  - Orleans.Runtime.GrainReference.InterfaceName
+  - Orleans.Runtime.GrainReference.InterfaceVersion
+  - Orleans.Runtime.GrainReference.InvokeMethodAsync``1(System.Int32,System.Object[],Orleans.CodeGeneration.InvokeMethodOptions,Orleans.Runtime.SiloAddress)
+  - Orleans.Runtime.GrainReference.InvokeOneWayMethod(System.Int32,System.Object[],Orleans.CodeGeneration.InvokeMethodOptions,Orleans.Runtime.SiloAddress)
+  - Orleans.Runtime.GrainReference.IsCompatible(System.Int32)
+  - Orleans.Runtime.GrainReference.IsInitializedSystemTarget
+  - Orleans.Runtime.GrainReference.op_Equality(Orleans.Runtime.GrainReference,Orleans.Runtime.GrainReference)
+  - Orleans.Runtime.GrainReference.op_Inequality(Orleans.Runtime.GrainReference,Orleans.Runtime.GrainReference)
+  - Orleans.Runtime.GrainReference.SystemTargetSilo
+  - Orleans.Runtime.GrainReference.ToKeyString
+  - Orleans.Runtime.GrainReference.ToString
+  langs:
+  - csharp
+  - vb
+  name: GrainReference
+  nameWithType: GrainReference
+  fullName: Orleans.Runtime.GrainReference
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Runtime/GrainReference.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GrainReference
+    path: src/Orleans.Core.Abstractions/Runtime/GrainReference.cs
+    startLine: 33
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  summary: "\nThis is the base class for all typed grain references.\n"
+  example: []
+  syntax:
+    content: 'public class GrainReference : object, IAddressable, IEquatable<GrainReference>, ISerializable'
+    content.vb: >-
+      Public Class GrainReference
+
+          Inherits Object
+
+          Implements IAddressable, IEquatable(Of GrainReference), ISerializable
+  inheritance:
+  - System.Object
+  implements:
+  - Orleans.Runtime.IAddressable
+  - IEquatable{Orleans.Runtime.GrainReference}
+  - ISerializable
+  extensionMethods:
+  - Orleans.Runtime.GrainReference.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.Runtime.GrainReference.SystemTargetSilo
+  commentId: F:Orleans.Runtime.GrainReference.SystemTargetSilo
+  id: SystemTargetSilo
+  parent: Orleans.Runtime.GrainReference
+  langs:
+  - csharp
+  - vb
+  name: SystemTargetSilo
+  nameWithType: GrainReference.SystemTargetSilo
+  fullName: Orleans.Runtime.GrainReference.SystemTargetSilo
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Runtime/GrainReference.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SystemTargetSilo
+    path: src/Orleans.Core.Abstractions/Runtime/GrainReference.cs
+    startLine: 72
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  summary: "\nCalled from generated code.\n"
+  example: []
+  syntax:
+    content: protected readonly SiloAddress SystemTargetSilo
+    return:
+      type: Orleans.Runtime.SiloAddress
+    content.vb: Protected ReadOnly SystemTargetSilo As SiloAddress
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Orleans.Runtime.GrainReference.IsInitializedSystemTarget
+  commentId: P:Orleans.Runtime.GrainReference.IsInitializedSystemTarget
+  id: IsInitializedSystemTarget
+  parent: Orleans.Runtime.GrainReference
+  langs:
+  - csharp
+  - vb
+  name: IsInitializedSystemTarget
+  nameWithType: GrainReference.IsInitializedSystemTarget
+  fullName: Orleans.Runtime.GrainReference.IsInitializedSystemTarget
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Runtime/GrainReference.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IsInitializedSystemTarget
+    path: src/Orleans.Core.Abstractions/Runtime/GrainReference.cs
+    startLine: 81
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  summary: "\nWhether the runtime environment for system targets has been initialized yet.\nCalled from generated code.\n"
+  example: []
+  syntax:
+    content: protected bool IsInitializedSystemTarget { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Protected ReadOnly Property IsInitializedSystemTarget As Boolean
+  overload: Orleans.Runtime.GrainReference.IsInitializedSystemTarget*
+  modifiers.csharp:
+  - protected
+  - get
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Orleans.Runtime.GrainReference.#ctor(Orleans.Runtime.GrainReference)
+  commentId: M:Orleans.Runtime.GrainReference.#ctor(Orleans.Runtime.GrainReference)
+  id: '#ctor(Orleans.Runtime.GrainReference)'
+  parent: Orleans.Runtime.GrainReference
+  langs:
+  - csharp
+  - vb
+  name: GrainReference(GrainReference)
+  nameWithType: GrainReference.GrainReference(GrainReference)
+  fullName: Orleans.Runtime.GrainReference.GrainReference(Orleans.Runtime.GrainReference)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Runtime/GrainReference.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Core.Abstractions/Runtime/GrainReference.cs
+    startLine: 146
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  summary: "\nConstructs a copy of a grain reference.\n"
+  example: []
+  syntax:
+    content: protected GrainReference(GrainReference other)
+    parameters:
+    - id: other
+      type: Orleans.Runtime.GrainReference
+      description: The reference to copy.
+    content.vb: Protected Sub New(other As GrainReference)
+  overload: Orleans.Runtime.GrainReference.#ctor*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Orleans.Runtime.GrainReference.#ctor(Orleans.Runtime.GrainReference,Orleans.CodeGeneration.InvokeMethodOptions)
+  commentId: M:Orleans.Runtime.GrainReference.#ctor(Orleans.Runtime.GrainReference,Orleans.CodeGeneration.InvokeMethodOptions)
+  id: '#ctor(Orleans.Runtime.GrainReference,Orleans.CodeGeneration.InvokeMethodOptions)'
+  parent: Orleans.Runtime.GrainReference
+  langs:
+  - csharp
+  - vb
+  name: GrainReference(GrainReference, InvokeMethodOptions)
+  nameWithType: GrainReference.GrainReference(GrainReference, InvokeMethodOptions)
+  fullName: Orleans.Runtime.GrainReference.GrainReference(Orleans.Runtime.GrainReference, Orleans.CodeGeneration.InvokeMethodOptions)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Runtime/GrainReference.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Core.Abstractions/Runtime/GrainReference.cs
+    startLine: 152
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  syntax:
+    content: protected GrainReference(GrainReference other, InvokeMethodOptions invokeMethodOptions)
+    parameters:
+    - id: other
+      type: Orleans.Runtime.GrainReference
+    - id: invokeMethodOptions
+      type: Orleans.CodeGeneration.InvokeMethodOptions
+    content.vb: Protected Sub New(other As GrainReference, invokeMethodOptions As InvokeMethodOptions)
+  overload: Orleans.Runtime.GrainReference.#ctor*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Orleans.Runtime.GrainReference.Equals(System.Object)
+  commentId: M:Orleans.Runtime.GrainReference.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Orleans.Runtime.GrainReference
+  langs:
+  - csharp
+  - vb
+  name: Equals(Object)
+  nameWithType: GrainReference.Equals(Object)
+  fullName: Orleans.Runtime.GrainReference.Equals(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Runtime/GrainReference.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Equals
+    path: src/Orleans.Core.Abstractions/Runtime/GrainReference.cs
+    startLine: 193
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  summary: "\nTests this reference for equality to another object.\nTwo grain references are equal if they both refer to the same grain.\n"
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to test for equality against this reference.
+    return:
+      type: System.Boolean
+      description: <code>true</code> if the object is equal to this reference.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overload: Orleans.Runtime.GrainReference.Equals*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Orleans.Runtime.GrainReference.Equals(Orleans.Runtime.GrainReference)
+  commentId: M:Orleans.Runtime.GrainReference.Equals(Orleans.Runtime.GrainReference)
+  id: Equals(Orleans.Runtime.GrainReference)
+  parent: Orleans.Runtime.GrainReference
+  langs:
+  - csharp
+  - vb
+  name: Equals(GrainReference)
+  nameWithType: GrainReference.Equals(GrainReference)
+  fullName: Orleans.Runtime.GrainReference.Equals(Orleans.Runtime.GrainReference)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Runtime/GrainReference.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Equals
+    path: src/Orleans.Core.Abstractions/Runtime/GrainReference.cs
+    startLine: 198
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  syntax:
+    content: public bool Equals(GrainReference other)
+    parameters:
+    - id: other
+      type: Orleans.Runtime.GrainReference
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(other As GrainReference) As Boolean
+  overload: Orleans.Runtime.GrainReference.Equals*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.GrainReference.GetHashCode
+  commentId: M:Orleans.Runtime.GrainReference.GetHashCode
+  id: GetHashCode
+  parent: Orleans.Runtime.GrainReference
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: GrainReference.GetHashCode()
+  fullName: Orleans.Runtime.GrainReference.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Runtime/GrainReference.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetHashCode
+    path: src/Orleans.Core.Abstractions/Runtime/GrainReference.cs
+    startLine: 221
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  summary: 'Calculates a hash code for a grain reference. '
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode As Integer
+  overload: Orleans.Runtime.GrainReference.GetHashCode*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Orleans.Runtime.GrainReference.GetUniformHashCode
+  commentId: M:Orleans.Runtime.GrainReference.GetUniformHashCode
+  id: GetUniformHashCode
+  parent: Orleans.Runtime.GrainReference
+  langs:
+  - csharp
+  - vb
+  name: GetUniformHashCode()
+  nameWithType: GrainReference.GetUniformHashCode()
+  fullName: Orleans.Runtime.GrainReference.GetUniformHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Runtime/GrainReference.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetUniformHashCode
+    path: src/Orleans.Core.Abstractions/Runtime/GrainReference.cs
+    startLine: 236
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  summary: Get a uniform hash code for this grain reference.
+  example: []
+  syntax:
+    content: public uint GetUniformHashCode()
+    return:
+      type: System.UInt32
+    content.vb: Public Function GetUniformHashCode As UInteger
+  overload: Orleans.Runtime.GrainReference.GetUniformHashCode*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.GrainReference.op_Equality(Orleans.Runtime.GrainReference,Orleans.Runtime.GrainReference)
+  commentId: M:Orleans.Runtime.GrainReference.op_Equality(Orleans.Runtime.GrainReference,Orleans.Runtime.GrainReference)
+  id: op_Equality(Orleans.Runtime.GrainReference,Orleans.Runtime.GrainReference)
+  parent: Orleans.Runtime.GrainReference
+  langs:
+  - csharp
+  - vb
+  name: Equality(GrainReference, GrainReference)
+  nameWithType: GrainReference.Equality(GrainReference, GrainReference)
+  fullName: Orleans.Runtime.GrainReference.Equality(Orleans.Runtime.GrainReference, Orleans.Runtime.GrainReference)
+  type: Operator
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Runtime/GrainReference.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: op_Equality
+    path: src/Orleans.Core.Abstractions/Runtime/GrainReference.cs
+    startLine: 249
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  summary: "\nCompares two references for equality.\nTwo grain references are equal if they both refer to the same grain.\n"
+  example: []
+  syntax:
+    content: public static bool operator ==(GrainReference reference1, GrainReference reference2)
+    parameters:
+    - id: reference1
+      type: Orleans.Runtime.GrainReference
+      description: First grain reference to compare.
+    - id: reference2
+      type: Orleans.Runtime.GrainReference
+      description: Second grain reference to compare.
+    return:
+      type: System.Boolean
+      description: <code>true</code> if both grain references refer to the same grain (by grain identifier).
+    content.vb: Public Shared Operator =(reference1 As GrainReference, reference2 As GrainReference) As Boolean
+  overload: Orleans.Runtime.GrainReference.op_Equality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.Runtime.GrainReference.op_Inequality(Orleans.Runtime.GrainReference,Orleans.Runtime.GrainReference)
+  commentId: M:Orleans.Runtime.GrainReference.op_Inequality(Orleans.Runtime.GrainReference,Orleans.Runtime.GrainReference)
+  id: op_Inequality(Orleans.Runtime.GrainReference,Orleans.Runtime.GrainReference)
+  parent: Orleans.Runtime.GrainReference
+  langs:
+  - csharp
+  - vb
+  name: Inequality(GrainReference, GrainReference)
+  nameWithType: GrainReference.Inequality(GrainReference, GrainReference)
+  fullName: Orleans.Runtime.GrainReference.Inequality(Orleans.Runtime.GrainReference, Orleans.Runtime.GrainReference)
+  type: Operator
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Runtime/GrainReference.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: op_Inequality
+    path: src/Orleans.Core.Abstractions/Runtime/GrainReference.cs
+    startLine: 264
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  summary: "\nCompares two references for inequality.\nTwo grain references are equal if they both refer to the same grain.\n"
+  example: []
+  syntax:
+    content: public static bool operator !=(GrainReference reference1, GrainReference reference2)
+    parameters:
+    - id: reference1
+      type: Orleans.Runtime.GrainReference
+      description: First grain reference to compare.
+    - id: reference2
+      type: Orleans.Runtime.GrainReference
+      description: Second grain reference to compare.
+    return:
+      type: System.Boolean
+      description: <code>false</code> if both grain references are resolved to the same grain (by grain identifier).
+    content.vb: Public Shared Operator <>(reference1 As GrainReference, reference2 As GrainReference) As Boolean
+  overload: Orleans.Runtime.GrainReference.op_Inequality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.Runtime.GrainReference.InterfaceId
+  commentId: P:Orleans.Runtime.GrainReference.InterfaceId
+  id: InterfaceId
+  parent: Orleans.Runtime.GrainReference
+  langs:
+  - csharp
+  - vb
+  name: InterfaceId
+  nameWithType: GrainReference.InterfaceId
+  fullName: Orleans.Runtime.GrainReference.InterfaceId
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Runtime/GrainReference.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: InterfaceId
+    path: src/Orleans.Core.Abstractions/Runtime/GrainReference.cs
+    startLine: 278
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  summary: "\nImplemented by generated subclasses to return a constant\nImplemented in generated code.\n"
+  example: []
+  syntax:
+    content: public virtual int InterfaceId { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Overridable ReadOnly Property InterfaceId As Integer
+  overload: Orleans.Runtime.GrainReference.InterfaceId*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Orleans.Runtime.GrainReference.InterfaceVersion
+  commentId: P:Orleans.Runtime.GrainReference.InterfaceVersion
+  id: InterfaceVersion
+  parent: Orleans.Runtime.GrainReference
+  langs:
+  - csharp
+  - vb
+  name: InterfaceVersion
+  nameWithType: GrainReference.InterfaceVersion
+  fullName: Orleans.Runtime.GrainReference.InterfaceVersion
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Runtime/GrainReference.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: InterfaceVersion
+    path: src/Orleans.Core.Abstractions/Runtime/GrainReference.cs
+    startLine: 289
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  summary: "\nImplemented in generated code.\n"
+  example: []
+  syntax:
+    content: public virtual ushort InterfaceVersion { get; }
+    parameters: []
+    return:
+      type: System.UInt16
+    content.vb: Public Overridable ReadOnly Property InterfaceVersion As UShort
+  overload: Orleans.Runtime.GrainReference.InterfaceVersion*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Orleans.Runtime.GrainReference.IsCompatible(System.Int32)
+  commentId: M:Orleans.Runtime.GrainReference.IsCompatible(System.Int32)
+  id: IsCompatible(System.Int32)
+  parent: Orleans.Runtime.GrainReference
+  langs:
+  - csharp
+  - vb
+  name: IsCompatible(Int32)
+  nameWithType: GrainReference.IsCompatible(Int32)
+  fullName: Orleans.Runtime.GrainReference.IsCompatible(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Runtime/GrainReference.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IsCompatible
+    path: src/Orleans.Core.Abstractions/Runtime/GrainReference.cs
+    startLine: 300
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  summary: "\nImplemented in generated code.\n"
+  example: []
+  syntax:
+    content: public virtual bool IsCompatible(int interfaceId)
+    parameters:
+    - id: interfaceId
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Overridable Function IsCompatible(interfaceId As Integer) As Boolean
+  overload: Orleans.Runtime.GrainReference.IsCompatible*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Orleans.Runtime.GrainReference.InterfaceName
+  commentId: P:Orleans.Runtime.GrainReference.InterfaceName
+  id: InterfaceName
+  parent: Orleans.Runtime.GrainReference
+  langs:
+  - csharp
+  - vb
+  name: InterfaceName
+  nameWithType: GrainReference.InterfaceName
+  fullName: Orleans.Runtime.GrainReference.InterfaceName
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Runtime/GrainReference.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: InterfaceName
+    path: src/Orleans.Core.Abstractions/Runtime/GrainReference.cs
+    startLine: 309
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  summary: "\nReturn the name of the interface for this GrainReference. \nImplemented in Orleans generated code.\n"
+  example: []
+  syntax:
+    content: public virtual string InterfaceName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable ReadOnly Property InterfaceName As String
+  overload: Orleans.Runtime.GrainReference.InterfaceName*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Orleans.Runtime.GrainReference.GetMethodName(System.Int32,System.Int32)
+  commentId: M:Orleans.Runtime.GrainReference.GetMethodName(System.Int32,System.Int32)
+  id: GetMethodName(System.Int32,System.Int32)
+  parent: Orleans.Runtime.GrainReference
+  langs:
+  - csharp
+  - vb
+  name: GetMethodName(Int32, Int32)
+  nameWithType: GrainReference.GetMethodName(Int32, Int32)
+  fullName: Orleans.Runtime.GrainReference.GetMethodName(System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Runtime/GrainReference.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetMethodName
+    path: src/Orleans.Core.Abstractions/Runtime/GrainReference.cs
+    startLine: 323
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  summary: "\nReturn the method name associated with the specified interfaceId and methodId values.\n"
+  example: []
+  syntax:
+    content: public virtual string GetMethodName(int interfaceId, int methodId)
+    parameters:
+    - id: interfaceId
+      type: System.Int32
+      description: Interface Id
+    - id: methodId
+      type: System.Int32
+      description: Method Id
+    return:
+      type: System.String
+      description: Method name string.
+    content.vb: Public Overridable Function GetMethodName(interfaceId As Integer, methodId As Integer) As String
+  overload: Orleans.Runtime.GrainReference.GetMethodName*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Orleans.Runtime.GrainReference.InvokeOneWayMethod(System.Int32,System.Object[],Orleans.CodeGeneration.InvokeMethodOptions,Orleans.Runtime.SiloAddress)
+  commentId: M:Orleans.Runtime.GrainReference.InvokeOneWayMethod(System.Int32,System.Object[],Orleans.CodeGeneration.InvokeMethodOptions,Orleans.Runtime.SiloAddress)
+  id: InvokeOneWayMethod(System.Int32,System.Object[],Orleans.CodeGeneration.InvokeMethodOptions,Orleans.Runtime.SiloAddress)
+  parent: Orleans.Runtime.GrainReference
+  langs:
+  - csharp
+  - vb
+  name: InvokeOneWayMethod(Int32, Object[], InvokeMethodOptions, SiloAddress)
+  nameWithType: GrainReference.InvokeOneWayMethod(Int32, Object[], InvokeMethodOptions, SiloAddress)
+  fullName: Orleans.Runtime.GrainReference.InvokeOneWayMethod(System.Int32, System.Object[], Orleans.CodeGeneration.InvokeMethodOptions, Orleans.Runtime.SiloAddress)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Runtime/GrainReference.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: InvokeOneWayMethod
+    path: src/Orleans.Core.Abstractions/Runtime/GrainReference.cs
+    startLine: 331
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  summary: "\nCalled from generated code.\n"
+  example: []
+  syntax:
+    content: protected void InvokeOneWayMethod(int methodId, object[] arguments, InvokeMethodOptions options = default (InvokeMethodOptions), SiloAddress silo = null)
+    parameters:
+    - id: methodId
+      type: System.Int32
+    - id: arguments
+      type: System.Object[]
+    - id: options
+      type: Orleans.CodeGeneration.InvokeMethodOptions
+    - id: silo
+      type: Orleans.Runtime.SiloAddress
+    content.vb: Protected Sub InvokeOneWayMethod(methodId As Integer, arguments As Object(), options As InvokeMethodOptions = Nothing, silo As SiloAddress = Nothing)
+  overload: Orleans.Runtime.GrainReference.InvokeOneWayMethod*
+  nameWithType.vb: GrainReference.InvokeOneWayMethod(Int32, Object(), InvokeMethodOptions, SiloAddress)
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Orleans.Runtime.GrainReference.InvokeOneWayMethod(System.Int32, System.Object(), Orleans.CodeGeneration.InvokeMethodOptions, Orleans.Runtime.SiloAddress)
+  name.vb: InvokeOneWayMethod(Int32, Object(), InvokeMethodOptions, SiloAddress)
+- uid: Orleans.Runtime.GrainReference.InvokeMethodAsync``1(System.Int32,System.Object[],Orleans.CodeGeneration.InvokeMethodOptions,Orleans.Runtime.SiloAddress)
+  commentId: M:Orleans.Runtime.GrainReference.InvokeMethodAsync``1(System.Int32,System.Object[],Orleans.CodeGeneration.InvokeMethodOptions,Orleans.Runtime.SiloAddress)
+  id: InvokeMethodAsync``1(System.Int32,System.Object[],Orleans.CodeGeneration.InvokeMethodOptions,Orleans.Runtime.SiloAddress)
+  parent: Orleans.Runtime.GrainReference
+  langs:
+  - csharp
+  - vb
+  name: InvokeMethodAsync<T>(Int32, Object[], InvokeMethodOptions, SiloAddress)
+  nameWithType: GrainReference.InvokeMethodAsync<T>(Int32, Object[], InvokeMethodOptions, SiloAddress)
+  fullName: Orleans.Runtime.GrainReference.InvokeMethodAsync<T>(System.Int32, System.Object[], Orleans.CodeGeneration.InvokeMethodOptions, Orleans.Runtime.SiloAddress)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Runtime/GrainReference.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: InvokeMethodAsync
+    path: src/Orleans.Core.Abstractions/Runtime/GrainReference.cs
+    startLine: 339
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  summary: "\nCalled from generated code.\n"
+  example: []
+  syntax:
+    content: protected Task<T> InvokeMethodAsync<T>(int methodId, object[] arguments, InvokeMethodOptions options = default (InvokeMethodOptions), SiloAddress silo = null)
+    parameters:
+    - id: methodId
+      type: System.Int32
+    - id: arguments
+      type: System.Object[]
+    - id: options
+      type: Orleans.CodeGeneration.InvokeMethodOptions
+    - id: silo
+      type: Orleans.Runtime.SiloAddress
+    typeParameters:
+    - id: T
+    return:
+      type: Task{{T}}
+    content.vb: Protected Function InvokeMethodAsync(Of T)(methodId As Integer, arguments As Object(), options As InvokeMethodOptions = Nothing, silo As SiloAddress = Nothing) As Task(Of T)
+  overload: Orleans.Runtime.GrainReference.InvokeMethodAsync*
+  nameWithType.vb: GrainReference.InvokeMethodAsync(Of T)(Int32, Object(), InvokeMethodOptions, SiloAddress)
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Orleans.Runtime.GrainReference.InvokeMethodAsync(Of T)(System.Int32, System.Object(), Orleans.CodeGeneration.InvokeMethodOptions, Orleans.Runtime.SiloAddress)
+  name.vb: InvokeMethodAsync(Of T)(Int32, Object(), InvokeMethodOptions, SiloAddress)
+- uid: Orleans.Runtime.GrainReference.ToString
+  commentId: M:Orleans.Runtime.GrainReference.ToString
+  id: ToString
+  parent: Orleans.Runtime.GrainReference
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: GrainReference.ToString()
+  fullName: Orleans.Runtime.GrainReference.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Runtime/GrainReference.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ToString
+    path: src/Orleans.Core.Abstractions/Runtime/GrainReference.cs
+    startLine: 352
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  summary: Returns a string representation of this reference.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overload: Orleans.Runtime.GrainReference.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Orleans.Runtime.GrainReference.ToKeyString
+  commentId: M:Orleans.Runtime.GrainReference.ToKeyString
+  id: ToKeyString
+  parent: Orleans.Runtime.GrainReference
+  langs:
+  - csharp
+  - vb
+  name: ToKeyString()
+  nameWithType: GrainReference.ToKeyString()
+  fullName: Orleans.Runtime.GrainReference.ToKeyString()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Runtime/GrainReference.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ToKeyString
+    path: src/Orleans.Core.Abstractions/Runtime/GrainReference.cs
+    startLine: 382
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  summary: 'Get the key value for this grain, as a string. '
+  example: []
+  syntax:
+    content: public string ToKeyString()
+    return:
+      type: System.String
+    content.vb: Public Function ToKeyString As String
+  overload: Orleans.Runtime.GrainReference.ToKeyString*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.GrainReference.GetObjectData(SerializationInfo,StreamingContext)
+  commentId: M:Orleans.Runtime.GrainReference.GetObjectData(SerializationInfo,StreamingContext)
+  id: GetObjectData(SerializationInfo,StreamingContext)
+  parent: Orleans.Runtime.GrainReference
+  langs:
+  - csharp
+  - vb
+  name: GetObjectData(SerializationInfo, StreamingContext)
+  nameWithType: GrainReference.GetObjectData(SerializationInfo, StreamingContext)
+  fullName: Orleans.Runtime.GrainReference.GetObjectData(SerializationInfo, StreamingContext)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Runtime/GrainReference.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetObjectData
+    path: src/Orleans.Core.Abstractions/Runtime/GrainReference.cs
+    startLine: 446
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  syntax:
+    content: public virtual void GetObjectData(SerializationInfo info, StreamingContext context)
+    parameters:
+    - id: info
+      type: SerializationInfo
+    - id: context
+      type: StreamingContext
+    content.vb: Public Overridable Sub GetObjectData(info As SerializationInfo, context As StreamingContext)
+  overload: Orleans.Runtime.GrainReference.GetObjectData*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Orleans.Runtime.GrainReference.#ctor(SerializationInfo,StreamingContext)
+  commentId: M:Orleans.Runtime.GrainReference.#ctor(SerializationInfo,StreamingContext)
+  id: '#ctor(SerializationInfo,StreamingContext)'
+  parent: Orleans.Runtime.GrainReference
+  langs:
+  - csharp
+  - vb
+  name: GrainReference(SerializationInfo, StreamingContext)
+  nameWithType: GrainReference.GrainReference(SerializationInfo, StreamingContext)
+  fullName: Orleans.Runtime.GrainReference.GrainReference(SerializationInfo, StreamingContext)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Runtime/GrainReference.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Core.Abstractions/Runtime/GrainReference.cs
+    startLine: 465
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  syntax:
+    content: protected GrainReference(SerializationInfo info, StreamingContext context)
+    parameters:
+    - id: info
+      type: SerializationInfo
+    - id: context
+      type: StreamingContext
+    content.vb: Protected Sub New(info As SerializationInfo, context As StreamingContext)
+  overload: Orleans.Runtime.GrainReference.#ctor*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+references:
+- uid: Orleans.Runtime
+  commentId: N:Orleans.Runtime
+  isExternal: false
+  name: Orleans.Runtime
+  nameWithType: Orleans.Runtime
+  fullName: Orleans.Runtime
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Runtime.IAddressable
+  commentId: T:Orleans.Runtime.IAddressable
+  parent: Orleans.Runtime
+  isExternal: false
+  name: IAddressable
+  nameWithType: IAddressable
+  fullName: Orleans.Runtime.IAddressable
+- uid: IEquatable{Orleans.Runtime.GrainReference}
+  commentId: '!:IEquatable{Orleans.Runtime.GrainReference}'
+  definition: IEquatable`1
+  name: IEquatable<GrainReference>
+  nameWithType: IEquatable<GrainReference>
+  fullName: IEquatable<Orleans.Runtime.GrainReference>
+  nameWithType.vb: IEquatable(Of GrainReference)
+  fullName.vb: IEquatable(Of Orleans.Runtime.GrainReference)
+  name.vb: IEquatable(Of GrainReference)
+  spec.csharp:
+  - uid: IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Orleans.Runtime.GrainReference
+    name: GrainReference
+    nameWithType: GrainReference
+    fullName: Orleans.Runtime.GrainReference
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Orleans.Runtime.GrainReference
+    name: GrainReference
+    nameWithType: GrainReference
+    fullName: Orleans.Runtime.GrainReference
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: ISerializable
+  isExternal: true
+  name: ISerializable
+  nameWithType: ISerializable
+  fullName: ISerializable
+- uid: Orleans.Runtime.GrainReference.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<GrainReference>()
+  nameWithType: ImmutableExt.AsImmutable<GrainReference>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.GrainReference>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of GrainReference)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.GrainReference)()
+  name.vb: AsImmutable(Of GrainReference)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<GrainReference>
+    nameWithType: ImmutableExt.AsImmutable<GrainReference>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.GrainReference>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of GrainReference)
+    nameWithType: ImmutableExt.AsImmutable(Of GrainReference)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.GrainReference)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: IEquatable`1
+  commentId: '!:IEquatable`1'
+  isExternal: true
+  name: IEquatable<>
+  nameWithType: IEquatable<>
+  fullName: IEquatable<>
+  nameWithType.vb: IEquatable(Of )
+  fullName.vb: IEquatable(Of )
+  name.vb: IEquatable(Of )
+  spec.csharp:
+  - uid: IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Runtime.SiloAddress
+  commentId: T:Orleans.Runtime.SiloAddress
+  parent: Orleans.Runtime
+  isExternal: false
+  name: SiloAddress
+  nameWithType: SiloAddress
+  fullName: Orleans.Runtime.SiloAddress
+- uid: Orleans.Runtime.GrainReference.IsInitializedSystemTarget*
+  commentId: Overload:Orleans.Runtime.GrainReference.IsInitializedSystemTarget
+  isExternal: false
+  name: IsInitializedSystemTarget
+  nameWithType: GrainReference.IsInitializedSystemTarget
+  fullName: Orleans.Runtime.GrainReference.IsInitializedSystemTarget
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Orleans.Runtime.GrainReference.#ctor*
+  commentId: Overload:Orleans.Runtime.GrainReference.#ctor
+  isExternal: false
+  name: GrainReference
+  nameWithType: GrainReference.GrainReference
+  fullName: Orleans.Runtime.GrainReference.GrainReference
+- uid: Orleans.Runtime.GrainReference
+  commentId: T:Orleans.Runtime.GrainReference
+  parent: Orleans.Runtime
+  isExternal: false
+  name: GrainReference
+  nameWithType: GrainReference
+  fullName: Orleans.Runtime.GrainReference
+- uid: Orleans.CodeGeneration.InvokeMethodOptions
+  commentId: T:Orleans.CodeGeneration.InvokeMethodOptions
+  parent: Orleans.CodeGeneration
+  isExternal: false
+  name: InvokeMethodOptions
+  nameWithType: InvokeMethodOptions
+  fullName: Orleans.CodeGeneration.InvokeMethodOptions
+- uid: Orleans.CodeGeneration
+  commentId: N:Orleans.CodeGeneration
+  isExternal: false
+  name: Orleans.CodeGeneration
+  nameWithType: Orleans.CodeGeneration
+  fullName: Orleans.CodeGeneration
+- uid: Orleans.Runtime.GrainReference.Equals*
+  commentId: Overload:Orleans.Runtime.GrainReference.Equals
+  isExternal: false
+  name: Equals
+  nameWithType: GrainReference.Equals
+  fullName: Orleans.Runtime.GrainReference.Equals
+- uid: Orleans.Runtime.GrainReference.GetHashCode*
+  commentId: Overload:Orleans.Runtime.GrainReference.GetHashCode
+  isExternal: false
+  name: GetHashCode
+  nameWithType: GrainReference.GetHashCode
+  fullName: Orleans.Runtime.GrainReference.GetHashCode
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Orleans.Runtime.GrainReference.GetUniformHashCode*
+  commentId: Overload:Orleans.Runtime.GrainReference.GetUniformHashCode
+  isExternal: false
+  name: GetUniformHashCode
+  nameWithType: GrainReference.GetUniformHashCode
+  fullName: Orleans.Runtime.GrainReference.GetUniformHashCode
+- uid: System.UInt32
+  isExternal: true
+  name: UInt32
+  nameWithType: UInt32
+  fullName: System.UInt32
+- uid: Orleans.Runtime.GrainReference.op_Equality*
+  commentId: Overload:Orleans.Runtime.GrainReference.op_Equality
+  isExternal: false
+  name: Equality
+  nameWithType: GrainReference.Equality
+  fullName: Orleans.Runtime.GrainReference.Equality
+- uid: Orleans.Runtime.GrainReference.op_Inequality*
+  commentId: Overload:Orleans.Runtime.GrainReference.op_Inequality
+  isExternal: false
+  name: Inequality
+  nameWithType: GrainReference.Inequality
+  fullName: Orleans.Runtime.GrainReference.Inequality
+- uid: Orleans.Runtime.GrainReference.InterfaceId*
+  commentId: Overload:Orleans.Runtime.GrainReference.InterfaceId
+  isExternal: false
+  name: InterfaceId
+  nameWithType: GrainReference.InterfaceId
+  fullName: Orleans.Runtime.GrainReference.InterfaceId
+- uid: Orleans.Runtime.GrainReference.InterfaceVersion*
+  commentId: Overload:Orleans.Runtime.GrainReference.InterfaceVersion
+  isExternal: false
+  name: InterfaceVersion
+  nameWithType: GrainReference.InterfaceVersion
+  fullName: Orleans.Runtime.GrainReference.InterfaceVersion
+- uid: System.UInt16
+  isExternal: true
+  name: UInt16
+  nameWithType: UInt16
+  fullName: System.UInt16
+- uid: Orleans.Runtime.GrainReference.IsCompatible*
+  commentId: Overload:Orleans.Runtime.GrainReference.IsCompatible
+  isExternal: false
+  name: IsCompatible
+  nameWithType: GrainReference.IsCompatible
+  fullName: Orleans.Runtime.GrainReference.IsCompatible
+- uid: Orleans.Runtime.GrainReference.InterfaceName*
+  commentId: Overload:Orleans.Runtime.GrainReference.InterfaceName
+  isExternal: false
+  name: InterfaceName
+  nameWithType: GrainReference.InterfaceName
+  fullName: Orleans.Runtime.GrainReference.InterfaceName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Orleans.Runtime.GrainReference.GetMethodName*
+  commentId: Overload:Orleans.Runtime.GrainReference.GetMethodName
+  isExternal: false
+  name: GetMethodName
+  nameWithType: GrainReference.GetMethodName
+  fullName: Orleans.Runtime.GrainReference.GetMethodName
+- uid: Orleans.Runtime.GrainReference.InvokeOneWayMethod*
+  commentId: Overload:Orleans.Runtime.GrainReference.InvokeOneWayMethod
+  isExternal: false
+  name: InvokeOneWayMethod
+  nameWithType: GrainReference.InvokeOneWayMethod
+  fullName: Orleans.Runtime.GrainReference.InvokeOneWayMethod
+- uid: System.Object[]
+  name: Object[]
+  nameWithType: Object[]
+  fullName: System.Object[]
+  nameWithType.vb: Object()
+  fullName.vb: System.Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Orleans.Runtime.GrainReference.InvokeMethodAsync*
+  commentId: Overload:Orleans.Runtime.GrainReference.InvokeMethodAsync
+  isExternal: false
+  name: InvokeMethodAsync
+  nameWithType: GrainReference.InvokeMethodAsync
+  fullName: Orleans.Runtime.GrainReference.InvokeMethodAsync
+- uid: Task{{T}}
+  commentId: '!:Task{``0}'
+  definition: Task`1
+  name: Task<T>
+  nameWithType: Task<T>
+  fullName: Task<T>
+  nameWithType.vb: Task(Of T)
+  fullName.vb: Task(Of T)
+  name.vb: Task(Of T)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.GrainReference.ToString*
+  commentId: Overload:Orleans.Runtime.GrainReference.ToString
+  isExternal: false
+  name: ToString
+  nameWithType: GrainReference.ToString
+  fullName: Orleans.Runtime.GrainReference.ToString
+- uid: Orleans.Runtime.GrainReference.ToKeyString*
+  commentId: Overload:Orleans.Runtime.GrainReference.ToKeyString
+  isExternal: false
+  name: ToKeyString
+  nameWithType: GrainReference.ToKeyString
+  fullName: Orleans.Runtime.GrainReference.ToKeyString
+- uid: Orleans.Runtime.GrainReference.GetObjectData*
+  commentId: Overload:Orleans.Runtime.GrainReference.GetObjectData
+  isExternal: false
+  name: GetObjectData
+  nameWithType: GrainReference.GetObjectData
+  fullName: Orleans.Runtime.GrainReference.GetObjectData
+- uid: SerializationInfo
+  isExternal: true
+  name: SerializationInfo
+  nameWithType: SerializationInfo
+  fullName: SerializationInfo
+- uid: StreamingContext
+  isExternal: true
+  name: StreamingContext
+  nameWithType: StreamingContext
+  fullName: StreamingContext

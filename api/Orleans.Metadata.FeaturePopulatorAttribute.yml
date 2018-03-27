@@ -1,0 +1,245 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Metadata.FeaturePopulatorAttribute
+  commentId: T:Orleans.Metadata.FeaturePopulatorAttribute
+  id: FeaturePopulatorAttribute
+  parent: Orleans.Metadata
+  children:
+  - Orleans.Metadata.FeaturePopulatorAttribute.#ctor(Type)
+  - Orleans.Metadata.FeaturePopulatorAttribute.PopulatorType
+  langs:
+  - csharp
+  - vb
+  name: FeaturePopulatorAttribute
+  nameWithType: FeaturePopulatorAttribute
+  fullName: Orleans.Metadata.FeaturePopulatorAttribute
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Metadata/FeaturePopulatorAttribute.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: FeaturePopulatorAttribute
+    path: src/Orleans.Core.Abstractions/Metadata/FeaturePopulatorAttribute.cs
+    startLine: 8
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Metadata
+  summary: "\nDefines a feature populator for this assembly.\n"
+  example: []
+  syntax:
+    content: 'public sealed class FeaturePopulatorAttribute : Attribute'
+    content.vb: >-
+      Public NotInheritable Class FeaturePopulatorAttribute
+
+          Inherits Attribute
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.Metadata.FeaturePopulatorAttribute.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Orleans.Metadata.FeaturePopulatorAttribute.#ctor(Type)
+  commentId: M:Orleans.Metadata.FeaturePopulatorAttribute.#ctor(Type)
+  id: '#ctor(Type)'
+  parent: Orleans.Metadata.FeaturePopulatorAttribute
+  langs:
+  - csharp
+  - vb
+  name: FeaturePopulatorAttribute(Type)
+  nameWithType: FeaturePopulatorAttribute.FeaturePopulatorAttribute(Type)
+  fullName: Orleans.Metadata.FeaturePopulatorAttribute.FeaturePopulatorAttribute(Type)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Metadata/FeaturePopulatorAttribute.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Core.Abstractions/Metadata/FeaturePopulatorAttribute.cs
+    startLine: 15
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Metadata
+  summary: "\nInitializes a new instance of the <xref href=\"Orleans.Metadata.FeaturePopulatorAttribute\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public FeaturePopulatorAttribute(Type populatorType)
+    parameters:
+    - id: populatorType
+      type: Type
+      description: The feature populator type.
+    content.vb: Public Sub New(populatorType As Type)
+  overload: Orleans.Metadata.FeaturePopulatorAttribute.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Metadata.FeaturePopulatorAttribute.PopulatorType
+  commentId: P:Orleans.Metadata.FeaturePopulatorAttribute.PopulatorType
+  id: PopulatorType
+  parent: Orleans.Metadata.FeaturePopulatorAttribute
+  langs:
+  - csharp
+  - vb
+  name: PopulatorType
+  nameWithType: FeaturePopulatorAttribute.PopulatorType
+  fullName: Orleans.Metadata.FeaturePopulatorAttribute.PopulatorType
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Metadata/FeaturePopulatorAttribute.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: PopulatorType
+    path: src/Orleans.Core.Abstractions/Metadata/FeaturePopulatorAttribute.cs
+    startLine: 29
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Metadata
+  summary: "\nGets the feature populator type.\n"
+  example: []
+  syntax:
+    content: public Type PopulatorType { get; }
+    parameters: []
+    return:
+      type: Type
+    content.vb: Public ReadOnly Property PopulatorType As Type
+  overload: Orleans.Metadata.FeaturePopulatorAttribute.PopulatorType*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: Orleans.Metadata
+  commentId: N:Orleans.Metadata
+  isExternal: false
+  name: Orleans.Metadata
+  nameWithType: Orleans.Metadata
+  fullName: Orleans.Metadata
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Metadata.FeaturePopulatorAttribute.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<FeaturePopulatorAttribute>()
+  nameWithType: ImmutableExt.AsImmutable<FeaturePopulatorAttribute>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Metadata.FeaturePopulatorAttribute>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of FeaturePopulatorAttribute)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Metadata.FeaturePopulatorAttribute)()
+  name.vb: AsImmutable(Of FeaturePopulatorAttribute)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<FeaturePopulatorAttribute>
+    nameWithType: ImmutableExt.AsImmutable<FeaturePopulatorAttribute>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Metadata.FeaturePopulatorAttribute>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of FeaturePopulatorAttribute)
+    nameWithType: ImmutableExt.AsImmutable(Of FeaturePopulatorAttribute)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Metadata.FeaturePopulatorAttribute)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Metadata.FeaturePopulatorAttribute
+  commentId: T:Orleans.Metadata.FeaturePopulatorAttribute
+  isExternal: false
+  name: FeaturePopulatorAttribute
+  nameWithType: FeaturePopulatorAttribute
+  fullName: Orleans.Metadata.FeaturePopulatorAttribute
+- uid: Orleans.Metadata.FeaturePopulatorAttribute.#ctor*
+  commentId: Overload:Orleans.Metadata.FeaturePopulatorAttribute.#ctor
+  isExternal: false
+  name: FeaturePopulatorAttribute
+  nameWithType: FeaturePopulatorAttribute.FeaturePopulatorAttribute
+  fullName: Orleans.Metadata.FeaturePopulatorAttribute.FeaturePopulatorAttribute
+- uid: Type
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: Type
+- uid: Orleans.Metadata.FeaturePopulatorAttribute.PopulatorType*
+  commentId: Overload:Orleans.Metadata.FeaturePopulatorAttribute.PopulatorType
+  isExternal: false
+  name: PopulatorType
+  nameWithType: FeaturePopulatorAttribute.PopulatorType
+  fullName: Orleans.Metadata.FeaturePopulatorAttribute.PopulatorType

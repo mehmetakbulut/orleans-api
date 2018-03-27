@@ -1,0 +1,268 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Metadata.GrainClassFeature
+  commentId: T:Orleans.Metadata.GrainClassFeature
+  id: GrainClassFeature
+  parent: Orleans.Metadata
+  children:
+  - Orleans.Metadata.GrainClassFeature.Classes
+  langs:
+  - csharp
+  - vb
+  name: GrainClassFeature
+  nameWithType: GrainClassFeature
+  fullName: Orleans.Metadata.GrainClassFeature
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Metadata/GrainClassFeature.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GrainClassFeature
+    path: src/Orleans.Core.Abstractions/Metadata/GrainClassFeature.cs
+    startLine: 7
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Metadata
+  summary: "\nContains grain class descriptions.\n"
+  example: []
+  syntax:
+    content: 'public class GrainClassFeature : object'
+    content.vb: >-
+      Public Class GrainClassFeature
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.Metadata.GrainClassFeature.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.Metadata.GrainClassFeature.Classes
+  commentId: P:Orleans.Metadata.GrainClassFeature.Classes
+  id: Classes
+  parent: Orleans.Metadata.GrainClassFeature
+  langs:
+  - csharp
+  - vb
+  name: Classes
+  nameWithType: GrainClassFeature.Classes
+  fullName: Orleans.Metadata.GrainClassFeature.Classes
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Metadata/GrainClassFeature.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Classes
+    path: src/Orleans.Core.Abstractions/Metadata/GrainClassFeature.cs
+    startLine: 12
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Metadata
+  summary: "\nGets a collection of metadata about grain classes.\n"
+  example: []
+  syntax:
+    content: public IList<GrainClassMetadata> Classes { get; }
+    parameters: []
+    return:
+      type: IList{Orleans.Metadata.GrainClassMetadata}
+    content.vb: Public ReadOnly Property Classes As IList(Of GrainClassMetadata)
+  overload: Orleans.Metadata.GrainClassFeature.Classes*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: Orleans.Metadata
+  commentId: N:Orleans.Metadata
+  isExternal: false
+  name: Orleans.Metadata
+  nameWithType: Orleans.Metadata
+  fullName: Orleans.Metadata
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Metadata.GrainClassFeature.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<GrainClassFeature>()
+  nameWithType: ImmutableExt.AsImmutable<GrainClassFeature>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Metadata.GrainClassFeature>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of GrainClassFeature)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Metadata.GrainClassFeature)()
+  name.vb: AsImmutable(Of GrainClassFeature)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<GrainClassFeature>
+    nameWithType: ImmutableExt.AsImmutable<GrainClassFeature>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Metadata.GrainClassFeature>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of GrainClassFeature)
+    nameWithType: ImmutableExt.AsImmutable(Of GrainClassFeature)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Metadata.GrainClassFeature)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Metadata.GrainClassFeature.Classes*
+  commentId: Overload:Orleans.Metadata.GrainClassFeature.Classes
+  isExternal: false
+  name: Classes
+  nameWithType: GrainClassFeature.Classes
+  fullName: Orleans.Metadata.GrainClassFeature.Classes
+- uid: IList{Orleans.Metadata.GrainClassMetadata}
+  commentId: '!:IList{Orleans.Metadata.GrainClassMetadata}'
+  definition: IList`1
+  name: IList<GrainClassMetadata>
+  nameWithType: IList<GrainClassMetadata>
+  fullName: IList<Orleans.Metadata.GrainClassMetadata>
+  nameWithType.vb: IList(Of GrainClassMetadata)
+  fullName.vb: IList(Of Orleans.Metadata.GrainClassMetadata)
+  name.vb: IList(Of GrainClassMetadata)
+  spec.csharp:
+  - uid: IList`1
+    name: IList
+    nameWithType: IList
+    fullName: IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Orleans.Metadata.GrainClassMetadata
+    name: GrainClassMetadata
+    nameWithType: GrainClassMetadata
+    fullName: Orleans.Metadata.GrainClassMetadata
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IList`1
+    name: IList
+    nameWithType: IList
+    fullName: IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Orleans.Metadata.GrainClassMetadata
+    name: GrainClassMetadata
+    nameWithType: GrainClassMetadata
+    fullName: Orleans.Metadata.GrainClassMetadata
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IList`1
+  isExternal: true
+  name: IList<>
+  nameWithType: IList<>
+  fullName: IList<>
+  nameWithType.vb: IList(Of )
+  fullName.vb: IList(Of )
+  name.vb: IList(Of )
+  spec.csharp:
+  - uid: IList`1
+    name: IList
+    nameWithType: IList
+    fullName: IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IList`1
+    name: IList
+    nameWithType: IList
+    fullName: IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )

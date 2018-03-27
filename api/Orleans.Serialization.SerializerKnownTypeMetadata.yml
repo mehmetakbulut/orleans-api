@@ -1,0 +1,282 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Serialization.SerializerKnownTypeMetadata
+  commentId: T:Orleans.Serialization.SerializerKnownTypeMetadata
+  id: SerializerKnownTypeMetadata
+  parent: Orleans.Serialization
+  children:
+  - Orleans.Serialization.SerializerKnownTypeMetadata.#ctor(System.String,System.String)
+  - Orleans.Serialization.SerializerKnownTypeMetadata.Type
+  - Orleans.Serialization.SerializerKnownTypeMetadata.TypeKey
+  langs:
+  - csharp
+  - vb
+  name: SerializerKnownTypeMetadata
+  nameWithType: SerializerKnownTypeMetadata
+  fullName: Orleans.Serialization.SerializerKnownTypeMetadata
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Serialization/SerializerFeature.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SerializerKnownTypeMetadata
+    path: src/Orleans.Core.Abstractions/Serialization/SerializerFeature.cs
+    startLine: 102
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Serialization
+  summary: "\nDescribes a type which can be identified by the serializer.\n"
+  example: []
+  syntax:
+    content: 'public class SerializerKnownTypeMetadata : object'
+    content.vb: >-
+      Public Class SerializerKnownTypeMetadata
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.Serialization.SerializerKnownTypeMetadata.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.Serialization.SerializerKnownTypeMetadata.#ctor(System.String,System.String)
+  commentId: M:Orleans.Serialization.SerializerKnownTypeMetadata.#ctor(System.String,System.String)
+  id: '#ctor(System.String,System.String)'
+  parent: Orleans.Serialization.SerializerKnownTypeMetadata
+  langs:
+  - csharp
+  - vb
+  name: SerializerKnownTypeMetadata(String, String)
+  nameWithType: SerializerKnownTypeMetadata.SerializerKnownTypeMetadata(String, String)
+  fullName: Orleans.Serialization.SerializerKnownTypeMetadata.SerializerKnownTypeMetadata(System.String, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Serialization/SerializerFeature.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Core.Abstractions/Serialization/SerializerFeature.cs
+    startLine: 104
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Serialization
+  syntax:
+    content: public SerializerKnownTypeMetadata(string type, string typeKey)
+    parameters:
+    - id: type
+      type: System.String
+    - id: typeKey
+      type: System.String
+    content.vb: Public Sub New(type As String, typeKey As String)
+  overload: Orleans.Serialization.SerializerKnownTypeMetadata.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Serialization.SerializerKnownTypeMetadata.TypeKey
+  commentId: P:Orleans.Serialization.SerializerKnownTypeMetadata.TypeKey
+  id: TypeKey
+  parent: Orleans.Serialization.SerializerKnownTypeMetadata
+  langs:
+  - csharp
+  - vb
+  name: TypeKey
+  nameWithType: SerializerKnownTypeMetadata.TypeKey
+  fullName: Orleans.Serialization.SerializerKnownTypeMetadata.TypeKey
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Serialization/SerializerFeature.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: TypeKey
+    path: src/Orleans.Core.Abstractions/Serialization/SerializerFeature.cs
+    startLine: 113
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Serialization
+  summary: "\nGets the type key.\n"
+  example: []
+  syntax:
+    content: public string TypeKey { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property TypeKey As String
+  overload: Orleans.Serialization.SerializerKnownTypeMetadata.TypeKey*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Serialization.SerializerKnownTypeMetadata.Type
+  commentId: P:Orleans.Serialization.SerializerKnownTypeMetadata.Type
+  id: Type
+  parent: Orleans.Serialization.SerializerKnownTypeMetadata
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: SerializerKnownTypeMetadata.Type
+  fullName: Orleans.Serialization.SerializerKnownTypeMetadata.Type
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Serialization/SerializerFeature.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Type
+    path: src/Orleans.Core.Abstractions/Serialization/SerializerFeature.cs
+    startLine: 118
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Serialization
+  summary: "\nGets the fully-qualified type name.\n"
+  example: []
+  syntax:
+    content: public string Type { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Type As String
+  overload: Orleans.Serialization.SerializerKnownTypeMetadata.Type*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: Orleans.Serialization
+  commentId: N:Orleans.Serialization
+  isExternal: false
+  name: Orleans.Serialization
+  nameWithType: Orleans.Serialization
+  fullName: Orleans.Serialization
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Serialization.SerializerKnownTypeMetadata.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<SerializerKnownTypeMetadata>()
+  nameWithType: ImmutableExt.AsImmutable<SerializerKnownTypeMetadata>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Serialization.SerializerKnownTypeMetadata>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of SerializerKnownTypeMetadata)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Serialization.SerializerKnownTypeMetadata)()
+  name.vb: AsImmutable(Of SerializerKnownTypeMetadata)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<SerializerKnownTypeMetadata>
+    nameWithType: ImmutableExt.AsImmutable<SerializerKnownTypeMetadata>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Serialization.SerializerKnownTypeMetadata>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of SerializerKnownTypeMetadata)
+    nameWithType: ImmutableExt.AsImmutable(Of SerializerKnownTypeMetadata)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Serialization.SerializerKnownTypeMetadata)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Serialization.SerializerKnownTypeMetadata.#ctor*
+  commentId: Overload:Orleans.Serialization.SerializerKnownTypeMetadata.#ctor
+  isExternal: false
+  name: SerializerKnownTypeMetadata
+  nameWithType: SerializerKnownTypeMetadata.SerializerKnownTypeMetadata
+  fullName: Orleans.Serialization.SerializerKnownTypeMetadata.SerializerKnownTypeMetadata
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Orleans.Serialization.SerializerKnownTypeMetadata.TypeKey*
+  commentId: Overload:Orleans.Serialization.SerializerKnownTypeMetadata.TypeKey
+  isExternal: false
+  name: TypeKey
+  nameWithType: SerializerKnownTypeMetadata.TypeKey
+  fullName: Orleans.Serialization.SerializerKnownTypeMetadata.TypeKey
+- uid: Orleans.Serialization.SerializerKnownTypeMetadata.Type*
+  commentId: Overload:Orleans.Serialization.SerializerKnownTypeMetadata.Type
+  isExternal: false
+  name: Type
+  nameWithType: SerializerKnownTypeMetadata.Type
+  fullName: Orleans.Serialization.SerializerKnownTypeMetadata.Type

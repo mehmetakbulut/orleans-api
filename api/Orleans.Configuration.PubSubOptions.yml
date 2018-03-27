@@ -1,0 +1,482 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Configuration.PubSubOptions
+  commentId: T:Orleans.Configuration.PubSubOptions
+  id: PubSubOptions
+  parent: Orleans.Configuration
+  children:
+  - Orleans.Configuration.PubSubOptions.ClusterId
+  - Orleans.Configuration.PubSubOptions.CustomEndpoint
+  - Orleans.Configuration.PubSubOptions.Deadline
+  - Orleans.Configuration.PubSubOptions.MAX_DEADLINE
+  - Orleans.Configuration.PubSubOptions.ProjectId
+  - Orleans.Configuration.PubSubOptions.TopicId
+  langs:
+  - csharp
+  - vb
+  name: PubSubOptions
+  nameWithType: PubSubOptions
+  fullName: Orleans.Configuration.PubSubOptions
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubStreamOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: PubSubOptions
+    path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubStreamOptions.cs
+    startLine: 6
+  assemblies:
+  - Orleans.Streaming.GCP
+  namespace: Orleans.Configuration
+  syntax:
+    content: 'public class PubSubOptions : object'
+    content.vb: >-
+      Public Class PubSubOptions
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.Configuration.PubSubOptions.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.Configuration.PubSubOptions.ProjectId
+  commentId: P:Orleans.Configuration.PubSubOptions.ProjectId
+  id: ProjectId
+  parent: Orleans.Configuration.PubSubOptions
+  langs:
+  - csharp
+  - vb
+  name: ProjectId
+  nameWithType: PubSubOptions.ProjectId
+  fullName: Orleans.Configuration.PubSubOptions.ProjectId
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubStreamOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ProjectId
+    path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubStreamOptions.cs
+    startLine: 8
+  assemblies:
+  - Orleans.Streaming.GCP
+  namespace: Orleans.Configuration
+  syntax:
+    content: public string ProjectId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ProjectId As String
+  overload: Orleans.Configuration.PubSubOptions.ProjectId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Configuration.PubSubOptions.TopicId
+  commentId: P:Orleans.Configuration.PubSubOptions.TopicId
+  id: TopicId
+  parent: Orleans.Configuration.PubSubOptions
+  langs:
+  - csharp
+  - vb
+  name: TopicId
+  nameWithType: PubSubOptions.TopicId
+  fullName: Orleans.Configuration.PubSubOptions.TopicId
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubStreamOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: TopicId
+    path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubStreamOptions.cs
+    startLine: 10
+  assemblies:
+  - Orleans.Streaming.GCP
+  namespace: Orleans.Configuration
+  syntax:
+    content: public string TopicId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property TopicId As String
+  overload: Orleans.Configuration.PubSubOptions.TopicId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Configuration.PubSubOptions.ClusterId
+  commentId: P:Orleans.Configuration.PubSubOptions.ClusterId
+  id: ClusterId
+  parent: Orleans.Configuration.PubSubOptions
+  langs:
+  - csharp
+  - vb
+  name: ClusterId
+  nameWithType: PubSubOptions.ClusterId
+  fullName: Orleans.Configuration.PubSubOptions.ClusterId
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubStreamOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ClusterId
+    path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubStreamOptions.cs
+    startLine: 12
+  assemblies:
+  - Orleans.Streaming.GCP
+  namespace: Orleans.Configuration
+  syntax:
+    content: public string ClusterId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ClusterId As String
+  overload: Orleans.Configuration.PubSubOptions.ClusterId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Configuration.PubSubOptions.CustomEndpoint
+  commentId: P:Orleans.Configuration.PubSubOptions.CustomEndpoint
+  id: CustomEndpoint
+  parent: Orleans.Configuration.PubSubOptions
+  langs:
+  - csharp
+  - vb
+  name: CustomEndpoint
+  nameWithType: PubSubOptions.CustomEndpoint
+  fullName: Orleans.Configuration.PubSubOptions.CustomEndpoint
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubStreamOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: CustomEndpoint
+    path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubStreamOptions.cs
+    startLine: 14
+  assemblies:
+  - Orleans.Streaming.GCP
+  namespace: Orleans.Configuration
+  syntax:
+    content: public string CustomEndpoint { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CustomEndpoint As String
+  overload: Orleans.Configuration.PubSubOptions.CustomEndpoint*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Configuration.PubSubOptions.Deadline
+  commentId: P:Orleans.Configuration.PubSubOptions.Deadline
+  id: Deadline
+  parent: Orleans.Configuration.PubSubOptions
+  langs:
+  - csharp
+  - vb
+  name: Deadline
+  nameWithType: PubSubOptions.Deadline
+  fullName: Orleans.Configuration.PubSubOptions.Deadline
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubStreamOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Deadline
+    path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubStreamOptions.cs
+    startLine: 17
+  assemblies:
+  - Orleans.Streaming.GCP
+  namespace: Orleans.Configuration
+  syntax:
+    content: public TimeSpan? Deadline { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{TimeSpan}
+    content.vb: Public Property Deadline As TimeSpan?
+  overload: Orleans.Configuration.PubSubOptions.Deadline*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Configuration.PubSubOptions.MAX_DEADLINE
+  commentId: F:Orleans.Configuration.PubSubOptions.MAX_DEADLINE
+  id: MAX_DEADLINE
+  parent: Orleans.Configuration.PubSubOptions
+  langs:
+  - csharp
+  - vb
+  name: MAX_DEADLINE
+  nameWithType: PubSubOptions.MAX_DEADLINE
+  fullName: Orleans.Configuration.PubSubOptions.MAX_DEADLINE
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubStreamOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: MAX_DEADLINE
+    path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubStreamOptions.cs
+    startLine: 22
+  assemblies:
+  - Orleans.Streaming.GCP
+  namespace: Orleans.Configuration
+  syntax:
+    content: public static readonly TimeSpan MAX_DEADLINE
+    return:
+      type: TimeSpan
+    content.vb: Public Shared ReadOnly MAX_DEADLINE As TimeSpan
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+references:
+- uid: Orleans.Configuration
+  commentId: N:Orleans.Configuration
+  isExternal: false
+  name: Orleans.Configuration
+  nameWithType: Orleans.Configuration
+  fullName: Orleans.Configuration
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Configuration.PubSubOptions.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<PubSubOptions>()
+  nameWithType: ImmutableExt.AsImmutable<PubSubOptions>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Configuration.PubSubOptions>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of PubSubOptions)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Configuration.PubSubOptions)()
+  name.vb: AsImmutable(Of PubSubOptions)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<PubSubOptions>
+    nameWithType: ImmutableExt.AsImmutable<PubSubOptions>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Configuration.PubSubOptions>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of PubSubOptions)
+    nameWithType: ImmutableExt.AsImmutable(Of PubSubOptions)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Configuration.PubSubOptions)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Configuration.PubSubOptions.ProjectId*
+  commentId: Overload:Orleans.Configuration.PubSubOptions.ProjectId
+  isExternal: false
+  name: ProjectId
+  nameWithType: PubSubOptions.ProjectId
+  fullName: Orleans.Configuration.PubSubOptions.ProjectId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Orleans.Configuration.PubSubOptions.TopicId*
+  commentId: Overload:Orleans.Configuration.PubSubOptions.TopicId
+  isExternal: false
+  name: TopicId
+  nameWithType: PubSubOptions.TopicId
+  fullName: Orleans.Configuration.PubSubOptions.TopicId
+- uid: Orleans.Configuration.PubSubOptions.ClusterId*
+  commentId: Overload:Orleans.Configuration.PubSubOptions.ClusterId
+  isExternal: false
+  name: ClusterId
+  nameWithType: PubSubOptions.ClusterId
+  fullName: Orleans.Configuration.PubSubOptions.ClusterId
+- uid: Orleans.Configuration.PubSubOptions.CustomEndpoint*
+  commentId: Overload:Orleans.Configuration.PubSubOptions.CustomEndpoint
+  isExternal: false
+  name: CustomEndpoint
+  nameWithType: PubSubOptions.CustomEndpoint
+  fullName: Orleans.Configuration.PubSubOptions.CustomEndpoint
+- uid: Orleans.Configuration.PubSubOptions.Deadline*
+  commentId: Overload:Orleans.Configuration.PubSubOptions.Deadline
+  isExternal: false
+  name: Deadline
+  nameWithType: PubSubOptions.Deadline
+  fullName: Orleans.Configuration.PubSubOptions.Deadline
+- uid: System.Nullable{TimeSpan}
+  commentId: '!:System.Nullable{TimeSpan}'
+  definition: System.Nullable`1
+  name: Nullable<TimeSpan>
+  nameWithType: Nullable<TimeSpan>
+  fullName: System.Nullable<TimeSpan>
+  nameWithType.vb: Nullable(Of TimeSpan)
+  fullName.vb: System.Nullable(Of TimeSpan)
+  name.vb: Nullable(Of TimeSpan)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: TimeSpan
+    name: TimeSpan
+    nameWithType: TimeSpan
+    fullName: TimeSpan
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: TimeSpan
+    name: TimeSpan
+    nameWithType: TimeSpan
+    fullName: TimeSpan
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  isExternal: true
+  name: Nullable<>
+  nameWithType: Nullable<>
+  fullName: System.Nullable<>
+  nameWithType.vb: Nullable(Of )
+  fullName.vb: System.Nullable(Of )
+  name.vb: Nullable(Of )
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TimeSpan
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: TimeSpan

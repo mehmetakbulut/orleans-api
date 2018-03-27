@@ -1,0 +1,1562 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.ILifecycleObservable
+  commentId: T:Orleans.ILifecycleObservable
+  id: ILifecycleObservable
+  parent: Orleans
+  children:
+  - Orleans.ILifecycleObservable.Subscribe(System.String,System.Int32,Orleans.ILifecycleObserver)
+  langs:
+  - csharp
+  - vb
+  name: ILifecycleObservable
+  nameWithType: ILifecycleObservable
+  fullName: Orleans.ILifecycleObservable
+  type: Interface
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Lifecycle/ILifecycleObservable.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ILifecycleObservable
+    path: src/Orleans.Core.Abstractions/Lifecycle/ILifecycleObservable.cs
+    startLine: 10
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nObservable lifecycle.\nEach stage of lifecycle is observable.  All observers will be notified \nwhen the stage is reached when starting, and stopping.\nStages are started in ascending order, and stopped in decending order.\n"
+  example: []
+  syntax:
+    content: public interface ILifecycleObservable
+    content.vb: Public Interface ILifecycleObservable
+  extensionMethods:
+  - Orleans.ILifecycleObservable.Orleans.LifecycleExtensions.Subscribe(System.String,System.Int32,Func{CancellationToken,Task},Func{CancellationToken,Task})
+  - Orleans.ILifecycleObservable.Orleans.LifecycleExtensions.Subscribe(System.String,System.Int32,Func{CancellationToken,Task})
+  - Orleans.ILifecycleObservable.Orleans.LifecycleExtensions.Subscribe``1(System.Int32,Orleans.ILifecycleObserver)
+  - Orleans.ILifecycleObservable.Orleans.LifecycleExtensions.Subscribe``1(System.Int32,Func{CancellationToken,Task},Func{CancellationToken,Task})
+  - Orleans.ILifecycleObservable.Orleans.LifecycleExtensions.Subscribe``1(System.Int32,Func{CancellationToken,Task})
+  - Orleans.ILifecycleObservable.Orleans.LifecycleExtensions.Subscribe(System.Int32,Orleans.ILifecycleObserver)
+  - Orleans.ILifecycleObservable.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Orleans.ILifecycleObservable.Subscribe(System.String,System.Int32,Orleans.ILifecycleObserver)
+  commentId: M:Orleans.ILifecycleObservable.Subscribe(System.String,System.Int32,Orleans.ILifecycleObserver)
+  id: Subscribe(System.String,System.Int32,Orleans.ILifecycleObserver)
+  parent: Orleans.ILifecycleObservable
+  langs:
+  - csharp
+  - vb
+  name: Subscribe(String, Int32, ILifecycleObserver)
+  nameWithType: ILifecycleObservable.Subscribe(String, Int32, ILifecycleObserver)
+  fullName: Orleans.ILifecycleObservable.Subscribe(System.String, System.Int32, Orleans.ILifecycleObserver)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Lifecycle/ILifecycleObservable.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Subscribe
+    path: src/Orleans.Core.Abstractions/Lifecycle/ILifecycleObservable.cs
+    startLine: 19
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nSubscribe for notification when a stage is reached while starting or stopping.\n"
+  example: []
+  syntax:
+    content: IDisposable Subscribe(string observerName, int stage, ILifecycleObserver observer)
+    parameters:
+    - id: observerName
+      type: System.String
+      description: name of observer, for reporting purposes
+    - id: stage
+      type: System.Int32
+      description: stage of interest
+    - id: observer
+      type: Orleans.ILifecycleObserver
+      description: stage observer
+    return:
+      type: IDisposable
+      description: A disposable that can be disposed of to unsubscribe
+    content.vb: Function Subscribe(observerName As String, stage As Integer, observer As ILifecycleObserver) As IDisposable
+  overload: Orleans.ILifecycleObservable.Subscribe*
+references:
+- uid: Orleans
+  commentId: N:Orleans
+  isExternal: false
+  name: Orleans
+  nameWithType: Orleans
+  fullName: Orleans
+- uid: Orleans.ILifecycleObservable.Orleans.LifecycleExtensions.Subscribe(System.String,System.Int32,Func{CancellationToken,Task},Func{CancellationToken,Task})
+  commentId: M:Orleans.LifecycleExtensions.Subscribe(Orleans.ILifecycleObservable,System.String,System.Int32,Func{CancellationToken,Task},Func{CancellationToken,Task})
+  parent: Orleans.LifecycleExtensions
+  definition: Orleans.LifecycleExtensions.Subscribe(Orleans.ILifecycleObservable,System.String,System.Int32,Func{CancellationToken,Task},Func{CancellationToken,Task})
+  name: Subscribe(String, Int32, Func<CancellationToken, Task>, Func<CancellationToken, Task>)
+  nameWithType: LifecycleExtensions.Subscribe(String, Int32, Func<CancellationToken, Task>, Func<CancellationToken, Task>)
+  fullName: Orleans.LifecycleExtensions.Subscribe(System.String, System.Int32, Func<CancellationToken, Task>, Func<CancellationToken, Task>)
+  nameWithType.vb: LifecycleExtensions.Subscribe(String, Int32, Func(Of CancellationToken, Task), Func(Of CancellationToken, Task))
+  fullName.vb: Orleans.LifecycleExtensions.Subscribe(System.String, System.Int32, Func(Of CancellationToken, Task), Func(Of CancellationToken, Task))
+  name.vb: Subscribe(String, Int32, Func(Of CancellationToken, Task), Func(Of CancellationToken, Task))
+  spec.csharp:
+  - uid: Orleans.LifecycleExtensions.Subscribe(System.String,System.Int32,Func{CancellationToken,Task},Func{CancellationToken,Task})
+    name: Subscribe
+    nameWithType: LifecycleExtensions.Subscribe
+    fullName: Orleans.LifecycleExtensions.Subscribe
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: CancellationToken
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: CancellationToken
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.LifecycleExtensions.Subscribe(System.String,System.Int32,Func{CancellationToken,Task},Func{CancellationToken,Task})
+    name: Subscribe
+    nameWithType: LifecycleExtensions.Subscribe
+    fullName: Orleans.LifecycleExtensions.Subscribe
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: CancellationToken
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: CancellationToken
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.ILifecycleObservable.Orleans.LifecycleExtensions.Subscribe(System.String,System.Int32,Func{CancellationToken,Task})
+  commentId: M:Orleans.LifecycleExtensions.Subscribe(Orleans.ILifecycleObservable,System.String,System.Int32,Func{CancellationToken,Task})
+  parent: Orleans.LifecycleExtensions
+  definition: Orleans.LifecycleExtensions.Subscribe(Orleans.ILifecycleObservable,System.String,System.Int32,Func{CancellationToken,Task})
+  name: Subscribe(String, Int32, Func<CancellationToken, Task>)
+  nameWithType: LifecycleExtensions.Subscribe(String, Int32, Func<CancellationToken, Task>)
+  fullName: Orleans.LifecycleExtensions.Subscribe(System.String, System.Int32, Func<CancellationToken, Task>)
+  nameWithType.vb: LifecycleExtensions.Subscribe(String, Int32, Func(Of CancellationToken, Task))
+  fullName.vb: Orleans.LifecycleExtensions.Subscribe(System.String, System.Int32, Func(Of CancellationToken, Task))
+  name.vb: Subscribe(String, Int32, Func(Of CancellationToken, Task))
+  spec.csharp:
+  - uid: Orleans.LifecycleExtensions.Subscribe(System.String,System.Int32,Func{CancellationToken,Task})
+    name: Subscribe
+    nameWithType: LifecycleExtensions.Subscribe
+    fullName: Orleans.LifecycleExtensions.Subscribe
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: CancellationToken
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.LifecycleExtensions.Subscribe(System.String,System.Int32,Func{CancellationToken,Task})
+    name: Subscribe
+    nameWithType: LifecycleExtensions.Subscribe
+    fullName: Orleans.LifecycleExtensions.Subscribe
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: CancellationToken
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.ILifecycleObservable.Orleans.LifecycleExtensions.Subscribe``1(System.Int32,Orleans.ILifecycleObserver)
+  commentId: M:Orleans.LifecycleExtensions.Subscribe``1(Orleans.ILifecycleObservable,System.Int32,Orleans.ILifecycleObserver)
+  parent: Orleans.LifecycleExtensions
+  definition: Orleans.LifecycleExtensions.Subscribe``1(Orleans.ILifecycleObservable,System.Int32,Orleans.ILifecycleObserver)
+  name: Subscribe<TObserver>(Int32, ILifecycleObserver)
+  nameWithType: LifecycleExtensions.Subscribe<TObserver>(Int32, ILifecycleObserver)
+  fullName: Orleans.LifecycleExtensions.Subscribe<TObserver>(System.Int32, Orleans.ILifecycleObserver)
+  nameWithType.vb: LifecycleExtensions.Subscribe(Of TObserver)(Int32, ILifecycleObserver)
+  fullName.vb: Orleans.LifecycleExtensions.Subscribe(Of TObserver)(System.Int32, Orleans.ILifecycleObserver)
+  name.vb: Subscribe(Of TObserver)(Int32, ILifecycleObserver)
+  spec.csharp:
+  - uid: Orleans.LifecycleExtensions.Subscribe``1(System.Int32,Orleans.ILifecycleObserver)
+    name: Subscribe<TObserver>
+    nameWithType: LifecycleExtensions.Subscribe<TObserver>
+    fullName: Orleans.LifecycleExtensions.Subscribe<TObserver>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.ILifecycleObserver
+    name: ILifecycleObserver
+    nameWithType: ILifecycleObserver
+    fullName: Orleans.ILifecycleObserver
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.LifecycleExtensions.Subscribe``1(System.Int32,Orleans.ILifecycleObserver)
+    name: Subscribe(Of TObserver)
+    nameWithType: LifecycleExtensions.Subscribe(Of TObserver)
+    fullName: Orleans.LifecycleExtensions.Subscribe(Of TObserver)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.ILifecycleObserver
+    name: ILifecycleObserver
+    nameWithType: ILifecycleObserver
+    fullName: Orleans.ILifecycleObserver
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.ILifecycleObservable.Orleans.LifecycleExtensions.Subscribe``1(System.Int32,Func{CancellationToken,Task},Func{CancellationToken,Task})
+  commentId: M:Orleans.LifecycleExtensions.Subscribe``1(Orleans.ILifecycleObservable,System.Int32,Func{CancellationToken,Task},Func{CancellationToken,Task})
+  parent: Orleans.LifecycleExtensions
+  definition: Orleans.LifecycleExtensions.Subscribe``1(Orleans.ILifecycleObservable,System.Int32,Func{CancellationToken,Task},Func{CancellationToken,Task})
+  name: Subscribe<TObserver>(Int32, Func<CancellationToken, Task>, Func<CancellationToken, Task>)
+  nameWithType: LifecycleExtensions.Subscribe<TObserver>(Int32, Func<CancellationToken, Task>, Func<CancellationToken, Task>)
+  fullName: Orleans.LifecycleExtensions.Subscribe<TObserver>(System.Int32, Func<CancellationToken, Task>, Func<CancellationToken, Task>)
+  nameWithType.vb: LifecycleExtensions.Subscribe(Of TObserver)(Int32, Func(Of CancellationToken, Task), Func(Of CancellationToken, Task))
+  fullName.vb: Orleans.LifecycleExtensions.Subscribe(Of TObserver)(System.Int32, Func(Of CancellationToken, Task), Func(Of CancellationToken, Task))
+  name.vb: Subscribe(Of TObserver)(Int32, Func(Of CancellationToken, Task), Func(Of CancellationToken, Task))
+  spec.csharp:
+  - uid: Orleans.LifecycleExtensions.Subscribe``1(System.Int32,Func{CancellationToken,Task},Func{CancellationToken,Task})
+    name: Subscribe<TObserver>
+    nameWithType: LifecycleExtensions.Subscribe<TObserver>
+    fullName: Orleans.LifecycleExtensions.Subscribe<TObserver>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: CancellationToken
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: CancellationToken
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.LifecycleExtensions.Subscribe``1(System.Int32,Func{CancellationToken,Task},Func{CancellationToken,Task})
+    name: Subscribe(Of TObserver)
+    nameWithType: LifecycleExtensions.Subscribe(Of TObserver)
+    fullName: Orleans.LifecycleExtensions.Subscribe(Of TObserver)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: CancellationToken
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: CancellationToken
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.ILifecycleObservable.Orleans.LifecycleExtensions.Subscribe``1(System.Int32,Func{CancellationToken,Task})
+  commentId: M:Orleans.LifecycleExtensions.Subscribe``1(Orleans.ILifecycleObservable,System.Int32,Func{CancellationToken,Task})
+  parent: Orleans.LifecycleExtensions
+  definition: Orleans.LifecycleExtensions.Subscribe``1(Orleans.ILifecycleObservable,System.Int32,Func{CancellationToken,Task})
+  name: Subscribe<TObserver>(Int32, Func<CancellationToken, Task>)
+  nameWithType: LifecycleExtensions.Subscribe<TObserver>(Int32, Func<CancellationToken, Task>)
+  fullName: Orleans.LifecycleExtensions.Subscribe<TObserver>(System.Int32, Func<CancellationToken, Task>)
+  nameWithType.vb: LifecycleExtensions.Subscribe(Of TObserver)(Int32, Func(Of CancellationToken, Task))
+  fullName.vb: Orleans.LifecycleExtensions.Subscribe(Of TObserver)(System.Int32, Func(Of CancellationToken, Task))
+  name.vb: Subscribe(Of TObserver)(Int32, Func(Of CancellationToken, Task))
+  spec.csharp:
+  - uid: Orleans.LifecycleExtensions.Subscribe``1(System.Int32,Func{CancellationToken,Task})
+    name: Subscribe<TObserver>
+    nameWithType: LifecycleExtensions.Subscribe<TObserver>
+    fullName: Orleans.LifecycleExtensions.Subscribe<TObserver>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: CancellationToken
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.LifecycleExtensions.Subscribe``1(System.Int32,Func{CancellationToken,Task})
+    name: Subscribe(Of TObserver)
+    nameWithType: LifecycleExtensions.Subscribe(Of TObserver)
+    fullName: Orleans.LifecycleExtensions.Subscribe(Of TObserver)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: CancellationToken
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.ILifecycleObservable.Orleans.LifecycleExtensions.Subscribe(System.Int32,Orleans.ILifecycleObserver)
+  commentId: M:Orleans.LifecycleExtensions.Subscribe(Orleans.ILifecycleObservable,System.Int32,Orleans.ILifecycleObserver)
+  parent: Orleans.LifecycleExtensions
+  definition: Orleans.LifecycleExtensions.Subscribe(Orleans.ILifecycleObservable,System.Int32,Orleans.ILifecycleObserver)
+  name: Subscribe(Int32, ILifecycleObserver)
+  nameWithType: LifecycleExtensions.Subscribe(Int32, ILifecycleObserver)
+  fullName: Orleans.LifecycleExtensions.Subscribe(System.Int32, Orleans.ILifecycleObserver)
+  spec.csharp:
+  - uid: Orleans.LifecycleExtensions.Subscribe(System.Int32,Orleans.ILifecycleObserver)
+    name: Subscribe
+    nameWithType: LifecycleExtensions.Subscribe
+    fullName: Orleans.LifecycleExtensions.Subscribe
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.ILifecycleObserver
+    name: ILifecycleObserver
+    nameWithType: ILifecycleObserver
+    fullName: Orleans.ILifecycleObserver
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.LifecycleExtensions.Subscribe(System.Int32,Orleans.ILifecycleObserver)
+    name: Subscribe
+    nameWithType: LifecycleExtensions.Subscribe
+    fullName: Orleans.LifecycleExtensions.Subscribe
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.ILifecycleObserver
+    name: ILifecycleObserver
+    nameWithType: ILifecycleObserver
+    fullName: Orleans.ILifecycleObserver
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.ILifecycleObservable.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<ILifecycleObservable>()
+  nameWithType: ImmutableExt.AsImmutable<ILifecycleObservable>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.ILifecycleObservable>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of ILifecycleObservable)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.ILifecycleObservable)()
+  name.vb: AsImmutable(Of ILifecycleObservable)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<ILifecycleObservable>
+    nameWithType: ImmutableExt.AsImmutable<ILifecycleObservable>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.ILifecycleObservable>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of ILifecycleObservable)
+    nameWithType: ImmutableExt.AsImmutable(Of ILifecycleObservable)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.ILifecycleObservable)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.LifecycleExtensions.Subscribe(Orleans.ILifecycleObservable,System.String,System.Int32,Func{CancellationToken,Task},Func{CancellationToken,Task})
+  commentId: M:Orleans.LifecycleExtensions.Subscribe(Orleans.ILifecycleObservable,System.String,System.Int32,Func{CancellationToken,Task},Func{CancellationToken,Task})
+  isExternal: true
+  name: Subscribe(ILifecycleObservable, String, Int32, Func<CancellationToken, Task>, Func<CancellationToken, Task>)
+  nameWithType: LifecycleExtensions.Subscribe(ILifecycleObservable, String, Int32, Func<CancellationToken, Task>, Func<CancellationToken, Task>)
+  fullName: Orleans.LifecycleExtensions.Subscribe(Orleans.ILifecycleObservable, System.String, System.Int32, Func<CancellationToken, Task>, Func<CancellationToken, Task>)
+  nameWithType.vb: LifecycleExtensions.Subscribe(ILifecycleObservable, String, Int32, Func(Of CancellationToken, Task), Func(Of CancellationToken, Task))
+  fullName.vb: Orleans.LifecycleExtensions.Subscribe(Orleans.ILifecycleObservable, System.String, System.Int32, Func(Of CancellationToken, Task), Func(Of CancellationToken, Task))
+  name.vb: Subscribe(ILifecycleObservable, String, Int32, Func(Of CancellationToken, Task), Func(Of CancellationToken, Task))
+  spec.csharp:
+  - uid: Orleans.LifecycleExtensions.Subscribe(Orleans.ILifecycleObservable,System.String,System.Int32,Func{CancellationToken,Task},Func{CancellationToken,Task})
+    name: Subscribe
+    nameWithType: LifecycleExtensions.Subscribe
+    fullName: Orleans.LifecycleExtensions.Subscribe
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.ILifecycleObservable
+    name: ILifecycleObservable
+    nameWithType: ILifecycleObservable
+    fullName: Orleans.ILifecycleObservable
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: CancellationToken
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: CancellationToken
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.LifecycleExtensions.Subscribe(Orleans.ILifecycleObservable,System.String,System.Int32,Func{CancellationToken,Task},Func{CancellationToken,Task})
+    name: Subscribe
+    nameWithType: LifecycleExtensions.Subscribe
+    fullName: Orleans.LifecycleExtensions.Subscribe
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.ILifecycleObservable
+    name: ILifecycleObservable
+    nameWithType: ILifecycleObservable
+    fullName: Orleans.ILifecycleObservable
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: CancellationToken
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: CancellationToken
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.LifecycleExtensions
+  commentId: T:Orleans.LifecycleExtensions
+  parent: Orleans
+  isExternal: false
+  name: LifecycleExtensions
+  nameWithType: LifecycleExtensions
+  fullName: Orleans.LifecycleExtensions
+- uid: Orleans.LifecycleExtensions.Subscribe(Orleans.ILifecycleObservable,System.String,System.Int32,Func{CancellationToken,Task})
+  commentId: M:Orleans.LifecycleExtensions.Subscribe(Orleans.ILifecycleObservable,System.String,System.Int32,Func{CancellationToken,Task})
+  isExternal: true
+  name: Subscribe(ILifecycleObservable, String, Int32, Func<CancellationToken, Task>)
+  nameWithType: LifecycleExtensions.Subscribe(ILifecycleObservable, String, Int32, Func<CancellationToken, Task>)
+  fullName: Orleans.LifecycleExtensions.Subscribe(Orleans.ILifecycleObservable, System.String, System.Int32, Func<CancellationToken, Task>)
+  nameWithType.vb: LifecycleExtensions.Subscribe(ILifecycleObservable, String, Int32, Func(Of CancellationToken, Task))
+  fullName.vb: Orleans.LifecycleExtensions.Subscribe(Orleans.ILifecycleObservable, System.String, System.Int32, Func(Of CancellationToken, Task))
+  name.vb: Subscribe(ILifecycleObservable, String, Int32, Func(Of CancellationToken, Task))
+  spec.csharp:
+  - uid: Orleans.LifecycleExtensions.Subscribe(Orleans.ILifecycleObservable,System.String,System.Int32,Func{CancellationToken,Task})
+    name: Subscribe
+    nameWithType: LifecycleExtensions.Subscribe
+    fullName: Orleans.LifecycleExtensions.Subscribe
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.ILifecycleObservable
+    name: ILifecycleObservable
+    nameWithType: ILifecycleObservable
+    fullName: Orleans.ILifecycleObservable
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: CancellationToken
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.LifecycleExtensions.Subscribe(Orleans.ILifecycleObservable,System.String,System.Int32,Func{CancellationToken,Task})
+    name: Subscribe
+    nameWithType: LifecycleExtensions.Subscribe
+    fullName: Orleans.LifecycleExtensions.Subscribe
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.ILifecycleObservable
+    name: ILifecycleObservable
+    nameWithType: ILifecycleObservable
+    fullName: Orleans.ILifecycleObservable
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: CancellationToken
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.LifecycleExtensions.Subscribe``1(Orleans.ILifecycleObservable,System.Int32,Orleans.ILifecycleObserver)
+  commentId: M:Orleans.LifecycleExtensions.Subscribe``1(Orleans.ILifecycleObservable,System.Int32,Orleans.ILifecycleObserver)
+  isExternal: true
+  name: Subscribe<TObserver>(ILifecycleObservable, Int32, ILifecycleObserver)
+  nameWithType: LifecycleExtensions.Subscribe<TObserver>(ILifecycleObservable, Int32, ILifecycleObserver)
+  fullName: Orleans.LifecycleExtensions.Subscribe<TObserver>(Orleans.ILifecycleObservable, System.Int32, Orleans.ILifecycleObserver)
+  nameWithType.vb: LifecycleExtensions.Subscribe(Of TObserver)(ILifecycleObservable, Int32, ILifecycleObserver)
+  fullName.vb: Orleans.LifecycleExtensions.Subscribe(Of TObserver)(Orleans.ILifecycleObservable, System.Int32, Orleans.ILifecycleObserver)
+  name.vb: Subscribe(Of TObserver)(ILifecycleObservable, Int32, ILifecycleObserver)
+  spec.csharp:
+  - uid: Orleans.LifecycleExtensions.Subscribe``1(Orleans.ILifecycleObservable,System.Int32,Orleans.ILifecycleObserver)
+    name: Subscribe<TObserver>
+    nameWithType: LifecycleExtensions.Subscribe<TObserver>
+    fullName: Orleans.LifecycleExtensions.Subscribe<TObserver>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.ILifecycleObservable
+    name: ILifecycleObservable
+    nameWithType: ILifecycleObservable
+    fullName: Orleans.ILifecycleObservable
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.ILifecycleObserver
+    name: ILifecycleObserver
+    nameWithType: ILifecycleObserver
+    fullName: Orleans.ILifecycleObserver
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.LifecycleExtensions.Subscribe``1(Orleans.ILifecycleObservable,System.Int32,Orleans.ILifecycleObserver)
+    name: Subscribe(Of TObserver)
+    nameWithType: LifecycleExtensions.Subscribe(Of TObserver)
+    fullName: Orleans.LifecycleExtensions.Subscribe(Of TObserver)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.ILifecycleObservable
+    name: ILifecycleObservable
+    nameWithType: ILifecycleObservable
+    fullName: Orleans.ILifecycleObservable
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.ILifecycleObserver
+    name: ILifecycleObserver
+    nameWithType: ILifecycleObserver
+    fullName: Orleans.ILifecycleObserver
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.LifecycleExtensions.Subscribe``1(Orleans.ILifecycleObservable,System.Int32,Func{CancellationToken,Task},Func{CancellationToken,Task})
+  commentId: M:Orleans.LifecycleExtensions.Subscribe``1(Orleans.ILifecycleObservable,System.Int32,Func{CancellationToken,Task},Func{CancellationToken,Task})
+  isExternal: true
+  name: Subscribe<TObserver>(ILifecycleObservable, Int32, Func<CancellationToken, Task>, Func<CancellationToken, Task>)
+  nameWithType: LifecycleExtensions.Subscribe<TObserver>(ILifecycleObservable, Int32, Func<CancellationToken, Task>, Func<CancellationToken, Task>)
+  fullName: Orleans.LifecycleExtensions.Subscribe<TObserver>(Orleans.ILifecycleObservable, System.Int32, Func<CancellationToken, Task>, Func<CancellationToken, Task>)
+  nameWithType.vb: LifecycleExtensions.Subscribe(Of TObserver)(ILifecycleObservable, Int32, Func(Of CancellationToken, Task), Func(Of CancellationToken, Task))
+  fullName.vb: Orleans.LifecycleExtensions.Subscribe(Of TObserver)(Orleans.ILifecycleObservable, System.Int32, Func(Of CancellationToken, Task), Func(Of CancellationToken, Task))
+  name.vb: Subscribe(Of TObserver)(ILifecycleObservable, Int32, Func(Of CancellationToken, Task), Func(Of CancellationToken, Task))
+  spec.csharp:
+  - uid: Orleans.LifecycleExtensions.Subscribe``1(Orleans.ILifecycleObservable,System.Int32,Func{CancellationToken,Task},Func{CancellationToken,Task})
+    name: Subscribe<TObserver>
+    nameWithType: LifecycleExtensions.Subscribe<TObserver>
+    fullName: Orleans.LifecycleExtensions.Subscribe<TObserver>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.ILifecycleObservable
+    name: ILifecycleObservable
+    nameWithType: ILifecycleObservable
+    fullName: Orleans.ILifecycleObservable
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: CancellationToken
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: CancellationToken
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.LifecycleExtensions.Subscribe``1(Orleans.ILifecycleObservable,System.Int32,Func{CancellationToken,Task},Func{CancellationToken,Task})
+    name: Subscribe(Of TObserver)
+    nameWithType: LifecycleExtensions.Subscribe(Of TObserver)
+    fullName: Orleans.LifecycleExtensions.Subscribe(Of TObserver)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.ILifecycleObservable
+    name: ILifecycleObservable
+    nameWithType: ILifecycleObservable
+    fullName: Orleans.ILifecycleObservable
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: CancellationToken
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: CancellationToken
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.LifecycleExtensions.Subscribe``1(Orleans.ILifecycleObservable,System.Int32,Func{CancellationToken,Task})
+  commentId: M:Orleans.LifecycleExtensions.Subscribe``1(Orleans.ILifecycleObservable,System.Int32,Func{CancellationToken,Task})
+  isExternal: true
+  name: Subscribe<TObserver>(ILifecycleObservable, Int32, Func<CancellationToken, Task>)
+  nameWithType: LifecycleExtensions.Subscribe<TObserver>(ILifecycleObservable, Int32, Func<CancellationToken, Task>)
+  fullName: Orleans.LifecycleExtensions.Subscribe<TObserver>(Orleans.ILifecycleObservable, System.Int32, Func<CancellationToken, Task>)
+  nameWithType.vb: LifecycleExtensions.Subscribe(Of TObserver)(ILifecycleObservable, Int32, Func(Of CancellationToken, Task))
+  fullName.vb: Orleans.LifecycleExtensions.Subscribe(Of TObserver)(Orleans.ILifecycleObservable, System.Int32, Func(Of CancellationToken, Task))
+  name.vb: Subscribe(Of TObserver)(ILifecycleObservable, Int32, Func(Of CancellationToken, Task))
+  spec.csharp:
+  - uid: Orleans.LifecycleExtensions.Subscribe``1(Orleans.ILifecycleObservable,System.Int32,Func{CancellationToken,Task})
+    name: Subscribe<TObserver>
+    nameWithType: LifecycleExtensions.Subscribe<TObserver>
+    fullName: Orleans.LifecycleExtensions.Subscribe<TObserver>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.ILifecycleObservable
+    name: ILifecycleObservable
+    nameWithType: ILifecycleObservable
+    fullName: Orleans.ILifecycleObservable
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: CancellationToken
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.LifecycleExtensions.Subscribe``1(Orleans.ILifecycleObservable,System.Int32,Func{CancellationToken,Task})
+    name: Subscribe(Of TObserver)
+    nameWithType: LifecycleExtensions.Subscribe(Of TObserver)
+    fullName: Orleans.LifecycleExtensions.Subscribe(Of TObserver)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.ILifecycleObservable
+    name: ILifecycleObservable
+    nameWithType: ILifecycleObservable
+    fullName: Orleans.ILifecycleObservable
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: CancellationToken
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.LifecycleExtensions.Subscribe(Orleans.ILifecycleObservable,System.Int32,Orleans.ILifecycleObserver)
+  commentId: M:Orleans.LifecycleExtensions.Subscribe(Orleans.ILifecycleObservable,System.Int32,Orleans.ILifecycleObserver)
+  isExternal: true
+  name: Subscribe(ILifecycleObservable, Int32, ILifecycleObserver)
+  nameWithType: LifecycleExtensions.Subscribe(ILifecycleObservable, Int32, ILifecycleObserver)
+  fullName: Orleans.LifecycleExtensions.Subscribe(Orleans.ILifecycleObservable, System.Int32, Orleans.ILifecycleObserver)
+  spec.csharp:
+  - uid: Orleans.LifecycleExtensions.Subscribe(Orleans.ILifecycleObservable,System.Int32,Orleans.ILifecycleObserver)
+    name: Subscribe
+    nameWithType: LifecycleExtensions.Subscribe
+    fullName: Orleans.LifecycleExtensions.Subscribe
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.ILifecycleObservable
+    name: ILifecycleObservable
+    nameWithType: ILifecycleObservable
+    fullName: Orleans.ILifecycleObservable
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.ILifecycleObserver
+    name: ILifecycleObserver
+    nameWithType: ILifecycleObserver
+    fullName: Orleans.ILifecycleObserver
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.LifecycleExtensions.Subscribe(Orleans.ILifecycleObservable,System.Int32,Orleans.ILifecycleObserver)
+    name: Subscribe
+    nameWithType: LifecycleExtensions.Subscribe
+    fullName: Orleans.LifecycleExtensions.Subscribe
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.ILifecycleObservable
+    name: ILifecycleObservable
+    nameWithType: ILifecycleObservable
+    fullName: Orleans.ILifecycleObservable
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.ILifecycleObserver
+    name: ILifecycleObserver
+    nameWithType: ILifecycleObserver
+    fullName: Orleans.ILifecycleObserver
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.ILifecycleObservable.Subscribe*
+  commentId: Overload:Orleans.ILifecycleObservable.Subscribe
+  isExternal: false
+  name: Subscribe
+  nameWithType: ILifecycleObservable.Subscribe
+  fullName: Orleans.ILifecycleObservable.Subscribe
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Orleans.ILifecycleObserver
+  commentId: T:Orleans.ILifecycleObserver
+  parent: Orleans
+  isExternal: false
+  name: ILifecycleObserver
+  nameWithType: ILifecycleObserver
+  fullName: Orleans.ILifecycleObserver
+- uid: IDisposable
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: IDisposable
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System

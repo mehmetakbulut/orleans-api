@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.GrainDirectory
+  commentId: N:Orleans.GrainDirectory
+  id: Orleans.GrainDirectory
+  children:
+  - Orleans.GrainDirectory.IMultiClusterRegistrationStrategy
+  langs:
+  - csharp
+  - vb
+  name: Orleans.GrainDirectory
+  nameWithType: Orleans.GrainDirectory
+  fullName: Orleans.GrainDirectory
+  type: Namespace
+  assemblies:
+  - Orleans.Core.Abstractions
+references:
+- uid: Orleans.GrainDirectory.IMultiClusterRegistrationStrategy
+  commentId: T:Orleans.GrainDirectory.IMultiClusterRegistrationStrategy
+  isExternal: false
+  name: IMultiClusterRegistrationStrategy
+  nameWithType: IMultiClusterRegistrationStrategy
+  fullName: Orleans.GrainDirectory.IMultiClusterRegistrationStrategy

@@ -1,0 +1,214 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.RegexImplicitStreamSubscriptionAttribute
+  commentId: T:Orleans.RegexImplicitStreamSubscriptionAttribute
+  id: RegexImplicitStreamSubscriptionAttribute
+  parent: Orleans
+  children:
+  - Orleans.RegexImplicitStreamSubscriptionAttribute.#ctor(System.String)
+  langs:
+  - csharp
+  - vb
+  name: RegexImplicitStreamSubscriptionAttribute
+  nameWithType: RegexImplicitStreamSubscriptionAttribute
+  fullName: Orleans.RegexImplicitStreamSubscriptionAttribute
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Streams/Predicates/StreamSubscriptionAttributes.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: RegexImplicitStreamSubscriptionAttribute
+    path: src/Orleans.Core.Abstractions/Streams/Predicates/StreamSubscriptionAttributes.cs
+    startLine: 60
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nThe [Orleans.RegexImplicitStreamSubscription] attribute is used to mark grains as implicit stream\nsubscriptions by filtering stream namespaces to subscribe using a regular expression.\n"
+  example: []
+  syntax:
+    content: 'public sealed class RegexImplicitStreamSubscriptionAttribute : ImplicitStreamSubscriptionAttribute'
+    content.vb: >-
+      Public NotInheritable Class RegexImplicitStreamSubscriptionAttribute
+
+          Inherits ImplicitStreamSubscriptionAttribute
+  inheritance:
+  - System.Object
+  - Orleans.ImplicitStreamSubscriptionAttribute
+  inheritedMembers:
+  - Orleans.ImplicitStreamSubscriptionAttribute.Predicate
+  extensionMethods:
+  - Orleans.RegexImplicitStreamSubscriptionAttribute.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Orleans.RegexImplicitStreamSubscriptionAttribute.#ctor(System.String)
+  commentId: M:Orleans.RegexImplicitStreamSubscriptionAttribute.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Orleans.RegexImplicitStreamSubscriptionAttribute
+  langs:
+  - csharp
+  - vb
+  name: RegexImplicitStreamSubscriptionAttribute(String)
+  nameWithType: RegexImplicitStreamSubscriptionAttribute.RegexImplicitStreamSubscriptionAttribute(String)
+  fullName: Orleans.RegexImplicitStreamSubscriptionAttribute.RegexImplicitStreamSubscriptionAttribute(System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Streams/Predicates/StreamSubscriptionAttributes.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Core.Abstractions/Streams/Predicates/StreamSubscriptionAttributes.cs
+    startLine: 67
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nAllows to pass a regular expression to filter stream namespaces to subscribe to.\n"
+  example: []
+  syntax:
+    content: public RegexImplicitStreamSubscriptionAttribute(string pattern)
+    parameters:
+    - id: pattern
+      type: System.String
+      description: The stream namespace regular expression filter.
+    content.vb: Public Sub New(pattern As String)
+  overload: Orleans.RegexImplicitStreamSubscriptionAttribute.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans
+  commentId: N:Orleans
+  isExternal: false
+  name: Orleans
+  nameWithType: Orleans
+  fullName: Orleans
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.ImplicitStreamSubscriptionAttribute
+  commentId: T:Orleans.ImplicitStreamSubscriptionAttribute
+  parent: Orleans
+  isExternal: false
+  name: ImplicitStreamSubscriptionAttribute
+  nameWithType: ImplicitStreamSubscriptionAttribute
+  fullName: Orleans.ImplicitStreamSubscriptionAttribute
+- uid: Orleans.ImplicitStreamSubscriptionAttribute.Predicate
+  commentId: P:Orleans.ImplicitStreamSubscriptionAttribute.Predicate
+  parent: Orleans.ImplicitStreamSubscriptionAttribute
+  isExternal: false
+  name: Predicate
+  nameWithType: ImplicitStreamSubscriptionAttribute.Predicate
+  fullName: Orleans.ImplicitStreamSubscriptionAttribute.Predicate
+- uid: Orleans.RegexImplicitStreamSubscriptionAttribute.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<RegexImplicitStreamSubscriptionAttribute>()
+  nameWithType: ImmutableExt.AsImmutable<RegexImplicitStreamSubscriptionAttribute>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.RegexImplicitStreamSubscriptionAttribute>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of RegexImplicitStreamSubscriptionAttribute)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.RegexImplicitStreamSubscriptionAttribute)()
+  name.vb: AsImmutable(Of RegexImplicitStreamSubscriptionAttribute)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<RegexImplicitStreamSubscriptionAttribute>
+    nameWithType: ImmutableExt.AsImmutable<RegexImplicitStreamSubscriptionAttribute>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.RegexImplicitStreamSubscriptionAttribute>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of RegexImplicitStreamSubscriptionAttribute)
+    nameWithType: ImmutableExt.AsImmutable(Of RegexImplicitStreamSubscriptionAttribute)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.RegexImplicitStreamSubscriptionAttribute)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.RegexImplicitStreamSubscriptionAttribute.#ctor*
+  commentId: Overload:Orleans.RegexImplicitStreamSubscriptionAttribute.#ctor
+  isExternal: false
+  name: RegexImplicitStreamSubscriptionAttribute
+  nameWithType: RegexImplicitStreamSubscriptionAttribute.RegexImplicitStreamSubscriptionAttribute
+  fullName: Orleans.RegexImplicitStreamSubscriptionAttribute.RegexImplicitStreamSubscriptionAttribute
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

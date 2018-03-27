@@ -1,0 +1,247 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Runtime.IKeyedService`2
+  commentId: T:Orleans.Runtime.IKeyedService`2
+  id: IKeyedService`2
+  parent: Orleans.Runtime
+  children:
+  - Orleans.Runtime.IKeyedService`2.GetService(IServiceProvider)
+  - Orleans.Runtime.IKeyedService`2.Key
+  langs:
+  - csharp
+  - vb
+  name: IKeyedService<TKey, TService>
+  nameWithType: IKeyedService<TKey, TService>
+  fullName: Orleans.Runtime.IKeyedService<TKey, TService>
+  type: Interface
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Utils/IKeyedServiceCollection.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IKeyedService
+    path: src/Orleans.Core.Abstractions/Utils/IKeyedServiceCollection.cs
+    startLine: 4
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  syntax:
+    content: 'public interface IKeyedService<TKey, out TService> : IEquatable<TKey>'
+    typeParameters:
+    - id: TKey
+    - id: TService
+    content.vb: >-
+      Public Interface IKeyedService(Of TKey, Out TService)
+
+          Inherits IEquatable(Of TKey)
+  extensionMethods:
+  - Orleans.Runtime.IKeyedService`2.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  nameWithType.vb: IKeyedService(Of TKey, TService)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+  fullName.vb: Orleans.Runtime.IKeyedService(Of TKey, TService)
+  name.vb: IKeyedService(Of TKey, TService)
+- uid: Orleans.Runtime.IKeyedService`2.Key
+  commentId: P:Orleans.Runtime.IKeyedService`2.Key
+  id: Key
+  parent: Orleans.Runtime.IKeyedService`2
+  langs:
+  - csharp
+  - vb
+  name: Key
+  nameWithType: IKeyedService<TKey, TService>.Key
+  fullName: Orleans.Runtime.IKeyedService<TKey, TService>.Key
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Utils/IKeyedServiceCollection.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Key
+    path: src/Orleans.Core.Abstractions/Utils/IKeyedServiceCollection.cs
+    startLine: 6
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  syntax:
+    content: TKey Key { get; }
+    parameters: []
+    return:
+      type: '{TKey}'
+    content.vb: ReadOnly Property Key As TKey
+  overload: Orleans.Runtime.IKeyedService`2.Key*
+  nameWithType.vb: IKeyedService(Of TKey, TService).Key
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+  fullName.vb: Orleans.Runtime.IKeyedService(Of TKey, TService).Key
+- uid: Orleans.Runtime.IKeyedService`2.GetService(IServiceProvider)
+  commentId: M:Orleans.Runtime.IKeyedService`2.GetService(IServiceProvider)
+  id: GetService(IServiceProvider)
+  parent: Orleans.Runtime.IKeyedService`2
+  langs:
+  - csharp
+  - vb
+  name: GetService(IServiceProvider)
+  nameWithType: IKeyedService<TKey, TService>.GetService(IServiceProvider)
+  fullName: Orleans.Runtime.IKeyedService<TKey, TService>.GetService(IServiceProvider)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Utils/IKeyedServiceCollection.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetService
+    path: src/Orleans.Core.Abstractions/Utils/IKeyedServiceCollection.cs
+    startLine: 7
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  syntax:
+    content: TService GetService(IServiceProvider services)
+    parameters:
+    - id: services
+      type: IServiceProvider
+    return:
+      type: '{TService}'
+    content.vb: Function GetService(services As IServiceProvider) As TService
+  overload: Orleans.Runtime.IKeyedService`2.GetService*
+  nameWithType.vb: IKeyedService(Of TKey, TService).GetService(IServiceProvider)
+  fullName.vb: Orleans.Runtime.IKeyedService(Of TKey, TService).GetService(IServiceProvider)
+references:
+- uid: Orleans.Runtime
+  commentId: N:Orleans.Runtime
+  isExternal: false
+  name: Orleans.Runtime
+  nameWithType: Orleans.Runtime
+  fullName: Orleans.Runtime
+- uid: Orleans.Runtime.IKeyedService`2.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<IKeyedService<TKey, TService>>()
+  nameWithType: ImmutableExt.AsImmutable<IKeyedService<TKey, TService>>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.IKeyedService<TKey, TService>>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of IKeyedService(Of TKey, TService))()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.IKeyedService(Of TKey, TService))()
+  name.vb: AsImmutable(Of IKeyedService(Of TKey, TService))()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<IKeyedService<TKey, TService>>
+    nameWithType: ImmutableExt.AsImmutable<IKeyedService<TKey, TService>>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.IKeyedService<TKey, TService>>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of IKeyedService(Of TKey, TService))
+    nameWithType: ImmutableExt.AsImmutable(Of IKeyedService(Of TKey, TService))
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.IKeyedService(Of TKey, TService))
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Runtime.IKeyedService`2.Key*
+  commentId: Overload:Orleans.Runtime.IKeyedService`2.Key
+  isExternal: false
+  name: Key
+  nameWithType: IKeyedService<TKey, TService>.Key
+  fullName: Orleans.Runtime.IKeyedService<TKey, TService>.Key
+  nameWithType.vb: IKeyedService(Of TKey, TService).Key
+  fullName.vb: Orleans.Runtime.IKeyedService(Of TKey, TService).Key
+- uid: '{TKey}'
+  commentId: '!:TKey'
+  definition: TKey
+  name: TKey
+  nameWithType: TKey
+  fullName: TKey
+- uid: TKey
+  isExternal: false
+  name: TKey
+  nameWithType: TKey
+  fullName: TKey
+- uid: Orleans.Runtime.IKeyedService`2.GetService*
+  commentId: Overload:Orleans.Runtime.IKeyedService`2.GetService
+  isExternal: false
+  name: GetService
+  nameWithType: IKeyedService<TKey, TService>.GetService
+  fullName: Orleans.Runtime.IKeyedService<TKey, TService>.GetService
+  nameWithType.vb: IKeyedService(Of TKey, TService).GetService
+  fullName.vb: Orleans.Runtime.IKeyedService(Of TKey, TService).GetService
+- uid: IServiceProvider
+  isExternal: true
+  name: IServiceProvider
+  nameWithType: IServiceProvider
+  fullName: IServiceProvider
+- uid: '{TService}'
+  commentId: '!:TService'
+  definition: TService
+  name: TService
+  nameWithType: TService
+  fullName: TService
+- uid: TService
+  isExternal: false
+  name: TService
+  nameWithType: TService
+  fullName: TService

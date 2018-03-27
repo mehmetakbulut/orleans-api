@@ -1,0 +1,623 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Storage.DynamoDBGrainStorage
+  commentId: T:Orleans.Storage.DynamoDBGrainStorage
+  id: DynamoDBGrainStorage
+  parent: Orleans.Storage
+  children:
+  - Orleans.Storage.DynamoDBGrainStorage.#ctor(System.String,Orleans.Configuration.DynamoDBStorageOptions,SerializationManager,IGrainFactory,ITypeResolver,ILoggerFactory)
+  - Orleans.Storage.DynamoDBGrainStorage.ClearStateAsync(System.String,GrainReference,IGrainState)
+  - Orleans.Storage.DynamoDBGrainStorage.Close(CancellationToken)
+  - Orleans.Storage.DynamoDBGrainStorage.Init(CancellationToken)
+  - Orleans.Storage.DynamoDBGrainStorage.Participate(ISiloLifecycle)
+  - Orleans.Storage.DynamoDBGrainStorage.ReadStateAsync(System.String,GrainReference,IGrainState)
+  - Orleans.Storage.DynamoDBGrainStorage.WriteStateAsync(System.String,GrainReference,IGrainState)
+  langs:
+  - csharp
+  - vb
+  name: DynamoDBGrainStorage
+  nameWithType: DynamoDBGrainStorage
+  fullName: Orleans.Storage.DynamoDBGrainStorage
+  type: Class
+  source:
+    remote:
+      path: src/AWS/Orleans.Persistence.DynamoDB/Provider/DynamoDBGrainStorage.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: DynamoDBGrainStorage
+    path: src/AWS/Orleans.Persistence.DynamoDB/Provider/DynamoDBGrainStorage.cs
+    startLine: 24
+  assemblies:
+  - Orleans.Persistence.DynamoDB
+  namespace: Orleans.Storage
+  summary: "\nDynamo DB storage Provider.\nPersist Grain State in a DynamoDB table either in Json or Binary format.\n"
+  example: []
+  syntax:
+    content: 'public class DynamoDBGrainStorage : IGrainStorage, ILifecycleParticipant<ISiloLifecycle>'
+    content.vb: >-
+      Public Class DynamoDBGrainStorage
+
+          Inherits IGrainStorage
+
+          Implements ILifecycleParticipant(Of ISiloLifecycle)
+  inheritance:
+  - System.Object
+  implements:
+  - ILifecycleParticipant{ISiloLifecycle}
+  extensionMethods:
+  - Orleans.Storage.DynamoDBGrainStorage.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.Storage.DynamoDBGrainStorage.#ctor(System.String,Orleans.Configuration.DynamoDBStorageOptions,SerializationManager,IGrainFactory,ITypeResolver,ILoggerFactory)
+  commentId: M:Orleans.Storage.DynamoDBGrainStorage.#ctor(System.String,Orleans.Configuration.DynamoDBStorageOptions,SerializationManager,IGrainFactory,ITypeResolver,ILoggerFactory)
+  id: '#ctor(System.String,Orleans.Configuration.DynamoDBStorageOptions,SerializationManager,IGrainFactory,ITypeResolver,ILoggerFactory)'
+  parent: Orleans.Storage.DynamoDBGrainStorage
+  langs:
+  - csharp
+  - vb
+  name: DynamoDBGrainStorage(String, DynamoDBStorageOptions, SerializationManager, IGrainFactory, ITypeResolver, ILoggerFactory)
+  nameWithType: DynamoDBGrainStorage.DynamoDBGrainStorage(String, DynamoDBStorageOptions, SerializationManager, IGrainFactory, ITypeResolver, ILoggerFactory)
+  fullName: Orleans.Storage.DynamoDBGrainStorage.DynamoDBGrainStorage(System.String, Orleans.Configuration.DynamoDBStorageOptions, SerializationManager, IGrainFactory, ITypeResolver, ILoggerFactory)
+  type: Constructor
+  source:
+    remote:
+      path: src/AWS/Orleans.Persistence.DynamoDB/Provider/DynamoDBGrainStorage.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/AWS/Orleans.Persistence.DynamoDB/Provider/DynamoDBGrainStorage.cs
+    startLine: 48
+  assemblies:
+  - Orleans.Persistence.DynamoDB
+  namespace: Orleans.Storage
+  summary: "\nDefault Constructor\n"
+  example: []
+  syntax:
+    content: public DynamoDBGrainStorage(string name, DynamoDBStorageOptions options, SerializationManager serializationManager, IGrainFactory grainFactory, ITypeResolver typeResolver, ILoggerFactory loggerFactory)
+    parameters:
+    - id: name
+      type: System.String
+    - id: options
+      type: Orleans.Configuration.DynamoDBStorageOptions
+    - id: serializationManager
+      type: SerializationManager
+    - id: grainFactory
+      type: IGrainFactory
+    - id: typeResolver
+      type: ITypeResolver
+    - id: loggerFactory
+      type: ILoggerFactory
+    content.vb: Public Sub New(name As String, options As DynamoDBStorageOptions, serializationManager As SerializationManager, grainFactory As IGrainFactory, typeResolver As ITypeResolver, loggerFactory As ILoggerFactory)
+  overload: Orleans.Storage.DynamoDBGrainStorage.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Storage.DynamoDBGrainStorage.Participate(ISiloLifecycle)
+  commentId: M:Orleans.Storage.DynamoDBGrainStorage.Participate(ISiloLifecycle)
+  id: Participate(ISiloLifecycle)
+  parent: Orleans.Storage.DynamoDBGrainStorage
+  langs:
+  - csharp
+  - vb
+  name: Participate(ISiloLifecycle)
+  nameWithType: DynamoDBGrainStorage.Participate(ISiloLifecycle)
+  fullName: Orleans.Storage.DynamoDBGrainStorage.Participate(ISiloLifecycle)
+  type: Method
+  source:
+    remote:
+      path: src/AWS/Orleans.Persistence.DynamoDB/Provider/DynamoDBGrainStorage.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Participate
+    path: src/AWS/Orleans.Persistence.DynamoDB/Provider/DynamoDBGrainStorage.cs
+    startLine: 61
+  assemblies:
+  - Orleans.Persistence.DynamoDB
+  namespace: Orleans.Storage
+  syntax:
+    content: public void Participate(ISiloLifecycle lifecycle)
+    parameters:
+    - id: lifecycle
+      type: ISiloLifecycle
+    content.vb: Public Sub Participate(lifecycle As ISiloLifecycle)
+  overload: Orleans.Storage.DynamoDBGrainStorage.Participate*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Storage.DynamoDBGrainStorage.Init(CancellationToken)
+  commentId: M:Orleans.Storage.DynamoDBGrainStorage.Init(CancellationToken)
+  id: Init(CancellationToken)
+  parent: Orleans.Storage.DynamoDBGrainStorage
+  langs:
+  - csharp
+  - vb
+  name: Init(CancellationToken)
+  nameWithType: DynamoDBGrainStorage.Init(CancellationToken)
+  fullName: Orleans.Storage.DynamoDBGrainStorage.Init(CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/AWS/Orleans.Persistence.DynamoDB/Provider/DynamoDBGrainStorage.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Init
+    path: src/AWS/Orleans.Persistence.DynamoDB/Provider/DynamoDBGrainStorage.cs
+    startLine: 67
+  assemblies:
+  - Orleans.Persistence.DynamoDB
+  namespace: Orleans.Storage
+  summary: 'Initialization function for this storage provider. '
+  example: []
+  syntax:
+    content: public Task Init(CancellationToken ct)
+    parameters:
+    - id: ct
+      type: CancellationToken
+    return:
+      type: Task
+    content.vb: Public Function Init(ct As CancellationToken) As Task
+  overload: Orleans.Storage.DynamoDBGrainStorage.Init*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Storage.DynamoDBGrainStorage.Close(CancellationToken)
+  commentId: M:Orleans.Storage.DynamoDBGrainStorage.Close(CancellationToken)
+  id: Close(CancellationToken)
+  parent: Orleans.Storage.DynamoDBGrainStorage
+  langs:
+  - csharp
+  - vb
+  name: Close(CancellationToken)
+  nameWithType: DynamoDBGrainStorage.Close(CancellationToken)
+  fullName: Orleans.Storage.DynamoDBGrainStorage.Close(CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/AWS/Orleans.Persistence.DynamoDB/Provider/DynamoDBGrainStorage.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Close
+    path: src/AWS/Orleans.Persistence.DynamoDB/Provider/DynamoDBGrainStorage.cs
+    startLine: 109
+  assemblies:
+  - Orleans.Persistence.DynamoDB
+  namespace: Orleans.Storage
+  summary: 'Shutdown this storage provider. '
+  example: []
+  syntax:
+    content: public Task Close(CancellationToken ct)
+    parameters:
+    - id: ct
+      type: CancellationToken
+    return:
+      type: Task
+    content.vb: Public Function Close(ct As CancellationToken) As Task
+  overload: Orleans.Storage.DynamoDBGrainStorage.Close*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Storage.DynamoDBGrainStorage.ReadStateAsync(System.String,GrainReference,IGrainState)
+  commentId: M:Orleans.Storage.DynamoDBGrainStorage.ReadStateAsync(System.String,GrainReference,IGrainState)
+  id: ReadStateAsync(System.String,GrainReference,IGrainState)
+  parent: Orleans.Storage.DynamoDBGrainStorage
+  langs:
+  - csharp
+  - vb
+  name: ReadStateAsync(String, GrainReference, IGrainState)
+  nameWithType: DynamoDBGrainStorage.ReadStateAsync(String, GrainReference, IGrainState)
+  fullName: Orleans.Storage.DynamoDBGrainStorage.ReadStateAsync(System.String, GrainReference, IGrainState)
+  type: Method
+  source:
+    remote:
+      path: src/AWS/Orleans.Persistence.DynamoDB/Provider/DynamoDBGrainStorage.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ReadStateAsync
+    path: src/AWS/Orleans.Persistence.DynamoDB/Provider/DynamoDBGrainStorage.cs
+    startLine: 113
+  assemblies:
+  - Orleans.Persistence.DynamoDB
+  namespace: Orleans.Storage
+  summary: 'Read state data function for this storage provider. '
+  example: []
+  syntax:
+    content: public Task ReadStateAsync(string grainType, GrainReference grainReference, IGrainState grainState)
+    parameters:
+    - id: grainType
+      type: System.String
+    - id: grainReference
+      type: GrainReference
+    - id: grainState
+      type: IGrainState
+    return:
+      type: Task
+    content.vb: Public Function ReadStateAsync(grainType As String, grainReference As GrainReference, grainState As IGrainState) As Task
+  overload: Orleans.Storage.DynamoDBGrainStorage.ReadStateAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Storage.DynamoDBGrainStorage.WriteStateAsync(System.String,GrainReference,IGrainState)
+  commentId: M:Orleans.Storage.DynamoDBGrainStorage.WriteStateAsync(System.String,GrainReference,IGrainState)
+  id: WriteStateAsync(System.String,GrainReference,IGrainState)
+  parent: Orleans.Storage.DynamoDBGrainStorage
+  langs:
+  - csharp
+  - vb
+  name: WriteStateAsync(String, GrainReference, IGrainState)
+  nameWithType: DynamoDBGrainStorage.WriteStateAsync(String, GrainReference, IGrainState)
+  fullName: Orleans.Storage.DynamoDBGrainStorage.WriteStateAsync(System.String, GrainReference, IGrainState)
+  type: Method
+  source:
+    remote:
+      path: src/AWS/Orleans.Persistence.DynamoDB/Provider/DynamoDBGrainStorage.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: WriteStateAsync
+    path: src/AWS/Orleans.Persistence.DynamoDB/Provider/DynamoDBGrainStorage.cs
+    startLine: 154
+  assemblies:
+  - Orleans.Persistence.DynamoDB
+  namespace: Orleans.Storage
+  summary: 'Write state data function for this storage provider. '
+  example: []
+  syntax:
+    content: public Task WriteStateAsync(string grainType, GrainReference grainReference, IGrainState grainState)
+    parameters:
+    - id: grainType
+      type: System.String
+    - id: grainReference
+      type: GrainReference
+    - id: grainState
+      type: IGrainState
+    return:
+      type: Task
+    content.vb: Public Function WriteStateAsync(grainType As String, grainReference As GrainReference, grainState As IGrainState) As Task
+  overload: Orleans.Storage.DynamoDBGrainStorage.WriteStateAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Storage.DynamoDBGrainStorage.ClearStateAsync(System.String,GrainReference,IGrainState)
+  commentId: M:Orleans.Storage.DynamoDBGrainStorage.ClearStateAsync(System.String,GrainReference,IGrainState)
+  id: ClearStateAsync(System.String,GrainReference,IGrainState)
+  parent: Orleans.Storage.DynamoDBGrainStorage
+  langs:
+  - csharp
+  - vb
+  name: ClearStateAsync(String, GrainReference, IGrainState)
+  nameWithType: DynamoDBGrainStorage.ClearStateAsync(String, GrainReference, IGrainState)
+  fullName: Orleans.Storage.DynamoDBGrainStorage.ClearStateAsync(System.String, GrainReference, IGrainState)
+  type: Method
+  source:
+    remote:
+      path: src/AWS/Orleans.Persistence.DynamoDB/Provider/DynamoDBGrainStorage.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ClearStateAsync
+    path: src/AWS/Orleans.Persistence.DynamoDB/Provider/DynamoDBGrainStorage.cs
+    startLine: 243
+  assemblies:
+  - Orleans.Persistence.DynamoDB
+  namespace: Orleans.Storage
+  summary: 'Clear / Delete state data function for this storage provider. '
+  remarks: "\nIf the <code>DeleteStateOnClear</code> is set to <code>true</code> then the table row\nfor this grain will be deleted / removed, otherwise the table row will be\ncleared by overwriting with default / null values.\n"
+  example: []
+  syntax:
+    content: public Task ClearStateAsync(string grainType, GrainReference grainReference, IGrainState grainState)
+    parameters:
+    - id: grainType
+      type: System.String
+    - id: grainReference
+      type: GrainReference
+    - id: grainState
+      type: IGrainState
+    return:
+      type: Task
+    content.vb: Public Function ClearStateAsync(grainType As String, grainReference As GrainReference, grainState As IGrainState) As Task
+  overload: Orleans.Storage.DynamoDBGrainStorage.ClearStateAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans.Storage
+  commentId: N:Orleans.Storage
+  isExternal: false
+  name: Orleans.Storage
+  nameWithType: Orleans.Storage
+  fullName: Orleans.Storage
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: ILifecycleParticipant{ISiloLifecycle}
+  commentId: '!:ILifecycleParticipant{ISiloLifecycle}'
+  definition: ILifecycleParticipant`1
+  name: ILifecycleParticipant<ISiloLifecycle>
+  nameWithType: ILifecycleParticipant<ISiloLifecycle>
+  fullName: ILifecycleParticipant<ISiloLifecycle>
+  nameWithType.vb: ILifecycleParticipant(Of ISiloLifecycle)
+  fullName.vb: ILifecycleParticipant(Of ISiloLifecycle)
+  name.vb: ILifecycleParticipant(Of ISiloLifecycle)
+  spec.csharp:
+  - uid: ILifecycleParticipant`1
+    name: ILifecycleParticipant
+    nameWithType: ILifecycleParticipant
+    fullName: ILifecycleParticipant
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: ISiloLifecycle
+    name: ISiloLifecycle
+    nameWithType: ISiloLifecycle
+    fullName: ISiloLifecycle
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ILifecycleParticipant`1
+    name: ILifecycleParticipant
+    nameWithType: ILifecycleParticipant
+    fullName: ILifecycleParticipant
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: ISiloLifecycle
+    name: ISiloLifecycle
+    nameWithType: ISiloLifecycle
+    fullName: ISiloLifecycle
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Storage.DynamoDBGrainStorage.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<DynamoDBGrainStorage>()
+  nameWithType: ImmutableExt.AsImmutable<DynamoDBGrainStorage>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Storage.DynamoDBGrainStorage>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of DynamoDBGrainStorage)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Storage.DynamoDBGrainStorage)()
+  name.vb: AsImmutable(Of DynamoDBGrainStorage)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<DynamoDBGrainStorage>
+    nameWithType: ImmutableExt.AsImmutable<DynamoDBGrainStorage>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Storage.DynamoDBGrainStorage>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of DynamoDBGrainStorage)
+    nameWithType: ImmutableExt.AsImmutable(Of DynamoDBGrainStorage)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Storage.DynamoDBGrainStorage)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ILifecycleParticipant`1
+  commentId: '!:ILifecycleParticipant`1'
+  isExternal: true
+  name: ILifecycleParticipant<>
+  nameWithType: ILifecycleParticipant<>
+  fullName: ILifecycleParticipant<>
+  nameWithType.vb: ILifecycleParticipant(Of )
+  fullName.vb: ILifecycleParticipant(Of )
+  name.vb: ILifecycleParticipant(Of )
+  spec.csharp:
+  - uid: ILifecycleParticipant`1
+    name: ILifecycleParticipant
+    nameWithType: ILifecycleParticipant
+    fullName: ILifecycleParticipant
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ILifecycleParticipant`1
+    name: ILifecycleParticipant
+    nameWithType: ILifecycleParticipant
+    fullName: ILifecycleParticipant
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Storage.DynamoDBGrainStorage.#ctor*
+  commentId: Overload:Orleans.Storage.DynamoDBGrainStorage.#ctor
+  isExternal: false
+  name: DynamoDBGrainStorage
+  nameWithType: DynamoDBGrainStorage.DynamoDBGrainStorage
+  fullName: Orleans.Storage.DynamoDBGrainStorage.DynamoDBGrainStorage
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Orleans.Configuration.DynamoDBStorageOptions
+  commentId: T:Orleans.Configuration.DynamoDBStorageOptions
+  parent: Orleans.Configuration
+  isExternal: false
+  name: DynamoDBStorageOptions
+  nameWithType: DynamoDBStorageOptions
+  fullName: Orleans.Configuration.DynamoDBStorageOptions
+- uid: SerializationManager
+  isExternal: true
+  name: SerializationManager
+  nameWithType: SerializationManager
+  fullName: SerializationManager
+- uid: IGrainFactory
+  commentId: '!:IGrainFactory'
+  isExternal: true
+  name: IGrainFactory
+  nameWithType: IGrainFactory
+  fullName: IGrainFactory
+- uid: ITypeResolver
+  commentId: '!:ITypeResolver'
+  isExternal: true
+  name: ITypeResolver
+  nameWithType: ITypeResolver
+  fullName: ITypeResolver
+- uid: ILoggerFactory
+  isExternal: true
+  name: ILoggerFactory
+  nameWithType: ILoggerFactory
+  fullName: ILoggerFactory
+- uid: Orleans.Configuration
+  commentId: N:Orleans.Configuration
+  isExternal: false
+  name: Orleans.Configuration
+  nameWithType: Orleans.Configuration
+  fullName: Orleans.Configuration
+- uid: Orleans.Storage.DynamoDBGrainStorage.Participate*
+  commentId: Overload:Orleans.Storage.DynamoDBGrainStorage.Participate
+  isExternal: false
+  name: Participate
+  nameWithType: DynamoDBGrainStorage.Participate
+  fullName: Orleans.Storage.DynamoDBGrainStorage.Participate
+- uid: ISiloLifecycle
+  isExternal: true
+  name: ISiloLifecycle
+  nameWithType: ISiloLifecycle
+  fullName: ISiloLifecycle
+- uid: Orleans.Storage.DynamoDBGrainStorage.Init*
+  commentId: Overload:Orleans.Storage.DynamoDBGrainStorage.Init
+  isExternal: false
+  name: Init
+  nameWithType: DynamoDBGrainStorage.Init
+  fullName: Orleans.Storage.DynamoDBGrainStorage.Init
+- uid: CancellationToken
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: CancellationToken
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task
+- uid: Orleans.Storage.DynamoDBGrainStorage.Close*
+  commentId: Overload:Orleans.Storage.DynamoDBGrainStorage.Close
+  isExternal: false
+  name: Close
+  nameWithType: DynamoDBGrainStorage.Close
+  fullName: Orleans.Storage.DynamoDBGrainStorage.Close
+- uid: Orleans.Storage.DynamoDBGrainStorage.ReadStateAsync*
+  commentId: Overload:Orleans.Storage.DynamoDBGrainStorage.ReadStateAsync
+  isExternal: false
+  name: ReadStateAsync
+  nameWithType: DynamoDBGrainStorage.ReadStateAsync
+  fullName: Orleans.Storage.DynamoDBGrainStorage.ReadStateAsync
+- uid: GrainReference
+  isExternal: true
+  name: GrainReference
+  nameWithType: GrainReference
+  fullName: GrainReference
+- uid: IGrainState
+  isExternal: true
+  name: IGrainState
+  nameWithType: IGrainState
+  fullName: IGrainState
+- uid: Orleans.Storage.DynamoDBGrainStorage.WriteStateAsync*
+  commentId: Overload:Orleans.Storage.DynamoDBGrainStorage.WriteStateAsync
+  isExternal: false
+  name: WriteStateAsync
+  nameWithType: DynamoDBGrainStorage.WriteStateAsync
+  fullName: Orleans.Storage.DynamoDBGrainStorage.WriteStateAsync
+- uid: Orleans.Storage.DynamoDBGrainStorage.ClearStateAsync*
+  commentId: Overload:Orleans.Storage.DynamoDBGrainStorage.ClearStateAsync
+  isExternal: false
+  name: ClearStateAsync
+  nameWithType: DynamoDBGrainStorage.ClearStateAsync
+  fullName: Orleans.Storage.DynamoDBGrainStorage.ClearStateAsync

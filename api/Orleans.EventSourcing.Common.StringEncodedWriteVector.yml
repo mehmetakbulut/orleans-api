@@ -1,0 +1,179 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.EventSourcing.Common.StringEncodedWriteVector
+  commentId: T:Orleans.EventSourcing.Common.StringEncodedWriteVector
+  id: StringEncodedWriteVector
+  parent: Orleans.EventSourcing.Common
+  children:
+  - Orleans.EventSourcing.Common.StringEncodedWriteVector.FlipBit(System.String@,System.String)
+  - Orleans.EventSourcing.Common.StringEncodedWriteVector.GetBit(System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: StringEncodedWriteVector
+  nameWithType: StringEncodedWriteVector
+  fullName: Orleans.EventSourcing.Common.StringEncodedWriteVector
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/StringEncodedWriteVector.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: StringEncodedWriteVector
+    path: src/Orleans.EventSourcing/Common/StringEncodedWriteVector.cs
+    startLine: 8
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  syntax:
+    content: 'public static class StringEncodedWriteVector : object'
+    content.vb: >-
+      Public Module StringEncodedWriteVector
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Orleans.EventSourcing.Common.StringEncodedWriteVector.GetBit(System.String,System.String)
+  commentId: M:Orleans.EventSourcing.Common.StringEncodedWriteVector.GetBit(System.String,System.String)
+  id: GetBit(System.String,System.String)
+  parent: Orleans.EventSourcing.Common.StringEncodedWriteVector
+  langs:
+  - csharp
+  - vb
+  name: GetBit(String, String)
+  nameWithType: StringEncodedWriteVector.GetBit(String, String)
+  fullName: Orleans.EventSourcing.Common.StringEncodedWriteVector.GetBit(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/StringEncodedWriteVector.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetBit
+    path: src/Orleans.EventSourcing/Common/StringEncodedWriteVector.cs
+    startLine: 27
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  summary: "\nGets one of the bits in writeVector\n"
+  example: []
+  syntax:
+    content: public static bool GetBit(string writeVector, string Replica)
+    parameters:
+    - id: writeVector
+      type: System.String
+      description: The write vector which we want get the bit from
+    - id: Replica
+      type: System.String
+      description: The replica for which we want to look up the bit
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Shared Function GetBit(writeVector As String, Replica As String) As Boolean
+  overload: Orleans.EventSourcing.Common.StringEncodedWriteVector.GetBit*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.EventSourcing.Common.StringEncodedWriteVector.FlipBit(System.String@,System.String)
+  commentId: M:Orleans.EventSourcing.Common.StringEncodedWriteVector.FlipBit(System.String@,System.String)
+  id: FlipBit(System.String@,System.String)
+  parent: Orleans.EventSourcing.Common.StringEncodedWriteVector
+  langs:
+  - csharp
+  - vb
+  name: FlipBit(ref String, String)
+  nameWithType: StringEncodedWriteVector.FlipBit(ref String, String)
+  fullName: Orleans.EventSourcing.Common.StringEncodedWriteVector.FlipBit(ref System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/StringEncodedWriteVector.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: FlipBit
+    path: src/Orleans.EventSourcing/Common/StringEncodedWriteVector.cs
+    startLine: 39
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  summary: "\ntoggle one of the bits in writeVector and return the new value.\n"
+  example: []
+  syntax:
+    content: public static bool FlipBit(ref string writeVector, string Replica)
+    parameters:
+    - id: writeVector
+      type: System.String
+      description: The write vector in which we want to flip the bit
+    - id: Replica
+      type: System.String
+      description: The replica for which we want to flip the bit
+    return:
+      type: System.Boolean
+      description: the state of the bit after flipping it
+    content.vb: Public Shared Function FlipBit(ByRef writeVector As String, Replica As String) As Boolean
+  overload: Orleans.EventSourcing.Common.StringEncodedWriteVector.FlipBit*
+  nameWithType.vb: StringEncodedWriteVector.FlipBit(ByRef String, String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.EventSourcing.Common.StringEncodedWriteVector.FlipBit(ByRef System.String, System.String)
+  name.vb: FlipBit(ByRef String, String)
+references:
+- uid: Orleans.EventSourcing.Common
+  commentId: N:Orleans.EventSourcing.Common
+  isExternal: false
+  name: Orleans.EventSourcing.Common
+  nameWithType: Orleans.EventSourcing.Common
+  fullName: Orleans.EventSourcing.Common
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.EventSourcing.Common.StringEncodedWriteVector.GetBit*
+  commentId: Overload:Orleans.EventSourcing.Common.StringEncodedWriteVector.GetBit
+  isExternal: false
+  name: GetBit
+  nameWithType: StringEncodedWriteVector.GetBit
+  fullName: Orleans.EventSourcing.Common.StringEncodedWriteVector.GetBit
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Orleans.EventSourcing.Common.StringEncodedWriteVector.FlipBit*
+  commentId: Overload:Orleans.EventSourcing.Common.StringEncodedWriteVector.FlipBit
+  isExternal: false
+  name: FlipBit
+  nameWithType: StringEncodedWriteVector.FlipBit
+  fullName: Orleans.EventSourcing.Common.StringEncodedWriteVector.FlipBit

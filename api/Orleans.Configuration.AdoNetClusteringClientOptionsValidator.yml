@@ -1,0 +1,311 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Configuration.AdoNetClusteringClientOptionsValidator
+  commentId: T:Orleans.Configuration.AdoNetClusteringClientOptionsValidator
+  id: AdoNetClusteringClientOptionsValidator
+  parent: Orleans.Configuration
+  children:
+  - Orleans.Configuration.AdoNetClusteringClientOptionsValidator.#ctor(IOptions{Orleans.Configuration.AdoNetClusteringClientOptions})
+  - Orleans.Configuration.AdoNetClusteringClientOptionsValidator.ValidateConfiguration
+  langs:
+  - csharp
+  - vb
+  name: AdoNetClusteringClientOptionsValidator
+  nameWithType: AdoNetClusteringClientOptionsValidator
+  fullName: Orleans.Configuration.AdoNetClusteringClientOptionsValidator
+  type: Class
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Clustering.AdoNet/Options/AdoNetClusteringClientOptionsValidator.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AdoNetClusteringClientOptionsValidator
+    path: src/AdoNet/Orleans.Clustering.AdoNet/Options/AdoNetClusteringClientOptionsValidator.cs
+    startLine: 9
+  assemblies:
+  - Orleans.Clustering.AdoNet
+  namespace: Orleans.Configuration
+  summary: "\nValidates <xref href=\"Orleans.Configuration.AdoNetClusteringClientOptions\" data-throw-if-not-resolved=\"false\"></xref> configuration.\n"
+  example: []
+  syntax:
+    content: 'public class AdoNetClusteringClientOptionsValidator : IConfigurationValidator'
+    content.vb: >-
+      Public Class AdoNetClusteringClientOptionsValidator
+
+          Inherits IConfigurationValidator
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.Configuration.AdoNetClusteringClientOptionsValidator.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.Configuration.AdoNetClusteringClientOptionsValidator.#ctor(IOptions{Orleans.Configuration.AdoNetClusteringClientOptions})
+  commentId: M:Orleans.Configuration.AdoNetClusteringClientOptionsValidator.#ctor(IOptions{Orleans.Configuration.AdoNetClusteringClientOptions})
+  id: '#ctor(IOptions{Orleans.Configuration.AdoNetClusteringClientOptions})'
+  parent: Orleans.Configuration.AdoNetClusteringClientOptionsValidator
+  langs:
+  - csharp
+  - vb
+  name: AdoNetClusteringClientOptionsValidator(IOptions<AdoNetClusteringClientOptions>)
+  nameWithType: AdoNetClusteringClientOptionsValidator.AdoNetClusteringClientOptionsValidator(IOptions<AdoNetClusteringClientOptions>)
+  fullName: Orleans.Configuration.AdoNetClusteringClientOptionsValidator.AdoNetClusteringClientOptionsValidator(IOptions<Orleans.Configuration.AdoNetClusteringClientOptions>)
+  type: Constructor
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Clustering.AdoNet/Options/AdoNetClusteringClientOptionsValidator.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/AdoNet/Orleans.Clustering.AdoNet/Options/AdoNetClusteringClientOptionsValidator.cs
+    startLine: 13
+  assemblies:
+  - Orleans.Clustering.AdoNet
+  namespace: Orleans.Configuration
+  syntax:
+    content: public AdoNetClusteringClientOptionsValidator(IOptions<AdoNetClusteringClientOptions> options)
+    parameters:
+    - id: options
+      type: IOptions{Orleans.Configuration.AdoNetClusteringClientOptions}
+    content.vb: Public Sub New(options As IOptions(Of AdoNetClusteringClientOptions))
+  overload: Orleans.Configuration.AdoNetClusteringClientOptionsValidator.#ctor*
+  nameWithType.vb: AdoNetClusteringClientOptionsValidator.AdoNetClusteringClientOptionsValidator(IOptions(Of AdoNetClusteringClientOptions))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.Configuration.AdoNetClusteringClientOptionsValidator.AdoNetClusteringClientOptionsValidator(IOptions(Of Orleans.Configuration.AdoNetClusteringClientOptions))
+  name.vb: AdoNetClusteringClientOptionsValidator(IOptions(Of AdoNetClusteringClientOptions))
+- uid: Orleans.Configuration.AdoNetClusteringClientOptionsValidator.ValidateConfiguration
+  commentId: M:Orleans.Configuration.AdoNetClusteringClientOptionsValidator.ValidateConfiguration
+  id: ValidateConfiguration
+  parent: Orleans.Configuration.AdoNetClusteringClientOptionsValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateConfiguration()
+  nameWithType: AdoNetClusteringClientOptionsValidator.ValidateConfiguration()
+  fullName: Orleans.Configuration.AdoNetClusteringClientOptionsValidator.ValidateConfiguration()
+  type: Method
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Clustering.AdoNet/Options/AdoNetClusteringClientOptionsValidator.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ValidateConfiguration
+    path: src/AdoNet/Orleans.Clustering.AdoNet/Options/AdoNetClusteringClientOptionsValidator.cs
+    startLine: 19
+  assemblies:
+  - Orleans.Clustering.AdoNet
+  namespace: Orleans.Configuration
+  example: []
+  syntax:
+    content: public void ValidateConfiguration()
+    content.vb: Public Sub ValidateConfiguration
+  overload: Orleans.Configuration.AdoNetClusteringClientOptionsValidator.ValidateConfiguration*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans.Configuration.AdoNetClusteringClientOptions
+  commentId: T:Orleans.Configuration.AdoNetClusteringClientOptions
+  isExternal: false
+  name: AdoNetClusteringClientOptions
+  nameWithType: AdoNetClusteringClientOptions
+  fullName: Orleans.Configuration.AdoNetClusteringClientOptions
+- uid: Orleans.Configuration
+  commentId: N:Orleans.Configuration
+  isExternal: false
+  name: Orleans.Configuration
+  nameWithType: Orleans.Configuration
+  fullName: Orleans.Configuration
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Configuration.AdoNetClusteringClientOptionsValidator.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<AdoNetClusteringClientOptionsValidator>()
+  nameWithType: ImmutableExt.AsImmutable<AdoNetClusteringClientOptionsValidator>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Configuration.AdoNetClusteringClientOptionsValidator>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of AdoNetClusteringClientOptionsValidator)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Configuration.AdoNetClusteringClientOptionsValidator)()
+  name.vb: AsImmutable(Of AdoNetClusteringClientOptionsValidator)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<AdoNetClusteringClientOptionsValidator>
+    nameWithType: ImmutableExt.AsImmutable<AdoNetClusteringClientOptionsValidator>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Configuration.AdoNetClusteringClientOptionsValidator>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of AdoNetClusteringClientOptionsValidator)
+    nameWithType: ImmutableExt.AsImmutable(Of AdoNetClusteringClientOptionsValidator)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Configuration.AdoNetClusteringClientOptionsValidator)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Configuration.AdoNetClusteringClientOptionsValidator.#ctor*
+  commentId: Overload:Orleans.Configuration.AdoNetClusteringClientOptionsValidator.#ctor
+  isExternal: false
+  name: AdoNetClusteringClientOptionsValidator
+  nameWithType: AdoNetClusteringClientOptionsValidator.AdoNetClusteringClientOptionsValidator
+  fullName: Orleans.Configuration.AdoNetClusteringClientOptionsValidator.AdoNetClusteringClientOptionsValidator
+- uid: IOptions{Orleans.Configuration.AdoNetClusteringClientOptions}
+  commentId: '!:IOptions{Orleans.Configuration.AdoNetClusteringClientOptions}'
+  definition: IOptions`1
+  name: IOptions<AdoNetClusteringClientOptions>
+  nameWithType: IOptions<AdoNetClusteringClientOptions>
+  fullName: IOptions<Orleans.Configuration.AdoNetClusteringClientOptions>
+  nameWithType.vb: IOptions(Of AdoNetClusteringClientOptions)
+  fullName.vb: IOptions(Of Orleans.Configuration.AdoNetClusteringClientOptions)
+  name.vb: IOptions(Of AdoNetClusteringClientOptions)
+  spec.csharp:
+  - uid: IOptions`1
+    name: IOptions
+    nameWithType: IOptions
+    fullName: IOptions
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Orleans.Configuration.AdoNetClusteringClientOptions
+    name: AdoNetClusteringClientOptions
+    nameWithType: AdoNetClusteringClientOptions
+    fullName: Orleans.Configuration.AdoNetClusteringClientOptions
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IOptions`1
+    name: IOptions
+    nameWithType: IOptions
+    fullName: IOptions
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Orleans.Configuration.AdoNetClusteringClientOptions
+    name: AdoNetClusteringClientOptions
+    nameWithType: AdoNetClusteringClientOptions
+    fullName: Orleans.Configuration.AdoNetClusteringClientOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IOptions`1
+  isExternal: true
+  name: IOptions<>
+  nameWithType: IOptions<>
+  fullName: IOptions<>
+  nameWithType.vb: IOptions(Of )
+  fullName.vb: IOptions(Of )
+  name.vb: IOptions(Of )
+  spec.csharp:
+  - uid: IOptions`1
+    name: IOptions
+    nameWithType: IOptions
+    fullName: IOptions
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IOptions`1
+    name: IOptions
+    nameWithType: IOptions
+    fullName: IOptions
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Configuration.AdoNetClusteringClientOptionsValidator.ValidateConfiguration*
+  commentId: Overload:Orleans.Configuration.AdoNetClusteringClientOptionsValidator.ValidateConfiguration
+  isExternal: false
+  name: ValidateConfiguration
+  nameWithType: AdoNetClusteringClientOptionsValidator.ValidateConfiguration
+  fullName: Orleans.Configuration.AdoNetClusteringClientOptionsValidator.ValidateConfiguration

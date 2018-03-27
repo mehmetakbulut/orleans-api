@@ -1,0 +1,204 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Streams.IStreamNamespacePredicate
+  commentId: T:Orleans.Streams.IStreamNamespacePredicate
+  id: IStreamNamespacePredicate
+  parent: Orleans.Streams
+  children:
+  - Orleans.Streams.IStreamNamespacePredicate.IsMatch(System.String)
+  langs:
+  - csharp
+  - vb
+  name: IStreamNamespacePredicate
+  nameWithType: IStreamNamespacePredicate
+  fullName: Orleans.Streams.IStreamNamespacePredicate
+  type: Interface
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Streams/Predicates/IStreamNamespacePredicate.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IStreamNamespacePredicate
+    path: src/Orleans.Core.Abstractions/Streams/Predicates/IStreamNamespacePredicate.cs
+    startLine: 7
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Streams
+  summary: "\nStream namespace predicate used for filtering implicit subscriptions using \n<xref href=\"Orleans.ImplicitStreamSubscriptionAttribute\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  remarks: All implementations must be serializable.
+  example: []
+  syntax:
+    content: public interface IStreamNamespacePredicate
+    content.vb: Public Interface IStreamNamespacePredicate
+  extensionMethods:
+  - Orleans.Streams.IStreamNamespacePredicate.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Orleans.Streams.IStreamNamespacePredicate.IsMatch(System.String)
+  commentId: M:Orleans.Streams.IStreamNamespacePredicate.IsMatch(System.String)
+  id: IsMatch(System.String)
+  parent: Orleans.Streams.IStreamNamespacePredicate
+  langs:
+  - csharp
+  - vb
+  name: IsMatch(String)
+  nameWithType: IStreamNamespacePredicate.IsMatch(String)
+  fullName: Orleans.Streams.IStreamNamespacePredicate.IsMatch(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Streams/Predicates/IStreamNamespacePredicate.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IsMatch
+    path: src/Orleans.Core.Abstractions/Streams/Predicates/IStreamNamespacePredicate.cs
+    startLine: 15
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Streams
+  summary: "\nDefines if the consumer grain should subscribe to the specified namespace.\n"
+  example: []
+  syntax:
+    content: bool IsMatch(string streamNamespace)
+    parameters:
+    - id: streamNamespace
+      type: System.String
+      description: The target stream namespace to check.
+    return:
+      type: System.Boolean
+      description: >
+        <code>true</code>, if the grain should subscribe to the specified namespace; <code>false</code>, otherwise.
+    content.vb: Function IsMatch(streamNamespace As String) As Boolean
+  overload: Orleans.Streams.IStreamNamespacePredicate.IsMatch*
+references:
+- uid: Orleans.ImplicitStreamSubscriptionAttribute
+  commentId: T:Orleans.ImplicitStreamSubscriptionAttribute
+  parent: Orleans
+  isExternal: false
+  name: ImplicitStreamSubscriptionAttribute
+  nameWithType: ImplicitStreamSubscriptionAttribute
+  fullName: Orleans.ImplicitStreamSubscriptionAttribute
+- uid: Orleans.Streams
+  commentId: N:Orleans.Streams
+  isExternal: false
+  name: Orleans.Streams
+  nameWithType: Orleans.Streams
+  fullName: Orleans.Streams
+- uid: Orleans.Streams.IStreamNamespacePredicate.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<IStreamNamespacePredicate>()
+  nameWithType: ImmutableExt.AsImmutable<IStreamNamespacePredicate>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Streams.IStreamNamespacePredicate>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of IStreamNamespacePredicate)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Streams.IStreamNamespacePredicate)()
+  name.vb: AsImmutable(Of IStreamNamespacePredicate)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<IStreamNamespacePredicate>
+    nameWithType: ImmutableExt.AsImmutable<IStreamNamespacePredicate>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Streams.IStreamNamespacePredicate>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of IStreamNamespacePredicate)
+    nameWithType: ImmutableExt.AsImmutable(Of IStreamNamespacePredicate)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Streams.IStreamNamespacePredicate)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans
+  commentId: N:Orleans
+  isExternal: false
+  name: Orleans
+  nameWithType: Orleans
+  fullName: Orleans
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Streams.IStreamNamespacePredicate.IsMatch*
+  commentId: Overload:Orleans.Streams.IStreamNamespacePredicate.IsMatch
+  isExternal: false
+  name: IsMatch
+  nameWithType: IStreamNamespacePredicate.IsMatch
+  fullName: Orleans.Streams.IStreamNamespacePredicate.IsMatch
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System

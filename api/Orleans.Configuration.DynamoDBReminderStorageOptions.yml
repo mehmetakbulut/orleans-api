@@ -1,0 +1,465 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Configuration.DynamoDBReminderStorageOptions
+  commentId: T:Orleans.Configuration.DynamoDBReminderStorageOptions
+  id: DynamoDBReminderStorageOptions
+  parent: Orleans.Configuration
+  children:
+  - Orleans.Configuration.DynamoDBReminderStorageOptions.AccessKey
+  - Orleans.Configuration.DynamoDBReminderStorageOptions.ReadCapacityUnits
+  - Orleans.Configuration.DynamoDBReminderStorageOptions.SecretKey
+  - Orleans.Configuration.DynamoDBReminderStorageOptions.Service
+  - Orleans.Configuration.DynamoDBReminderStorageOptions.ServiceId
+  - Orleans.Configuration.DynamoDBReminderStorageOptions.TableName
+  - Orleans.Configuration.DynamoDBReminderStorageOptions.WriteCapacityUnits
+  langs:
+  - csharp
+  - vb
+  name: DynamoDBReminderStorageOptions
+  nameWithType: DynamoDBReminderStorageOptions
+  fullName: Orleans.Configuration.DynamoDBReminderStorageOptions
+  type: Class
+  source:
+    remote:
+      path: src/AWS/Orleans.Reminders.DynamoDB/Reminders/DynamoDbReminderStorageOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: DynamoDBReminderStorageOptions
+    path: src/AWS/Orleans.Reminders.DynamoDB/Reminders/DynamoDbReminderStorageOptions.cs
+    startLine: 7
+  assemblies:
+  - Orleans.Reminders.DynamoDB
+  namespace: Orleans.Configuration
+  summary: "\nConfiguration for Amazon DynamoDB reminder storage.\n"
+  example: []
+  syntax:
+    content: 'public class DynamoDBReminderStorageOptions : object'
+    content.vb: >-
+      Public Class DynamoDBReminderStorageOptions
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.Configuration.DynamoDBReminderStorageOptions.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.Configuration.DynamoDBReminderStorageOptions.ServiceId
+  commentId: P:Orleans.Configuration.DynamoDBReminderStorageOptions.ServiceId
+  id: ServiceId
+  parent: Orleans.Configuration.DynamoDBReminderStorageOptions
+  langs:
+  - csharp
+  - vb
+  name: ServiceId
+  nameWithType: DynamoDBReminderStorageOptions.ServiceId
+  fullName: Orleans.Configuration.DynamoDBReminderStorageOptions.ServiceId
+  type: Property
+  source:
+    remote:
+      path: src/AWS/Orleans.Reminders.DynamoDB/Reminders/DynamoDbReminderStorageOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ServiceId
+    path: src/AWS/Orleans.Reminders.DynamoDB/Reminders/DynamoDbReminderStorageOptions.cs
+    startLine: 12
+  assemblies:
+  - Orleans.Reminders.DynamoDB
+  namespace: Orleans.Configuration
+  summary: "\nGets or sets a unique identifier for this service, which should survive deployment and redeployment.\n"
+  example: []
+  syntax:
+    content: public string ServiceId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ServiceId As String
+  overload: Orleans.Configuration.DynamoDBReminderStorageOptions.ServiceId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Configuration.DynamoDBReminderStorageOptions.AccessKey
+  commentId: P:Orleans.Configuration.DynamoDBReminderStorageOptions.AccessKey
+  id: AccessKey
+  parent: Orleans.Configuration.DynamoDBReminderStorageOptions
+  langs:
+  - csharp
+  - vb
+  name: AccessKey
+  nameWithType: DynamoDBReminderStorageOptions.AccessKey
+  fullName: Orleans.Configuration.DynamoDBReminderStorageOptions.AccessKey
+  type: Property
+  source:
+    remote:
+      path: src/AWS/Orleans.Reminders.DynamoDB/Reminders/DynamoDbReminderStorageOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AccessKey
+    path: src/AWS/Orleans.Reminders.DynamoDB/Reminders/DynamoDbReminderStorageOptions.cs
+    startLine: 17
+  assemblies:
+  - Orleans.Reminders.DynamoDB
+  namespace: Orleans.Configuration
+  summary: "\nAccessKey string for DynamoDB Storage\n"
+  example: []
+  syntax:
+    content: public string AccessKey { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property AccessKey As String
+  overload: Orleans.Configuration.DynamoDBReminderStorageOptions.AccessKey*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Configuration.DynamoDBReminderStorageOptions.SecretKey
+  commentId: P:Orleans.Configuration.DynamoDBReminderStorageOptions.SecretKey
+  id: SecretKey
+  parent: Orleans.Configuration.DynamoDBReminderStorageOptions
+  langs:
+  - csharp
+  - vb
+  name: SecretKey
+  nameWithType: DynamoDBReminderStorageOptions.SecretKey
+  fullName: Orleans.Configuration.DynamoDBReminderStorageOptions.SecretKey
+  type: Property
+  source:
+    remote:
+      path: src/AWS/Orleans.Reminders.DynamoDB/Reminders/DynamoDbReminderStorageOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SecretKey
+    path: src/AWS/Orleans.Reminders.DynamoDB/Reminders/DynamoDbReminderStorageOptions.cs
+    startLine: 23
+  assemblies:
+  - Orleans.Reminders.DynamoDB
+  namespace: Orleans.Configuration
+  summary: "\nSecret key for DynamoDB storage\n"
+  example: []
+  syntax:
+    content: public string SecretKey { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property SecretKey As String
+  overload: Orleans.Configuration.DynamoDBReminderStorageOptions.SecretKey*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Configuration.DynamoDBReminderStorageOptions.Service
+  commentId: P:Orleans.Configuration.DynamoDBReminderStorageOptions.Service
+  id: Service
+  parent: Orleans.Configuration.DynamoDBReminderStorageOptions
+  langs:
+  - csharp
+  - vb
+  name: Service
+  nameWithType: DynamoDBReminderStorageOptions.Service
+  fullName: Orleans.Configuration.DynamoDBReminderStorageOptions.Service
+  type: Property
+  source:
+    remote:
+      path: src/AWS/Orleans.Reminders.DynamoDB/Reminders/DynamoDbReminderStorageOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Service
+    path: src/AWS/Orleans.Reminders.DynamoDB/Reminders/DynamoDbReminderStorageOptions.cs
+    startLine: 29
+  assemblies:
+  - Orleans.Reminders.DynamoDB
+  namespace: Orleans.Configuration
+  summary: "\nDynamoDB Service name \n"
+  example: []
+  syntax:
+    content: public string Service { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Service As String
+  overload: Orleans.Configuration.DynamoDBReminderStorageOptions.Service*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Configuration.DynamoDBReminderStorageOptions.ReadCapacityUnits
+  commentId: P:Orleans.Configuration.DynamoDBReminderStorageOptions.ReadCapacityUnits
+  id: ReadCapacityUnits
+  parent: Orleans.Configuration.DynamoDBReminderStorageOptions
+  langs:
+  - csharp
+  - vb
+  name: ReadCapacityUnits
+  nameWithType: DynamoDBReminderStorageOptions.ReadCapacityUnits
+  fullName: Orleans.Configuration.DynamoDBReminderStorageOptions.ReadCapacityUnits
+  type: Property
+  source:
+    remote:
+      path: src/AWS/Orleans.Reminders.DynamoDB/Reminders/DynamoDbReminderStorageOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ReadCapacityUnits
+    path: src/AWS/Orleans.Reminders.DynamoDB/Reminders/DynamoDbReminderStorageOptions.cs
+    startLine: 34
+  assemblies:
+  - Orleans.Reminders.DynamoDB
+  namespace: Orleans.Configuration
+  summary: "\nRead capacity unit for DynamoDB storage\n"
+  example: []
+  syntax:
+    content: public int ReadCapacityUnits { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property ReadCapacityUnits As Integer
+  overload: Orleans.Configuration.DynamoDBReminderStorageOptions.ReadCapacityUnits*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Configuration.DynamoDBReminderStorageOptions.WriteCapacityUnits
+  commentId: P:Orleans.Configuration.DynamoDBReminderStorageOptions.WriteCapacityUnits
+  id: WriteCapacityUnits
+  parent: Orleans.Configuration.DynamoDBReminderStorageOptions
+  langs:
+  - csharp
+  - vb
+  name: WriteCapacityUnits
+  nameWithType: DynamoDBReminderStorageOptions.WriteCapacityUnits
+  fullName: Orleans.Configuration.DynamoDBReminderStorageOptions.WriteCapacityUnits
+  type: Property
+  source:
+    remote:
+      path: src/AWS/Orleans.Reminders.DynamoDB/Reminders/DynamoDbReminderStorageOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: WriteCapacityUnits
+    path: src/AWS/Orleans.Reminders.DynamoDB/Reminders/DynamoDbReminderStorageOptions.cs
+    startLine: 39
+  assemblies:
+  - Orleans.Reminders.DynamoDB
+  namespace: Orleans.Configuration
+  summary: "\nWrite capacity unit for DynamoDB storage\n"
+  example: []
+  syntax:
+    content: public int WriteCapacityUnits { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property WriteCapacityUnits As Integer
+  overload: Orleans.Configuration.DynamoDBReminderStorageOptions.WriteCapacityUnits*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Configuration.DynamoDBReminderStorageOptions.TableName
+  commentId: P:Orleans.Configuration.DynamoDBReminderStorageOptions.TableName
+  id: TableName
+  parent: Orleans.Configuration.DynamoDBReminderStorageOptions
+  langs:
+  - csharp
+  - vb
+  name: TableName
+  nameWithType: DynamoDBReminderStorageOptions.TableName
+  fullName: Orleans.Configuration.DynamoDBReminderStorageOptions.TableName
+  type: Property
+  source:
+    remote:
+      path: src/AWS/Orleans.Reminders.DynamoDB/Reminders/DynamoDbReminderStorageOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: TableName
+    path: src/AWS/Orleans.Reminders.DynamoDB/Reminders/DynamoDbReminderStorageOptions.cs
+    startLine: 45
+  assemblies:
+  - Orleans.Reminders.DynamoDB
+  namespace: Orleans.Configuration
+  summary: "\nDynamoDB table name.\nDefaults to &apos;OrleansReminders&apos;.\n"
+  example: []
+  syntax:
+    content: public string TableName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property TableName As String
+  overload: Orleans.Configuration.DynamoDBReminderStorageOptions.TableName*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans.Configuration
+  commentId: N:Orleans.Configuration
+  isExternal: false
+  name: Orleans.Configuration
+  nameWithType: Orleans.Configuration
+  fullName: Orleans.Configuration
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Configuration.DynamoDBReminderStorageOptions.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<DynamoDBReminderStorageOptions>()
+  nameWithType: ImmutableExt.AsImmutable<DynamoDBReminderStorageOptions>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Configuration.DynamoDBReminderStorageOptions>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of DynamoDBReminderStorageOptions)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Configuration.DynamoDBReminderStorageOptions)()
+  name.vb: AsImmutable(Of DynamoDBReminderStorageOptions)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<DynamoDBReminderStorageOptions>
+    nameWithType: ImmutableExt.AsImmutable<DynamoDBReminderStorageOptions>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Configuration.DynamoDBReminderStorageOptions>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of DynamoDBReminderStorageOptions)
+    nameWithType: ImmutableExt.AsImmutable(Of DynamoDBReminderStorageOptions)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Configuration.DynamoDBReminderStorageOptions)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Configuration.DynamoDBReminderStorageOptions.ServiceId*
+  commentId: Overload:Orleans.Configuration.DynamoDBReminderStorageOptions.ServiceId
+  isExternal: false
+  name: ServiceId
+  nameWithType: DynamoDBReminderStorageOptions.ServiceId
+  fullName: Orleans.Configuration.DynamoDBReminderStorageOptions.ServiceId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Orleans.Configuration.DynamoDBReminderStorageOptions.AccessKey*
+  commentId: Overload:Orleans.Configuration.DynamoDBReminderStorageOptions.AccessKey
+  isExternal: false
+  name: AccessKey
+  nameWithType: DynamoDBReminderStorageOptions.AccessKey
+  fullName: Orleans.Configuration.DynamoDBReminderStorageOptions.AccessKey
+- uid: Orleans.Configuration.DynamoDBReminderStorageOptions.SecretKey*
+  commentId: Overload:Orleans.Configuration.DynamoDBReminderStorageOptions.SecretKey
+  isExternal: false
+  name: SecretKey
+  nameWithType: DynamoDBReminderStorageOptions.SecretKey
+  fullName: Orleans.Configuration.DynamoDBReminderStorageOptions.SecretKey
+- uid: Orleans.Configuration.DynamoDBReminderStorageOptions.Service*
+  commentId: Overload:Orleans.Configuration.DynamoDBReminderStorageOptions.Service
+  isExternal: false
+  name: Service
+  nameWithType: DynamoDBReminderStorageOptions.Service
+  fullName: Orleans.Configuration.DynamoDBReminderStorageOptions.Service
+- uid: Orleans.Configuration.DynamoDBReminderStorageOptions.ReadCapacityUnits*
+  commentId: Overload:Orleans.Configuration.DynamoDBReminderStorageOptions.ReadCapacityUnits
+  isExternal: false
+  name: ReadCapacityUnits
+  nameWithType: DynamoDBReminderStorageOptions.ReadCapacityUnits
+  fullName: Orleans.Configuration.DynamoDBReminderStorageOptions.ReadCapacityUnits
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Orleans.Configuration.DynamoDBReminderStorageOptions.WriteCapacityUnits*
+  commentId: Overload:Orleans.Configuration.DynamoDBReminderStorageOptions.WriteCapacityUnits
+  isExternal: false
+  name: WriteCapacityUnits
+  nameWithType: DynamoDBReminderStorageOptions.WriteCapacityUnits
+  fullName: Orleans.Configuration.DynamoDBReminderStorageOptions.WriteCapacityUnits
+- uid: Orleans.Configuration.DynamoDBReminderStorageOptions.TableName*
+  commentId: Overload:Orleans.Configuration.DynamoDBReminderStorageOptions.TableName
+  isExternal: false
+  name: TableName
+  nameWithType: DynamoDBReminderStorageOptions.TableName
+  fullName: Orleans.Configuration.DynamoDBReminderStorageOptions.TableName

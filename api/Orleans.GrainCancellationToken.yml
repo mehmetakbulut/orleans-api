@@ -1,0 +1,234 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.GrainCancellationToken
+  commentId: T:Orleans.GrainCancellationToken
+  id: GrainCancellationToken
+  parent: Orleans
+  children:
+  - Orleans.GrainCancellationToken.CancellationToken
+  - Orleans.GrainCancellationToken.Dispose
+  langs:
+  - csharp
+  - vb
+  name: GrainCancellationToken
+  nameWithType: GrainCancellationToken
+  fullName: Orleans.GrainCancellationToken
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Cancellation/GrainCancellationToken.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GrainCancellationToken
+    path: src/Orleans.Core.Abstractions/Cancellation/GrainCancellationToken.cs
+    startLine: 14
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nGrain cancellation token\n"
+  example: []
+  syntax:
+    content: 'public sealed class GrainCancellationToken : IDisposable'
+    content.vb: >-
+      Public NotInheritable Class GrainCancellationToken
+
+          Inherits IDisposable
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.GrainCancellationToken.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Orleans.GrainCancellationToken.CancellationToken
+  commentId: P:Orleans.GrainCancellationToken.CancellationToken
+  id: CancellationToken
+  parent: Orleans.GrainCancellationToken
+  langs:
+  - csharp
+  - vb
+  name: CancellationToken
+  nameWithType: GrainCancellationToken.CancellationToken
+  fullName: Orleans.GrainCancellationToken.CancellationToken
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Cancellation/GrainCancellationToken.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: CancellationToken
+    path: src/Orleans.Core.Abstractions/Cancellation/GrainCancellationToken.cs
+    startLine: 61
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nUnderlying cancellation token\n"
+  example: []
+  syntax:
+    content: public CancellationToken CancellationToken { get; }
+    parameters: []
+    return:
+      type: CancellationToken
+    content.vb: Public ReadOnly Property CancellationToken As CancellationToken
+  overload: Orleans.GrainCancellationToken.CancellationToken*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.GrainCancellationToken.Dispose
+  commentId: M:Orleans.GrainCancellationToken.Dispose
+  id: Dispose
+  parent: Orleans.GrainCancellationToken
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: GrainCancellationToken.Dispose()
+  fullName: Orleans.GrainCancellationToken.Dispose()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Cancellation/GrainCancellationToken.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Dispose
+    path: src/Orleans.Core.Abstractions/Cancellation/GrainCancellationToken.cs
+    startLine: 94
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  overload: Orleans.GrainCancellationToken.Dispose*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans
+  commentId: N:Orleans
+  isExternal: false
+  name: Orleans
+  nameWithType: Orleans
+  fullName: Orleans
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.GrainCancellationToken.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<GrainCancellationToken>()
+  nameWithType: ImmutableExt.AsImmutable<GrainCancellationToken>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.GrainCancellationToken>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of GrainCancellationToken)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.GrainCancellationToken)()
+  name.vb: AsImmutable(Of GrainCancellationToken)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<GrainCancellationToken>
+    nameWithType: ImmutableExt.AsImmutable<GrainCancellationToken>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.GrainCancellationToken>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of GrainCancellationToken)
+    nameWithType: ImmutableExt.AsImmutable(Of GrainCancellationToken)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.GrainCancellationToken)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.GrainCancellationToken.CancellationToken*
+  commentId: Overload:Orleans.GrainCancellationToken.CancellationToken
+  isExternal: false
+  name: CancellationToken
+  nameWithType: GrainCancellationToken.CancellationToken
+  fullName: Orleans.GrainCancellationToken.CancellationToken
+- uid: CancellationToken
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: CancellationToken
+- uid: Orleans.GrainCancellationToken.Dispose*
+  commentId: Overload:Orleans.GrainCancellationToken.Dispose
+  isExternal: false
+  name: Dispose
+  nameWithType: GrainCancellationToken.Dispose
+  fullName: Orleans.GrainCancellationToken.Dispose

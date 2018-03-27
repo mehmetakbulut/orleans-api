@@ -1,0 +1,635 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.IGrainFactory
+  commentId: T:Orleans.IGrainFactory
+  id: IGrainFactory
+  parent: Orleans
+  children:
+  - Orleans.IGrainFactory.BindGrainReference(Orleans.Runtime.IAddressable)
+  - Orleans.IGrainFactory.CreateObjectReference``1(Orleans.IGrainObserver)
+  - Orleans.IGrainFactory.DeleteObjectReference``1(Orleans.IGrainObserver)
+  - Orleans.IGrainFactory.GetGrain``1(Guid,System.String)
+  - Orleans.IGrainFactory.GetGrain``1(Guid,System.String,System.String)
+  - Orleans.IGrainFactory.GetGrain``1(System.Int64,System.String)
+  - Orleans.IGrainFactory.GetGrain``1(System.Int64,System.String,System.String)
+  - Orleans.IGrainFactory.GetGrain``1(System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: IGrainFactory
+  nameWithType: IGrainFactory
+  fullName: Orleans.IGrainFactory
+  type: Interface
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/IGrainFactory.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IGrainFactory
+    path: src/Orleans.Core.Abstractions/Core/IGrainFactory.cs
+    startLine: 6
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  syntax:
+    content: public interface IGrainFactory
+    content.vb: Public Interface IGrainFactory
+  extensionMethods:
+  - Orleans.IGrainFactory.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Orleans.IGrainFactory.GetGrain``1(Guid,System.String)
+  commentId: M:Orleans.IGrainFactory.GetGrain``1(Guid,System.String)
+  id: GetGrain``1(Guid,System.String)
+  parent: Orleans.IGrainFactory
+  langs:
+  - csharp
+  - vb
+  name: GetGrain<TGrainInterface>(Guid, String)
+  nameWithType: IGrainFactory.GetGrain<TGrainInterface>(Guid, String)
+  fullName: Orleans.IGrainFactory.GetGrain<TGrainInterface>(Guid, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/IGrainFactory.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetGrain
+    path: src/Orleans.Core.Abstractions/Core/IGrainFactory.cs
+    startLine: 15
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nGets a reference to a grain.\n"
+  example: []
+  syntax:
+    content: 'TGrainInterface GetGrain<TGrainInterface>(Guid primaryKey, string grainClassNamePrefix = null)where TGrainInterface : IGrainWithGuidKey'
+    parameters:
+    - id: primaryKey
+      type: Guid
+      description: The primary key of the grain.
+    - id: grainClassNamePrefix
+      type: System.String
+      description: An optional class name prefix used to find the runtime type of the grain.
+    typeParameters:
+    - id: TGrainInterface
+      description: The interface to get.
+    return:
+      type: '{TGrainInterface}'
+      description: A reference to the specified grain.
+    content.vb: Function GetGrain(Of TGrainInterface As IGrainWithGuidKey)(primaryKey As Guid, grainClassNamePrefix As String = Nothing) As TGrainInterface
+  overload: Orleans.IGrainFactory.GetGrain*
+  nameWithType.vb: IGrainFactory.GetGrain(Of TGrainInterface)(Guid, String)
+  fullName.vb: Orleans.IGrainFactory.GetGrain(Of TGrainInterface)(Guid, System.String)
+  name.vb: GetGrain(Of TGrainInterface)(Guid, String)
+- uid: Orleans.IGrainFactory.GetGrain``1(System.Int64,System.String)
+  commentId: M:Orleans.IGrainFactory.GetGrain``1(System.Int64,System.String)
+  id: GetGrain``1(System.Int64,System.String)
+  parent: Orleans.IGrainFactory
+  langs:
+  - csharp
+  - vb
+  name: GetGrain<TGrainInterface>(Int64, String)
+  nameWithType: IGrainFactory.GetGrain<TGrainInterface>(Int64, String)
+  fullName: Orleans.IGrainFactory.GetGrain<TGrainInterface>(System.Int64, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/IGrainFactory.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetGrain
+    path: src/Orleans.Core.Abstractions/Core/IGrainFactory.cs
+    startLine: 24
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nGets a reference to a grain.\n"
+  example: []
+  syntax:
+    content: 'TGrainInterface GetGrain<TGrainInterface>(long primaryKey, string grainClassNamePrefix = null)where TGrainInterface : IGrainWithIntegerKey'
+    parameters:
+    - id: primaryKey
+      type: System.Int64
+      description: The primary key of the grain.
+    - id: grainClassNamePrefix
+      type: System.String
+      description: An optional class name prefix used to find the runtime type of the grain.
+    typeParameters:
+    - id: TGrainInterface
+      description: The interface to get.
+    return:
+      type: '{TGrainInterface}'
+      description: A reference to the specified grain.
+    content.vb: Function GetGrain(Of TGrainInterface As IGrainWithIntegerKey)(primaryKey As Long, grainClassNamePrefix As String = Nothing) As TGrainInterface
+  overload: Orleans.IGrainFactory.GetGrain*
+  nameWithType.vb: IGrainFactory.GetGrain(Of TGrainInterface)(Int64, String)
+  fullName.vb: Orleans.IGrainFactory.GetGrain(Of TGrainInterface)(System.Int64, System.String)
+  name.vb: GetGrain(Of TGrainInterface)(Int64, String)
+- uid: Orleans.IGrainFactory.GetGrain``1(System.String,System.String)
+  commentId: M:Orleans.IGrainFactory.GetGrain``1(System.String,System.String)
+  id: GetGrain``1(System.String,System.String)
+  parent: Orleans.IGrainFactory
+  langs:
+  - csharp
+  - vb
+  name: GetGrain<TGrainInterface>(String, String)
+  nameWithType: IGrainFactory.GetGrain<TGrainInterface>(String, String)
+  fullName: Orleans.IGrainFactory.GetGrain<TGrainInterface>(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/IGrainFactory.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetGrain
+    path: src/Orleans.Core.Abstractions/Core/IGrainFactory.cs
+    startLine: 33
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nGets a reference to a grain.\n"
+  example: []
+  syntax:
+    content: 'TGrainInterface GetGrain<TGrainInterface>(string primaryKey, string grainClassNamePrefix = null)where TGrainInterface : IGrainWithStringKey'
+    parameters:
+    - id: primaryKey
+      type: System.String
+      description: The primary key of the grain.
+    - id: grainClassNamePrefix
+      type: System.String
+      description: An optional class name prefix used to find the runtime type of the grain.
+    typeParameters:
+    - id: TGrainInterface
+      description: The interface to get.
+    return:
+      type: '{TGrainInterface}'
+      description: A reference to the specified grain.
+    content.vb: Function GetGrain(Of TGrainInterface As IGrainWithStringKey)(primaryKey As String, grainClassNamePrefix As String = Nothing) As TGrainInterface
+  overload: Orleans.IGrainFactory.GetGrain*
+  nameWithType.vb: IGrainFactory.GetGrain(Of TGrainInterface)(String, String)
+  fullName.vb: Orleans.IGrainFactory.GetGrain(Of TGrainInterface)(System.String, System.String)
+  name.vb: GetGrain(Of TGrainInterface)(String, String)
+- uid: Orleans.IGrainFactory.GetGrain``1(Guid,System.String,System.String)
+  commentId: M:Orleans.IGrainFactory.GetGrain``1(Guid,System.String,System.String)
+  id: GetGrain``1(Guid,System.String,System.String)
+  parent: Orleans.IGrainFactory
+  langs:
+  - csharp
+  - vb
+  name: GetGrain<TGrainInterface>(Guid, String, String)
+  nameWithType: IGrainFactory.GetGrain<TGrainInterface>(Guid, String, String)
+  fullName: Orleans.IGrainFactory.GetGrain<TGrainInterface>(Guid, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/IGrainFactory.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetGrain
+    path: src/Orleans.Core.Abstractions/Core/IGrainFactory.cs
+    startLine: 43
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nGets a reference to a grain.\n"
+  example: []
+  syntax:
+    content: 'TGrainInterface GetGrain<TGrainInterface>(Guid primaryKey, string keyExtension, string grainClassNamePrefix = null)where TGrainInterface : IGrainWithGuidCompoundKey'
+    parameters:
+    - id: primaryKey
+      type: Guid
+      description: The primary key of the grain.
+    - id: keyExtension
+      type: System.String
+      description: The key extension of the grain.
+    - id: grainClassNamePrefix
+      type: System.String
+      description: An optional class name prefix used to find the runtime type of the grain.
+    typeParameters:
+    - id: TGrainInterface
+      description: The interface to get.
+    return:
+      type: '{TGrainInterface}'
+      description: A reference to the specified grain.
+    content.vb: Function GetGrain(Of TGrainInterface As IGrainWithGuidCompoundKey)(primaryKey As Guid, keyExtension As String, grainClassNamePrefix As String = Nothing) As TGrainInterface
+  overload: Orleans.IGrainFactory.GetGrain*
+  nameWithType.vb: IGrainFactory.GetGrain(Of TGrainInterface)(Guid, String, String)
+  fullName.vb: Orleans.IGrainFactory.GetGrain(Of TGrainInterface)(Guid, System.String, System.String)
+  name.vb: GetGrain(Of TGrainInterface)(Guid, String, String)
+- uid: Orleans.IGrainFactory.GetGrain``1(System.Int64,System.String,System.String)
+  commentId: M:Orleans.IGrainFactory.GetGrain``1(System.Int64,System.String,System.String)
+  id: GetGrain``1(System.Int64,System.String,System.String)
+  parent: Orleans.IGrainFactory
+  langs:
+  - csharp
+  - vb
+  name: GetGrain<TGrainInterface>(Int64, String, String)
+  nameWithType: IGrainFactory.GetGrain<TGrainInterface>(Int64, String, String)
+  fullName: Orleans.IGrainFactory.GetGrain<TGrainInterface>(System.Int64, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/IGrainFactory.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetGrain
+    path: src/Orleans.Core.Abstractions/Core/IGrainFactory.cs
+    startLine: 53
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nGets a reference to a grain.\n"
+  example: []
+  syntax:
+    content: 'TGrainInterface GetGrain<TGrainInterface>(long primaryKey, string keyExtension, string grainClassNamePrefix = null)where TGrainInterface : IGrainWithIntegerCompoundKey'
+    parameters:
+    - id: primaryKey
+      type: System.Int64
+      description: The primary key of the grain.
+    - id: keyExtension
+      type: System.String
+      description: The key extension of the grain.
+    - id: grainClassNamePrefix
+      type: System.String
+      description: An optional class name prefix used to find the runtime type of the grain.
+    typeParameters:
+    - id: TGrainInterface
+      description: The interface to get.
+    return:
+      type: '{TGrainInterface}'
+      description: A reference to the specified grain.
+    content.vb: Function GetGrain(Of TGrainInterface As IGrainWithIntegerCompoundKey)(primaryKey As Long, keyExtension As String, grainClassNamePrefix As String = Nothing) As TGrainInterface
+  overload: Orleans.IGrainFactory.GetGrain*
+  nameWithType.vb: IGrainFactory.GetGrain(Of TGrainInterface)(Int64, String, String)
+  fullName.vb: Orleans.IGrainFactory.GetGrain(Of TGrainInterface)(System.Int64, System.String, System.String)
+  name.vb: GetGrain(Of TGrainInterface)(Int64, String, String)
+- uid: Orleans.IGrainFactory.CreateObjectReference``1(Orleans.IGrainObserver)
+  commentId: M:Orleans.IGrainFactory.CreateObjectReference``1(Orleans.IGrainObserver)
+  id: CreateObjectReference``1(Orleans.IGrainObserver)
+  parent: Orleans.IGrainFactory
+  langs:
+  - csharp
+  - vb
+  name: CreateObjectReference<TGrainObserverInterface>(IGrainObserver)
+  nameWithType: IGrainFactory.CreateObjectReference<TGrainObserverInterface>(IGrainObserver)
+  fullName: Orleans.IGrainFactory.CreateObjectReference<TGrainObserverInterface>(Orleans.IGrainObserver)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/IGrainFactory.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: CreateObjectReference
+    path: src/Orleans.Core.Abstractions/Core/IGrainFactory.cs
+    startLine: 63
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nCreates a reference to the provided <code data-dev-comment-type=\"paramref\" class=\"paramref\">obj</code>.\n"
+  example: []
+  syntax:
+    content: 'Task<TGrainObserverInterface> CreateObjectReference<TGrainObserverInterface>(IGrainObserver obj)where TGrainObserverInterface : IGrainObserver'
+    parameters:
+    - id: obj
+      type: Orleans.IGrainObserver
+      description: The object to create a reference to.
+    typeParameters:
+    - id: TGrainObserverInterface
+      description: "\nThe specific <xref href=\"Orleans.IGrainObserver\" data-throw-if-not-resolved=\"false\"></xref> type of <code data-dev-comment-type=\"paramref\" class=\"paramref\">obj</code>.\n"
+    return:
+      type: Task{{TGrainObserverInterface}}
+      description: The reference to <code data-dev-comment-type="paramref" class="paramref">obj</code>.
+    content.vb: Function CreateObjectReference(Of TGrainObserverInterface As IGrainObserver)(obj As IGrainObserver) As Task(Of TGrainObserverInterface)
+  overload: Orleans.IGrainFactory.CreateObjectReference*
+  nameWithType.vb: IGrainFactory.CreateObjectReference(Of TGrainObserverInterface)(IGrainObserver)
+  fullName.vb: Orleans.IGrainFactory.CreateObjectReference(Of TGrainObserverInterface)(Orleans.IGrainObserver)
+  name.vb: CreateObjectReference(Of TGrainObserverInterface)(IGrainObserver)
+- uid: Orleans.IGrainFactory.DeleteObjectReference``1(Orleans.IGrainObserver)
+  commentId: M:Orleans.IGrainFactory.DeleteObjectReference``1(Orleans.IGrainObserver)
+  id: DeleteObjectReference``1(Orleans.IGrainObserver)
+  parent: Orleans.IGrainFactory
+  langs:
+  - csharp
+  - vb
+  name: DeleteObjectReference<TGrainObserverInterface>(IGrainObserver)
+  nameWithType: IGrainFactory.DeleteObjectReference<TGrainObserverInterface>(IGrainObserver)
+  fullName: Orleans.IGrainFactory.DeleteObjectReference<TGrainObserverInterface>(Orleans.IGrainObserver)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/IGrainFactory.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: DeleteObjectReference
+    path: src/Orleans.Core.Abstractions/Core/IGrainFactory.cs
+    startLine: 73
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nDeletes the provided object reference.\n"
+  example: []
+  syntax:
+    content: 'Task DeleteObjectReference<TGrainObserverInterface>(IGrainObserver obj)where TGrainObserverInterface : IGrainObserver'
+    parameters:
+    - id: obj
+      type: Orleans.IGrainObserver
+      description: The reference being deleted.
+    typeParameters:
+    - id: TGrainObserverInterface
+      description: "\nThe specific <xref href=\"Orleans.IGrainObserver\" data-throw-if-not-resolved=\"false\"></xref> type of <code data-dev-comment-type=\"paramref\" class=\"paramref\">obj</code>.\n"
+    return:
+      type: Task
+      description: A <see cref="!:Task"></see> representing the work performed.
+    content.vb: Function DeleteObjectReference(Of TGrainObserverInterface As IGrainObserver)(obj As IGrainObserver) As Task
+  overload: Orleans.IGrainFactory.DeleteObjectReference*
+  nameWithType.vb: IGrainFactory.DeleteObjectReference(Of TGrainObserverInterface)(IGrainObserver)
+  fullName.vb: Orleans.IGrainFactory.DeleteObjectReference(Of TGrainObserverInterface)(Orleans.IGrainObserver)
+  name.vb: DeleteObjectReference(Of TGrainObserverInterface)(IGrainObserver)
+- uid: Orleans.IGrainFactory.BindGrainReference(Orleans.Runtime.IAddressable)
+  commentId: M:Orleans.IGrainFactory.BindGrainReference(Orleans.Runtime.IAddressable)
+  id: BindGrainReference(Orleans.Runtime.IAddressable)
+  parent: Orleans.IGrainFactory
+  langs:
+  - csharp
+  - vb
+  name: BindGrainReference(IAddressable)
+  nameWithType: IGrainFactory.BindGrainReference(IAddressable)
+  fullName: Orleans.IGrainFactory.BindGrainReference(Orleans.Runtime.IAddressable)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/IGrainFactory.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: BindGrainReference
+    path: src/Orleans.Core.Abstractions/Core/IGrainFactory.cs
+    startLine: 79
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nBinds the provided grain reference to this instance.\n"
+  example: []
+  syntax:
+    content: void BindGrainReference(IAddressable grain)
+    parameters:
+    - id: grain
+      type: Orleans.Runtime.IAddressable
+      description: The grain reference.
+    content.vb: Sub BindGrainReference(grain As IAddressable)
+  overload: Orleans.IGrainFactory.BindGrainReference*
+references:
+- uid: Orleans
+  commentId: N:Orleans
+  isExternal: false
+  name: Orleans
+  nameWithType: Orleans
+  fullName: Orleans
+- uid: Orleans.IGrainFactory.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<IGrainFactory>()
+  nameWithType: ImmutableExt.AsImmutable<IGrainFactory>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.IGrainFactory>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of IGrainFactory)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.IGrainFactory)()
+  name.vb: AsImmutable(Of IGrainFactory)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<IGrainFactory>
+    nameWithType: ImmutableExt.AsImmutable<IGrainFactory>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.IGrainFactory>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of IGrainFactory)
+    nameWithType: ImmutableExt.AsImmutable(Of IGrainFactory)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.IGrainFactory)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.IGrainFactory.GetGrain*
+  commentId: Overload:Orleans.IGrainFactory.GetGrain
+  isExternal: false
+  name: GetGrain
+  nameWithType: IGrainFactory.GetGrain
+  fullName: Orleans.IGrainFactory.GetGrain
+- uid: Guid
+  isExternal: true
+  name: Guid
+  nameWithType: Guid
+  fullName: Guid
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: '{TGrainInterface}'
+  commentId: '!:TGrainInterface'
+  definition: TGrainInterface
+  name: TGrainInterface
+  nameWithType: TGrainInterface
+  fullName: TGrainInterface
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TGrainInterface
+  isExternal: false
+  name: TGrainInterface
+  nameWithType: TGrainInterface
+  fullName: TGrainInterface
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
+- uid: Orleans.IGrainObserver
+  commentId: T:Orleans.IGrainObserver
+  parent: Orleans
+  isExternal: false
+  name: IGrainObserver
+  nameWithType: IGrainObserver
+  fullName: Orleans.IGrainObserver
+- uid: Orleans.IGrainFactory.CreateObjectReference*
+  commentId: Overload:Orleans.IGrainFactory.CreateObjectReference
+  isExternal: false
+  name: CreateObjectReference
+  nameWithType: IGrainFactory.CreateObjectReference
+  fullName: Orleans.IGrainFactory.CreateObjectReference
+- uid: Task{{TGrainObserverInterface}}
+  commentId: '!:Task{``0}'
+  definition: Task`1
+  name: Task<TGrainObserverInterface>
+  nameWithType: Task<TGrainObserverInterface>
+  fullName: Task<TGrainObserverInterface>
+  nameWithType.vb: Task(Of TGrainObserverInterface)
+  fullName.vb: Task(Of TGrainObserverInterface)
+  name.vb: Task(Of TGrainObserverInterface)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TGrainObserverInterface
+    nameWithType: TGrainObserverInterface
+    fullName: TGrainObserverInterface
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TGrainObserverInterface
+    nameWithType: TGrainObserverInterface
+    fullName: TGrainObserverInterface
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.IGrainFactory.DeleteObjectReference*
+  commentId: Overload:Orleans.IGrainFactory.DeleteObjectReference
+  isExternal: false
+  name: DeleteObjectReference
+  nameWithType: IGrainFactory.DeleteObjectReference
+  fullName: Orleans.IGrainFactory.DeleteObjectReference
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task
+- uid: Orleans.IGrainFactory.BindGrainReference*
+  commentId: Overload:Orleans.IGrainFactory.BindGrainReference
+  isExternal: false
+  name: BindGrainReference
+  nameWithType: IGrainFactory.BindGrainReference
+  fullName: Orleans.IGrainFactory.BindGrainReference
+- uid: Orleans.Runtime.IAddressable
+  commentId: T:Orleans.Runtime.IAddressable
+  parent: Orleans.Runtime
+  isExternal: false
+  name: IAddressable
+  nameWithType: IAddressable
+  fullName: Orleans.Runtime.IAddressable
+- uid: Orleans.Runtime
+  commentId: N:Orleans.Runtime
+  isExternal: false
+  name: Orleans.Runtime
+  nameWithType: Orleans.Runtime
+  fullName: Orleans.Runtime

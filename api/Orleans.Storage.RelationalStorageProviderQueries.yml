@@ -1,0 +1,340 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Storage.RelationalStorageProviderQueries
+  commentId: T:Orleans.Storage.RelationalStorageProviderQueries
+  id: RelationalStorageProviderQueries
+  parent: Orleans.Storage
+  children:
+  - Orleans.Storage.RelationalStorageProviderQueries.#ctor(System.String,System.String,System.String)
+  - Orleans.Storage.RelationalStorageProviderQueries.ClearState
+  - Orleans.Storage.RelationalStorageProviderQueries.ReadFromStorage
+  - Orleans.Storage.RelationalStorageProviderQueries.WriteToStorage
+  langs:
+  - csharp
+  - vb
+  name: RelationalStorageProviderQueries
+  nameWithType: RelationalStorageProviderQueries
+  fullName: Orleans.Storage.RelationalStorageProviderQueries
+  type: Class
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/RelationalStorageProviderQueries.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: RelationalStorageProviderQueries
+    path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/RelationalStorageProviderQueries.cs
+    startLine: 9
+  assemblies:
+  - Orleans.Persistence.AdoNet
+  namespace: Orleans.Storage
+  summary: "\nA container class for the queries currently used by the <xref href=\"Orleans.Storage.AdoNetGrainStorage\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  remarks: This is provided as a separate entity in order to make these dynamically updatable.
+  example: []
+  syntax:
+    content: 'public class RelationalStorageProviderQueries : object'
+    content.vb: >-
+      Public Class RelationalStorageProviderQueries
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.Storage.RelationalStorageProviderQueries.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.Storage.RelationalStorageProviderQueries.WriteToStorage
+  commentId: P:Orleans.Storage.RelationalStorageProviderQueries.WriteToStorage
+  id: WriteToStorage
+  parent: Orleans.Storage.RelationalStorageProviderQueries
+  langs:
+  - csharp
+  - vb
+  name: WriteToStorage
+  nameWithType: RelationalStorageProviderQueries.WriteToStorage
+  fullName: Orleans.Storage.RelationalStorageProviderQueries.WriteToStorage
+  type: Property
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/RelationalStorageProviderQueries.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: WriteToStorage
+    path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/RelationalStorageProviderQueries.cs
+    startLine: 14
+  assemblies:
+  - Orleans.Persistence.AdoNet
+  namespace: Orleans.Storage
+  summary: "\nThe clause to write to the storage.\n"
+  example: []
+  syntax:
+    content: public string WriteToStorage { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property WriteToStorage As String
+  overload: Orleans.Storage.RelationalStorageProviderQueries.WriteToStorage*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Storage.RelationalStorageProviderQueries.ReadFromStorage
+  commentId: P:Orleans.Storage.RelationalStorageProviderQueries.ReadFromStorage
+  id: ReadFromStorage
+  parent: Orleans.Storage.RelationalStorageProviderQueries
+  langs:
+  - csharp
+  - vb
+  name: ReadFromStorage
+  nameWithType: RelationalStorageProviderQueries.ReadFromStorage
+  fullName: Orleans.Storage.RelationalStorageProviderQueries.ReadFromStorage
+  type: Property
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/RelationalStorageProviderQueries.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ReadFromStorage
+    path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/RelationalStorageProviderQueries.cs
+    startLine: 19
+  assemblies:
+  - Orleans.Persistence.AdoNet
+  namespace: Orleans.Storage
+  summary: "\nThe clause to read from the storage.\n"
+  example: []
+  syntax:
+    content: public string ReadFromStorage { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ReadFromStorage As String
+  overload: Orleans.Storage.RelationalStorageProviderQueries.ReadFromStorage*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Storage.RelationalStorageProviderQueries.ClearState
+  commentId: P:Orleans.Storage.RelationalStorageProviderQueries.ClearState
+  id: ClearState
+  parent: Orleans.Storage.RelationalStorageProviderQueries
+  langs:
+  - csharp
+  - vb
+  name: ClearState
+  nameWithType: RelationalStorageProviderQueries.ClearState
+  fullName: Orleans.Storage.RelationalStorageProviderQueries.ClearState
+  type: Property
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/RelationalStorageProviderQueries.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ClearState
+    path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/RelationalStorageProviderQueries.cs
+    startLine: 24
+  assemblies:
+  - Orleans.Persistence.AdoNet
+  namespace: Orleans.Storage
+  summary: "\nThe clause to clear the storage.\n"
+  example: []
+  syntax:
+    content: public string ClearState { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ClearState As String
+  overload: Orleans.Storage.RelationalStorageProviderQueries.ClearState*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Storage.RelationalStorageProviderQueries.#ctor(System.String,System.String,System.String)
+  commentId: M:Orleans.Storage.RelationalStorageProviderQueries.#ctor(System.String,System.String,System.String)
+  id: '#ctor(System.String,System.String,System.String)'
+  parent: Orleans.Storage.RelationalStorageProviderQueries
+  langs:
+  - csharp
+  - vb
+  name: RelationalStorageProviderQueries(String, String, String)
+  nameWithType: RelationalStorageProviderQueries.RelationalStorageProviderQueries(String, String, String)
+  fullName: Orleans.Storage.RelationalStorageProviderQueries.RelationalStorageProviderQueries(System.String, System.String, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/RelationalStorageProviderQueries.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/RelationalStorageProviderQueries.cs
+    startLine: 33
+  assemblies:
+  - Orleans.Persistence.AdoNet
+  namespace: Orleans.Storage
+  summary: "\nConstructor.\n"
+  example: []
+  syntax:
+    content: public RelationalStorageProviderQueries(string writeToStorage, string readFromStorage, string clearState)
+    parameters:
+    - id: writeToStorage
+      type: System.String
+      description: The clause to write to a storage.
+    - id: readFromStorage
+      type: System.String
+      description: The clause to read from a storage.
+    - id: clearState
+      type: System.String
+      description: The clause to clear the storage.
+    content.vb: Public Sub New(writeToStorage As String, readFromStorage As String, clearState As String)
+  overload: Orleans.Storage.RelationalStorageProviderQueries.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans.Storage.AdoNetGrainStorage
+  commentId: T:Orleans.Storage.AdoNetGrainStorage
+  isExternal: false
+  name: AdoNetGrainStorage
+  nameWithType: AdoNetGrainStorage
+  fullName: Orleans.Storage.AdoNetGrainStorage
+- uid: Orleans.Storage
+  commentId: N:Orleans.Storage
+  isExternal: false
+  name: Orleans.Storage
+  nameWithType: Orleans.Storage
+  fullName: Orleans.Storage
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Storage.RelationalStorageProviderQueries.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<RelationalStorageProviderQueries>()
+  nameWithType: ImmutableExt.AsImmutable<RelationalStorageProviderQueries>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Storage.RelationalStorageProviderQueries>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of RelationalStorageProviderQueries)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Storage.RelationalStorageProviderQueries)()
+  name.vb: AsImmutable(Of RelationalStorageProviderQueries)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<RelationalStorageProviderQueries>
+    nameWithType: ImmutableExt.AsImmutable<RelationalStorageProviderQueries>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Storage.RelationalStorageProviderQueries>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of RelationalStorageProviderQueries)
+    nameWithType: ImmutableExt.AsImmutable(Of RelationalStorageProviderQueries)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Storage.RelationalStorageProviderQueries)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Storage.RelationalStorageProviderQueries.WriteToStorage*
+  commentId: Overload:Orleans.Storage.RelationalStorageProviderQueries.WriteToStorage
+  isExternal: false
+  name: WriteToStorage
+  nameWithType: RelationalStorageProviderQueries.WriteToStorage
+  fullName: Orleans.Storage.RelationalStorageProviderQueries.WriteToStorage
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Orleans.Storage.RelationalStorageProviderQueries.ReadFromStorage*
+  commentId: Overload:Orleans.Storage.RelationalStorageProviderQueries.ReadFromStorage
+  isExternal: false
+  name: ReadFromStorage
+  nameWithType: RelationalStorageProviderQueries.ReadFromStorage
+  fullName: Orleans.Storage.RelationalStorageProviderQueries.ReadFromStorage
+- uid: Orleans.Storage.RelationalStorageProviderQueries.ClearState*
+  commentId: Overload:Orleans.Storage.RelationalStorageProviderQueries.ClearState
+  isExternal: false
+  name: ClearState
+  nameWithType: RelationalStorageProviderQueries.ClearState
+  fullName: Orleans.Storage.RelationalStorageProviderQueries.ClearState
+- uid: Orleans.Storage.RelationalStorageProviderQueries.#ctor*
+  commentId: Overload:Orleans.Storage.RelationalStorageProviderQueries.#ctor
+  isExternal: false
+  name: RelationalStorageProviderQueries
+  nameWithType: RelationalStorageProviderQueries.RelationalStorageProviderQueries
+  fullName: Orleans.Storage.RelationalStorageProviderQueries.RelationalStorageProviderQueries

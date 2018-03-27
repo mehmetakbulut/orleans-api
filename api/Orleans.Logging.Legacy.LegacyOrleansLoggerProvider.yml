@@ -1,0 +1,596 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Logging.Legacy.LegacyOrleansLoggerProvider
+  commentId: T:Orleans.Logging.Legacy.LegacyOrleansLoggerProvider
+  id: LegacyOrleansLoggerProvider
+  parent: Orleans.Logging.Legacy
+  children:
+  - Orleans.Logging.Legacy.LegacyOrleansLoggerProvider.#ctor
+  - Orleans.Logging.Legacy.LegacyOrleansLoggerProvider.#ctor(IEnumerable{Orleans.Runtime.ILogConsumer},IPEndPoint)
+  - Orleans.Logging.Legacy.LegacyOrleansLoggerProvider.CreateLogger(System.String)
+  - Orleans.Logging.Legacy.LegacyOrleansLoggerProvider.DefaultSeverity
+  - Orleans.Logging.Legacy.LegacyOrleansLoggerProvider.Dispose
+  - Orleans.Logging.Legacy.LegacyOrleansLoggerProvider.LogConsumers
+  langs:
+  - csharp
+  - vb
+  name: LegacyOrleansLoggerProvider
+  nameWithType: LegacyOrleansLoggerProvider
+  fullName: Orleans.Logging.Legacy.LegacyOrleansLoggerProvider
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Logging/LegacyOrleansLoggerProvider.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: LegacyOrleansLoggerProvider
+    path: src/Orleans.Core.Legacy/Logging/LegacyOrleansLoggerProvider.cs
+    startLine: 16
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Logging.Legacy
+  summary: "\nProvides an ILoggerProvider, whose implementation try to preserve orleans legacy logging features and abstraction\nOrleansLoggerProvider creates one ILogger implementation, which supports orleans legacy logging features, including <xref href=\"Orleans.Runtime.ILogConsumer\" data-throw-if-not-resolved=\"false\"></xref>, \n<xref href=\"Orleans.Runtime.ICloseableLogConsumer\" data-throw-if-not-resolved=\"false\"></xref>, <xref href=\"Orleans.Runtime.IFlushableLogConsumer\" data-throw-if-not-resolved=\"false\"></xref>, <xref href=\"Orleans.Runtime.Severity\" data-throw-if-not-resolved=\"false\"></xref>. \nLegacyOrleansLoggerProvider also supports configuration on those legacy features.\n"
+  example: []
+  syntax:
+    content: 'public class LegacyOrleansLoggerProvider : ILoggerProvider'
+    content.vb: >-
+      Public Class LegacyOrleansLoggerProvider
+
+          Inherits ILoggerProvider
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.Logging.Legacy.LegacyOrleansLoggerProvider.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.Logging.Legacy.LegacyOrleansLoggerProvider.DefaultSeverity
+  commentId: F:Orleans.Logging.Legacy.LegacyOrleansLoggerProvider.DefaultSeverity
+  id: DefaultSeverity
+  parent: Orleans.Logging.Legacy.LegacyOrleansLoggerProvider
+  langs:
+  - csharp
+  - vb
+  name: DefaultSeverity
+  nameWithType: LegacyOrleansLoggerProvider.DefaultSeverity
+  fullName: Orleans.Logging.Legacy.LegacyOrleansLoggerProvider.DefaultSeverity
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Logging/LegacyOrleansLoggerProvider.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: DefaultSeverity
+    path: src/Orleans.Core.Legacy/Logging/LegacyOrleansLoggerProvider.cs
+    startLine: 22
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Logging.Legacy
+  summary: "\nDefault Severity for all loggers\n"
+  example: []
+  syntax:
+    content: public static Severity DefaultSeverity
+    return:
+      type: Orleans.Runtime.Severity
+    content.vb: Public Shared DefaultSeverity As Severity
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.Logging.Legacy.LegacyOrleansLoggerProvider.LogConsumers
+  commentId: P:Orleans.Logging.Legacy.LegacyOrleansLoggerProvider.LogConsumers
+  id: LogConsumers
+  parent: Orleans.Logging.Legacy.LegacyOrleansLoggerProvider
+  langs:
+  - csharp
+  - vb
+  name: LogConsumers
+  nameWithType: LegacyOrleansLoggerProvider.LogConsumers
+  fullName: Orleans.Logging.Legacy.LegacyOrleansLoggerProvider.LogConsumers
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Logging/LegacyOrleansLoggerProvider.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: LogConsumers
+    path: src/Orleans.Core.Legacy/Logging/LegacyOrleansLoggerProvider.cs
+    startLine: 24
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Logging.Legacy
+  syntax:
+    content: public ConcurrentBag<ILogConsumer> LogConsumers { get; }
+    parameters: []
+    return:
+      type: ConcurrentBag{Orleans.Runtime.ILogConsumer}
+    content.vb: Public ReadOnly Property LogConsumers As ConcurrentBag(Of ILogConsumer)
+  overload: Orleans.Logging.Legacy.LegacyOrleansLoggerProvider.LogConsumers*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Logging.Legacy.LegacyOrleansLoggerProvider.#ctor
+  commentId: M:Orleans.Logging.Legacy.LegacyOrleansLoggerProvider.#ctor
+  id: '#ctor'
+  parent: Orleans.Logging.Legacy.LegacyOrleansLoggerProvider
+  langs:
+  - csharp
+  - vb
+  name: LegacyOrleansLoggerProvider()
+  nameWithType: LegacyOrleansLoggerProvider.LegacyOrleansLoggerProvider()
+  fullName: Orleans.Logging.Legacy.LegacyOrleansLoggerProvider.LegacyOrleansLoggerProvider()
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Logging/LegacyOrleansLoggerProvider.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Core.Legacy/Logging/LegacyOrleansLoggerProvider.cs
+    startLine: 29
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Logging.Legacy
+  summary: "\nConstructor\n"
+  example: []
+  syntax:
+    content: public LegacyOrleansLoggerProvider()
+    content.vb: Public Sub New
+  overload: Orleans.Logging.Legacy.LegacyOrleansLoggerProvider.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Logging.Legacy.LegacyOrleansLoggerProvider.#ctor(IEnumerable{Orleans.Runtime.ILogConsumer},IPEndPoint)
+  commentId: M:Orleans.Logging.Legacy.LegacyOrleansLoggerProvider.#ctor(IEnumerable{Orleans.Runtime.ILogConsumer},IPEndPoint)
+  id: '#ctor(IEnumerable{Orleans.Runtime.ILogConsumer},IPEndPoint)'
+  parent: Orleans.Logging.Legacy.LegacyOrleansLoggerProvider
+  langs:
+  - csharp
+  - vb
+  name: LegacyOrleansLoggerProvider(IEnumerable<ILogConsumer>, IPEndPoint)
+  nameWithType: LegacyOrleansLoggerProvider.LegacyOrleansLoggerProvider(IEnumerable<ILogConsumer>, IPEndPoint)
+  fullName: Orleans.Logging.Legacy.LegacyOrleansLoggerProvider.LegacyOrleansLoggerProvider(IEnumerable<Orleans.Runtime.ILogConsumer>, IPEndPoint)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Logging/LegacyOrleansLoggerProvider.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Core.Legacy/Logging/LegacyOrleansLoggerProvider.cs
+    startLine: 39
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Logging.Legacy
+  summary: "\nConstructor\n"
+  example: []
+  syntax:
+    content: public LegacyOrleansLoggerProvider(IEnumerable<ILogConsumer> consumers, IPEndPoint ipEndPoint)
+    parameters:
+    - id: consumers
+      type: IEnumerable{Orleans.Runtime.ILogConsumer}
+      description: Registered log consumers
+    - id: ipEndPoint
+      type: IPEndPoint
+      description: IP endpoint
+    content.vb: Public Sub New(consumers As IEnumerable(Of ILogConsumer), ipEndPoint As IPEndPoint)
+  overload: Orleans.Logging.Legacy.LegacyOrleansLoggerProvider.#ctor*
+  nameWithType.vb: LegacyOrleansLoggerProvider.LegacyOrleansLoggerProvider(IEnumerable(Of ILogConsumer), IPEndPoint)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.Logging.Legacy.LegacyOrleansLoggerProvider.LegacyOrleansLoggerProvider(IEnumerable(Of Orleans.Runtime.ILogConsumer), IPEndPoint)
+  name.vb: LegacyOrleansLoggerProvider(IEnumerable(Of ILogConsumer), IPEndPoint)
+- uid: Orleans.Logging.Legacy.LegacyOrleansLoggerProvider.CreateLogger(System.String)
+  commentId: M:Orleans.Logging.Legacy.LegacyOrleansLoggerProvider.CreateLogger(System.String)
+  id: CreateLogger(System.String)
+  parent: Orleans.Logging.Legacy.LegacyOrleansLoggerProvider
+  langs:
+  - csharp
+  - vb
+  name: CreateLogger(String)
+  nameWithType: LegacyOrleansLoggerProvider.CreateLogger(String)
+  fullName: Orleans.Logging.Legacy.LegacyOrleansLoggerProvider.CreateLogger(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Logging/LegacyOrleansLoggerProvider.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: CreateLogger
+    path: src/Orleans.Core.Legacy/Logging/LegacyOrleansLoggerProvider.cs
+    startLine: 53
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Logging.Legacy
+  example: []
+  syntax:
+    content: public ILogger CreateLogger(string categoryName)
+    parameters:
+    - id: categoryName
+      type: System.String
+    return:
+      type: ILogger
+    content.vb: Public Function CreateLogger(categoryName As String) As ILogger
+  overload: Orleans.Logging.Legacy.LegacyOrleansLoggerProvider.CreateLogger*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Logging.Legacy.LegacyOrleansLoggerProvider.Dispose
+  commentId: M:Orleans.Logging.Legacy.LegacyOrleansLoggerProvider.Dispose
+  id: Dispose
+  parent: Orleans.Logging.Legacy.LegacyOrleansLoggerProvider
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: LegacyOrleansLoggerProvider.Dispose()
+  fullName: Orleans.Logging.Legacy.LegacyOrleansLoggerProvider.Dispose()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Logging/LegacyOrleansLoggerProvider.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Dispose
+    path: src/Orleans.Core.Legacy/Logging/LegacyOrleansLoggerProvider.cs
+    startLine: 59
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Logging.Legacy
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  overload: Orleans.Logging.Legacy.LegacyOrleansLoggerProvider.Dispose*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans.Runtime.ILogConsumer
+  commentId: T:Orleans.Runtime.ILogConsumer
+  parent: Orleans.Runtime
+  isExternal: false
+  name: ILogConsumer
+  nameWithType: ILogConsumer
+  fullName: Orleans.Runtime.ILogConsumer
+- uid: Orleans.Runtime.ICloseableLogConsumer
+  commentId: T:Orleans.Runtime.ICloseableLogConsumer
+  parent: Orleans.Runtime
+  isExternal: false
+  name: ICloseableLogConsumer
+  nameWithType: ICloseableLogConsumer
+  fullName: Orleans.Runtime.ICloseableLogConsumer
+- uid: Orleans.Runtime.IFlushableLogConsumer
+  commentId: T:Orleans.Runtime.IFlushableLogConsumer
+  parent: Orleans.Runtime
+  isExternal: false
+  name: IFlushableLogConsumer
+  nameWithType: IFlushableLogConsumer
+  fullName: Orleans.Runtime.IFlushableLogConsumer
+- uid: Orleans.Runtime.Severity
+  commentId: T:Orleans.Runtime.Severity
+  parent: Orleans.Runtime
+  isExternal: false
+  name: Severity
+  nameWithType: Severity
+  fullName: Orleans.Runtime.Severity
+- uid: Orleans.Logging.Legacy
+  commentId: N:Orleans.Logging.Legacy
+  isExternal: false
+  name: Orleans.Logging.Legacy
+  nameWithType: Orleans.Logging.Legacy
+  fullName: Orleans.Logging.Legacy
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Logging.Legacy.LegacyOrleansLoggerProvider.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<LegacyOrleansLoggerProvider>()
+  nameWithType: ImmutableExt.AsImmutable<LegacyOrleansLoggerProvider>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Logging.Legacy.LegacyOrleansLoggerProvider>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of LegacyOrleansLoggerProvider)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Logging.Legacy.LegacyOrleansLoggerProvider)()
+  name.vb: AsImmutable(Of LegacyOrleansLoggerProvider)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<LegacyOrleansLoggerProvider>
+    nameWithType: ImmutableExt.AsImmutable<LegacyOrleansLoggerProvider>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Logging.Legacy.LegacyOrleansLoggerProvider>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of LegacyOrleansLoggerProvider)
+    nameWithType: ImmutableExt.AsImmutable(Of LegacyOrleansLoggerProvider)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Logging.Legacy.LegacyOrleansLoggerProvider)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime
+  commentId: N:Orleans.Runtime
+  isExternal: false
+  name: Orleans.Runtime
+  nameWithType: Orleans.Runtime
+  fullName: Orleans.Runtime
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Logging.Legacy.LegacyOrleansLoggerProvider.LogConsumers*
+  commentId: Overload:Orleans.Logging.Legacy.LegacyOrleansLoggerProvider.LogConsumers
+  isExternal: false
+  name: LogConsumers
+  nameWithType: LegacyOrleansLoggerProvider.LogConsumers
+  fullName: Orleans.Logging.Legacy.LegacyOrleansLoggerProvider.LogConsumers
+- uid: ConcurrentBag{Orleans.Runtime.ILogConsumer}
+  commentId: '!:ConcurrentBag{Orleans.Runtime.ILogConsumer}'
+  definition: ConcurrentBag`1
+  name: ConcurrentBag<ILogConsumer>
+  nameWithType: ConcurrentBag<ILogConsumer>
+  fullName: ConcurrentBag<Orleans.Runtime.ILogConsumer>
+  nameWithType.vb: ConcurrentBag(Of ILogConsumer)
+  fullName.vb: ConcurrentBag(Of Orleans.Runtime.ILogConsumer)
+  name.vb: ConcurrentBag(Of ILogConsumer)
+  spec.csharp:
+  - uid: ConcurrentBag`1
+    name: ConcurrentBag
+    nameWithType: ConcurrentBag
+    fullName: ConcurrentBag
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Orleans.Runtime.ILogConsumer
+    name: ILogConsumer
+    nameWithType: ILogConsumer
+    fullName: Orleans.Runtime.ILogConsumer
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ConcurrentBag`1
+    name: ConcurrentBag
+    nameWithType: ConcurrentBag
+    fullName: ConcurrentBag
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Orleans.Runtime.ILogConsumer
+    name: ILogConsumer
+    nameWithType: ILogConsumer
+    fullName: Orleans.Runtime.ILogConsumer
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: ConcurrentBag`1
+  commentId: '!:ConcurrentBag`1'
+  isExternal: true
+  name: ConcurrentBag<>
+  nameWithType: ConcurrentBag<>
+  fullName: ConcurrentBag<>
+  nameWithType.vb: ConcurrentBag(Of )
+  fullName.vb: ConcurrentBag(Of )
+  name.vb: ConcurrentBag(Of )
+  spec.csharp:
+  - uid: ConcurrentBag`1
+    name: ConcurrentBag
+    nameWithType: ConcurrentBag
+    fullName: ConcurrentBag
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ConcurrentBag`1
+    name: ConcurrentBag
+    nameWithType: ConcurrentBag
+    fullName: ConcurrentBag
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Logging.Legacy.LegacyOrleansLoggerProvider.#ctor*
+  commentId: Overload:Orleans.Logging.Legacy.LegacyOrleansLoggerProvider.#ctor
+  isExternal: false
+  name: LegacyOrleansLoggerProvider
+  nameWithType: LegacyOrleansLoggerProvider.LegacyOrleansLoggerProvider
+  fullName: Orleans.Logging.Legacy.LegacyOrleansLoggerProvider.LegacyOrleansLoggerProvider
+- uid: IEnumerable{Orleans.Runtime.ILogConsumer}
+  commentId: '!:IEnumerable{Orleans.Runtime.ILogConsumer}'
+  definition: IEnumerable`1
+  name: IEnumerable<ILogConsumer>
+  nameWithType: IEnumerable<ILogConsumer>
+  fullName: IEnumerable<Orleans.Runtime.ILogConsumer>
+  nameWithType.vb: IEnumerable(Of ILogConsumer)
+  fullName.vb: IEnumerable(Of Orleans.Runtime.ILogConsumer)
+  name.vb: IEnumerable(Of ILogConsumer)
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Orleans.Runtime.ILogConsumer
+    name: ILogConsumer
+    nameWithType: ILogConsumer
+    fullName: Orleans.Runtime.ILogConsumer
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Orleans.Runtime.ILogConsumer
+    name: ILogConsumer
+    nameWithType: ILogConsumer
+    fullName: Orleans.Runtime.ILogConsumer
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IPEndPoint
+  isExternal: true
+  name: IPEndPoint
+  nameWithType: IPEndPoint
+  fullName: IPEndPoint
+- uid: IEnumerable`1
+  isExternal: true
+  name: IEnumerable<>
+  nameWithType: IEnumerable<>
+  fullName: IEnumerable<>
+  nameWithType.vb: IEnumerable(Of )
+  fullName.vb: IEnumerable(Of )
+  name.vb: IEnumerable(Of )
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Logging.Legacy.LegacyOrleansLoggerProvider.CreateLogger*
+  commentId: Overload:Orleans.Logging.Legacy.LegacyOrleansLoggerProvider.CreateLogger
+  isExternal: false
+  name: CreateLogger
+  nameWithType: LegacyOrleansLoggerProvider.CreateLogger
+  fullName: Orleans.Logging.Legacy.LegacyOrleansLoggerProvider.CreateLogger
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: ILogger
+  isExternal: true
+  name: ILogger
+  nameWithType: ILogger
+  fullName: ILogger
+- uid: Orleans.Logging.Legacy.LegacyOrleansLoggerProvider.Dispose*
+  commentId: Overload:Orleans.Logging.Legacy.LegacyOrleansLoggerProvider.Dispose
+  isExternal: false
+  name: Dispose
+  nameWithType: LegacyOrleansLoggerProvider.Dispose
+  fullName: Orleans.Logging.Legacy.LegacyOrleansLoggerProvider.Dispose

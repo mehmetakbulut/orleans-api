@@ -1,0 +1,344 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.GatewayProviderType
+  commentId: T:Orleans.Runtime.Configuration.ClientConfiguration.GatewayProviderType
+  id: ClientConfiguration.GatewayProviderType
+  parent: Orleans.Runtime.Configuration
+  children:
+  - Orleans.Runtime.Configuration.ClientConfiguration.GatewayProviderType.AdoNet
+  - Orleans.Runtime.Configuration.ClientConfiguration.GatewayProviderType.AzureTable
+  - Orleans.Runtime.Configuration.ClientConfiguration.GatewayProviderType.Config
+  - Orleans.Runtime.Configuration.ClientConfiguration.GatewayProviderType.Custom
+  - Orleans.Runtime.Configuration.ClientConfiguration.GatewayProviderType.None
+  - Orleans.Runtime.Configuration.ClientConfiguration.GatewayProviderType.ZooKeeper
+  langs:
+  - csharp
+  - vb
+  name: ClientConfiguration.GatewayProviderType
+  nameWithType: ClientConfiguration.GatewayProviderType
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.GatewayProviderType
+  type: Enum
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GatewayProviderType
+    path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+    startLine: 24
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nSpecifies the type of the gateway provider.\n"
+  example: []
+  syntax:
+    content: 'public enum GatewayProviderType : int'
+    content.vb: Public Enum GatewayProviderType As Integer
+  extensionMethods:
+  - Orleans.Runtime.Configuration.ClientConfiguration.GatewayProviderType.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.GatewayProviderType.None
+  commentId: F:Orleans.Runtime.Configuration.ClientConfiguration.GatewayProviderType.None
+  id: None
+  parent: Orleans.Runtime.Configuration.ClientConfiguration.GatewayProviderType
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: ClientConfiguration.GatewayProviderType.None
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.GatewayProviderType.None
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: None
+    path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+    startLine: 27
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: No provider specified
+  example: []
+  syntax:
+    content: None = 0
+    return:
+      type: Orleans.Runtime.Configuration.ClientConfiguration.GatewayProviderType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.GatewayProviderType.AzureTable
+  commentId: F:Orleans.Runtime.Configuration.ClientConfiguration.GatewayProviderType.AzureTable
+  id: AzureTable
+  parent: Orleans.Runtime.Configuration.ClientConfiguration.GatewayProviderType
+  langs:
+  - csharp
+  - vb
+  name: AzureTable
+  nameWithType: ClientConfiguration.GatewayProviderType.AzureTable
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.GatewayProviderType.AzureTable
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AzureTable
+    path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+    startLine: 30
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: use Azure, requires SystemStore element
+  example: []
+  syntax:
+    content: AzureTable = 1
+    return:
+      type: Orleans.Runtime.Configuration.ClientConfiguration.GatewayProviderType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.GatewayProviderType.AdoNet
+  commentId: F:Orleans.Runtime.Configuration.ClientConfiguration.GatewayProviderType.AdoNet
+  id: AdoNet
+  parent: Orleans.Runtime.Configuration.ClientConfiguration.GatewayProviderType
+  langs:
+  - csharp
+  - vb
+  name: AdoNet
+  nameWithType: ClientConfiguration.GatewayProviderType.AdoNet
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.GatewayProviderType.AdoNet
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AdoNet
+    path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+    startLine: 33
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: use ADO.NET, requires SystemStore element
+  example: []
+  syntax:
+    content: AdoNet = 2
+    return:
+      type: Orleans.Runtime.Configuration.ClientConfiguration.GatewayProviderType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.GatewayProviderType.ZooKeeper
+  commentId: F:Orleans.Runtime.Configuration.ClientConfiguration.GatewayProviderType.ZooKeeper
+  id: ZooKeeper
+  parent: Orleans.Runtime.Configuration.ClientConfiguration.GatewayProviderType
+  langs:
+  - csharp
+  - vb
+  name: ZooKeeper
+  nameWithType: ClientConfiguration.GatewayProviderType.ZooKeeper
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.GatewayProviderType.ZooKeeper
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ZooKeeper
+    path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+    startLine: 36
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: use ZooKeeper, requires SystemStore element
+  example: []
+  syntax:
+    content: ZooKeeper = 3
+    return:
+      type: Orleans.Runtime.Configuration.ClientConfiguration.GatewayProviderType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.GatewayProviderType.Config
+  commentId: F:Orleans.Runtime.Configuration.ClientConfiguration.GatewayProviderType.Config
+  id: Config
+  parent: Orleans.Runtime.Configuration.ClientConfiguration.GatewayProviderType
+  langs:
+  - csharp
+  - vb
+  name: Config
+  nameWithType: ClientConfiguration.GatewayProviderType.Config
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.GatewayProviderType.Config
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Config
+    path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+    startLine: 39
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: use Config based static list, requires Config element(s)
+  example: []
+  syntax:
+    content: Config = 4
+    return:
+      type: Orleans.Runtime.Configuration.ClientConfiguration.GatewayProviderType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.GatewayProviderType.Custom
+  commentId: F:Orleans.Runtime.Configuration.ClientConfiguration.GatewayProviderType.Custom
+  id: Custom
+  parent: Orleans.Runtime.Configuration.ClientConfiguration.GatewayProviderType
+  langs:
+  - csharp
+  - vb
+  name: Custom
+  nameWithType: ClientConfiguration.GatewayProviderType.Custom
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.GatewayProviderType.Custom
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Custom
+    path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+    startLine: 42
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: use provider from third-party assembly
+  example: []
+  syntax:
+    content: Custom = 5
+    return:
+      type: Orleans.Runtime.Configuration.ClientConfiguration.GatewayProviderType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Orleans.Runtime.Configuration
+  commentId: N:Orleans.Runtime.Configuration
+  isExternal: false
+  name: Orleans.Runtime.Configuration
+  nameWithType: Orleans.Runtime.Configuration
+  fullName: Orleans.Runtime.Configuration
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.GatewayProviderType.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<ClientConfiguration.GatewayProviderType>()
+  nameWithType: ImmutableExt.AsImmutable<ClientConfiguration.GatewayProviderType>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.Configuration.ClientConfiguration.GatewayProviderType>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of ClientConfiguration.GatewayProviderType)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.Configuration.ClientConfiguration.GatewayProviderType)()
+  name.vb: AsImmutable(Of ClientConfiguration.GatewayProviderType)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<ClientConfiguration.GatewayProviderType>
+    nameWithType: ImmutableExt.AsImmutable<ClientConfiguration.GatewayProviderType>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.Configuration.ClientConfiguration.GatewayProviderType>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of ClientConfiguration.GatewayProviderType)
+    nameWithType: ImmutableExt.AsImmutable(Of ClientConfiguration.GatewayProviderType)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.Configuration.ClientConfiguration.GatewayProviderType)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.GatewayProviderType
+  commentId: T:Orleans.Runtime.Configuration.ClientConfiguration.GatewayProviderType
+  parent: Orleans.Runtime.Configuration
+  isExternal: false
+  name: ClientConfiguration.GatewayProviderType
+  nameWithType: ClientConfiguration.GatewayProviderType
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.GatewayProviderType

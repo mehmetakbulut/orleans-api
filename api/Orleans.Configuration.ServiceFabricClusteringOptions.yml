@@ -1,0 +1,194 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Configuration.ServiceFabricClusteringOptions
+  commentId: T:Orleans.Configuration.ServiceFabricClusteringOptions
+  id: ServiceFabricClusteringOptions
+  parent: Orleans.Configuration
+  children:
+  - Orleans.Configuration.ServiceFabricClusteringOptions.UnknownSiloRemovalPeriod
+  langs:
+  - csharp
+  - vb
+  name: ServiceFabricClusteringOptions
+  nameWithType: ServiceFabricClusteringOptions
+  fullName: Orleans.Configuration.ServiceFabricClusteringOptions
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Clustering.ServiceFabric/ServiceFabricClusteringOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ServiceFabricClusteringOptions
+    path: src/Orleans.Clustering.ServiceFabric/ServiceFabricClusteringOptions.cs
+    startLine: 7
+  assemblies:
+  - Orleans.Clustering.ServiceFabric
+  namespace: Orleans.Configuration
+  summary: "\nOptions for Service Fabric cluster membership.\n"
+  example: []
+  syntax:
+    content: 'public class ServiceFabricClusteringOptions : object'
+    content.vb: >-
+      Public Class ServiceFabricClusteringOptions
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.Configuration.ServiceFabricClusteringOptions.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.Configuration.ServiceFabricClusteringOptions.UnknownSiloRemovalPeriod
+  commentId: P:Orleans.Configuration.ServiceFabricClusteringOptions.UnknownSiloRemovalPeriod
+  id: UnknownSiloRemovalPeriod
+  parent: Orleans.Configuration.ServiceFabricClusteringOptions
+  langs:
+  - csharp
+  - vb
+  name: UnknownSiloRemovalPeriod
+  nameWithType: ServiceFabricClusteringOptions.UnknownSiloRemovalPeriod
+  fullName: Orleans.Configuration.ServiceFabricClusteringOptions.UnknownSiloRemovalPeriod
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Clustering.ServiceFabric/ServiceFabricClusteringOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: UnknownSiloRemovalPeriod
+    path: src/Orleans.Clustering.ServiceFabric/ServiceFabricClusteringOptions.cs
+    startLine: 12
+  assemblies:
+  - Orleans.Clustering.ServiceFabric
+  namespace: Orleans.Configuration
+  summary: "\nGets or sets the period of time before unknown silos are considered dead.\n"
+  example: []
+  syntax:
+    content: public TimeSpan UnknownSiloRemovalPeriod { get; set; }
+    parameters: []
+    return:
+      type: TimeSpan
+    content.vb: Public Property UnknownSiloRemovalPeriod As TimeSpan
+  overload: Orleans.Configuration.ServiceFabricClusteringOptions.UnknownSiloRemovalPeriod*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans.Configuration
+  commentId: N:Orleans.Configuration
+  isExternal: false
+  name: Orleans.Configuration
+  nameWithType: Orleans.Configuration
+  fullName: Orleans.Configuration
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Configuration.ServiceFabricClusteringOptions.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<ServiceFabricClusteringOptions>()
+  nameWithType: ImmutableExt.AsImmutable<ServiceFabricClusteringOptions>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Configuration.ServiceFabricClusteringOptions>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of ServiceFabricClusteringOptions)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Configuration.ServiceFabricClusteringOptions)()
+  name.vb: AsImmutable(Of ServiceFabricClusteringOptions)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<ServiceFabricClusteringOptions>
+    nameWithType: ImmutableExt.AsImmutable<ServiceFabricClusteringOptions>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Configuration.ServiceFabricClusteringOptions>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of ServiceFabricClusteringOptions)
+    nameWithType: ImmutableExt.AsImmutable(Of ServiceFabricClusteringOptions)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Configuration.ServiceFabricClusteringOptions)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Configuration.ServiceFabricClusteringOptions.UnknownSiloRemovalPeriod*
+  commentId: Overload:Orleans.Configuration.ServiceFabricClusteringOptions.UnknownSiloRemovalPeriod
+  isExternal: false
+  name: UnknownSiloRemovalPeriod
+  nameWithType: ServiceFabricClusteringOptions.UnknownSiloRemovalPeriod
+  fullName: Orleans.Configuration.ServiceFabricClusteringOptions.UnknownSiloRemovalPeriod
+- uid: TimeSpan
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: TimeSpan

@@ -1,0 +1,321 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Logging.Legacy.EventBulkingLoggerProvider`1
+  commentId: T:Orleans.Logging.Legacy.EventBulkingLoggerProvider`1
+  id: EventBulkingLoggerProvider`1
+  parent: Orleans.Logging.Legacy
+  children:
+  - Orleans.Logging.Legacy.EventBulkingLoggerProvider`1.#ctor(`0,Orleans.Logging.Legacy.EventBulkingOptions)
+  - Orleans.Logging.Legacy.EventBulkingLoggerProvider`1.CreateLogger(System.String)
+  - Orleans.Logging.Legacy.EventBulkingLoggerProvider`1.Dispose
+  langs:
+  - csharp
+  - vb
+  name: EventBulkingLoggerProvider<TDecoratedLoggerProvider>
+  nameWithType: EventBulkingLoggerProvider<TDecoratedLoggerProvider>
+  fullName: Orleans.Logging.Legacy.EventBulkingLoggerProvider<TDecoratedLoggerProvider>
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Logging/EventBulkingLoggerProvider.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: EventBulkingLoggerProvider
+    path: src/Orleans.Core.Legacy/Logging/EventBulkingLoggerProvider.cs
+    startLine: 10
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Logging.Legacy
+  summary: "\nEventBulkingLoggerProvider, which has event bulking feature in. If you want to add event bulking feature on top of your logger provider,\nyou just need to use <xref href=\"Orleans.Logging.Legacy.LegacyOrleansLoggingFactoryExtensions.AddMessageBulkingLoggerProvider%60%601(ILoggingBuilder%2c%60%600%2cOrleans.Logging.Legacy.EventBulkingOptions)\" data-throw-if-not-resolved=\"false\"></xref>. \nNote: It need to be a typed class for <see cref=\"!:LoggerFilterRule\"></see> to work, such as per provider type filter\n"
+  example: []
+  syntax:
+    content: 'public class EventBulkingLoggerProvider<TDecoratedLoggerProvider> : ILoggerProvider where TDecoratedLoggerProvider : ILoggerProvider'
+    typeParameters:
+    - id: TDecoratedLoggerProvider
+    content.vb: >-
+      Public Class EventBulkingLoggerProvider(Of TDecoratedLoggerProvider As ILoggerProvider)
+
+          Inherits ILoggerProvider
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.Logging.Legacy.EventBulkingLoggerProvider`1.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  nameWithType.vb: EventBulkingLoggerProvider(Of TDecoratedLoggerProvider)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: Orleans.Logging.Legacy.EventBulkingLoggerProvider(Of TDecoratedLoggerProvider)
+  name.vb: EventBulkingLoggerProvider(Of TDecoratedLoggerProvider)
+- uid: Orleans.Logging.Legacy.EventBulkingLoggerProvider`1.#ctor(`0,Orleans.Logging.Legacy.EventBulkingOptions)
+  commentId: M:Orleans.Logging.Legacy.EventBulkingLoggerProvider`1.#ctor(`0,Orleans.Logging.Legacy.EventBulkingOptions)
+  id: '#ctor(`0,Orleans.Logging.Legacy.EventBulkingOptions)'
+  parent: Orleans.Logging.Legacy.EventBulkingLoggerProvider`1
+  langs:
+  - csharp
+  - vb
+  name: EventBulkingLoggerProvider(TDecoratedLoggerProvider, EventBulkingOptions)
+  nameWithType: EventBulkingLoggerProvider<TDecoratedLoggerProvider>.EventBulkingLoggerProvider(TDecoratedLoggerProvider, EventBulkingOptions)
+  fullName: Orleans.Logging.Legacy.EventBulkingLoggerProvider<TDecoratedLoggerProvider>.EventBulkingLoggerProvider(TDecoratedLoggerProvider, Orleans.Logging.Legacy.EventBulkingOptions)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Logging/EventBulkingLoggerProvider.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Core.Legacy/Logging/EventBulkingLoggerProvider.cs
+    startLine: 20
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Logging.Legacy
+  summary: "\nConstructor\n"
+  example: []
+  syntax:
+    content: public EventBulkingLoggerProvider(TDecoratedLoggerProvider provider, EventBulkingOptions bulkingConfig)
+    parameters:
+    - id: provider
+      type: '{TDecoratedLoggerProvider}'
+      description: ''
+    - id: bulkingConfig
+      type: Orleans.Logging.Legacy.EventBulkingOptions
+      description: ''
+    content.vb: Public Sub New(provider As TDecoratedLoggerProvider, bulkingConfig As EventBulkingOptions)
+  overload: Orleans.Logging.Legacy.EventBulkingLoggerProvider`1.#ctor*
+  nameWithType.vb: EventBulkingLoggerProvider(Of TDecoratedLoggerProvider).EventBulkingLoggerProvider(TDecoratedLoggerProvider, EventBulkingOptions)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.Logging.Legacy.EventBulkingLoggerProvider(Of TDecoratedLoggerProvider).EventBulkingLoggerProvider(TDecoratedLoggerProvider, Orleans.Logging.Legacy.EventBulkingOptions)
+- uid: Orleans.Logging.Legacy.EventBulkingLoggerProvider`1.CreateLogger(System.String)
+  commentId: M:Orleans.Logging.Legacy.EventBulkingLoggerProvider`1.CreateLogger(System.String)
+  id: CreateLogger(System.String)
+  parent: Orleans.Logging.Legacy.EventBulkingLoggerProvider`1
+  langs:
+  - csharp
+  - vb
+  name: CreateLogger(String)
+  nameWithType: EventBulkingLoggerProvider<TDecoratedLoggerProvider>.CreateLogger(String)
+  fullName: Orleans.Logging.Legacy.EventBulkingLoggerProvider<TDecoratedLoggerProvider>.CreateLogger(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Logging/EventBulkingLoggerProvider.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: CreateLogger
+    path: src/Orleans.Core.Legacy/Logging/EventBulkingLoggerProvider.cs
+    startLine: 29
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Logging.Legacy
+  example: []
+  syntax:
+    content: public ILogger CreateLogger(string categoryName)
+    parameters:
+    - id: categoryName
+      type: System.String
+    return:
+      type: ILogger
+    content.vb: Public Function CreateLogger(categoryName As String) As ILogger
+  overload: Orleans.Logging.Legacy.EventBulkingLoggerProvider`1.CreateLogger*
+  nameWithType.vb: EventBulkingLoggerProvider(Of TDecoratedLoggerProvider).CreateLogger(String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.Logging.Legacy.EventBulkingLoggerProvider(Of TDecoratedLoggerProvider).CreateLogger(System.String)
+- uid: Orleans.Logging.Legacy.EventBulkingLoggerProvider`1.Dispose
+  commentId: M:Orleans.Logging.Legacy.EventBulkingLoggerProvider`1.Dispose
+  id: Dispose
+  parent: Orleans.Logging.Legacy.EventBulkingLoggerProvider`1
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: EventBulkingLoggerProvider<TDecoratedLoggerProvider>.Dispose()
+  fullName: Orleans.Logging.Legacy.EventBulkingLoggerProvider<TDecoratedLoggerProvider>.Dispose()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Logging/EventBulkingLoggerProvider.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Dispose
+    path: src/Orleans.Core.Legacy/Logging/EventBulkingLoggerProvider.cs
+    startLine: 35
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Logging.Legacy
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  overload: Orleans.Logging.Legacy.EventBulkingLoggerProvider`1.Dispose*
+  nameWithType.vb: EventBulkingLoggerProvider(Of TDecoratedLoggerProvider).Dispose()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.Logging.Legacy.EventBulkingLoggerProvider(Of TDecoratedLoggerProvider).Dispose()
+references:
+- uid: Orleans.Logging.Legacy.LegacyOrleansLoggingFactoryExtensions.AddMessageBulkingLoggerProvider``1(ILoggingBuilder,``0,Orleans.Logging.Legacy.EventBulkingOptions)
+  commentId: M:Orleans.Logging.Legacy.LegacyOrleansLoggingFactoryExtensions.AddMessageBulkingLoggerProvider``1(ILoggingBuilder,``0,Orleans.Logging.Legacy.EventBulkingOptions)
+- uid: Orleans.Logging.Legacy
+  commentId: N:Orleans.Logging.Legacy
+  isExternal: false
+  name: Orleans.Logging.Legacy
+  nameWithType: Orleans.Logging.Legacy
+  fullName: Orleans.Logging.Legacy
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Logging.Legacy.EventBulkingLoggerProvider`1.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<EventBulkingLoggerProvider<TDecoratedLoggerProvider>>()
+  nameWithType: ImmutableExt.AsImmutable<EventBulkingLoggerProvider<TDecoratedLoggerProvider>>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Logging.Legacy.EventBulkingLoggerProvider<TDecoratedLoggerProvider>>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of EventBulkingLoggerProvider(Of TDecoratedLoggerProvider))()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Logging.Legacy.EventBulkingLoggerProvider(Of TDecoratedLoggerProvider))()
+  name.vb: AsImmutable(Of EventBulkingLoggerProvider(Of TDecoratedLoggerProvider))()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<EventBulkingLoggerProvider<TDecoratedLoggerProvider>>
+    nameWithType: ImmutableExt.AsImmutable<EventBulkingLoggerProvider<TDecoratedLoggerProvider>>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Logging.Legacy.EventBulkingLoggerProvider<TDecoratedLoggerProvider>>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of EventBulkingLoggerProvider(Of TDecoratedLoggerProvider))
+    nameWithType: ImmutableExt.AsImmutable(Of EventBulkingLoggerProvider(Of TDecoratedLoggerProvider))
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Logging.Legacy.EventBulkingLoggerProvider(Of TDecoratedLoggerProvider))
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Logging.Legacy.EventBulkingLoggerProvider`1.#ctor*
+  commentId: Overload:Orleans.Logging.Legacy.EventBulkingLoggerProvider`1.#ctor
+  isExternal: false
+  name: EventBulkingLoggerProvider
+  nameWithType: EventBulkingLoggerProvider<TDecoratedLoggerProvider>.EventBulkingLoggerProvider
+  fullName: Orleans.Logging.Legacy.EventBulkingLoggerProvider<TDecoratedLoggerProvider>.EventBulkingLoggerProvider
+  nameWithType.vb: EventBulkingLoggerProvider(Of TDecoratedLoggerProvider).EventBulkingLoggerProvider
+  fullName.vb: Orleans.Logging.Legacy.EventBulkingLoggerProvider(Of TDecoratedLoggerProvider).EventBulkingLoggerProvider
+- uid: '{TDecoratedLoggerProvider}'
+  commentId: '!:TDecoratedLoggerProvider'
+  definition: TDecoratedLoggerProvider
+  name: TDecoratedLoggerProvider
+  nameWithType: TDecoratedLoggerProvider
+  fullName: TDecoratedLoggerProvider
+- uid: Orleans.Logging.Legacy.EventBulkingOptions
+  commentId: T:Orleans.Logging.Legacy.EventBulkingOptions
+  parent: Orleans.Logging.Legacy
+  isExternal: false
+  name: EventBulkingOptions
+  nameWithType: EventBulkingOptions
+  fullName: Orleans.Logging.Legacy.EventBulkingOptions
+- uid: TDecoratedLoggerProvider
+  isExternal: false
+  name: TDecoratedLoggerProvider
+  nameWithType: TDecoratedLoggerProvider
+  fullName: TDecoratedLoggerProvider
+- uid: Orleans.Logging.Legacy.EventBulkingLoggerProvider`1.CreateLogger*
+  commentId: Overload:Orleans.Logging.Legacy.EventBulkingLoggerProvider`1.CreateLogger
+  isExternal: false
+  name: CreateLogger
+  nameWithType: EventBulkingLoggerProvider<TDecoratedLoggerProvider>.CreateLogger
+  fullName: Orleans.Logging.Legacy.EventBulkingLoggerProvider<TDecoratedLoggerProvider>.CreateLogger
+  nameWithType.vb: EventBulkingLoggerProvider(Of TDecoratedLoggerProvider).CreateLogger
+  fullName.vb: Orleans.Logging.Legacy.EventBulkingLoggerProvider(Of TDecoratedLoggerProvider).CreateLogger
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: ILogger
+  isExternal: true
+  name: ILogger
+  nameWithType: ILogger
+  fullName: ILogger
+- uid: Orleans.Logging.Legacy.EventBulkingLoggerProvider`1.Dispose*
+  commentId: Overload:Orleans.Logging.Legacy.EventBulkingLoggerProvider`1.Dispose
+  isExternal: false
+  name: Dispose
+  nameWithType: EventBulkingLoggerProvider<TDecoratedLoggerProvider>.Dispose
+  fullName: Orleans.Logging.Legacy.EventBulkingLoggerProvider<TDecoratedLoggerProvider>.Dispose
+  nameWithType.vb: EventBulkingLoggerProvider(Of TDecoratedLoggerProvider).Dispose
+  fullName.vb: Orleans.Logging.Legacy.EventBulkingLoggerProvider(Of TDecoratedLoggerProvider).Dispose

@@ -1,0 +1,176 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Configuration.LegacyConfigurationExtensions
+  commentId: T:Orleans.Configuration.LegacyConfigurationExtensions
+  id: LegacyConfigurationExtensions
+  parent: Orleans.Configuration
+  children:
+  - Orleans.Configuration.LegacyConfigurationExtensions.AddLegacyClientConfigurationSupport(IServiceCollection,Orleans.Runtime.Configuration.ClientConfiguration)
+  - Orleans.Configuration.LegacyConfigurationExtensions.TryGetClientConfiguration(IServiceCollection)
+  langs:
+  - csharp
+  - vb
+  name: LegacyConfigurationExtensions
+  nameWithType: LegacyConfigurationExtensions
+  fullName: Orleans.Configuration.LegacyConfigurationExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/LegacyConfigurationExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: LegacyConfigurationExtensions
+    path: src/Orleans.Core.Legacy/Configuration/LegacyConfigurationExtensions.cs
+    startLine: 11
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Configuration
+  syntax:
+    content: 'public static class LegacyConfigurationExtensions : object'
+    content.vb: >-
+      Public Module LegacyConfigurationExtensions
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Orleans.Configuration.LegacyConfigurationExtensions.AddLegacyClientConfigurationSupport(IServiceCollection,Orleans.Runtime.Configuration.ClientConfiguration)
+  commentId: M:Orleans.Configuration.LegacyConfigurationExtensions.AddLegacyClientConfigurationSupport(IServiceCollection,Orleans.Runtime.Configuration.ClientConfiguration)
+  id: AddLegacyClientConfigurationSupport(IServiceCollection,Orleans.Runtime.Configuration.ClientConfiguration)
+  isExtensionMethod: true
+  parent: Orleans.Configuration.LegacyConfigurationExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddLegacyClientConfigurationSupport(IServiceCollection, ClientConfiguration)
+  nameWithType: LegacyConfigurationExtensions.AddLegacyClientConfigurationSupport(IServiceCollection, ClientConfiguration)
+  fullName: Orleans.Configuration.LegacyConfigurationExtensions.AddLegacyClientConfigurationSupport(IServiceCollection, Orleans.Runtime.Configuration.ClientConfiguration)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/LegacyConfigurationExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AddLegacyClientConfigurationSupport
+    path: src/Orleans.Core.Legacy/Configuration/LegacyConfigurationExtensions.cs
+    startLine: 13
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Configuration
+  syntax:
+    content: public static IServiceCollection AddLegacyClientConfigurationSupport(this IServiceCollection services, ClientConfiguration configuration = null)
+    parameters:
+    - id: services
+      type: IServiceCollection
+    - id: configuration
+      type: Orleans.Runtime.Configuration.ClientConfiguration
+    return:
+      type: IServiceCollection
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AddLegacyClientConfigurationSupport(services As IServiceCollection, configuration As ClientConfiguration = Nothing) As IServiceCollection
+  overload: Orleans.Configuration.LegacyConfigurationExtensions.AddLegacyClientConfigurationSupport*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.Configuration.LegacyConfigurationExtensions.TryGetClientConfiguration(IServiceCollection)
+  commentId: M:Orleans.Configuration.LegacyConfigurationExtensions.TryGetClientConfiguration(IServiceCollection)
+  id: TryGetClientConfiguration(IServiceCollection)
+  isExtensionMethod: true
+  parent: Orleans.Configuration.LegacyConfigurationExtensions
+  langs:
+  - csharp
+  - vb
+  name: TryGetClientConfiguration(IServiceCollection)
+  nameWithType: LegacyConfigurationExtensions.TryGetClientConfiguration(IServiceCollection)
+  fullName: Orleans.Configuration.LegacyConfigurationExtensions.TryGetClientConfiguration(IServiceCollection)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/LegacyConfigurationExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: TryGetClientConfiguration
+    path: src/Orleans.Core.Legacy/Configuration/LegacyConfigurationExtensions.cs
+    startLine: 96
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Configuration
+  syntax:
+    content: public static ClientConfiguration TryGetClientConfiguration(this IServiceCollection services)
+    parameters:
+    - id: services
+      type: IServiceCollection
+    return:
+      type: Orleans.Runtime.Configuration.ClientConfiguration
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function TryGetClientConfiguration(services As IServiceCollection) As ClientConfiguration
+  overload: Orleans.Configuration.LegacyConfigurationExtensions.TryGetClientConfiguration*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Orleans.Configuration
+  commentId: N:Orleans.Configuration
+  isExternal: false
+  name: Orleans.Configuration
+  nameWithType: Orleans.Configuration
+  fullName: Orleans.Configuration
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Configuration.LegacyConfigurationExtensions.AddLegacyClientConfigurationSupport*
+  commentId: Overload:Orleans.Configuration.LegacyConfigurationExtensions.AddLegacyClientConfigurationSupport
+  isExternal: false
+  name: AddLegacyClientConfigurationSupport
+  nameWithType: LegacyConfigurationExtensions.AddLegacyClientConfigurationSupport
+  fullName: Orleans.Configuration.LegacyConfigurationExtensions.AddLegacyClientConfigurationSupport
+- uid: IServiceCollection
+  isExternal: true
+  name: IServiceCollection
+  nameWithType: IServiceCollection
+  fullName: IServiceCollection
+- uid: Orleans.Runtime.Configuration.ClientConfiguration
+  commentId: T:Orleans.Runtime.Configuration.ClientConfiguration
+  parent: Orleans.Runtime.Configuration
+  isExternal: false
+  name: ClientConfiguration
+  nameWithType: ClientConfiguration
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration
+- uid: Orleans.Runtime.Configuration
+  commentId: N:Orleans.Runtime.Configuration
+  isExternal: false
+  name: Orleans.Runtime.Configuration
+  nameWithType: Orleans.Runtime.Configuration
+  fullName: Orleans.Runtime.Configuration
+- uid: Orleans.Configuration.LegacyConfigurationExtensions.TryGetClientConfiguration*
+  commentId: Overload:Orleans.Configuration.LegacyConfigurationExtensions.TryGetClientConfiguration
+  isExternal: false
+  name: TryGetClientConfiguration
+  nameWithType: LegacyConfigurationExtensions.TryGetClientConfiguration
+  fullName: Orleans.Configuration.LegacyConfigurationExtensions.TryGetClientConfiguration

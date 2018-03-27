@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: OrleansPSUtils
+  commentId: N:OrleansPSUtils
+  id: OrleansPSUtils
+  children:
+  - OrleansPSUtils.GetGrain
+  - OrleansPSUtils.StartGrainClient
+  - OrleansPSUtils.StopGrainClient
+  langs:
+  - csharp
+  - vb
+  name: OrleansPSUtils
+  nameWithType: OrleansPSUtils
+  fullName: OrleansPSUtils
+  type: Namespace
+  assemblies:
+  - Orleans.PowerShell
+references:
+- uid: OrleansPSUtils.GetGrain
+  commentId: T:OrleansPSUtils.GetGrain
+  isExternal: false
+  name: GetGrain
+  nameWithType: GetGrain
+  fullName: OrleansPSUtils.GetGrain
+- uid: OrleansPSUtils.StartGrainClient
+  commentId: T:OrleansPSUtils.StartGrainClient
+  isExternal: false
+  name: StartGrainClient
+  nameWithType: StartGrainClient
+  fullName: OrleansPSUtils.StartGrainClient
+- uid: OrleansPSUtils.StopGrainClient
+  commentId: T:OrleansPSUtils.StopGrainClient
+  isExternal: false
+  name: StopGrainClient
+  nameWithType: StopGrainClient
+  fullName: OrleansPSUtils.StopGrainClient

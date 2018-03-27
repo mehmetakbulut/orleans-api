@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: OrleansAWSUtils.Streams
+  commentId: N:OrleansAWSUtils.Streams
+  id: OrleansAWSUtils.Streams
+  children:
+  - OrleansAWSUtils.Streams.SQSAdapterFactory
+  - OrleansAWSUtils.Streams.SQSStreamProviderUtils
+  langs:
+  - csharp
+  - vb
+  name: OrleansAWSUtils.Streams
+  nameWithType: OrleansAWSUtils.Streams
+  fullName: OrleansAWSUtils.Streams
+  type: Namespace
+  assemblies:
+  - Orleans.Streaming.SQS
+references:
+- uid: OrleansAWSUtils.Streams.SQSAdapterFactory
+  commentId: T:OrleansAWSUtils.Streams.SQSAdapterFactory
+  parent: OrleansAWSUtils.Streams
+  isExternal: false
+  name: SQSAdapterFactory
+  nameWithType: SQSAdapterFactory
+  fullName: OrleansAWSUtils.Streams.SQSAdapterFactory
+- uid: OrleansAWSUtils.Streams.SQSStreamProviderUtils
+  commentId: T:OrleansAWSUtils.Streams.SQSStreamProviderUtils
+  isExternal: false
+  name: SQSStreamProviderUtils
+  nameWithType: SQSStreamProviderUtils
+  fullName: OrleansAWSUtils.Streams.SQSStreamProviderUtils
+- uid: OrleansAWSUtils.Streams
+  commentId: N:OrleansAWSUtils.Streams
+  isExternal: false
+  name: OrleansAWSUtils.Streams
+  nameWithType: OrleansAWSUtils.Streams
+  fullName: OrleansAWSUtils.Streams

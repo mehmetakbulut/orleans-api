@@ -1,0 +1,44 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Statistics
+  commentId: N:Orleans.Statistics
+  id: Orleans.Statistics
+  children:
+  - Orleans.Statistics.ClientBuilderExtensions
+  - Orleans.Statistics.IAppEnvironmentStatistics
+  - Orleans.Statistics.IHostEnvironmentStatistics
+  - Orleans.Statistics.SiloHostBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: Orleans.Statistics
+  nameWithType: Orleans.Statistics
+  fullName: Orleans.Statistics
+  type: Namespace
+  assemblies:
+  - Orleans.Core.Abstractions
+references:
+- uid: Orleans.Statistics.IAppEnvironmentStatistics
+  commentId: T:Orleans.Statistics.IAppEnvironmentStatistics
+  isExternal: false
+  name: IAppEnvironmentStatistics
+  nameWithType: IAppEnvironmentStatistics
+  fullName: Orleans.Statistics.IAppEnvironmentStatistics
+- uid: Orleans.Statistics.IHostEnvironmentStatistics
+  commentId: T:Orleans.Statistics.IHostEnvironmentStatistics
+  isExternal: false
+  name: IHostEnvironmentStatistics
+  nameWithType: IHostEnvironmentStatistics
+  fullName: Orleans.Statistics.IHostEnvironmentStatistics
+- uid: Orleans.Statistics.SiloHostBuilderExtensions
+  commentId: T:Orleans.Statistics.SiloHostBuilderExtensions
+  isExternal: false
+  name: SiloHostBuilderExtensions
+  nameWithType: SiloHostBuilderExtensions
+  fullName: Orleans.Statistics.SiloHostBuilderExtensions
+- uid: Orleans.Statistics.ClientBuilderExtensions
+  commentId: T:Orleans.Statistics.ClientBuilderExtensions
+  isExternal: false
+  name: ClientBuilderExtensions
+  nameWithType: ClientBuilderExtensions
+  fullName: Orleans.Statistics.ClientBuilderExtensions

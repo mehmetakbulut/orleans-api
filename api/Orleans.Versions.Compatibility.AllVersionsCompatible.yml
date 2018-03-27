@@ -1,0 +1,202 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Versions.Compatibility.AllVersionsCompatible
+  commentId: T:Orleans.Versions.Compatibility.AllVersionsCompatible
+  id: AllVersionsCompatible
+  parent: Orleans.Versions.Compatibility
+  children:
+  - Orleans.Versions.Compatibility.AllVersionsCompatible.Singleton
+  langs:
+  - csharp
+  - vb
+  name: AllVersionsCompatible
+  nameWithType: AllVersionsCompatible
+  fullName: Orleans.Versions.Compatibility.AllVersionsCompatible
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Versions/Compatibility/AllVersionsCompatible.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AllVersionsCompatible
+    path: src/Orleans.Core.Abstractions/Versions/Compatibility/AllVersionsCompatible.cs
+    startLine: 4
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Versions.Compatibility
+  syntax:
+    content: 'public class AllVersionsCompatible : CompatibilityStrategy'
+    content.vb: >-
+      Public Class AllVersionsCompatible
+
+          Inherits CompatibilityStrategy
+  inheritance:
+  - System.Object
+  - Orleans.Versions.Compatibility.CompatibilityStrategy
+  extensionMethods:
+  - Orleans.Versions.Compatibility.AllVersionsCompatible.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.Versions.Compatibility.AllVersionsCompatible.Singleton
+  commentId: P:Orleans.Versions.Compatibility.AllVersionsCompatible.Singleton
+  id: Singleton
+  parent: Orleans.Versions.Compatibility.AllVersionsCompatible
+  langs:
+  - csharp
+  - vb
+  name: Singleton
+  nameWithType: AllVersionsCompatible.Singleton
+  fullName: Orleans.Versions.Compatibility.AllVersionsCompatible.Singleton
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Versions/Compatibility/AllVersionsCompatible.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Singleton
+    path: src/Orleans.Core.Abstractions/Versions/Compatibility/AllVersionsCompatible.cs
+    startLine: 7
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Versions.Compatibility
+  syntax:
+    content: public static AllVersionsCompatible Singleton { get; }
+    parameters: []
+    return:
+      type: Orleans.Versions.Compatibility.AllVersionsCompatible
+    content.vb: Public Shared ReadOnly Property Singleton As AllVersionsCompatible
+  overload: Orleans.Versions.Compatibility.AllVersionsCompatible.Singleton*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+references:
+- uid: Orleans.Versions.Compatibility
+  commentId: N:Orleans.Versions.Compatibility
+  isExternal: false
+  name: Orleans.Versions.Compatibility
+  nameWithType: Orleans.Versions.Compatibility
+  fullName: Orleans.Versions.Compatibility
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Versions.Compatibility.CompatibilityStrategy
+  commentId: T:Orleans.Versions.Compatibility.CompatibilityStrategy
+  parent: Orleans.Versions.Compatibility
+  isExternal: false
+  name: CompatibilityStrategy
+  nameWithType: CompatibilityStrategy
+  fullName: Orleans.Versions.Compatibility.CompatibilityStrategy
+- uid: Orleans.Versions.Compatibility.AllVersionsCompatible.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<AllVersionsCompatible>()
+  nameWithType: ImmutableExt.AsImmutable<AllVersionsCompatible>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Versions.Compatibility.AllVersionsCompatible>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of AllVersionsCompatible)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Versions.Compatibility.AllVersionsCompatible)()
+  name.vb: AsImmutable(Of AllVersionsCompatible)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<AllVersionsCompatible>
+    nameWithType: ImmutableExt.AsImmutable<AllVersionsCompatible>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Versions.Compatibility.AllVersionsCompatible>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of AllVersionsCompatible)
+    nameWithType: ImmutableExt.AsImmutable(Of AllVersionsCompatible)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Versions.Compatibility.AllVersionsCompatible)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Versions.Compatibility.AllVersionsCompatible.Singleton*
+  commentId: Overload:Orleans.Versions.Compatibility.AllVersionsCompatible.Singleton
+  isExternal: false
+  name: Singleton
+  nameWithType: AllVersionsCompatible.Singleton
+  fullName: Orleans.Versions.Compatibility.AllVersionsCompatible.Singleton
+- uid: Orleans.Versions.Compatibility.AllVersionsCompatible
+  commentId: T:Orleans.Versions.Compatibility.AllVersionsCompatible
+  parent: Orleans.Versions.Compatibility
+  isExternal: false
+  name: AllVersionsCompatible
+  nameWithType: AllVersionsCompatible
+  fullName: Orleans.Versions.Compatibility.AllVersionsCompatible

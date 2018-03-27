@@ -1,0 +1,298 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Streams.IAsyncObserver`1
+  commentId: T:Orleans.Streams.IAsyncObserver`1
+  id: IAsyncObserver`1
+  parent: Orleans.Streams
+  children:
+  - Orleans.Streams.IAsyncObserver`1.OnCompletedAsync
+  - Orleans.Streams.IAsyncObserver`1.OnErrorAsync(Exception)
+  - Orleans.Streams.IAsyncObserver`1.OnNextAsync(`0,Orleans.Streams.StreamSequenceToken)
+  langs:
+  - csharp
+  - vb
+  name: IAsyncObserver<T>
+  nameWithType: IAsyncObserver<T>
+  fullName: Orleans.Streams.IAsyncObserver<T>
+  type: Interface
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Streams/Core/IAsyncObserver.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IAsyncObserver
+    path: src/Orleans.Core.Abstractions/Streams/Core/IAsyncObserver.cs
+    startLine: 14
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Streams
+  summary: "\nThis interface generalizes the standard .NET IObserver interface to allow asynchronous production of items.\n<p>\nNote that this interface is implemented by item consumers and invoked (used) by item producers.\nThis means that the consumer endpoint of a stream implements this interface.\n</p>\n"
+  example: []
+  syntax:
+    content: public interface IAsyncObserver<in T>
+    typeParameters:
+    - id: T
+      description: The type of object consumed by the observer.
+    content.vb: Public Interface IAsyncObserver(Of In T)
+  extensionMethods:
+  - Orleans.Streams.IAsyncObserver`1.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  nameWithType.vb: IAsyncObserver(Of T)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+  fullName.vb: Orleans.Streams.IAsyncObserver(Of T)
+  name.vb: IAsyncObserver(Of T)
+- uid: Orleans.Streams.IAsyncObserver`1.OnNextAsync(`0,Orleans.Streams.StreamSequenceToken)
+  commentId: M:Orleans.Streams.IAsyncObserver`1.OnNextAsync(`0,Orleans.Streams.StreamSequenceToken)
+  id: OnNextAsync(`0,Orleans.Streams.StreamSequenceToken)
+  parent: Orleans.Streams.IAsyncObserver`1
+  langs:
+  - csharp
+  - vb
+  name: OnNextAsync(T, StreamSequenceToken)
+  nameWithType: IAsyncObserver<T>.OnNextAsync(T, StreamSequenceToken)
+  fullName: Orleans.Streams.IAsyncObserver<T>.OnNextAsync(T, Orleans.Streams.StreamSequenceToken)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Streams/Core/IAsyncObserver.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: OnNextAsync
+    path: src/Orleans.Core.Abstractions/Streams/Core/IAsyncObserver.cs
+    startLine: 38
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Streams
+  summary: "\nPasses the next item to the consumer.\n<p>\nThe Task returned from this method should be completed when the item&apos;s processing has been\nsufficiently processed by the consumer to meet any behavioral guarantees.\n</p>\n<p>\nWhen the consumer is the (producer endpoint of) a stream, the Task is completed when the stream implementation\nhas accepted responsibility for the item and is assured of meeting its delivery guarantees.\nFor instance, a stream based on a durable queue would complete the Task when the item has been durably saved.\nA stream that provides best-effort at most once delivery would return a Task that is already complete.\n</p>\n<p>\nWhen the producer is the (consumer endpoint of) a stream, the Task should be completed by the consumer code\nwhen it has accepted responsibility for the item. \nIn particular, if the stream provider guarantees at-least-once delivery, then the item should not be considered\ndelivered until the Task returned by the consumer has been completed.\n</p>\n"
+  example: []
+  syntax:
+    content: Task OnNextAsync(T item, StreamSequenceToken token = null)
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The item to be passed.
+    - id: token
+      type: Orleans.Streams.StreamSequenceToken
+      description: The stream sequence token of this item.
+    return:
+      type: Task
+      description: A Task that is completed when the item has been accepted.
+    content.vb: Function OnNextAsync(item As T, token As StreamSequenceToken = Nothing) As Task
+  overload: Orleans.Streams.IAsyncObserver`1.OnNextAsync*
+  nameWithType.vb: IAsyncObserver(Of T).OnNextAsync(T, StreamSequenceToken)
+  fullName.vb: Orleans.Streams.IAsyncObserver(Of T).OnNextAsync(T, Orleans.Streams.StreamSequenceToken)
+- uid: Orleans.Streams.IAsyncObserver`1.OnCompletedAsync
+  commentId: M:Orleans.Streams.IAsyncObserver`1.OnCompletedAsync
+  id: OnCompletedAsync
+  parent: Orleans.Streams.IAsyncObserver`1
+  langs:
+  - csharp
+  - vb
+  name: OnCompletedAsync()
+  nameWithType: IAsyncObserver<T>.OnCompletedAsync()
+  fullName: Orleans.Streams.IAsyncObserver<T>.OnCompletedAsync()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Streams/Core/IAsyncObserver.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: OnCompletedAsync
+    path: src/Orleans.Core.Abstractions/Streams/Core/IAsyncObserver.cs
+    startLine: 47
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Streams
+  summary: "\nNotifies the consumer that the stream was completed.\n<p>\nThe Task returned from this method should be completed when the consumer is done processing the stream closure.\n</p>\n"
+  example: []
+  syntax:
+    content: Task OnCompletedAsync()
+    return:
+      type: Task
+      description: A Task that is completed when the stream-complete operation has been accepted.
+    content.vb: Function OnCompletedAsync As Task
+  overload: Orleans.Streams.IAsyncObserver`1.OnCompletedAsync*
+  nameWithType.vb: IAsyncObserver(Of T).OnCompletedAsync()
+  fullName.vb: Orleans.Streams.IAsyncObserver(Of T).OnCompletedAsync()
+- uid: Orleans.Streams.IAsyncObserver`1.OnErrorAsync(Exception)
+  commentId: M:Orleans.Streams.IAsyncObserver`1.OnErrorAsync(Exception)
+  id: OnErrorAsync(Exception)
+  parent: Orleans.Streams.IAsyncObserver`1
+  langs:
+  - csharp
+  - vb
+  name: OnErrorAsync(Exception)
+  nameWithType: IAsyncObserver<T>.OnErrorAsync(Exception)
+  fullName: Orleans.Streams.IAsyncObserver<T>.OnErrorAsync(Exception)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Streams/Core/IAsyncObserver.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: OnErrorAsync
+    path: src/Orleans.Core.Abstractions/Streams/Core/IAsyncObserver.cs
+    startLine: 57
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Streams
+  summary: "\nNotifies the consumer that the stream had an error.\n<p>\nThe Task returned from this method should be completed when the consumer is done processing the stream closure.\n</p>\n"
+  example: []
+  syntax:
+    content: Task OnErrorAsync(Exception ex)
+    parameters:
+    - id: ex
+      type: Exception
+      description: An Exception that describes the error that occured on the stream.
+    return:
+      type: Task
+      description: A Task that is completed when the close has been accepted.
+    content.vb: Function OnErrorAsync(ex As Exception) As Task
+  overload: Orleans.Streams.IAsyncObserver`1.OnErrorAsync*
+  nameWithType.vb: IAsyncObserver(Of T).OnErrorAsync(Exception)
+  fullName.vb: Orleans.Streams.IAsyncObserver(Of T).OnErrorAsync(Exception)
+references:
+- uid: Orleans.Streams
+  commentId: N:Orleans.Streams
+  isExternal: false
+  name: Orleans.Streams
+  nameWithType: Orleans.Streams
+  fullName: Orleans.Streams
+- uid: Orleans.Streams.IAsyncObserver`1.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<IAsyncObserver<T>>()
+  nameWithType: ImmutableExt.AsImmutable<IAsyncObserver<T>>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Streams.IAsyncObserver<T>>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of IAsyncObserver(Of T))()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Streams.IAsyncObserver(Of T))()
+  name.vb: AsImmutable(Of IAsyncObserver(Of T))()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<IAsyncObserver<T>>
+    nameWithType: ImmutableExt.AsImmutable<IAsyncObserver<T>>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Streams.IAsyncObserver<T>>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of IAsyncObserver(Of T))
+    nameWithType: ImmutableExt.AsImmutable(Of IAsyncObserver(Of T))
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Streams.IAsyncObserver(Of T))
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Streams.IAsyncObserver`1.OnNextAsync*
+  commentId: Overload:Orleans.Streams.IAsyncObserver`1.OnNextAsync
+  isExternal: false
+  name: OnNextAsync
+  nameWithType: IAsyncObserver<T>.OnNextAsync
+  fullName: Orleans.Streams.IAsyncObserver<T>.OnNextAsync
+  nameWithType.vb: IAsyncObserver(Of T).OnNextAsync
+  fullName.vb: Orleans.Streams.IAsyncObserver(Of T).OnNextAsync
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Orleans.Streams.StreamSequenceToken
+  commentId: T:Orleans.Streams.StreamSequenceToken
+  parent: Orleans.Streams
+  isExternal: false
+  name: StreamSequenceToken
+  nameWithType: StreamSequenceToken
+  fullName: Orleans.Streams.StreamSequenceToken
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task
+- uid: T
+  isExternal: false
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Orleans.Streams.IAsyncObserver`1.OnCompletedAsync*
+  commentId: Overload:Orleans.Streams.IAsyncObserver`1.OnCompletedAsync
+  isExternal: false
+  name: OnCompletedAsync
+  nameWithType: IAsyncObserver<T>.OnCompletedAsync
+  fullName: Orleans.Streams.IAsyncObserver<T>.OnCompletedAsync
+  nameWithType.vb: IAsyncObserver(Of T).OnCompletedAsync
+  fullName.vb: Orleans.Streams.IAsyncObserver(Of T).OnCompletedAsync
+- uid: Orleans.Streams.IAsyncObserver`1.OnErrorAsync*
+  commentId: Overload:Orleans.Streams.IAsyncObserver`1.OnErrorAsync
+  isExternal: false
+  name: OnErrorAsync
+  nameWithType: IAsyncObserver<T>.OnErrorAsync
+  fullName: Orleans.Streams.IAsyncObserver<T>.OnErrorAsync
+  nameWithType.vb: IAsyncObserver(Of T).OnErrorAsync
+  fullName.vb: Orleans.Streams.IAsyncObserver(Of T).OnErrorAsync
+- uid: Exception
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: Exception

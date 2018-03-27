@@ -1,0 +1,117 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  id: Orleans.Concurrency
+  children:
+  - Orleans.Concurrency.AlwaysInterleaveAttribute
+  - Orleans.Concurrency.Immutable`1
+  - Orleans.Concurrency.ImmutableAttribute
+  - Orleans.Concurrency.ImmutableExt
+  - Orleans.Concurrency.MayInterleaveAttribute
+  - Orleans.Concurrency.OneWayAttribute
+  - Orleans.Concurrency.ReentrantAttribute
+  - Orleans.Concurrency.StatelessWorkerAttribute
+  - Orleans.Concurrency.UnorderedAttribute
+  langs:
+  - csharp
+  - vb
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+  type: Namespace
+  assemblies:
+  - Orleans.Core.Abstractions
+references:
+- uid: Orleans.Concurrency.ReentrantAttribute
+  commentId: T:Orleans.Concurrency.ReentrantAttribute
+  isExternal: false
+  name: ReentrantAttribute
+  nameWithType: ReentrantAttribute
+  fullName: Orleans.Concurrency.ReentrantAttribute
+- uid: Orleans.Concurrency.UnorderedAttribute
+  commentId: T:Orleans.Concurrency.UnorderedAttribute
+  isExternal: false
+  name: UnorderedAttribute
+  nameWithType: UnorderedAttribute
+  fullName: Orleans.Concurrency.UnorderedAttribute
+- uid: Orleans.Concurrency.StatelessWorkerAttribute
+  commentId: T:Orleans.Concurrency.StatelessWorkerAttribute
+  isExternal: false
+  name: StatelessWorkerAttribute
+  nameWithType: StatelessWorkerAttribute
+  fullName: Orleans.Concurrency.StatelessWorkerAttribute
+- uid: Orleans.Concurrency.AlwaysInterleaveAttribute
+  commentId: T:Orleans.Concurrency.AlwaysInterleaveAttribute
+  isExternal: false
+  name: AlwaysInterleaveAttribute
+  nameWithType: AlwaysInterleaveAttribute
+  fullName: Orleans.Concurrency.AlwaysInterleaveAttribute
+- uid: Orleans.Concurrency.MayInterleaveAttribute
+  commentId: T:Orleans.Concurrency.MayInterleaveAttribute
+  isExternal: false
+  name: MayInterleaveAttribute
+  nameWithType: MayInterleaveAttribute
+  fullName: Orleans.Concurrency.MayInterleaveAttribute
+- uid: Orleans.Concurrency.ImmutableAttribute
+  commentId: T:Orleans.Concurrency.ImmutableAttribute
+  isExternal: false
+  name: ImmutableAttribute
+  nameWithType: ImmutableAttribute
+  fullName: Orleans.Concurrency.ImmutableAttribute
+- uid: Orleans.Concurrency.OneWayAttribute
+  commentId: T:Orleans.Concurrency.OneWayAttribute
+  isExternal: false
+  name: OneWayAttribute
+  nameWithType: OneWayAttribute
+  fullName: Orleans.Concurrency.OneWayAttribute
+- uid: Orleans.Concurrency.Immutable`1
+  commentId: T:Orleans.Concurrency.Immutable`1
+  isExternal: false
+  name: Immutable<T>
+  nameWithType: Immutable<T>
+  fullName: Orleans.Concurrency.Immutable<T>
+  nameWithType.vb: Immutable(Of T)
+  fullName.vb: Orleans.Concurrency.Immutable(Of T)
+  name.vb: Immutable(Of T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.Immutable`1
+    name: Immutable
+    nameWithType: Immutable
+    fullName: Orleans.Concurrency.Immutable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Orleans.Concurrency.Immutable`1
+    name: Immutable
+    nameWithType: Immutable
+    fullName: Orleans.Concurrency.Immutable
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency

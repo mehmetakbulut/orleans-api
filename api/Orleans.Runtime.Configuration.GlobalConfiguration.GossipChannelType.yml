@@ -1,0 +1,204 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelType
+  commentId: T:Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelType
+  id: GlobalConfiguration.GossipChannelType
+  parent: Orleans.Runtime.Configuration
+  children:
+  - Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelType.AzureTable
+  - Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelType.NotSpecified
+  langs:
+  - csharp
+  - vb
+  name: GlobalConfiguration.GossipChannelType
+  nameWithType: GlobalConfiguration.GossipChannelType
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelType
+  type: Enum
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GossipChannelType
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 90
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nConfiguration for Gossip Channels\n"
+  example: []
+  syntax:
+    content: 'public enum GossipChannelType : int'
+    content.vb: Public Enum GossipChannelType As Integer
+  extensionMethods:
+  - Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelType.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelType.NotSpecified
+  commentId: F:Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelType.NotSpecified
+  id: NotSpecified
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelType
+  langs:
+  - csharp
+  - vb
+  name: NotSpecified
+  nameWithType: GlobalConfiguration.GossipChannelType.NotSpecified
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelType.NotSpecified
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: NotSpecified
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 93
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: Default value to allow discrimination of override values.
+  example: []
+  syntax:
+    content: NotSpecified = 0
+    return:
+      type: Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelType.AzureTable
+  commentId: F:Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelType.AzureTable
+  id: AzureTable
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelType
+  langs:
+  - csharp
+  - vb
+  name: AzureTable
+  nameWithType: GlobalConfiguration.GossipChannelType.AzureTable
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelType.AzureTable
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AzureTable
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 96
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: 'An Azure Table serving as a channel. '
+  example: []
+  syntax:
+    content: AzureTable = 1
+    return:
+      type: Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Orleans.Runtime.Configuration
+  commentId: N:Orleans.Runtime.Configuration
+  isExternal: false
+  name: Orleans.Runtime.Configuration
+  nameWithType: Orleans.Runtime.Configuration
+  fullName: Orleans.Runtime.Configuration
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelType.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<GlobalConfiguration.GossipChannelType>()
+  nameWithType: ImmutableExt.AsImmutable<GlobalConfiguration.GossipChannelType>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelType>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of GlobalConfiguration.GossipChannelType)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelType)()
+  name.vb: AsImmutable(Of GlobalConfiguration.GossipChannelType)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<GlobalConfiguration.GossipChannelType>
+    nameWithType: ImmutableExt.AsImmutable<GlobalConfiguration.GossipChannelType>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelType>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of GlobalConfiguration.GossipChannelType)
+    nameWithType: ImmutableExt.AsImmutable(Of GlobalConfiguration.GossipChannelType)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelType)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelType
+  commentId: T:Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelType
+  parent: Orleans.Runtime.Configuration
+  isExternal: false
+  name: GlobalConfiguration.GossipChannelType
+  nameWithType: GlobalConfiguration.GossipChannelType
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelType

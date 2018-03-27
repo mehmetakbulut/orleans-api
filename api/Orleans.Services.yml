@@ -1,0 +1,61 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Services
+  commentId: N:Orleans.Services
+  id: Orleans.Services
+  children:
+  - Orleans.Services.IGrainService
+  - Orleans.Services.IGrainServiceClient`1
+  langs:
+  - csharp
+  - vb
+  name: Orleans.Services
+  nameWithType: Orleans.Services
+  fullName: Orleans.Services
+  type: Namespace
+  assemblies:
+  - Orleans.Core.Abstractions
+references:
+- uid: Orleans.Services.IGrainService
+  commentId: T:Orleans.Services.IGrainService
+  isExternal: false
+  name: IGrainService
+  nameWithType: IGrainService
+  fullName: Orleans.Services.IGrainService
+- uid: Orleans.Services.IGrainServiceClient`1
+  commentId: T:Orleans.Services.IGrainServiceClient`1
+  isExternal: false
+  name: IGrainServiceClient<TGrainService>
+  nameWithType: IGrainServiceClient<TGrainService>
+  fullName: Orleans.Services.IGrainServiceClient<TGrainService>
+  nameWithType.vb: IGrainServiceClient(Of TGrainService)
+  fullName.vb: Orleans.Services.IGrainServiceClient(Of TGrainService)
+  name.vb: IGrainServiceClient(Of TGrainService)
+  spec.csharp:
+  - uid: Orleans.Services.IGrainServiceClient`1
+    name: IGrainServiceClient
+    nameWithType: IGrainServiceClient
+    fullName: Orleans.Services.IGrainServiceClient
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TGrainService
+    nameWithType: TGrainService
+    fullName: TGrainService
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Orleans.Services.IGrainServiceClient`1
+    name: IGrainServiceClient
+    nameWithType: IGrainServiceClient
+    fullName: Orleans.Services.IGrainServiceClient
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TGrainService
+    nameWithType: TGrainService
+    fullName: TGrainService
+  - name: )
+    nameWithType: )
+    fullName: )

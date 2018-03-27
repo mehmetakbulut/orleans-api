@@ -1,0 +1,441 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Providers.GCP.Streams.PubSub.IPubSubDataAdapter
+  commentId: T:Orleans.Providers.GCP.Streams.PubSub.IPubSubDataAdapter
+  id: IPubSubDataAdapter
+  parent: Orleans.Providers.GCP.Streams.PubSub
+  children:
+  - Orleans.Providers.GCP.Streams.PubSub.IPubSubDataAdapter.FromPullResponseMessage(PubsubMessage,System.Int64)
+  - Orleans.Providers.GCP.Streams.PubSub.IPubSubDataAdapter.ToPubSubMessage``1(Guid,System.String,IEnumerable{``0},Dictionary{System.String,System.Object})
+  langs:
+  - csharp
+  - vb
+  name: IPubSubDataAdapter
+  nameWithType: IPubSubDataAdapter
+  fullName: Orleans.Providers.GCP.Streams.PubSub.IPubSubDataAdapter
+  type: Interface
+  source:
+    remote:
+      path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/IPubSubDataAdapter.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IPubSubDataAdapter
+    path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/IPubSubDataAdapter.cs
+    startLine: 14
+  assemblies:
+  - Orleans.Streaming.GCP
+  namespace: Orleans.Providers.GCP.Streams.PubSub
+  summary: "\nConverts event data to and from cloud queue message\n"
+  example: []
+  syntax:
+    content: public interface IPubSubDataAdapter
+    content.vb: Public Interface IPubSubDataAdapter
+  extensionMethods:
+  - Orleans.Providers.GCP.Streams.PubSub.IPubSubDataAdapter.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Orleans.Providers.GCP.Streams.PubSub.IPubSubDataAdapter.ToPubSubMessage``1(Guid,System.String,IEnumerable{``0},Dictionary{System.String,System.Object})
+  commentId: M:Orleans.Providers.GCP.Streams.PubSub.IPubSubDataAdapter.ToPubSubMessage``1(Guid,System.String,IEnumerable{``0},Dictionary{System.String,System.Object})
+  id: ToPubSubMessage``1(Guid,System.String,IEnumerable{``0},Dictionary{System.String,System.Object})
+  parent: Orleans.Providers.GCP.Streams.PubSub.IPubSubDataAdapter
+  langs:
+  - csharp
+  - vb
+  name: ToPubSubMessage<T>(Guid, String, IEnumerable<T>, Dictionary<String, Object>)
+  nameWithType: IPubSubDataAdapter.ToPubSubMessage<T>(Guid, String, IEnumerable<T>, Dictionary<String, Object>)
+  fullName: Orleans.Providers.GCP.Streams.PubSub.IPubSubDataAdapter.ToPubSubMessage<T>(Guid, System.String, IEnumerable<T>, Dictionary<System.String, System.Object>)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/IPubSubDataAdapter.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ToPubSubMessage
+    path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/IPubSubDataAdapter.cs
+    startLine: 19
+  assemblies:
+  - Orleans.Streaming.GCP
+  namespace: Orleans.Providers.GCP.Streams.PubSub
+  summary: "\nCreates a <seealso cref=\"!:PubsubMessage\"></seealso> from stream event data.\n"
+  example: []
+  syntax:
+    content: PubsubMessage ToPubSubMessage<T>(Guid streamGuid, string streamNamespace, IEnumerable<T> events, Dictionary<string, object> requestContext)
+    parameters:
+    - id: streamGuid
+      type: Guid
+    - id: streamNamespace
+      type: System.String
+    - id: events
+      type: IEnumerable{{T}}
+    - id: requestContext
+      type: Dictionary{System.String,System.Object}
+    typeParameters:
+    - id: T
+    return:
+      type: PubsubMessage
+    content.vb: Function ToPubSubMessage(Of T)(streamGuid As Guid, streamNamespace As String, events As IEnumerable(Of T), requestContext As Dictionary(Of String, Object)) As PubsubMessage
+  overload: Orleans.Providers.GCP.Streams.PubSub.IPubSubDataAdapter.ToPubSubMessage*
+  nameWithType.vb: IPubSubDataAdapter.ToPubSubMessage(Of T)(Guid, String, IEnumerable(Of T), Dictionary(Of String, Object))
+  fullName.vb: Orleans.Providers.GCP.Streams.PubSub.IPubSubDataAdapter.ToPubSubMessage(Of T)(Guid, System.String, IEnumerable(Of T), Dictionary(Of System.String, System.Object))
+  name.vb: ToPubSubMessage(Of T)(Guid, String, IEnumerable(Of T), Dictionary(Of String, Object))
+- uid: Orleans.Providers.GCP.Streams.PubSub.IPubSubDataAdapter.FromPullResponseMessage(PubsubMessage,System.Int64)
+  commentId: M:Orleans.Providers.GCP.Streams.PubSub.IPubSubDataAdapter.FromPullResponseMessage(PubsubMessage,System.Int64)
+  id: FromPullResponseMessage(PubsubMessage,System.Int64)
+  parent: Orleans.Providers.GCP.Streams.PubSub.IPubSubDataAdapter
+  langs:
+  - csharp
+  - vb
+  name: FromPullResponseMessage(PubsubMessage, Int64)
+  nameWithType: IPubSubDataAdapter.FromPullResponseMessage(PubsubMessage, Int64)
+  fullName: Orleans.Providers.GCP.Streams.PubSub.IPubSubDataAdapter.FromPullResponseMessage(PubsubMessage, System.Int64)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/IPubSubDataAdapter.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: FromPullResponseMessage
+    path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/IPubSubDataAdapter.cs
+    startLine: 24
+  assemblies:
+  - Orleans.Streaming.GCP
+  namespace: Orleans.Providers.GCP.Streams.PubSub
+  summary: "\nCreates a batch container from a <seealso cref=\"!:PubsubMessage\"></seealso> message\n"
+  example: []
+  syntax:
+    content: IBatchContainer FromPullResponseMessage(PubsubMessage msg, long sequenceId)
+    parameters:
+    - id: msg
+      type: PubsubMessage
+    - id: sequenceId
+      type: System.Int64
+    return:
+      type: IBatchContainer
+    content.vb: Function FromPullResponseMessage(msg As PubsubMessage, sequenceId As Long) As IBatchContainer
+  overload: Orleans.Providers.GCP.Streams.PubSub.IPubSubDataAdapter.FromPullResponseMessage*
+references:
+- uid: Orleans.Providers.GCP.Streams.PubSub
+  commentId: N:Orleans.Providers.GCP.Streams.PubSub
+  isExternal: false
+  name: Orleans.Providers.GCP.Streams.PubSub
+  nameWithType: Orleans.Providers.GCP.Streams.PubSub
+  fullName: Orleans.Providers.GCP.Streams.PubSub
+- uid: Orleans.Providers.GCP.Streams.PubSub.IPubSubDataAdapter.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<IPubSubDataAdapter>()
+  nameWithType: ImmutableExt.AsImmutable<IPubSubDataAdapter>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Providers.GCP.Streams.PubSub.IPubSubDataAdapter>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of IPubSubDataAdapter)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Providers.GCP.Streams.PubSub.IPubSubDataAdapter)()
+  name.vb: AsImmutable(Of IPubSubDataAdapter)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<IPubSubDataAdapter>
+    nameWithType: ImmutableExt.AsImmutable<IPubSubDataAdapter>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Providers.GCP.Streams.PubSub.IPubSubDataAdapter>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of IPubSubDataAdapter)
+    nameWithType: ImmutableExt.AsImmutable(Of IPubSubDataAdapter)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Providers.GCP.Streams.PubSub.IPubSubDataAdapter)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Providers.GCP.Streams.PubSub.IPubSubDataAdapter.ToPubSubMessage*
+  commentId: Overload:Orleans.Providers.GCP.Streams.PubSub.IPubSubDataAdapter.ToPubSubMessage
+  isExternal: false
+  name: ToPubSubMessage
+  nameWithType: IPubSubDataAdapter.ToPubSubMessage
+  fullName: Orleans.Providers.GCP.Streams.PubSub.IPubSubDataAdapter.ToPubSubMessage
+- uid: Guid
+  isExternal: true
+  name: Guid
+  nameWithType: Guid
+  fullName: Guid
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: IEnumerable{{T}}
+  commentId: '!:IEnumerable{`0}'
+  definition: IEnumerable`1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Dictionary{System.String,System.Object}
+  commentId: '!:Dictionary{System.String,System.Object}'
+  definition: Dictionary`2
+  name: Dictionary<String, Object>
+  nameWithType: Dictionary<String, Object>
+  fullName: Dictionary<System.String, System.Object>
+  nameWithType.vb: Dictionary(Of String, Object)
+  fullName.vb: Dictionary(Of System.String, System.Object)
+  name.vb: Dictionary(Of String, Object)
+  spec.csharp:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PubsubMessage
+  isExternal: true
+  name: PubsubMessage
+  nameWithType: PubsubMessage
+  fullName: PubsubMessage
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: IEnumerable`1
+  isExternal: true
+  name: IEnumerable<>
+  nameWithType: IEnumerable<>
+  fullName: IEnumerable<>
+  nameWithType.vb: IEnumerable(Of )
+  fullName.vb: IEnumerable(Of )
+  name.vb: IEnumerable(Of )
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Dictionary`2
+  isExternal: true
+  name: Dictionary<, >
+  nameWithType: Dictionary<, >
+  fullName: Dictionary<, >
+  nameWithType.vb: Dictionary(Of , )
+  fullName.vb: Dictionary(Of , )
+  name.vb: Dictionary(Of , )
+  spec.csharp:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Providers.GCP.Streams.PubSub.IPubSubDataAdapter.FromPullResponseMessage*
+  commentId: Overload:Orleans.Providers.GCP.Streams.PubSub.IPubSubDataAdapter.FromPullResponseMessage
+  isExternal: false
+  name: FromPullResponseMessage
+  nameWithType: IPubSubDataAdapter.FromPullResponseMessage
+  fullName: Orleans.Providers.GCP.Streams.PubSub.IPubSubDataAdapter.FromPullResponseMessage
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
+- uid: IBatchContainer
+  isExternal: true
+  name: IBatchContainer
+  nameWithType: IBatchContainer
+  fullName: IBatchContainer

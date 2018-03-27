@@ -1,0 +1,201 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Placement.HashBasedPlacementAttribute
+  commentId: T:Orleans.Placement.HashBasedPlacementAttribute
+  id: HashBasedPlacementAttribute
+  parent: Orleans.Placement
+  children:
+  - Orleans.Placement.HashBasedPlacementAttribute.#ctor
+  langs:
+  - csharp
+  - vb
+  name: HashBasedPlacementAttribute
+  nameWithType: HashBasedPlacementAttribute
+  fullName: Orleans.Placement.HashBasedPlacementAttribute
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Placement/PlacementAttribute.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: HashBasedPlacementAttribute
+    path: src/Orleans.Core.Abstractions/Placement/PlacementAttribute.cs
+    startLine: 40
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Placement
+  summary: "\nMarks a grain class as using the <code>HashBasedPlacement</code> policy.\n"
+  example: []
+  syntax:
+    content: 'public sealed class HashBasedPlacementAttribute : PlacementAttribute'
+    content.vb: >-
+      Public NotInheritable Class HashBasedPlacementAttribute
+
+          Inherits PlacementAttribute
+  inheritance:
+  - System.Object
+  - Orleans.Placement.PlacementAttribute
+  inheritedMembers:
+  - Orleans.Placement.PlacementAttribute.PlacementStrategy
+  extensionMethods:
+  - Orleans.Placement.HashBasedPlacementAttribute.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Orleans.Placement.HashBasedPlacementAttribute.#ctor
+  commentId: M:Orleans.Placement.HashBasedPlacementAttribute.#ctor
+  id: '#ctor'
+  parent: Orleans.Placement.HashBasedPlacementAttribute
+  langs:
+  - csharp
+  - vb
+  name: HashBasedPlacementAttribute()
+  nameWithType: HashBasedPlacementAttribute.HashBasedPlacementAttribute()
+  fullName: Orleans.Placement.HashBasedPlacementAttribute.HashBasedPlacementAttribute()
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Placement/PlacementAttribute.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Core.Abstractions/Placement/PlacementAttribute.cs
+    startLine: 43
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Placement
+  syntax:
+    content: public HashBasedPlacementAttribute()
+    content.vb: Public Sub New
+  overload: Orleans.Placement.HashBasedPlacementAttribute.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans.Placement
+  commentId: N:Orleans.Placement
+  isExternal: false
+  name: Orleans.Placement
+  nameWithType: Orleans.Placement
+  fullName: Orleans.Placement
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Placement.PlacementAttribute
+  commentId: T:Orleans.Placement.PlacementAttribute
+  parent: Orleans.Placement
+  isExternal: false
+  name: PlacementAttribute
+  nameWithType: PlacementAttribute
+  fullName: Orleans.Placement.PlacementAttribute
+- uid: Orleans.Placement.PlacementAttribute.PlacementStrategy
+  commentId: P:Orleans.Placement.PlacementAttribute.PlacementStrategy
+  parent: Orleans.Placement.PlacementAttribute
+  isExternal: false
+  name: PlacementStrategy
+  nameWithType: PlacementAttribute.PlacementStrategy
+  fullName: Orleans.Placement.PlacementAttribute.PlacementStrategy
+- uid: Orleans.Placement.HashBasedPlacementAttribute.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<HashBasedPlacementAttribute>()
+  nameWithType: ImmutableExt.AsImmutable<HashBasedPlacementAttribute>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Placement.HashBasedPlacementAttribute>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of HashBasedPlacementAttribute)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Placement.HashBasedPlacementAttribute)()
+  name.vb: AsImmutable(Of HashBasedPlacementAttribute)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<HashBasedPlacementAttribute>
+    nameWithType: ImmutableExt.AsImmutable<HashBasedPlacementAttribute>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Placement.HashBasedPlacementAttribute>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of HashBasedPlacementAttribute)
+    nameWithType: ImmutableExt.AsImmutable(Of HashBasedPlacementAttribute)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Placement.HashBasedPlacementAttribute)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Placement.HashBasedPlacementAttribute.#ctor*
+  commentId: Overload:Orleans.Placement.HashBasedPlacementAttribute.#ctor
+  isExternal: false
+  name: HashBasedPlacementAttribute
+  nameWithType: HashBasedPlacementAttribute.HashBasedPlacementAttribute
+  fullName: Orleans.Placement.HashBasedPlacementAttribute.HashBasedPlacementAttribute

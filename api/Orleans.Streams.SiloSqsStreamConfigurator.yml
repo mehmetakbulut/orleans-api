@@ -1,0 +1,439 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Streams.SiloSqsStreamConfigurator
+  commentId: T:Orleans.Streams.SiloSqsStreamConfigurator
+  id: SiloSqsStreamConfigurator
+  parent: Orleans.Streams
+  children:
+  - Orleans.Streams.SiloSqsStreamConfigurator.#ctor(System.String,ISiloHostBuilder)
+  - Orleans.Streams.SiloSqsStreamConfigurator.ConfigureCache(System.Int32)
+  - Orleans.Streams.SiloSqsStreamConfigurator.ConfigurePartitioning(System.Int32)
+  - Orleans.Streams.SiloSqsStreamConfigurator.ConfigureSqs(Action{OptionsBuilder{Orleans.Configuration.SqsOptions}})
+  langs:
+  - csharp
+  - vb
+  name: SiloSqsStreamConfigurator
+  nameWithType: SiloSqsStreamConfigurator
+  fullName: Orleans.Streams.SiloSqsStreamConfigurator
+  type: Class
+  source:
+    remote:
+      path: src/AWS/Orleans.Streaming.SQS/Streams/SQSStreamBuilder.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SiloSqsStreamConfigurator
+    path: src/AWS/Orleans.Streaming.SQS/Streams/SQSStreamBuilder.cs
+    startLine: 9
+  assemblies:
+  - Orleans.Streaming.SQS
+  namespace: Orleans.Streams
+  syntax:
+    content: 'public class SiloSqsStreamConfigurator : SiloPersistentStreamConfigurator'
+    content.vb: >-
+      Public Class SiloSqsStreamConfigurator
+
+          Inherits SiloPersistentStreamConfigurator
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.Streams.SiloSqsStreamConfigurator.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.Streams.SiloSqsStreamConfigurator.#ctor(System.String,ISiloHostBuilder)
+  commentId: M:Orleans.Streams.SiloSqsStreamConfigurator.#ctor(System.String,ISiloHostBuilder)
+  id: '#ctor(System.String,ISiloHostBuilder)'
+  parent: Orleans.Streams.SiloSqsStreamConfigurator
+  langs:
+  - csharp
+  - vb
+  name: SiloSqsStreamConfigurator(String, ISiloHostBuilder)
+  nameWithType: SiloSqsStreamConfigurator.SiloSqsStreamConfigurator(String, ISiloHostBuilder)
+  fullName: Orleans.Streams.SiloSqsStreamConfigurator.SiloSqsStreamConfigurator(System.String, ISiloHostBuilder)
+  type: Constructor
+  source:
+    remote:
+      path: src/AWS/Orleans.Streaming.SQS/Streams/SQSStreamBuilder.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/AWS/Orleans.Streaming.SQS/Streams/SQSStreamBuilder.cs
+    startLine: 11
+  assemblies:
+  - Orleans.Streaming.SQS
+  namespace: Orleans.Streams
+  syntax:
+    content: public SiloSqsStreamConfigurator(string name, ISiloHostBuilder builder)
+    parameters:
+    - id: name
+      type: System.String
+    - id: builder
+      type: ISiloHostBuilder
+    content.vb: Public Sub New(name As String, builder As ISiloHostBuilder)
+  overload: Orleans.Streams.SiloSqsStreamConfigurator.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Streams.SiloSqsStreamConfigurator.ConfigureSqs(Action{OptionsBuilder{Orleans.Configuration.SqsOptions}})
+  commentId: M:Orleans.Streams.SiloSqsStreamConfigurator.ConfigureSqs(Action{OptionsBuilder{Orleans.Configuration.SqsOptions}})
+  id: ConfigureSqs(Action{OptionsBuilder{Orleans.Configuration.SqsOptions}})
+  parent: Orleans.Streams.SiloSqsStreamConfigurator
+  langs:
+  - csharp
+  - vb
+  name: ConfigureSqs(Action<OptionsBuilder<SqsOptions>>)
+  nameWithType: SiloSqsStreamConfigurator.ConfigureSqs(Action<OptionsBuilder<SqsOptions>>)
+  fullName: Orleans.Streams.SiloSqsStreamConfigurator.ConfigureSqs(Action<OptionsBuilder<Orleans.Configuration.SqsOptions>>)
+  type: Method
+  source:
+    remote:
+      path: src/AWS/Orleans.Streaming.SQS/Streams/SQSStreamBuilder.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ConfigureSqs
+    path: src/AWS/Orleans.Streaming.SQS/Streams/SQSStreamBuilder.cs
+    startLine: 24
+  assemblies:
+  - Orleans.Streaming.SQS
+  namespace: Orleans.Streams
+  syntax:
+    content: public SiloSqsStreamConfigurator ConfigureSqs(Action<OptionsBuilder<SqsOptions>> configureOptions)
+    parameters:
+    - id: configureOptions
+      type: Action{OptionsBuilder{Orleans.Configuration.SqsOptions}}
+    return:
+      type: Orleans.Streams.SiloSqsStreamConfigurator
+    content.vb: Public Function ConfigureSqs(configureOptions As Action(Of OptionsBuilder(Of SqsOptions))) As SiloSqsStreamConfigurator
+  overload: Orleans.Streams.SiloSqsStreamConfigurator.ConfigureSqs*
+  nameWithType.vb: SiloSqsStreamConfigurator.ConfigureSqs(Action(Of OptionsBuilder(Of SqsOptions)))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.Streams.SiloSqsStreamConfigurator.ConfigureSqs(Action(Of OptionsBuilder(Of Orleans.Configuration.SqsOptions)))
+  name.vb: ConfigureSqs(Action(Of OptionsBuilder(Of SqsOptions)))
+- uid: Orleans.Streams.SiloSqsStreamConfigurator.ConfigureCache(System.Int32)
+  commentId: M:Orleans.Streams.SiloSqsStreamConfigurator.ConfigureCache(System.Int32)
+  id: ConfigureCache(System.Int32)
+  parent: Orleans.Streams.SiloSqsStreamConfigurator
+  langs:
+  - csharp
+  - vb
+  name: ConfigureCache(Int32)
+  nameWithType: SiloSqsStreamConfigurator.ConfigureCache(Int32)
+  fullName: Orleans.Streams.SiloSqsStreamConfigurator.ConfigureCache(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/AWS/Orleans.Streaming.SQS/Streams/SQSStreamBuilder.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ConfigureCache
+    path: src/AWS/Orleans.Streaming.SQS/Streams/SQSStreamBuilder.cs
+    startLine: 29
+  assemblies:
+  - Orleans.Streaming.SQS
+  namespace: Orleans.Streams
+  syntax:
+    content: public SiloSqsStreamConfigurator ConfigureCache(int cacheSize = null)
+    parameters:
+    - id: cacheSize
+      type: System.Int32
+    return:
+      type: Orleans.Streams.SiloSqsStreamConfigurator
+    content.vb: Public Function ConfigureCache(cacheSize As Integer = Nothing) As SiloSqsStreamConfigurator
+  overload: Orleans.Streams.SiloSqsStreamConfigurator.ConfigureCache*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Streams.SiloSqsStreamConfigurator.ConfigurePartitioning(System.Int32)
+  commentId: M:Orleans.Streams.SiloSqsStreamConfigurator.ConfigurePartitioning(System.Int32)
+  id: ConfigurePartitioning(System.Int32)
+  parent: Orleans.Streams.SiloSqsStreamConfigurator
+  langs:
+  - csharp
+  - vb
+  name: ConfigurePartitioning(Int32)
+  nameWithType: SiloSqsStreamConfigurator.ConfigurePartitioning(Int32)
+  fullName: Orleans.Streams.SiloSqsStreamConfigurator.ConfigurePartitioning(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/AWS/Orleans.Streaming.SQS/Streams/SQSStreamBuilder.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ConfigurePartitioning
+    path: src/AWS/Orleans.Streaming.SQS/Streams/SQSStreamBuilder.cs
+    startLine: 35
+  assemblies:
+  - Orleans.Streaming.SQS
+  namespace: Orleans.Streams
+  syntax:
+    content: public SiloSqsStreamConfigurator ConfigurePartitioning(int numOfparitions = null)
+    parameters:
+    - id: numOfparitions
+      type: System.Int32
+    return:
+      type: Orleans.Streams.SiloSqsStreamConfigurator
+    content.vb: Public Function ConfigurePartitioning(numOfparitions As Integer = Nothing) As SiloSqsStreamConfigurator
+  overload: Orleans.Streams.SiloSqsStreamConfigurator.ConfigurePartitioning*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans.Streams
+  commentId: N:Orleans.Streams
+  isExternal: false
+  name: Orleans.Streams
+  nameWithType: Orleans.Streams
+  fullName: Orleans.Streams
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Streams.SiloSqsStreamConfigurator.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<SiloSqsStreamConfigurator>()
+  nameWithType: ImmutableExt.AsImmutable<SiloSqsStreamConfigurator>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Streams.SiloSqsStreamConfigurator>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of SiloSqsStreamConfigurator)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Streams.SiloSqsStreamConfigurator)()
+  name.vb: AsImmutable(Of SiloSqsStreamConfigurator)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<SiloSqsStreamConfigurator>
+    nameWithType: ImmutableExt.AsImmutable<SiloSqsStreamConfigurator>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Streams.SiloSqsStreamConfigurator>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of SiloSqsStreamConfigurator)
+    nameWithType: ImmutableExt.AsImmutable(Of SiloSqsStreamConfigurator)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Streams.SiloSqsStreamConfigurator)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Streams.SiloSqsStreamConfigurator.#ctor*
+  commentId: Overload:Orleans.Streams.SiloSqsStreamConfigurator.#ctor
+  isExternal: false
+  name: SiloSqsStreamConfigurator
+  nameWithType: SiloSqsStreamConfigurator.SiloSqsStreamConfigurator
+  fullName: Orleans.Streams.SiloSqsStreamConfigurator.SiloSqsStreamConfigurator
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: ISiloHostBuilder
+  isExternal: true
+  name: ISiloHostBuilder
+  nameWithType: ISiloHostBuilder
+  fullName: ISiloHostBuilder
+- uid: Orleans.Streams.SiloSqsStreamConfigurator.ConfigureSqs*
+  commentId: Overload:Orleans.Streams.SiloSqsStreamConfigurator.ConfigureSqs
+  isExternal: false
+  name: ConfigureSqs
+  nameWithType: SiloSqsStreamConfigurator.ConfigureSqs
+  fullName: Orleans.Streams.SiloSqsStreamConfigurator.ConfigureSqs
+- uid: Action{OptionsBuilder{Orleans.Configuration.SqsOptions}}
+  commentId: '!:Action{OptionsBuilder{Orleans.Configuration.SqsOptions}}'
+  definition: Action`1
+  name: Action<OptionsBuilder<SqsOptions>>
+  nameWithType: Action<OptionsBuilder<SqsOptions>>
+  fullName: Action<OptionsBuilder<Orleans.Configuration.SqsOptions>>
+  nameWithType.vb: Action(Of OptionsBuilder(Of SqsOptions))
+  fullName.vb: Action(Of OptionsBuilder(Of Orleans.Configuration.SqsOptions))
+  name.vb: Action(Of OptionsBuilder(Of SqsOptions))
+  spec.csharp:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: OptionsBuilder`1
+    name: OptionsBuilder
+    nameWithType: OptionsBuilder
+    fullName: OptionsBuilder
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Orleans.Configuration.SqsOptions
+    name: SqsOptions
+    nameWithType: SqsOptions
+    fullName: Orleans.Configuration.SqsOptions
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: OptionsBuilder`1
+    name: OptionsBuilder
+    nameWithType: OptionsBuilder
+    fullName: OptionsBuilder
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Orleans.Configuration.SqsOptions
+    name: SqsOptions
+    nameWithType: SqsOptions
+    fullName: Orleans.Configuration.SqsOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Streams.SiloSqsStreamConfigurator
+  commentId: T:Orleans.Streams.SiloSqsStreamConfigurator
+  parent: Orleans.Streams
+  isExternal: false
+  name: SiloSqsStreamConfigurator
+  nameWithType: SiloSqsStreamConfigurator
+  fullName: Orleans.Streams.SiloSqsStreamConfigurator
+- uid: Action`1
+  isExternal: true
+  name: Action<>
+  nameWithType: Action<>
+  fullName: Action<>
+  nameWithType.vb: Action(Of )
+  fullName.vb: Action(Of )
+  name.vb: Action(Of )
+  spec.csharp:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Streams.SiloSqsStreamConfigurator.ConfigureCache*
+  commentId: Overload:Orleans.Streams.SiloSqsStreamConfigurator.ConfigureCache
+  isExternal: false
+  name: ConfigureCache
+  nameWithType: SiloSqsStreamConfigurator.ConfigureCache
+  fullName: Orleans.Streams.SiloSqsStreamConfigurator.ConfigureCache
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Orleans.Streams.SiloSqsStreamConfigurator.ConfigurePartitioning*
+  commentId: Overload:Orleans.Streams.SiloSqsStreamConfigurator.ConfigurePartitioning
+  isExternal: false
+  name: ConfigurePartitioning
+  nameWithType: SiloSqsStreamConfigurator.ConfigurePartitioning
+  fullName: Orleans.Streams.SiloSqsStreamConfigurator.ConfigurePartitioning

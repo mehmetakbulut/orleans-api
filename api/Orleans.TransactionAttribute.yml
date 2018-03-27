@@ -1,0 +1,285 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.TransactionAttribute
+  commentId: T:Orleans.TransactionAttribute
+  id: TransactionAttribute
+  parent: Orleans
+  children:
+  - Orleans.TransactionAttribute.#ctor(Orleans.TransactionOption)
+  - Orleans.TransactionAttribute.ReadOnly
+  - Orleans.TransactionAttribute.Requirement
+  langs:
+  - csharp
+  - vb
+  name: TransactionAttribute
+  nameWithType: TransactionAttribute
+  fullName: Orleans.TransactionAttribute
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Transactions/TransactionAttribute.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: TransactionAttribute
+    path: src/Orleans.Core.Abstractions/Transactions/TransactionAttribute.cs
+    startLine: 7
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nThe TransactionAttribute attribute is used to mark methods that start and join transactions.\n"
+  example: []
+  syntax:
+    content: 'public sealed class TransactionAttribute : Attribute'
+    content.vb: >-
+      Public NotInheritable Class TransactionAttribute
+
+          Inherits Attribute
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.TransactionAttribute.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Orleans.TransactionAttribute.#ctor(Orleans.TransactionOption)
+  commentId: M:Orleans.TransactionAttribute.#ctor(Orleans.TransactionOption)
+  id: '#ctor(Orleans.TransactionOption)'
+  parent: Orleans.TransactionAttribute
+  langs:
+  - csharp
+  - vb
+  name: TransactionAttribute(TransactionOption)
+  nameWithType: TransactionAttribute.TransactionAttribute(TransactionOption)
+  fullName: Orleans.TransactionAttribute.TransactionAttribute(Orleans.TransactionOption)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Transactions/TransactionAttribute.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Core.Abstractions/Transactions/TransactionAttribute.cs
+    startLine: 10
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  syntax:
+    content: public TransactionAttribute(TransactionOption requirement)
+    parameters:
+    - id: requirement
+      type: Orleans.TransactionOption
+    content.vb: Public Sub New(requirement As TransactionOption)
+  overload: Orleans.TransactionAttribute.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.TransactionAttribute.Requirement
+  commentId: P:Orleans.TransactionAttribute.Requirement
+  id: Requirement
+  parent: Orleans.TransactionAttribute
+  langs:
+  - csharp
+  - vb
+  name: Requirement
+  nameWithType: TransactionAttribute.Requirement
+  fullName: Orleans.TransactionAttribute.Requirement
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Transactions/TransactionAttribute.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Requirement
+    path: src/Orleans.Core.Abstractions/Transactions/TransactionAttribute.cs
+    startLine: 16
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  syntax:
+    content: public TransactionOption Requirement { get; set; }
+    parameters: []
+    return:
+      type: Orleans.TransactionOption
+    content.vb: Public Property Requirement As TransactionOption
+  overload: Orleans.TransactionAttribute.Requirement*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.TransactionAttribute.ReadOnly
+  commentId: P:Orleans.TransactionAttribute.ReadOnly
+  id: ReadOnly
+  parent: Orleans.TransactionAttribute
+  langs:
+  - csharp
+  - vb
+  name: ReadOnly
+  nameWithType: TransactionAttribute.ReadOnly
+  fullName: Orleans.TransactionAttribute.ReadOnly
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Transactions/TransactionAttribute.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ReadOnly
+    path: src/Orleans.Core.Abstractions/Transactions/TransactionAttribute.cs
+    startLine: 17
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  syntax:
+    content: public bool ReadOnly { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property ReadOnly As Boolean
+  overload: Orleans.TransactionAttribute.ReadOnly*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans
+  commentId: N:Orleans
+  isExternal: false
+  name: Orleans
+  nameWithType: Orleans
+  fullName: Orleans
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.TransactionAttribute.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<TransactionAttribute>()
+  nameWithType: ImmutableExt.AsImmutable<TransactionAttribute>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.TransactionAttribute>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of TransactionAttribute)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.TransactionAttribute)()
+  name.vb: AsImmutable(Of TransactionAttribute)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<TransactionAttribute>
+    nameWithType: ImmutableExt.AsImmutable<TransactionAttribute>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.TransactionAttribute>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of TransactionAttribute)
+    nameWithType: ImmutableExt.AsImmutable(Of TransactionAttribute)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.TransactionAttribute)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.TransactionAttribute.#ctor*
+  commentId: Overload:Orleans.TransactionAttribute.#ctor
+  isExternal: false
+  name: TransactionAttribute
+  nameWithType: TransactionAttribute.TransactionAttribute
+  fullName: Orleans.TransactionAttribute.TransactionAttribute
+- uid: Orleans.TransactionOption
+  commentId: T:Orleans.TransactionOption
+  parent: Orleans
+  isExternal: false
+  name: TransactionOption
+  nameWithType: TransactionOption
+  fullName: Orleans.TransactionOption
+- uid: Orleans.TransactionAttribute.Requirement*
+  commentId: Overload:Orleans.TransactionAttribute.Requirement
+  isExternal: false
+  name: Requirement
+  nameWithType: TransactionAttribute.Requirement
+  fullName: Orleans.TransactionAttribute.Requirement
+- uid: Orleans.TransactionAttribute.ReadOnly*
+  commentId: Overload:Orleans.TransactionAttribute.ReadOnly
+  isExternal: false
+  name: ReadOnly
+  nameWithType: TransactionAttribute.ReadOnly
+  fullName: Orleans.TransactionAttribute.ReadOnly
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

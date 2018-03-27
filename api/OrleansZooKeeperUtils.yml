@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: OrleansZooKeeperUtils
+  commentId: N:OrleansZooKeeperUtils
+  id: OrleansZooKeeperUtils
+  children:
+  - OrleansZooKeeperUtils.LegacyZooKeeperGatewayListProviderConfigurator
+  - OrleansZooKeeperUtils.LegacyZooKeeperMembershipConfigurator
+  langs:
+  - csharp
+  - vb
+  name: OrleansZooKeeperUtils
+  nameWithType: OrleansZooKeeperUtils
+  fullName: OrleansZooKeeperUtils
+  type: Namespace
+  assemblies:
+  - Orleans.Clustering.ZooKeeper
+references:
+- uid: OrleansZooKeeperUtils.LegacyZooKeeperGatewayListProviderConfigurator
+  commentId: T:OrleansZooKeeperUtils.LegacyZooKeeperGatewayListProviderConfigurator
+  isExternal: false
+  name: LegacyZooKeeperGatewayListProviderConfigurator
+  nameWithType: LegacyZooKeeperGatewayListProviderConfigurator
+  fullName: OrleansZooKeeperUtils.LegacyZooKeeperGatewayListProviderConfigurator
+- uid: OrleansZooKeeperUtils.LegacyZooKeeperMembershipConfigurator
+  commentId: T:OrleansZooKeeperUtils.LegacyZooKeeperMembershipConfigurator
+  isExternal: false
+  name: LegacyZooKeeperMembershipConfigurator
+  nameWithType: LegacyZooKeeperMembershipConfigurator
+  fullName: OrleansZooKeeperUtils.LegacyZooKeeperMembershipConfigurator

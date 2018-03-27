@@ -1,0 +1,139 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Runtime.GrainLifecycleStage
+  commentId: T:Orleans.Runtime.GrainLifecycleStage
+  id: GrainLifecycleStage
+  parent: Orleans.Runtime
+  children:
+  - Orleans.Runtime.GrainLifecycleStage.Activate
+  - Orleans.Runtime.GrainLifecycleStage.SetupState
+  langs:
+  - csharp
+  - vb
+  name: GrainLifecycleStage
+  nameWithType: GrainLifecycleStage
+  fullName: Orleans.Runtime.GrainLifecycleStage
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Runtime/GrainLifecycleStage.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GrainLifecycleStage
+    path: src/Orleans.Core.Abstractions/Runtime/GrainLifecycleStage.cs
+    startLine: 9
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  summary: "\nStages of a grains lifecycle.\nTODO: Add more later, see ActivationInitializationStage\nFull grain lifecycle, including register, state setup, and \nstream cleanup should all eventually be triggered by the \ngrain lifecycle.\n"
+  example: []
+  syntax:
+    content: 'public static class GrainLifecycleStage : object'
+    content.vb: >-
+      Public Module GrainLifecycleStage
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Orleans.Runtime.GrainLifecycleStage.SetupState
+  commentId: F:Orleans.Runtime.GrainLifecycleStage.SetupState
+  id: SetupState
+  parent: Orleans.Runtime.GrainLifecycleStage
+  langs:
+  - csharp
+  - vb
+  name: SetupState
+  nameWithType: GrainLifecycleStage.SetupState
+  fullName: Orleans.Runtime.GrainLifecycleStage.SetupState
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Runtime/GrainLifecycleStage.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SetupState
+    path: src/Orleans.Core.Abstractions/Runtime/GrainLifecycleStage.cs
+    startLine: 14
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  summary: "\nSetup grain state prior to activation \n"
+  example: []
+  syntax:
+    content: public const int SetupState = null
+    return:
+      type: System.Int32
+    content.vb: Public Const SetupState As Integer = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Orleans.Runtime.GrainLifecycleStage.Activate
+  commentId: F:Orleans.Runtime.GrainLifecycleStage.Activate
+  id: Activate
+  parent: Orleans.Runtime.GrainLifecycleStage
+  langs:
+  - csharp
+  - vb
+  name: Activate
+  nameWithType: GrainLifecycleStage.Activate
+  fullName: Orleans.Runtime.GrainLifecycleStage.Activate
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Runtime/GrainLifecycleStage.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Activate
+    path: src/Orleans.Core.Abstractions/Runtime/GrainLifecycleStage.cs
+    startLine: 19
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  summary: "\nActivate grain\n"
+  example: []
+  syntax:
+    content: public const int Activate = null
+    return:
+      type: System.Int32
+    content.vb: Public Const Activate As Integer = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Orleans.Runtime
+  commentId: N:Orleans.Runtime
+  isExternal: false
+  name: Orleans.Runtime
+  nameWithType: Orleans.Runtime
+  fullName: Orleans.Runtime
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32

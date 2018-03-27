@@ -1,0 +1,891 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable
+  commentId: T:Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable
+  id: ZooKeeperBasedMembershipTable
+  parent: Orleans.Runtime.Membership
+  children:
+  - Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.#ctor(ILogger{Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable},IOptions{Orleans.Configuration.ZooKeeperClusteringSiloOptions},IOptions{ClusterOptions})
+  - Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.DeleteMembershipTableEntries(System.String)
+  - Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.InitializeMembershipTable(System.Boolean)
+  - Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.InsertRow(MembershipEntry,TableVersion)
+  - Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.ReadAll
+  - Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.ReadRow(Orleans.Runtime.SiloAddress)
+  - Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.UpdateIAmAlive(MembershipEntry)
+  - Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.UpdateRow(MembershipEntry,System.String,TableVersion)
+  langs:
+  - csharp
+  - vb
+  name: ZooKeeperBasedMembershipTable
+  nameWithType: ZooKeeperBasedMembershipTable
+  fullName: Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Clustering.ZooKeeper/ZooKeeperBasedMembershipTable.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ZooKeeperBasedMembershipTable
+    path: src/Orleans.Clustering.ZooKeeper/ZooKeeperBasedMembershipTable.cs
+    startLine: 37
+  assemblies:
+  - Orleans.Clustering.ZooKeeper
+  namespace: Orleans.Runtime.Membership
+  summary: "\nA Membership Table implementation using Apache Zookeeper 3.4.6 https://zookeeper.apache.org/doc/r3.4.6/\n"
+  remarks: "\nA brief overview of ZK features used: The data is represented by a tree of nodes (similar to a file system). \nEvery node is addressed by a path and can hold data as a byte array and has a version. When a node is created, \nits version is 0. Upon updates, the version is atomically incremented. An update can also be conditional on an \nexpected current version. A transaction can hold several operations, which succeed or fail atomically.\nwhen creating a zookeeper client, one can set a base path where all operations are relative to.\n\nIn this implementation:\nEvery Orleans deployment has a node   /UniqueDeploymentId\nEvery Silo&apos;s state is saved in        /UniqueDeploymentId/IP:Port@Gen\nEvery Silo&apos;s IAmAlive is saved in     /UniqueDeploymentId/IP:Port@Gen/IAmAlive\nIAmAlive is saved in a separate node because its updates are unconditional.\n\na node&apos;s ZK version is its ETag:\nthe table version is the version of /UniqueDeploymentId\nthe silo entry version is the version of /UniqueDeploymentId/IP:Port@Gen\n"
+  example: []
+  syntax:
+    content: 'public class ZooKeeperBasedMembershipTable : IMembershipTable'
+    content.vb: >-
+      Public Class ZooKeeperBasedMembershipTable
+
+          Inherits IMembershipTable
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.#ctor(ILogger{Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable},IOptions{Orleans.Configuration.ZooKeeperClusteringSiloOptions},IOptions{ClusterOptions})
+  commentId: M:Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.#ctor(ILogger{Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable},IOptions{Orleans.Configuration.ZooKeeperClusteringSiloOptions},IOptions{ClusterOptions})
+  id: '#ctor(ILogger{Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable},IOptions{Orleans.Configuration.ZooKeeperClusteringSiloOptions},IOptions{ClusterOptions})'
+  parent: Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable
+  langs:
+  - csharp
+  - vb
+  name: ZooKeeperBasedMembershipTable(ILogger<ZooKeeperBasedMembershipTable>, IOptions<ZooKeeperClusteringSiloOptions>, IOptions<ClusterOptions>)
+  nameWithType: ZooKeeperBasedMembershipTable.ZooKeeperBasedMembershipTable(ILogger<ZooKeeperBasedMembershipTable>, IOptions<ZooKeeperClusteringSiloOptions>, IOptions<ClusterOptions>)
+  fullName: Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.ZooKeeperBasedMembershipTable(ILogger<Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable>, IOptions<Orleans.Configuration.ZooKeeperClusteringSiloOptions>, IOptions<ClusterOptions>)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Clustering.ZooKeeper/ZooKeeperBasedMembershipTable.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Clustering.ZooKeeper/ZooKeeperBasedMembershipTable.cs
+    startLine: 58
+  assemblies:
+  - Orleans.Clustering.ZooKeeper
+  namespace: Orleans.Runtime.Membership
+  syntax:
+    content: public ZooKeeperBasedMembershipTable(ILogger<ZooKeeperBasedMembershipTable> logger, IOptions<ZooKeeperClusteringSiloOptions> membershipTableOptions, IOptions<ClusterOptions> clusterOptions)
+    parameters:
+    - id: logger
+      type: ILogger{Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable}
+    - id: membershipTableOptions
+      type: IOptions{Orleans.Configuration.ZooKeeperClusteringSiloOptions}
+    - id: clusterOptions
+      type: IOptions{ClusterOptions}
+    content.vb: Public Sub New(logger As ILogger(Of ZooKeeperBasedMembershipTable), membershipTableOptions As IOptions(Of ZooKeeperClusteringSiloOptions), clusterOptions As IOptions(Of ClusterOptions))
+  overload: Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.#ctor*
+  nameWithType.vb: ZooKeeperBasedMembershipTable.ZooKeeperBasedMembershipTable(ILogger(Of ZooKeeperBasedMembershipTable), IOptions(Of ZooKeeperClusteringSiloOptions), IOptions(Of ClusterOptions))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.ZooKeeperBasedMembershipTable(ILogger(Of Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable), IOptions(Of Orleans.Configuration.ZooKeeperClusteringSiloOptions), IOptions(Of ClusterOptions))
+  name.vb: ZooKeeperBasedMembershipTable(ILogger(Of ZooKeeperBasedMembershipTable), IOptions(Of ZooKeeperClusteringSiloOptions), IOptions(Of ClusterOptions))
+- uid: Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.InitializeMembershipTable(System.Boolean)
+  commentId: M:Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.InitializeMembershipTable(System.Boolean)
+  id: InitializeMembershipTable(System.Boolean)
+  parent: Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable
+  langs:
+  - csharp
+  - vb
+  name: InitializeMembershipTable(Boolean)
+  nameWithType: ZooKeeperBasedMembershipTable.InitializeMembershipTable(Boolean)
+  fullName: Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.InitializeMembershipTable(System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Clustering.ZooKeeper/ZooKeeperBasedMembershipTable.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: InitializeMembershipTable
+    path: src/Orleans.Clustering.ZooKeeper/ZooKeeperBasedMembershipTable.cs
+    startLine: 74
+  assemblies:
+  - Orleans.Clustering.ZooKeeper
+  namespace: Orleans.Runtime.Membership
+  summary: "\nInitializes the ZooKeeper based membership table.\n"
+  example: []
+  syntax:
+    content: public Task InitializeMembershipTable(bool tryInitPath)
+    parameters:
+    - id: tryInitPath
+      type: System.Boolean
+      description: if set to true, we&apos;ll try to create a node named &quot;/ClusterId&quot;
+    return:
+      type: Task
+      description: ''
+    content.vb: Public Function InitializeMembershipTable(tryInitPath As Boolean) As Task
+  overload: Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.InitializeMembershipTable*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.ReadRow(Orleans.Runtime.SiloAddress)
+  commentId: M:Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.ReadRow(Orleans.Runtime.SiloAddress)
+  id: ReadRow(Orleans.Runtime.SiloAddress)
+  parent: Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable
+  langs:
+  - csharp
+  - vb
+  name: ReadRow(SiloAddress)
+  nameWithType: ZooKeeperBasedMembershipTable.ReadRow(SiloAddress)
+  fullName: Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.ReadRow(Orleans.Runtime.SiloAddress)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Clustering.ZooKeeper/ZooKeeperBasedMembershipTable.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ReadRow
+    path: src/Orleans.Clustering.ZooKeeper/ZooKeeperBasedMembershipTable.cs
+    startLine: 111
+  assemblies:
+  - Orleans.Clustering.ZooKeeper
+  namespace: Orleans.Runtime.Membership
+  summary: "\nAtomically reads the Membership Table information about a given silo.\nThe returned MembershipTableData includes one MembershipEntry entry for a given silo and the \nTableVersion for this table. The MembershipEntry and the TableVersion have to be read atomically.\n"
+  example: []
+  syntax:
+    content: public Task<MembershipTableData> ReadRow(SiloAddress siloAddress)
+    parameters:
+    - id: siloAddress
+      type: Orleans.Runtime.SiloAddress
+      description: The address of the silo whose membership information needs to be read.
+    return:
+      type: Task{MembershipTableData}
+      description: >-
+        The membership information for a given silo: MembershipTableData consisting one MembershipEntry entry and
+
+        TableVersion, read atomically.
+    content.vb: Public Function ReadRow(siloAddress As SiloAddress) As Task(Of MembershipTableData)
+  overload: Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.ReadRow*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.ReadAll
+  commentId: M:Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.ReadAll
+  id: ReadAll
+  parent: Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable
+  langs:
+  - csharp
+  - vb
+  name: ReadAll()
+  nameWithType: ZooKeeperBasedMembershipTable.ReadAll()
+  fullName: Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.ReadAll()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Clustering.ZooKeeper/ZooKeeperBasedMembershipTable.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ReadAll
+    path: src/Orleans.Clustering.ZooKeeper/ZooKeeperBasedMembershipTable.cs
+    startLine: 141
+  assemblies:
+  - Orleans.Clustering.ZooKeeper
+  namespace: Orleans.Runtime.Membership
+  summary: "\nAtomically reads the full content of the Membership Table.\nThe returned MembershipTableData includes all MembershipEntry entry for all silos in the table and the \nTableVersion for this table. The MembershipEntries and the TableVersion have to be read atomically.\n"
+  example: []
+  syntax:
+    content: public Task<MembershipTableData> ReadAll()
+    return:
+      type: Task{MembershipTableData}
+      description: >-
+        The membership information for a given table: MembershipTableData consisting multiple MembershipEntry entries and
+
+        TableVersion, all read atomically.
+    content.vb: Public Function ReadAll As Task(Of MembershipTableData)
+  overload: Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.ReadAll*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.InsertRow(MembershipEntry,TableVersion)
+  commentId: M:Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.InsertRow(MembershipEntry,TableVersion)
+  id: InsertRow(MembershipEntry,TableVersion)
+  parent: Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable
+  langs:
+  - csharp
+  - vb
+  name: InsertRow(MembershipEntry, TableVersion)
+  nameWithType: ZooKeeperBasedMembershipTable.InsertRow(MembershipEntry, TableVersion)
+  fullName: Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.InsertRow(MembershipEntry, TableVersion)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Clustering.ZooKeeper/ZooKeeperBasedMembershipTable.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: InsertRow
+    path: src/Orleans.Clustering.ZooKeeper/ZooKeeperBasedMembershipTable.cs
+    startLine: 178
+  assemblies:
+  - Orleans.Clustering.ZooKeeper
+  namespace: Orleans.Runtime.Membership
+  summary: "\nAtomically tries to insert (add) a new MembershipEntry for one silo and also update the TableVersion.\nIf operation succeeds, the following changes would be made to the table:\n1) New MembershipEntry will be added to the table.\n2) The newly added MembershipEntry will also be added with the new unique automatically generated eTag.\n3) TableVersion.Version in the table will be updated to the new TableVersion.Version.\n4) TableVersion etag in the table will be updated to the new unique automatically generated eTag.\nAll those changes to the table, insert of a new row and update of the table version and the associated etags, should happen atomically, or fail atomically with no side effects.\nThe operation should fail in each of the following conditions:\n1) A MembershipEntry for a given silo already exist in the table\n2) Update of the TableVersion failed since the given TableVersion etag (as specified by the TableVersion.VersionEtag property) did not match the TableVersion etag in the table.\n"
+  example: []
+  syntax:
+    content: public Task<bool> InsertRow(MembershipEntry entry, TableVersion tableVersion)
+    parameters:
+    - id: entry
+      type: MembershipEntry
+      description: MembershipEntry to be inserted.
+    - id: tableVersion
+      type: TableVersion
+      description: The new TableVersion for this table, along with its etag.
+    return:
+      type: Task{System.Boolean}
+      description: True if the insert operation succeeded and false otherwise.
+    content.vb: Public Function InsertRow(entry As MembershipEntry, tableVersion As TableVersion) As Task(Of Boolean)
+  overload: Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.InsertRow*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.UpdateRow(MembershipEntry,System.String,TableVersion)
+  commentId: M:Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.UpdateRow(MembershipEntry,System.String,TableVersion)
+  id: UpdateRow(MembershipEntry,System.String,TableVersion)
+  parent: Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable
+  langs:
+  - csharp
+  - vb
+  name: UpdateRow(MembershipEntry, String, TableVersion)
+  nameWithType: ZooKeeperBasedMembershipTable.UpdateRow(MembershipEntry, String, TableVersion)
+  fullName: Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.UpdateRow(MembershipEntry, System.String, TableVersion)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Clustering.ZooKeeper/ZooKeeperBasedMembershipTable.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: UpdateRow
+    path: src/Orleans.Clustering.ZooKeeper/ZooKeeperBasedMembershipTable.cs
+    startLine: 210
+  assemblies:
+  - Orleans.Clustering.ZooKeeper
+  namespace: Orleans.Runtime.Membership
+  summary: "\nAtomically tries to update the MembershipEntry for one silo and also update the TableVersion.\nIf operation succeeds, the following changes would be made to the table:\n1) The MembershipEntry for this silo will be updated to the new MembershipEntry (the old entry will be fully substitued by the new entry) \n2) The eTag for the updated MembershipEntry will also be eTag with the new unique automatically generated eTag.\n3) TableVersion.Version in the table will be updated to the new TableVersion.Version.\n4) TableVersion etag in the table will be updated to the new unique automatically generated eTag.\nAll those changes to the table, update of a new row and update of the table version and the associated etags, should happen atomically, or fail atomically with no side effects.\nThe operation should fail in each of the following conditions:\n1) A MembershipEntry for a given silo does not exist in the table\n2) A MembershipEntry for a given silo exist in the table but its etag in the table does not match the provided etag.\n3) Update of the TableVersion failed since the given TableVersion etag (as specified by the TableVersion.VersionEtag property) did not match the TableVersion etag in the table.\n"
+  example: []
+  syntax:
+    content: public Task<bool> UpdateRow(MembershipEntry entry, string etag, TableVersion tableVersion)
+    parameters:
+    - id: entry
+      type: MembershipEntry
+      description: MembershipEntry to be updated.
+    - id: etag
+      type: System.String
+      description: The etag  for the given MembershipEntry.
+    - id: tableVersion
+      type: TableVersion
+      description: The new TableVersion for this table, along with its etag.
+    return:
+      type: Task{System.Boolean}
+      description: True if the update operation succeeded and false otherwise.
+    content.vb: Public Function UpdateRow(entry As MembershipEntry, etag As String, tableVersion As TableVersion) As Task(Of Boolean)
+  overload: Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.UpdateRow*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.UpdateIAmAlive(MembershipEntry)
+  commentId: M:Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.UpdateIAmAlive(MembershipEntry)
+  id: UpdateIAmAlive(MembershipEntry)
+  parent: Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable
+  langs:
+  - csharp
+  - vb
+  name: UpdateIAmAlive(MembershipEntry)
+  nameWithType: ZooKeeperBasedMembershipTable.UpdateIAmAlive(MembershipEntry)
+  fullName: Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.UpdateIAmAlive(MembershipEntry)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Clustering.ZooKeeper/ZooKeeperBasedMembershipTable.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: UpdateIAmAlive
+    path: src/Orleans.Clustering.ZooKeeper/ZooKeeperBasedMembershipTable.cs
+    startLine: 238
+  assemblies:
+  - Orleans.Clustering.ZooKeeper
+  namespace: Orleans.Runtime.Membership
+  summary: "\nUpdates the IAmAlive part (column) of the MembershipEntry for this silo.\nThis operation should only update the IAmAlive collumn and not change other columns.\nThis operation is a &quot;dirty write&quot; or &quot;in place update&quot; and is performed without etag validation. \nWith regards to eTags update:\nThis operation may automatically update the eTag associated with the given silo row, but it does not have to. It can also leave the etag not changed (&quot;dirty write&quot;).\nWith regards to TableVersion:\nthis operation should not change the TableVersion of the table. It should leave it untouched.\nThere is no scenario where this operation could fail due to table semantical reasons. It can only fail due to network problems or table unavailability.\n"
+  example: []
+  syntax:
+    content: public Task UpdateIAmAlive(MembershipEntry entry)
+    parameters:
+    - id: entry
+      type: MembershipEntry
+      description: The target MembershipEntry tp update
+    return:
+      type: Task
+      description: 'Task representing the successful execution of this operation. '
+    content.vb: Public Function UpdateIAmAlive(entry As MembershipEntry) As Task
+  overload: Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.UpdateIAmAlive*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.DeleteMembershipTableEntries(System.String)
+  commentId: M:Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.DeleteMembershipTableEntries(System.String)
+  id: DeleteMembershipTableEntries(System.String)
+  parent: Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable
+  langs:
+  - csharp
+  - vb
+  name: DeleteMembershipTableEntries(String)
+  nameWithType: ZooKeeperBasedMembershipTable.DeleteMembershipTableEntries(String)
+  fullName: Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.DeleteMembershipTableEntries(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Clustering.ZooKeeper/ZooKeeperBasedMembershipTable.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: DeleteMembershipTableEntries
+    path: src/Orleans.Clustering.ZooKeeper/ZooKeeperBasedMembershipTable.cs
+    startLine: 249
+  assemblies:
+  - Orleans.Clustering.ZooKeeper
+  namespace: Orleans.Runtime.Membership
+  summary: "\nDeletes all table entries of the given clusterId\n"
+  example: []
+  syntax:
+    content: public Task DeleteMembershipTableEntries(string clusterId)
+    parameters:
+    - id: clusterId
+      type: System.String
+    return:
+      type: Task
+    content.vb: Public Function DeleteMembershipTableEntries(clusterId As String) As Task
+  overload: Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.DeleteMembershipTableEntries*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans.Runtime.Membership
+  commentId: N:Orleans.Runtime.Membership
+  isExternal: false
+  name: Orleans.Runtime.Membership
+  nameWithType: Orleans.Runtime.Membership
+  fullName: Orleans.Runtime.Membership
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<ZooKeeperBasedMembershipTable>()
+  nameWithType: ImmutableExt.AsImmutable<ZooKeeperBasedMembershipTable>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of ZooKeeperBasedMembershipTable)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable)()
+  name.vb: AsImmutable(Of ZooKeeperBasedMembershipTable)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<ZooKeeperBasedMembershipTable>
+    nameWithType: ImmutableExt.AsImmutable<ZooKeeperBasedMembershipTable>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of ZooKeeperBasedMembershipTable)
+    nameWithType: ImmutableExt.AsImmutable(Of ZooKeeperBasedMembershipTable)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.#ctor*
+  commentId: Overload:Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.#ctor
+  isExternal: false
+  name: ZooKeeperBasedMembershipTable
+  nameWithType: ZooKeeperBasedMembershipTable.ZooKeeperBasedMembershipTable
+  fullName: Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.ZooKeeperBasedMembershipTable
+- uid: ILogger{Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable}
+  commentId: '!:ILogger{Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable}'
+  definition: ILogger`1
+  name: ILogger<ZooKeeperBasedMembershipTable>
+  nameWithType: ILogger<ZooKeeperBasedMembershipTable>
+  fullName: ILogger<Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable>
+  nameWithType.vb: ILogger(Of ZooKeeperBasedMembershipTable)
+  fullName.vb: ILogger(Of Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable)
+  name.vb: ILogger(Of ZooKeeperBasedMembershipTable)
+  spec.csharp:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable
+    name: ZooKeeperBasedMembershipTable
+    nameWithType: ZooKeeperBasedMembershipTable
+    fullName: Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable
+    name: ZooKeeperBasedMembershipTable
+    nameWithType: ZooKeeperBasedMembershipTable
+    fullName: Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IOptions{Orleans.Configuration.ZooKeeperClusteringSiloOptions}
+  commentId: '!:IOptions{Orleans.Configuration.ZooKeeperClusteringSiloOptions}'
+  definition: IOptions`1
+  name: IOptions<ZooKeeperClusteringSiloOptions>
+  nameWithType: IOptions<ZooKeeperClusteringSiloOptions>
+  fullName: IOptions<Orleans.Configuration.ZooKeeperClusteringSiloOptions>
+  nameWithType.vb: IOptions(Of ZooKeeperClusteringSiloOptions)
+  fullName.vb: IOptions(Of Orleans.Configuration.ZooKeeperClusteringSiloOptions)
+  name.vb: IOptions(Of ZooKeeperClusteringSiloOptions)
+  spec.csharp:
+  - uid: IOptions`1
+    name: IOptions
+    nameWithType: IOptions
+    fullName: IOptions
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Orleans.Configuration.ZooKeeperClusteringSiloOptions
+    name: ZooKeeperClusteringSiloOptions
+    nameWithType: ZooKeeperClusteringSiloOptions
+    fullName: Orleans.Configuration.ZooKeeperClusteringSiloOptions
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IOptions`1
+    name: IOptions
+    nameWithType: IOptions
+    fullName: IOptions
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Orleans.Configuration.ZooKeeperClusteringSiloOptions
+    name: ZooKeeperClusteringSiloOptions
+    nameWithType: ZooKeeperClusteringSiloOptions
+    fullName: Orleans.Configuration.ZooKeeperClusteringSiloOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IOptions{ClusterOptions}
+  commentId: '!:IOptions{ClusterOptions}'
+  definition: IOptions`1
+  name: IOptions<ClusterOptions>
+  nameWithType: IOptions<ClusterOptions>
+  fullName: IOptions<ClusterOptions>
+  nameWithType.vb: IOptions(Of ClusterOptions)
+  fullName.vb: IOptions(Of ClusterOptions)
+  name.vb: IOptions(Of ClusterOptions)
+  spec.csharp:
+  - uid: IOptions`1
+    name: IOptions
+    nameWithType: IOptions
+    fullName: IOptions
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: ClusterOptions
+    name: ClusterOptions
+    nameWithType: ClusterOptions
+    fullName: ClusterOptions
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IOptions`1
+    name: IOptions
+    nameWithType: IOptions
+    fullName: IOptions
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: ClusterOptions
+    name: ClusterOptions
+    nameWithType: ClusterOptions
+    fullName: ClusterOptions
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: ILogger`1
+  isExternal: true
+  name: ILogger<>
+  nameWithType: ILogger<>
+  fullName: ILogger<>
+  nameWithType.vb: ILogger(Of )
+  fullName.vb: ILogger(Of )
+  name.vb: ILogger(Of )
+  spec.csharp:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IOptions`1
+  isExternal: true
+  name: IOptions<>
+  nameWithType: IOptions<>
+  fullName: IOptions<>
+  nameWithType.vb: IOptions(Of )
+  fullName.vb: IOptions(Of )
+  name.vb: IOptions(Of )
+  spec.csharp:
+  - uid: IOptions`1
+    name: IOptions
+    nameWithType: IOptions
+    fullName: IOptions
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IOptions`1
+    name: IOptions
+    nameWithType: IOptions
+    fullName: IOptions
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.InitializeMembershipTable*
+  commentId: Overload:Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.InitializeMembershipTable
+  isExternal: false
+  name: InitializeMembershipTable
+  nameWithType: ZooKeeperBasedMembershipTable.InitializeMembershipTable
+  fullName: Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.InitializeMembershipTable
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task
+- uid: Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.ReadRow*
+  commentId: Overload:Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.ReadRow
+  isExternal: false
+  name: ReadRow
+  nameWithType: ZooKeeperBasedMembershipTable.ReadRow
+  fullName: Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.ReadRow
+- uid: Orleans.Runtime.SiloAddress
+  commentId: T:Orleans.Runtime.SiloAddress
+  parent: Orleans.Runtime
+  isExternal: false
+  name: SiloAddress
+  nameWithType: SiloAddress
+  fullName: Orleans.Runtime.SiloAddress
+- uid: Task{MembershipTableData}
+  commentId: '!:Task{MembershipTableData}'
+  definition: Task`1
+  name: Task<MembershipTableData>
+  nameWithType: Task<MembershipTableData>
+  fullName: Task<MembershipTableData>
+  nameWithType.vb: Task(Of MembershipTableData)
+  fullName.vb: Task(Of MembershipTableData)
+  name.vb: Task(Of MembershipTableData)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MembershipTableData
+    name: MembershipTableData
+    nameWithType: MembershipTableData
+    fullName: MembershipTableData
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MembershipTableData
+    name: MembershipTableData
+    nameWithType: MembershipTableData
+    fullName: MembershipTableData
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime
+  commentId: N:Orleans.Runtime
+  isExternal: false
+  name: Orleans.Runtime
+  nameWithType: Orleans.Runtime
+  fullName: Orleans.Runtime
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.ReadAll*
+  commentId: Overload:Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.ReadAll
+  isExternal: false
+  name: ReadAll
+  nameWithType: ZooKeeperBasedMembershipTable.ReadAll
+  fullName: Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.ReadAll
+- uid: Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.InsertRow*
+  commentId: Overload:Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.InsertRow
+  isExternal: false
+  name: InsertRow
+  nameWithType: ZooKeeperBasedMembershipTable.InsertRow
+  fullName: Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.InsertRow
+- uid: MembershipEntry
+  isExternal: true
+  name: MembershipEntry
+  nameWithType: MembershipEntry
+  fullName: MembershipEntry
+- uid: TableVersion
+  isExternal: true
+  name: TableVersion
+  nameWithType: TableVersion
+  fullName: TableVersion
+- uid: Task{System.Boolean}
+  commentId: '!:Task{System.Boolean}'
+  definition: Task`1
+  name: Task<Boolean>
+  nameWithType: Task<Boolean>
+  fullName: Task<System.Boolean>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: Task(Of System.Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.UpdateRow*
+  commentId: Overload:Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.UpdateRow
+  isExternal: false
+  name: UpdateRow
+  nameWithType: ZooKeeperBasedMembershipTable.UpdateRow
+  fullName: Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.UpdateRow
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.UpdateIAmAlive*
+  commentId: Overload:Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.UpdateIAmAlive
+  isExternal: false
+  name: UpdateIAmAlive
+  nameWithType: ZooKeeperBasedMembershipTable.UpdateIAmAlive
+  fullName: Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.UpdateIAmAlive
+- uid: Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.DeleteMembershipTableEntries*
+  commentId: Overload:Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.DeleteMembershipTableEntries
+  isExternal: false
+  name: DeleteMembershipTableEntries
+  nameWithType: ZooKeeperBasedMembershipTable.DeleteMembershipTableEntries
+  fullName: Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.DeleteMembershipTableEntries

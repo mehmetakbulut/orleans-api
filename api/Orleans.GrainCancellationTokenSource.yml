@@ -1,0 +1,413 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.GrainCancellationTokenSource
+  commentId: T:Orleans.GrainCancellationTokenSource
+  id: GrainCancellationTokenSource
+  parent: Orleans
+  children:
+  - Orleans.GrainCancellationTokenSource.#ctor
+  - Orleans.GrainCancellationTokenSource.Cancel
+  - Orleans.GrainCancellationTokenSource.Dispose
+  - Orleans.GrainCancellationTokenSource.IsCancellationRequested
+  - Orleans.GrainCancellationTokenSource.Token
+  langs:
+  - csharp
+  - vb
+  name: GrainCancellationTokenSource
+  nameWithType: GrainCancellationTokenSource
+  fullName: Orleans.GrainCancellationTokenSource
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Cancellation/GrainCancellationTokenSource.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GrainCancellationTokenSource
+    path: src/Orleans.Core.Abstractions/Cancellation/GrainCancellationTokenSource.cs
+    startLine: 10
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nDistributed version of the CancellationTokenSource\n"
+  example: []
+  syntax:
+    content: 'public sealed class GrainCancellationTokenSource : IDisposable'
+    content.vb: >-
+      Public NotInheritable Class GrainCancellationTokenSource
+
+          Inherits IDisposable
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.GrainCancellationTokenSource.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Orleans.GrainCancellationTokenSource.#ctor
+  commentId: M:Orleans.GrainCancellationTokenSource.#ctor
+  id: '#ctor'
+  parent: Orleans.GrainCancellationTokenSource
+  langs:
+  - csharp
+  - vb
+  name: GrainCancellationTokenSource()
+  nameWithType: GrainCancellationTokenSource.GrainCancellationTokenSource()
+  fullName: Orleans.GrainCancellationTokenSource.GrainCancellationTokenSource()
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Cancellation/GrainCancellationTokenSource.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Core.Abstractions/Cancellation/GrainCancellationTokenSource.cs
+    startLine: 17
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nInitializes the <xref href=\"Orleans.GrainCancellationTokenSource\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public GrainCancellationTokenSource()
+    content.vb: Public Sub New
+  overload: Orleans.GrainCancellationTokenSource.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.GrainCancellationTokenSource.Token
+  commentId: P:Orleans.GrainCancellationTokenSource.Token
+  id: Token
+  parent: Orleans.GrainCancellationTokenSource
+  langs:
+  - csharp
+  - vb
+  name: Token
+  nameWithType: GrainCancellationTokenSource.Token
+  fullName: Orleans.GrainCancellationTokenSource.Token
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Cancellation/GrainCancellationTokenSource.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Token
+    path: src/Orleans.Core.Abstractions/Cancellation/GrainCancellationTokenSource.cs
+    startLine: 28
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nGets the <xref href=\"Orleans.GrainCancellationTokenSource\" data-throw-if-not-resolved=\"false\"></xref>\nassociated with this <xref href=\"Orleans.GrainCancellationTokenSource\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public GrainCancellationToken Token { get; }
+    parameters: []
+    return:
+      type: Orleans.GrainCancellationToken
+      description: >-
+        The <xref href="Orleans.GrainCancellationToken" data-throw-if-not-resolved="false"></xref>
+
+        associated with this <xref href="Orleans.GrainCancellationToken" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public ReadOnly Property Token As GrainCancellationToken
+  overload: Orleans.GrainCancellationTokenSource.Token*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.GrainCancellationTokenSource.IsCancellationRequested
+  commentId: P:Orleans.GrainCancellationTokenSource.IsCancellationRequested
+  id: IsCancellationRequested
+  parent: Orleans.GrainCancellationTokenSource
+  langs:
+  - csharp
+  - vb
+  name: IsCancellationRequested
+  nameWithType: GrainCancellationTokenSource.IsCancellationRequested
+  fullName: Orleans.GrainCancellationTokenSource.IsCancellationRequested
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Cancellation/GrainCancellationTokenSource.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IsCancellationRequested
+    path: src/Orleans.Core.Abstractions/Cancellation/GrainCancellationTokenSource.cs
+    startLine: 53
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nGets whether cancellation has been requested for this <xref href=\"Orleans.GrainCancellationTokenSource\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  remarks: "\n<p>\nThis property indicates whether cancellation has been requested for this token source, such as\ndue to a call to its\n<xref href=\"Orleans.GrainCancellationTokenSource.Cancel\" data-throw-if-not-resolved=\"false\"></xref> method.\n</p>\n<p>\nIf this property returns true, it only guarantees that cancellation has been requested. It does not\nguarantee that every handler registered with the corresponding token has finished executing, nor\nthat cancellation requests have finished propagating to all registered handlers and remote targets. Additional\nsynchronization may be required, particularly in situations where related objects are being\ncanceled concurrently.\n</p>\n"
+  example: []
+  syntax:
+    content: public bool IsCancellationRequested { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: Whether cancellation has been requested for this <xref href="Orleans.GrainCancellationTokenSource" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public ReadOnly Property IsCancellationRequested As Boolean
+  overload: Orleans.GrainCancellationTokenSource.IsCancellationRequested*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.GrainCancellationTokenSource.Cancel
+  commentId: M:Orleans.GrainCancellationTokenSource.Cancel
+  id: Cancel
+  parent: Orleans.GrainCancellationTokenSource
+  langs:
+  - csharp
+  - vb
+  name: Cancel()
+  nameWithType: GrainCancellationTokenSource.Cancel()
+  fullName: Orleans.GrainCancellationTokenSource.Cancel()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Cancellation/GrainCancellationTokenSource.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Cancel
+    path: src/Orleans.Core.Abstractions/Cancellation/GrainCancellationTokenSource.cs
+    startLine: 83
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nCommunicates a request for cancellation.\n"
+  remarks: "\n<p>\nThe associated <xref href=\"Orleans.Async.GrainCancellationToken\" data-throw-if-not-resolved=\"false\"></xref> will be\nnotified of the cancellation and will transition to a state where\n<xref href=\"Orleans.GrainCancellationToken.CancellationToken\" data-throw-if-not-resolved=\"false\"></xref> returns true.\nAny callbacks or cancelable operations\nregistered with the <xref href=\"Orleans.Threading.CancellationToken\" data-throw-if-not-resolved=\"false\"></xref>  will be executed.\n</p>\n<p>\nCancelable operations and callbacks registered with the token should not throw exceptions.\nHowever, this overload of Cancel will aggregate any exceptions thrown into a <see cref=\"!:AggregateException\"></see>,\nsuch that one callback throwing an exception will not prevent other registered callbacks from being executed.\n</p>\n<p>\nThe <xref href=\"System.Threading.ExecutionContext\" data-throw-if-not-resolved=\"false\"></xref> that was captured when each callback was registered\nwill be reestablished when the callback is invoked.\n</p>\n"
+  example: []
+  syntax:
+    content: public Task Cancel()
+    return:
+      type: Task
+    content.vb: Public Function Cancel As Task
+  overload: Orleans.GrainCancellationTokenSource.Cancel*
+  exceptions:
+  - type: System.AggregateException
+    commentId: T:System.AggregateException
+    description: >-
+      An aggregate exception containing all the exceptions thrown
+
+      by the registered callbacks on the associated <xref href="Orleans.Async.GrainCancellationToken" data-throw-if-not-resolved="false"></xref>.
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: This <xref href="Orleans.Async.GrainCancellationTokenSource" data-throw-if-not-resolved="false"></xref> has been disposed.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.GrainCancellationTokenSource.Dispose
+  commentId: M:Orleans.GrainCancellationTokenSource.Dispose
+  id: Dispose
+  parent: Orleans.GrainCancellationTokenSource
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: GrainCancellationTokenSource.Dispose()
+  fullName: Orleans.GrainCancellationTokenSource.Dispose()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Cancellation/GrainCancellationTokenSource.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Dispose
+    path: src/Orleans.Core.Abstractions/Cancellation/GrainCancellationTokenSource.cs
+    startLine: 94
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nReleases the resources used by this <xref href=\"Orleans.Async.GrainCancellationTokenSource\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  remarks: "\nThis method is not thread-safe for any other concurrent calls.\n"
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  overload: Orleans.GrainCancellationTokenSource.Dispose*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans
+  commentId: N:Orleans
+  isExternal: false
+  name: Orleans
+  nameWithType: Orleans
+  fullName: Orleans
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.GrainCancellationTokenSource.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<GrainCancellationTokenSource>()
+  nameWithType: ImmutableExt.AsImmutable<GrainCancellationTokenSource>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.GrainCancellationTokenSource>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of GrainCancellationTokenSource)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.GrainCancellationTokenSource)()
+  name.vb: AsImmutable(Of GrainCancellationTokenSource)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<GrainCancellationTokenSource>
+    nameWithType: ImmutableExt.AsImmutable<GrainCancellationTokenSource>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.GrainCancellationTokenSource>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of GrainCancellationTokenSource)
+    nameWithType: ImmutableExt.AsImmutable(Of GrainCancellationTokenSource)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.GrainCancellationTokenSource)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.GrainCancellationTokenSource
+  commentId: T:Orleans.GrainCancellationTokenSource
+  isExternal: false
+  name: GrainCancellationTokenSource
+  nameWithType: GrainCancellationTokenSource
+  fullName: Orleans.GrainCancellationTokenSource
+- uid: Orleans.GrainCancellationTokenSource.#ctor*
+  commentId: Overload:Orleans.GrainCancellationTokenSource.#ctor
+  isExternal: false
+  name: GrainCancellationTokenSource
+  nameWithType: GrainCancellationTokenSource.GrainCancellationTokenSource
+  fullName: Orleans.GrainCancellationTokenSource.GrainCancellationTokenSource
+- uid: Orleans.GrainCancellationToken
+  commentId: T:Orleans.GrainCancellationToken
+  parent: Orleans
+  isExternal: false
+  name: GrainCancellationToken
+  nameWithType: GrainCancellationToken
+  fullName: Orleans.GrainCancellationToken
+- uid: Orleans.GrainCancellationTokenSource.Token*
+  commentId: Overload:Orleans.GrainCancellationTokenSource.Token
+  isExternal: false
+  name: Token
+  nameWithType: GrainCancellationTokenSource.Token
+  fullName: Orleans.GrainCancellationTokenSource.Token
+- uid: Orleans.GrainCancellationTokenSource.Cancel
+  commentId: M:Orleans.GrainCancellationTokenSource.Cancel
+- uid: Orleans.GrainCancellationTokenSource.IsCancellationRequested*
+  commentId: Overload:Orleans.GrainCancellationTokenSource.IsCancellationRequested
+  isExternal: false
+  name: IsCancellationRequested
+  nameWithType: GrainCancellationTokenSource.IsCancellationRequested
+  fullName: Orleans.GrainCancellationTokenSource.IsCancellationRequested
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Orleans.Async.GrainCancellationToken
+  commentId: T:Orleans.Async.GrainCancellationToken
+- uid: Orleans.GrainCancellationToken.CancellationToken
+  commentId: P:Orleans.GrainCancellationToken.CancellationToken
+- uid: Orleans.Threading.CancellationToken
+  commentId: T:Orleans.Threading.CancellationToken
+- uid: System.Threading.ExecutionContext
+  commentId: T:System.Threading.ExecutionContext
+- uid: Orleans.Async.GrainCancellationTokenSource
+  commentId: T:Orleans.Async.GrainCancellationTokenSource
+- uid: System.AggregateException
+  commentId: T:System.AggregateException
+- uid: System.ObjectDisposedException
+  commentId: T:System.ObjectDisposedException
+- uid: Orleans.GrainCancellationTokenSource.Cancel*
+  commentId: Overload:Orleans.GrainCancellationTokenSource.Cancel
+  isExternal: false
+  name: Cancel
+  nameWithType: GrainCancellationTokenSource.Cancel
+  fullName: Orleans.GrainCancellationTokenSource.Cancel
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task
+- uid: Orleans.GrainCancellationTokenSource.Dispose*
+  commentId: Overload:Orleans.GrainCancellationTokenSource.Dispose
+  isExternal: false
+  name: Dispose
+  nameWithType: GrainCancellationTokenSource.Dispose
+  fullName: Orleans.GrainCancellationTokenSource.Dispose

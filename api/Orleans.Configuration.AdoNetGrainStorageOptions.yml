@@ -1,0 +1,667 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Configuration.AdoNetGrainStorageOptions
+  commentId: T:Orleans.Configuration.AdoNetGrainStorageOptions
+  id: AdoNetGrainStorageOptions
+  parent: Orleans.Configuration
+  children:
+  - Orleans.Configuration.AdoNetGrainStorageOptions.ConnectionString
+  - Orleans.Configuration.AdoNetGrainStorageOptions.DEFAULT_ADONET_INVARIANT
+  - Orleans.Configuration.AdoNetGrainStorageOptions.DEFAULT_INIT_STAGE
+  - Orleans.Configuration.AdoNetGrainStorageOptions.IndentJson
+  - Orleans.Configuration.AdoNetGrainStorageOptions.InitStage
+  - Orleans.Configuration.AdoNetGrainStorageOptions.Invariant
+  - Orleans.Configuration.AdoNetGrainStorageOptions.TypeNameHandling
+  - Orleans.Configuration.AdoNetGrainStorageOptions.UseFullAssemblyNames
+  - Orleans.Configuration.AdoNetGrainStorageOptions.UseJsonFormat
+  - Orleans.Configuration.AdoNetGrainStorageOptions.UseXmlFormat
+  langs:
+  - csharp
+  - vb
+  name: AdoNetGrainStorageOptions
+  nameWithType: AdoNetGrainStorageOptions
+  fullName: Orleans.Configuration.AdoNetGrainStorageOptions
+  type: Class
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Persistence.AdoNet/Options/AdoNetGrainStorageOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AdoNetGrainStorageOptions
+    path: src/AdoNet/Orleans.Persistence.AdoNet/Options/AdoNetGrainStorageOptions.cs
+    startLine: 15
+  assemblies:
+  - Orleans.Persistence.AdoNet
+  namespace: Orleans.Configuration
+  summary: "\nOptions for AdonetGrainStorage\n"
+  example: []
+  syntax:
+    content: 'public class AdoNetGrainStorageOptions : object'
+    content.vb: >-
+      Public Class AdoNetGrainStorageOptions
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.Configuration.AdoNetGrainStorageOptions.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.Configuration.AdoNetGrainStorageOptions.ConnectionString
+  commentId: P:Orleans.Configuration.AdoNetGrainStorageOptions.ConnectionString
+  id: ConnectionString
+  parent: Orleans.Configuration.AdoNetGrainStorageOptions
+  langs:
+  - csharp
+  - vb
+  name: ConnectionString
+  nameWithType: AdoNetGrainStorageOptions.ConnectionString
+  fullName: Orleans.Configuration.AdoNetGrainStorageOptions.ConnectionString
+  type: Property
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Persistence.AdoNet/Options/AdoNetGrainStorageOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ConnectionString
+    path: src/AdoNet/Orleans.Persistence.AdoNet/Options/AdoNetGrainStorageOptions.cs
+    startLine: 20
+  assemblies:
+  - Orleans.Persistence.AdoNet
+  namespace: Orleans.Configuration
+  summary: "\nConnection string for AdoNet storage.\n"
+  example: []
+  syntax:
+    content: public string ConnectionString { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ConnectionString As String
+  overload: Orleans.Configuration.AdoNetGrainStorageOptions.ConnectionString*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Configuration.AdoNetGrainStorageOptions.InitStage
+  commentId: P:Orleans.Configuration.AdoNetGrainStorageOptions.InitStage
+  id: InitStage
+  parent: Orleans.Configuration.AdoNetGrainStorageOptions
+  langs:
+  - csharp
+  - vb
+  name: InitStage
+  nameWithType: AdoNetGrainStorageOptions.InitStage
+  fullName: Orleans.Configuration.AdoNetGrainStorageOptions.InitStage
+  type: Property
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Persistence.AdoNet/Options/AdoNetGrainStorageOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: InitStage
+    path: src/AdoNet/Orleans.Persistence.AdoNet/Options/AdoNetGrainStorageOptions.cs
+    startLine: 26
+  assemblies:
+  - Orleans.Persistence.AdoNet
+  namespace: Orleans.Configuration
+  summary: "\nStage of silo lifecycle where storage should be initialized.  Storage must be initialzed prior to use.\n"
+  example: []
+  syntax:
+    content: public int InitStage { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property InitStage As Integer
+  overload: Orleans.Configuration.AdoNetGrainStorageOptions.InitStage*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Configuration.AdoNetGrainStorageOptions.DEFAULT_INIT_STAGE
+  commentId: F:Orleans.Configuration.AdoNetGrainStorageOptions.DEFAULT_INIT_STAGE
+  id: DEFAULT_INIT_STAGE
+  parent: Orleans.Configuration.AdoNetGrainStorageOptions
+  langs:
+  - csharp
+  - vb
+  name: DEFAULT_INIT_STAGE
+  nameWithType: AdoNetGrainStorageOptions.DEFAULT_INIT_STAGE
+  fullName: Orleans.Configuration.AdoNetGrainStorageOptions.DEFAULT_INIT_STAGE
+  type: Field
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Persistence.AdoNet/Options/AdoNetGrainStorageOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: DEFAULT_INIT_STAGE
+    path: src/AdoNet/Orleans.Persistence.AdoNet/Options/AdoNetGrainStorageOptions.cs
+    startLine: 30
+  assemblies:
+  - Orleans.Persistence.AdoNet
+  namespace: Orleans.Configuration
+  summary: "\nDefault init stage in silo lifecycle.\n"
+  example: []
+  syntax:
+    content: public const int DEFAULT_INIT_STAGE = null
+    return:
+      type: System.Int32
+    content.vb: Public Const DEFAULT_INIT_STAGE As Integer = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Orleans.Configuration.AdoNetGrainStorageOptions.DEFAULT_ADONET_INVARIANT
+  commentId: F:Orleans.Configuration.AdoNetGrainStorageOptions.DEFAULT_ADONET_INVARIANT
+  id: DEFAULT_ADONET_INVARIANT
+  parent: Orleans.Configuration.AdoNetGrainStorageOptions
+  langs:
+  - csharp
+  - vb
+  name: DEFAULT_ADONET_INVARIANT
+  nameWithType: AdoNetGrainStorageOptions.DEFAULT_ADONET_INVARIANT
+  fullName: Orleans.Configuration.AdoNetGrainStorageOptions.DEFAULT_ADONET_INVARIANT
+  type: Field
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Persistence.AdoNet/Options/AdoNetGrainStorageOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: DEFAULT_ADONET_INVARIANT
+    path: src/AdoNet/Orleans.Persistence.AdoNet/Options/AdoNetGrainStorageOptions.cs
+    startLine: 35
+  assemblies:
+  - Orleans.Persistence.AdoNet
+  namespace: Orleans.Configuration
+  summary: "\nThe default ADO.NET invariant used for storage if none is given. \n"
+  example: []
+  syntax:
+    content: public const string DEFAULT_ADONET_INVARIANT = null
+    return:
+      type: System.String
+    content.vb: Public Const DEFAULT_ADONET_INVARIANT As String = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Orleans.Configuration.AdoNetGrainStorageOptions.Invariant
+  commentId: P:Orleans.Configuration.AdoNetGrainStorageOptions.Invariant
+  id: Invariant
+  parent: Orleans.Configuration.AdoNetGrainStorageOptions
+  langs:
+  - csharp
+  - vb
+  name: Invariant
+  nameWithType: AdoNetGrainStorageOptions.Invariant
+  fullName: Orleans.Configuration.AdoNetGrainStorageOptions.Invariant
+  type: Property
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Persistence.AdoNet/Options/AdoNetGrainStorageOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Invariant
+    path: src/AdoNet/Orleans.Persistence.AdoNet/Options/AdoNetGrainStorageOptions.cs
+    startLine: 39
+  assemblies:
+  - Orleans.Persistence.AdoNet
+  namespace: Orleans.Configuration
+  summary: "\nThe invariant name for storage.\n"
+  example: []
+  syntax:
+    content: public string Invariant { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Invariant As String
+  overload: Orleans.Configuration.AdoNetGrainStorageOptions.Invariant*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Configuration.AdoNetGrainStorageOptions.UseJsonFormat
+  commentId: P:Orleans.Configuration.AdoNetGrainStorageOptions.UseJsonFormat
+  id: UseJsonFormat
+  parent: Orleans.Configuration.AdoNetGrainStorageOptions
+  langs:
+  - csharp
+  - vb
+  name: UseJsonFormat
+  nameWithType: AdoNetGrainStorageOptions.UseJsonFormat
+  fullName: Orleans.Configuration.AdoNetGrainStorageOptions.UseJsonFormat
+  type: Property
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Persistence.AdoNet/Options/AdoNetGrainStorageOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: UseJsonFormat
+    path: src/AdoNet/Orleans.Persistence.AdoNet/Options/AdoNetGrainStorageOptions.cs
+    startLine: 46
+  assemblies:
+  - Orleans.Persistence.AdoNet
+  namespace: Orleans.Configuration
+  summary: "\nWhether storage string payload should be formatted in JSON.\n<remarks>If neither <xref href=\"Orleans.Configuration.AdoNetGrainStorageOptions.UseJsonFormat\" data-throw-if-not-resolved=\"false\"></xref> nor <xref href=\"Orleans.Configuration.AdoNetGrainStorageOptions.UseXmlFormat\" data-throw-if-not-resolved=\"false\"></xref> is set to true, then BinaryFormatSerializer will be configured to format storage string payload.</remarks>\n"
+  example: []
+  syntax:
+    content: public bool UseJsonFormat { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property UseJsonFormat As Boolean
+  overload: Orleans.Configuration.AdoNetGrainStorageOptions.UseJsonFormat*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Configuration.AdoNetGrainStorageOptions.UseFullAssemblyNames
+  commentId: P:Orleans.Configuration.AdoNetGrainStorageOptions.UseFullAssemblyNames
+  id: UseFullAssemblyNames
+  parent: Orleans.Configuration.AdoNetGrainStorageOptions
+  langs:
+  - csharp
+  - vb
+  name: UseFullAssemblyNames
+  nameWithType: AdoNetGrainStorageOptions.UseFullAssemblyNames
+  fullName: Orleans.Configuration.AdoNetGrainStorageOptions.UseFullAssemblyNames
+  type: Property
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Persistence.AdoNet/Options/AdoNetGrainStorageOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: UseFullAssemblyNames
+    path: src/AdoNet/Orleans.Persistence.AdoNet/Options/AdoNetGrainStorageOptions.cs
+    startLine: 47
+  assemblies:
+  - Orleans.Persistence.AdoNet
+  namespace: Orleans.Configuration
+  syntax:
+    content: public bool UseFullAssemblyNames { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property UseFullAssemblyNames As Boolean
+  overload: Orleans.Configuration.AdoNetGrainStorageOptions.UseFullAssemblyNames*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Configuration.AdoNetGrainStorageOptions.IndentJson
+  commentId: P:Orleans.Configuration.AdoNetGrainStorageOptions.IndentJson
+  id: IndentJson
+  parent: Orleans.Configuration.AdoNetGrainStorageOptions
+  langs:
+  - csharp
+  - vb
+  name: IndentJson
+  nameWithType: AdoNetGrainStorageOptions.IndentJson
+  fullName: Orleans.Configuration.AdoNetGrainStorageOptions.IndentJson
+  type: Property
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Persistence.AdoNet/Options/AdoNetGrainStorageOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IndentJson
+    path: src/AdoNet/Orleans.Persistence.AdoNet/Options/AdoNetGrainStorageOptions.cs
+    startLine: 48
+  assemblies:
+  - Orleans.Persistence.AdoNet
+  namespace: Orleans.Configuration
+  syntax:
+    content: public bool IndentJson { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IndentJson As Boolean
+  overload: Orleans.Configuration.AdoNetGrainStorageOptions.IndentJson*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Configuration.AdoNetGrainStorageOptions.TypeNameHandling
+  commentId: P:Orleans.Configuration.AdoNetGrainStorageOptions.TypeNameHandling
+  id: TypeNameHandling
+  parent: Orleans.Configuration.AdoNetGrainStorageOptions
+  langs:
+  - csharp
+  - vb
+  name: TypeNameHandling
+  nameWithType: AdoNetGrainStorageOptions.TypeNameHandling
+  fullName: Orleans.Configuration.AdoNetGrainStorageOptions.TypeNameHandling
+  type: Property
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Persistence.AdoNet/Options/AdoNetGrainStorageOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: TypeNameHandling
+    path: src/AdoNet/Orleans.Persistence.AdoNet/Options/AdoNetGrainStorageOptions.cs
+    startLine: 49
+  assemblies:
+  - Orleans.Persistence.AdoNet
+  namespace: Orleans.Configuration
+  syntax:
+    content: public TypeNameHandling? TypeNameHandling { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{TypeNameHandling}
+    content.vb: Public Property TypeNameHandling As TypeNameHandling?
+  overload: Orleans.Configuration.AdoNetGrainStorageOptions.TypeNameHandling*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Configuration.AdoNetGrainStorageOptions.UseXmlFormat
+  commentId: P:Orleans.Configuration.AdoNetGrainStorageOptions.UseXmlFormat
+  id: UseXmlFormat
+  parent: Orleans.Configuration.AdoNetGrainStorageOptions
+  langs:
+  - csharp
+  - vb
+  name: UseXmlFormat
+  nameWithType: AdoNetGrainStorageOptions.UseXmlFormat
+  fullName: Orleans.Configuration.AdoNetGrainStorageOptions.UseXmlFormat
+  type: Property
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Persistence.AdoNet/Options/AdoNetGrainStorageOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: UseXmlFormat
+    path: src/AdoNet/Orleans.Persistence.AdoNet/Options/AdoNetGrainStorageOptions.cs
+    startLine: 55
+  assemblies:
+  - Orleans.Persistence.AdoNet
+  namespace: Orleans.Configuration
+  summary: "\nWhether storage string payload should be formatted in Xml.\n<remarks>If neither <xref href=\"Orleans.Configuration.AdoNetGrainStorageOptions.UseJsonFormat\" data-throw-if-not-resolved=\"false\"></xref> nor <xref href=\"Orleans.Configuration.AdoNetGrainStorageOptions.UseXmlFormat\" data-throw-if-not-resolved=\"false\"></xref> is set to true, then BinaryFormatSerializer will be configured to format storage string payload.</remarks>\n"
+  example: []
+  syntax:
+    content: public bool UseXmlFormat { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property UseXmlFormat As Boolean
+  overload: Orleans.Configuration.AdoNetGrainStorageOptions.UseXmlFormat*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans.Configuration
+  commentId: N:Orleans.Configuration
+  isExternal: false
+  name: Orleans.Configuration
+  nameWithType: Orleans.Configuration
+  fullName: Orleans.Configuration
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Configuration.AdoNetGrainStorageOptions.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<AdoNetGrainStorageOptions>()
+  nameWithType: ImmutableExt.AsImmutable<AdoNetGrainStorageOptions>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Configuration.AdoNetGrainStorageOptions>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of AdoNetGrainStorageOptions)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Configuration.AdoNetGrainStorageOptions)()
+  name.vb: AsImmutable(Of AdoNetGrainStorageOptions)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<AdoNetGrainStorageOptions>
+    nameWithType: ImmutableExt.AsImmutable<AdoNetGrainStorageOptions>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Configuration.AdoNetGrainStorageOptions>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of AdoNetGrainStorageOptions)
+    nameWithType: ImmutableExt.AsImmutable(Of AdoNetGrainStorageOptions)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Configuration.AdoNetGrainStorageOptions)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Configuration.AdoNetGrainStorageOptions.ConnectionString*
+  commentId: Overload:Orleans.Configuration.AdoNetGrainStorageOptions.ConnectionString
+  isExternal: false
+  name: ConnectionString
+  nameWithType: AdoNetGrainStorageOptions.ConnectionString
+  fullName: Orleans.Configuration.AdoNetGrainStorageOptions.ConnectionString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Orleans.Configuration.AdoNetGrainStorageOptions.InitStage*
+  commentId: Overload:Orleans.Configuration.AdoNetGrainStorageOptions.InitStage
+  isExternal: false
+  name: InitStage
+  nameWithType: AdoNetGrainStorageOptions.InitStage
+  fullName: Orleans.Configuration.AdoNetGrainStorageOptions.InitStage
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Orleans.Configuration.AdoNetGrainStorageOptions.Invariant*
+  commentId: Overload:Orleans.Configuration.AdoNetGrainStorageOptions.Invariant
+  isExternal: false
+  name: Invariant
+  nameWithType: AdoNetGrainStorageOptions.Invariant
+  fullName: Orleans.Configuration.AdoNetGrainStorageOptions.Invariant
+- uid: Orleans.Configuration.AdoNetGrainStorageOptions.UseJsonFormat
+  commentId: P:Orleans.Configuration.AdoNetGrainStorageOptions.UseJsonFormat
+- uid: Orleans.Configuration.AdoNetGrainStorageOptions.UseXmlFormat
+  commentId: P:Orleans.Configuration.AdoNetGrainStorageOptions.UseXmlFormat
+- uid: Orleans.Configuration.AdoNetGrainStorageOptions.UseJsonFormat*
+  commentId: Overload:Orleans.Configuration.AdoNetGrainStorageOptions.UseJsonFormat
+  isExternal: false
+  name: UseJsonFormat
+  nameWithType: AdoNetGrainStorageOptions.UseJsonFormat
+  fullName: Orleans.Configuration.AdoNetGrainStorageOptions.UseJsonFormat
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Orleans.Configuration.AdoNetGrainStorageOptions.UseFullAssemblyNames*
+  commentId: Overload:Orleans.Configuration.AdoNetGrainStorageOptions.UseFullAssemblyNames
+  isExternal: false
+  name: UseFullAssemblyNames
+  nameWithType: AdoNetGrainStorageOptions.UseFullAssemblyNames
+  fullName: Orleans.Configuration.AdoNetGrainStorageOptions.UseFullAssemblyNames
+- uid: Orleans.Configuration.AdoNetGrainStorageOptions.IndentJson*
+  commentId: Overload:Orleans.Configuration.AdoNetGrainStorageOptions.IndentJson
+  isExternal: false
+  name: IndentJson
+  nameWithType: AdoNetGrainStorageOptions.IndentJson
+  fullName: Orleans.Configuration.AdoNetGrainStorageOptions.IndentJson
+- uid: Orleans.Configuration.AdoNetGrainStorageOptions.TypeNameHandling*
+  commentId: Overload:Orleans.Configuration.AdoNetGrainStorageOptions.TypeNameHandling
+  isExternal: false
+  name: TypeNameHandling
+  nameWithType: AdoNetGrainStorageOptions.TypeNameHandling
+  fullName: Orleans.Configuration.AdoNetGrainStorageOptions.TypeNameHandling
+- uid: System.Nullable{TypeNameHandling}
+  commentId: '!:System.Nullable{TypeNameHandling}'
+  definition: System.Nullable`1
+  name: Nullable<TypeNameHandling>
+  nameWithType: Nullable<TypeNameHandling>
+  fullName: System.Nullable<TypeNameHandling>
+  nameWithType.vb: Nullable(Of TypeNameHandling)
+  fullName.vb: System.Nullable(Of TypeNameHandling)
+  name.vb: Nullable(Of TypeNameHandling)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: TypeNameHandling
+    name: TypeNameHandling
+    nameWithType: TypeNameHandling
+    fullName: TypeNameHandling
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: TypeNameHandling
+    name: TypeNameHandling
+    nameWithType: TypeNameHandling
+    fullName: TypeNameHandling
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  isExternal: true
+  name: Nullable<>
+  nameWithType: Nullable<>
+  fullName: System.Nullable<>
+  nameWithType.vb: Nullable(Of )
+  fullName.vb: System.Nullable(Of )
+  name.vb: Nullable(Of )
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Configuration.AdoNetGrainStorageOptions.UseXmlFormat*
+  commentId: Overload:Orleans.Configuration.AdoNetGrainStorageOptions.UseXmlFormat
+  isExternal: false
+  name: UseXmlFormat
+  nameWithType: AdoNetGrainStorageOptions.UseXmlFormat
+  fullName: Orleans.Configuration.AdoNetGrainStorageOptions.UseXmlFormat

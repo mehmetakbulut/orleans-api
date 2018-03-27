@@ -1,0 +1,397 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Streams.ClusterClientSqsStreamConfigurator
+  commentId: T:Orleans.Streams.ClusterClientSqsStreamConfigurator
+  id: ClusterClientSqsStreamConfigurator
+  parent: Orleans.Streams
+  children:
+  - Orleans.Streams.ClusterClientSqsStreamConfigurator.#ctor(System.String,IClientBuilder)
+  - Orleans.Streams.ClusterClientSqsStreamConfigurator.ConfigurePartitioning(System.Int32)
+  - Orleans.Streams.ClusterClientSqsStreamConfigurator.ConfigureSqs(Action{OptionsBuilder{Orleans.Configuration.SqsOptions}})
+  langs:
+  - csharp
+  - vb
+  name: ClusterClientSqsStreamConfigurator
+  nameWithType: ClusterClientSqsStreamConfigurator
+  fullName: Orleans.Streams.ClusterClientSqsStreamConfigurator
+  type: Class
+  source:
+    remote:
+      path: src/AWS/Orleans.Streaming.SQS/Streams/SQSStreamBuilder.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ClusterClientSqsStreamConfigurator
+    path: src/AWS/Orleans.Streaming.SQS/Streams/SQSStreamBuilder.cs
+    startLine: 42
+  assemblies:
+  - Orleans.Streaming.SQS
+  namespace: Orleans.Streams
+  syntax:
+    content: 'public class ClusterClientSqsStreamConfigurator : ClusterClientPersistentStreamConfigurator'
+    content.vb: >-
+      Public Class ClusterClientSqsStreamConfigurator
+
+          Inherits ClusterClientPersistentStreamConfigurator
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.Streams.ClusterClientSqsStreamConfigurator.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.Streams.ClusterClientSqsStreamConfigurator.#ctor(System.String,IClientBuilder)
+  commentId: M:Orleans.Streams.ClusterClientSqsStreamConfigurator.#ctor(System.String,IClientBuilder)
+  id: '#ctor(System.String,IClientBuilder)'
+  parent: Orleans.Streams.ClusterClientSqsStreamConfigurator
+  langs:
+  - csharp
+  - vb
+  name: ClusterClientSqsStreamConfigurator(String, IClientBuilder)
+  nameWithType: ClusterClientSqsStreamConfigurator.ClusterClientSqsStreamConfigurator(String, IClientBuilder)
+  fullName: Orleans.Streams.ClusterClientSqsStreamConfigurator.ClusterClientSqsStreamConfigurator(System.String, IClientBuilder)
+  type: Constructor
+  source:
+    remote:
+      path: src/AWS/Orleans.Streaming.SQS/Streams/SQSStreamBuilder.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/AWS/Orleans.Streaming.SQS/Streams/SQSStreamBuilder.cs
+    startLine: 44
+  assemblies:
+  - Orleans.Streaming.SQS
+  namespace: Orleans.Streams
+  syntax:
+    content: public ClusterClientSqsStreamConfigurator(string name, IClientBuilder builder)
+    parameters:
+    - id: name
+      type: System.String
+    - id: builder
+      type: IClientBuilder
+    content.vb: Public Sub New(name As String, builder As IClientBuilder)
+  overload: Orleans.Streams.ClusterClientSqsStreamConfigurator.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Streams.ClusterClientSqsStreamConfigurator.ConfigureSqs(Action{OptionsBuilder{Orleans.Configuration.SqsOptions}})
+  commentId: M:Orleans.Streams.ClusterClientSqsStreamConfigurator.ConfigureSqs(Action{OptionsBuilder{Orleans.Configuration.SqsOptions}})
+  id: ConfigureSqs(Action{OptionsBuilder{Orleans.Configuration.SqsOptions}})
+  parent: Orleans.Streams.ClusterClientSqsStreamConfigurator
+  langs:
+  - csharp
+  - vb
+  name: ConfigureSqs(Action<OptionsBuilder<SqsOptions>>)
+  nameWithType: ClusterClientSqsStreamConfigurator.ConfigureSqs(Action<OptionsBuilder<SqsOptions>>)
+  fullName: Orleans.Streams.ClusterClientSqsStreamConfigurator.ConfigureSqs(Action<OptionsBuilder<Orleans.Configuration.SqsOptions>>)
+  type: Method
+  source:
+    remote:
+      path: src/AWS/Orleans.Streaming.SQS/Streams/SQSStreamBuilder.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ConfigureSqs
+    path: src/AWS/Orleans.Streaming.SQS/Streams/SQSStreamBuilder.cs
+    startLine: 56
+  assemblies:
+  - Orleans.Streaming.SQS
+  namespace: Orleans.Streams
+  syntax:
+    content: public ClusterClientSqsStreamConfigurator ConfigureSqs(Action<OptionsBuilder<SqsOptions>> configureOptions)
+    parameters:
+    - id: configureOptions
+      type: Action{OptionsBuilder{Orleans.Configuration.SqsOptions}}
+    return:
+      type: Orleans.Streams.ClusterClientSqsStreamConfigurator
+    content.vb: Public Function ConfigureSqs(configureOptions As Action(Of OptionsBuilder(Of SqsOptions))) As ClusterClientSqsStreamConfigurator
+  overload: Orleans.Streams.ClusterClientSqsStreamConfigurator.ConfigureSqs*
+  nameWithType.vb: ClusterClientSqsStreamConfigurator.ConfigureSqs(Action(Of OptionsBuilder(Of SqsOptions)))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.Streams.ClusterClientSqsStreamConfigurator.ConfigureSqs(Action(Of OptionsBuilder(Of Orleans.Configuration.SqsOptions)))
+  name.vb: ConfigureSqs(Action(Of OptionsBuilder(Of SqsOptions)))
+- uid: Orleans.Streams.ClusterClientSqsStreamConfigurator.ConfigurePartitioning(System.Int32)
+  commentId: M:Orleans.Streams.ClusterClientSqsStreamConfigurator.ConfigurePartitioning(System.Int32)
+  id: ConfigurePartitioning(System.Int32)
+  parent: Orleans.Streams.ClusterClientSqsStreamConfigurator
+  langs:
+  - csharp
+  - vb
+  name: ConfigurePartitioning(Int32)
+  nameWithType: ClusterClientSqsStreamConfigurator.ConfigurePartitioning(Int32)
+  fullName: Orleans.Streams.ClusterClientSqsStreamConfigurator.ConfigurePartitioning(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/AWS/Orleans.Streaming.SQS/Streams/SQSStreamBuilder.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ConfigurePartitioning
+    path: src/AWS/Orleans.Streaming.SQS/Streams/SQSStreamBuilder.cs
+    startLine: 62
+  assemblies:
+  - Orleans.Streaming.SQS
+  namespace: Orleans.Streams
+  syntax:
+    content: public ClusterClientSqsStreamConfigurator ConfigurePartitioning(int numOfparitions = null)
+    parameters:
+    - id: numOfparitions
+      type: System.Int32
+    return:
+      type: Orleans.Streams.ClusterClientSqsStreamConfigurator
+    content.vb: Public Function ConfigurePartitioning(numOfparitions As Integer = Nothing) As ClusterClientSqsStreamConfigurator
+  overload: Orleans.Streams.ClusterClientSqsStreamConfigurator.ConfigurePartitioning*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans.Streams
+  commentId: N:Orleans.Streams
+  isExternal: false
+  name: Orleans.Streams
+  nameWithType: Orleans.Streams
+  fullName: Orleans.Streams
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Streams.ClusterClientSqsStreamConfigurator.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<ClusterClientSqsStreamConfigurator>()
+  nameWithType: ImmutableExt.AsImmutable<ClusterClientSqsStreamConfigurator>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Streams.ClusterClientSqsStreamConfigurator>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of ClusterClientSqsStreamConfigurator)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Streams.ClusterClientSqsStreamConfigurator)()
+  name.vb: AsImmutable(Of ClusterClientSqsStreamConfigurator)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<ClusterClientSqsStreamConfigurator>
+    nameWithType: ImmutableExt.AsImmutable<ClusterClientSqsStreamConfigurator>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Streams.ClusterClientSqsStreamConfigurator>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of ClusterClientSqsStreamConfigurator)
+    nameWithType: ImmutableExt.AsImmutable(Of ClusterClientSqsStreamConfigurator)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Streams.ClusterClientSqsStreamConfigurator)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Streams.ClusterClientSqsStreamConfigurator.#ctor*
+  commentId: Overload:Orleans.Streams.ClusterClientSqsStreamConfigurator.#ctor
+  isExternal: false
+  name: ClusterClientSqsStreamConfigurator
+  nameWithType: ClusterClientSqsStreamConfigurator.ClusterClientSqsStreamConfigurator
+  fullName: Orleans.Streams.ClusterClientSqsStreamConfigurator.ClusterClientSqsStreamConfigurator
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: IClientBuilder
+  isExternal: true
+  name: IClientBuilder
+  nameWithType: IClientBuilder
+  fullName: IClientBuilder
+- uid: Orleans.Streams.ClusterClientSqsStreamConfigurator.ConfigureSqs*
+  commentId: Overload:Orleans.Streams.ClusterClientSqsStreamConfigurator.ConfigureSqs
+  isExternal: false
+  name: ConfigureSqs
+  nameWithType: ClusterClientSqsStreamConfigurator.ConfigureSqs
+  fullName: Orleans.Streams.ClusterClientSqsStreamConfigurator.ConfigureSqs
+- uid: Action{OptionsBuilder{Orleans.Configuration.SqsOptions}}
+  commentId: '!:Action{OptionsBuilder{Orleans.Configuration.SqsOptions}}'
+  definition: Action`1
+  name: Action<OptionsBuilder<SqsOptions>>
+  nameWithType: Action<OptionsBuilder<SqsOptions>>
+  fullName: Action<OptionsBuilder<Orleans.Configuration.SqsOptions>>
+  nameWithType.vb: Action(Of OptionsBuilder(Of SqsOptions))
+  fullName.vb: Action(Of OptionsBuilder(Of Orleans.Configuration.SqsOptions))
+  name.vb: Action(Of OptionsBuilder(Of SqsOptions))
+  spec.csharp:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: OptionsBuilder`1
+    name: OptionsBuilder
+    nameWithType: OptionsBuilder
+    fullName: OptionsBuilder
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Orleans.Configuration.SqsOptions
+    name: SqsOptions
+    nameWithType: SqsOptions
+    fullName: Orleans.Configuration.SqsOptions
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: OptionsBuilder`1
+    name: OptionsBuilder
+    nameWithType: OptionsBuilder
+    fullName: OptionsBuilder
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Orleans.Configuration.SqsOptions
+    name: SqsOptions
+    nameWithType: SqsOptions
+    fullName: Orleans.Configuration.SqsOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Streams.ClusterClientSqsStreamConfigurator
+  commentId: T:Orleans.Streams.ClusterClientSqsStreamConfigurator
+  parent: Orleans.Streams
+  isExternal: false
+  name: ClusterClientSqsStreamConfigurator
+  nameWithType: ClusterClientSqsStreamConfigurator
+  fullName: Orleans.Streams.ClusterClientSqsStreamConfigurator
+- uid: Action`1
+  isExternal: true
+  name: Action<>
+  nameWithType: Action<>
+  fullName: Action<>
+  nameWithType.vb: Action(Of )
+  fullName.vb: Action(Of )
+  name.vb: Action(Of )
+  spec.csharp:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Streams.ClusterClientSqsStreamConfigurator.ConfigurePartitioning*
+  commentId: Overload:Orleans.Streams.ClusterClientSqsStreamConfigurator.ConfigurePartitioning
+  isExternal: false
+  name: ConfigurePartitioning
+  nameWithType: ClusterClientSqsStreamConfigurator.ConfigurePartitioning
+  fullName: Orleans.Streams.ClusterClientSqsStreamConfigurator.ConfigurePartitioning
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32

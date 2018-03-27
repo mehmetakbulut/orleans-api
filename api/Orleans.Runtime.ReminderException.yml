@@ -1,0 +1,246 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Runtime.ReminderException
+  commentId: T:Orleans.Runtime.ReminderException
+  id: ReminderException
+  parent: Orleans.Runtime
+  children:
+  - Orleans.Runtime.ReminderException.#ctor(SerializationInfo,StreamingContext)
+  - Orleans.Runtime.ReminderException.#ctor(System.String)
+  langs:
+  - csharp
+  - vb
+  name: ReminderException
+  nameWithType: ReminderException
+  fullName: Orleans.Runtime.ReminderException
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Timers/IRemindable.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ReminderException
+    path: src/Orleans.Core.Abstractions/Timers/IRemindable.cs
+    startLine: 79
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  summary: "\nException related to Orleans Reminder functions or Reminder service.\n"
+  example: []
+  syntax:
+    content: 'public class ReminderException : OrleansException'
+    content.vb: >-
+      Public Class ReminderException
+
+          Inherits OrleansException
+  inheritance:
+  - System.Object
+  - Orleans.Runtime.OrleansException
+  extensionMethods:
+  - Orleans.Runtime.ReminderException.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.Runtime.ReminderException.#ctor(System.String)
+  commentId: M:Orleans.Runtime.ReminderException.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Orleans.Runtime.ReminderException
+  langs:
+  - csharp
+  - vb
+  name: ReminderException(String)
+  nameWithType: ReminderException.ReminderException(String)
+  fullName: Orleans.Runtime.ReminderException.ReminderException(System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Timers/IRemindable.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Core.Abstractions/Timers/IRemindable.cs
+    startLine: 82
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  syntax:
+    content: public ReminderException(string msg)
+    parameters:
+    - id: msg
+      type: System.String
+    content.vb: Public Sub New(msg As String)
+  overload: Orleans.Runtime.ReminderException.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.ReminderException.#ctor(SerializationInfo,StreamingContext)
+  commentId: M:Orleans.Runtime.ReminderException.#ctor(SerializationInfo,StreamingContext)
+  id: '#ctor(SerializationInfo,StreamingContext)'
+  parent: Orleans.Runtime.ReminderException
+  langs:
+  - csharp
+  - vb
+  name: ReminderException(SerializationInfo, StreamingContext)
+  nameWithType: ReminderException.ReminderException(SerializationInfo, StreamingContext)
+  fullName: Orleans.Runtime.ReminderException.ReminderException(SerializationInfo, StreamingContext)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Timers/IRemindable.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Core.Abstractions/Timers/IRemindable.cs
+    startLine: 84
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  syntax:
+    content: public ReminderException(SerializationInfo info, StreamingContext context)
+    parameters:
+    - id: info
+      type: SerializationInfo
+    - id: context
+      type: StreamingContext
+    content.vb: Public Sub New(info As SerializationInfo, context As StreamingContext)
+  overload: Orleans.Runtime.ReminderException.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans.Runtime
+  commentId: N:Orleans.Runtime
+  isExternal: false
+  name: Orleans.Runtime
+  nameWithType: Orleans.Runtime
+  fullName: Orleans.Runtime
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Runtime.OrleansException
+  commentId: T:Orleans.Runtime.OrleansException
+  parent: Orleans.Runtime
+  isExternal: false
+  name: OrleansException
+  nameWithType: OrleansException
+  fullName: Orleans.Runtime.OrleansException
+- uid: Orleans.Runtime.ReminderException.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<ReminderException>()
+  nameWithType: ImmutableExt.AsImmutable<ReminderException>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.ReminderException>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of ReminderException)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.ReminderException)()
+  name.vb: AsImmutable(Of ReminderException)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<ReminderException>
+    nameWithType: ImmutableExt.AsImmutable<ReminderException>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.ReminderException>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of ReminderException)
+    nameWithType: ImmutableExt.AsImmutable(Of ReminderException)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.ReminderException)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Runtime.ReminderException.#ctor*
+  commentId: Overload:Orleans.Runtime.ReminderException.#ctor
+  isExternal: false
+  name: ReminderException
+  nameWithType: ReminderException.ReminderException
+  fullName: Orleans.Runtime.ReminderException.ReminderException
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: SerializationInfo
+  isExternal: true
+  name: SerializationInfo
+  nameWithType: SerializationInfo
+  fullName: SerializationInfo
+- uid: StreamingContext
+  isExternal: true
+  name: StreamingContext
+  nameWithType: StreamingContext
+  fullName: StreamingContext

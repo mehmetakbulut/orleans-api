@@ -1,0 +1,631 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Hosting.DynamoDBSiloBuilderExtensions
+  commentId: T:Orleans.Hosting.DynamoDBSiloBuilderExtensions
+  id: DynamoDBSiloBuilderExtensions
+  parent: Orleans.Hosting
+  children:
+  - Orleans.Hosting.DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorage(IServiceCollection,System.String,Action{OptionsBuilder{Orleans.Configuration.DynamoDBStorageOptions}})
+  - Orleans.Hosting.DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorage(IServiceCollection,System.String,Action{Orleans.Configuration.DynamoDBStorageOptions})
+  - Orleans.Hosting.DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorage(ISiloHostBuilder,System.String,Action{OptionsBuilder{Orleans.Configuration.DynamoDBStorageOptions}})
+  - Orleans.Hosting.DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorage(ISiloHostBuilder,System.String,Action{Orleans.Configuration.DynamoDBStorageOptions})
+  - Orleans.Hosting.DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorageAsDefault(IServiceCollection,Action{OptionsBuilder{Orleans.Configuration.DynamoDBStorageOptions}})
+  - Orleans.Hosting.DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorageAsDefault(IServiceCollection,Action{Orleans.Configuration.DynamoDBStorageOptions})
+  - Orleans.Hosting.DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorageAsDefault(ISiloHostBuilder,Action{OptionsBuilder{Orleans.Configuration.DynamoDBStorageOptions}})
+  - Orleans.Hosting.DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorageAsDefault(ISiloHostBuilder,Action{Orleans.Configuration.DynamoDBStorageOptions})
+  langs:
+  - csharp
+  - vb
+  name: DynamoDBSiloBuilderExtensions
+  nameWithType: DynamoDBSiloBuilderExtensions
+  fullName: Orleans.Hosting.DynamoDBSiloBuilderExtensions
+  type: Class
+  source:
+    remote:
+      path: src/AWS/Orleans.Persistence.DynamoDB/Hosting/DynamoDBSiloBuilderExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: DynamoDBSiloBuilderExtensions
+    path: src/AWS/Orleans.Persistence.DynamoDB/Hosting/DynamoDBSiloBuilderExtensions.cs
+    startLine: 11
+  assemblies:
+  - Orleans.Persistence.DynamoDB
+  namespace: Orleans.Hosting
+  syntax:
+    content: 'public static class DynamoDBSiloBuilderExtensions : object'
+    content.vb: >-
+      Public Module DynamoDBSiloBuilderExtensions
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Orleans.Hosting.DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorageAsDefault(ISiloHostBuilder,Action{Orleans.Configuration.DynamoDBStorageOptions})
+  commentId: M:Orleans.Hosting.DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorageAsDefault(ISiloHostBuilder,Action{Orleans.Configuration.DynamoDBStorageOptions})
+  id: AddDynamoDBGrainStorageAsDefault(ISiloHostBuilder,Action{Orleans.Configuration.DynamoDBStorageOptions})
+  isExtensionMethod: true
+  parent: Orleans.Hosting.DynamoDBSiloBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddDynamoDBGrainStorageAsDefault(ISiloHostBuilder, Action<DynamoDBStorageOptions>)
+  nameWithType: DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorageAsDefault(ISiloHostBuilder, Action<DynamoDBStorageOptions>)
+  fullName: Orleans.Hosting.DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorageAsDefault(ISiloHostBuilder, Action<Orleans.Configuration.DynamoDBStorageOptions>)
+  type: Method
+  source:
+    remote:
+      path: src/AWS/Orleans.Persistence.DynamoDB/Hosting/DynamoDBSiloBuilderExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AddDynamoDBGrainStorageAsDefault
+    path: src/AWS/Orleans.Persistence.DynamoDB/Hosting/DynamoDBSiloBuilderExtensions.cs
+    startLine: 16
+  assemblies:
+  - Orleans.Persistence.DynamoDB
+  namespace: Orleans.Hosting
+  summary: "\nConfigure silo to use AWS DynamoDB storage as the default grain storage.\n"
+  example: []
+  syntax:
+    content: public static ISiloHostBuilder AddDynamoDBGrainStorageAsDefault(this ISiloHostBuilder builder, Action<DynamoDBStorageOptions> configureOptions)
+    parameters:
+    - id: builder
+      type: ISiloHostBuilder
+    - id: configureOptions
+      type: Action{Orleans.Configuration.DynamoDBStorageOptions}
+    return:
+      type: ISiloHostBuilder
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AddDynamoDBGrainStorageAsDefault(builder As ISiloHostBuilder, configureOptions As Action(Of DynamoDBStorageOptions)) As ISiloHostBuilder
+  overload: Orleans.Hosting.DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorageAsDefault*
+  nameWithType.vb: DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorageAsDefault(ISiloHostBuilder, Action(Of DynamoDBStorageOptions))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.Hosting.DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorageAsDefault(ISiloHostBuilder, Action(Of Orleans.Configuration.DynamoDBStorageOptions))
+  name.vb: AddDynamoDBGrainStorageAsDefault(ISiloHostBuilder, Action(Of DynamoDBStorageOptions))
+- uid: Orleans.Hosting.DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorage(ISiloHostBuilder,System.String,Action{Orleans.Configuration.DynamoDBStorageOptions})
+  commentId: M:Orleans.Hosting.DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorage(ISiloHostBuilder,System.String,Action{Orleans.Configuration.DynamoDBStorageOptions})
+  id: AddDynamoDBGrainStorage(ISiloHostBuilder,System.String,Action{Orleans.Configuration.DynamoDBStorageOptions})
+  isExtensionMethod: true
+  parent: Orleans.Hosting.DynamoDBSiloBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddDynamoDBGrainStorage(ISiloHostBuilder, String, Action<DynamoDBStorageOptions>)
+  nameWithType: DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorage(ISiloHostBuilder, String, Action<DynamoDBStorageOptions>)
+  fullName: Orleans.Hosting.DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorage(ISiloHostBuilder, System.String, Action<Orleans.Configuration.DynamoDBStorageOptions>)
+  type: Method
+  source:
+    remote:
+      path: src/AWS/Orleans.Persistence.DynamoDB/Hosting/DynamoDBSiloBuilderExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AddDynamoDBGrainStorage
+    path: src/AWS/Orleans.Persistence.DynamoDB/Hosting/DynamoDBSiloBuilderExtensions.cs
+    startLine: 24
+  assemblies:
+  - Orleans.Persistence.DynamoDB
+  namespace: Orleans.Hosting
+  summary: "\nConfigure silo to use AWS DynamoDB storage for grain storage.\n"
+  example: []
+  syntax:
+    content: public static ISiloHostBuilder AddDynamoDBGrainStorage(this ISiloHostBuilder builder, string name, Action<DynamoDBStorageOptions> configureOptions)
+    parameters:
+    - id: builder
+      type: ISiloHostBuilder
+    - id: name
+      type: System.String
+    - id: configureOptions
+      type: Action{Orleans.Configuration.DynamoDBStorageOptions}
+    return:
+      type: ISiloHostBuilder
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AddDynamoDBGrainStorage(builder As ISiloHostBuilder, name As String, configureOptions As Action(Of DynamoDBStorageOptions)) As ISiloHostBuilder
+  overload: Orleans.Hosting.DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorage*
+  nameWithType.vb: DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorage(ISiloHostBuilder, String, Action(Of DynamoDBStorageOptions))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.Hosting.DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorage(ISiloHostBuilder, System.String, Action(Of Orleans.Configuration.DynamoDBStorageOptions))
+  name.vb: AddDynamoDBGrainStorage(ISiloHostBuilder, String, Action(Of DynamoDBStorageOptions))
+- uid: Orleans.Hosting.DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorageAsDefault(ISiloHostBuilder,Action{OptionsBuilder{Orleans.Configuration.DynamoDBStorageOptions}})
+  commentId: M:Orleans.Hosting.DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorageAsDefault(ISiloHostBuilder,Action{OptionsBuilder{Orleans.Configuration.DynamoDBStorageOptions}})
+  id: AddDynamoDBGrainStorageAsDefault(ISiloHostBuilder,Action{OptionsBuilder{Orleans.Configuration.DynamoDBStorageOptions}})
+  isExtensionMethod: true
+  parent: Orleans.Hosting.DynamoDBSiloBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddDynamoDBGrainStorageAsDefault(ISiloHostBuilder, Action<OptionsBuilder<DynamoDBStorageOptions>>)
+  nameWithType: DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorageAsDefault(ISiloHostBuilder, Action<OptionsBuilder<DynamoDBStorageOptions>>)
+  fullName: Orleans.Hosting.DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorageAsDefault(ISiloHostBuilder, Action<OptionsBuilder<Orleans.Configuration.DynamoDBStorageOptions>>)
+  type: Method
+  source:
+    remote:
+      path: src/AWS/Orleans.Persistence.DynamoDB/Hosting/DynamoDBSiloBuilderExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AddDynamoDBGrainStorageAsDefault
+    path: src/AWS/Orleans.Persistence.DynamoDB/Hosting/DynamoDBSiloBuilderExtensions.cs
+    startLine: 32
+  assemblies:
+  - Orleans.Persistence.DynamoDB
+  namespace: Orleans.Hosting
+  summary: "\nConfigure silo to use AWS DynamoDB storage as the default grain storage.\n"
+  example: []
+  syntax:
+    content: public static ISiloHostBuilder AddDynamoDBGrainStorageAsDefault(this ISiloHostBuilder builder, Action<OptionsBuilder<DynamoDBStorageOptions>> configureOptions = null)
+    parameters:
+    - id: builder
+      type: ISiloHostBuilder
+    - id: configureOptions
+      type: Action{OptionsBuilder{Orleans.Configuration.DynamoDBStorageOptions}}
+    return:
+      type: ISiloHostBuilder
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AddDynamoDBGrainStorageAsDefault(builder As ISiloHostBuilder, configureOptions As Action(Of OptionsBuilder(Of DynamoDBStorageOptions)) = Nothing) As ISiloHostBuilder
+  overload: Orleans.Hosting.DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorageAsDefault*
+  nameWithType.vb: DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorageAsDefault(ISiloHostBuilder, Action(Of OptionsBuilder(Of DynamoDBStorageOptions)))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.Hosting.DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorageAsDefault(ISiloHostBuilder, Action(Of OptionsBuilder(Of Orleans.Configuration.DynamoDBStorageOptions)))
+  name.vb: AddDynamoDBGrainStorageAsDefault(ISiloHostBuilder, Action(Of OptionsBuilder(Of DynamoDBStorageOptions)))
+- uid: Orleans.Hosting.DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorage(ISiloHostBuilder,System.String,Action{OptionsBuilder{Orleans.Configuration.DynamoDBStorageOptions}})
+  commentId: M:Orleans.Hosting.DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorage(ISiloHostBuilder,System.String,Action{OptionsBuilder{Orleans.Configuration.DynamoDBStorageOptions}})
+  id: AddDynamoDBGrainStorage(ISiloHostBuilder,System.String,Action{OptionsBuilder{Orleans.Configuration.DynamoDBStorageOptions}})
+  isExtensionMethod: true
+  parent: Orleans.Hosting.DynamoDBSiloBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddDynamoDBGrainStorage(ISiloHostBuilder, String, Action<OptionsBuilder<DynamoDBStorageOptions>>)
+  nameWithType: DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorage(ISiloHostBuilder, String, Action<OptionsBuilder<DynamoDBStorageOptions>>)
+  fullName: Orleans.Hosting.DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorage(ISiloHostBuilder, System.String, Action<OptionsBuilder<Orleans.Configuration.DynamoDBStorageOptions>>)
+  type: Method
+  source:
+    remote:
+      path: src/AWS/Orleans.Persistence.DynamoDB/Hosting/DynamoDBSiloBuilderExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AddDynamoDBGrainStorage
+    path: src/AWS/Orleans.Persistence.DynamoDB/Hosting/DynamoDBSiloBuilderExtensions.cs
+    startLine: 40
+  assemblies:
+  - Orleans.Persistence.DynamoDB
+  namespace: Orleans.Hosting
+  summary: "\nConfigure silo to use AWS DynamoDB storage for grain storage.\n"
+  example: []
+  syntax:
+    content: public static ISiloHostBuilder AddDynamoDBGrainStorage(this ISiloHostBuilder builder, string name, Action<OptionsBuilder<DynamoDBStorageOptions>> configureOptions = null)
+    parameters:
+    - id: builder
+      type: ISiloHostBuilder
+    - id: name
+      type: System.String
+    - id: configureOptions
+      type: Action{OptionsBuilder{Orleans.Configuration.DynamoDBStorageOptions}}
+    return:
+      type: ISiloHostBuilder
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AddDynamoDBGrainStorage(builder As ISiloHostBuilder, name As String, configureOptions As Action(Of OptionsBuilder(Of DynamoDBStorageOptions)) = Nothing) As ISiloHostBuilder
+  overload: Orleans.Hosting.DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorage*
+  nameWithType.vb: DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorage(ISiloHostBuilder, String, Action(Of OptionsBuilder(Of DynamoDBStorageOptions)))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.Hosting.DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorage(ISiloHostBuilder, System.String, Action(Of OptionsBuilder(Of Orleans.Configuration.DynamoDBStorageOptions)))
+  name.vb: AddDynamoDBGrainStorage(ISiloHostBuilder, String, Action(Of OptionsBuilder(Of DynamoDBStorageOptions)))
+- uid: Orleans.Hosting.DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorageAsDefault(IServiceCollection,Action{Orleans.Configuration.DynamoDBStorageOptions})
+  commentId: M:Orleans.Hosting.DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorageAsDefault(IServiceCollection,Action{Orleans.Configuration.DynamoDBStorageOptions})
+  id: AddDynamoDBGrainStorageAsDefault(IServiceCollection,Action{Orleans.Configuration.DynamoDBStorageOptions})
+  isExtensionMethod: true
+  parent: Orleans.Hosting.DynamoDBSiloBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddDynamoDBGrainStorageAsDefault(IServiceCollection, Action<DynamoDBStorageOptions>)
+  nameWithType: DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorageAsDefault(IServiceCollection, Action<DynamoDBStorageOptions>)
+  fullName: Orleans.Hosting.DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorageAsDefault(IServiceCollection, Action<Orleans.Configuration.DynamoDBStorageOptions>)
+  type: Method
+  source:
+    remote:
+      path: src/AWS/Orleans.Persistence.DynamoDB/Hosting/DynamoDBSiloBuilderExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AddDynamoDBGrainStorageAsDefault
+    path: src/AWS/Orleans.Persistence.DynamoDB/Hosting/DynamoDBSiloBuilderExtensions.cs
+    startLine: 48
+  assemblies:
+  - Orleans.Persistence.DynamoDB
+  namespace: Orleans.Hosting
+  summary: "\nConfigure silo to use AWS DynamoDB storage as the default grain storage.\n"
+  example: []
+  syntax:
+    content: public static IServiceCollection AddDynamoDBGrainStorageAsDefault(this IServiceCollection services, Action<DynamoDBStorageOptions> configureOptions)
+    parameters:
+    - id: services
+      type: IServiceCollection
+    - id: configureOptions
+      type: Action{Orleans.Configuration.DynamoDBStorageOptions}
+    return:
+      type: IServiceCollection
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AddDynamoDBGrainStorageAsDefault(services As IServiceCollection, configureOptions As Action(Of DynamoDBStorageOptions)) As IServiceCollection
+  overload: Orleans.Hosting.DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorageAsDefault*
+  nameWithType.vb: DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorageAsDefault(IServiceCollection, Action(Of DynamoDBStorageOptions))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.Hosting.DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorageAsDefault(IServiceCollection, Action(Of Orleans.Configuration.DynamoDBStorageOptions))
+  name.vb: AddDynamoDBGrainStorageAsDefault(IServiceCollection, Action(Of DynamoDBStorageOptions))
+- uid: Orleans.Hosting.DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorage(IServiceCollection,System.String,Action{Orleans.Configuration.DynamoDBStorageOptions})
+  commentId: M:Orleans.Hosting.DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorage(IServiceCollection,System.String,Action{Orleans.Configuration.DynamoDBStorageOptions})
+  id: AddDynamoDBGrainStorage(IServiceCollection,System.String,Action{Orleans.Configuration.DynamoDBStorageOptions})
+  isExtensionMethod: true
+  parent: Orleans.Hosting.DynamoDBSiloBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddDynamoDBGrainStorage(IServiceCollection, String, Action<DynamoDBStorageOptions>)
+  nameWithType: DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorage(IServiceCollection, String, Action<DynamoDBStorageOptions>)
+  fullName: Orleans.Hosting.DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorage(IServiceCollection, System.String, Action<Orleans.Configuration.DynamoDBStorageOptions>)
+  type: Method
+  source:
+    remote:
+      path: src/AWS/Orleans.Persistence.DynamoDB/Hosting/DynamoDBSiloBuilderExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AddDynamoDBGrainStorage
+    path: src/AWS/Orleans.Persistence.DynamoDB/Hosting/DynamoDBSiloBuilderExtensions.cs
+    startLine: 56
+  assemblies:
+  - Orleans.Persistence.DynamoDB
+  namespace: Orleans.Hosting
+  summary: "\nConfigure silo to use AWS DynamoDB storage for grain storage.\n"
+  example: []
+  syntax:
+    content: public static IServiceCollection AddDynamoDBGrainStorage(this IServiceCollection services, string name, Action<DynamoDBStorageOptions> configureOptions)
+    parameters:
+    - id: services
+      type: IServiceCollection
+    - id: name
+      type: System.String
+    - id: configureOptions
+      type: Action{Orleans.Configuration.DynamoDBStorageOptions}
+    return:
+      type: IServiceCollection
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AddDynamoDBGrainStorage(services As IServiceCollection, name As String, configureOptions As Action(Of DynamoDBStorageOptions)) As IServiceCollection
+  overload: Orleans.Hosting.DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorage*
+  nameWithType.vb: DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorage(IServiceCollection, String, Action(Of DynamoDBStorageOptions))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.Hosting.DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorage(IServiceCollection, System.String, Action(Of Orleans.Configuration.DynamoDBStorageOptions))
+  name.vb: AddDynamoDBGrainStorage(IServiceCollection, String, Action(Of DynamoDBStorageOptions))
+- uid: Orleans.Hosting.DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorageAsDefault(IServiceCollection,Action{OptionsBuilder{Orleans.Configuration.DynamoDBStorageOptions}})
+  commentId: M:Orleans.Hosting.DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorageAsDefault(IServiceCollection,Action{OptionsBuilder{Orleans.Configuration.DynamoDBStorageOptions}})
+  id: AddDynamoDBGrainStorageAsDefault(IServiceCollection,Action{OptionsBuilder{Orleans.Configuration.DynamoDBStorageOptions}})
+  isExtensionMethod: true
+  parent: Orleans.Hosting.DynamoDBSiloBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddDynamoDBGrainStorageAsDefault(IServiceCollection, Action<OptionsBuilder<DynamoDBStorageOptions>>)
+  nameWithType: DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorageAsDefault(IServiceCollection, Action<OptionsBuilder<DynamoDBStorageOptions>>)
+  fullName: Orleans.Hosting.DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorageAsDefault(IServiceCollection, Action<OptionsBuilder<Orleans.Configuration.DynamoDBStorageOptions>>)
+  type: Method
+  source:
+    remote:
+      path: src/AWS/Orleans.Persistence.DynamoDB/Hosting/DynamoDBSiloBuilderExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AddDynamoDBGrainStorageAsDefault
+    path: src/AWS/Orleans.Persistence.DynamoDB/Hosting/DynamoDBSiloBuilderExtensions.cs
+    startLine: 64
+  assemblies:
+  - Orleans.Persistence.DynamoDB
+  namespace: Orleans.Hosting
+  summary: "\nConfigure silo to use AWS DynamoDB storage as the default grain storage.\n"
+  example: []
+  syntax:
+    content: public static IServiceCollection AddDynamoDBGrainStorageAsDefault(this IServiceCollection services, Action<OptionsBuilder<DynamoDBStorageOptions>> configureOptions = null)
+    parameters:
+    - id: services
+      type: IServiceCollection
+    - id: configureOptions
+      type: Action{OptionsBuilder{Orleans.Configuration.DynamoDBStorageOptions}}
+    return:
+      type: IServiceCollection
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AddDynamoDBGrainStorageAsDefault(services As IServiceCollection, configureOptions As Action(Of OptionsBuilder(Of DynamoDBStorageOptions)) = Nothing) As IServiceCollection
+  overload: Orleans.Hosting.DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorageAsDefault*
+  nameWithType.vb: DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorageAsDefault(IServiceCollection, Action(Of OptionsBuilder(Of DynamoDBStorageOptions)))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.Hosting.DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorageAsDefault(IServiceCollection, Action(Of OptionsBuilder(Of Orleans.Configuration.DynamoDBStorageOptions)))
+  name.vb: AddDynamoDBGrainStorageAsDefault(IServiceCollection, Action(Of OptionsBuilder(Of DynamoDBStorageOptions)))
+- uid: Orleans.Hosting.DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorage(IServiceCollection,System.String,Action{OptionsBuilder{Orleans.Configuration.DynamoDBStorageOptions}})
+  commentId: M:Orleans.Hosting.DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorage(IServiceCollection,System.String,Action{OptionsBuilder{Orleans.Configuration.DynamoDBStorageOptions}})
+  id: AddDynamoDBGrainStorage(IServiceCollection,System.String,Action{OptionsBuilder{Orleans.Configuration.DynamoDBStorageOptions}})
+  isExtensionMethod: true
+  parent: Orleans.Hosting.DynamoDBSiloBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddDynamoDBGrainStorage(IServiceCollection, String, Action<OptionsBuilder<DynamoDBStorageOptions>>)
+  nameWithType: DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorage(IServiceCollection, String, Action<OptionsBuilder<DynamoDBStorageOptions>>)
+  fullName: Orleans.Hosting.DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorage(IServiceCollection, System.String, Action<OptionsBuilder<Orleans.Configuration.DynamoDBStorageOptions>>)
+  type: Method
+  source:
+    remote:
+      path: src/AWS/Orleans.Persistence.DynamoDB/Hosting/DynamoDBSiloBuilderExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AddDynamoDBGrainStorage
+    path: src/AWS/Orleans.Persistence.DynamoDB/Hosting/DynamoDBSiloBuilderExtensions.cs
+    startLine: 72
+  assemblies:
+  - Orleans.Persistence.DynamoDB
+  namespace: Orleans.Hosting
+  summary: "\nConfigure silo to use AWS DynamoDB storage for grain storage.\n"
+  example: []
+  syntax:
+    content: public static IServiceCollection AddDynamoDBGrainStorage(this IServiceCollection services, string name, Action<OptionsBuilder<DynamoDBStorageOptions>> configureOptions = null)
+    parameters:
+    - id: services
+      type: IServiceCollection
+    - id: name
+      type: System.String
+    - id: configureOptions
+      type: Action{OptionsBuilder{Orleans.Configuration.DynamoDBStorageOptions}}
+    return:
+      type: IServiceCollection
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AddDynamoDBGrainStorage(services As IServiceCollection, name As String, configureOptions As Action(Of OptionsBuilder(Of DynamoDBStorageOptions)) = Nothing) As IServiceCollection
+  overload: Orleans.Hosting.DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorage*
+  nameWithType.vb: DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorage(IServiceCollection, String, Action(Of OptionsBuilder(Of DynamoDBStorageOptions)))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.Hosting.DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorage(IServiceCollection, System.String, Action(Of OptionsBuilder(Of Orleans.Configuration.DynamoDBStorageOptions)))
+  name.vb: AddDynamoDBGrainStorage(IServiceCollection, String, Action(Of OptionsBuilder(Of DynamoDBStorageOptions)))
+references:
+- uid: Orleans.Hosting
+  commentId: N:Orleans.Hosting
+  isExternal: false
+  name: Orleans.Hosting
+  nameWithType: Orleans.Hosting
+  fullName: Orleans.Hosting
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Hosting.DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorageAsDefault*
+  commentId: Overload:Orleans.Hosting.DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorageAsDefault
+  isExternal: false
+  name: AddDynamoDBGrainStorageAsDefault
+  nameWithType: DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorageAsDefault
+  fullName: Orleans.Hosting.DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorageAsDefault
+- uid: ISiloHostBuilder
+  isExternal: true
+  name: ISiloHostBuilder
+  nameWithType: ISiloHostBuilder
+  fullName: ISiloHostBuilder
+- uid: Action{Orleans.Configuration.DynamoDBStorageOptions}
+  commentId: '!:Action{Orleans.Configuration.DynamoDBStorageOptions}'
+  definition: Action`1
+  name: Action<DynamoDBStorageOptions>
+  nameWithType: Action<DynamoDBStorageOptions>
+  fullName: Action<Orleans.Configuration.DynamoDBStorageOptions>
+  nameWithType.vb: Action(Of DynamoDBStorageOptions)
+  fullName.vb: Action(Of Orleans.Configuration.DynamoDBStorageOptions)
+  name.vb: Action(Of DynamoDBStorageOptions)
+  spec.csharp:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Orleans.Configuration.DynamoDBStorageOptions
+    name: DynamoDBStorageOptions
+    nameWithType: DynamoDBStorageOptions
+    fullName: Orleans.Configuration.DynamoDBStorageOptions
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Orleans.Configuration.DynamoDBStorageOptions
+    name: DynamoDBStorageOptions
+    nameWithType: DynamoDBStorageOptions
+    fullName: Orleans.Configuration.DynamoDBStorageOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Action`1
+  isExternal: true
+  name: Action<>
+  nameWithType: Action<>
+  fullName: Action<>
+  nameWithType.vb: Action(Of )
+  fullName.vb: Action(Of )
+  name.vb: Action(Of )
+  spec.csharp:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Hosting.DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorage*
+  commentId: Overload:Orleans.Hosting.DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorage
+  isExternal: false
+  name: AddDynamoDBGrainStorage
+  nameWithType: DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorage
+  fullName: Orleans.Hosting.DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorage
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Action{OptionsBuilder{Orleans.Configuration.DynamoDBStorageOptions}}
+  commentId: '!:Action{OptionsBuilder{Orleans.Configuration.DynamoDBStorageOptions}}'
+  definition: Action`1
+  name: Action<OptionsBuilder<DynamoDBStorageOptions>>
+  nameWithType: Action<OptionsBuilder<DynamoDBStorageOptions>>
+  fullName: Action<OptionsBuilder<Orleans.Configuration.DynamoDBStorageOptions>>
+  nameWithType.vb: Action(Of OptionsBuilder(Of DynamoDBStorageOptions))
+  fullName.vb: Action(Of OptionsBuilder(Of Orleans.Configuration.DynamoDBStorageOptions))
+  name.vb: Action(Of OptionsBuilder(Of DynamoDBStorageOptions))
+  spec.csharp:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: OptionsBuilder`1
+    name: OptionsBuilder
+    nameWithType: OptionsBuilder
+    fullName: OptionsBuilder
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Orleans.Configuration.DynamoDBStorageOptions
+    name: DynamoDBStorageOptions
+    nameWithType: DynamoDBStorageOptions
+    fullName: Orleans.Configuration.DynamoDBStorageOptions
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: OptionsBuilder`1
+    name: OptionsBuilder
+    nameWithType: OptionsBuilder
+    fullName: OptionsBuilder
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Orleans.Configuration.DynamoDBStorageOptions
+    name: DynamoDBStorageOptions
+    nameWithType: DynamoDBStorageOptions
+    fullName: Orleans.Configuration.DynamoDBStorageOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IServiceCollection
+  isExternal: true
+  name: IServiceCollection
+  nameWithType: IServiceCollection
+  fullName: IServiceCollection

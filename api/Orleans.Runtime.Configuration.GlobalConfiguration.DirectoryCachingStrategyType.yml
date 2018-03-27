@@ -1,0 +1,239 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.DirectoryCachingStrategyType
+  commentId: T:Orleans.Runtime.Configuration.GlobalConfiguration.DirectoryCachingStrategyType
+  id: GlobalConfiguration.DirectoryCachingStrategyType
+  parent: Orleans.Runtime.Configuration
+  children:
+  - Orleans.Runtime.Configuration.GlobalConfiguration.DirectoryCachingStrategyType.Adaptive
+  - Orleans.Runtime.Configuration.GlobalConfiguration.DirectoryCachingStrategyType.LRU
+  - Orleans.Runtime.Configuration.GlobalConfiguration.DirectoryCachingStrategyType.None
+  langs:
+  - csharp
+  - vb
+  name: GlobalConfiguration.DirectoryCachingStrategyType
+  nameWithType: GlobalConfiguration.DirectoryCachingStrategyType
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.DirectoryCachingStrategyType
+  type: Enum
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: DirectoryCachingStrategyType
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 128
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nConfiguration type that controls the type of the grain directory caching algorithm that silo use.\n"
+  example: []
+  syntax:
+    content: 'public enum DirectoryCachingStrategyType : int'
+    content.vb: Public Enum DirectoryCachingStrategyType As Integer
+  extensionMethods:
+  - Orleans.Runtime.Configuration.GlobalConfiguration.DirectoryCachingStrategyType.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.DirectoryCachingStrategyType.None
+  commentId: F:Orleans.Runtime.Configuration.GlobalConfiguration.DirectoryCachingStrategyType.None
+  id: None
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration.DirectoryCachingStrategyType
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: GlobalConfiguration.DirectoryCachingStrategyType.None
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.DirectoryCachingStrategyType.None
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: None
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 131
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: Don&apos;t cache.
+  example: []
+  syntax:
+    content: None = 0
+    return:
+      type: Orleans.Runtime.Configuration.GlobalConfiguration.DirectoryCachingStrategyType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.DirectoryCachingStrategyType.LRU
+  commentId: F:Orleans.Runtime.Configuration.GlobalConfiguration.DirectoryCachingStrategyType.LRU
+  id: LRU
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration.DirectoryCachingStrategyType
+  langs:
+  - csharp
+  - vb
+  name: LRU
+  nameWithType: GlobalConfiguration.DirectoryCachingStrategyType.LRU
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.DirectoryCachingStrategyType.LRU
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: LRU
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 133
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: Standard fixed-size LRU.
+  example: []
+  syntax:
+    content: LRU = 1
+    return:
+      type: Orleans.Runtime.Configuration.GlobalConfiguration.DirectoryCachingStrategyType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.DirectoryCachingStrategyType.Adaptive
+  commentId: F:Orleans.Runtime.Configuration.GlobalConfiguration.DirectoryCachingStrategyType.Adaptive
+  id: Adaptive
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration.DirectoryCachingStrategyType
+  langs:
+  - csharp
+  - vb
+  name: Adaptive
+  nameWithType: GlobalConfiguration.DirectoryCachingStrategyType.Adaptive
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.DirectoryCachingStrategyType.Adaptive
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Adaptive
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 135
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: Adaptive caching with fixed maximum size and refresh. This option should be used in production.
+  example: []
+  syntax:
+    content: Adaptive = 2
+    return:
+      type: Orleans.Runtime.Configuration.GlobalConfiguration.DirectoryCachingStrategyType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Orleans.Runtime.Configuration
+  commentId: N:Orleans.Runtime.Configuration
+  isExternal: false
+  name: Orleans.Runtime.Configuration
+  nameWithType: Orleans.Runtime.Configuration
+  fullName: Orleans.Runtime.Configuration
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.DirectoryCachingStrategyType.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<GlobalConfiguration.DirectoryCachingStrategyType>()
+  nameWithType: ImmutableExt.AsImmutable<GlobalConfiguration.DirectoryCachingStrategyType>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.Configuration.GlobalConfiguration.DirectoryCachingStrategyType>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of GlobalConfiguration.DirectoryCachingStrategyType)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.Configuration.GlobalConfiguration.DirectoryCachingStrategyType)()
+  name.vb: AsImmutable(Of GlobalConfiguration.DirectoryCachingStrategyType)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<GlobalConfiguration.DirectoryCachingStrategyType>
+    nameWithType: ImmutableExt.AsImmutable<GlobalConfiguration.DirectoryCachingStrategyType>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.Configuration.GlobalConfiguration.DirectoryCachingStrategyType>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of GlobalConfiguration.DirectoryCachingStrategyType)
+    nameWithType: ImmutableExt.AsImmutable(Of GlobalConfiguration.DirectoryCachingStrategyType)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.Configuration.GlobalConfiguration.DirectoryCachingStrategyType)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.DirectoryCachingStrategyType
+  commentId: T:Orleans.Runtime.Configuration.GlobalConfiguration.DirectoryCachingStrategyType
+  parent: Orleans.Runtime.Configuration
+  isExternal: false
+  name: GlobalConfiguration.DirectoryCachingStrategyType
+  nameWithType: GlobalConfiguration.DirectoryCachingStrategyType
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.DirectoryCachingStrategyType

@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.TelemetryConsumers.NewRelic
+  commentId: N:Orleans.TelemetryConsumers.NewRelic
+  id: Orleans.TelemetryConsumers.NewRelic
+  children:
+  - Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer
+  langs:
+  - csharp
+  - vb
+  name: Orleans.TelemetryConsumers.NewRelic
+  nameWithType: Orleans.TelemetryConsumers.NewRelic
+  fullName: Orleans.TelemetryConsumers.NewRelic
+  type: Namespace
+  assemblies:
+  - Orleans.TelemetryConsumers.NewRelic
+references:
+- uid: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer
+  commentId: T:Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer
+  isExternal: false
+  name: NRTelemetryConsumer
+  nameWithType: NRTelemetryConsumer
+  fullName: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer

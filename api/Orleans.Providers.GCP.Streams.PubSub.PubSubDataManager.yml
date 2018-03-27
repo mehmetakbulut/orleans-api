@@ -1,0 +1,871 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager
+  commentId: T:Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager
+  id: PubSubDataManager
+  parent: Orleans.Providers.GCP.Streams.PubSub
+  children:
+  - Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.#ctor(ILoggerFactory,System.String,System.String,System.String,System.String,System.Nullable{TimeSpan},System.String)
+  - Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.AcknowledgeMessages(IEnumerable{ReceivedMessage})
+  - Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.DeleteTopic
+  - Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.GetMessages(System.Int32)
+  - Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.Initialize
+  - Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.MAX_PULLED_MESSAGES
+  - Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.PublishMessages(IEnumerable{PubsubMessage})
+  - Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.SubscriptionName
+  - Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.TopicName
+  langs:
+  - csharp
+  - vb
+  name: PubSubDataManager
+  nameWithType: PubSubDataManager
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubDataManager.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: PubSubDataManager
+    path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubDataManager.cs
+    startLine: 15
+  assemblies:
+  - Orleans.Streaming.GCP
+  namespace: Orleans.Providers.GCP.Streams.PubSub
+  summary: "\nUtility class to encapsulate access to Google PubSub APIs.\n"
+  remarks: Used by Google PubSub streaming provider.
+  example: []
+  syntax:
+    content: 'public class PubSubDataManager : object'
+    content.vb: >-
+      Public Class PubSubDataManager
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.MAX_PULLED_MESSAGES
+  commentId: F:Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.MAX_PULLED_MESSAGES
+  id: MAX_PULLED_MESSAGES
+  parent: Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager
+  langs:
+  - csharp
+  - vb
+  name: MAX_PULLED_MESSAGES
+  nameWithType: PubSubDataManager.MAX_PULLED_MESSAGES
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.MAX_PULLED_MESSAGES
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubDataManager.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: MAX_PULLED_MESSAGES
+    path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubDataManager.cs
+    startLine: 17
+  assemblies:
+  - Orleans.Streaming.GCP
+  namespace: Orleans.Providers.GCP.Streams.PubSub
+  syntax:
+    content: public const int MAX_PULLED_MESSAGES = null
+    return:
+      type: System.Int32
+    content.vb: Public Const MAX_PULLED_MESSAGES As Integer = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.TopicName
+  commentId: P:Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.TopicName
+  id: TopicName
+  parent: Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager
+  langs:
+  - csharp
+  - vb
+  name: TopicName
+  nameWithType: PubSubDataManager.TopicName
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.TopicName
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubDataManager.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: TopicName
+    path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubDataManager.cs
+    startLine: 19
+  assemblies:
+  - Orleans.Streaming.GCP
+  namespace: Orleans.Providers.GCP.Streams.PubSub
+  syntax:
+    content: public TopicName TopicName { get; }
+    parameters: []
+    return:
+      type: TopicName
+    content.vb: Public ReadOnly Property TopicName As TopicName
+  overload: Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.TopicName*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.SubscriptionName
+  commentId: P:Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.SubscriptionName
+  id: SubscriptionName
+  parent: Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager
+  langs:
+  - csharp
+  - vb
+  name: SubscriptionName
+  nameWithType: PubSubDataManager.SubscriptionName
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.SubscriptionName
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubDataManager.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SubscriptionName
+    path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubDataManager.cs
+    startLine: 20
+  assemblies:
+  - Orleans.Streaming.GCP
+  namespace: Orleans.Providers.GCP.Streams.PubSub
+  syntax:
+    content: public SubscriptionName SubscriptionName { get; }
+    parameters: []
+    return:
+      type: SubscriptionName
+    content.vb: Public ReadOnly Property SubscriptionName As SubscriptionName
+  overload: Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.SubscriptionName*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.#ctor(ILoggerFactory,System.String,System.String,System.String,System.String,System.Nullable{TimeSpan},System.String)
+  commentId: M:Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.#ctor(ILoggerFactory,System.String,System.String,System.String,System.String,System.Nullable{TimeSpan},System.String)
+  id: '#ctor(ILoggerFactory,System.String,System.String,System.String,System.String,System.Nullable{TimeSpan},System.String)'
+  parent: Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager
+  langs:
+  - csharp
+  - vb
+  name: PubSubDataManager(ILoggerFactory, String, String, String, String, Nullable<TimeSpan>, String)
+  nameWithType: PubSubDataManager.PubSubDataManager(ILoggerFactory, String, String, String, String, Nullable<TimeSpan>, String)
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.PubSubDataManager(ILoggerFactory, System.String, System.String, System.String, System.String, System.Nullable<TimeSpan>, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubDataManager.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubDataManager.cs
+    startLine: 32
+  assemblies:
+  - Orleans.Streaming.GCP
+  namespace: Orleans.Providers.GCP.Streams.PubSub
+  syntax:
+    content: public PubSubDataManager(ILoggerFactory loggerFactory, string projectId, string topicId, string subscriptionId, string deploymentId, TimeSpan? deadline = null, string customEndpoint = "")
+    parameters:
+    - id: loggerFactory
+      type: ILoggerFactory
+    - id: projectId
+      type: System.String
+    - id: topicId
+      type: System.String
+    - id: subscriptionId
+      type: System.String
+    - id: deploymentId
+      type: System.String
+    - id: deadline
+      type: System.Nullable{TimeSpan}
+    - id: customEndpoint
+      type: System.String
+    content.vb: Public Sub New(loggerFactory As ILoggerFactory, projectId As String, topicId As String, subscriptionId As String, deploymentId As String, deadline As TimeSpan? = Nothing, customEndpoint As String = "")
+  overload: Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.#ctor*
+  nameWithType.vb: PubSubDataManager.PubSubDataManager(ILoggerFactory, String, String, String, String, Nullable(Of TimeSpan), String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.PubSubDataManager(ILoggerFactory, System.String, System.String, System.String, System.String, System.Nullable(Of TimeSpan), System.String)
+  name.vb: PubSubDataManager(ILoggerFactory, String, String, String, String, Nullable(Of TimeSpan), String)
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.Initialize
+  commentId: M:Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.Initialize
+  id: Initialize
+  parent: Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager
+  langs:
+  - csharp
+  - vb
+  name: Initialize()
+  nameWithType: PubSubDataManager.Initialize()
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.Initialize()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubDataManager.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Initialize
+    path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubDataManager.cs
+    startLine: 59
+  assemblies:
+  - Orleans.Streaming.GCP
+  namespace: Orleans.Providers.GCP.Streams.PubSub
+  syntax:
+    content: public Task Initialize()
+    return:
+      type: Task
+    content.vb: Public Function Initialize As Task
+  overload: Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.Initialize*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.DeleteTopic
+  commentId: M:Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.DeleteTopic
+  id: DeleteTopic
+  parent: Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager
+  langs:
+  - csharp
+  - vb
+  name: DeleteTopic()
+  nameWithType: PubSubDataManager.DeleteTopic()
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.DeleteTopic()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubDataManager.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: DeleteTopic
+    path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubDataManager.cs
+    startLine: 106
+  assemblies:
+  - Orleans.Streaming.GCP
+  namespace: Orleans.Providers.GCP.Streams.PubSub
+  syntax:
+    content: public Task DeleteTopic()
+    return:
+      type: Task
+    content.vb: Public Function DeleteTopic As Task
+  overload: Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.DeleteTopic*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.PublishMessages(IEnumerable{PubsubMessage})
+  commentId: M:Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.PublishMessages(IEnumerable{PubsubMessage})
+  id: PublishMessages(IEnumerable{PubsubMessage})
+  parent: Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager
+  langs:
+  - csharp
+  - vb
+  name: PublishMessages(IEnumerable<PubsubMessage>)
+  nameWithType: PubSubDataManager.PublishMessages(IEnumerable<PubsubMessage>)
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.PublishMessages(IEnumerable<PubsubMessage>)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubDataManager.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: PublishMessages
+    path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubDataManager.cs
+    startLine: 120
+  assemblies:
+  - Orleans.Streaming.GCP
+  namespace: Orleans.Providers.GCP.Streams.PubSub
+  syntax:
+    content: public Task PublishMessages(IEnumerable<PubsubMessage> messages)
+    parameters:
+    - id: messages
+      type: IEnumerable{PubsubMessage}
+    return:
+      type: Task
+    content.vb: Public Function PublishMessages(messages As IEnumerable(Of PubsubMessage)) As Task
+  overload: Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.PublishMessages*
+  nameWithType.vb: PubSubDataManager.PublishMessages(IEnumerable(Of PubsubMessage))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.PublishMessages(IEnumerable(Of PubsubMessage))
+  name.vb: PublishMessages(IEnumerable(Of PubsubMessage))
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.GetMessages(System.Int32)
+  commentId: M:Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.GetMessages(System.Int32)
+  id: GetMessages(System.Int32)
+  parent: Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager
+  langs:
+  - csharp
+  - vb
+  name: GetMessages(Int32)
+  nameWithType: PubSubDataManager.GetMessages(Int32)
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.GetMessages(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubDataManager.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetMessages
+    path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubDataManager.cs
+    startLine: 137
+  assemblies:
+  - Orleans.Streaming.GCP
+  namespace: Orleans.Providers.GCP.Streams.PubSub
+  syntax:
+    content: public Task<IEnumerable<ReceivedMessage>> GetMessages(int count = 1)
+    parameters:
+    - id: count
+      type: System.Int32
+    return:
+      type: Task{IEnumerable{ReceivedMessage}}
+    content.vb: Public Function GetMessages(count As Integer = 1) As Task(Of IEnumerable(Of ReceivedMessage))
+  overload: Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.GetMessages*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.AcknowledgeMessages(IEnumerable{ReceivedMessage})
+  commentId: M:Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.AcknowledgeMessages(IEnumerable{ReceivedMessage})
+  id: AcknowledgeMessages(IEnumerable{ReceivedMessage})
+  parent: Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager
+  langs:
+  - csharp
+  - vb
+  name: AcknowledgeMessages(IEnumerable<ReceivedMessage>)
+  nameWithType: PubSubDataManager.AcknowledgeMessages(IEnumerable<ReceivedMessage>)
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.AcknowledgeMessages(IEnumerable<ReceivedMessage>)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubDataManager.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AcknowledgeMessages
+    path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubDataManager.cs
+    startLine: 166
+  assemblies:
+  - Orleans.Streaming.GCP
+  namespace: Orleans.Providers.GCP.Streams.PubSub
+  syntax:
+    content: public Task AcknowledgeMessages(IEnumerable<ReceivedMessage> messages)
+    parameters:
+    - id: messages
+      type: IEnumerable{ReceivedMessage}
+    return:
+      type: Task
+    content.vb: Public Function AcknowledgeMessages(messages As IEnumerable(Of ReceivedMessage)) As Task
+  overload: Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.AcknowledgeMessages*
+  nameWithType.vb: PubSubDataManager.AcknowledgeMessages(IEnumerable(Of ReceivedMessage))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.AcknowledgeMessages(IEnumerable(Of ReceivedMessage))
+  name.vb: AcknowledgeMessages(IEnumerable(Of ReceivedMessage))
+references:
+- uid: Orleans.Providers.GCP.Streams.PubSub
+  commentId: N:Orleans.Providers.GCP.Streams.PubSub
+  isExternal: false
+  name: Orleans.Providers.GCP.Streams.PubSub
+  nameWithType: Orleans.Providers.GCP.Streams.PubSub
+  fullName: Orleans.Providers.GCP.Streams.PubSub
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<PubSubDataManager>()
+  nameWithType: ImmutableExt.AsImmutable<PubSubDataManager>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of PubSubDataManager)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager)()
+  name.vb: AsImmutable(Of PubSubDataManager)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<PubSubDataManager>
+    nameWithType: ImmutableExt.AsImmutable<PubSubDataManager>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of PubSubDataManager)
+    nameWithType: ImmutableExt.AsImmutable(Of PubSubDataManager)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.TopicName*
+  commentId: Overload:Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.TopicName
+  isExternal: false
+  name: TopicName
+  nameWithType: PubSubDataManager.TopicName
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.TopicName
+- uid: TopicName
+  commentId: '!:TopicName'
+  isExternal: true
+  name: TopicName
+  nameWithType: TopicName
+  fullName: TopicName
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.SubscriptionName*
+  commentId: Overload:Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.SubscriptionName
+  isExternal: false
+  name: SubscriptionName
+  nameWithType: PubSubDataManager.SubscriptionName
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.SubscriptionName
+- uid: SubscriptionName
+  commentId: '!:SubscriptionName'
+  isExternal: true
+  name: SubscriptionName
+  nameWithType: SubscriptionName
+  fullName: SubscriptionName
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.#ctor*
+  commentId: Overload:Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.#ctor
+  isExternal: false
+  name: PubSubDataManager
+  nameWithType: PubSubDataManager.PubSubDataManager
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.PubSubDataManager
+- uid: ILoggerFactory
+  isExternal: true
+  name: ILoggerFactory
+  nameWithType: ILoggerFactory
+  fullName: ILoggerFactory
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Nullable{TimeSpan}
+  commentId: '!:System.Nullable{TimeSpan}'
+  definition: System.Nullable`1
+  name: Nullable<TimeSpan>
+  nameWithType: Nullable<TimeSpan>
+  fullName: System.Nullable<TimeSpan>
+  nameWithType.vb: Nullable(Of TimeSpan)
+  fullName.vb: System.Nullable(Of TimeSpan)
+  name.vb: Nullable(Of TimeSpan)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: TimeSpan
+    name: TimeSpan
+    nameWithType: TimeSpan
+    fullName: TimeSpan
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: TimeSpan
+    name: TimeSpan
+    nameWithType: TimeSpan
+    fullName: TimeSpan
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  isExternal: true
+  name: Nullable<>
+  nameWithType: Nullable<>
+  fullName: System.Nullable<>
+  nameWithType.vb: Nullable(Of )
+  fullName.vb: System.Nullable(Of )
+  name.vb: Nullable(Of )
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.Initialize*
+  commentId: Overload:Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.Initialize
+  isExternal: false
+  name: Initialize
+  nameWithType: PubSubDataManager.Initialize
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.Initialize
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.DeleteTopic*
+  commentId: Overload:Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.DeleteTopic
+  isExternal: false
+  name: DeleteTopic
+  nameWithType: PubSubDataManager.DeleteTopic
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.DeleteTopic
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.PublishMessages*
+  commentId: Overload:Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.PublishMessages
+  isExternal: false
+  name: PublishMessages
+  nameWithType: PubSubDataManager.PublishMessages
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.PublishMessages
+- uid: IEnumerable{PubsubMessage}
+  commentId: '!:IEnumerable{PubsubMessage}'
+  definition: IEnumerable`1
+  name: IEnumerable<PubsubMessage>
+  nameWithType: IEnumerable<PubsubMessage>
+  fullName: IEnumerable<PubsubMessage>
+  nameWithType.vb: IEnumerable(Of PubsubMessage)
+  fullName.vb: IEnumerable(Of PubsubMessage)
+  name.vb: IEnumerable(Of PubsubMessage)
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: PubsubMessage
+    name: PubsubMessage
+    nameWithType: PubsubMessage
+    fullName: PubsubMessage
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: PubsubMessage
+    name: PubsubMessage
+    nameWithType: PubsubMessage
+    fullName: PubsubMessage
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IEnumerable`1
+  isExternal: true
+  name: IEnumerable<>
+  nameWithType: IEnumerable<>
+  fullName: IEnumerable<>
+  nameWithType.vb: IEnumerable(Of )
+  fullName.vb: IEnumerable(Of )
+  name.vb: IEnumerable(Of )
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.GetMessages*
+  commentId: Overload:Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.GetMessages
+  isExternal: false
+  name: GetMessages
+  nameWithType: PubSubDataManager.GetMessages
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.GetMessages
+- uid: Task{IEnumerable{ReceivedMessage}}
+  commentId: '!:Task{IEnumerable{ReceivedMessage}}'
+  definition: Task`1
+  name: Task<IEnumerable<ReceivedMessage>>
+  nameWithType: Task<IEnumerable<ReceivedMessage>>
+  fullName: Task<IEnumerable<ReceivedMessage>>
+  nameWithType.vb: Task(Of IEnumerable(Of ReceivedMessage))
+  fullName.vb: Task(Of IEnumerable(Of ReceivedMessage))
+  name.vb: Task(Of IEnumerable(Of ReceivedMessage))
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: ReceivedMessage
+    name: ReceivedMessage
+    nameWithType: ReceivedMessage
+    fullName: ReceivedMessage
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: ReceivedMessage
+    name: ReceivedMessage
+    nameWithType: ReceivedMessage
+    fullName: ReceivedMessage
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.AcknowledgeMessages*
+  commentId: Overload:Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.AcknowledgeMessages
+  isExternal: false
+  name: AcknowledgeMessages
+  nameWithType: PubSubDataManager.AcknowledgeMessages
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.AcknowledgeMessages
+- uid: IEnumerable{ReceivedMessage}
+  commentId: '!:IEnumerable{ReceivedMessage}'
+  definition: IEnumerable`1
+  name: IEnumerable<ReceivedMessage>
+  nameWithType: IEnumerable<ReceivedMessage>
+  fullName: IEnumerable<ReceivedMessage>
+  nameWithType.vb: IEnumerable(Of ReceivedMessage)
+  fullName.vb: IEnumerable(Of ReceivedMessage)
+  name.vb: IEnumerable(Of ReceivedMessage)
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: ReceivedMessage
+    name: ReceivedMessage
+    nameWithType: ReceivedMessage
+    fullName: ReceivedMessage
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: ReceivedMessage
+    name: ReceivedMessage
+    nameWithType: ReceivedMessage
+    fullName: ReceivedMessage
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )

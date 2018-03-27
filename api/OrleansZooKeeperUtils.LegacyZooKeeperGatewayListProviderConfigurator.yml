@@ -1,0 +1,191 @@
+### YamlMime:ManagedReference
+items:
+- uid: OrleansZooKeeperUtils.LegacyZooKeeperGatewayListProviderConfigurator
+  commentId: T:OrleansZooKeeperUtils.LegacyZooKeeperGatewayListProviderConfigurator
+  id: LegacyZooKeeperGatewayListProviderConfigurator
+  parent: OrleansZooKeeperUtils
+  children:
+  - OrleansZooKeeperUtils.LegacyZooKeeperGatewayListProviderConfigurator.ConfigureServices(System.Object,IServiceCollection)
+  langs:
+  - csharp
+  - vb
+  name: LegacyZooKeeperGatewayListProviderConfigurator
+  nameWithType: LegacyZooKeeperGatewayListProviderConfigurator
+  fullName: OrleansZooKeeperUtils.LegacyZooKeeperGatewayListProviderConfigurator
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Clustering.ZooKeeper/LegacyZooKeeperGatewayListProviderConfigurator.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: LegacyZooKeeperGatewayListProviderConfigurator
+    path: src/Orleans.Clustering.ZooKeeper/LegacyZooKeeperGatewayListProviderConfigurator.cs
+    startLine: 9
+  assemblies:
+  - Orleans.Clustering.ZooKeeper
+  namespace: OrleansZooKeeperUtils
+  example: []
+  syntax:
+    content: 'public class LegacyZooKeeperGatewayListProviderConfigurator : ILegacyGatewayListProviderConfigurator'
+    content.vb: >-
+      Public Class LegacyZooKeeperGatewayListProviderConfigurator
+
+          Inherits ILegacyGatewayListProviderConfigurator
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - OrleansZooKeeperUtils.LegacyZooKeeperGatewayListProviderConfigurator.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: OrleansZooKeeperUtils.LegacyZooKeeperGatewayListProviderConfigurator.ConfigureServices(System.Object,IServiceCollection)
+  commentId: M:OrleansZooKeeperUtils.LegacyZooKeeperGatewayListProviderConfigurator.ConfigureServices(System.Object,IServiceCollection)
+  id: ConfigureServices(System.Object,IServiceCollection)
+  parent: OrleansZooKeeperUtils.LegacyZooKeeperGatewayListProviderConfigurator
+  langs:
+  - csharp
+  - vb
+  name: ConfigureServices(Object, IServiceCollection)
+  nameWithType: LegacyZooKeeperGatewayListProviderConfigurator.ConfigureServices(Object, IServiceCollection)
+  fullName: OrleansZooKeeperUtils.LegacyZooKeeperGatewayListProviderConfigurator.ConfigureServices(System.Object, IServiceCollection)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Clustering.ZooKeeper/LegacyZooKeeperGatewayListProviderConfigurator.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ConfigureServices
+    path: src/Orleans.Clustering.ZooKeeper/LegacyZooKeeperGatewayListProviderConfigurator.cs
+    startLine: 11
+  assemblies:
+  - Orleans.Clustering.ZooKeeper
+  namespace: OrleansZooKeeperUtils
+  syntax:
+    content: public void ConfigureServices(object configuration, IServiceCollection services)
+    parameters:
+    - id: configuration
+      type: System.Object
+    - id: services
+      type: IServiceCollection
+    content.vb: Public Sub ConfigureServices(configuration As Object, services As IServiceCollection)
+  overload: OrleansZooKeeperUtils.LegacyZooKeeperGatewayListProviderConfigurator.ConfigureServices*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: OrleansZooKeeperUtils
+  commentId: N:OrleansZooKeeperUtils
+  isExternal: false
+  name: OrleansZooKeeperUtils
+  nameWithType: OrleansZooKeeperUtils
+  fullName: OrleansZooKeeperUtils
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: OrleansZooKeeperUtils.LegacyZooKeeperGatewayListProviderConfigurator.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<LegacyZooKeeperGatewayListProviderConfigurator>()
+  nameWithType: ImmutableExt.AsImmutable<LegacyZooKeeperGatewayListProviderConfigurator>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<OrleansZooKeeperUtils.LegacyZooKeeperGatewayListProviderConfigurator>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of LegacyZooKeeperGatewayListProviderConfigurator)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of OrleansZooKeeperUtils.LegacyZooKeeperGatewayListProviderConfigurator)()
+  name.vb: AsImmutable(Of LegacyZooKeeperGatewayListProviderConfigurator)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<LegacyZooKeeperGatewayListProviderConfigurator>
+    nameWithType: ImmutableExt.AsImmutable<LegacyZooKeeperGatewayListProviderConfigurator>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<OrleansZooKeeperUtils.LegacyZooKeeperGatewayListProviderConfigurator>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of LegacyZooKeeperGatewayListProviderConfigurator)
+    nameWithType: ImmutableExt.AsImmutable(Of LegacyZooKeeperGatewayListProviderConfigurator)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of OrleansZooKeeperUtils.LegacyZooKeeperGatewayListProviderConfigurator)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: OrleansZooKeeperUtils.LegacyZooKeeperGatewayListProviderConfigurator.ConfigureServices*
+  commentId: Overload:OrleansZooKeeperUtils.LegacyZooKeeperGatewayListProviderConfigurator.ConfigureServices
+  isExternal: false
+  name: ConfigureServices
+  nameWithType: LegacyZooKeeperGatewayListProviderConfigurator.ConfigureServices
+  fullName: OrleansZooKeeperUtils.LegacyZooKeeperGatewayListProviderConfigurator.ConfigureServices
+- uid: IServiceCollection
+  isExternal: true
+  name: IServiceCollection
+  nameWithType: IServiceCollection
+  fullName: IServiceCollection

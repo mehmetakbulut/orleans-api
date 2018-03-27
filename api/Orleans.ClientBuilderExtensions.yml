@@ -1,0 +1,352 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.ClientBuilderExtensions
+  commentId: T:Orleans.ClientBuilderExtensions
+  id: ClientBuilderExtensions
+  parent: Orleans
+  children:
+  - Orleans.ClientBuilderExtensions.Configuration(IClusterClient)
+  - Orleans.ClientBuilderExtensions.LoadConfiguration(IClientBuilder)
+  - Orleans.ClientBuilderExtensions.LoadConfiguration(IClientBuilder,FileInfo)
+  - Orleans.ClientBuilderExtensions.LoadConfiguration(IClientBuilder,System.String)
+  - Orleans.ClientBuilderExtensions.UseConfiguration(IClientBuilder,Orleans.Runtime.Configuration.ClientConfiguration)
+  langs:
+  - csharp
+  - vb
+  name: ClientBuilderExtensions
+  nameWithType: ClientBuilderExtensions
+  fullName: Orleans.ClientBuilderExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Core/ClientBuilderExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ClientBuilderExtensions
+    path: src/Orleans.Core.Legacy/Core/ClientBuilderExtensions.cs
+    startLine: 10
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans
+  syntax:
+    content: 'public static class ClientBuilderExtensions : object'
+    content.vb: >-
+      Public Module ClientBuilderExtensions
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Orleans.ClientBuilderExtensions.Configuration(IClusterClient)
+  commentId: M:Orleans.ClientBuilderExtensions.Configuration(IClusterClient)
+  id: Configuration(IClusterClient)
+  isExtensionMethod: true
+  parent: Orleans.ClientBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: Configuration(IClusterClient)
+  nameWithType: ClientBuilderExtensions.Configuration(IClusterClient)
+  fullName: Orleans.ClientBuilderExtensions.Configuration(IClusterClient)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Core/ClientBuilderExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Configuration
+    path: src/Orleans.Core.Legacy/Core/ClientBuilderExtensions.cs
+    startLine: 15
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans
+  summary: "\nGets the client configuration.\n"
+  example: []
+  syntax:
+    content: public static ClientConfiguration Configuration(this IClusterClient client)
+    parameters:
+    - id: client
+      type: IClusterClient
+    return:
+      type: Orleans.Runtime.Configuration.ClientConfiguration
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Configuration(client As IClusterClient) As ClientConfiguration
+  overload: Orleans.ClientBuilderExtensions.Configuration*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.ClientBuilderExtensions.LoadConfiguration(IClientBuilder)
+  commentId: M:Orleans.ClientBuilderExtensions.LoadConfiguration(IClientBuilder)
+  id: LoadConfiguration(IClientBuilder)
+  isExtensionMethod: true
+  parent: Orleans.ClientBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: LoadConfiguration(IClientBuilder)
+  nameWithType: ClientBuilderExtensions.LoadConfiguration(IClientBuilder)
+  fullName: Orleans.ClientBuilderExtensions.LoadConfiguration(IClientBuilder)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Core/ClientBuilderExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: LoadConfiguration
+    path: src/Orleans.Core.Legacy/Core/ClientBuilderExtensions.cs
+    startLine: 43
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans
+  summary: "\nLoads configuration from the standard client configuration locations.\n"
+  remarks: "\nThis method loads the first client configuration file it finds, searching predefined directories for predefined file names.\nThe following file names are tried in order:\n<ol><li></li><li></li><li></li><li></li></ol>\nThe following directories are searched in order:\n<ol><li></li><li></li><li></li><li></li></ol>\nEach directory is searched for all configuration file names before proceeding to the next directory.\n"
+  example: []
+  syntax:
+    content: public static IClientBuilder LoadConfiguration(this IClientBuilder builder)
+    parameters:
+    - id: builder
+      type: IClientBuilder
+      description: The builder.
+    return:
+      type: IClientBuilder
+      description: The builder.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function LoadConfiguration(builder As IClientBuilder) As IClientBuilder
+  overload: Orleans.ClientBuilderExtensions.LoadConfiguration*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.ClientBuilderExtensions.LoadConfiguration(IClientBuilder,System.String)
+  commentId: M:Orleans.ClientBuilderExtensions.LoadConfiguration(IClientBuilder,System.String)
+  id: LoadConfiguration(IClientBuilder,System.String)
+  isExtensionMethod: true
+  parent: Orleans.ClientBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: LoadConfiguration(IClientBuilder, String)
+  nameWithType: ClientBuilderExtensions.LoadConfiguration(IClientBuilder, String)
+  fullName: Orleans.ClientBuilderExtensions.LoadConfiguration(IClientBuilder, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Core/ClientBuilderExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: LoadConfiguration
+    path: src/Orleans.Core.Legacy/Core/ClientBuilderExtensions.cs
+    startLine: 55
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans
+  summary: "\nLoads configuration from the provided location.\n"
+  example: []
+  syntax:
+    content: public static IClientBuilder LoadConfiguration(this IClientBuilder builder, string configurationFilePath)
+    parameters:
+    - id: builder
+      type: IClientBuilder
+      description: The builder.
+    - id: configurationFilePath
+      type: System.String
+      description: ''
+    return:
+      type: IClientBuilder
+      description: The builder.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function LoadConfiguration(builder As IClientBuilder, configurationFilePath As String) As IClientBuilder
+  overload: Orleans.ClientBuilderExtensions.LoadConfiguration*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.ClientBuilderExtensions.LoadConfiguration(IClientBuilder,FileInfo)
+  commentId: M:Orleans.ClientBuilderExtensions.LoadConfiguration(IClientBuilder,FileInfo)
+  id: LoadConfiguration(IClientBuilder,FileInfo)
+  isExtensionMethod: true
+  parent: Orleans.ClientBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: LoadConfiguration(IClientBuilder, FileInfo)
+  nameWithType: ClientBuilderExtensions.LoadConfiguration(IClientBuilder, FileInfo)
+  fullName: Orleans.ClientBuilderExtensions.LoadConfiguration(IClientBuilder, FileInfo)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Core/ClientBuilderExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: LoadConfiguration
+    path: src/Orleans.Core.Legacy/Core/ClientBuilderExtensions.cs
+    startLine: 67
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans
+  summary: "\nLoads configuration from the provided location.\n"
+  example: []
+  syntax:
+    content: public static IClientBuilder LoadConfiguration(this IClientBuilder builder, FileInfo configurationFile)
+    parameters:
+    - id: builder
+      type: IClientBuilder
+      description: The builder.
+    - id: configurationFile
+      type: FileInfo
+      description: ''
+    return:
+      type: IClientBuilder
+      description: The builder.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function LoadConfiguration(builder As IClientBuilder, configurationFile As FileInfo) As IClientBuilder
+  overload: Orleans.ClientBuilderExtensions.LoadConfiguration*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.ClientBuilderExtensions.UseConfiguration(IClientBuilder,Orleans.Runtime.Configuration.ClientConfiguration)
+  commentId: M:Orleans.ClientBuilderExtensions.UseConfiguration(IClientBuilder,Orleans.Runtime.Configuration.ClientConfiguration)
+  id: UseConfiguration(IClientBuilder,Orleans.Runtime.Configuration.ClientConfiguration)
+  isExtensionMethod: true
+  parent: Orleans.ClientBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: UseConfiguration(IClientBuilder, ClientConfiguration)
+  nameWithType: ClientBuilderExtensions.UseConfiguration(IClientBuilder, ClientConfiguration)
+  fullName: Orleans.ClientBuilderExtensions.UseConfiguration(IClientBuilder, Orleans.Runtime.Configuration.ClientConfiguration)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Core/ClientBuilderExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: UseConfiguration
+    path: src/Orleans.Core.Legacy/Core/ClientBuilderExtensions.cs
+    startLine: 88
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans
+  summary: "\nSpecified the configuration to use for this client.\n"
+  remarks: This method may only be called once per builder instance.
+  example: []
+  syntax:
+    content: public static IClientBuilder UseConfiguration(this IClientBuilder builder, ClientConfiguration configuration)
+    parameters:
+    - id: builder
+      type: IClientBuilder
+      description: The client builder.
+    - id: configuration
+      type: Orleans.Runtime.Configuration.ClientConfiguration
+      description: The configuration.
+    return:
+      type: IClientBuilder
+      description: The builder.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function UseConfiguration(builder As IClientBuilder, configuration As ClientConfiguration) As IClientBuilder
+  overload: Orleans.ClientBuilderExtensions.UseConfiguration*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Orleans
+  commentId: N:Orleans
+  isExternal: false
+  name: Orleans
+  nameWithType: Orleans
+  fullName: Orleans
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.ClientBuilderExtensions.Configuration*
+  commentId: Overload:Orleans.ClientBuilderExtensions.Configuration
+  isExternal: false
+  name: Configuration
+  nameWithType: ClientBuilderExtensions.Configuration
+  fullName: Orleans.ClientBuilderExtensions.Configuration
+- uid: IClusterClient
+  isExternal: true
+  name: IClusterClient
+  nameWithType: IClusterClient
+  fullName: IClusterClient
+- uid: Orleans.Runtime.Configuration.ClientConfiguration
+  commentId: T:Orleans.Runtime.Configuration.ClientConfiguration
+  parent: Orleans.Runtime.Configuration
+  isExternal: false
+  name: ClientConfiguration
+  nameWithType: ClientConfiguration
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration
+- uid: Orleans.Runtime.Configuration
+  commentId: N:Orleans.Runtime.Configuration
+  isExternal: false
+  name: Orleans.Runtime.Configuration
+  nameWithType: Orleans.Runtime.Configuration
+  fullName: Orleans.Runtime.Configuration
+- uid: Orleans.ClientBuilderExtensions.LoadConfiguration*
+  commentId: Overload:Orleans.ClientBuilderExtensions.LoadConfiguration
+  isExternal: false
+  name: LoadConfiguration
+  nameWithType: ClientBuilderExtensions.LoadConfiguration
+  fullName: Orleans.ClientBuilderExtensions.LoadConfiguration
+- uid: IClientBuilder
+  isExternal: true
+  name: IClientBuilder
+  nameWithType: IClientBuilder
+  fullName: IClientBuilder
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: FileInfo
+  isExternal: true
+  name: FileInfo
+  nameWithType: FileInfo
+  fullName: FileInfo
+- uid: Orleans.ClientBuilderExtensions.UseConfiguration*
+  commentId: Overload:Orleans.ClientBuilderExtensions.UseConfiguration
+  isExternal: false
+  name: UseConfiguration
+  nameWithType: ClientBuilderExtensions.UseConfiguration
+  fullName: Orleans.ClientBuilderExtensions.UseConfiguration

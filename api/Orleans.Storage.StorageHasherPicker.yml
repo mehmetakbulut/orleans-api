@@ -1,0 +1,618 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Storage.StorageHasherPicker
+  commentId: T:Orleans.Storage.StorageHasherPicker
+  id: StorageHasherPicker
+  parent: Orleans.Storage
+  children:
+  - Orleans.Storage.StorageHasherPicker.#ctor(IEnumerable{Orleans.Storage.IHasher})
+  - Orleans.Storage.StorageHasherPicker.HashProviders
+  - Orleans.Storage.StorageHasherPicker.PickHasher(System.String,System.String,System.String,Orleans.Runtime.GrainReference,IGrainState,System.String)
+  langs:
+  - csharp
+  - vb
+  name: StorageHasherPicker
+  nameWithType: StorageHasherPicker
+  fullName: Orleans.Storage.StorageHasherPicker
+  type: Class
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/StorageHasherPicker.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: StorageHasherPicker
+    path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/StorageHasherPicker.cs
+    startLine: 13
+  assemblies:
+  - Orleans.Persistence.AdoNet
+  namespace: Orleans.Storage
+  summary: "\n<xref href=\"Orleans.Storage.IStorageHasherPicker\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: 'public class StorageHasherPicker : object, IStorageHasherPicker'
+    content.vb: >-
+      Public Class StorageHasherPicker
+
+          Inherits Object
+
+          Implements IStorageHasherPicker
+  inheritance:
+  - System.Object
+  implements:
+  - Orleans.Storage.IStorageHasherPicker
+  extensionMethods:
+  - Orleans.Storage.StorageHasherPicker.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.Storage.StorageHasherPicker.HashProviders
+  commentId: P:Orleans.Storage.StorageHasherPicker.HashProviders
+  id: HashProviders
+  parent: Orleans.Storage.StorageHasherPicker
+  langs:
+  - csharp
+  - vb
+  name: HashProviders
+  nameWithType: StorageHasherPicker.HashProviders
+  fullName: Orleans.Storage.StorageHasherPicker.HashProviders
+  type: Property
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/StorageHasherPicker.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: HashProviders
+    path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/StorageHasherPicker.cs
+    startLine: 18
+  assemblies:
+  - Orleans.Persistence.AdoNet
+  namespace: Orleans.Storage
+  summary: "\n<xref href=\"Orleans.Storage.IStorageHasherPicker.HashProviders\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public ICollection<IHasher> HashProviders { get; }
+    parameters: []
+    return:
+      type: ICollection{Orleans.Storage.IHasher}
+    content.vb: Public ReadOnly Property HashProviders As ICollection(Of IHasher)
+  overload: Orleans.Storage.StorageHasherPicker.HashProviders*
+  implements:
+  - Orleans.Storage.IStorageHasherPicker.HashProviders
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Storage.StorageHasherPicker.#ctor(IEnumerable{Orleans.Storage.IHasher})
+  commentId: M:Orleans.Storage.StorageHasherPicker.#ctor(IEnumerable{Orleans.Storage.IHasher})
+  id: '#ctor(IEnumerable{Orleans.Storage.IHasher})'
+  parent: Orleans.Storage.StorageHasherPicker
+  langs:
+  - csharp
+  - vb
+  name: StorageHasherPicker(IEnumerable<IHasher>)
+  nameWithType: StorageHasherPicker.StorageHasherPicker(IEnumerable<IHasher>)
+  fullName: Orleans.Storage.StorageHasherPicker.StorageHasherPicker(IEnumerable<Orleans.Storage.IHasher>)
+  type: Constructor
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/StorageHasherPicker.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/StorageHasherPicker.cs
+    startLine: 25
+  assemblies:
+  - Orleans.Persistence.AdoNet
+  namespace: Orleans.Storage
+  summary: "\nA constructor.\n"
+  example: []
+  syntax:
+    content: public StorageHasherPicker(IEnumerable<IHasher> hashProviders)
+    parameters:
+    - id: hashProviders
+      type: IEnumerable{Orleans.Storage.IHasher}
+      description: The hash providers this picker uses.
+    content.vb: Public Sub New(hashProviders As IEnumerable(Of IHasher))
+  overload: Orleans.Storage.StorageHasherPicker.#ctor*
+  nameWithType.vb: StorageHasherPicker.StorageHasherPicker(IEnumerable(Of IHasher))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.Storage.StorageHasherPicker.StorageHasherPicker(IEnumerable(Of Orleans.Storage.IHasher))
+  name.vb: StorageHasherPicker(IEnumerable(Of IHasher))
+- uid: Orleans.Storage.StorageHasherPicker.PickHasher(System.String,System.String,System.String,Orleans.Runtime.GrainReference,IGrainState,System.String)
+  commentId: M:Orleans.Storage.StorageHasherPicker.PickHasher(System.String,System.String,System.String,Orleans.Runtime.GrainReference,IGrainState,System.String)
+  id: PickHasher(System.String,System.String,System.String,Orleans.Runtime.GrainReference,IGrainState,System.String)
+  parent: Orleans.Storage.StorageHasherPicker
+  langs:
+  - csharp
+  - vb
+  name: PickHasher(String, String, String, GrainReference, IGrainState, String)
+  nameWithType: StorageHasherPicker.PickHasher(String, String, String, GrainReference, IGrainState, String)
+  fullName: Orleans.Storage.StorageHasherPicker.PickHasher(System.String, System.String, System.String, Orleans.Runtime.GrainReference, IGrainState, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/StorageHasherPicker.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: PickHasher
+    path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/StorageHasherPicker.cs
+    startLine: 39
+  assemblies:
+  - Orleans.Persistence.AdoNet
+  namespace: Orleans.Storage
+  summary: "\n<xref href=\"Orleans.Storage.IStorageHasherPicker.PickHasher(System.String%2cSystem.String%2cSystem.String%2cOrleans.Runtime.GrainReference%2cIGrainState%2cSystem.String)\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public IHasher PickHasher(string serviceId, string storageProviderInstanceName, string grainType, GrainReference grainReference, IGrainState grainState, string tag = null)
+    parameters:
+    - id: serviceId
+      type: System.String
+    - id: storageProviderInstanceName
+      type: System.String
+    - id: grainType
+      type: System.String
+    - id: grainReference
+      type: Orleans.Runtime.GrainReference
+    - id: grainState
+      type: IGrainState
+    - id: tag
+      type: System.String
+    return:
+      type: Orleans.Storage.IHasher
+    content.vb: Public Function PickHasher(serviceId As String, storageProviderInstanceName As String, grainType As String, grainReference As GrainReference, grainState As IGrainState, tag As String = Nothing) As IHasher
+  overload: Orleans.Storage.StorageHasherPicker.PickHasher*
+  implements:
+  - Orleans.Storage.IStorageHasherPicker.PickHasher(System.String,System.String,System.String,Orleans.Runtime.GrainReference,IGrainState,System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans.Storage.IStorageHasherPicker
+  commentId: T:Orleans.Storage.IStorageHasherPicker
+  parent: Orleans.Storage
+  isExternal: false
+  name: IStorageHasherPicker
+  nameWithType: IStorageHasherPicker
+  fullName: Orleans.Storage.IStorageHasherPicker
+- uid: Orleans.Storage
+  commentId: N:Orleans.Storage
+  isExternal: false
+  name: Orleans.Storage
+  nameWithType: Orleans.Storage
+  fullName: Orleans.Storage
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Storage.StorageHasherPicker.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<StorageHasherPicker>()
+  nameWithType: ImmutableExt.AsImmutable<StorageHasherPicker>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Storage.StorageHasherPicker>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of StorageHasherPicker)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Storage.StorageHasherPicker)()
+  name.vb: AsImmutable(Of StorageHasherPicker)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<StorageHasherPicker>
+    nameWithType: ImmutableExt.AsImmutable<StorageHasherPicker>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Storage.StorageHasherPicker>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of StorageHasherPicker)
+    nameWithType: ImmutableExt.AsImmutable(Of StorageHasherPicker)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Storage.StorageHasherPicker)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Storage.IStorageHasherPicker.HashProviders
+  commentId: P:Orleans.Storage.IStorageHasherPicker.HashProviders
+  parent: Orleans.Storage.IStorageHasherPicker
+  isExternal: false
+  name: HashProviders
+  nameWithType: IStorageHasherPicker.HashProviders
+  fullName: Orleans.Storage.IStorageHasherPicker.HashProviders
+- uid: Orleans.Storage.StorageHasherPicker.HashProviders*
+  commentId: Overload:Orleans.Storage.StorageHasherPicker.HashProviders
+  isExternal: false
+  name: HashProviders
+  nameWithType: StorageHasherPicker.HashProviders
+  fullName: Orleans.Storage.StorageHasherPicker.HashProviders
+- uid: ICollection{Orleans.Storage.IHasher}
+  commentId: '!:ICollection{Orleans.Storage.IHasher}'
+  definition: ICollection`1
+  name: ICollection<IHasher>
+  nameWithType: ICollection<IHasher>
+  fullName: ICollection<Orleans.Storage.IHasher>
+  nameWithType.vb: ICollection(Of IHasher)
+  fullName.vb: ICollection(Of Orleans.Storage.IHasher)
+  name.vb: ICollection(Of IHasher)
+  spec.csharp:
+  - uid: ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: ICollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Orleans.Storage.IHasher
+    name: IHasher
+    nameWithType: IHasher
+    fullName: Orleans.Storage.IHasher
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: ICollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Orleans.Storage.IHasher
+    name: IHasher
+    nameWithType: IHasher
+    fullName: Orleans.Storage.IHasher
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: ICollection`1
+  isExternal: true
+  name: ICollection<>
+  nameWithType: ICollection<>
+  fullName: ICollection<>
+  nameWithType.vb: ICollection(Of )
+  fullName.vb: ICollection(Of )
+  name.vb: ICollection(Of )
+  spec.csharp:
+  - uid: ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: ICollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: ICollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Storage.StorageHasherPicker.#ctor*
+  commentId: Overload:Orleans.Storage.StorageHasherPicker.#ctor
+  isExternal: false
+  name: StorageHasherPicker
+  nameWithType: StorageHasherPicker.StorageHasherPicker
+  fullName: Orleans.Storage.StorageHasherPicker.StorageHasherPicker
+- uid: IEnumerable{Orleans.Storage.IHasher}
+  commentId: '!:IEnumerable{Orleans.Storage.IHasher}'
+  definition: IEnumerable`1
+  name: IEnumerable<IHasher>
+  nameWithType: IEnumerable<IHasher>
+  fullName: IEnumerable<Orleans.Storage.IHasher>
+  nameWithType.vb: IEnumerable(Of IHasher)
+  fullName.vb: IEnumerable(Of Orleans.Storage.IHasher)
+  name.vb: IEnumerable(Of IHasher)
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Orleans.Storage.IHasher
+    name: IHasher
+    nameWithType: IHasher
+    fullName: Orleans.Storage.IHasher
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Orleans.Storage.IHasher
+    name: IHasher
+    nameWithType: IHasher
+    fullName: Orleans.Storage.IHasher
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IEnumerable`1
+  isExternal: true
+  name: IEnumerable<>
+  nameWithType: IEnumerable<>
+  fullName: IEnumerable<>
+  nameWithType.vb: IEnumerable(Of )
+  fullName.vb: IEnumerable(Of )
+  name.vb: IEnumerable(Of )
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Storage.IStorageHasherPicker.PickHasher(System.String,System.String,System.String,Orleans.Runtime.GrainReference,IGrainState,System.String)
+  commentId: M:Orleans.Storage.IStorageHasherPicker.PickHasher(System.String,System.String,System.String,Orleans.Runtime.GrainReference,IGrainState,System.String)
+  parent: Orleans.Storage.IStorageHasherPicker
+  isExternal: true
+  name: PickHasher(String, String, String, GrainReference, IGrainState, String)
+  nameWithType: IStorageHasherPicker.PickHasher(String, String, String, GrainReference, IGrainState, String)
+  fullName: Orleans.Storage.IStorageHasherPicker.PickHasher(System.String, System.String, System.String, Orleans.Runtime.GrainReference, IGrainState, System.String)
+  spec.csharp:
+  - uid: Orleans.Storage.IStorageHasherPicker.PickHasher(System.String,System.String,System.String,Orleans.Runtime.GrainReference,IGrainState,System.String)
+    name: PickHasher
+    nameWithType: IStorageHasherPicker.PickHasher
+    fullName: Orleans.Storage.IStorageHasherPicker.PickHasher
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.Runtime.GrainReference
+    name: GrainReference
+    nameWithType: GrainReference
+    fullName: Orleans.Runtime.GrainReference
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: IGrainState
+    name: IGrainState
+    nameWithType: IGrainState
+    fullName: IGrainState
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Storage.IStorageHasherPicker.PickHasher(System.String,System.String,System.String,Orleans.Runtime.GrainReference,IGrainState,System.String)
+    name: PickHasher
+    nameWithType: IStorageHasherPicker.PickHasher
+    fullName: Orleans.Storage.IStorageHasherPicker.PickHasher
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.Runtime.GrainReference
+    name: GrainReference
+    nameWithType: GrainReference
+    fullName: Orleans.Runtime.GrainReference
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: IGrainState
+    name: IGrainState
+    nameWithType: IGrainState
+    fullName: IGrainState
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Storage.StorageHasherPicker.PickHasher*
+  commentId: Overload:Orleans.Storage.StorageHasherPicker.PickHasher
+  isExternal: false
+  name: PickHasher
+  nameWithType: StorageHasherPicker.PickHasher
+  fullName: Orleans.Storage.StorageHasherPicker.PickHasher
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Orleans.Runtime.GrainReference
+  commentId: T:Orleans.Runtime.GrainReference
+  parent: Orleans.Runtime
+  isExternal: false
+  name: GrainReference
+  nameWithType: GrainReference
+  fullName: Orleans.Runtime.GrainReference
+- uid: IGrainState
+  isExternal: true
+  name: IGrainState
+  nameWithType: IGrainState
+  fullName: IGrainState
+- uid: Orleans.Storage.IHasher
+  commentId: T:Orleans.Storage.IHasher
+  parent: Orleans.Storage
+  isExternal: false
+  name: IHasher
+  nameWithType: IHasher
+  fullName: Orleans.Storage.IHasher
+- uid: Orleans.Runtime
+  commentId: N:Orleans.Runtime
+  isExternal: false
+  name: Orleans.Runtime
+  nameWithType: Orleans.Runtime
+  fullName: Orleans.Runtime

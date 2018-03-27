@@ -1,0 +1,301 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.CodeGeneration.ConsiderForCodeGenerationAttribute
+  commentId: T:Orleans.CodeGeneration.ConsiderForCodeGenerationAttribute
+  id: ConsiderForCodeGenerationAttribute
+  parent: Orleans.CodeGeneration
+  children:
+  - Orleans.CodeGeneration.ConsiderForCodeGenerationAttribute.#ctor(Type,System.Boolean)
+  - Orleans.CodeGeneration.ConsiderForCodeGenerationAttribute.ThrowOnFailure
+  - Orleans.CodeGeneration.ConsiderForCodeGenerationAttribute.Type
+  langs:
+  - csharp
+  - vb
+  name: ConsiderForCodeGenerationAttribute
+  nameWithType: ConsiderForCodeGenerationAttribute
+  fullName: Orleans.CodeGeneration.ConsiderForCodeGenerationAttribute
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/CodeGeneration/ConsiderForCodeGenerationAttribute.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ConsiderForCodeGenerationAttribute
+    path: src/Orleans.Core.Abstractions/CodeGeneration/ConsiderForCodeGenerationAttribute.cs
+    startLine: 7
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.CodeGeneration
+  summary: "\nThe attribute which informs the code generator that code should be generated for this type.\n"
+  example: []
+  syntax:
+    content: 'public class ConsiderForCodeGenerationAttribute : Attribute'
+    content.vb: >-
+      Public Class ConsiderForCodeGenerationAttribute
+
+          Inherits Attribute
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Orleans.CodeGeneration.GenerateSerializerAttribute
+  - Orleans.CodeGeneration.KnownTypeAttribute
+  extensionMethods:
+  - Orleans.CodeGeneration.ConsiderForCodeGenerationAttribute.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.CodeGeneration.ConsiderForCodeGenerationAttribute.#ctor(Type,System.Boolean)
+  commentId: M:Orleans.CodeGeneration.ConsiderForCodeGenerationAttribute.#ctor(Type,System.Boolean)
+  id: '#ctor(Type,System.Boolean)'
+  parent: Orleans.CodeGeneration.ConsiderForCodeGenerationAttribute
+  langs:
+  - csharp
+  - vb
+  name: ConsiderForCodeGenerationAttribute(Type, Boolean)
+  nameWithType: ConsiderForCodeGenerationAttribute.ConsiderForCodeGenerationAttribute(Type, Boolean)
+  fullName: Orleans.CodeGeneration.ConsiderForCodeGenerationAttribute.ConsiderForCodeGenerationAttribute(Type, System.Boolean)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/CodeGeneration/ConsiderForCodeGenerationAttribute.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Core.Abstractions/CodeGeneration/ConsiderForCodeGenerationAttribute.cs
+    startLine: 12
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.CodeGeneration
+  summary: Initializes a new instance of <xref href="Orleans.CodeGeneration.ConsiderForCodeGenerationAttribute" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: protected ConsiderForCodeGenerationAttribute(Type type, bool throwOnFailure = false)
+    parameters:
+    - id: type
+      type: Type
+      description: The type that the generator should generate code for
+    - id: throwOnFailure
+      type: System.Boolean
+      description: When <xref uid="langword_csharp_true" name="true" href=""></xref>, it will throw an exception if code cannot be generated for this type.
+    content.vb: Protected Sub New(type As Type, throwOnFailure As Boolean = False)
+  overload: Orleans.CodeGeneration.ConsiderForCodeGenerationAttribute.#ctor*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Orleans.CodeGeneration.ConsiderForCodeGenerationAttribute.Type
+  commentId: P:Orleans.CodeGeneration.ConsiderForCodeGenerationAttribute.Type
+  id: Type
+  parent: Orleans.CodeGeneration.ConsiderForCodeGenerationAttribute
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: ConsiderForCodeGenerationAttribute.Type
+  fullName: Orleans.CodeGeneration.ConsiderForCodeGenerationAttribute.Type
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/CodeGeneration/ConsiderForCodeGenerationAttribute.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Type
+    path: src/Orleans.Core.Abstractions/CodeGeneration/ConsiderForCodeGenerationAttribute.cs
+    startLine: 21
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.CodeGeneration
+  summary: "\nGets the type which should be considered for code generation.\n"
+  example: []
+  syntax:
+    content: public Type Type { get; }
+    parameters: []
+    return:
+      type: Type
+    content.vb: Public ReadOnly Property Type As Type
+  overload: Orleans.CodeGeneration.ConsiderForCodeGenerationAttribute.Type*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.CodeGeneration.ConsiderForCodeGenerationAttribute.ThrowOnFailure
+  commentId: P:Orleans.CodeGeneration.ConsiderForCodeGenerationAttribute.ThrowOnFailure
+  id: ThrowOnFailure
+  parent: Orleans.CodeGeneration.ConsiderForCodeGenerationAttribute
+  langs:
+  - csharp
+  - vb
+  name: ThrowOnFailure
+  nameWithType: ConsiderForCodeGenerationAttribute.ThrowOnFailure
+  fullName: Orleans.CodeGeneration.ConsiderForCodeGenerationAttribute.ThrowOnFailure
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/CodeGeneration/ConsiderForCodeGenerationAttribute.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ThrowOnFailure
+    path: src/Orleans.Core.Abstractions/CodeGeneration/ConsiderForCodeGenerationAttribute.cs
+    startLine: 26
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.CodeGeneration
+  summary: "\nGets a value indicating whether or not to throw if code was not generated for the specified type.\n"
+  example: []
+  syntax:
+    content: public bool ThrowOnFailure { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property ThrowOnFailure As Boolean
+  overload: Orleans.CodeGeneration.ConsiderForCodeGenerationAttribute.ThrowOnFailure*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: Orleans.CodeGeneration
+  commentId: N:Orleans.CodeGeneration
+  isExternal: false
+  name: Orleans.CodeGeneration
+  nameWithType: Orleans.CodeGeneration
+  fullName: Orleans.CodeGeneration
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.CodeGeneration.ConsiderForCodeGenerationAttribute.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<ConsiderForCodeGenerationAttribute>()
+  nameWithType: ImmutableExt.AsImmutable<ConsiderForCodeGenerationAttribute>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.CodeGeneration.ConsiderForCodeGenerationAttribute>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of ConsiderForCodeGenerationAttribute)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.CodeGeneration.ConsiderForCodeGenerationAttribute)()
+  name.vb: AsImmutable(Of ConsiderForCodeGenerationAttribute)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<ConsiderForCodeGenerationAttribute>
+    nameWithType: ImmutableExt.AsImmutable<ConsiderForCodeGenerationAttribute>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.CodeGeneration.ConsiderForCodeGenerationAttribute>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of ConsiderForCodeGenerationAttribute)
+    nameWithType: ImmutableExt.AsImmutable(Of ConsiderForCodeGenerationAttribute)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.CodeGeneration.ConsiderForCodeGenerationAttribute)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.CodeGeneration.ConsiderForCodeGenerationAttribute
+  commentId: T:Orleans.CodeGeneration.ConsiderForCodeGenerationAttribute
+  parent: Orleans.CodeGeneration
+  isExternal: false
+  name: ConsiderForCodeGenerationAttribute
+  nameWithType: ConsiderForCodeGenerationAttribute
+  fullName: Orleans.CodeGeneration.ConsiderForCodeGenerationAttribute
+- uid: Orleans.CodeGeneration.ConsiderForCodeGenerationAttribute.#ctor*
+  commentId: Overload:Orleans.CodeGeneration.ConsiderForCodeGenerationAttribute.#ctor
+  isExternal: false
+  name: ConsiderForCodeGenerationAttribute
+  nameWithType: ConsiderForCodeGenerationAttribute.ConsiderForCodeGenerationAttribute
+  fullName: Orleans.CodeGeneration.ConsiderForCodeGenerationAttribute.ConsiderForCodeGenerationAttribute
+- uid: Type
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: Type
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Orleans.CodeGeneration.ConsiderForCodeGenerationAttribute.Type*
+  commentId: Overload:Orleans.CodeGeneration.ConsiderForCodeGenerationAttribute.Type
+  isExternal: false
+  name: Type
+  nameWithType: ConsiderForCodeGenerationAttribute.Type
+  fullName: Orleans.CodeGeneration.ConsiderForCodeGenerationAttribute.Type
+- uid: Orleans.CodeGeneration.ConsiderForCodeGenerationAttribute.ThrowOnFailure*
+  commentId: Overload:Orleans.CodeGeneration.ConsiderForCodeGenerationAttribute.ThrowOnFailure
+  isExternal: false
+  name: ThrowOnFailure
+  nameWithType: ConsiderForCodeGenerationAttribute.ThrowOnFailure
+  fullName: Orleans.CodeGeneration.ConsiderForCodeGenerationAttribute.ThrowOnFailure

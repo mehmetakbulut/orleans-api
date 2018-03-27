@@ -1,0 +1,135 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Providers.ProviderConstants
+  commentId: T:Orleans.Providers.ProviderConstants
+  id: ProviderConstants
+  parent: Orleans.Providers
+  children:
+  - Orleans.Providers.ProviderConstants.DEFAULT_LOG_CONSISTENCY_PROVIDER_NAME
+  - Orleans.Providers.ProviderConstants.DEFAULT_STORAGE_PROVIDER_NAME
+  langs:
+  - csharp
+  - vb
+  name: ProviderConstants
+  nameWithType: ProviderConstants
+  fullName: Orleans.Providers.ProviderConstants
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Providers/ProviderConstants.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ProviderConstants
+    path: src/Orleans.Core.Abstractions/Providers/ProviderConstants.cs
+    startLine: 6
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Providers
+  syntax:
+    content: 'public static class ProviderConstants : object'
+    content.vb: >-
+      Public Module ProviderConstants
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Orleans.Providers.ProviderConstants.DEFAULT_STORAGE_PROVIDER_NAME
+  commentId: F:Orleans.Providers.ProviderConstants.DEFAULT_STORAGE_PROVIDER_NAME
+  id: DEFAULT_STORAGE_PROVIDER_NAME
+  parent: Orleans.Providers.ProviderConstants
+  langs:
+  - csharp
+  - vb
+  name: DEFAULT_STORAGE_PROVIDER_NAME
+  nameWithType: ProviderConstants.DEFAULT_STORAGE_PROVIDER_NAME
+  fullName: Orleans.Providers.ProviderConstants.DEFAULT_STORAGE_PROVIDER_NAME
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Providers/ProviderConstants.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: DEFAULT_STORAGE_PROVIDER_NAME
+    path: src/Orleans.Core.Abstractions/Providers/ProviderConstants.cs
+    startLine: 8
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Providers
+  syntax:
+    content: public const string DEFAULT_STORAGE_PROVIDER_NAME = null
+    return:
+      type: System.String
+    content.vb: Public Const DEFAULT_STORAGE_PROVIDER_NAME As String = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Orleans.Providers.ProviderConstants.DEFAULT_LOG_CONSISTENCY_PROVIDER_NAME
+  commentId: F:Orleans.Providers.ProviderConstants.DEFAULT_LOG_CONSISTENCY_PROVIDER_NAME
+  id: DEFAULT_LOG_CONSISTENCY_PROVIDER_NAME
+  parent: Orleans.Providers.ProviderConstants
+  langs:
+  - csharp
+  - vb
+  name: DEFAULT_LOG_CONSISTENCY_PROVIDER_NAME
+  nameWithType: ProviderConstants.DEFAULT_LOG_CONSISTENCY_PROVIDER_NAME
+  fullName: Orleans.Providers.ProviderConstants.DEFAULT_LOG_CONSISTENCY_PROVIDER_NAME
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Providers/ProviderConstants.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: DEFAULT_LOG_CONSISTENCY_PROVIDER_NAME
+    path: src/Orleans.Core.Abstractions/Providers/ProviderConstants.cs
+    startLine: 10
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Providers
+  syntax:
+    content: public const string DEFAULT_LOG_CONSISTENCY_PROVIDER_NAME = null
+    return:
+      type: System.String
+    content.vb: Public Const DEFAULT_LOG_CONSISTENCY_PROVIDER_NAME As String = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Orleans.Providers
+  commentId: N:Orleans.Providers
+  isExternal: false
+  name: Orleans.Providers
+  nameWithType: Orleans.Providers
+  fullName: Orleans.Providers
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

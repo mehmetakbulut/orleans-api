@@ -1,0 +1,358 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.ILifecycleObserver
+  commentId: T:Orleans.ILifecycleObserver
+  id: ILifecycleObserver
+  parent: Orleans
+  children:
+  - Orleans.ILifecycleObserver.OnStart(CancellationToken)
+  - Orleans.ILifecycleObserver.OnStop(CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: ILifecycleObserver
+  nameWithType: ILifecycleObserver
+  fullName: Orleans.ILifecycleObserver
+  type: Interface
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Lifecycle/ILifecycleObserver.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ILifecycleObserver
+    path: src/Orleans.Core.Abstractions/Lifecycle/ILifecycleObserver.cs
+    startLine: 8
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nLifecycle observer used to handle start and stop notification.\n"
+  example: []
+  syntax:
+    content: public interface ILifecycleObserver
+    content.vb: Public Interface ILifecycleObserver
+  extensionMethods:
+  - Orleans.ILifecycleObserver.Orleans.LifecycleExtensions.OnStart
+  - Orleans.ILifecycleObserver.Orleans.LifecycleExtensions.OnStop
+  - Orleans.ILifecycleObserver.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Orleans.ILifecycleObserver.OnStart(CancellationToken)
+  commentId: M:Orleans.ILifecycleObserver.OnStart(CancellationToken)
+  id: OnStart(CancellationToken)
+  parent: Orleans.ILifecycleObserver
+  langs:
+  - csharp
+  - vb
+  name: OnStart(CancellationToken)
+  nameWithType: ILifecycleObserver.OnStart(CancellationToken)
+  fullName: Orleans.ILifecycleObserver.OnStart(CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Lifecycle/ILifecycleObserver.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: OnStart
+    path: src/Orleans.Core.Abstractions/Lifecycle/ILifecycleObserver.cs
+    startLine: 14
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nHandle start notifications\n"
+  example: []
+  syntax:
+    content: Task OnStart(CancellationToken ct)
+    parameters:
+    - id: ct
+      type: CancellationToken
+    return:
+      type: Task
+      description: ''
+    content.vb: Function OnStart(ct As CancellationToken) As Task
+  overload: Orleans.ILifecycleObserver.OnStart*
+- uid: Orleans.ILifecycleObserver.OnStop(CancellationToken)
+  commentId: M:Orleans.ILifecycleObserver.OnStop(CancellationToken)
+  id: OnStop(CancellationToken)
+  parent: Orleans.ILifecycleObserver
+  langs:
+  - csharp
+  - vb
+  name: OnStop(CancellationToken)
+  nameWithType: ILifecycleObserver.OnStop(CancellationToken)
+  fullName: Orleans.ILifecycleObserver.OnStop(CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Lifecycle/ILifecycleObserver.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: OnStop
+    path: src/Orleans.Core.Abstractions/Lifecycle/ILifecycleObserver.cs
+    startLine: 20
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nHandle stop notifications\n"
+  example: []
+  syntax:
+    content: Task OnStop(CancellationToken ct)
+    parameters:
+    - id: ct
+      type: CancellationToken
+    return:
+      type: Task
+      description: ''
+    content.vb: Function OnStop(ct As CancellationToken) As Task
+  overload: Orleans.ILifecycleObserver.OnStop*
+references:
+- uid: Orleans
+  commentId: N:Orleans
+  isExternal: false
+  name: Orleans
+  nameWithType: Orleans
+  fullName: Orleans
+- uid: Orleans.ILifecycleObserver.Orleans.LifecycleExtensions.OnStart
+  commentId: M:Orleans.LifecycleExtensions.OnStart(Orleans.ILifecycleObserver)
+  parent: Orleans.LifecycleExtensions
+  definition: Orleans.LifecycleExtensions.OnStart(Orleans.ILifecycleObserver)
+  name: OnStart()
+  nameWithType: LifecycleExtensions.OnStart()
+  fullName: Orleans.LifecycleExtensions.OnStart()
+  spec.csharp:
+  - uid: Orleans.LifecycleExtensions.OnStart
+    name: OnStart
+    nameWithType: LifecycleExtensions.OnStart
+    fullName: Orleans.LifecycleExtensions.OnStart
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.LifecycleExtensions.OnStart
+    name: OnStart
+    nameWithType: LifecycleExtensions.OnStart
+    fullName: Orleans.LifecycleExtensions.OnStart
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.ILifecycleObserver.Orleans.LifecycleExtensions.OnStop
+  commentId: M:Orleans.LifecycleExtensions.OnStop(Orleans.ILifecycleObserver)
+  parent: Orleans.LifecycleExtensions
+  definition: Orleans.LifecycleExtensions.OnStop(Orleans.ILifecycleObserver)
+  name: OnStop()
+  nameWithType: LifecycleExtensions.OnStop()
+  fullName: Orleans.LifecycleExtensions.OnStop()
+  spec.csharp:
+  - uid: Orleans.LifecycleExtensions.OnStop
+    name: OnStop
+    nameWithType: LifecycleExtensions.OnStop
+    fullName: Orleans.LifecycleExtensions.OnStop
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.LifecycleExtensions.OnStop
+    name: OnStop
+    nameWithType: LifecycleExtensions.OnStop
+    fullName: Orleans.LifecycleExtensions.OnStop
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.ILifecycleObserver.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<ILifecycleObserver>()
+  nameWithType: ImmutableExt.AsImmutable<ILifecycleObserver>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.ILifecycleObserver>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of ILifecycleObserver)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.ILifecycleObserver)()
+  name.vb: AsImmutable(Of ILifecycleObserver)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<ILifecycleObserver>
+    nameWithType: ImmutableExt.AsImmutable<ILifecycleObserver>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.ILifecycleObserver>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of ILifecycleObserver)
+    nameWithType: ImmutableExt.AsImmutable(Of ILifecycleObserver)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.ILifecycleObserver)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.LifecycleExtensions.OnStart(Orleans.ILifecycleObserver)
+  commentId: M:Orleans.LifecycleExtensions.OnStart(Orleans.ILifecycleObserver)
+  isExternal: false
+  name: OnStart(ILifecycleObserver)
+  nameWithType: LifecycleExtensions.OnStart(ILifecycleObserver)
+  fullName: Orleans.LifecycleExtensions.OnStart(Orleans.ILifecycleObserver)
+  spec.csharp:
+  - uid: Orleans.LifecycleExtensions.OnStart(Orleans.ILifecycleObserver)
+    name: OnStart
+    nameWithType: LifecycleExtensions.OnStart
+    fullName: Orleans.LifecycleExtensions.OnStart
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.ILifecycleObserver
+    name: ILifecycleObserver
+    nameWithType: ILifecycleObserver
+    fullName: Orleans.ILifecycleObserver
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.LifecycleExtensions.OnStart(Orleans.ILifecycleObserver)
+    name: OnStart
+    nameWithType: LifecycleExtensions.OnStart
+    fullName: Orleans.LifecycleExtensions.OnStart
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.ILifecycleObserver
+    name: ILifecycleObserver
+    nameWithType: ILifecycleObserver
+    fullName: Orleans.ILifecycleObserver
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.LifecycleExtensions
+  commentId: T:Orleans.LifecycleExtensions
+  parent: Orleans
+  isExternal: false
+  name: LifecycleExtensions
+  nameWithType: LifecycleExtensions
+  fullName: Orleans.LifecycleExtensions
+- uid: Orleans.LifecycleExtensions.OnStop(Orleans.ILifecycleObserver)
+  commentId: M:Orleans.LifecycleExtensions.OnStop(Orleans.ILifecycleObserver)
+  isExternal: false
+  name: OnStop(ILifecycleObserver)
+  nameWithType: LifecycleExtensions.OnStop(ILifecycleObserver)
+  fullName: Orleans.LifecycleExtensions.OnStop(Orleans.ILifecycleObserver)
+  spec.csharp:
+  - uid: Orleans.LifecycleExtensions.OnStop(Orleans.ILifecycleObserver)
+    name: OnStop
+    nameWithType: LifecycleExtensions.OnStop
+    fullName: Orleans.LifecycleExtensions.OnStop
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.ILifecycleObserver
+    name: ILifecycleObserver
+    nameWithType: ILifecycleObserver
+    fullName: Orleans.ILifecycleObserver
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.LifecycleExtensions.OnStop(Orleans.ILifecycleObserver)
+    name: OnStop
+    nameWithType: LifecycleExtensions.OnStop
+    fullName: Orleans.LifecycleExtensions.OnStop
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.ILifecycleObserver
+    name: ILifecycleObserver
+    nameWithType: ILifecycleObserver
+    fullName: Orleans.ILifecycleObserver
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.ILifecycleObserver.OnStart*
+  commentId: Overload:Orleans.ILifecycleObserver.OnStart
+  isExternal: false
+  name: OnStart
+  nameWithType: ILifecycleObserver.OnStart
+  fullName: Orleans.ILifecycleObserver.OnStart
+- uid: CancellationToken
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: CancellationToken
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task
+- uid: Orleans.ILifecycleObserver.OnStop*
+  commentId: Overload:Orleans.ILifecycleObserver.OnStop
+  isExternal: false
+  name: OnStop
+  nameWithType: ILifecycleObserver.OnStop
+  fullName: Orleans.ILifecycleObserver.OnStop

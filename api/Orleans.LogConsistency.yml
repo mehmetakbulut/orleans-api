@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.LogConsistency
+  commentId: N:Orleans.LogConsistency
+  id: Orleans.LogConsistency
+  children:
+  - Orleans.LogConsistency.ConnectionIssue
+  - Orleans.LogConsistency.NotificationFailed
+  langs:
+  - csharp
+  - vb
+  name: Orleans.LogConsistency
+  nameWithType: Orleans.LogConsistency
+  fullName: Orleans.LogConsistency
+  type: Namespace
+  assemblies:
+  - Orleans.Core.Abstractions
+references:
+- uid: Orleans.LogConsistency.ConnectionIssue
+  commentId: T:Orleans.LogConsistency.ConnectionIssue
+  parent: Orleans.LogConsistency
+  isExternal: false
+  name: ConnectionIssue
+  nameWithType: ConnectionIssue
+  fullName: Orleans.LogConsistency.ConnectionIssue
+- uid: Orleans.LogConsistency.NotificationFailed
+  commentId: T:Orleans.LogConsistency.NotificationFailed
+  isExternal: false
+  name: NotificationFailed
+  nameWithType: NotificationFailed
+  fullName: Orleans.LogConsistency.NotificationFailed
+- uid: Orleans.LogConsistency
+  commentId: N:Orleans.LogConsistency
+  isExternal: false
+  name: Orleans.LogConsistency
+  nameWithType: Orleans.LogConsistency
+  fullName: Orleans.LogConsistency

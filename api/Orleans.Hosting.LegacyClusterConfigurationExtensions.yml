@@ -1,0 +1,354 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Hosting.LegacyClusterConfigurationExtensions
+  commentId: T:Orleans.Hosting.LegacyClusterConfigurationExtensions
+  id: LegacyClusterConfigurationExtensions
+  parent: Orleans.Hosting
+  children:
+  - Orleans.Hosting.LegacyClusterConfigurationExtensions.AddLegacyClusterConfigurationSupport(ISiloHostBuilder,Orleans.Runtime.Configuration.ClusterConfiguration)
+  - Orleans.Hosting.LegacyClusterConfigurationExtensions.ConfigureLocalHostPrimarySilo(ISiloHostBuilder,System.Int32,System.Int32)
+  - Orleans.Hosting.LegacyClusterConfigurationExtensions.LoadClusterConfiguration(ISiloHostBuilder)
+  - Orleans.Hosting.LegacyClusterConfigurationExtensions.TryGetClusterConfiguration(IServiceCollection)
+  - Orleans.Hosting.LegacyClusterConfigurationExtensions.UseConfiguration(ISiloHostBuilder,Orleans.Runtime.Configuration.ClusterConfiguration)
+  langs:
+  - csharp
+  - vb
+  name: LegacyClusterConfigurationExtensions
+  nameWithType: LegacyClusterConfigurationExtensions
+  fullName: Orleans.Hosting.LegacyClusterConfigurationExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Runtime.Legacy/Configuration/LegacyClusterConfigurationExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: LegacyClusterConfigurationExtensions
+    path: src/Orleans.Runtime.Legacy/Configuration/LegacyClusterConfigurationExtensions.cs
+    startLine: 15
+  assemblies:
+  - Orleans.Runtime.Legacy
+  namespace: Orleans.Hosting
+  syntax:
+    content: 'public static class LegacyClusterConfigurationExtensions : object'
+    content.vb: >-
+      Public Module LegacyClusterConfigurationExtensions
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Orleans.Hosting.LegacyClusterConfigurationExtensions.UseConfiguration(ISiloHostBuilder,Orleans.Runtime.Configuration.ClusterConfiguration)
+  commentId: M:Orleans.Hosting.LegacyClusterConfigurationExtensions.UseConfiguration(ISiloHostBuilder,Orleans.Runtime.Configuration.ClusterConfiguration)
+  id: UseConfiguration(ISiloHostBuilder,Orleans.Runtime.Configuration.ClusterConfiguration)
+  isExtensionMethod: true
+  parent: Orleans.Hosting.LegacyClusterConfigurationExtensions
+  langs:
+  - csharp
+  - vb
+  name: UseConfiguration(ISiloHostBuilder, ClusterConfiguration)
+  nameWithType: LegacyClusterConfigurationExtensions.UseConfiguration(ISiloHostBuilder, ClusterConfiguration)
+  fullName: Orleans.Hosting.LegacyClusterConfigurationExtensions.UseConfiguration(ISiloHostBuilder, Orleans.Runtime.Configuration.ClusterConfiguration)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Runtime.Legacy/Configuration/LegacyClusterConfigurationExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: UseConfiguration
+    path: src/Orleans.Runtime.Legacy/Configuration/LegacyClusterConfigurationExtensions.cs
+    startLine: 24
+  assemblies:
+  - Orleans.Runtime.Legacy
+  namespace: Orleans.Hosting
+  summary: "\nSpecifies the configuration to use for this silo.\n"
+  remarks: This method may only be called once per builder instance.
+  example: []
+  syntax:
+    content: public static ISiloHostBuilder UseConfiguration(this ISiloHostBuilder builder, ClusterConfiguration configuration)
+    parameters:
+    - id: builder
+      type: ISiloHostBuilder
+      description: The host builder.
+    - id: configuration
+      type: Orleans.Runtime.Configuration.ClusterConfiguration
+      description: The configuration.
+    return:
+      type: ISiloHostBuilder
+      description: The silo builder.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function UseConfiguration(builder As ISiloHostBuilder, configuration As ClusterConfiguration) As ISiloHostBuilder
+  overload: Orleans.Hosting.LegacyClusterConfigurationExtensions.UseConfiguration*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.Hosting.LegacyClusterConfigurationExtensions.LoadClusterConfiguration(ISiloHostBuilder)
+  commentId: M:Orleans.Hosting.LegacyClusterConfigurationExtensions.LoadClusterConfiguration(ISiloHostBuilder)
+  id: LoadClusterConfiguration(ISiloHostBuilder)
+  isExtensionMethod: true
+  parent: Orleans.Hosting.LegacyClusterConfigurationExtensions
+  langs:
+  - csharp
+  - vb
+  name: LoadClusterConfiguration(ISiloHostBuilder)
+  nameWithType: LegacyClusterConfigurationExtensions.LoadClusterConfiguration(ISiloHostBuilder)
+  fullName: Orleans.Hosting.LegacyClusterConfigurationExtensions.LoadClusterConfiguration(ISiloHostBuilder)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Runtime.Legacy/Configuration/LegacyClusterConfigurationExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: LoadClusterConfiguration
+    path: src/Orleans.Runtime.Legacy/Configuration/LegacyClusterConfigurationExtensions.cs
+    startLine: 35
+  assemblies:
+  - Orleans.Runtime.Legacy
+  namespace: Orleans.Hosting
+  summary: "\nLoads <xref href=\"Orleans.Runtime.Configuration.ClusterConfiguration\" data-throw-if-not-resolved=\"false\"></xref> using <xref href=\"Orleans.Runtime.Configuration.ClusterConfiguration.StandardLoad\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public static ISiloHostBuilder LoadClusterConfiguration(this ISiloHostBuilder builder)
+    parameters:
+    - id: builder
+      type: ISiloHostBuilder
+      description: The host builder.
+    return:
+      type: ISiloHostBuilder
+      description: The silo builder.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function LoadClusterConfiguration(builder As ISiloHostBuilder) As ISiloHostBuilder
+  overload: Orleans.Hosting.LegacyClusterConfigurationExtensions.LoadClusterConfiguration*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.Hosting.LegacyClusterConfigurationExtensions.ConfigureLocalHostPrimarySilo(ISiloHostBuilder,System.Int32,System.Int32)
+  commentId: M:Orleans.Hosting.LegacyClusterConfigurationExtensions.ConfigureLocalHostPrimarySilo(ISiloHostBuilder,System.Int32,System.Int32)
+  id: ConfigureLocalHostPrimarySilo(ISiloHostBuilder,System.Int32,System.Int32)
+  isExtensionMethod: true
+  parent: Orleans.Hosting.LegacyClusterConfigurationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ConfigureLocalHostPrimarySilo(ISiloHostBuilder, Int32, Int32)
+  nameWithType: LegacyClusterConfigurationExtensions.ConfigureLocalHostPrimarySilo(ISiloHostBuilder, Int32, Int32)
+  fullName: Orleans.Hosting.LegacyClusterConfigurationExtensions.ConfigureLocalHostPrimarySilo(ISiloHostBuilder, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Runtime.Legacy/Configuration/LegacyClusterConfigurationExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ConfigureLocalHostPrimarySilo
+    path: src/Orleans.Runtime.Legacy/Configuration/LegacyClusterConfigurationExtensions.cs
+    startLine: 49
+  assemblies:
+  - Orleans.Runtime.Legacy
+  namespace: Orleans.Hosting
+  summary: "\nConfigures a localhost silo.\n"
+  example: []
+  syntax:
+    content: public static ISiloHostBuilder ConfigureLocalHostPrimarySilo(this ISiloHostBuilder builder, int siloPort = 22222, int gatewayPort = 40000)
+    parameters:
+    - id: builder
+      type: ISiloHostBuilder
+      description: The host builder.
+    - id: siloPort
+      type: System.Int32
+      description: The silo-to-silo communication port.
+    - id: gatewayPort
+      type: System.Int32
+      description: The client-to-silo communication port.
+    return:
+      type: ISiloHostBuilder
+      description: The silo builder.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ConfigureLocalHostPrimarySilo(builder As ISiloHostBuilder, siloPort As Integer = 22222, gatewayPort As Integer = 40000) As ISiloHostBuilder
+  overload: Orleans.Hosting.LegacyClusterConfigurationExtensions.ConfigureLocalHostPrimarySilo*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.Hosting.LegacyClusterConfigurationExtensions.AddLegacyClusterConfigurationSupport(ISiloHostBuilder,Orleans.Runtime.Configuration.ClusterConfiguration)
+  commentId: M:Orleans.Hosting.LegacyClusterConfigurationExtensions.AddLegacyClusterConfigurationSupport(ISiloHostBuilder,Orleans.Runtime.Configuration.ClusterConfiguration)
+  id: AddLegacyClusterConfigurationSupport(ISiloHostBuilder,Orleans.Runtime.Configuration.ClusterConfiguration)
+  isExtensionMethod: true
+  parent: Orleans.Hosting.LegacyClusterConfigurationExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddLegacyClusterConfigurationSupport(ISiloHostBuilder, ClusterConfiguration)
+  nameWithType: LegacyClusterConfigurationExtensions.AddLegacyClusterConfigurationSupport(ISiloHostBuilder, ClusterConfiguration)
+  fullName: Orleans.Hosting.LegacyClusterConfigurationExtensions.AddLegacyClusterConfigurationSupport(ISiloHostBuilder, Orleans.Runtime.Configuration.ClusterConfiguration)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Runtime.Legacy/Configuration/LegacyClusterConfigurationExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AddLegacyClusterConfigurationSupport
+    path: src/Orleans.Runtime.Legacy/Configuration/LegacyClusterConfigurationExtensions.cs
+    startLine: 56
+  assemblies:
+  - Orleans.Runtime.Legacy
+  namespace: Orleans.Hosting
+  syntax:
+    content: public static ISiloHostBuilder AddLegacyClusterConfigurationSupport(this ISiloHostBuilder builder, ClusterConfiguration configuration)
+    parameters:
+    - id: builder
+      type: ISiloHostBuilder
+    - id: configuration
+      type: Orleans.Runtime.Configuration.ClusterConfiguration
+    return:
+      type: ISiloHostBuilder
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AddLegacyClusterConfigurationSupport(builder As ISiloHostBuilder, configuration As ClusterConfiguration) As ISiloHostBuilder
+  overload: Orleans.Hosting.LegacyClusterConfigurationExtensions.AddLegacyClusterConfigurationSupport*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.Hosting.LegacyClusterConfigurationExtensions.TryGetClusterConfiguration(IServiceCollection)
+  commentId: M:Orleans.Hosting.LegacyClusterConfigurationExtensions.TryGetClusterConfiguration(IServiceCollection)
+  id: TryGetClusterConfiguration(IServiceCollection)
+  isExtensionMethod: true
+  parent: Orleans.Hosting.LegacyClusterConfigurationExtensions
+  langs:
+  - csharp
+  - vb
+  name: TryGetClusterConfiguration(IServiceCollection)
+  nameWithType: LegacyClusterConfigurationExtensions.TryGetClusterConfiguration(IServiceCollection)
+  fullName: Orleans.Hosting.LegacyClusterConfigurationExtensions.TryGetClusterConfiguration(IServiceCollection)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Runtime.Legacy/Configuration/LegacyClusterConfigurationExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: TryGetClusterConfiguration
+    path: src/Orleans.Runtime.Legacy/Configuration/LegacyClusterConfigurationExtensions.cs
+    startLine: 328
+  assemblies:
+  - Orleans.Runtime.Legacy
+  namespace: Orleans.Hosting
+  syntax:
+    content: public static ClusterConfiguration TryGetClusterConfiguration(this IServiceCollection services)
+    parameters:
+    - id: services
+      type: IServiceCollection
+    return:
+      type: Orleans.Runtime.Configuration.ClusterConfiguration
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function TryGetClusterConfiguration(services As IServiceCollection) As ClusterConfiguration
+  overload: Orleans.Hosting.LegacyClusterConfigurationExtensions.TryGetClusterConfiguration*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Orleans.Hosting
+  commentId: N:Orleans.Hosting
+  isExternal: false
+  name: Orleans.Hosting
+  nameWithType: Orleans.Hosting
+  fullName: Orleans.Hosting
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Hosting.LegacyClusterConfigurationExtensions.UseConfiguration*
+  commentId: Overload:Orleans.Hosting.LegacyClusterConfigurationExtensions.UseConfiguration
+  isExternal: false
+  name: UseConfiguration
+  nameWithType: LegacyClusterConfigurationExtensions.UseConfiguration
+  fullName: Orleans.Hosting.LegacyClusterConfigurationExtensions.UseConfiguration
+- uid: ISiloHostBuilder
+  isExternal: true
+  name: ISiloHostBuilder
+  nameWithType: ISiloHostBuilder
+  fullName: ISiloHostBuilder
+- uid: Orleans.Runtime.Configuration.ClusterConfiguration
+  commentId: T:Orleans.Runtime.Configuration.ClusterConfiguration
+  parent: Orleans.Runtime.Configuration
+  isExternal: false
+  name: ClusterConfiguration
+  nameWithType: ClusterConfiguration
+  fullName: Orleans.Runtime.Configuration.ClusterConfiguration
+- uid: Orleans.Runtime.Configuration
+  commentId: N:Orleans.Runtime.Configuration
+  isExternal: false
+  name: Orleans.Runtime.Configuration
+  nameWithType: Orleans.Runtime.Configuration
+  fullName: Orleans.Runtime.Configuration
+- uid: Orleans.Runtime.Configuration.ClusterConfiguration.StandardLoad
+  commentId: M:Orleans.Runtime.Configuration.ClusterConfiguration.StandardLoad
+- uid: Orleans.Hosting.LegacyClusterConfigurationExtensions.LoadClusterConfiguration*
+  commentId: Overload:Orleans.Hosting.LegacyClusterConfigurationExtensions.LoadClusterConfiguration
+  isExternal: false
+  name: LoadClusterConfiguration
+  nameWithType: LegacyClusterConfigurationExtensions.LoadClusterConfiguration
+  fullName: Orleans.Hosting.LegacyClusterConfigurationExtensions.LoadClusterConfiguration
+- uid: Orleans.Hosting.LegacyClusterConfigurationExtensions.ConfigureLocalHostPrimarySilo*
+  commentId: Overload:Orleans.Hosting.LegacyClusterConfigurationExtensions.ConfigureLocalHostPrimarySilo
+  isExternal: false
+  name: ConfigureLocalHostPrimarySilo
+  nameWithType: LegacyClusterConfigurationExtensions.ConfigureLocalHostPrimarySilo
+  fullName: Orleans.Hosting.LegacyClusterConfigurationExtensions.ConfigureLocalHostPrimarySilo
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Orleans.Hosting.LegacyClusterConfigurationExtensions.AddLegacyClusterConfigurationSupport*
+  commentId: Overload:Orleans.Hosting.LegacyClusterConfigurationExtensions.AddLegacyClusterConfigurationSupport
+  isExternal: false
+  name: AddLegacyClusterConfigurationSupport
+  nameWithType: LegacyClusterConfigurationExtensions.AddLegacyClusterConfigurationSupport
+  fullName: Orleans.Hosting.LegacyClusterConfigurationExtensions.AddLegacyClusterConfigurationSupport
+- uid: Orleans.Hosting.LegacyClusterConfigurationExtensions.TryGetClusterConfiguration*
+  commentId: Overload:Orleans.Hosting.LegacyClusterConfigurationExtensions.TryGetClusterConfiguration
+  isExternal: false
+  name: TryGetClusterConfiguration
+  nameWithType: LegacyClusterConfigurationExtensions.TryGetClusterConfiguration
+  fullName: Orleans.Hosting.LegacyClusterConfigurationExtensions.TryGetClusterConfiguration
+- uid: IServiceCollection
+  isExternal: true
+  name: IServiceCollection
+  nameWithType: IServiceCollection
+  fullName: IServiceCollection

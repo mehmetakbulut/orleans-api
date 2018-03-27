@@ -1,0 +1,123 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Storage.AdoNetGrainStorageFactory
+  commentId: T:Orleans.Storage.AdoNetGrainStorageFactory
+  id: AdoNetGrainStorageFactory
+  parent: Orleans.Storage
+  children:
+  - Orleans.Storage.AdoNetGrainStorageFactory.Create(IServiceProvider,System.String)
+  langs:
+  - csharp
+  - vb
+  name: AdoNetGrainStorageFactory
+  nameWithType: AdoNetGrainStorageFactory
+  fullName: Orleans.Storage.AdoNetGrainStorageFactory
+  type: Class
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/AdoNetGrainStorage.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AdoNetGrainStorageFactory
+    path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/AdoNetGrainStorage.cs
+    startLine: 45
+  assemblies:
+  - Orleans.Persistence.AdoNet
+  namespace: Orleans.Storage
+  syntax:
+    content: 'public static class AdoNetGrainStorageFactory : object'
+    content.vb: >-
+      Public Module AdoNetGrainStorageFactory
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Orleans.Storage.AdoNetGrainStorageFactory.Create(IServiceProvider,System.String)
+  commentId: M:Orleans.Storage.AdoNetGrainStorageFactory.Create(IServiceProvider,System.String)
+  id: Create(IServiceProvider,System.String)
+  parent: Orleans.Storage.AdoNetGrainStorageFactory
+  langs:
+  - csharp
+  - vb
+  name: Create(IServiceProvider, String)
+  nameWithType: AdoNetGrainStorageFactory.Create(IServiceProvider, String)
+  fullName: Orleans.Storage.AdoNetGrainStorageFactory.Create(IServiceProvider, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/AdoNetGrainStorage.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Create
+    path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/AdoNetGrainStorage.cs
+    startLine: 47
+  assemblies:
+  - Orleans.Persistence.AdoNet
+  namespace: Orleans.Storage
+  syntax:
+    content: public static IGrainStorage Create(IServiceProvider services, string name)
+    parameters:
+    - id: services
+      type: IServiceProvider
+    - id: name
+      type: System.String
+    return:
+      type: IGrainStorage
+    content.vb: Public Shared Function Create(services As IServiceProvider, name As String) As IGrainStorage
+  overload: Orleans.Storage.AdoNetGrainStorageFactory.Create*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Orleans.Storage
+  commentId: N:Orleans.Storage
+  isExternal: false
+  name: Orleans.Storage
+  nameWithType: Orleans.Storage
+  fullName: Orleans.Storage
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Storage.AdoNetGrainStorageFactory.Create*
+  commentId: Overload:Orleans.Storage.AdoNetGrainStorageFactory.Create
+  isExternal: false
+  name: Create
+  nameWithType: AdoNetGrainStorageFactory.Create
+  fullName: Orleans.Storage.AdoNetGrainStorageFactory.Create
+- uid: IServiceProvider
+  isExternal: true
+  name: IServiceProvider
+  nameWithType: IServiceProvider
+  fullName: IServiceProvider
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: IGrainStorage
+  isExternal: true
+  name: IGrainStorage
+  nameWithType: IGrainStorage
+  fullName: IGrainStorage

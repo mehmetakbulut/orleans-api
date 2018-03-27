@@ -1,0 +1,123 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Runtime.Configuration.ConfigurationExtensions
+  commentId: T:Orleans.Runtime.Configuration.ConfigurationExtensions
+  id: ConfigurationExtensions
+  parent: Orleans.Runtime.Configuration
+  children:
+  - Orleans.Runtime.Configuration.ConfigurationExtensions.UseStartupType``1(Orleans.Runtime.Configuration.ClusterConfiguration)
+  langs:
+  - csharp
+  - vb
+  name: ConfigurationExtensions
+  nameWithType: ConfigurationExtensions
+  fullName: Orleans.Runtime.Configuration.ConfigurationExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ConfigurationExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ConfigurationExtensions
+    path: src/Orleans.Core.Legacy/Configuration/ConfigurationExtensions.cs
+    startLine: 10
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nExtension methods for configuration classes specific to Orleans.dll \n"
+  example: []
+  syntax:
+    content: 'public static class ConfigurationExtensions : object'
+    content.vb: >-
+      Public Module ConfigurationExtensions
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Orleans.Runtime.Configuration.ConfigurationExtensions.UseStartupType``1(Orleans.Runtime.Configuration.ClusterConfiguration)
+  commentId: M:Orleans.Runtime.Configuration.ConfigurationExtensions.UseStartupType``1(Orleans.Runtime.Configuration.ClusterConfiguration)
+  id: UseStartupType``1(Orleans.Runtime.Configuration.ClusterConfiguration)
+  isExtensionMethod: true
+  parent: Orleans.Runtime.Configuration.ConfigurationExtensions
+  langs:
+  - csharp
+  - vb
+  name: UseStartupType<TStartup>(ClusterConfiguration)
+  nameWithType: ConfigurationExtensions.UseStartupType<TStartup>(ClusterConfiguration)
+  fullName: Orleans.Runtime.Configuration.ConfigurationExtensions.UseStartupType<TStartup>(Orleans.Runtime.Configuration.ClusterConfiguration)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ConfigurationExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: UseStartupType
+    path: src/Orleans.Core.Legacy/Configuration/ConfigurationExtensions.cs
+    startLine: 16
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nConfigures all cluster nodes to use the specified startup class for dependency injection.\n"
+  example: []
+  syntax:
+    content: public static void UseStartupType<TStartup>(this ClusterConfiguration config)
+    parameters:
+    - id: config
+      type: Orleans.Runtime.Configuration.ClusterConfiguration
+    typeParameters:
+    - id: TStartup
+      description: Startup type
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub UseStartupType(Of TStartup)(config As ClusterConfiguration)
+  overload: Orleans.Runtime.Configuration.ConfigurationExtensions.UseStartupType*
+  nameWithType.vb: ConfigurationExtensions.UseStartupType(Of TStartup)(ClusterConfiguration)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.Runtime.Configuration.ConfigurationExtensions.UseStartupType(Of TStartup)(Orleans.Runtime.Configuration.ClusterConfiguration)
+  name.vb: UseStartupType(Of TStartup)(ClusterConfiguration)
+references:
+- uid: Orleans.Runtime.Configuration
+  commentId: N:Orleans.Runtime.Configuration
+  isExternal: false
+  name: Orleans.Runtime.Configuration
+  nameWithType: Orleans.Runtime.Configuration
+  fullName: Orleans.Runtime.Configuration
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Runtime.Configuration.ConfigurationExtensions.UseStartupType*
+  commentId: Overload:Orleans.Runtime.Configuration.ConfigurationExtensions.UseStartupType
+  isExternal: false
+  name: UseStartupType
+  nameWithType: ConfigurationExtensions.UseStartupType
+  fullName: Orleans.Runtime.Configuration.ConfigurationExtensions.UseStartupType
+- uid: Orleans.Runtime.Configuration.ClusterConfiguration
+  commentId: T:Orleans.Runtime.Configuration.ClusterConfiguration
+  parent: Orleans.Runtime.Configuration
+  isExternal: false
+  name: ClusterConfiguration
+  nameWithType: ClusterConfiguration
+  fullName: Orleans.Runtime.Configuration.ClusterConfiguration

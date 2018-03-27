@@ -1,0 +1,344 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType
+  commentId: T:Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType
+  id: GlobalConfiguration.LivenessProviderType
+  parent: Orleans.Runtime.Configuration
+  children:
+  - Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType.AdoNet
+  - Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType.AzureTable
+  - Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType.Custom
+  - Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType.MembershipTableGrain
+  - Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType.NotSpecified
+  - Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType.ZooKeeper
+  langs:
+  - csharp
+  - vb
+  name: GlobalConfiguration.LivenessProviderType
+  nameWithType: GlobalConfiguration.LivenessProviderType
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType
+  type: Enum
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: LivenessProviderType
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 43
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nLiveness configuration that controls the type of the liveness protocol that silo use for membership.\n"
+  example: []
+  syntax:
+    content: 'public enum LivenessProviderType : int'
+    content.vb: Public Enum LivenessProviderType As Integer
+  extensionMethods:
+  - Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType.NotSpecified
+  commentId: F:Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType.NotSpecified
+  id: NotSpecified
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType
+  langs:
+  - csharp
+  - vb
+  name: NotSpecified
+  nameWithType: GlobalConfiguration.LivenessProviderType.NotSpecified
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType.NotSpecified
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: NotSpecified
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 46
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: Default value to allow discrimination of override values.
+  example: []
+  syntax:
+    content: NotSpecified = 0
+    return:
+      type: Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType.MembershipTableGrain
+  commentId: F:Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType.MembershipTableGrain
+  id: MembershipTableGrain
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType
+  langs:
+  - csharp
+  - vb
+  name: MembershipTableGrain
+  nameWithType: GlobalConfiguration.LivenessProviderType.MembershipTableGrain
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType.MembershipTableGrain
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: MembershipTableGrain
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 49
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "Grain is used to store membership information. \nThis option is not reliable and thus should only be used in local development setting."
+  example: []
+  syntax:
+    content: MembershipTableGrain = 1
+    return:
+      type: Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType.AzureTable
+  commentId: F:Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType.AzureTable
+  id: AzureTable
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType
+  langs:
+  - csharp
+  - vb
+  name: AzureTable
+  nameWithType: GlobalConfiguration.LivenessProviderType.AzureTable
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType.AzureTable
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AzureTable
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 52
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "AzureTable is used to store membership information. \nThis option can be used in production."
+  example: []
+  syntax:
+    content: AzureTable = 2
+    return:
+      type: Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType.AdoNet
+  commentId: F:Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType.AdoNet
+  id: AdoNet
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType
+  langs:
+  - csharp
+  - vb
+  name: AdoNet
+  nameWithType: GlobalConfiguration.LivenessProviderType.AdoNet
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType.AdoNet
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AdoNet
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 55
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "ADO.NET is used to store membership information. \nThis option can be used in production."
+  example: []
+  syntax:
+    content: AdoNet = 3
+    return:
+      type: Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType.ZooKeeper
+  commentId: F:Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType.ZooKeeper
+  id: ZooKeeper
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType
+  langs:
+  - csharp
+  - vb
+  name: ZooKeeper
+  nameWithType: GlobalConfiguration.LivenessProviderType.ZooKeeper
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType.ZooKeeper
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ZooKeeper
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 58
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "Apache ZooKeeper is used to store membership information. \nThis option can be used in production."
+  example: []
+  syntax:
+    content: ZooKeeper = 4
+    return:
+      type: Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType.Custom
+  commentId: F:Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType.Custom
+  id: Custom
+  parent: Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType
+  langs:
+  - csharp
+  - vb
+  name: Custom
+  nameWithType: GlobalConfiguration.LivenessProviderType.Custom
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType.Custom
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Custom
+    path: src/Orleans.Core.Legacy/Configuration/GlobalConfiguration.cs
+    startLine: 60
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: Use custom provider from third-party assembly
+  example: []
+  syntax:
+    content: Custom = 5
+    return:
+      type: Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Orleans.Runtime.Configuration
+  commentId: N:Orleans.Runtime.Configuration
+  isExternal: false
+  name: Orleans.Runtime.Configuration
+  nameWithType: Orleans.Runtime.Configuration
+  fullName: Orleans.Runtime.Configuration
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<GlobalConfiguration.LivenessProviderType>()
+  nameWithType: ImmutableExt.AsImmutable<GlobalConfiguration.LivenessProviderType>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of GlobalConfiguration.LivenessProviderType)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType)()
+  name.vb: AsImmutable(Of GlobalConfiguration.LivenessProviderType)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<GlobalConfiguration.LivenessProviderType>
+    nameWithType: ImmutableExt.AsImmutable<GlobalConfiguration.LivenessProviderType>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of GlobalConfiguration.LivenessProviderType)
+    nameWithType: ImmutableExt.AsImmutable(Of GlobalConfiguration.LivenessProviderType)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType
+  commentId: T:Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType
+  parent: Orleans.Runtime.Configuration
+  isExternal: false
+  name: GlobalConfiguration.LivenessProviderType
+  nameWithType: GlobalConfiguration.LivenessProviderType
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType

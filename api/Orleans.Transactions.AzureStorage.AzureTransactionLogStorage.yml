@@ -1,0 +1,929 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Transactions.AzureStorage.AzureTransactionLogStorage
+  commentId: T:Orleans.Transactions.AzureStorage.AzureTransactionLogStorage
+  id: AzureTransactionLogStorage
+  parent: Orleans.Transactions.AzureStorage
+  children:
+  - Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.#ctor(SerializationManager,IOptions{Orleans.Configuration.AzureTransactionLogOptions})
+  - Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.Append(IEnumerable{CommitRecord})
+  - Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.Create(IServiceProvider)
+  - Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.GetFirstCommitRecord
+  - Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.GetNextCommitRecord
+  - Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.GetStartRecord
+  - Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.Initialize
+  - Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.TruncateLog(System.Int64)
+  - Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.UpdateStartRecord(System.Int64)
+  langs:
+  - csharp
+  - vb
+  name: AzureTransactionLogStorage
+  nameWithType: AzureTransactionLogStorage
+  fullName: Orleans.Transactions.AzureStorage.AzureTransactionLogStorage
+  type: Class
+  source:
+    remote:
+      path: src/Azure/Orleans.Transactions.AzureStorage/Storage/AzureTransactionLogStorage.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AzureTransactionLogStorage
+    path: src/Azure/Orleans.Transactions.AzureStorage/Storage/AzureTransactionLogStorage.cs
+    startLine: 17
+  assemblies:
+  - Orleans.Transactions.AzureStorage
+  namespace: Orleans.Transactions.AzureStorage
+  summary: "\nTransactionLog ported from research.  Placeholder, is being rewritten.\n"
+  example: []
+  syntax:
+    content: 'public class AzureTransactionLogStorage : ITransactionLogStorage'
+    content.vb: >-
+      Public Class AzureTransactionLogStorage
+
+          Inherits ITransactionLogStorage
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.#ctor(SerializationManager,IOptions{Orleans.Configuration.AzureTransactionLogOptions})
+  commentId: M:Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.#ctor(SerializationManager,IOptions{Orleans.Configuration.AzureTransactionLogOptions})
+  id: '#ctor(SerializationManager,IOptions{Orleans.Configuration.AzureTransactionLogOptions})'
+  parent: Orleans.Transactions.AzureStorage.AzureTransactionLogStorage
+  langs:
+  - csharp
+  - vb
+  name: AzureTransactionLogStorage(SerializationManager, IOptions<AzureTransactionLogOptions>)
+  nameWithType: AzureTransactionLogStorage.AzureTransactionLogStorage(SerializationManager, IOptions<AzureTransactionLogOptions>)
+  fullName: Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.AzureTransactionLogStorage(SerializationManager, IOptions<Orleans.Configuration.AzureTransactionLogOptions>)
+  type: Constructor
+  source:
+    remote:
+      path: src/Azure/Orleans.Transactions.AzureStorage/Storage/AzureTransactionLogStorage.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Azure/Orleans.Transactions.AzureStorage/Storage/AzureTransactionLogStorage.cs
+    startLine: 46
+  assemblies:
+  - Orleans.Transactions.AzureStorage
+  namespace: Orleans.Transactions.AzureStorage
+  syntax:
+    content: public AzureTransactionLogStorage(SerializationManager serializationManager, IOptions<AzureTransactionLogOptions> configurationOptions)
+    parameters:
+    - id: serializationManager
+      type: SerializationManager
+    - id: configurationOptions
+      type: IOptions{Orleans.Configuration.AzureTransactionLogOptions}
+    content.vb: Public Sub New(serializationManager As SerializationManager, configurationOptions As IOptions(Of AzureTransactionLogOptions))
+  overload: Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.#ctor*
+  nameWithType.vb: AzureTransactionLogStorage.AzureTransactionLogStorage(SerializationManager, IOptions(Of AzureTransactionLogOptions))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.AzureTransactionLogStorage(SerializationManager, IOptions(Of Orleans.Configuration.AzureTransactionLogOptions))
+  name.vb: AzureTransactionLogStorage(SerializationManager, IOptions(Of AzureTransactionLogOptions))
+- uid: Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.Initialize
+  commentId: M:Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.Initialize
+  id: Initialize
+  parent: Orleans.Transactions.AzureStorage.AzureTransactionLogStorage
+  langs:
+  - csharp
+  - vb
+  name: Initialize()
+  nameWithType: AzureTransactionLogStorage.Initialize()
+  fullName: Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.Initialize()
+  type: Method
+  source:
+    remote:
+      path: src/Azure/Orleans.Transactions.AzureStorage/Storage/AzureTransactionLogStorage.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Initialize
+    path: src/Azure/Orleans.Transactions.AzureStorage/Storage/AzureTransactionLogStorage.cs
+    startLine: 52
+  assemblies:
+  - Orleans.Transactions.AzureStorage
+  namespace: Orleans.Transactions.AzureStorage
+  syntax:
+    content: public Task Initialize()
+    return:
+      type: Task
+    content.vb: Public Function Initialize As Task
+  overload: Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.Initialize*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.GetFirstCommitRecord
+  commentId: M:Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.GetFirstCommitRecord
+  id: GetFirstCommitRecord
+  parent: Orleans.Transactions.AzureStorage.AzureTransactionLogStorage
+  langs:
+  - csharp
+  - vb
+  name: GetFirstCommitRecord()
+  nameWithType: AzureTransactionLogStorage.GetFirstCommitRecord()
+  fullName: Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.GetFirstCommitRecord()
+  type: Method
+  source:
+    remote:
+      path: src/Azure/Orleans.Transactions.AzureStorage/Storage/AzureTransactionLogStorage.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetFirstCommitRecord
+    path: src/Azure/Orleans.Transactions.AzureStorage/Storage/AzureTransactionLogStorage.cs
+    startLine: 102
+  assemblies:
+  - Orleans.Transactions.AzureStorage
+  namespace: Orleans.Transactions.AzureStorage
+  syntax:
+    content: public Task<CommitRecord> GetFirstCommitRecord()
+    return:
+      type: Task{CommitRecord}
+    content.vb: Public Function GetFirstCommitRecord As Task(Of CommitRecord)
+  overload: Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.GetFirstCommitRecord*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.GetNextCommitRecord
+  commentId: M:Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.GetNextCommitRecord
+  id: GetNextCommitRecord
+  parent: Orleans.Transactions.AzureStorage.AzureTransactionLogStorage
+  langs:
+  - csharp
+  - vb
+  name: GetNextCommitRecord()
+  nameWithType: AzureTransactionLogStorage.GetNextCommitRecord()
+  fullName: Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.GetNextCommitRecord()
+  type: Method
+  source:
+    remote:
+      path: src/Azure/Orleans.Transactions.AzureStorage/Storage/AzureTransactionLogStorage.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetNextCommitRecord
+    path: src/Azure/Orleans.Transactions.AzureStorage/Storage/AzureTransactionLogStorage.cs
+    startLine: 127
+  assemblies:
+  - Orleans.Transactions.AzureStorage
+  namespace: Orleans.Transactions.AzureStorage
+  syntax:
+    content: public Task<CommitRecord> GetNextCommitRecord()
+    return:
+      type: Task{CommitRecord}
+    content.vb: Public Function GetNextCommitRecord As Task(Of CommitRecord)
+  overload: Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.GetNextCommitRecord*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.GetStartRecord
+  commentId: M:Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.GetStartRecord
+  id: GetStartRecord
+  parent: Orleans.Transactions.AzureStorage.AzureTransactionLogStorage
+  langs:
+  - csharp
+  - vb
+  name: GetStartRecord()
+  nameWithType: AzureTransactionLogStorage.GetStartRecord()
+  fullName: Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.GetStartRecord()
+  type: Method
+  source:
+    remote:
+      path: src/Azure/Orleans.Transactions.AzureStorage/Storage/AzureTransactionLogStorage.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetStartRecord
+    path: src/Azure/Orleans.Transactions.AzureStorage/Storage/AzureTransactionLogStorage.cs
+    startLine: 168
+  assemblies:
+  - Orleans.Transactions.AzureStorage
+  namespace: Orleans.Transactions.AzureStorage
+  syntax:
+    content: public Task<long> GetStartRecord()
+    return:
+      type: Task{System.Int64}
+    content.vb: Public Function GetStartRecord As Task(Of Long)
+  overload: Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.GetStartRecord*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.UpdateStartRecord(System.Int64)
+  commentId: M:Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.UpdateStartRecord(System.Int64)
+  id: UpdateStartRecord(System.Int64)
+  parent: Orleans.Transactions.AzureStorage.AzureTransactionLogStorage
+  langs:
+  - csharp
+  - vb
+  name: UpdateStartRecord(Int64)
+  nameWithType: AzureTransactionLogStorage.UpdateStartRecord(Int64)
+  fullName: Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.UpdateStartRecord(System.Int64)
+  type: Method
+  source:
+    remote:
+      path: src/Azure/Orleans.Transactions.AzureStorage/Storage/AzureTransactionLogStorage.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: UpdateStartRecord
+    path: src/Azure/Orleans.Transactions.AzureStorage/Storage/AzureTransactionLogStorage.cs
+    startLine: 173
+  assemblies:
+  - Orleans.Transactions.AzureStorage
+  namespace: Orleans.Transactions.AzureStorage
+  syntax:
+    content: public Task UpdateStartRecord(long transactionId)
+    parameters:
+    - id: transactionId
+      type: System.Int64
+    return:
+      type: Task
+    content.vb: Public Function UpdateStartRecord(transactionId As Long) As Task
+  overload: Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.UpdateStartRecord*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.Append(IEnumerable{CommitRecord})
+  commentId: M:Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.Append(IEnumerable{CommitRecord})
+  id: Append(IEnumerable{CommitRecord})
+  parent: Orleans.Transactions.AzureStorage.AzureTransactionLogStorage
+  langs:
+  - csharp
+  - vb
+  name: Append(IEnumerable<CommitRecord>)
+  nameWithType: AzureTransactionLogStorage.Append(IEnumerable<CommitRecord>)
+  fullName: Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.Append(IEnumerable<CommitRecord>)
+  type: Method
+  source:
+    remote:
+      path: src/Azure/Orleans.Transactions.AzureStorage/Storage/AzureTransactionLogStorage.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Append
+    path: src/Azure/Orleans.Transactions.AzureStorage/Storage/AzureTransactionLogStorage.cs
+    startLine: 182
+  assemblies:
+  - Orleans.Transactions.AzureStorage
+  namespace: Orleans.Transactions.AzureStorage
+  syntax:
+    content: public Task Append(IEnumerable<CommitRecord> transactions)
+    parameters:
+    - id: transactions
+      type: IEnumerable{CommitRecord}
+    return:
+      type: Task
+    content.vb: Public Function Append(transactions As IEnumerable(Of CommitRecord)) As Task
+  overload: Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.Append*
+  nameWithType.vb: AzureTransactionLogStorage.Append(IEnumerable(Of CommitRecord))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.Append(IEnumerable(Of CommitRecord))
+  name.vb: Append(IEnumerable(Of CommitRecord))
+- uid: Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.TruncateLog(System.Int64)
+  commentId: M:Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.TruncateLog(System.Int64)
+  id: TruncateLog(System.Int64)
+  parent: Orleans.Transactions.AzureStorage.AzureTransactionLogStorage
+  langs:
+  - csharp
+  - vb
+  name: TruncateLog(Int64)
+  nameWithType: AzureTransactionLogStorage.TruncateLog(Int64)
+  fullName: Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.TruncateLog(System.Int64)
+  type: Method
+  source:
+    remote:
+      path: src/Azure/Orleans.Transactions.AzureStorage/Storage/AzureTransactionLogStorage.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: TruncateLog
+    path: src/Azure/Orleans.Transactions.AzureStorage/Storage/AzureTransactionLogStorage.cs
+    startLine: 218
+  assemblies:
+  - Orleans.Transactions.AzureStorage
+  namespace: Orleans.Transactions.AzureStorage
+  syntax:
+    content: public Task TruncateLog(long lsn)
+    parameters:
+    - id: lsn
+      type: System.Int64
+    return:
+      type: Task
+    content.vb: Public Function TruncateLog(lsn As Long) As Task
+  overload: Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.TruncateLog*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.Create(IServiceProvider)
+  commentId: M:Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.Create(IServiceProvider)
+  id: Create(IServiceProvider)
+  parent: Orleans.Transactions.AzureStorage.AzureTransactionLogStorage
+  langs:
+  - csharp
+  - vb
+  name: Create(IServiceProvider)
+  nameWithType: AzureTransactionLogStorage.Create(IServiceProvider)
+  fullName: Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.Create(IServiceProvider)
+  type: Method
+  source:
+    remote:
+      path: src/Azure/Orleans.Transactions.AzureStorage/Storage/AzureTransactionLogStorage.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Create
+    path: src/Azure/Orleans.Transactions.AzureStorage/Storage/AzureTransactionLogStorage.cs
+    startLine: 262
+  assemblies:
+  - Orleans.Transactions.AzureStorage
+  namespace: Orleans.Transactions.AzureStorage
+  syntax:
+    content: public static Factory<Task<ITransactionLogStorage>> Create(IServiceProvider serviceProvider)
+    parameters:
+    - id: serviceProvider
+      type: IServiceProvider
+    return:
+      type: Factory{Task{ITransactionLogStorage}}
+    content.vb: Public Shared Function Create(serviceProvider As IServiceProvider) As Factory(Of Task(Of ITransactionLogStorage))
+  overload: Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.Create*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Orleans.Transactions.AzureStorage
+  commentId: N:Orleans.Transactions.AzureStorage
+  isExternal: false
+  name: Orleans.Transactions.AzureStorage
+  nameWithType: Orleans.Transactions.AzureStorage
+  fullName: Orleans.Transactions.AzureStorage
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<AzureTransactionLogStorage>()
+  nameWithType: ImmutableExt.AsImmutable<AzureTransactionLogStorage>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Transactions.AzureStorage.AzureTransactionLogStorage>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of AzureTransactionLogStorage)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Transactions.AzureStorage.AzureTransactionLogStorage)()
+  name.vb: AsImmutable(Of AzureTransactionLogStorage)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<AzureTransactionLogStorage>
+    nameWithType: ImmutableExt.AsImmutable<AzureTransactionLogStorage>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Transactions.AzureStorage.AzureTransactionLogStorage>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of AzureTransactionLogStorage)
+    nameWithType: ImmutableExt.AsImmutable(Of AzureTransactionLogStorage)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Transactions.AzureStorage.AzureTransactionLogStorage)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.#ctor*
+  commentId: Overload:Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.#ctor
+  isExternal: false
+  name: AzureTransactionLogStorage
+  nameWithType: AzureTransactionLogStorage.AzureTransactionLogStorage
+  fullName: Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.AzureTransactionLogStorage
+- uid: SerializationManager
+  isExternal: true
+  name: SerializationManager
+  nameWithType: SerializationManager
+  fullName: SerializationManager
+- uid: IOptions{Orleans.Configuration.AzureTransactionLogOptions}
+  commentId: '!:IOptions{Orleans.Configuration.AzureTransactionLogOptions}'
+  definition: IOptions`1
+  name: IOptions<AzureTransactionLogOptions>
+  nameWithType: IOptions<AzureTransactionLogOptions>
+  fullName: IOptions<Orleans.Configuration.AzureTransactionLogOptions>
+  nameWithType.vb: IOptions(Of AzureTransactionLogOptions)
+  fullName.vb: IOptions(Of Orleans.Configuration.AzureTransactionLogOptions)
+  name.vb: IOptions(Of AzureTransactionLogOptions)
+  spec.csharp:
+  - uid: IOptions`1
+    name: IOptions
+    nameWithType: IOptions
+    fullName: IOptions
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Orleans.Configuration.AzureTransactionLogOptions
+    name: AzureTransactionLogOptions
+    nameWithType: AzureTransactionLogOptions
+    fullName: Orleans.Configuration.AzureTransactionLogOptions
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IOptions`1
+    name: IOptions
+    nameWithType: IOptions
+    fullName: IOptions
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Orleans.Configuration.AzureTransactionLogOptions
+    name: AzureTransactionLogOptions
+    nameWithType: AzureTransactionLogOptions
+    fullName: Orleans.Configuration.AzureTransactionLogOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IOptions`1
+  isExternal: true
+  name: IOptions<>
+  nameWithType: IOptions<>
+  fullName: IOptions<>
+  nameWithType.vb: IOptions(Of )
+  fullName.vb: IOptions(Of )
+  name.vb: IOptions(Of )
+  spec.csharp:
+  - uid: IOptions`1
+    name: IOptions
+    nameWithType: IOptions
+    fullName: IOptions
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IOptions`1
+    name: IOptions
+    nameWithType: IOptions
+    fullName: IOptions
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.Initialize*
+  commentId: Overload:Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.Initialize
+  isExternal: false
+  name: Initialize
+  nameWithType: AzureTransactionLogStorage.Initialize
+  fullName: Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.Initialize
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task
+- uid: Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.GetFirstCommitRecord*
+  commentId: Overload:Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.GetFirstCommitRecord
+  isExternal: false
+  name: GetFirstCommitRecord
+  nameWithType: AzureTransactionLogStorage.GetFirstCommitRecord
+  fullName: Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.GetFirstCommitRecord
+- uid: Task{CommitRecord}
+  commentId: '!:Task{CommitRecord}'
+  definition: Task`1
+  name: Task<CommitRecord>
+  nameWithType: Task<CommitRecord>
+  fullName: Task<CommitRecord>
+  nameWithType.vb: Task(Of CommitRecord)
+  fullName.vb: Task(Of CommitRecord)
+  name.vb: Task(Of CommitRecord)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: CommitRecord
+    name: CommitRecord
+    nameWithType: CommitRecord
+    fullName: CommitRecord
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: CommitRecord
+    name: CommitRecord
+    nameWithType: CommitRecord
+    fullName: CommitRecord
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.GetNextCommitRecord*
+  commentId: Overload:Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.GetNextCommitRecord
+  isExternal: false
+  name: GetNextCommitRecord
+  nameWithType: AzureTransactionLogStorage.GetNextCommitRecord
+  fullName: Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.GetNextCommitRecord
+- uid: Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.GetStartRecord*
+  commentId: Overload:Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.GetStartRecord
+  isExternal: false
+  name: GetStartRecord
+  nameWithType: AzureTransactionLogStorage.GetStartRecord
+  fullName: Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.GetStartRecord
+- uid: Task{System.Int64}
+  commentId: '!:Task{System.Int64}'
+  definition: Task`1
+  name: Task<Int64>
+  nameWithType: Task<Int64>
+  fullName: Task<System.Int64>
+  nameWithType.vb: Task(Of Int64)
+  fullName.vb: Task(Of System.Int64)
+  name.vb: Task(Of Int64)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.UpdateStartRecord*
+  commentId: Overload:Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.UpdateStartRecord
+  isExternal: false
+  name: UpdateStartRecord
+  nameWithType: AzureTransactionLogStorage.UpdateStartRecord
+  fullName: Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.UpdateStartRecord
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
+- uid: Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.Append*
+  commentId: Overload:Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.Append
+  isExternal: false
+  name: Append
+  nameWithType: AzureTransactionLogStorage.Append
+  fullName: Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.Append
+- uid: IEnumerable{CommitRecord}
+  commentId: '!:IEnumerable{CommitRecord}'
+  definition: IEnumerable`1
+  name: IEnumerable<CommitRecord>
+  nameWithType: IEnumerable<CommitRecord>
+  fullName: IEnumerable<CommitRecord>
+  nameWithType.vb: IEnumerable(Of CommitRecord)
+  fullName.vb: IEnumerable(Of CommitRecord)
+  name.vb: IEnumerable(Of CommitRecord)
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: CommitRecord
+    name: CommitRecord
+    nameWithType: CommitRecord
+    fullName: CommitRecord
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: CommitRecord
+    name: CommitRecord
+    nameWithType: CommitRecord
+    fullName: CommitRecord
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IEnumerable`1
+  isExternal: true
+  name: IEnumerable<>
+  nameWithType: IEnumerable<>
+  fullName: IEnumerable<>
+  nameWithType.vb: IEnumerable(Of )
+  fullName.vb: IEnumerable(Of )
+  name.vb: IEnumerable(Of )
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.TruncateLog*
+  commentId: Overload:Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.TruncateLog
+  isExternal: false
+  name: TruncateLog
+  nameWithType: AzureTransactionLogStorage.TruncateLog
+  fullName: Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.TruncateLog
+- uid: Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.Create*
+  commentId: Overload:Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.Create
+  isExternal: false
+  name: Create
+  nameWithType: AzureTransactionLogStorage.Create
+  fullName: Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.Create
+- uid: IServiceProvider
+  isExternal: true
+  name: IServiceProvider
+  nameWithType: IServiceProvider
+  fullName: IServiceProvider
+- uid: Factory{Task{ITransactionLogStorage}}
+  commentId: '!:Factory{Task{ITransactionLogStorage}}'
+  definition: Factory`1
+  name: Factory<Task<ITransactionLogStorage>>
+  nameWithType: Factory<Task<ITransactionLogStorage>>
+  fullName: Factory<Task<ITransactionLogStorage>>
+  nameWithType.vb: Factory(Of Task(Of ITransactionLogStorage))
+  fullName.vb: Factory(Of Task(Of ITransactionLogStorage))
+  name.vb: Factory(Of Task(Of ITransactionLogStorage))
+  spec.csharp:
+  - uid: Factory`1
+    name: Factory
+    nameWithType: Factory
+    fullName: Factory
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: ITransactionLogStorage
+    name: ITransactionLogStorage
+    nameWithType: ITransactionLogStorage
+    fullName: ITransactionLogStorage
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Factory`1
+    name: Factory
+    nameWithType: Factory
+    fullName: Factory
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: ITransactionLogStorage
+    name: ITransactionLogStorage
+    nameWithType: ITransactionLogStorage
+    fullName: ITransactionLogStorage
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Factory`1
+  commentId: '!:Factory`1'
+  isExternal: true
+  name: Factory<>
+  nameWithType: Factory<>
+  fullName: Factory<>
+  nameWithType.vb: Factory(Of )
+  fullName.vb: Factory(Of )
+  name.vb: Factory(Of )
+  spec.csharp:
+  - uid: Factory`1
+    name: Factory
+    nameWithType: Factory
+    fullName: Factory
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Factory`1
+    name: Factory
+    nameWithType: Factory
+    fullName: Factory
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )

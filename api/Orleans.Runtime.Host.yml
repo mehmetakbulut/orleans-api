@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Runtime.Host
+  commentId: N:Orleans.Runtime.Host
+  id: Orleans.Runtime.Host
+  children:
+  - Orleans.Runtime.Host.ConsulSiloRegistration
+  - Orleans.Runtime.Host.SiloHost
+  - Orleans.Runtime.Host.SuspectingSilo
+  langs:
+  - csharp
+  - vb
+  name: Orleans.Runtime.Host
+  nameWithType: Orleans.Runtime.Host
+  fullName: Orleans.Runtime.Host
+  type: Namespace
+  assemblies:
+  - Orleans.Runtime.Legacy
+references:
+- uid: Orleans.Runtime.Host.SiloHost
+  commentId: T:Orleans.Runtime.Host.SiloHost
+  isExternal: false
+  name: SiloHost
+  nameWithType: SiloHost
+  fullName: Orleans.Runtime.Host.SiloHost
+- uid: Orleans.Runtime.Host.ConsulSiloRegistration
+  commentId: T:Orleans.Runtime.Host.ConsulSiloRegistration
+  isExternal: false
+  name: ConsulSiloRegistration
+  nameWithType: ConsulSiloRegistration
+  fullName: Orleans.Runtime.Host.ConsulSiloRegistration
+- uid: Orleans.Runtime.Host.SuspectingSilo
+  commentId: T:Orleans.Runtime.Host.SuspectingSilo
+  isExternal: false
+  name: SuspectingSilo
+  nameWithType: SuspectingSilo
+  fullName: Orleans.Runtime.Host.SuspectingSilo

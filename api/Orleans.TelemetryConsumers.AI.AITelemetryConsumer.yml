@@ -1,0 +1,1103 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.TelemetryConsumers.AI.AITelemetryConsumer
+  commentId: T:Orleans.TelemetryConsumers.AI.AITelemetryConsumer
+  id: AITelemetryConsumer
+  parent: Orleans.TelemetryConsumers.AI
+  children:
+  - Orleans.TelemetryConsumers.AI.AITelemetryConsumer.#ctor(System.String)
+  - Orleans.TelemetryConsumers.AI.AITelemetryConsumer.Close
+  - Orleans.TelemetryConsumers.AI.AITelemetryConsumer.DecrementMetric(System.String)
+  - Orleans.TelemetryConsumers.AI.AITelemetryConsumer.DecrementMetric(System.String,System.Double)
+  - Orleans.TelemetryConsumers.AI.AITelemetryConsumer.Flush
+  - Orleans.TelemetryConsumers.AI.AITelemetryConsumer.IncrementMetric(System.String)
+  - Orleans.TelemetryConsumers.AI.AITelemetryConsumer.IncrementMetric(System.String,System.Double)
+  - Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackDependency(System.String,System.String,DateTimeOffset,TimeSpan,System.Boolean)
+  - Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackEvent(System.String,IDictionary{System.String,System.String},IDictionary{System.String,System.Double})
+  - Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackException(Exception,IDictionary{System.String,System.String},IDictionary{System.String,System.Double})
+  - Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackMetric(System.String,System.Double,IDictionary{System.String,System.String})
+  - Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackMetric(System.String,TimeSpan,IDictionary{System.String,System.String})
+  - Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackRequest(System.String,DateTimeOffset,TimeSpan,System.String,System.Boolean)
+  - Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackTrace(System.String)
+  - Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackTrace(System.String,IDictionary{System.String,System.String})
+  - Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackTrace(System.String,Orleans.Runtime.Severity)
+  - Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackTrace(System.String,Orleans.Runtime.Severity,IDictionary{System.String,System.String})
+  langs:
+  - csharp
+  - vb
+  name: AITelemetryConsumer
+  nameWithType: AITelemetryConsumer
+  fullName: Orleans.TelemetryConsumers.AI.AITelemetryConsumer
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.TelemetryConsumers.AI/AITelemetryConsumer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AITelemetryConsumer
+    path: src/Orleans.TelemetryConsumers.AI/AITelemetryConsumer.cs
+    startLine: 10
+  assemblies:
+  - Orleans.TelemetryConsumers.AI
+  namespace: Orleans.TelemetryConsumers.AI
+  summary: "\nTelemetry consumer class for ApplicationInsights.\n"
+  example: []
+  syntax:
+    content: 'public class AITelemetryConsumer : ITraceTelemetryConsumer, IEventTelemetryConsumer, IExceptionTelemetryConsumer, IDependencyTelemetryConsumer, IMetricTelemetryConsumer, IRequestTelemetryConsumer'
+    content.vb: >-
+      Public Class AITelemetryConsumer
+
+          Inherits ITraceTelemetryConsumer
+
+          Implements IEventTelemetryConsumer, IExceptionTelemetryConsumer, IDependencyTelemetryConsumer, IMetricTelemetryConsumer, IRequestTelemetryConsumer
+  inheritance:
+  - System.Object
+  implements:
+  - IEventTelemetryConsumer
+  - IExceptionTelemetryConsumer
+  - IDependencyTelemetryConsumer
+  - IMetricTelemetryConsumer
+  - IRequestTelemetryConsumer
+  extensionMethods:
+  - Orleans.TelemetryConsumers.AI.AITelemetryConsumer.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.#ctor(System.String)
+  commentId: M:Orleans.TelemetryConsumers.AI.AITelemetryConsumer.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Orleans.TelemetryConsumers.AI.AITelemetryConsumer
+  langs:
+  - csharp
+  - vb
+  name: AITelemetryConsumer(String)
+  nameWithType: AITelemetryConsumer.AITelemetryConsumer(String)
+  fullName: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.AITelemetryConsumer(System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.TelemetryConsumers.AI/AITelemetryConsumer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.TelemetryConsumers.AI/AITelemetryConsumer.cs
+    startLine: 19
+  assemblies:
+  - Orleans.TelemetryConsumers.AI
+  namespace: Orleans.TelemetryConsumers.AI
+  summary: "\nConstructor.\n"
+  example: []
+  syntax:
+    content: public AITelemetryConsumer(string instrumentationKey)
+    parameters:
+    - id: instrumentationKey
+      type: System.String
+      description: The instrumentation key for ApplicationInsights.
+    content.vb: Public Sub New(instrumentationKey As String)
+  overload: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.DecrementMetric(System.String)
+  commentId: M:Orleans.TelemetryConsumers.AI.AITelemetryConsumer.DecrementMetric(System.String)
+  id: DecrementMetric(System.String)
+  parent: Orleans.TelemetryConsumers.AI.AITelemetryConsumer
+  langs:
+  - csharp
+  - vb
+  name: DecrementMetric(String)
+  nameWithType: AITelemetryConsumer.DecrementMetric(String)
+  fullName: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.DecrementMetric(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.TelemetryConsumers.AI/AITelemetryConsumer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: DecrementMetric
+    path: src/Orleans.TelemetryConsumers.AI/AITelemetryConsumer.cs
+    startLine: 27
+  assemblies:
+  - Orleans.TelemetryConsumers.AI
+  namespace: Orleans.TelemetryConsumers.AI
+  example: []
+  syntax:
+    content: public void DecrementMetric(string name)
+    parameters:
+    - id: name
+      type: System.String
+    content.vb: Public Sub DecrementMetric(name As String)
+  overload: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.DecrementMetric*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.DecrementMetric(System.String,System.Double)
+  commentId: M:Orleans.TelemetryConsumers.AI.AITelemetryConsumer.DecrementMetric(System.String,System.Double)
+  id: DecrementMetric(System.String,System.Double)
+  parent: Orleans.TelemetryConsumers.AI.AITelemetryConsumer
+  langs:
+  - csharp
+  - vb
+  name: DecrementMetric(String, Double)
+  nameWithType: AITelemetryConsumer.DecrementMetric(String, Double)
+  fullName: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.DecrementMetric(System.String, System.Double)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.TelemetryConsumers.AI/AITelemetryConsumer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: DecrementMetric
+    path: src/Orleans.TelemetryConsumers.AI/AITelemetryConsumer.cs
+    startLine: 33
+  assemblies:
+  - Orleans.TelemetryConsumers.AI
+  namespace: Orleans.TelemetryConsumers.AI
+  example: []
+  syntax:
+    content: public void DecrementMetric(string name, double value)
+    parameters:
+    - id: name
+      type: System.String
+    - id: value
+      type: System.Double
+    content.vb: Public Sub DecrementMetric(name As String, value As Double)
+  overload: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.DecrementMetric*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.IncrementMetric(System.String)
+  commentId: M:Orleans.TelemetryConsumers.AI.AITelemetryConsumer.IncrementMetric(System.String)
+  id: IncrementMetric(System.String)
+  parent: Orleans.TelemetryConsumers.AI.AITelemetryConsumer
+  langs:
+  - csharp
+  - vb
+  name: IncrementMetric(String)
+  nameWithType: AITelemetryConsumer.IncrementMetric(String)
+  fullName: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.IncrementMetric(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.TelemetryConsumers.AI/AITelemetryConsumer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IncrementMetric
+    path: src/Orleans.TelemetryConsumers.AI/AITelemetryConsumer.cs
+    startLine: 39
+  assemblies:
+  - Orleans.TelemetryConsumers.AI
+  namespace: Orleans.TelemetryConsumers.AI
+  example: []
+  syntax:
+    content: public void IncrementMetric(string name)
+    parameters:
+    - id: name
+      type: System.String
+    content.vb: Public Sub IncrementMetric(name As String)
+  overload: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.IncrementMetric*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.IncrementMetric(System.String,System.Double)
+  commentId: M:Orleans.TelemetryConsumers.AI.AITelemetryConsumer.IncrementMetric(System.String,System.Double)
+  id: IncrementMetric(System.String,System.Double)
+  parent: Orleans.TelemetryConsumers.AI.AITelemetryConsumer
+  langs:
+  - csharp
+  - vb
+  name: IncrementMetric(String, Double)
+  nameWithType: AITelemetryConsumer.IncrementMetric(String, Double)
+  fullName: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.IncrementMetric(System.String, System.Double)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.TelemetryConsumers.AI/AITelemetryConsumer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IncrementMetric
+    path: src/Orleans.TelemetryConsumers.AI/AITelemetryConsumer.cs
+    startLine: 45
+  assemblies:
+  - Orleans.TelemetryConsumers.AI
+  namespace: Orleans.TelemetryConsumers.AI
+  example: []
+  syntax:
+    content: public void IncrementMetric(string name, double value)
+    parameters:
+    - id: name
+      type: System.String
+    - id: value
+      type: System.Double
+    content.vb: Public Sub IncrementMetric(name As String, value As Double)
+  overload: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.IncrementMetric*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackDependency(System.String,System.String,DateTimeOffset,TimeSpan,System.Boolean)
+  commentId: M:Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackDependency(System.String,System.String,DateTimeOffset,TimeSpan,System.Boolean)
+  id: TrackDependency(System.String,System.String,DateTimeOffset,TimeSpan,System.Boolean)
+  parent: Orleans.TelemetryConsumers.AI.AITelemetryConsumer
+  langs:
+  - csharp
+  - vb
+  name: TrackDependency(String, String, DateTimeOffset, TimeSpan, Boolean)
+  nameWithType: AITelemetryConsumer.TrackDependency(String, String, DateTimeOffset, TimeSpan, Boolean)
+  fullName: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackDependency(System.String, System.String, DateTimeOffset, TimeSpan, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.TelemetryConsumers.AI/AITelemetryConsumer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: TrackDependency
+    path: src/Orleans.TelemetryConsumers.AI/AITelemetryConsumer.cs
+    startLine: 50
+  assemblies:
+  - Orleans.TelemetryConsumers.AI
+  namespace: Orleans.TelemetryConsumers.AI
+  syntax:
+    content: public void TrackDependency(string dependencyName, string commandName, DateTimeOffset startTime, TimeSpan duration, bool success)
+    parameters:
+    - id: dependencyName
+      type: System.String
+    - id: commandName
+      type: System.String
+    - id: startTime
+      type: DateTimeOffset
+    - id: duration
+      type: TimeSpan
+    - id: success
+      type: System.Boolean
+    content.vb: Public Sub TrackDependency(dependencyName As String, commandName As String, startTime As DateTimeOffset, duration As TimeSpan, success As Boolean)
+  overload: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackDependency*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackEvent(System.String,IDictionary{System.String,System.String},IDictionary{System.String,System.Double})
+  commentId: M:Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackEvent(System.String,IDictionary{System.String,System.String},IDictionary{System.String,System.Double})
+  id: TrackEvent(System.String,IDictionary{System.String,System.String},IDictionary{System.String,System.Double})
+  parent: Orleans.TelemetryConsumers.AI.AITelemetryConsumer
+  langs:
+  - csharp
+  - vb
+  name: TrackEvent(String, IDictionary<String, String>, IDictionary<String, Double>)
+  nameWithType: AITelemetryConsumer.TrackEvent(String, IDictionary<String, String>, IDictionary<String, Double>)
+  fullName: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackEvent(System.String, IDictionary<System.String, System.String>, IDictionary<System.String, System.Double>)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.TelemetryConsumers.AI/AITelemetryConsumer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: TrackEvent
+    path: src/Orleans.TelemetryConsumers.AI/AITelemetryConsumer.cs
+    startLine: 55
+  assemblies:
+  - Orleans.TelemetryConsumers.AI
+  namespace: Orleans.TelemetryConsumers.AI
+  syntax:
+    content: public void TrackEvent(string eventName, IDictionary<string, string> properties = null, IDictionary<string, double> metrics = null)
+    parameters:
+    - id: eventName
+      type: System.String
+    - id: properties
+      type: IDictionary{System.String,System.String}
+    - id: metrics
+      type: IDictionary{System.String,System.Double}
+    content.vb: Public Sub TrackEvent(eventName As String, properties As IDictionary(Of String, String) = Nothing, metrics As IDictionary(Of String, Double) = Nothing)
+  overload: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackEvent*
+  nameWithType.vb: AITelemetryConsumer.TrackEvent(String, IDictionary(Of String, String), IDictionary(Of String, Double))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackEvent(System.String, IDictionary(Of System.String, System.String), IDictionary(Of System.String, System.Double))
+  name.vb: TrackEvent(String, IDictionary(Of String, String), IDictionary(Of String, Double))
+- uid: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackException(Exception,IDictionary{System.String,System.String},IDictionary{System.String,System.Double})
+  commentId: M:Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackException(Exception,IDictionary{System.String,System.String},IDictionary{System.String,System.Double})
+  id: TrackException(Exception,IDictionary{System.String,System.String},IDictionary{System.String,System.Double})
+  parent: Orleans.TelemetryConsumers.AI.AITelemetryConsumer
+  langs:
+  - csharp
+  - vb
+  name: TrackException(Exception, IDictionary<String, String>, IDictionary<String, Double>)
+  nameWithType: AITelemetryConsumer.TrackException(Exception, IDictionary<String, String>, IDictionary<String, Double>)
+  fullName: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackException(Exception, IDictionary<System.String, System.String>, IDictionary<System.String, System.Double>)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.TelemetryConsumers.AI/AITelemetryConsumer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: TrackException
+    path: src/Orleans.TelemetryConsumers.AI/AITelemetryConsumer.cs
+    startLine: 60
+  assemblies:
+  - Orleans.TelemetryConsumers.AI
+  namespace: Orleans.TelemetryConsumers.AI
+  syntax:
+    content: public void TrackException(Exception exception, IDictionary<string, string> properties = null, IDictionary<string, double> metrics = null)
+    parameters:
+    - id: exception
+      type: Exception
+    - id: properties
+      type: IDictionary{System.String,System.String}
+    - id: metrics
+      type: IDictionary{System.String,System.Double}
+    content.vb: Public Sub TrackException(exception As Exception, properties As IDictionary(Of String, String) = Nothing, metrics As IDictionary(Of String, Double) = Nothing)
+  overload: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackException*
+  nameWithType.vb: AITelemetryConsumer.TrackException(Exception, IDictionary(Of String, String), IDictionary(Of String, Double))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackException(Exception, IDictionary(Of System.String, System.String), IDictionary(Of System.String, System.Double))
+  name.vb: TrackException(Exception, IDictionary(Of String, String), IDictionary(Of String, Double))
+- uid: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackMetric(System.String,TimeSpan,IDictionary{System.String,System.String})
+  commentId: M:Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackMetric(System.String,TimeSpan,IDictionary{System.String,System.String})
+  id: TrackMetric(System.String,TimeSpan,IDictionary{System.String,System.String})
+  parent: Orleans.TelemetryConsumers.AI.AITelemetryConsumer
+  langs:
+  - csharp
+  - vb
+  name: TrackMetric(String, TimeSpan, IDictionary<String, String>)
+  nameWithType: AITelemetryConsumer.TrackMetric(String, TimeSpan, IDictionary<String, String>)
+  fullName: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackMetric(System.String, TimeSpan, IDictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.TelemetryConsumers.AI/AITelemetryConsumer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: TrackMetric
+    path: src/Orleans.TelemetryConsumers.AI/AITelemetryConsumer.cs
+    startLine: 65
+  assemblies:
+  - Orleans.TelemetryConsumers.AI
+  namespace: Orleans.TelemetryConsumers.AI
+  syntax:
+    content: public void TrackMetric(string name, TimeSpan value, IDictionary<string, string> properties = null)
+    parameters:
+    - id: name
+      type: System.String
+    - id: value
+      type: TimeSpan
+    - id: properties
+      type: IDictionary{System.String,System.String}
+    content.vb: Public Sub TrackMetric(name As String, value As TimeSpan, properties As IDictionary(Of String, String) = Nothing)
+  overload: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackMetric*
+  nameWithType.vb: AITelemetryConsumer.TrackMetric(String, TimeSpan, IDictionary(Of String, String))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackMetric(System.String, TimeSpan, IDictionary(Of System.String, System.String))
+  name.vb: TrackMetric(String, TimeSpan, IDictionary(Of String, String))
+- uid: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackMetric(System.String,System.Double,IDictionary{System.String,System.String})
+  commentId: M:Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackMetric(System.String,System.Double,IDictionary{System.String,System.String})
+  id: TrackMetric(System.String,System.Double,IDictionary{System.String,System.String})
+  parent: Orleans.TelemetryConsumers.AI.AITelemetryConsumer
+  langs:
+  - csharp
+  - vb
+  name: TrackMetric(String, Double, IDictionary<String, String>)
+  nameWithType: AITelemetryConsumer.TrackMetric(String, Double, IDictionary<String, String>)
+  fullName: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackMetric(System.String, System.Double, IDictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.TelemetryConsumers.AI/AITelemetryConsumer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: TrackMetric
+    path: src/Orleans.TelemetryConsumers.AI/AITelemetryConsumer.cs
+    startLine: 70
+  assemblies:
+  - Orleans.TelemetryConsumers.AI
+  namespace: Orleans.TelemetryConsumers.AI
+  syntax:
+    content: public void TrackMetric(string name, double value, IDictionary<string, string> properties = null)
+    parameters:
+    - id: name
+      type: System.String
+    - id: value
+      type: System.Double
+    - id: properties
+      type: IDictionary{System.String,System.String}
+    content.vb: Public Sub TrackMetric(name As String, value As Double, properties As IDictionary(Of String, String) = Nothing)
+  overload: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackMetric*
+  nameWithType.vb: AITelemetryConsumer.TrackMetric(String, Double, IDictionary(Of String, String))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackMetric(System.String, System.Double, IDictionary(Of System.String, System.String))
+  name.vb: TrackMetric(String, Double, IDictionary(Of String, String))
+- uid: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackRequest(System.String,DateTimeOffset,TimeSpan,System.String,System.Boolean)
+  commentId: M:Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackRequest(System.String,DateTimeOffset,TimeSpan,System.String,System.Boolean)
+  id: TrackRequest(System.String,DateTimeOffset,TimeSpan,System.String,System.Boolean)
+  parent: Orleans.TelemetryConsumers.AI.AITelemetryConsumer
+  langs:
+  - csharp
+  - vb
+  name: TrackRequest(String, DateTimeOffset, TimeSpan, String, Boolean)
+  nameWithType: AITelemetryConsumer.TrackRequest(String, DateTimeOffset, TimeSpan, String, Boolean)
+  fullName: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackRequest(System.String, DateTimeOffset, TimeSpan, System.String, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.TelemetryConsumers.AI/AITelemetryConsumer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: TrackRequest
+    path: src/Orleans.TelemetryConsumers.AI/AITelemetryConsumer.cs
+    startLine: 75
+  assemblies:
+  - Orleans.TelemetryConsumers.AI
+  namespace: Orleans.TelemetryConsumers.AI
+  syntax:
+    content: public void TrackRequest(string name, DateTimeOffset startTime, TimeSpan duration, string responseCode, bool success)
+    parameters:
+    - id: name
+      type: System.String
+    - id: startTime
+      type: DateTimeOffset
+    - id: duration
+      type: TimeSpan
+    - id: responseCode
+      type: System.String
+    - id: success
+      type: System.Boolean
+    content.vb: Public Sub TrackRequest(name As String, startTime As DateTimeOffset, duration As TimeSpan, responseCode As String, success As Boolean)
+  overload: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackRequest*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackTrace(System.String)
+  commentId: M:Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackTrace(System.String)
+  id: TrackTrace(System.String)
+  parent: Orleans.TelemetryConsumers.AI.AITelemetryConsumer
+  langs:
+  - csharp
+  - vb
+  name: TrackTrace(String)
+  nameWithType: AITelemetryConsumer.TrackTrace(String)
+  fullName: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackTrace(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.TelemetryConsumers.AI/AITelemetryConsumer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: TrackTrace
+    path: src/Orleans.TelemetryConsumers.AI/AITelemetryConsumer.cs
+    startLine: 80
+  assemblies:
+  - Orleans.TelemetryConsumers.AI
+  namespace: Orleans.TelemetryConsumers.AI
+  syntax:
+    content: public void TrackTrace(string message)
+    parameters:
+    - id: message
+      type: System.String
+    content.vb: Public Sub TrackTrace(message As String)
+  overload: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackTrace*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackTrace(System.String,IDictionary{System.String,System.String})
+  commentId: M:Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackTrace(System.String,IDictionary{System.String,System.String})
+  id: TrackTrace(System.String,IDictionary{System.String,System.String})
+  parent: Orleans.TelemetryConsumers.AI.AITelemetryConsumer
+  langs:
+  - csharp
+  - vb
+  name: TrackTrace(String, IDictionary<String, String>)
+  nameWithType: AITelemetryConsumer.TrackTrace(String, IDictionary<String, String>)
+  fullName: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackTrace(System.String, IDictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.TelemetryConsumers.AI/AITelemetryConsumer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: TrackTrace
+    path: src/Orleans.TelemetryConsumers.AI/AITelemetryConsumer.cs
+    startLine: 85
+  assemblies:
+  - Orleans.TelemetryConsumers.AI
+  namespace: Orleans.TelemetryConsumers.AI
+  syntax:
+    content: public void TrackTrace(string message, IDictionary<string, string> properties)
+    parameters:
+    - id: message
+      type: System.String
+    - id: properties
+      type: IDictionary{System.String,System.String}
+    content.vb: Public Sub TrackTrace(message As String, properties As IDictionary(Of String, String))
+  overload: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackTrace*
+  nameWithType.vb: AITelemetryConsumer.TrackTrace(String, IDictionary(Of String, String))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackTrace(System.String, IDictionary(Of System.String, System.String))
+  name.vb: TrackTrace(String, IDictionary(Of String, String))
+- uid: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackTrace(System.String,Orleans.Runtime.Severity)
+  commentId: M:Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackTrace(System.String,Orleans.Runtime.Severity)
+  id: TrackTrace(System.String,Orleans.Runtime.Severity)
+  parent: Orleans.TelemetryConsumers.AI.AITelemetryConsumer
+  langs:
+  - csharp
+  - vb
+  name: TrackTrace(String, Severity)
+  nameWithType: AITelemetryConsumer.TrackTrace(String, Severity)
+  fullName: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackTrace(System.String, Orleans.Runtime.Severity)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.TelemetryConsumers.AI/AITelemetryConsumer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: TrackTrace
+    path: src/Orleans.TelemetryConsumers.AI/AITelemetryConsumer.cs
+    startLine: 97
+  assemblies:
+  - Orleans.TelemetryConsumers.AI
+  namespace: Orleans.TelemetryConsumers.AI
+  syntax:
+    content: public void TrackTrace(string message, Severity severity)
+    parameters:
+    - id: message
+      type: System.String
+    - id: severity
+      type: Orleans.Runtime.Severity
+    content.vb: Public Sub TrackTrace(message As String, severity As Severity)
+  overload: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackTrace*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackTrace(System.String,Orleans.Runtime.Severity,IDictionary{System.String,System.String})
+  commentId: M:Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackTrace(System.String,Orleans.Runtime.Severity,IDictionary{System.String,System.String})
+  id: TrackTrace(System.String,Orleans.Runtime.Severity,IDictionary{System.String,System.String})
+  parent: Orleans.TelemetryConsumers.AI.AITelemetryConsumer
+  langs:
+  - csharp
+  - vb
+  name: TrackTrace(String, Severity, IDictionary<String, String>)
+  nameWithType: AITelemetryConsumer.TrackTrace(String, Severity, IDictionary<String, String>)
+  fullName: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackTrace(System.String, Orleans.Runtime.Severity, IDictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.TelemetryConsumers.AI/AITelemetryConsumer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: TrackTrace
+    path: src/Orleans.TelemetryConsumers.AI/AITelemetryConsumer.cs
+    startLine: 102
+  assemblies:
+  - Orleans.TelemetryConsumers.AI
+  namespace: Orleans.TelemetryConsumers.AI
+  syntax:
+    content: public void TrackTrace(string message, Severity severity, IDictionary<string, string> properties)
+    parameters:
+    - id: message
+      type: System.String
+    - id: severity
+      type: Orleans.Runtime.Severity
+    - id: properties
+      type: IDictionary{System.String,System.String}
+    content.vb: Public Sub TrackTrace(message As String, severity As Severity, properties As IDictionary(Of String, String))
+  overload: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackTrace*
+  nameWithType.vb: AITelemetryConsumer.TrackTrace(String, Severity, IDictionary(Of String, String))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackTrace(System.String, Orleans.Runtime.Severity, IDictionary(Of System.String, System.String))
+  name.vb: TrackTrace(String, Severity, IDictionary(Of String, String))
+- uid: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.Flush
+  commentId: M:Orleans.TelemetryConsumers.AI.AITelemetryConsumer.Flush
+  id: Flush
+  parent: Orleans.TelemetryConsumers.AI.AITelemetryConsumer
+  langs:
+  - csharp
+  - vb
+  name: Flush()
+  nameWithType: AITelemetryConsumer.Flush()
+  fullName: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.Flush()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.TelemetryConsumers.AI/AITelemetryConsumer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Flush
+    path: src/Orleans.TelemetryConsumers.AI/AITelemetryConsumer.cs
+    startLine: 136
+  assemblies:
+  - Orleans.TelemetryConsumers.AI
+  namespace: Orleans.TelemetryConsumers.AI
+  syntax:
+    content: public void Flush()
+    content.vb: Public Sub Flush
+  overload: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.Flush*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.Close
+  commentId: M:Orleans.TelemetryConsumers.AI.AITelemetryConsumer.Close
+  id: Close
+  parent: Orleans.TelemetryConsumers.AI.AITelemetryConsumer
+  langs:
+  - csharp
+  - vb
+  name: Close()
+  nameWithType: AITelemetryConsumer.Close()
+  fullName: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.Close()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.TelemetryConsumers.AI/AITelemetryConsumer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Close
+    path: src/Orleans.TelemetryConsumers.AI/AITelemetryConsumer.cs
+    startLine: 137
+  assemblies:
+  - Orleans.TelemetryConsumers.AI
+  namespace: Orleans.TelemetryConsumers.AI
+  syntax:
+    content: public void Close()
+    content.vb: Public Sub Close
+  overload: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.Close*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans.TelemetryConsumers.AI
+  commentId: N:Orleans.TelemetryConsumers.AI
+  isExternal: false
+  name: Orleans.TelemetryConsumers.AI
+  nameWithType: Orleans.TelemetryConsumers.AI
+  fullName: Orleans.TelemetryConsumers.AI
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: IEventTelemetryConsumer
+  commentId: '!:IEventTelemetryConsumer'
+  isExternal: true
+  name: IEventTelemetryConsumer
+  nameWithType: IEventTelemetryConsumer
+  fullName: IEventTelemetryConsumer
+- uid: IExceptionTelemetryConsumer
+  isExternal: true
+  name: IExceptionTelemetryConsumer
+  nameWithType: IExceptionTelemetryConsumer
+  fullName: IExceptionTelemetryConsumer
+- uid: IDependencyTelemetryConsumer
+  isExternal: true
+  name: IDependencyTelemetryConsumer
+  nameWithType: IDependencyTelemetryConsumer
+  fullName: IDependencyTelemetryConsumer
+- uid: IMetricTelemetryConsumer
+  isExternal: true
+  name: IMetricTelemetryConsumer
+  nameWithType: IMetricTelemetryConsumer
+  fullName: IMetricTelemetryConsumer
+- uid: IRequestTelemetryConsumer
+  isExternal: true
+  name: IRequestTelemetryConsumer
+  nameWithType: IRequestTelemetryConsumer
+  fullName: IRequestTelemetryConsumer
+- uid: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<AITelemetryConsumer>()
+  nameWithType: ImmutableExt.AsImmutable<AITelemetryConsumer>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.TelemetryConsumers.AI.AITelemetryConsumer>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of AITelemetryConsumer)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.TelemetryConsumers.AI.AITelemetryConsumer)()
+  name.vb: AsImmutable(Of AITelemetryConsumer)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<AITelemetryConsumer>
+    nameWithType: ImmutableExt.AsImmutable<AITelemetryConsumer>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.TelemetryConsumers.AI.AITelemetryConsumer>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of AITelemetryConsumer)
+    nameWithType: ImmutableExt.AsImmutable(Of AITelemetryConsumer)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.TelemetryConsumers.AI.AITelemetryConsumer)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.#ctor*
+  commentId: Overload:Orleans.TelemetryConsumers.AI.AITelemetryConsumer.#ctor
+  isExternal: false
+  name: AITelemetryConsumer
+  nameWithType: AITelemetryConsumer.AITelemetryConsumer
+  fullName: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.AITelemetryConsumer
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.DecrementMetric*
+  commentId: Overload:Orleans.TelemetryConsumers.AI.AITelemetryConsumer.DecrementMetric
+  isExternal: false
+  name: DecrementMetric
+  nameWithType: AITelemetryConsumer.DecrementMetric
+  fullName: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.DecrementMetric
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.IncrementMetric*
+  commentId: Overload:Orleans.TelemetryConsumers.AI.AITelemetryConsumer.IncrementMetric
+  isExternal: false
+  name: IncrementMetric
+  nameWithType: AITelemetryConsumer.IncrementMetric
+  fullName: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.IncrementMetric
+- uid: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackDependency*
+  commentId: Overload:Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackDependency
+  isExternal: false
+  name: TrackDependency
+  nameWithType: AITelemetryConsumer.TrackDependency
+  fullName: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackDependency
+- uid: DateTimeOffset
+  isExternal: true
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: DateTimeOffset
+- uid: TimeSpan
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: TimeSpan
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackEvent*
+  commentId: Overload:Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackEvent
+  isExternal: false
+  name: TrackEvent
+  nameWithType: AITelemetryConsumer.TrackEvent
+  fullName: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackEvent
+- uid: IDictionary{System.String,System.String}
+  commentId: '!:IDictionary{System.String,System.String}'
+  definition: IDictionary`2
+  name: IDictionary<String, String>
+  nameWithType: IDictionary<String, String>
+  fullName: IDictionary<System.String, System.String>
+  nameWithType.vb: IDictionary(Of String, String)
+  fullName.vb: IDictionary(Of System.String, System.String)
+  name.vb: IDictionary(Of String, String)
+  spec.csharp:
+  - uid: IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IDictionary{System.String,System.Double}
+  commentId: '!:IDictionary{System.String,System.Double}'
+  definition: IDictionary`2
+  name: IDictionary<String, Double>
+  nameWithType: IDictionary<String, Double>
+  fullName: IDictionary<System.String, System.Double>
+  nameWithType.vb: IDictionary(Of String, Double)
+  fullName.vb: IDictionary(Of System.String, System.Double)
+  name.vb: IDictionary(Of String, Double)
+  spec.csharp:
+  - uid: IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IDictionary`2
+  isExternal: true
+  name: IDictionary<, >
+  nameWithType: IDictionary<, >
+  fullName: IDictionary<, >
+  nameWithType.vb: IDictionary(Of , )
+  fullName.vb: IDictionary(Of , )
+  name.vb: IDictionary(Of , )
+  spec.csharp:
+  - uid: IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackException*
+  commentId: Overload:Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackException
+  isExternal: false
+  name: TrackException
+  nameWithType: AITelemetryConsumer.TrackException
+  fullName: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackException
+- uid: Exception
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: Exception
+- uid: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackMetric*
+  commentId: Overload:Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackMetric
+  isExternal: false
+  name: TrackMetric
+  nameWithType: AITelemetryConsumer.TrackMetric
+  fullName: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackMetric
+- uid: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackRequest*
+  commentId: Overload:Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackRequest
+  isExternal: false
+  name: TrackRequest
+  nameWithType: AITelemetryConsumer.TrackRequest
+  fullName: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackRequest
+- uid: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackTrace*
+  commentId: Overload:Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackTrace
+  isExternal: false
+  name: TrackTrace
+  nameWithType: AITelemetryConsumer.TrackTrace
+  fullName: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.TrackTrace
+- uid: Orleans.Runtime.Severity
+  commentId: T:Orleans.Runtime.Severity
+  parent: Orleans.Runtime
+  isExternal: false
+  name: Severity
+  nameWithType: Severity
+  fullName: Orleans.Runtime.Severity
+- uid: Orleans.Runtime
+  commentId: N:Orleans.Runtime
+  isExternal: false
+  name: Orleans.Runtime
+  nameWithType: Orleans.Runtime
+  fullName: Orleans.Runtime
+- uid: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.Flush*
+  commentId: Overload:Orleans.TelemetryConsumers.AI.AITelemetryConsumer.Flush
+  isExternal: false
+  name: Flush
+  nameWithType: AITelemetryConsumer.Flush
+  fullName: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.Flush
+- uid: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.Close*
+  commentId: Overload:Orleans.TelemetryConsumers.AI.AITelemetryConsumer.Close
+  isExternal: false
+  name: Close
+  nameWithType: AITelemetryConsumer.Close
+  fullName: Orleans.TelemetryConsumers.AI.AITelemetryConsumer.Close

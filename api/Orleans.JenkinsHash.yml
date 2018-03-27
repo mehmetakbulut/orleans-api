@@ -1,0 +1,229 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.JenkinsHash
+  commentId: T:Orleans.JenkinsHash
+  id: JenkinsHash
+  parent: Orleans
+  children:
+  - Orleans.JenkinsHash.ComputeHash(System.Byte[])
+  - Orleans.JenkinsHash.ComputeHash(System.String)
+  - Orleans.JenkinsHash.ComputeHash(System.UInt64,System.UInt64,System.UInt64)
+  langs:
+  - csharp
+  - vb
+  name: JenkinsHash
+  nameWithType: JenkinsHash
+  fullName: Orleans.JenkinsHash
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/IDs/JenkinsHash.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: JenkinsHash
+    path: src/Orleans.Core.Abstractions/IDs/JenkinsHash.cs
+    startLine: 8
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  syntax:
+    content: 'public static class JenkinsHash : object'
+    content.vb: >-
+      Public Module JenkinsHash
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Orleans.JenkinsHash.ComputeHash(System.Byte[])
+  commentId: M:Orleans.JenkinsHash.ComputeHash(System.Byte[])
+  id: ComputeHash(System.Byte[])
+  parent: Orleans.JenkinsHash
+  langs:
+  - csharp
+  - vb
+  name: ComputeHash(Byte[])
+  nameWithType: JenkinsHash.ComputeHash(Byte[])
+  fullName: Orleans.JenkinsHash.ComputeHash(System.Byte[])
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/IDs/JenkinsHash.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ComputeHash
+    path: src/Orleans.Core.Abstractions/IDs/JenkinsHash.cs
+    startLine: 24
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  syntax:
+    content: public static uint ComputeHash(byte[] data)
+    parameters:
+    - id: data
+      type: System.Byte[]
+    return:
+      type: System.UInt32
+    content.vb: Public Shared Function ComputeHash(data As Byte()) As UInteger
+  overload: Orleans.JenkinsHash.ComputeHash*
+  nameWithType.vb: JenkinsHash.ComputeHash(Byte())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.JenkinsHash.ComputeHash(System.Byte())
+  name.vb: ComputeHash(Byte())
+- uid: Orleans.JenkinsHash.ComputeHash(System.String)
+  commentId: M:Orleans.JenkinsHash.ComputeHash(System.String)
+  id: ComputeHash(System.String)
+  parent: Orleans.JenkinsHash
+  langs:
+  - csharp
+  - vb
+  name: ComputeHash(String)
+  nameWithType: JenkinsHash.ComputeHash(String)
+  fullName: Orleans.JenkinsHash.ComputeHash(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/IDs/JenkinsHash.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ComputeHash
+    path: src/Orleans.Core.Abstractions/IDs/JenkinsHash.cs
+    startLine: 75
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  syntax:
+    content: public static uint ComputeHash(string data)
+    parameters:
+    - id: data
+      type: System.String
+    return:
+      type: System.UInt32
+    content.vb: Public Shared Function ComputeHash(data As String) As UInteger
+  overload: Orleans.JenkinsHash.ComputeHash*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.JenkinsHash.ComputeHash(System.UInt64,System.UInt64,System.UInt64)
+  commentId: M:Orleans.JenkinsHash.ComputeHash(System.UInt64,System.UInt64,System.UInt64)
+  id: ComputeHash(System.UInt64,System.UInt64,System.UInt64)
+  parent: Orleans.JenkinsHash
+  langs:
+  - csharp
+  - vb
+  name: ComputeHash(UInt64, UInt64, UInt64)
+  nameWithType: JenkinsHash.ComputeHash(UInt64, UInt64, UInt64)
+  fullName: Orleans.JenkinsHash.ComputeHash(System.UInt64, System.UInt64, System.UInt64)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/IDs/JenkinsHash.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ComputeHash
+    path: src/Orleans.Core.Abstractions/IDs/JenkinsHash.cs
+    startLine: 84
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  syntax:
+    content: public static uint ComputeHash(ulong u1, ulong u2, ulong u3)
+    parameters:
+    - id: u1
+      type: System.UInt64
+    - id: u2
+      type: System.UInt64
+    - id: u3
+      type: System.UInt64
+    return:
+      type: System.UInt32
+    content.vb: Public Shared Function ComputeHash(u1 As ULong, u2 As ULong, u3 As ULong) As UInteger
+  overload: Orleans.JenkinsHash.ComputeHash*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Orleans
+  commentId: N:Orleans
+  isExternal: false
+  name: Orleans
+  nameWithType: Orleans
+  fullName: Orleans
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.JenkinsHash.ComputeHash*
+  commentId: Overload:Orleans.JenkinsHash.ComputeHash
+  isExternal: false
+  name: ComputeHash
+  nameWithType: JenkinsHash.ComputeHash
+  fullName: Orleans.JenkinsHash.ComputeHash
+- uid: System.Byte[]
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.UInt32
+  isExternal: true
+  name: UInt32
+  nameWithType: UInt32
+  fullName: System.UInt32
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.UInt64
+  isExternal: true
+  name: UInt64
+  nameWithType: UInt64
+  fullName: System.UInt64

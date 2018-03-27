@@ -1,0 +1,1365 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.IGrainWithGuidKey
+  commentId: T:Orleans.IGrainWithGuidKey
+  id: IGrainWithGuidKey
+  parent: Orleans
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: IGrainWithGuidKey
+  nameWithType: IGrainWithGuidKey
+  fullName: Orleans.IGrainWithGuidKey
+  type: Interface
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/IGrain.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IGrainWithGuidKey
+    path: src/Orleans.Core.Abstractions/Core/IGrain.cs
+    startLine: 16
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nMarker interface for grains with <see cref=\"!:Guid\"></see> keys.\n"
+  example: []
+  syntax:
+    content: 'public interface IGrainWithGuidKey : IGrain, IAddressable'
+    content.vb: >-
+      Public Interface IGrainWithGuidKey
+
+          Inherits IGrain
+  extensionMethods:
+  - Orleans.Runtime.IAddressable.Orleans.GrainExtensions.AsReference``1
+  - Orleans.Runtime.IAddressable.Orleans.GrainExtensions.Cast``1
+  - Orleans.Runtime.IAddressable.Orleans.GrainExtensions.BindGrainReference(Orleans.IGrainFactory)
+  - Orleans.IGrain.Orleans.GrainExtensions.GetGrainIdentity
+  - Orleans.Runtime.IAddressable.Orleans.GrainExtensions.IsPrimaryKeyBasedOnLong
+  - Orleans.Runtime.IAddressable.Orleans.GrainExtensions.GetPrimaryKeyLong(System.String@)
+  - Orleans.Runtime.IAddressable.Orleans.GrainExtensions.GetPrimaryKeyLong
+  - Orleans.Runtime.IAddressable.Orleans.GrainExtensions.GetPrimaryKey(System.String@)
+  - Orleans.Runtime.IAddressable.Orleans.GrainExtensions.GetPrimaryKey
+  - Orleans.Runtime.IAddressable.Orleans.GrainExtensions.GetPrimaryKeyString
+  - Orleans.IGrain.Orleans.GrainExtensions.GetPrimaryKeyLong(System.String@)
+  - Orleans.IGrain.Orleans.GrainExtensions.GetPrimaryKeyLong
+  - Orleans.IGrain.Orleans.GrainExtensions.GetPrimaryKey(System.String@)
+  - Orleans.IGrain.Orleans.GrainExtensions.GetPrimaryKey
+  - Orleans.IGrainWithGuidKey.Orleans.GrainExtensions.InvokeOneWay``1(Func{Orleans.IGrainWithGuidKey,Task})
+  - Orleans.IGrainWithGuidKey.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+references:
+- uid: Orleans
+  commentId: N:Orleans
+  isExternal: false
+  name: Orleans
+  nameWithType: Orleans
+  fullName: Orleans
+- uid: Orleans.Runtime.IAddressable.Orleans.GrainExtensions.AsReference``1
+  commentId: M:Orleans.GrainExtensions.AsReference``1(Orleans.Runtime.IAddressable)
+  parent: Orleans.GrainExtensions
+  definition: Orleans.GrainExtensions.AsReference``1(Orleans.Runtime.IAddressable)
+  name: AsReference<TGrainInterface>()
+  nameWithType: GrainExtensions.AsReference<TGrainInterface>()
+  fullName: Orleans.GrainExtensions.AsReference<TGrainInterface>()
+  nameWithType.vb: GrainExtensions.AsReference(Of TGrainInterface)()
+  fullName.vb: Orleans.GrainExtensions.AsReference(Of TGrainInterface)()
+  name.vb: AsReference(Of TGrainInterface)()
+  spec.csharp:
+  - uid: Orleans.GrainExtensions.AsReference``1
+    name: AsReference<TGrainInterface>
+    nameWithType: GrainExtensions.AsReference<TGrainInterface>
+    fullName: Orleans.GrainExtensions.AsReference<TGrainInterface>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.GrainExtensions.AsReference``1
+    name: AsReference(Of TGrainInterface)
+    nameWithType: GrainExtensions.AsReference(Of TGrainInterface)
+    fullName: Orleans.GrainExtensions.AsReference(Of TGrainInterface)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.IAddressable.Orleans.GrainExtensions.Cast``1
+  commentId: M:Orleans.GrainExtensions.Cast``1(Orleans.Runtime.IAddressable)
+  parent: Orleans.GrainExtensions
+  definition: Orleans.GrainExtensions.Cast``1(Orleans.Runtime.IAddressable)
+  name: Cast<TGrainInterface>()
+  nameWithType: GrainExtensions.Cast<TGrainInterface>()
+  fullName: Orleans.GrainExtensions.Cast<TGrainInterface>()
+  nameWithType.vb: GrainExtensions.Cast(Of TGrainInterface)()
+  fullName.vb: Orleans.GrainExtensions.Cast(Of TGrainInterface)()
+  name.vb: Cast(Of TGrainInterface)()
+  spec.csharp:
+  - uid: Orleans.GrainExtensions.Cast``1
+    name: Cast<TGrainInterface>
+    nameWithType: GrainExtensions.Cast<TGrainInterface>
+    fullName: Orleans.GrainExtensions.Cast<TGrainInterface>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.GrainExtensions.Cast``1
+    name: Cast(Of TGrainInterface)
+    nameWithType: GrainExtensions.Cast(Of TGrainInterface)
+    fullName: Orleans.GrainExtensions.Cast(Of TGrainInterface)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.IAddressable.Orleans.GrainExtensions.BindGrainReference(Orleans.IGrainFactory)
+  commentId: M:Orleans.GrainExtensions.BindGrainReference(Orleans.Runtime.IAddressable,Orleans.IGrainFactory)
+  parent: Orleans.GrainExtensions
+  definition: Orleans.GrainExtensions.BindGrainReference(Orleans.Runtime.IAddressable,Orleans.IGrainFactory)
+  name: BindGrainReference(IGrainFactory)
+  nameWithType: GrainExtensions.BindGrainReference(IGrainFactory)
+  fullName: Orleans.GrainExtensions.BindGrainReference(Orleans.IGrainFactory)
+  spec.csharp:
+  - uid: Orleans.GrainExtensions.BindGrainReference(Orleans.IGrainFactory)
+    name: BindGrainReference
+    nameWithType: GrainExtensions.BindGrainReference
+    fullName: Orleans.GrainExtensions.BindGrainReference
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.IGrainFactory
+    name: IGrainFactory
+    nameWithType: IGrainFactory
+    fullName: Orleans.IGrainFactory
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.GrainExtensions.BindGrainReference(Orleans.IGrainFactory)
+    name: BindGrainReference
+    nameWithType: GrainExtensions.BindGrainReference
+    fullName: Orleans.GrainExtensions.BindGrainReference
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.IGrainFactory
+    name: IGrainFactory
+    nameWithType: IGrainFactory
+    fullName: Orleans.IGrainFactory
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.IGrain.Orleans.GrainExtensions.GetGrainIdentity
+  commentId: M:Orleans.GrainExtensions.GetGrainIdentity(Orleans.IGrain)
+  parent: Orleans.GrainExtensions
+  definition: Orleans.GrainExtensions.GetGrainIdentity(Orleans.IGrain)
+  name: GetGrainIdentity()
+  nameWithType: GrainExtensions.GetGrainIdentity()
+  fullName: Orleans.GrainExtensions.GetGrainIdentity()
+  spec.csharp:
+  - uid: Orleans.GrainExtensions.GetGrainIdentity
+    name: GetGrainIdentity
+    nameWithType: GrainExtensions.GetGrainIdentity
+    fullName: Orleans.GrainExtensions.GetGrainIdentity
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.GrainExtensions.GetGrainIdentity
+    name: GetGrainIdentity
+    nameWithType: GrainExtensions.GetGrainIdentity
+    fullName: Orleans.GrainExtensions.GetGrainIdentity
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.IAddressable.Orleans.GrainExtensions.IsPrimaryKeyBasedOnLong
+  commentId: M:Orleans.GrainExtensions.IsPrimaryKeyBasedOnLong(Orleans.Runtime.IAddressable)
+  parent: Orleans.GrainExtensions
+  definition: Orleans.GrainExtensions.IsPrimaryKeyBasedOnLong(Orleans.Runtime.IAddressable)
+  name: IsPrimaryKeyBasedOnLong()
+  nameWithType: GrainExtensions.IsPrimaryKeyBasedOnLong()
+  fullName: Orleans.GrainExtensions.IsPrimaryKeyBasedOnLong()
+  spec.csharp:
+  - uid: Orleans.GrainExtensions.IsPrimaryKeyBasedOnLong
+    name: IsPrimaryKeyBasedOnLong
+    nameWithType: GrainExtensions.IsPrimaryKeyBasedOnLong
+    fullName: Orleans.GrainExtensions.IsPrimaryKeyBasedOnLong
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.GrainExtensions.IsPrimaryKeyBasedOnLong
+    name: IsPrimaryKeyBasedOnLong
+    nameWithType: GrainExtensions.IsPrimaryKeyBasedOnLong
+    fullName: Orleans.GrainExtensions.IsPrimaryKeyBasedOnLong
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.IAddressable.Orleans.GrainExtensions.GetPrimaryKeyLong(System.String@)
+  commentId: M:Orleans.GrainExtensions.GetPrimaryKeyLong(Orleans.Runtime.IAddressable,System.String@)
+  parent: Orleans.GrainExtensions
+  definition: Orleans.GrainExtensions.GetPrimaryKeyLong(Orleans.Runtime.IAddressable,System.String@)
+  name: GetPrimaryKeyLong(String)
+  nameWithType: GrainExtensions.GetPrimaryKeyLong(String)
+  fullName: Orleans.GrainExtensions.GetPrimaryKeyLong(System.String)
+  spec.csharp:
+  - uid: Orleans.GrainExtensions.GetPrimaryKeyLong(System.String@)
+    name: GetPrimaryKeyLong
+    nameWithType: GrainExtensions.GetPrimaryKeyLong
+    fullName: Orleans.GrainExtensions.GetPrimaryKeyLong
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.GrainExtensions.GetPrimaryKeyLong(System.String@)
+    name: GetPrimaryKeyLong
+    nameWithType: GrainExtensions.GetPrimaryKeyLong
+    fullName: Orleans.GrainExtensions.GetPrimaryKeyLong
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.IAddressable.Orleans.GrainExtensions.GetPrimaryKeyLong
+  commentId: M:Orleans.GrainExtensions.GetPrimaryKeyLong(Orleans.Runtime.IAddressable)
+  parent: Orleans.GrainExtensions
+  definition: Orleans.GrainExtensions.GetPrimaryKeyLong(Orleans.Runtime.IAddressable)
+  name: GetPrimaryKeyLong()
+  nameWithType: GrainExtensions.GetPrimaryKeyLong()
+  fullName: Orleans.GrainExtensions.GetPrimaryKeyLong()
+  spec.csharp:
+  - uid: Orleans.GrainExtensions.GetPrimaryKeyLong
+    name: GetPrimaryKeyLong
+    nameWithType: GrainExtensions.GetPrimaryKeyLong
+    fullName: Orleans.GrainExtensions.GetPrimaryKeyLong
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.GrainExtensions.GetPrimaryKeyLong
+    name: GetPrimaryKeyLong
+    nameWithType: GrainExtensions.GetPrimaryKeyLong
+    fullName: Orleans.GrainExtensions.GetPrimaryKeyLong
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.IAddressable.Orleans.GrainExtensions.GetPrimaryKey(System.String@)
+  commentId: M:Orleans.GrainExtensions.GetPrimaryKey(Orleans.Runtime.IAddressable,System.String@)
+  parent: Orleans.GrainExtensions
+  definition: Orleans.GrainExtensions.GetPrimaryKey(Orleans.Runtime.IAddressable,System.String@)
+  name: GetPrimaryKey(String)
+  nameWithType: GrainExtensions.GetPrimaryKey(String)
+  fullName: Orleans.GrainExtensions.GetPrimaryKey(System.String)
+  spec.csharp:
+  - uid: Orleans.GrainExtensions.GetPrimaryKey(System.String@)
+    name: GetPrimaryKey
+    nameWithType: GrainExtensions.GetPrimaryKey
+    fullName: Orleans.GrainExtensions.GetPrimaryKey
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.GrainExtensions.GetPrimaryKey(System.String@)
+    name: GetPrimaryKey
+    nameWithType: GrainExtensions.GetPrimaryKey
+    fullName: Orleans.GrainExtensions.GetPrimaryKey
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.IAddressable.Orleans.GrainExtensions.GetPrimaryKey
+  commentId: M:Orleans.GrainExtensions.GetPrimaryKey(Orleans.Runtime.IAddressable)
+  parent: Orleans.GrainExtensions
+  definition: Orleans.GrainExtensions.GetPrimaryKey(Orleans.Runtime.IAddressable)
+  name: GetPrimaryKey()
+  nameWithType: GrainExtensions.GetPrimaryKey()
+  fullName: Orleans.GrainExtensions.GetPrimaryKey()
+  spec.csharp:
+  - uid: Orleans.GrainExtensions.GetPrimaryKey
+    name: GetPrimaryKey
+    nameWithType: GrainExtensions.GetPrimaryKey
+    fullName: Orleans.GrainExtensions.GetPrimaryKey
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.GrainExtensions.GetPrimaryKey
+    name: GetPrimaryKey
+    nameWithType: GrainExtensions.GetPrimaryKey
+    fullName: Orleans.GrainExtensions.GetPrimaryKey
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.IAddressable.Orleans.GrainExtensions.GetPrimaryKeyString
+  commentId: M:Orleans.GrainExtensions.GetPrimaryKeyString(Orleans.Runtime.IAddressable)
+  parent: Orleans.GrainExtensions
+  definition: Orleans.GrainExtensions.GetPrimaryKeyString(Orleans.Runtime.IAddressable)
+  name: GetPrimaryKeyString()
+  nameWithType: GrainExtensions.GetPrimaryKeyString()
+  fullName: Orleans.GrainExtensions.GetPrimaryKeyString()
+  spec.csharp:
+  - uid: Orleans.GrainExtensions.GetPrimaryKeyString
+    name: GetPrimaryKeyString
+    nameWithType: GrainExtensions.GetPrimaryKeyString
+    fullName: Orleans.GrainExtensions.GetPrimaryKeyString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.GrainExtensions.GetPrimaryKeyString
+    name: GetPrimaryKeyString
+    nameWithType: GrainExtensions.GetPrimaryKeyString
+    fullName: Orleans.GrainExtensions.GetPrimaryKeyString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.IGrain.Orleans.GrainExtensions.GetPrimaryKeyLong(System.String@)
+  commentId: M:Orleans.GrainExtensions.GetPrimaryKeyLong(Orleans.IGrain,System.String@)
+  parent: Orleans.GrainExtensions
+  definition: Orleans.GrainExtensions.GetPrimaryKeyLong(Orleans.IGrain,System.String@)
+  name: GetPrimaryKeyLong(String)
+  nameWithType: GrainExtensions.GetPrimaryKeyLong(String)
+  fullName: Orleans.GrainExtensions.GetPrimaryKeyLong(System.String)
+  spec.csharp:
+  - uid: Orleans.GrainExtensions.GetPrimaryKeyLong(System.String@)
+    name: GetPrimaryKeyLong
+    nameWithType: GrainExtensions.GetPrimaryKeyLong
+    fullName: Orleans.GrainExtensions.GetPrimaryKeyLong
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.GrainExtensions.GetPrimaryKeyLong(System.String@)
+    name: GetPrimaryKeyLong
+    nameWithType: GrainExtensions.GetPrimaryKeyLong
+    fullName: Orleans.GrainExtensions.GetPrimaryKeyLong
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.IGrain.Orleans.GrainExtensions.GetPrimaryKeyLong
+  commentId: M:Orleans.GrainExtensions.GetPrimaryKeyLong(Orleans.IGrain)
+  parent: Orleans.GrainExtensions
+  definition: Orleans.GrainExtensions.GetPrimaryKeyLong(Orleans.IGrain)
+  name: GetPrimaryKeyLong()
+  nameWithType: GrainExtensions.GetPrimaryKeyLong()
+  fullName: Orleans.GrainExtensions.GetPrimaryKeyLong()
+  spec.csharp:
+  - uid: Orleans.GrainExtensions.GetPrimaryKeyLong
+    name: GetPrimaryKeyLong
+    nameWithType: GrainExtensions.GetPrimaryKeyLong
+    fullName: Orleans.GrainExtensions.GetPrimaryKeyLong
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.GrainExtensions.GetPrimaryKeyLong
+    name: GetPrimaryKeyLong
+    nameWithType: GrainExtensions.GetPrimaryKeyLong
+    fullName: Orleans.GrainExtensions.GetPrimaryKeyLong
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.IGrain.Orleans.GrainExtensions.GetPrimaryKey(System.String@)
+  commentId: M:Orleans.GrainExtensions.GetPrimaryKey(Orleans.IGrain,System.String@)
+  parent: Orleans.GrainExtensions
+  definition: Orleans.GrainExtensions.GetPrimaryKey(Orleans.IGrain,System.String@)
+  name: GetPrimaryKey(String)
+  nameWithType: GrainExtensions.GetPrimaryKey(String)
+  fullName: Orleans.GrainExtensions.GetPrimaryKey(System.String)
+  spec.csharp:
+  - uid: Orleans.GrainExtensions.GetPrimaryKey(System.String@)
+    name: GetPrimaryKey
+    nameWithType: GrainExtensions.GetPrimaryKey
+    fullName: Orleans.GrainExtensions.GetPrimaryKey
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.GrainExtensions.GetPrimaryKey(System.String@)
+    name: GetPrimaryKey
+    nameWithType: GrainExtensions.GetPrimaryKey
+    fullName: Orleans.GrainExtensions.GetPrimaryKey
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.IGrain.Orleans.GrainExtensions.GetPrimaryKey
+  commentId: M:Orleans.GrainExtensions.GetPrimaryKey(Orleans.IGrain)
+  parent: Orleans.GrainExtensions
+  definition: Orleans.GrainExtensions.GetPrimaryKey(Orleans.IGrain)
+  name: GetPrimaryKey()
+  nameWithType: GrainExtensions.GetPrimaryKey()
+  fullName: Orleans.GrainExtensions.GetPrimaryKey()
+  spec.csharp:
+  - uid: Orleans.GrainExtensions.GetPrimaryKey
+    name: GetPrimaryKey
+    nameWithType: GrainExtensions.GetPrimaryKey
+    fullName: Orleans.GrainExtensions.GetPrimaryKey
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.GrainExtensions.GetPrimaryKey
+    name: GetPrimaryKey
+    nameWithType: GrainExtensions.GetPrimaryKey
+    fullName: Orleans.GrainExtensions.GetPrimaryKey
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.IGrainWithGuidKey.Orleans.GrainExtensions.InvokeOneWay``1(Func{Orleans.IGrainWithGuidKey,Task})
+  commentId: M:Orleans.GrainExtensions.InvokeOneWay``1(``0,Func{``0,Task})
+  parent: Orleans.GrainExtensions
+  definition: Orleans.GrainExtensions.InvokeOneWay``1(``0,Func{``0,Task})
+  name: InvokeOneWay<IGrainWithGuidKey>(Func<IGrainWithGuidKey, Task>)
+  nameWithType: GrainExtensions.InvokeOneWay<IGrainWithGuidKey>(Func<IGrainWithGuidKey, Task>)
+  fullName: Orleans.GrainExtensions.InvokeOneWay<Orleans.IGrainWithGuidKey>(Func<Orleans.IGrainWithGuidKey, Task>)
+  nameWithType.vb: GrainExtensions.InvokeOneWay(Of IGrainWithGuidKey)(Func(Of IGrainWithGuidKey, Task))
+  fullName.vb: Orleans.GrainExtensions.InvokeOneWay(Of Orleans.IGrainWithGuidKey)(Func(Of Orleans.IGrainWithGuidKey, Task))
+  name.vb: InvokeOneWay(Of IGrainWithGuidKey)(Func(Of IGrainWithGuidKey, Task))
+  spec.csharp:
+  - uid: Orleans.GrainExtensions.InvokeOneWay``1(Func{``0,Task})
+    name: InvokeOneWay<IGrainWithGuidKey>
+    nameWithType: GrainExtensions.InvokeOneWay<IGrainWithGuidKey>
+    fullName: Orleans.GrainExtensions.InvokeOneWay<Orleans.IGrainWithGuidKey>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Orleans.IGrainWithGuidKey
+    name: IGrainWithGuidKey
+    nameWithType: IGrainWithGuidKey
+    fullName: Orleans.IGrainWithGuidKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.GrainExtensions.InvokeOneWay``1(Func{``0,Task})
+    name: InvokeOneWay(Of IGrainWithGuidKey)
+    nameWithType: GrainExtensions.InvokeOneWay(Of IGrainWithGuidKey)
+    fullName: Orleans.GrainExtensions.InvokeOneWay(Of Orleans.IGrainWithGuidKey)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Orleans.IGrainWithGuidKey
+    name: IGrainWithGuidKey
+    nameWithType: IGrainWithGuidKey
+    fullName: Orleans.IGrainWithGuidKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.IGrainWithGuidKey.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<IGrainWithGuidKey>()
+  nameWithType: ImmutableExt.AsImmutable<IGrainWithGuidKey>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.IGrainWithGuidKey>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of IGrainWithGuidKey)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.IGrainWithGuidKey)()
+  name.vb: AsImmutable(Of IGrainWithGuidKey)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<IGrainWithGuidKey>
+    nameWithType: ImmutableExt.AsImmutable<IGrainWithGuidKey>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.IGrainWithGuidKey>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of IGrainWithGuidKey)
+    nameWithType: ImmutableExt.AsImmutable(Of IGrainWithGuidKey)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.IGrainWithGuidKey)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.GrainExtensions.AsReference``1(Orleans.Runtime.IAddressable)
+  commentId: M:Orleans.GrainExtensions.AsReference``1(Orleans.Runtime.IAddressable)
+  isExternal: false
+  name: AsReference<TGrainInterface>(IAddressable)
+  nameWithType: GrainExtensions.AsReference<TGrainInterface>(IAddressable)
+  fullName: Orleans.GrainExtensions.AsReference<TGrainInterface>(Orleans.Runtime.IAddressable)
+  nameWithType.vb: GrainExtensions.AsReference(Of TGrainInterface)(IAddressable)
+  fullName.vb: Orleans.GrainExtensions.AsReference(Of TGrainInterface)(Orleans.Runtime.IAddressable)
+  name.vb: AsReference(Of TGrainInterface)(IAddressable)
+  spec.csharp:
+  - uid: Orleans.GrainExtensions.AsReference``1(Orleans.Runtime.IAddressable)
+    name: AsReference<TGrainInterface>
+    nameWithType: GrainExtensions.AsReference<TGrainInterface>
+    fullName: Orleans.GrainExtensions.AsReference<TGrainInterface>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.IAddressable
+    name: IAddressable
+    nameWithType: IAddressable
+    fullName: Orleans.Runtime.IAddressable
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.GrainExtensions.AsReference``1(Orleans.Runtime.IAddressable)
+    name: AsReference(Of TGrainInterface)
+    nameWithType: GrainExtensions.AsReference(Of TGrainInterface)
+    fullName: Orleans.GrainExtensions.AsReference(Of TGrainInterface)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.IAddressable
+    name: IAddressable
+    nameWithType: IAddressable
+    fullName: Orleans.Runtime.IAddressable
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.GrainExtensions
+  commentId: T:Orleans.GrainExtensions
+  parent: Orleans
+  isExternal: false
+  name: GrainExtensions
+  nameWithType: GrainExtensions
+  fullName: Orleans.GrainExtensions
+- uid: Orleans.GrainExtensions.Cast``1(Orleans.Runtime.IAddressable)
+  commentId: M:Orleans.GrainExtensions.Cast``1(Orleans.Runtime.IAddressable)
+  isExternal: false
+  name: Cast<TGrainInterface>(IAddressable)
+  nameWithType: GrainExtensions.Cast<TGrainInterface>(IAddressable)
+  fullName: Orleans.GrainExtensions.Cast<TGrainInterface>(Orleans.Runtime.IAddressable)
+  nameWithType.vb: GrainExtensions.Cast(Of TGrainInterface)(IAddressable)
+  fullName.vb: Orleans.GrainExtensions.Cast(Of TGrainInterface)(Orleans.Runtime.IAddressable)
+  name.vb: Cast(Of TGrainInterface)(IAddressable)
+  spec.csharp:
+  - uid: Orleans.GrainExtensions.Cast``1(Orleans.Runtime.IAddressable)
+    name: Cast<TGrainInterface>
+    nameWithType: GrainExtensions.Cast<TGrainInterface>
+    fullName: Orleans.GrainExtensions.Cast<TGrainInterface>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.IAddressable
+    name: IAddressable
+    nameWithType: IAddressable
+    fullName: Orleans.Runtime.IAddressable
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.GrainExtensions.Cast``1(Orleans.Runtime.IAddressable)
+    name: Cast(Of TGrainInterface)
+    nameWithType: GrainExtensions.Cast(Of TGrainInterface)
+    fullName: Orleans.GrainExtensions.Cast(Of TGrainInterface)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.IAddressable
+    name: IAddressable
+    nameWithType: IAddressable
+    fullName: Orleans.Runtime.IAddressable
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.GrainExtensions.BindGrainReference(Orleans.Runtime.IAddressable,Orleans.IGrainFactory)
+  commentId: M:Orleans.GrainExtensions.BindGrainReference(Orleans.Runtime.IAddressable,Orleans.IGrainFactory)
+  isExternal: false
+  name: BindGrainReference(IAddressable, IGrainFactory)
+  nameWithType: GrainExtensions.BindGrainReference(IAddressable, IGrainFactory)
+  fullName: Orleans.GrainExtensions.BindGrainReference(Orleans.Runtime.IAddressable, Orleans.IGrainFactory)
+  spec.csharp:
+  - uid: Orleans.GrainExtensions.BindGrainReference(Orleans.Runtime.IAddressable,Orleans.IGrainFactory)
+    name: BindGrainReference
+    nameWithType: GrainExtensions.BindGrainReference
+    fullName: Orleans.GrainExtensions.BindGrainReference
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.IAddressable
+    name: IAddressable
+    nameWithType: IAddressable
+    fullName: Orleans.Runtime.IAddressable
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.IGrainFactory
+    name: IGrainFactory
+    nameWithType: IGrainFactory
+    fullName: Orleans.IGrainFactory
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.GrainExtensions.BindGrainReference(Orleans.Runtime.IAddressable,Orleans.IGrainFactory)
+    name: BindGrainReference
+    nameWithType: GrainExtensions.BindGrainReference
+    fullName: Orleans.GrainExtensions.BindGrainReference
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.IAddressable
+    name: IAddressable
+    nameWithType: IAddressable
+    fullName: Orleans.Runtime.IAddressable
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.IGrainFactory
+    name: IGrainFactory
+    nameWithType: IGrainFactory
+    fullName: Orleans.IGrainFactory
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.GrainExtensions.GetGrainIdentity(Orleans.IGrain)
+  commentId: M:Orleans.GrainExtensions.GetGrainIdentity(Orleans.IGrain)
+  isExternal: false
+  name: GetGrainIdentity(IGrain)
+  nameWithType: GrainExtensions.GetGrainIdentity(IGrain)
+  fullName: Orleans.GrainExtensions.GetGrainIdentity(Orleans.IGrain)
+  spec.csharp:
+  - uid: Orleans.GrainExtensions.GetGrainIdentity(Orleans.IGrain)
+    name: GetGrainIdentity
+    nameWithType: GrainExtensions.GetGrainIdentity
+    fullName: Orleans.GrainExtensions.GetGrainIdentity
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.IGrain
+    name: IGrain
+    nameWithType: IGrain
+    fullName: Orleans.IGrain
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.GrainExtensions.GetGrainIdentity(Orleans.IGrain)
+    name: GetGrainIdentity
+    nameWithType: GrainExtensions.GetGrainIdentity
+    fullName: Orleans.GrainExtensions.GetGrainIdentity
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.IGrain
+    name: IGrain
+    nameWithType: IGrain
+    fullName: Orleans.IGrain
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.GrainExtensions.IsPrimaryKeyBasedOnLong(Orleans.Runtime.IAddressable)
+  commentId: M:Orleans.GrainExtensions.IsPrimaryKeyBasedOnLong(Orleans.Runtime.IAddressable)
+  isExternal: false
+  name: IsPrimaryKeyBasedOnLong(IAddressable)
+  nameWithType: GrainExtensions.IsPrimaryKeyBasedOnLong(IAddressable)
+  fullName: Orleans.GrainExtensions.IsPrimaryKeyBasedOnLong(Orleans.Runtime.IAddressable)
+  spec.csharp:
+  - uid: Orleans.GrainExtensions.IsPrimaryKeyBasedOnLong(Orleans.Runtime.IAddressable)
+    name: IsPrimaryKeyBasedOnLong
+    nameWithType: GrainExtensions.IsPrimaryKeyBasedOnLong
+    fullName: Orleans.GrainExtensions.IsPrimaryKeyBasedOnLong
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.IAddressable
+    name: IAddressable
+    nameWithType: IAddressable
+    fullName: Orleans.Runtime.IAddressable
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.GrainExtensions.IsPrimaryKeyBasedOnLong(Orleans.Runtime.IAddressable)
+    name: IsPrimaryKeyBasedOnLong
+    nameWithType: GrainExtensions.IsPrimaryKeyBasedOnLong
+    fullName: Orleans.GrainExtensions.IsPrimaryKeyBasedOnLong
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.IAddressable
+    name: IAddressable
+    nameWithType: IAddressable
+    fullName: Orleans.Runtime.IAddressable
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.GrainExtensions.GetPrimaryKeyLong(Orleans.Runtime.IAddressable,System.String@)
+  commentId: M:Orleans.GrainExtensions.GetPrimaryKeyLong(Orleans.Runtime.IAddressable,System.String@)
+  isExternal: true
+  name: GetPrimaryKeyLong(IAddressable, String)
+  nameWithType: GrainExtensions.GetPrimaryKeyLong(IAddressable, String)
+  fullName: Orleans.GrainExtensions.GetPrimaryKeyLong(Orleans.Runtime.IAddressable, System.String)
+  spec.csharp:
+  - uid: Orleans.GrainExtensions.GetPrimaryKeyLong(Orleans.Runtime.IAddressable,System.String@)
+    name: GetPrimaryKeyLong
+    nameWithType: GrainExtensions.GetPrimaryKeyLong
+    fullName: Orleans.GrainExtensions.GetPrimaryKeyLong
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.IAddressable
+    name: IAddressable
+    nameWithType: IAddressable
+    fullName: Orleans.Runtime.IAddressable
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.GrainExtensions.GetPrimaryKeyLong(Orleans.Runtime.IAddressable,System.String@)
+    name: GetPrimaryKeyLong
+    nameWithType: GrainExtensions.GetPrimaryKeyLong
+    fullName: Orleans.GrainExtensions.GetPrimaryKeyLong
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.IAddressable
+    name: IAddressable
+    nameWithType: IAddressable
+    fullName: Orleans.Runtime.IAddressable
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.GrainExtensions.GetPrimaryKeyLong(Orleans.Runtime.IAddressable)
+  commentId: M:Orleans.GrainExtensions.GetPrimaryKeyLong(Orleans.Runtime.IAddressable)
+  isExternal: false
+  name: GetPrimaryKeyLong(IAddressable)
+  nameWithType: GrainExtensions.GetPrimaryKeyLong(IAddressable)
+  fullName: Orleans.GrainExtensions.GetPrimaryKeyLong(Orleans.Runtime.IAddressable)
+  spec.csharp:
+  - uid: Orleans.GrainExtensions.GetPrimaryKeyLong(Orleans.Runtime.IAddressable)
+    name: GetPrimaryKeyLong
+    nameWithType: GrainExtensions.GetPrimaryKeyLong
+    fullName: Orleans.GrainExtensions.GetPrimaryKeyLong
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.IAddressable
+    name: IAddressable
+    nameWithType: IAddressable
+    fullName: Orleans.Runtime.IAddressable
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.GrainExtensions.GetPrimaryKeyLong(Orleans.Runtime.IAddressable)
+    name: GetPrimaryKeyLong
+    nameWithType: GrainExtensions.GetPrimaryKeyLong
+    fullName: Orleans.GrainExtensions.GetPrimaryKeyLong
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.IAddressable
+    name: IAddressable
+    nameWithType: IAddressable
+    fullName: Orleans.Runtime.IAddressable
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.GrainExtensions.GetPrimaryKey(Orleans.Runtime.IAddressable,System.String@)
+  commentId: M:Orleans.GrainExtensions.GetPrimaryKey(Orleans.Runtime.IAddressable,System.String@)
+  isExternal: true
+  name: GetPrimaryKey(IAddressable, String)
+  nameWithType: GrainExtensions.GetPrimaryKey(IAddressable, String)
+  fullName: Orleans.GrainExtensions.GetPrimaryKey(Orleans.Runtime.IAddressable, System.String)
+  spec.csharp:
+  - uid: Orleans.GrainExtensions.GetPrimaryKey(Orleans.Runtime.IAddressable,System.String@)
+    name: GetPrimaryKey
+    nameWithType: GrainExtensions.GetPrimaryKey
+    fullName: Orleans.GrainExtensions.GetPrimaryKey
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.IAddressable
+    name: IAddressable
+    nameWithType: IAddressable
+    fullName: Orleans.Runtime.IAddressable
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.GrainExtensions.GetPrimaryKey(Orleans.Runtime.IAddressable,System.String@)
+    name: GetPrimaryKey
+    nameWithType: GrainExtensions.GetPrimaryKey
+    fullName: Orleans.GrainExtensions.GetPrimaryKey
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.IAddressable
+    name: IAddressable
+    nameWithType: IAddressable
+    fullName: Orleans.Runtime.IAddressable
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.GrainExtensions.GetPrimaryKey(Orleans.Runtime.IAddressable)
+  commentId: M:Orleans.GrainExtensions.GetPrimaryKey(Orleans.Runtime.IAddressable)
+  isExternal: false
+  name: GetPrimaryKey(IAddressable)
+  nameWithType: GrainExtensions.GetPrimaryKey(IAddressable)
+  fullName: Orleans.GrainExtensions.GetPrimaryKey(Orleans.Runtime.IAddressable)
+  spec.csharp:
+  - uid: Orleans.GrainExtensions.GetPrimaryKey(Orleans.Runtime.IAddressable)
+    name: GetPrimaryKey
+    nameWithType: GrainExtensions.GetPrimaryKey
+    fullName: Orleans.GrainExtensions.GetPrimaryKey
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.IAddressable
+    name: IAddressable
+    nameWithType: IAddressable
+    fullName: Orleans.Runtime.IAddressable
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.GrainExtensions.GetPrimaryKey(Orleans.Runtime.IAddressable)
+    name: GetPrimaryKey
+    nameWithType: GrainExtensions.GetPrimaryKey
+    fullName: Orleans.GrainExtensions.GetPrimaryKey
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.IAddressable
+    name: IAddressable
+    nameWithType: IAddressable
+    fullName: Orleans.Runtime.IAddressable
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.GrainExtensions.GetPrimaryKeyString(Orleans.Runtime.IAddressable)
+  commentId: M:Orleans.GrainExtensions.GetPrimaryKeyString(Orleans.Runtime.IAddressable)
+  isExternal: false
+  name: GetPrimaryKeyString(IAddressable)
+  nameWithType: GrainExtensions.GetPrimaryKeyString(IAddressable)
+  fullName: Orleans.GrainExtensions.GetPrimaryKeyString(Orleans.Runtime.IAddressable)
+  spec.csharp:
+  - uid: Orleans.GrainExtensions.GetPrimaryKeyString(Orleans.Runtime.IAddressable)
+    name: GetPrimaryKeyString
+    nameWithType: GrainExtensions.GetPrimaryKeyString
+    fullName: Orleans.GrainExtensions.GetPrimaryKeyString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.IAddressable
+    name: IAddressable
+    nameWithType: IAddressable
+    fullName: Orleans.Runtime.IAddressable
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.GrainExtensions.GetPrimaryKeyString(Orleans.Runtime.IAddressable)
+    name: GetPrimaryKeyString
+    nameWithType: GrainExtensions.GetPrimaryKeyString
+    fullName: Orleans.GrainExtensions.GetPrimaryKeyString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.IAddressable
+    name: IAddressable
+    nameWithType: IAddressable
+    fullName: Orleans.Runtime.IAddressable
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.GrainExtensions.GetPrimaryKeyLong(Orleans.IGrain,System.String@)
+  commentId: M:Orleans.GrainExtensions.GetPrimaryKeyLong(Orleans.IGrain,System.String@)
+  isExternal: true
+  name: GetPrimaryKeyLong(IGrain, String)
+  nameWithType: GrainExtensions.GetPrimaryKeyLong(IGrain, String)
+  fullName: Orleans.GrainExtensions.GetPrimaryKeyLong(Orleans.IGrain, System.String)
+  spec.csharp:
+  - uid: Orleans.GrainExtensions.GetPrimaryKeyLong(Orleans.IGrain,System.String@)
+    name: GetPrimaryKeyLong
+    nameWithType: GrainExtensions.GetPrimaryKeyLong
+    fullName: Orleans.GrainExtensions.GetPrimaryKeyLong
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.IGrain
+    name: IGrain
+    nameWithType: IGrain
+    fullName: Orleans.IGrain
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.GrainExtensions.GetPrimaryKeyLong(Orleans.IGrain,System.String@)
+    name: GetPrimaryKeyLong
+    nameWithType: GrainExtensions.GetPrimaryKeyLong
+    fullName: Orleans.GrainExtensions.GetPrimaryKeyLong
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.IGrain
+    name: IGrain
+    nameWithType: IGrain
+    fullName: Orleans.IGrain
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.GrainExtensions.GetPrimaryKeyLong(Orleans.IGrain)
+  commentId: M:Orleans.GrainExtensions.GetPrimaryKeyLong(Orleans.IGrain)
+  isExternal: false
+  name: GetPrimaryKeyLong(IGrain)
+  nameWithType: GrainExtensions.GetPrimaryKeyLong(IGrain)
+  fullName: Orleans.GrainExtensions.GetPrimaryKeyLong(Orleans.IGrain)
+  spec.csharp:
+  - uid: Orleans.GrainExtensions.GetPrimaryKeyLong(Orleans.IGrain)
+    name: GetPrimaryKeyLong
+    nameWithType: GrainExtensions.GetPrimaryKeyLong
+    fullName: Orleans.GrainExtensions.GetPrimaryKeyLong
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.IGrain
+    name: IGrain
+    nameWithType: IGrain
+    fullName: Orleans.IGrain
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.GrainExtensions.GetPrimaryKeyLong(Orleans.IGrain)
+    name: GetPrimaryKeyLong
+    nameWithType: GrainExtensions.GetPrimaryKeyLong
+    fullName: Orleans.GrainExtensions.GetPrimaryKeyLong
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.IGrain
+    name: IGrain
+    nameWithType: IGrain
+    fullName: Orleans.IGrain
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.GrainExtensions.GetPrimaryKey(Orleans.IGrain,System.String@)
+  commentId: M:Orleans.GrainExtensions.GetPrimaryKey(Orleans.IGrain,System.String@)
+  isExternal: true
+  name: GetPrimaryKey(IGrain, String)
+  nameWithType: GrainExtensions.GetPrimaryKey(IGrain, String)
+  fullName: Orleans.GrainExtensions.GetPrimaryKey(Orleans.IGrain, System.String)
+  spec.csharp:
+  - uid: Orleans.GrainExtensions.GetPrimaryKey(Orleans.IGrain,System.String@)
+    name: GetPrimaryKey
+    nameWithType: GrainExtensions.GetPrimaryKey
+    fullName: Orleans.GrainExtensions.GetPrimaryKey
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.IGrain
+    name: IGrain
+    nameWithType: IGrain
+    fullName: Orleans.IGrain
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.GrainExtensions.GetPrimaryKey(Orleans.IGrain,System.String@)
+    name: GetPrimaryKey
+    nameWithType: GrainExtensions.GetPrimaryKey
+    fullName: Orleans.GrainExtensions.GetPrimaryKey
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.IGrain
+    name: IGrain
+    nameWithType: IGrain
+    fullName: Orleans.IGrain
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.GrainExtensions.GetPrimaryKey(Orleans.IGrain)
+  commentId: M:Orleans.GrainExtensions.GetPrimaryKey(Orleans.IGrain)
+  isExternal: false
+  name: GetPrimaryKey(IGrain)
+  nameWithType: GrainExtensions.GetPrimaryKey(IGrain)
+  fullName: Orleans.GrainExtensions.GetPrimaryKey(Orleans.IGrain)
+  spec.csharp:
+  - uid: Orleans.GrainExtensions.GetPrimaryKey(Orleans.IGrain)
+    name: GetPrimaryKey
+    nameWithType: GrainExtensions.GetPrimaryKey
+    fullName: Orleans.GrainExtensions.GetPrimaryKey
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.IGrain
+    name: IGrain
+    nameWithType: IGrain
+    fullName: Orleans.IGrain
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.GrainExtensions.GetPrimaryKey(Orleans.IGrain)
+    name: GetPrimaryKey
+    nameWithType: GrainExtensions.GetPrimaryKey
+    fullName: Orleans.GrainExtensions.GetPrimaryKey
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.IGrain
+    name: IGrain
+    nameWithType: IGrain
+    fullName: Orleans.IGrain
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.GrainExtensions.InvokeOneWay``1(``0,Func{``0,Task})
+  commentId: M:Orleans.GrainExtensions.InvokeOneWay``1(``0,Func{``0,Task})
+  isExternal: true
+  name: InvokeOneWay<T>(T, Func<T, Task>)
+  nameWithType: GrainExtensions.InvokeOneWay<T>(T, Func<T, Task>)
+  fullName: Orleans.GrainExtensions.InvokeOneWay<T>(T, Func<T, Task>)
+  nameWithType.vb: GrainExtensions.InvokeOneWay(Of T)(T, Func(Of T, Task))
+  fullName.vb: Orleans.GrainExtensions.InvokeOneWay(Of T)(T, Func(Of T, Task))
+  name.vb: InvokeOneWay(Of T)(T, Func(Of T, Task))
+  spec.csharp:
+  - uid: Orleans.GrainExtensions.InvokeOneWay``1(``0,Func{``0,Task})
+    name: InvokeOneWay<T>
+    nameWithType: GrainExtensions.InvokeOneWay<T>
+    fullName: Orleans.GrainExtensions.InvokeOneWay<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.GrainExtensions.InvokeOneWay``1(``0,Func{``0,Task})
+    name: InvokeOneWay(Of T)
+    nameWithType: GrainExtensions.InvokeOneWay(Of T)
+    fullName: Orleans.GrainExtensions.InvokeOneWay(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency

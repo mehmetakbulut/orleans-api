@@ -1,0 +1,353 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Serialization.ProtobufSerializer
+  commentId: T:Orleans.Serialization.ProtobufSerializer
+  id: ProtobufSerializer
+  parent: Orleans.Serialization
+  children:
+  - Orleans.Serialization.ProtobufSerializer.DeepCopy(System.Object,ICopyContext)
+  - Orleans.Serialization.ProtobufSerializer.Deserialize(Type,IDeserializationContext)
+  - Orleans.Serialization.ProtobufSerializer.IsSupportedType(Type)
+  - Orleans.Serialization.ProtobufSerializer.Serialize(System.Object,ISerializationContext,Type)
+  langs:
+  - csharp
+  - vb
+  name: ProtobufSerializer
+  nameWithType: ProtobufSerializer
+  fullName: Orleans.Serialization.ProtobufSerializer
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Serialization.Protobuf/ProtobufSerializer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ProtobufSerializer
+    path: src/Orleans.Serialization.Protobuf/ProtobufSerializer.cs
+    startLine: 11
+  assemblies:
+  - Orleans.Serialization.Protobuf
+  namespace: Orleans.Serialization
+  summary: "\nAn implementation of IExternalSerializer for usage with Protobuf types.\n"
+  example: []
+  syntax:
+    content: 'public class ProtobufSerializer : IExternalSerializer'
+    content.vb: >-
+      Public Class ProtobufSerializer
+
+          Inherits IExternalSerializer
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.Serialization.ProtobufSerializer.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.Serialization.ProtobufSerializer.IsSupportedType(Type)
+  commentId: M:Orleans.Serialization.ProtobufSerializer.IsSupportedType(Type)
+  id: IsSupportedType(Type)
+  parent: Orleans.Serialization.ProtobufSerializer
+  langs:
+  - csharp
+  - vb
+  name: IsSupportedType(Type)
+  nameWithType: ProtobufSerializer.IsSupportedType(Type)
+  fullName: Orleans.Serialization.ProtobufSerializer.IsSupportedType(Type)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Serialization.Protobuf/ProtobufSerializer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IsSupportedType
+    path: src/Orleans.Serialization.Protobuf/ProtobufSerializer.cs
+    startLine: 20
+  assemblies:
+  - Orleans.Serialization.Protobuf
+  namespace: Orleans.Serialization
+  summary: "\nDetermines whether this serializer has the ability to serialize a particular type.\n"
+  example: []
+  syntax:
+    content: public bool IsSupportedType(Type itemType)
+    parameters:
+    - id: itemType
+      type: Type
+      description: The type of the item to be serialized
+    return:
+      type: System.Boolean
+      description: A value indicating whether the type can be serialized
+    content.vb: Public Function IsSupportedType(itemType As Type) As Boolean
+  overload: Orleans.Serialization.ProtobufSerializer.IsSupportedType*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Serialization.ProtobufSerializer.DeepCopy(System.Object,ICopyContext)
+  commentId: M:Orleans.Serialization.ProtobufSerializer.DeepCopy(System.Object,ICopyContext)
+  id: DeepCopy(System.Object,ICopyContext)
+  parent: Orleans.Serialization.ProtobufSerializer
+  langs:
+  - csharp
+  - vb
+  name: DeepCopy(Object, ICopyContext)
+  nameWithType: ProtobufSerializer.DeepCopy(Object, ICopyContext)
+  fullName: Orleans.Serialization.ProtobufSerializer.DeepCopy(System.Object, ICopyContext)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Serialization.Protobuf/ProtobufSerializer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: DeepCopy
+    path: src/Orleans.Serialization.Protobuf/ProtobufSerializer.cs
+    startLine: 41
+  assemblies:
+  - Orleans.Serialization.Protobuf
+  namespace: Orleans.Serialization
+  example: []
+  syntax:
+    content: public object DeepCopy(object source, ICopyContext context)
+    parameters:
+    - id: source
+      type: System.Object
+    - id: context
+      type: ICopyContext
+    return:
+      type: System.Object
+    content.vb: Public Function DeepCopy(source As Object, context As ICopyContext) As Object
+  overload: Orleans.Serialization.ProtobufSerializer.DeepCopy*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Serialization.ProtobufSerializer.Serialize(System.Object,ISerializationContext,Type)
+  commentId: M:Orleans.Serialization.ProtobufSerializer.Serialize(System.Object,ISerializationContext,Type)
+  id: Serialize(System.Object,ISerializationContext,Type)
+  parent: Orleans.Serialization.ProtobufSerializer
+  langs:
+  - csharp
+  - vb
+  name: Serialize(Object, ISerializationContext, Type)
+  nameWithType: ProtobufSerializer.Serialize(Object, ISerializationContext, Type)
+  fullName: Orleans.Serialization.ProtobufSerializer.Serialize(System.Object, ISerializationContext, Type)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Serialization.Protobuf/ProtobufSerializer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Serialize
+    path: src/Orleans.Serialization.Protobuf/ProtobufSerializer.cs
+    startLine: 53
+  assemblies:
+  - Orleans.Serialization.Protobuf
+  namespace: Orleans.Serialization
+  example: []
+  syntax:
+    content: public void Serialize(object item, ISerializationContext context, Type expectedType)
+    parameters:
+    - id: item
+      type: System.Object
+    - id: context
+      type: ISerializationContext
+    - id: expectedType
+      type: Type
+    content.vb: Public Sub Serialize(item As Object, context As ISerializationContext, expectedType As Type)
+  overload: Orleans.Serialization.ProtobufSerializer.Serialize*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Serialization.ProtobufSerializer.Deserialize(Type,IDeserializationContext)
+  commentId: M:Orleans.Serialization.ProtobufSerializer.Deserialize(Type,IDeserializationContext)
+  id: Deserialize(Type,IDeserializationContext)
+  parent: Orleans.Serialization.ProtobufSerializer
+  langs:
+  - csharp
+  - vb
+  name: Deserialize(Type, IDeserializationContext)
+  nameWithType: ProtobufSerializer.Deserialize(Type, IDeserializationContext)
+  fullName: Orleans.Serialization.ProtobufSerializer.Deserialize(Type, IDeserializationContext)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Serialization.Protobuf/ProtobufSerializer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Deserialize
+    path: src/Orleans.Serialization.Protobuf/ProtobufSerializer.cs
+    startLine: 90
+  assemblies:
+  - Orleans.Serialization.Protobuf
+  namespace: Orleans.Serialization
+  example: []
+  syntax:
+    content: public object Deserialize(Type expectedType, IDeserializationContext context)
+    parameters:
+    - id: expectedType
+      type: Type
+    - id: context
+      type: IDeserializationContext
+    return:
+      type: System.Object
+    content.vb: Public Function Deserialize(expectedType As Type, context As IDeserializationContext) As Object
+  overload: Orleans.Serialization.ProtobufSerializer.Deserialize*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans.Serialization
+  commentId: N:Orleans.Serialization
+  isExternal: false
+  name: Orleans.Serialization
+  nameWithType: Orleans.Serialization
+  fullName: Orleans.Serialization
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Serialization.ProtobufSerializer.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<ProtobufSerializer>()
+  nameWithType: ImmutableExt.AsImmutable<ProtobufSerializer>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Serialization.ProtobufSerializer>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of ProtobufSerializer)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Serialization.ProtobufSerializer)()
+  name.vb: AsImmutable(Of ProtobufSerializer)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<ProtobufSerializer>
+    nameWithType: ImmutableExt.AsImmutable<ProtobufSerializer>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Serialization.ProtobufSerializer>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of ProtobufSerializer)
+    nameWithType: ImmutableExt.AsImmutable(Of ProtobufSerializer)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Serialization.ProtobufSerializer)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Serialization.ProtobufSerializer.IsSupportedType*
+  commentId: Overload:Orleans.Serialization.ProtobufSerializer.IsSupportedType
+  isExternal: false
+  name: IsSupportedType
+  nameWithType: ProtobufSerializer.IsSupportedType
+  fullName: Orleans.Serialization.ProtobufSerializer.IsSupportedType
+- uid: Type
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: Type
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Orleans.Serialization.ProtobufSerializer.DeepCopy*
+  commentId: Overload:Orleans.Serialization.ProtobufSerializer.DeepCopy
+  isExternal: false
+  name: DeepCopy
+  nameWithType: ProtobufSerializer.DeepCopy
+  fullName: Orleans.Serialization.ProtobufSerializer.DeepCopy
+- uid: ICopyContext
+  isExternal: true
+  name: ICopyContext
+  nameWithType: ICopyContext
+  fullName: ICopyContext
+- uid: Orleans.Serialization.ProtobufSerializer.Serialize*
+  commentId: Overload:Orleans.Serialization.ProtobufSerializer.Serialize
+  isExternal: false
+  name: Serialize
+  nameWithType: ProtobufSerializer.Serialize
+  fullName: Orleans.Serialization.ProtobufSerializer.Serialize
+- uid: ISerializationContext
+  isExternal: true
+  name: ISerializationContext
+  nameWithType: ISerializationContext
+  fullName: ISerializationContext
+- uid: Orleans.Serialization.ProtobufSerializer.Deserialize*
+  commentId: Overload:Orleans.Serialization.ProtobufSerializer.Deserialize
+  isExternal: false
+  name: Deserialize
+  nameWithType: ProtobufSerializer.Deserialize
+  fullName: Orleans.Serialization.ProtobufSerializer.Deserialize
+- uid: IDeserializationContext
+  isExternal: true
+  name: IDeserializationContext
+  nameWithType: IDeserializationContext
+  fullName: IDeserializationContext

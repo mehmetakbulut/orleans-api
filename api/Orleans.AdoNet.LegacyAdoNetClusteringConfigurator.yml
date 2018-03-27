@@ -1,0 +1,191 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.AdoNet.LegacyAdoNetClusteringConfigurator
+  commentId: T:Orleans.AdoNet.LegacyAdoNetClusteringConfigurator
+  id: LegacyAdoNetClusteringConfigurator
+  parent: Orleans.AdoNet
+  children:
+  - Orleans.AdoNet.LegacyAdoNetClusteringConfigurator.Configure(System.Object,ISiloHostBuilder)
+  langs:
+  - csharp
+  - vb
+  name: LegacyAdoNetClusteringConfigurator
+  nameWithType: LegacyAdoNetClusteringConfigurator
+  fullName: Orleans.AdoNet.LegacyAdoNetClusteringConfigurator
+  type: Class
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Clustering.AdoNet/Messaging/LegacyAdoNetClusteringConfigurator.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: LegacyAdoNetClusteringConfigurator
+    path: src/AdoNet/Orleans.Clustering.AdoNet/Messaging/LegacyAdoNetClusteringConfigurator.cs
+    startLine: 6
+  assemblies:
+  - Orleans.Clustering.AdoNet
+  namespace: Orleans.AdoNet
+  example: []
+  syntax:
+    content: 'public class LegacyAdoNetClusteringConfigurator : ILegacyMembershipConfigurator'
+    content.vb: >-
+      Public Class LegacyAdoNetClusteringConfigurator
+
+          Inherits ILegacyMembershipConfigurator
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.AdoNet.LegacyAdoNetClusteringConfigurator.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.AdoNet.LegacyAdoNetClusteringConfigurator.Configure(System.Object,ISiloHostBuilder)
+  commentId: M:Orleans.AdoNet.LegacyAdoNetClusteringConfigurator.Configure(System.Object,ISiloHostBuilder)
+  id: Configure(System.Object,ISiloHostBuilder)
+  parent: Orleans.AdoNet.LegacyAdoNetClusteringConfigurator
+  langs:
+  - csharp
+  - vb
+  name: Configure(Object, ISiloHostBuilder)
+  nameWithType: LegacyAdoNetClusteringConfigurator.Configure(Object, ISiloHostBuilder)
+  fullName: Orleans.AdoNet.LegacyAdoNetClusteringConfigurator.Configure(System.Object, ISiloHostBuilder)
+  type: Method
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Clustering.AdoNet/Messaging/LegacyAdoNetClusteringConfigurator.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Configure
+    path: src/AdoNet/Orleans.Clustering.AdoNet/Messaging/LegacyAdoNetClusteringConfigurator.cs
+    startLine: 8
+  assemblies:
+  - Orleans.Clustering.AdoNet
+  namespace: Orleans.AdoNet
+  syntax:
+    content: public void Configure(object configuration, ISiloHostBuilder builder)
+    parameters:
+    - id: configuration
+      type: System.Object
+    - id: builder
+      type: ISiloHostBuilder
+    content.vb: Public Sub Configure(configuration As Object, builder As ISiloHostBuilder)
+  overload: Orleans.AdoNet.LegacyAdoNetClusteringConfigurator.Configure*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans.AdoNet
+  commentId: N:Orleans.AdoNet
+  isExternal: false
+  name: Orleans.AdoNet
+  nameWithType: Orleans.AdoNet
+  fullName: Orleans.AdoNet
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.AdoNet.LegacyAdoNetClusteringConfigurator.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<LegacyAdoNetClusteringConfigurator>()
+  nameWithType: ImmutableExt.AsImmutable<LegacyAdoNetClusteringConfigurator>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.AdoNet.LegacyAdoNetClusteringConfigurator>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of LegacyAdoNetClusteringConfigurator)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.AdoNet.LegacyAdoNetClusteringConfigurator)()
+  name.vb: AsImmutable(Of LegacyAdoNetClusteringConfigurator)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<LegacyAdoNetClusteringConfigurator>
+    nameWithType: ImmutableExt.AsImmutable<LegacyAdoNetClusteringConfigurator>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.AdoNet.LegacyAdoNetClusteringConfigurator>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of LegacyAdoNetClusteringConfigurator)
+    nameWithType: ImmutableExt.AsImmutable(Of LegacyAdoNetClusteringConfigurator)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.AdoNet.LegacyAdoNetClusteringConfigurator)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.AdoNet.LegacyAdoNetClusteringConfigurator.Configure*
+  commentId: Overload:Orleans.AdoNet.LegacyAdoNetClusteringConfigurator.Configure
+  isExternal: false
+  name: Configure
+  nameWithType: LegacyAdoNetClusteringConfigurator.Configure
+  fullName: Orleans.AdoNet.LegacyAdoNetClusteringConfigurator.Configure
+- uid: ISiloHostBuilder
+  isExternal: true
+  name: ISiloHostBuilder
+  nameWithType: ISiloHostBuilder
+  fullName: ISiloHostBuilder

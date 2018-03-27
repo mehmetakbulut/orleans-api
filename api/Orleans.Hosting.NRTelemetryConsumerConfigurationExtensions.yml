@@ -1,0 +1,469 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Hosting.NRTelemetryConsumerConfigurationExtensions
+  commentId: T:Orleans.Hosting.NRTelemetryConsumerConfigurationExtensions
+  id: NRTelemetryConsumerConfigurationExtensions
+  parent: Orleans.Hosting
+  children:
+  - Orleans.Hosting.NRTelemetryConsumerConfigurationExtensions.AddNewRelicTelemetryConsumer(IClientBuilder,System.String)
+  - Orleans.Hosting.NRTelemetryConsumerConfigurationExtensions.AddNewRelicTelemetryConsumer(ISiloHostBuilder,System.String)
+  langs:
+  - csharp
+  - vb
+  name: NRTelemetryConsumerConfigurationExtensions
+  nameWithType: NRTelemetryConsumerConfigurationExtensions
+  fullName: Orleans.Hosting.NRTelemetryConsumerConfigurationExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.TelemetryConsumers.NewRelic/NRTelemetryConsumerConfigurationExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: NRTelemetryConsumerConfigurationExtensions
+    path: src/Orleans.TelemetryConsumers.NewRelic/NRTelemetryConsumerConfigurationExtensions.cs
+    startLine: 6
+  assemblies:
+  - Orleans.TelemetryConsumers.NewRelic
+  namespace: Orleans.Hosting
+  syntax:
+    content: public static class NRTelemetryConsumerConfigurationExtensions
+    content.vb: Public Module NRTelemetryConsumerConfigurationExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Orleans.Hosting.NRTelemetryConsumerConfigurationExtensions.AddNewRelicTelemetryConsumer(ISiloHostBuilder,System.String)
+  commentId: M:Orleans.Hosting.NRTelemetryConsumerConfigurationExtensions.AddNewRelicTelemetryConsumer(ISiloHostBuilder,System.String)
+  id: AddNewRelicTelemetryConsumer(ISiloHostBuilder,System.String)
+  isExtensionMethod: true
+  parent: Orleans.Hosting.NRTelemetryConsumerConfigurationExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddNewRelicTelemetryConsumer(ISiloHostBuilder, String)
+  nameWithType: NRTelemetryConsumerConfigurationExtensions.AddNewRelicTelemetryConsumer(ISiloHostBuilder, String)
+  fullName: Orleans.Hosting.NRTelemetryConsumerConfigurationExtensions.AddNewRelicTelemetryConsumer(ISiloHostBuilder, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.TelemetryConsumers.NewRelic/NRTelemetryConsumerConfigurationExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AddNewRelicTelemetryConsumer
+    path: src/Orleans.TelemetryConsumers.NewRelic/NRTelemetryConsumerConfigurationExtensions.cs
+    startLine: 13
+  assemblies:
+  - Orleans.TelemetryConsumers.NewRelic
+  namespace: Orleans.Hosting
+  summary: "\nAdds a metrics telemetric consumer provider of type <xref href=\"Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public static ISiloHostBuilder AddNewRelicTelemetryConsumer(this ISiloHostBuilder hostBuilder, string instrumentationKey = null)
+    parameters:
+    - id: hostBuilder
+      type: ISiloHostBuilder
+      description: ''
+    - id: instrumentationKey
+      type: System.String
+      description: The instrumentation key for New Relic.
+    return:
+      type: ISiloHostBuilder
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AddNewRelicTelemetryConsumer(hostBuilder As ISiloHostBuilder, instrumentationKey As String = Nothing) As ISiloHostBuilder
+  overload: Orleans.Hosting.NRTelemetryConsumerConfigurationExtensions.AddNewRelicTelemetryConsumer*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.Hosting.NRTelemetryConsumerConfigurationExtensions.AddNewRelicTelemetryConsumer(IClientBuilder,System.String)
+  commentId: M:Orleans.Hosting.NRTelemetryConsumerConfigurationExtensions.AddNewRelicTelemetryConsumer(IClientBuilder,System.String)
+  id: AddNewRelicTelemetryConsumer(IClientBuilder,System.String)
+  isExtensionMethod: true
+  parent: Orleans.Hosting.NRTelemetryConsumerConfigurationExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddNewRelicTelemetryConsumer(IClientBuilder, String)
+  nameWithType: NRTelemetryConsumerConfigurationExtensions.AddNewRelicTelemetryConsumer(IClientBuilder, String)
+  fullName: Orleans.Hosting.NRTelemetryConsumerConfigurationExtensions.AddNewRelicTelemetryConsumer(IClientBuilder, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.TelemetryConsumers.NewRelic/NRTelemetryConsumerConfigurationExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AddNewRelicTelemetryConsumer
+    path: src/Orleans.TelemetryConsumers.NewRelic/NRTelemetryConsumerConfigurationExtensions.cs
+    startLine: 23
+  assemblies:
+  - Orleans.TelemetryConsumers.NewRelic
+  namespace: Orleans.Hosting
+  summary: "\nAdds a metrics telemetric consumer provider of type <xref href=\"Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public static IClientBuilder AddNewRelicTelemetryConsumer(this IClientBuilder clientBuilder, string instrumentationKey = null)
+    parameters:
+    - id: clientBuilder
+      type: IClientBuilder
+      description: ''
+    - id: instrumentationKey
+      type: System.String
+      description: The instrumentation key for New Relic.
+    return:
+      type: IClientBuilder
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AddNewRelicTelemetryConsumer(clientBuilder As IClientBuilder, instrumentationKey As String = Nothing) As IClientBuilder
+  overload: Orleans.Hosting.NRTelemetryConsumerConfigurationExtensions.AddNewRelicTelemetryConsumer*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Orleans.Hosting
+  commentId: N:Orleans.Hosting
+  isExternal: false
+  name: Orleans.Hosting
+  nameWithType: Orleans.Hosting
+  fullName: Orleans.Hosting
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer
+  commentId: T:Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer
+  isExternal: false
+  name: NRTelemetryConsumer
+  nameWithType: NRTelemetryConsumer
+  fullName: Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer
+- uid: Orleans.Hosting.NRTelemetryConsumerConfigurationExtensions.AddNewRelicTelemetryConsumer*
+  commentId: Overload:Orleans.Hosting.NRTelemetryConsumerConfigurationExtensions.AddNewRelicTelemetryConsumer
+  isExternal: false
+  name: AddNewRelicTelemetryConsumer
+  nameWithType: NRTelemetryConsumerConfigurationExtensions.AddNewRelicTelemetryConsumer
+  fullName: Orleans.Hosting.NRTelemetryConsumerConfigurationExtensions.AddNewRelicTelemetryConsumer
+- uid: ISiloHostBuilder
+  isExternal: true
+  name: ISiloHostBuilder
+  nameWithType: ISiloHostBuilder
+  fullName: ISiloHostBuilder
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: IClientBuilder
+  isExternal: true
+  name: IClientBuilder
+  nameWithType: IClientBuilder
+  fullName: IClientBuilder

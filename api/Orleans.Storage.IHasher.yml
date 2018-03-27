@@ -1,0 +1,261 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Storage.IHasher
+  commentId: T:Orleans.Storage.IHasher
+  id: IHasher
+  parent: Orleans.Storage
+  children:
+  - Orleans.Storage.IHasher.Description
+  - Orleans.Storage.IHasher.Hash(System.Byte[])
+  langs:
+  - csharp
+  - vb
+  name: IHasher
+  nameWithType: IHasher
+  fullName: Orleans.Storage.IHasher
+  type: Interface
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/IHasher.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IHasher
+    path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/IHasher.cs
+    startLine: 7
+  assemblies:
+  - Orleans.Persistence.AdoNet
+  namespace: Orleans.Storage
+  summary: "\nAn interface for all the hashing operations currently in Orleans Storage operations.\n"
+  remarks: >-
+    Implement this to provide a hasher for database key with specific properties.
+
+    As for an example: collision resistance on out-of-control ID providers.
+  example: []
+  syntax:
+    content: public interface IHasher
+    content.vb: Public Interface IHasher
+  extensionMethods:
+  - Orleans.Storage.IHasher.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Orleans.Storage.IHasher.Description
+  commentId: P:Orleans.Storage.IHasher.Description
+  id: Description
+  parent: Orleans.Storage.IHasher
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: IHasher.Description
+  fullName: Orleans.Storage.IHasher.Description
+  type: Property
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/IHasher.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Description
+    path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/IHasher.cs
+    startLine: 12
+  assemblies:
+  - Orleans.Persistence.AdoNet
+  namespace: Orleans.Storage
+  summary: "\nDescription of the hashing functionality.\n"
+  example: []
+  syntax:
+    content: string Description { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property Description As String
+  overload: Orleans.Storage.IHasher.Description*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Orleans.Storage.IHasher.Hash(System.Byte[])
+  commentId: M:Orleans.Storage.IHasher.Hash(System.Byte[])
+  id: Hash(System.Byte[])
+  parent: Orleans.Storage.IHasher
+  langs:
+  - csharp
+  - vb
+  name: Hash(Byte[])
+  nameWithType: IHasher.Hash(Byte[])
+  fullName: Orleans.Storage.IHasher.Hash(System.Byte[])
+  type: Method
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/IHasher.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Hash
+    path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/IHasher.cs
+    startLine: 19
+  assemblies:
+  - Orleans.Persistence.AdoNet
+  namespace: Orleans.Storage
+  summary: "\nThe hash.\n"
+  example: []
+  syntax:
+    content: int Hash(byte[] data)
+    parameters:
+    - id: data
+      type: System.Byte[]
+      description: The data to hash.
+    return:
+      type: System.Int32
+      description: The given bytes hashed.
+    content.vb: Function Hash(data As Byte()) As Integer
+  overload: Orleans.Storage.IHasher.Hash*
+  nameWithType.vb: IHasher.Hash(Byte())
+  fullName.vb: Orleans.Storage.IHasher.Hash(System.Byte())
+  name.vb: Hash(Byte())
+references:
+- uid: Orleans.Storage
+  commentId: N:Orleans.Storage
+  isExternal: false
+  name: Orleans.Storage
+  nameWithType: Orleans.Storage
+  fullName: Orleans.Storage
+- uid: Orleans.Storage.IHasher.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<IHasher>()
+  nameWithType: ImmutableExt.AsImmutable<IHasher>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Storage.IHasher>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of IHasher)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Storage.IHasher)()
+  name.vb: AsImmutable(Of IHasher)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<IHasher>
+    nameWithType: ImmutableExt.AsImmutable<IHasher>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Storage.IHasher>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of IHasher)
+    nameWithType: ImmutableExt.AsImmutable(Of IHasher)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Storage.IHasher)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Storage.IHasher.Description*
+  commentId: Overload:Orleans.Storage.IHasher.Description
+  isExternal: false
+  name: Description
+  nameWithType: IHasher.Description
+  fullName: Orleans.Storage.IHasher.Description
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Storage.IHasher.Hash*
+  commentId: Overload:Orleans.Storage.IHasher.Hash
+  isExternal: false
+  name: Hash
+  nameWithType: IHasher.Hash
+  fullName: Orleans.Storage.IHasher.Hash
+- uid: System.Byte[]
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32

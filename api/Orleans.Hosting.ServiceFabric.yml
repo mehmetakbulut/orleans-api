@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Hosting.ServiceFabric
+  commentId: N:Orleans.Hosting.ServiceFabric
+  id: Orleans.Hosting.ServiceFabric
+  children:
+  - Orleans.Hosting.ServiceFabric.OrleansCommunicationListener
+  - Orleans.Hosting.ServiceFabric.OrleansServiceListener
+  langs:
+  - csharp
+  - vb
+  name: Orleans.Hosting.ServiceFabric
+  nameWithType: Orleans.Hosting.ServiceFabric
+  fullName: Orleans.Hosting.ServiceFabric
+  type: Namespace
+  assemblies:
+  - Orleans.Hosting.ServiceFabric
+references:
+- uid: Orleans.Hosting.ServiceFabric.OrleansCommunicationListener
+  commentId: T:Orleans.Hosting.ServiceFabric.OrleansCommunicationListener
+  isExternal: false
+  name: OrleansCommunicationListener
+  nameWithType: OrleansCommunicationListener
+  fullName: Orleans.Hosting.ServiceFabric.OrleansCommunicationListener
+- uid: Orleans.Hosting.ServiceFabric.OrleansServiceListener
+  commentId: T:Orleans.Hosting.ServiceFabric.OrleansServiceListener
+  isExternal: false
+  name: OrleansServiceListener
+  nameWithType: OrleansServiceListener
+  fullName: Orleans.Hosting.ServiceFabric.OrleansServiceListener

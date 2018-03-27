@@ -1,0 +1,246 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Statistics.IAppEnvironmentStatistics
+  commentId: T:Orleans.Statistics.IAppEnvironmentStatistics
+  id: IAppEnvironmentStatistics
+  parent: Orleans.Statistics
+  children:
+  - Orleans.Statistics.IAppEnvironmentStatistics.MemoryUsage
+  langs:
+  - csharp
+  - vb
+  name: IAppEnvironmentStatistics
+  nameWithType: IAppEnvironmentStatistics
+  fullName: Orleans.Statistics.IAppEnvironmentStatistics
+  type: Interface
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Statistics/IAppEnvironmentStatistics.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IAppEnvironmentStatistics
+    path: src/Orleans.Core.Abstractions/Statistics/IAppEnvironmentStatistics.cs
+    startLine: 2
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Statistics
+  syntax:
+    content: public interface IAppEnvironmentStatistics
+    content.vb: Public Interface IAppEnvironmentStatistics
+  extensionMethods:
+  - Orleans.Statistics.IAppEnvironmentStatistics.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Orleans.Statistics.IAppEnvironmentStatistics.MemoryUsage
+  commentId: P:Orleans.Statistics.IAppEnvironmentStatistics.MemoryUsage
+  id: MemoryUsage
+  parent: Orleans.Statistics.IAppEnvironmentStatistics
+  langs:
+  - csharp
+  - vb
+  name: MemoryUsage
+  nameWithType: IAppEnvironmentStatistics.MemoryUsage
+  fullName: Orleans.Statistics.IAppEnvironmentStatistics.MemoryUsage
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Statistics/IAppEnvironmentStatistics.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: MemoryUsage
+    path: src/Orleans.Core.Abstractions/Statistics/IAppEnvironmentStatistics.cs
+    startLine: 4
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Statistics
+  syntax:
+    content: long? MemoryUsage { get; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int64}
+    content.vb: ReadOnly Property MemoryUsage As Long?
+  overload: Orleans.Statistics.IAppEnvironmentStatistics.MemoryUsage*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+references:
+- uid: Orleans.Statistics
+  commentId: N:Orleans.Statistics
+  isExternal: false
+  name: Orleans.Statistics
+  nameWithType: Orleans.Statistics
+  fullName: Orleans.Statistics
+- uid: Orleans.Statistics.IAppEnvironmentStatistics.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<IAppEnvironmentStatistics>()
+  nameWithType: ImmutableExt.AsImmutable<IAppEnvironmentStatistics>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Statistics.IAppEnvironmentStatistics>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of IAppEnvironmentStatistics)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Statistics.IAppEnvironmentStatistics)()
+  name.vb: AsImmutable(Of IAppEnvironmentStatistics)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<IAppEnvironmentStatistics>
+    nameWithType: ImmutableExt.AsImmutable<IAppEnvironmentStatistics>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Statistics.IAppEnvironmentStatistics>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of IAppEnvironmentStatistics)
+    nameWithType: ImmutableExt.AsImmutable(Of IAppEnvironmentStatistics)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Statistics.IAppEnvironmentStatistics)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Statistics.IAppEnvironmentStatistics.MemoryUsage*
+  commentId: Overload:Orleans.Statistics.IAppEnvironmentStatistics.MemoryUsage
+  isExternal: false
+  name: MemoryUsage
+  nameWithType: IAppEnvironmentStatistics.MemoryUsage
+  fullName: Orleans.Statistics.IAppEnvironmentStatistics.MemoryUsage
+- uid: System.Nullable{System.Int64}
+  commentId: '!:System.Nullable{System.Int64}'
+  definition: System.Nullable`1
+  name: Nullable<Int64>
+  nameWithType: Nullable<Int64>
+  fullName: System.Nullable<System.Int64>
+  nameWithType.vb: Nullable(Of Int64)
+  fullName.vb: System.Nullable(Of System.Int64)
+  name.vb: Nullable(Of Int64)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  isExternal: true
+  name: Nullable<>
+  nameWithType: Nullable<>
+  fullName: System.Nullable<>
+  nameWithType.vb: Nullable(Of )
+  fullName.vb: System.Nullable(Of )
+  name.vb: Nullable(Of )
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )

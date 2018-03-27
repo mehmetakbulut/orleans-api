@@ -1,0 +1,509 @@
+### YamlMime:ManagedReference
+items:
+- uid: OrleansPSUtils.GetGrain
+  commentId: T:OrleansPSUtils.GetGrain
+  id: GetGrain
+  parent: OrleansPSUtils
+  children:
+  - OrleansPSUtils.GetGrain.Client
+  - OrleansPSUtils.GetGrain.GrainClassNamePrefix
+  - OrleansPSUtils.GetGrain.GrainType
+  - OrleansPSUtils.GetGrain.GuidKey
+  - OrleansPSUtils.GetGrain.KeyExtension
+  - OrleansPSUtils.GetGrain.LongKey
+  - OrleansPSUtils.GetGrain.ProcessRecord
+  - OrleansPSUtils.GetGrain.StringKey
+  langs:
+  - csharp
+  - vb
+  name: GetGrain
+  nameWithType: GetGrain
+  fullName: OrleansPSUtils.GetGrain
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.PowerShell/GetGrain.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetGrain
+    path: src/Orleans.PowerShell/GetGrain.cs
+    startLine: 8
+  assemblies:
+  - Orleans.PowerShell
+  namespace: OrleansPSUtils
+  syntax:
+    content: 'public class GetGrain : PSCmdlet'
+    content.vb: >-
+      Public Class GetGrain
+
+          Inherits PSCmdlet
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - OrleansPSUtils.GetGrain.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: OrleansPSUtils.GetGrain.Client
+  commentId: P:OrleansPSUtils.GetGrain.Client
+  id: Client
+  parent: OrleansPSUtils.GetGrain
+  langs:
+  - csharp
+  - vb
+  name: Client
+  nameWithType: GetGrain.Client
+  fullName: OrleansPSUtils.GetGrain.Client
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.PowerShell/GetGrain.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Client
+    path: src/Orleans.PowerShell/GetGrain.cs
+    startLine: 19
+  assemblies:
+  - Orleans.PowerShell
+  namespace: OrleansPSUtils
+  syntax:
+    content: public IClusterClient Client { get; set; }
+    parameters: []
+    return:
+      type: IClusterClient
+    content.vb: Public Property Client As IClusterClient
+  overload: OrleansPSUtils.GetGrain.Client*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OrleansPSUtils.GetGrain.GrainType
+  commentId: P:OrleansPSUtils.GetGrain.GrainType
+  id: GrainType
+  parent: OrleansPSUtils.GetGrain
+  langs:
+  - csharp
+  - vb
+  name: GrainType
+  nameWithType: GetGrain.GrainType
+  fullName: OrleansPSUtils.GetGrain.GrainType
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.PowerShell/GetGrain.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GrainType
+    path: src/Orleans.PowerShell/GetGrain.cs
+    startLine: 26
+  assemblies:
+  - Orleans.PowerShell
+  namespace: OrleansPSUtils
+  syntax:
+    content: public Type GrainType { get; set; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: Public Property GrainType As Type
+  overload: OrleansPSUtils.GetGrain.GrainType*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OrleansPSUtils.GetGrain.StringKey
+  commentId: P:OrleansPSUtils.GetGrain.StringKey
+  id: StringKey
+  parent: OrleansPSUtils.GetGrain
+  langs:
+  - csharp
+  - vb
+  name: StringKey
+  nameWithType: GetGrain.StringKey
+  fullName: OrleansPSUtils.GetGrain.StringKey
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.PowerShell/GetGrain.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: StringKey
+    path: src/Orleans.PowerShell/GetGrain.cs
+    startLine: 33
+  assemblies:
+  - Orleans.PowerShell
+  namespace: OrleansPSUtils
+  syntax:
+    content: public string StringKey { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property StringKey As String
+  overload: OrleansPSUtils.GetGrain.StringKey*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OrleansPSUtils.GetGrain.GuidKey
+  commentId: P:OrleansPSUtils.GetGrain.GuidKey
+  id: GuidKey
+  parent: OrleansPSUtils.GetGrain
+  langs:
+  - csharp
+  - vb
+  name: GuidKey
+  nameWithType: GetGrain.GuidKey
+  fullName: OrleansPSUtils.GetGrain.GuidKey
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.PowerShell/GetGrain.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GuidKey
+    path: src/Orleans.PowerShell/GetGrain.cs
+    startLine: 36
+  assemblies:
+  - Orleans.PowerShell
+  namespace: OrleansPSUtils
+  syntax:
+    content: public Guid GuidKey { get; set; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: Public Property GuidKey As Guid
+  overload: OrleansPSUtils.GetGrain.GuidKey*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OrleansPSUtils.GetGrain.LongKey
+  commentId: P:OrleansPSUtils.GetGrain.LongKey
+  id: LongKey
+  parent: OrleansPSUtils.GetGrain
+  langs:
+  - csharp
+  - vb
+  name: LongKey
+  nameWithType: GetGrain.LongKey
+  fullName: OrleansPSUtils.GetGrain.LongKey
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.PowerShell/GetGrain.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: LongKey
+    path: src/Orleans.PowerShell/GetGrain.cs
+    startLine: 40
+  assemblies:
+  - Orleans.PowerShell
+  namespace: OrleansPSUtils
+  syntax:
+    content: public long LongKey { get; set; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public Property LongKey As Long
+  overload: OrleansPSUtils.GetGrain.LongKey*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OrleansPSUtils.GetGrain.GrainClassNamePrefix
+  commentId: P:OrleansPSUtils.GetGrain.GrainClassNamePrefix
+  id: GrainClassNamePrefix
+  parent: OrleansPSUtils.GetGrain
+  langs:
+  - csharp
+  - vb
+  name: GrainClassNamePrefix
+  nameWithType: GetGrain.GrainClassNamePrefix
+  fullName: OrleansPSUtils.GetGrain.GrainClassNamePrefix
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.PowerShell/GetGrain.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GrainClassNamePrefix
+    path: src/Orleans.PowerShell/GetGrain.cs
+    startLine: 44
+  assemblies:
+  - Orleans.PowerShell
+  namespace: OrleansPSUtils
+  syntax:
+    content: public string GrainClassNamePrefix { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property GrainClassNamePrefix As String
+  overload: OrleansPSUtils.GetGrain.GrainClassNamePrefix*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OrleansPSUtils.GetGrain.KeyExtension
+  commentId: P:OrleansPSUtils.GetGrain.KeyExtension
+  id: KeyExtension
+  parent: OrleansPSUtils.GetGrain
+  langs:
+  - csharp
+  - vb
+  name: KeyExtension
+  nameWithType: GetGrain.KeyExtension
+  fullName: OrleansPSUtils.GetGrain.KeyExtension
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.PowerShell/GetGrain.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: KeyExtension
+    path: src/Orleans.PowerShell/GetGrain.cs
+    startLine: 51
+  assemblies:
+  - Orleans.PowerShell
+  namespace: OrleansPSUtils
+  syntax:
+    content: public string KeyExtension { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property KeyExtension As String
+  overload: OrleansPSUtils.GetGrain.KeyExtension*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OrleansPSUtils.GetGrain.ProcessRecord
+  commentId: M:OrleansPSUtils.GetGrain.ProcessRecord
+  id: ProcessRecord
+  parent: OrleansPSUtils.GetGrain
+  langs:
+  - csharp
+  - vb
+  name: ProcessRecord()
+  nameWithType: GetGrain.ProcessRecord()
+  fullName: OrleansPSUtils.GetGrain.ProcessRecord()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.PowerShell/GetGrain.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ProcessRecord
+    path: src/Orleans.PowerShell/GetGrain.cs
+    startLine: 55
+  assemblies:
+  - Orleans.PowerShell
+  namespace: OrleansPSUtils
+  syntax:
+    content: protected override void ProcessRecord()
+    content.vb: Protected Overrides Sub ProcessRecord
+  overload: OrleansPSUtils.GetGrain.ProcessRecord*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+references:
+- uid: OrleansPSUtils
+  commentId: N:OrleansPSUtils
+  isExternal: false
+  name: OrleansPSUtils
+  nameWithType: OrleansPSUtils
+  fullName: OrleansPSUtils
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: OrleansPSUtils.GetGrain.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<GetGrain>()
+  nameWithType: ImmutableExt.AsImmutable<GetGrain>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<OrleansPSUtils.GetGrain>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of GetGrain)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of OrleansPSUtils.GetGrain)()
+  name.vb: AsImmutable(Of GetGrain)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<GetGrain>
+    nameWithType: ImmutableExt.AsImmutable<GetGrain>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<OrleansPSUtils.GetGrain>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of GetGrain)
+    nameWithType: ImmutableExt.AsImmutable(Of GetGrain)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of OrleansPSUtils.GetGrain)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: OrleansPSUtils.GetGrain.Client*
+  commentId: Overload:OrleansPSUtils.GetGrain.Client
+  isExternal: false
+  name: Client
+  nameWithType: GetGrain.Client
+  fullName: OrleansPSUtils.GetGrain.Client
+- uid: IClusterClient
+  isExternal: true
+  name: IClusterClient
+  nameWithType: IClusterClient
+  fullName: IClusterClient
+- uid: OrleansPSUtils.GetGrain.GrainType*
+  commentId: Overload:OrleansPSUtils.GetGrain.GrainType
+  isExternal: false
+  name: GrainType
+  nameWithType: GetGrain.GrainType
+  fullName: OrleansPSUtils.GetGrain.GrainType
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: OrleansPSUtils.GetGrain.StringKey*
+  commentId: Overload:OrleansPSUtils.GetGrain.StringKey
+  isExternal: false
+  name: StringKey
+  nameWithType: GetGrain.StringKey
+  fullName: OrleansPSUtils.GetGrain.StringKey
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: OrleansPSUtils.GetGrain.GuidKey*
+  commentId: Overload:OrleansPSUtils.GetGrain.GuidKey
+  isExternal: false
+  name: GuidKey
+  nameWithType: GetGrain.GuidKey
+  fullName: OrleansPSUtils.GetGrain.GuidKey
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: OrleansPSUtils.GetGrain.LongKey*
+  commentId: Overload:OrleansPSUtils.GetGrain.LongKey
+  isExternal: false
+  name: LongKey
+  nameWithType: GetGrain.LongKey
+  fullName: OrleansPSUtils.GetGrain.LongKey
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
+- uid: OrleansPSUtils.GetGrain.GrainClassNamePrefix*
+  commentId: Overload:OrleansPSUtils.GetGrain.GrainClassNamePrefix
+  isExternal: false
+  name: GrainClassNamePrefix
+  nameWithType: GetGrain.GrainClassNamePrefix
+  fullName: OrleansPSUtils.GetGrain.GrainClassNamePrefix
+- uid: OrleansPSUtils.GetGrain.KeyExtension*
+  commentId: Overload:OrleansPSUtils.GetGrain.KeyExtension
+  isExternal: false
+  name: KeyExtension
+  nameWithType: GetGrain.KeyExtension
+  fullName: OrleansPSUtils.GetGrain.KeyExtension
+- uid: OrleansPSUtils.GetGrain.ProcessRecord*
+  commentId: Overload:OrleansPSUtils.GetGrain.ProcessRecord
+  isExternal: false
+  name: ProcessRecord
+  nameWithType: GetGrain.ProcessRecord
+  fullName: OrleansPSUtils.GetGrain.ProcessRecord

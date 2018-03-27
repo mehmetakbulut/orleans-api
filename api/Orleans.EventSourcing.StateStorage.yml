@@ -1,0 +1,99 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.EventSourcing.StateStorage
+  commentId: N:Orleans.EventSourcing.StateStorage
+  id: Orleans.EventSourcing.StateStorage
+  children:
+  - Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1
+  - Orleans.EventSourcing.StateStorage.GrainStateWithMetaDataAndETag`1
+  - Orleans.EventSourcing.StateStorage.LogConsistencyProvider
+  langs:
+  - csharp
+  - vb
+  name: Orleans.EventSourcing.StateStorage
+  nameWithType: Orleans.EventSourcing.StateStorage
+  fullName: Orleans.EventSourcing.StateStorage
+  type: Namespace
+  assemblies:
+  - Orleans.EventSourcing
+references:
+- uid: Orleans.EventSourcing.StateStorage.GrainStateWithMetaDataAndETag`1
+  commentId: T:Orleans.EventSourcing.StateStorage.GrainStateWithMetaDataAndETag`1
+  isExternal: false
+  name: GrainStateWithMetaDataAndETag<TView>
+  nameWithType: GrainStateWithMetaDataAndETag<TView>
+  fullName: Orleans.EventSourcing.StateStorage.GrainStateWithMetaDataAndETag<TView>
+  nameWithType.vb: GrainStateWithMetaDataAndETag(Of TView)
+  fullName.vb: Orleans.EventSourcing.StateStorage.GrainStateWithMetaDataAndETag(Of TView)
+  name.vb: GrainStateWithMetaDataAndETag(Of TView)
+  spec.csharp:
+  - uid: Orleans.EventSourcing.StateStorage.GrainStateWithMetaDataAndETag`1
+    name: GrainStateWithMetaDataAndETag
+    nameWithType: GrainStateWithMetaDataAndETag
+    fullName: Orleans.EventSourcing.StateStorage.GrainStateWithMetaDataAndETag
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TView
+    nameWithType: TView
+    fullName: TView
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Orleans.EventSourcing.StateStorage.GrainStateWithMetaDataAndETag`1
+    name: GrainStateWithMetaDataAndETag
+    nameWithType: GrainStateWithMetaDataAndETag
+    fullName: Orleans.EventSourcing.StateStorage.GrainStateWithMetaDataAndETag
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TView
+    nameWithType: TView
+    fullName: TView
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1
+  commentId: T:Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1
+  isExternal: false
+  name: GrainStateWithMetaData<TView>
+  nameWithType: GrainStateWithMetaData<TView>
+  fullName: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData<TView>
+  nameWithType.vb: GrainStateWithMetaData(Of TView)
+  fullName.vb: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData(Of TView)
+  name.vb: GrainStateWithMetaData(Of TView)
+  spec.csharp:
+  - uid: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1
+    name: GrainStateWithMetaData
+    nameWithType: GrainStateWithMetaData
+    fullName: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TView
+    nameWithType: TView
+    fullName: TView
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1
+    name: GrainStateWithMetaData
+    nameWithType: GrainStateWithMetaData
+    fullName: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TView
+    nameWithType: TView
+    fullName: TView
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.StateStorage.LogConsistencyProvider
+  commentId: T:Orleans.EventSourcing.StateStorage.LogConsistencyProvider
+  isExternal: false
+  name: LogConsistencyProvider
+  nameWithType: LogConsistencyProvider
+  fullName: Orleans.EventSourcing.StateStorage.LogConsistencyProvider

@@ -1,0 +1,161 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Streams.StreamFilterPredicate
+  commentId: T:Orleans.Streams.StreamFilterPredicate
+  id: StreamFilterPredicate
+  parent: Orleans.Streams
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: StreamFilterPredicate
+  nameWithType: StreamFilterPredicate
+  fullName: Orleans.Streams.StreamFilterPredicate
+  type: Delegate
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Streams/Core/IAsyncObservable.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: StreamFilterPredicate
+    path: src/Orleans.Core.Abstractions/Streams/Core/IAsyncObservable.cs
+    startLine: 5
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Streams
+  syntax:
+    content: public delegate bool StreamFilterPredicate(IStreamIdentity stream, object filterData, object item);
+    parameters:
+    - id: stream
+      type: Orleans.Streams.IStreamIdentity
+    - id: filterData
+      type: System.Object
+    - id: item
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Delegate Function StreamFilterPredicate(stream As IStreamIdentity, filterData As Object, item As Object) As Boolean
+  extensionMethods:
+  - Orleans.Streams.StreamFilterPredicate.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - delegate
+  modifiers.vb:
+  - Public
+  - Delegate
+references:
+- uid: Orleans.Streams
+  commentId: N:Orleans.Streams
+  isExternal: false
+  name: Orleans.Streams
+  nameWithType: Orleans.Streams
+  fullName: Orleans.Streams
+- uid: Orleans.Streams.StreamFilterPredicate.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<StreamFilterPredicate>()
+  nameWithType: ImmutableExt.AsImmutable<StreamFilterPredicate>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Streams.StreamFilterPredicate>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of StreamFilterPredicate)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Streams.StreamFilterPredicate)()
+  name.vb: AsImmutable(Of StreamFilterPredicate)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<StreamFilterPredicate>
+    nameWithType: ImmutableExt.AsImmutable<StreamFilterPredicate>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Streams.StreamFilterPredicate>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of StreamFilterPredicate)
+    nameWithType: ImmutableExt.AsImmutable(Of StreamFilterPredicate)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Streams.StreamFilterPredicate)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Streams.IStreamIdentity
+  commentId: T:Orleans.Streams.IStreamIdentity
+  parent: Orleans.Streams
+  isExternal: false
+  name: IStreamIdentity
+  nameWithType: IStreamIdentity
+  fullName: Orleans.Streams.IStreamIdentity
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency

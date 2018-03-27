@@ -1,0 +1,142 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Concurrency.ImmutableAttribute
+  commentId: T:Orleans.Concurrency.ImmutableAttribute
+  id: ImmutableAttribute
+  parent: Orleans.Concurrency
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: ImmutableAttribute
+  nameWithType: ImmutableAttribute
+  fullName: Orleans.Concurrency.ImmutableAttribute
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Concurrency/GrainAttributeConcurrency.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ImmutableAttribute
+    path: src/Orleans.Core.Abstractions/Concurrency/GrainAttributeConcurrency.cs
+    startLine: 101
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Concurrency
+  summary: "\nThe Immutable attribute indicates that instances of the marked class or struct are never modified\nafter they are created.\n"
+  remarks: "\nNote that this implies that sub-objects are also not modified after the instance is created.\n"
+  example: []
+  syntax:
+    content: 'public sealed class ImmutableAttribute : Attribute'
+    content.vb: >-
+      Public NotInheritable Class ImmutableAttribute
+
+          Inherits Attribute
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.Concurrency.ImmutableAttribute.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+references:
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Concurrency.ImmutableAttribute.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<ImmutableAttribute>()
+  nameWithType: ImmutableExt.AsImmutable<ImmutableAttribute>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Concurrency.ImmutableAttribute>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of ImmutableAttribute)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Concurrency.ImmutableAttribute)()
+  name.vb: AsImmutable(Of ImmutableAttribute)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<ImmutableAttribute>
+    nameWithType: ImmutableExt.AsImmutable<ImmutableAttribute>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Concurrency.ImmutableAttribute>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of ImmutableAttribute)
+    nameWithType: ImmutableExt.AsImmutable(Of ImmutableAttribute)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Concurrency.ImmutableAttribute)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt

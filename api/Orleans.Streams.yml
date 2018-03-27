@@ -1,0 +1,378 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Streams
+  commentId: N:Orleans.Streams
+  id: Orleans.Streams
+  children:
+  - Orleans.Streams.AsyncObservableExtensions
+  - Orleans.Streams.ClusterClientPubSubStreamConfigurator`1
+  - Orleans.Streams.ClusterClientSqsStreamConfigurator
+  - Orleans.Streams.IAsyncBatchObserver`1
+  - Orleans.Streams.IAsyncObservable`1
+  - Orleans.Streams.IAsyncObserver`1
+  - Orleans.Streams.IAsyncStream`1
+  - Orleans.Streams.IStreamIdentity
+  - Orleans.Streams.IStreamNamespacePredicate
+  - Orleans.Streams.IStreamProvider
+  - Orleans.Streams.RegexStreamNamespacePredicate
+  - Orleans.Streams.SiloPubSubStreamConfigurator`1
+  - Orleans.Streams.SiloSqsStreamConfigurator
+  - Orleans.Streams.StreamFilterPredicate
+  - Orleans.Streams.StreamSequenceToken
+  - Orleans.Streams.StreamSequenceTokenUtilities
+  - Orleans.Streams.StreamSubscriptionHandle`1
+  - Orleans.Streams.StreamSubscriptionHandleExtensions
+  langs:
+  - csharp
+  - vb
+  name: Orleans.Streams
+  nameWithType: Orleans.Streams
+  fullName: Orleans.Streams
+  type: Namespace
+  assemblies:
+  - Orleans.Core.Abstractions
+references:
+- uid: Orleans.Streams.StreamFilterPredicate
+  commentId: T:Orleans.Streams.StreamFilterPredicate
+  parent: Orleans.Streams
+  isExternal: false
+  name: StreamFilterPredicate
+  nameWithType: StreamFilterPredicate
+  fullName: Orleans.Streams.StreamFilterPredicate
+- uid: Orleans.Streams.IAsyncObservable`1
+  commentId: T:Orleans.Streams.IAsyncObservable`1
+  isExternal: false
+  name: IAsyncObservable<T>
+  nameWithType: IAsyncObservable<T>
+  fullName: Orleans.Streams.IAsyncObservable<T>
+  nameWithType.vb: IAsyncObservable(Of T)
+  fullName.vb: Orleans.Streams.IAsyncObservable(Of T)
+  name.vb: IAsyncObservable(Of T)
+  spec.csharp:
+  - uid: Orleans.Streams.IAsyncObservable`1
+    name: IAsyncObservable
+    nameWithType: IAsyncObservable
+    fullName: Orleans.Streams.IAsyncObservable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Orleans.Streams.IAsyncObservable`1
+    name: IAsyncObservable
+    nameWithType: IAsyncObservable
+    fullName: Orleans.Streams.IAsyncObservable
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Streams.IAsyncObserver`1
+  commentId: T:Orleans.Streams.IAsyncObserver`1
+  isExternal: false
+  name: IAsyncObserver<T>
+  nameWithType: IAsyncObserver<T>
+  fullName: Orleans.Streams.IAsyncObserver<T>
+  nameWithType.vb: IAsyncObserver(Of T)
+  fullName.vb: Orleans.Streams.IAsyncObserver(Of T)
+  name.vb: IAsyncObserver(Of T)
+  spec.csharp:
+  - uid: Orleans.Streams.IAsyncObserver`1
+    name: IAsyncObserver
+    nameWithType: IAsyncObserver
+    fullName: Orleans.Streams.IAsyncObserver
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Orleans.Streams.IAsyncObserver`1
+    name: IAsyncObserver
+    nameWithType: IAsyncObserver
+    fullName: Orleans.Streams.IAsyncObserver
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Streams.IAsyncBatchObserver`1
+  commentId: T:Orleans.Streams.IAsyncBatchObserver`1
+  isExternal: false
+  name: IAsyncBatchObserver<T>
+  nameWithType: IAsyncBatchObserver<T>
+  fullName: Orleans.Streams.IAsyncBatchObserver<T>
+  nameWithType.vb: IAsyncBatchObserver(Of T)
+  fullName.vb: Orleans.Streams.IAsyncBatchObserver(Of T)
+  name.vb: IAsyncBatchObserver(Of T)
+  spec.csharp:
+  - uid: Orleans.Streams.IAsyncBatchObserver`1
+    name: IAsyncBatchObserver
+    nameWithType: IAsyncBatchObserver
+    fullName: Orleans.Streams.IAsyncBatchObserver
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Orleans.Streams.IAsyncBatchObserver`1
+    name: IAsyncBatchObserver
+    nameWithType: IAsyncBatchObserver
+    fullName: Orleans.Streams.IAsyncBatchObserver
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Streams.IAsyncStream`1
+  commentId: T:Orleans.Streams.IAsyncStream`1
+  isExternal: false
+  name: IAsyncStream<T>
+  nameWithType: IAsyncStream<T>
+  fullName: Orleans.Streams.IAsyncStream<T>
+  nameWithType.vb: IAsyncStream(Of T)
+  fullName.vb: Orleans.Streams.IAsyncStream(Of T)
+  name.vb: IAsyncStream(Of T)
+  spec.csharp:
+  - uid: Orleans.Streams.IAsyncStream`1
+    name: IAsyncStream
+    nameWithType: IAsyncStream
+    fullName: Orleans.Streams.IAsyncStream
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Orleans.Streams.IAsyncStream`1
+    name: IAsyncStream
+    nameWithType: IAsyncStream
+    fullName: Orleans.Streams.IAsyncStream
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Streams.IStreamIdentity
+  commentId: T:Orleans.Streams.IStreamIdentity
+  parent: Orleans.Streams
+  isExternal: false
+  name: IStreamIdentity
+  nameWithType: IStreamIdentity
+  fullName: Orleans.Streams.IStreamIdentity
+- uid: Orleans.Streams.StreamSequenceToken
+  commentId: T:Orleans.Streams.StreamSequenceToken
+  parent: Orleans.Streams
+  isExternal: false
+  name: StreamSequenceToken
+  nameWithType: StreamSequenceToken
+  fullName: Orleans.Streams.StreamSequenceToken
+- uid: Orleans.Streams.StreamSequenceTokenUtilities
+  commentId: T:Orleans.Streams.StreamSequenceTokenUtilities
+  parent: Orleans.Streams
+  isExternal: false
+  name: StreamSequenceTokenUtilities
+  nameWithType: StreamSequenceTokenUtilities
+  fullName: Orleans.Streams.StreamSequenceTokenUtilities
+- uid: Orleans.Streams.StreamSubscriptionHandle`1
+  commentId: T:Orleans.Streams.StreamSubscriptionHandle`1
+  parent: Orleans.Streams
+  isExternal: false
+  name: StreamSubscriptionHandle<T>
+  nameWithType: StreamSubscriptionHandle<T>
+  fullName: Orleans.Streams.StreamSubscriptionHandle<T>
+  nameWithType.vb: StreamSubscriptionHandle(Of T)
+  fullName.vb: Orleans.Streams.StreamSubscriptionHandle(Of T)
+  name.vb: StreamSubscriptionHandle(Of T)
+  spec.csharp:
+  - uid: Orleans.Streams.StreamSubscriptionHandle`1
+    name: StreamSubscriptionHandle
+    nameWithType: StreamSubscriptionHandle
+    fullName: Orleans.Streams.StreamSubscriptionHandle
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Orleans.Streams.StreamSubscriptionHandle`1
+    name: StreamSubscriptionHandle
+    nameWithType: StreamSubscriptionHandle
+    fullName: Orleans.Streams.StreamSubscriptionHandle
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Streams.AsyncObservableExtensions
+  commentId: T:Orleans.Streams.AsyncObservableExtensions
+  parent: Orleans.Streams
+  isExternal: false
+  name: AsyncObservableExtensions
+  nameWithType: AsyncObservableExtensions
+  fullName: Orleans.Streams.AsyncObservableExtensions
+- uid: Orleans.Streams.StreamSubscriptionHandleExtensions
+  commentId: T:Orleans.Streams.StreamSubscriptionHandleExtensions
+  parent: Orleans.Streams
+  isExternal: false
+  name: StreamSubscriptionHandleExtensions
+  nameWithType: StreamSubscriptionHandleExtensions
+  fullName: Orleans.Streams.StreamSubscriptionHandleExtensions
+- uid: Orleans.Streams.IStreamNamespacePredicate
+  commentId: T:Orleans.Streams.IStreamNamespacePredicate
+  parent: Orleans.Streams
+  isExternal: false
+  name: IStreamNamespacePredicate
+  nameWithType: IStreamNamespacePredicate
+  fullName: Orleans.Streams.IStreamNamespacePredicate
+- uid: Orleans.Streams.RegexStreamNamespacePredicate
+  commentId: T:Orleans.Streams.RegexStreamNamespacePredicate
+  isExternal: false
+  name: RegexStreamNamespacePredicate
+  nameWithType: RegexStreamNamespacePredicate
+  fullName: Orleans.Streams.RegexStreamNamespacePredicate
+- uid: Orleans.Streams.IStreamProvider
+  commentId: T:Orleans.Streams.IStreamProvider
+  parent: Orleans.Streams
+  isExternal: false
+  name: IStreamProvider
+  nameWithType: IStreamProvider
+  fullName: Orleans.Streams.IStreamProvider
+- uid: Orleans.Streams.SiloPubSubStreamConfigurator`1
+  commentId: T:Orleans.Streams.SiloPubSubStreamConfigurator`1
+  parent: Orleans.Streams
+  isExternal: false
+  name: SiloPubSubStreamConfigurator<TDataAdapter>
+  nameWithType: SiloPubSubStreamConfigurator<TDataAdapter>
+  fullName: Orleans.Streams.SiloPubSubStreamConfigurator<TDataAdapter>
+  nameWithType.vb: SiloPubSubStreamConfigurator(Of TDataAdapter)
+  fullName.vb: Orleans.Streams.SiloPubSubStreamConfigurator(Of TDataAdapter)
+  name.vb: SiloPubSubStreamConfigurator(Of TDataAdapter)
+  spec.csharp:
+  - uid: Orleans.Streams.SiloPubSubStreamConfigurator`1
+    name: SiloPubSubStreamConfigurator
+    nameWithType: SiloPubSubStreamConfigurator
+    fullName: Orleans.Streams.SiloPubSubStreamConfigurator
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDataAdapter
+    nameWithType: TDataAdapter
+    fullName: TDataAdapter
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Orleans.Streams.SiloPubSubStreamConfigurator`1
+    name: SiloPubSubStreamConfigurator
+    nameWithType: SiloPubSubStreamConfigurator
+    fullName: Orleans.Streams.SiloPubSubStreamConfigurator
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDataAdapter
+    nameWithType: TDataAdapter
+    fullName: TDataAdapter
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Streams.ClusterClientPubSubStreamConfigurator`1
+  commentId: T:Orleans.Streams.ClusterClientPubSubStreamConfigurator`1
+  parent: Orleans.Streams
+  isExternal: false
+  name: ClusterClientPubSubStreamConfigurator<TDataAdapter>
+  nameWithType: ClusterClientPubSubStreamConfigurator<TDataAdapter>
+  fullName: Orleans.Streams.ClusterClientPubSubStreamConfigurator<TDataAdapter>
+  nameWithType.vb: ClusterClientPubSubStreamConfigurator(Of TDataAdapter)
+  fullName.vb: Orleans.Streams.ClusterClientPubSubStreamConfigurator(Of TDataAdapter)
+  name.vb: ClusterClientPubSubStreamConfigurator(Of TDataAdapter)
+  spec.csharp:
+  - uid: Orleans.Streams.ClusterClientPubSubStreamConfigurator`1
+    name: ClusterClientPubSubStreamConfigurator
+    nameWithType: ClusterClientPubSubStreamConfigurator
+    fullName: Orleans.Streams.ClusterClientPubSubStreamConfigurator
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDataAdapter
+    nameWithType: TDataAdapter
+    fullName: TDataAdapter
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Orleans.Streams.ClusterClientPubSubStreamConfigurator`1
+    name: ClusterClientPubSubStreamConfigurator
+    nameWithType: ClusterClientPubSubStreamConfigurator
+    fullName: Orleans.Streams.ClusterClientPubSubStreamConfigurator
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDataAdapter
+    nameWithType: TDataAdapter
+    fullName: TDataAdapter
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Streams.SiloSqsStreamConfigurator
+  commentId: T:Orleans.Streams.SiloSqsStreamConfigurator
+  parent: Orleans.Streams
+  isExternal: false
+  name: SiloSqsStreamConfigurator
+  nameWithType: SiloSqsStreamConfigurator
+  fullName: Orleans.Streams.SiloSqsStreamConfigurator
+- uid: Orleans.Streams.ClusterClientSqsStreamConfigurator
+  commentId: T:Orleans.Streams.ClusterClientSqsStreamConfigurator
+  parent: Orleans.Streams
+  isExternal: false
+  name: ClusterClientSqsStreamConfigurator
+  nameWithType: ClusterClientSqsStreamConfigurator
+  fullName: Orleans.Streams.ClusterClientSqsStreamConfigurator
+- uid: Orleans.Streams
+  commentId: N:Orleans.Streams
+  isExternal: false
+  name: Orleans.Streams
+  nameWithType: Orleans.Streams
+  fullName: Orleans.Streams

@@ -1,0 +1,1435 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Serialization.IBinaryTokenStreamReader
+  commentId: T:Orleans.Serialization.IBinaryTokenStreamReader
+  id: IBinaryTokenStreamReader
+  parent: Orleans.Serialization
+  children:
+  - Orleans.Serialization.IBinaryTokenStreamReader.Copy
+  - Orleans.Serialization.IBinaryTokenStreamReader.CurrentPosition
+  - Orleans.Serialization.IBinaryTokenStreamReader.Length
+  - Orleans.Serialization.IBinaryTokenStreamReader.ReadBlockInto(Array,System.Int32)
+  - Orleans.Serialization.IBinaryTokenStreamReader.ReadBoolean
+  - Orleans.Serialization.IBinaryTokenStreamReader.ReadByte
+  - Orleans.Serialization.IBinaryTokenStreamReader.ReadByteArray(System.Byte[],System.Int32,System.Int32)
+  - Orleans.Serialization.IBinaryTokenStreamReader.ReadBytes(System.Int32)
+  - Orleans.Serialization.IBinaryTokenStreamReader.ReadChar
+  - Orleans.Serialization.IBinaryTokenStreamReader.ReadDateTime
+  - Orleans.Serialization.IBinaryTokenStreamReader.ReadDecimal
+  - Orleans.Serialization.IBinaryTokenStreamReader.ReadDouble
+  - Orleans.Serialization.IBinaryTokenStreamReader.ReadFloat
+  - Orleans.Serialization.IBinaryTokenStreamReader.ReadGuid
+  - Orleans.Serialization.IBinaryTokenStreamReader.ReadInt
+  - Orleans.Serialization.IBinaryTokenStreamReader.ReadIPAddress
+  - Orleans.Serialization.IBinaryTokenStreamReader.ReadIPEndPoint
+  - Orleans.Serialization.IBinaryTokenStreamReader.ReadLong
+  - Orleans.Serialization.IBinaryTokenStreamReader.ReadSByte
+  - Orleans.Serialization.IBinaryTokenStreamReader.ReadShort
+  - Orleans.Serialization.IBinaryTokenStreamReader.ReadSiloAddress
+  - Orleans.Serialization.IBinaryTokenStreamReader.ReadString
+  - Orleans.Serialization.IBinaryTokenStreamReader.ReadTimeSpan
+  - Orleans.Serialization.IBinaryTokenStreamReader.ReadUInt
+  - Orleans.Serialization.IBinaryTokenStreamReader.ReadULong
+  - Orleans.Serialization.IBinaryTokenStreamReader.ReadUShort
+  - Orleans.Serialization.IBinaryTokenStreamReader.Reset(IList{ArraySegment{System.Byte}})
+  langs:
+  - csharp
+  - vb
+  name: IBinaryTokenStreamReader
+  nameWithType: IBinaryTokenStreamReader
+  fullName: Orleans.Serialization.IBinaryTokenStreamReader
+  type: Interface
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Serialization/IBinaryTokenStreamReader.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IBinaryTokenStreamReader
+    path: src/Orleans.Core.Abstractions/Serialization/IBinaryTokenStreamReader.cs
+    startLine: 7
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Serialization
+  syntax:
+    content: public interface IBinaryTokenStreamReader
+    content.vb: Public Interface IBinaryTokenStreamReader
+  extensionMethods:
+  - Orleans.Serialization.IBinaryTokenStreamReader.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Orleans.Serialization.IBinaryTokenStreamReader.Reset(IList{ArraySegment{System.Byte}})
+  commentId: M:Orleans.Serialization.IBinaryTokenStreamReader.Reset(IList{ArraySegment{System.Byte}})
+  id: Reset(IList{ArraySegment{System.Byte}})
+  parent: Orleans.Serialization.IBinaryTokenStreamReader
+  langs:
+  - csharp
+  - vb
+  name: Reset(IList<ArraySegment<Byte>>)
+  nameWithType: IBinaryTokenStreamReader.Reset(IList<ArraySegment<Byte>>)
+  fullName: Orleans.Serialization.IBinaryTokenStreamReader.Reset(IList<ArraySegment<System.Byte>>)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Serialization/IBinaryTokenStreamReader.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Reset
+    path: src/Orleans.Core.Abstractions/Serialization/IBinaryTokenStreamReader.cs
+    startLine: 13
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Serialization
+  summary: "\nResets this instance with the provided data.\n"
+  example: []
+  syntax:
+    content: void Reset(IList<ArraySegment<byte>> buffs)
+    parameters:
+    - id: buffs
+      type: IList{ArraySegment{System.Byte}}
+      description: The underlying buffers.
+    content.vb: Sub Reset(buffs As IList(Of ArraySegment(Of Byte)))
+  overload: Orleans.Serialization.IBinaryTokenStreamReader.Reset*
+  nameWithType.vb: IBinaryTokenStreamReader.Reset(IList(Of ArraySegment(Of Byte)))
+  fullName.vb: Orleans.Serialization.IBinaryTokenStreamReader.Reset(IList(Of ArraySegment(Of System.Byte)))
+  name.vb: Reset(IList(Of ArraySegment(Of Byte)))
+- uid: Orleans.Serialization.IBinaryTokenStreamReader.CurrentPosition
+  commentId: P:Orleans.Serialization.IBinaryTokenStreamReader.CurrentPosition
+  id: CurrentPosition
+  parent: Orleans.Serialization.IBinaryTokenStreamReader
+  langs:
+  - csharp
+  - vb
+  name: CurrentPosition
+  nameWithType: IBinaryTokenStreamReader.CurrentPosition
+  fullName: Orleans.Serialization.IBinaryTokenStreamReader.CurrentPosition
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Serialization/IBinaryTokenStreamReader.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: CurrentPosition
+    path: src/Orleans.Core.Abstractions/Serialization/IBinaryTokenStreamReader.cs
+    startLine: 16
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Serialization
+  summary: 'Current read position in the stream. '
+  example: []
+  syntax:
+    content: int CurrentPosition { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property CurrentPosition As Integer
+  overload: Orleans.Serialization.IBinaryTokenStreamReader.CurrentPosition*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Orleans.Serialization.IBinaryTokenStreamReader.Length
+  commentId: P:Orleans.Serialization.IBinaryTokenStreamReader.Length
+  id: Length
+  parent: Orleans.Serialization.IBinaryTokenStreamReader
+  langs:
+  - csharp
+  - vb
+  name: Length
+  nameWithType: IBinaryTokenStreamReader.Length
+  fullName: Orleans.Serialization.IBinaryTokenStreamReader.Length
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Serialization/IBinaryTokenStreamReader.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Length
+    path: src/Orleans.Core.Abstractions/Serialization/IBinaryTokenStreamReader.cs
+    startLine: 21
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Serialization
+  summary: "\nGets the total length.\n"
+  example: []
+  syntax:
+    content: int Length { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property Length As Integer
+  overload: Orleans.Serialization.IBinaryTokenStreamReader.Length*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Orleans.Serialization.IBinaryTokenStreamReader.Copy
+  commentId: M:Orleans.Serialization.IBinaryTokenStreamReader.Copy
+  id: Copy
+  parent: Orleans.Serialization.IBinaryTokenStreamReader
+  langs:
+  - csharp
+  - vb
+  name: Copy()
+  nameWithType: IBinaryTokenStreamReader.Copy()
+  fullName: Orleans.Serialization.IBinaryTokenStreamReader.Copy()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Serialization/IBinaryTokenStreamReader.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Copy
+    path: src/Orleans.Core.Abstractions/Serialization/IBinaryTokenStreamReader.cs
+    startLine: 27
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Serialization
+  summary: "\nCreates a copy of the current stream reader.\n"
+  example: []
+  syntax:
+    content: IBinaryTokenStreamReader Copy()
+    return:
+      type: Orleans.Serialization.IBinaryTokenStreamReader
+      description: The new copy
+    content.vb: Function Copy As IBinaryTokenStreamReader
+  overload: Orleans.Serialization.IBinaryTokenStreamReader.Copy*
+- uid: Orleans.Serialization.IBinaryTokenStreamReader.ReadBoolean
+  commentId: M:Orleans.Serialization.IBinaryTokenStreamReader.ReadBoolean
+  id: ReadBoolean
+  parent: Orleans.Serialization.IBinaryTokenStreamReader
+  langs:
+  - csharp
+  - vb
+  name: ReadBoolean()
+  nameWithType: IBinaryTokenStreamReader.ReadBoolean()
+  fullName: Orleans.Serialization.IBinaryTokenStreamReader.ReadBoolean()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Serialization/IBinaryTokenStreamReader.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ReadBoolean
+    path: src/Orleans.Core.Abstractions/Serialization/IBinaryTokenStreamReader.cs
+    startLine: 31
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Serialization
+  summary: 'Read a <code>bool</code> value from the stream. '
+  example: []
+  syntax:
+    content: bool ReadBoolean()
+    return:
+      type: System.Boolean
+      description: Data from current position in stream, converted to the appropriate output type.
+    content.vb: Function ReadBoolean As Boolean
+  overload: Orleans.Serialization.IBinaryTokenStreamReader.ReadBoolean*
+- uid: Orleans.Serialization.IBinaryTokenStreamReader.ReadInt
+  commentId: M:Orleans.Serialization.IBinaryTokenStreamReader.ReadInt
+  id: ReadInt
+  parent: Orleans.Serialization.IBinaryTokenStreamReader
+  langs:
+  - csharp
+  - vb
+  name: ReadInt()
+  nameWithType: IBinaryTokenStreamReader.ReadInt()
+  fullName: Orleans.Serialization.IBinaryTokenStreamReader.ReadInt()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Serialization/IBinaryTokenStreamReader.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ReadInt
+    path: src/Orleans.Core.Abstractions/Serialization/IBinaryTokenStreamReader.cs
+    startLine: 35
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Serialization
+  summary: 'Read an <code>Int32</code> value from the stream. '
+  example: []
+  syntax:
+    content: int ReadInt()
+    return:
+      type: System.Int32
+      description: Data from current position in stream, converted to the appropriate output type.
+    content.vb: Function ReadInt As Integer
+  overload: Orleans.Serialization.IBinaryTokenStreamReader.ReadInt*
+- uid: Orleans.Serialization.IBinaryTokenStreamReader.ReadUInt
+  commentId: M:Orleans.Serialization.IBinaryTokenStreamReader.ReadUInt
+  id: ReadUInt
+  parent: Orleans.Serialization.IBinaryTokenStreamReader
+  langs:
+  - csharp
+  - vb
+  name: ReadUInt()
+  nameWithType: IBinaryTokenStreamReader.ReadUInt()
+  fullName: Orleans.Serialization.IBinaryTokenStreamReader.ReadUInt()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Serialization/IBinaryTokenStreamReader.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ReadUInt
+    path: src/Orleans.Core.Abstractions/Serialization/IBinaryTokenStreamReader.cs
+    startLine: 39
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Serialization
+  summary: 'Read an <code>UInt32</code> value from the stream. '
+  example: []
+  syntax:
+    content: uint ReadUInt()
+    return:
+      type: System.UInt32
+      description: Data from current position in stream, converted to the appropriate output type.
+    content.vb: Function ReadUInt As UInteger
+  overload: Orleans.Serialization.IBinaryTokenStreamReader.ReadUInt*
+- uid: Orleans.Serialization.IBinaryTokenStreamReader.ReadShort
+  commentId: M:Orleans.Serialization.IBinaryTokenStreamReader.ReadShort
+  id: ReadShort
+  parent: Orleans.Serialization.IBinaryTokenStreamReader
+  langs:
+  - csharp
+  - vb
+  name: ReadShort()
+  nameWithType: IBinaryTokenStreamReader.ReadShort()
+  fullName: Orleans.Serialization.IBinaryTokenStreamReader.ReadShort()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Serialization/IBinaryTokenStreamReader.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ReadShort
+    path: src/Orleans.Core.Abstractions/Serialization/IBinaryTokenStreamReader.cs
+    startLine: 43
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Serialization
+  summary: 'Read an <code>Int16</code> value from the stream. '
+  example: []
+  syntax:
+    content: short ReadShort()
+    return:
+      type: System.Int16
+      description: Data from current position in stream, converted to the appropriate output type.
+    content.vb: Function ReadShort As Short
+  overload: Orleans.Serialization.IBinaryTokenStreamReader.ReadShort*
+- uid: Orleans.Serialization.IBinaryTokenStreamReader.ReadUShort
+  commentId: M:Orleans.Serialization.IBinaryTokenStreamReader.ReadUShort
+  id: ReadUShort
+  parent: Orleans.Serialization.IBinaryTokenStreamReader
+  langs:
+  - csharp
+  - vb
+  name: ReadUShort()
+  nameWithType: IBinaryTokenStreamReader.ReadUShort()
+  fullName: Orleans.Serialization.IBinaryTokenStreamReader.ReadUShort()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Serialization/IBinaryTokenStreamReader.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ReadUShort
+    path: src/Orleans.Core.Abstractions/Serialization/IBinaryTokenStreamReader.cs
+    startLine: 47
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Serialization
+  summary: 'Read an <code>UInt16</code> value from the stream. '
+  example: []
+  syntax:
+    content: ushort ReadUShort()
+    return:
+      type: System.UInt16
+      description: Data from current position in stream, converted to the appropriate output type.
+    content.vb: Function ReadUShort As UShort
+  overload: Orleans.Serialization.IBinaryTokenStreamReader.ReadUShort*
+- uid: Orleans.Serialization.IBinaryTokenStreamReader.ReadLong
+  commentId: M:Orleans.Serialization.IBinaryTokenStreamReader.ReadLong
+  id: ReadLong
+  parent: Orleans.Serialization.IBinaryTokenStreamReader
+  langs:
+  - csharp
+  - vb
+  name: ReadLong()
+  nameWithType: IBinaryTokenStreamReader.ReadLong()
+  fullName: Orleans.Serialization.IBinaryTokenStreamReader.ReadLong()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Serialization/IBinaryTokenStreamReader.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ReadLong
+    path: src/Orleans.Core.Abstractions/Serialization/IBinaryTokenStreamReader.cs
+    startLine: 51
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Serialization
+  summary: 'Read an <code>Int64</code> value from the stream. '
+  example: []
+  syntax:
+    content: long ReadLong()
+    return:
+      type: System.Int64
+      description: Data from current position in stream, converted to the appropriate output type.
+    content.vb: Function ReadLong As Long
+  overload: Orleans.Serialization.IBinaryTokenStreamReader.ReadLong*
+- uid: Orleans.Serialization.IBinaryTokenStreamReader.ReadULong
+  commentId: M:Orleans.Serialization.IBinaryTokenStreamReader.ReadULong
+  id: ReadULong
+  parent: Orleans.Serialization.IBinaryTokenStreamReader
+  langs:
+  - csharp
+  - vb
+  name: ReadULong()
+  nameWithType: IBinaryTokenStreamReader.ReadULong()
+  fullName: Orleans.Serialization.IBinaryTokenStreamReader.ReadULong()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Serialization/IBinaryTokenStreamReader.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ReadULong
+    path: src/Orleans.Core.Abstractions/Serialization/IBinaryTokenStreamReader.cs
+    startLine: 55
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Serialization
+  summary: 'Read an <code>UInt64</code> value from the stream. '
+  example: []
+  syntax:
+    content: ulong ReadULong()
+    return:
+      type: System.UInt64
+      description: Data from current position in stream, converted to the appropriate output type.
+    content.vb: Function ReadULong As ULong
+  overload: Orleans.Serialization.IBinaryTokenStreamReader.ReadULong*
+- uid: Orleans.Serialization.IBinaryTokenStreamReader.ReadFloat
+  commentId: M:Orleans.Serialization.IBinaryTokenStreamReader.ReadFloat
+  id: ReadFloat
+  parent: Orleans.Serialization.IBinaryTokenStreamReader
+  langs:
+  - csharp
+  - vb
+  name: ReadFloat()
+  nameWithType: IBinaryTokenStreamReader.ReadFloat()
+  fullName: Orleans.Serialization.IBinaryTokenStreamReader.ReadFloat()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Serialization/IBinaryTokenStreamReader.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ReadFloat
+    path: src/Orleans.Core.Abstractions/Serialization/IBinaryTokenStreamReader.cs
+    startLine: 59
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Serialization
+  summary: 'Read an <code>float</code> value from the stream. '
+  example: []
+  syntax:
+    content: float ReadFloat()
+    return:
+      type: System.Single
+      description: Data from current position in stream, converted to the appropriate output type.
+    content.vb: Function ReadFloat As Single
+  overload: Orleans.Serialization.IBinaryTokenStreamReader.ReadFloat*
+- uid: Orleans.Serialization.IBinaryTokenStreamReader.ReadDouble
+  commentId: M:Orleans.Serialization.IBinaryTokenStreamReader.ReadDouble
+  id: ReadDouble
+  parent: Orleans.Serialization.IBinaryTokenStreamReader
+  langs:
+  - csharp
+  - vb
+  name: ReadDouble()
+  nameWithType: IBinaryTokenStreamReader.ReadDouble()
+  fullName: Orleans.Serialization.IBinaryTokenStreamReader.ReadDouble()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Serialization/IBinaryTokenStreamReader.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ReadDouble
+    path: src/Orleans.Core.Abstractions/Serialization/IBinaryTokenStreamReader.cs
+    startLine: 63
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Serialization
+  summary: 'Read an <code>double</code> value from the stream. '
+  example: []
+  syntax:
+    content: double ReadDouble()
+    return:
+      type: System.Double
+      description: Data from current position in stream, converted to the appropriate output type.
+    content.vb: Function ReadDouble As Double
+  overload: Orleans.Serialization.IBinaryTokenStreamReader.ReadDouble*
+- uid: Orleans.Serialization.IBinaryTokenStreamReader.ReadDecimal
+  commentId: M:Orleans.Serialization.IBinaryTokenStreamReader.ReadDecimal
+  id: ReadDecimal
+  parent: Orleans.Serialization.IBinaryTokenStreamReader
+  langs:
+  - csharp
+  - vb
+  name: ReadDecimal()
+  nameWithType: IBinaryTokenStreamReader.ReadDecimal()
+  fullName: Orleans.Serialization.IBinaryTokenStreamReader.ReadDecimal()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Serialization/IBinaryTokenStreamReader.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ReadDecimal
+    path: src/Orleans.Core.Abstractions/Serialization/IBinaryTokenStreamReader.cs
+    startLine: 67
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Serialization
+  summary: 'Read an <code>decimal</code> value from the stream. '
+  example: []
+  syntax:
+    content: decimal ReadDecimal()
+    return:
+      type: System.Decimal
+      description: Data from current position in stream, converted to the appropriate output type.
+    content.vb: Function ReadDecimal As Decimal
+  overload: Orleans.Serialization.IBinaryTokenStreamReader.ReadDecimal*
+- uid: Orleans.Serialization.IBinaryTokenStreamReader.ReadDateTime
+  commentId: M:Orleans.Serialization.IBinaryTokenStreamReader.ReadDateTime
+  id: ReadDateTime
+  parent: Orleans.Serialization.IBinaryTokenStreamReader
+  langs:
+  - csharp
+  - vb
+  name: ReadDateTime()
+  nameWithType: IBinaryTokenStreamReader.ReadDateTime()
+  fullName: Orleans.Serialization.IBinaryTokenStreamReader.ReadDateTime()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Serialization/IBinaryTokenStreamReader.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ReadDateTime
+    path: src/Orleans.Core.Abstractions/Serialization/IBinaryTokenStreamReader.cs
+    startLine: 69
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Serialization
+  syntax:
+    content: DateTime ReadDateTime()
+    return:
+      type: DateTime
+    content.vb: Function ReadDateTime As DateTime
+  overload: Orleans.Serialization.IBinaryTokenStreamReader.ReadDateTime*
+- uid: Orleans.Serialization.IBinaryTokenStreamReader.ReadString
+  commentId: M:Orleans.Serialization.IBinaryTokenStreamReader.ReadString
+  id: ReadString
+  parent: Orleans.Serialization.IBinaryTokenStreamReader
+  langs:
+  - csharp
+  - vb
+  name: ReadString()
+  nameWithType: IBinaryTokenStreamReader.ReadString()
+  fullName: Orleans.Serialization.IBinaryTokenStreamReader.ReadString()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Serialization/IBinaryTokenStreamReader.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ReadString
+    path: src/Orleans.Core.Abstractions/Serialization/IBinaryTokenStreamReader.cs
+    startLine: 73
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Serialization
+  summary: 'Read an <code>string</code> value from the stream. '
+  example: []
+  syntax:
+    content: string ReadString()
+    return:
+      type: System.String
+      description: Data from current position in stream, converted to the appropriate output type.
+    content.vb: Function ReadString As String
+  overload: Orleans.Serialization.IBinaryTokenStreamReader.ReadString*
+- uid: Orleans.Serialization.IBinaryTokenStreamReader.ReadBytes(System.Int32)
+  commentId: M:Orleans.Serialization.IBinaryTokenStreamReader.ReadBytes(System.Int32)
+  id: ReadBytes(System.Int32)
+  parent: Orleans.Serialization.IBinaryTokenStreamReader
+  langs:
+  - csharp
+  - vb
+  name: ReadBytes(Int32)
+  nameWithType: IBinaryTokenStreamReader.ReadBytes(Int32)
+  fullName: Orleans.Serialization.IBinaryTokenStreamReader.ReadBytes(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Serialization/IBinaryTokenStreamReader.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ReadBytes
+    path: src/Orleans.Core.Abstractions/Serialization/IBinaryTokenStreamReader.cs
+    startLine: 78
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Serialization
+  summary: 'Read the next bytes from the stream. '
+  example: []
+  syntax:
+    content: byte[] ReadBytes(int count)
+    parameters:
+    - id: count
+      type: System.Int32
+      description: Number of bytes to read.
+    return:
+      type: System.Byte[]
+      description: Data from current position in stream, converted to the appropriate output type.
+    content.vb: Function ReadBytes(count As Integer) As Byte()
+  overload: Orleans.Serialization.IBinaryTokenStreamReader.ReadBytes*
+- uid: Orleans.Serialization.IBinaryTokenStreamReader.ReadByteArray(System.Byte[],System.Int32,System.Int32)
+  commentId: M:Orleans.Serialization.IBinaryTokenStreamReader.ReadByteArray(System.Byte[],System.Int32,System.Int32)
+  id: ReadByteArray(System.Byte[],System.Int32,System.Int32)
+  parent: Orleans.Serialization.IBinaryTokenStreamReader
+  langs:
+  - csharp
+  - vb
+  name: ReadByteArray(Byte[], Int32, Int32)
+  nameWithType: IBinaryTokenStreamReader.ReadByteArray(Byte[], Int32, Int32)
+  fullName: Orleans.Serialization.IBinaryTokenStreamReader.ReadByteArray(System.Byte[], System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Serialization/IBinaryTokenStreamReader.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ReadByteArray
+    path: src/Orleans.Core.Abstractions/Serialization/IBinaryTokenStreamReader.cs
+    startLine: 84
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Serialization
+  summary: 'Read the next bytes from the stream. '
+  example: []
+  syntax:
+    content: void ReadByteArray(byte[] destination, int offset, int count)
+    parameters:
+    - id: destination
+      type: System.Byte[]
+      description: Output array to store the returned data in.
+    - id: offset
+      type: System.Int32
+      description: Offset into the destination array to write to.
+    - id: count
+      type: System.Int32
+      description: Number of bytes to read.
+    content.vb: Sub ReadByteArray(destination As Byte(), offset As Integer, count As Integer)
+  overload: Orleans.Serialization.IBinaryTokenStreamReader.ReadByteArray*
+  nameWithType.vb: IBinaryTokenStreamReader.ReadByteArray(Byte(), Int32, Int32)
+  fullName.vb: Orleans.Serialization.IBinaryTokenStreamReader.ReadByteArray(System.Byte(), System.Int32, System.Int32)
+  name.vb: ReadByteArray(Byte(), Int32, Int32)
+- uid: Orleans.Serialization.IBinaryTokenStreamReader.ReadChar
+  commentId: M:Orleans.Serialization.IBinaryTokenStreamReader.ReadChar
+  id: ReadChar
+  parent: Orleans.Serialization.IBinaryTokenStreamReader
+  langs:
+  - csharp
+  - vb
+  name: ReadChar()
+  nameWithType: IBinaryTokenStreamReader.ReadChar()
+  fullName: Orleans.Serialization.IBinaryTokenStreamReader.ReadChar()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Serialization/IBinaryTokenStreamReader.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ReadChar
+    path: src/Orleans.Core.Abstractions/Serialization/IBinaryTokenStreamReader.cs
+    startLine: 88
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Serialization
+  summary: 'Read an <code>char</code> value from the stream. '
+  example: []
+  syntax:
+    content: char ReadChar()
+    return:
+      type: System.Char
+      description: Data from current position in stream, converted to the appropriate output type.
+    content.vb: Function ReadChar As Char
+  overload: Orleans.Serialization.IBinaryTokenStreamReader.ReadChar*
+- uid: Orleans.Serialization.IBinaryTokenStreamReader.ReadByte
+  commentId: M:Orleans.Serialization.IBinaryTokenStreamReader.ReadByte
+  id: ReadByte
+  parent: Orleans.Serialization.IBinaryTokenStreamReader
+  langs:
+  - csharp
+  - vb
+  name: ReadByte()
+  nameWithType: IBinaryTokenStreamReader.ReadByte()
+  fullName: Orleans.Serialization.IBinaryTokenStreamReader.ReadByte()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Serialization/IBinaryTokenStreamReader.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ReadByte
+    path: src/Orleans.Core.Abstractions/Serialization/IBinaryTokenStreamReader.cs
+    startLine: 92
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Serialization
+  summary: 'Read an <code>byte</code> value from the stream. '
+  example: []
+  syntax:
+    content: byte ReadByte()
+    return:
+      type: System.Byte
+      description: Data from current position in stream, converted to the appropriate output type.
+    content.vb: Function ReadByte As Byte
+  overload: Orleans.Serialization.IBinaryTokenStreamReader.ReadByte*
+- uid: Orleans.Serialization.IBinaryTokenStreamReader.ReadSByte
+  commentId: M:Orleans.Serialization.IBinaryTokenStreamReader.ReadSByte
+  id: ReadSByte
+  parent: Orleans.Serialization.IBinaryTokenStreamReader
+  langs:
+  - csharp
+  - vb
+  name: ReadSByte()
+  nameWithType: IBinaryTokenStreamReader.ReadSByte()
+  fullName: Orleans.Serialization.IBinaryTokenStreamReader.ReadSByte()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Serialization/IBinaryTokenStreamReader.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ReadSByte
+    path: src/Orleans.Core.Abstractions/Serialization/IBinaryTokenStreamReader.cs
+    startLine: 96
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Serialization
+  summary: 'Read an <code>sbyte</code> value from the stream. '
+  example: []
+  syntax:
+    content: sbyte ReadSByte()
+    return:
+      type: System.SByte
+      description: Data from current position in stream, converted to the appropriate output type.
+    content.vb: Function ReadSByte As SByte
+  overload: Orleans.Serialization.IBinaryTokenStreamReader.ReadSByte*
+- uid: Orleans.Serialization.IBinaryTokenStreamReader.ReadGuid
+  commentId: M:Orleans.Serialization.IBinaryTokenStreamReader.ReadGuid
+  id: ReadGuid
+  parent: Orleans.Serialization.IBinaryTokenStreamReader
+  langs:
+  - csharp
+  - vb
+  name: ReadGuid()
+  nameWithType: IBinaryTokenStreamReader.ReadGuid()
+  fullName: Orleans.Serialization.IBinaryTokenStreamReader.ReadGuid()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Serialization/IBinaryTokenStreamReader.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ReadGuid
+    path: src/Orleans.Core.Abstractions/Serialization/IBinaryTokenStreamReader.cs
+    startLine: 98
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Serialization
+  syntax:
+    content: Guid ReadGuid()
+    return:
+      type: Guid
+    content.vb: Function ReadGuid As Guid
+  overload: Orleans.Serialization.IBinaryTokenStreamReader.ReadGuid*
+- uid: Orleans.Serialization.IBinaryTokenStreamReader.ReadIPAddress
+  commentId: M:Orleans.Serialization.IBinaryTokenStreamReader.ReadIPAddress
+  id: ReadIPAddress
+  parent: Orleans.Serialization.IBinaryTokenStreamReader
+  langs:
+  - csharp
+  - vb
+  name: ReadIPAddress()
+  nameWithType: IBinaryTokenStreamReader.ReadIPAddress()
+  fullName: Orleans.Serialization.IBinaryTokenStreamReader.ReadIPAddress()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Serialization/IBinaryTokenStreamReader.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ReadIPAddress
+    path: src/Orleans.Core.Abstractions/Serialization/IBinaryTokenStreamReader.cs
+    startLine: 102
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Serialization
+  summary: 'Read an <code>IPAddress</code> value from the stream. '
+  example: []
+  syntax:
+    content: IPAddress ReadIPAddress()
+    return:
+      type: IPAddress
+      description: Data from current position in stream, converted to the appropriate output type.
+    content.vb: Function ReadIPAddress As IPAddress
+  overload: Orleans.Serialization.IBinaryTokenStreamReader.ReadIPAddress*
+- uid: Orleans.Serialization.IBinaryTokenStreamReader.ReadIPEndPoint
+  commentId: M:Orleans.Serialization.IBinaryTokenStreamReader.ReadIPEndPoint
+  id: ReadIPEndPoint
+  parent: Orleans.Serialization.IBinaryTokenStreamReader
+  langs:
+  - csharp
+  - vb
+  name: ReadIPEndPoint()
+  nameWithType: IBinaryTokenStreamReader.ReadIPEndPoint()
+  fullName: Orleans.Serialization.IBinaryTokenStreamReader.ReadIPEndPoint()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Serialization/IBinaryTokenStreamReader.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ReadIPEndPoint
+    path: src/Orleans.Core.Abstractions/Serialization/IBinaryTokenStreamReader.cs
+    startLine: 106
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Serialization
+  summary: 'Read an <code>IPEndPoint</code> value from the stream. '
+  example: []
+  syntax:
+    content: IPEndPoint ReadIPEndPoint()
+    return:
+      type: IPEndPoint
+      description: Data from current position in stream, converted to the appropriate output type.
+    content.vb: Function ReadIPEndPoint As IPEndPoint
+  overload: Orleans.Serialization.IBinaryTokenStreamReader.ReadIPEndPoint*
+- uid: Orleans.Serialization.IBinaryTokenStreamReader.ReadSiloAddress
+  commentId: M:Orleans.Serialization.IBinaryTokenStreamReader.ReadSiloAddress
+  id: ReadSiloAddress
+  parent: Orleans.Serialization.IBinaryTokenStreamReader
+  langs:
+  - csharp
+  - vb
+  name: ReadSiloAddress()
+  nameWithType: IBinaryTokenStreamReader.ReadSiloAddress()
+  fullName: Orleans.Serialization.IBinaryTokenStreamReader.ReadSiloAddress()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Serialization/IBinaryTokenStreamReader.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ReadSiloAddress
+    path: src/Orleans.Core.Abstractions/Serialization/IBinaryTokenStreamReader.cs
+    startLine: 110
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Serialization
+  summary: 'Read an <code>SiloAddress</code> value from the stream. '
+  example: []
+  syntax:
+    content: SiloAddress ReadSiloAddress()
+    return:
+      type: Orleans.Runtime.SiloAddress
+      description: Data from current position in stream, converted to the appropriate output type.
+    content.vb: Function ReadSiloAddress As SiloAddress
+  overload: Orleans.Serialization.IBinaryTokenStreamReader.ReadSiloAddress*
+- uid: Orleans.Serialization.IBinaryTokenStreamReader.ReadTimeSpan
+  commentId: M:Orleans.Serialization.IBinaryTokenStreamReader.ReadTimeSpan
+  id: ReadTimeSpan
+  parent: Orleans.Serialization.IBinaryTokenStreamReader
+  langs:
+  - csharp
+  - vb
+  name: ReadTimeSpan()
+  nameWithType: IBinaryTokenStreamReader.ReadTimeSpan()
+  fullName: Orleans.Serialization.IBinaryTokenStreamReader.ReadTimeSpan()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Serialization/IBinaryTokenStreamReader.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ReadTimeSpan
+    path: src/Orleans.Core.Abstractions/Serialization/IBinaryTokenStreamReader.cs
+    startLine: 112
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Serialization
+  syntax:
+    content: TimeSpan ReadTimeSpan()
+    return:
+      type: TimeSpan
+    content.vb: Function ReadTimeSpan As TimeSpan
+  overload: Orleans.Serialization.IBinaryTokenStreamReader.ReadTimeSpan*
+- uid: Orleans.Serialization.IBinaryTokenStreamReader.ReadBlockInto(Array,System.Int32)
+  commentId: M:Orleans.Serialization.IBinaryTokenStreamReader.ReadBlockInto(Array,System.Int32)
+  id: ReadBlockInto(Array,System.Int32)
+  parent: Orleans.Serialization.IBinaryTokenStreamReader
+  langs:
+  - csharp
+  - vb
+  name: ReadBlockInto(Array, Int32)
+  nameWithType: IBinaryTokenStreamReader.ReadBlockInto(Array, Int32)
+  fullName: Orleans.Serialization.IBinaryTokenStreamReader.ReadBlockInto(Array, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Serialization/IBinaryTokenStreamReader.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ReadBlockInto
+    path: src/Orleans.Core.Abstractions/Serialization/IBinaryTokenStreamReader.cs
+    startLine: 119
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Serialization
+  summary: "\nRead a block of data into the specified output <code>Array</code>.\n"
+  example: []
+  syntax:
+    content: void ReadBlockInto(Array array, int n)
+    parameters:
+    - id: array
+      type: Array
+      description: Array to output the data to.
+    - id: n
+      type: System.Int32
+      description: Number of bytes to read.
+    content.vb: Sub ReadBlockInto(array As Array, n As Integer)
+  overload: Orleans.Serialization.IBinaryTokenStreamReader.ReadBlockInto*
+references:
+- uid: Orleans.Serialization
+  commentId: N:Orleans.Serialization
+  isExternal: false
+  name: Orleans.Serialization
+  nameWithType: Orleans.Serialization
+  fullName: Orleans.Serialization
+- uid: Orleans.Serialization.IBinaryTokenStreamReader.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<IBinaryTokenStreamReader>()
+  nameWithType: ImmutableExt.AsImmutable<IBinaryTokenStreamReader>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Serialization.IBinaryTokenStreamReader>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of IBinaryTokenStreamReader)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Serialization.IBinaryTokenStreamReader)()
+  name.vb: AsImmutable(Of IBinaryTokenStreamReader)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<IBinaryTokenStreamReader>
+    nameWithType: ImmutableExt.AsImmutable<IBinaryTokenStreamReader>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Serialization.IBinaryTokenStreamReader>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of IBinaryTokenStreamReader)
+    nameWithType: ImmutableExt.AsImmutable(Of IBinaryTokenStreamReader)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Serialization.IBinaryTokenStreamReader)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Serialization.IBinaryTokenStreamReader.Reset*
+  commentId: Overload:Orleans.Serialization.IBinaryTokenStreamReader.Reset
+  isExternal: false
+  name: Reset
+  nameWithType: IBinaryTokenStreamReader.Reset
+  fullName: Orleans.Serialization.IBinaryTokenStreamReader.Reset
+- uid: IList{ArraySegment{System.Byte}}
+  commentId: '!:IList{ArraySegment{System.Byte}}'
+  definition: IList`1
+  name: IList<ArraySegment<Byte>>
+  nameWithType: IList<ArraySegment<Byte>>
+  fullName: IList<ArraySegment<System.Byte>>
+  nameWithType.vb: IList(Of ArraySegment(Of Byte))
+  fullName.vb: IList(Of ArraySegment(Of System.Byte))
+  name.vb: IList(Of ArraySegment(Of Byte))
+  spec.csharp:
+  - uid: IList`1
+    name: IList
+    nameWithType: IList
+    fullName: IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: ArraySegment`1
+    name: ArraySegment
+    nameWithType: ArraySegment
+    fullName: ArraySegment
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IList`1
+    name: IList
+    nameWithType: IList
+    fullName: IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: ArraySegment`1
+    name: ArraySegment
+    nameWithType: ArraySegment
+    fullName: ArraySegment
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IList`1
+  isExternal: true
+  name: IList<>
+  nameWithType: IList<>
+  fullName: IList<>
+  nameWithType.vb: IList(Of )
+  fullName.vb: IList(Of )
+  name.vb: IList(Of )
+  spec.csharp:
+  - uid: IList`1
+    name: IList
+    nameWithType: IList
+    fullName: IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IList`1
+    name: IList
+    nameWithType: IList
+    fullName: IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Serialization.IBinaryTokenStreamReader.CurrentPosition*
+  commentId: Overload:Orleans.Serialization.IBinaryTokenStreamReader.CurrentPosition
+  isExternal: false
+  name: CurrentPosition
+  nameWithType: IBinaryTokenStreamReader.CurrentPosition
+  fullName: Orleans.Serialization.IBinaryTokenStreamReader.CurrentPosition
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Orleans.Serialization.IBinaryTokenStreamReader.Length*
+  commentId: Overload:Orleans.Serialization.IBinaryTokenStreamReader.Length
+  isExternal: false
+  name: Length
+  nameWithType: IBinaryTokenStreamReader.Length
+  fullName: Orleans.Serialization.IBinaryTokenStreamReader.Length
+- uid: Orleans.Serialization.IBinaryTokenStreamReader.Copy*
+  commentId: Overload:Orleans.Serialization.IBinaryTokenStreamReader.Copy
+  isExternal: false
+  name: Copy
+  nameWithType: IBinaryTokenStreamReader.Copy
+  fullName: Orleans.Serialization.IBinaryTokenStreamReader.Copy
+- uid: Orleans.Serialization.IBinaryTokenStreamReader
+  commentId: T:Orleans.Serialization.IBinaryTokenStreamReader
+  parent: Orleans.Serialization
+  isExternal: false
+  name: IBinaryTokenStreamReader
+  nameWithType: IBinaryTokenStreamReader
+  fullName: Orleans.Serialization.IBinaryTokenStreamReader
+- uid: Orleans.Serialization.IBinaryTokenStreamReader.ReadBoolean*
+  commentId: Overload:Orleans.Serialization.IBinaryTokenStreamReader.ReadBoolean
+  isExternal: false
+  name: ReadBoolean
+  nameWithType: IBinaryTokenStreamReader.ReadBoolean
+  fullName: Orleans.Serialization.IBinaryTokenStreamReader.ReadBoolean
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Serialization.IBinaryTokenStreamReader.ReadInt*
+  commentId: Overload:Orleans.Serialization.IBinaryTokenStreamReader.ReadInt
+  isExternal: false
+  name: ReadInt
+  nameWithType: IBinaryTokenStreamReader.ReadInt
+  fullName: Orleans.Serialization.IBinaryTokenStreamReader.ReadInt
+- uid: Orleans.Serialization.IBinaryTokenStreamReader.ReadUInt*
+  commentId: Overload:Orleans.Serialization.IBinaryTokenStreamReader.ReadUInt
+  isExternal: false
+  name: ReadUInt
+  nameWithType: IBinaryTokenStreamReader.ReadUInt
+  fullName: Orleans.Serialization.IBinaryTokenStreamReader.ReadUInt
+- uid: System.UInt32
+  isExternal: true
+  name: UInt32
+  nameWithType: UInt32
+  fullName: System.UInt32
+- uid: Orleans.Serialization.IBinaryTokenStreamReader.ReadShort*
+  commentId: Overload:Orleans.Serialization.IBinaryTokenStreamReader.ReadShort
+  isExternal: false
+  name: ReadShort
+  nameWithType: IBinaryTokenStreamReader.ReadShort
+  fullName: Orleans.Serialization.IBinaryTokenStreamReader.ReadShort
+- uid: System.Int16
+  isExternal: true
+  name: Int16
+  nameWithType: Int16
+  fullName: System.Int16
+- uid: Orleans.Serialization.IBinaryTokenStreamReader.ReadUShort*
+  commentId: Overload:Orleans.Serialization.IBinaryTokenStreamReader.ReadUShort
+  isExternal: false
+  name: ReadUShort
+  nameWithType: IBinaryTokenStreamReader.ReadUShort
+  fullName: Orleans.Serialization.IBinaryTokenStreamReader.ReadUShort
+- uid: System.UInt16
+  isExternal: true
+  name: UInt16
+  nameWithType: UInt16
+  fullName: System.UInt16
+- uid: Orleans.Serialization.IBinaryTokenStreamReader.ReadLong*
+  commentId: Overload:Orleans.Serialization.IBinaryTokenStreamReader.ReadLong
+  isExternal: false
+  name: ReadLong
+  nameWithType: IBinaryTokenStreamReader.ReadLong
+  fullName: Orleans.Serialization.IBinaryTokenStreamReader.ReadLong
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
+- uid: Orleans.Serialization.IBinaryTokenStreamReader.ReadULong*
+  commentId: Overload:Orleans.Serialization.IBinaryTokenStreamReader.ReadULong
+  isExternal: false
+  name: ReadULong
+  nameWithType: IBinaryTokenStreamReader.ReadULong
+  fullName: Orleans.Serialization.IBinaryTokenStreamReader.ReadULong
+- uid: System.UInt64
+  isExternal: true
+  name: UInt64
+  nameWithType: UInt64
+  fullName: System.UInt64
+- uid: Orleans.Serialization.IBinaryTokenStreamReader.ReadFloat*
+  commentId: Overload:Orleans.Serialization.IBinaryTokenStreamReader.ReadFloat
+  isExternal: false
+  name: ReadFloat
+  nameWithType: IBinaryTokenStreamReader.ReadFloat
+  fullName: Orleans.Serialization.IBinaryTokenStreamReader.ReadFloat
+- uid: System.Single
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Orleans.Serialization.IBinaryTokenStreamReader.ReadDouble*
+  commentId: Overload:Orleans.Serialization.IBinaryTokenStreamReader.ReadDouble
+  isExternal: false
+  name: ReadDouble
+  nameWithType: IBinaryTokenStreamReader.ReadDouble
+  fullName: Orleans.Serialization.IBinaryTokenStreamReader.ReadDouble
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: Orleans.Serialization.IBinaryTokenStreamReader.ReadDecimal*
+  commentId: Overload:Orleans.Serialization.IBinaryTokenStreamReader.ReadDecimal
+  isExternal: false
+  name: ReadDecimal
+  nameWithType: IBinaryTokenStreamReader.ReadDecimal
+  fullName: Orleans.Serialization.IBinaryTokenStreamReader.ReadDecimal
+- uid: System.Decimal
+  isExternal: true
+  name: Decimal
+  nameWithType: Decimal
+  fullName: System.Decimal
+- uid: Orleans.Serialization.IBinaryTokenStreamReader.ReadDateTime*
+  commentId: Overload:Orleans.Serialization.IBinaryTokenStreamReader.ReadDateTime
+  isExternal: false
+  name: ReadDateTime
+  nameWithType: IBinaryTokenStreamReader.ReadDateTime
+  fullName: Orleans.Serialization.IBinaryTokenStreamReader.ReadDateTime
+- uid: DateTime
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: DateTime
+- uid: Orleans.Serialization.IBinaryTokenStreamReader.ReadString*
+  commentId: Overload:Orleans.Serialization.IBinaryTokenStreamReader.ReadString
+  isExternal: false
+  name: ReadString
+  nameWithType: IBinaryTokenStreamReader.ReadString
+  fullName: Orleans.Serialization.IBinaryTokenStreamReader.ReadString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Orleans.Serialization.IBinaryTokenStreamReader.ReadBytes*
+  commentId: Overload:Orleans.Serialization.IBinaryTokenStreamReader.ReadBytes
+  isExternal: false
+  name: ReadBytes
+  nameWithType: IBinaryTokenStreamReader.ReadBytes
+  fullName: Orleans.Serialization.IBinaryTokenStreamReader.ReadBytes
+- uid: System.Byte[]
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Orleans.Serialization.IBinaryTokenStreamReader.ReadByteArray*
+  commentId: Overload:Orleans.Serialization.IBinaryTokenStreamReader.ReadByteArray
+  isExternal: false
+  name: ReadByteArray
+  nameWithType: IBinaryTokenStreamReader.ReadByteArray
+  fullName: Orleans.Serialization.IBinaryTokenStreamReader.ReadByteArray
+- uid: Orleans.Serialization.IBinaryTokenStreamReader.ReadChar*
+  commentId: Overload:Orleans.Serialization.IBinaryTokenStreamReader.ReadChar
+  isExternal: false
+  name: ReadChar
+  nameWithType: IBinaryTokenStreamReader.ReadChar
+  fullName: Orleans.Serialization.IBinaryTokenStreamReader.ReadChar
+- uid: System.Char
+  isExternal: true
+  name: Char
+  nameWithType: Char
+  fullName: System.Char
+- uid: Orleans.Serialization.IBinaryTokenStreamReader.ReadByte*
+  commentId: Overload:Orleans.Serialization.IBinaryTokenStreamReader.ReadByte
+  isExternal: false
+  name: ReadByte
+  nameWithType: IBinaryTokenStreamReader.ReadByte
+  fullName: Orleans.Serialization.IBinaryTokenStreamReader.ReadByte
+- uid: System.Byte
+  isExternal: true
+  name: Byte
+  nameWithType: Byte
+  fullName: System.Byte
+- uid: Orleans.Serialization.IBinaryTokenStreamReader.ReadSByte*
+  commentId: Overload:Orleans.Serialization.IBinaryTokenStreamReader.ReadSByte
+  isExternal: false
+  name: ReadSByte
+  nameWithType: IBinaryTokenStreamReader.ReadSByte
+  fullName: Orleans.Serialization.IBinaryTokenStreamReader.ReadSByte
+- uid: System.SByte
+  isExternal: true
+  name: SByte
+  nameWithType: SByte
+  fullName: System.SByte
+- uid: Orleans.Serialization.IBinaryTokenStreamReader.ReadGuid*
+  commentId: Overload:Orleans.Serialization.IBinaryTokenStreamReader.ReadGuid
+  isExternal: false
+  name: ReadGuid
+  nameWithType: IBinaryTokenStreamReader.ReadGuid
+  fullName: Orleans.Serialization.IBinaryTokenStreamReader.ReadGuid
+- uid: Guid
+  isExternal: true
+  name: Guid
+  nameWithType: Guid
+  fullName: Guid
+- uid: Orleans.Serialization.IBinaryTokenStreamReader.ReadIPAddress*
+  commentId: Overload:Orleans.Serialization.IBinaryTokenStreamReader.ReadIPAddress
+  isExternal: false
+  name: ReadIPAddress
+  nameWithType: IBinaryTokenStreamReader.ReadIPAddress
+  fullName: Orleans.Serialization.IBinaryTokenStreamReader.ReadIPAddress
+- uid: IPAddress
+  isExternal: true
+  name: IPAddress
+  nameWithType: IPAddress
+  fullName: IPAddress
+- uid: Orleans.Serialization.IBinaryTokenStreamReader.ReadIPEndPoint*
+  commentId: Overload:Orleans.Serialization.IBinaryTokenStreamReader.ReadIPEndPoint
+  isExternal: false
+  name: ReadIPEndPoint
+  nameWithType: IBinaryTokenStreamReader.ReadIPEndPoint
+  fullName: Orleans.Serialization.IBinaryTokenStreamReader.ReadIPEndPoint
+- uid: IPEndPoint
+  isExternal: true
+  name: IPEndPoint
+  nameWithType: IPEndPoint
+  fullName: IPEndPoint
+- uid: Orleans.Serialization.IBinaryTokenStreamReader.ReadSiloAddress*
+  commentId: Overload:Orleans.Serialization.IBinaryTokenStreamReader.ReadSiloAddress
+  isExternal: false
+  name: ReadSiloAddress
+  nameWithType: IBinaryTokenStreamReader.ReadSiloAddress
+  fullName: Orleans.Serialization.IBinaryTokenStreamReader.ReadSiloAddress
+- uid: Orleans.Runtime.SiloAddress
+  commentId: T:Orleans.Runtime.SiloAddress
+  parent: Orleans.Runtime
+  isExternal: false
+  name: SiloAddress
+  nameWithType: SiloAddress
+  fullName: Orleans.Runtime.SiloAddress
+- uid: Orleans.Runtime
+  commentId: N:Orleans.Runtime
+  isExternal: false
+  name: Orleans.Runtime
+  nameWithType: Orleans.Runtime
+  fullName: Orleans.Runtime
+- uid: Orleans.Serialization.IBinaryTokenStreamReader.ReadTimeSpan*
+  commentId: Overload:Orleans.Serialization.IBinaryTokenStreamReader.ReadTimeSpan
+  isExternal: false
+  name: ReadTimeSpan
+  nameWithType: IBinaryTokenStreamReader.ReadTimeSpan
+  fullName: Orleans.Serialization.IBinaryTokenStreamReader.ReadTimeSpan
+- uid: TimeSpan
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: TimeSpan
+- uid: Orleans.Serialization.IBinaryTokenStreamReader.ReadBlockInto*
+  commentId: Overload:Orleans.Serialization.IBinaryTokenStreamReader.ReadBlockInto
+  isExternal: false
+  name: ReadBlockInto
+  nameWithType: IBinaryTokenStreamReader.ReadBlockInto
+  fullName: Orleans.Serialization.IBinaryTokenStreamReader.ReadBlockInto
+- uid: Array
+  commentId: '!:Array'
+  isExternal: true
+  name: Array
+  nameWithType: Array
+  fullName: Array

@@ -1,0 +1,243 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Configuration.AdoNetGrainStorageOptionsValidator
+  commentId: T:Orleans.Configuration.AdoNetGrainStorageOptionsValidator
+  id: AdoNetGrainStorageOptionsValidator
+  parent: Orleans.Configuration
+  children:
+  - Orleans.Configuration.AdoNetGrainStorageOptionsValidator.#ctor(Orleans.Configuration.AdoNetGrainStorageOptions,System.String)
+  - Orleans.Configuration.AdoNetGrainStorageOptionsValidator.ValidateConfiguration
+  langs:
+  - csharp
+  - vb
+  name: AdoNetGrainStorageOptionsValidator
+  nameWithType: AdoNetGrainStorageOptionsValidator
+  fullName: Orleans.Configuration.AdoNetGrainStorageOptionsValidator
+  type: Class
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Persistence.AdoNet/Options/AdoNetGrainStorageOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AdoNetGrainStorageOptionsValidator
+    path: src/AdoNet/Orleans.Persistence.AdoNet/Options/AdoNetGrainStorageOptions.cs
+    startLine: 61
+  assemblies:
+  - Orleans.Persistence.AdoNet
+  namespace: Orleans.Configuration
+  summary: "\nConfigurationValidator for AdoNetGrainStorageOptions\n"
+  example: []
+  syntax:
+    content: 'public class AdoNetGrainStorageOptionsValidator : IConfigurationValidator'
+    content.vb: >-
+      Public Class AdoNetGrainStorageOptionsValidator
+
+          Inherits IConfigurationValidator
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.Configuration.AdoNetGrainStorageOptionsValidator.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.Configuration.AdoNetGrainStorageOptionsValidator.#ctor(Orleans.Configuration.AdoNetGrainStorageOptions,System.String)
+  commentId: M:Orleans.Configuration.AdoNetGrainStorageOptionsValidator.#ctor(Orleans.Configuration.AdoNetGrainStorageOptions,System.String)
+  id: '#ctor(Orleans.Configuration.AdoNetGrainStorageOptions,System.String)'
+  parent: Orleans.Configuration.AdoNetGrainStorageOptionsValidator
+  langs:
+  - csharp
+  - vb
+  name: AdoNetGrainStorageOptionsValidator(AdoNetGrainStorageOptions, String)
+  nameWithType: AdoNetGrainStorageOptionsValidator.AdoNetGrainStorageOptionsValidator(AdoNetGrainStorageOptions, String)
+  fullName: Orleans.Configuration.AdoNetGrainStorageOptionsValidator.AdoNetGrainStorageOptionsValidator(Orleans.Configuration.AdoNetGrainStorageOptions, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Persistence.AdoNet/Options/AdoNetGrainStorageOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/AdoNet/Orleans.Persistence.AdoNet/Options/AdoNetGrainStorageOptions.cs
+    startLine: 70
+  assemblies:
+  - Orleans.Persistence.AdoNet
+  namespace: Orleans.Configuration
+  summary: "\nConstructor\n"
+  example: []
+  syntax:
+    content: public AdoNetGrainStorageOptionsValidator(AdoNetGrainStorageOptions configurationOptions, string name)
+    parameters:
+    - id: configurationOptions
+      type: Orleans.Configuration.AdoNetGrainStorageOptions
+      description: The option to be validated.
+    - id: name
+      type: System.String
+      description: The name of the option to be validated.
+    content.vb: Public Sub New(configurationOptions As AdoNetGrainStorageOptions, name As String)
+  overload: Orleans.Configuration.AdoNetGrainStorageOptionsValidator.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Configuration.AdoNetGrainStorageOptionsValidator.ValidateConfiguration
+  commentId: M:Orleans.Configuration.AdoNetGrainStorageOptionsValidator.ValidateConfiguration
+  id: ValidateConfiguration
+  parent: Orleans.Configuration.AdoNetGrainStorageOptionsValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateConfiguration()
+  nameWithType: AdoNetGrainStorageOptionsValidator.ValidateConfiguration()
+  fullName: Orleans.Configuration.AdoNetGrainStorageOptionsValidator.ValidateConfiguration()
+  type: Method
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Persistence.AdoNet/Options/AdoNetGrainStorageOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ValidateConfiguration
+    path: src/AdoNet/Orleans.Persistence.AdoNet/Options/AdoNetGrainStorageOptions.cs
+    startLine: 78
+  assemblies:
+  - Orleans.Persistence.AdoNet
+  namespace: Orleans.Configuration
+  example: []
+  syntax:
+    content: public void ValidateConfiguration()
+    content.vb: Public Sub ValidateConfiguration
+  overload: Orleans.Configuration.AdoNetGrainStorageOptionsValidator.ValidateConfiguration*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans.Configuration
+  commentId: N:Orleans.Configuration
+  isExternal: false
+  name: Orleans.Configuration
+  nameWithType: Orleans.Configuration
+  fullName: Orleans.Configuration
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Configuration.AdoNetGrainStorageOptionsValidator.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<AdoNetGrainStorageOptionsValidator>()
+  nameWithType: ImmutableExt.AsImmutable<AdoNetGrainStorageOptionsValidator>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Configuration.AdoNetGrainStorageOptionsValidator>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of AdoNetGrainStorageOptionsValidator)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Configuration.AdoNetGrainStorageOptionsValidator)()
+  name.vb: AsImmutable(Of AdoNetGrainStorageOptionsValidator)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<AdoNetGrainStorageOptionsValidator>
+    nameWithType: ImmutableExt.AsImmutable<AdoNetGrainStorageOptionsValidator>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Configuration.AdoNetGrainStorageOptionsValidator>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of AdoNetGrainStorageOptionsValidator)
+    nameWithType: ImmutableExt.AsImmutable(Of AdoNetGrainStorageOptionsValidator)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Configuration.AdoNetGrainStorageOptionsValidator)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Configuration.AdoNetGrainStorageOptionsValidator.#ctor*
+  commentId: Overload:Orleans.Configuration.AdoNetGrainStorageOptionsValidator.#ctor
+  isExternal: false
+  name: AdoNetGrainStorageOptionsValidator
+  nameWithType: AdoNetGrainStorageOptionsValidator.AdoNetGrainStorageOptionsValidator
+  fullName: Orleans.Configuration.AdoNetGrainStorageOptionsValidator.AdoNetGrainStorageOptionsValidator
+- uid: Orleans.Configuration.AdoNetGrainStorageOptions
+  commentId: T:Orleans.Configuration.AdoNetGrainStorageOptions
+  parent: Orleans.Configuration
+  isExternal: false
+  name: AdoNetGrainStorageOptions
+  nameWithType: AdoNetGrainStorageOptions
+  fullName: Orleans.Configuration.AdoNetGrainStorageOptions
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Orleans.Configuration.AdoNetGrainStorageOptionsValidator.ValidateConfiguration*
+  commentId: Overload:Orleans.Configuration.AdoNetGrainStorageOptionsValidator.ValidateConfiguration
+  isExternal: false
+  name: ValidateConfiguration
+  nameWithType: AdoNetGrainStorageOptionsValidator.ValidateConfiguration
+  fullName: Orleans.Configuration.AdoNetGrainStorageOptionsValidator.ValidateConfiguration

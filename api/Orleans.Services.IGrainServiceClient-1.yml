@@ -1,0 +1,133 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Services.IGrainServiceClient`1
+  commentId: T:Orleans.Services.IGrainServiceClient`1
+  id: IGrainServiceClient`1
+  parent: Orleans.Services
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: IGrainServiceClient<TGrainService>
+  nameWithType: IGrainServiceClient<TGrainService>
+  fullName: Orleans.Services.IGrainServiceClient<TGrainService>
+  type: Interface
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Services/IGrainServiceClient.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IGrainServiceClient
+    path: src/Orleans.Core.Abstractions/Services/IGrainServiceClient.cs
+    startLine: 2
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Services
+  syntax:
+    content: >-
+      public interface IGrainServiceClient<TGrainService>
+
+          where TGrainService : IGrainService
+    typeParameters:
+    - id: TGrainService
+    content.vb: Public Interface IGrainServiceClient(Of TGrainService As IGrainService)
+  extensionMethods:
+  - Orleans.Services.IGrainServiceClient`1.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  nameWithType.vb: IGrainServiceClient(Of TGrainService)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+  fullName.vb: Orleans.Services.IGrainServiceClient(Of TGrainService)
+  name.vb: IGrainServiceClient(Of TGrainService)
+references:
+- uid: Orleans.Services
+  commentId: N:Orleans.Services
+  isExternal: false
+  name: Orleans.Services
+  nameWithType: Orleans.Services
+  fullName: Orleans.Services
+- uid: Orleans.Services.IGrainServiceClient`1.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<IGrainServiceClient<TGrainService>>()
+  nameWithType: ImmutableExt.AsImmutable<IGrainServiceClient<TGrainService>>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Services.IGrainServiceClient<TGrainService>>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of IGrainServiceClient(Of TGrainService))()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Services.IGrainServiceClient(Of TGrainService))()
+  name.vb: AsImmutable(Of IGrainServiceClient(Of TGrainService))()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<IGrainServiceClient<TGrainService>>
+    nameWithType: ImmutableExt.AsImmutable<IGrainServiceClient<TGrainService>>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Services.IGrainServiceClient<TGrainService>>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of IGrainServiceClient(Of TGrainService))
+    nameWithType: ImmutableExt.AsImmutable(Of IGrainServiceClient(Of TGrainService))
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Services.IGrainServiceClient(Of TGrainService))
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency

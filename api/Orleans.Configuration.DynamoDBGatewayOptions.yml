@@ -1,0 +1,419 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Configuration.DynamoDBGatewayOptions
+  commentId: T:Orleans.Configuration.DynamoDBGatewayOptions
+  id: DynamoDBGatewayOptions
+  parent: Orleans.Configuration
+  children:
+  - Orleans.Configuration.DynamoDBGatewayOptions.AccessKey
+  - Orleans.Configuration.DynamoDBGatewayOptions.ReadCapacityUnits
+  - Orleans.Configuration.DynamoDBGatewayOptions.SecretKey
+  - Orleans.Configuration.DynamoDBGatewayOptions.Service
+  - Orleans.Configuration.DynamoDBGatewayOptions.TableName
+  - Orleans.Configuration.DynamoDBGatewayOptions.WriteCapacityUnits
+  langs:
+  - csharp
+  - vb
+  name: DynamoDBGatewayOptions
+  nameWithType: DynamoDBGatewayOptions
+  fullName: Orleans.Configuration.DynamoDBGatewayOptions
+  type: Class
+  source:
+    remote:
+      path: src/AWS/Orleans.Clustering.DynamoDB/Options/DynamoDBGatewayOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: DynamoDBGatewayOptions
+    path: src/AWS/Orleans.Clustering.DynamoDB/Options/DynamoDBGatewayOptions.cs
+    startLine: 4
+  assemblies:
+  - Orleans.Clustering.DynamoDB
+  namespace: Orleans.Configuration
+  syntax:
+    content: 'public class DynamoDBGatewayOptions : object'
+    content.vb: >-
+      Public Class DynamoDBGatewayOptions
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.Configuration.DynamoDBGatewayOptions.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.Configuration.DynamoDBGatewayOptions.AccessKey
+  commentId: P:Orleans.Configuration.DynamoDBGatewayOptions.AccessKey
+  id: AccessKey
+  parent: Orleans.Configuration.DynamoDBGatewayOptions
+  langs:
+  - csharp
+  - vb
+  name: AccessKey
+  nameWithType: DynamoDBGatewayOptions.AccessKey
+  fullName: Orleans.Configuration.DynamoDBGatewayOptions.AccessKey
+  type: Property
+  source:
+    remote:
+      path: src/AWS/Orleans.Clustering.DynamoDB/Options/DynamoDBGatewayOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AccessKey
+    path: src/AWS/Orleans.Clustering.DynamoDB/Options/DynamoDBGatewayOptions.cs
+    startLine: 9
+  assemblies:
+  - Orleans.Clustering.DynamoDB
+  namespace: Orleans.Configuration
+  summary: "\nAccessKey string for DynamoDB Storage\n"
+  example: []
+  syntax:
+    content: public string AccessKey { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property AccessKey As String
+  overload: Orleans.Configuration.DynamoDBGatewayOptions.AccessKey*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Configuration.DynamoDBGatewayOptions.SecretKey
+  commentId: P:Orleans.Configuration.DynamoDBGatewayOptions.SecretKey
+  id: SecretKey
+  parent: Orleans.Configuration.DynamoDBGatewayOptions
+  langs:
+  - csharp
+  - vb
+  name: SecretKey
+  nameWithType: DynamoDBGatewayOptions.SecretKey
+  fullName: Orleans.Configuration.DynamoDBGatewayOptions.SecretKey
+  type: Property
+  source:
+    remote:
+      path: src/AWS/Orleans.Clustering.DynamoDB/Options/DynamoDBGatewayOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SecretKey
+    path: src/AWS/Orleans.Clustering.DynamoDB/Options/DynamoDBGatewayOptions.cs
+    startLine: 14
+  assemblies:
+  - Orleans.Clustering.DynamoDB
+  namespace: Orleans.Configuration
+  summary: "\nSecret key for DynamoDB storage\n"
+  example: []
+  syntax:
+    content: public string SecretKey { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property SecretKey As String
+  overload: Orleans.Configuration.DynamoDBGatewayOptions.SecretKey*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Configuration.DynamoDBGatewayOptions.Service
+  commentId: P:Orleans.Configuration.DynamoDBGatewayOptions.Service
+  id: Service
+  parent: Orleans.Configuration.DynamoDBGatewayOptions
+  langs:
+  - csharp
+  - vb
+  name: Service
+  nameWithType: DynamoDBGatewayOptions.Service
+  fullName: Orleans.Configuration.DynamoDBGatewayOptions.Service
+  type: Property
+  source:
+    remote:
+      path: src/AWS/Orleans.Clustering.DynamoDB/Options/DynamoDBGatewayOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Service
+    path: src/AWS/Orleans.Clustering.DynamoDB/Options/DynamoDBGatewayOptions.cs
+    startLine: 19
+  assemblies:
+  - Orleans.Clustering.DynamoDB
+  namespace: Orleans.Configuration
+  summary: "\nDynamoDB Service name \n"
+  example: []
+  syntax:
+    content: public string Service { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Service As String
+  overload: Orleans.Configuration.DynamoDBGatewayOptions.Service*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Configuration.DynamoDBGatewayOptions.ReadCapacityUnits
+  commentId: P:Orleans.Configuration.DynamoDBGatewayOptions.ReadCapacityUnits
+  id: ReadCapacityUnits
+  parent: Orleans.Configuration.DynamoDBGatewayOptions
+  langs:
+  - csharp
+  - vb
+  name: ReadCapacityUnits
+  nameWithType: DynamoDBGatewayOptions.ReadCapacityUnits
+  fullName: Orleans.Configuration.DynamoDBGatewayOptions.ReadCapacityUnits
+  type: Property
+  source:
+    remote:
+      path: src/AWS/Orleans.Clustering.DynamoDB/Options/DynamoDBGatewayOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ReadCapacityUnits
+    path: src/AWS/Orleans.Clustering.DynamoDB/Options/DynamoDBGatewayOptions.cs
+    startLine: 24
+  assemblies:
+  - Orleans.Clustering.DynamoDB
+  namespace: Orleans.Configuration
+  summary: "\nRead capacity unit for DynamoDB storage\n"
+  example: []
+  syntax:
+    content: public int ReadCapacityUnits { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property ReadCapacityUnits As Integer
+  overload: Orleans.Configuration.DynamoDBGatewayOptions.ReadCapacityUnits*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Configuration.DynamoDBGatewayOptions.WriteCapacityUnits
+  commentId: P:Orleans.Configuration.DynamoDBGatewayOptions.WriteCapacityUnits
+  id: WriteCapacityUnits
+  parent: Orleans.Configuration.DynamoDBGatewayOptions
+  langs:
+  - csharp
+  - vb
+  name: WriteCapacityUnits
+  nameWithType: DynamoDBGatewayOptions.WriteCapacityUnits
+  fullName: Orleans.Configuration.DynamoDBGatewayOptions.WriteCapacityUnits
+  type: Property
+  source:
+    remote:
+      path: src/AWS/Orleans.Clustering.DynamoDB/Options/DynamoDBGatewayOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: WriteCapacityUnits
+    path: src/AWS/Orleans.Clustering.DynamoDB/Options/DynamoDBGatewayOptions.cs
+    startLine: 29
+  assemblies:
+  - Orleans.Clustering.DynamoDB
+  namespace: Orleans.Configuration
+  summary: "\nWrite capacity unit for DynamoDB storage\n"
+  example: []
+  syntax:
+    content: public int WriteCapacityUnits { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property WriteCapacityUnits As Integer
+  overload: Orleans.Configuration.DynamoDBGatewayOptions.WriteCapacityUnits*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Configuration.DynamoDBGatewayOptions.TableName
+  commentId: P:Orleans.Configuration.DynamoDBGatewayOptions.TableName
+  id: TableName
+  parent: Orleans.Configuration.DynamoDBGatewayOptions
+  langs:
+  - csharp
+  - vb
+  name: TableName
+  nameWithType: DynamoDBGatewayOptions.TableName
+  fullName: Orleans.Configuration.DynamoDBGatewayOptions.TableName
+  type: Property
+  source:
+    remote:
+      path: src/AWS/Orleans.Clustering.DynamoDB/Options/DynamoDBGatewayOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: TableName
+    path: src/AWS/Orleans.Clustering.DynamoDB/Options/DynamoDBGatewayOptions.cs
+    startLine: 35
+  assemblies:
+  - Orleans.Clustering.DynamoDB
+  namespace: Orleans.Configuration
+  summary: "\nDynamoDB table name.\nDefaults to &apos;OrleansSilos&apos;.\n"
+  example: []
+  syntax:
+    content: public string TableName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property TableName As String
+  overload: Orleans.Configuration.DynamoDBGatewayOptions.TableName*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans.Configuration
+  commentId: N:Orleans.Configuration
+  isExternal: false
+  name: Orleans.Configuration
+  nameWithType: Orleans.Configuration
+  fullName: Orleans.Configuration
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Configuration.DynamoDBGatewayOptions.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<DynamoDBGatewayOptions>()
+  nameWithType: ImmutableExt.AsImmutable<DynamoDBGatewayOptions>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Configuration.DynamoDBGatewayOptions>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of DynamoDBGatewayOptions)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Configuration.DynamoDBGatewayOptions)()
+  name.vb: AsImmutable(Of DynamoDBGatewayOptions)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<DynamoDBGatewayOptions>
+    nameWithType: ImmutableExt.AsImmutable<DynamoDBGatewayOptions>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Configuration.DynamoDBGatewayOptions>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of DynamoDBGatewayOptions)
+    nameWithType: ImmutableExt.AsImmutable(Of DynamoDBGatewayOptions)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Configuration.DynamoDBGatewayOptions)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Configuration.DynamoDBGatewayOptions.AccessKey*
+  commentId: Overload:Orleans.Configuration.DynamoDBGatewayOptions.AccessKey
+  isExternal: false
+  name: AccessKey
+  nameWithType: DynamoDBGatewayOptions.AccessKey
+  fullName: Orleans.Configuration.DynamoDBGatewayOptions.AccessKey
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Orleans.Configuration.DynamoDBGatewayOptions.SecretKey*
+  commentId: Overload:Orleans.Configuration.DynamoDBGatewayOptions.SecretKey
+  isExternal: false
+  name: SecretKey
+  nameWithType: DynamoDBGatewayOptions.SecretKey
+  fullName: Orleans.Configuration.DynamoDBGatewayOptions.SecretKey
+- uid: Orleans.Configuration.DynamoDBGatewayOptions.Service*
+  commentId: Overload:Orleans.Configuration.DynamoDBGatewayOptions.Service
+  isExternal: false
+  name: Service
+  nameWithType: DynamoDBGatewayOptions.Service
+  fullName: Orleans.Configuration.DynamoDBGatewayOptions.Service
+- uid: Orleans.Configuration.DynamoDBGatewayOptions.ReadCapacityUnits*
+  commentId: Overload:Orleans.Configuration.DynamoDBGatewayOptions.ReadCapacityUnits
+  isExternal: false
+  name: ReadCapacityUnits
+  nameWithType: DynamoDBGatewayOptions.ReadCapacityUnits
+  fullName: Orleans.Configuration.DynamoDBGatewayOptions.ReadCapacityUnits
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Orleans.Configuration.DynamoDBGatewayOptions.WriteCapacityUnits*
+  commentId: Overload:Orleans.Configuration.DynamoDBGatewayOptions.WriteCapacityUnits
+  isExternal: false
+  name: WriteCapacityUnits
+  nameWithType: DynamoDBGatewayOptions.WriteCapacityUnits
+  fullName: Orleans.Configuration.DynamoDBGatewayOptions.WriteCapacityUnits
+- uid: Orleans.Configuration.DynamoDBGatewayOptions.TableName*
+  commentId: Overload:Orleans.Configuration.DynamoDBGatewayOptions.TableName
+  isExternal: false
+  name: TableName
+  nameWithType: DynamoDBGatewayOptions.TableName
+  fullName: Orleans.Configuration.DynamoDBGatewayOptions.TableName

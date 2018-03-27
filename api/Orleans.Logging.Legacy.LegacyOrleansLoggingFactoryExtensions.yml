@@ -1,0 +1,405 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Logging.Legacy.LegacyOrleansLoggingFactoryExtensions
+  commentId: T:Orleans.Logging.Legacy.LegacyOrleansLoggingFactoryExtensions
+  id: LegacyOrleansLoggingFactoryExtensions
+  parent: Orleans.Logging.Legacy
+  children:
+  - Orleans.Logging.Legacy.LegacyOrleansLoggingFactoryExtensions.AddLegacyOrleansLogging(ILoggingBuilder,IEnumerable{Orleans.Runtime.ILogConsumer},IPEndPoint,Orleans.Logging.Legacy.EventBulkingOptions)
+  - Orleans.Logging.Legacy.LegacyOrleansLoggingFactoryExtensions.AddLegacyOrleansLogging(ILoggingBuilder,IEnumerable{Orleans.Runtime.ILogConsumer},Orleans.Logging.Legacy.OrleansLoggerSeverityOverrides,IPEndPoint,Orleans.Logging.Legacy.EventBulkingOptions)
+  - Orleans.Logging.Legacy.LegacyOrleansLoggingFactoryExtensions.AddMessageBulkingLoggerProvider``1(ILoggingBuilder,``0,Orleans.Logging.Legacy.EventBulkingOptions)
+  langs:
+  - csharp
+  - vb
+  name: LegacyOrleansLoggingFactoryExtensions
+  nameWithType: LegacyOrleansLoggingFactoryExtensions
+  fullName: Orleans.Logging.Legacy.LegacyOrleansLoggingFactoryExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Logging/LegacyOrleansLoggingFactoryExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: LegacyOrleansLoggingFactoryExtensions
+    path: src/Orleans.Core.Legacy/Logging/LegacyOrleansLoggingFactoryExtensions.cs
+    startLine: 8
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Logging.Legacy
+  syntax:
+    content: 'public static class LegacyOrleansLoggingFactoryExtensions : object'
+    content.vb: >-
+      Public Module LegacyOrleansLoggingFactoryExtensions
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Orleans.Logging.Legacy.LegacyOrleansLoggingFactoryExtensions.AddLegacyOrleansLogging(ILoggingBuilder,IEnumerable{Orleans.Runtime.ILogConsumer},IPEndPoint,Orleans.Logging.Legacy.EventBulkingOptions)
+  commentId: M:Orleans.Logging.Legacy.LegacyOrleansLoggingFactoryExtensions.AddLegacyOrleansLogging(ILoggingBuilder,IEnumerable{Orleans.Runtime.ILogConsumer},IPEndPoint,Orleans.Logging.Legacy.EventBulkingOptions)
+  id: AddLegacyOrleansLogging(ILoggingBuilder,IEnumerable{Orleans.Runtime.ILogConsumer},IPEndPoint,Orleans.Logging.Legacy.EventBulkingOptions)
+  isExtensionMethod: true
+  parent: Orleans.Logging.Legacy.LegacyOrleansLoggingFactoryExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddLegacyOrleansLogging(ILoggingBuilder, IEnumerable<ILogConsumer>, IPEndPoint, EventBulkingOptions)
+  nameWithType: LegacyOrleansLoggingFactoryExtensions.AddLegacyOrleansLogging(ILoggingBuilder, IEnumerable<ILogConsumer>, IPEndPoint, EventBulkingOptions)
+  fullName: Orleans.Logging.Legacy.LegacyOrleansLoggingFactoryExtensions.AddLegacyOrleansLogging(ILoggingBuilder, IEnumerable<Orleans.Runtime.ILogConsumer>, IPEndPoint, Orleans.Logging.Legacy.EventBulkingOptions)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Logging/LegacyOrleansLoggingFactoryExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AddLegacyOrleansLogging
+    path: src/Orleans.Core.Legacy/Logging/LegacyOrleansLoggingFactoryExtensions.cs
+    startLine: 18
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Logging.Legacy
+  summary: "\nAdd <xref href=\"Orleans.Logging.Legacy.LegacyOrleansLoggerProvider\" data-throw-if-not-resolved=\"false\"></xref> with event bulking feature to LoggerFactory\n"
+  example: []
+  syntax:
+    content: public static ILoggingBuilder AddLegacyOrleansLogging(this ILoggingBuilder builder, IEnumerable<ILogConsumer> logConsumers, IPEndPoint ipEndPoint = null, EventBulkingOptions eventBulkingOptions = null)
+    parameters:
+    - id: builder
+      type: ILoggingBuilder
+      description: logger builder
+    - id: logConsumers
+      type: IEnumerable{Orleans.Runtime.ILogConsumer}
+      description: log consumers which user want to write log events to
+    - id: ipEndPoint
+      type: IPEndPoint
+      description: IP endpoint this logger is associated with
+    - id: eventBulkingOptions
+      type: Orleans.Logging.Legacy.EventBulkingOptions
+      description: config for event bulking feature
+    return:
+      type: ILoggingBuilder
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AddLegacyOrleansLogging(builder As ILoggingBuilder, logConsumers As IEnumerable(Of ILogConsumer), ipEndPoint As IPEndPoint = Nothing, eventBulkingOptions As EventBulkingOptions = Nothing) As ILoggingBuilder
+  overload: Orleans.Logging.Legacy.LegacyOrleansLoggingFactoryExtensions.AddLegacyOrleansLogging*
+  nameWithType.vb: LegacyOrleansLoggingFactoryExtensions.AddLegacyOrleansLogging(ILoggingBuilder, IEnumerable(Of ILogConsumer), IPEndPoint, EventBulkingOptions)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.Logging.Legacy.LegacyOrleansLoggingFactoryExtensions.AddLegacyOrleansLogging(ILoggingBuilder, IEnumerable(Of Orleans.Runtime.ILogConsumer), IPEndPoint, Orleans.Logging.Legacy.EventBulkingOptions)
+  name.vb: AddLegacyOrleansLogging(ILoggingBuilder, IEnumerable(Of ILogConsumer), IPEndPoint, EventBulkingOptions)
+- uid: Orleans.Logging.Legacy.LegacyOrleansLoggingFactoryExtensions.AddLegacyOrleansLogging(ILoggingBuilder,IEnumerable{Orleans.Runtime.ILogConsumer},Orleans.Logging.Legacy.OrleansLoggerSeverityOverrides,IPEndPoint,Orleans.Logging.Legacy.EventBulkingOptions)
+  commentId: M:Orleans.Logging.Legacy.LegacyOrleansLoggingFactoryExtensions.AddLegacyOrleansLogging(ILoggingBuilder,IEnumerable{Orleans.Runtime.ILogConsumer},Orleans.Logging.Legacy.OrleansLoggerSeverityOverrides,IPEndPoint,Orleans.Logging.Legacy.EventBulkingOptions)
+  id: AddLegacyOrleansLogging(ILoggingBuilder,IEnumerable{Orleans.Runtime.ILogConsumer},Orleans.Logging.Legacy.OrleansLoggerSeverityOverrides,IPEndPoint,Orleans.Logging.Legacy.EventBulkingOptions)
+  isExtensionMethod: true
+  parent: Orleans.Logging.Legacy.LegacyOrleansLoggingFactoryExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddLegacyOrleansLogging(ILoggingBuilder, IEnumerable<ILogConsumer>, OrleansLoggerSeverityOverrides, IPEndPoint, EventBulkingOptions)
+  nameWithType: LegacyOrleansLoggingFactoryExtensions.AddLegacyOrleansLogging(ILoggingBuilder, IEnumerable<ILogConsumer>, OrleansLoggerSeverityOverrides, IPEndPoint, EventBulkingOptions)
+  fullName: Orleans.Logging.Legacy.LegacyOrleansLoggingFactoryExtensions.AddLegacyOrleansLogging(ILoggingBuilder, IEnumerable<Orleans.Runtime.ILogConsumer>, Orleans.Logging.Legacy.OrleansLoggerSeverityOverrides, IPEndPoint, Orleans.Logging.Legacy.EventBulkingOptions)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Logging/LegacyOrleansLoggingFactoryExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AddLegacyOrleansLogging
+    path: src/Orleans.Core.Legacy/Logging/LegacyOrleansLoggingFactoryExtensions.cs
+    startLine: 40
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Logging.Legacy
+  summary: "\nAdd <xref href=\"Orleans.Logging.Legacy.LegacyOrleansLoggerProvider\" data-throw-if-not-resolved=\"false\"></xref> with event bulking feature to LoggerFactory\n"
+  example: []
+  syntax:
+    content: public static ILoggingBuilder AddLegacyOrleansLogging(this ILoggingBuilder builder, IEnumerable<ILogConsumer> logConsumers, OrleansLoggerSeverityOverrides severityOverrides, IPEndPoint ipEndPoint = null, EventBulkingOptions eventBulkingOptions = null)
+    parameters:
+    - id: builder
+      type: ILoggingBuilder
+      description: logger builder
+    - id: logConsumers
+      type: IEnumerable{Orleans.Runtime.ILogConsumer}
+      description: log consumers which configured to consume the logs
+    - id: severityOverrides
+      type: Orleans.Logging.Legacy.OrleansLoggerSeverityOverrides
+      description: per category severity overrides
+    - id: ipEndPoint
+      type: IPEndPoint
+      description: IP endpoint this logger is associated with
+    - id: eventBulkingOptions
+      type: Orleans.Logging.Legacy.EventBulkingOptions
+      description: config for event bulking feature
+    return:
+      type: ILoggingBuilder
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AddLegacyOrleansLogging(builder As ILoggingBuilder, logConsumers As IEnumerable(Of ILogConsumer), severityOverrides As OrleansLoggerSeverityOverrides, ipEndPoint As IPEndPoint = Nothing, eventBulkingOptions As EventBulkingOptions = Nothing) As ILoggingBuilder
+  overload: Orleans.Logging.Legacy.LegacyOrleansLoggingFactoryExtensions.AddLegacyOrleansLogging*
+  nameWithType.vb: LegacyOrleansLoggingFactoryExtensions.AddLegacyOrleansLogging(ILoggingBuilder, IEnumerable(Of ILogConsumer), OrleansLoggerSeverityOverrides, IPEndPoint, EventBulkingOptions)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.Logging.Legacy.LegacyOrleansLoggingFactoryExtensions.AddLegacyOrleansLogging(ILoggingBuilder, IEnumerable(Of Orleans.Runtime.ILogConsumer), Orleans.Logging.Legacy.OrleansLoggerSeverityOverrides, IPEndPoint, Orleans.Logging.Legacy.EventBulkingOptions)
+  name.vb: AddLegacyOrleansLogging(ILoggingBuilder, IEnumerable(Of ILogConsumer), OrleansLoggerSeverityOverrides, IPEndPoint, EventBulkingOptions)
+- uid: Orleans.Logging.Legacy.LegacyOrleansLoggingFactoryExtensions.AddMessageBulkingLoggerProvider``1(ILoggingBuilder,``0,Orleans.Logging.Legacy.EventBulkingOptions)
+  commentId: M:Orleans.Logging.Legacy.LegacyOrleansLoggingFactoryExtensions.AddMessageBulkingLoggerProvider``1(ILoggingBuilder,``0,Orleans.Logging.Legacy.EventBulkingOptions)
+  id: AddMessageBulkingLoggerProvider``1(ILoggingBuilder,``0,Orleans.Logging.Legacy.EventBulkingOptions)
+  isExtensionMethod: true
+  parent: Orleans.Logging.Legacy.LegacyOrleansLoggingFactoryExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddMessageBulkingLoggerProvider<TDecoratedLoggerProvider>(ILoggingBuilder, TDecoratedLoggerProvider, EventBulkingOptions)
+  nameWithType: LegacyOrleansLoggingFactoryExtensions.AddMessageBulkingLoggerProvider<TDecoratedLoggerProvider>(ILoggingBuilder, TDecoratedLoggerProvider, EventBulkingOptions)
+  fullName: Orleans.Logging.Legacy.LegacyOrleansLoggingFactoryExtensions.AddMessageBulkingLoggerProvider<TDecoratedLoggerProvider>(ILoggingBuilder, TDecoratedLoggerProvider, Orleans.Logging.Legacy.EventBulkingOptions)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Logging/LegacyOrleansLoggingFactoryExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AddMessageBulkingLoggerProvider
+    path: src/Orleans.Core.Legacy/Logging/LegacyOrleansLoggingFactoryExtensions.cs
+    startLine: 66
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Logging.Legacy
+  summary: "\nAdd event bulking feature onto <code data-dev-comment-type=\"paramref\" class=\"paramref\">provider</code>, and add that new logger provider \n<xref href=\"Orleans.Logging.Legacy.EventBulkingLoggerProvider%601\" data-throw-if-not-resolved=\"false\"></xref> into <code data-dev-comment-type=\"paramref\" class=\"paramref\">builder</code>.\n"
+  example: []
+  syntax:
+    content: 'public static ILoggingBuilder AddMessageBulkingLoggerProvider<TDecoratedLoggerProvider>(this ILoggingBuilder builder, TDecoratedLoggerProvider provider, EventBulkingOptions eventBulkingOptions = null)where TDecoratedLoggerProvider : ILoggerProvider'
+    parameters:
+    - id: builder
+      type: ILoggingBuilder
+      description: logger builder
+    - id: provider
+      type: '{TDecoratedLoggerProvider}'
+      description: logger provider
+    - id: eventBulkingOptions
+      type: Orleans.Logging.Legacy.EventBulkingOptions
+      description: options for event bulking feature
+    typeParameters:
+    - id: TDecoratedLoggerProvider
+    return:
+      type: ILoggingBuilder
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AddMessageBulkingLoggerProvider(Of TDecoratedLoggerProvider As ILoggerProvider)(builder As ILoggingBuilder, provider As TDecoratedLoggerProvider, eventBulkingOptions As EventBulkingOptions = Nothing) As ILoggingBuilder
+  overload: Orleans.Logging.Legacy.LegacyOrleansLoggingFactoryExtensions.AddMessageBulkingLoggerProvider*
+  nameWithType.vb: LegacyOrleansLoggingFactoryExtensions.AddMessageBulkingLoggerProvider(Of TDecoratedLoggerProvider)(ILoggingBuilder, TDecoratedLoggerProvider, EventBulkingOptions)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.Logging.Legacy.LegacyOrleansLoggingFactoryExtensions.AddMessageBulkingLoggerProvider(Of TDecoratedLoggerProvider)(ILoggingBuilder, TDecoratedLoggerProvider, Orleans.Logging.Legacy.EventBulkingOptions)
+  name.vb: AddMessageBulkingLoggerProvider(Of TDecoratedLoggerProvider)(ILoggingBuilder, TDecoratedLoggerProvider, EventBulkingOptions)
+references:
+- uid: Orleans.Logging.Legacy
+  commentId: N:Orleans.Logging.Legacy
+  isExternal: false
+  name: Orleans.Logging.Legacy
+  nameWithType: Orleans.Logging.Legacy
+  fullName: Orleans.Logging.Legacy
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Logging.Legacy.LegacyOrleansLoggerProvider
+  commentId: T:Orleans.Logging.Legacy.LegacyOrleansLoggerProvider
+  isExternal: false
+  name: LegacyOrleansLoggerProvider
+  nameWithType: LegacyOrleansLoggerProvider
+  fullName: Orleans.Logging.Legacy.LegacyOrleansLoggerProvider
+- uid: Orleans.Logging.Legacy.LegacyOrleansLoggingFactoryExtensions.AddLegacyOrleansLogging*
+  commentId: Overload:Orleans.Logging.Legacy.LegacyOrleansLoggingFactoryExtensions.AddLegacyOrleansLogging
+  isExternal: false
+  name: AddLegacyOrleansLogging
+  nameWithType: LegacyOrleansLoggingFactoryExtensions.AddLegacyOrleansLogging
+  fullName: Orleans.Logging.Legacy.LegacyOrleansLoggingFactoryExtensions.AddLegacyOrleansLogging
+- uid: ILoggingBuilder
+  isExternal: true
+  name: ILoggingBuilder
+  nameWithType: ILoggingBuilder
+  fullName: ILoggingBuilder
+- uid: IEnumerable{Orleans.Runtime.ILogConsumer}
+  commentId: '!:IEnumerable{Orleans.Runtime.ILogConsumer}'
+  definition: IEnumerable`1
+  name: IEnumerable<ILogConsumer>
+  nameWithType: IEnumerable<ILogConsumer>
+  fullName: IEnumerable<Orleans.Runtime.ILogConsumer>
+  nameWithType.vb: IEnumerable(Of ILogConsumer)
+  fullName.vb: IEnumerable(Of Orleans.Runtime.ILogConsumer)
+  name.vb: IEnumerable(Of ILogConsumer)
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Orleans.Runtime.ILogConsumer
+    name: ILogConsumer
+    nameWithType: ILogConsumer
+    fullName: Orleans.Runtime.ILogConsumer
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Orleans.Runtime.ILogConsumer
+    name: ILogConsumer
+    nameWithType: ILogConsumer
+    fullName: Orleans.Runtime.ILogConsumer
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IPEndPoint
+  isExternal: true
+  name: IPEndPoint
+  nameWithType: IPEndPoint
+  fullName: IPEndPoint
+- uid: Orleans.Logging.Legacy.EventBulkingOptions
+  commentId: T:Orleans.Logging.Legacy.EventBulkingOptions
+  parent: Orleans.Logging.Legacy
+  isExternal: false
+  name: EventBulkingOptions
+  nameWithType: EventBulkingOptions
+  fullName: Orleans.Logging.Legacy.EventBulkingOptions
+- uid: IEnumerable`1
+  isExternal: true
+  name: IEnumerable<>
+  nameWithType: IEnumerable<>
+  fullName: IEnumerable<>
+  nameWithType.vb: IEnumerable(Of )
+  fullName.vb: IEnumerable(Of )
+  name.vb: IEnumerable(Of )
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Logging.Legacy.OrleansLoggerSeverityOverrides
+  commentId: T:Orleans.Logging.Legacy.OrleansLoggerSeverityOverrides
+  parent: Orleans.Logging.Legacy
+  isExternal: false
+  name: OrleansLoggerSeverityOverrides
+  nameWithType: OrleansLoggerSeverityOverrides
+  fullName: Orleans.Logging.Legacy.OrleansLoggerSeverityOverrides
+- uid: Orleans.Logging.Legacy.EventBulkingLoggerProvider`1
+  commentId: T:Orleans.Logging.Legacy.EventBulkingLoggerProvider`1
+  isExternal: false
+  name: EventBulkingLoggerProvider<TDecoratedLoggerProvider>
+  nameWithType: EventBulkingLoggerProvider<TDecoratedLoggerProvider>
+  fullName: Orleans.Logging.Legacy.EventBulkingLoggerProvider<TDecoratedLoggerProvider>
+  nameWithType.vb: EventBulkingLoggerProvider(Of TDecoratedLoggerProvider)
+  fullName.vb: Orleans.Logging.Legacy.EventBulkingLoggerProvider(Of TDecoratedLoggerProvider)
+  name.vb: EventBulkingLoggerProvider(Of TDecoratedLoggerProvider)
+  spec.csharp:
+  - uid: Orleans.Logging.Legacy.EventBulkingLoggerProvider`1
+    name: EventBulkingLoggerProvider
+    nameWithType: EventBulkingLoggerProvider
+    fullName: Orleans.Logging.Legacy.EventBulkingLoggerProvider
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDecoratedLoggerProvider
+    nameWithType: TDecoratedLoggerProvider
+    fullName: TDecoratedLoggerProvider
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Orleans.Logging.Legacy.EventBulkingLoggerProvider`1
+    name: EventBulkingLoggerProvider
+    nameWithType: EventBulkingLoggerProvider
+    fullName: Orleans.Logging.Legacy.EventBulkingLoggerProvider
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDecoratedLoggerProvider
+    nameWithType: TDecoratedLoggerProvider
+    fullName: TDecoratedLoggerProvider
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Logging.Legacy.LegacyOrleansLoggingFactoryExtensions.AddMessageBulkingLoggerProvider*
+  commentId: Overload:Orleans.Logging.Legacy.LegacyOrleansLoggingFactoryExtensions.AddMessageBulkingLoggerProvider
+  isExternal: false
+  name: AddMessageBulkingLoggerProvider
+  nameWithType: LegacyOrleansLoggingFactoryExtensions.AddMessageBulkingLoggerProvider
+  fullName: Orleans.Logging.Legacy.LegacyOrleansLoggingFactoryExtensions.AddMessageBulkingLoggerProvider
+- uid: '{TDecoratedLoggerProvider}'
+  commentId: '!:TDecoratedLoggerProvider'
+  definition: TDecoratedLoggerProvider
+  name: TDecoratedLoggerProvider
+  nameWithType: TDecoratedLoggerProvider
+  fullName: TDecoratedLoggerProvider
+- uid: TDecoratedLoggerProvider
+  isExternal: false
+  name: TDecoratedLoggerProvider
+  nameWithType: TDecoratedLoggerProvider
+  fullName: TDecoratedLoggerProvider

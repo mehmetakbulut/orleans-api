@@ -1,0 +1,226 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.CodeGeneration.KnownTypeAttribute
+  commentId: T:Orleans.CodeGeneration.KnownTypeAttribute
+  id: KnownTypeAttribute
+  parent: Orleans.CodeGeneration
+  children:
+  - Orleans.CodeGeneration.KnownTypeAttribute.#ctor(Type)
+  langs:
+  - csharp
+  - vb
+  name: KnownTypeAttribute
+  nameWithType: KnownTypeAttribute
+  fullName: Orleans.CodeGeneration.KnownTypeAttribute
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/CodeGeneration/ConsiderForCodeGenerationAttribute.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: KnownTypeAttribute
+    path: src/Orleans.Core.Abstractions/CodeGeneration/ConsiderForCodeGenerationAttribute.cs
+    startLine: 32
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.CodeGeneration
+  summary: "\nThe attribute which informs the code generator that code should be generated for this type.\n"
+  example: []
+  syntax:
+    content: 'public sealed class KnownTypeAttribute : ConsiderForCodeGenerationAttribute'
+    content.vb: >-
+      Public NotInheritable Class KnownTypeAttribute
+
+          Inherits ConsiderForCodeGenerationAttribute
+  inheritance:
+  - System.Object
+  - Orleans.CodeGeneration.ConsiderForCodeGenerationAttribute
+  inheritedMembers:
+  - Orleans.CodeGeneration.ConsiderForCodeGenerationAttribute.Type
+  - Orleans.CodeGeneration.ConsiderForCodeGenerationAttribute.ThrowOnFailure
+  extensionMethods:
+  - Orleans.CodeGeneration.KnownTypeAttribute.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Orleans.CodeGeneration.KnownTypeAttribute.#ctor(Type)
+  commentId: M:Orleans.CodeGeneration.KnownTypeAttribute.#ctor(Type)
+  id: '#ctor(Type)'
+  parent: Orleans.CodeGeneration.KnownTypeAttribute
+  langs:
+  - csharp
+  - vb
+  name: KnownTypeAttribute(Type)
+  nameWithType: KnownTypeAttribute.KnownTypeAttribute(Type)
+  fullName: Orleans.CodeGeneration.KnownTypeAttribute.KnownTypeAttribute(Type)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/CodeGeneration/ConsiderForCodeGenerationAttribute.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Core.Abstractions/CodeGeneration/ConsiderForCodeGenerationAttribute.cs
+    startLine: 37
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.CodeGeneration
+  summary: Initializes a new instance of <xref href="Orleans.CodeGeneration.KnownTypeAttribute" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public KnownTypeAttribute(Type type)
+    parameters:
+    - id: type
+      type: Type
+      description: The type that the generator should generate code for
+    content.vb: Public Sub New(type As Type)
+  overload: Orleans.CodeGeneration.KnownTypeAttribute.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans.CodeGeneration
+  commentId: N:Orleans.CodeGeneration
+  isExternal: false
+  name: Orleans.CodeGeneration
+  nameWithType: Orleans.CodeGeneration
+  fullName: Orleans.CodeGeneration
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.CodeGeneration.ConsiderForCodeGenerationAttribute
+  commentId: T:Orleans.CodeGeneration.ConsiderForCodeGenerationAttribute
+  parent: Orleans.CodeGeneration
+  isExternal: false
+  name: ConsiderForCodeGenerationAttribute
+  nameWithType: ConsiderForCodeGenerationAttribute
+  fullName: Orleans.CodeGeneration.ConsiderForCodeGenerationAttribute
+- uid: Orleans.CodeGeneration.ConsiderForCodeGenerationAttribute.Type
+  commentId: P:Orleans.CodeGeneration.ConsiderForCodeGenerationAttribute.Type
+  parent: Orleans.CodeGeneration.ConsiderForCodeGenerationAttribute
+  isExternal: false
+  name: Type
+  nameWithType: ConsiderForCodeGenerationAttribute.Type
+  fullName: Orleans.CodeGeneration.ConsiderForCodeGenerationAttribute.Type
+- uid: Orleans.CodeGeneration.ConsiderForCodeGenerationAttribute.ThrowOnFailure
+  commentId: P:Orleans.CodeGeneration.ConsiderForCodeGenerationAttribute.ThrowOnFailure
+  parent: Orleans.CodeGeneration.ConsiderForCodeGenerationAttribute
+  isExternal: false
+  name: ThrowOnFailure
+  nameWithType: ConsiderForCodeGenerationAttribute.ThrowOnFailure
+  fullName: Orleans.CodeGeneration.ConsiderForCodeGenerationAttribute.ThrowOnFailure
+- uid: Orleans.CodeGeneration.KnownTypeAttribute.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<KnownTypeAttribute>()
+  nameWithType: ImmutableExt.AsImmutable<KnownTypeAttribute>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.CodeGeneration.KnownTypeAttribute>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of KnownTypeAttribute)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.CodeGeneration.KnownTypeAttribute)()
+  name.vb: AsImmutable(Of KnownTypeAttribute)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<KnownTypeAttribute>
+    nameWithType: ImmutableExt.AsImmutable<KnownTypeAttribute>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.CodeGeneration.KnownTypeAttribute>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of KnownTypeAttribute)
+    nameWithType: ImmutableExt.AsImmutable(Of KnownTypeAttribute)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.CodeGeneration.KnownTypeAttribute)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.CodeGeneration.KnownTypeAttribute
+  commentId: T:Orleans.CodeGeneration.KnownTypeAttribute
+  isExternal: false
+  name: KnownTypeAttribute
+  nameWithType: KnownTypeAttribute
+  fullName: Orleans.CodeGeneration.KnownTypeAttribute
+- uid: Orleans.CodeGeneration.KnownTypeAttribute.#ctor*
+  commentId: Overload:Orleans.CodeGeneration.KnownTypeAttribute.#ctor
+  isExternal: false
+  name: KnownTypeAttribute
+  nameWithType: KnownTypeAttribute.KnownTypeAttribute
+  fullName: Orleans.CodeGeneration.KnownTypeAttribute.KnownTypeAttribute
+- uid: Type
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: Type

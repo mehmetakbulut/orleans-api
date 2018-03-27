@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Reminders.AdoNet.Storage
+  commentId: N:Orleans.Reminders.AdoNet.Storage
+  id: Orleans.Reminders.AdoNet.Storage
+  children:
+  - Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream
+  langs:
+  - csharp
+  - vb
+  name: Orleans.Reminders.AdoNet.Storage
+  nameWithType: Orleans.Reminders.AdoNet.Storage
+  fullName: Orleans.Reminders.AdoNet.Storage
+  type: Namespace
+  assemblies:
+  - Orleans.Reminders.AdoNet
+references:
+- uid: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream
+  commentId: T:Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream
+  isExternal: false
+  name: OrleansRelationalDownloadStream
+  nameWithType: OrleansRelationalDownloadStream
+  fullName: Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream

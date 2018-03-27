@@ -1,0 +1,395 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.CodeGenerator.RoslynCodeGenerator
+  commentId: T:Orleans.CodeGenerator.RoslynCodeGenerator
+  id: RoslynCodeGenerator
+  parent: Orleans.CodeGenerator
+  children:
+  - Orleans.CodeGenerator.RoslynCodeGenerator.#ctor(IApplicationPartManager,ILoggerFactory)
+  - Orleans.CodeGenerator.RoslynCodeGenerator.GenerateAndLoadForAssemblies(IEnumerable{Assembly})
+  - Orleans.CodeGenerator.RoslynCodeGenerator.GenerateSourceForAssembly(Assembly)
+  langs:
+  - csharp
+  - vb
+  name: RoslynCodeGenerator
+  nameWithType: RoslynCodeGenerator
+  fullName: Orleans.CodeGenerator.RoslynCodeGenerator
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.CodeGeneration/RoslynCodeGenerator.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: RoslynCodeGenerator
+    path: src/Orleans.CodeGeneration/RoslynCodeGenerator.cs
+    startLine: 28
+  assemblies:
+  - Orleans.CodeGeneration
+  namespace: Orleans.CodeGenerator
+  summary: "\nImplements a code generator using the Roslyn C# compiler.\n"
+  example: []
+  syntax:
+    content: 'public class RoslynCodeGenerator : object'
+    content.vb: >-
+      Public Class RoslynCodeGenerator
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.CodeGenerator.RoslynCodeGenerator.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.CodeGenerator.RoslynCodeGenerator.#ctor(IApplicationPartManager,ILoggerFactory)
+  commentId: M:Orleans.CodeGenerator.RoslynCodeGenerator.#ctor(IApplicationPartManager,ILoggerFactory)
+  id: '#ctor(IApplicationPartManager,ILoggerFactory)'
+  parent: Orleans.CodeGenerator.RoslynCodeGenerator
+  langs:
+  - csharp
+  - vb
+  name: RoslynCodeGenerator(IApplicationPartManager, ILoggerFactory)
+  nameWithType: RoslynCodeGenerator.RoslynCodeGenerator(IApplicationPartManager, ILoggerFactory)
+  fullName: Orleans.CodeGenerator.RoslynCodeGenerator.RoslynCodeGenerator(IApplicationPartManager, ILoggerFactory)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.CodeGeneration/RoslynCodeGenerator.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.CodeGeneration/RoslynCodeGenerator.cs
+    startLine: 51
+  assemblies:
+  - Orleans.CodeGeneration
+  namespace: Orleans.CodeGenerator
+  summary: "\nInitializes a new instance of the <xref href=\"Orleans.CodeGenerator.RoslynCodeGenerator\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public RoslynCodeGenerator(IApplicationPartManager partManager, ILoggerFactory loggerFactory)
+    parameters:
+    - id: partManager
+      type: IApplicationPartManager
+      description: ''
+    - id: loggerFactory
+      type: ILoggerFactory
+      description: The logger factory.
+    content.vb: Public Sub New(partManager As IApplicationPartManager, loggerFactory As ILoggerFactory)
+  overload: Orleans.CodeGenerator.RoslynCodeGenerator.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.CodeGenerator.RoslynCodeGenerator.GenerateAndLoadForAssemblies(IEnumerable{Assembly})
+  commentId: M:Orleans.CodeGenerator.RoslynCodeGenerator.GenerateAndLoadForAssemblies(IEnumerable{Assembly})
+  id: GenerateAndLoadForAssemblies(IEnumerable{Assembly})
+  parent: Orleans.CodeGenerator.RoslynCodeGenerator
+  langs:
+  - csharp
+  - vb
+  name: GenerateAndLoadForAssemblies(IEnumerable<Assembly>)
+  nameWithType: RoslynCodeGenerator.GenerateAndLoadForAssemblies(IEnumerable<Assembly>)
+  fullName: Orleans.CodeGenerator.RoslynCodeGenerator.GenerateAndLoadForAssemblies(IEnumerable<Assembly>)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.CodeGeneration/RoslynCodeGenerator.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GenerateAndLoadForAssemblies
+    path: src/Orleans.CodeGeneration/RoslynCodeGenerator.cs
+    startLine: 106
+  assemblies:
+  - Orleans.CodeGeneration
+  namespace: Orleans.CodeGenerator
+  summary: "\nGenerates, compiles, and loads the \n"
+  example: []
+  syntax:
+    content: public Assembly GenerateAndLoadForAssemblies(IEnumerable<Assembly> assemblies)
+    parameters:
+    - id: assemblies
+      type: IEnumerable{Assembly}
+      description: "\nThe assemblies to generate code for.\n"
+    return:
+      type: Assembly
+    content.vb: Public Function GenerateAndLoadForAssemblies(assemblies As IEnumerable(Of Assembly)) As Assembly
+  overload: Orleans.CodeGenerator.RoslynCodeGenerator.GenerateAndLoadForAssemblies*
+  nameWithType.vb: RoslynCodeGenerator.GenerateAndLoadForAssemblies(IEnumerable(Of Assembly))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.CodeGenerator.RoslynCodeGenerator.GenerateAndLoadForAssemblies(IEnumerable(Of Assembly))
+  name.vb: GenerateAndLoadForAssemblies(IEnumerable(Of Assembly))
+- uid: Orleans.CodeGenerator.RoslynCodeGenerator.GenerateSourceForAssembly(Assembly)
+  commentId: M:Orleans.CodeGenerator.RoslynCodeGenerator.GenerateSourceForAssembly(Assembly)
+  id: GenerateSourceForAssembly(Assembly)
+  parent: Orleans.CodeGenerator.RoslynCodeGenerator
+  langs:
+  - csharp
+  - vb
+  name: GenerateSourceForAssembly(Assembly)
+  nameWithType: RoslynCodeGenerator.GenerateSourceForAssembly(Assembly)
+  fullName: Orleans.CodeGenerator.RoslynCodeGenerator.GenerateSourceForAssembly(Assembly)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.CodeGeneration/RoslynCodeGenerator.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GenerateSourceForAssembly
+    path: src/Orleans.CodeGeneration/RoslynCodeGenerator.cs
+    startLine: 153
+  assemblies:
+  - Orleans.CodeGeneration
+  namespace: Orleans.CodeGenerator
+  summary: "\nGenerates source code for the provided assembly.\n"
+  example: []
+  syntax:
+    content: public string GenerateSourceForAssembly(Assembly input)
+    parameters:
+    - id: input
+      type: Assembly
+      description: "\nThe assembly to generate source for.\n"
+    return:
+      type: System.String
+      description: "\nThe generated source.\n"
+    content.vb: Public Function GenerateSourceForAssembly(input As Assembly) As String
+  overload: Orleans.CodeGenerator.RoslynCodeGenerator.GenerateSourceForAssembly*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans.CodeGenerator
+  commentId: N:Orleans.CodeGenerator
+  isExternal: false
+  name: Orleans.CodeGenerator
+  nameWithType: Orleans.CodeGenerator
+  fullName: Orleans.CodeGenerator
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.CodeGenerator.RoslynCodeGenerator.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<RoslynCodeGenerator>()
+  nameWithType: ImmutableExt.AsImmutable<RoslynCodeGenerator>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.CodeGenerator.RoslynCodeGenerator>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of RoslynCodeGenerator)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.CodeGenerator.RoslynCodeGenerator)()
+  name.vb: AsImmutable(Of RoslynCodeGenerator)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<RoslynCodeGenerator>
+    nameWithType: ImmutableExt.AsImmutable<RoslynCodeGenerator>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.CodeGenerator.RoslynCodeGenerator>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of RoslynCodeGenerator)
+    nameWithType: ImmutableExt.AsImmutable(Of RoslynCodeGenerator)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.CodeGenerator.RoslynCodeGenerator)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.CodeGenerator.RoslynCodeGenerator
+  commentId: T:Orleans.CodeGenerator.RoslynCodeGenerator
+  isExternal: false
+  name: RoslynCodeGenerator
+  nameWithType: RoslynCodeGenerator
+  fullName: Orleans.CodeGenerator.RoslynCodeGenerator
+- uid: Orleans.CodeGenerator.RoslynCodeGenerator.#ctor*
+  commentId: Overload:Orleans.CodeGenerator.RoslynCodeGenerator.#ctor
+  isExternal: false
+  name: RoslynCodeGenerator
+  nameWithType: RoslynCodeGenerator.RoslynCodeGenerator
+  fullName: Orleans.CodeGenerator.RoslynCodeGenerator.RoslynCodeGenerator
+- uid: IApplicationPartManager
+  commentId: '!:IApplicationPartManager'
+  isExternal: true
+  name: IApplicationPartManager
+  nameWithType: IApplicationPartManager
+  fullName: IApplicationPartManager
+- uid: ILoggerFactory
+  isExternal: true
+  name: ILoggerFactory
+  nameWithType: ILoggerFactory
+  fullName: ILoggerFactory
+- uid: Orleans.CodeGenerator.RoslynCodeGenerator.GenerateAndLoadForAssemblies*
+  commentId: Overload:Orleans.CodeGenerator.RoslynCodeGenerator.GenerateAndLoadForAssemblies
+  isExternal: false
+  name: GenerateAndLoadForAssemblies
+  nameWithType: RoslynCodeGenerator.GenerateAndLoadForAssemblies
+  fullName: Orleans.CodeGenerator.RoslynCodeGenerator.GenerateAndLoadForAssemblies
+- uid: IEnumerable{Assembly}
+  commentId: '!:IEnumerable{Assembly}'
+  definition: IEnumerable`1
+  name: IEnumerable<Assembly>
+  nameWithType: IEnumerable<Assembly>
+  fullName: IEnumerable<Assembly>
+  nameWithType.vb: IEnumerable(Of Assembly)
+  fullName.vb: IEnumerable(Of Assembly)
+  name.vb: IEnumerable(Of Assembly)
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Assembly
+    name: Assembly
+    nameWithType: Assembly
+    fullName: Assembly
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Assembly
+    name: Assembly
+    nameWithType: Assembly
+    fullName: Assembly
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Assembly
+  isExternal: true
+  name: Assembly
+  nameWithType: Assembly
+  fullName: Assembly
+- uid: IEnumerable`1
+  isExternal: true
+  name: IEnumerable<>
+  nameWithType: IEnumerable<>
+  fullName: IEnumerable<>
+  nameWithType.vb: IEnumerable(Of )
+  fullName.vb: IEnumerable(Of )
+  name.vb: IEnumerable(Of )
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.CodeGenerator.RoslynCodeGenerator.GenerateSourceForAssembly*
+  commentId: Overload:Orleans.CodeGenerator.RoslynCodeGenerator.GenerateSourceForAssembly
+  isExternal: false
+  name: GenerateSourceForAssembly
+  nameWithType: RoslynCodeGenerator.GenerateSourceForAssembly
+  fullName: Orleans.CodeGenerator.RoslynCodeGenerator.GenerateSourceForAssembly
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

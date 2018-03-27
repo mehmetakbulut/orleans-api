@@ -1,0 +1,579 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1
+  commentId: T:Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1
+  id: LogStateWithMetaData`1
+  parent: Orleans.EventSourcing.LogStorage
+  children:
+  - Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1.#ctor
+  - Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1.FlipBit(System.String)
+  - Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1.GetBit(System.String)
+  - Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1.GlobalVersion
+  - Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1.Log
+  - Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1.WriteVector
+  langs:
+  - csharp
+  - vb
+  name: LogStateWithMetaData<TEntry>
+  nameWithType: LogStateWithMetaData<TEntry>
+  fullName: Orleans.EventSourcing.LogStorage.LogStateWithMetaData<TEntry>
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/LogStorage/LogStateWithMetaData.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: LogStateWithMetaData
+    path: src/Orleans.EventSourcing/LogStorage/LogStateWithMetaData.cs
+    startLine: 62
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.LogStorage
+  summary: "\nA class that extends grain state with versioning metadata, so that a log-consistent grain\ncan use a standard storage provider via <xref href=\"Orleans.EventSourcing.LogStorage.LogViewAdaptor%602\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: 'public class LogStateWithMetaData<TEntry> : object where TEntry : class'
+    typeParameters:
+    - id: TEntry
+      description: ''
+    content.vb: >-
+      Public Class LogStateWithMetaData(Of TEntry As Class)
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  nameWithType.vb: LogStateWithMetaData(Of TEntry)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: Orleans.EventSourcing.LogStorage.LogStateWithMetaData(Of TEntry)
+  name.vb: LogStateWithMetaData(Of TEntry)
+- uid: Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1.Log
+  commentId: P:Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1.Log
+  id: Log
+  parent: Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1
+  langs:
+  - csharp
+  - vb
+  name: Log
+  nameWithType: LogStateWithMetaData<TEntry>.Log
+  fullName: Orleans.EventSourcing.LogStorage.LogStateWithMetaData<TEntry>.Log
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/LogStorage/LogStateWithMetaData.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Log
+    path: src/Orleans.EventSourcing/LogStorage/LogStateWithMetaData.cs
+    startLine: 68
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.LogStorage
+  summary: "\nThe stored view of the log\n"
+  example: []
+  syntax:
+    content: public List<TEntry> Log { get; set; }
+    parameters: []
+    return:
+      type: List{{TEntry}}
+    content.vb: Public Property Log As List(Of TEntry)
+  overload: Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1.Log*
+  nameWithType.vb: LogStateWithMetaData(Of TEntry).Log
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.EventSourcing.LogStorage.LogStateWithMetaData(Of TEntry).Log
+- uid: Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1.GlobalVersion
+  commentId: P:Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1.GlobalVersion
+  id: GlobalVersion
+  parent: Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1
+  langs:
+  - csharp
+  - vb
+  name: GlobalVersion
+  nameWithType: LogStateWithMetaData<TEntry>.GlobalVersion
+  fullName: Orleans.EventSourcing.LogStorage.LogStateWithMetaData<TEntry>.GlobalVersion
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/LogStorage/LogStateWithMetaData.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GlobalVersion
+    path: src/Orleans.EventSourcing/LogStorage/LogStateWithMetaData.cs
+    startLine: 73
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.LogStorage
+  summary: "\nThe length of the log\n"
+  example: []
+  syntax:
+    content: public int GlobalVersion { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property GlobalVersion As Integer
+  overload: Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1.GlobalVersion*
+  nameWithType.vb: LogStateWithMetaData(Of TEntry).GlobalVersion
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: Orleans.EventSourcing.LogStorage.LogStateWithMetaData(Of TEntry).GlobalVersion
+- uid: Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1.WriteVector
+  commentId: P:Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1.WriteVector
+  id: WriteVector
+  parent: Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1
+  langs:
+  - csharp
+  - vb
+  name: WriteVector
+  nameWithType: LogStateWithMetaData<TEntry>.WriteVector
+  fullName: Orleans.EventSourcing.LogStorage.LogStateWithMetaData<TEntry>.WriteVector
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/LogStorage/LogStateWithMetaData.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: WriteVector
+    path: src/Orleans.EventSourcing/LogStorage/LogStateWithMetaData.cs
+    startLine: 84
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.LogStorage
+  summary: "\nMetadata that is used to avoid duplicate appends.\nLogically, this is a (string->bit) map, the keys being replica ids\nBut this map is represented compactly as a simple string to reduce serialization/deserialization overhead\nBits are read by <xref href=\"Orleans.EventSourcing.LogStorage.LogStateWithMetaData%601.GetBit(System.String)\" data-throw-if-not-resolved=\"false\"></xref> and flipped by  <xref href=\"Orleans.EventSourcing.LogStorage.LogStateWithMetaData%601.FlipBit(System.String)\" data-throw-if-not-resolved=\"false\"></xref>.\nBits are toggled when writing, so that the retry logic can avoid appending an entry twice\nwhen retrying a failed append. \n"
+  example: []
+  syntax:
+    content: public string WriteVector { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property WriteVector As String
+  overload: Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1.WriteVector*
+  nameWithType.vb: LogStateWithMetaData(Of TEntry).WriteVector
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.EventSourcing.LogStorage.LogStateWithMetaData(Of TEntry).WriteVector
+- uid: Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1.#ctor
+  commentId: M:Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1.#ctor
+  id: '#ctor'
+  parent: Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1
+  langs:
+  - csharp
+  - vb
+  name: LogStateWithMetaData()
+  nameWithType: LogStateWithMetaData<TEntry>.LogStateWithMetaData()
+  fullName: Orleans.EventSourcing.LogStorage.LogStateWithMetaData<TEntry>.LogStateWithMetaData()
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/LogStorage/LogStateWithMetaData.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.EventSourcing/LogStorage/LogStateWithMetaData.cs
+    startLine: 89
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.LogStorage
+  summary: "\nInitializes a new instance of the <xref href=\"Orleans.EventSourcing.LogStorage.LogStateWithMetaData%601\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public LogStateWithMetaData()
+    content.vb: Public Sub New
+  overload: Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1.#ctor*
+  nameWithType.vb: LogStateWithMetaData(Of TEntry).LogStateWithMetaData()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.EventSourcing.LogStorage.LogStateWithMetaData(Of TEntry).LogStateWithMetaData()
+- uid: Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1.GetBit(System.String)
+  commentId: M:Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1.GetBit(System.String)
+  id: GetBit(System.String)
+  parent: Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1
+  langs:
+  - csharp
+  - vb
+  name: GetBit(String)
+  nameWithType: LogStateWithMetaData<TEntry>.GetBit(String)
+  fullName: Orleans.EventSourcing.LogStorage.LogStateWithMetaData<TEntry>.GetBit(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/LogStorage/LogStateWithMetaData.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetBit
+    path: src/Orleans.EventSourcing/LogStorage/LogStateWithMetaData.cs
+    startLine: 101
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.LogStorage
+  summary: "\nGets one of the bits in <xref href=\"Orleans.EventSourcing.LogStorage.LogStateWithMetaData%601.WriteVector\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public bool GetBit(string Replica)
+    parameters:
+    - id: Replica
+      type: System.String
+      description: The replica for which we want to look up the bit
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Function GetBit(Replica As String) As Boolean
+  overload: Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1.GetBit*
+  nameWithType.vb: LogStateWithMetaData(Of TEntry).GetBit(String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.EventSourcing.LogStorage.LogStateWithMetaData(Of TEntry).GetBit(System.String)
+- uid: Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1.FlipBit(System.String)
+  commentId: M:Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1.FlipBit(System.String)
+  id: FlipBit(System.String)
+  parent: Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1
+  langs:
+  - csharp
+  - vb
+  name: FlipBit(String)
+  nameWithType: LogStateWithMetaData<TEntry>.FlipBit(String)
+  fullName: Orleans.EventSourcing.LogStorage.LogStateWithMetaData<TEntry>.FlipBit(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/LogStorage/LogStateWithMetaData.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: FlipBit
+    path: src/Orleans.EventSourcing/LogStorage/LogStateWithMetaData.cs
+    startLine: 110
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.LogStorage
+  summary: "\ntoggle one of the bits in <xref href=\"Orleans.EventSourcing.LogStorage.LogStateWithMetaData%601.WriteVector\" data-throw-if-not-resolved=\"false\"></xref> and return the new value.\n"
+  example: []
+  syntax:
+    content: public bool FlipBit(string Replica)
+    parameters:
+    - id: Replica
+      type: System.String
+      description: The replica for which we want to flip the bit
+    return:
+      type: System.Boolean
+      description: the state of the bit after flipping it
+    content.vb: Public Function FlipBit(Replica As String) As Boolean
+  overload: Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1.FlipBit*
+  nameWithType.vb: LogStateWithMetaData(Of TEntry).FlipBit(String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.EventSourcing.LogStorage.LogStateWithMetaData(Of TEntry).FlipBit(System.String)
+references:
+- uid: Orleans.EventSourcing.LogStorage.LogViewAdaptor`2
+  commentId: T:Orleans.EventSourcing.LogStorage.LogViewAdaptor`2
+- uid: Orleans.EventSourcing.LogStorage
+  commentId: N:Orleans.EventSourcing.LogStorage
+  isExternal: false
+  name: Orleans.EventSourcing.LogStorage
+  nameWithType: Orleans.EventSourcing.LogStorage
+  fullName: Orleans.EventSourcing.LogStorage
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<LogStateWithMetaData<TEntry>>()
+  nameWithType: ImmutableExt.AsImmutable<LogStateWithMetaData<TEntry>>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.EventSourcing.LogStorage.LogStateWithMetaData<TEntry>>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of LogStateWithMetaData(Of TEntry))()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.EventSourcing.LogStorage.LogStateWithMetaData(Of TEntry))()
+  name.vb: AsImmutable(Of LogStateWithMetaData(Of TEntry))()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<LogStateWithMetaData<TEntry>>
+    nameWithType: ImmutableExt.AsImmutable<LogStateWithMetaData<TEntry>>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.EventSourcing.LogStorage.LogStateWithMetaData<TEntry>>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of LogStateWithMetaData(Of TEntry))
+    nameWithType: ImmutableExt.AsImmutable(Of LogStateWithMetaData(Of TEntry))
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.EventSourcing.LogStorage.LogStateWithMetaData(Of TEntry))
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1.Log*
+  commentId: Overload:Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1.Log
+  isExternal: false
+  name: Log
+  nameWithType: LogStateWithMetaData<TEntry>.Log
+  fullName: Orleans.EventSourcing.LogStorage.LogStateWithMetaData<TEntry>.Log
+  nameWithType.vb: LogStateWithMetaData(Of TEntry).Log
+  fullName.vb: Orleans.EventSourcing.LogStorage.LogStateWithMetaData(Of TEntry).Log
+- uid: List{{TEntry}}
+  commentId: '!:List{`0}'
+  definition: List`1
+  name: List<TEntry>
+  nameWithType: List<TEntry>
+  fullName: List<TEntry>
+  nameWithType.vb: List(Of TEntry)
+  fullName.vb: List(Of TEntry)
+  name.vb: List(Of TEntry)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEntry
+    nameWithType: TEntry
+    fullName: TEntry
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEntry
+    nameWithType: TEntry
+    fullName: TEntry
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1.GlobalVersion*
+  commentId: Overload:Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1.GlobalVersion
+  isExternal: false
+  name: GlobalVersion
+  nameWithType: LogStateWithMetaData<TEntry>.GlobalVersion
+  fullName: Orleans.EventSourcing.LogStorage.LogStateWithMetaData<TEntry>.GlobalVersion
+  nameWithType.vb: LogStateWithMetaData(Of TEntry).GlobalVersion
+  fullName.vb: Orleans.EventSourcing.LogStorage.LogStateWithMetaData(Of TEntry).GlobalVersion
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1.GetBit(System.String)
+  commentId: M:Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1.GetBit(System.String)
+- uid: Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1.FlipBit(System.String)
+  commentId: M:Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1.FlipBit(System.String)
+- uid: Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1.WriteVector*
+  commentId: Overload:Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1.WriteVector
+  isExternal: false
+  name: WriteVector
+  nameWithType: LogStateWithMetaData<TEntry>.WriteVector
+  fullName: Orleans.EventSourcing.LogStorage.LogStateWithMetaData<TEntry>.WriteVector
+  nameWithType.vb: LogStateWithMetaData(Of TEntry).WriteVector
+  fullName.vb: Orleans.EventSourcing.LogStorage.LogStateWithMetaData(Of TEntry).WriteVector
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1
+  commentId: T:Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1
+  isExternal: false
+  name: LogStateWithMetaData<TEntry>
+  nameWithType: LogStateWithMetaData<TEntry>
+  fullName: Orleans.EventSourcing.LogStorage.LogStateWithMetaData<TEntry>
+  nameWithType.vb: LogStateWithMetaData(Of TEntry)
+  fullName.vb: Orleans.EventSourcing.LogStorage.LogStateWithMetaData(Of TEntry)
+  name.vb: LogStateWithMetaData(Of TEntry)
+  spec.csharp:
+  - uid: Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1
+    name: LogStateWithMetaData
+    nameWithType: LogStateWithMetaData
+    fullName: Orleans.EventSourcing.LogStorage.LogStateWithMetaData
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEntry
+    nameWithType: TEntry
+    fullName: TEntry
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1
+    name: LogStateWithMetaData
+    nameWithType: LogStateWithMetaData
+    fullName: Orleans.EventSourcing.LogStorage.LogStateWithMetaData
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEntry
+    nameWithType: TEntry
+    fullName: TEntry
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1.#ctor*
+  commentId: Overload:Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1.#ctor
+  isExternal: false
+  name: LogStateWithMetaData
+  nameWithType: LogStateWithMetaData<TEntry>.LogStateWithMetaData
+  fullName: Orleans.EventSourcing.LogStorage.LogStateWithMetaData<TEntry>.LogStateWithMetaData
+  nameWithType.vb: LogStateWithMetaData(Of TEntry).LogStateWithMetaData
+  fullName.vb: Orleans.EventSourcing.LogStorage.LogStateWithMetaData(Of TEntry).LogStateWithMetaData
+- uid: Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1.WriteVector
+  commentId: P:Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1.WriteVector
+- uid: Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1.GetBit*
+  commentId: Overload:Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1.GetBit
+  isExternal: false
+  name: GetBit
+  nameWithType: LogStateWithMetaData<TEntry>.GetBit
+  fullName: Orleans.EventSourcing.LogStorage.LogStateWithMetaData<TEntry>.GetBit
+  nameWithType.vb: LogStateWithMetaData(Of TEntry).GetBit
+  fullName.vb: Orleans.EventSourcing.LogStorage.LogStateWithMetaData(Of TEntry).GetBit
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1.FlipBit*
+  commentId: Overload:Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1.FlipBit
+  isExternal: false
+  name: FlipBit
+  nameWithType: LogStateWithMetaData<TEntry>.FlipBit
+  fullName: Orleans.EventSourcing.LogStorage.LogStateWithMetaData<TEntry>.FlipBit
+  nameWithType.vb: LogStateWithMetaData(Of TEntry).FlipBit
+  fullName.vb: Orleans.EventSourcing.LogStorage.LogStateWithMetaData(Of TEntry).FlipBit

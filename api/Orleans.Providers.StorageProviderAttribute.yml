@@ -1,0 +1,235 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Providers.StorageProviderAttribute
+  commentId: T:Orleans.Providers.StorageProviderAttribute
+  id: StorageProviderAttribute
+  parent: Orleans.Providers
+  children:
+  - Orleans.Providers.StorageProviderAttribute.#ctor
+  - Orleans.Providers.StorageProviderAttribute.ProviderName
+  langs:
+  - csharp
+  - vb
+  name: StorageProviderAttribute
+  nameWithType: StorageProviderAttribute
+  fullName: Orleans.Providers.StorageProviderAttribute
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Providers/ProviderGrainAttributes.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: StorageProviderAttribute
+    path: src/Orleans.Core.Abstractions/Providers/ProviderGrainAttributes.cs
+    startLine: 14
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Providers
+  summary: "\nThe [Orleans.Providers.StorageProvider] attribute is used to define which storage provider to use for persistence of grain state.\n<p>\nSpecifying [Orleans.Providers.StorageProvider] property is recommended for all grains which extend Grain&lt;T>.\nIf no [Orleans.Providers.StorageProvider] attribute is  specified, then a &quot;Default&quot; strorage provider will be used.\nIf a suitable storage provider cannot be located for this grain, then the grain will fail to load into the Silo.\n</p>\n"
+  example: []
+  syntax:
+    content: 'public sealed class StorageProviderAttribute : Attribute'
+    content.vb: >-
+      Public NotInheritable Class StorageProviderAttribute
+
+          Inherits Attribute
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.Providers.StorageProviderAttribute.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Orleans.Providers.StorageProviderAttribute.ProviderName
+  commentId: P:Orleans.Providers.StorageProviderAttribute.ProviderName
+  id: ProviderName
+  parent: Orleans.Providers.StorageProviderAttribute
+  langs:
+  - csharp
+  - vb
+  name: ProviderName
+  nameWithType: StorageProviderAttribute.ProviderName
+  fullName: Orleans.Providers.StorageProviderAttribute.ProviderName
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Providers/ProviderGrainAttributes.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ProviderName
+    path: src/Orleans.Core.Abstractions/Providers/ProviderGrainAttributes.cs
+    startLine: 20
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Providers
+  summary: "\nThe name of the provider to be used for persisting of grain state\n"
+  example: []
+  syntax:
+    content: public string ProviderName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ProviderName As String
+  overload: Orleans.Providers.StorageProviderAttribute.ProviderName*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Providers.StorageProviderAttribute.#ctor
+  commentId: M:Orleans.Providers.StorageProviderAttribute.#ctor
+  id: '#ctor'
+  parent: Orleans.Providers.StorageProviderAttribute
+  langs:
+  - csharp
+  - vb
+  name: StorageProviderAttribute()
+  nameWithType: StorageProviderAttribute.StorageProviderAttribute()
+  fullName: Orleans.Providers.StorageProviderAttribute.StorageProviderAttribute()
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Providers/ProviderGrainAttributes.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Core.Abstractions/Providers/ProviderGrainAttributes.cs
+    startLine: 22
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Providers
+  syntax:
+    content: public StorageProviderAttribute()
+    content.vb: Public Sub New
+  overload: Orleans.Providers.StorageProviderAttribute.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans.Providers
+  commentId: N:Orleans.Providers
+  isExternal: false
+  name: Orleans.Providers
+  nameWithType: Orleans.Providers
+  fullName: Orleans.Providers
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Providers.StorageProviderAttribute.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<StorageProviderAttribute>()
+  nameWithType: ImmutableExt.AsImmutable<StorageProviderAttribute>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Providers.StorageProviderAttribute>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of StorageProviderAttribute)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Providers.StorageProviderAttribute)()
+  name.vb: AsImmutable(Of StorageProviderAttribute)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<StorageProviderAttribute>
+    nameWithType: ImmutableExt.AsImmutable<StorageProviderAttribute>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Providers.StorageProviderAttribute>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of StorageProviderAttribute)
+    nameWithType: ImmutableExt.AsImmutable(Of StorageProviderAttribute)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Providers.StorageProviderAttribute)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Providers.StorageProviderAttribute.ProviderName*
+  commentId: Overload:Orleans.Providers.StorageProviderAttribute.ProviderName
+  isExternal: false
+  name: ProviderName
+  nameWithType: StorageProviderAttribute.ProviderName
+  fullName: Orleans.Providers.StorageProviderAttribute.ProviderName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Orleans.Providers.StorageProviderAttribute.#ctor*
+  commentId: Overload:Orleans.Providers.StorageProviderAttribute.#ctor
+  isExternal: false
+  name: StorageProviderAttribute
+  nameWithType: StorageProviderAttribute.StorageProviderAttribute
+  fullName: Orleans.Providers.StorageProviderAttribute.StorageProviderAttribute

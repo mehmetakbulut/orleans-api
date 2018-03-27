@@ -1,0 +1,1166 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Runtime.LoggerExtensions
+  commentId: T:Orleans.Runtime.LoggerExtensions
+  id: LoggerExtensions
+  parent: Orleans.Runtime
+  children:
+  - Orleans.Runtime.LoggerExtensions.Error(Orleans.Runtime.Logger,System.Int32,System.String,Exception)
+  - Orleans.Runtime.LoggerExtensions.GetSubLogger(Orleans.Runtime.Logger,System.String,System.String)
+  - Orleans.Runtime.LoggerExtensions.Info(Orleans.Runtime.Logger,System.Int32,System.String)
+  - Orleans.Runtime.LoggerExtensions.Info(Orleans.Runtime.Logger,System.Int32,System.String,System.Object[])
+  - Orleans.Runtime.LoggerExtensions.Info(Orleans.Runtime.Logger,System.String)
+  - Orleans.Runtime.LoggerExtensions.Info(Orleans.Runtime.Logger,System.String,System.Object[])
+  - Orleans.Runtime.LoggerExtensions.Verbose(Orleans.Runtime.Logger,System.Int32,System.String)
+  - Orleans.Runtime.LoggerExtensions.Verbose(Orleans.Runtime.Logger,System.Int32,System.String,System.Object[])
+  - Orleans.Runtime.LoggerExtensions.Verbose(Orleans.Runtime.Logger,System.String)
+  - Orleans.Runtime.LoggerExtensions.Verbose(Orleans.Runtime.Logger,System.String,System.Object[])
+  - Orleans.Runtime.LoggerExtensions.Verbose2(Orleans.Runtime.Logger,System.Int32,System.String)
+  - Orleans.Runtime.LoggerExtensions.Verbose2(Orleans.Runtime.Logger,System.Int32,System.String,System.Object[])
+  - Orleans.Runtime.LoggerExtensions.Verbose2(Orleans.Runtime.Logger,System.String)
+  - Orleans.Runtime.LoggerExtensions.Verbose2(Orleans.Runtime.Logger,System.String,System.Object[])
+  - Orleans.Runtime.LoggerExtensions.Verbose3(Orleans.Runtime.Logger,System.Int32,System.String)
+  - Orleans.Runtime.LoggerExtensions.Verbose3(Orleans.Runtime.Logger,System.Int32,System.String,System.Object[])
+  - Orleans.Runtime.LoggerExtensions.Verbose3(Orleans.Runtime.Logger,System.String)
+  - Orleans.Runtime.LoggerExtensions.Verbose3(Orleans.Runtime.Logger,System.String,System.Object[])
+  - Orleans.Runtime.LoggerExtensions.Warn(Orleans.Runtime.Logger,System.Int32,System.String,Exception)
+  - Orleans.Runtime.LoggerExtensions.Warn(Orleans.Runtime.Logger,System.Int32,System.String,System.Object[])
+  langs:
+  - csharp
+  - vb
+  name: LoggerExtensions
+  nameWithType: LoggerExtensions
+  fullName: Orleans.Runtime.LoggerExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Logging/LegacyClass/LoggerExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: LoggerExtensions
+    path: src/Orleans.Core.Legacy/Logging/LegacyClass/LoggerExtensions.cs
+    startLine: 7
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime
+  syntax:
+    content: 'public static class LoggerExtensions : object'
+    content.vb: >-
+      Public Module LoggerExtensions
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Orleans.Runtime.LoggerExtensions.GetSubLogger(Orleans.Runtime.Logger,System.String,System.String)
+  commentId: M:Orleans.Runtime.LoggerExtensions.GetSubLogger(Orleans.Runtime.Logger,System.String,System.String)
+  id: GetSubLogger(Orleans.Runtime.Logger,System.String,System.String)
+  isExtensionMethod: true
+  parent: Orleans.Runtime.LoggerExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetSubLogger(Logger, String, String)
+  nameWithType: LoggerExtensions.GetSubLogger(Logger, String, String)
+  fullName: Orleans.Runtime.LoggerExtensions.GetSubLogger(Orleans.Runtime.Logger, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Logging/LegacyClass/LoggerExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetSubLogger
+    path: src/Orleans.Core.Legacy/Logging/LegacyClass/LoggerExtensions.cs
+    startLine: 15
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime
+  summary: "\nFinds or creates a logger named after the existing logger with the appended name added.\n"
+  example: []
+  syntax:
+    content: public static Logger GetSubLogger(this Logger logger, string appendedName, string seperator = ".")
+    parameters:
+    - id: logger
+      type: Orleans.Runtime.Logger
+    - id: appendedName
+      type: System.String
+    - id: seperator
+      type: System.String
+    return:
+      type: Orleans.Runtime.Logger
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetSubLogger(logger As Logger, appendedName As String, seperator As String = ".") As Logger
+  overload: Orleans.Runtime.LoggerExtensions.GetSubLogger*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.Runtime.LoggerExtensions.Verbose(Orleans.Runtime.Logger,System.String,System.Object[])
+  commentId: M:Orleans.Runtime.LoggerExtensions.Verbose(Orleans.Runtime.Logger,System.String,System.Object[])
+  id: Verbose(Orleans.Runtime.Logger,System.String,System.Object[])
+  isExtensionMethod: true
+  parent: Orleans.Runtime.LoggerExtensions
+  langs:
+  - csharp
+  - vb
+  name: Verbose(Logger, String, Object[])
+  nameWithType: LoggerExtensions.Verbose(Logger, String, Object[])
+  fullName: Orleans.Runtime.LoggerExtensions.Verbose(Orleans.Runtime.Logger, System.String, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Logging/LegacyClass/LoggerExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Verbose
+    path: src/Orleans.Core.Legacy/Logging/LegacyClass/LoggerExtensions.cs
+    startLine: 28
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime
+  summary: "\nWrites a log entry at the Verbose severity level.\nVerbose is suitable for debugging information that should usually not be logged in production.\nVerbose is lower than Info.\n"
+  example: []
+  syntax:
+    content: public static void Verbose(this Logger logger, string format, params object[] args)
+    parameters:
+    - id: logger
+      type: Orleans.Runtime.Logger
+      description: The logger
+    - id: format
+      type: System.String
+      description: A standard format string, suitable for String.Format.
+    - id: args
+      type: System.Object[]
+      description: Any arguments to the format string.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub Verbose(logger As Logger, format As String, ParamArray args As Object())
+  overload: Orleans.Runtime.LoggerExtensions.Verbose*
+  nameWithType.vb: LoggerExtensions.Verbose(Logger, String, Object())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.Runtime.LoggerExtensions.Verbose(Orleans.Runtime.Logger, System.String, System.Object())
+  name.vb: Verbose(Logger, String, Object())
+- uid: Orleans.Runtime.LoggerExtensions.Verbose(Orleans.Runtime.Logger,System.String)
+  commentId: M:Orleans.Runtime.LoggerExtensions.Verbose(Orleans.Runtime.Logger,System.String)
+  id: Verbose(Orleans.Runtime.Logger,System.String)
+  isExtensionMethod: true
+  parent: Orleans.Runtime.LoggerExtensions
+  langs:
+  - csharp
+  - vb
+  name: Verbose(Logger, String)
+  nameWithType: LoggerExtensions.Verbose(Logger, String)
+  fullName: Orleans.Runtime.LoggerExtensions.Verbose(Orleans.Runtime.Logger, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Logging/LegacyClass/LoggerExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Verbose
+    path: src/Orleans.Core.Legacy/Logging/LegacyClass/LoggerExtensions.cs
+    startLine: 40
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime
+  summary: "\nWrites a log entry at the Verbose severity level.\nVerbose is suitable for debugging information that should usually not be logged in production.\nVerbose is lower than Info.\n"
+  example: []
+  syntax:
+    content: public static void Verbose(this Logger logger, string message)
+    parameters:
+    - id: logger
+      type: Orleans.Runtime.Logger
+      description: The logger
+    - id: message
+      type: System.String
+      description: The log message.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub Verbose(logger As Logger, message As String)
+  overload: Orleans.Runtime.LoggerExtensions.Verbose*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.Runtime.LoggerExtensions.Verbose2(Orleans.Runtime.Logger,System.String,System.Object[])
+  commentId: M:Orleans.Runtime.LoggerExtensions.Verbose2(Orleans.Runtime.Logger,System.String,System.Object[])
+  id: Verbose2(Orleans.Runtime.Logger,System.String,System.Object[])
+  isExtensionMethod: true
+  parent: Orleans.Runtime.LoggerExtensions
+  langs:
+  - csharp
+  - vb
+  name: Verbose2(Logger, String, Object[])
+  nameWithType: LoggerExtensions.Verbose2(Logger, String, Object[])
+  fullName: Orleans.Runtime.LoggerExtensions.Verbose2(Orleans.Runtime.Logger, System.String, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Logging/LegacyClass/LoggerExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Verbose2
+    path: src/Orleans.Core.Legacy/Logging/LegacyClass/LoggerExtensions.cs
+    startLine: 52
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime
+  summary: "\nWrites a log entry at the Verbose2 severity level.\nVerbose2 is lower than Verbose.\n"
+  example: []
+  syntax:
+    content: public static void Verbose2(this Logger logger, string format, params object[] args)
+    parameters:
+    - id: logger
+      type: Orleans.Runtime.Logger
+      description: The logger
+    - id: format
+      type: System.String
+      description: A standard format string, suitable for String.Format.
+    - id: args
+      type: System.Object[]
+      description: Any arguments to the format string.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub Verbose2(logger As Logger, format As String, ParamArray args As Object())
+  overload: Orleans.Runtime.LoggerExtensions.Verbose2*
+  nameWithType.vb: LoggerExtensions.Verbose2(Logger, String, Object())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.Runtime.LoggerExtensions.Verbose2(Orleans.Runtime.Logger, System.String, System.Object())
+  name.vb: Verbose2(Logger, String, Object())
+- uid: Orleans.Runtime.LoggerExtensions.Verbose2(Orleans.Runtime.Logger,System.String)
+  commentId: M:Orleans.Runtime.LoggerExtensions.Verbose2(Orleans.Runtime.Logger,System.String)
+  id: Verbose2(Orleans.Runtime.Logger,System.String)
+  isExtensionMethod: true
+  parent: Orleans.Runtime.LoggerExtensions
+  langs:
+  - csharp
+  - vb
+  name: Verbose2(Logger, String)
+  nameWithType: LoggerExtensions.Verbose2(Logger, String)
+  fullName: Orleans.Runtime.LoggerExtensions.Verbose2(Orleans.Runtime.Logger, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Logging/LegacyClass/LoggerExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Verbose2
+    path: src/Orleans.Core.Legacy/Logging/LegacyClass/LoggerExtensions.cs
+    startLine: 63
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime
+  summary: "\nWrites a log entry at the Verbose2 severity level.\nVerbose2 is lower than Verbose.\n"
+  example: []
+  syntax:
+    content: public static void Verbose2(this Logger logger, string message)
+    parameters:
+    - id: logger
+      type: Orleans.Runtime.Logger
+      description: The logger
+    - id: message
+      type: System.String
+      description: The log message.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub Verbose2(logger As Logger, message As String)
+  overload: Orleans.Runtime.LoggerExtensions.Verbose2*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.Runtime.LoggerExtensions.Verbose3(Orleans.Runtime.Logger,System.String,System.Object[])
+  commentId: M:Orleans.Runtime.LoggerExtensions.Verbose3(Orleans.Runtime.Logger,System.String,System.Object[])
+  id: Verbose3(Orleans.Runtime.Logger,System.String,System.Object[])
+  isExtensionMethod: true
+  parent: Orleans.Runtime.LoggerExtensions
+  langs:
+  - csharp
+  - vb
+  name: Verbose3(Logger, String, Object[])
+  nameWithType: LoggerExtensions.Verbose3(Logger, String, Object[])
+  fullName: Orleans.Runtime.LoggerExtensions.Verbose3(Orleans.Runtime.Logger, System.String, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Logging/LegacyClass/LoggerExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Verbose3
+    path: src/Orleans.Core.Legacy/Logging/LegacyClass/LoggerExtensions.cs
+    startLine: 75
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime
+  summary: "\nWrites a log entry at the Verbose3 severity level.\nVerbose3 is the lowest severity level.\n"
+  example: []
+  syntax:
+    content: public static void Verbose3(this Logger logger, string format, params object[] args)
+    parameters:
+    - id: logger
+      type: Orleans.Runtime.Logger
+      description: The logger
+    - id: format
+      type: System.String
+      description: A standard format string, suitable for String.Format.
+    - id: args
+      type: System.Object[]
+      description: Any arguments to the format string.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub Verbose3(logger As Logger, format As String, ParamArray args As Object())
+  overload: Orleans.Runtime.LoggerExtensions.Verbose3*
+  nameWithType.vb: LoggerExtensions.Verbose3(Logger, String, Object())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.Runtime.LoggerExtensions.Verbose3(Orleans.Runtime.Logger, System.String, System.Object())
+  name.vb: Verbose3(Logger, String, Object())
+- uid: Orleans.Runtime.LoggerExtensions.Verbose3(Orleans.Runtime.Logger,System.String)
+  commentId: M:Orleans.Runtime.LoggerExtensions.Verbose3(Orleans.Runtime.Logger,System.String)
+  id: Verbose3(Orleans.Runtime.Logger,System.String)
+  isExtensionMethod: true
+  parent: Orleans.Runtime.LoggerExtensions
+  langs:
+  - csharp
+  - vb
+  name: Verbose3(Logger, String)
+  nameWithType: LoggerExtensions.Verbose3(Logger, String)
+  fullName: Orleans.Runtime.LoggerExtensions.Verbose3(Orleans.Runtime.Logger, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Logging/LegacyClass/LoggerExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Verbose3
+    path: src/Orleans.Core.Legacy/Logging/LegacyClass/LoggerExtensions.cs
+    startLine: 86
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime
+  summary: "\nWrites a log entry at the Verbose3 severity level.\nVerbose3 is the lowest severity level.\n"
+  example: []
+  syntax:
+    content: public static void Verbose3(this Logger logger, string message)
+    parameters:
+    - id: logger
+      type: Orleans.Runtime.Logger
+      description: The logger
+    - id: message
+      type: System.String
+      description: The log message.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub Verbose3(logger As Logger, message As String)
+  overload: Orleans.Runtime.LoggerExtensions.Verbose3*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.Runtime.LoggerExtensions.Info(Orleans.Runtime.Logger,System.String,System.Object[])
+  commentId: M:Orleans.Runtime.LoggerExtensions.Info(Orleans.Runtime.Logger,System.String,System.Object[])
+  id: Info(Orleans.Runtime.Logger,System.String,System.Object[])
+  isExtensionMethod: true
+  parent: Orleans.Runtime.LoggerExtensions
+  langs:
+  - csharp
+  - vb
+  name: Info(Logger, String, Object[])
+  nameWithType: LoggerExtensions.Info(Logger, String, Object[])
+  fullName: Orleans.Runtime.LoggerExtensions.Info(Orleans.Runtime.Logger, System.String, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Logging/LegacyClass/LoggerExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Info
+    path: src/Orleans.Core.Legacy/Logging/LegacyClass/LoggerExtensions.cs
+    startLine: 99
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime
+  summary: "\nWrites a log entry at the Info severity level.\nInfo is suitable for information that does not indicate an error but that should usually be logged in production.\nInfo is lower than Warning.\n"
+  example: []
+  syntax:
+    content: public static void Info(this Logger logger, string format, params object[] args)
+    parameters:
+    - id: logger
+      type: Orleans.Runtime.Logger
+      description: Target logger.
+    - id: format
+      type: System.String
+      description: A standard format string, suitable for String.Format.
+    - id: args
+      type: System.Object[]
+      description: Any arguments to the format string.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub Info(logger As Logger, format As String, ParamArray args As Object())
+  overload: Orleans.Runtime.LoggerExtensions.Info*
+  nameWithType.vb: LoggerExtensions.Info(Logger, String, Object())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.Runtime.LoggerExtensions.Info(Orleans.Runtime.Logger, System.String, System.Object())
+  name.vb: Info(Logger, String, Object())
+- uid: Orleans.Runtime.LoggerExtensions.Info(Orleans.Runtime.Logger,System.String)
+  commentId: M:Orleans.Runtime.LoggerExtensions.Info(Orleans.Runtime.Logger,System.String)
+  id: Info(Orleans.Runtime.Logger,System.String)
+  isExtensionMethod: true
+  parent: Orleans.Runtime.LoggerExtensions
+  langs:
+  - csharp
+  - vb
+  name: Info(Logger, String)
+  nameWithType: LoggerExtensions.Info(Logger, String)
+  fullName: Orleans.Runtime.LoggerExtensions.Info(Orleans.Runtime.Logger, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Logging/LegacyClass/LoggerExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Info
+    path: src/Orleans.Core.Legacy/Logging/LegacyClass/LoggerExtensions.cs
+    startLine: 111
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime
+  summary: "\nWrites a log entry at the Info severity level.\nInfo is suitable for information that does not indicate an error but that should usually be logged in production.\nInfo is lower than Warning.\n"
+  example: []
+  syntax:
+    content: public static void Info(this Logger logger, string message)
+    parameters:
+    - id: logger
+      type: Orleans.Runtime.Logger
+      description: Target logger.
+    - id: message
+      type: System.String
+      description: The log message.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub Info(logger As Logger, message As String)
+  overload: Orleans.Runtime.LoggerExtensions.Info*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.Runtime.LoggerExtensions.Verbose(Orleans.Runtime.Logger,System.Int32,System.String,System.Object[])
+  commentId: M:Orleans.Runtime.LoggerExtensions.Verbose(Orleans.Runtime.Logger,System.Int32,System.String,System.Object[])
+  id: Verbose(Orleans.Runtime.Logger,System.Int32,System.String,System.Object[])
+  isExtensionMethod: true
+  parent: Orleans.Runtime.LoggerExtensions
+  langs:
+  - csharp
+  - vb
+  name: Verbose(Logger, Int32, String, Object[])
+  nameWithType: LoggerExtensions.Verbose(Logger, Int32, String, Object[])
+  fullName: Orleans.Runtime.LoggerExtensions.Verbose(Orleans.Runtime.Logger, System.Int32, System.String, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Logging/LegacyClass/LoggerExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Verbose
+    path: src/Orleans.Core.Legacy/Logging/LegacyClass/LoggerExtensions.cs
+    startLine: 125
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime
+  summary: "\nWrites a log entry at the Verbose severity level, with the specified log id code.\nVerbose is suitable for debugging information that should usually not be logged in production.\nVerbose is lower than Info.\n"
+  example: []
+  syntax:
+    content: public static void Verbose(this Logger logger, int logCode, string format, params object[] args)
+    parameters:
+    - id: logger
+      type: Orleans.Runtime.Logger
+      description: The logger
+    - id: logCode
+      type: System.Int32
+      description: The log code associated with this message.
+    - id: format
+      type: System.String
+      description: A standard format string, suitable for String.Format.
+    - id: args
+      type: System.Object[]
+      description: Any arguments to the format string.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub Verbose(logger As Logger, logCode As Integer, format As String, ParamArray args As Object())
+  overload: Orleans.Runtime.LoggerExtensions.Verbose*
+  nameWithType.vb: LoggerExtensions.Verbose(Logger, Int32, String, Object())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.Runtime.LoggerExtensions.Verbose(Orleans.Runtime.Logger, System.Int32, System.String, System.Object())
+  name.vb: Verbose(Logger, Int32, String, Object())
+- uid: Orleans.Runtime.LoggerExtensions.Verbose(Orleans.Runtime.Logger,System.Int32,System.String)
+  commentId: M:Orleans.Runtime.LoggerExtensions.Verbose(Orleans.Runtime.Logger,System.Int32,System.String)
+  id: Verbose(Orleans.Runtime.Logger,System.Int32,System.String)
+  isExtensionMethod: true
+  parent: Orleans.Runtime.LoggerExtensions
+  langs:
+  - csharp
+  - vb
+  name: Verbose(Logger, Int32, String)
+  nameWithType: LoggerExtensions.Verbose(Logger, Int32, String)
+  fullName: Orleans.Runtime.LoggerExtensions.Verbose(Orleans.Runtime.Logger, System.Int32, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Logging/LegacyClass/LoggerExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Verbose
+    path: src/Orleans.Core.Legacy/Logging/LegacyClass/LoggerExtensions.cs
+    startLine: 138
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime
+  summary: "\nWrites a log entry at the Verbose severity level, with the specified log id code.\nVerbose is suitable for debugging information that should usually not be logged in production.\nVerbose is lower than Info.\n"
+  example: []
+  syntax:
+    content: public static void Verbose(this Logger logger, int logCode, string message)
+    parameters:
+    - id: logger
+      type: Orleans.Runtime.Logger
+      description: The logger
+    - id: logCode
+      type: System.Int32
+      description: The log code associated with this message.
+    - id: message
+      type: System.String
+      description: The log message.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub Verbose(logger As Logger, logCode As Integer, message As String)
+  overload: Orleans.Runtime.LoggerExtensions.Verbose*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.Runtime.LoggerExtensions.Verbose2(Orleans.Runtime.Logger,System.Int32,System.String,System.Object[])
+  commentId: M:Orleans.Runtime.LoggerExtensions.Verbose2(Orleans.Runtime.Logger,System.Int32,System.String,System.Object[])
+  id: Verbose2(Orleans.Runtime.Logger,System.Int32,System.String,System.Object[])
+  isExtensionMethod: true
+  parent: Orleans.Runtime.LoggerExtensions
+  langs:
+  - csharp
+  - vb
+  name: Verbose2(Logger, Int32, String, Object[])
+  nameWithType: LoggerExtensions.Verbose2(Logger, Int32, String, Object[])
+  fullName: Orleans.Runtime.LoggerExtensions.Verbose2(Orleans.Runtime.Logger, System.Int32, System.String, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Logging/LegacyClass/LoggerExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Verbose2
+    path: src/Orleans.Core.Legacy/Logging/LegacyClass/LoggerExtensions.cs
+    startLine: 151
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime
+  summary: "\nWrites a log entry at the Verbose2 severity level, with the specified log id code.\nVerbose2 is lower than Verbose.\n"
+  example: []
+  syntax:
+    content: public static void Verbose2(this Logger logger, int logCode, string format, params object[] args)
+    parameters:
+    - id: logger
+      type: Orleans.Runtime.Logger
+      description: The logger
+    - id: logCode
+      type: System.Int32
+      description: The log code associated with this message.
+    - id: format
+      type: System.String
+      description: A standard format string, suitable for String.Format.
+    - id: args
+      type: System.Object[]
+      description: Any arguments to the format string.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub Verbose2(logger As Logger, logCode As Integer, format As String, ParamArray args As Object())
+  overload: Orleans.Runtime.LoggerExtensions.Verbose2*
+  nameWithType.vb: LoggerExtensions.Verbose2(Logger, Int32, String, Object())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.Runtime.LoggerExtensions.Verbose2(Orleans.Runtime.Logger, System.Int32, System.String, System.Object())
+  name.vb: Verbose2(Logger, Int32, String, Object())
+- uid: Orleans.Runtime.LoggerExtensions.Verbose2(Orleans.Runtime.Logger,System.Int32,System.String)
+  commentId: M:Orleans.Runtime.LoggerExtensions.Verbose2(Orleans.Runtime.Logger,System.Int32,System.String)
+  id: Verbose2(Orleans.Runtime.Logger,System.Int32,System.String)
+  isExtensionMethod: true
+  parent: Orleans.Runtime.LoggerExtensions
+  langs:
+  - csharp
+  - vb
+  name: Verbose2(Logger, Int32, String)
+  nameWithType: LoggerExtensions.Verbose2(Logger, Int32, String)
+  fullName: Orleans.Runtime.LoggerExtensions.Verbose2(Orleans.Runtime.Logger, System.Int32, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Logging/LegacyClass/LoggerExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Verbose2
+    path: src/Orleans.Core.Legacy/Logging/LegacyClass/LoggerExtensions.cs
+    startLine: 163
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime
+  summary: "\nWrites a log entry at the Verbose2 severity level, with the specified log id code.\nVerbose2 is lower than Verbose.\n"
+  example: []
+  syntax:
+    content: public static void Verbose2(this Logger logger, int logCode, string message)
+    parameters:
+    - id: logger
+      type: Orleans.Runtime.Logger
+      description: The logger
+    - id: logCode
+      type: System.Int32
+      description: The log code associated with this message.
+    - id: message
+      type: System.String
+      description: The log message.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub Verbose2(logger As Logger, logCode As Integer, message As String)
+  overload: Orleans.Runtime.LoggerExtensions.Verbose2*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.Runtime.LoggerExtensions.Verbose3(Orleans.Runtime.Logger,System.Int32,System.String,System.Object[])
+  commentId: M:Orleans.Runtime.LoggerExtensions.Verbose3(Orleans.Runtime.Logger,System.Int32,System.String,System.Object[])
+  id: Verbose3(Orleans.Runtime.Logger,System.Int32,System.String,System.Object[])
+  isExtensionMethod: true
+  parent: Orleans.Runtime.LoggerExtensions
+  langs:
+  - csharp
+  - vb
+  name: Verbose3(Logger, Int32, String, Object[])
+  nameWithType: LoggerExtensions.Verbose3(Logger, Int32, String, Object[])
+  fullName: Orleans.Runtime.LoggerExtensions.Verbose3(Orleans.Runtime.Logger, System.Int32, System.String, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Logging/LegacyClass/LoggerExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Verbose3
+    path: src/Orleans.Core.Legacy/Logging/LegacyClass/LoggerExtensions.cs
+    startLine: 176
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime
+  summary: "\nWrites a log entry at the Verbose3 severity level, with the specified log id code.\nVerbose3 is the lowest severity level.\n"
+  example: []
+  syntax:
+    content: public static void Verbose3(this Logger logger, int logCode, string format, params object[] args)
+    parameters:
+    - id: logger
+      type: Orleans.Runtime.Logger
+      description: The logger
+    - id: logCode
+      type: System.Int32
+      description: The log code associated with this message.
+    - id: format
+      type: System.String
+      description: A standard format string, suitable for String.Format.
+    - id: args
+      type: System.Object[]
+      description: Any arguments to the format string.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub Verbose3(logger As Logger, logCode As Integer, format As String, ParamArray args As Object())
+  overload: Orleans.Runtime.LoggerExtensions.Verbose3*
+  nameWithType.vb: LoggerExtensions.Verbose3(Logger, Int32, String, Object())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.Runtime.LoggerExtensions.Verbose3(Orleans.Runtime.Logger, System.Int32, System.String, System.Object())
+  name.vb: Verbose3(Logger, Int32, String, Object())
+- uid: Orleans.Runtime.LoggerExtensions.Verbose3(Orleans.Runtime.Logger,System.Int32,System.String)
+  commentId: M:Orleans.Runtime.LoggerExtensions.Verbose3(Orleans.Runtime.Logger,System.Int32,System.String)
+  id: Verbose3(Orleans.Runtime.Logger,System.Int32,System.String)
+  isExtensionMethod: true
+  parent: Orleans.Runtime.LoggerExtensions
+  langs:
+  - csharp
+  - vb
+  name: Verbose3(Logger, Int32, String)
+  nameWithType: LoggerExtensions.Verbose3(Logger, Int32, String)
+  fullName: Orleans.Runtime.LoggerExtensions.Verbose3(Orleans.Runtime.Logger, System.Int32, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Logging/LegacyClass/LoggerExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Verbose3
+    path: src/Orleans.Core.Legacy/Logging/LegacyClass/LoggerExtensions.cs
+    startLine: 188
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime
+  summary: "\nWrites a log entry at the Verbose3 severity level, with the specified log id code.\nVerbose3 is the lowest severity level.\n"
+  example: []
+  syntax:
+    content: public static void Verbose3(this Logger logger, int logCode, string message)
+    parameters:
+    - id: logger
+      type: Orleans.Runtime.Logger
+      description: The logger
+    - id: logCode
+      type: System.Int32
+      description: The log code associated with this message.
+    - id: message
+      type: System.String
+      description: The log message.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub Verbose3(logger As Logger, logCode As Integer, message As String)
+  overload: Orleans.Runtime.LoggerExtensions.Verbose3*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.Runtime.LoggerExtensions.Info(Orleans.Runtime.Logger,System.Int32,System.String,System.Object[])
+  commentId: M:Orleans.Runtime.LoggerExtensions.Info(Orleans.Runtime.Logger,System.Int32,System.String,System.Object[])
+  id: Info(Orleans.Runtime.Logger,System.Int32,System.String,System.Object[])
+  isExtensionMethod: true
+  parent: Orleans.Runtime.LoggerExtensions
+  langs:
+  - csharp
+  - vb
+  name: Info(Logger, Int32, String, Object[])
+  nameWithType: LoggerExtensions.Info(Logger, Int32, String, Object[])
+  fullName: Orleans.Runtime.LoggerExtensions.Info(Orleans.Runtime.Logger, System.Int32, System.String, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Logging/LegacyClass/LoggerExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Info
+    path: src/Orleans.Core.Legacy/Logging/LegacyClass/LoggerExtensions.cs
+    startLine: 202
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime
+  summary: "\nWrites a log entry at the Info severity level, with the specified log id code.\nInfo is suitable for information that does not indicate an error but that should usually be logged in production.\nInfo is lower than Warning.\n"
+  example: []
+  syntax:
+    content: public static void Info(this Logger logger, int logCode, string format, params object[] args)
+    parameters:
+    - id: logger
+      type: Orleans.Runtime.Logger
+      description: The logger
+    - id: logCode
+      type: System.Int32
+      description: The log code associated with this message.
+    - id: format
+      type: System.String
+      description: A standard format string, suitable for String.Format.
+    - id: args
+      type: System.Object[]
+      description: Any arguments to the format string.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub Info(logger As Logger, logCode As Integer, format As String, ParamArray args As Object())
+  overload: Orleans.Runtime.LoggerExtensions.Info*
+  nameWithType.vb: LoggerExtensions.Info(Logger, Int32, String, Object())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.Runtime.LoggerExtensions.Info(Orleans.Runtime.Logger, System.Int32, System.String, System.Object())
+  name.vb: Info(Logger, Int32, String, Object())
+- uid: Orleans.Runtime.LoggerExtensions.Info(Orleans.Runtime.Logger,System.Int32,System.String)
+  commentId: M:Orleans.Runtime.LoggerExtensions.Info(Orleans.Runtime.Logger,System.Int32,System.String)
+  id: Info(Orleans.Runtime.Logger,System.Int32,System.String)
+  isExtensionMethod: true
+  parent: Orleans.Runtime.LoggerExtensions
+  langs:
+  - csharp
+  - vb
+  name: Info(Logger, Int32, String)
+  nameWithType: LoggerExtensions.Info(Logger, Int32, String)
+  fullName: Orleans.Runtime.LoggerExtensions.Info(Orleans.Runtime.Logger, System.Int32, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Logging/LegacyClass/LoggerExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Info
+    path: src/Orleans.Core.Legacy/Logging/LegacyClass/LoggerExtensions.cs
+    startLine: 215
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime
+  summary: "\nWrites a log entry at the Info severity level, with the specified log id code.\nInfo is suitable for information that does not indicate an error but that should usually be logged in production.\nInfo is lower than Warning.\n"
+  example: []
+  syntax:
+    content: public static void Info(this Logger logger, int logCode, string message)
+    parameters:
+    - id: logger
+      type: Orleans.Runtime.Logger
+      description: The logger
+    - id: logCode
+      type: System.Int32
+      description: The log code associated with this message.
+    - id: message
+      type: System.String
+      description: The log message.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub Info(logger As Logger, logCode As Integer, message As String)
+  overload: Orleans.Runtime.LoggerExtensions.Info*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.Runtime.LoggerExtensions.Warn(Orleans.Runtime.Logger,System.Int32,System.String,System.Object[])
+  commentId: M:Orleans.Runtime.LoggerExtensions.Warn(Orleans.Runtime.Logger,System.Int32,System.String,System.Object[])
+  id: Warn(Orleans.Runtime.Logger,System.Int32,System.String,System.Object[])
+  isExtensionMethod: true
+  parent: Orleans.Runtime.LoggerExtensions
+  langs:
+  - csharp
+  - vb
+  name: Warn(Logger, Int32, String, Object[])
+  nameWithType: LoggerExtensions.Warn(Logger, Int32, String, Object[])
+  fullName: Orleans.Runtime.LoggerExtensions.Warn(Orleans.Runtime.Logger, System.Int32, System.String, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Logging/LegacyClass/LoggerExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Warn
+    path: src/Orleans.Core.Legacy/Logging/LegacyClass/LoggerExtensions.cs
+    startLine: 232
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime
+  summary: "\nWrites a log entry at the Warning severity level, with the specified log id code.\nWarning is suitable for problem conditions that the system or application can handle by itself,\nbut that the administrator should be aware of.\nTypically these are situations that are expected but that may eventually require an administrative\nresponse if they recur.\nWarning is lower than Error.\n"
+  example: []
+  syntax:
+    content: public static void Warn(this Logger logger, int logCode, string format, params object[] args)
+    parameters:
+    - id: logger
+      type: Orleans.Runtime.Logger
+      description: The logger
+    - id: logCode
+      type: System.Int32
+      description: The log code associated with this message.
+    - id: format
+      type: System.String
+      description: A standard format string, suitable for String.Format.
+    - id: args
+      type: System.Object[]
+      description: Any arguments to the format string.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub Warn(logger As Logger, logCode As Integer, format As String, ParamArray args As Object())
+  overload: Orleans.Runtime.LoggerExtensions.Warn*
+  nameWithType.vb: LoggerExtensions.Warn(Logger, Int32, String, Object())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.Runtime.LoggerExtensions.Warn(Orleans.Runtime.Logger, System.Int32, System.String, System.Object())
+  name.vb: Warn(Logger, Int32, String, Object())
+- uid: Orleans.Runtime.LoggerExtensions.Warn(Orleans.Runtime.Logger,System.Int32,System.String,Exception)
+  commentId: M:Orleans.Runtime.LoggerExtensions.Warn(Orleans.Runtime.Logger,System.Int32,System.String,Exception)
+  id: Warn(Orleans.Runtime.Logger,System.Int32,System.String,Exception)
+  isExtensionMethod: true
+  parent: Orleans.Runtime.LoggerExtensions
+  langs:
+  - csharp
+  - vb
+  name: Warn(Logger, Int32, String, Exception)
+  nameWithType: LoggerExtensions.Warn(Logger, Int32, String, Exception)
+  fullName: Orleans.Runtime.LoggerExtensions.Warn(Orleans.Runtime.Logger, System.Int32, System.String, Exception)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Logging/LegacyClass/LoggerExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Warn
+    path: src/Orleans.Core.Legacy/Logging/LegacyClass/LoggerExtensions.cs
+    startLine: 249
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime
+  summary: "\nWrites a log entry at the Warning severity level, with the specified log id code.\nWarning is suitable for problem conditions that the system or application can handle by itself,\nbut that the administrator should be aware of.\nTypically these are situations that are expected but that may eventually require an administrative\nresponse if they recur.\nWarning is lower than Error.\n"
+  example: []
+  syntax:
+    content: public static void Warn(this Logger logger, int logCode, string message, Exception exception = null)
+    parameters:
+    - id: logger
+      type: Orleans.Runtime.Logger
+      description: The logger
+    - id: logCode
+      type: System.Int32
+      description: The log code associated with this message.
+    - id: message
+      type: System.String
+      description: The warning message to log.
+    - id: exception
+      type: Exception
+      description: An exception related to the warning, if any.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub Warn(logger As Logger, logCode As Integer, message As String, exception As Exception = Nothing)
+  overload: Orleans.Runtime.LoggerExtensions.Warn*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.Runtime.LoggerExtensions.Error(Orleans.Runtime.Logger,System.Int32,System.String,Exception)
+  commentId: M:Orleans.Runtime.LoggerExtensions.Error(Orleans.Runtime.Logger,System.Int32,System.String,Exception)
+  id: Error(Orleans.Runtime.Logger,System.Int32,System.String,Exception)
+  isExtensionMethod: true
+  parent: Orleans.Runtime.LoggerExtensions
+  langs:
+  - csharp
+  - vb
+  name: Error(Logger, Int32, String, Exception)
+  nameWithType: LoggerExtensions.Error(Logger, Int32, String, Exception)
+  fullName: Orleans.Runtime.LoggerExtensions.Error(Orleans.Runtime.Logger, System.Int32, System.String, Exception)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Logging/LegacyClass/LoggerExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Error
+    path: src/Orleans.Core.Legacy/Logging/LegacyClass/LoggerExtensions.cs
+    startLine: 262
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime
+  summary: "\nWrites a log entry at the Error severity level, with the specified log id code.\nError is suitable for problem conditions that require immediate administrative response.\n"
+  example: []
+  syntax:
+    content: public static void Error(this Logger logger, int logCode, string message, Exception exception = null)
+    parameters:
+    - id: logger
+      type: Orleans.Runtime.Logger
+      description: The logger
+    - id: logCode
+      type: System.Int32
+      description: The log code associated with this message.
+    - id: message
+      type: System.String
+      description: The error message to log.
+    - id: exception
+      type: Exception
+      description: An exception related to the error, if any.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub Error(logger As Logger, logCode As Integer, message As String, exception As Exception = Nothing)
+  overload: Orleans.Runtime.LoggerExtensions.Error*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Orleans.Runtime
+  commentId: N:Orleans.Runtime
+  isExternal: false
+  name: Orleans.Runtime
+  nameWithType: Orleans.Runtime
+  fullName: Orleans.Runtime
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Runtime.LoggerExtensions.GetSubLogger*
+  commentId: Overload:Orleans.Runtime.LoggerExtensions.GetSubLogger
+  isExternal: false
+  name: GetSubLogger
+  nameWithType: LoggerExtensions.GetSubLogger
+  fullName: Orleans.Runtime.LoggerExtensions.GetSubLogger
+- uid: Orleans.Runtime.Logger
+  commentId: T:Orleans.Runtime.Logger
+  parent: Orleans.Runtime
+  isExternal: false
+  name: Logger
+  nameWithType: Logger
+  fullName: Orleans.Runtime.Logger
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Orleans.Runtime.LoggerExtensions.Verbose*
+  commentId: Overload:Orleans.Runtime.LoggerExtensions.Verbose
+  isExternal: false
+  name: Verbose
+  nameWithType: LoggerExtensions.Verbose
+  fullName: Orleans.Runtime.LoggerExtensions.Verbose
+- uid: System.Object[]
+  name: Object[]
+  nameWithType: Object[]
+  fullName: System.Object[]
+  nameWithType.vb: Object()
+  fullName.vb: System.Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Orleans.Runtime.LoggerExtensions.Verbose2*
+  commentId: Overload:Orleans.Runtime.LoggerExtensions.Verbose2
+  isExternal: false
+  name: Verbose2
+  nameWithType: LoggerExtensions.Verbose2
+  fullName: Orleans.Runtime.LoggerExtensions.Verbose2
+- uid: Orleans.Runtime.LoggerExtensions.Verbose3*
+  commentId: Overload:Orleans.Runtime.LoggerExtensions.Verbose3
+  isExternal: false
+  name: Verbose3
+  nameWithType: LoggerExtensions.Verbose3
+  fullName: Orleans.Runtime.LoggerExtensions.Verbose3
+- uid: Orleans.Runtime.LoggerExtensions.Info*
+  commentId: Overload:Orleans.Runtime.LoggerExtensions.Info
+  isExternal: false
+  name: Info
+  nameWithType: LoggerExtensions.Info
+  fullName: Orleans.Runtime.LoggerExtensions.Info
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Orleans.Runtime.LoggerExtensions.Warn*
+  commentId: Overload:Orleans.Runtime.LoggerExtensions.Warn
+  isExternal: false
+  name: Warn
+  nameWithType: LoggerExtensions.Warn
+  fullName: Orleans.Runtime.LoggerExtensions.Warn
+- uid: Exception
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: Exception
+- uid: Orleans.Runtime.LoggerExtensions.Error*
+  commentId: Overload:Orleans.Runtime.LoggerExtensions.Error
+  isExternal: false
+  name: Error
+  nameWithType: LoggerExtensions.Error
+  fullName: Orleans.Runtime.LoggerExtensions.Error

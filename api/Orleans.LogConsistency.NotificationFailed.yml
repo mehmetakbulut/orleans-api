@@ -1,0 +1,353 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.LogConsistency.NotificationFailed
+  commentId: T:Orleans.LogConsistency.NotificationFailed
+  id: NotificationFailed
+  parent: Orleans.LogConsistency
+  children:
+  - Orleans.LogConsistency.NotificationFailed.Exception
+  - Orleans.LogConsistency.NotificationFailed.RemoteClusterId
+  langs:
+  - csharp
+  - vb
+  name: NotificationFailed
+  nameWithType: NotificationFailed
+  fullName: Orleans.LogConsistency.NotificationFailed
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/LogConsistency/ConnectionIssues.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: NotificationFailed
+    path: src/Orleans.Core.Abstractions/LogConsistency/ConnectionIssues.cs
+    startLine: 51
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.LogConsistency
+  summary: "\nRepresents information about notification failures encountered inside log consistency protocols.\n"
+  example: []
+  syntax:
+    content: 'public abstract class NotificationFailed : ConnectionIssue'
+    content.vb: >-
+      Public MustInherit Class NotificationFailed
+
+          Inherits ConnectionIssue
+  inheritance:
+  - System.Object
+  - Orleans.LogConsistency.ConnectionIssue
+  inheritedMembers:
+  - Orleans.LogConsistency.ConnectionIssue.TimeStamp
+  - Orleans.LogConsistency.ConnectionIssue.TimeOfFirstFailure
+  - Orleans.LogConsistency.ConnectionIssue.NumberOfConsecutiveFailures
+  - Orleans.LogConsistency.ConnectionIssue.RetryDelay
+  - Orleans.LogConsistency.ConnectionIssue.ComputeRetryDelay(System.Nullable{TimeSpan})
+  extensionMethods:
+  - Orleans.LogConsistency.NotificationFailed.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: Orleans.LogConsistency.NotificationFailed.RemoteClusterId
+  commentId: P:Orleans.LogConsistency.NotificationFailed.RemoteClusterId
+  id: RemoteClusterId
+  parent: Orleans.LogConsistency.NotificationFailed
+  langs:
+  - csharp
+  - vb
+  name: RemoteClusterId
+  nameWithType: NotificationFailed.RemoteClusterId
+  fullName: Orleans.LogConsistency.NotificationFailed.RemoteClusterId
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/LogConsistency/ConnectionIssues.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: RemoteClusterId
+    path: src/Orleans.Core.Abstractions/LogConsistency/ConnectionIssues.cs
+    startLine: 57
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.LogConsistency
+  summary: "\nThe clusterId of the remote cluster to which we had an issue when sending change notifications.\n"
+  example: []
+  syntax:
+    content: public string RemoteClusterId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property RemoteClusterId As String
+  overload: Orleans.LogConsistency.NotificationFailed.RemoteClusterId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.LogConsistency.NotificationFailed.Exception
+  commentId: P:Orleans.LogConsistency.NotificationFailed.Exception
+  id: Exception
+  parent: Orleans.LogConsistency.NotificationFailed
+  langs:
+  - csharp
+  - vb
+  name: Exception
+  nameWithType: NotificationFailed.Exception
+  fullName: Orleans.LogConsistency.NotificationFailed.Exception
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/LogConsistency/ConnectionIssues.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Exception
+    path: src/Orleans.Core.Abstractions/LogConsistency/ConnectionIssues.cs
+    startLine: 62
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.LogConsistency
+  summary: "\nThe exception we caught, or null if the problem was not caused by an exception.\n"
+  example: []
+  syntax:
+    content: public Exception Exception { get; set; }
+    parameters: []
+    return:
+      type: Exception
+    content.vb: Public Property Exception As Exception
+  overload: Orleans.LogConsistency.NotificationFailed.Exception*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans.LogConsistency
+  commentId: N:Orleans.LogConsistency
+  isExternal: false
+  name: Orleans.LogConsistency
+  nameWithType: Orleans.LogConsistency
+  fullName: Orleans.LogConsistency
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.LogConsistency.ConnectionIssue
+  commentId: T:Orleans.LogConsistency.ConnectionIssue
+  parent: Orleans.LogConsistency
+  isExternal: false
+  name: ConnectionIssue
+  nameWithType: ConnectionIssue
+  fullName: Orleans.LogConsistency.ConnectionIssue
+- uid: Orleans.LogConsistency.ConnectionIssue.TimeStamp
+  commentId: P:Orleans.LogConsistency.ConnectionIssue.TimeStamp
+  parent: Orleans.LogConsistency.ConnectionIssue
+  isExternal: false
+  name: TimeStamp
+  nameWithType: ConnectionIssue.TimeStamp
+  fullName: Orleans.LogConsistency.ConnectionIssue.TimeStamp
+- uid: Orleans.LogConsistency.ConnectionIssue.TimeOfFirstFailure
+  commentId: P:Orleans.LogConsistency.ConnectionIssue.TimeOfFirstFailure
+  parent: Orleans.LogConsistency.ConnectionIssue
+  isExternal: false
+  name: TimeOfFirstFailure
+  nameWithType: ConnectionIssue.TimeOfFirstFailure
+  fullName: Orleans.LogConsistency.ConnectionIssue.TimeOfFirstFailure
+- uid: Orleans.LogConsistency.ConnectionIssue.NumberOfConsecutiveFailures
+  commentId: P:Orleans.LogConsistency.ConnectionIssue.NumberOfConsecutiveFailures
+  parent: Orleans.LogConsistency.ConnectionIssue
+  isExternal: false
+  name: NumberOfConsecutiveFailures
+  nameWithType: ConnectionIssue.NumberOfConsecutiveFailures
+  fullName: Orleans.LogConsistency.ConnectionIssue.NumberOfConsecutiveFailures
+- uid: Orleans.LogConsistency.ConnectionIssue.RetryDelay
+  commentId: P:Orleans.LogConsistency.ConnectionIssue.RetryDelay
+  parent: Orleans.LogConsistency.ConnectionIssue
+  isExternal: false
+  name: RetryDelay
+  nameWithType: ConnectionIssue.RetryDelay
+  fullName: Orleans.LogConsistency.ConnectionIssue.RetryDelay
+- uid: Orleans.LogConsistency.ConnectionIssue.ComputeRetryDelay(System.Nullable{TimeSpan})
+  commentId: M:Orleans.LogConsistency.ConnectionIssue.ComputeRetryDelay(System.Nullable{TimeSpan})
+  parent: Orleans.LogConsistency.ConnectionIssue
+  isExternal: true
+  name: ComputeRetryDelay(Nullable<TimeSpan>)
+  nameWithType: ConnectionIssue.ComputeRetryDelay(Nullable<TimeSpan>)
+  fullName: Orleans.LogConsistency.ConnectionIssue.ComputeRetryDelay(System.Nullable<TimeSpan>)
+  nameWithType.vb: ConnectionIssue.ComputeRetryDelay(Nullable(Of TimeSpan))
+  fullName.vb: Orleans.LogConsistency.ConnectionIssue.ComputeRetryDelay(System.Nullable(Of TimeSpan))
+  name.vb: ComputeRetryDelay(Nullable(Of TimeSpan))
+  spec.csharp:
+  - uid: Orleans.LogConsistency.ConnectionIssue.ComputeRetryDelay(System.Nullable{TimeSpan})
+    name: ComputeRetryDelay
+    nameWithType: ConnectionIssue.ComputeRetryDelay
+    fullName: Orleans.LogConsistency.ConnectionIssue.ComputeRetryDelay
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: TimeSpan
+    name: TimeSpan
+    nameWithType: TimeSpan
+    fullName: TimeSpan
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.LogConsistency.ConnectionIssue.ComputeRetryDelay(System.Nullable{TimeSpan})
+    name: ComputeRetryDelay
+    nameWithType: ConnectionIssue.ComputeRetryDelay
+    fullName: Orleans.LogConsistency.ConnectionIssue.ComputeRetryDelay
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: TimeSpan
+    name: TimeSpan
+    nameWithType: TimeSpan
+    fullName: TimeSpan
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.LogConsistency.NotificationFailed.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<NotificationFailed>()
+  nameWithType: ImmutableExt.AsImmutable<NotificationFailed>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.LogConsistency.NotificationFailed>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of NotificationFailed)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.LogConsistency.NotificationFailed)()
+  name.vb: AsImmutable(Of NotificationFailed)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<NotificationFailed>
+    nameWithType: ImmutableExt.AsImmutable<NotificationFailed>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.LogConsistency.NotificationFailed>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of NotificationFailed)
+    nameWithType: ImmutableExt.AsImmutable(Of NotificationFailed)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.LogConsistency.NotificationFailed)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.LogConsistency.NotificationFailed.RemoteClusterId*
+  commentId: Overload:Orleans.LogConsistency.NotificationFailed.RemoteClusterId
+  isExternal: false
+  name: RemoteClusterId
+  nameWithType: NotificationFailed.RemoteClusterId
+  fullName: Orleans.LogConsistency.NotificationFailed.RemoteClusterId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Orleans.LogConsistency.NotificationFailed.Exception*
+  commentId: Overload:Orleans.LogConsistency.NotificationFailed.Exception
+  isExternal: false
+  name: Exception
+  nameWithType: NotificationFailed.Exception
+  fullName: Orleans.LogConsistency.NotificationFailed.Exception
+- uid: Exception
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: Exception

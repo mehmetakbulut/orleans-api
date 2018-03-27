@@ -1,0 +1,484 @@
+### YamlMime:ManagedReference
+items:
+- uid: OrleansPSUtils.StartGrainClient
+  commentId: T:OrleansPSUtils.StartGrainClient
+  id: StartGrainClient
+  parent: OrleansPSUtils
+  children:
+  - OrleansPSUtils.StartGrainClient.Config
+  - OrleansPSUtils.StartGrainClient.ConfigFile
+  - OrleansPSUtils.StartGrainClient.ConfigFilePath
+  - OrleansPSUtils.StartGrainClient.GatewayAddress
+  - OrleansPSUtils.StartGrainClient.OverrideConfig
+  - OrleansPSUtils.StartGrainClient.ProcessRecord
+  - OrleansPSUtils.StartGrainClient.StopProcessing
+  langs:
+  - csharp
+  - vb
+  name: StartGrainClient
+  nameWithType: StartGrainClient
+  fullName: OrleansPSUtils.StartGrainClient
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.PowerShell/StartGrainClient.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: StartGrainClient
+    path: src/Orleans.PowerShell/StartGrainClient.cs
+    startLine: 11
+  assemblies:
+  - Orleans.PowerShell
+  namespace: OrleansPSUtils
+  syntax:
+    content: 'public class StartGrainClient : PSCmdlet'
+    content.vb: >-
+      Public Class StartGrainClient
+
+          Inherits PSCmdlet
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - OrleansPSUtils.StartGrainClient.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: OrleansPSUtils.StartGrainClient.ConfigFilePath
+  commentId: P:OrleansPSUtils.StartGrainClient.ConfigFilePath
+  id: ConfigFilePath
+  parent: OrleansPSUtils.StartGrainClient
+  langs:
+  - csharp
+  - vb
+  name: ConfigFilePath
+  nameWithType: StartGrainClient.ConfigFilePath
+  fullName: OrleansPSUtils.StartGrainClient.ConfigFilePath
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.PowerShell/StartGrainClient.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ConfigFilePath
+    path: src/Orleans.PowerShell/StartGrainClient.cs
+    startLine: 22
+  assemblies:
+  - Orleans.PowerShell
+  namespace: OrleansPSUtils
+  syntax:
+    content: public string ConfigFilePath { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ConfigFilePath As String
+  overload: OrleansPSUtils.StartGrainClient.ConfigFilePath*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OrleansPSUtils.StartGrainClient.ConfigFile
+  commentId: P:OrleansPSUtils.StartGrainClient.ConfigFile
+  id: ConfigFile
+  parent: OrleansPSUtils.StartGrainClient
+  langs:
+  - csharp
+  - vb
+  name: ConfigFile
+  nameWithType: StartGrainClient.ConfigFile
+  fullName: OrleansPSUtils.StartGrainClient.ConfigFile
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.PowerShell/StartGrainClient.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ConfigFile
+    path: src/Orleans.PowerShell/StartGrainClient.cs
+    startLine: 25
+  assemblies:
+  - Orleans.PowerShell
+  namespace: OrleansPSUtils
+  syntax:
+    content: public FileInfo ConfigFile { get; set; }
+    parameters: []
+    return:
+      type: System.IO.FileInfo
+    content.vb: Public Property ConfigFile As FileInfo
+  overload: OrleansPSUtils.StartGrainClient.ConfigFile*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OrleansPSUtils.StartGrainClient.Config
+  commentId: P:OrleansPSUtils.StartGrainClient.Config
+  id: Config
+  parent: OrleansPSUtils.StartGrainClient
+  langs:
+  - csharp
+  - vb
+  name: Config
+  nameWithType: StartGrainClient.Config
+  fullName: OrleansPSUtils.StartGrainClient.Config
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.PowerShell/StartGrainClient.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Config
+    path: src/Orleans.PowerShell/StartGrainClient.cs
+    startLine: 28
+  assemblies:
+  - Orleans.PowerShell
+  namespace: OrleansPSUtils
+  syntax:
+    content: public ClientConfiguration Config { get; set; }
+    parameters: []
+    return:
+      type: Orleans.Runtime.Configuration.ClientConfiguration
+    content.vb: Public Property Config As ClientConfiguration
+  overload: OrleansPSUtils.StartGrainClient.Config*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OrleansPSUtils.StartGrainClient.GatewayAddress
+  commentId: P:OrleansPSUtils.StartGrainClient.GatewayAddress
+  id: GatewayAddress
+  parent: OrleansPSUtils.StartGrainClient
+  langs:
+  - csharp
+  - vb
+  name: GatewayAddress
+  nameWithType: StartGrainClient.GatewayAddress
+  fullName: OrleansPSUtils.StartGrainClient.GatewayAddress
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.PowerShell/StartGrainClient.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GatewayAddress
+    path: src/Orleans.PowerShell/StartGrainClient.cs
+    startLine: 31
+  assemblies:
+  - Orleans.PowerShell
+  namespace: OrleansPSUtils
+  syntax:
+    content: public IPEndPoint GatewayAddress { get; set; }
+    parameters: []
+    return:
+      type: System.Net.IPEndPoint
+    content.vb: Public Property GatewayAddress As IPEndPoint
+  overload: OrleansPSUtils.StartGrainClient.GatewayAddress*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OrleansPSUtils.StartGrainClient.OverrideConfig
+  commentId: P:OrleansPSUtils.StartGrainClient.OverrideConfig
+  id: OverrideConfig
+  parent: OrleansPSUtils.StartGrainClient
+  langs:
+  - csharp
+  - vb
+  name: OverrideConfig
+  nameWithType: StartGrainClient.OverrideConfig
+  fullName: OrleansPSUtils.StartGrainClient.OverrideConfig
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.PowerShell/StartGrainClient.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: OverrideConfig
+    path: src/Orleans.PowerShell/StartGrainClient.cs
+    startLine: 34
+  assemblies:
+  - Orleans.PowerShell
+  namespace: OrleansPSUtils
+  syntax:
+    content: public bool OverrideConfig { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property OverrideConfig As Boolean
+  overload: OrleansPSUtils.StartGrainClient.OverrideConfig*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OrleansPSUtils.StartGrainClient.ProcessRecord
+  commentId: M:OrleansPSUtils.StartGrainClient.ProcessRecord
+  id: ProcessRecord
+  parent: OrleansPSUtils.StartGrainClient
+  langs:
+  - csharp
+  - vb
+  name: ProcessRecord()
+  nameWithType: StartGrainClient.ProcessRecord()
+  fullName: OrleansPSUtils.StartGrainClient.ProcessRecord()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.PowerShell/StartGrainClient.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ProcessRecord
+    path: src/Orleans.PowerShell/StartGrainClient.cs
+    startLine: 37
+  assemblies:
+  - Orleans.PowerShell
+  namespace: OrleansPSUtils
+  syntax:
+    content: protected override void ProcessRecord()
+    content.vb: Protected Overrides Sub ProcessRecord
+  overload: OrleansPSUtils.StartGrainClient.ProcessRecord*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: OrleansPSUtils.StartGrainClient.StopProcessing
+  commentId: M:OrleansPSUtils.StartGrainClient.StopProcessing
+  id: StopProcessing
+  parent: OrleansPSUtils.StartGrainClient
+  langs:
+  - csharp
+  - vb
+  name: StopProcessing()
+  nameWithType: StartGrainClient.StopProcessing()
+  fullName: OrleansPSUtils.StartGrainClient.StopProcessing()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.PowerShell/StartGrainClient.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: StopProcessing
+    path: src/Orleans.PowerShell/StartGrainClient.cs
+    startLine: 109
+  assemblies:
+  - Orleans.PowerShell
+  namespace: OrleansPSUtils
+  syntax:
+    content: protected override void StopProcessing()
+    content.vb: Protected Overrides Sub StopProcessing
+  overload: OrleansPSUtils.StartGrainClient.StopProcessing*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+references:
+- uid: OrleansPSUtils
+  commentId: N:OrleansPSUtils
+  isExternal: false
+  name: OrleansPSUtils
+  nameWithType: OrleansPSUtils
+  fullName: OrleansPSUtils
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: OrleansPSUtils.StartGrainClient.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<StartGrainClient>()
+  nameWithType: ImmutableExt.AsImmutable<StartGrainClient>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<OrleansPSUtils.StartGrainClient>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of StartGrainClient)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of OrleansPSUtils.StartGrainClient)()
+  name.vb: AsImmutable(Of StartGrainClient)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<StartGrainClient>
+    nameWithType: ImmutableExt.AsImmutable<StartGrainClient>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<OrleansPSUtils.StartGrainClient>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of StartGrainClient)
+    nameWithType: ImmutableExt.AsImmutable(Of StartGrainClient)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of OrleansPSUtils.StartGrainClient)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: OrleansPSUtils.StartGrainClient.ConfigFilePath*
+  commentId: Overload:OrleansPSUtils.StartGrainClient.ConfigFilePath
+  isExternal: false
+  name: ConfigFilePath
+  nameWithType: StartGrainClient.ConfigFilePath
+  fullName: OrleansPSUtils.StartGrainClient.ConfigFilePath
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: OrleansPSUtils.StartGrainClient.ConfigFile*
+  commentId: Overload:OrleansPSUtils.StartGrainClient.ConfigFile
+  isExternal: false
+  name: ConfigFile
+  nameWithType: StartGrainClient.ConfigFile
+  fullName: OrleansPSUtils.StartGrainClient.ConfigFile
+- uid: System.IO.FileInfo
+  commentId: T:System.IO.FileInfo
+  parent: System.IO
+  isExternal: true
+  name: FileInfo
+  nameWithType: FileInfo
+  fullName: System.IO.FileInfo
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: false
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+- uid: OrleansPSUtils.StartGrainClient.Config*
+  commentId: Overload:OrleansPSUtils.StartGrainClient.Config
+  isExternal: false
+  name: Config
+  nameWithType: StartGrainClient.Config
+  fullName: OrleansPSUtils.StartGrainClient.Config
+- uid: Orleans.Runtime.Configuration.ClientConfiguration
+  commentId: T:Orleans.Runtime.Configuration.ClientConfiguration
+  parent: Orleans.Runtime.Configuration
+  isExternal: false
+  name: ClientConfiguration
+  nameWithType: ClientConfiguration
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration
+- uid: Orleans.Runtime.Configuration
+  commentId: N:Orleans.Runtime.Configuration
+  isExternal: false
+  name: Orleans.Runtime.Configuration
+  nameWithType: Orleans.Runtime.Configuration
+  fullName: Orleans.Runtime.Configuration
+- uid: OrleansPSUtils.StartGrainClient.GatewayAddress*
+  commentId: Overload:OrleansPSUtils.StartGrainClient.GatewayAddress
+  isExternal: false
+  name: GatewayAddress
+  nameWithType: StartGrainClient.GatewayAddress
+  fullName: OrleansPSUtils.StartGrainClient.GatewayAddress
+- uid: System.Net.IPEndPoint
+  commentId: T:System.Net.IPEndPoint
+  parent: System.Net
+  isExternal: true
+  name: IPEndPoint
+  nameWithType: IPEndPoint
+  fullName: System.Net.IPEndPoint
+- uid: System.Net
+  commentId: N:System.Net
+  isExternal: false
+  name: System.Net
+  nameWithType: System.Net
+  fullName: System.Net
+- uid: OrleansPSUtils.StartGrainClient.OverrideConfig*
+  commentId: Overload:OrleansPSUtils.StartGrainClient.OverrideConfig
+  isExternal: false
+  name: OverrideConfig
+  nameWithType: StartGrainClient.OverrideConfig
+  fullName: OrleansPSUtils.StartGrainClient.OverrideConfig
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: OrleansPSUtils.StartGrainClient.ProcessRecord*
+  commentId: Overload:OrleansPSUtils.StartGrainClient.ProcessRecord
+  isExternal: false
+  name: ProcessRecord
+  nameWithType: StartGrainClient.ProcessRecord
+  fullName: OrleansPSUtils.StartGrainClient.ProcessRecord
+- uid: OrleansPSUtils.StartGrainClient.StopProcessing*
+  commentId: Overload:OrleansPSUtils.StartGrainClient.StopProcessing
+  isExternal: false
+  name: StopProcessing
+  nameWithType: StartGrainClient.StopProcessing
+  fullName: OrleansPSUtils.StartGrainClient.StopProcessing

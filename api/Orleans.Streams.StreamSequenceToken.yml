@@ -1,0 +1,520 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Streams.StreamSequenceToken
+  commentId: T:Orleans.Streams.StreamSequenceToken
+  id: StreamSequenceToken
+  parent: Orleans.Streams
+  children:
+  - Orleans.Streams.StreamSequenceToken.CompareTo(Orleans.Streams.StreamSequenceToken)
+  - Orleans.Streams.StreamSequenceToken.Equals(Orleans.Streams.StreamSequenceToken)
+  langs:
+  - csharp
+  - vb
+  name: StreamSequenceToken
+  nameWithType: StreamSequenceToken
+  fullName: Orleans.Streams.StreamSequenceToken
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Streams/Core/StreamSequenceToken.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: StreamSequenceToken
+    path: src/Orleans.Core.Abstractions/Streams/Core/StreamSequenceToken.cs
+    startLine: 9
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Streams
+  summary: "\nHandle representing stream sequence number/token.\nConsumer may subsribe to the stream while specifying the start of the subsription sequence token.\nThat means that the stream infarstructure will deliver stream events starting from this sequence token.\n"
+  example: []
+  syntax:
+    content: 'public abstract class StreamSequenceToken : IEquatable<StreamSequenceToken>, IComparable<StreamSequenceToken>'
+    content.vb: >-
+      Public MustInherit Class StreamSequenceToken
+
+          Inherits IEquatable(Of StreamSequenceToken)
+
+          Implements IComparable(Of StreamSequenceToken)
+  inheritance:
+  - System.Object
+  implements:
+  - IComparable{Orleans.Streams.StreamSequenceToken}
+  extensionMethods:
+  - Orleans.Streams.StreamSequenceToken.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  - Orleans.Streams.StreamSequenceToken.Orleans.Streams.StreamSequenceTokenUtilities.Newer(Orleans.Streams.StreamSequenceToken)
+  - Orleans.Streams.StreamSequenceToken.Orleans.Streams.StreamSequenceTokenUtilities.Older(Orleans.Streams.StreamSequenceToken)
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: Orleans.Streams.StreamSequenceToken.Equals(Orleans.Streams.StreamSequenceToken)
+  commentId: M:Orleans.Streams.StreamSequenceToken.Equals(Orleans.Streams.StreamSequenceToken)
+  id: Equals(Orleans.Streams.StreamSequenceToken)
+  parent: Orleans.Streams.StreamSequenceToken
+  langs:
+  - csharp
+  - vb
+  name: Equals(StreamSequenceToken)
+  nameWithType: StreamSequenceToken.Equals(StreamSequenceToken)
+  fullName: Orleans.Streams.StreamSequenceToken.Equals(Orleans.Streams.StreamSequenceToken)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Streams/Core/StreamSequenceToken.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Equals
+    path: src/Orleans.Core.Abstractions/Streams/Core/StreamSequenceToken.cs
+    startLine: 14
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Streams
+  syntax:
+    content: public abstract bool Equals(StreamSequenceToken other)
+    parameters:
+    - id: other
+      type: Orleans.Streams.StreamSequenceToken
+    return:
+      type: System.Boolean
+    content.vb: Public MustOverride Function Equals(other As StreamSequenceToken) As Boolean
+  overload: Orleans.Streams.StreamSequenceToken.Equals*
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+- uid: Orleans.Streams.StreamSequenceToken.CompareTo(Orleans.Streams.StreamSequenceToken)
+  commentId: M:Orleans.Streams.StreamSequenceToken.CompareTo(Orleans.Streams.StreamSequenceToken)
+  id: CompareTo(Orleans.Streams.StreamSequenceToken)
+  parent: Orleans.Streams.StreamSequenceToken
+  langs:
+  - csharp
+  - vb
+  name: CompareTo(StreamSequenceToken)
+  nameWithType: StreamSequenceToken.CompareTo(StreamSequenceToken)
+  fullName: Orleans.Streams.StreamSequenceToken.CompareTo(Orleans.Streams.StreamSequenceToken)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Streams/Core/StreamSequenceToken.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: CompareTo
+    path: src/Orleans.Core.Abstractions/Streams/Core/StreamSequenceToken.cs
+    startLine: 20
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Streams
+  syntax:
+    content: public abstract int CompareTo(StreamSequenceToken other)
+    parameters:
+    - id: other
+      type: Orleans.Streams.StreamSequenceToken
+    return:
+      type: System.Int32
+    content.vb: Public MustOverride Function CompareTo(other As StreamSequenceToken) As Integer
+  overload: Orleans.Streams.StreamSequenceToken.CompareTo*
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+references:
+- uid: Orleans.Streams
+  commentId: N:Orleans.Streams
+  isExternal: false
+  name: Orleans.Streams
+  nameWithType: Orleans.Streams
+  fullName: Orleans.Streams
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: IComparable{Orleans.Streams.StreamSequenceToken}
+  commentId: '!:IComparable{Orleans.Streams.StreamSequenceToken}'
+  definition: IComparable`1
+  name: IComparable<StreamSequenceToken>
+  nameWithType: IComparable<StreamSequenceToken>
+  fullName: IComparable<Orleans.Streams.StreamSequenceToken>
+  nameWithType.vb: IComparable(Of StreamSequenceToken)
+  fullName.vb: IComparable(Of Orleans.Streams.StreamSequenceToken)
+  name.vb: IComparable(Of StreamSequenceToken)
+  spec.csharp:
+  - uid: IComparable`1
+    name: IComparable
+    nameWithType: IComparable
+    fullName: IComparable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Orleans.Streams.StreamSequenceToken
+    name: StreamSequenceToken
+    nameWithType: StreamSequenceToken
+    fullName: Orleans.Streams.StreamSequenceToken
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IComparable`1
+    name: IComparable
+    nameWithType: IComparable
+    fullName: IComparable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Orleans.Streams.StreamSequenceToken
+    name: StreamSequenceToken
+    nameWithType: StreamSequenceToken
+    fullName: Orleans.Streams.StreamSequenceToken
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Streams.StreamSequenceToken.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<StreamSequenceToken>()
+  nameWithType: ImmutableExt.AsImmutable<StreamSequenceToken>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Streams.StreamSequenceToken>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of StreamSequenceToken)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Streams.StreamSequenceToken)()
+  name.vb: AsImmutable(Of StreamSequenceToken)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<StreamSequenceToken>
+    nameWithType: ImmutableExt.AsImmutable<StreamSequenceToken>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Streams.StreamSequenceToken>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of StreamSequenceToken)
+    nameWithType: ImmutableExt.AsImmutable(Of StreamSequenceToken)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Streams.StreamSequenceToken)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Streams.StreamSequenceToken.Orleans.Streams.StreamSequenceTokenUtilities.Newer(Orleans.Streams.StreamSequenceToken)
+  commentId: M:Orleans.Streams.StreamSequenceTokenUtilities.Newer(Orleans.Streams.StreamSequenceToken,Orleans.Streams.StreamSequenceToken)
+  parent: Orleans.Streams.StreamSequenceTokenUtilities
+  definition: Orleans.Streams.StreamSequenceTokenUtilities.Newer(Orleans.Streams.StreamSequenceToken,Orleans.Streams.StreamSequenceToken)
+  name: Newer(StreamSequenceToken)
+  nameWithType: StreamSequenceTokenUtilities.Newer(StreamSequenceToken)
+  fullName: Orleans.Streams.StreamSequenceTokenUtilities.Newer(Orleans.Streams.StreamSequenceToken)
+  spec.csharp:
+  - uid: Orleans.Streams.StreamSequenceTokenUtilities.Newer(Orleans.Streams.StreamSequenceToken)
+    name: Newer
+    nameWithType: StreamSequenceTokenUtilities.Newer
+    fullName: Orleans.Streams.StreamSequenceTokenUtilities.Newer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Streams.StreamSequenceToken
+    name: StreamSequenceToken
+    nameWithType: StreamSequenceToken
+    fullName: Orleans.Streams.StreamSequenceToken
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Streams.StreamSequenceTokenUtilities.Newer(Orleans.Streams.StreamSequenceToken)
+    name: Newer
+    nameWithType: StreamSequenceTokenUtilities.Newer
+    fullName: Orleans.Streams.StreamSequenceTokenUtilities.Newer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Streams.StreamSequenceToken
+    name: StreamSequenceToken
+    nameWithType: StreamSequenceToken
+    fullName: Orleans.Streams.StreamSequenceToken
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Streams.StreamSequenceToken.Orleans.Streams.StreamSequenceTokenUtilities.Older(Orleans.Streams.StreamSequenceToken)
+  commentId: M:Orleans.Streams.StreamSequenceTokenUtilities.Older(Orleans.Streams.StreamSequenceToken,Orleans.Streams.StreamSequenceToken)
+  parent: Orleans.Streams.StreamSequenceTokenUtilities
+  definition: Orleans.Streams.StreamSequenceTokenUtilities.Older(Orleans.Streams.StreamSequenceToken,Orleans.Streams.StreamSequenceToken)
+  name: Older(StreamSequenceToken)
+  nameWithType: StreamSequenceTokenUtilities.Older(StreamSequenceToken)
+  fullName: Orleans.Streams.StreamSequenceTokenUtilities.Older(Orleans.Streams.StreamSequenceToken)
+  spec.csharp:
+  - uid: Orleans.Streams.StreamSequenceTokenUtilities.Older(Orleans.Streams.StreamSequenceToken)
+    name: Older
+    nameWithType: StreamSequenceTokenUtilities.Older
+    fullName: Orleans.Streams.StreamSequenceTokenUtilities.Older
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Streams.StreamSequenceToken
+    name: StreamSequenceToken
+    nameWithType: StreamSequenceToken
+    fullName: Orleans.Streams.StreamSequenceToken
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Streams.StreamSequenceTokenUtilities.Older(Orleans.Streams.StreamSequenceToken)
+    name: Older
+    nameWithType: StreamSequenceTokenUtilities.Older
+    fullName: Orleans.Streams.StreamSequenceTokenUtilities.Older
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Streams.StreamSequenceToken
+    name: StreamSequenceToken
+    nameWithType: StreamSequenceToken
+    fullName: Orleans.Streams.StreamSequenceToken
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: IComparable`1
+  isExternal: true
+  name: IComparable<>
+  nameWithType: IComparable<>
+  fullName: IComparable<>
+  nameWithType.vb: IComparable(Of )
+  fullName.vb: IComparable(Of )
+  name.vb: IComparable(Of )
+  spec.csharp:
+  - uid: IComparable`1
+    name: IComparable
+    nameWithType: IComparable
+    fullName: IComparable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IComparable`1
+    name: IComparable
+    nameWithType: IComparable
+    fullName: IComparable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Streams.StreamSequenceTokenUtilities.Newer(Orleans.Streams.StreamSequenceToken,Orleans.Streams.StreamSequenceToken)
+  commentId: M:Orleans.Streams.StreamSequenceTokenUtilities.Newer(Orleans.Streams.StreamSequenceToken,Orleans.Streams.StreamSequenceToken)
+  isExternal: false
+  name: Newer(StreamSequenceToken, StreamSequenceToken)
+  nameWithType: StreamSequenceTokenUtilities.Newer(StreamSequenceToken, StreamSequenceToken)
+  fullName: Orleans.Streams.StreamSequenceTokenUtilities.Newer(Orleans.Streams.StreamSequenceToken, Orleans.Streams.StreamSequenceToken)
+  spec.csharp:
+  - uid: Orleans.Streams.StreamSequenceTokenUtilities.Newer(Orleans.Streams.StreamSequenceToken,Orleans.Streams.StreamSequenceToken)
+    name: Newer
+    nameWithType: StreamSequenceTokenUtilities.Newer
+    fullName: Orleans.Streams.StreamSequenceTokenUtilities.Newer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Streams.StreamSequenceToken
+    name: StreamSequenceToken
+    nameWithType: StreamSequenceToken
+    fullName: Orleans.Streams.StreamSequenceToken
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.Streams.StreamSequenceToken
+    name: StreamSequenceToken
+    nameWithType: StreamSequenceToken
+    fullName: Orleans.Streams.StreamSequenceToken
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Streams.StreamSequenceTokenUtilities.Newer(Orleans.Streams.StreamSequenceToken,Orleans.Streams.StreamSequenceToken)
+    name: Newer
+    nameWithType: StreamSequenceTokenUtilities.Newer
+    fullName: Orleans.Streams.StreamSequenceTokenUtilities.Newer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Streams.StreamSequenceToken
+    name: StreamSequenceToken
+    nameWithType: StreamSequenceToken
+    fullName: Orleans.Streams.StreamSequenceToken
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.Streams.StreamSequenceToken
+    name: StreamSequenceToken
+    nameWithType: StreamSequenceToken
+    fullName: Orleans.Streams.StreamSequenceToken
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Streams.StreamSequenceTokenUtilities
+  commentId: T:Orleans.Streams.StreamSequenceTokenUtilities
+  parent: Orleans.Streams
+  isExternal: false
+  name: StreamSequenceTokenUtilities
+  nameWithType: StreamSequenceTokenUtilities
+  fullName: Orleans.Streams.StreamSequenceTokenUtilities
+- uid: Orleans.Streams.StreamSequenceTokenUtilities.Older(Orleans.Streams.StreamSequenceToken,Orleans.Streams.StreamSequenceToken)
+  commentId: M:Orleans.Streams.StreamSequenceTokenUtilities.Older(Orleans.Streams.StreamSequenceToken,Orleans.Streams.StreamSequenceToken)
+  isExternal: false
+  name: Older(StreamSequenceToken, StreamSequenceToken)
+  nameWithType: StreamSequenceTokenUtilities.Older(StreamSequenceToken, StreamSequenceToken)
+  fullName: Orleans.Streams.StreamSequenceTokenUtilities.Older(Orleans.Streams.StreamSequenceToken, Orleans.Streams.StreamSequenceToken)
+  spec.csharp:
+  - uid: Orleans.Streams.StreamSequenceTokenUtilities.Older(Orleans.Streams.StreamSequenceToken,Orleans.Streams.StreamSequenceToken)
+    name: Older
+    nameWithType: StreamSequenceTokenUtilities.Older
+    fullName: Orleans.Streams.StreamSequenceTokenUtilities.Older
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Streams.StreamSequenceToken
+    name: StreamSequenceToken
+    nameWithType: StreamSequenceToken
+    fullName: Orleans.Streams.StreamSequenceToken
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.Streams.StreamSequenceToken
+    name: StreamSequenceToken
+    nameWithType: StreamSequenceToken
+    fullName: Orleans.Streams.StreamSequenceToken
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Streams.StreamSequenceTokenUtilities.Older(Orleans.Streams.StreamSequenceToken,Orleans.Streams.StreamSequenceToken)
+    name: Older
+    nameWithType: StreamSequenceTokenUtilities.Older
+    fullName: Orleans.Streams.StreamSequenceTokenUtilities.Older
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Streams.StreamSequenceToken
+    name: StreamSequenceToken
+    nameWithType: StreamSequenceToken
+    fullName: Orleans.Streams.StreamSequenceToken
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.Streams.StreamSequenceToken
+    name: StreamSequenceToken
+    nameWithType: StreamSequenceToken
+    fullName: Orleans.Streams.StreamSequenceToken
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Streams.StreamSequenceToken.Equals*
+  commentId: Overload:Orleans.Streams.StreamSequenceToken.Equals
+  isExternal: false
+  name: Equals
+  nameWithType: StreamSequenceToken.Equals
+  fullName: Orleans.Streams.StreamSequenceToken.Equals
+- uid: Orleans.Streams.StreamSequenceToken
+  commentId: T:Orleans.Streams.StreamSequenceToken
+  parent: Orleans.Streams
+  isExternal: false
+  name: StreamSequenceToken
+  nameWithType: StreamSequenceToken
+  fullName: Orleans.Streams.StreamSequenceToken
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Orleans.Streams.StreamSequenceToken.CompareTo*
+  commentId: Overload:Orleans.Streams.StreamSequenceToken.CompareTo
+  isExternal: false
+  name: CompareTo
+  nameWithType: StreamSequenceToken.CompareTo
+  fullName: Orleans.Streams.StreamSequenceToken.CompareTo
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32

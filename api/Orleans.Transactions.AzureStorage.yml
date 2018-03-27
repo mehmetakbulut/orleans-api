@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Transactions.AzureStorage
+  commentId: N:Orleans.Transactions.AzureStorage
+  id: Orleans.Transactions.AzureStorage
+  children:
+  - Orleans.Transactions.AzureStorage.AzureTransactionLogConfiguration
+  - Orleans.Transactions.AzureStorage.AzureTransactionLogStorage
+  langs:
+  - csharp
+  - vb
+  name: Orleans.Transactions.AzureStorage
+  nameWithType: Orleans.Transactions.AzureStorage
+  fullName: Orleans.Transactions.AzureStorage
+  type: Namespace
+  assemblies:
+  - Orleans.Transactions.AzureStorage
+references:
+- uid: Orleans.Transactions.AzureStorage.AzureTransactionLogConfiguration
+  commentId: T:Orleans.Transactions.AzureStorage.AzureTransactionLogConfiguration
+  isExternal: false
+  name: AzureTransactionLogConfiguration
+  nameWithType: AzureTransactionLogConfiguration
+  fullName: Orleans.Transactions.AzureStorage.AzureTransactionLogConfiguration
+- uid: Orleans.Transactions.AzureStorage.AzureTransactionLogStorage
+  commentId: T:Orleans.Transactions.AzureStorage.AzureTransactionLogStorage
+  isExternal: false
+  name: AzureTransactionLogStorage
+  nameWithType: AzureTransactionLogStorage
+  fullName: Orleans.Transactions.AzureStorage.AzureTransactionLogStorage

@@ -1,0 +1,240 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Concurrency.StatelessWorkerAttribute
+  commentId: T:Orleans.Concurrency.StatelessWorkerAttribute
+  id: StatelessWorkerAttribute
+  parent: Orleans.Concurrency
+  children:
+  - Orleans.Concurrency.StatelessWorkerAttribute.#ctor
+  - Orleans.Concurrency.StatelessWorkerAttribute.#ctor(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: StatelessWorkerAttribute
+  nameWithType: StatelessWorkerAttribute
+  fullName: Orleans.Concurrency.StatelessWorkerAttribute
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Concurrency/GrainAttributeConcurrency.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: StatelessWorkerAttribute
+    path: src/Orleans.Core.Abstractions/Concurrency/GrainAttributeConcurrency.cs
+    startLine: 46
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Concurrency
+  summary: "\nThe StatelessWorker attribute is used to mark grain class in which there is no expectation\nof preservation of grain state between requests and where multiple activations of the same grain are allowed to be created by the runtime.\n"
+  example: []
+  syntax:
+    content: 'public sealed class StatelessWorkerAttribute : PlacementAttribute'
+    content.vb: >-
+      Public NotInheritable Class StatelessWorkerAttribute
+
+          Inherits PlacementAttribute
+  inheritance:
+  - System.Object
+  - Orleans.Placement.PlacementAttribute
+  inheritedMembers:
+  - Orleans.Placement.PlacementAttribute.PlacementStrategy
+  extensionMethods:
+  - Orleans.Concurrency.StatelessWorkerAttribute.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Orleans.Concurrency.StatelessWorkerAttribute.#ctor(System.Int32)
+  commentId: M:Orleans.Concurrency.StatelessWorkerAttribute.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: Orleans.Concurrency.StatelessWorkerAttribute
+  langs:
+  - csharp
+  - vb
+  name: StatelessWorkerAttribute(Int32)
+  nameWithType: StatelessWorkerAttribute.StatelessWorkerAttribute(Int32)
+  fullName: Orleans.Concurrency.StatelessWorkerAttribute.StatelessWorkerAttribute(System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Concurrency/GrainAttributeConcurrency.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Core.Abstractions/Concurrency/GrainAttributeConcurrency.cs
+    startLine: 49
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Concurrency
+  syntax:
+    content: public StatelessWorkerAttribute(int maxLocalWorkers)
+    parameters:
+    - id: maxLocalWorkers
+      type: System.Int32
+    content.vb: Public Sub New(maxLocalWorkers As Integer)
+  overload: Orleans.Concurrency.StatelessWorkerAttribute.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Concurrency.StatelessWorkerAttribute.#ctor
+  commentId: M:Orleans.Concurrency.StatelessWorkerAttribute.#ctor
+  id: '#ctor'
+  parent: Orleans.Concurrency.StatelessWorkerAttribute
+  langs:
+  - csharp
+  - vb
+  name: StatelessWorkerAttribute()
+  nameWithType: StatelessWorkerAttribute.StatelessWorkerAttribute()
+  fullName: Orleans.Concurrency.StatelessWorkerAttribute.StatelessWorkerAttribute()
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Concurrency/GrainAttributeConcurrency.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Core.Abstractions/Concurrency/GrainAttributeConcurrency.cs
+    startLine: 54
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Concurrency
+  syntax:
+    content: public StatelessWorkerAttribute()
+    content.vb: Public Sub New
+  overload: Orleans.Concurrency.StatelessWorkerAttribute.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Placement.PlacementAttribute
+  commentId: T:Orleans.Placement.PlacementAttribute
+  parent: Orleans.Placement
+  isExternal: false
+  name: PlacementAttribute
+  nameWithType: PlacementAttribute
+  fullName: Orleans.Placement.PlacementAttribute
+- uid: Orleans.Placement.PlacementAttribute.PlacementStrategy
+  commentId: P:Orleans.Placement.PlacementAttribute.PlacementStrategy
+  parent: Orleans.Placement.PlacementAttribute
+  isExternal: false
+  name: PlacementStrategy
+  nameWithType: PlacementAttribute.PlacementStrategy
+  fullName: Orleans.Placement.PlacementAttribute.PlacementStrategy
+- uid: Orleans.Concurrency.StatelessWorkerAttribute.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<StatelessWorkerAttribute>()
+  nameWithType: ImmutableExt.AsImmutable<StatelessWorkerAttribute>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Concurrency.StatelessWorkerAttribute>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of StatelessWorkerAttribute)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Concurrency.StatelessWorkerAttribute)()
+  name.vb: AsImmutable(Of StatelessWorkerAttribute)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<StatelessWorkerAttribute>
+    nameWithType: ImmutableExt.AsImmutable<StatelessWorkerAttribute>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Concurrency.StatelessWorkerAttribute>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of StatelessWorkerAttribute)
+    nameWithType: ImmutableExt.AsImmutable(Of StatelessWorkerAttribute)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Concurrency.StatelessWorkerAttribute)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Placement
+  commentId: N:Orleans.Placement
+  isExternal: false
+  name: Orleans.Placement
+  nameWithType: Orleans.Placement
+  fullName: Orleans.Placement
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency.StatelessWorkerAttribute.#ctor*
+  commentId: Overload:Orleans.Concurrency.StatelessWorkerAttribute.#ctor
+  isExternal: false
+  name: StatelessWorkerAttribute
+  nameWithType: StatelessWorkerAttribute.StatelessWorkerAttribute
+  fullName: Orleans.Concurrency.StatelessWorkerAttribute.StatelessWorkerAttribute
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32

@@ -1,0 +1,146 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.GrainCallFilterDelegate
+  commentId: T:Orleans.GrainCallFilterDelegate
+  id: GrainCallFilterDelegate
+  parent: Orleans
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: GrainCallFilterDelegate
+  nameWithType: GrainCallFilterDelegate
+  fullName: Orleans.GrainCallFilterDelegate
+  type: Delegate
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/IGrainCallContext.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GrainCallFilterDelegate
+    path: src/Orleans.Core.Abstractions/Core/IGrainCallContext.cs
+    startLine: 11
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nA delegate used to intercept invocation of a request.\n"
+  example: []
+  syntax:
+    content: public delegate Task GrainCallFilterDelegate(IGrainCallContext context);
+    parameters:
+    - id: context
+      type: Orleans.IGrainCallContext
+      description: The invocation context.
+    return:
+      type: Task
+      description: A <see cref="!:Task"></see> which must be awaited before processing continues.
+    content.vb: Public Delegate Function GrainCallFilterDelegate(context As IGrainCallContext) As Task
+  extensionMethods:
+  - Orleans.GrainCallFilterDelegate.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - delegate
+  modifiers.vb:
+  - Public
+  - Delegate
+references:
+- uid: Orleans
+  commentId: N:Orleans
+  isExternal: false
+  name: Orleans
+  nameWithType: Orleans
+  fullName: Orleans
+- uid: Orleans.GrainCallFilterDelegate.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<GrainCallFilterDelegate>()
+  nameWithType: ImmutableExt.AsImmutable<GrainCallFilterDelegate>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.GrainCallFilterDelegate>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of GrainCallFilterDelegate)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.GrainCallFilterDelegate)()
+  name.vb: AsImmutable(Of GrainCallFilterDelegate)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<GrainCallFilterDelegate>
+    nameWithType: ImmutableExt.AsImmutable<GrainCallFilterDelegate>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.GrainCallFilterDelegate>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of GrainCallFilterDelegate)
+    nameWithType: ImmutableExt.AsImmutable(Of GrainCallFilterDelegate)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.GrainCallFilterDelegate)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.IGrainCallContext
+  commentId: T:Orleans.IGrainCallContext
+  parent: Orleans
+  isExternal: false
+  name: IGrainCallContext
+  nameWithType: IGrainCallContext
+  fullName: Orleans.IGrainCallContext
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency

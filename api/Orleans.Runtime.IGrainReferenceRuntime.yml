@@ -1,0 +1,441 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Runtime.IGrainReferenceRuntime
+  commentId: T:Orleans.Runtime.IGrainReferenceRuntime
+  id: IGrainReferenceRuntime
+  parent: Orleans.Runtime
+  children:
+  - Orleans.Runtime.IGrainReferenceRuntime.Convert``1(Orleans.Runtime.IAddressable)
+  - Orleans.Runtime.IGrainReferenceRuntime.InvokeMethodAsync``1(Orleans.Runtime.GrainReference,System.Int32,System.Object[],Orleans.CodeGeneration.InvokeMethodOptions,Orleans.Runtime.SiloAddress)
+  - Orleans.Runtime.IGrainReferenceRuntime.InvokeOneWayMethod(Orleans.Runtime.GrainReference,System.Int32,System.Object[],Orleans.CodeGeneration.InvokeMethodOptions,Orleans.Runtime.SiloAddress)
+  langs:
+  - csharp
+  - vb
+  name: IGrainReferenceRuntime
+  nameWithType: IGrainReferenceRuntime
+  fullName: Orleans.Runtime.IGrainReferenceRuntime
+  type: Interface
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Runtime/IGrainReferenceRuntime.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IGrainReferenceRuntime
+    path: src/Orleans.Core.Abstractions/Runtime/IGrainReferenceRuntime.cs
+    startLine: 9
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  summary: "\nRuntime logic for <xref href=\"Orleans.Runtime.GrainReference\" data-throw-if-not-resolved=\"false\"></xref>s to be usable.\nThis service is not meant to be used directly by user code.\n"
+  example: []
+  syntax:
+    content: public interface IGrainReferenceRuntime
+    content.vb: Public Interface IGrainReferenceRuntime
+  extensionMethods:
+  - Orleans.Runtime.IGrainReferenceRuntime.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Orleans.Runtime.IGrainReferenceRuntime.InvokeOneWayMethod(Orleans.Runtime.GrainReference,System.Int32,System.Object[],Orleans.CodeGeneration.InvokeMethodOptions,Orleans.Runtime.SiloAddress)
+  commentId: M:Orleans.Runtime.IGrainReferenceRuntime.InvokeOneWayMethod(Orleans.Runtime.GrainReference,System.Int32,System.Object[],Orleans.CodeGeneration.InvokeMethodOptions,Orleans.Runtime.SiloAddress)
+  id: InvokeOneWayMethod(Orleans.Runtime.GrainReference,System.Int32,System.Object[],Orleans.CodeGeneration.InvokeMethodOptions,Orleans.Runtime.SiloAddress)
+  parent: Orleans.Runtime.IGrainReferenceRuntime
+  langs:
+  - csharp
+  - vb
+  name: InvokeOneWayMethod(GrainReference, Int32, Object[], InvokeMethodOptions, SiloAddress)
+  nameWithType: IGrainReferenceRuntime.InvokeOneWayMethod(GrainReference, Int32, Object[], InvokeMethodOptions, SiloAddress)
+  fullName: Orleans.Runtime.IGrainReferenceRuntime.InvokeOneWayMethod(Orleans.Runtime.GrainReference, System.Int32, System.Object[], Orleans.CodeGeneration.InvokeMethodOptions, Orleans.Runtime.SiloAddress)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Runtime/IGrainReferenceRuntime.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: InvokeOneWayMethod
+    path: src/Orleans.Core.Abstractions/Runtime/IGrainReferenceRuntime.cs
+    startLine: 17
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  summary: Invokes a fire and forget method on a remote object.
+  example: []
+  syntax:
+    content: void InvokeOneWayMethod(GrainReference reference, int methodId, object[] arguments, InvokeMethodOptions options, SiloAddress silo)
+    parameters:
+    - id: reference
+      type: Orleans.Runtime.GrainReference
+      description: The reference to the addressable target.
+    - id: methodId
+      type: System.Int32
+      description: The method to invoke.
+    - id: arguments
+      type: System.Object[]
+      description: The method payload.
+    - id: options
+      type: Orleans.CodeGeneration.InvokeMethodOptions
+      description: Invocation options.
+    - id: silo
+      type: Orleans.Runtime.SiloAddress
+      description: The target silo.
+    content.vb: Sub InvokeOneWayMethod(reference As GrainReference, methodId As Integer, arguments As Object(), options As InvokeMethodOptions, silo As SiloAddress)
+  overload: Orleans.Runtime.IGrainReferenceRuntime.InvokeOneWayMethod*
+  nameWithType.vb: IGrainReferenceRuntime.InvokeOneWayMethod(GrainReference, Int32, Object(), InvokeMethodOptions, SiloAddress)
+  fullName.vb: Orleans.Runtime.IGrainReferenceRuntime.InvokeOneWayMethod(Orleans.Runtime.GrainReference, System.Int32, System.Object(), Orleans.CodeGeneration.InvokeMethodOptions, Orleans.Runtime.SiloAddress)
+  name.vb: InvokeOneWayMethod(GrainReference, Int32, Object(), InvokeMethodOptions, SiloAddress)
+- uid: Orleans.Runtime.IGrainReferenceRuntime.InvokeMethodAsync``1(Orleans.Runtime.GrainReference,System.Int32,System.Object[],Orleans.CodeGeneration.InvokeMethodOptions,Orleans.Runtime.SiloAddress)
+  commentId: M:Orleans.Runtime.IGrainReferenceRuntime.InvokeMethodAsync``1(Orleans.Runtime.GrainReference,System.Int32,System.Object[],Orleans.CodeGeneration.InvokeMethodOptions,Orleans.Runtime.SiloAddress)
+  id: InvokeMethodAsync``1(Orleans.Runtime.GrainReference,System.Int32,System.Object[],Orleans.CodeGeneration.InvokeMethodOptions,Orleans.Runtime.SiloAddress)
+  parent: Orleans.Runtime.IGrainReferenceRuntime
+  langs:
+  - csharp
+  - vb
+  name: InvokeMethodAsync<T>(GrainReference, Int32, Object[], InvokeMethodOptions, SiloAddress)
+  nameWithType: IGrainReferenceRuntime.InvokeMethodAsync<T>(GrainReference, Int32, Object[], InvokeMethodOptions, SiloAddress)
+  fullName: Orleans.Runtime.IGrainReferenceRuntime.InvokeMethodAsync<T>(Orleans.Runtime.GrainReference, System.Int32, System.Object[], Orleans.CodeGeneration.InvokeMethodOptions, Orleans.Runtime.SiloAddress)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Runtime/IGrainReferenceRuntime.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: InvokeMethodAsync
+    path: src/Orleans.Core.Abstractions/Runtime/IGrainReferenceRuntime.cs
+    startLine: 27
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  summary: Invokes a method on a remote object.
+  example: []
+  syntax:
+    content: Task<T> InvokeMethodAsync<T>(GrainReference reference, int methodId, object[] arguments, InvokeMethodOptions options, SiloAddress silo)
+    parameters:
+    - id: reference
+      type: Orleans.Runtime.GrainReference
+      description: The reference to the addressable target.
+    - id: methodId
+      type: System.Int32
+      description: The method to invoke.
+    - id: arguments
+      type: System.Object[]
+      description: The method payload.
+    - id: options
+      type: Orleans.CodeGeneration.InvokeMethodOptions
+      description: Invocation options.
+    - id: silo
+      type: Orleans.Runtime.SiloAddress
+      description: The target silo.
+    typeParameters:
+    - id: T
+      description: The result type
+    return:
+      type: Task{{T}}
+      description: Returns the response from the remote object.
+    content.vb: Function InvokeMethodAsync(Of T)(reference As GrainReference, methodId As Integer, arguments As Object(), options As InvokeMethodOptions, silo As SiloAddress) As Task(Of T)
+  overload: Orleans.Runtime.IGrainReferenceRuntime.InvokeMethodAsync*
+  nameWithType.vb: IGrainReferenceRuntime.InvokeMethodAsync(Of T)(GrainReference, Int32, Object(), InvokeMethodOptions, SiloAddress)
+  fullName.vb: Orleans.Runtime.IGrainReferenceRuntime.InvokeMethodAsync(Of T)(Orleans.Runtime.GrainReference, System.Int32, System.Object(), Orleans.CodeGeneration.InvokeMethodOptions, Orleans.Runtime.SiloAddress)
+  name.vb: InvokeMethodAsync(Of T)(GrainReference, Int32, Object(), InvokeMethodOptions, SiloAddress)
+- uid: Orleans.Runtime.IGrainReferenceRuntime.Convert``1(Orleans.Runtime.IAddressable)
+  commentId: M:Orleans.Runtime.IGrainReferenceRuntime.Convert``1(Orleans.Runtime.IAddressable)
+  id: Convert``1(Orleans.Runtime.IAddressable)
+  parent: Orleans.Runtime.IGrainReferenceRuntime
+  langs:
+  - csharp
+  - vb
+  name: Convert<TGrainInterface>(IAddressable)
+  nameWithType: IGrainReferenceRuntime.Convert<TGrainInterface>(IAddressable)
+  fullName: Orleans.Runtime.IGrainReferenceRuntime.Convert<TGrainInterface>(Orleans.Runtime.IAddressable)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Runtime/IGrainReferenceRuntime.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Convert
+    path: src/Orleans.Core.Abstractions/Runtime/IGrainReferenceRuntime.cs
+    startLine: 33
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  summary: Converts the provided <code data-dev-comment-type="paramref" class="paramref">grain</code> to the specified interface.
+  example: []
+  syntax:
+    content: TGrainInterface Convert<TGrainInterface>(IAddressable grain)
+    parameters:
+    - id: grain
+      type: Orleans.Runtime.IAddressable
+      description: The grain reference being cast.
+    typeParameters:
+    - id: TGrainInterface
+      description: The target grain interface type.
+    return:
+      type: '{TGrainInterface}'
+      description: A reference to <code data-dev-comment-type="paramref" class="paramref">grain</code> which implements <code data-dev-comment-type="typeparamref" class="typeparamref">TGrainInterface</code>.
+    content.vb: Function Convert(Of TGrainInterface)(grain As IAddressable) As TGrainInterface
+  overload: Orleans.Runtime.IGrainReferenceRuntime.Convert*
+  nameWithType.vb: IGrainReferenceRuntime.Convert(Of TGrainInterface)(IAddressable)
+  fullName.vb: Orleans.Runtime.IGrainReferenceRuntime.Convert(Of TGrainInterface)(Orleans.Runtime.IAddressable)
+  name.vb: Convert(Of TGrainInterface)(IAddressable)
+references:
+- uid: Orleans.Runtime.GrainReference
+  commentId: T:Orleans.Runtime.GrainReference
+  parent: Orleans.Runtime
+  isExternal: false
+  name: GrainReference
+  nameWithType: GrainReference
+  fullName: Orleans.Runtime.GrainReference
+- uid: Orleans.Runtime
+  commentId: N:Orleans.Runtime
+  isExternal: false
+  name: Orleans.Runtime
+  nameWithType: Orleans.Runtime
+  fullName: Orleans.Runtime
+- uid: Orleans.Runtime.IGrainReferenceRuntime.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<IGrainReferenceRuntime>()
+  nameWithType: ImmutableExt.AsImmutable<IGrainReferenceRuntime>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.IGrainReferenceRuntime>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of IGrainReferenceRuntime)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.IGrainReferenceRuntime)()
+  name.vb: AsImmutable(Of IGrainReferenceRuntime)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<IGrainReferenceRuntime>
+    nameWithType: ImmutableExt.AsImmutable<IGrainReferenceRuntime>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.IGrainReferenceRuntime>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of IGrainReferenceRuntime)
+    nameWithType: ImmutableExt.AsImmutable(Of IGrainReferenceRuntime)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.IGrainReferenceRuntime)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Runtime.IGrainReferenceRuntime.InvokeOneWayMethod*
+  commentId: Overload:Orleans.Runtime.IGrainReferenceRuntime.InvokeOneWayMethod
+  isExternal: false
+  name: InvokeOneWayMethod
+  nameWithType: IGrainReferenceRuntime.InvokeOneWayMethod
+  fullName: Orleans.Runtime.IGrainReferenceRuntime.InvokeOneWayMethod
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Object[]
+  name: Object[]
+  nameWithType: Object[]
+  fullName: System.Object[]
+  nameWithType.vb: Object()
+  fullName.vb: System.Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Orleans.CodeGeneration.InvokeMethodOptions
+  commentId: T:Orleans.CodeGeneration.InvokeMethodOptions
+  parent: Orleans.CodeGeneration
+  isExternal: false
+  name: InvokeMethodOptions
+  nameWithType: InvokeMethodOptions
+  fullName: Orleans.CodeGeneration.InvokeMethodOptions
+- uid: Orleans.Runtime.SiloAddress
+  commentId: T:Orleans.Runtime.SiloAddress
+  parent: Orleans.Runtime
+  isExternal: false
+  name: SiloAddress
+  nameWithType: SiloAddress
+  fullName: Orleans.Runtime.SiloAddress
+- uid: Orleans.CodeGeneration
+  commentId: N:Orleans.CodeGeneration
+  isExternal: false
+  name: Orleans.CodeGeneration
+  nameWithType: Orleans.CodeGeneration
+  fullName: Orleans.CodeGeneration
+- uid: Orleans.Runtime.IGrainReferenceRuntime.InvokeMethodAsync*
+  commentId: Overload:Orleans.Runtime.IGrainReferenceRuntime.InvokeMethodAsync
+  isExternal: false
+  name: InvokeMethodAsync
+  nameWithType: IGrainReferenceRuntime.InvokeMethodAsync
+  fullName: Orleans.Runtime.IGrainReferenceRuntime.InvokeMethodAsync
+- uid: Task{{T}}
+  commentId: '!:Task{``0}'
+  definition: Task`1
+  name: Task<T>
+  nameWithType: Task<T>
+  fullName: Task<T>
+  nameWithType.vb: Task(Of T)
+  fullName.vb: Task(Of T)
+  name.vb: Task(Of T)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.IGrainReferenceRuntime.Convert*
+  commentId: Overload:Orleans.Runtime.IGrainReferenceRuntime.Convert
+  isExternal: false
+  name: Convert
+  nameWithType: IGrainReferenceRuntime.Convert
+  fullName: Orleans.Runtime.IGrainReferenceRuntime.Convert
+- uid: Orleans.Runtime.IAddressable
+  commentId: T:Orleans.Runtime.IAddressable
+  parent: Orleans.Runtime
+  isExternal: false
+  name: IAddressable
+  nameWithType: IAddressable
+  fullName: Orleans.Runtime.IAddressable
+- uid: '{TGrainInterface}'
+  commentId: '!:TGrainInterface'
+  definition: TGrainInterface
+  name: TGrainInterface
+  nameWithType: TGrainInterface
+  fullName: TGrainInterface
+- uid: TGrainInterface
+  isExternal: false
+  name: TGrainInterface
+  nameWithType: TGrainInterface
+  fullName: TGrainInterface

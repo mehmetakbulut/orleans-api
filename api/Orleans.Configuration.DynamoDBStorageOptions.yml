@@ -1,0 +1,841 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Configuration.DynamoDBStorageOptions
+  commentId: T:Orleans.Configuration.DynamoDBStorageOptions
+  id: DynamoDBStorageOptions
+  parent: Orleans.Configuration
+  children:
+  - Orleans.Configuration.DynamoDBStorageOptions.AccessKey
+  - Orleans.Configuration.DynamoDBStorageOptions.DEFAULT_INIT_STAGE
+  - Orleans.Configuration.DynamoDBStorageOptions.DeleteStateOnClear
+  - Orleans.Configuration.DynamoDBStorageOptions.IndentJson
+  - Orleans.Configuration.DynamoDBStorageOptions.InitStage
+  - Orleans.Configuration.DynamoDBStorageOptions.ReadCapacityUnits
+  - Orleans.Configuration.DynamoDBStorageOptions.SecretKey
+  - Orleans.Configuration.DynamoDBStorageOptions.Service
+  - Orleans.Configuration.DynamoDBStorageOptions.ServiceId
+  - Orleans.Configuration.DynamoDBStorageOptions.TableName
+  - Orleans.Configuration.DynamoDBStorageOptions.TypeNameHandling
+  - Orleans.Configuration.DynamoDBStorageOptions.UseFullAssemblyNames
+  - Orleans.Configuration.DynamoDBStorageOptions.UseJson
+  - Orleans.Configuration.DynamoDBStorageOptions.WriteCapacityUnits
+  langs:
+  - csharp
+  - vb
+  name: DynamoDBStorageOptions
+  nameWithType: DynamoDBStorageOptions
+  fullName: Orleans.Configuration.DynamoDBStorageOptions
+  type: Class
+  source:
+    remote:
+      path: src/AWS/Orleans.Persistence.DynamoDB/Options/DynamoDBStorageOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: DynamoDBStorageOptions
+    path: src/AWS/Orleans.Persistence.DynamoDB/Options/DynamoDBStorageOptions.cs
+    startLine: 6
+  assemblies:
+  - Orleans.Persistence.DynamoDB
+  namespace: Orleans.Configuration
+  syntax:
+    content: 'public class DynamoDBStorageOptions : object'
+    content.vb: >-
+      Public Class DynamoDBStorageOptions
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.Configuration.DynamoDBStorageOptions.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.Configuration.DynamoDBStorageOptions.ServiceId
+  commentId: P:Orleans.Configuration.DynamoDBStorageOptions.ServiceId
+  id: ServiceId
+  parent: Orleans.Configuration.DynamoDBStorageOptions
+  langs:
+  - csharp
+  - vb
+  name: ServiceId
+  nameWithType: DynamoDBStorageOptions.ServiceId
+  fullName: Orleans.Configuration.DynamoDBStorageOptions.ServiceId
+  type: Property
+  source:
+    remote:
+      path: src/AWS/Orleans.Persistence.DynamoDB/Options/DynamoDBStorageOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ServiceId
+    path: src/AWS/Orleans.Persistence.DynamoDB/Options/DynamoDBStorageOptions.cs
+    startLine: 11
+  assemblies:
+  - Orleans.Persistence.DynamoDB
+  namespace: Orleans.Configuration
+  summary: "\nGets or sets a unique identifier for this service, which should survive deployment and redeployment.\n"
+  example: []
+  syntax:
+    content: public string ServiceId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ServiceId As String
+  overload: Orleans.Configuration.DynamoDBStorageOptions.ServiceId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Configuration.DynamoDBStorageOptions.AccessKey
+  commentId: P:Orleans.Configuration.DynamoDBStorageOptions.AccessKey
+  id: AccessKey
+  parent: Orleans.Configuration.DynamoDBStorageOptions
+  langs:
+  - csharp
+  - vb
+  name: AccessKey
+  nameWithType: DynamoDBStorageOptions.AccessKey
+  fullName: Orleans.Configuration.DynamoDBStorageOptions.AccessKey
+  type: Property
+  source:
+    remote:
+      path: src/AWS/Orleans.Persistence.DynamoDB/Options/DynamoDBStorageOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AccessKey
+    path: src/AWS/Orleans.Persistence.DynamoDB/Options/DynamoDBStorageOptions.cs
+    startLine: 16
+  assemblies:
+  - Orleans.Persistence.DynamoDB
+  namespace: Orleans.Configuration
+  summary: "\nAccessKey string for DynamoDB Storage\n"
+  example: []
+  syntax:
+    content: public string AccessKey { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property AccessKey As String
+  overload: Orleans.Configuration.DynamoDBStorageOptions.AccessKey*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Configuration.DynamoDBStorageOptions.SecretKey
+  commentId: P:Orleans.Configuration.DynamoDBStorageOptions.SecretKey
+  id: SecretKey
+  parent: Orleans.Configuration.DynamoDBStorageOptions
+  langs:
+  - csharp
+  - vb
+  name: SecretKey
+  nameWithType: DynamoDBStorageOptions.SecretKey
+  fullName: Orleans.Configuration.DynamoDBStorageOptions.SecretKey
+  type: Property
+  source:
+    remote:
+      path: src/AWS/Orleans.Persistence.DynamoDB/Options/DynamoDBStorageOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SecretKey
+    path: src/AWS/Orleans.Persistence.DynamoDB/Options/DynamoDBStorageOptions.cs
+    startLine: 22
+  assemblies:
+  - Orleans.Persistence.DynamoDB
+  namespace: Orleans.Configuration
+  summary: "\nSecret key for DynamoDB storage\n"
+  example: []
+  syntax:
+    content: public string SecretKey { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property SecretKey As String
+  overload: Orleans.Configuration.DynamoDBStorageOptions.SecretKey*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Configuration.DynamoDBStorageOptions.Service
+  commentId: P:Orleans.Configuration.DynamoDBStorageOptions.Service
+  id: Service
+  parent: Orleans.Configuration.DynamoDBStorageOptions
+  langs:
+  - csharp
+  - vb
+  name: Service
+  nameWithType: DynamoDBStorageOptions.Service
+  fullName: Orleans.Configuration.DynamoDBStorageOptions.Service
+  type: Property
+  source:
+    remote:
+      path: src/AWS/Orleans.Persistence.DynamoDB/Options/DynamoDBStorageOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Service
+    path: src/AWS/Orleans.Persistence.DynamoDB/Options/DynamoDBStorageOptions.cs
+    startLine: 28
+  assemblies:
+  - Orleans.Persistence.DynamoDB
+  namespace: Orleans.Configuration
+  summary: "\nDynamoDB Service name \n"
+  example: []
+  syntax:
+    content: public string Service { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Service As String
+  overload: Orleans.Configuration.DynamoDBStorageOptions.Service*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Configuration.DynamoDBStorageOptions.ReadCapacityUnits
+  commentId: P:Orleans.Configuration.DynamoDBStorageOptions.ReadCapacityUnits
+  id: ReadCapacityUnits
+  parent: Orleans.Configuration.DynamoDBStorageOptions
+  langs:
+  - csharp
+  - vb
+  name: ReadCapacityUnits
+  nameWithType: DynamoDBStorageOptions.ReadCapacityUnits
+  fullName: Orleans.Configuration.DynamoDBStorageOptions.ReadCapacityUnits
+  type: Property
+  source:
+    remote:
+      path: src/AWS/Orleans.Persistence.DynamoDB/Options/DynamoDBStorageOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ReadCapacityUnits
+    path: src/AWS/Orleans.Persistence.DynamoDB/Options/DynamoDBStorageOptions.cs
+    startLine: 33
+  assemblies:
+  - Orleans.Persistence.DynamoDB
+  namespace: Orleans.Configuration
+  summary: "\nRead capacity unit for DynamoDB storage\n"
+  example: []
+  syntax:
+    content: public int ReadCapacityUnits { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property ReadCapacityUnits As Integer
+  overload: Orleans.Configuration.DynamoDBStorageOptions.ReadCapacityUnits*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Configuration.DynamoDBStorageOptions.WriteCapacityUnits
+  commentId: P:Orleans.Configuration.DynamoDBStorageOptions.WriteCapacityUnits
+  id: WriteCapacityUnits
+  parent: Orleans.Configuration.DynamoDBStorageOptions
+  langs:
+  - csharp
+  - vb
+  name: WriteCapacityUnits
+  nameWithType: DynamoDBStorageOptions.WriteCapacityUnits
+  fullName: Orleans.Configuration.DynamoDBStorageOptions.WriteCapacityUnits
+  type: Property
+  source:
+    remote:
+      path: src/AWS/Orleans.Persistence.DynamoDB/Options/DynamoDBStorageOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: WriteCapacityUnits
+    path: src/AWS/Orleans.Persistence.DynamoDB/Options/DynamoDBStorageOptions.cs
+    startLine: 38
+  assemblies:
+  - Orleans.Persistence.DynamoDB
+  namespace: Orleans.Configuration
+  summary: "\nWrite capacity unit for DynamoDB storage\n"
+  example: []
+  syntax:
+    content: public int WriteCapacityUnits { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property WriteCapacityUnits As Integer
+  overload: Orleans.Configuration.DynamoDBStorageOptions.WriteCapacityUnits*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Configuration.DynamoDBStorageOptions.TableName
+  commentId: P:Orleans.Configuration.DynamoDBStorageOptions.TableName
+  id: TableName
+  parent: Orleans.Configuration.DynamoDBStorageOptions
+  langs:
+  - csharp
+  - vb
+  name: TableName
+  nameWithType: DynamoDBStorageOptions.TableName
+  fullName: Orleans.Configuration.DynamoDBStorageOptions.TableName
+  type: Property
+  source:
+    remote:
+      path: src/AWS/Orleans.Persistence.DynamoDB/Options/DynamoDBStorageOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: TableName
+    path: src/AWS/Orleans.Persistence.DynamoDB/Options/DynamoDBStorageOptions.cs
+    startLine: 44
+  assemblies:
+  - Orleans.Persistence.DynamoDB
+  namespace: Orleans.Configuration
+  summary: "\nDynamoDB table name.\nDefaults to &apos;OrleansGrainState&apos;.\n"
+  example: []
+  syntax:
+    content: public string TableName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property TableName As String
+  overload: Orleans.Configuration.DynamoDBStorageOptions.TableName*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Configuration.DynamoDBStorageOptions.DeleteStateOnClear
+  commentId: P:Orleans.Configuration.DynamoDBStorageOptions.DeleteStateOnClear
+  id: DeleteStateOnClear
+  parent: Orleans.Configuration.DynamoDBStorageOptions
+  langs:
+  - csharp
+  - vb
+  name: DeleteStateOnClear
+  nameWithType: DynamoDBStorageOptions.DeleteStateOnClear
+  fullName: Orleans.Configuration.DynamoDBStorageOptions.DeleteStateOnClear
+  type: Property
+  source:
+    remote:
+      path: src/AWS/Orleans.Persistence.DynamoDB/Options/DynamoDBStorageOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: DeleteStateOnClear
+    path: src/AWS/Orleans.Persistence.DynamoDB/Options/DynamoDBStorageOptions.cs
+    startLine: 49
+  assemblies:
+  - Orleans.Persistence.DynamoDB
+  namespace: Orleans.Configuration
+  summary: "\nIndicates if grain data should be deleted or reset to defaults when a grain clears it&apos;s state.\n"
+  example: []
+  syntax:
+    content: public bool DeleteStateOnClear { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property DeleteStateOnClear As Boolean
+  overload: Orleans.Configuration.DynamoDBStorageOptions.DeleteStateOnClear*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Configuration.DynamoDBStorageOptions.InitStage
+  commentId: P:Orleans.Configuration.DynamoDBStorageOptions.InitStage
+  id: InitStage
+  parent: Orleans.Configuration.DynamoDBStorageOptions
+  langs:
+  - csharp
+  - vb
+  name: InitStage
+  nameWithType: DynamoDBStorageOptions.InitStage
+  fullName: Orleans.Configuration.DynamoDBStorageOptions.InitStage
+  type: Property
+  source:
+    remote:
+      path: src/AWS/Orleans.Persistence.DynamoDB/Options/DynamoDBStorageOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: InitStage
+    path: src/AWS/Orleans.Persistence.DynamoDB/Options/DynamoDBStorageOptions.cs
+    startLine: 54
+  assemblies:
+  - Orleans.Persistence.DynamoDB
+  namespace: Orleans.Configuration
+  summary: "\nStage of silo lifecycle where storage should be initialized.  Storage must be initialzed prior to use.\n"
+  example: []
+  syntax:
+    content: public int InitStage { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property InitStage As Integer
+  overload: Orleans.Configuration.DynamoDBStorageOptions.InitStage*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Configuration.DynamoDBStorageOptions.DEFAULT_INIT_STAGE
+  commentId: F:Orleans.Configuration.DynamoDBStorageOptions.DEFAULT_INIT_STAGE
+  id: DEFAULT_INIT_STAGE
+  parent: Orleans.Configuration.DynamoDBStorageOptions
+  langs:
+  - csharp
+  - vb
+  name: DEFAULT_INIT_STAGE
+  nameWithType: DynamoDBStorageOptions.DEFAULT_INIT_STAGE
+  fullName: Orleans.Configuration.DynamoDBStorageOptions.DEFAULT_INIT_STAGE
+  type: Field
+  source:
+    remote:
+      path: src/AWS/Orleans.Persistence.DynamoDB/Options/DynamoDBStorageOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: DEFAULT_INIT_STAGE
+    path: src/AWS/Orleans.Persistence.DynamoDB/Options/DynamoDBStorageOptions.cs
+    startLine: 55
+  assemblies:
+  - Orleans.Persistence.DynamoDB
+  namespace: Orleans.Configuration
+  syntax:
+    content: public const int DEFAULT_INIT_STAGE = null
+    return:
+      type: System.Int32
+    content.vb: Public Const DEFAULT_INIT_STAGE As Integer = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Orleans.Configuration.DynamoDBStorageOptions.UseJson
+  commentId: P:Orleans.Configuration.DynamoDBStorageOptions.UseJson
+  id: UseJson
+  parent: Orleans.Configuration.DynamoDBStorageOptions
+  langs:
+  - csharp
+  - vb
+  name: UseJson
+  nameWithType: DynamoDBStorageOptions.UseJson
+  fullName: Orleans.Configuration.DynamoDBStorageOptions.UseJson
+  type: Property
+  source:
+    remote:
+      path: src/AWS/Orleans.Persistence.DynamoDB/Options/DynamoDBStorageOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: UseJson
+    path: src/AWS/Orleans.Persistence.DynamoDB/Options/DynamoDBStorageOptions.cs
+    startLine: 58
+  assemblies:
+  - Orleans.Persistence.DynamoDB
+  namespace: Orleans.Configuration
+  syntax:
+    content: public bool UseJson { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property UseJson As Boolean
+  overload: Orleans.Configuration.DynamoDBStorageOptions.UseJson*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Configuration.DynamoDBStorageOptions.UseFullAssemblyNames
+  commentId: P:Orleans.Configuration.DynamoDBStorageOptions.UseFullAssemblyNames
+  id: UseFullAssemblyNames
+  parent: Orleans.Configuration.DynamoDBStorageOptions
+  langs:
+  - csharp
+  - vb
+  name: UseFullAssemblyNames
+  nameWithType: DynamoDBStorageOptions.UseFullAssemblyNames
+  fullName: Orleans.Configuration.DynamoDBStorageOptions.UseFullAssemblyNames
+  type: Property
+  source:
+    remote:
+      path: src/AWS/Orleans.Persistence.DynamoDB/Options/DynamoDBStorageOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: UseFullAssemblyNames
+    path: src/AWS/Orleans.Persistence.DynamoDB/Options/DynamoDBStorageOptions.cs
+    startLine: 59
+  assemblies:
+  - Orleans.Persistence.DynamoDB
+  namespace: Orleans.Configuration
+  syntax:
+    content: public bool UseFullAssemblyNames { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property UseFullAssemblyNames As Boolean
+  overload: Orleans.Configuration.DynamoDBStorageOptions.UseFullAssemblyNames*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Configuration.DynamoDBStorageOptions.IndentJson
+  commentId: P:Orleans.Configuration.DynamoDBStorageOptions.IndentJson
+  id: IndentJson
+  parent: Orleans.Configuration.DynamoDBStorageOptions
+  langs:
+  - csharp
+  - vb
+  name: IndentJson
+  nameWithType: DynamoDBStorageOptions.IndentJson
+  fullName: Orleans.Configuration.DynamoDBStorageOptions.IndentJson
+  type: Property
+  source:
+    remote:
+      path: src/AWS/Orleans.Persistence.DynamoDB/Options/DynamoDBStorageOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IndentJson
+    path: src/AWS/Orleans.Persistence.DynamoDB/Options/DynamoDBStorageOptions.cs
+    startLine: 60
+  assemblies:
+  - Orleans.Persistence.DynamoDB
+  namespace: Orleans.Configuration
+  syntax:
+    content: public bool IndentJson { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IndentJson As Boolean
+  overload: Orleans.Configuration.DynamoDBStorageOptions.IndentJson*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Configuration.DynamoDBStorageOptions.TypeNameHandling
+  commentId: P:Orleans.Configuration.DynamoDBStorageOptions.TypeNameHandling
+  id: TypeNameHandling
+  parent: Orleans.Configuration.DynamoDBStorageOptions
+  langs:
+  - csharp
+  - vb
+  name: TypeNameHandling
+  nameWithType: DynamoDBStorageOptions.TypeNameHandling
+  fullName: Orleans.Configuration.DynamoDBStorageOptions.TypeNameHandling
+  type: Property
+  source:
+    remote:
+      path: src/AWS/Orleans.Persistence.DynamoDB/Options/DynamoDBStorageOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: TypeNameHandling
+    path: src/AWS/Orleans.Persistence.DynamoDB/Options/DynamoDBStorageOptions.cs
+    startLine: 61
+  assemblies:
+  - Orleans.Persistence.DynamoDB
+  namespace: Orleans.Configuration
+  syntax:
+    content: public TypeNameHandling? TypeNameHandling { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{TypeNameHandling}
+    content.vb: Public Property TypeNameHandling As TypeNameHandling?
+  overload: Orleans.Configuration.DynamoDBStorageOptions.TypeNameHandling*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans.Configuration
+  commentId: N:Orleans.Configuration
+  isExternal: false
+  name: Orleans.Configuration
+  nameWithType: Orleans.Configuration
+  fullName: Orleans.Configuration
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Configuration.DynamoDBStorageOptions.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<DynamoDBStorageOptions>()
+  nameWithType: ImmutableExt.AsImmutable<DynamoDBStorageOptions>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Configuration.DynamoDBStorageOptions>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of DynamoDBStorageOptions)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Configuration.DynamoDBStorageOptions)()
+  name.vb: AsImmutable(Of DynamoDBStorageOptions)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<DynamoDBStorageOptions>
+    nameWithType: ImmutableExt.AsImmutable<DynamoDBStorageOptions>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Configuration.DynamoDBStorageOptions>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of DynamoDBStorageOptions)
+    nameWithType: ImmutableExt.AsImmutable(Of DynamoDBStorageOptions)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Configuration.DynamoDBStorageOptions)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Configuration.DynamoDBStorageOptions.ServiceId*
+  commentId: Overload:Orleans.Configuration.DynamoDBStorageOptions.ServiceId
+  isExternal: false
+  name: ServiceId
+  nameWithType: DynamoDBStorageOptions.ServiceId
+  fullName: Orleans.Configuration.DynamoDBStorageOptions.ServiceId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Orleans.Configuration.DynamoDBStorageOptions.AccessKey*
+  commentId: Overload:Orleans.Configuration.DynamoDBStorageOptions.AccessKey
+  isExternal: false
+  name: AccessKey
+  nameWithType: DynamoDBStorageOptions.AccessKey
+  fullName: Orleans.Configuration.DynamoDBStorageOptions.AccessKey
+- uid: Orleans.Configuration.DynamoDBStorageOptions.SecretKey*
+  commentId: Overload:Orleans.Configuration.DynamoDBStorageOptions.SecretKey
+  isExternal: false
+  name: SecretKey
+  nameWithType: DynamoDBStorageOptions.SecretKey
+  fullName: Orleans.Configuration.DynamoDBStorageOptions.SecretKey
+- uid: Orleans.Configuration.DynamoDBStorageOptions.Service*
+  commentId: Overload:Orleans.Configuration.DynamoDBStorageOptions.Service
+  isExternal: false
+  name: Service
+  nameWithType: DynamoDBStorageOptions.Service
+  fullName: Orleans.Configuration.DynamoDBStorageOptions.Service
+- uid: Orleans.Configuration.DynamoDBStorageOptions.ReadCapacityUnits*
+  commentId: Overload:Orleans.Configuration.DynamoDBStorageOptions.ReadCapacityUnits
+  isExternal: false
+  name: ReadCapacityUnits
+  nameWithType: DynamoDBStorageOptions.ReadCapacityUnits
+  fullName: Orleans.Configuration.DynamoDBStorageOptions.ReadCapacityUnits
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Orleans.Configuration.DynamoDBStorageOptions.WriteCapacityUnits*
+  commentId: Overload:Orleans.Configuration.DynamoDBStorageOptions.WriteCapacityUnits
+  isExternal: false
+  name: WriteCapacityUnits
+  nameWithType: DynamoDBStorageOptions.WriteCapacityUnits
+  fullName: Orleans.Configuration.DynamoDBStorageOptions.WriteCapacityUnits
+- uid: Orleans.Configuration.DynamoDBStorageOptions.TableName*
+  commentId: Overload:Orleans.Configuration.DynamoDBStorageOptions.TableName
+  isExternal: false
+  name: TableName
+  nameWithType: DynamoDBStorageOptions.TableName
+  fullName: Orleans.Configuration.DynamoDBStorageOptions.TableName
+- uid: Orleans.Configuration.DynamoDBStorageOptions.DeleteStateOnClear*
+  commentId: Overload:Orleans.Configuration.DynamoDBStorageOptions.DeleteStateOnClear
+  isExternal: false
+  name: DeleteStateOnClear
+  nameWithType: DynamoDBStorageOptions.DeleteStateOnClear
+  fullName: Orleans.Configuration.DynamoDBStorageOptions.DeleteStateOnClear
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Orleans.Configuration.DynamoDBStorageOptions.InitStage*
+  commentId: Overload:Orleans.Configuration.DynamoDBStorageOptions.InitStage
+  isExternal: false
+  name: InitStage
+  nameWithType: DynamoDBStorageOptions.InitStage
+  fullName: Orleans.Configuration.DynamoDBStorageOptions.InitStage
+- uid: Orleans.Configuration.DynamoDBStorageOptions.UseJson*
+  commentId: Overload:Orleans.Configuration.DynamoDBStorageOptions.UseJson
+  isExternal: false
+  name: UseJson
+  nameWithType: DynamoDBStorageOptions.UseJson
+  fullName: Orleans.Configuration.DynamoDBStorageOptions.UseJson
+- uid: Orleans.Configuration.DynamoDBStorageOptions.UseFullAssemblyNames*
+  commentId: Overload:Orleans.Configuration.DynamoDBStorageOptions.UseFullAssemblyNames
+  isExternal: false
+  name: UseFullAssemblyNames
+  nameWithType: DynamoDBStorageOptions.UseFullAssemblyNames
+  fullName: Orleans.Configuration.DynamoDBStorageOptions.UseFullAssemblyNames
+- uid: Orleans.Configuration.DynamoDBStorageOptions.IndentJson*
+  commentId: Overload:Orleans.Configuration.DynamoDBStorageOptions.IndentJson
+  isExternal: false
+  name: IndentJson
+  nameWithType: DynamoDBStorageOptions.IndentJson
+  fullName: Orleans.Configuration.DynamoDBStorageOptions.IndentJson
+- uid: Orleans.Configuration.DynamoDBStorageOptions.TypeNameHandling*
+  commentId: Overload:Orleans.Configuration.DynamoDBStorageOptions.TypeNameHandling
+  isExternal: false
+  name: TypeNameHandling
+  nameWithType: DynamoDBStorageOptions.TypeNameHandling
+  fullName: Orleans.Configuration.DynamoDBStorageOptions.TypeNameHandling
+- uid: System.Nullable{TypeNameHandling}
+  commentId: '!:System.Nullable{TypeNameHandling}'
+  definition: System.Nullable`1
+  name: Nullable<TypeNameHandling>
+  nameWithType: Nullable<TypeNameHandling>
+  fullName: System.Nullable<TypeNameHandling>
+  nameWithType.vb: Nullable(Of TypeNameHandling)
+  fullName.vb: System.Nullable(Of TypeNameHandling)
+  name.vb: Nullable(Of TypeNameHandling)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: TypeNameHandling
+    name: TypeNameHandling
+    nameWithType: TypeNameHandling
+    fullName: TypeNameHandling
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: TypeNameHandling
+    name: TypeNameHandling
+    nameWithType: TypeNameHandling
+    fullName: TypeNameHandling
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  isExternal: true
+  name: Nullable<>
+  nameWithType: Nullable<>
+  fullName: System.Nullable<>
+  nameWithType.vb: Nullable(Of )
+  fullName.vb: System.Nullable(Of )
+  name.vb: Nullable(Of )
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )

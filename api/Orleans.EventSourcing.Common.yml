@@ -1,0 +1,173 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.EventSourcing.Common
+  commentId: N:Orleans.EventSourcing.Common
+  id: Orleans.EventSourcing.Common
+  children:
+  - Orleans.EventSourcing.Common.BatchedNotificationMessage
+  - Orleans.EventSourcing.Common.INotificationMessage
+  - Orleans.EventSourcing.Common.NotificationFailed
+  - Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3
+  - Orleans.EventSourcing.Common.PrimaryOperationFailed
+  - Orleans.EventSourcing.Common.RecordedConnectionIssue
+  - Orleans.EventSourcing.Common.StringEncodedWriteVector
+  - Orleans.EventSourcing.Common.SubmissionEntry`1
+  - Orleans.EventSourcing.Common.VersionNotificationMessage
+  langs:
+  - csharp
+  - vb
+  name: Orleans.EventSourcing.Common
+  nameWithType: Orleans.EventSourcing.Common
+  fullName: Orleans.EventSourcing.Common
+  type: Namespace
+  assemblies:
+  - Orleans.EventSourcing
+references:
+- uid: Orleans.EventSourcing.Common.NotificationFailed
+  commentId: T:Orleans.EventSourcing.Common.NotificationFailed
+  isExternal: false
+  name: NotificationFailed
+  nameWithType: NotificationFailed
+  fullName: Orleans.EventSourcing.Common.NotificationFailed
+- uid: Orleans.EventSourcing.Common.PrimaryOperationFailed
+  commentId: T:Orleans.EventSourcing.Common.PrimaryOperationFailed
+  isExternal: false
+  name: PrimaryOperationFailed
+  nameWithType: PrimaryOperationFailed
+  fullName: Orleans.EventSourcing.Common.PrimaryOperationFailed
+- uid: Orleans.EventSourcing.Common.INotificationMessage
+  commentId: T:Orleans.EventSourcing.Common.INotificationMessage
+  parent: Orleans.EventSourcing.Common
+  isExternal: false
+  name: INotificationMessage
+  nameWithType: INotificationMessage
+  fullName: Orleans.EventSourcing.Common.INotificationMessage
+- uid: Orleans.EventSourcing.Common.VersionNotificationMessage
+  commentId: T:Orleans.EventSourcing.Common.VersionNotificationMessage
+  isExternal: false
+  name: VersionNotificationMessage
+  nameWithType: VersionNotificationMessage
+  fullName: Orleans.EventSourcing.Common.VersionNotificationMessage
+- uid: Orleans.EventSourcing.Common.BatchedNotificationMessage
+  commentId: T:Orleans.EventSourcing.Common.BatchedNotificationMessage
+  isExternal: false
+  name: BatchedNotificationMessage
+  nameWithType: BatchedNotificationMessage
+  fullName: Orleans.EventSourcing.Common.BatchedNotificationMessage
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3
+  commentId: T:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3
+  isExternal: false
+  name: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry)
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry)
+  name.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry)
+  spec.csharp:
+  - uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3
+    name: PrimaryBasedLogViewAdaptor
+    nameWithType: PrimaryBasedLogViewAdaptor
+    fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TLogView
+    nameWithType: TLogView
+    fullName: TLogView
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TLogEntry
+    nameWithType: TLogEntry
+    fullName: TLogEntry
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TSubmissionEntry
+    nameWithType: TSubmissionEntry
+    fullName: TSubmissionEntry
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3
+    name: PrimaryBasedLogViewAdaptor
+    nameWithType: PrimaryBasedLogViewAdaptor
+    fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TLogView
+    nameWithType: TLogView
+    fullName: TLogView
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TLogEntry
+    nameWithType: TLogEntry
+    fullName: TLogEntry
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TSubmissionEntry
+    nameWithType: TSubmissionEntry
+    fullName: TSubmissionEntry
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.Common.SubmissionEntry`1
+  commentId: T:Orleans.EventSourcing.Common.SubmissionEntry`1
+  isExternal: false
+  name: SubmissionEntry<TLogEntry>
+  nameWithType: SubmissionEntry<TLogEntry>
+  fullName: Orleans.EventSourcing.Common.SubmissionEntry<TLogEntry>
+  nameWithType.vb: SubmissionEntry(Of TLogEntry)
+  fullName.vb: Orleans.EventSourcing.Common.SubmissionEntry(Of TLogEntry)
+  name.vb: SubmissionEntry(Of TLogEntry)
+  spec.csharp:
+  - uid: Orleans.EventSourcing.Common.SubmissionEntry`1
+    name: SubmissionEntry
+    nameWithType: SubmissionEntry
+    fullName: Orleans.EventSourcing.Common.SubmissionEntry
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TLogEntry
+    nameWithType: TLogEntry
+    fullName: TLogEntry
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Orleans.EventSourcing.Common.SubmissionEntry`1
+    name: SubmissionEntry
+    nameWithType: SubmissionEntry
+    fullName: Orleans.EventSourcing.Common.SubmissionEntry
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TLogEntry
+    nameWithType: TLogEntry
+    fullName: TLogEntry
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.Common.RecordedConnectionIssue
+  commentId: T:Orleans.EventSourcing.Common.RecordedConnectionIssue
+  parent: Orleans.EventSourcing.Common
+  isExternal: false
+  name: RecordedConnectionIssue
+  nameWithType: RecordedConnectionIssue
+  fullName: Orleans.EventSourcing.Common.RecordedConnectionIssue
+- uid: Orleans.EventSourcing.Common.StringEncodedWriteVector
+  commentId: T:Orleans.EventSourcing.Common.StringEncodedWriteVector
+  isExternal: false
+  name: StringEncodedWriteVector
+  nameWithType: StringEncodedWriteVector
+  fullName: Orleans.EventSourcing.Common.StringEncodedWriteVector
+- uid: Orleans.EventSourcing.Common
+  commentId: N:Orleans.EventSourcing.Common
+  isExternal: false
+  name: Orleans.EventSourcing.Common
+  nameWithType: Orleans.EventSourcing.Common
+  fullName: Orleans.EventSourcing.Common

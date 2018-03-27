@@ -1,0 +1,190 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.MultiCluster.OneInstancePerClusterAttribute
+  commentId: T:Orleans.MultiCluster.OneInstancePerClusterAttribute
+  id: OneInstancePerClusterAttribute
+  parent: Orleans.MultiCluster
+  children:
+  - Orleans.MultiCluster.OneInstancePerClusterAttribute.#ctor
+  langs:
+  - csharp
+  - vb
+  name: OneInstancePerClusterAttribute
+  nameWithType: OneInstancePerClusterAttribute
+  fullName: Orleans.MultiCluster.OneInstancePerClusterAttribute
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/GrainDirectory/MultiClusterGrainAttributes.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: OneInstancePerClusterAttribute
+    path: src/Orleans.Core.Abstractions/GrainDirectory/MultiClusterGrainAttributes.cs
+    startLine: 35
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.MultiCluster
+  summary: "\nThis attribute indicates that instances of the marked grain class\nwill have an independent instance for each cluster with\nno coordination.\n"
+  example: []
+  syntax:
+    content: 'public class OneInstancePerClusterAttribute : RegistrationAttribute'
+    content.vb: >-
+      Public Class OneInstancePerClusterAttribute
+
+          Inherits RegistrationAttribute
+  inheritance:
+  - System.Object
+  - Orleans.MultiCluster.RegistrationAttribute
+  extensionMethods:
+  - Orleans.MultiCluster.OneInstancePerClusterAttribute.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.MultiCluster.OneInstancePerClusterAttribute.#ctor
+  commentId: M:Orleans.MultiCluster.OneInstancePerClusterAttribute.#ctor
+  id: '#ctor'
+  parent: Orleans.MultiCluster.OneInstancePerClusterAttribute
+  langs:
+  - csharp
+  - vb
+  name: OneInstancePerClusterAttribute()
+  nameWithType: OneInstancePerClusterAttribute.OneInstancePerClusterAttribute()
+  fullName: Orleans.MultiCluster.OneInstancePerClusterAttribute.OneInstancePerClusterAttribute()
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/GrainDirectory/MultiClusterGrainAttributes.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Core.Abstractions/GrainDirectory/MultiClusterGrainAttributes.cs
+    startLine: 37
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.MultiCluster
+  syntax:
+    content: public OneInstancePerClusterAttribute()
+    content.vb: Public Sub New
+  overload: Orleans.MultiCluster.OneInstancePerClusterAttribute.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans.MultiCluster
+  commentId: N:Orleans.MultiCluster
+  isExternal: false
+  name: Orleans.MultiCluster
+  nameWithType: Orleans.MultiCluster
+  fullName: Orleans.MultiCluster
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.MultiCluster.RegistrationAttribute
+  commentId: T:Orleans.MultiCluster.RegistrationAttribute
+  parent: Orleans.MultiCluster
+  isExternal: false
+  name: RegistrationAttribute
+  nameWithType: RegistrationAttribute
+  fullName: Orleans.MultiCluster.RegistrationAttribute
+- uid: Orleans.MultiCluster.OneInstancePerClusterAttribute.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<OneInstancePerClusterAttribute>()
+  nameWithType: ImmutableExt.AsImmutable<OneInstancePerClusterAttribute>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.MultiCluster.OneInstancePerClusterAttribute>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of OneInstancePerClusterAttribute)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.MultiCluster.OneInstancePerClusterAttribute)()
+  name.vb: AsImmutable(Of OneInstancePerClusterAttribute)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<OneInstancePerClusterAttribute>
+    nameWithType: ImmutableExt.AsImmutable<OneInstancePerClusterAttribute>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.MultiCluster.OneInstancePerClusterAttribute>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of OneInstancePerClusterAttribute)
+    nameWithType: ImmutableExt.AsImmutable(Of OneInstancePerClusterAttribute)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.MultiCluster.OneInstancePerClusterAttribute)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.MultiCluster.OneInstancePerClusterAttribute.#ctor*
+  commentId: Overload:Orleans.MultiCluster.OneInstancePerClusterAttribute.#ctor
+  isExternal: false
+  name: OneInstancePerClusterAttribute
+  nameWithType: OneInstancePerClusterAttribute.OneInstancePerClusterAttribute
+  fullName: Orleans.MultiCluster.OneInstancePerClusterAttribute.OneInstancePerClusterAttribute

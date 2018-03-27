@@ -1,0 +1,372 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Runtime.Severity
+  commentId: T:Orleans.Runtime.Severity
+  id: Severity
+  parent: Orleans.Runtime
+  children:
+  - Orleans.Runtime.Severity.Error
+  - Orleans.Runtime.Severity.Info
+  - Orleans.Runtime.Severity.Off
+  - Orleans.Runtime.Severity.Verbose
+  - Orleans.Runtime.Severity.Verbose2
+  - Orleans.Runtime.Severity.Verbose3
+  - Orleans.Runtime.Severity.Warning
+  langs:
+  - csharp
+  - vb
+  name: Severity
+  nameWithType: Severity
+  fullName: Orleans.Runtime.Severity
+  type: Enum
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Logging/Severity.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Severity
+    path: src/Orleans.Core.Abstractions/Logging/Severity.cs
+    startLine: 3
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  summary: 'Severity levels for log messages. '
+  example: []
+  syntax:
+    content: 'public enum Severity : int'
+    content.vb: Public Enum Severity As Integer
+  extensionMethods:
+  - Orleans.Runtime.Severity.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Orleans.Runtime.Severity.Off
+  commentId: F:Orleans.Runtime.Severity.Off
+  id: Off
+  parent: Orleans.Runtime.Severity
+  langs:
+  - csharp
+  - vb
+  name: Off
+  nameWithType: Severity.Off
+  fullName: Orleans.Runtime.Severity.Off
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Logging/Severity.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Off
+    path: src/Orleans.Core.Abstractions/Logging/Severity.cs
+    startLine: 5
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  syntax:
+    content: Off = null
+    return:
+      type: Orleans.Runtime.Severity
+    content.vb: Off = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Orleans.Runtime.Severity.Error
+  commentId: F:Orleans.Runtime.Severity.Error
+  id: Error
+  parent: Orleans.Runtime.Severity
+  langs:
+  - csharp
+  - vb
+  name: Error
+  nameWithType: Severity.Error
+  fullName: Orleans.Runtime.Severity.Error
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Logging/Severity.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Error
+    path: src/Orleans.Core.Abstractions/Logging/Severity.cs
+    startLine: 6
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  syntax:
+    content: Error = null
+    return:
+      type: Orleans.Runtime.Severity
+    content.vb: Error = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Orleans.Runtime.Severity.Warning
+  commentId: F:Orleans.Runtime.Severity.Warning
+  id: Warning
+  parent: Orleans.Runtime.Severity
+  langs:
+  - csharp
+  - vb
+  name: Warning
+  nameWithType: Severity.Warning
+  fullName: Orleans.Runtime.Severity.Warning
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Logging/Severity.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Warning
+    path: src/Orleans.Core.Abstractions/Logging/Severity.cs
+    startLine: 7
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  syntax:
+    content: Warning = null
+    return:
+      type: Orleans.Runtime.Severity
+    content.vb: Warning = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Orleans.Runtime.Severity.Info
+  commentId: F:Orleans.Runtime.Severity.Info
+  id: Info
+  parent: Orleans.Runtime.Severity
+  langs:
+  - csharp
+  - vb
+  name: Info
+  nameWithType: Severity.Info
+  fullName: Orleans.Runtime.Severity.Info
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Logging/Severity.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Info
+    path: src/Orleans.Core.Abstractions/Logging/Severity.cs
+    startLine: 8
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  syntax:
+    content: Info = null
+    return:
+      type: Orleans.Runtime.Severity
+    content.vb: Info = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Orleans.Runtime.Severity.Verbose
+  commentId: F:Orleans.Runtime.Severity.Verbose
+  id: Verbose
+  parent: Orleans.Runtime.Severity
+  langs:
+  - csharp
+  - vb
+  name: Verbose
+  nameWithType: Severity.Verbose
+  fullName: Orleans.Runtime.Severity.Verbose
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Logging/Severity.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Verbose
+    path: src/Orleans.Core.Abstractions/Logging/Severity.cs
+    startLine: 9
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  syntax:
+    content: Verbose = null
+    return:
+      type: Orleans.Runtime.Severity
+    content.vb: Verbose = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Orleans.Runtime.Severity.Verbose2
+  commentId: F:Orleans.Runtime.Severity.Verbose2
+  id: Verbose2
+  parent: Orleans.Runtime.Severity
+  langs:
+  - csharp
+  - vb
+  name: Verbose2
+  nameWithType: Severity.Verbose2
+  fullName: Orleans.Runtime.Severity.Verbose2
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Logging/Severity.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Verbose2
+    path: src/Orleans.Core.Abstractions/Logging/Severity.cs
+    startLine: 10
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  syntax:
+    content: Verbose2 = null
+    return:
+      type: Orleans.Runtime.Severity
+    content.vb: Verbose2 = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Orleans.Runtime.Severity.Verbose3
+  commentId: F:Orleans.Runtime.Severity.Verbose3
+  id: Verbose3
+  parent: Orleans.Runtime.Severity
+  langs:
+  - csharp
+  - vb
+  name: Verbose3
+  nameWithType: Severity.Verbose3
+  fullName: Orleans.Runtime.Severity.Verbose3
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Logging/Severity.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Verbose3
+    path: src/Orleans.Core.Abstractions/Logging/Severity.cs
+    startLine: 11
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  syntax:
+    content: Verbose3 = null
+    return:
+      type: Orleans.Runtime.Severity
+    content.vb: Verbose3 = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Orleans.Runtime
+  commentId: N:Orleans.Runtime
+  isExternal: false
+  name: Orleans.Runtime
+  nameWithType: Orleans.Runtime
+  fullName: Orleans.Runtime
+- uid: Orleans.Runtime.Severity.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<Severity>()
+  nameWithType: ImmutableExt.AsImmutable<Severity>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.Severity>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of Severity)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.Severity)()
+  name.vb: AsImmutable(Of Severity)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<Severity>
+    nameWithType: ImmutableExt.AsImmutable<Severity>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.Severity>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of Severity)
+    nameWithType: ImmutableExt.AsImmutable(Of Severity)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.Severity)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Runtime.Severity
+  commentId: T:Orleans.Runtime.Severity
+  parent: Orleans.Runtime
+  isExternal: false
+  name: Severity
+  nameWithType: Severity
+  fullName: Orleans.Runtime.Severity

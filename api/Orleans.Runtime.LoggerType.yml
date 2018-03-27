@@ -1,0 +1,266 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Runtime.LoggerType
+  commentId: T:Orleans.Runtime.LoggerType
+  id: LoggerType
+  parent: Orleans.Runtime
+  children:
+  - Orleans.Runtime.LoggerType.Application
+  - Orleans.Runtime.LoggerType.Grain
+  - Orleans.Runtime.LoggerType.Provider
+  - Orleans.Runtime.LoggerType.Runtime
+  langs:
+  - csharp
+  - vb
+  name: LoggerType
+  nameWithType: LoggerType
+  fullName: Orleans.Runtime.LoggerType
+  type: Enum
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Logging/LegacyClass/ILogConsumer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: LoggerType
+    path: src/Orleans.Core.Legacy/Logging/LegacyClass/ILogConsumer.cs
+    startLine: 31
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime
+  summary: "\nThe ILogConsumer distinguishes between four categories of logs:\n<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td>Runtime</td><td>Logs that are written by the Orleans run-time itself.\nThis category should not be used by application code.</td></tr><tr><td>Grain</td><td>Logs that are written by application grains.\nThis category should be used by code that runs as Orleans grains in a silo.</td></tr><tr><td>Application</td><td>Logs that are written by the client application.\nThis category should be used by client-side application code.</td></tr><tr><td>Provider</td><td>Logs that are written by providers.\nThis category should be used by provider code.</td></tr></tbody></table>\n"
+  example: []
+  syntax:
+    content: 'public enum LoggerType : int'
+    content.vb: Public Enum LoggerType As Integer
+  extensionMethods:
+  - Orleans.Runtime.LoggerType.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Orleans.Runtime.LoggerType.Runtime
+  commentId: F:Orleans.Runtime.LoggerType.Runtime
+  id: Runtime
+  parent: Orleans.Runtime.LoggerType
+  langs:
+  - csharp
+  - vb
+  name: Runtime
+  nameWithType: LoggerType.Runtime
+  fullName: Orleans.Runtime.LoggerType.Runtime
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Logging/LegacyClass/ILogConsumer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Runtime
+    path: src/Orleans.Core.Legacy/Logging/LegacyClass/ILogConsumer.cs
+    startLine: 33
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime
+  syntax:
+    content: Runtime = 0
+    return:
+      type: Orleans.Runtime.LoggerType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Orleans.Runtime.LoggerType.Grain
+  commentId: F:Orleans.Runtime.LoggerType.Grain
+  id: Grain
+  parent: Orleans.Runtime.LoggerType
+  langs:
+  - csharp
+  - vb
+  name: Grain
+  nameWithType: LoggerType.Grain
+  fullName: Orleans.Runtime.LoggerType.Grain
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Logging/LegacyClass/ILogConsumer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Grain
+    path: src/Orleans.Core.Legacy/Logging/LegacyClass/ILogConsumer.cs
+    startLine: 34
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime
+  syntax:
+    content: Grain = 1
+    return:
+      type: Orleans.Runtime.LoggerType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Orleans.Runtime.LoggerType.Application
+  commentId: F:Orleans.Runtime.LoggerType.Application
+  id: Application
+  parent: Orleans.Runtime.LoggerType
+  langs:
+  - csharp
+  - vb
+  name: Application
+  nameWithType: LoggerType.Application
+  fullName: Orleans.Runtime.LoggerType.Application
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Logging/LegacyClass/ILogConsumer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Application
+    path: src/Orleans.Core.Legacy/Logging/LegacyClass/ILogConsumer.cs
+    startLine: 35
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime
+  syntax:
+    content: Application = 2
+    return:
+      type: Orleans.Runtime.LoggerType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Orleans.Runtime.LoggerType.Provider
+  commentId: F:Orleans.Runtime.LoggerType.Provider
+  id: Provider
+  parent: Orleans.Runtime.LoggerType
+  langs:
+  - csharp
+  - vb
+  name: Provider
+  nameWithType: LoggerType.Provider
+  fullName: Orleans.Runtime.LoggerType.Provider
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Logging/LegacyClass/ILogConsumer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Provider
+    path: src/Orleans.Core.Legacy/Logging/LegacyClass/ILogConsumer.cs
+    startLine: 36
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime
+  syntax:
+    content: Provider = 3
+    return:
+      type: Orleans.Runtime.LoggerType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Orleans.Runtime
+  commentId: N:Orleans.Runtime
+  isExternal: false
+  name: Orleans.Runtime
+  nameWithType: Orleans.Runtime
+  fullName: Orleans.Runtime
+- uid: Orleans.Runtime.LoggerType.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<LoggerType>()
+  nameWithType: ImmutableExt.AsImmutable<LoggerType>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.LoggerType>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of LoggerType)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.LoggerType)()
+  name.vb: AsImmutable(Of LoggerType)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<LoggerType>
+    nameWithType: ImmutableExt.AsImmutable<LoggerType>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.LoggerType>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of LoggerType)
+    nameWithType: ImmutableExt.AsImmutable(Of LoggerType)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.LoggerType)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Runtime.LoggerType
+  commentId: T:Orleans.Runtime.LoggerType
+  parent: Orleans.Runtime
+  isExternal: false
+  name: LoggerType
+  nameWithType: LoggerType
+  fullName: Orleans.Runtime.LoggerType

@@ -1,0 +1,357 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Runtime.RequestContext
+  commentId: T:Orleans.Runtime.RequestContext
+  id: RequestContext
+  parent: Orleans.Runtime
+  children:
+  - Orleans.Runtime.RequestContext.ActivityId
+  - Orleans.Runtime.RequestContext.Clear
+  - Orleans.Runtime.RequestContext.Get(System.String)
+  - Orleans.Runtime.RequestContext.PropagateActivityId
+  - Orleans.Runtime.RequestContext.Remove(System.String)
+  - Orleans.Runtime.RequestContext.Set(System.String,System.Object)
+  langs:
+  - csharp
+  - vb
+  name: RequestContext
+  nameWithType: RequestContext
+  fullName: Orleans.Runtime.RequestContext
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Runtime/RequestContext.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: RequestContext
+    path: src/Orleans.Core.Abstractions/Runtime/RequestContext.cs
+    startLine: 22
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  summary: "\nThis class holds information regarding the request currently being processed.\nIt is explicitly intended to be available to application code.\n"
+  remarks: "\n<p>\nThe request context is represented as a property bag.\nSome values are provided by default; others are derived from messages headers in the\nrequest that led to the current processing.\n</p>\n<p>\nInformation stored in RequestContext is propagated from \nOrleans clients to Orleans grains automatically \nby the Orleans runtime.\n</p>\n"
+  example: []
+  syntax:
+    content: 'public static class RequestContext : object'
+    content.vb: >-
+      Public Module RequestContext
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Orleans.Runtime.RequestContext.PropagateActivityId
+  commentId: P:Orleans.Runtime.RequestContext.PropagateActivityId
+  id: PropagateActivityId
+  parent: Orleans.Runtime.RequestContext
+  langs:
+  - csharp
+  - vb
+  name: PropagateActivityId
+  nameWithType: RequestContext.PropagateActivityId
+  fullName: Orleans.Runtime.RequestContext.PropagateActivityId
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Runtime/RequestContext.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: PropagateActivityId
+    path: src/Orleans.Core.Abstractions/Runtime/RequestContext.cs
+    startLine: 27
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  summary: "\nWhether Trace.CorrelationManager.ActivityId settings should be propagated into grain calls.\n"
+  example: []
+  syntax:
+    content: public static bool PropagateActivityId { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Property PropagateActivityId As Boolean
+  overload: Orleans.Runtime.RequestContext.PropagateActivityId*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.Runtime.RequestContext.ActivityId
+  commentId: P:Orleans.Runtime.RequestContext.ActivityId
+  id: ActivityId
+  parent: Orleans.Runtime.RequestContext
+  langs:
+  - csharp
+  - vb
+  name: ActivityId
+  nameWithType: RequestContext.ActivityId
+  fullName: Orleans.Runtime.RequestContext.ActivityId
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Runtime/RequestContext.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ActivityId
+    path: src/Orleans.Core.Abstractions/Runtime/RequestContext.cs
+    startLine: 36
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  summary: Gets or sets an activity ID that can be used for correlation.
+  example: []
+  syntax:
+    content: public static Guid ActivityId { get; set; }
+    parameters: []
+    return:
+      type: Guid
+    content.vb: Public Shared Property ActivityId As Guid
+  overload: Orleans.Runtime.RequestContext.ActivityId*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.Runtime.RequestContext.Get(System.String)
+  commentId: M:Orleans.Runtime.RequestContext.Get(System.String)
+  id: Get(System.String)
+  parent: Orleans.Runtime.RequestContext
+  langs:
+  - csharp
+  - vb
+  name: Get(String)
+  nameWithType: RequestContext.Get(String)
+  fullName: Orleans.Runtime.RequestContext.Get(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Runtime/RequestContext.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Get
+    path: src/Orleans.Core.Abstractions/Runtime/RequestContext.cs
+    startLine: 58
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  summary: "\nRetrieve a value from the RequestContext key-value bag.\n"
+  example: []
+  syntax:
+    content: public static object Get(string key)
+    parameters:
+    - id: key
+      type: System.String
+      description: The key for the value to be retrieved.
+    return:
+      type: System.Object
+      description: "The value currently in the RequestContext for the specified key, \notherwise returns <code>null</code> if no data is present for that key."
+    content.vb: Public Shared Function Get(key As String) As Object
+  overload: Orleans.Runtime.RequestContext.Get*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.Runtime.RequestContext.Set(System.String,System.Object)
+  commentId: M:Orleans.Runtime.RequestContext.Set(System.String,System.Object)
+  id: Set(System.String,System.Object)
+  parent: Orleans.Runtime.RequestContext
+  langs:
+  - csharp
+  - vb
+  name: Set(String, Object)
+  nameWithType: RequestContext.Set(String, Object)
+  fullName: Orleans.Runtime.RequestContext.Set(System.String, System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Runtime/RequestContext.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Set
+    path: src/Orleans.Core.Abstractions/Runtime/RequestContext.cs
+    startLine: 74
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  summary: "\nSets a value into the RequestContext key-value bag.\n"
+  example: []
+  syntax:
+    content: public static void Set(string key, object value)
+    parameters:
+    - id: key
+      type: System.String
+      description: The key for the value to be updated / added.
+    - id: value
+      type: System.Object
+      description: The value to be stored into RequestContext.
+    content.vb: Public Shared Sub Set(key As String, value As Object)
+  overload: Orleans.Runtime.RequestContext.Set*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.Runtime.RequestContext.Remove(System.String)
+  commentId: M:Orleans.Runtime.RequestContext.Remove(System.String)
+  id: Remove(System.String)
+  parent: Orleans.Runtime.RequestContext
+  langs:
+  - csharp
+  - vb
+  name: Remove(String)
+  nameWithType: RequestContext.Remove(String)
+  fullName: Orleans.Runtime.RequestContext.Remove(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Runtime/RequestContext.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Remove
+    path: src/Orleans.Core.Abstractions/Runtime/RequestContext.cs
+    startLine: 98
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  summary: "\nRemove a value from the RequestContext key-value bag.\n"
+  example: []
+  syntax:
+    content: public static bool Remove(string key)
+    parameters:
+    - id: key
+      type: System.String
+      description: The key for the value to be removed.
+    return:
+      type: System.Boolean
+      description: Boolean <code>True</code> if the value was previously in the RequestContext key-value bag and has now been removed, otherwise returns <code>False</code>.
+    content.vb: Public Shared Function Remove(key As String) As Boolean
+  overload: Orleans.Runtime.RequestContext.Remove*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.Runtime.RequestContext.Clear
+  commentId: M:Orleans.Runtime.RequestContext.Clear
+  id: Clear
+  parent: Orleans.Runtime.RequestContext
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: RequestContext.Clear()
+  fullName: Orleans.Runtime.RequestContext.Clear()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Runtime/RequestContext.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Clear
+    path: src/Orleans.Core.Abstractions/Runtime/RequestContext.cs
+    startLine: 112
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  syntax:
+    content: public static void Clear()
+    content.vb: Public Shared Sub Clear
+  overload: Orleans.Runtime.RequestContext.Clear*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Orleans.Runtime
+  commentId: N:Orleans.Runtime
+  isExternal: false
+  name: Orleans.Runtime
+  nameWithType: Orleans.Runtime
+  fullName: Orleans.Runtime
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Runtime.RequestContext.PropagateActivityId*
+  commentId: Overload:Orleans.Runtime.RequestContext.PropagateActivityId
+  isExternal: false
+  name: PropagateActivityId
+  nameWithType: RequestContext.PropagateActivityId
+  fullName: Orleans.Runtime.RequestContext.PropagateActivityId
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Orleans.Runtime.RequestContext.ActivityId*
+  commentId: Overload:Orleans.Runtime.RequestContext.ActivityId
+  isExternal: false
+  name: ActivityId
+  nameWithType: RequestContext.ActivityId
+  fullName: Orleans.Runtime.RequestContext.ActivityId
+- uid: Guid
+  isExternal: true
+  name: Guid
+  nameWithType: Guid
+  fullName: Guid
+- uid: Orleans.Runtime.RequestContext.Get*
+  commentId: Overload:Orleans.Runtime.RequestContext.Get
+  isExternal: false
+  name: Get
+  nameWithType: RequestContext.Get
+  fullName: Orleans.Runtime.RequestContext.Get
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Orleans.Runtime.RequestContext.Set*
+  commentId: Overload:Orleans.Runtime.RequestContext.Set
+  isExternal: false
+  name: Set
+  nameWithType: RequestContext.Set
+  fullName: Orleans.Runtime.RequestContext.Set
+- uid: Orleans.Runtime.RequestContext.Remove*
+  commentId: Overload:Orleans.Runtime.RequestContext.Remove
+  isExternal: false
+  name: Remove
+  nameWithType: RequestContext.Remove
+  fullName: Orleans.Runtime.RequestContext.Remove
+- uid: Orleans.Runtime.RequestContext.Clear*
+  commentId: Overload:Orleans.Runtime.RequestContext.Clear
+  isExternal: false
+  name: Clear
+  nameWithType: RequestContext.Clear
+  fullName: Orleans.Runtime.RequestContext.Clear

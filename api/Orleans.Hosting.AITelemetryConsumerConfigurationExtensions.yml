@@ -1,0 +1,185 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Hosting.AITelemetryConsumerConfigurationExtensions
+  commentId: T:Orleans.Hosting.AITelemetryConsumerConfigurationExtensions
+  id: AITelemetryConsumerConfigurationExtensions
+  parent: Orleans.Hosting
+  children:
+  - Orleans.Hosting.AITelemetryConsumerConfigurationExtensions.AddApplicationInsightsTelemetryConsumer(IClientBuilder,System.String)
+  - Orleans.Hosting.AITelemetryConsumerConfigurationExtensions.AddApplicationInsightsTelemetryConsumer(ISiloHostBuilder,System.String)
+  langs:
+  - csharp
+  - vb
+  name: AITelemetryConsumerConfigurationExtensions
+  nameWithType: AITelemetryConsumerConfigurationExtensions
+  fullName: Orleans.Hosting.AITelemetryConsumerConfigurationExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.TelemetryConsumers.AI/AITelemetryConsumerConfigurationExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AITelemetryConsumerConfigurationExtensions
+    path: src/Orleans.TelemetryConsumers.AI/AITelemetryConsumerConfigurationExtensions.cs
+    startLine: 6
+  assemblies:
+  - Orleans.TelemetryConsumers.AI
+  namespace: Orleans.Hosting
+  syntax:
+    content: 'public static class AITelemetryConsumerConfigurationExtensions : object'
+    content.vb: >-
+      Public Module AITelemetryConsumerConfigurationExtensions
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Orleans.Hosting.AITelemetryConsumerConfigurationExtensions.AddApplicationInsightsTelemetryConsumer(ISiloHostBuilder,System.String)
+  commentId: M:Orleans.Hosting.AITelemetryConsumerConfigurationExtensions.AddApplicationInsightsTelemetryConsumer(ISiloHostBuilder,System.String)
+  id: AddApplicationInsightsTelemetryConsumer(ISiloHostBuilder,System.String)
+  isExtensionMethod: true
+  parent: Orleans.Hosting.AITelemetryConsumerConfigurationExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddApplicationInsightsTelemetryConsumer(ISiloHostBuilder, String)
+  nameWithType: AITelemetryConsumerConfigurationExtensions.AddApplicationInsightsTelemetryConsumer(ISiloHostBuilder, String)
+  fullName: Orleans.Hosting.AITelemetryConsumerConfigurationExtensions.AddApplicationInsightsTelemetryConsumer(ISiloHostBuilder, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.TelemetryConsumers.AI/AITelemetryConsumerConfigurationExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AddApplicationInsightsTelemetryConsumer
+    path: src/Orleans.TelemetryConsumers.AI/AITelemetryConsumerConfigurationExtensions.cs
+    startLine: 13
+  assemblies:
+  - Orleans.TelemetryConsumers.AI
+  namespace: Orleans.Hosting
+  summary: "\nAdds a metrics telemetric consumer provider of type <xref href=\"Orleans.TelemetryConsumers.AI.AITelemetryConsumer\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public static ISiloHostBuilder AddApplicationInsightsTelemetryConsumer(this ISiloHostBuilder hostBuilder, string instrumentationKey = null)
+    parameters:
+    - id: hostBuilder
+      type: ISiloHostBuilder
+      description: ''
+    - id: instrumentationKey
+      type: System.String
+      description: The Application Insights instrumentation key.
+    return:
+      type: ISiloHostBuilder
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AddApplicationInsightsTelemetryConsumer(hostBuilder As ISiloHostBuilder, instrumentationKey As String = Nothing) As ISiloHostBuilder
+  overload: Orleans.Hosting.AITelemetryConsumerConfigurationExtensions.AddApplicationInsightsTelemetryConsumer*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.Hosting.AITelemetryConsumerConfigurationExtensions.AddApplicationInsightsTelemetryConsumer(IClientBuilder,System.String)
+  commentId: M:Orleans.Hosting.AITelemetryConsumerConfigurationExtensions.AddApplicationInsightsTelemetryConsumer(IClientBuilder,System.String)
+  id: AddApplicationInsightsTelemetryConsumer(IClientBuilder,System.String)
+  isExtensionMethod: true
+  parent: Orleans.Hosting.AITelemetryConsumerConfigurationExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddApplicationInsightsTelemetryConsumer(IClientBuilder, String)
+  nameWithType: AITelemetryConsumerConfigurationExtensions.AddApplicationInsightsTelemetryConsumer(IClientBuilder, String)
+  fullName: Orleans.Hosting.AITelemetryConsumerConfigurationExtensions.AddApplicationInsightsTelemetryConsumer(IClientBuilder, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.TelemetryConsumers.AI/AITelemetryConsumerConfigurationExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AddApplicationInsightsTelemetryConsumer
+    path: src/Orleans.TelemetryConsumers.AI/AITelemetryConsumerConfigurationExtensions.cs
+    startLine: 23
+  assemblies:
+  - Orleans.TelemetryConsumers.AI
+  namespace: Orleans.Hosting
+  summary: "\nAdds a metrics telemetric consumer provider of type <xref href=\"Orleans.TelemetryConsumers.AI.AITelemetryConsumer\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public static IClientBuilder AddApplicationInsightsTelemetryConsumer(this IClientBuilder clientBuilder, string instrumentationKey = null)
+    parameters:
+    - id: clientBuilder
+      type: IClientBuilder
+      description: ''
+    - id: instrumentationKey
+      type: System.String
+      description: The Application Insights instrumentation key.
+    return:
+      type: IClientBuilder
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AddApplicationInsightsTelemetryConsumer(clientBuilder As IClientBuilder, instrumentationKey As String = Nothing) As IClientBuilder
+  overload: Orleans.Hosting.AITelemetryConsumerConfigurationExtensions.AddApplicationInsightsTelemetryConsumer*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Orleans.Hosting
+  commentId: N:Orleans.Hosting
+  isExternal: false
+  name: Orleans.Hosting
+  nameWithType: Orleans.Hosting
+  fullName: Orleans.Hosting
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.TelemetryConsumers.AI.AITelemetryConsumer
+  commentId: T:Orleans.TelemetryConsumers.AI.AITelemetryConsumer
+  isExternal: false
+  name: AITelemetryConsumer
+  nameWithType: AITelemetryConsumer
+  fullName: Orleans.TelemetryConsumers.AI.AITelemetryConsumer
+- uid: Orleans.Hosting.AITelemetryConsumerConfigurationExtensions.AddApplicationInsightsTelemetryConsumer*
+  commentId: Overload:Orleans.Hosting.AITelemetryConsumerConfigurationExtensions.AddApplicationInsightsTelemetryConsumer
+  isExternal: false
+  name: AddApplicationInsightsTelemetryConsumer
+  nameWithType: AITelemetryConsumerConfigurationExtensions.AddApplicationInsightsTelemetryConsumer
+  fullName: Orleans.Hosting.AITelemetryConsumerConfigurationExtensions.AddApplicationInsightsTelemetryConsumer
+- uid: ISiloHostBuilder
+  isExternal: true
+  name: ISiloHostBuilder
+  nameWithType: ISiloHostBuilder
+  fullName: ISiloHostBuilder
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: IClientBuilder
+  isExternal: true
+  name: IClientBuilder
+  nameWithType: IClientBuilder
+  fullName: IClientBuilder

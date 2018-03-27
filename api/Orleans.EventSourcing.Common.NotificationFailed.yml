@@ -1,0 +1,426 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.EventSourcing.Common.NotificationFailed
+  commentId: T:Orleans.EventSourcing.Common.NotificationFailed
+  id: NotificationFailed
+  parent: Orleans.EventSourcing.Common
+  children:
+  - Orleans.EventSourcing.Common.NotificationFailed.ComputeRetryDelay(System.Nullable{TimeSpan})
+  - Orleans.EventSourcing.Common.NotificationFailed.Exception
+  - Orleans.EventSourcing.Common.NotificationFailed.RemoteCluster
+  langs:
+  - csharp
+  - vb
+  name: NotificationFailed
+  nameWithType: NotificationFailed
+  fullName: Orleans.EventSourcing.Common.NotificationFailed
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/ConnectionIssues.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: NotificationFailed
+    path: src/Orleans.EventSourcing/Common/ConnectionIssues.cs
+    startLine: 13
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  summary: "\nDescribes a connection issue that occurred when sending update notifications to remote instances.\n"
+  example: []
+  syntax:
+    content: 'public class NotificationFailed : ConnectionIssue'
+    content.vb: >-
+      Public Class NotificationFailed
+
+          Inherits ConnectionIssue
+  inheritance:
+  - System.Object
+  - Orleans.LogConsistency.ConnectionIssue
+  inheritedMembers:
+  - Orleans.LogConsistency.ConnectionIssue.TimeStamp
+  - Orleans.LogConsistency.ConnectionIssue.TimeOfFirstFailure
+  - Orleans.LogConsistency.ConnectionIssue.NumberOfConsecutiveFailures
+  - Orleans.LogConsistency.ConnectionIssue.RetryDelay
+  extensionMethods:
+  - Orleans.EventSourcing.Common.NotificationFailed.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.EventSourcing.Common.NotificationFailed.RemoteCluster
+  commentId: P:Orleans.EventSourcing.Common.NotificationFailed.RemoteCluster
+  id: RemoteCluster
+  parent: Orleans.EventSourcing.Common.NotificationFailed
+  langs:
+  - csharp
+  - vb
+  name: RemoteCluster
+  nameWithType: NotificationFailed.RemoteCluster
+  fullName: Orleans.EventSourcing.Common.NotificationFailed.RemoteCluster
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/ConnectionIssues.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: RemoteCluster
+    path: src/Orleans.EventSourcing/Common/ConnectionIssues.cs
+    startLine: 17
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  summary: 'The destination cluster which we could not reach successfully. '
+  example: []
+  syntax:
+    content: public string RemoteCluster { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property RemoteCluster As String
+  overload: Orleans.EventSourcing.Common.NotificationFailed.RemoteCluster*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.EventSourcing.Common.NotificationFailed.Exception
+  commentId: P:Orleans.EventSourcing.Common.NotificationFailed.Exception
+  id: Exception
+  parent: Orleans.EventSourcing.Common.NotificationFailed
+  langs:
+  - csharp
+  - vb
+  name: Exception
+  nameWithType: NotificationFailed.Exception
+  fullName: Orleans.EventSourcing.Common.NotificationFailed.Exception
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/ConnectionIssues.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Exception
+    path: src/Orleans.EventSourcing/Common/ConnectionIssues.cs
+    startLine: 20
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  summary: 'The exception we caught when trying to send the notification message. '
+  example: []
+  syntax:
+    content: public Exception Exception { get; set; }
+    parameters: []
+    return:
+      type: Exception
+    content.vb: Public Property Exception As Exception
+  overload: Orleans.EventSourcing.Common.NotificationFailed.Exception*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.EventSourcing.Common.NotificationFailed.ComputeRetryDelay(System.Nullable{TimeSpan})
+  commentId: M:Orleans.EventSourcing.Common.NotificationFailed.ComputeRetryDelay(System.Nullable{TimeSpan})
+  id: ComputeRetryDelay(System.Nullable{TimeSpan})
+  parent: Orleans.EventSourcing.Common.NotificationFailed
+  langs:
+  - csharp
+  - vb
+  name: ComputeRetryDelay(Nullable<TimeSpan>)
+  nameWithType: NotificationFailed.ComputeRetryDelay(Nullable<TimeSpan>)
+  fullName: Orleans.EventSourcing.Common.NotificationFailed.ComputeRetryDelay(System.Nullable<TimeSpan>)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/ConnectionIssues.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ComputeRetryDelay
+    path: src/Orleans.EventSourcing/Common/ConnectionIssues.cs
+    startLine: 23
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  example: []
+  syntax:
+    content: public override TimeSpan ComputeRetryDelay(TimeSpan? previous)
+    parameters:
+    - id: previous
+      type: System.Nullable{TimeSpan}
+    return:
+      type: TimeSpan
+    content.vb: Public Overrides Function ComputeRetryDelay(previous As TimeSpan?) As TimeSpan
+  overload: Orleans.EventSourcing.Common.NotificationFailed.ComputeRetryDelay*
+  nameWithType.vb: NotificationFailed.ComputeRetryDelay(Nullable(Of TimeSpan))
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Orleans.EventSourcing.Common.NotificationFailed.ComputeRetryDelay(System.Nullable(Of TimeSpan))
+  name.vb: ComputeRetryDelay(Nullable(Of TimeSpan))
+references:
+- uid: Orleans.EventSourcing.Common
+  commentId: N:Orleans.EventSourcing.Common
+  isExternal: false
+  name: Orleans.EventSourcing.Common
+  nameWithType: Orleans.EventSourcing.Common
+  fullName: Orleans.EventSourcing.Common
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.LogConsistency.ConnectionIssue
+  commentId: T:Orleans.LogConsistency.ConnectionIssue
+  parent: Orleans.LogConsistency
+  isExternal: false
+  name: ConnectionIssue
+  nameWithType: ConnectionIssue
+  fullName: Orleans.LogConsistency.ConnectionIssue
+- uid: Orleans.LogConsistency.ConnectionIssue.TimeStamp
+  commentId: P:Orleans.LogConsistency.ConnectionIssue.TimeStamp
+  parent: Orleans.LogConsistency.ConnectionIssue
+  isExternal: false
+  name: TimeStamp
+  nameWithType: ConnectionIssue.TimeStamp
+  fullName: Orleans.LogConsistency.ConnectionIssue.TimeStamp
+- uid: Orleans.LogConsistency.ConnectionIssue.TimeOfFirstFailure
+  commentId: P:Orleans.LogConsistency.ConnectionIssue.TimeOfFirstFailure
+  parent: Orleans.LogConsistency.ConnectionIssue
+  isExternal: false
+  name: TimeOfFirstFailure
+  nameWithType: ConnectionIssue.TimeOfFirstFailure
+  fullName: Orleans.LogConsistency.ConnectionIssue.TimeOfFirstFailure
+- uid: Orleans.LogConsistency.ConnectionIssue.NumberOfConsecutiveFailures
+  commentId: P:Orleans.LogConsistency.ConnectionIssue.NumberOfConsecutiveFailures
+  parent: Orleans.LogConsistency.ConnectionIssue
+  isExternal: false
+  name: NumberOfConsecutiveFailures
+  nameWithType: ConnectionIssue.NumberOfConsecutiveFailures
+  fullName: Orleans.LogConsistency.ConnectionIssue.NumberOfConsecutiveFailures
+- uid: Orleans.LogConsistency.ConnectionIssue.RetryDelay
+  commentId: P:Orleans.LogConsistency.ConnectionIssue.RetryDelay
+  parent: Orleans.LogConsistency.ConnectionIssue
+  isExternal: false
+  name: RetryDelay
+  nameWithType: ConnectionIssue.RetryDelay
+  fullName: Orleans.LogConsistency.ConnectionIssue.RetryDelay
+- uid: Orleans.EventSourcing.Common.NotificationFailed.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<NotificationFailed>()
+  nameWithType: ImmutableExt.AsImmutable<NotificationFailed>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.EventSourcing.Common.NotificationFailed>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of NotificationFailed)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.EventSourcing.Common.NotificationFailed)()
+  name.vb: AsImmutable(Of NotificationFailed)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<NotificationFailed>
+    nameWithType: ImmutableExt.AsImmutable<NotificationFailed>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.EventSourcing.Common.NotificationFailed>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of NotificationFailed)
+    nameWithType: ImmutableExt.AsImmutable(Of NotificationFailed)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.EventSourcing.Common.NotificationFailed)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.LogConsistency
+  commentId: N:Orleans.LogConsistency
+  isExternal: false
+  name: Orleans.LogConsistency
+  nameWithType: Orleans.LogConsistency
+  fullName: Orleans.LogConsistency
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.EventSourcing.Common.NotificationFailed.RemoteCluster*
+  commentId: Overload:Orleans.EventSourcing.Common.NotificationFailed.RemoteCluster
+  isExternal: false
+  name: RemoteCluster
+  nameWithType: NotificationFailed.RemoteCluster
+  fullName: Orleans.EventSourcing.Common.NotificationFailed.RemoteCluster
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Orleans.EventSourcing.Common.NotificationFailed.Exception*
+  commentId: Overload:Orleans.EventSourcing.Common.NotificationFailed.Exception
+  isExternal: false
+  name: Exception
+  nameWithType: NotificationFailed.Exception
+  fullName: Orleans.EventSourcing.Common.NotificationFailed.Exception
+- uid: Exception
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: Exception
+- uid: Orleans.EventSourcing.Common.NotificationFailed.ComputeRetryDelay*
+  commentId: Overload:Orleans.EventSourcing.Common.NotificationFailed.ComputeRetryDelay
+  isExternal: false
+  name: ComputeRetryDelay
+  nameWithType: NotificationFailed.ComputeRetryDelay
+  fullName: Orleans.EventSourcing.Common.NotificationFailed.ComputeRetryDelay
+- uid: System.Nullable{TimeSpan}
+  commentId: '!:System.Nullable{TimeSpan}'
+  definition: System.Nullable`1
+  name: Nullable<TimeSpan>
+  nameWithType: Nullable<TimeSpan>
+  fullName: System.Nullable<TimeSpan>
+  nameWithType.vb: Nullable(Of TimeSpan)
+  fullName.vb: System.Nullable(Of TimeSpan)
+  name.vb: Nullable(Of TimeSpan)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: TimeSpan
+    name: TimeSpan
+    nameWithType: TimeSpan
+    fullName: TimeSpan
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: TimeSpan
+    name: TimeSpan
+    nameWithType: TimeSpan
+    fullName: TimeSpan
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TimeSpan
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: TimeSpan
+- uid: System.Nullable`1
+  isExternal: true
+  name: Nullable<>
+  nameWithType: Nullable<>
+  fullName: System.Nullable<>
+  nameWithType.vb: Nullable(Of )
+  fullName.vb: System.Nullable(Of )
+  name.vb: Nullable(Of )
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )

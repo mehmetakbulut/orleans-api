@@ -1,0 +1,400 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Streams.Core.IStreamSubscriptionHandleFactory
+  commentId: T:Orleans.Streams.Core.IStreamSubscriptionHandleFactory
+  id: IStreamSubscriptionHandleFactory
+  parent: Orleans.Streams.Core
+  children:
+  - Orleans.Streams.Core.IStreamSubscriptionHandleFactory.Create``1
+  - Orleans.Streams.Core.IStreamSubscriptionHandleFactory.ProviderName
+  - Orleans.Streams.Core.IStreamSubscriptionHandleFactory.StreamId
+  - Orleans.Streams.Core.IStreamSubscriptionHandleFactory.SubscriptionId
+  langs:
+  - csharp
+  - vb
+  name: IStreamSubscriptionHandleFactory
+  nameWithType: IStreamSubscriptionHandleFactory
+  fullName: Orleans.Streams.Core.IStreamSubscriptionHandleFactory
+  type: Interface
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Streams/Core/IStreamSubscriptionHandleFactory.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IStreamSubscriptionHandleFactory
+    path: src/Orleans.Core.Abstractions/Streams/Core/IStreamSubscriptionHandleFactory.cs
+    startLine: 7
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Streams.Core
+  syntax:
+    content: public interface IStreamSubscriptionHandleFactory
+    content.vb: Public Interface IStreamSubscriptionHandleFactory
+  extensionMethods:
+  - Orleans.Streams.Core.IStreamSubscriptionHandleFactory.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Orleans.Streams.Core.IStreamSubscriptionHandleFactory.StreamId
+  commentId: P:Orleans.Streams.Core.IStreamSubscriptionHandleFactory.StreamId
+  id: StreamId
+  parent: Orleans.Streams.Core.IStreamSubscriptionHandleFactory
+  langs:
+  - csharp
+  - vb
+  name: StreamId
+  nameWithType: IStreamSubscriptionHandleFactory.StreamId
+  fullName: Orleans.Streams.Core.IStreamSubscriptionHandleFactory.StreamId
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Streams/Core/IStreamSubscriptionHandleFactory.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: StreamId
+    path: src/Orleans.Core.Abstractions/Streams/Core/IStreamSubscriptionHandleFactory.cs
+    startLine: 9
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Streams.Core
+  syntax:
+    content: IStreamIdentity StreamId { get; }
+    parameters: []
+    return:
+      type: Orleans.Streams.IStreamIdentity
+    content.vb: ReadOnly Property StreamId As IStreamIdentity
+  overload: Orleans.Streams.Core.IStreamSubscriptionHandleFactory.StreamId*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Orleans.Streams.Core.IStreamSubscriptionHandleFactory.ProviderName
+  commentId: P:Orleans.Streams.Core.IStreamSubscriptionHandleFactory.ProviderName
+  id: ProviderName
+  parent: Orleans.Streams.Core.IStreamSubscriptionHandleFactory
+  langs:
+  - csharp
+  - vb
+  name: ProviderName
+  nameWithType: IStreamSubscriptionHandleFactory.ProviderName
+  fullName: Orleans.Streams.Core.IStreamSubscriptionHandleFactory.ProviderName
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Streams/Core/IStreamSubscriptionHandleFactory.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ProviderName
+    path: src/Orleans.Core.Abstractions/Streams/Core/IStreamSubscriptionHandleFactory.cs
+    startLine: 10
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Streams.Core
+  syntax:
+    content: string ProviderName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property ProviderName As String
+  overload: Orleans.Streams.Core.IStreamSubscriptionHandleFactory.ProviderName*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Orleans.Streams.Core.IStreamSubscriptionHandleFactory.SubscriptionId
+  commentId: P:Orleans.Streams.Core.IStreamSubscriptionHandleFactory.SubscriptionId
+  id: SubscriptionId
+  parent: Orleans.Streams.Core.IStreamSubscriptionHandleFactory
+  langs:
+  - csharp
+  - vb
+  name: SubscriptionId
+  nameWithType: IStreamSubscriptionHandleFactory.SubscriptionId
+  fullName: Orleans.Streams.Core.IStreamSubscriptionHandleFactory.SubscriptionId
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Streams/Core/IStreamSubscriptionHandleFactory.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SubscriptionId
+    path: src/Orleans.Core.Abstractions/Streams/Core/IStreamSubscriptionHandleFactory.cs
+    startLine: 11
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Streams.Core
+  syntax:
+    content: GuidId SubscriptionId { get; }
+    parameters: []
+    return:
+      type: Orleans.Runtime.GuidId
+    content.vb: ReadOnly Property SubscriptionId As GuidId
+  overload: Orleans.Streams.Core.IStreamSubscriptionHandleFactory.SubscriptionId*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Orleans.Streams.Core.IStreamSubscriptionHandleFactory.Create``1
+  commentId: M:Orleans.Streams.Core.IStreamSubscriptionHandleFactory.Create``1
+  id: Create``1
+  parent: Orleans.Streams.Core.IStreamSubscriptionHandleFactory
+  langs:
+  - csharp
+  - vb
+  name: Create<T>()
+  nameWithType: IStreamSubscriptionHandleFactory.Create<T>()
+  fullName: Orleans.Streams.Core.IStreamSubscriptionHandleFactory.Create<T>()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Streams/Core/IStreamSubscriptionHandleFactory.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Create
+    path: src/Orleans.Core.Abstractions/Streams/Core/IStreamSubscriptionHandleFactory.cs
+    startLine: 12
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Streams.Core
+  syntax:
+    content: StreamSubscriptionHandle<T> Create<T>()
+    typeParameters:
+    - id: T
+    return:
+      type: Orleans.Streams.StreamSubscriptionHandle{{T}}
+    content.vb: Function Create(Of T) As StreamSubscriptionHandle(Of T)
+  overload: Orleans.Streams.Core.IStreamSubscriptionHandleFactory.Create*
+  nameWithType.vb: IStreamSubscriptionHandleFactory.Create(Of T)()
+  fullName.vb: Orleans.Streams.Core.IStreamSubscriptionHandleFactory.Create(Of T)()
+  name.vb: Create(Of T)()
+references:
+- uid: Orleans.Streams.Core
+  commentId: N:Orleans.Streams.Core
+  isExternal: false
+  name: Orleans.Streams.Core
+  nameWithType: Orleans.Streams.Core
+  fullName: Orleans.Streams.Core
+- uid: Orleans.Streams.Core.IStreamSubscriptionHandleFactory.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<IStreamSubscriptionHandleFactory>()
+  nameWithType: ImmutableExt.AsImmutable<IStreamSubscriptionHandleFactory>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Streams.Core.IStreamSubscriptionHandleFactory>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of IStreamSubscriptionHandleFactory)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Streams.Core.IStreamSubscriptionHandleFactory)()
+  name.vb: AsImmutable(Of IStreamSubscriptionHandleFactory)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<IStreamSubscriptionHandleFactory>
+    nameWithType: ImmutableExt.AsImmutable<IStreamSubscriptionHandleFactory>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Streams.Core.IStreamSubscriptionHandleFactory>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of IStreamSubscriptionHandleFactory)
+    nameWithType: ImmutableExt.AsImmutable(Of IStreamSubscriptionHandleFactory)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Streams.Core.IStreamSubscriptionHandleFactory)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Streams.Core.IStreamSubscriptionHandleFactory.StreamId*
+  commentId: Overload:Orleans.Streams.Core.IStreamSubscriptionHandleFactory.StreamId
+  isExternal: false
+  name: StreamId
+  nameWithType: IStreamSubscriptionHandleFactory.StreamId
+  fullName: Orleans.Streams.Core.IStreamSubscriptionHandleFactory.StreamId
+- uid: Orleans.Streams.IStreamIdentity
+  commentId: T:Orleans.Streams.IStreamIdentity
+  parent: Orleans.Streams
+  isExternal: false
+  name: IStreamIdentity
+  nameWithType: IStreamIdentity
+  fullName: Orleans.Streams.IStreamIdentity
+- uid: Orleans.Streams
+  commentId: N:Orleans.Streams
+  isExternal: false
+  name: Orleans.Streams
+  nameWithType: Orleans.Streams
+  fullName: Orleans.Streams
+- uid: Orleans.Streams.Core.IStreamSubscriptionHandleFactory.ProviderName*
+  commentId: Overload:Orleans.Streams.Core.IStreamSubscriptionHandleFactory.ProviderName
+  isExternal: false
+  name: ProviderName
+  nameWithType: IStreamSubscriptionHandleFactory.ProviderName
+  fullName: Orleans.Streams.Core.IStreamSubscriptionHandleFactory.ProviderName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Streams.Core.IStreamSubscriptionHandleFactory.SubscriptionId*
+  commentId: Overload:Orleans.Streams.Core.IStreamSubscriptionHandleFactory.SubscriptionId
+  isExternal: false
+  name: SubscriptionId
+  nameWithType: IStreamSubscriptionHandleFactory.SubscriptionId
+  fullName: Orleans.Streams.Core.IStreamSubscriptionHandleFactory.SubscriptionId
+- uid: Orleans.Runtime.GuidId
+  commentId: T:Orleans.Runtime.GuidId
+  parent: Orleans.Runtime
+  isExternal: false
+  name: GuidId
+  nameWithType: GuidId
+  fullName: Orleans.Runtime.GuidId
+- uid: Orleans.Runtime
+  commentId: N:Orleans.Runtime
+  isExternal: false
+  name: Orleans.Runtime
+  nameWithType: Orleans.Runtime
+  fullName: Orleans.Runtime
+- uid: Orleans.Streams.Core.IStreamSubscriptionHandleFactory.Create*
+  commentId: Overload:Orleans.Streams.Core.IStreamSubscriptionHandleFactory.Create
+  isExternal: false
+  name: Create
+  nameWithType: IStreamSubscriptionHandleFactory.Create
+  fullName: Orleans.Streams.Core.IStreamSubscriptionHandleFactory.Create
+- uid: Orleans.Streams.StreamSubscriptionHandle{{T}}
+  commentId: T:Orleans.Streams.StreamSubscriptionHandle{``0}
+  parent: Orleans.Streams
+  definition: Orleans.Streams.StreamSubscriptionHandle`1
+  name: StreamSubscriptionHandle<T>
+  nameWithType: StreamSubscriptionHandle<T>
+  fullName: Orleans.Streams.StreamSubscriptionHandle<T>
+  nameWithType.vb: StreamSubscriptionHandle(Of T)
+  fullName.vb: Orleans.Streams.StreamSubscriptionHandle(Of T)
+  name.vb: StreamSubscriptionHandle(Of T)
+  spec.csharp:
+  - uid: Orleans.Streams.StreamSubscriptionHandle`1
+    name: StreamSubscriptionHandle
+    nameWithType: StreamSubscriptionHandle
+    fullName: Orleans.Streams.StreamSubscriptionHandle
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Orleans.Streams.StreamSubscriptionHandle`1
+    name: StreamSubscriptionHandle
+    nameWithType: StreamSubscriptionHandle
+    fullName: Orleans.Streams.StreamSubscriptionHandle
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Streams.StreamSubscriptionHandle`1
+  commentId: T:Orleans.Streams.StreamSubscriptionHandle`1
+  parent: Orleans.Streams
+  isExternal: false
+  name: StreamSubscriptionHandle<T>
+  nameWithType: StreamSubscriptionHandle<T>
+  fullName: Orleans.Streams.StreamSubscriptionHandle<T>
+  nameWithType.vb: StreamSubscriptionHandle(Of T)
+  fullName.vb: Orleans.Streams.StreamSubscriptionHandle(Of T)
+  name.vb: StreamSubscriptionHandle(Of T)
+  spec.csharp:
+  - uid: Orleans.Streams.StreamSubscriptionHandle`1
+    name: StreamSubscriptionHandle
+    nameWithType: StreamSubscriptionHandle
+    fullName: Orleans.Streams.StreamSubscriptionHandle
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Orleans.Streams.StreamSubscriptionHandle`1
+    name: StreamSubscriptionHandle
+    nameWithType: StreamSubscriptionHandle
+    fullName: Orleans.Streams.StreamSubscriptionHandle
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )

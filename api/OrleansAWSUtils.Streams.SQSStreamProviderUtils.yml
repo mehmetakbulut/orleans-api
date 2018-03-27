@@ -1,0 +1,215 @@
+### YamlMime:ManagedReference
+items:
+- uid: OrleansAWSUtils.Streams.SQSStreamProviderUtils
+  commentId: T:OrleansAWSUtils.Streams.SQSStreamProviderUtils
+  id: SQSStreamProviderUtils
+  parent: OrleansAWSUtils.Streams
+  children:
+  - OrleansAWSUtils.Streams.SQSStreamProviderUtils.DeleteAllUsedQueues(System.String,System.String,System.String,ILoggerFactory)
+  langs:
+  - csharp
+  - vb
+  name: SQSStreamProviderUtils
+  nameWithType: SQSStreamProviderUtils
+  fullName: OrleansAWSUtils.Streams.SQSStreamProviderUtils
+  type: Class
+  source:
+    remote:
+      path: src/AWS/Orleans.Streaming.SQS/Streams/SQSStreamProviderUtils.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SQSStreamProviderUtils
+    path: src/AWS/Orleans.Streaming.SQS/Streams/SQSStreamProviderUtils.cs
+    startLine: 13
+  assemblies:
+  - Orleans.Streaming.SQS
+  namespace: OrleansAWSUtils.Streams
+  summary: "\nSQS utility functions\n"
+  example: []
+  syntax:
+    content: 'public class SQSStreamProviderUtils : object'
+    content.vb: >-
+      Public Class SQSStreamProviderUtils
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - OrleansAWSUtils.Streams.SQSStreamProviderUtils.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: OrleansAWSUtils.Streams.SQSStreamProviderUtils.DeleteAllUsedQueues(System.String,System.String,System.String,ILoggerFactory)
+  commentId: M:OrleansAWSUtils.Streams.SQSStreamProviderUtils.DeleteAllUsedQueues(System.String,System.String,System.String,ILoggerFactory)
+  id: DeleteAllUsedQueues(System.String,System.String,System.String,ILoggerFactory)
+  parent: OrleansAWSUtils.Streams.SQSStreamProviderUtils
+  langs:
+  - csharp
+  - vb
+  name: DeleteAllUsedQueues(String, String, String, ILoggerFactory)
+  nameWithType: SQSStreamProviderUtils.DeleteAllUsedQueues(String, String, String, ILoggerFactory)
+  fullName: OrleansAWSUtils.Streams.SQSStreamProviderUtils.DeleteAllUsedQueues(System.String, System.String, System.String, ILoggerFactory)
+  type: Method
+  source:
+    remote:
+      path: src/AWS/Orleans.Streaming.SQS/Streams/SQSStreamProviderUtils.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: DeleteAllUsedQueues
+    path: src/AWS/Orleans.Streaming.SQS/Streams/SQSStreamProviderUtils.cs
+    startLine: 19
+  assemblies:
+  - Orleans.Streaming.SQS
+  namespace: OrleansAWSUtils.Streams
+  summary: "\nAsync method to delete all used queques, for specific provider and clusterId\n"
+  example: []
+  syntax:
+    content: public static Task DeleteAllUsedQueues(string providerName, string clusterId, string storageConnectionString, ILoggerFactory loggerFactory)
+    parameters:
+    - id: providerName
+      type: System.String
+    - id: clusterId
+      type: System.String
+    - id: storageConnectionString
+      type: System.String
+    - id: loggerFactory
+      type: ILoggerFactory
+    return:
+      type: Task
+      description: 'Task object for this async method '
+    content.vb: Public Shared Function DeleteAllUsedQueues(providerName As String, clusterId As String, storageConnectionString As String, loggerFactory As ILoggerFactory) As Task
+  overload: OrleansAWSUtils.Streams.SQSStreamProviderUtils.DeleteAllUsedQueues*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: OrleansAWSUtils.Streams
+  commentId: N:OrleansAWSUtils.Streams
+  isExternal: false
+  name: OrleansAWSUtils.Streams
+  nameWithType: OrleansAWSUtils.Streams
+  fullName: OrleansAWSUtils.Streams
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: OrleansAWSUtils.Streams.SQSStreamProviderUtils.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<SQSStreamProviderUtils>()
+  nameWithType: ImmutableExt.AsImmutable<SQSStreamProviderUtils>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<OrleansAWSUtils.Streams.SQSStreamProviderUtils>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of SQSStreamProviderUtils)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of OrleansAWSUtils.Streams.SQSStreamProviderUtils)()
+  name.vb: AsImmutable(Of SQSStreamProviderUtils)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<SQSStreamProviderUtils>
+    nameWithType: ImmutableExt.AsImmutable<SQSStreamProviderUtils>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<OrleansAWSUtils.Streams.SQSStreamProviderUtils>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of SQSStreamProviderUtils)
+    nameWithType: ImmutableExt.AsImmutable(Of SQSStreamProviderUtils)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of OrleansAWSUtils.Streams.SQSStreamProviderUtils)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: OrleansAWSUtils.Streams.SQSStreamProviderUtils.DeleteAllUsedQueues*
+  commentId: Overload:OrleansAWSUtils.Streams.SQSStreamProviderUtils.DeleteAllUsedQueues
+  isExternal: false
+  name: DeleteAllUsedQueues
+  nameWithType: SQSStreamProviderUtils.DeleteAllUsedQueues
+  fullName: OrleansAWSUtils.Streams.SQSStreamProviderUtils.DeleteAllUsedQueues
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: ILoggerFactory
+  isExternal: true
+  name: ILoggerFactory
+  nameWithType: ILoggerFactory
+  fullName: ILoggerFactory
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task

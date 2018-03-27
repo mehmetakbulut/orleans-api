@@ -1,0 +1,343 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.EventSourcing.Common.BatchedNotificationMessage
+  commentId: T:Orleans.EventSourcing.Common.BatchedNotificationMessage
+  id: BatchedNotificationMessage
+  parent: Orleans.EventSourcing.Common
+  children:
+  - Orleans.EventSourcing.Common.BatchedNotificationMessage.Notifications
+  - Orleans.EventSourcing.Common.BatchedNotificationMessage.Version
+  langs:
+  - csharp
+  - vb
+  name: BatchedNotificationMessage
+  nameWithType: BatchedNotificationMessage
+  fullName: Orleans.EventSourcing.Common.BatchedNotificationMessage
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/NotificationMessage.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: BatchedNotificationMessage
+    path: src/Orleans.EventSourcing/Common/NotificationMessage.cs
+    startLine: 32
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  summary: A notification message containing a batch of notification messages.
+  example: []
+  syntax:
+    content: 'public class BatchedNotificationMessage : object, INotificationMessage, ILogConsistencyProtocolMessage'
+    content.vb: >-
+      Public Class BatchedNotificationMessage
+
+          Inherits Object
+
+          Implements INotificationMessage, ILogConsistencyProtocolMessage
+  inheritance:
+  - System.Object
+  implements:
+  - Orleans.EventSourcing.Common.INotificationMessage
+  - ILogConsistencyProtocolMessage
+  extensionMethods:
+  - Orleans.EventSourcing.Common.BatchedNotificationMessage.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.EventSourcing.Common.BatchedNotificationMessage.Notifications
+  commentId: P:Orleans.EventSourcing.Common.BatchedNotificationMessage.Notifications
+  id: Notifications
+  parent: Orleans.EventSourcing.Common.BatchedNotificationMessage
+  langs:
+  - csharp
+  - vb
+  name: Notifications
+  nameWithType: BatchedNotificationMessage.Notifications
+  fullName: Orleans.EventSourcing.Common.BatchedNotificationMessage.Notifications
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/NotificationMessage.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Notifications
+    path: src/Orleans.EventSourcing/Common/NotificationMessage.cs
+    startLine: 36
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  summary: The notification messages contained in this batch.
+  example: []
+  syntax:
+    content: public List<INotificationMessage> Notifications { get; set; }
+    parameters: []
+    return:
+      type: List{Orleans.EventSourcing.Common.INotificationMessage}
+    content.vb: Public Property Notifications As List(Of INotificationMessage)
+  overload: Orleans.EventSourcing.Common.BatchedNotificationMessage.Notifications*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.EventSourcing.Common.BatchedNotificationMessage.Version
+  commentId: P:Orleans.EventSourcing.Common.BatchedNotificationMessage.Version
+  id: Version
+  parent: Orleans.EventSourcing.Common.BatchedNotificationMessage
+  langs:
+  - csharp
+  - vb
+  name: Version
+  nameWithType: BatchedNotificationMessage.Version
+  fullName: Orleans.EventSourcing.Common.BatchedNotificationMessage.Version
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/NotificationMessage.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Version
+    path: src/Orleans.EventSourcing/Common/NotificationMessage.cs
+    startLine: 39
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  summary: The version number - for a batch, this is the maximum version contained.
+  example: []
+  syntax:
+    content: public int Version { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Version As Integer
+  overload: Orleans.EventSourcing.Common.BatchedNotificationMessage.Version*
+  implements:
+  - Orleans.EventSourcing.Common.INotificationMessage.Version
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: Orleans.EventSourcing.Common
+  commentId: N:Orleans.EventSourcing.Common
+  isExternal: false
+  name: Orleans.EventSourcing.Common
+  nameWithType: Orleans.EventSourcing.Common
+  fullName: Orleans.EventSourcing.Common
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.EventSourcing.Common.INotificationMessage
+  commentId: T:Orleans.EventSourcing.Common.INotificationMessage
+  parent: Orleans.EventSourcing.Common
+  isExternal: false
+  name: INotificationMessage
+  nameWithType: INotificationMessage
+  fullName: Orleans.EventSourcing.Common.INotificationMessage
+- uid: ILogConsistencyProtocolMessage
+  isExternal: true
+  name: ILogConsistencyProtocolMessage
+  nameWithType: ILogConsistencyProtocolMessage
+  fullName: ILogConsistencyProtocolMessage
+- uid: Orleans.EventSourcing.Common.BatchedNotificationMessage.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<BatchedNotificationMessage>()
+  nameWithType: ImmutableExt.AsImmutable<BatchedNotificationMessage>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.EventSourcing.Common.BatchedNotificationMessage>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of BatchedNotificationMessage)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.EventSourcing.Common.BatchedNotificationMessage)()
+  name.vb: AsImmutable(Of BatchedNotificationMessage)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<BatchedNotificationMessage>
+    nameWithType: ImmutableExt.AsImmutable<BatchedNotificationMessage>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.EventSourcing.Common.BatchedNotificationMessage>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of BatchedNotificationMessage)
+    nameWithType: ImmutableExt.AsImmutable(Of BatchedNotificationMessage)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.EventSourcing.Common.BatchedNotificationMessage)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.EventSourcing.Common.BatchedNotificationMessage.Notifications*
+  commentId: Overload:Orleans.EventSourcing.Common.BatchedNotificationMessage.Notifications
+  isExternal: false
+  name: Notifications
+  nameWithType: BatchedNotificationMessage.Notifications
+  fullName: Orleans.EventSourcing.Common.BatchedNotificationMessage.Notifications
+- uid: List{Orleans.EventSourcing.Common.INotificationMessage}
+  commentId: '!:List{Orleans.EventSourcing.Common.INotificationMessage}'
+  definition: List`1
+  name: List<INotificationMessage>
+  nameWithType: List<INotificationMessage>
+  fullName: List<Orleans.EventSourcing.Common.INotificationMessage>
+  nameWithType.vb: List(Of INotificationMessage)
+  fullName.vb: List(Of Orleans.EventSourcing.Common.INotificationMessage)
+  name.vb: List(Of INotificationMessage)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Orleans.EventSourcing.Common.INotificationMessage
+    name: INotificationMessage
+    nameWithType: INotificationMessage
+    fullName: Orleans.EventSourcing.Common.INotificationMessage
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Orleans.EventSourcing.Common.INotificationMessage
+    name: INotificationMessage
+    nameWithType: INotificationMessage
+    fullName: Orleans.EventSourcing.Common.INotificationMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.Common.BatchedNotificationMessage.Version*
+  commentId: Overload:Orleans.EventSourcing.Common.BatchedNotificationMessage.Version
+  isExternal: false
+  name: Version
+  nameWithType: BatchedNotificationMessage.Version
+  fullName: Orleans.EventSourcing.Common.BatchedNotificationMessage.Version
+- uid: Orleans.EventSourcing.Common.INotificationMessage.Version
+  commentId: P:Orleans.EventSourcing.Common.INotificationMessage.Version
+  parent: Orleans.EventSourcing.Common.INotificationMessage
+  isExternal: false
+  name: Version
+  nameWithType: INotificationMessage.Version
+  fullName: Orleans.EventSourcing.Common.INotificationMessage.Version
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32

@@ -1,0 +1,207 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Runtime.OrleansMessageRejectionException
+  commentId: T:Orleans.Runtime.OrleansMessageRejectionException
+  id: OrleansMessageRejectionException
+  parent: Orleans.Runtime
+  children:
+  - Orleans.Runtime.OrleansMessageRejectionException.#ctor(SerializationInfo,StreamingContext)
+  langs:
+  - csharp
+  - vb
+  name: OrleansMessageRejectionException
+  nameWithType: OrleansMessageRejectionException
+  fullName: Orleans.Runtime.OrleansMessageRejectionException
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Exceptions/OrleansMessageRejectionException.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: OrleansMessageRejectionException
+    path: src/Orleans.Core.Abstractions/Exceptions/OrleansMessageRejectionException.cs
+    startLine: 8
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  summary: "\nIndicates that an Orleans message was rejected.\n"
+  example: []
+  syntax:
+    content: 'public class OrleansMessageRejectionException : OrleansException'
+    content.vb: >-
+      Public Class OrleansMessageRejectionException
+
+          Inherits OrleansException
+  inheritance:
+  - System.Object
+  - Orleans.Runtime.OrleansException
+  derivedClasses:
+  - Orleans.Runtime.SiloUnavailableException
+  extensionMethods:
+  - Orleans.Runtime.OrleansMessageRejectionException.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.Runtime.OrleansMessageRejectionException.#ctor(SerializationInfo,StreamingContext)
+  commentId: M:Orleans.Runtime.OrleansMessageRejectionException.#ctor(SerializationInfo,StreamingContext)
+  id: '#ctor(SerializationInfo,StreamingContext)'
+  parent: Orleans.Runtime.OrleansMessageRejectionException
+  langs:
+  - csharp
+  - vb
+  name: OrleansMessageRejectionException(SerializationInfo, StreamingContext)
+  nameWithType: OrleansMessageRejectionException.OrleansMessageRejectionException(SerializationInfo, StreamingContext)
+  fullName: Orleans.Runtime.OrleansMessageRejectionException.OrleansMessageRejectionException(SerializationInfo, StreamingContext)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Exceptions/OrleansMessageRejectionException.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Core.Abstractions/Exceptions/OrleansMessageRejectionException.cs
+    startLine: 21
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  syntax:
+    content: protected OrleansMessageRejectionException(SerializationInfo info, StreamingContext context)
+    parameters:
+    - id: info
+      type: SerializationInfo
+    - id: context
+      type: StreamingContext
+    content.vb: Protected Sub New(info As SerializationInfo, context As StreamingContext)
+  overload: Orleans.Runtime.OrleansMessageRejectionException.#ctor*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+references:
+- uid: Orleans.Runtime
+  commentId: N:Orleans.Runtime
+  isExternal: false
+  name: Orleans.Runtime
+  nameWithType: Orleans.Runtime
+  fullName: Orleans.Runtime
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Runtime.OrleansException
+  commentId: T:Orleans.Runtime.OrleansException
+  parent: Orleans.Runtime
+  isExternal: false
+  name: OrleansException
+  nameWithType: OrleansException
+  fullName: Orleans.Runtime.OrleansException
+- uid: Orleans.Runtime.OrleansMessageRejectionException.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<OrleansMessageRejectionException>()
+  nameWithType: ImmutableExt.AsImmutable<OrleansMessageRejectionException>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.OrleansMessageRejectionException>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of OrleansMessageRejectionException)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.OrleansMessageRejectionException)()
+  name.vb: AsImmutable(Of OrleansMessageRejectionException)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<OrleansMessageRejectionException>
+    nameWithType: ImmutableExt.AsImmutable<OrleansMessageRejectionException>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.OrleansMessageRejectionException>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of OrleansMessageRejectionException)
+    nameWithType: ImmutableExt.AsImmutable(Of OrleansMessageRejectionException)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.OrleansMessageRejectionException)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Runtime.OrleansMessageRejectionException.#ctor*
+  commentId: Overload:Orleans.Runtime.OrleansMessageRejectionException.#ctor
+  isExternal: false
+  name: OrleansMessageRejectionException
+  nameWithType: OrleansMessageRejectionException.OrleansMessageRejectionException
+  fullName: Orleans.Runtime.OrleansMessageRejectionException.OrleansMessageRejectionException
+- uid: SerializationInfo
+  isExternal: true
+  name: SerializationInfo
+  nameWithType: SerializationInfo
+  fullName: SerializationInfo
+- uid: StreamingContext
+  isExternal: true
+  name: StreamingContext
+  nameWithType: StreamingContext
+  fullName: StreamingContext

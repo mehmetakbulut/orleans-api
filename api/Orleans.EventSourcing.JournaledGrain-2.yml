@@ -1,0 +1,1873 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.EventSourcing.JournaledGrain`2
+  commentId: T:Orleans.EventSourcing.JournaledGrain`2
+  id: JournaledGrain`2
+  parent: Orleans.EventSourcing
+  children:
+  - Orleans.EventSourcing.JournaledGrain`2.#ctor
+  - Orleans.EventSourcing.JournaledGrain`2.#ctor(Orleans.Core.IGrainIdentity,Orleans.Runtime.IGrainRuntime)
+  - Orleans.EventSourcing.JournaledGrain`2.ConfirmEvents
+  - Orleans.EventSourcing.JournaledGrain`2.DefaultAdaptorFactory
+  - Orleans.EventSourcing.JournaledGrain`2.DisableStatsCollection
+  - Orleans.EventSourcing.JournaledGrain`2.EnableStatsCollection
+  - Orleans.EventSourcing.JournaledGrain`2.GetStats
+  - Orleans.EventSourcing.JournaledGrain`2.InstallAdaptor(ILogViewAdaptorFactory,System.Object,System.String,IGrainStorage,ILogConsistencyProtocolServices)
+  - Orleans.EventSourcing.JournaledGrain`2.OnActivateAsync
+  - Orleans.EventSourcing.JournaledGrain`2.OnConnectionIssue(Orleans.LogConsistency.ConnectionIssue)
+  - Orleans.EventSourcing.JournaledGrain`2.OnConnectionIssueResolved(Orleans.LogConsistency.ConnectionIssue)
+  - Orleans.EventSourcing.JournaledGrain`2.OnStateChanged
+  - Orleans.EventSourcing.JournaledGrain`2.OnTentativeStateChanged
+  - Orleans.EventSourcing.JournaledGrain`2.RaiseConditionalEvent``1(``0)
+  - Orleans.EventSourcing.JournaledGrain`2.RaiseConditionalEvents``1(IEnumerable{``0})
+  - Orleans.EventSourcing.JournaledGrain`2.RaiseEvent``1(``0)
+  - Orleans.EventSourcing.JournaledGrain`2.RaiseEvents``1(IEnumerable{``0})
+  - Orleans.EventSourcing.JournaledGrain`2.RefreshNow
+  - Orleans.EventSourcing.JournaledGrain`2.RetrieveConfirmedEvents(System.Int32,System.Int32)
+  - Orleans.EventSourcing.JournaledGrain`2.State
+  - Orleans.EventSourcing.JournaledGrain`2.TentativeState
+  - Orleans.EventSourcing.JournaledGrain`2.TransitionState(`0,`1)
+  - Orleans.EventSourcing.JournaledGrain`2.UnconfirmedEvents
+  - Orleans.EventSourcing.JournaledGrain`2.UnresolvedConnectionIssues
+  - Orleans.EventSourcing.JournaledGrain`2.Version
+  langs:
+  - csharp
+  - vb
+  name: JournaledGrain<TGrainState, TEventBase>
+  nameWithType: JournaledGrain<TGrainState, TEventBase>
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/JournaledGrain.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: JournaledGrain
+    path: src/Orleans.EventSourcing/JournaledGrain.cs
+    startLine: 39
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing
+  summary: "\nA base class for log-consistent grains using standard event-sourcing terminology.\nAll operations are reentrancy-safe.\n<typeparam name=\"TGrainState\">The type for the grain state, i.e. the aggregate view of the event log.</typeparam>\n<typeparam name=\"TEventBase\">The common base class for the events</typeparam>\n"
+  example: []
+  syntax:
+    content: 'public abstract class JournaledGrain<TGrainState, TEventBase> : LogConsistentGrain<TGrainState>, ILogConsistencyProtocolParticipant, ILogViewAdaptorHost<TGrainState, TEventBase> where TGrainState : class, new ()where TEventBase : class'
+    typeParameters:
+    - id: TGrainState
+    - id: TEventBase
+    content.vb: >-
+      Public MustInherit Class JournaledGrain(Of TGrainState As {Class, New}, TEventBase As Class)
+
+          Inherits LogConsistentGrain(Of TGrainState)
+
+          Implements ILogConsistencyProtocolParticipant, ILogViewAdaptorHost(Of TGrainState, TEventBase)
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Orleans.EventSourcing.JournaledGrain`1
+  implements:
+  - ILogConsistencyProtocolParticipant
+  - ILogViewAdaptorHost{{TGrainState},{TEventBase}}
+  extensionMethods:
+  - Orleans.EventSourcing.JournaledGrain`2.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase)
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase)
+  name.vb: JournaledGrain(Of TGrainState, TEventBase)
+- uid: Orleans.EventSourcing.JournaledGrain`2.#ctor
+  commentId: M:Orleans.EventSourcing.JournaledGrain`2.#ctor
+  id: '#ctor'
+  parent: Orleans.EventSourcing.JournaledGrain`2
+  langs:
+  - csharp
+  - vb
+  name: JournaledGrain()
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.JournaledGrain()
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.JournaledGrain()
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/JournaledGrain.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.EventSourcing/JournaledGrain.cs
+    startLine: 46
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing
+  syntax:
+    content: protected JournaledGrain()
+    content.vb: Protected Sub New
+  overload: Orleans.EventSourcing.JournaledGrain`2.#ctor*
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).JournaledGrain()
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).JournaledGrain()
+- uid: Orleans.EventSourcing.JournaledGrain`2.#ctor(Orleans.Core.IGrainIdentity,Orleans.Runtime.IGrainRuntime)
+  commentId: M:Orleans.EventSourcing.JournaledGrain`2.#ctor(Orleans.Core.IGrainIdentity,Orleans.Runtime.IGrainRuntime)
+  id: '#ctor(Orleans.Core.IGrainIdentity,Orleans.Runtime.IGrainRuntime)'
+  parent: Orleans.EventSourcing.JournaledGrain`2
+  langs:
+  - csharp
+  - vb
+  name: JournaledGrain(IGrainIdentity, IGrainRuntime)
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.JournaledGrain(IGrainIdentity, IGrainRuntime)
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.JournaledGrain(Orleans.Core.IGrainIdentity, Orleans.Runtime.IGrainRuntime)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/JournaledGrain.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.EventSourcing/JournaledGrain.cs
+    startLine: 52
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing
+  summary: "\nThis constructor is particularly useful for unit testing where test code can create a Grain and replace\nthe IGrainIdentity, IGrainRuntime and State with test doubles (mocks/stubs).\n"
+  example: []
+  syntax:
+    content: protected JournaledGrain(IGrainIdentity identity, IGrainRuntime runtime)
+    parameters:
+    - id: identity
+      type: Orleans.Core.IGrainIdentity
+    - id: runtime
+      type: Orleans.Runtime.IGrainRuntime
+    content.vb: Protected Sub New(identity As IGrainIdentity, runtime As IGrainRuntime)
+  overload: Orleans.EventSourcing.JournaledGrain`2.#ctor*
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).JournaledGrain(IGrainIdentity, IGrainRuntime)
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).JournaledGrain(Orleans.Core.IGrainIdentity, Orleans.Runtime.IGrainRuntime)
+- uid: Orleans.EventSourcing.JournaledGrain`2.RaiseEvent``1(``0)
+  commentId: M:Orleans.EventSourcing.JournaledGrain`2.RaiseEvent``1(``0)
+  id: RaiseEvent``1(``0)
+  parent: Orleans.EventSourcing.JournaledGrain`2
+  langs:
+  - csharp
+  - vb
+  name: RaiseEvent<TEvent>(TEvent)
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.RaiseEvent<TEvent>(TEvent)
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.RaiseEvent<TEvent>(TEvent)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/JournaledGrain.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: RaiseEvent
+    path: src/Orleans.EventSourcing/JournaledGrain.cs
+    startLine: 62
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing
+  summary: "\nRaise an event.\n"
+  example: []
+  syntax:
+    content: 'protected virtual void RaiseEvent<TEvent>(TEvent event)where TEvent : TEventBase'
+    parameters:
+    - id: event
+      type: '{TEvent}'
+      description: Event to raise
+    typeParameters:
+    - id: TEvent
+    content.vb: Protected Overridable Sub RaiseEvent(Of TEvent As TEventBase)(event As TEvent)
+  overload: Orleans.EventSourcing.JournaledGrain`2.RaiseEvent*
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).RaiseEvent(Of TEvent)(TEvent)
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).RaiseEvent(Of TEvent)(TEvent)
+  name.vb: RaiseEvent(Of TEvent)(TEvent)
+- uid: Orleans.EventSourcing.JournaledGrain`2.RaiseEvents``1(IEnumerable{``0})
+  commentId: M:Orleans.EventSourcing.JournaledGrain`2.RaiseEvents``1(IEnumerable{``0})
+  id: RaiseEvents``1(IEnumerable{``0})
+  parent: Orleans.EventSourcing.JournaledGrain`2
+  langs:
+  - csharp
+  - vb
+  name: RaiseEvents<TEvent>(IEnumerable<TEvent>)
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.RaiseEvents<TEvent>(IEnumerable<TEvent>)
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.RaiseEvents<TEvent>(IEnumerable<TEvent>)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/JournaledGrain.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: RaiseEvents
+    path: src/Orleans.EventSourcing/JournaledGrain.cs
+    startLine: 75
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing
+  summary: "\nRaise multiple events, as an atomic sequence.\n"
+  example: []
+  syntax:
+    content: 'protected virtual void RaiseEvents<TEvent>(IEnumerable<TEvent> events)where TEvent : TEventBase'
+    parameters:
+    - id: events
+      type: IEnumerable{{TEvent}}
+      description: Events to raise
+    typeParameters:
+    - id: TEvent
+    content.vb: Protected Overridable Sub RaiseEvents(Of TEvent As TEventBase)(events As IEnumerable(Of TEvent))
+  overload: Orleans.EventSourcing.JournaledGrain`2.RaiseEvents*
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).RaiseEvents(Of TEvent)(IEnumerable(Of TEvent))
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).RaiseEvents(Of TEvent)(IEnumerable(Of TEvent))
+  name.vb: RaiseEvents(Of TEvent)(IEnumerable(Of TEvent))
+- uid: Orleans.EventSourcing.JournaledGrain`2.RaiseConditionalEvent``1(``0)
+  commentId: M:Orleans.EventSourcing.JournaledGrain`2.RaiseConditionalEvent``1(``0)
+  id: RaiseConditionalEvent``1(``0)
+  parent: Orleans.EventSourcing.JournaledGrain`2
+  langs:
+  - csharp
+  - vb
+  name: RaiseConditionalEvent<TEvent>(TEvent)
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.RaiseConditionalEvent<TEvent>(TEvent)
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.RaiseConditionalEvent<TEvent>(TEvent)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/JournaledGrain.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: RaiseConditionalEvent
+    path: src/Orleans.EventSourcing/JournaledGrain.cs
+    startLine: 90
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing
+  summary: "\nRaise an event conditionally. \nSucceeds only if there are no conflicts, that is, no other events were raised in the meantime.\n"
+  example: []
+  syntax:
+    content: 'protected virtual Task<bool> RaiseConditionalEvent<TEvent>(TEvent event)where TEvent : TEventBase'
+    parameters:
+    - id: event
+      type: '{TEvent}'
+      description: Event to raise
+    typeParameters:
+    - id: TEvent
+    return:
+      type: Task{System.Boolean}
+      description: true if successful, false if there was a conflict.
+    content.vb: Protected Overridable Function RaiseConditionalEvent(Of TEvent As TEventBase)(event As TEvent) As Task(Of Boolean)
+  overload: Orleans.EventSourcing.JournaledGrain`2.RaiseConditionalEvent*
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).RaiseConditionalEvent(Of TEvent)(TEvent)
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).RaiseConditionalEvent(Of TEvent)(TEvent)
+  name.vb: RaiseConditionalEvent(Of TEvent)(TEvent)
+- uid: Orleans.EventSourcing.JournaledGrain`2.RaiseConditionalEvents``1(IEnumerable{``0})
+  commentId: M:Orleans.EventSourcing.JournaledGrain`2.RaiseConditionalEvents``1(IEnumerable{``0})
+  id: RaiseConditionalEvents``1(IEnumerable{``0})
+  parent: Orleans.EventSourcing.JournaledGrain`2
+  langs:
+  - csharp
+  - vb
+  name: RaiseConditionalEvents<TEvent>(IEnumerable<TEvent>)
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.RaiseConditionalEvents<TEvent>(IEnumerable<TEvent>)
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.RaiseConditionalEvents<TEvent>(IEnumerable<TEvent>)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/JournaledGrain.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: RaiseConditionalEvents
+    path: src/Orleans.EventSourcing/JournaledGrain.cs
+    startLine: 105
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing
+  summary: "\nRaise multiple events, as an atomic sequence, conditionally. \nSucceeds only if there are no conflicts, that is, no other events were raised in the meantime.\n"
+  example: []
+  syntax:
+    content: 'protected virtual Task<bool> RaiseConditionalEvents<TEvent>(IEnumerable<TEvent> events)where TEvent : TEventBase'
+    parameters:
+    - id: events
+      type: IEnumerable{{TEvent}}
+      description: Events to raise
+    typeParameters:
+    - id: TEvent
+    return:
+      type: Task{System.Boolean}
+      description: true if successful, false if there was a conflict.
+    content.vb: Protected Overridable Function RaiseConditionalEvents(Of TEvent As TEventBase)(events As IEnumerable(Of TEvent)) As Task(Of Boolean)
+  overload: Orleans.EventSourcing.JournaledGrain`2.RaiseConditionalEvents*
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).RaiseConditionalEvents(Of TEvent)(IEnumerable(Of TEvent))
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).RaiseConditionalEvents(Of TEvent)(IEnumerable(Of TEvent))
+  name.vb: RaiseConditionalEvents(Of TEvent)(IEnumerable(Of TEvent))
+- uid: Orleans.EventSourcing.JournaledGrain`2.State
+  commentId: P:Orleans.EventSourcing.JournaledGrain`2.State
+  id: State
+  parent: Orleans.EventSourcing.JournaledGrain`2
+  langs:
+  - csharp
+  - vb
+  name: State
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.State
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.State
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/JournaledGrain.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: State
+    path: src/Orleans.EventSourcing/JournaledGrain.cs
+    startLine: 116
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing
+  summary: "\nThe current confirmed state. \nIncludes only confirmed events.\n"
+  example: []
+  syntax:
+    content: protected TGrainState State { get; }
+    parameters: []
+    return:
+      type: '{TGrainState}'
+    content.vb: Protected ReadOnly Property State As TGrainState
+  overload: Orleans.EventSourcing.JournaledGrain`2.State*
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).State
+  modifiers.csharp:
+  - protected
+  - get
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).State
+- uid: Orleans.EventSourcing.JournaledGrain`2.Version
+  commentId: P:Orleans.EventSourcing.JournaledGrain`2.Version
+  id: Version
+  parent: Orleans.EventSourcing.JournaledGrain`2
+  langs:
+  - csharp
+  - vb
+  name: Version
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.Version
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.Version
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/JournaledGrain.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Version
+    path: src/Orleans.EventSourcing/JournaledGrain.cs
+    startLine: 125
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing
+  summary: "\nThe version of the current confirmed state. \nEquals the total number of confirmed events.\n"
+  example: []
+  syntax:
+    content: protected int Version { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Protected ReadOnly Property Version As Integer
+  overload: Orleans.EventSourcing.JournaledGrain`2.Version*
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).Version
+  modifiers.csharp:
+  - protected
+  - get
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).Version
+- uid: Orleans.EventSourcing.JournaledGrain`2.OnTentativeStateChanged
+  commentId: M:Orleans.EventSourcing.JournaledGrain`2.OnTentativeStateChanged
+  id: OnTentativeStateChanged
+  parent: Orleans.EventSourcing.JournaledGrain`2
+  langs:
+  - csharp
+  - vb
+  name: OnTentativeStateChanged()
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.OnTentativeStateChanged()
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.OnTentativeStateChanged()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/JournaledGrain.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: OnTentativeStateChanged
+    path: src/Orleans.EventSourcing/JournaledGrain.cs
+    startLine: 134
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing
+  summary: "\nCalled whenever the tentative state may have changed due to local or remote events.\n<p>Override this to react to changes of the state.</p>\n"
+  example: []
+  syntax:
+    content: protected virtual void OnTentativeStateChanged()
+    content.vb: Protected Overridable Sub OnTentativeStateChanged
+  overload: Orleans.EventSourcing.JournaledGrain`2.OnTentativeStateChanged*
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).OnTentativeStateChanged()
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).OnTentativeStateChanged()
+- uid: Orleans.EventSourcing.JournaledGrain`2.TentativeState
+  commentId: P:Orleans.EventSourcing.JournaledGrain`2.TentativeState
+  id: TentativeState
+  parent: Orleans.EventSourcing.JournaledGrain`2
+  langs:
+  - csharp
+  - vb
+  name: TentativeState
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.TentativeState
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.TentativeState
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/JournaledGrain.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: TentativeState
+    path: src/Orleans.EventSourcing/JournaledGrain.cs
+    startLine: 142
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing
+  summary: "\nThe current tentative state.\nIncludes both confirmed and unconfirmed events.\n"
+  example: []
+  syntax:
+    content: protected TGrainState TentativeState { get; }
+    parameters: []
+    return:
+      type: '{TGrainState}'
+    content.vb: Protected ReadOnly Property TentativeState As TGrainState
+  overload: Orleans.EventSourcing.JournaledGrain`2.TentativeState*
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).TentativeState
+  modifiers.csharp:
+  - protected
+  - get
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).TentativeState
+- uid: Orleans.EventSourcing.JournaledGrain`2.OnStateChanged
+  commentId: M:Orleans.EventSourcing.JournaledGrain`2.OnStateChanged
+  id: OnStateChanged
+  parent: Orleans.EventSourcing.JournaledGrain`2
+  langs:
+  - csharp
+  - vb
+  name: OnStateChanged()
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.OnStateChanged()
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.OnStateChanged()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/JournaledGrain.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: OnStateChanged
+    path: src/Orleans.EventSourcing/JournaledGrain.cs
+    startLine: 151
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing
+  summary: "\nCalled after the confirmed state may have changed (i.e. the confirmed version number is larger).\n<p>Override this to react to changes of the confirmed state.</p>\n"
+  example: []
+  syntax:
+    content: protected virtual void OnStateChanged()
+    content.vb: Protected Overridable Sub OnStateChanged
+  overload: Orleans.EventSourcing.JournaledGrain`2.OnStateChanged*
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).OnStateChanged()
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).OnStateChanged()
+- uid: Orleans.EventSourcing.JournaledGrain`2.ConfirmEvents
+  commentId: M:Orleans.EventSourcing.JournaledGrain`2.ConfirmEvents
+  id: ConfirmEvents
+  parent: Orleans.EventSourcing.JournaledGrain`2
+  langs:
+  - csharp
+  - vb
+  name: ConfirmEvents()
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.ConfirmEvents()
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.ConfirmEvents()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/JournaledGrain.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ConfirmEvents
+    path: src/Orleans.EventSourcing/JournaledGrain.cs
+    startLine: 162
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing
+  summary: "\nWaits until all previously raised events have been confirmed. \n<p>await this after raising one or more events, to ensure events are persisted before proceeding, or to guarantee strong consistency (linearizability) even if there are multiple instances of this grain</p>\n"
+  example: []
+  syntax:
+    content: protected Task ConfirmEvents()
+    return:
+      type: Task
+      description: a task that completes once the events have been confirmed.
+    content.vb: Protected Function ConfirmEvents As Task
+  overload: Orleans.EventSourcing.JournaledGrain`2.ConfirmEvents*
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).ConfirmEvents()
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).ConfirmEvents()
+- uid: Orleans.EventSourcing.JournaledGrain`2.RefreshNow
+  commentId: M:Orleans.EventSourcing.JournaledGrain`2.RefreshNow
+  id: RefreshNow
+  parent: Orleans.EventSourcing.JournaledGrain`2
+  langs:
+  - csharp
+  - vb
+  name: RefreshNow()
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.RefreshNow()
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.RefreshNow()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/JournaledGrain.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: RefreshNow
+    path: src/Orleans.EventSourcing/JournaledGrain.cs
+    startLine: 174
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing
+  summary: "\nRetrieves the latest state now, and confirms all previously raised events. \nEffectively, this enforces synchronization with the global state.\n<p>Await this before reading the state to ensure strong consistency (linearizability) even if there are multiple instances of this grain</p>\n"
+  example: []
+  syntax:
+    content: protected Task RefreshNow()
+    return:
+      type: Task
+      description: a task that completes once the log has been refreshed and the events have been confirmed.
+    content.vb: Protected Function RefreshNow As Task
+  overload: Orleans.EventSourcing.JournaledGrain`2.RefreshNow*
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).RefreshNow()
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).RefreshNow()
+- uid: Orleans.EventSourcing.JournaledGrain`2.UnconfirmedEvents
+  commentId: P:Orleans.EventSourcing.JournaledGrain`2.UnconfirmedEvents
+  id: UnconfirmedEvents
+  parent: Orleans.EventSourcing.JournaledGrain`2
+  langs:
+  - csharp
+  - vb
+  name: UnconfirmedEvents
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.UnconfirmedEvents
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.UnconfirmedEvents
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/JournaledGrain.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: UnconfirmedEvents
+    path: src/Orleans.EventSourcing/JournaledGrain.cs
+    startLine: 183
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing
+  summary: "\nReturns the current queue of unconfirmed events.\n"
+  example: []
+  syntax:
+    content: public IEnumerable<TEventBase> UnconfirmedEvents { get; }
+    parameters: []
+    return:
+      type: IEnumerable{{TEventBase}}
+    content.vb: Public ReadOnly Property UnconfirmedEvents As IEnumerable(Of TEventBase)
+  overload: Orleans.EventSourcing.JournaledGrain`2.UnconfirmedEvents*
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).UnconfirmedEvents
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).UnconfirmedEvents
+- uid: Orleans.EventSourcing.JournaledGrain`2.OnActivateAsync
+  commentId: M:Orleans.EventSourcing.JournaledGrain`2.OnActivateAsync
+  id: OnActivateAsync
+  parent: Orleans.EventSourcing.JournaledGrain`2
+  langs:
+  - csharp
+  - vb
+  name: OnActivateAsync()
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.OnActivateAsync()
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.OnActivateAsync()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/JournaledGrain.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: OnActivateAsync
+    path: src/Orleans.EventSourcing/JournaledGrain.cs
+    startLine: 194
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing
+  summary: "\nBy default, upon activation, the journaled grain waits until it has loaded the latest\nview from storage. Subclasses can override this behavior,\nand skip the wait if desired.\n"
+  example: []
+  syntax:
+    content: public override Task OnActivateAsync()
+    return:
+      type: Task
+    content.vb: Public Overrides Function OnActivateAsync As Task
+  overload: Orleans.EventSourcing.JournaledGrain`2.OnActivateAsync*
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).OnActivateAsync()
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).OnActivateAsync()
+- uid: Orleans.EventSourcing.JournaledGrain`2.RetrieveConfirmedEvents(System.Int32,System.Int32)
+  commentId: M:Orleans.EventSourcing.JournaledGrain`2.RetrieveConfirmedEvents(System.Int32,System.Int32)
+  id: RetrieveConfirmedEvents(System.Int32,System.Int32)
+  parent: Orleans.EventSourcing.JournaledGrain`2
+  langs:
+  - csharp
+  - vb
+  name: RetrieveConfirmedEvents(Int32, Int32)
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.RetrieveConfirmedEvents(Int32, Int32)
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.RetrieveConfirmedEvents(System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/JournaledGrain.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: RetrieveConfirmedEvents
+    path: src/Orleans.EventSourcing/JournaledGrain.cs
+    startLine: 207
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing
+  summary: "\nRetrieves a segment of the confirmed event sequence, possibly from storage. \nThrows <see cref=\"!:NotSupportedException\"></see> if the events are not available to read.\nWhether events are available, and for how long, depends on the providers used and how they are configured.\n"
+  example: []
+  syntax:
+    content: protected Task<IReadOnlyList<TEventBase>> RetrieveConfirmedEvents(int fromVersion, int toVersion)
+    parameters:
+    - id: fromVersion
+      type: System.Int32
+      description: the position of the event sequence from which to start
+    - id: toVersion
+      type: System.Int32
+      description: the position of the event sequence on which to end
+    return:
+      type: Task{IReadOnlyList{{TEventBase}}}
+      description: a task which returns the sequence of events between the two versions
+    content.vb: Protected Function RetrieveConfirmedEvents(fromVersion As Integer, toVersion As Integer) As Task(Of IReadOnlyList(Of TEventBase))
+  overload: Orleans.EventSourcing.JournaledGrain`2.RetrieveConfirmedEvents*
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).RetrieveConfirmedEvents(Int32, Int32)
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).RetrieveConfirmedEvents(System.Int32, System.Int32)
+- uid: Orleans.EventSourcing.JournaledGrain`2.OnConnectionIssue(Orleans.LogConsistency.ConnectionIssue)
+  commentId: M:Orleans.EventSourcing.JournaledGrain`2.OnConnectionIssue(Orleans.LogConsistency.ConnectionIssue)
+  id: OnConnectionIssue(Orleans.LogConsistency.ConnectionIssue)
+  parent: Orleans.EventSourcing.JournaledGrain`2
+  langs:
+  - csharp
+  - vb
+  name: OnConnectionIssue(ConnectionIssue)
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.OnConnectionIssue(ConnectionIssue)
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.OnConnectionIssue(Orleans.LogConsistency.ConnectionIssue)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/JournaledGrain.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: OnConnectionIssue
+    path: src/Orleans.EventSourcing/JournaledGrain.cs
+    startLine: 224
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing
+  summary: "\nCalled when the underlying persistence or replication protocol is running into some sort of connection trouble.\n<p>Override this to monitor the health of the log-consistency protocol and/or\nto customize retry delays.\nAny exceptions thrown are caught and logged by the <see cref=\"!:ILogConsistencyProvider\"></see>.</p>\n"
+  example: []
+  syntax:
+    content: protected virtual void OnConnectionIssue(ConnectionIssue issue)
+    parameters:
+    - id: issue
+      type: Orleans.LogConsistency.ConnectionIssue
+    content.vb: Protected Overridable Sub OnConnectionIssue(issue As ConnectionIssue)
+  overload: Orleans.EventSourcing.JournaledGrain`2.OnConnectionIssue*
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).OnConnectionIssue(ConnectionIssue)
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).OnConnectionIssue(Orleans.LogConsistency.ConnectionIssue)
+- uid: Orleans.EventSourcing.JournaledGrain`2.OnConnectionIssueResolved(Orleans.LogConsistency.ConnectionIssue)
+  commentId: M:Orleans.EventSourcing.JournaledGrain`2.OnConnectionIssueResolved(Orleans.LogConsistency.ConnectionIssue)
+  id: OnConnectionIssueResolved(Orleans.LogConsistency.ConnectionIssue)
+  parent: Orleans.EventSourcing.JournaledGrain`2
+  langs:
+  - csharp
+  - vb
+  name: OnConnectionIssueResolved(ConnectionIssue)
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.OnConnectionIssueResolved(ConnectionIssue)
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.OnConnectionIssueResolved(Orleans.LogConsistency.ConnectionIssue)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/JournaledGrain.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: OnConnectionIssueResolved
+    path: src/Orleans.EventSourcing/JournaledGrain.cs
+    startLine: 233
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing
+  summary: "\nCalled when a previously reported connection issue has been resolved.\n<p>Override this to monitor the health of the log-consistency protocol. \nAny exceptions thrown are caught and logged by the <see cref=\"!:ILogConsistencyProvider\"></see>.</p>\n"
+  example: []
+  syntax:
+    content: protected virtual void OnConnectionIssueResolved(ConnectionIssue issue)
+    parameters:
+    - id: issue
+      type: Orleans.LogConsistency.ConnectionIssue
+    content.vb: Protected Overridable Sub OnConnectionIssueResolved(issue As ConnectionIssue)
+  overload: Orleans.EventSourcing.JournaledGrain`2.OnConnectionIssueResolved*
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).OnConnectionIssueResolved(ConnectionIssue)
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).OnConnectionIssueResolved(Orleans.LogConsistency.ConnectionIssue)
+- uid: Orleans.EventSourcing.JournaledGrain`2.UnresolvedConnectionIssues
+  commentId: P:Orleans.EventSourcing.JournaledGrain`2.UnresolvedConnectionIssues
+  id: UnresolvedConnectionIssues
+  parent: Orleans.EventSourcing.JournaledGrain`2
+  langs:
+  - csharp
+  - vb
+  name: UnresolvedConnectionIssues
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.UnresolvedConnectionIssues
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.UnresolvedConnectionIssues
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/JournaledGrain.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: UnresolvedConnectionIssues
+    path: src/Orleans.EventSourcing/JournaledGrain.cs
+    startLine: 239
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing
+  example: []
+  syntax:
+    content: protected IEnumerable<ConnectionIssue> UnresolvedConnectionIssues { get; }
+    parameters: []
+    return:
+      type: IEnumerable{Orleans.LogConsistency.ConnectionIssue}
+    content.vb: Protected ReadOnly Property UnresolvedConnectionIssues As IEnumerable(Of ConnectionIssue)
+  overload: Orleans.EventSourcing.JournaledGrain`2.UnresolvedConnectionIssues*
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).UnresolvedConnectionIssues
+  modifiers.csharp:
+  - protected
+  - get
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).UnresolvedConnectionIssues
+- uid: Orleans.EventSourcing.JournaledGrain`2.EnableStatsCollection
+  commentId: M:Orleans.EventSourcing.JournaledGrain`2.EnableStatsCollection
+  id: EnableStatsCollection
+  parent: Orleans.EventSourcing.JournaledGrain`2
+  langs:
+  - csharp
+  - vb
+  name: EnableStatsCollection()
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.EnableStatsCollection()
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.EnableStatsCollection()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/JournaledGrain.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: EnableStatsCollection
+    path: src/Orleans.EventSourcing/JournaledGrain.cs
+    startLine: 248
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing
+  example: []
+  syntax:
+    content: protected void EnableStatsCollection()
+    content.vb: Protected Sub EnableStatsCollection
+  overload: Orleans.EventSourcing.JournaledGrain`2.EnableStatsCollection*
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).EnableStatsCollection()
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).EnableStatsCollection()
+- uid: Orleans.EventSourcing.JournaledGrain`2.DisableStatsCollection
+  commentId: M:Orleans.EventSourcing.JournaledGrain`2.DisableStatsCollection
+  id: DisableStatsCollection
+  parent: Orleans.EventSourcing.JournaledGrain`2
+  langs:
+  - csharp
+  - vb
+  name: DisableStatsCollection()
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.DisableStatsCollection()
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.DisableStatsCollection()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/JournaledGrain.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: DisableStatsCollection
+    path: src/Orleans.EventSourcing/JournaledGrain.cs
+    startLine: 254
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing
+  example: []
+  syntax:
+    content: protected void DisableStatsCollection()
+    content.vb: Protected Sub DisableStatsCollection
+  overload: Orleans.EventSourcing.JournaledGrain`2.DisableStatsCollection*
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).DisableStatsCollection()
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).DisableStatsCollection()
+- uid: Orleans.EventSourcing.JournaledGrain`2.GetStats
+  commentId: M:Orleans.EventSourcing.JournaledGrain`2.GetStats
+  id: GetStats
+  parent: Orleans.EventSourcing.JournaledGrain`2
+  langs:
+  - csharp
+  - vb
+  name: GetStats()
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.GetStats()
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.GetStats()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/JournaledGrain.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetStats
+    path: src/Orleans.EventSourcing/JournaledGrain.cs
+    startLine: 260
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing
+  example: []
+  syntax:
+    content: protected LogConsistencyStatistics GetStats()
+    return:
+      type: LogConsistencyStatistics
+    content.vb: Protected Function GetStats As LogConsistencyStatistics
+  overload: Orleans.EventSourcing.JournaledGrain`2.GetStats*
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).GetStats()
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).GetStats()
+- uid: Orleans.EventSourcing.JournaledGrain`2.TransitionState(`0,`1)
+  commentId: M:Orleans.EventSourcing.JournaledGrain`2.TransitionState(`0,`1)
+  id: TransitionState(`0,`1)
+  parent: Orleans.EventSourcing.JournaledGrain`2
+  langs:
+  - csharp
+  - vb
+  name: TransitionState(TGrainState, TEventBase)
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.TransitionState(TGrainState, TEventBase)
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.TransitionState(TGrainState, TEventBase)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/JournaledGrain.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: TransitionState
+    path: src/Orleans.EventSourcing/JournaledGrain.cs
+    startLine: 275
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing
+  summary: "\nDefines how to apply events to the state. Unless it is overridden in the subclass, it calls\na dynamic &quot;Apply&quot; function on the state, with the event as a parameter.\nAll exceptions thrown by this method are caught and logged by the log view provider.\n<p>Override this to customize how to transition the state for a given event.</p>\n"
+  example: []
+  syntax:
+    content: protected virtual void TransitionState(TGrainState state, TEventBase event)
+    parameters:
+    - id: state
+      type: '{TGrainState}'
+      description: ''
+    - id: event
+      type: '{TEventBase}'
+      description: ''
+    content.vb: Protected Overridable Sub TransitionState(state As TGrainState, event As TEventBase)
+  overload: Orleans.EventSourcing.JournaledGrain`2.TransitionState*
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).TransitionState(TGrainState, TEventBase)
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).TransitionState(TGrainState, TEventBase)
+- uid: Orleans.EventSourcing.JournaledGrain`2.InstallAdaptor(ILogViewAdaptorFactory,System.Object,System.String,IGrainStorage,ILogConsistencyProtocolServices)
+  commentId: M:Orleans.EventSourcing.JournaledGrain`2.InstallAdaptor(ILogViewAdaptorFactory,System.Object,System.String,IGrainStorage,ILogConsistencyProtocolServices)
+  id: InstallAdaptor(ILogViewAdaptorFactory,System.Object,System.String,IGrainStorage,ILogConsistencyProtocolServices)
+  parent: Orleans.EventSourcing.JournaledGrain`2
+  langs:
+  - csharp
+  - vb
+  name: InstallAdaptor(ILogViewAdaptorFactory, Object, String, IGrainStorage, ILogConsistencyProtocolServices)
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.InstallAdaptor(ILogViewAdaptorFactory, Object, String, IGrainStorage, ILogConsistencyProtocolServices)
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.InstallAdaptor(ILogViewAdaptorFactory, System.Object, System.String, IGrainStorage, ILogConsistencyProtocolServices)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/JournaledGrain.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: InstallAdaptor
+    path: src/Orleans.EventSourcing/JournaledGrain.cs
+    startLine: 296
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing
+  summary: "\nCalled right after grain is constructed, to install the adaptor.\nThe log-consistency provider contains a factory method that constructs the adaptor with chosen types for this grain\n"
+  example: []
+  syntax:
+    content: protected override void InstallAdaptor(ILogViewAdaptorFactory factory, object initialState, string graintypename, IGrainStorage grainStorage, ILogConsistencyProtocolServices services)
+    parameters:
+    - id: factory
+      type: ILogViewAdaptorFactory
+    - id: initialState
+      type: System.Object
+    - id: graintypename
+      type: System.String
+    - id: grainStorage
+      type: IGrainStorage
+    - id: services
+      type: ILogConsistencyProtocolServices
+    content.vb: Protected Overrides Sub InstallAdaptor(factory As ILogViewAdaptorFactory, initialState As Object, graintypename As String, grainStorage As IGrainStorage, services As ILogConsistencyProtocolServices)
+  overload: Orleans.EventSourcing.JournaledGrain`2.InstallAdaptor*
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).InstallAdaptor(ILogViewAdaptorFactory, Object, String, IGrainStorage, ILogConsistencyProtocolServices)
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).InstallAdaptor(ILogViewAdaptorFactory, System.Object, System.String, IGrainStorage, ILogConsistencyProtocolServices)
+- uid: Orleans.EventSourcing.JournaledGrain`2.DefaultAdaptorFactory
+  commentId: P:Orleans.EventSourcing.JournaledGrain`2.DefaultAdaptorFactory
+  id: DefaultAdaptorFactory
+  parent: Orleans.EventSourcing.JournaledGrain`2
+  langs:
+  - csharp
+  - vb
+  name: DefaultAdaptorFactory
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.DefaultAdaptorFactory
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.DefaultAdaptorFactory
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/JournaledGrain.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: DefaultAdaptorFactory
+    path: src/Orleans.EventSourcing/JournaledGrain.cs
+    startLine: 305
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing
+  summary: "\nIf there is no log-consistency provider specified, store versioned state using default storage provider\n"
+  example: []
+  syntax:
+    content: protected override ILogViewAdaptorFactory DefaultAdaptorFactory { get; }
+    parameters: []
+    return:
+      type: ILogViewAdaptorFactory
+    content.vb: Protected Overrides ReadOnly Property DefaultAdaptorFactory As ILogViewAdaptorFactory
+  overload: Orleans.EventSourcing.JournaledGrain`2.DefaultAdaptorFactory*
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).DefaultAdaptorFactory
+  modifiers.csharp:
+  - protected
+  - override
+  - get
+  modifiers.vb:
+  - Protected
+  - Overrides
+  - ReadOnly
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).DefaultAdaptorFactory
+references:
+- uid: Orleans.EventSourcing
+  commentId: N:Orleans.EventSourcing
+  isExternal: false
+  name: Orleans.EventSourcing
+  nameWithType: Orleans.EventSourcing
+  fullName: Orleans.EventSourcing
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: ILogConsistencyProtocolParticipant
+  isExternal: true
+  name: ILogConsistencyProtocolParticipant
+  nameWithType: ILogConsistencyProtocolParticipant
+  fullName: ILogConsistencyProtocolParticipant
+- uid: ILogViewAdaptorHost{{TGrainState},{TEventBase}}
+  commentId: '!:ILogViewAdaptorHost{`0,`1}'
+  definition: ILogViewAdaptorHost`2
+  name: ILogViewAdaptorHost<TGrainState, TEventBase>
+  nameWithType: ILogViewAdaptorHost<TGrainState, TEventBase>
+  fullName: ILogViewAdaptorHost<TGrainState, TEventBase>
+  nameWithType.vb: ILogViewAdaptorHost(Of TGrainState, TEventBase)
+  fullName.vb: ILogViewAdaptorHost(Of TGrainState, TEventBase)
+  name.vb: ILogViewAdaptorHost(Of TGrainState, TEventBase)
+  spec.csharp:
+  - uid: ILogViewAdaptorHost`2
+    name: ILogViewAdaptorHost
+    nameWithType: ILogViewAdaptorHost
+    fullName: ILogViewAdaptorHost
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TGrainState
+    nameWithType: TGrainState
+    fullName: TGrainState
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEventBase
+    nameWithType: TEventBase
+    fullName: TEventBase
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ILogViewAdaptorHost`2
+    name: ILogViewAdaptorHost
+    nameWithType: ILogViewAdaptorHost
+    fullName: ILogViewAdaptorHost
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TGrainState
+    nameWithType: TGrainState
+    fullName: TGrainState
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEventBase
+    nameWithType: TEventBase
+    fullName: TEventBase
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.JournaledGrain`2.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<JournaledGrain<TGrainState, TEventBase>>()
+  nameWithType: ImmutableExt.AsImmutable<JournaledGrain<TGrainState, TEventBase>>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of JournaledGrain(Of TGrainState, TEventBase))()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase))()
+  name.vb: AsImmutable(Of JournaledGrain(Of TGrainState, TEventBase))()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<JournaledGrain<TGrainState, TEventBase>>
+    nameWithType: ImmutableExt.AsImmutable<JournaledGrain<TGrainState, TEventBase>>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of JournaledGrain(Of TGrainState, TEventBase))
+    nameWithType: ImmutableExt.AsImmutable(Of JournaledGrain(Of TGrainState, TEventBase))
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase))
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ILogViewAdaptorHost`2
+  isExternal: true
+  name: ILogViewAdaptorHost<, >
+  nameWithType: ILogViewAdaptorHost<, >
+  fullName: ILogViewAdaptorHost<, >
+  nameWithType.vb: ILogViewAdaptorHost(Of , )
+  fullName.vb: ILogViewAdaptorHost(Of , )
+  name.vb: ILogViewAdaptorHost(Of , )
+  spec.csharp:
+  - uid: ILogViewAdaptorHost`2
+    name: ILogViewAdaptorHost
+    nameWithType: ILogViewAdaptorHost
+    fullName: ILogViewAdaptorHost
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ILogViewAdaptorHost`2
+    name: ILogViewAdaptorHost
+    nameWithType: ILogViewAdaptorHost
+    fullName: ILogViewAdaptorHost
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.EventSourcing.JournaledGrain`2.#ctor*
+  commentId: Overload:Orleans.EventSourcing.JournaledGrain`2.#ctor
+  isExternal: false
+  name: JournaledGrain
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.JournaledGrain
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.JournaledGrain
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).JournaledGrain
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).JournaledGrain
+- uid: Orleans.Core.IGrainIdentity
+  commentId: T:Orleans.Core.IGrainIdentity
+  parent: Orleans.Core
+  isExternal: false
+  name: IGrainIdentity
+  nameWithType: IGrainIdentity
+  fullName: Orleans.Core.IGrainIdentity
+- uid: Orleans.Runtime.IGrainRuntime
+  commentId: T:Orleans.Runtime.IGrainRuntime
+  parent: Orleans.Runtime
+  isExternal: false
+  name: IGrainRuntime
+  nameWithType: IGrainRuntime
+  fullName: Orleans.Runtime.IGrainRuntime
+- uid: Orleans.Core
+  commentId: N:Orleans.Core
+  isExternal: false
+  name: Orleans.Core
+  nameWithType: Orleans.Core
+  fullName: Orleans.Core
+- uid: Orleans.Runtime
+  commentId: N:Orleans.Runtime
+  isExternal: false
+  name: Orleans.Runtime
+  nameWithType: Orleans.Runtime
+  fullName: Orleans.Runtime
+- uid: Orleans.EventSourcing.JournaledGrain`2.RaiseEvent*
+  commentId: Overload:Orleans.EventSourcing.JournaledGrain`2.RaiseEvent
+  isExternal: false
+  name: RaiseEvent
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.RaiseEvent
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.RaiseEvent
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).RaiseEvent
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).RaiseEvent
+- uid: '{TEvent}'
+  commentId: '!:TEvent'
+  definition: TEvent
+  name: TEvent
+  nameWithType: TEvent
+  fullName: TEvent
+- uid: TEvent
+  isExternal: false
+  name: TEvent
+  nameWithType: TEvent
+  fullName: TEvent
+- uid: Orleans.EventSourcing.JournaledGrain`2.RaiseEvents*
+  commentId: Overload:Orleans.EventSourcing.JournaledGrain`2.RaiseEvents
+  isExternal: false
+  name: RaiseEvents
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.RaiseEvents
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.RaiseEvents
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).RaiseEvents
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).RaiseEvents
+- uid: IEnumerable{{TEvent}}
+  commentId: '!:IEnumerable{``0}'
+  definition: IEnumerable`1
+  name: IEnumerable<TEvent>
+  nameWithType: IEnumerable<TEvent>
+  fullName: IEnumerable<TEvent>
+  nameWithType.vb: IEnumerable(Of TEvent)
+  fullName.vb: IEnumerable(Of TEvent)
+  name.vb: IEnumerable(Of TEvent)
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEvent
+    nameWithType: TEvent
+    fullName: TEvent
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEvent
+    nameWithType: TEvent
+    fullName: TEvent
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IEnumerable`1
+  isExternal: true
+  name: IEnumerable<>
+  nameWithType: IEnumerable<>
+  fullName: IEnumerable<>
+  nameWithType.vb: IEnumerable(Of )
+  fullName.vb: IEnumerable(Of )
+  name.vb: IEnumerable(Of )
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.JournaledGrain`2.RaiseConditionalEvent*
+  commentId: Overload:Orleans.EventSourcing.JournaledGrain`2.RaiseConditionalEvent
+  isExternal: false
+  name: RaiseConditionalEvent
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.RaiseConditionalEvent
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.RaiseConditionalEvent
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).RaiseConditionalEvent
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).RaiseConditionalEvent
+- uid: Task{System.Boolean}
+  commentId: '!:Task{System.Boolean}'
+  definition: Task`1
+  name: Task<Boolean>
+  nameWithType: Task<Boolean>
+  fullName: Task<System.Boolean>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: Task(Of System.Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.JournaledGrain`2.RaiseConditionalEvents*
+  commentId: Overload:Orleans.EventSourcing.JournaledGrain`2.RaiseConditionalEvents
+  isExternal: false
+  name: RaiseConditionalEvents
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.RaiseConditionalEvents
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.RaiseConditionalEvents
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).RaiseConditionalEvents
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).RaiseConditionalEvents
+- uid: Orleans.EventSourcing.JournaledGrain`2.State*
+  commentId: Overload:Orleans.EventSourcing.JournaledGrain`2.State
+  isExternal: false
+  name: State
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.State
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.State
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).State
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).State
+- uid: '{TGrainState}'
+  commentId: '!:TGrainState'
+  definition: TGrainState
+  name: TGrainState
+  nameWithType: TGrainState
+  fullName: TGrainState
+- uid: TGrainState
+  isExternal: false
+  name: TGrainState
+  nameWithType: TGrainState
+  fullName: TGrainState
+- uid: Orleans.EventSourcing.JournaledGrain`2.Version*
+  commentId: Overload:Orleans.EventSourcing.JournaledGrain`2.Version
+  isExternal: false
+  name: Version
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.Version
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.Version
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).Version
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).Version
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Orleans.EventSourcing.JournaledGrain`2.OnTentativeStateChanged*
+  commentId: Overload:Orleans.EventSourcing.JournaledGrain`2.OnTentativeStateChanged
+  isExternal: false
+  name: OnTentativeStateChanged
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.OnTentativeStateChanged
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.OnTentativeStateChanged
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).OnTentativeStateChanged
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).OnTentativeStateChanged
+- uid: Orleans.EventSourcing.JournaledGrain`2.TentativeState*
+  commentId: Overload:Orleans.EventSourcing.JournaledGrain`2.TentativeState
+  isExternal: false
+  name: TentativeState
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.TentativeState
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.TentativeState
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).TentativeState
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).TentativeState
+- uid: Orleans.EventSourcing.JournaledGrain`2.OnStateChanged*
+  commentId: Overload:Orleans.EventSourcing.JournaledGrain`2.OnStateChanged
+  isExternal: false
+  name: OnStateChanged
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.OnStateChanged
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.OnStateChanged
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).OnStateChanged
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).OnStateChanged
+- uid: Orleans.EventSourcing.JournaledGrain`2.ConfirmEvents*
+  commentId: Overload:Orleans.EventSourcing.JournaledGrain`2.ConfirmEvents
+  isExternal: false
+  name: ConfirmEvents
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.ConfirmEvents
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.ConfirmEvents
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).ConfirmEvents
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).ConfirmEvents
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task
+- uid: Orleans.EventSourcing.JournaledGrain`2.RefreshNow*
+  commentId: Overload:Orleans.EventSourcing.JournaledGrain`2.RefreshNow
+  isExternal: false
+  name: RefreshNow
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.RefreshNow
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.RefreshNow
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).RefreshNow
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).RefreshNow
+- uid: Orleans.EventSourcing.JournaledGrain`2.UnconfirmedEvents*
+  commentId: Overload:Orleans.EventSourcing.JournaledGrain`2.UnconfirmedEvents
+  isExternal: false
+  name: UnconfirmedEvents
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.UnconfirmedEvents
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.UnconfirmedEvents
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).UnconfirmedEvents
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).UnconfirmedEvents
+- uid: IEnumerable{{TEventBase}}
+  commentId: '!:IEnumerable{`1}'
+  definition: IEnumerable`1
+  name: IEnumerable<TEventBase>
+  nameWithType: IEnumerable<TEventBase>
+  fullName: IEnumerable<TEventBase>
+  nameWithType.vb: IEnumerable(Of TEventBase)
+  fullName.vb: IEnumerable(Of TEventBase)
+  name.vb: IEnumerable(Of TEventBase)
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEventBase
+    nameWithType: TEventBase
+    fullName: TEventBase
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEventBase
+    nameWithType: TEventBase
+    fullName: TEventBase
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.JournaledGrain`2.OnActivateAsync*
+  commentId: Overload:Orleans.EventSourcing.JournaledGrain`2.OnActivateAsync
+  isExternal: false
+  name: OnActivateAsync
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.OnActivateAsync
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.OnActivateAsync
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).OnActivateAsync
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).OnActivateAsync
+- uid: Orleans.EventSourcing.JournaledGrain`2.RetrieveConfirmedEvents*
+  commentId: Overload:Orleans.EventSourcing.JournaledGrain`2.RetrieveConfirmedEvents
+  isExternal: false
+  name: RetrieveConfirmedEvents
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.RetrieveConfirmedEvents
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.RetrieveConfirmedEvents
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).RetrieveConfirmedEvents
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).RetrieveConfirmedEvents
+- uid: Task{IReadOnlyList{{TEventBase}}}
+  commentId: '!:Task{IReadOnlyList{`1}}'
+  definition: Task`1
+  name: Task<IReadOnlyList<TEventBase>>
+  nameWithType: Task<IReadOnlyList<TEventBase>>
+  fullName: Task<IReadOnlyList<TEventBase>>
+  nameWithType.vb: Task(Of IReadOnlyList(Of TEventBase))
+  fullName.vb: Task(Of IReadOnlyList(Of TEventBase))
+  name.vb: Task(Of IReadOnlyList(Of TEventBase))
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: IReadOnlyList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEventBase
+    nameWithType: TEventBase
+    fullName: TEventBase
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: IReadOnlyList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEventBase
+    nameWithType: TEventBase
+    fullName: TEventBase
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.JournaledGrain`2.OnConnectionIssue*
+  commentId: Overload:Orleans.EventSourcing.JournaledGrain`2.OnConnectionIssue
+  isExternal: false
+  name: OnConnectionIssue
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.OnConnectionIssue
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.OnConnectionIssue
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).OnConnectionIssue
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).OnConnectionIssue
+- uid: Orleans.LogConsistency.ConnectionIssue
+  commentId: T:Orleans.LogConsistency.ConnectionIssue
+  parent: Orleans.LogConsistency
+  isExternal: false
+  name: ConnectionIssue
+  nameWithType: ConnectionIssue
+  fullName: Orleans.LogConsistency.ConnectionIssue
+- uid: Orleans.LogConsistency
+  commentId: N:Orleans.LogConsistency
+  isExternal: false
+  name: Orleans.LogConsistency
+  nameWithType: Orleans.LogConsistency
+  fullName: Orleans.LogConsistency
+- uid: Orleans.EventSourcing.JournaledGrain`2.OnConnectionIssueResolved*
+  commentId: Overload:Orleans.EventSourcing.JournaledGrain`2.OnConnectionIssueResolved
+  isExternal: false
+  name: OnConnectionIssueResolved
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.OnConnectionIssueResolved
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.OnConnectionIssueResolved
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).OnConnectionIssueResolved
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).OnConnectionIssueResolved
+- uid: Orleans.EventSourcing.JournaledGrain`2.UnresolvedConnectionIssues*
+  commentId: Overload:Orleans.EventSourcing.JournaledGrain`2.UnresolvedConnectionIssues
+  isExternal: false
+  name: UnresolvedConnectionIssues
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.UnresolvedConnectionIssues
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.UnresolvedConnectionIssues
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).UnresolvedConnectionIssues
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).UnresolvedConnectionIssues
+- uid: IEnumerable{Orleans.LogConsistency.ConnectionIssue}
+  commentId: '!:IEnumerable{Orleans.LogConsistency.ConnectionIssue}'
+  definition: IEnumerable`1
+  name: IEnumerable<ConnectionIssue>
+  nameWithType: IEnumerable<ConnectionIssue>
+  fullName: IEnumerable<Orleans.LogConsistency.ConnectionIssue>
+  nameWithType.vb: IEnumerable(Of ConnectionIssue)
+  fullName.vb: IEnumerable(Of Orleans.LogConsistency.ConnectionIssue)
+  name.vb: IEnumerable(Of ConnectionIssue)
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Orleans.LogConsistency.ConnectionIssue
+    name: ConnectionIssue
+    nameWithType: ConnectionIssue
+    fullName: Orleans.LogConsistency.ConnectionIssue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Orleans.LogConsistency.ConnectionIssue
+    name: ConnectionIssue
+    nameWithType: ConnectionIssue
+    fullName: Orleans.LogConsistency.ConnectionIssue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.JournaledGrain`2.EnableStatsCollection*
+  commentId: Overload:Orleans.EventSourcing.JournaledGrain`2.EnableStatsCollection
+  isExternal: false
+  name: EnableStatsCollection
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.EnableStatsCollection
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.EnableStatsCollection
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).EnableStatsCollection
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).EnableStatsCollection
+- uid: Orleans.EventSourcing.JournaledGrain`2.DisableStatsCollection*
+  commentId: Overload:Orleans.EventSourcing.JournaledGrain`2.DisableStatsCollection
+  isExternal: false
+  name: DisableStatsCollection
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.DisableStatsCollection
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.DisableStatsCollection
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).DisableStatsCollection
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).DisableStatsCollection
+- uid: Orleans.EventSourcing.JournaledGrain`2.GetStats*
+  commentId: Overload:Orleans.EventSourcing.JournaledGrain`2.GetStats
+  isExternal: false
+  name: GetStats
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.GetStats
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.GetStats
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).GetStats
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).GetStats
+- uid: LogConsistencyStatistics
+  isExternal: true
+  name: LogConsistencyStatistics
+  nameWithType: LogConsistencyStatistics
+  fullName: LogConsistencyStatistics
+- uid: Orleans.EventSourcing.JournaledGrain`2.TransitionState*
+  commentId: Overload:Orleans.EventSourcing.JournaledGrain`2.TransitionState
+  isExternal: false
+  name: TransitionState
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.TransitionState
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.TransitionState
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).TransitionState
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).TransitionState
+- uid: '{TEventBase}'
+  commentId: '!:TEventBase'
+  definition: TEventBase
+  name: TEventBase
+  nameWithType: TEventBase
+  fullName: TEventBase
+- uid: TEventBase
+  commentId: '!:TEventBase'
+  isExternal: false
+  name: TEventBase
+  nameWithType: TEventBase
+  fullName: TEventBase
+- uid: Orleans.EventSourcing.JournaledGrain`2.InstallAdaptor*
+  commentId: Overload:Orleans.EventSourcing.JournaledGrain`2.InstallAdaptor
+  isExternal: false
+  name: InstallAdaptor
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.InstallAdaptor
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.InstallAdaptor
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).InstallAdaptor
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).InstallAdaptor
+- uid: ILogViewAdaptorFactory
+  isExternal: true
+  name: ILogViewAdaptorFactory
+  nameWithType: ILogViewAdaptorFactory
+  fullName: ILogViewAdaptorFactory
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: IGrainStorage
+  isExternal: true
+  name: IGrainStorage
+  nameWithType: IGrainStorage
+  fullName: IGrainStorage
+- uid: ILogConsistencyProtocolServices
+  isExternal: true
+  name: ILogConsistencyProtocolServices
+  nameWithType: ILogConsistencyProtocolServices
+  fullName: ILogConsistencyProtocolServices
+- uid: Orleans.EventSourcing.JournaledGrain`2.DefaultAdaptorFactory*
+  commentId: Overload:Orleans.EventSourcing.JournaledGrain`2.DefaultAdaptorFactory
+  isExternal: false
+  name: DefaultAdaptorFactory
+  nameWithType: JournaledGrain<TGrainState, TEventBase>.DefaultAdaptorFactory
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>.DefaultAdaptorFactory
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase).DefaultAdaptorFactory
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase).DefaultAdaptorFactory

@@ -1,0 +1,552 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1
+  commentId: T:Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1
+  id: GrainStateWithMetaData`1
+  parent: Orleans.EventSourcing.StateStorage
+  children:
+  - Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1.#ctor
+  - Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1.#ctor(`0)
+  - Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1.FlipBit(System.String)
+  - Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1.GetBit(System.String)
+  - Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1.GlobalVersion
+  - Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1.State
+  - Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1.WriteVector
+  langs:
+  - csharp
+  - vb
+  name: GrainStateWithMetaData<TView>
+  nameWithType: GrainStateWithMetaData<TView>
+  fullName: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData<TView>
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/StateStorage/GrainStateWithMetaData.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GrainStateWithMetaData
+    path: src/Orleans.EventSourcing/StateStorage/GrainStateWithMetaData.cs
+    startLine: 70
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.StateStorage
+  summary: "\nA class that extends grain state with versioning metadata, so that a log-consistent grain\ncan use a standard storage provider via <xref href=\"Orleans.EventSourcing.StateStorage.LogViewAdaptor%602\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: 'public class GrainStateWithMetaData<TView> : object where TView : class, new ()'
+    typeParameters:
+    - id: TView
+      description: ''
+    content.vb: >-
+      Public Class GrainStateWithMetaData(Of TView As {Class, New})
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  nameWithType.vb: GrainStateWithMetaData(Of TView)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData(Of TView)
+  name.vb: GrainStateWithMetaData(Of TView)
+- uid: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1.State
+  commentId: P:Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1.State
+  id: State
+  parent: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1
+  langs:
+  - csharp
+  - vb
+  name: State
+  nameWithType: GrainStateWithMetaData<TView>.State
+  fullName: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData<TView>.State
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/StateStorage/GrainStateWithMetaData.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: State
+    path: src/Orleans.EventSourcing/StateStorage/GrainStateWithMetaData.cs
+    startLine: 76
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.StateStorage
+  summary: "\nThe stored view of the log\n"
+  example: []
+  syntax:
+    content: public TView State { get; set; }
+    parameters: []
+    return:
+      type: '{TView}'
+    content.vb: Public Property State As TView
+  overload: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1.State*
+  nameWithType.vb: GrainStateWithMetaData(Of TView).State
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData(Of TView).State
+- uid: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1.GlobalVersion
+  commentId: P:Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1.GlobalVersion
+  id: GlobalVersion
+  parent: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1
+  langs:
+  - csharp
+  - vb
+  name: GlobalVersion
+  nameWithType: GrainStateWithMetaData<TView>.GlobalVersion
+  fullName: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData<TView>.GlobalVersion
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/StateStorage/GrainStateWithMetaData.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GlobalVersion
+    path: src/Orleans.EventSourcing/StateStorage/GrainStateWithMetaData.cs
+    startLine: 81
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.StateStorage
+  summary: "\nThe length of the log\n"
+  example: []
+  syntax:
+    content: public int GlobalVersion { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property GlobalVersion As Integer
+  overload: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1.GlobalVersion*
+  nameWithType.vb: GrainStateWithMetaData(Of TView).GlobalVersion
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData(Of TView).GlobalVersion
+- uid: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1.WriteVector
+  commentId: P:Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1.WriteVector
+  id: WriteVector
+  parent: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1
+  langs:
+  - csharp
+  - vb
+  name: WriteVector
+  nameWithType: GrainStateWithMetaData<TView>.WriteVector
+  fullName: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData<TView>.WriteVector
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/StateStorage/GrainStateWithMetaData.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: WriteVector
+    path: src/Orleans.EventSourcing/StateStorage/GrainStateWithMetaData.cs
+    startLine: 92
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.StateStorage
+  summary: "\nMetadata that is used to avoid duplicate appends.\nLogically, this is a (string->bit) map, the keys being replica ids\nBut this map is represented compactly as a simple string to reduce serialization/deserialization overhead\nBits are read by <xref href=\"Orleans.EventSourcing.StateStorage.GrainStateWithMetaData%601.GetBit(System.String)\" data-throw-if-not-resolved=\"false\"></xref> and flipped by  <xref href=\"Orleans.EventSourcing.StateStorage.GrainStateWithMetaData%601.FlipBit(System.String)\" data-throw-if-not-resolved=\"false\"></xref>.\nBits are toggled when writing, so that the retry logic can avoid appending an entry twice\nwhen retrying a failed append. \n"
+  example: []
+  syntax:
+    content: public string WriteVector { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property WriteVector As String
+  overload: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1.WriteVector*
+  nameWithType.vb: GrainStateWithMetaData(Of TView).WriteVector
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData(Of TView).WriteVector
+- uid: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1.#ctor
+  commentId: M:Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1.#ctor
+  id: '#ctor'
+  parent: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1
+  langs:
+  - csharp
+  - vb
+  name: GrainStateWithMetaData()
+  nameWithType: GrainStateWithMetaData<TView>.GrainStateWithMetaData()
+  fullName: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData<TView>.GrainStateWithMetaData()
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/StateStorage/GrainStateWithMetaData.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.EventSourcing/StateStorage/GrainStateWithMetaData.cs
+    startLine: 97
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.StateStorage
+  summary: "\nInitializes a new instance of the <xref href=\"Orleans.EventSourcing.StateStorage.GrainStateWithMetaData%601\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public GrainStateWithMetaData()
+    content.vb: Public Sub New
+  overload: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1.#ctor*
+  nameWithType.vb: GrainStateWithMetaData(Of TView).GrainStateWithMetaData()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData(Of TView).GrainStateWithMetaData()
+- uid: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1.#ctor(`0)
+  commentId: M:Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1.#ctor(`0)
+  id: '#ctor(`0)'
+  parent: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1
+  langs:
+  - csharp
+  - vb
+  name: GrainStateWithMetaData(TView)
+  nameWithType: GrainStateWithMetaData<TView>.GrainStateWithMetaData(TView)
+  fullName: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData<TView>.GrainStateWithMetaData(TView)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/StateStorage/GrainStateWithMetaData.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.EventSourcing/StateStorage/GrainStateWithMetaData.cs
+    startLine: 108
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.StateStorage
+  summary: "\nInitializes a new instance of the <xref href=\"Orleans.EventSourcing.StateStorage.GrainStateWithMetaData%601\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public GrainStateWithMetaData(TView initialstate)
+    parameters:
+    - id: initialstate
+      type: '{TView}'
+      description: The initial state of the view
+    content.vb: Public Sub New(initialstate As TView)
+  overload: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1.#ctor*
+  nameWithType.vb: GrainStateWithMetaData(Of TView).GrainStateWithMetaData(TView)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData(Of TView).GrainStateWithMetaData(TView)
+- uid: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1.GetBit(System.String)
+  commentId: M:Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1.GetBit(System.String)
+  id: GetBit(System.String)
+  parent: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1
+  langs:
+  - csharp
+  - vb
+  name: GetBit(String)
+  nameWithType: GrainStateWithMetaData<TView>.GetBit(String)
+  fullName: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData<TView>.GetBit(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/StateStorage/GrainStateWithMetaData.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetBit
+    path: src/Orleans.EventSourcing/StateStorage/GrainStateWithMetaData.cs
+    startLine: 121
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.StateStorage
+  summary: "\nGets one of the bits in <xref href=\"Orleans.EventSourcing.StateStorage.GrainStateWithMetaData%601.WriteVector\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public bool GetBit(string Replica)
+    parameters:
+    - id: Replica
+      type: System.String
+      description: The replica for which we want to look up the bit
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Function GetBit(Replica As String) As Boolean
+  overload: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1.GetBit*
+  nameWithType.vb: GrainStateWithMetaData(Of TView).GetBit(String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData(Of TView).GetBit(System.String)
+- uid: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1.FlipBit(System.String)
+  commentId: M:Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1.FlipBit(System.String)
+  id: FlipBit(System.String)
+  parent: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1
+  langs:
+  - csharp
+  - vb
+  name: FlipBit(String)
+  nameWithType: GrainStateWithMetaData<TView>.FlipBit(String)
+  fullName: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData<TView>.FlipBit(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/StateStorage/GrainStateWithMetaData.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: FlipBit
+    path: src/Orleans.EventSourcing/StateStorage/GrainStateWithMetaData.cs
+    startLine: 131
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.StateStorage
+  summary: "\ntoggle one of the bits in <xref href=\"Orleans.EventSourcing.StateStorage.GrainStateWithMetaData%601.WriteVector\" data-throw-if-not-resolved=\"false\"></xref> and return the new value.\n"
+  example: []
+  syntax:
+    content: public bool FlipBit(string Replica)
+    parameters:
+    - id: Replica
+      type: System.String
+      description: The replica for which we want to flip the bit
+    return:
+      type: System.Boolean
+      description: the state of the bit after flipping it
+    content.vb: Public Function FlipBit(Replica As String) As Boolean
+  overload: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1.FlipBit*
+  nameWithType.vb: GrainStateWithMetaData(Of TView).FlipBit(String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData(Of TView).FlipBit(System.String)
+references:
+- uid: Orleans.EventSourcing.StateStorage.LogViewAdaptor`2
+  commentId: T:Orleans.EventSourcing.StateStorage.LogViewAdaptor`2
+- uid: Orleans.EventSourcing.StateStorage
+  commentId: N:Orleans.EventSourcing.StateStorage
+  isExternal: false
+  name: Orleans.EventSourcing.StateStorage
+  nameWithType: Orleans.EventSourcing.StateStorage
+  fullName: Orleans.EventSourcing.StateStorage
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<GrainStateWithMetaData<TView>>()
+  nameWithType: ImmutableExt.AsImmutable<GrainStateWithMetaData<TView>>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.EventSourcing.StateStorage.GrainStateWithMetaData<TView>>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of GrainStateWithMetaData(Of TView))()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.EventSourcing.StateStorage.GrainStateWithMetaData(Of TView))()
+  name.vb: AsImmutable(Of GrainStateWithMetaData(Of TView))()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<GrainStateWithMetaData<TView>>
+    nameWithType: ImmutableExt.AsImmutable<GrainStateWithMetaData<TView>>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.EventSourcing.StateStorage.GrainStateWithMetaData<TView>>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of GrainStateWithMetaData(Of TView))
+    nameWithType: ImmutableExt.AsImmutable(Of GrainStateWithMetaData(Of TView))
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.EventSourcing.StateStorage.GrainStateWithMetaData(Of TView))
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1.State*
+  commentId: Overload:Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1.State
+  isExternal: false
+  name: State
+  nameWithType: GrainStateWithMetaData<TView>.State
+  fullName: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData<TView>.State
+  nameWithType.vb: GrainStateWithMetaData(Of TView).State
+  fullName.vb: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData(Of TView).State
+- uid: '{TView}'
+  commentId: '!:TView'
+  definition: TView
+  name: TView
+  nameWithType: TView
+  fullName: TView
+- uid: TView
+  isExternal: false
+  name: TView
+  nameWithType: TView
+  fullName: TView
+- uid: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1.GlobalVersion*
+  commentId: Overload:Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1.GlobalVersion
+  isExternal: false
+  name: GlobalVersion
+  nameWithType: GrainStateWithMetaData<TView>.GlobalVersion
+  fullName: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData<TView>.GlobalVersion
+  nameWithType.vb: GrainStateWithMetaData(Of TView).GlobalVersion
+  fullName.vb: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData(Of TView).GlobalVersion
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1.GetBit(System.String)
+  commentId: M:Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1.GetBit(System.String)
+- uid: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1.FlipBit(System.String)
+  commentId: M:Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1.FlipBit(System.String)
+- uid: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1.WriteVector*
+  commentId: Overload:Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1.WriteVector
+  isExternal: false
+  name: WriteVector
+  nameWithType: GrainStateWithMetaData<TView>.WriteVector
+  fullName: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData<TView>.WriteVector
+  nameWithType.vb: GrainStateWithMetaData(Of TView).WriteVector
+  fullName.vb: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData(Of TView).WriteVector
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1
+  commentId: T:Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1
+  isExternal: false
+  name: GrainStateWithMetaData<TView>
+  nameWithType: GrainStateWithMetaData<TView>
+  fullName: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData<TView>
+  nameWithType.vb: GrainStateWithMetaData(Of TView)
+  fullName.vb: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData(Of TView)
+  name.vb: GrainStateWithMetaData(Of TView)
+  spec.csharp:
+  - uid: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1
+    name: GrainStateWithMetaData
+    nameWithType: GrainStateWithMetaData
+    fullName: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TView
+    nameWithType: TView
+    fullName: TView
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1
+    name: GrainStateWithMetaData
+    nameWithType: GrainStateWithMetaData
+    fullName: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TView
+    nameWithType: TView
+    fullName: TView
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1.#ctor*
+  commentId: Overload:Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1.#ctor
+  isExternal: false
+  name: GrainStateWithMetaData
+  nameWithType: GrainStateWithMetaData<TView>.GrainStateWithMetaData
+  fullName: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData<TView>.GrainStateWithMetaData
+  nameWithType.vb: GrainStateWithMetaData(Of TView).GrainStateWithMetaData
+  fullName.vb: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData(Of TView).GrainStateWithMetaData
+- uid: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1.WriteVector
+  commentId: P:Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1.WriteVector
+- uid: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1.GetBit*
+  commentId: Overload:Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1.GetBit
+  isExternal: false
+  name: GetBit
+  nameWithType: GrainStateWithMetaData<TView>.GetBit
+  fullName: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData<TView>.GetBit
+  nameWithType.vb: GrainStateWithMetaData(Of TView).GetBit
+  fullName.vb: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData(Of TView).GetBit
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1.FlipBit*
+  commentId: Overload:Orleans.EventSourcing.StateStorage.GrainStateWithMetaData`1.FlipBit
+  isExternal: false
+  name: FlipBit
+  nameWithType: GrainStateWithMetaData<TView>.FlipBit
+  fullName: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData<TView>.FlipBit
+  nameWithType.vb: GrainStateWithMetaData(Of TView).FlipBit
+  fullName.vb: Orleans.EventSourcing.StateStorage.GrainStateWithMetaData(Of TView).FlipBit

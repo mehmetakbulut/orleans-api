@@ -1,0 +1,1836 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Runtime.Host.SiloHost
+  commentId: T:Orleans.Runtime.Host.SiloHost
+  id: SiloHost
+  parent: Orleans.Runtime.Host
+  children:
+  - Orleans.Runtime.Host.SiloHost.#ctor(System.String)
+  - Orleans.Runtime.Host.SiloHost.#ctor(System.String,FileInfo)
+  - Orleans.Runtime.Host.SiloHost.#ctor(System.String,Orleans.Runtime.Configuration.ClusterConfiguration)
+  - Orleans.Runtime.Host.SiloHost.Config
+  - Orleans.Runtime.Host.SiloHost.ConfigFileName
+  - Orleans.Runtime.Host.SiloHost.ConfigLoaded
+  - Orleans.Runtime.Host.SiloHost.DeploymentId
+  - Orleans.Runtime.Host.SiloHost.Dispose
+  - Orleans.Runtime.Host.SiloHost.Dispose(System.Boolean)
+  - Orleans.Runtime.Host.SiloHost.InitializeOrleansSilo
+  - Orleans.Runtime.Host.SiloHost.IsStarted
+  - Orleans.Runtime.Host.SiloHost.LoadOrleansConfig
+  - Orleans.Runtime.Host.SiloHost.Name
+  - Orleans.Runtime.Host.SiloHost.NodeConfig
+  - Orleans.Runtime.Host.SiloHost.ReportStartupError(Exception)
+  - Orleans.Runtime.Host.SiloHost.SetDeploymentId(System.String,System.String)
+  - Orleans.Runtime.Host.SiloHost.SetExpectedClusterSize(System.Int32)
+  - Orleans.Runtime.Host.SiloHost.SetPrimaryNodeEndpoint(IPEndPoint)
+  - Orleans.Runtime.Host.SiloHost.SetProxyEndpoint(IPEndPoint)
+  - Orleans.Runtime.Host.SiloHost.SetReminderServiceType(Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType)
+  - Orleans.Runtime.Host.SiloHost.SetSeedNodeEndpoint(IPEndPoint)
+  - Orleans.Runtime.Host.SiloHost.SetSeedNodeEndpoints(IPEndPoint[])
+  - Orleans.Runtime.Host.SiloHost.SetSiloEndpoint(IPEndPoint,System.Int32)
+  - Orleans.Runtime.Host.SiloHost.SetSiloLivenessType(Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType)
+  - Orleans.Runtime.Host.SiloHost.SetSiloType(Silo.SiloType)
+  - Orleans.Runtime.Host.SiloHost.ShutdownOrleansSilo
+  - Orleans.Runtime.Host.SiloHost.ShutdownOrleansSiloAsync(CancellationToken)
+  - Orleans.Runtime.Host.SiloHost.ShutdownOrleansSiloAsync(System.Int32,CancellationToken)
+  - Orleans.Runtime.Host.SiloHost.StartOrleansSilo(System.Boolean)
+  - Orleans.Runtime.Host.SiloHost.StopOrleansSilo
+  - Orleans.Runtime.Host.SiloHost.Type
+  - Orleans.Runtime.Host.SiloHost.UnInitializeOrleansSilo
+  - Orleans.Runtime.Host.SiloHost.WaitForOrleansSiloShutdown
+  - Orleans.Runtime.Host.SiloHost.WaitForOrleansSiloShutdown(CancellationToken)
+  - Orleans.Runtime.Host.SiloHost.WaitForOrleansSiloShutdownAsync(System.Int32,CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: SiloHost
+  nameWithType: SiloHost
+  fullName: Orleans.Runtime.Host.SiloHost
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SiloHost
+    path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+    startLine: 19
+  assemblies:
+  - Orleans.Runtime.Legacy
+  namespace: Orleans.Runtime.Host
+  summary: "\nAllows programmatically hosting an Orleans silo in the curent app domain.\n"
+  example: []
+  syntax:
+    content: 'public class SiloHost : MarshalByRefObject, IDisposable'
+    content.vb: >-
+      Public Class SiloHost
+
+          Inherits MarshalByRefObject
+
+          Implements IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - IDisposable
+  extensionMethods:
+  - Orleans.Runtime.Host.SiloHost.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.Runtime.Host.SiloHost.Name
+  commentId: P:Orleans.Runtime.Host.SiloHost.Name
+  id: Name
+  parent: Orleans.Runtime.Host.SiloHost
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: SiloHost.Name
+  fullName: Orleans.Runtime.Host.SiloHost.Name
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Name
+    path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+    startLine: 24
+  assemblies:
+  - Orleans.Runtime.Legacy
+  namespace: Orleans.Runtime.Host
+  summary: 'Name of this silo. '
+  example: []
+  syntax:
+    content: public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: Orleans.Runtime.Host.SiloHost.Name*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Host.SiloHost.Type
+  commentId: P:Orleans.Runtime.Host.SiloHost.Type
+  id: Type
+  parent: Orleans.Runtime.Host.SiloHost
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: SiloHost.Type
+  fullName: Orleans.Runtime.Host.SiloHost.Type
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Type
+    path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+    startLine: 27
+  assemblies:
+  - Orleans.Runtime.Legacy
+  namespace: Orleans.Runtime.Host
+  summary: 'Type of this silo - either <code>Primary</code> or <code>Secondary</code>. '
+  example: []
+  syntax:
+    content: public Silo.SiloType Type { get; set; }
+    parameters: []
+    return:
+      type: Silo.SiloType
+    content.vb: Public Property Type As Silo.SiloType
+  overload: Orleans.Runtime.Host.SiloHost.Type*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Host.SiloHost.ConfigFileName
+  commentId: P:Orleans.Runtime.Host.SiloHost.ConfigFileName
+  id: ConfigFileName
+  parent: Orleans.Runtime.Host.SiloHost
+  langs:
+  - csharp
+  - vb
+  name: ConfigFileName
+  nameWithType: SiloHost.ConfigFileName
+  fullName: Orleans.Runtime.Host.SiloHost.ConfigFileName
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ConfigFileName
+    path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+    startLine: 33
+  assemblies:
+  - Orleans.Runtime.Legacy
+  namespace: Orleans.Runtime.Host
+  summary: "\nConfiguration file used for this silo.\nChanging this after the silo has started (when <code>ConfigLoaded == true</code>) will have no effect.\n"
+  example: []
+  syntax:
+    content: public string ConfigFileName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ConfigFileName As String
+  overload: Orleans.Runtime.Host.SiloHost.ConfigFileName*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Host.SiloHost.Config
+  commentId: P:Orleans.Runtime.Host.SiloHost.Config
+  id: Config
+  parent: Orleans.Runtime.Host.SiloHost
+  langs:
+  - csharp
+  - vb
+  name: Config
+  nameWithType: SiloHost.Config
+  fullName: Orleans.Runtime.Host.SiloHost.Config
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Config
+    path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+    startLine: 36
+  assemblies:
+  - Orleans.Runtime.Legacy
+  namespace: Orleans.Runtime.Host
+  summary: 'Configuration data for the Orleans system. '
+  example: []
+  syntax:
+    content: public ClusterConfiguration Config { get; set; }
+    parameters: []
+    return:
+      type: Orleans.Runtime.Configuration.ClusterConfiguration
+    content.vb: Public Property Config As ClusterConfiguration
+  overload: Orleans.Runtime.Host.SiloHost.Config*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Host.SiloHost.NodeConfig
+  commentId: P:Orleans.Runtime.Host.SiloHost.NodeConfig
+  id: NodeConfig
+  parent: Orleans.Runtime.Host.SiloHost
+  langs:
+  - csharp
+  - vb
+  name: NodeConfig
+  nameWithType: SiloHost.NodeConfig
+  fullName: Orleans.Runtime.Host.SiloHost.NodeConfig
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: NodeConfig
+    path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+    startLine: 39
+  assemblies:
+  - Orleans.Runtime.Legacy
+  namespace: Orleans.Runtime.Host
+  summary: 'Configuration data for this silo. '
+  example: []
+  syntax:
+    content: public NodeConfiguration NodeConfig { get; }
+    parameters: []
+    return:
+      type: Orleans.Runtime.Configuration.NodeConfiguration
+    content.vb: Public ReadOnly Property NodeConfig As NodeConfiguration
+  overload: Orleans.Runtime.Host.SiloHost.NodeConfig*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Runtime.Host.SiloHost.ConfigLoaded
+  commentId: P:Orleans.Runtime.Host.SiloHost.ConfigLoaded
+  id: ConfigLoaded
+  parent: Orleans.Runtime.Host.SiloHost
+  langs:
+  - csharp
+  - vb
+  name: ConfigLoaded
+  nameWithType: SiloHost.ConfigLoaded
+  fullName: Orleans.Runtime.Host.SiloHost.ConfigLoaded
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ConfigLoaded
+    path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+    startLine: 47
+  assemblies:
+  - Orleans.Runtime.Legacy
+  namespace: Orleans.Runtime.Host
+  summary: "\nWhether the silo config has been loaded and initializing it&apos;s runtime config.\n"
+  remarks: "\nChanges to silo config properties will be ignored after <code>ConfigLoaded == true</code>.\n"
+  example: []
+  syntax:
+    content: public bool ConfigLoaded { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property ConfigLoaded As Boolean
+  overload: Orleans.Runtime.Host.SiloHost.ConfigLoaded*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Runtime.Host.SiloHost.DeploymentId
+  commentId: P:Orleans.Runtime.Host.SiloHost.DeploymentId
+  id: DeploymentId
+  parent: Orleans.Runtime.Host.SiloHost
+  langs:
+  - csharp
+  - vb
+  name: DeploymentId
+  nameWithType: SiloHost.DeploymentId
+  fullName: Orleans.Runtime.Host.SiloHost.DeploymentId
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: DeploymentId
+    path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+    startLine: 50
+  assemblies:
+  - Orleans.Runtime.Legacy
+  namespace: Orleans.Runtime.Host
+  summary: 'Cluster Id (if any) for the cluster this silo is running in. '
+  example: []
+  syntax:
+    content: public string DeploymentId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DeploymentId As String
+  overload: Orleans.Runtime.Host.SiloHost.DeploymentId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Host.SiloHost.IsStarted
+  commentId: P:Orleans.Runtime.Host.SiloHost.IsStarted
+  id: IsStarted
+  parent: Orleans.Runtime.Host.SiloHost
+  langs:
+  - csharp
+  - vb
+  name: IsStarted
+  nameWithType: SiloHost.IsStarted
+  fullName: Orleans.Runtime.Host.SiloHost.IsStarted
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IsStarted
+    path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+    startLine: 53
+  assemblies:
+  - Orleans.Runtime.Legacy
+  namespace: Orleans.Runtime.Host
+  summary: 'Whether this silo started successfully and is currently running. '
+  example: []
+  syntax:
+    content: public bool IsStarted { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsStarted As Boolean
+  overload: Orleans.Runtime.Host.SiloHost.IsStarted*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Runtime.Host.SiloHost.#ctor(System.String)
+  commentId: M:Orleans.Runtime.Host.SiloHost.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Orleans.Runtime.Host.SiloHost
+  langs:
+  - csharp
+  - vb
+  name: SiloHost(String)
+  nameWithType: SiloHost.SiloHost(String)
+  fullName: Orleans.Runtime.Host.SiloHost.SiloHost(System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+    startLine: 66
+  assemblies:
+  - Orleans.Runtime.Legacy
+  namespace: Orleans.Runtime.Host
+  summary: "\nConstructor\n"
+  example: []
+  syntax:
+    content: public SiloHost(string siloName)
+    parameters:
+    - id: siloName
+      type: System.String
+      description: Name of this silo.
+    content.vb: Public Sub New(siloName As String)
+  overload: Orleans.Runtime.Host.SiloHost.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Host.SiloHost.#ctor(System.String,Orleans.Runtime.Configuration.ClusterConfiguration)
+  commentId: M:Orleans.Runtime.Host.SiloHost.#ctor(System.String,Orleans.Runtime.Configuration.ClusterConfiguration)
+  id: '#ctor(System.String,Orleans.Runtime.Configuration.ClusterConfiguration)'
+  parent: Orleans.Runtime.Host.SiloHost
+  langs:
+  - csharp
+  - vb
+  name: SiloHost(String, ClusterConfiguration)
+  nameWithType: SiloHost.SiloHost(String, ClusterConfiguration)
+  fullName: Orleans.Runtime.Host.SiloHost.SiloHost(System.String, Orleans.Runtime.Configuration.ClusterConfiguration)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+    startLine: 79
+  assemblies:
+  - Orleans.Runtime.Legacy
+  namespace: Orleans.Runtime.Host
+  summary: 'Constructor '
+  example: []
+  syntax:
+    content: public SiloHost(string siloName, ClusterConfiguration config)
+    parameters:
+    - id: siloName
+      type: System.String
+      description: Name of this silo.
+    - id: config
+      type: Orleans.Runtime.Configuration.ClusterConfiguration
+      description: Silo config that will be used to initialize this silo.
+    content.vb: Public Sub New(siloName As String, config As ClusterConfiguration)
+  overload: Orleans.Runtime.Host.SiloHost.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Host.SiloHost.#ctor(System.String,FileInfo)
+  commentId: M:Orleans.Runtime.Host.SiloHost.#ctor(System.String,FileInfo)
+  id: '#ctor(System.String,FileInfo)'
+  parent: Orleans.Runtime.Host.SiloHost
+  langs:
+  - csharp
+  - vb
+  name: SiloHost(String, FileInfo)
+  nameWithType: SiloHost.SiloHost(String, FileInfo)
+  fullName: Orleans.Runtime.Host.SiloHost.SiloHost(System.String, FileInfo)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+    startLine: 87
+  assemblies:
+  - Orleans.Runtime.Legacy
+  namespace: Orleans.Runtime.Host
+  summary: 'Constructor '
+  example: []
+  syntax:
+    content: public SiloHost(string siloName, FileInfo configFile)
+    parameters:
+    - id: siloName
+      type: System.String
+      description: Name of this silo.
+    - id: configFile
+      type: FileInfo
+      description: Silo config file that will be used to initialize this silo.
+    content.vb: Public Sub New(siloName As String, configFile As FileInfo)
+  overload: Orleans.Runtime.Host.SiloHost.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Host.SiloHost.InitializeOrleansSilo
+  commentId: M:Orleans.Runtime.Host.SiloHost.InitializeOrleansSilo
+  id: InitializeOrleansSilo
+  parent: Orleans.Runtime.Host.SiloHost
+  langs:
+  - csharp
+  - vb
+  name: InitializeOrleansSilo()
+  nameWithType: SiloHost.InitializeOrleansSilo()
+  fullName: Orleans.Runtime.Host.SiloHost.InitializeOrleansSilo()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: InitializeOrleansSilo
+    path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+    startLine: 99
+  assemblies:
+  - Orleans.Runtime.Legacy
+  namespace: Orleans.Runtime.Host
+  summary: "\nInitialize this silo.\n"
+  example: []
+  syntax:
+    content: public void InitializeOrleansSilo()
+    content.vb: Public Sub InitializeOrleansSilo
+  overload: Orleans.Runtime.Host.SiloHost.InitializeOrleansSilo*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Host.SiloHost.UnInitializeOrleansSilo
+  commentId: M:Orleans.Runtime.Host.SiloHost.UnInitializeOrleansSilo
+  id: UnInitializeOrleansSilo
+  parent: Orleans.Runtime.Host.SiloHost
+  langs:
+  - csharp
+  - vb
+  name: UnInitializeOrleansSilo()
+  nameWithType: SiloHost.UnInitializeOrleansSilo()
+  fullName: Orleans.Runtime.Host.SiloHost.UnInitializeOrleansSilo()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: UnInitializeOrleansSilo
+    path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+    startLine: 131
+  assemblies:
+  - Orleans.Runtime.Legacy
+  namespace: Orleans.Runtime.Host
+  summary: "\nUninitialize this silo.\n"
+  example: []
+  syntax:
+    content: public void UnInitializeOrleansSilo()
+    content.vb: Public Sub UnInitializeOrleansSilo
+  overload: Orleans.Runtime.Host.SiloHost.UnInitializeOrleansSilo*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Host.SiloHost.StartOrleansSilo(System.Boolean)
+  commentId: M:Orleans.Runtime.Host.SiloHost.StartOrleansSilo(System.Boolean)
+  id: StartOrleansSilo(System.Boolean)
+  parent: Orleans.Runtime.Host.SiloHost
+  langs:
+  - csharp
+  - vb
+  name: StartOrleansSilo(Boolean)
+  nameWithType: SiloHost.StartOrleansSilo(Boolean)
+  fullName: Orleans.Runtime.Host.SiloHost.StartOrleansSilo(System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: StartOrleansSilo
+    path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+    startLine: 140
+  assemblies:
+  - Orleans.Runtime.Legacy
+  namespace: Orleans.Runtime.Host
+  summary: "\nStart this silo.\n"
+  example: []
+  syntax:
+    content: public bool StartOrleansSilo(bool catchExceptions = true)
+    parameters:
+    - id: catchExceptions
+      type: System.Boolean
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Function StartOrleansSilo(catchExceptions As Boolean = True) As Boolean
+  overload: Orleans.Runtime.Host.SiloHost.StartOrleansSilo*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Host.SiloHost.StopOrleansSilo
+  commentId: M:Orleans.Runtime.Host.SiloHost.StopOrleansSilo
+  id: StopOrleansSilo
+  parent: Orleans.Runtime.Host.SiloHost
+  langs:
+  - csharp
+  - vb
+  name: StopOrleansSilo()
+  nameWithType: SiloHost.StopOrleansSilo()
+  fullName: Orleans.Runtime.Host.SiloHost.StopOrleansSilo()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: StopOrleansSilo
+    path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+    startLine: 238
+  assemblies:
+  - Orleans.Runtime.Legacy
+  namespace: Orleans.Runtime.Host
+  summary: "\nStop this silo.\n"
+  example: []
+  syntax:
+    content: public void StopOrleansSilo()
+    content.vb: Public Sub StopOrleansSilo
+  overload: Orleans.Runtime.Host.SiloHost.StopOrleansSilo*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Host.SiloHost.ShutdownOrleansSilo
+  commentId: M:Orleans.Runtime.Host.SiloHost.ShutdownOrleansSilo
+  id: ShutdownOrleansSilo
+  parent: Orleans.Runtime.Host.SiloHost
+  langs:
+  - csharp
+  - vb
+  name: ShutdownOrleansSilo()
+  nameWithType: SiloHost.ShutdownOrleansSilo()
+  fullName: Orleans.Runtime.Host.SiloHost.ShutdownOrleansSilo()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ShutdownOrleansSilo
+    path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+    startLine: 247
+  assemblies:
+  - Orleans.Runtime.Legacy
+  namespace: Orleans.Runtime.Host
+  summary: "\nGracefully shutdown this silo.\n"
+  example: []
+  syntax:
+    content: public void ShutdownOrleansSilo()
+    content.vb: Public Sub ShutdownOrleansSilo
+  overload: Orleans.Runtime.Host.SiloHost.ShutdownOrleansSilo*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Host.SiloHost.ShutdownOrleansSiloAsync(System.Int32,CancellationToken)
+  commentId: M:Orleans.Runtime.Host.SiloHost.ShutdownOrleansSiloAsync(System.Int32,CancellationToken)
+  id: ShutdownOrleansSiloAsync(System.Int32,CancellationToken)
+  parent: Orleans.Runtime.Host.SiloHost
+  langs:
+  - csharp
+  - vb
+  name: ShutdownOrleansSiloAsync(Int32, CancellationToken)
+  nameWithType: SiloHost.ShutdownOrleansSiloAsync(Int32, CancellationToken)
+  fullName: Orleans.Runtime.Host.SiloHost.ShutdownOrleansSiloAsync(System.Int32, CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ShutdownOrleansSiloAsync
+    path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+    startLine: 259
+  assemblies:
+  - Orleans.Runtime.Legacy
+  namespace: Orleans.Runtime.Host
+  summary: "\nReturns a task that will resolve when the silo has finished shutting down, or the cancellation token is cancelled.\n"
+  example: []
+  syntax:
+    content: public Task ShutdownOrleansSiloAsync(int millisecondsTimeout, CancellationToken cancellationToken)
+    parameters:
+    - id: millisecondsTimeout
+      type: System.Int32
+      description: Timeout, or -1 for infinite.
+    - id: cancellationToken
+      type: CancellationToken
+      description: Token that cancels waiting for shutdown.
+    return:
+      type: Task
+      description: ''
+    content.vb: Public Function ShutdownOrleansSiloAsync(millisecondsTimeout As Integer, cancellationToken As CancellationToken) As Task
+  overload: Orleans.Runtime.Host.SiloHost.ShutdownOrleansSiloAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Host.SiloHost.ShutdownOrleansSiloAsync(CancellationToken)
+  commentId: M:Orleans.Runtime.Host.SiloHost.ShutdownOrleansSiloAsync(CancellationToken)
+  id: ShutdownOrleansSiloAsync(CancellationToken)
+  parent: Orleans.Runtime.Host.SiloHost
+  langs:
+  - csharp
+  - vb
+  name: ShutdownOrleansSiloAsync(CancellationToken)
+  nameWithType: SiloHost.ShutdownOrleansSiloAsync(CancellationToken)
+  fullName: Orleans.Runtime.Host.SiloHost.ShutdownOrleansSiloAsync(CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ShutdownOrleansSiloAsync
+    path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+    startLine: 284
+  assemblies:
+  - Orleans.Runtime.Legacy
+  namespace: Orleans.Runtime.Host
+  summary: "\n/// Returns a task that will resolve when the silo has finished shutting down, or the cancellation token is cancelled.\n"
+  example: []
+  syntax:
+    content: public Task ShutdownOrleansSiloAsync(CancellationToken cancellationToken)
+    parameters:
+    - id: cancellationToken
+      type: CancellationToken
+      description: Token that cancels waiting for shutdown.
+    return:
+      type: Task
+      description: ''
+    content.vb: Public Function ShutdownOrleansSiloAsync(cancellationToken As CancellationToken) As Task
+  overload: Orleans.Runtime.Host.SiloHost.ShutdownOrleansSiloAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Host.SiloHost.WaitForOrleansSiloShutdown
+  commentId: M:Orleans.Runtime.Host.SiloHost.WaitForOrleansSiloShutdown
+  id: WaitForOrleansSiloShutdown
+  parent: Orleans.Runtime.Host.SiloHost
+  langs:
+  - csharp
+  - vb
+  name: WaitForOrleansSiloShutdown()
+  nameWithType: SiloHost.WaitForOrleansSiloShutdown()
+  fullName: Orleans.Runtime.Host.SiloHost.WaitForOrleansSiloShutdown()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: WaitForOrleansSiloShutdown
+    path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+    startLine: 296
+  assemblies:
+  - Orleans.Runtime.Legacy
+  namespace: Orleans.Runtime.Host
+  summary: "\nWait for this silo to shutdown.\n"
+  remarks: "\nNote: This method call will block execution of current thread, \nand will not return control back to the caller until the silo is shutdown.\n"
+  example: []
+  syntax:
+    content: public void WaitForOrleansSiloShutdown()
+    content.vb: Public Sub WaitForOrleansSiloShutdown
+  overload: Orleans.Runtime.Host.SiloHost.WaitForOrleansSiloShutdown*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Host.SiloHost.WaitForOrleansSiloShutdown(CancellationToken)
+  commentId: M:Orleans.Runtime.Host.SiloHost.WaitForOrleansSiloShutdown(CancellationToken)
+  id: WaitForOrleansSiloShutdown(CancellationToken)
+  parent: Orleans.Runtime.Host.SiloHost
+  langs:
+  - csharp
+  - vb
+  name: WaitForOrleansSiloShutdown(CancellationToken)
+  nameWithType: SiloHost.WaitForOrleansSiloShutdown(CancellationToken)
+  fullName: Orleans.Runtime.Host.SiloHost.WaitForOrleansSiloShutdown(CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: WaitForOrleansSiloShutdown
+    path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+    startLine: 310
+  assemblies:
+  - Orleans.Runtime.Legacy
+  namespace: Orleans.Runtime.Host
+  summary: "\nWait for this silo to shutdown or to be stopped with provided cancellation token.\n"
+  remarks: "\nNote: This method call will block execution of current thread, \nand will not return control back to the caller until the silo is shutdown or \nan external request for cancellation has been issued.\n"
+  example: []
+  syntax:
+    content: public void WaitForOrleansSiloShutdown(CancellationToken cancellationToken)
+    parameters:
+    - id: cancellationToken
+      type: CancellationToken
+      description: Cancellation token.
+    content.vb: Public Sub WaitForOrleansSiloShutdown(cancellationToken As CancellationToken)
+  overload: Orleans.Runtime.Host.SiloHost.WaitForOrleansSiloShutdown*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Host.SiloHost.WaitForOrleansSiloShutdownAsync(System.Int32,CancellationToken)
+  commentId: M:Orleans.Runtime.Host.SiloHost.WaitForOrleansSiloShutdownAsync(System.Int32,CancellationToken)
+  id: WaitForOrleansSiloShutdownAsync(System.Int32,CancellationToken)
+  parent: Orleans.Runtime.Host.SiloHost
+  langs:
+  - csharp
+  - vb
+  name: WaitForOrleansSiloShutdownAsync(Int32, CancellationToken)
+  nameWithType: SiloHost.WaitForOrleansSiloShutdownAsync(Int32, CancellationToken)
+  fullName: Orleans.Runtime.Host.SiloHost.WaitForOrleansSiloShutdownAsync(System.Int32, CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: WaitForOrleansSiloShutdownAsync
+    path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+    startLine: 323
+  assemblies:
+  - Orleans.Runtime.Legacy
+  namespace: Orleans.Runtime.Host
+  summary: "\nWaits for the SiloTerminatedEvent to fire or cancellation token to be cancelled.\n"
+  remarks: "\nThis is essentially an async version of WaitForOrleansSiloShutdown.\n"
+  example: []
+  syntax:
+    content: public Task<bool> WaitForOrleansSiloShutdownAsync(int millisecondsTimeout, CancellationToken cancellationToken)
+    parameters:
+    - id: millisecondsTimeout
+      type: System.Int32
+      description: Timeout, or -1 for infinite.
+    - id: cancellationToken
+      type: CancellationToken
+      description: Token that cancels waiting for shutdown.
+    return:
+      type: Task{System.Boolean}
+    content.vb: Public Function WaitForOrleansSiloShutdownAsync(millisecondsTimeout As Integer, cancellationToken As CancellationToken) As Task(Of Boolean)
+  overload: Orleans.Runtime.Host.SiloHost.WaitForOrleansSiloShutdownAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Host.SiloHost.SetDeploymentId(System.String,System.String)
+  commentId: M:Orleans.Runtime.Host.SiloHost.SetDeploymentId(System.String,System.String)
+  id: SetDeploymentId(System.String,System.String)
+  parent: Orleans.Runtime.Host.SiloHost
+  langs:
+  - csharp
+  - vb
+  name: SetDeploymentId(String, String)
+  nameWithType: SiloHost.SetDeploymentId(String, String)
+  fullName: Orleans.Runtime.Host.SiloHost.SetDeploymentId(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SetDeploymentId
+    path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+    startLine: 356
+  assemblies:
+  - Orleans.Runtime.Legacy
+  namespace: Orleans.Runtime.Host
+  summary: "\nSet the ClusterId for this silo, \nas well as the connection string to use the silo system data, \nsuch as the cluster membership table..\n"
+  example: []
+  syntax:
+    content: public void SetDeploymentId(string clusterId, string connectionString)
+    parameters:
+    - id: clusterId
+      type: System.String
+      description: ClusterId this silo is part of.
+    - id: connectionString
+      type: System.String
+      description: Azure connection string to use the silo system data.
+    content.vb: Public Sub SetDeploymentId(clusterId As String, connectionString As String)
+  overload: Orleans.Runtime.Host.SiloHost.SetDeploymentId*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Host.SiloHost.SetSiloEndpoint(IPEndPoint,System.Int32)
+  commentId: M:Orleans.Runtime.Host.SiloHost.SetSiloEndpoint(IPEndPoint,System.Int32)
+  id: SetSiloEndpoint(IPEndPoint,System.Int32)
+  parent: Orleans.Runtime.Host.SiloHost
+  langs:
+  - csharp
+  - vb
+  name: SetSiloEndpoint(IPEndPoint, Int32)
+  nameWithType: SiloHost.SetSiloEndpoint(IPEndPoint, Int32)
+  fullName: Orleans.Runtime.Host.SiloHost.SetSiloEndpoint(IPEndPoint, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SetSiloEndpoint
+    path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+    startLine: 372
+  assemblies:
+  - Orleans.Runtime.Legacy
+  namespace: Orleans.Runtime.Host
+  summary: "\nSet the main endpoint address for this silo,\nplus the silo generation value to be used to distinguish this silo instance\nfrom any previous silo instances previously running on this endpoint.\n"
+  example: []
+  syntax:
+    content: public void SetSiloEndpoint(IPEndPoint endpoint, int generation)
+    parameters:
+    - id: endpoint
+      type: IPEndPoint
+      description: IP address and port of the main inter-silo socket connection.
+    - id: generation
+      type: System.Int32
+      description: Generation number for this silo.
+    content.vb: Public Sub SetSiloEndpoint(endpoint As IPEndPoint, generation As Integer)
+  overload: Orleans.Runtime.Host.SiloHost.SetSiloEndpoint*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Host.SiloHost.SetProxyEndpoint(IPEndPoint)
+  commentId: M:Orleans.Runtime.Host.SiloHost.SetProxyEndpoint(IPEndPoint)
+  id: SetProxyEndpoint(IPEndPoint)
+  parent: Orleans.Runtime.Host.SiloHost
+  langs:
+  - csharp
+  - vb
+  name: SetProxyEndpoint(IPEndPoint)
+  nameWithType: SiloHost.SetProxyEndpoint(IPEndPoint)
+  fullName: Orleans.Runtime.Host.SiloHost.SetProxyEndpoint(IPEndPoint)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SetProxyEndpoint
+    path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+    startLine: 384
+  assemblies:
+  - Orleans.Runtime.Legacy
+  namespace: Orleans.Runtime.Host
+  summary: "\nSet the gateway proxy endpoint address for this silo.\n"
+  example: []
+  syntax:
+    content: public void SetProxyEndpoint(IPEndPoint endpoint)
+    parameters:
+    - id: endpoint
+      type: IPEndPoint
+      description: IP address of the gateway socket connection.
+    content.vb: Public Sub SetProxyEndpoint(endpoint As IPEndPoint)
+  overload: Orleans.Runtime.Host.SiloHost.SetProxyEndpoint*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Host.SiloHost.SetSeedNodeEndpoint(IPEndPoint)
+  commentId: M:Orleans.Runtime.Host.SiloHost.SetSeedNodeEndpoint(IPEndPoint)
+  id: SetSeedNodeEndpoint(IPEndPoint)
+  parent: Orleans.Runtime.Host.SiloHost
+  langs:
+  - csharp
+  - vb
+  name: SetSeedNodeEndpoint(IPEndPoint)
+  nameWithType: SiloHost.SetSeedNodeEndpoint(IPEndPoint)
+  fullName: Orleans.Runtime.Host.SiloHost.SetSeedNodeEndpoint(IPEndPoint)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SetSeedNodeEndpoint
+    path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+    startLine: 394
+  assemblies:
+  - Orleans.Runtime.Legacy
+  namespace: Orleans.Runtime.Host
+  summary: "\nSet the seed node endpoint address to be used by silo.\n"
+  example: []
+  syntax:
+    content: public void SetSeedNodeEndpoint(IPEndPoint endpoint)
+    parameters:
+    - id: endpoint
+      type: IPEndPoint
+      description: IP address of the inter-silo connection socket on the seed node silo.
+    content.vb: Public Sub SetSeedNodeEndpoint(endpoint As IPEndPoint)
+  overload: Orleans.Runtime.Host.SiloHost.SetSeedNodeEndpoint*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Host.SiloHost.SetSeedNodeEndpoints(IPEndPoint[])
+  commentId: M:Orleans.Runtime.Host.SiloHost.SetSeedNodeEndpoints(IPEndPoint[])
+  id: SetSeedNodeEndpoints(IPEndPoint[])
+  parent: Orleans.Runtime.Host.SiloHost
+  langs:
+  - csharp
+  - vb
+  name: SetSeedNodeEndpoints(IPEndPoint[])
+  nameWithType: SiloHost.SetSeedNodeEndpoints(IPEndPoint[])
+  fullName: Orleans.Runtime.Host.SiloHost.SetSeedNodeEndpoints(IPEndPoint[])
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SetSeedNodeEndpoints
+    path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+    startLine: 405
+  assemblies:
+  - Orleans.Runtime.Legacy
+  namespace: Orleans.Runtime.Host
+  summary: "\nSet the set of seed node endpoint addresses to be used by silo.\n"
+  example: []
+  syntax:
+    content: public void SetSeedNodeEndpoints(IPEndPoint[] endpoints)
+    parameters:
+    - id: endpoints
+      type: IPEndPoint[]
+      description: IP addresses of the inter-silo connection socket on the seed node silos.
+    content.vb: Public Sub SetSeedNodeEndpoints(endpoints As IPEndPoint())
+  overload: Orleans.Runtime.Host.SiloHost.SetSeedNodeEndpoints*
+  nameWithType.vb: SiloHost.SetSeedNodeEndpoints(IPEndPoint())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.Runtime.Host.SiloHost.SetSeedNodeEndpoints(IPEndPoint())
+  name.vb: SetSeedNodeEndpoints(IPEndPoint())
+- uid: Orleans.Runtime.Host.SiloHost.SetPrimaryNodeEndpoint(IPEndPoint)
+  commentId: M:Orleans.Runtime.Host.SiloHost.SetPrimaryNodeEndpoint(IPEndPoint)
+  id: SetPrimaryNodeEndpoint(IPEndPoint)
+  parent: Orleans.Runtime.Host.SiloHost
+  langs:
+  - csharp
+  - vb
+  name: SetPrimaryNodeEndpoint(IPEndPoint)
+  nameWithType: SiloHost.SetPrimaryNodeEndpoint(IPEndPoint)
+  fullName: Orleans.Runtime.Host.SiloHost.SetPrimaryNodeEndpoint(IPEndPoint)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SetPrimaryNodeEndpoint
+    path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+    startLine: 422
+  assemblies:
+  - Orleans.Runtime.Legacy
+  namespace: Orleans.Runtime.Host
+  summary: "\nSet the endpoint addresses for the Primary silo (if any).\nThis silo may be Primary, in which case this address should match \nthis silo&apos;s inter-silo connection socket address.\n"
+  example: []
+  syntax:
+    content: public void SetPrimaryNodeEndpoint(IPEndPoint endpoint)
+    parameters:
+    - id: endpoint
+      type: IPEndPoint
+      description: The IP address for the inter-silo connection socket on the Primary silo.
+    content.vb: Public Sub SetPrimaryNodeEndpoint(endpoint As IPEndPoint)
+  overload: Orleans.Runtime.Host.SiloHost.SetPrimaryNodeEndpoint*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Host.SiloHost.SetSiloType(Silo.SiloType)
+  commentId: M:Orleans.Runtime.Host.SiloHost.SetSiloType(Silo.SiloType)
+  id: SetSiloType(Silo.SiloType)
+  parent: Orleans.Runtime.Host.SiloHost
+  langs:
+  - csharp
+  - vb
+  name: SetSiloType(Silo.SiloType)
+  nameWithType: SiloHost.SetSiloType(Silo.SiloType)
+  fullName: Orleans.Runtime.Host.SiloHost.SetSiloType(Silo.SiloType)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SetSiloType
+    path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+    startLine: 432
+  assemblies:
+  - Orleans.Runtime.Legacy
+  namespace: Orleans.Runtime.Host
+  summary: "\nSet the type of this silo. Default is Secondary.\n"
+  example: []
+  syntax:
+    content: public void SetSiloType(Silo.SiloType siloType)
+    parameters:
+    - id: siloType
+      type: Silo.SiloType
+      description: Type of this silo.
+    content.vb: Public Sub SetSiloType(siloType As Silo.SiloType)
+  overload: Orleans.Runtime.Host.SiloHost.SetSiloType*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Host.SiloHost.SetSiloLivenessType(Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType)
+  commentId: M:Orleans.Runtime.Host.SiloHost.SetSiloLivenessType(Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType)
+  id: SetSiloLivenessType(Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType)
+  parent: Orleans.Runtime.Host.SiloHost
+  langs:
+  - csharp
+  - vb
+  name: SetSiloLivenessType(GlobalConfiguration.LivenessProviderType)
+  nameWithType: SiloHost.SetSiloLivenessType(GlobalConfiguration.LivenessProviderType)
+  fullName: Orleans.Runtime.Host.SiloHost.SetSiloLivenessType(Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SetSiloLivenessType
+    path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+    startLine: 442
+  assemblies:
+  - Orleans.Runtime.Legacy
+  namespace: Orleans.Runtime.Host
+  summary: "\nSet the membership liveness type to be used by this silo.\n"
+  example: []
+  syntax:
+    content: public void SetSiloLivenessType(GlobalConfiguration.LivenessProviderType livenessType)
+    parameters:
+    - id: livenessType
+      type: Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType
+      description: Liveness type for this silo
+    content.vb: Public Sub SetSiloLivenessType(livenessType As GlobalConfiguration.LivenessProviderType)
+  overload: Orleans.Runtime.Host.SiloHost.SetSiloLivenessType*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Host.SiloHost.SetReminderServiceType(Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType)
+  commentId: M:Orleans.Runtime.Host.SiloHost.SetReminderServiceType(Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType)
+  id: SetReminderServiceType(Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType)
+  parent: Orleans.Runtime.Host.SiloHost
+  langs:
+  - csharp
+  - vb
+  name: SetReminderServiceType(GlobalConfiguration.ReminderServiceProviderType)
+  nameWithType: SiloHost.SetReminderServiceType(GlobalConfiguration.ReminderServiceProviderType)
+  fullName: Orleans.Runtime.Host.SiloHost.SetReminderServiceType(Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SetReminderServiceType
+    path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+    startLine: 452
+  assemblies:
+  - Orleans.Runtime.Legacy
+  namespace: Orleans.Runtime.Host
+  summary: "\nSet the reminder service type to be used by this silo.\n"
+  example: []
+  syntax:
+    content: public void SetReminderServiceType(GlobalConfiguration.ReminderServiceProviderType reminderType)
+    parameters:
+    - id: reminderType
+      type: Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType
+      description: Reminder service type for this silo
+    content.vb: Public Sub SetReminderServiceType(reminderType As GlobalConfiguration.ReminderServiceProviderType)
+  overload: Orleans.Runtime.Host.SiloHost.SetReminderServiceType*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Host.SiloHost.SetExpectedClusterSize(System.Int32)
+  commentId: M:Orleans.Runtime.Host.SiloHost.SetExpectedClusterSize(System.Int32)
+  id: SetExpectedClusterSize(System.Int32)
+  parent: Orleans.Runtime.Host.SiloHost
+  langs:
+  - csharp
+  - vb
+  name: SetExpectedClusterSize(Int32)
+  nameWithType: SiloHost.SetExpectedClusterSize(Int32)
+  fullName: Orleans.Runtime.Host.SiloHost.SetExpectedClusterSize(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SetExpectedClusterSize
+    path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+    startLine: 462
+  assemblies:
+  - Orleans.Runtime.Legacy
+  namespace: Orleans.Runtime.Host
+  summary: "\nSet expected deployment size.\n"
+  example: []
+  syntax:
+    content: public void SetExpectedClusterSize(int size)
+    parameters:
+    - id: size
+      type: System.Int32
+      description: The expected deployment size.
+    content.vb: Public Sub SetExpectedClusterSize(size As Integer)
+  overload: Orleans.Runtime.Host.SiloHost.SetExpectedClusterSize*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Host.SiloHost.ReportStartupError(Exception)
+  commentId: M:Orleans.Runtime.Host.SiloHost.ReportStartupError(Exception)
+  id: ReportStartupError(Exception)
+  parent: Orleans.Runtime.Host.SiloHost
+  langs:
+  - csharp
+  - vb
+  name: ReportStartupError(Exception)
+  nameWithType: SiloHost.ReportStartupError(Exception)
+  fullName: Orleans.Runtime.Host.SiloHost.ReportStartupError(Exception)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ReportStartupError
+    path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+    startLine: 477
+  assemblies:
+  - Orleans.Runtime.Legacy
+  namespace: Orleans.Runtime.Host
+  summary: "\nReport an error during silo startup.\n"
+  remarks: "\nInformation on the silo startup issue will be logged to any attached Loggers,\nthen a timestamped StartupError text file will be written to \nthe current working directory (if possible).\n"
+  example: []
+  syntax:
+    content: public void ReportStartupError(Exception exc)
+    parameters:
+    - id: exc
+      type: Exception
+      description: Exception which caused the silo startup issue.
+    content.vb: Public Sub ReportStartupError(exc As Exception)
+  overload: Orleans.Runtime.Host.SiloHost.ReportStartupError*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Host.SiloHost.LoadOrleansConfig
+  commentId: M:Orleans.Runtime.Host.SiloHost.LoadOrleansConfig
+  id: LoadOrleansConfig
+  parent: Orleans.Runtime.Host.SiloHost
+  langs:
+  - csharp
+  - vb
+  name: LoadOrleansConfig()
+  nameWithType: SiloHost.LoadOrleansConfig()
+  fullName: Orleans.Runtime.Host.SiloHost.LoadOrleansConfig()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: LoadOrleansConfig
+    path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+    startLine: 504
+  assemblies:
+  - Orleans.Runtime.Legacy
+  namespace: Orleans.Runtime.Host
+  summary: "\nSearch for and load the config file for this silo.\n"
+  example: []
+  syntax:
+    content: public void LoadOrleansConfig()
+    content.vb: Public Sub LoadOrleansConfig
+  overload: Orleans.Runtime.Host.SiloHost.LoadOrleansConfig*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Host.SiloHost.Dispose
+  commentId: M:Orleans.Runtime.Host.SiloHost.Dispose
+  id: Dispose
+  parent: Orleans.Runtime.Host.SiloHost
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: SiloHost.Dispose()
+  fullName: Orleans.Runtime.Host.SiloHost.Dispose()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Dispose
+    path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+    startLine: 587
+  assemblies:
+  - Orleans.Runtime.Legacy
+  namespace: Orleans.Runtime.Host
+  summary: "\nCalled when this silo is being Disposed by .NET runtime.\n"
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  overload: Orleans.Runtime.Host.SiloHost.Dispose*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Host.SiloHost.Dispose(System.Boolean)
+  commentId: M:Orleans.Runtime.Host.SiloHost.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: Orleans.Runtime.Host.SiloHost
+  langs:
+  - csharp
+  - vb
+  name: Dispose(Boolean)
+  nameWithType: SiloHost.Dispose(Boolean)
+  fullName: Orleans.Runtime.Host.SiloHost.Dispose(System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Dispose
+    path: src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs
+    startLine: 595
+  assemblies:
+  - Orleans.Runtime.Legacy
+  namespace: Orleans.Runtime.Host
+  summary: 'Perform the Dispose / cleanup operation. '
+  example: []
+  syntax:
+    content: protected virtual void Dispose(bool disposing)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+      description: ''
+    content.vb: Protected Overridable Sub Dispose(disposing As Boolean)
+  overload: Orleans.Runtime.Host.SiloHost.Dispose*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+references:
+- uid: Orleans.Runtime.Host
+  commentId: N:Orleans.Runtime.Host
+  isExternal: false
+  name: Orleans.Runtime.Host
+  nameWithType: Orleans.Runtime.Host
+  fullName: Orleans.Runtime.Host
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: IDisposable
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: IDisposable
+- uid: Orleans.Runtime.Host.SiloHost.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<SiloHost>()
+  nameWithType: ImmutableExt.AsImmutable<SiloHost>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.Host.SiloHost>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of SiloHost)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.Host.SiloHost)()
+  name.vb: AsImmutable(Of SiloHost)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<SiloHost>
+    nameWithType: ImmutableExt.AsImmutable<SiloHost>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.Host.SiloHost>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of SiloHost)
+    nameWithType: ImmutableExt.AsImmutable(Of SiloHost)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.Host.SiloHost)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Runtime.Host.SiloHost.Name*
+  commentId: Overload:Orleans.Runtime.Host.SiloHost.Name
+  isExternal: false
+  name: Name
+  nameWithType: SiloHost.Name
+  fullName: Orleans.Runtime.Host.SiloHost.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Orleans.Runtime.Host.SiloHost.Type*
+  commentId: Overload:Orleans.Runtime.Host.SiloHost.Type
+  isExternal: false
+  name: Type
+  nameWithType: SiloHost.Type
+  fullName: Orleans.Runtime.Host.SiloHost.Type
+- uid: Silo.SiloType
+  isExternal: true
+  name: Silo.SiloType
+  nameWithType: Silo.SiloType
+  fullName: Silo.SiloType
+- uid: Orleans.Runtime.Host.SiloHost.ConfigFileName*
+  commentId: Overload:Orleans.Runtime.Host.SiloHost.ConfigFileName
+  isExternal: false
+  name: ConfigFileName
+  nameWithType: SiloHost.ConfigFileName
+  fullName: Orleans.Runtime.Host.SiloHost.ConfigFileName
+- uid: Orleans.Runtime.Host.SiloHost.Config*
+  commentId: Overload:Orleans.Runtime.Host.SiloHost.Config
+  isExternal: false
+  name: Config
+  nameWithType: SiloHost.Config
+  fullName: Orleans.Runtime.Host.SiloHost.Config
+- uid: Orleans.Runtime.Configuration.ClusterConfiguration
+  commentId: T:Orleans.Runtime.Configuration.ClusterConfiguration
+  parent: Orleans.Runtime.Configuration
+  isExternal: false
+  name: ClusterConfiguration
+  nameWithType: ClusterConfiguration
+  fullName: Orleans.Runtime.Configuration.ClusterConfiguration
+- uid: Orleans.Runtime.Configuration
+  commentId: N:Orleans.Runtime.Configuration
+  isExternal: false
+  name: Orleans.Runtime.Configuration
+  nameWithType: Orleans.Runtime.Configuration
+  fullName: Orleans.Runtime.Configuration
+- uid: Orleans.Runtime.Host.SiloHost.NodeConfig*
+  commentId: Overload:Orleans.Runtime.Host.SiloHost.NodeConfig
+  isExternal: false
+  name: NodeConfig
+  nameWithType: SiloHost.NodeConfig
+  fullName: Orleans.Runtime.Host.SiloHost.NodeConfig
+- uid: Orleans.Runtime.Configuration.NodeConfiguration
+  commentId: T:Orleans.Runtime.Configuration.NodeConfiguration
+  parent: Orleans.Runtime.Configuration
+  isExternal: false
+  name: NodeConfiguration
+  nameWithType: NodeConfiguration
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration
+- uid: Orleans.Runtime.Host.SiloHost.ConfigLoaded*
+  commentId: Overload:Orleans.Runtime.Host.SiloHost.ConfigLoaded
+  isExternal: false
+  name: ConfigLoaded
+  nameWithType: SiloHost.ConfigLoaded
+  fullName: Orleans.Runtime.Host.SiloHost.ConfigLoaded
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Orleans.Runtime.Host.SiloHost.DeploymentId*
+  commentId: Overload:Orleans.Runtime.Host.SiloHost.DeploymentId
+  isExternal: false
+  name: DeploymentId
+  nameWithType: SiloHost.DeploymentId
+  fullName: Orleans.Runtime.Host.SiloHost.DeploymentId
+- uid: Orleans.Runtime.Host.SiloHost.IsStarted*
+  commentId: Overload:Orleans.Runtime.Host.SiloHost.IsStarted
+  isExternal: false
+  name: IsStarted
+  nameWithType: SiloHost.IsStarted
+  fullName: Orleans.Runtime.Host.SiloHost.IsStarted
+- uid: Orleans.Runtime.Host.SiloHost.#ctor*
+  commentId: Overload:Orleans.Runtime.Host.SiloHost.#ctor
+  isExternal: false
+  name: SiloHost
+  nameWithType: SiloHost.SiloHost
+  fullName: Orleans.Runtime.Host.SiloHost.SiloHost
+- uid: FileInfo
+  isExternal: true
+  name: FileInfo
+  nameWithType: FileInfo
+  fullName: FileInfo
+- uid: Orleans.Runtime.Host.SiloHost.InitializeOrleansSilo*
+  commentId: Overload:Orleans.Runtime.Host.SiloHost.InitializeOrleansSilo
+  isExternal: false
+  name: InitializeOrleansSilo
+  nameWithType: SiloHost.InitializeOrleansSilo
+  fullName: Orleans.Runtime.Host.SiloHost.InitializeOrleansSilo
+- uid: Orleans.Runtime.Host.SiloHost.UnInitializeOrleansSilo*
+  commentId: Overload:Orleans.Runtime.Host.SiloHost.UnInitializeOrleansSilo
+  isExternal: false
+  name: UnInitializeOrleansSilo
+  nameWithType: SiloHost.UnInitializeOrleansSilo
+  fullName: Orleans.Runtime.Host.SiloHost.UnInitializeOrleansSilo
+- uid: Orleans.Runtime.Host.SiloHost.StartOrleansSilo*
+  commentId: Overload:Orleans.Runtime.Host.SiloHost.StartOrleansSilo
+  isExternal: false
+  name: StartOrleansSilo
+  nameWithType: SiloHost.StartOrleansSilo
+  fullName: Orleans.Runtime.Host.SiloHost.StartOrleansSilo
+- uid: Orleans.Runtime.Host.SiloHost.StopOrleansSilo*
+  commentId: Overload:Orleans.Runtime.Host.SiloHost.StopOrleansSilo
+  isExternal: false
+  name: StopOrleansSilo
+  nameWithType: SiloHost.StopOrleansSilo
+  fullName: Orleans.Runtime.Host.SiloHost.StopOrleansSilo
+- uid: Orleans.Runtime.Host.SiloHost.ShutdownOrleansSilo*
+  commentId: Overload:Orleans.Runtime.Host.SiloHost.ShutdownOrleansSilo
+  isExternal: false
+  name: ShutdownOrleansSilo
+  nameWithType: SiloHost.ShutdownOrleansSilo
+  fullName: Orleans.Runtime.Host.SiloHost.ShutdownOrleansSilo
+- uid: Orleans.Runtime.Host.SiloHost.ShutdownOrleansSiloAsync*
+  commentId: Overload:Orleans.Runtime.Host.SiloHost.ShutdownOrleansSiloAsync
+  isExternal: false
+  name: ShutdownOrleansSiloAsync
+  nameWithType: SiloHost.ShutdownOrleansSiloAsync
+  fullName: Orleans.Runtime.Host.SiloHost.ShutdownOrleansSiloAsync
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: CancellationToken
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: CancellationToken
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task
+- uid: Orleans.Runtime.Host.SiloHost.WaitForOrleansSiloShutdown*
+  commentId: Overload:Orleans.Runtime.Host.SiloHost.WaitForOrleansSiloShutdown
+  isExternal: false
+  name: WaitForOrleansSiloShutdown
+  nameWithType: SiloHost.WaitForOrleansSiloShutdown
+  fullName: Orleans.Runtime.Host.SiloHost.WaitForOrleansSiloShutdown
+- uid: Orleans.Runtime.Host.SiloHost.WaitForOrleansSiloShutdownAsync*
+  commentId: Overload:Orleans.Runtime.Host.SiloHost.WaitForOrleansSiloShutdownAsync
+  isExternal: false
+  name: WaitForOrleansSiloShutdownAsync
+  nameWithType: SiloHost.WaitForOrleansSiloShutdownAsync
+  fullName: Orleans.Runtime.Host.SiloHost.WaitForOrleansSiloShutdownAsync
+- uid: Task{System.Boolean}
+  commentId: '!:Task{System.Boolean}'
+  definition: Task`1
+  name: Task<Boolean>
+  nameWithType: Task<Boolean>
+  fullName: Task<System.Boolean>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: Task(Of System.Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.Host.SiloHost.SetDeploymentId*
+  commentId: Overload:Orleans.Runtime.Host.SiloHost.SetDeploymentId
+  isExternal: false
+  name: SetDeploymentId
+  nameWithType: SiloHost.SetDeploymentId
+  fullName: Orleans.Runtime.Host.SiloHost.SetDeploymentId
+- uid: Orleans.Runtime.Host.SiloHost.SetSiloEndpoint*
+  commentId: Overload:Orleans.Runtime.Host.SiloHost.SetSiloEndpoint
+  isExternal: false
+  name: SetSiloEndpoint
+  nameWithType: SiloHost.SetSiloEndpoint
+  fullName: Orleans.Runtime.Host.SiloHost.SetSiloEndpoint
+- uid: IPEndPoint
+  isExternal: true
+  name: IPEndPoint
+  nameWithType: IPEndPoint
+  fullName: IPEndPoint
+- uid: Orleans.Runtime.Host.SiloHost.SetProxyEndpoint*
+  commentId: Overload:Orleans.Runtime.Host.SiloHost.SetProxyEndpoint
+  isExternal: false
+  name: SetProxyEndpoint
+  nameWithType: SiloHost.SetProxyEndpoint
+  fullName: Orleans.Runtime.Host.SiloHost.SetProxyEndpoint
+- uid: Orleans.Runtime.Host.SiloHost.SetSeedNodeEndpoint*
+  commentId: Overload:Orleans.Runtime.Host.SiloHost.SetSeedNodeEndpoint
+  isExternal: false
+  name: SetSeedNodeEndpoint
+  nameWithType: SiloHost.SetSeedNodeEndpoint
+  fullName: Orleans.Runtime.Host.SiloHost.SetSeedNodeEndpoint
+- uid: Orleans.Runtime.Host.SiloHost.SetSeedNodeEndpoints*
+  commentId: Overload:Orleans.Runtime.Host.SiloHost.SetSeedNodeEndpoints
+  isExternal: false
+  name: SetSeedNodeEndpoints
+  nameWithType: SiloHost.SetSeedNodeEndpoints
+  fullName: Orleans.Runtime.Host.SiloHost.SetSeedNodeEndpoints
+- uid: IPEndPoint[]
+  name: IPEndPoint[]
+  nameWithType: IPEndPoint[]
+  fullName: IPEndPoint[]
+  nameWithType.vb: IPEndPoint()
+  fullName.vb: IPEndPoint()
+  name.vb: IPEndPoint()
+  spec.csharp:
+  - uid: IPEndPoint
+    name: IPEndPoint
+    nameWithType: IPEndPoint
+    fullName: IPEndPoint
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: IPEndPoint
+    name: IPEndPoint
+    nameWithType: IPEndPoint
+    fullName: IPEndPoint
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Orleans.Runtime.Host.SiloHost.SetPrimaryNodeEndpoint*
+  commentId: Overload:Orleans.Runtime.Host.SiloHost.SetPrimaryNodeEndpoint
+  isExternal: false
+  name: SetPrimaryNodeEndpoint
+  nameWithType: SiloHost.SetPrimaryNodeEndpoint
+  fullName: Orleans.Runtime.Host.SiloHost.SetPrimaryNodeEndpoint
+- uid: Orleans.Runtime.Host.SiloHost.SetSiloType*
+  commentId: Overload:Orleans.Runtime.Host.SiloHost.SetSiloType
+  isExternal: false
+  name: SetSiloType
+  nameWithType: SiloHost.SetSiloType
+  fullName: Orleans.Runtime.Host.SiloHost.SetSiloType
+- uid: Orleans.Runtime.Host.SiloHost.SetSiloLivenessType*
+  commentId: Overload:Orleans.Runtime.Host.SiloHost.SetSiloLivenessType
+  isExternal: false
+  name: SetSiloLivenessType
+  nameWithType: SiloHost.SetSiloLivenessType
+  fullName: Orleans.Runtime.Host.SiloHost.SetSiloLivenessType
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType
+  commentId: T:Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType
+  parent: Orleans.Runtime.Configuration
+  isExternal: false
+  name: GlobalConfiguration.LivenessProviderType
+  nameWithType: GlobalConfiguration.LivenessProviderType
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType
+- uid: Orleans.Runtime.Host.SiloHost.SetReminderServiceType*
+  commentId: Overload:Orleans.Runtime.Host.SiloHost.SetReminderServiceType
+  isExternal: false
+  name: SetReminderServiceType
+  nameWithType: SiloHost.SetReminderServiceType
+  fullName: Orleans.Runtime.Host.SiloHost.SetReminderServiceType
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType
+  commentId: T:Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType
+  parent: Orleans.Runtime.Configuration
+  isExternal: false
+  name: GlobalConfiguration.ReminderServiceProviderType
+  nameWithType: GlobalConfiguration.ReminderServiceProviderType
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType
+- uid: Orleans.Runtime.Host.SiloHost.SetExpectedClusterSize*
+  commentId: Overload:Orleans.Runtime.Host.SiloHost.SetExpectedClusterSize
+  isExternal: false
+  name: SetExpectedClusterSize
+  nameWithType: SiloHost.SetExpectedClusterSize
+  fullName: Orleans.Runtime.Host.SiloHost.SetExpectedClusterSize
+- uid: Orleans.Runtime.Host.SiloHost.ReportStartupError*
+  commentId: Overload:Orleans.Runtime.Host.SiloHost.ReportStartupError
+  isExternal: false
+  name: ReportStartupError
+  nameWithType: SiloHost.ReportStartupError
+  fullName: Orleans.Runtime.Host.SiloHost.ReportStartupError
+- uid: Exception
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: Exception
+- uid: Orleans.Runtime.Host.SiloHost.LoadOrleansConfig*
+  commentId: Overload:Orleans.Runtime.Host.SiloHost.LoadOrleansConfig
+  isExternal: false
+  name: LoadOrleansConfig
+  nameWithType: SiloHost.LoadOrleansConfig
+  fullName: Orleans.Runtime.Host.SiloHost.LoadOrleansConfig
+- uid: Orleans.Runtime.Host.SiloHost.Dispose*
+  commentId: Overload:Orleans.Runtime.Host.SiloHost.Dispose
+  isExternal: false
+  name: Dispose
+  nameWithType: SiloHost.Dispose
+  fullName: Orleans.Runtime.Host.SiloHost.Dispose

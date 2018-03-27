@@ -1,0 +1,443 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Streams.ClusterClientPubSubStreamConfigurator`1
+  commentId: T:Orleans.Streams.ClusterClientPubSubStreamConfigurator`1
+  id: ClusterClientPubSubStreamConfigurator`1
+  parent: Orleans.Streams
+  children:
+  - Orleans.Streams.ClusterClientPubSubStreamConfigurator`1.#ctor(System.String,IClientBuilder)
+  - Orleans.Streams.ClusterClientPubSubStreamConfigurator`1.ConfigurePartitioning(System.Int32)
+  - Orleans.Streams.ClusterClientPubSubStreamConfigurator`1.ConfigurePubSub(Action{OptionsBuilder{Orleans.Configuration.PubSubOptions}})
+  langs:
+  - csharp
+  - vb
+  name: ClusterClientPubSubStreamConfigurator<TDataAdapter>
+  nameWithType: ClusterClientPubSubStreamConfigurator<TDataAdapter>
+  fullName: Orleans.Streams.ClusterClientPubSubStreamConfigurator<TDataAdapter>
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubStreamConfigurator.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ClusterClientPubSubStreamConfigurator
+    path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubStreamConfigurator.cs
+    startLine: 43
+  assemblies:
+  - Orleans.Streaming.GCP
+  namespace: Orleans.Streams
+  syntax:
+    content: 'public class ClusterClientPubSubStreamConfigurator<TDataAdapter> : ClusterClientPersistentStreamConfigurator where TDataAdapter : IPubSubDataAdapter'
+    typeParameters:
+    - id: TDataAdapter
+    content.vb: >-
+      Public Class ClusterClientPubSubStreamConfigurator(Of TDataAdapter As IPubSubDataAdapter)
+
+          Inherits ClusterClientPersistentStreamConfigurator
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.Streams.ClusterClientPubSubStreamConfigurator`1.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  nameWithType.vb: ClusterClientPubSubStreamConfigurator(Of TDataAdapter)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: Orleans.Streams.ClusterClientPubSubStreamConfigurator(Of TDataAdapter)
+  name.vb: ClusterClientPubSubStreamConfigurator(Of TDataAdapter)
+- uid: Orleans.Streams.ClusterClientPubSubStreamConfigurator`1.#ctor(System.String,IClientBuilder)
+  commentId: M:Orleans.Streams.ClusterClientPubSubStreamConfigurator`1.#ctor(System.String,IClientBuilder)
+  id: '#ctor(System.String,IClientBuilder)'
+  parent: Orleans.Streams.ClusterClientPubSubStreamConfigurator`1
+  langs:
+  - csharp
+  - vb
+  name: ClusterClientPubSubStreamConfigurator(String, IClientBuilder)
+  nameWithType: ClusterClientPubSubStreamConfigurator<TDataAdapter>.ClusterClientPubSubStreamConfigurator(String, IClientBuilder)
+  fullName: Orleans.Streams.ClusterClientPubSubStreamConfigurator<TDataAdapter>.ClusterClientPubSubStreamConfigurator(System.String, IClientBuilder)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubStreamConfigurator.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubStreamConfigurator.cs
+    startLine: 46
+  assemblies:
+  - Orleans.Streaming.GCP
+  namespace: Orleans.Streams
+  syntax:
+    content: public ClusterClientPubSubStreamConfigurator(string name, IClientBuilder builder)
+    parameters:
+    - id: name
+      type: System.String
+    - id: builder
+      type: IClientBuilder
+    content.vb: Public Sub New(name As String, builder As IClientBuilder)
+  overload: Orleans.Streams.ClusterClientPubSubStreamConfigurator`1.#ctor*
+  nameWithType.vb: ClusterClientPubSubStreamConfigurator(Of TDataAdapter).ClusterClientPubSubStreamConfigurator(String, IClientBuilder)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.Streams.ClusterClientPubSubStreamConfigurator(Of TDataAdapter).ClusterClientPubSubStreamConfigurator(System.String, IClientBuilder)
+- uid: Orleans.Streams.ClusterClientPubSubStreamConfigurator`1.ConfigurePubSub(Action{OptionsBuilder{Orleans.Configuration.PubSubOptions}})
+  commentId: M:Orleans.Streams.ClusterClientPubSubStreamConfigurator`1.ConfigurePubSub(Action{OptionsBuilder{Orleans.Configuration.PubSubOptions}})
+  id: ConfigurePubSub(Action{OptionsBuilder{Orleans.Configuration.PubSubOptions}})
+  parent: Orleans.Streams.ClusterClientPubSubStreamConfigurator`1
+  langs:
+  - csharp
+  - vb
+  name: ConfigurePubSub(Action<OptionsBuilder<PubSubOptions>>)
+  nameWithType: ClusterClientPubSubStreamConfigurator<TDataAdapter>.ConfigurePubSub(Action<OptionsBuilder<PubSubOptions>>)
+  fullName: Orleans.Streams.ClusterClientPubSubStreamConfigurator<TDataAdapter>.ConfigurePubSub(Action<OptionsBuilder<Orleans.Configuration.PubSubOptions>>)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubStreamConfigurator.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ConfigurePubSub
+    path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubStreamConfigurator.cs
+    startLine: 54
+  assemblies:
+  - Orleans.Streaming.GCP
+  namespace: Orleans.Streams
+  syntax:
+    content: public ClusterClientPubSubStreamConfigurator<TDataAdapter> ConfigurePubSub(Action<OptionsBuilder<PubSubOptions>> configureOptions)
+    parameters:
+    - id: configureOptions
+      type: Action{OptionsBuilder{Orleans.Configuration.PubSubOptions}}
+    return:
+      type: Orleans.Streams.ClusterClientPubSubStreamConfigurator`1
+    content.vb: Public Function ConfigurePubSub(configureOptions As Action(Of OptionsBuilder(Of PubSubOptions))) As ClusterClientPubSubStreamConfigurator(Of TDataAdapter)
+  overload: Orleans.Streams.ClusterClientPubSubStreamConfigurator`1.ConfigurePubSub*
+  nameWithType.vb: ClusterClientPubSubStreamConfigurator(Of TDataAdapter).ConfigurePubSub(Action(Of OptionsBuilder(Of PubSubOptions)))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.Streams.ClusterClientPubSubStreamConfigurator(Of TDataAdapter).ConfigurePubSub(Action(Of OptionsBuilder(Of Orleans.Configuration.PubSubOptions)))
+  name.vb: ConfigurePubSub(Action(Of OptionsBuilder(Of PubSubOptions)))
+- uid: Orleans.Streams.ClusterClientPubSubStreamConfigurator`1.ConfigurePartitioning(System.Int32)
+  commentId: M:Orleans.Streams.ClusterClientPubSubStreamConfigurator`1.ConfigurePartitioning(System.Int32)
+  id: ConfigurePartitioning(System.Int32)
+  parent: Orleans.Streams.ClusterClientPubSubStreamConfigurator`1
+  langs:
+  - csharp
+  - vb
+  name: ConfigurePartitioning(Int32)
+  nameWithType: ClusterClientPubSubStreamConfigurator<TDataAdapter>.ConfigurePartitioning(Int32)
+  fullName: Orleans.Streams.ClusterClientPubSubStreamConfigurator<TDataAdapter>.ConfigurePartitioning(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubStreamConfigurator.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ConfigurePartitioning
+    path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubStreamConfigurator.cs
+    startLine: 60
+  assemblies:
+  - Orleans.Streaming.GCP
+  namespace: Orleans.Streams
+  syntax:
+    content: public ClusterClientPubSubStreamConfigurator<TDataAdapter> ConfigurePartitioning(int numOfPartitions = null)
+    parameters:
+    - id: numOfPartitions
+      type: System.Int32
+    return:
+      type: Orleans.Streams.ClusterClientPubSubStreamConfigurator`1
+    content.vb: Public Function ConfigurePartitioning(numOfPartitions As Integer = Nothing) As ClusterClientPubSubStreamConfigurator(Of TDataAdapter)
+  overload: Orleans.Streams.ClusterClientPubSubStreamConfigurator`1.ConfigurePartitioning*
+  nameWithType.vb: ClusterClientPubSubStreamConfigurator(Of TDataAdapter).ConfigurePartitioning(Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.Streams.ClusterClientPubSubStreamConfigurator(Of TDataAdapter).ConfigurePartitioning(System.Int32)
+references:
+- uid: Orleans.Streams
+  commentId: N:Orleans.Streams
+  isExternal: false
+  name: Orleans.Streams
+  nameWithType: Orleans.Streams
+  fullName: Orleans.Streams
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Streams.ClusterClientPubSubStreamConfigurator`1.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<ClusterClientPubSubStreamConfigurator<TDataAdapter>>()
+  nameWithType: ImmutableExt.AsImmutable<ClusterClientPubSubStreamConfigurator<TDataAdapter>>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Streams.ClusterClientPubSubStreamConfigurator<TDataAdapter>>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of ClusterClientPubSubStreamConfigurator(Of TDataAdapter))()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Streams.ClusterClientPubSubStreamConfigurator(Of TDataAdapter))()
+  name.vb: AsImmutable(Of ClusterClientPubSubStreamConfigurator(Of TDataAdapter))()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<ClusterClientPubSubStreamConfigurator<TDataAdapter>>
+    nameWithType: ImmutableExt.AsImmutable<ClusterClientPubSubStreamConfigurator<TDataAdapter>>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Streams.ClusterClientPubSubStreamConfigurator<TDataAdapter>>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of ClusterClientPubSubStreamConfigurator(Of TDataAdapter))
+    nameWithType: ImmutableExt.AsImmutable(Of ClusterClientPubSubStreamConfigurator(Of TDataAdapter))
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Streams.ClusterClientPubSubStreamConfigurator(Of TDataAdapter))
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Streams.ClusterClientPubSubStreamConfigurator`1.#ctor*
+  commentId: Overload:Orleans.Streams.ClusterClientPubSubStreamConfigurator`1.#ctor
+  isExternal: false
+  name: ClusterClientPubSubStreamConfigurator
+  nameWithType: ClusterClientPubSubStreamConfigurator<TDataAdapter>.ClusterClientPubSubStreamConfigurator
+  fullName: Orleans.Streams.ClusterClientPubSubStreamConfigurator<TDataAdapter>.ClusterClientPubSubStreamConfigurator
+  nameWithType.vb: ClusterClientPubSubStreamConfigurator(Of TDataAdapter).ClusterClientPubSubStreamConfigurator
+  fullName.vb: Orleans.Streams.ClusterClientPubSubStreamConfigurator(Of TDataAdapter).ClusterClientPubSubStreamConfigurator
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: IClientBuilder
+  isExternal: true
+  name: IClientBuilder
+  nameWithType: IClientBuilder
+  fullName: IClientBuilder
+- uid: Orleans.Streams.ClusterClientPubSubStreamConfigurator`1.ConfigurePubSub*
+  commentId: Overload:Orleans.Streams.ClusterClientPubSubStreamConfigurator`1.ConfigurePubSub
+  isExternal: false
+  name: ConfigurePubSub
+  nameWithType: ClusterClientPubSubStreamConfigurator<TDataAdapter>.ConfigurePubSub
+  fullName: Orleans.Streams.ClusterClientPubSubStreamConfigurator<TDataAdapter>.ConfigurePubSub
+  nameWithType.vb: ClusterClientPubSubStreamConfigurator(Of TDataAdapter).ConfigurePubSub
+  fullName.vb: Orleans.Streams.ClusterClientPubSubStreamConfigurator(Of TDataAdapter).ConfigurePubSub
+- uid: Action{OptionsBuilder{Orleans.Configuration.PubSubOptions}}
+  commentId: '!:Action{OptionsBuilder{Orleans.Configuration.PubSubOptions}}'
+  definition: Action`1
+  name: Action<OptionsBuilder<PubSubOptions>>
+  nameWithType: Action<OptionsBuilder<PubSubOptions>>
+  fullName: Action<OptionsBuilder<Orleans.Configuration.PubSubOptions>>
+  nameWithType.vb: Action(Of OptionsBuilder(Of PubSubOptions))
+  fullName.vb: Action(Of OptionsBuilder(Of Orleans.Configuration.PubSubOptions))
+  name.vb: Action(Of OptionsBuilder(Of PubSubOptions))
+  spec.csharp:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: OptionsBuilder`1
+    name: OptionsBuilder
+    nameWithType: OptionsBuilder
+    fullName: OptionsBuilder
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Orleans.Configuration.PubSubOptions
+    name: PubSubOptions
+    nameWithType: PubSubOptions
+    fullName: Orleans.Configuration.PubSubOptions
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: OptionsBuilder`1
+    name: OptionsBuilder
+    nameWithType: OptionsBuilder
+    fullName: OptionsBuilder
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Orleans.Configuration.PubSubOptions
+    name: PubSubOptions
+    nameWithType: PubSubOptions
+    fullName: Orleans.Configuration.PubSubOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Streams.ClusterClientPubSubStreamConfigurator`1
+  commentId: T:Orleans.Streams.ClusterClientPubSubStreamConfigurator`1
+  parent: Orleans.Streams
+  isExternal: false
+  name: ClusterClientPubSubStreamConfigurator<TDataAdapter>
+  nameWithType: ClusterClientPubSubStreamConfigurator<TDataAdapter>
+  fullName: Orleans.Streams.ClusterClientPubSubStreamConfigurator<TDataAdapter>
+  nameWithType.vb: ClusterClientPubSubStreamConfigurator(Of TDataAdapter)
+  fullName.vb: Orleans.Streams.ClusterClientPubSubStreamConfigurator(Of TDataAdapter)
+  name.vb: ClusterClientPubSubStreamConfigurator(Of TDataAdapter)
+  spec.csharp:
+  - uid: Orleans.Streams.ClusterClientPubSubStreamConfigurator`1
+    name: ClusterClientPubSubStreamConfigurator
+    nameWithType: ClusterClientPubSubStreamConfigurator
+    fullName: Orleans.Streams.ClusterClientPubSubStreamConfigurator
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDataAdapter
+    nameWithType: TDataAdapter
+    fullName: TDataAdapter
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Orleans.Streams.ClusterClientPubSubStreamConfigurator`1
+    name: ClusterClientPubSubStreamConfigurator
+    nameWithType: ClusterClientPubSubStreamConfigurator
+    fullName: Orleans.Streams.ClusterClientPubSubStreamConfigurator
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDataAdapter
+    nameWithType: TDataAdapter
+    fullName: TDataAdapter
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Action`1
+  isExternal: true
+  name: Action<>
+  nameWithType: Action<>
+  fullName: Action<>
+  nameWithType.vb: Action(Of )
+  fullName.vb: Action(Of )
+  name.vb: Action(Of )
+  spec.csharp:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Streams.ClusterClientPubSubStreamConfigurator`1.ConfigurePartitioning*
+  commentId: Overload:Orleans.Streams.ClusterClientPubSubStreamConfigurator`1.ConfigurePartitioning
+  isExternal: false
+  name: ConfigurePartitioning
+  nameWithType: ClusterClientPubSubStreamConfigurator<TDataAdapter>.ConfigurePartitioning
+  fullName: Orleans.Streams.ClusterClientPubSubStreamConfigurator<TDataAdapter>.ConfigurePartitioning
+  nameWithType.vb: ClusterClientPubSubStreamConfigurator(Of TDataAdapter).ConfigurePartitioning
+  fullName.vb: Orleans.Streams.ClusterClientPubSubStreamConfigurator(Of TDataAdapter).ConfigurePartitioning
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32

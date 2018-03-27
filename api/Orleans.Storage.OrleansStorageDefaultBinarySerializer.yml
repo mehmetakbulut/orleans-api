@@ -1,0 +1,616 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Storage.OrleansStorageDefaultBinarySerializer
+  commentId: T:Orleans.Storage.OrleansStorageDefaultBinarySerializer
+  id: OrleansStorageDefaultBinarySerializer
+  parent: Orleans.Storage
+  children:
+  - Orleans.Storage.OrleansStorageDefaultBinarySerializer.#ctor(SerializationManager,System.String)
+  - Orleans.Storage.OrleansStorageDefaultBinarySerializer.CanStream
+  - Orleans.Storage.OrleansStorageDefaultBinarySerializer.Serialize(Stream,System.Object)
+  - Orleans.Storage.OrleansStorageDefaultBinarySerializer.Serialize(System.Object)
+  - Orleans.Storage.OrleansStorageDefaultBinarySerializer.Serialize(TextWriter,System.Object)
+  - Orleans.Storage.OrleansStorageDefaultBinarySerializer.Tag
+  langs:
+  - csharp
+  - vb
+  name: OrleansStorageDefaultBinarySerializer
+  nameWithType: OrleansStorageDefaultBinarySerializer
+  fullName: Orleans.Storage.OrleansStorageDefaultBinarySerializer
+  type: Class
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/OrleansStorageDefaultBinarySerializer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: OrleansStorageDefaultBinarySerializer
+    path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/OrleansStorageDefaultBinarySerializer.cs
+    startLine: 11
+  assemblies:
+  - Orleans.Persistence.AdoNet
+  namespace: Orleans.Storage
+  summary: "\nA default binary serializer for storage providers.\n"
+  example: []
+  syntax:
+    content: 'public class OrleansStorageDefaultBinarySerializer : object, IStorageSerializer'
+    content.vb: >-
+      Public Class OrleansStorageDefaultBinarySerializer
+
+          Inherits Object
+
+          Implements IStorageSerializer
+  inheritance:
+  - System.Object
+  implements:
+  - Orleans.Storage.IStorageSerializer
+  extensionMethods:
+  - Orleans.Storage.OrleansStorageDefaultBinarySerializer.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.Storage.OrleansStorageDefaultBinarySerializer.CanStream
+  commentId: P:Orleans.Storage.OrleansStorageDefaultBinarySerializer.CanStream
+  id: CanStream
+  parent: Orleans.Storage.OrleansStorageDefaultBinarySerializer
+  langs:
+  - csharp
+  - vb
+  name: CanStream
+  nameWithType: OrleansStorageDefaultBinarySerializer.CanStream
+  fullName: Orleans.Storage.OrleansStorageDefaultBinarySerializer.CanStream
+  type: Property
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/OrleansStorageDefaultBinarySerializer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: CanStream
+    path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/OrleansStorageDefaultBinarySerializer.cs
+    startLine: 19
+  assemblies:
+  - Orleans.Persistence.AdoNet
+  namespace: Orleans.Storage
+  summary: "\n<xref href=\"Orleans.Storage.IStorageSerializer.CanStream\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public bool CanStream { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property CanStream As Boolean
+  overload: Orleans.Storage.OrleansStorageDefaultBinarySerializer.CanStream*
+  implements:
+  - Orleans.Storage.IStorageSerializer.CanStream
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Storage.OrleansStorageDefaultBinarySerializer.Tag
+  commentId: P:Orleans.Storage.OrleansStorageDefaultBinarySerializer.Tag
+  id: Tag
+  parent: Orleans.Storage.OrleansStorageDefaultBinarySerializer
+  langs:
+  - csharp
+  - vb
+  name: Tag
+  nameWithType: OrleansStorageDefaultBinarySerializer.Tag
+  fullName: Orleans.Storage.OrleansStorageDefaultBinarySerializer.Tag
+  type: Property
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/OrleansStorageDefaultBinarySerializer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Tag
+    path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/OrleansStorageDefaultBinarySerializer.cs
+    startLine: 24
+  assemblies:
+  - Orleans.Persistence.AdoNet
+  namespace: Orleans.Storage
+  summary: "\n<xref href=\"Orleans.Storage.IStorageSerializer.Tag\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public string Tag { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Tag As String
+  overload: Orleans.Storage.OrleansStorageDefaultBinarySerializer.Tag*
+  implements:
+  - Orleans.Storage.IStorageSerializer.Tag
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Storage.OrleansStorageDefaultBinarySerializer.#ctor(SerializationManager,System.String)
+  commentId: M:Orleans.Storage.OrleansStorageDefaultBinarySerializer.#ctor(SerializationManager,System.String)
+  id: '#ctor(SerializationManager,System.String)'
+  parent: Orleans.Storage.OrleansStorageDefaultBinarySerializer
+  langs:
+  - csharp
+  - vb
+  name: OrleansStorageDefaultBinarySerializer(SerializationManager, String)
+  nameWithType: OrleansStorageDefaultBinarySerializer.OrleansStorageDefaultBinarySerializer(SerializationManager, String)
+  fullName: Orleans.Storage.OrleansStorageDefaultBinarySerializer.OrleansStorageDefaultBinarySerializer(SerializationManager, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/OrleansStorageDefaultBinarySerializer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/OrleansStorageDefaultBinarySerializer.cs
+    startLine: 32
+  assemblies:
+  - Orleans.Persistence.AdoNet
+  namespace: Orleans.Storage
+  summary: "\nConstructs this serializer from the given parameters.\n"
+  example: []
+  syntax:
+    content: public OrleansStorageDefaultBinarySerializer(SerializationManager serializationManager, string tag)
+    parameters:
+    - id: serializationManager
+      type: SerializationManager
+      description: ''
+    - id: tag
+      type: System.String
+      description: <xref href="Orleans.Storage.IStorageSerializer.Tag" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Sub New(serializationManager As SerializationManager, tag As String)
+  overload: Orleans.Storage.OrleansStorageDefaultBinarySerializer.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Storage.OrleansStorageDefaultBinarySerializer.Serialize(Stream,System.Object)
+  commentId: M:Orleans.Storage.OrleansStorageDefaultBinarySerializer.Serialize(Stream,System.Object)
+  id: Serialize(Stream,System.Object)
+  parent: Orleans.Storage.OrleansStorageDefaultBinarySerializer
+  langs:
+  - csharp
+  - vb
+  name: Serialize(Stream, Object)
+  nameWithType: OrleansStorageDefaultBinarySerializer.Serialize(Stream, Object)
+  fullName: Orleans.Storage.OrleansStorageDefaultBinarySerializer.Serialize(Stream, System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/OrleansStorageDefaultBinarySerializer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Serialize
+    path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/OrleansStorageDefaultBinarySerializer.cs
+    startLine: 48
+  assemblies:
+  - Orleans.Persistence.AdoNet
+  namespace: Orleans.Storage
+  summary: "\n<xref href=\"Orleans.Storage.IStorageSerializer.Serialize(Stream%2cSystem.Object)\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public object Serialize(Stream stream, object data)
+    parameters:
+    - id: stream
+      type: Stream
+    - id: data
+      type: System.Object
+    return:
+      type: System.Object
+    content.vb: Public Function Serialize(stream As Stream, data As Object) As Object
+  overload: Orleans.Storage.OrleansStorageDefaultBinarySerializer.Serialize*
+  implements:
+  - Orleans.Storage.IStorageSerializer.Serialize(Stream,System.Object)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Storage.OrleansStorageDefaultBinarySerializer.Serialize(System.Object)
+  commentId: M:Orleans.Storage.OrleansStorageDefaultBinarySerializer.Serialize(System.Object)
+  id: Serialize(System.Object)
+  parent: Orleans.Storage.OrleansStorageDefaultBinarySerializer
+  langs:
+  - csharp
+  - vb
+  name: Serialize(Object)
+  nameWithType: OrleansStorageDefaultBinarySerializer.Serialize(Object)
+  fullName: Orleans.Storage.OrleansStorageDefaultBinarySerializer.Serialize(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/OrleansStorageDefaultBinarySerializer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Serialize
+    path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/OrleansStorageDefaultBinarySerializer.cs
+    startLine: 57
+  assemblies:
+  - Orleans.Persistence.AdoNet
+  namespace: Orleans.Storage
+  summary: "\n<xref href=\"Orleans.Storage.IStorageSerializer.Serialize(System.Object)\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public object Serialize(object data)
+    parameters:
+    - id: data
+      type: System.Object
+    return:
+      type: System.Object
+    content.vb: Public Function Serialize(data As Object) As Object
+  overload: Orleans.Storage.OrleansStorageDefaultBinarySerializer.Serialize*
+  implements:
+  - Orleans.Storage.IStorageSerializer.Serialize(System.Object)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Storage.OrleansStorageDefaultBinarySerializer.Serialize(TextWriter,System.Object)
+  commentId: M:Orleans.Storage.OrleansStorageDefaultBinarySerializer.Serialize(TextWriter,System.Object)
+  id: Serialize(TextWriter,System.Object)
+  parent: Orleans.Storage.OrleansStorageDefaultBinarySerializer
+  langs:
+  - csharp
+  - vb
+  name: Serialize(TextWriter, Object)
+  nameWithType: OrleansStorageDefaultBinarySerializer.Serialize(TextWriter, Object)
+  fullName: Orleans.Storage.OrleansStorageDefaultBinarySerializer.Serialize(TextWriter, System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/OrleansStorageDefaultBinarySerializer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Serialize
+    path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/OrleansStorageDefaultBinarySerializer.cs
+    startLine: 66
+  assemblies:
+  - Orleans.Persistence.AdoNet
+  namespace: Orleans.Storage
+  summary: "\n<xref href=\"Orleans.Storage.IStorageSerializer.Serialize(TextWriter%2cSystem.Object)\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public object Serialize(TextWriter writer, object data)
+    parameters:
+    - id: writer
+      type: TextWriter
+    - id: data
+      type: System.Object
+    return:
+      type: System.Object
+    content.vb: Public Function Serialize(writer As TextWriter, data As Object) As Object
+  overload: Orleans.Storage.OrleansStorageDefaultBinarySerializer.Serialize*
+  implements:
+  - Orleans.Storage.IStorageSerializer.Serialize(TextWriter,System.Object)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans.Storage
+  commentId: N:Orleans.Storage
+  isExternal: false
+  name: Orleans.Storage
+  nameWithType: Orleans.Storage
+  fullName: Orleans.Storage
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Storage.IStorageSerializer
+  commentId: T:Orleans.Storage.IStorageSerializer
+  parent: Orleans.Storage
+  isExternal: false
+  name: IStorageSerializer
+  nameWithType: IStorageSerializer
+  fullName: Orleans.Storage.IStorageSerializer
+- uid: Orleans.Storage.OrleansStorageDefaultBinarySerializer.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<OrleansStorageDefaultBinarySerializer>()
+  nameWithType: ImmutableExt.AsImmutable<OrleansStorageDefaultBinarySerializer>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Storage.OrleansStorageDefaultBinarySerializer>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of OrleansStorageDefaultBinarySerializer)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Storage.OrleansStorageDefaultBinarySerializer)()
+  name.vb: AsImmutable(Of OrleansStorageDefaultBinarySerializer)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<OrleansStorageDefaultBinarySerializer>
+    nameWithType: ImmutableExt.AsImmutable<OrleansStorageDefaultBinarySerializer>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Storage.OrleansStorageDefaultBinarySerializer>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of OrleansStorageDefaultBinarySerializer)
+    nameWithType: ImmutableExt.AsImmutable(Of OrleansStorageDefaultBinarySerializer)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Storage.OrleansStorageDefaultBinarySerializer)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Storage.IStorageSerializer.CanStream
+  commentId: P:Orleans.Storage.IStorageSerializer.CanStream
+  parent: Orleans.Storage.IStorageSerializer
+  isExternal: false
+  name: CanStream
+  nameWithType: IStorageSerializer.CanStream
+  fullName: Orleans.Storage.IStorageSerializer.CanStream
+- uid: Orleans.Storage.OrleansStorageDefaultBinarySerializer.CanStream*
+  commentId: Overload:Orleans.Storage.OrleansStorageDefaultBinarySerializer.CanStream
+  isExternal: false
+  name: CanStream
+  nameWithType: OrleansStorageDefaultBinarySerializer.CanStream
+  fullName: Orleans.Storage.OrleansStorageDefaultBinarySerializer.CanStream
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Orleans.Storage.IStorageSerializer.Tag
+  commentId: P:Orleans.Storage.IStorageSerializer.Tag
+  parent: Orleans.Storage.IStorageSerializer
+  isExternal: false
+  name: Tag
+  nameWithType: IStorageSerializer.Tag
+  fullName: Orleans.Storage.IStorageSerializer.Tag
+- uid: Orleans.Storage.OrleansStorageDefaultBinarySerializer.Tag*
+  commentId: Overload:Orleans.Storage.OrleansStorageDefaultBinarySerializer.Tag
+  isExternal: false
+  name: Tag
+  nameWithType: OrleansStorageDefaultBinarySerializer.Tag
+  fullName: Orleans.Storage.OrleansStorageDefaultBinarySerializer.Tag
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Orleans.Storage.OrleansStorageDefaultBinarySerializer.#ctor*
+  commentId: Overload:Orleans.Storage.OrleansStorageDefaultBinarySerializer.#ctor
+  isExternal: false
+  name: OrleansStorageDefaultBinarySerializer
+  nameWithType: OrleansStorageDefaultBinarySerializer.OrleansStorageDefaultBinarySerializer
+  fullName: Orleans.Storage.OrleansStorageDefaultBinarySerializer.OrleansStorageDefaultBinarySerializer
+- uid: SerializationManager
+  isExternal: true
+  name: SerializationManager
+  nameWithType: SerializationManager
+  fullName: SerializationManager
+- uid: Orleans.Storage.IStorageSerializer.Serialize(Stream,System.Object)
+  commentId: M:Orleans.Storage.IStorageSerializer.Serialize(Stream,System.Object)
+  parent: Orleans.Storage.IStorageSerializer
+  isExternal: true
+  name: Serialize(Stream, Object)
+  nameWithType: IStorageSerializer.Serialize(Stream, Object)
+  fullName: Orleans.Storage.IStorageSerializer.Serialize(Stream, System.Object)
+  spec.csharp:
+  - uid: Orleans.Storage.IStorageSerializer.Serialize(Stream,System.Object)
+    name: Serialize
+    nameWithType: IStorageSerializer.Serialize
+    fullName: Orleans.Storage.IStorageSerializer.Serialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: Stream
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Storage.IStorageSerializer.Serialize(Stream,System.Object)
+    name: Serialize
+    nameWithType: IStorageSerializer.Serialize
+    fullName: Orleans.Storage.IStorageSerializer.Serialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: Stream
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Storage.OrleansStorageDefaultBinarySerializer.Serialize*
+  commentId: Overload:Orleans.Storage.OrleansStorageDefaultBinarySerializer.Serialize
+  isExternal: false
+  name: Serialize
+  nameWithType: OrleansStorageDefaultBinarySerializer.Serialize
+  fullName: Orleans.Storage.OrleansStorageDefaultBinarySerializer.Serialize
+- uid: Stream
+  isExternal: true
+  name: Stream
+  nameWithType: Stream
+  fullName: Stream
+- uid: Orleans.Storage.IStorageSerializer.Serialize(System.Object)
+  commentId: M:Orleans.Storage.IStorageSerializer.Serialize(System.Object)
+  parent: Orleans.Storage.IStorageSerializer
+  isExternal: true
+  name: Serialize(Object)
+  nameWithType: IStorageSerializer.Serialize(Object)
+  fullName: Orleans.Storage.IStorageSerializer.Serialize(System.Object)
+  spec.csharp:
+  - uid: Orleans.Storage.IStorageSerializer.Serialize(System.Object)
+    name: Serialize
+    nameWithType: IStorageSerializer.Serialize
+    fullName: Orleans.Storage.IStorageSerializer.Serialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Storage.IStorageSerializer.Serialize(System.Object)
+    name: Serialize
+    nameWithType: IStorageSerializer.Serialize
+    fullName: Orleans.Storage.IStorageSerializer.Serialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Storage.IStorageSerializer.Serialize(TextWriter,System.Object)
+  commentId: M:Orleans.Storage.IStorageSerializer.Serialize(TextWriter,System.Object)
+  parent: Orleans.Storage.IStorageSerializer
+  isExternal: true
+  name: Serialize(TextWriter, Object)
+  nameWithType: IStorageSerializer.Serialize(TextWriter, Object)
+  fullName: Orleans.Storage.IStorageSerializer.Serialize(TextWriter, System.Object)
+  spec.csharp:
+  - uid: Orleans.Storage.IStorageSerializer.Serialize(TextWriter,System.Object)
+    name: Serialize
+    nameWithType: IStorageSerializer.Serialize
+    fullName: Orleans.Storage.IStorageSerializer.Serialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: TextWriter
+    name: TextWriter
+    nameWithType: TextWriter
+    fullName: TextWriter
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Storage.IStorageSerializer.Serialize(TextWriter,System.Object)
+    name: Serialize
+    nameWithType: IStorageSerializer.Serialize
+    fullName: Orleans.Storage.IStorageSerializer.Serialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: TextWriter
+    name: TextWriter
+    nameWithType: TextWriter
+    fullName: TextWriter
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TextWriter
+  isExternal: true
+  name: TextWriter
+  nameWithType: TextWriter
+  fullName: TextWriter

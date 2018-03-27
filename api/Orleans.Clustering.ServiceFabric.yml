@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Clustering.ServiceFabric
+  commentId: N:Orleans.Clustering.ServiceFabric
+  id: Orleans.Clustering.ServiceFabric
+  children:
+  - Orleans.Clustering.ServiceFabric.OrleansServiceFabricExtensions
+  langs:
+  - csharp
+  - vb
+  name: Orleans.Clustering.ServiceFabric
+  nameWithType: Orleans.Clustering.ServiceFabric
+  fullName: Orleans.Clustering.ServiceFabric
+  type: Namespace
+  assemblies:
+  - Orleans.Clustering.ServiceFabric
+references:
+- uid: Orleans.Clustering.ServiceFabric.OrleansServiceFabricExtensions
+  commentId: T:Orleans.Clustering.ServiceFabric.OrleansServiceFabricExtensions
+  isExternal: false
+  name: OrleansServiceFabricExtensions
+  nameWithType: OrleansServiceFabricExtensions
+  fullName: Orleans.Clustering.ServiceFabric.OrleansServiceFabricExtensions

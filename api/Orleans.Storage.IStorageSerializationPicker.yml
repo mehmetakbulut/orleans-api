@@ -1,0 +1,483 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Storage.IStorageSerializationPicker
+  commentId: T:Orleans.Storage.IStorageSerializationPicker
+  id: IStorageSerializationPicker
+  parent: Orleans.Storage
+  children:
+  - Orleans.Storage.IStorageSerializationPicker.Deserializers
+  - Orleans.Storage.IStorageSerializationPicker.PickDeserializer(System.String,System.String,System.String,Orleans.Runtime.GrainReference,IGrainState,System.String)
+  - Orleans.Storage.IStorageSerializationPicker.PickSerializer(System.String,System.String,System.String,Orleans.Runtime.GrainReference,IGrainState,System.String)
+  - Orleans.Storage.IStorageSerializationPicker.Serializers
+  langs:
+  - csharp
+  - vb
+  name: IStorageSerializationPicker
+  nameWithType: IStorageSerializationPicker
+  fullName: Orleans.Storage.IStorageSerializationPicker
+  type: Interface
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/IStorageSerializationPicker.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IStorageSerializationPicker
+    path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/IStorageSerializationPicker.cs
+    startLine: 60
+  assemblies:
+  - Orleans.Persistence.AdoNet
+  namespace: Orleans.Storage
+  summary: "\nA strategy to pick a serializer or a deserializer for storage operations. As for an example, this can be used to:\n1) Add a custom serializer or deserializer for use in storage provider operations (e.g. ProtoBuf or something else).\n2) In combination with serializer or deserializer to update stored object version.\n3) Per-grain storage format selection\n4) Switch storage format first by reading using the save format and then writing in the new format.\n"
+  example: []
+  syntax:
+    content: public interface IStorageSerializationPicker
+    content.vb: Public Interface IStorageSerializationPicker
+  extensionMethods:
+  - Orleans.Storage.IStorageSerializationPicker.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Orleans.Storage.IStorageSerializationPicker.Deserializers
+  commentId: P:Orleans.Storage.IStorageSerializationPicker.Deserializers
+  id: Deserializers
+  parent: Orleans.Storage.IStorageSerializationPicker
+  langs:
+  - csharp
+  - vb
+  name: Deserializers
+  nameWithType: IStorageSerializationPicker.Deserializers
+  fullName: Orleans.Storage.IStorageSerializationPicker.Deserializers
+  type: Property
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/IStorageSerializationPicker.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Deserializers
+    path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/IStorageSerializationPicker.cs
+    startLine: 65
+  assemblies:
+  - Orleans.Persistence.AdoNet
+  namespace: Orleans.Storage
+  summary: "\nThe configured deserializers.\n"
+  example: []
+  syntax:
+    content: ICollection<IStorageDeserializer> Deserializers { get; }
+    parameters: []
+    return:
+      type: ICollection{Orleans.Storage.IStorageDeserializer}
+    content.vb: ReadOnly Property Deserializers As ICollection(Of IStorageDeserializer)
+  overload: Orleans.Storage.IStorageSerializationPicker.Deserializers*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Orleans.Storage.IStorageSerializationPicker.Serializers
+  commentId: P:Orleans.Storage.IStorageSerializationPicker.Serializers
+  id: Serializers
+  parent: Orleans.Storage.IStorageSerializationPicker
+  langs:
+  - csharp
+  - vb
+  name: Serializers
+  nameWithType: IStorageSerializationPicker.Serializers
+  fullName: Orleans.Storage.IStorageSerializationPicker.Serializers
+  type: Property
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/IStorageSerializationPicker.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Serializers
+    path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/IStorageSerializationPicker.cs
+    startLine: 70
+  assemblies:
+  - Orleans.Persistence.AdoNet
+  namespace: Orleans.Storage
+  summary: "\nThe configured serializers.\n"
+  example: []
+  syntax:
+    content: ICollection<IStorageSerializer> Serializers { get; }
+    parameters: []
+    return:
+      type: ICollection{Orleans.Storage.IStorageSerializer}
+    content.vb: ReadOnly Property Serializers As ICollection(Of IStorageSerializer)
+  overload: Orleans.Storage.IStorageSerializationPicker.Serializers*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Orleans.Storage.IStorageSerializationPicker.PickDeserializer(System.String,System.String,System.String,Orleans.Runtime.GrainReference,IGrainState,System.String)
+  commentId: M:Orleans.Storage.IStorageSerializationPicker.PickDeserializer(System.String,System.String,System.String,Orleans.Runtime.GrainReference,IGrainState,System.String)
+  id: PickDeserializer(System.String,System.String,System.String,Orleans.Runtime.GrainReference,IGrainState,System.String)
+  parent: Orleans.Storage.IStorageSerializationPicker
+  langs:
+  - csharp
+  - vb
+  name: PickDeserializer(String, String, String, GrainReference, IGrainState, String)
+  nameWithType: IStorageSerializationPicker.PickDeserializer(String, String, String, GrainReference, IGrainState, String)
+  fullName: Orleans.Storage.IStorageSerializationPicker.PickDeserializer(System.String, System.String, System.String, Orleans.Runtime.GrainReference, IGrainState, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/IStorageSerializationPicker.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: PickDeserializer
+    path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/IStorageSerializationPicker.cs
+    startLine: 80
+  assemblies:
+  - Orleans.Persistence.AdoNet
+  namespace: Orleans.Storage
+  summary: Picks a deserializer using the given parameters.
+  example: []
+  syntax:
+    content: SerializationChoice PickDeserializer(string serviceId, string storageProviderInstanceName, string grainType, GrainReference grainReference, IGrainState grainState, string tag = null)
+    parameters:
+    - id: serviceId
+      type: System.String
+      description: The ID of the current service.
+    - id: storageProviderInstanceName
+      type: System.String
+      description: The requesting storage provider.
+    - id: grainType
+      type: System.String
+      description: The type of grain.
+    - id: grainReference
+      type: Orleans.Runtime.GrainReference
+      description: The grain reference.
+    - id: grainState
+      type: IGrainState
+      description: The grain state.
+    - id: tag
+      type: System.String
+      description: An optional tag parameter that might be used by the storage parameter for &quot;out-of-band&quot; contracts.
+    return:
+      type: Orleans.Storage.SerializationChoice
+      description: A serializer or <em>null</em> if not match was found.
+    content.vb: Function PickDeserializer(serviceId As String, storageProviderInstanceName As String, grainType As String, grainReference As GrainReference, grainState As IGrainState, tag As String = Nothing) As SerializationChoice
+  overload: Orleans.Storage.IStorageSerializationPicker.PickDeserializer*
+- uid: Orleans.Storage.IStorageSerializationPicker.PickSerializer(System.String,System.String,System.String,Orleans.Runtime.GrainReference,IGrainState,System.String)
+  commentId: M:Orleans.Storage.IStorageSerializationPicker.PickSerializer(System.String,System.String,System.String,Orleans.Runtime.GrainReference,IGrainState,System.String)
+  id: PickSerializer(System.String,System.String,System.String,Orleans.Runtime.GrainReference,IGrainState,System.String)
+  parent: Orleans.Storage.IStorageSerializationPicker
+  langs:
+  - csharp
+  - vb
+  name: PickSerializer(String, String, String, GrainReference, IGrainState, String)
+  nameWithType: IStorageSerializationPicker.PickSerializer(String, String, String, GrainReference, IGrainState, String)
+  fullName: Orleans.Storage.IStorageSerializationPicker.PickSerializer(System.String, System.String, System.String, Orleans.Runtime.GrainReference, IGrainState, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/IStorageSerializationPicker.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: PickSerializer
+    path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/IStorageSerializationPicker.cs
+    startLine: 90
+  assemblies:
+  - Orleans.Persistence.AdoNet
+  namespace: Orleans.Storage
+  summary: Picks a serializer using the given parameters.
+  example: []
+  syntax:
+    content: SerializationChoice PickSerializer(string serviceId, string storageProviderInstanceName, string grainType, GrainReference grainReference, IGrainState grainState, string tag = null)
+    parameters:
+    - id: serviceId
+      type: System.String
+      description: The ID of the current service.
+    - id: storageProviderInstanceName
+      type: System.String
+      description: The requesting storage provider.
+    - id: grainType
+      type: System.String
+      description: The type of grain.
+    - id: grainReference
+      type: Orleans.Runtime.GrainReference
+      description: The grain reference.
+    - id: grainState
+      type: IGrainState
+      description: The grain state.
+    - id: tag
+      type: System.String
+      description: An optional tag parameter that might be used by the storage parameter for &quot;out-of-band&quot; contracts.
+    return:
+      type: Orleans.Storage.SerializationChoice
+      description: A deserializer or <em>null</em> if not match was found.
+    content.vb: Function PickSerializer(serviceId As String, storageProviderInstanceName As String, grainType As String, grainReference As GrainReference, grainState As IGrainState, tag As String = Nothing) As SerializationChoice
+  overload: Orleans.Storage.IStorageSerializationPicker.PickSerializer*
+references:
+- uid: Orleans.Storage
+  commentId: N:Orleans.Storage
+  isExternal: false
+  name: Orleans.Storage
+  nameWithType: Orleans.Storage
+  fullName: Orleans.Storage
+- uid: Orleans.Storage.IStorageSerializationPicker.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<IStorageSerializationPicker>()
+  nameWithType: ImmutableExt.AsImmutable<IStorageSerializationPicker>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Storage.IStorageSerializationPicker>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of IStorageSerializationPicker)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Storage.IStorageSerializationPicker)()
+  name.vb: AsImmutable(Of IStorageSerializationPicker)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<IStorageSerializationPicker>
+    nameWithType: ImmutableExt.AsImmutable<IStorageSerializationPicker>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Storage.IStorageSerializationPicker>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of IStorageSerializationPicker)
+    nameWithType: ImmutableExt.AsImmutable(Of IStorageSerializationPicker)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Storage.IStorageSerializationPicker)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Storage.IStorageSerializationPicker.Deserializers*
+  commentId: Overload:Orleans.Storage.IStorageSerializationPicker.Deserializers
+  isExternal: false
+  name: Deserializers
+  nameWithType: IStorageSerializationPicker.Deserializers
+  fullName: Orleans.Storage.IStorageSerializationPicker.Deserializers
+- uid: ICollection{Orleans.Storage.IStorageDeserializer}
+  commentId: '!:ICollection{Orleans.Storage.IStorageDeserializer}'
+  definition: ICollection`1
+  name: ICollection<IStorageDeserializer>
+  nameWithType: ICollection<IStorageDeserializer>
+  fullName: ICollection<Orleans.Storage.IStorageDeserializer>
+  nameWithType.vb: ICollection(Of IStorageDeserializer)
+  fullName.vb: ICollection(Of Orleans.Storage.IStorageDeserializer)
+  name.vb: ICollection(Of IStorageDeserializer)
+  spec.csharp:
+  - uid: ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: ICollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Orleans.Storage.IStorageDeserializer
+    name: IStorageDeserializer
+    nameWithType: IStorageDeserializer
+    fullName: Orleans.Storage.IStorageDeserializer
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: ICollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Orleans.Storage.IStorageDeserializer
+    name: IStorageDeserializer
+    nameWithType: IStorageDeserializer
+    fullName: Orleans.Storage.IStorageDeserializer
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: ICollection`1
+  isExternal: true
+  name: ICollection<>
+  nameWithType: ICollection<>
+  fullName: ICollection<>
+  nameWithType.vb: ICollection(Of )
+  fullName.vb: ICollection(Of )
+  name.vb: ICollection(Of )
+  spec.csharp:
+  - uid: ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: ICollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: ICollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Storage.IStorageSerializationPicker.Serializers*
+  commentId: Overload:Orleans.Storage.IStorageSerializationPicker.Serializers
+  isExternal: false
+  name: Serializers
+  nameWithType: IStorageSerializationPicker.Serializers
+  fullName: Orleans.Storage.IStorageSerializationPicker.Serializers
+- uid: ICollection{Orleans.Storage.IStorageSerializer}
+  commentId: '!:ICollection{Orleans.Storage.IStorageSerializer}'
+  definition: ICollection`1
+  name: ICollection<IStorageSerializer>
+  nameWithType: ICollection<IStorageSerializer>
+  fullName: ICollection<Orleans.Storage.IStorageSerializer>
+  nameWithType.vb: ICollection(Of IStorageSerializer)
+  fullName.vb: ICollection(Of Orleans.Storage.IStorageSerializer)
+  name.vb: ICollection(Of IStorageSerializer)
+  spec.csharp:
+  - uid: ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: ICollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Orleans.Storage.IStorageSerializer
+    name: IStorageSerializer
+    nameWithType: IStorageSerializer
+    fullName: Orleans.Storage.IStorageSerializer
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: ICollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Orleans.Storage.IStorageSerializer
+    name: IStorageSerializer
+    nameWithType: IStorageSerializer
+    fullName: Orleans.Storage.IStorageSerializer
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Storage.IStorageSerializationPicker.PickDeserializer*
+  commentId: Overload:Orleans.Storage.IStorageSerializationPicker.PickDeserializer
+  isExternal: false
+  name: PickDeserializer
+  nameWithType: IStorageSerializationPicker.PickDeserializer
+  fullName: Orleans.Storage.IStorageSerializationPicker.PickDeserializer
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Orleans.Runtime.GrainReference
+  commentId: T:Orleans.Runtime.GrainReference
+  parent: Orleans.Runtime
+  isExternal: false
+  name: GrainReference
+  nameWithType: GrainReference
+  fullName: Orleans.Runtime.GrainReference
+- uid: IGrainState
+  isExternal: true
+  name: IGrainState
+  nameWithType: IGrainState
+  fullName: IGrainState
+- uid: Orleans.Storage.SerializationChoice
+  commentId: T:Orleans.Storage.SerializationChoice
+  parent: Orleans.Storage
+  isExternal: false
+  name: SerializationChoice
+  nameWithType: SerializationChoice
+  fullName: Orleans.Storage.SerializationChoice
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Runtime
+  commentId: N:Orleans.Runtime
+  isExternal: false
+  name: Orleans.Runtime
+  nameWithType: Orleans.Runtime
+  fullName: Orleans.Runtime
+- uid: Orleans.Storage.IStorageSerializationPicker.PickSerializer*
+  commentId: Overload:Orleans.Storage.IStorageSerializationPicker.PickSerializer
+  isExternal: false
+  name: PickSerializer
+  nameWithType: IStorageSerializationPicker.PickSerializer
+  fullName: Orleans.Storage.IStorageSerializationPicker.PickSerializer

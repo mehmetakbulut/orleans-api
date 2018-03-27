@@ -1,0 +1,501 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Runtime.Configuration.GrainServiceConfiguration
+  commentId: T:Orleans.Runtime.Configuration.GrainServiceConfiguration
+  id: GrainServiceConfiguration
+  parent: Orleans.Runtime.Configuration
+  children:
+  - Orleans.Runtime.Configuration.GrainServiceConfiguration.#ctor
+  - Orleans.Runtime.Configuration.GrainServiceConfiguration.#ctor(IDictionary{System.String,System.String},System.String,System.String)
+  - Orleans.Runtime.Configuration.GrainServiceConfiguration.Name
+  - Orleans.Runtime.Configuration.GrainServiceConfiguration.Properties
+  - Orleans.Runtime.Configuration.GrainServiceConfiguration.ServiceType
+  langs:
+  - csharp
+  - vb
+  name: GrainServiceConfiguration
+  nameWithType: GrainServiceConfiguration
+  fullName: Orleans.Runtime.Configuration.GrainServiceConfiguration
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GrainServiceConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GrainServiceConfiguration
+    path: src/Orleans.Core.Legacy/Configuration/GrainServiceConfiguration.cs
+    startLine: 54
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  syntax:
+    content: 'public class GrainServiceConfiguration : object, IGrainServiceConfiguration'
+    content.vb: >-
+      Public Class GrainServiceConfiguration
+
+          Inherits Object
+
+          Implements IGrainServiceConfiguration
+  inheritance:
+  - System.Object
+  implements:
+  - Orleans.Runtime.Configuration.IGrainServiceConfiguration
+  extensionMethods:
+  - Orleans.Runtime.Configuration.GrainServiceConfiguration.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.Runtime.Configuration.GrainServiceConfiguration.Name
+  commentId: P:Orleans.Runtime.Configuration.GrainServiceConfiguration.Name
+  id: Name
+  parent: Orleans.Runtime.Configuration.GrainServiceConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: GrainServiceConfiguration.Name
+  fullName: Orleans.Runtime.Configuration.GrainServiceConfiguration.Name
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GrainServiceConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Name
+    path: src/Orleans.Core.Legacy/Configuration/GrainServiceConfiguration.cs
+    startLine: 58
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  syntax:
+    content: public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: Orleans.Runtime.Configuration.GrainServiceConfiguration.Name*
+  implements:
+  - Orleans.Runtime.Configuration.IGrainServiceConfiguration.Name
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GrainServiceConfiguration.ServiceType
+  commentId: P:Orleans.Runtime.Configuration.GrainServiceConfiguration.ServiceType
+  id: ServiceType
+  parent: Orleans.Runtime.Configuration.GrainServiceConfiguration
+  langs:
+  - csharp
+  - vb
+  name: ServiceType
+  nameWithType: GrainServiceConfiguration.ServiceType
+  fullName: Orleans.Runtime.Configuration.GrainServiceConfiguration.ServiceType
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GrainServiceConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ServiceType
+    path: src/Orleans.Core.Legacy/Configuration/GrainServiceConfiguration.cs
+    startLine: 59
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  syntax:
+    content: public string ServiceType { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ServiceType As String
+  overload: Orleans.Runtime.Configuration.GrainServiceConfiguration.ServiceType*
+  implements:
+  - Orleans.Runtime.Configuration.IGrainServiceConfiguration.ServiceType
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GrainServiceConfiguration.Properties
+  commentId: P:Orleans.Runtime.Configuration.GrainServiceConfiguration.Properties
+  id: Properties
+  parent: Orleans.Runtime.Configuration.GrainServiceConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Properties
+  nameWithType: GrainServiceConfiguration.Properties
+  fullName: Orleans.Runtime.Configuration.GrainServiceConfiguration.Properties
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GrainServiceConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Properties
+    path: src/Orleans.Core.Legacy/Configuration/GrainServiceConfiguration.cs
+    startLine: 60
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  syntax:
+    content: public IDictionary<string, string> Properties { get; set; }
+    parameters: []
+    return:
+      type: IDictionary{System.String,System.String}
+    content.vb: Public Property Properties As IDictionary(Of String, String)
+  overload: Orleans.Runtime.Configuration.GrainServiceConfiguration.Properties*
+  implements:
+  - Orleans.Runtime.Configuration.IGrainServiceConfiguration.Properties
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GrainServiceConfiguration.#ctor
+  commentId: M:Orleans.Runtime.Configuration.GrainServiceConfiguration.#ctor
+  id: '#ctor'
+  parent: Orleans.Runtime.Configuration.GrainServiceConfiguration
+  langs:
+  - csharp
+  - vb
+  name: GrainServiceConfiguration()
+  nameWithType: GrainServiceConfiguration.GrainServiceConfiguration()
+  fullName: Orleans.Runtime.Configuration.GrainServiceConfiguration.GrainServiceConfiguration()
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GrainServiceConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Core.Legacy/Configuration/GrainServiceConfiguration.cs
+    startLine: 62
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  syntax:
+    content: public GrainServiceConfiguration()
+    content.vb: Public Sub New
+  overload: Orleans.Runtime.Configuration.GrainServiceConfiguration.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.GrainServiceConfiguration.#ctor(IDictionary{System.String,System.String},System.String,System.String)
+  commentId: M:Orleans.Runtime.Configuration.GrainServiceConfiguration.#ctor(IDictionary{System.String,System.String},System.String,System.String)
+  id: '#ctor(IDictionary{System.String,System.String},System.String,System.String)'
+  parent: Orleans.Runtime.Configuration.GrainServiceConfiguration
+  langs:
+  - csharp
+  - vb
+  name: GrainServiceConfiguration(IDictionary<String, String>, String, String)
+  nameWithType: GrainServiceConfiguration.GrainServiceConfiguration(IDictionary<String, String>, String, String)
+  fullName: Orleans.Runtime.Configuration.GrainServiceConfiguration.GrainServiceConfiguration(IDictionary<System.String, System.String>, System.String, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/GrainServiceConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Core.Legacy/Configuration/GrainServiceConfiguration.cs
+    startLine: 64
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  syntax:
+    content: public GrainServiceConfiguration(IDictionary<string, string> properties, string serviceName, string serviceType)
+    parameters:
+    - id: properties
+      type: IDictionary{System.String,System.String}
+    - id: serviceName
+      type: System.String
+    - id: serviceType
+      type: System.String
+    content.vb: Public Sub New(properties As IDictionary(Of String, String), serviceName As String, serviceType As String)
+  overload: Orleans.Runtime.Configuration.GrainServiceConfiguration.#ctor*
+  nameWithType.vb: GrainServiceConfiguration.GrainServiceConfiguration(IDictionary(Of String, String), String, String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.Runtime.Configuration.GrainServiceConfiguration.GrainServiceConfiguration(IDictionary(Of System.String, System.String), System.String, System.String)
+  name.vb: GrainServiceConfiguration(IDictionary(Of String, String), String, String)
+references:
+- uid: Orleans.Runtime.Configuration
+  commentId: N:Orleans.Runtime.Configuration
+  isExternal: false
+  name: Orleans.Runtime.Configuration
+  nameWithType: Orleans.Runtime.Configuration
+  fullName: Orleans.Runtime.Configuration
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Runtime.Configuration.IGrainServiceConfiguration
+  commentId: T:Orleans.Runtime.Configuration.IGrainServiceConfiguration
+  parent: Orleans.Runtime.Configuration
+  isExternal: false
+  name: IGrainServiceConfiguration
+  nameWithType: IGrainServiceConfiguration
+  fullName: Orleans.Runtime.Configuration.IGrainServiceConfiguration
+- uid: Orleans.Runtime.Configuration.GrainServiceConfiguration.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<GrainServiceConfiguration>()
+  nameWithType: ImmutableExt.AsImmutable<GrainServiceConfiguration>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.Configuration.GrainServiceConfiguration>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of GrainServiceConfiguration)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.Configuration.GrainServiceConfiguration)()
+  name.vb: AsImmutable(Of GrainServiceConfiguration)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<GrainServiceConfiguration>
+    nameWithType: ImmutableExt.AsImmutable<GrainServiceConfiguration>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.Configuration.GrainServiceConfiguration>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of GrainServiceConfiguration)
+    nameWithType: ImmutableExt.AsImmutable(Of GrainServiceConfiguration)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.Configuration.GrainServiceConfiguration)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Runtime.Configuration.GrainServiceConfiguration.Name*
+  commentId: Overload:Orleans.Runtime.Configuration.GrainServiceConfiguration.Name
+  isExternal: false
+  name: Name
+  nameWithType: GrainServiceConfiguration.Name
+  fullName: Orleans.Runtime.Configuration.GrainServiceConfiguration.Name
+- uid: Orleans.Runtime.Configuration.IGrainServiceConfiguration.Name
+  commentId: P:Orleans.Runtime.Configuration.IGrainServiceConfiguration.Name
+  parent: Orleans.Runtime.Configuration.IGrainServiceConfiguration
+  isExternal: false
+  name: Name
+  nameWithType: IGrainServiceConfiguration.Name
+  fullName: Orleans.Runtime.Configuration.IGrainServiceConfiguration.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Orleans.Runtime.Configuration.GrainServiceConfiguration.ServiceType*
+  commentId: Overload:Orleans.Runtime.Configuration.GrainServiceConfiguration.ServiceType
+  isExternal: false
+  name: ServiceType
+  nameWithType: GrainServiceConfiguration.ServiceType
+  fullName: Orleans.Runtime.Configuration.GrainServiceConfiguration.ServiceType
+- uid: Orleans.Runtime.Configuration.IGrainServiceConfiguration.ServiceType
+  commentId: P:Orleans.Runtime.Configuration.IGrainServiceConfiguration.ServiceType
+  parent: Orleans.Runtime.Configuration.IGrainServiceConfiguration
+  isExternal: false
+  name: ServiceType
+  nameWithType: IGrainServiceConfiguration.ServiceType
+  fullName: Orleans.Runtime.Configuration.IGrainServiceConfiguration.ServiceType
+- uid: Orleans.Runtime.Configuration.GrainServiceConfiguration.Properties*
+  commentId: Overload:Orleans.Runtime.Configuration.GrainServiceConfiguration.Properties
+  isExternal: false
+  name: Properties
+  nameWithType: GrainServiceConfiguration.Properties
+  fullName: Orleans.Runtime.Configuration.GrainServiceConfiguration.Properties
+- uid: Orleans.Runtime.Configuration.IGrainServiceConfiguration.Properties
+  commentId: P:Orleans.Runtime.Configuration.IGrainServiceConfiguration.Properties
+  parent: Orleans.Runtime.Configuration.IGrainServiceConfiguration
+  isExternal: false
+  name: Properties
+  nameWithType: IGrainServiceConfiguration.Properties
+  fullName: Orleans.Runtime.Configuration.IGrainServiceConfiguration.Properties
+- uid: IDictionary{System.String,System.String}
+  commentId: '!:IDictionary{System.String,System.String}'
+  definition: IDictionary`2
+  name: IDictionary<String, String>
+  nameWithType: IDictionary<String, String>
+  fullName: IDictionary<System.String, System.String>
+  nameWithType.vb: IDictionary(Of String, String)
+  fullName.vb: IDictionary(Of System.String, System.String)
+  name.vb: IDictionary(Of String, String)
+  spec.csharp:
+  - uid: IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IDictionary`2
+  isExternal: true
+  name: IDictionary<, >
+  nameWithType: IDictionary<, >
+  fullName: IDictionary<, >
+  nameWithType.vb: IDictionary(Of , )
+  fullName.vb: IDictionary(Of , )
+  name.vb: IDictionary(Of , )
+  spec.csharp:
+  - uid: IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.Configuration.GrainServiceConfiguration.#ctor*
+  commentId: Overload:Orleans.Runtime.Configuration.GrainServiceConfiguration.#ctor
+  isExternal: false
+  name: GrainServiceConfiguration
+  nameWithType: GrainServiceConfiguration.GrainServiceConfiguration
+  fullName: Orleans.Runtime.Configuration.GrainServiceConfiguration.GrainServiceConfiguration

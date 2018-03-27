@@ -1,0 +1,234 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Concurrency.Immutable`1
+  commentId: T:Orleans.Concurrency.Immutable`1
+  id: Immutable`1
+  parent: Orleans.Concurrency
+  children:
+  - Orleans.Concurrency.Immutable`1.#ctor(`0)
+  - Orleans.Concurrency.Immutable`1.Value
+  langs:
+  - csharp
+  - vb
+  name: Immutable<T>
+  nameWithType: Immutable<T>
+  fullName: Orleans.Concurrency.Immutable<T>
+  type: Struct
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/Immutable.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Immutable
+    path: src/Orleans.Core.Abstractions/Core/Immutable.cs
+    startLine: 14
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Concurrency
+  summary: "\nWrapper class for carrying immutable data.\n"
+  remarks: "\nObjects that are known to be immutable are given special fast-path handling by the Orleans serializer \n-- which in a nutshell allows the DeepCopy step to be skipped during message sends where the sender and reveiving grain are in the same silo.\n\nOne very common usage pattern for Immutable is when passing byte[] parameters to a grain. \nIf a program knows it will not alter the contents of the byte[] (for example, if it contains bytes from a static image file read from disk)\nthen considerable savings in memory usage and message throughput can be obtained by marking that byte[] argument as <code>Immutable</code>.\n"
+  example: []
+  syntax:
+    content: public struct Immutable<T>
+    typeParameters:
+    - id: T
+      description: Type of data to be wrapped by this Immutable
+    content.vb: Public Structure Immutable(Of T)
+  extensionMethods:
+  - Orleans.Concurrency.Immutable`1.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  nameWithType.vb: Immutable(Of T)
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+  fullName.vb: Orleans.Concurrency.Immutable(Of T)
+  name.vb: Immutable(Of T)
+- uid: Orleans.Concurrency.Immutable`1.Value
+  commentId: P:Orleans.Concurrency.Immutable`1.Value
+  id: Value
+  parent: Orleans.Concurrency.Immutable`1
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: Immutable<T>.Value
+  fullName: Orleans.Concurrency.Immutable<T>.Value
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/Immutable.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Value
+    path: src/Orleans.Core.Abstractions/Core/Immutable.cs
+    startLine: 19
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Concurrency
+  summary: 'Return reference to the original value stored in this Immutable wrapper. '
+  example: []
+  syntax:
+    content: public T Value { get; }
+    parameters: []
+    return:
+      type: '{T}'
+    content.vb: Public ReadOnly Property Value As T
+  overload: Orleans.Concurrency.Immutable`1.Value*
+  nameWithType.vb: Immutable(Of T).Value
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: Orleans.Concurrency.Immutable(Of T).Value
+- uid: Orleans.Concurrency.Immutable`1.#ctor(`0)
+  commentId: M:Orleans.Concurrency.Immutable`1.#ctor(`0)
+  id: '#ctor(`0)'
+  parent: Orleans.Concurrency.Immutable`1
+  langs:
+  - csharp
+  - vb
+  name: Immutable(T)
+  nameWithType: Immutable<T>.Immutable(T)
+  fullName: Orleans.Concurrency.Immutable<T>.Immutable(T)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/Immutable.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Core.Abstractions/Core/Immutable.cs
+    startLine: 25
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Concurrency
+  summary: "\nConstructor to wrap the specified data object in new Immutable wrapper.\n"
+  example: []
+  syntax:
+    content: public Immutable(T value)
+    parameters:
+    - id: value
+      type: '{T}'
+      description: Value to be wrapped and marked as immutable.
+    content.vb: Public Sub New(value As T)
+  overload: Orleans.Concurrency.Immutable`1.#ctor*
+  nameWithType.vb: Immutable(Of T).Immutable(T)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.Concurrency.Immutable(Of T).Immutable(T)
+references:
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Concurrency.Immutable`1.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<Immutable<T>>()
+  nameWithType: ImmutableExt.AsImmutable<Immutable<T>>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Concurrency.Immutable<T>>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of Immutable(Of T))()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Concurrency.Immutable(Of T))()
+  name.vb: AsImmutable(Of Immutable(Of T))()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<Immutable<T>>
+    nameWithType: ImmutableExt.AsImmutable<Immutable<T>>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Concurrency.Immutable<T>>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of Immutable(Of T))
+    nameWithType: ImmutableExt.AsImmutable(Of Immutable(Of T))
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Concurrency.Immutable(Of T))
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency.Immutable`1.Value*
+  commentId: Overload:Orleans.Concurrency.Immutable`1.Value
+  isExternal: false
+  name: Value
+  nameWithType: Immutable<T>.Value
+  fullName: Orleans.Concurrency.Immutable<T>.Value
+  nameWithType.vb: Immutable(Of T).Value
+  fullName.vb: Orleans.Concurrency.Immutable(Of T).Value
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  isExternal: false
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Orleans.Concurrency.Immutable`1.#ctor*
+  commentId: Overload:Orleans.Concurrency.Immutable`1.#ctor
+  isExternal: false
+  name: Immutable
+  nameWithType: Immutable<T>.Immutable
+  fullName: Orleans.Concurrency.Immutable<T>.Immutable
+  nameWithType.vb: Immutable(Of T).Immutable
+  fullName.vb: Orleans.Concurrency.Immutable(Of T).Immutable

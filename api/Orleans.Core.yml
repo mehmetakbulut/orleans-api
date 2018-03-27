@@ -1,0 +1,68 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Core
+  commentId: N:Orleans.Core
+  id: Orleans.Core
+  children:
+  - Orleans.Core.IGrainIdentity
+  - Orleans.Core.IStorage`1
+  langs:
+  - csharp
+  - vb
+  name: Orleans.Core
+  nameWithType: Orleans.Core
+  fullName: Orleans.Core
+  type: Namespace
+  assemblies:
+  - Orleans.Core.Abstractions
+references:
+- uid: Orleans.Core.IGrainIdentity
+  commentId: T:Orleans.Core.IGrainIdentity
+  parent: Orleans.Core
+  isExternal: false
+  name: IGrainIdentity
+  nameWithType: IGrainIdentity
+  fullName: Orleans.Core.IGrainIdentity
+- uid: Orleans.Core.IStorage`1
+  commentId: T:Orleans.Core.IStorage`1
+  isExternal: false
+  name: IStorage<TState>
+  nameWithType: IStorage<TState>
+  fullName: Orleans.Core.IStorage<TState>
+  nameWithType.vb: IStorage(Of TState)
+  fullName.vb: Orleans.Core.IStorage(Of TState)
+  name.vb: IStorage(Of TState)
+  spec.csharp:
+  - uid: Orleans.Core.IStorage`1
+    name: IStorage
+    nameWithType: IStorage
+    fullName: Orleans.Core.IStorage
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TState
+    nameWithType: TState
+    fullName: TState
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Orleans.Core.IStorage`1
+    name: IStorage
+    nameWithType: IStorage
+    fullName: Orleans.Core.IStorage
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TState
+    nameWithType: TState
+    fullName: TState
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Core
+  commentId: N:Orleans.Core
+  isExternal: false
+  name: Orleans.Core
+  nameWithType: Orleans.Core
+  fullName: Orleans.Core

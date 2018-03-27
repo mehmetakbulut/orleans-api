@@ -1,0 +1,305 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Runtime.ICloseableLogConsumer
+  commentId: T:Orleans.Runtime.ICloseableLogConsumer
+  id: ICloseableLogConsumer
+  parent: Orleans.Runtime
+  children:
+  - Orleans.Runtime.ICloseableLogConsumer.Close
+  langs:
+  - csharp
+  - vb
+  name: ICloseableLogConsumer
+  nameWithType: ICloseableLogConsumer
+  fullName: Orleans.Runtime.ICloseableLogConsumer
+  type: Interface
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Logging/LegacyClass/ILogConsumer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ICloseableLogConsumer
+    path: src/Orleans.Core.Legacy/Logging/LegacyClass/ILogConsumer.cs
+    startLine: 81
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime
+  summary: "\nAn interface used to consume log entries, when a Close function is also supported. \n"
+  example: []
+  syntax:
+    content: 'public interface ICloseableLogConsumer : ILogConsumer'
+    content.vb: >-
+      Public Interface ICloseableLogConsumer
+
+          Inherits ILogConsumer
+  inheritedMembers:
+  - Orleans.Runtime.ILogConsumer.Log(Orleans.Runtime.Severity,Orleans.Runtime.LoggerType,System.String,System.String,IPEndPoint,Exception,System.Int32)
+  extensionMethods:
+  - Orleans.Runtime.ICloseableLogConsumer.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Orleans.Runtime.ICloseableLogConsumer.Close
+  commentId: M:Orleans.Runtime.ICloseableLogConsumer.Close
+  id: Close
+  parent: Orleans.Runtime.ICloseableLogConsumer
+  langs:
+  - csharp
+  - vb
+  name: Close()
+  nameWithType: ICloseableLogConsumer.Close()
+  fullName: Orleans.Runtime.ICloseableLogConsumer.Close()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Logging/LegacyClass/ILogConsumer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Close
+    path: src/Orleans.Core.Legacy/Logging/LegacyClass/ILogConsumer.cs
+    startLine: 85
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime
+  summary: Close this log.
+  example: []
+  syntax:
+    content: void Close()
+    content.vb: Sub Close
+  overload: Orleans.Runtime.ICloseableLogConsumer.Close*
+references:
+- uid: Orleans.Runtime
+  commentId: N:Orleans.Runtime
+  isExternal: false
+  name: Orleans.Runtime
+  nameWithType: Orleans.Runtime
+  fullName: Orleans.Runtime
+- uid: Orleans.Runtime.ILogConsumer.Log(Orleans.Runtime.Severity,Orleans.Runtime.LoggerType,System.String,System.String,IPEndPoint,Exception,System.Int32)
+  commentId: M:Orleans.Runtime.ILogConsumer.Log(Orleans.Runtime.Severity,Orleans.Runtime.LoggerType,System.String,System.String,IPEndPoint,Exception,System.Int32)
+  parent: Orleans.Runtime.ILogConsumer
+  isExternal: true
+  name: Log(Severity, LoggerType, String, String, IPEndPoint, Exception, Int32)
+  nameWithType: ILogConsumer.Log(Severity, LoggerType, String, String, IPEndPoint, Exception, Int32)
+  fullName: Orleans.Runtime.ILogConsumer.Log(Orleans.Runtime.Severity, Orleans.Runtime.LoggerType, System.String, System.String, IPEndPoint, Exception, System.Int32)
+  spec.csharp:
+  - uid: Orleans.Runtime.ILogConsumer.Log(Orleans.Runtime.Severity,Orleans.Runtime.LoggerType,System.String,System.String,IPEndPoint,Exception,System.Int32)
+    name: Log
+    nameWithType: ILogConsumer.Log
+    fullName: Orleans.Runtime.ILogConsumer.Log
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.Severity
+    name: Severity
+    nameWithType: Severity
+    fullName: Orleans.Runtime.Severity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.Runtime.LoggerType
+    name: LoggerType
+    nameWithType: LoggerType
+    fullName: Orleans.Runtime.LoggerType
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: IPEndPoint
+    name: IPEndPoint
+    nameWithType: IPEndPoint
+    fullName: IPEndPoint
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: Exception
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.ILogConsumer.Log(Orleans.Runtime.Severity,Orleans.Runtime.LoggerType,System.String,System.String,IPEndPoint,Exception,System.Int32)
+    name: Log
+    nameWithType: ILogConsumer.Log
+    fullName: Orleans.Runtime.ILogConsumer.Log
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.Severity
+    name: Severity
+    nameWithType: Severity
+    fullName: Orleans.Runtime.Severity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.Runtime.LoggerType
+    name: LoggerType
+    nameWithType: LoggerType
+    fullName: Orleans.Runtime.LoggerType
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: IPEndPoint
+    name: IPEndPoint
+    nameWithType: IPEndPoint
+    fullName: IPEndPoint
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: Exception
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.ICloseableLogConsumer.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<ICloseableLogConsumer>()
+  nameWithType: ImmutableExt.AsImmutable<ICloseableLogConsumer>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.ICloseableLogConsumer>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of ICloseableLogConsumer)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.ICloseableLogConsumer)()
+  name.vb: AsImmutable(Of ICloseableLogConsumer)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<ICloseableLogConsumer>
+    nameWithType: ImmutableExt.AsImmutable<ICloseableLogConsumer>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.ICloseableLogConsumer>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of ICloseableLogConsumer)
+    nameWithType: ImmutableExt.AsImmutable(Of ICloseableLogConsumer)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.ICloseableLogConsumer)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.ILogConsumer
+  commentId: T:Orleans.Runtime.ILogConsumer
+  parent: Orleans.Runtime
+  isExternal: false
+  name: ILogConsumer
+  nameWithType: ILogConsumer
+  fullName: Orleans.Runtime.ILogConsumer
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Runtime.ICloseableLogConsumer.Close*
+  commentId: Overload:Orleans.Runtime.ICloseableLogConsumer.Close
+  isExternal: false
+  name: Close
+  nameWithType: ICloseableLogConsumer.Close
+  fullName: Orleans.Runtime.ICloseableLogConsumer.Close

@@ -1,0 +1,235 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions
+  commentId: T:Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions
+  id: LogConsistencyConfigurationExtensions
+  parent: Orleans.Runtime.Configuration
+  children:
+  - Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddCustomStorageInterfaceBasedLogConsistencyProvider(Orleans.Runtime.Configuration.ClusterConfiguration,System.String,System.String)
+  - Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddLogStorageBasedLogConsistencyProvider(Orleans.Runtime.Configuration.ClusterConfiguration,System.String)
+  - Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddStateStorageBasedLogConsistencyProvider(Orleans.Runtime.Configuration.ClusterConfiguration,System.String)
+  langs:
+  - csharp
+  - vb
+  name: LogConsistencyConfigurationExtensions
+  nameWithType: LogConsistencyConfigurationExtensions
+  fullName: Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Runtime.Legacy/Configuration/LogConsistencyConfigurationExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: LogConsistencyConfigurationExtensions
+    path: src/Orleans.Runtime.Legacy/Configuration/LogConsistencyConfigurationExtensions.cs
+    startLine: 9
+  assemblies:
+  - Orleans.Runtime.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nExtension methods for configuration classes specific to OrleansEventSourcing.dll \n"
+  example: []
+  syntax:
+    content: 'public static class LogConsistencyConfigurationExtensions : object'
+    content.vb: >-
+      Public Module LogConsistencyConfigurationExtensions
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddLogStorageBasedLogConsistencyProvider(Orleans.Runtime.Configuration.ClusterConfiguration,System.String)
+  commentId: M:Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddLogStorageBasedLogConsistencyProvider(Orleans.Runtime.Configuration.ClusterConfiguration,System.String)
+  id: AddLogStorageBasedLogConsistencyProvider(Orleans.Runtime.Configuration.ClusterConfiguration,System.String)
+  isExtensionMethod: true
+  parent: Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddLogStorageBasedLogConsistencyProvider(ClusterConfiguration, String)
+  nameWithType: LogConsistencyConfigurationExtensions.AddLogStorageBasedLogConsistencyProvider(ClusterConfiguration, String)
+  fullName: Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddLogStorageBasedLogConsistencyProvider(Orleans.Runtime.Configuration.ClusterConfiguration, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Runtime.Legacy/Configuration/LogConsistencyConfigurationExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AddLogStorageBasedLogConsistencyProvider
+    path: src/Orleans.Runtime.Legacy/Configuration/LogConsistencyConfigurationExtensions.cs
+    startLine: 16
+  assemblies:
+  - Orleans.Runtime.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nAdds a log consistency provider&quot;/>\n"
+  example: []
+  syntax:
+    content: public static void AddLogStorageBasedLogConsistencyProvider(this ClusterConfiguration config, string providerName = "LogStorage")
+    parameters:
+    - id: config
+      type: Orleans.Runtime.Configuration.ClusterConfiguration
+      description: The cluster configuration object to add provider to.
+    - id: providerName
+      type: System.String
+      description: The provider name.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub AddLogStorageBasedLogConsistencyProvider(config As ClusterConfiguration, providerName As String = "LogStorage")
+  overload: Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddLogStorageBasedLogConsistencyProvider*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddStateStorageBasedLogConsistencyProvider(Orleans.Runtime.Configuration.ClusterConfiguration,System.String)
+  commentId: M:Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddStateStorageBasedLogConsistencyProvider(Orleans.Runtime.Configuration.ClusterConfiguration,System.String)
+  id: AddStateStorageBasedLogConsistencyProvider(Orleans.Runtime.Configuration.ClusterConfiguration,System.String)
+  isExtensionMethod: true
+  parent: Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddStateStorageBasedLogConsistencyProvider(ClusterConfiguration, String)
+  nameWithType: LogConsistencyConfigurationExtensions.AddStateStorageBasedLogConsistencyProvider(ClusterConfiguration, String)
+  fullName: Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddStateStorageBasedLogConsistencyProvider(Orleans.Runtime.Configuration.ClusterConfiguration, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Runtime.Legacy/Configuration/LogConsistencyConfigurationExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AddStateStorageBasedLogConsistencyProvider
+    path: src/Orleans.Runtime.Legacy/Configuration/LogConsistencyConfigurationExtensions.cs
+    startLine: 30
+  assemblies:
+  - Orleans.Runtime.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nAdds a log consistency provider./>\n"
+  example: []
+  syntax:
+    content: public static void AddStateStorageBasedLogConsistencyProvider(this ClusterConfiguration config, string providerName = "StateStorage")
+    parameters:
+    - id: config
+      type: Orleans.Runtime.Configuration.ClusterConfiguration
+      description: The cluster configuration object to add provider to.
+    - id: providerName
+      type: System.String
+      description: The provider name.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub AddStateStorageBasedLogConsistencyProvider(config As ClusterConfiguration, providerName As String = "StateStorage")
+  overload: Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddStateStorageBasedLogConsistencyProvider*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddCustomStorageInterfaceBasedLogConsistencyProvider(Orleans.Runtime.Configuration.ClusterConfiguration,System.String,System.String)
+  commentId: M:Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddCustomStorageInterfaceBasedLogConsistencyProvider(Orleans.Runtime.Configuration.ClusterConfiguration,System.String,System.String)
+  id: AddCustomStorageInterfaceBasedLogConsistencyProvider(Orleans.Runtime.Configuration.ClusterConfiguration,System.String,System.String)
+  isExtensionMethod: true
+  parent: Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddCustomStorageInterfaceBasedLogConsistencyProvider(ClusterConfiguration, String, String)
+  nameWithType: LogConsistencyConfigurationExtensions.AddCustomStorageInterfaceBasedLogConsistencyProvider(ClusterConfiguration, String, String)
+  fullName: Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddCustomStorageInterfaceBasedLogConsistencyProvider(Orleans.Runtime.Configuration.ClusterConfiguration, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Runtime.Legacy/Configuration/LogConsistencyConfigurationExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AddCustomStorageInterfaceBasedLogConsistencyProvider
+    path: src/Orleans.Runtime.Legacy/Configuration/LogConsistencyConfigurationExtensions.cs
+    startLine: 45
+  assemblies:
+  - Orleans.Runtime.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nAdds a log consistency provider.&quot;/>\n"
+  example: []
+  syntax:
+    content: public static void AddCustomStorageInterfaceBasedLogConsistencyProvider(this ClusterConfiguration config, string providerName = "LogStorage", string primaryCluster = null)
+    parameters:
+    - id: config
+      type: Orleans.Runtime.Configuration.ClusterConfiguration
+      description: The cluster configuration object to add provider to.
+    - id: providerName
+      type: System.String
+      description: The provider name.
+    - id: primaryCluster
+      type: System.String
+      description: The name of the primary cluster to use.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub AddCustomStorageInterfaceBasedLogConsistencyProvider(config As ClusterConfiguration, providerName As String = "LogStorage", primaryCluster As String = Nothing)
+  overload: Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddCustomStorageInterfaceBasedLogConsistencyProvider*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Orleans.Runtime.Configuration
+  commentId: N:Orleans.Runtime.Configuration
+  isExternal: false
+  name: Orleans.Runtime.Configuration
+  nameWithType: Orleans.Runtime.Configuration
+  fullName: Orleans.Runtime.Configuration
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddLogStorageBasedLogConsistencyProvider*
+  commentId: Overload:Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddLogStorageBasedLogConsistencyProvider
+  isExternal: false
+  name: AddLogStorageBasedLogConsistencyProvider
+  nameWithType: LogConsistencyConfigurationExtensions.AddLogStorageBasedLogConsistencyProvider
+  fullName: Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddLogStorageBasedLogConsistencyProvider
+- uid: Orleans.Runtime.Configuration.ClusterConfiguration
+  commentId: T:Orleans.Runtime.Configuration.ClusterConfiguration
+  parent: Orleans.Runtime.Configuration
+  isExternal: false
+  name: ClusterConfiguration
+  nameWithType: ClusterConfiguration
+  fullName: Orleans.Runtime.Configuration.ClusterConfiguration
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddStateStorageBasedLogConsistencyProvider*
+  commentId: Overload:Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddStateStorageBasedLogConsistencyProvider
+  isExternal: false
+  name: AddStateStorageBasedLogConsistencyProvider
+  nameWithType: LogConsistencyConfigurationExtensions.AddStateStorageBasedLogConsistencyProvider
+  fullName: Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddStateStorageBasedLogConsistencyProvider
+- uid: Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddCustomStorageInterfaceBasedLogConsistencyProvider*
+  commentId: Overload:Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddCustomStorageInterfaceBasedLogConsistencyProvider
+  isExternal: false
+  name: AddCustomStorageInterfaceBasedLogConsistencyProvider
+  nameWithType: LogConsistencyConfigurationExtensions.AddCustomStorageInterfaceBasedLogConsistencyProvider
+  fullName: Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.AddCustomStorageInterfaceBasedLogConsistencyProvider

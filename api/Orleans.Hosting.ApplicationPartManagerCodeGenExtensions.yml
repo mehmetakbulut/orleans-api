@@ -1,0 +1,127 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Hosting.ApplicationPartManagerCodeGenExtensions
+  commentId: T:Orleans.Hosting.ApplicationPartManagerCodeGenExtensions
+  id: ApplicationPartManagerCodeGenExtensions
+  parent: Orleans.Hosting
+  children:
+  - Orleans.Hosting.ApplicationPartManagerCodeGenExtensions.WithCodeGeneration(IApplicationPartManagerWithAssemblies,ILogger)
+  langs:
+  - csharp
+  - vb
+  name: ApplicationPartManagerCodeGenExtensions
+  nameWithType: ApplicationPartManagerCodeGenExtensions
+  fullName: Orleans.Hosting.ApplicationPartManagerCodeGenExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.CodeGeneration/ApplicationPartManagerCodeGenExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ApplicationPartManagerCodeGenExtensions
+    path: src/Orleans.CodeGeneration/ApplicationPartManagerCodeGenExtensions.cs
+    startLine: 15
+  assemblies:
+  - Orleans.CodeGeneration
+  namespace: Orleans.Hosting
+  summary: "\nExtensions for <see cref=\"!:IApplicationPartManagerWithAssemblies\"></see> for invoking code generation.\n"
+  example: []
+  syntax:
+    content: 'public static class ApplicationPartManagerCodeGenExtensions : object'
+    content.vb: >-
+      Public Module ApplicationPartManagerCodeGenExtensions
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Orleans.Hosting.ApplicationPartManagerCodeGenExtensions.WithCodeGeneration(IApplicationPartManagerWithAssemblies,ILogger)
+  commentId: M:Orleans.Hosting.ApplicationPartManagerCodeGenExtensions.WithCodeGeneration(IApplicationPartManagerWithAssemblies,ILogger)
+  id: WithCodeGeneration(IApplicationPartManagerWithAssemblies,ILogger)
+  isExtensionMethod: true
+  parent: Orleans.Hosting.ApplicationPartManagerCodeGenExtensions
+  langs:
+  - csharp
+  - vb
+  name: WithCodeGeneration(IApplicationPartManagerWithAssemblies, ILogger)
+  nameWithType: ApplicationPartManagerCodeGenExtensions.WithCodeGeneration(IApplicationPartManagerWithAssemblies, ILogger)
+  fullName: Orleans.Hosting.ApplicationPartManagerCodeGenExtensions.WithCodeGeneration(IApplicationPartManagerWithAssemblies, ILogger)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.CodeGeneration/ApplicationPartManagerCodeGenExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: WithCodeGeneration
+    path: src/Orleans.CodeGeneration/ApplicationPartManagerCodeGenExtensions.cs
+    startLine: 23
+  assemblies:
+  - Orleans.CodeGeneration
+  namespace: Orleans.Hosting
+  summary: "\nGenerates support code for the the provided assembly and adds it to the builder.\n"
+  example: []
+  syntax:
+    content: public static IApplicationPartManagerWithAssemblies WithCodeGeneration(this IApplicationPartManagerWithAssemblies manager, ILogger logger = null)
+    parameters:
+    - id: manager
+      type: IApplicationPartManagerWithAssemblies
+      description: The builder.
+    - id: logger
+      type: ILogger
+      description: optional logger
+    return:
+      type: IApplicationPartManagerWithAssemblies
+      description: A builder with support parts added.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function WithCodeGeneration(manager As IApplicationPartManagerWithAssemblies, logger As ILogger = Nothing) As IApplicationPartManagerWithAssemblies
+  overload: Orleans.Hosting.ApplicationPartManagerCodeGenExtensions.WithCodeGeneration*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Orleans.Hosting
+  commentId: N:Orleans.Hosting
+  isExternal: false
+  name: Orleans.Hosting
+  nameWithType: Orleans.Hosting
+  fullName: Orleans.Hosting
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Hosting.ApplicationPartManagerCodeGenExtensions.WithCodeGeneration*
+  commentId: Overload:Orleans.Hosting.ApplicationPartManagerCodeGenExtensions.WithCodeGeneration
+  isExternal: false
+  name: WithCodeGeneration
+  nameWithType: ApplicationPartManagerCodeGenExtensions.WithCodeGeneration
+  fullName: Orleans.Hosting.ApplicationPartManagerCodeGenExtensions.WithCodeGeneration
+- uid: IApplicationPartManagerWithAssemblies
+  isExternal: true
+  name: IApplicationPartManagerWithAssemblies
+  nameWithType: IApplicationPartManagerWithAssemblies
+  fullName: IApplicationPartManagerWithAssemblies
+- uid: ILogger
+  isExternal: true
+  name: ILogger
+  nameWithType: ILogger
+  fullName: ILogger

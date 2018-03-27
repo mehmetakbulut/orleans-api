@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.ServiceFabric
+  commentId: N:Orleans.ServiceFabric
+  id: Orleans.ServiceFabric
+  children:
+  - Orleans.ServiceFabric.FabricSiloInfo
+  - Orleans.ServiceFabric.ServiceFabricConstants
+  langs:
+  - csharp
+  - vb
+  name: Orleans.ServiceFabric
+  nameWithType: Orleans.ServiceFabric
+  fullName: Orleans.ServiceFabric
+  type: Namespace
+  assemblies:
+  - Orleans.Hosting.ServiceFabric
+references:
+- uid: Orleans.ServiceFabric.FabricSiloInfo
+  commentId: T:Orleans.ServiceFabric.FabricSiloInfo
+  isExternal: false
+  name: FabricSiloInfo
+  nameWithType: FabricSiloInfo
+  fullName: Orleans.ServiceFabric.FabricSiloInfo
+- uid: Orleans.ServiceFabric.ServiceFabricConstants
+  commentId: T:Orleans.ServiceFabric.ServiceFabricConstants
+  isExternal: false
+  name: ServiceFabricConstants
+  nameWithType: ServiceFabricConstants
+  fullName: Orleans.ServiceFabric.ServiceFabricConstants

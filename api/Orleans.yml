@@ -1,0 +1,382 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans
+  commentId: N:Orleans
+  id: Orleans
+  children:
+  - Orleans.ClientBuilderExtensions
+  - Orleans.Grain
+  - Orleans.Grain`1
+  - Orleans.GrainCallFilterDelegate
+  - Orleans.GrainCancellationToken
+  - Orleans.GrainCancellationTokenSource
+  - Orleans.GrainClient
+  - Orleans.GrainExtensions
+  - Orleans.IGrain
+  - Orleans.IGrainCallContext
+  - Orleans.IGrainCallFilter
+  - Orleans.IGrainFactory
+  - Orleans.IGrainObserver
+  - Orleans.IGrainWithGuidCompoundKey
+  - Orleans.IGrainWithGuidKey
+  - Orleans.IGrainWithIntegerCompoundKey
+  - Orleans.IGrainWithIntegerKey
+  - Orleans.IGrainWithStringKey
+  - Orleans.IIncomingGrainCallFilter
+  - Orleans.ILifecycleObservable
+  - Orleans.ILifecycleObserver
+  - Orleans.ILifecycleParticipant`1
+  - Orleans.ILifecycleSubject
+  - Orleans.ImplicitStreamSubscriptionAttribute
+  - Orleans.IOutgoingGrainCallFilter
+  - Orleans.IRemindable
+  - Orleans.IReminderService
+  - Orleans.ISystemTarget
+  - Orleans.IVersionManager
+  - Orleans.JenkinsHash
+  - Orleans.LifecycleExtensions
+  - Orleans.ObserverSubscriptionManager`1
+  - Orleans.PublicOrleansTaskExtensions
+  - Orleans.RegexImplicitStreamSubscriptionAttribute
+  - Orleans.TransactionAttribute
+  - Orleans.TransactionOption
+  langs:
+  - csharp
+  - vb
+  name: Orleans
+  nameWithType: Orleans
+  fullName: Orleans
+  type: Namespace
+  assemblies:
+  - Orleans.Core.Abstractions
+references:
+- uid: Orleans.PublicOrleansTaskExtensions
+  commentId: T:Orleans.PublicOrleansTaskExtensions
+  isExternal: false
+  name: PublicOrleansTaskExtensions
+  nameWithType: PublicOrleansTaskExtensions
+  fullName: Orleans.PublicOrleansTaskExtensions
+- uid: Orleans.GrainCancellationToken
+  commentId: T:Orleans.GrainCancellationToken
+  parent: Orleans
+  isExternal: false
+  name: GrainCancellationToken
+  nameWithType: GrainCancellationToken
+  fullName: Orleans.GrainCancellationToken
+- uid: Orleans.GrainCancellationTokenSource
+  commentId: T:Orleans.GrainCancellationTokenSource
+  isExternal: false
+  name: GrainCancellationTokenSource
+  nameWithType: GrainCancellationTokenSource
+  fullName: Orleans.GrainCancellationTokenSource
+- uid: Orleans.Grain
+  commentId: T:Orleans.Grain
+  parent: Orleans
+  isExternal: false
+  name: Grain
+  nameWithType: Grain
+  fullName: Orleans.Grain
+- uid: Orleans.Grain`1
+  commentId: T:Orleans.Grain`1
+  isExternal: false
+  name: Grain<TGrainState>
+  nameWithType: Grain<TGrainState>
+  fullName: Orleans.Grain<TGrainState>
+  nameWithType.vb: Grain(Of TGrainState)
+  fullName.vb: Orleans.Grain(Of TGrainState)
+  name.vb: Grain(Of TGrainState)
+  spec.csharp:
+  - uid: Orleans.Grain`1
+    name: Grain
+    nameWithType: Grain
+    fullName: Orleans.Grain
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TGrainState
+    nameWithType: TGrainState
+    fullName: TGrainState
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Orleans.Grain`1
+    name: Grain
+    nameWithType: Grain
+    fullName: Orleans.Grain
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TGrainState
+    nameWithType: TGrainState
+    fullName: TGrainState
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.GrainExtensions
+  commentId: T:Orleans.GrainExtensions
+  parent: Orleans
+  isExternal: false
+  name: GrainExtensions
+  nameWithType: GrainExtensions
+  fullName: Orleans.GrainExtensions
+- uid: Orleans.IGrain
+  commentId: T:Orleans.IGrain
+  parent: Orleans
+  isExternal: false
+  name: IGrain
+  nameWithType: IGrain
+  fullName: Orleans.IGrain
+- uid: Orleans.IGrainWithGuidKey
+  commentId: T:Orleans.IGrainWithGuidKey
+  isExternal: false
+  name: IGrainWithGuidKey
+  nameWithType: IGrainWithGuidKey
+  fullName: Orleans.IGrainWithGuidKey
+- uid: Orleans.IGrainWithIntegerKey
+  commentId: T:Orleans.IGrainWithIntegerKey
+  isExternal: false
+  name: IGrainWithIntegerKey
+  nameWithType: IGrainWithIntegerKey
+  fullName: Orleans.IGrainWithIntegerKey
+- uid: Orleans.IGrainWithStringKey
+  commentId: T:Orleans.IGrainWithStringKey
+  parent: Orleans
+  isExternal: false
+  name: IGrainWithStringKey
+  nameWithType: IGrainWithStringKey
+  fullName: Orleans.IGrainWithStringKey
+- uid: Orleans.IGrainWithGuidCompoundKey
+  commentId: T:Orleans.IGrainWithGuidCompoundKey
+  isExternal: false
+  name: IGrainWithGuidCompoundKey
+  nameWithType: IGrainWithGuidCompoundKey
+  fullName: Orleans.IGrainWithGuidCompoundKey
+- uid: Orleans.IGrainWithIntegerCompoundKey
+  commentId: T:Orleans.IGrainWithIntegerCompoundKey
+  isExternal: false
+  name: IGrainWithIntegerCompoundKey
+  nameWithType: IGrainWithIntegerCompoundKey
+  fullName: Orleans.IGrainWithIntegerCompoundKey
+- uid: Orleans.GrainCallFilterDelegate
+  commentId: T:Orleans.GrainCallFilterDelegate
+  isExternal: false
+  name: GrainCallFilterDelegate
+  nameWithType: GrainCallFilterDelegate
+  fullName: Orleans.GrainCallFilterDelegate
+- uid: Orleans.IGrainCallContext
+  commentId: T:Orleans.IGrainCallContext
+  parent: Orleans
+  isExternal: false
+  name: IGrainCallContext
+  nameWithType: IGrainCallContext
+  fullName: Orleans.IGrainCallContext
+- uid: Orleans.IIncomingGrainCallFilter
+  commentId: T:Orleans.IIncomingGrainCallFilter
+  parent: Orleans
+  isExternal: false
+  name: IIncomingGrainCallFilter
+  nameWithType: IIncomingGrainCallFilter
+  fullName: Orleans.IIncomingGrainCallFilter
+- uid: Orleans.IGrainCallFilter
+  commentId: T:Orleans.IGrainCallFilter
+  isExternal: false
+  name: IGrainCallFilter
+  nameWithType: IGrainCallFilter
+  fullName: Orleans.IGrainCallFilter
+- uid: Orleans.IOutgoingGrainCallFilter
+  commentId: T:Orleans.IOutgoingGrainCallFilter
+  isExternal: false
+  name: IOutgoingGrainCallFilter
+  nameWithType: IOutgoingGrainCallFilter
+  fullName: Orleans.IOutgoingGrainCallFilter
+- uid: Orleans.IGrainFactory
+  commentId: T:Orleans.IGrainFactory
+  parent: Orleans
+  isExternal: false
+  name: IGrainFactory
+  nameWithType: IGrainFactory
+  fullName: Orleans.IGrainFactory
+- uid: Orleans.IGrainObserver
+  commentId: T:Orleans.IGrainObserver
+  parent: Orleans
+  isExternal: false
+  name: IGrainObserver
+  nameWithType: IGrainObserver
+  fullName: Orleans.IGrainObserver
+- uid: Orleans.JenkinsHash
+  commentId: T:Orleans.JenkinsHash
+  isExternal: false
+  name: JenkinsHash
+  nameWithType: JenkinsHash
+  fullName: Orleans.JenkinsHash
+- uid: Orleans.ILifecycleObservable
+  commentId: T:Orleans.ILifecycleObservable
+  parent: Orleans
+  isExternal: false
+  name: ILifecycleObservable
+  nameWithType: ILifecycleObservable
+  fullName: Orleans.ILifecycleObservable
+- uid: Orleans.ILifecycleObserver
+  commentId: T:Orleans.ILifecycleObserver
+  parent: Orleans
+  isExternal: false
+  name: ILifecycleObserver
+  nameWithType: ILifecycleObserver
+  fullName: Orleans.ILifecycleObserver
+- uid: Orleans.ILifecycleParticipant`1
+  commentId: T:Orleans.ILifecycleParticipant`1
+  isExternal: false
+  name: ILifecycleParticipant<TLifecycleObservable>
+  nameWithType: ILifecycleParticipant<TLifecycleObservable>
+  fullName: Orleans.ILifecycleParticipant<TLifecycleObservable>
+  nameWithType.vb: ILifecycleParticipant(Of TLifecycleObservable)
+  fullName.vb: Orleans.ILifecycleParticipant(Of TLifecycleObservable)
+  name.vb: ILifecycleParticipant(Of TLifecycleObservable)
+  spec.csharp:
+  - uid: Orleans.ILifecycleParticipant`1
+    name: ILifecycleParticipant
+    nameWithType: ILifecycleParticipant
+    fullName: Orleans.ILifecycleParticipant
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TLifecycleObservable
+    nameWithType: TLifecycleObservable
+    fullName: TLifecycleObservable
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Orleans.ILifecycleParticipant`1
+    name: ILifecycleParticipant
+    nameWithType: ILifecycleParticipant
+    fullName: Orleans.ILifecycleParticipant
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TLifecycleObservable
+    nameWithType: TLifecycleObservable
+    fullName: TLifecycleObservable
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.ILifecycleSubject
+  commentId: T:Orleans.ILifecycleSubject
+  isExternal: false
+  name: ILifecycleSubject
+  nameWithType: ILifecycleSubject
+  fullName: Orleans.ILifecycleSubject
+- uid: Orleans.LifecycleExtensions
+  commentId: T:Orleans.LifecycleExtensions
+  parent: Orleans
+  isExternal: false
+  name: LifecycleExtensions
+  nameWithType: LifecycleExtensions
+  fullName: Orleans.LifecycleExtensions
+- uid: Orleans.ImplicitStreamSubscriptionAttribute
+  commentId: T:Orleans.ImplicitStreamSubscriptionAttribute
+  parent: Orleans
+  isExternal: false
+  name: ImplicitStreamSubscriptionAttribute
+  nameWithType: ImplicitStreamSubscriptionAttribute
+  fullName: Orleans.ImplicitStreamSubscriptionAttribute
+- uid: Orleans.RegexImplicitStreamSubscriptionAttribute
+  commentId: T:Orleans.RegexImplicitStreamSubscriptionAttribute
+  isExternal: false
+  name: RegexImplicitStreamSubscriptionAttribute
+  nameWithType: RegexImplicitStreamSubscriptionAttribute
+  fullName: Orleans.RegexImplicitStreamSubscriptionAttribute
+- uid: Orleans.IReminderService
+  commentId: T:Orleans.IReminderService
+  isExternal: false
+  name: IReminderService
+  nameWithType: IReminderService
+  fullName: Orleans.IReminderService
+- uid: Orleans.ISystemTarget
+  commentId: T:Orleans.ISystemTarget
+  isExternal: false
+  name: ISystemTarget
+  nameWithType: ISystemTarget
+  fullName: Orleans.ISystemTarget
+- uid: Orleans.IVersionManager
+  commentId: T:Orleans.IVersionManager
+  parent: Orleans
+  isExternal: false
+  name: IVersionManager
+  nameWithType: IVersionManager
+  fullName: Orleans.IVersionManager
+- uid: Orleans.IRemindable
+  commentId: T:Orleans.IRemindable
+  isExternal: false
+  name: IRemindable
+  nameWithType: IRemindable
+  fullName: Orleans.IRemindable
+- uid: Orleans.TransactionAttribute
+  commentId: T:Orleans.TransactionAttribute
+  isExternal: false
+  name: TransactionAttribute
+  nameWithType: TransactionAttribute
+  fullName: Orleans.TransactionAttribute
+- uid: Orleans.TransactionOption
+  commentId: T:Orleans.TransactionOption
+  parent: Orleans
+  isExternal: false
+  name: TransactionOption
+  nameWithType: TransactionOption
+  fullName: Orleans.TransactionOption
+- uid: Orleans.ObserverSubscriptionManager`1
+  commentId: T:Orleans.ObserverSubscriptionManager`1
+  isExternal: false
+  name: ObserverSubscriptionManager<T>
+  nameWithType: ObserverSubscriptionManager<T>
+  fullName: Orleans.ObserverSubscriptionManager<T>
+  nameWithType.vb: ObserverSubscriptionManager(Of T)
+  fullName.vb: Orleans.ObserverSubscriptionManager(Of T)
+  name.vb: ObserverSubscriptionManager(Of T)
+  spec.csharp:
+  - uid: Orleans.ObserverSubscriptionManager`1
+    name: ObserverSubscriptionManager
+    nameWithType: ObserverSubscriptionManager
+    fullName: Orleans.ObserverSubscriptionManager
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Orleans.ObserverSubscriptionManager`1
+    name: ObserverSubscriptionManager
+    nameWithType: ObserverSubscriptionManager
+    fullName: Orleans.ObserverSubscriptionManager
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.ClientBuilderExtensions
+  commentId: T:Orleans.ClientBuilderExtensions
+  isExternal: false
+  name: ClientBuilderExtensions
+  nameWithType: ClientBuilderExtensions
+  fullName: Orleans.ClientBuilderExtensions
+- uid: Orleans.GrainClient
+  commentId: T:Orleans.GrainClient
+  isExternal: false
+  name: GrainClient
+  nameWithType: GrainClient
+  fullName: Orleans.GrainClient
+- uid: Orleans
+  commentId: N:Orleans
+  isExternal: false
+  name: Orleans
+  nameWithType: Orleans
+  fullName: Orleans

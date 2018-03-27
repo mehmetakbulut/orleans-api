@@ -1,0 +1,44 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.MultiCluster
+  commentId: N:Orleans.MultiCluster
+  id: Orleans.MultiCluster
+  children:
+  - Orleans.MultiCluster.GlobalSingleInstanceAttribute
+  - Orleans.MultiCluster.OneInstancePerClusterAttribute
+  - Orleans.MultiCluster.RegistrationAttribute
+  langs:
+  - csharp
+  - vb
+  name: Orleans.MultiCluster
+  nameWithType: Orleans.MultiCluster
+  fullName: Orleans.MultiCluster
+  type: Namespace
+  assemblies:
+  - Orleans.Core.Abstractions
+references:
+- uid: Orleans.MultiCluster.RegistrationAttribute
+  commentId: T:Orleans.MultiCluster.RegistrationAttribute
+  parent: Orleans.MultiCluster
+  isExternal: false
+  name: RegistrationAttribute
+  nameWithType: RegistrationAttribute
+  fullName: Orleans.MultiCluster.RegistrationAttribute
+- uid: Orleans.MultiCluster.GlobalSingleInstanceAttribute
+  commentId: T:Orleans.MultiCluster.GlobalSingleInstanceAttribute
+  isExternal: false
+  name: GlobalSingleInstanceAttribute
+  nameWithType: GlobalSingleInstanceAttribute
+  fullName: Orleans.MultiCluster.GlobalSingleInstanceAttribute
+- uid: Orleans.MultiCluster.OneInstancePerClusterAttribute
+  commentId: T:Orleans.MultiCluster.OneInstancePerClusterAttribute
+  isExternal: false
+  name: OneInstancePerClusterAttribute
+  nameWithType: OneInstancePerClusterAttribute
+  fullName: Orleans.MultiCluster.OneInstancePerClusterAttribute
+- uid: Orleans.MultiCluster
+  commentId: N:Orleans.MultiCluster
+  isExternal: false
+  name: Orleans.MultiCluster
+  nameWithType: Orleans.MultiCluster
+  fullName: Orleans.MultiCluster

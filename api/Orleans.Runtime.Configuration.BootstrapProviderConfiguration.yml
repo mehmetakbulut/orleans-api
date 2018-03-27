@@ -1,0 +1,339 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Runtime.Configuration.BootstrapProviderConfiguration
+  commentId: T:Orleans.Runtime.Configuration.BootstrapProviderConfiguration
+  id: BootstrapProviderConfiguration
+  parent: Orleans.Runtime.Configuration
+  children:
+  - Orleans.Runtime.Configuration.BootstrapProviderConfiguration.BOOTSTRAP_PROVIDER_CATEGORY_NAME
+  - Orleans.Runtime.Configuration.BootstrapProviderConfiguration.RegisterBootstrapProvider(Orleans.Runtime.Configuration.GlobalConfiguration,System.String,System.String,IDictionary{System.String,System.String})
+  - Orleans.Runtime.Configuration.BootstrapProviderConfiguration.RegisterBootstrapProvider``1(Orleans.Runtime.Configuration.GlobalConfiguration,System.String,IDictionary{System.String,System.String})
+  langs:
+  - csharp
+  - vb
+  name: BootstrapProviderConfiguration
+  nameWithType: BootstrapProviderConfiguration
+  fullName: Orleans.Runtime.Configuration.BootstrapProviderConfiguration
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Runtime.Legacy/Configuration/BootstrapProviderConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: BootstrapProviderConfiguration
+    path: src/Orleans.Runtime.Legacy/Configuration/BootstrapProviderConfiguration.cs
+    startLine: 7
+  assemblies:
+  - Orleans.Runtime.Legacy
+  namespace: Orleans.Runtime.Configuration
+  syntax:
+    content: 'public static class BootstrapProviderConfiguration : object'
+    content.vb: >-
+      Public Module BootstrapProviderConfiguration
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Orleans.Runtime.Configuration.BootstrapProviderConfiguration.BOOTSTRAP_PROVIDER_CATEGORY_NAME
+  commentId: F:Orleans.Runtime.Configuration.BootstrapProviderConfiguration.BOOTSTRAP_PROVIDER_CATEGORY_NAME
+  id: BOOTSTRAP_PROVIDER_CATEGORY_NAME
+  parent: Orleans.Runtime.Configuration.BootstrapProviderConfiguration
+  langs:
+  - csharp
+  - vb
+  name: BOOTSTRAP_PROVIDER_CATEGORY_NAME
+  nameWithType: BootstrapProviderConfiguration.BOOTSTRAP_PROVIDER_CATEGORY_NAME
+  fullName: Orleans.Runtime.Configuration.BootstrapProviderConfiguration.BOOTSTRAP_PROVIDER_CATEGORY_NAME
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.Runtime.Legacy/Configuration/BootstrapProviderConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: BOOTSTRAP_PROVIDER_CATEGORY_NAME
+    path: src/Orleans.Runtime.Legacy/Configuration/BootstrapProviderConfiguration.cs
+    startLine: 9
+  assemblies:
+  - Orleans.Runtime.Legacy
+  namespace: Orleans.Runtime.Configuration
+  syntax:
+    content: public const string BOOTSTRAP_PROVIDER_CATEGORY_NAME = null
+    return:
+      type: System.String
+    content.vb: Public Const BOOTSTRAP_PROVIDER_CATEGORY_NAME As String = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Orleans.Runtime.Configuration.BootstrapProviderConfiguration.RegisterBootstrapProvider``1(Orleans.Runtime.Configuration.GlobalConfiguration,System.String,IDictionary{System.String,System.String})
+  commentId: M:Orleans.Runtime.Configuration.BootstrapProviderConfiguration.RegisterBootstrapProvider``1(Orleans.Runtime.Configuration.GlobalConfiguration,System.String,IDictionary{System.String,System.String})
+  id: RegisterBootstrapProvider``1(Orleans.Runtime.Configuration.GlobalConfiguration,System.String,IDictionary{System.String,System.String})
+  isExtensionMethod: true
+  parent: Orleans.Runtime.Configuration.BootstrapProviderConfiguration
+  langs:
+  - csharp
+  - vb
+  name: RegisterBootstrapProvider<T>(GlobalConfiguration, String, IDictionary<String, String>)
+  nameWithType: BootstrapProviderConfiguration.RegisterBootstrapProvider<T>(GlobalConfiguration, String, IDictionary<String, String>)
+  fullName: Orleans.Runtime.Configuration.BootstrapProviderConfiguration.RegisterBootstrapProvider<T>(Orleans.Runtime.Configuration.GlobalConfiguration, System.String, IDictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Runtime.Legacy/Configuration/BootstrapProviderConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: RegisterBootstrapProvider
+    path: src/Orleans.Runtime.Legacy/Configuration/BootstrapProviderConfiguration.cs
+    startLine: 18
+  assemblies:
+  - Orleans.Runtime.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nRegisters a given type of <code data-dev-comment-type=\"typeparamref\" class=\"typeparamref\">T</code> where <code data-dev-comment-type=\"typeparamref\" class=\"typeparamref\">T</code> is bootstrap provider\n"
+  example: []
+  syntax:
+    content: 'public static void RegisterBootstrapProvider<T>(this GlobalConfiguration config, string providerName, IDictionary<string, string> properties = null)where T : IBootstrapProvider'
+    parameters:
+    - id: config
+      type: Orleans.Runtime.Configuration.GlobalConfiguration
+      description: Configuration object
+    - id: providerName
+      type: System.String
+      description: Name of the bootstrap provider
+    - id: properties
+      type: IDictionary{System.String,System.String}
+      description: Properties that will be passed to bootstrap provider upon initialization
+    typeParameters:
+    - id: T
+      description: Non-abstract type which implements <xref href="Orleans.Providers.IBootstrapProvider" data-throw-if-not-resolved="false"></xref> interface
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub RegisterBootstrapProvider(Of T As IBootstrapProvider)(config As GlobalConfiguration, providerName As String, properties As IDictionary(Of String, String) = Nothing)
+  overload: Orleans.Runtime.Configuration.BootstrapProviderConfiguration.RegisterBootstrapProvider*
+  nameWithType.vb: BootstrapProviderConfiguration.RegisterBootstrapProvider(Of T)(GlobalConfiguration, String, IDictionary(Of String, String))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.Runtime.Configuration.BootstrapProviderConfiguration.RegisterBootstrapProvider(Of T)(Orleans.Runtime.Configuration.GlobalConfiguration, System.String, IDictionary(Of System.String, System.String))
+  name.vb: RegisterBootstrapProvider(Of T)(GlobalConfiguration, String, IDictionary(Of String, String))
+- uid: Orleans.Runtime.Configuration.BootstrapProviderConfiguration.RegisterBootstrapProvider(Orleans.Runtime.Configuration.GlobalConfiguration,System.String,System.String,IDictionary{System.String,System.String})
+  commentId: M:Orleans.Runtime.Configuration.BootstrapProviderConfiguration.RegisterBootstrapProvider(Orleans.Runtime.Configuration.GlobalConfiguration,System.String,System.String,IDictionary{System.String,System.String})
+  id: RegisterBootstrapProvider(Orleans.Runtime.Configuration.GlobalConfiguration,System.String,System.String,IDictionary{System.String,System.String})
+  isExtensionMethod: true
+  parent: Orleans.Runtime.Configuration.BootstrapProviderConfiguration
+  langs:
+  - csharp
+  - vb
+  name: RegisterBootstrapProvider(GlobalConfiguration, String, String, IDictionary<String, String>)
+  nameWithType: BootstrapProviderConfiguration.RegisterBootstrapProvider(GlobalConfiguration, String, String, IDictionary<String, String>)
+  fullName: Orleans.Runtime.Configuration.BootstrapProviderConfiguration.RegisterBootstrapProvider(Orleans.Runtime.Configuration.GlobalConfiguration, System.String, System.String, IDictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Runtime.Legacy/Configuration/BootstrapProviderConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: RegisterBootstrapProvider
+    path: src/Orleans.Runtime.Legacy/Configuration/BootstrapProviderConfiguration.cs
+    startLine: 37
+  assemblies:
+  - Orleans.Runtime.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nRegisters a given bootstrap provider.\n"
+  example: []
+  syntax:
+    content: public static void RegisterBootstrapProvider(this GlobalConfiguration config, string providerTypeFullName, string providerName, IDictionary<string, string> properties = null)
+    parameters:
+    - id: config
+      type: Orleans.Runtime.Configuration.GlobalConfiguration
+      description: Configuration object
+    - id: providerTypeFullName
+      type: System.String
+      description: Full name of the bootstrap provider type
+    - id: providerName
+      type: System.String
+      description: Name of the bootstrap provider
+    - id: properties
+      type: IDictionary{System.String,System.String}
+      description: 'Properties that will be passed to the bootstrap provider upon initialization '
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub RegisterBootstrapProvider(config As GlobalConfiguration, providerTypeFullName As String, providerName As String, properties As IDictionary(Of String, String) = Nothing)
+  overload: Orleans.Runtime.Configuration.BootstrapProviderConfiguration.RegisterBootstrapProvider*
+  nameWithType.vb: BootstrapProviderConfiguration.RegisterBootstrapProvider(GlobalConfiguration, String, String, IDictionary(Of String, String))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.Runtime.Configuration.BootstrapProviderConfiguration.RegisterBootstrapProvider(Orleans.Runtime.Configuration.GlobalConfiguration, System.String, System.String, IDictionary(Of System.String, System.String))
+  name.vb: RegisterBootstrapProvider(GlobalConfiguration, String, String, IDictionary(Of String, String))
+references:
+- uid: Orleans.Runtime.Configuration
+  commentId: N:Orleans.Runtime.Configuration
+  isExternal: false
+  name: Orleans.Runtime.Configuration
+  nameWithType: Orleans.Runtime.Configuration
+  fullName: Orleans.Runtime.Configuration
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Orleans.Providers.IBootstrapProvider
+  commentId: T:Orleans.Providers.IBootstrapProvider
+  isExternal: false
+  name: IBootstrapProvider
+  nameWithType: IBootstrapProvider
+  fullName: Orleans.Providers.IBootstrapProvider
+- uid: Orleans.Runtime.Configuration.BootstrapProviderConfiguration.RegisterBootstrapProvider*
+  commentId: Overload:Orleans.Runtime.Configuration.BootstrapProviderConfiguration.RegisterBootstrapProvider
+  isExternal: false
+  name: RegisterBootstrapProvider
+  nameWithType: BootstrapProviderConfiguration.RegisterBootstrapProvider
+  fullName: Orleans.Runtime.Configuration.BootstrapProviderConfiguration.RegisterBootstrapProvider
+- uid: Orleans.Runtime.Configuration.GlobalConfiguration
+  commentId: T:Orleans.Runtime.Configuration.GlobalConfiguration
+  parent: Orleans.Runtime.Configuration
+  isExternal: false
+  name: GlobalConfiguration
+  nameWithType: GlobalConfiguration
+  fullName: Orleans.Runtime.Configuration.GlobalConfiguration
+- uid: IDictionary{System.String,System.String}
+  commentId: '!:IDictionary{System.String,System.String}'
+  definition: IDictionary`2
+  name: IDictionary<String, String>
+  nameWithType: IDictionary<String, String>
+  fullName: IDictionary<System.String, System.String>
+  nameWithType.vb: IDictionary(Of String, String)
+  fullName.vb: IDictionary(Of System.String, System.String)
+  name.vb: IDictionary(Of String, String)
+  spec.csharp:
+  - uid: IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IDictionary`2
+  isExternal: true
+  name: IDictionary<, >
+  nameWithType: IDictionary<, >
+  fullName: IDictionary<, >
+  nameWithType.vb: IDictionary(Of , )
+  fullName.vb: IDictionary(Of , )
+  name.vb: IDictionary(Of , )
+  spec.csharp:
+  - uid: IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )

@@ -1,0 +1,177 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.ServiceFabric.ServiceFabricConstants
+  commentId: T:Orleans.ServiceFabric.ServiceFabricConstants
+  id: ServiceFabricConstants
+  parent: Orleans.ServiceFabric
+  children:
+  - Orleans.ServiceFabric.ServiceFabricConstants.GatewayEndpointName
+  - Orleans.ServiceFabric.ServiceFabricConstants.ListenerName
+  - Orleans.ServiceFabric.ServiceFabricConstants.SiloEndpointName
+  langs:
+  - csharp
+  - vb
+  name: ServiceFabricConstants
+  nameWithType: ServiceFabricConstants
+  fullName: Orleans.ServiceFabric.ServiceFabricConstants
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Hosting.ServiceFabric/ServiceFabricConstants.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ServiceFabricConstants
+    path: src/Orleans.Hosting.ServiceFabric/ServiceFabricConstants.cs
+    startLine: 5
+  assemblies:
+  - Orleans.Hosting.ServiceFabric
+  namespace: Orleans.ServiceFabric
+  summary: "\nConstants used for silos hosted on Service Fabric\n"
+  example: []
+  syntax:
+    content: 'public static class ServiceFabricConstants : object'
+    content.vb: >-
+      Public Module ServiceFabricConstants
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Orleans.ServiceFabric.ServiceFabricConstants.ListenerName
+  commentId: F:Orleans.ServiceFabric.ServiceFabricConstants.ListenerName
+  id: ListenerName
+  parent: Orleans.ServiceFabric.ServiceFabricConstants
+  langs:
+  - csharp
+  - vb
+  name: ListenerName
+  nameWithType: ServiceFabricConstants.ListenerName
+  fullName: Orleans.ServiceFabric.ServiceFabricConstants.ListenerName
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.Hosting.ServiceFabric/ServiceFabricConstants.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ListenerName
+    path: src/Orleans.Hosting.ServiceFabric/ServiceFabricConstants.cs
+    startLine: 10
+  assemblies:
+  - Orleans.Hosting.ServiceFabric
+  namespace: Orleans.ServiceFabric
+  summary: "\nThe Service Fabric listener name used by Orleans silos.\n"
+  example: []
+  syntax:
+    content: public const string ListenerName = null
+    return:
+      type: System.String
+    content.vb: Public Const ListenerName As String = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Orleans.ServiceFabric.ServiceFabricConstants.SiloEndpointName
+  commentId: F:Orleans.ServiceFabric.ServiceFabricConstants.SiloEndpointName
+  id: SiloEndpointName
+  parent: Orleans.ServiceFabric.ServiceFabricConstants
+  langs:
+  - csharp
+  - vb
+  name: SiloEndpointName
+  nameWithType: ServiceFabricConstants.SiloEndpointName
+  fullName: Orleans.ServiceFabric.ServiceFabricConstants.SiloEndpointName
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.Hosting.ServiceFabric/ServiceFabricConstants.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SiloEndpointName
+    path: src/Orleans.Hosting.ServiceFabric/ServiceFabricConstants.cs
+    startLine: 15
+  assemblies:
+  - Orleans.Hosting.ServiceFabric
+  namespace: Orleans.ServiceFabric
+  summary: "\nThe name used to identify the silo-to-silo communication endpoint.\n"
+  example: []
+  syntax:
+    content: public const string SiloEndpointName = null
+    return:
+      type: System.String
+    content.vb: Public Const SiloEndpointName As String = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Orleans.ServiceFabric.ServiceFabricConstants.GatewayEndpointName
+  commentId: F:Orleans.ServiceFabric.ServiceFabricConstants.GatewayEndpointName
+  id: GatewayEndpointName
+  parent: Orleans.ServiceFabric.ServiceFabricConstants
+  langs:
+  - csharp
+  - vb
+  name: GatewayEndpointName
+  nameWithType: ServiceFabricConstants.GatewayEndpointName
+  fullName: Orleans.ServiceFabric.ServiceFabricConstants.GatewayEndpointName
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.Hosting.ServiceFabric/ServiceFabricConstants.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GatewayEndpointName
+    path: src/Orleans.Hosting.ServiceFabric/ServiceFabricConstants.cs
+    startLine: 20
+  assemblies:
+  - Orleans.Hosting.ServiceFabric
+  namespace: Orleans.ServiceFabric
+  summary: "\nThe name used to identify the client-to-silo communication endpoint.\n"
+  example: []
+  syntax:
+    content: public const string GatewayEndpointName = null
+    return:
+      type: System.String
+    content.vb: Public Const GatewayEndpointName As String = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Orleans.ServiceFabric
+  commentId: N:Orleans.ServiceFabric
+  isExternal: false
+  name: Orleans.ServiceFabric
+  nameWithType: Orleans.ServiceFabric
+  fullName: Orleans.ServiceFabric
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

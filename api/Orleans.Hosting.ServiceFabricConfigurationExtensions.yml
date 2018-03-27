@@ -1,0 +1,125 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Hosting.ServiceFabricConfigurationExtensions
+  commentId: T:Orleans.Hosting.ServiceFabricConfigurationExtensions
+  id: ServiceFabricConfigurationExtensions
+  parent: Orleans.Hosting
+  children:
+  - Orleans.Hosting.ServiceFabricConfigurationExtensions.ConfigureFromServiceContext(EndpointOptions,ServiceContext)
+  langs:
+  - csharp
+  - vb
+  name: ServiceFabricConfigurationExtensions
+  nameWithType: ServiceFabricConfigurationExtensions
+  fullName: Orleans.Hosting.ServiceFabricConfigurationExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Hosting.ServiceFabric/ServiceFabricConfigurationExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ServiceFabricConfigurationExtensions
+    path: src/Orleans.Hosting.ServiceFabric/ServiceFabricConfigurationExtensions.cs
+    startLine: 12
+  assemblies:
+  - Orleans.Hosting.ServiceFabric
+  namespace: Orleans.Hosting
+  summary: "\nExtension methods for configuring silos hosted on Service Fabric.\n"
+  example: []
+  syntax:
+    content: 'public static class ServiceFabricConfigurationExtensions : object'
+    content.vb: >-
+      Public Module ServiceFabricConfigurationExtensions
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Orleans.Hosting.ServiceFabricConfigurationExtensions.ConfigureFromServiceContext(EndpointOptions,ServiceContext)
+  commentId: M:Orleans.Hosting.ServiceFabricConfigurationExtensions.ConfigureFromServiceContext(EndpointOptions,ServiceContext)
+  id: ConfigureFromServiceContext(EndpointOptions,ServiceContext)
+  isExtensionMethod: true
+  parent: Orleans.Hosting.ServiceFabricConfigurationExtensions
+  langs:
+  - csharp
+  - vb
+  name: ConfigureFromServiceContext(EndpointOptions, ServiceContext)
+  nameWithType: ServiceFabricConfigurationExtensions.ConfigureFromServiceContext(EndpointOptions, ServiceContext)
+  fullName: Orleans.Hosting.ServiceFabricConfigurationExtensions.ConfigureFromServiceContext(EndpointOptions, ServiceContext)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Hosting.ServiceFabric/ServiceFabricConfigurationExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ConfigureFromServiceContext
+    path: src/Orleans.Hosting.ServiceFabric/ServiceFabricConfigurationExtensions.cs
+    startLine: 19
+  assemblies:
+  - Orleans.Hosting.ServiceFabric
+  namespace: Orleans.Hosting
+  summary: "\nConfigures silo and gateway endpoints from the provided Service Fabric service&apos;s configuration.\n"
+  example: []
+  syntax:
+    content: public static void ConfigureFromServiceContext(this EndpointOptions options, ServiceContext context)
+    parameters:
+    - id: options
+      type: EndpointOptions
+      description: The endpoint configuration.
+    - id: context
+      type: ServiceContext
+      description: The service context.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub ConfigureFromServiceContext(options As EndpointOptions, context As ServiceContext)
+  overload: Orleans.Hosting.ServiceFabricConfigurationExtensions.ConfigureFromServiceContext*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Orleans.Hosting
+  commentId: N:Orleans.Hosting
+  isExternal: false
+  name: Orleans.Hosting
+  nameWithType: Orleans.Hosting
+  fullName: Orleans.Hosting
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Hosting.ServiceFabricConfigurationExtensions.ConfigureFromServiceContext*
+  commentId: Overload:Orleans.Hosting.ServiceFabricConfigurationExtensions.ConfigureFromServiceContext
+  isExternal: false
+  name: ConfigureFromServiceContext
+  nameWithType: ServiceFabricConfigurationExtensions.ConfigureFromServiceContext
+  fullName: Orleans.Hosting.ServiceFabricConfigurationExtensions.ConfigureFromServiceContext
+- uid: EndpointOptions
+  commentId: '!:EndpointOptions'
+  isExternal: true
+  name: EndpointOptions
+  nameWithType: EndpointOptions
+  fullName: EndpointOptions
+- uid: ServiceContext
+  isExternal: true
+  name: ServiceContext
+  nameWithType: ServiceContext
+  fullName: ServiceContext

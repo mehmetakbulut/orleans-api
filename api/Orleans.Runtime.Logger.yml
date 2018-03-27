@@ -1,0 +1,3375 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Runtime.Logger
+  commentId: T:Orleans.Runtime.Logger
+  id: Logger
+  parent: Orleans.Runtime
+  children:
+  - Orleans.Runtime.Logger.GetLogger(System.String)
+  - Orleans.Runtime.Logger.IsInfo
+  - Orleans.Runtime.Logger.IsVerbose
+  - Orleans.Runtime.Logger.IsVerbose2
+  - Orleans.Runtime.Logger.IsVerbose3
+  - Orleans.Runtime.Logger.IsWarning
+  - Orleans.Runtime.Logger.Log(System.Int32,Orleans.Runtime.Severity,System.String,System.Object[],Exception)
+  - Orleans.Runtime.Logger.Name
+  - Orleans.Runtime.Logger.SeverityLevel
+  langs:
+  - csharp
+  - vb
+  name: Logger
+  nameWithType: Logger
+  fullName: Orleans.Runtime.Logger
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Logging/LegacyClass/Logger.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Logger
+    path: src/Orleans.Core.Legacy/Logging/LegacyClass/Logger.cs
+    startLine: 9
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime
+  summary: "\nInterface of Orleans runtime for logging services. \n"
+  example: []
+  syntax:
+    content: 'public abstract class Logger : object'
+    content.vb: >-
+      Public MustInherit Class Logger
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.Runtime.Logger.Orleans.Runtime.LoggerExtensions.GetSubLogger(System.String,System.String)
+  - Orleans.Runtime.Logger.Orleans.Runtime.LoggerExtensions.Verbose(System.String,System.Object[])
+  - Orleans.Runtime.Logger.Orleans.Runtime.LoggerExtensions.Verbose(System.String)
+  - Orleans.Runtime.Logger.Orleans.Runtime.LoggerExtensions.Verbose2(System.String,System.Object[])
+  - Orleans.Runtime.Logger.Orleans.Runtime.LoggerExtensions.Verbose2(System.String)
+  - Orleans.Runtime.Logger.Orleans.Runtime.LoggerExtensions.Verbose3(System.String,System.Object[])
+  - Orleans.Runtime.Logger.Orleans.Runtime.LoggerExtensions.Verbose3(System.String)
+  - Orleans.Runtime.Logger.Orleans.Runtime.LoggerExtensions.Info(System.String,System.Object[])
+  - Orleans.Runtime.Logger.Orleans.Runtime.LoggerExtensions.Info(System.String)
+  - Orleans.Runtime.Logger.Orleans.Runtime.LoggerExtensions.Verbose(System.Int32,System.String,System.Object[])
+  - Orleans.Runtime.Logger.Orleans.Runtime.LoggerExtensions.Verbose(System.Int32,System.String)
+  - Orleans.Runtime.Logger.Orleans.Runtime.LoggerExtensions.Verbose2(System.Int32,System.String,System.Object[])
+  - Orleans.Runtime.Logger.Orleans.Runtime.LoggerExtensions.Verbose2(System.Int32,System.String)
+  - Orleans.Runtime.Logger.Orleans.Runtime.LoggerExtensions.Verbose3(System.Int32,System.String,System.Object[])
+  - Orleans.Runtime.Logger.Orleans.Runtime.LoggerExtensions.Verbose3(System.Int32,System.String)
+  - Orleans.Runtime.Logger.Orleans.Runtime.LoggerExtensions.Info(System.Int32,System.String,System.Object[])
+  - Orleans.Runtime.Logger.Orleans.Runtime.LoggerExtensions.Info(System.Int32,System.String)
+  - Orleans.Runtime.Logger.Orleans.Runtime.LoggerExtensions.Warn(System.Int32,System.String,System.Object[])
+  - Orleans.Runtime.Logger.Orleans.Runtime.LoggerExtensions.Warn(System.Int32,System.String,Exception)
+  - Orleans.Runtime.Logger.Orleans.Runtime.LoggerExtensions.Error(System.Int32,System.String,Exception)
+  - Orleans.Runtime.Logger.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: Orleans.Runtime.Logger.SeverityLevel
+  commentId: P:Orleans.Runtime.Logger.SeverityLevel
+  id: SeverityLevel
+  parent: Orleans.Runtime.Logger
+  langs:
+  - csharp
+  - vb
+  name: SeverityLevel
+  nameWithType: Logger.SeverityLevel
+  fullName: Orleans.Runtime.Logger.SeverityLevel
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Logging/LegacyClass/Logger.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SeverityLevel
+    path: src/Orleans.Core.Legacy/Logging/LegacyClass/Logger.cs
+    startLine: 14
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime
+  summary: 'Current SeverityLevel set for this logger. '
+  example: []
+  syntax:
+    content: public abstract Severity SeverityLevel { get; }
+    parameters: []
+    return:
+      type: Orleans.Runtime.Severity
+    content.vb: Public MustOverride ReadOnly Property SeverityLevel As Severity
+  overload: Orleans.Runtime.Logger.SeverityLevel*
+  modifiers.csharp:
+  - public
+  - abstract
+  - get
+  modifiers.vb:
+  - Public
+  - MustOverride
+  - ReadOnly
+- uid: Orleans.Runtime.Logger.Name
+  commentId: P:Orleans.Runtime.Logger.Name
+  id: Name
+  parent: Orleans.Runtime.Logger
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: Logger.Name
+  fullName: Orleans.Runtime.Logger.Name
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Logging/LegacyClass/Logger.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Name
+    path: src/Orleans.Core.Legacy/Logging/LegacyClass/Logger.cs
+    startLine: 19
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime
+  summary: "\nName of logger instance\n"
+  example: []
+  syntax:
+    content: public abstract string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public MustOverride ReadOnly Property Name As String
+  overload: Orleans.Runtime.Logger.Name*
+  modifiers.csharp:
+  - public
+  - abstract
+  - get
+  modifiers.vb:
+  - Public
+  - MustOverride
+  - ReadOnly
+- uid: Orleans.Runtime.Logger.GetLogger(System.String)
+  commentId: M:Orleans.Runtime.Logger.GetLogger(System.String)
+  id: GetLogger(System.String)
+  parent: Orleans.Runtime.Logger
+  langs:
+  - csharp
+  - vb
+  name: GetLogger(String)
+  nameWithType: Logger.GetLogger(String)
+  fullName: Orleans.Runtime.Logger.GetLogger(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Logging/LegacyClass/Logger.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetLogger
+    path: src/Orleans.Core.Legacy/Logging/LegacyClass/Logger.cs
+    startLine: 26
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime
+  summary: "\nFind existing or create new Logger with the specified name\n"
+  example: []
+  syntax:
+    content: public abstract Logger GetLogger(string loggerName)
+    parameters:
+    - id: loggerName
+      type: System.String
+      description: Name of the Logger to find or create
+    return:
+      type: Orleans.Runtime.Logger
+      description: Logger associated with the specified name
+    content.vb: Public MustOverride Function GetLogger(loggerName As String) As Logger
+  overload: Orleans.Runtime.Logger.GetLogger*
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+- uid: Orleans.Runtime.Logger.Log(System.Int32,Orleans.Runtime.Severity,System.String,System.Object[],Exception)
+  commentId: M:Orleans.Runtime.Logger.Log(System.Int32,Orleans.Runtime.Severity,System.String,System.Object[],Exception)
+  id: Log(System.Int32,Orleans.Runtime.Severity,System.String,System.Object[],Exception)
+  parent: Orleans.Runtime.Logger
+  langs:
+  - csharp
+  - vb
+  name: Log(Int32, Severity, String, Object[], Exception)
+  nameWithType: Logger.Log(Int32, Severity, String, Object[], Exception)
+  fullName: Orleans.Runtime.Logger.Log(System.Int32, Orleans.Runtime.Severity, System.String, System.Object[], Exception)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Logging/LegacyClass/Logger.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Log
+    path: src/Orleans.Core.Legacy/Logging/LegacyClass/Logger.cs
+    startLine: 36
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime
+  summary: "\nLog message\n"
+  example: []
+  syntax:
+    content: public abstract void Log(int errorCode, Severity sev, string format, object[] args, Exception exception)
+    parameters:
+    - id: errorCode
+      type: System.Int32
+      description: ''
+    - id: sev
+      type: Orleans.Runtime.Severity
+      description: ''
+    - id: format
+      type: System.String
+      description: ''
+    - id: args
+      type: System.Object[]
+      description: ''
+    - id: exception
+      type: Exception
+      description: ''
+    content.vb: Public MustOverride Sub Log(errorCode As Integer, sev As Severity, format As String, args As Object(), exception As Exception)
+  overload: Orleans.Runtime.Logger.Log*
+  nameWithType.vb: Logger.Log(Int32, Severity, String, Object(), Exception)
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+  fullName.vb: Orleans.Runtime.Logger.Log(System.Int32, Orleans.Runtime.Severity, System.String, System.Object(), Exception)
+  name.vb: Log(Int32, Severity, String, Object(), Exception)
+- uid: Orleans.Runtime.Logger.IsWarning
+  commentId: P:Orleans.Runtime.Logger.IsWarning
+  id: IsWarning
+  parent: Orleans.Runtime.Logger
+  langs:
+  - csharp
+  - vb
+  name: IsWarning
+  nameWithType: Logger.IsWarning
+  fullName: Orleans.Runtime.Logger.IsWarning
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Logging/LegacyClass/Logger.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IsWarning
+    path: src/Orleans.Core.Legacy/Logging/LegacyClass/Logger.cs
+    startLine: 39
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime
+  summary: 'Whether the current SeverityLevel would output <code>Warning</code> messages for this logger. '
+  example: []
+  syntax:
+    content: public bool IsWarning { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsWarning As Boolean
+  overload: Orleans.Runtime.Logger.IsWarning*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Runtime.Logger.IsInfo
+  commentId: P:Orleans.Runtime.Logger.IsInfo
+  id: IsInfo
+  parent: Orleans.Runtime.Logger
+  langs:
+  - csharp
+  - vb
+  name: IsInfo
+  nameWithType: Logger.IsInfo
+  fullName: Orleans.Runtime.Logger.IsInfo
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Logging/LegacyClass/Logger.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IsInfo
+    path: src/Orleans.Core.Legacy/Logging/LegacyClass/Logger.cs
+    startLine: 43
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime
+  summary: 'Whether the current SeverityLevel would output <code>Info</code> messages for this logger. '
+  example: []
+  syntax:
+    content: public bool IsInfo { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsInfo As Boolean
+  overload: Orleans.Runtime.Logger.IsInfo*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Runtime.Logger.IsVerbose
+  commentId: P:Orleans.Runtime.Logger.IsVerbose
+  id: IsVerbose
+  parent: Orleans.Runtime.Logger
+  langs:
+  - csharp
+  - vb
+  name: IsVerbose
+  nameWithType: Logger.IsVerbose
+  fullName: Orleans.Runtime.Logger.IsVerbose
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Logging/LegacyClass/Logger.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IsVerbose
+    path: src/Orleans.Core.Legacy/Logging/LegacyClass/Logger.cs
+    startLine: 47
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime
+  summary: 'Whether the current SeverityLevel would output <code>Verbose</code> messages for this logger. '
+  example: []
+  syntax:
+    content: public bool IsVerbose { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsVerbose As Boolean
+  overload: Orleans.Runtime.Logger.IsVerbose*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Runtime.Logger.IsVerbose2
+  commentId: P:Orleans.Runtime.Logger.IsVerbose2
+  id: IsVerbose2
+  parent: Orleans.Runtime.Logger
+  langs:
+  - csharp
+  - vb
+  name: IsVerbose2
+  nameWithType: Logger.IsVerbose2
+  fullName: Orleans.Runtime.Logger.IsVerbose2
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Logging/LegacyClass/Logger.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IsVerbose2
+    path: src/Orleans.Core.Legacy/Logging/LegacyClass/Logger.cs
+    startLine: 51
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime
+  summary: 'Whether the current SeverityLevel would output <code>Verbose2</code> messages for this logger. '
+  example: []
+  syntax:
+    content: public bool IsVerbose2 { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsVerbose2 As Boolean
+  overload: Orleans.Runtime.Logger.IsVerbose2*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Runtime.Logger.IsVerbose3
+  commentId: P:Orleans.Runtime.Logger.IsVerbose3
+  id: IsVerbose3
+  parent: Orleans.Runtime.Logger
+  langs:
+  - csharp
+  - vb
+  name: IsVerbose3
+  nameWithType: Logger.IsVerbose3
+  fullName: Orleans.Runtime.Logger.IsVerbose3
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Logging/LegacyClass/Logger.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IsVerbose3
+    path: src/Orleans.Core.Legacy/Logging/LegacyClass/Logger.cs
+    startLine: 55
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime
+  summary: 'Whether the current SeverityLevel would output <code>Verbose3</code> messages for this logger. '
+  example: []
+  syntax:
+    content: public bool IsVerbose3 { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsVerbose3 As Boolean
+  overload: Orleans.Runtime.Logger.IsVerbose3*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: Orleans.Runtime
+  commentId: N:Orleans.Runtime
+  isExternal: false
+  name: Orleans.Runtime
+  nameWithType: Orleans.Runtime
+  fullName: Orleans.Runtime
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Runtime.Logger.Orleans.Runtime.LoggerExtensions.GetSubLogger(System.String,System.String)
+  commentId: M:Orleans.Runtime.LoggerExtensions.GetSubLogger(Orleans.Runtime.Logger,System.String,System.String)
+  parent: Orleans.Runtime.LoggerExtensions
+  definition: Orleans.Runtime.LoggerExtensions.GetSubLogger(Orleans.Runtime.Logger,System.String,System.String)
+  name: GetSubLogger(String, String)
+  nameWithType: LoggerExtensions.GetSubLogger(String, String)
+  fullName: Orleans.Runtime.LoggerExtensions.GetSubLogger(System.String, System.String)
+  spec.csharp:
+  - uid: Orleans.Runtime.LoggerExtensions.GetSubLogger(System.String,System.String)
+    name: GetSubLogger
+    nameWithType: LoggerExtensions.GetSubLogger
+    fullName: Orleans.Runtime.LoggerExtensions.GetSubLogger
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.LoggerExtensions.GetSubLogger(System.String,System.String)
+    name: GetSubLogger
+    nameWithType: LoggerExtensions.GetSubLogger
+    fullName: Orleans.Runtime.LoggerExtensions.GetSubLogger
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.Logger.Orleans.Runtime.LoggerExtensions.Verbose(System.String,System.Object[])
+  commentId: M:Orleans.Runtime.LoggerExtensions.Verbose(Orleans.Runtime.Logger,System.String,System.Object[])
+  parent: Orleans.Runtime.LoggerExtensions
+  definition: Orleans.Runtime.LoggerExtensions.Verbose(Orleans.Runtime.Logger,System.String,System.Object[])
+  name: Verbose(String, Object[])
+  nameWithType: LoggerExtensions.Verbose(String, Object[])
+  fullName: Orleans.Runtime.LoggerExtensions.Verbose(System.String, System.Object[])
+  nameWithType.vb: LoggerExtensions.Verbose(String, Object())
+  fullName.vb: Orleans.Runtime.LoggerExtensions.Verbose(System.String, System.Object())
+  name.vb: Verbose(String, Object())
+  spec.csharp:
+  - uid: Orleans.Runtime.LoggerExtensions.Verbose(System.String,System.Object[])
+    name: Verbose
+    nameWithType: LoggerExtensions.Verbose
+    fullName: Orleans.Runtime.LoggerExtensions.Verbose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.LoggerExtensions.Verbose(System.String,System.Object[])
+    name: Verbose
+    nameWithType: LoggerExtensions.Verbose
+    fullName: Orleans.Runtime.LoggerExtensions.Verbose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.Logger.Orleans.Runtime.LoggerExtensions.Verbose(System.String)
+  commentId: M:Orleans.Runtime.LoggerExtensions.Verbose(Orleans.Runtime.Logger,System.String)
+  parent: Orleans.Runtime.LoggerExtensions
+  definition: Orleans.Runtime.LoggerExtensions.Verbose(Orleans.Runtime.Logger,System.String)
+  name: Verbose(String)
+  nameWithType: LoggerExtensions.Verbose(String)
+  fullName: Orleans.Runtime.LoggerExtensions.Verbose(System.String)
+  spec.csharp:
+  - uid: Orleans.Runtime.LoggerExtensions.Verbose(System.String)
+    name: Verbose
+    nameWithType: LoggerExtensions.Verbose
+    fullName: Orleans.Runtime.LoggerExtensions.Verbose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.LoggerExtensions.Verbose(System.String)
+    name: Verbose
+    nameWithType: LoggerExtensions.Verbose
+    fullName: Orleans.Runtime.LoggerExtensions.Verbose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.Logger.Orleans.Runtime.LoggerExtensions.Verbose2(System.String,System.Object[])
+  commentId: M:Orleans.Runtime.LoggerExtensions.Verbose2(Orleans.Runtime.Logger,System.String,System.Object[])
+  parent: Orleans.Runtime.LoggerExtensions
+  definition: Orleans.Runtime.LoggerExtensions.Verbose2(Orleans.Runtime.Logger,System.String,System.Object[])
+  name: Verbose2(String, Object[])
+  nameWithType: LoggerExtensions.Verbose2(String, Object[])
+  fullName: Orleans.Runtime.LoggerExtensions.Verbose2(System.String, System.Object[])
+  nameWithType.vb: LoggerExtensions.Verbose2(String, Object())
+  fullName.vb: Orleans.Runtime.LoggerExtensions.Verbose2(System.String, System.Object())
+  name.vb: Verbose2(String, Object())
+  spec.csharp:
+  - uid: Orleans.Runtime.LoggerExtensions.Verbose2(System.String,System.Object[])
+    name: Verbose2
+    nameWithType: LoggerExtensions.Verbose2
+    fullName: Orleans.Runtime.LoggerExtensions.Verbose2
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.LoggerExtensions.Verbose2(System.String,System.Object[])
+    name: Verbose2
+    nameWithType: LoggerExtensions.Verbose2
+    fullName: Orleans.Runtime.LoggerExtensions.Verbose2
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.Logger.Orleans.Runtime.LoggerExtensions.Verbose2(System.String)
+  commentId: M:Orleans.Runtime.LoggerExtensions.Verbose2(Orleans.Runtime.Logger,System.String)
+  parent: Orleans.Runtime.LoggerExtensions
+  definition: Orleans.Runtime.LoggerExtensions.Verbose2(Orleans.Runtime.Logger,System.String)
+  name: Verbose2(String)
+  nameWithType: LoggerExtensions.Verbose2(String)
+  fullName: Orleans.Runtime.LoggerExtensions.Verbose2(System.String)
+  spec.csharp:
+  - uid: Orleans.Runtime.LoggerExtensions.Verbose2(System.String)
+    name: Verbose2
+    nameWithType: LoggerExtensions.Verbose2
+    fullName: Orleans.Runtime.LoggerExtensions.Verbose2
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.LoggerExtensions.Verbose2(System.String)
+    name: Verbose2
+    nameWithType: LoggerExtensions.Verbose2
+    fullName: Orleans.Runtime.LoggerExtensions.Verbose2
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.Logger.Orleans.Runtime.LoggerExtensions.Verbose3(System.String,System.Object[])
+  commentId: M:Orleans.Runtime.LoggerExtensions.Verbose3(Orleans.Runtime.Logger,System.String,System.Object[])
+  parent: Orleans.Runtime.LoggerExtensions
+  definition: Orleans.Runtime.LoggerExtensions.Verbose3(Orleans.Runtime.Logger,System.String,System.Object[])
+  name: Verbose3(String, Object[])
+  nameWithType: LoggerExtensions.Verbose3(String, Object[])
+  fullName: Orleans.Runtime.LoggerExtensions.Verbose3(System.String, System.Object[])
+  nameWithType.vb: LoggerExtensions.Verbose3(String, Object())
+  fullName.vb: Orleans.Runtime.LoggerExtensions.Verbose3(System.String, System.Object())
+  name.vb: Verbose3(String, Object())
+  spec.csharp:
+  - uid: Orleans.Runtime.LoggerExtensions.Verbose3(System.String,System.Object[])
+    name: Verbose3
+    nameWithType: LoggerExtensions.Verbose3
+    fullName: Orleans.Runtime.LoggerExtensions.Verbose3
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.LoggerExtensions.Verbose3(System.String,System.Object[])
+    name: Verbose3
+    nameWithType: LoggerExtensions.Verbose3
+    fullName: Orleans.Runtime.LoggerExtensions.Verbose3
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.Logger.Orleans.Runtime.LoggerExtensions.Verbose3(System.String)
+  commentId: M:Orleans.Runtime.LoggerExtensions.Verbose3(Orleans.Runtime.Logger,System.String)
+  parent: Orleans.Runtime.LoggerExtensions
+  definition: Orleans.Runtime.LoggerExtensions.Verbose3(Orleans.Runtime.Logger,System.String)
+  name: Verbose3(String)
+  nameWithType: LoggerExtensions.Verbose3(String)
+  fullName: Orleans.Runtime.LoggerExtensions.Verbose3(System.String)
+  spec.csharp:
+  - uid: Orleans.Runtime.LoggerExtensions.Verbose3(System.String)
+    name: Verbose3
+    nameWithType: LoggerExtensions.Verbose3
+    fullName: Orleans.Runtime.LoggerExtensions.Verbose3
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.LoggerExtensions.Verbose3(System.String)
+    name: Verbose3
+    nameWithType: LoggerExtensions.Verbose3
+    fullName: Orleans.Runtime.LoggerExtensions.Verbose3
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.Logger.Orleans.Runtime.LoggerExtensions.Info(System.String,System.Object[])
+  commentId: M:Orleans.Runtime.LoggerExtensions.Info(Orleans.Runtime.Logger,System.String,System.Object[])
+  parent: Orleans.Runtime.LoggerExtensions
+  definition: Orleans.Runtime.LoggerExtensions.Info(Orleans.Runtime.Logger,System.String,System.Object[])
+  name: Info(String, Object[])
+  nameWithType: LoggerExtensions.Info(String, Object[])
+  fullName: Orleans.Runtime.LoggerExtensions.Info(System.String, System.Object[])
+  nameWithType.vb: LoggerExtensions.Info(String, Object())
+  fullName.vb: Orleans.Runtime.LoggerExtensions.Info(System.String, System.Object())
+  name.vb: Info(String, Object())
+  spec.csharp:
+  - uid: Orleans.Runtime.LoggerExtensions.Info(System.String,System.Object[])
+    name: Info
+    nameWithType: LoggerExtensions.Info
+    fullName: Orleans.Runtime.LoggerExtensions.Info
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.LoggerExtensions.Info(System.String,System.Object[])
+    name: Info
+    nameWithType: LoggerExtensions.Info
+    fullName: Orleans.Runtime.LoggerExtensions.Info
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.Logger.Orleans.Runtime.LoggerExtensions.Info(System.String)
+  commentId: M:Orleans.Runtime.LoggerExtensions.Info(Orleans.Runtime.Logger,System.String)
+  parent: Orleans.Runtime.LoggerExtensions
+  definition: Orleans.Runtime.LoggerExtensions.Info(Orleans.Runtime.Logger,System.String)
+  name: Info(String)
+  nameWithType: LoggerExtensions.Info(String)
+  fullName: Orleans.Runtime.LoggerExtensions.Info(System.String)
+  spec.csharp:
+  - uid: Orleans.Runtime.LoggerExtensions.Info(System.String)
+    name: Info
+    nameWithType: LoggerExtensions.Info
+    fullName: Orleans.Runtime.LoggerExtensions.Info
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.LoggerExtensions.Info(System.String)
+    name: Info
+    nameWithType: LoggerExtensions.Info
+    fullName: Orleans.Runtime.LoggerExtensions.Info
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.Logger.Orleans.Runtime.LoggerExtensions.Verbose(System.Int32,System.String,System.Object[])
+  commentId: M:Orleans.Runtime.LoggerExtensions.Verbose(Orleans.Runtime.Logger,System.Int32,System.String,System.Object[])
+  parent: Orleans.Runtime.LoggerExtensions
+  definition: Orleans.Runtime.LoggerExtensions.Verbose(Orleans.Runtime.Logger,System.Int32,System.String,System.Object[])
+  name: Verbose(Int32, String, Object[])
+  nameWithType: LoggerExtensions.Verbose(Int32, String, Object[])
+  fullName: Orleans.Runtime.LoggerExtensions.Verbose(System.Int32, System.String, System.Object[])
+  nameWithType.vb: LoggerExtensions.Verbose(Int32, String, Object())
+  fullName.vb: Orleans.Runtime.LoggerExtensions.Verbose(System.Int32, System.String, System.Object())
+  name.vb: Verbose(Int32, String, Object())
+  spec.csharp:
+  - uid: Orleans.Runtime.LoggerExtensions.Verbose(System.Int32,System.String,System.Object[])
+    name: Verbose
+    nameWithType: LoggerExtensions.Verbose
+    fullName: Orleans.Runtime.LoggerExtensions.Verbose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.LoggerExtensions.Verbose(System.Int32,System.String,System.Object[])
+    name: Verbose
+    nameWithType: LoggerExtensions.Verbose
+    fullName: Orleans.Runtime.LoggerExtensions.Verbose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.Logger.Orleans.Runtime.LoggerExtensions.Verbose(System.Int32,System.String)
+  commentId: M:Orleans.Runtime.LoggerExtensions.Verbose(Orleans.Runtime.Logger,System.Int32,System.String)
+  parent: Orleans.Runtime.LoggerExtensions
+  definition: Orleans.Runtime.LoggerExtensions.Verbose(Orleans.Runtime.Logger,System.Int32,System.String)
+  name: Verbose(Int32, String)
+  nameWithType: LoggerExtensions.Verbose(Int32, String)
+  fullName: Orleans.Runtime.LoggerExtensions.Verbose(System.Int32, System.String)
+  spec.csharp:
+  - uid: Orleans.Runtime.LoggerExtensions.Verbose(System.Int32,System.String)
+    name: Verbose
+    nameWithType: LoggerExtensions.Verbose
+    fullName: Orleans.Runtime.LoggerExtensions.Verbose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.LoggerExtensions.Verbose(System.Int32,System.String)
+    name: Verbose
+    nameWithType: LoggerExtensions.Verbose
+    fullName: Orleans.Runtime.LoggerExtensions.Verbose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.Logger.Orleans.Runtime.LoggerExtensions.Verbose2(System.Int32,System.String,System.Object[])
+  commentId: M:Orleans.Runtime.LoggerExtensions.Verbose2(Orleans.Runtime.Logger,System.Int32,System.String,System.Object[])
+  parent: Orleans.Runtime.LoggerExtensions
+  definition: Orleans.Runtime.LoggerExtensions.Verbose2(Orleans.Runtime.Logger,System.Int32,System.String,System.Object[])
+  name: Verbose2(Int32, String, Object[])
+  nameWithType: LoggerExtensions.Verbose2(Int32, String, Object[])
+  fullName: Orleans.Runtime.LoggerExtensions.Verbose2(System.Int32, System.String, System.Object[])
+  nameWithType.vb: LoggerExtensions.Verbose2(Int32, String, Object())
+  fullName.vb: Orleans.Runtime.LoggerExtensions.Verbose2(System.Int32, System.String, System.Object())
+  name.vb: Verbose2(Int32, String, Object())
+  spec.csharp:
+  - uid: Orleans.Runtime.LoggerExtensions.Verbose2(System.Int32,System.String,System.Object[])
+    name: Verbose2
+    nameWithType: LoggerExtensions.Verbose2
+    fullName: Orleans.Runtime.LoggerExtensions.Verbose2
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.LoggerExtensions.Verbose2(System.Int32,System.String,System.Object[])
+    name: Verbose2
+    nameWithType: LoggerExtensions.Verbose2
+    fullName: Orleans.Runtime.LoggerExtensions.Verbose2
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.Logger.Orleans.Runtime.LoggerExtensions.Verbose2(System.Int32,System.String)
+  commentId: M:Orleans.Runtime.LoggerExtensions.Verbose2(Orleans.Runtime.Logger,System.Int32,System.String)
+  parent: Orleans.Runtime.LoggerExtensions
+  definition: Orleans.Runtime.LoggerExtensions.Verbose2(Orleans.Runtime.Logger,System.Int32,System.String)
+  name: Verbose2(Int32, String)
+  nameWithType: LoggerExtensions.Verbose2(Int32, String)
+  fullName: Orleans.Runtime.LoggerExtensions.Verbose2(System.Int32, System.String)
+  spec.csharp:
+  - uid: Orleans.Runtime.LoggerExtensions.Verbose2(System.Int32,System.String)
+    name: Verbose2
+    nameWithType: LoggerExtensions.Verbose2
+    fullName: Orleans.Runtime.LoggerExtensions.Verbose2
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.LoggerExtensions.Verbose2(System.Int32,System.String)
+    name: Verbose2
+    nameWithType: LoggerExtensions.Verbose2
+    fullName: Orleans.Runtime.LoggerExtensions.Verbose2
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.Logger.Orleans.Runtime.LoggerExtensions.Verbose3(System.Int32,System.String,System.Object[])
+  commentId: M:Orleans.Runtime.LoggerExtensions.Verbose3(Orleans.Runtime.Logger,System.Int32,System.String,System.Object[])
+  parent: Orleans.Runtime.LoggerExtensions
+  definition: Orleans.Runtime.LoggerExtensions.Verbose3(Orleans.Runtime.Logger,System.Int32,System.String,System.Object[])
+  name: Verbose3(Int32, String, Object[])
+  nameWithType: LoggerExtensions.Verbose3(Int32, String, Object[])
+  fullName: Orleans.Runtime.LoggerExtensions.Verbose3(System.Int32, System.String, System.Object[])
+  nameWithType.vb: LoggerExtensions.Verbose3(Int32, String, Object())
+  fullName.vb: Orleans.Runtime.LoggerExtensions.Verbose3(System.Int32, System.String, System.Object())
+  name.vb: Verbose3(Int32, String, Object())
+  spec.csharp:
+  - uid: Orleans.Runtime.LoggerExtensions.Verbose3(System.Int32,System.String,System.Object[])
+    name: Verbose3
+    nameWithType: LoggerExtensions.Verbose3
+    fullName: Orleans.Runtime.LoggerExtensions.Verbose3
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.LoggerExtensions.Verbose3(System.Int32,System.String,System.Object[])
+    name: Verbose3
+    nameWithType: LoggerExtensions.Verbose3
+    fullName: Orleans.Runtime.LoggerExtensions.Verbose3
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.Logger.Orleans.Runtime.LoggerExtensions.Verbose3(System.Int32,System.String)
+  commentId: M:Orleans.Runtime.LoggerExtensions.Verbose3(Orleans.Runtime.Logger,System.Int32,System.String)
+  parent: Orleans.Runtime.LoggerExtensions
+  definition: Orleans.Runtime.LoggerExtensions.Verbose3(Orleans.Runtime.Logger,System.Int32,System.String)
+  name: Verbose3(Int32, String)
+  nameWithType: LoggerExtensions.Verbose3(Int32, String)
+  fullName: Orleans.Runtime.LoggerExtensions.Verbose3(System.Int32, System.String)
+  spec.csharp:
+  - uid: Orleans.Runtime.LoggerExtensions.Verbose3(System.Int32,System.String)
+    name: Verbose3
+    nameWithType: LoggerExtensions.Verbose3
+    fullName: Orleans.Runtime.LoggerExtensions.Verbose3
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.LoggerExtensions.Verbose3(System.Int32,System.String)
+    name: Verbose3
+    nameWithType: LoggerExtensions.Verbose3
+    fullName: Orleans.Runtime.LoggerExtensions.Verbose3
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.Logger.Orleans.Runtime.LoggerExtensions.Info(System.Int32,System.String,System.Object[])
+  commentId: M:Orleans.Runtime.LoggerExtensions.Info(Orleans.Runtime.Logger,System.Int32,System.String,System.Object[])
+  parent: Orleans.Runtime.LoggerExtensions
+  definition: Orleans.Runtime.LoggerExtensions.Info(Orleans.Runtime.Logger,System.Int32,System.String,System.Object[])
+  name: Info(Int32, String, Object[])
+  nameWithType: LoggerExtensions.Info(Int32, String, Object[])
+  fullName: Orleans.Runtime.LoggerExtensions.Info(System.Int32, System.String, System.Object[])
+  nameWithType.vb: LoggerExtensions.Info(Int32, String, Object())
+  fullName.vb: Orleans.Runtime.LoggerExtensions.Info(System.Int32, System.String, System.Object())
+  name.vb: Info(Int32, String, Object())
+  spec.csharp:
+  - uid: Orleans.Runtime.LoggerExtensions.Info(System.Int32,System.String,System.Object[])
+    name: Info
+    nameWithType: LoggerExtensions.Info
+    fullName: Orleans.Runtime.LoggerExtensions.Info
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.LoggerExtensions.Info(System.Int32,System.String,System.Object[])
+    name: Info
+    nameWithType: LoggerExtensions.Info
+    fullName: Orleans.Runtime.LoggerExtensions.Info
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.Logger.Orleans.Runtime.LoggerExtensions.Info(System.Int32,System.String)
+  commentId: M:Orleans.Runtime.LoggerExtensions.Info(Orleans.Runtime.Logger,System.Int32,System.String)
+  parent: Orleans.Runtime.LoggerExtensions
+  definition: Orleans.Runtime.LoggerExtensions.Info(Orleans.Runtime.Logger,System.Int32,System.String)
+  name: Info(Int32, String)
+  nameWithType: LoggerExtensions.Info(Int32, String)
+  fullName: Orleans.Runtime.LoggerExtensions.Info(System.Int32, System.String)
+  spec.csharp:
+  - uid: Orleans.Runtime.LoggerExtensions.Info(System.Int32,System.String)
+    name: Info
+    nameWithType: LoggerExtensions.Info
+    fullName: Orleans.Runtime.LoggerExtensions.Info
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.LoggerExtensions.Info(System.Int32,System.String)
+    name: Info
+    nameWithType: LoggerExtensions.Info
+    fullName: Orleans.Runtime.LoggerExtensions.Info
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.Logger.Orleans.Runtime.LoggerExtensions.Warn(System.Int32,System.String,System.Object[])
+  commentId: M:Orleans.Runtime.LoggerExtensions.Warn(Orleans.Runtime.Logger,System.Int32,System.String,System.Object[])
+  parent: Orleans.Runtime.LoggerExtensions
+  definition: Orleans.Runtime.LoggerExtensions.Warn(Orleans.Runtime.Logger,System.Int32,System.String,System.Object[])
+  name: Warn(Int32, String, Object[])
+  nameWithType: LoggerExtensions.Warn(Int32, String, Object[])
+  fullName: Orleans.Runtime.LoggerExtensions.Warn(System.Int32, System.String, System.Object[])
+  nameWithType.vb: LoggerExtensions.Warn(Int32, String, Object())
+  fullName.vb: Orleans.Runtime.LoggerExtensions.Warn(System.Int32, System.String, System.Object())
+  name.vb: Warn(Int32, String, Object())
+  spec.csharp:
+  - uid: Orleans.Runtime.LoggerExtensions.Warn(System.Int32,System.String,System.Object[])
+    name: Warn
+    nameWithType: LoggerExtensions.Warn
+    fullName: Orleans.Runtime.LoggerExtensions.Warn
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.LoggerExtensions.Warn(System.Int32,System.String,System.Object[])
+    name: Warn
+    nameWithType: LoggerExtensions.Warn
+    fullName: Orleans.Runtime.LoggerExtensions.Warn
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.Logger.Orleans.Runtime.LoggerExtensions.Warn(System.Int32,System.String,Exception)
+  commentId: M:Orleans.Runtime.LoggerExtensions.Warn(Orleans.Runtime.Logger,System.Int32,System.String,Exception)
+  parent: Orleans.Runtime.LoggerExtensions
+  definition: Orleans.Runtime.LoggerExtensions.Warn(Orleans.Runtime.Logger,System.Int32,System.String,Exception)
+  name: Warn(Int32, String, Exception)
+  nameWithType: LoggerExtensions.Warn(Int32, String, Exception)
+  fullName: Orleans.Runtime.LoggerExtensions.Warn(System.Int32, System.String, Exception)
+  spec.csharp:
+  - uid: Orleans.Runtime.LoggerExtensions.Warn(System.Int32,System.String,Exception)
+    name: Warn
+    nameWithType: LoggerExtensions.Warn
+    fullName: Orleans.Runtime.LoggerExtensions.Warn
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.LoggerExtensions.Warn(System.Int32,System.String,Exception)
+    name: Warn
+    nameWithType: LoggerExtensions.Warn
+    fullName: Orleans.Runtime.LoggerExtensions.Warn
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.Logger.Orleans.Runtime.LoggerExtensions.Error(System.Int32,System.String,Exception)
+  commentId: M:Orleans.Runtime.LoggerExtensions.Error(Orleans.Runtime.Logger,System.Int32,System.String,Exception)
+  parent: Orleans.Runtime.LoggerExtensions
+  definition: Orleans.Runtime.LoggerExtensions.Error(Orleans.Runtime.Logger,System.Int32,System.String,Exception)
+  name: Error(Int32, String, Exception)
+  nameWithType: LoggerExtensions.Error(Int32, String, Exception)
+  fullName: Orleans.Runtime.LoggerExtensions.Error(System.Int32, System.String, Exception)
+  spec.csharp:
+  - uid: Orleans.Runtime.LoggerExtensions.Error(System.Int32,System.String,Exception)
+    name: Error
+    nameWithType: LoggerExtensions.Error
+    fullName: Orleans.Runtime.LoggerExtensions.Error
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.LoggerExtensions.Error(System.Int32,System.String,Exception)
+    name: Error
+    nameWithType: LoggerExtensions.Error
+    fullName: Orleans.Runtime.LoggerExtensions.Error
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.Logger.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<Logger>()
+  nameWithType: ImmutableExt.AsImmutable<Logger>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.Logger>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of Logger)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.Logger)()
+  name.vb: AsImmutable(Of Logger)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<Logger>
+    nameWithType: ImmutableExt.AsImmutable<Logger>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.Logger>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of Logger)
+    nameWithType: ImmutableExt.AsImmutable(Of Logger)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.Logger)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Runtime.LoggerExtensions.GetSubLogger(Orleans.Runtime.Logger,System.String,System.String)
+  commentId: M:Orleans.Runtime.LoggerExtensions.GetSubLogger(Orleans.Runtime.Logger,System.String,System.String)
+  isExternal: true
+  name: GetSubLogger(Logger, String, String)
+  nameWithType: LoggerExtensions.GetSubLogger(Logger, String, String)
+  fullName: Orleans.Runtime.LoggerExtensions.GetSubLogger(Orleans.Runtime.Logger, System.String, System.String)
+  spec.csharp:
+  - uid: Orleans.Runtime.LoggerExtensions.GetSubLogger(Orleans.Runtime.Logger,System.String,System.String)
+    name: GetSubLogger
+    nameWithType: LoggerExtensions.GetSubLogger
+    fullName: Orleans.Runtime.LoggerExtensions.GetSubLogger
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.Logger
+    name: Logger
+    nameWithType: Logger
+    fullName: Orleans.Runtime.Logger
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.LoggerExtensions.GetSubLogger(Orleans.Runtime.Logger,System.String,System.String)
+    name: GetSubLogger
+    nameWithType: LoggerExtensions.GetSubLogger
+    fullName: Orleans.Runtime.LoggerExtensions.GetSubLogger
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.Logger
+    name: Logger
+    nameWithType: Logger
+    fullName: Orleans.Runtime.Logger
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.LoggerExtensions
+  commentId: T:Orleans.Runtime.LoggerExtensions
+  parent: Orleans.Runtime
+  isExternal: false
+  name: LoggerExtensions
+  nameWithType: LoggerExtensions
+  fullName: Orleans.Runtime.LoggerExtensions
+- uid: Orleans.Runtime.LoggerExtensions.Verbose(Orleans.Runtime.Logger,System.String,System.Object[])
+  commentId: M:Orleans.Runtime.LoggerExtensions.Verbose(Orleans.Runtime.Logger,System.String,System.Object[])
+  isExternal: true
+  name: Verbose(Logger, String, Object[])
+  nameWithType: LoggerExtensions.Verbose(Logger, String, Object[])
+  fullName: Orleans.Runtime.LoggerExtensions.Verbose(Orleans.Runtime.Logger, System.String, System.Object[])
+  nameWithType.vb: LoggerExtensions.Verbose(Logger, String, Object())
+  fullName.vb: Orleans.Runtime.LoggerExtensions.Verbose(Orleans.Runtime.Logger, System.String, System.Object())
+  name.vb: Verbose(Logger, String, Object())
+  spec.csharp:
+  - uid: Orleans.Runtime.LoggerExtensions.Verbose(Orleans.Runtime.Logger,System.String,System.Object[])
+    name: Verbose
+    nameWithType: LoggerExtensions.Verbose
+    fullName: Orleans.Runtime.LoggerExtensions.Verbose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.Logger
+    name: Logger
+    nameWithType: Logger
+    fullName: Orleans.Runtime.Logger
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.LoggerExtensions.Verbose(Orleans.Runtime.Logger,System.String,System.Object[])
+    name: Verbose
+    nameWithType: LoggerExtensions.Verbose
+    fullName: Orleans.Runtime.LoggerExtensions.Verbose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.Logger
+    name: Logger
+    nameWithType: Logger
+    fullName: Orleans.Runtime.Logger
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.LoggerExtensions.Verbose(Orleans.Runtime.Logger,System.String)
+  commentId: M:Orleans.Runtime.LoggerExtensions.Verbose(Orleans.Runtime.Logger,System.String)
+  isExternal: true
+  name: Verbose(Logger, String)
+  nameWithType: LoggerExtensions.Verbose(Logger, String)
+  fullName: Orleans.Runtime.LoggerExtensions.Verbose(Orleans.Runtime.Logger, System.String)
+  spec.csharp:
+  - uid: Orleans.Runtime.LoggerExtensions.Verbose(Orleans.Runtime.Logger,System.String)
+    name: Verbose
+    nameWithType: LoggerExtensions.Verbose
+    fullName: Orleans.Runtime.LoggerExtensions.Verbose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.Logger
+    name: Logger
+    nameWithType: Logger
+    fullName: Orleans.Runtime.Logger
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.LoggerExtensions.Verbose(Orleans.Runtime.Logger,System.String)
+    name: Verbose
+    nameWithType: LoggerExtensions.Verbose
+    fullName: Orleans.Runtime.LoggerExtensions.Verbose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.Logger
+    name: Logger
+    nameWithType: Logger
+    fullName: Orleans.Runtime.Logger
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.LoggerExtensions.Verbose2(Orleans.Runtime.Logger,System.String,System.Object[])
+  commentId: M:Orleans.Runtime.LoggerExtensions.Verbose2(Orleans.Runtime.Logger,System.String,System.Object[])
+  isExternal: true
+  name: Verbose2(Logger, String, Object[])
+  nameWithType: LoggerExtensions.Verbose2(Logger, String, Object[])
+  fullName: Orleans.Runtime.LoggerExtensions.Verbose2(Orleans.Runtime.Logger, System.String, System.Object[])
+  nameWithType.vb: LoggerExtensions.Verbose2(Logger, String, Object())
+  fullName.vb: Orleans.Runtime.LoggerExtensions.Verbose2(Orleans.Runtime.Logger, System.String, System.Object())
+  name.vb: Verbose2(Logger, String, Object())
+  spec.csharp:
+  - uid: Orleans.Runtime.LoggerExtensions.Verbose2(Orleans.Runtime.Logger,System.String,System.Object[])
+    name: Verbose2
+    nameWithType: LoggerExtensions.Verbose2
+    fullName: Orleans.Runtime.LoggerExtensions.Verbose2
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.Logger
+    name: Logger
+    nameWithType: Logger
+    fullName: Orleans.Runtime.Logger
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.LoggerExtensions.Verbose2(Orleans.Runtime.Logger,System.String,System.Object[])
+    name: Verbose2
+    nameWithType: LoggerExtensions.Verbose2
+    fullName: Orleans.Runtime.LoggerExtensions.Verbose2
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.Logger
+    name: Logger
+    nameWithType: Logger
+    fullName: Orleans.Runtime.Logger
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.LoggerExtensions.Verbose2(Orleans.Runtime.Logger,System.String)
+  commentId: M:Orleans.Runtime.LoggerExtensions.Verbose2(Orleans.Runtime.Logger,System.String)
+  isExternal: true
+  name: Verbose2(Logger, String)
+  nameWithType: LoggerExtensions.Verbose2(Logger, String)
+  fullName: Orleans.Runtime.LoggerExtensions.Verbose2(Orleans.Runtime.Logger, System.String)
+  spec.csharp:
+  - uid: Orleans.Runtime.LoggerExtensions.Verbose2(Orleans.Runtime.Logger,System.String)
+    name: Verbose2
+    nameWithType: LoggerExtensions.Verbose2
+    fullName: Orleans.Runtime.LoggerExtensions.Verbose2
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.Logger
+    name: Logger
+    nameWithType: Logger
+    fullName: Orleans.Runtime.Logger
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.LoggerExtensions.Verbose2(Orleans.Runtime.Logger,System.String)
+    name: Verbose2
+    nameWithType: LoggerExtensions.Verbose2
+    fullName: Orleans.Runtime.LoggerExtensions.Verbose2
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.Logger
+    name: Logger
+    nameWithType: Logger
+    fullName: Orleans.Runtime.Logger
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.LoggerExtensions.Verbose3(Orleans.Runtime.Logger,System.String,System.Object[])
+  commentId: M:Orleans.Runtime.LoggerExtensions.Verbose3(Orleans.Runtime.Logger,System.String,System.Object[])
+  isExternal: true
+  name: Verbose3(Logger, String, Object[])
+  nameWithType: LoggerExtensions.Verbose3(Logger, String, Object[])
+  fullName: Orleans.Runtime.LoggerExtensions.Verbose3(Orleans.Runtime.Logger, System.String, System.Object[])
+  nameWithType.vb: LoggerExtensions.Verbose3(Logger, String, Object())
+  fullName.vb: Orleans.Runtime.LoggerExtensions.Verbose3(Orleans.Runtime.Logger, System.String, System.Object())
+  name.vb: Verbose3(Logger, String, Object())
+  spec.csharp:
+  - uid: Orleans.Runtime.LoggerExtensions.Verbose3(Orleans.Runtime.Logger,System.String,System.Object[])
+    name: Verbose3
+    nameWithType: LoggerExtensions.Verbose3
+    fullName: Orleans.Runtime.LoggerExtensions.Verbose3
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.Logger
+    name: Logger
+    nameWithType: Logger
+    fullName: Orleans.Runtime.Logger
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.LoggerExtensions.Verbose3(Orleans.Runtime.Logger,System.String,System.Object[])
+    name: Verbose3
+    nameWithType: LoggerExtensions.Verbose3
+    fullName: Orleans.Runtime.LoggerExtensions.Verbose3
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.Logger
+    name: Logger
+    nameWithType: Logger
+    fullName: Orleans.Runtime.Logger
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.LoggerExtensions.Verbose3(Orleans.Runtime.Logger,System.String)
+  commentId: M:Orleans.Runtime.LoggerExtensions.Verbose3(Orleans.Runtime.Logger,System.String)
+  isExternal: true
+  name: Verbose3(Logger, String)
+  nameWithType: LoggerExtensions.Verbose3(Logger, String)
+  fullName: Orleans.Runtime.LoggerExtensions.Verbose3(Orleans.Runtime.Logger, System.String)
+  spec.csharp:
+  - uid: Orleans.Runtime.LoggerExtensions.Verbose3(Orleans.Runtime.Logger,System.String)
+    name: Verbose3
+    nameWithType: LoggerExtensions.Verbose3
+    fullName: Orleans.Runtime.LoggerExtensions.Verbose3
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.Logger
+    name: Logger
+    nameWithType: Logger
+    fullName: Orleans.Runtime.Logger
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.LoggerExtensions.Verbose3(Orleans.Runtime.Logger,System.String)
+    name: Verbose3
+    nameWithType: LoggerExtensions.Verbose3
+    fullName: Orleans.Runtime.LoggerExtensions.Verbose3
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.Logger
+    name: Logger
+    nameWithType: Logger
+    fullName: Orleans.Runtime.Logger
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.LoggerExtensions.Info(Orleans.Runtime.Logger,System.String,System.Object[])
+  commentId: M:Orleans.Runtime.LoggerExtensions.Info(Orleans.Runtime.Logger,System.String,System.Object[])
+  isExternal: true
+  name: Info(Logger, String, Object[])
+  nameWithType: LoggerExtensions.Info(Logger, String, Object[])
+  fullName: Orleans.Runtime.LoggerExtensions.Info(Orleans.Runtime.Logger, System.String, System.Object[])
+  nameWithType.vb: LoggerExtensions.Info(Logger, String, Object())
+  fullName.vb: Orleans.Runtime.LoggerExtensions.Info(Orleans.Runtime.Logger, System.String, System.Object())
+  name.vb: Info(Logger, String, Object())
+  spec.csharp:
+  - uid: Orleans.Runtime.LoggerExtensions.Info(Orleans.Runtime.Logger,System.String,System.Object[])
+    name: Info
+    nameWithType: LoggerExtensions.Info
+    fullName: Orleans.Runtime.LoggerExtensions.Info
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.Logger
+    name: Logger
+    nameWithType: Logger
+    fullName: Orleans.Runtime.Logger
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.LoggerExtensions.Info(Orleans.Runtime.Logger,System.String,System.Object[])
+    name: Info
+    nameWithType: LoggerExtensions.Info
+    fullName: Orleans.Runtime.LoggerExtensions.Info
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.Logger
+    name: Logger
+    nameWithType: Logger
+    fullName: Orleans.Runtime.Logger
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.LoggerExtensions.Info(Orleans.Runtime.Logger,System.String)
+  commentId: M:Orleans.Runtime.LoggerExtensions.Info(Orleans.Runtime.Logger,System.String)
+  isExternal: true
+  name: Info(Logger, String)
+  nameWithType: LoggerExtensions.Info(Logger, String)
+  fullName: Orleans.Runtime.LoggerExtensions.Info(Orleans.Runtime.Logger, System.String)
+  spec.csharp:
+  - uid: Orleans.Runtime.LoggerExtensions.Info(Orleans.Runtime.Logger,System.String)
+    name: Info
+    nameWithType: LoggerExtensions.Info
+    fullName: Orleans.Runtime.LoggerExtensions.Info
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.Logger
+    name: Logger
+    nameWithType: Logger
+    fullName: Orleans.Runtime.Logger
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.LoggerExtensions.Info(Orleans.Runtime.Logger,System.String)
+    name: Info
+    nameWithType: LoggerExtensions.Info
+    fullName: Orleans.Runtime.LoggerExtensions.Info
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.Logger
+    name: Logger
+    nameWithType: Logger
+    fullName: Orleans.Runtime.Logger
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.LoggerExtensions.Verbose(Orleans.Runtime.Logger,System.Int32,System.String,System.Object[])
+  commentId: M:Orleans.Runtime.LoggerExtensions.Verbose(Orleans.Runtime.Logger,System.Int32,System.String,System.Object[])
+  isExternal: true
+  name: Verbose(Logger, Int32, String, Object[])
+  nameWithType: LoggerExtensions.Verbose(Logger, Int32, String, Object[])
+  fullName: Orleans.Runtime.LoggerExtensions.Verbose(Orleans.Runtime.Logger, System.Int32, System.String, System.Object[])
+  nameWithType.vb: LoggerExtensions.Verbose(Logger, Int32, String, Object())
+  fullName.vb: Orleans.Runtime.LoggerExtensions.Verbose(Orleans.Runtime.Logger, System.Int32, System.String, System.Object())
+  name.vb: Verbose(Logger, Int32, String, Object())
+  spec.csharp:
+  - uid: Orleans.Runtime.LoggerExtensions.Verbose(Orleans.Runtime.Logger,System.Int32,System.String,System.Object[])
+    name: Verbose
+    nameWithType: LoggerExtensions.Verbose
+    fullName: Orleans.Runtime.LoggerExtensions.Verbose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.Logger
+    name: Logger
+    nameWithType: Logger
+    fullName: Orleans.Runtime.Logger
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.LoggerExtensions.Verbose(Orleans.Runtime.Logger,System.Int32,System.String,System.Object[])
+    name: Verbose
+    nameWithType: LoggerExtensions.Verbose
+    fullName: Orleans.Runtime.LoggerExtensions.Verbose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.Logger
+    name: Logger
+    nameWithType: Logger
+    fullName: Orleans.Runtime.Logger
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.LoggerExtensions.Verbose(Orleans.Runtime.Logger,System.Int32,System.String)
+  commentId: M:Orleans.Runtime.LoggerExtensions.Verbose(Orleans.Runtime.Logger,System.Int32,System.String)
+  isExternal: true
+  name: Verbose(Logger, Int32, String)
+  nameWithType: LoggerExtensions.Verbose(Logger, Int32, String)
+  fullName: Orleans.Runtime.LoggerExtensions.Verbose(Orleans.Runtime.Logger, System.Int32, System.String)
+  spec.csharp:
+  - uid: Orleans.Runtime.LoggerExtensions.Verbose(Orleans.Runtime.Logger,System.Int32,System.String)
+    name: Verbose
+    nameWithType: LoggerExtensions.Verbose
+    fullName: Orleans.Runtime.LoggerExtensions.Verbose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.Logger
+    name: Logger
+    nameWithType: Logger
+    fullName: Orleans.Runtime.Logger
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.LoggerExtensions.Verbose(Orleans.Runtime.Logger,System.Int32,System.String)
+    name: Verbose
+    nameWithType: LoggerExtensions.Verbose
+    fullName: Orleans.Runtime.LoggerExtensions.Verbose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.Logger
+    name: Logger
+    nameWithType: Logger
+    fullName: Orleans.Runtime.Logger
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.LoggerExtensions.Verbose2(Orleans.Runtime.Logger,System.Int32,System.String,System.Object[])
+  commentId: M:Orleans.Runtime.LoggerExtensions.Verbose2(Orleans.Runtime.Logger,System.Int32,System.String,System.Object[])
+  isExternal: true
+  name: Verbose2(Logger, Int32, String, Object[])
+  nameWithType: LoggerExtensions.Verbose2(Logger, Int32, String, Object[])
+  fullName: Orleans.Runtime.LoggerExtensions.Verbose2(Orleans.Runtime.Logger, System.Int32, System.String, System.Object[])
+  nameWithType.vb: LoggerExtensions.Verbose2(Logger, Int32, String, Object())
+  fullName.vb: Orleans.Runtime.LoggerExtensions.Verbose2(Orleans.Runtime.Logger, System.Int32, System.String, System.Object())
+  name.vb: Verbose2(Logger, Int32, String, Object())
+  spec.csharp:
+  - uid: Orleans.Runtime.LoggerExtensions.Verbose2(Orleans.Runtime.Logger,System.Int32,System.String,System.Object[])
+    name: Verbose2
+    nameWithType: LoggerExtensions.Verbose2
+    fullName: Orleans.Runtime.LoggerExtensions.Verbose2
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.Logger
+    name: Logger
+    nameWithType: Logger
+    fullName: Orleans.Runtime.Logger
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.LoggerExtensions.Verbose2(Orleans.Runtime.Logger,System.Int32,System.String,System.Object[])
+    name: Verbose2
+    nameWithType: LoggerExtensions.Verbose2
+    fullName: Orleans.Runtime.LoggerExtensions.Verbose2
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.Logger
+    name: Logger
+    nameWithType: Logger
+    fullName: Orleans.Runtime.Logger
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.LoggerExtensions.Verbose2(Orleans.Runtime.Logger,System.Int32,System.String)
+  commentId: M:Orleans.Runtime.LoggerExtensions.Verbose2(Orleans.Runtime.Logger,System.Int32,System.String)
+  isExternal: true
+  name: Verbose2(Logger, Int32, String)
+  nameWithType: LoggerExtensions.Verbose2(Logger, Int32, String)
+  fullName: Orleans.Runtime.LoggerExtensions.Verbose2(Orleans.Runtime.Logger, System.Int32, System.String)
+  spec.csharp:
+  - uid: Orleans.Runtime.LoggerExtensions.Verbose2(Orleans.Runtime.Logger,System.Int32,System.String)
+    name: Verbose2
+    nameWithType: LoggerExtensions.Verbose2
+    fullName: Orleans.Runtime.LoggerExtensions.Verbose2
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.Logger
+    name: Logger
+    nameWithType: Logger
+    fullName: Orleans.Runtime.Logger
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.LoggerExtensions.Verbose2(Orleans.Runtime.Logger,System.Int32,System.String)
+    name: Verbose2
+    nameWithType: LoggerExtensions.Verbose2
+    fullName: Orleans.Runtime.LoggerExtensions.Verbose2
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.Logger
+    name: Logger
+    nameWithType: Logger
+    fullName: Orleans.Runtime.Logger
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.LoggerExtensions.Verbose3(Orleans.Runtime.Logger,System.Int32,System.String,System.Object[])
+  commentId: M:Orleans.Runtime.LoggerExtensions.Verbose3(Orleans.Runtime.Logger,System.Int32,System.String,System.Object[])
+  isExternal: true
+  name: Verbose3(Logger, Int32, String, Object[])
+  nameWithType: LoggerExtensions.Verbose3(Logger, Int32, String, Object[])
+  fullName: Orleans.Runtime.LoggerExtensions.Verbose3(Orleans.Runtime.Logger, System.Int32, System.String, System.Object[])
+  nameWithType.vb: LoggerExtensions.Verbose3(Logger, Int32, String, Object())
+  fullName.vb: Orleans.Runtime.LoggerExtensions.Verbose3(Orleans.Runtime.Logger, System.Int32, System.String, System.Object())
+  name.vb: Verbose3(Logger, Int32, String, Object())
+  spec.csharp:
+  - uid: Orleans.Runtime.LoggerExtensions.Verbose3(Orleans.Runtime.Logger,System.Int32,System.String,System.Object[])
+    name: Verbose3
+    nameWithType: LoggerExtensions.Verbose3
+    fullName: Orleans.Runtime.LoggerExtensions.Verbose3
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.Logger
+    name: Logger
+    nameWithType: Logger
+    fullName: Orleans.Runtime.Logger
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.LoggerExtensions.Verbose3(Orleans.Runtime.Logger,System.Int32,System.String,System.Object[])
+    name: Verbose3
+    nameWithType: LoggerExtensions.Verbose3
+    fullName: Orleans.Runtime.LoggerExtensions.Verbose3
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.Logger
+    name: Logger
+    nameWithType: Logger
+    fullName: Orleans.Runtime.Logger
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.LoggerExtensions.Verbose3(Orleans.Runtime.Logger,System.Int32,System.String)
+  commentId: M:Orleans.Runtime.LoggerExtensions.Verbose3(Orleans.Runtime.Logger,System.Int32,System.String)
+  isExternal: true
+  name: Verbose3(Logger, Int32, String)
+  nameWithType: LoggerExtensions.Verbose3(Logger, Int32, String)
+  fullName: Orleans.Runtime.LoggerExtensions.Verbose3(Orleans.Runtime.Logger, System.Int32, System.String)
+  spec.csharp:
+  - uid: Orleans.Runtime.LoggerExtensions.Verbose3(Orleans.Runtime.Logger,System.Int32,System.String)
+    name: Verbose3
+    nameWithType: LoggerExtensions.Verbose3
+    fullName: Orleans.Runtime.LoggerExtensions.Verbose3
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.Logger
+    name: Logger
+    nameWithType: Logger
+    fullName: Orleans.Runtime.Logger
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.LoggerExtensions.Verbose3(Orleans.Runtime.Logger,System.Int32,System.String)
+    name: Verbose3
+    nameWithType: LoggerExtensions.Verbose3
+    fullName: Orleans.Runtime.LoggerExtensions.Verbose3
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.Logger
+    name: Logger
+    nameWithType: Logger
+    fullName: Orleans.Runtime.Logger
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.LoggerExtensions.Info(Orleans.Runtime.Logger,System.Int32,System.String,System.Object[])
+  commentId: M:Orleans.Runtime.LoggerExtensions.Info(Orleans.Runtime.Logger,System.Int32,System.String,System.Object[])
+  isExternal: true
+  name: Info(Logger, Int32, String, Object[])
+  nameWithType: LoggerExtensions.Info(Logger, Int32, String, Object[])
+  fullName: Orleans.Runtime.LoggerExtensions.Info(Orleans.Runtime.Logger, System.Int32, System.String, System.Object[])
+  nameWithType.vb: LoggerExtensions.Info(Logger, Int32, String, Object())
+  fullName.vb: Orleans.Runtime.LoggerExtensions.Info(Orleans.Runtime.Logger, System.Int32, System.String, System.Object())
+  name.vb: Info(Logger, Int32, String, Object())
+  spec.csharp:
+  - uid: Orleans.Runtime.LoggerExtensions.Info(Orleans.Runtime.Logger,System.Int32,System.String,System.Object[])
+    name: Info
+    nameWithType: LoggerExtensions.Info
+    fullName: Orleans.Runtime.LoggerExtensions.Info
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.Logger
+    name: Logger
+    nameWithType: Logger
+    fullName: Orleans.Runtime.Logger
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.LoggerExtensions.Info(Orleans.Runtime.Logger,System.Int32,System.String,System.Object[])
+    name: Info
+    nameWithType: LoggerExtensions.Info
+    fullName: Orleans.Runtime.LoggerExtensions.Info
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.Logger
+    name: Logger
+    nameWithType: Logger
+    fullName: Orleans.Runtime.Logger
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.LoggerExtensions.Info(Orleans.Runtime.Logger,System.Int32,System.String)
+  commentId: M:Orleans.Runtime.LoggerExtensions.Info(Orleans.Runtime.Logger,System.Int32,System.String)
+  isExternal: true
+  name: Info(Logger, Int32, String)
+  nameWithType: LoggerExtensions.Info(Logger, Int32, String)
+  fullName: Orleans.Runtime.LoggerExtensions.Info(Orleans.Runtime.Logger, System.Int32, System.String)
+  spec.csharp:
+  - uid: Orleans.Runtime.LoggerExtensions.Info(Orleans.Runtime.Logger,System.Int32,System.String)
+    name: Info
+    nameWithType: LoggerExtensions.Info
+    fullName: Orleans.Runtime.LoggerExtensions.Info
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.Logger
+    name: Logger
+    nameWithType: Logger
+    fullName: Orleans.Runtime.Logger
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.LoggerExtensions.Info(Orleans.Runtime.Logger,System.Int32,System.String)
+    name: Info
+    nameWithType: LoggerExtensions.Info
+    fullName: Orleans.Runtime.LoggerExtensions.Info
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.Logger
+    name: Logger
+    nameWithType: Logger
+    fullName: Orleans.Runtime.Logger
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.LoggerExtensions.Warn(Orleans.Runtime.Logger,System.Int32,System.String,System.Object[])
+  commentId: M:Orleans.Runtime.LoggerExtensions.Warn(Orleans.Runtime.Logger,System.Int32,System.String,System.Object[])
+  isExternal: true
+  name: Warn(Logger, Int32, String, Object[])
+  nameWithType: LoggerExtensions.Warn(Logger, Int32, String, Object[])
+  fullName: Orleans.Runtime.LoggerExtensions.Warn(Orleans.Runtime.Logger, System.Int32, System.String, System.Object[])
+  nameWithType.vb: LoggerExtensions.Warn(Logger, Int32, String, Object())
+  fullName.vb: Orleans.Runtime.LoggerExtensions.Warn(Orleans.Runtime.Logger, System.Int32, System.String, System.Object())
+  name.vb: Warn(Logger, Int32, String, Object())
+  spec.csharp:
+  - uid: Orleans.Runtime.LoggerExtensions.Warn(Orleans.Runtime.Logger,System.Int32,System.String,System.Object[])
+    name: Warn
+    nameWithType: LoggerExtensions.Warn
+    fullName: Orleans.Runtime.LoggerExtensions.Warn
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.Logger
+    name: Logger
+    nameWithType: Logger
+    fullName: Orleans.Runtime.Logger
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.LoggerExtensions.Warn(Orleans.Runtime.Logger,System.Int32,System.String,System.Object[])
+    name: Warn
+    nameWithType: LoggerExtensions.Warn
+    fullName: Orleans.Runtime.LoggerExtensions.Warn
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.Logger
+    name: Logger
+    nameWithType: Logger
+    fullName: Orleans.Runtime.Logger
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.LoggerExtensions.Warn(Orleans.Runtime.Logger,System.Int32,System.String,Exception)
+  commentId: M:Orleans.Runtime.LoggerExtensions.Warn(Orleans.Runtime.Logger,System.Int32,System.String,Exception)
+  isExternal: true
+  name: Warn(Logger, Int32, String, Exception)
+  nameWithType: LoggerExtensions.Warn(Logger, Int32, String, Exception)
+  fullName: Orleans.Runtime.LoggerExtensions.Warn(Orleans.Runtime.Logger, System.Int32, System.String, Exception)
+  spec.csharp:
+  - uid: Orleans.Runtime.LoggerExtensions.Warn(Orleans.Runtime.Logger,System.Int32,System.String,Exception)
+    name: Warn
+    nameWithType: LoggerExtensions.Warn
+    fullName: Orleans.Runtime.LoggerExtensions.Warn
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.Logger
+    name: Logger
+    nameWithType: Logger
+    fullName: Orleans.Runtime.Logger
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.LoggerExtensions.Warn(Orleans.Runtime.Logger,System.Int32,System.String,Exception)
+    name: Warn
+    nameWithType: LoggerExtensions.Warn
+    fullName: Orleans.Runtime.LoggerExtensions.Warn
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.Logger
+    name: Logger
+    nameWithType: Logger
+    fullName: Orleans.Runtime.Logger
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.LoggerExtensions.Error(Orleans.Runtime.Logger,System.Int32,System.String,Exception)
+  commentId: M:Orleans.Runtime.LoggerExtensions.Error(Orleans.Runtime.Logger,System.Int32,System.String,Exception)
+  isExternal: true
+  name: Error(Logger, Int32, String, Exception)
+  nameWithType: LoggerExtensions.Error(Logger, Int32, String, Exception)
+  fullName: Orleans.Runtime.LoggerExtensions.Error(Orleans.Runtime.Logger, System.Int32, System.String, Exception)
+  spec.csharp:
+  - uid: Orleans.Runtime.LoggerExtensions.Error(Orleans.Runtime.Logger,System.Int32,System.String,Exception)
+    name: Error
+    nameWithType: LoggerExtensions.Error
+    fullName: Orleans.Runtime.LoggerExtensions.Error
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.Logger
+    name: Logger
+    nameWithType: Logger
+    fullName: Orleans.Runtime.Logger
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Runtime.LoggerExtensions.Error(Orleans.Runtime.Logger,System.Int32,System.String,Exception)
+    name: Error
+    nameWithType: LoggerExtensions.Error
+    fullName: Orleans.Runtime.LoggerExtensions.Error
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Runtime.Logger
+    name: Logger
+    nameWithType: Logger
+    fullName: Orleans.Runtime.Logger
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Runtime.Logger.SeverityLevel*
+  commentId: Overload:Orleans.Runtime.Logger.SeverityLevel
+  isExternal: false
+  name: SeverityLevel
+  nameWithType: Logger.SeverityLevel
+  fullName: Orleans.Runtime.Logger.SeverityLevel
+- uid: Orleans.Runtime.Severity
+  commentId: T:Orleans.Runtime.Severity
+  parent: Orleans.Runtime
+  isExternal: false
+  name: Severity
+  nameWithType: Severity
+  fullName: Orleans.Runtime.Severity
+- uid: Orleans.Runtime.Logger.Name*
+  commentId: Overload:Orleans.Runtime.Logger.Name
+  isExternal: false
+  name: Name
+  nameWithType: Logger.Name
+  fullName: Orleans.Runtime.Logger.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Orleans.Runtime.Logger.GetLogger*
+  commentId: Overload:Orleans.Runtime.Logger.GetLogger
+  isExternal: false
+  name: GetLogger
+  nameWithType: Logger.GetLogger
+  fullName: Orleans.Runtime.Logger.GetLogger
+- uid: Orleans.Runtime.Logger
+  commentId: T:Orleans.Runtime.Logger
+  parent: Orleans.Runtime
+  isExternal: false
+  name: Logger
+  nameWithType: Logger
+  fullName: Orleans.Runtime.Logger
+- uid: Orleans.Runtime.Logger.Log*
+  commentId: Overload:Orleans.Runtime.Logger.Log
+  isExternal: false
+  name: Log
+  nameWithType: Logger.Log
+  fullName: Orleans.Runtime.Logger.Log
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Object[]
+  name: Object[]
+  nameWithType: Object[]
+  fullName: System.Object[]
+  nameWithType.vb: Object()
+  fullName.vb: System.Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Exception
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: Exception
+- uid: Orleans.Runtime.Logger.IsWarning*
+  commentId: Overload:Orleans.Runtime.Logger.IsWarning
+  isExternal: false
+  name: IsWarning
+  nameWithType: Logger.IsWarning
+  fullName: Orleans.Runtime.Logger.IsWarning
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Orleans.Runtime.Logger.IsInfo*
+  commentId: Overload:Orleans.Runtime.Logger.IsInfo
+  isExternal: false
+  name: IsInfo
+  nameWithType: Logger.IsInfo
+  fullName: Orleans.Runtime.Logger.IsInfo
+- uid: Orleans.Runtime.Logger.IsVerbose*
+  commentId: Overload:Orleans.Runtime.Logger.IsVerbose
+  isExternal: false
+  name: IsVerbose
+  nameWithType: Logger.IsVerbose
+  fullName: Orleans.Runtime.Logger.IsVerbose
+- uid: Orleans.Runtime.Logger.IsVerbose2*
+  commentId: Overload:Orleans.Runtime.Logger.IsVerbose2
+  isExternal: false
+  name: IsVerbose2
+  nameWithType: Logger.IsVerbose2
+  fullName: Orleans.Runtime.Logger.IsVerbose2
+- uid: Orleans.Runtime.Logger.IsVerbose3*
+  commentId: Overload:Orleans.Runtime.Logger.IsVerbose3
+  isExternal: false
+  name: IsVerbose3
+  nameWithType: Logger.IsVerbose3
+  fullName: Orleans.Runtime.Logger.IsVerbose3

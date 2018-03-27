@@ -1,0 +1,62 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Versions.Compatibility
+  commentId: N:Orleans.Versions.Compatibility
+  id: Orleans.Versions.Compatibility
+  children:
+  - Orleans.Versions.Compatibility.AllVersionsCompatible
+  - Orleans.Versions.Compatibility.BackwardCompatible
+  - Orleans.Versions.Compatibility.CompatibilityStrategy
+  - Orleans.Versions.Compatibility.ICompatibilityDirector
+  - Orleans.Versions.Compatibility.StrictVersionCompatible
+  langs:
+  - csharp
+  - vb
+  name: Orleans.Versions.Compatibility
+  nameWithType: Orleans.Versions.Compatibility
+  fullName: Orleans.Versions.Compatibility
+  type: Namespace
+  assemblies:
+  - Orleans.Core.Abstractions
+references:
+- uid: Orleans.Versions.Compatibility.AllVersionsCompatible
+  commentId: T:Orleans.Versions.Compatibility.AllVersionsCompatible
+  parent: Orleans.Versions.Compatibility
+  isExternal: false
+  name: AllVersionsCompatible
+  nameWithType: AllVersionsCompatible
+  fullName: Orleans.Versions.Compatibility.AllVersionsCompatible
+- uid: Orleans.Versions.Compatibility.BackwardCompatible
+  commentId: T:Orleans.Versions.Compatibility.BackwardCompatible
+  parent: Orleans.Versions.Compatibility
+  isExternal: false
+  name: BackwardCompatible
+  nameWithType: BackwardCompatible
+  fullName: Orleans.Versions.Compatibility.BackwardCompatible
+- uid: Orleans.Versions.Compatibility.ICompatibilityDirector
+  commentId: T:Orleans.Versions.Compatibility.ICompatibilityDirector
+  parent: Orleans.Versions.Compatibility
+  isExternal: false
+  name: ICompatibilityDirector
+  nameWithType: ICompatibilityDirector
+  fullName: Orleans.Versions.Compatibility.ICompatibilityDirector
+- uid: Orleans.Versions.Compatibility.CompatibilityStrategy
+  commentId: T:Orleans.Versions.Compatibility.CompatibilityStrategy
+  parent: Orleans.Versions.Compatibility
+  isExternal: false
+  name: CompatibilityStrategy
+  nameWithType: CompatibilityStrategy
+  fullName: Orleans.Versions.Compatibility.CompatibilityStrategy
+- uid: Orleans.Versions.Compatibility.StrictVersionCompatible
+  commentId: T:Orleans.Versions.Compatibility.StrictVersionCompatible
+  parent: Orleans.Versions.Compatibility
+  isExternal: false
+  name: StrictVersionCompatible
+  nameWithType: StrictVersionCompatible
+  fullName: Orleans.Versions.Compatibility.StrictVersionCompatible
+- uid: Orleans.Versions.Compatibility
+  commentId: N:Orleans.Versions.Compatibility
+  isExternal: false
+  name: Orleans.Versions.Compatibility
+  nameWithType: Orleans.Versions.Compatibility
+  fullName: Orleans.Versions.Compatibility

@@ -1,0 +1,319 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Timers.ITimerRegistry
+  commentId: T:Orleans.Timers.ITimerRegistry
+  id: ITimerRegistry
+  parent: Orleans.Timers
+  children:
+  - Orleans.Timers.ITimerRegistry.RegisterTimer(Orleans.Grain,Func{System.Object,Task},System.Object,TimeSpan,TimeSpan)
+  langs:
+  - csharp
+  - vb
+  name: ITimerRegistry
+  nameWithType: ITimerRegistry
+  fullName: Orleans.Timers.ITimerRegistry
+  type: Interface
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Timers/ITimerRegistry.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ITimerRegistry
+    path: src/Orleans.Core.Abstractions/Timers/ITimerRegistry.cs
+    startLine: 5
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Timers
+  syntax:
+    content: public interface ITimerRegistry
+    content.vb: Public Interface ITimerRegistry
+  extensionMethods:
+  - Orleans.Timers.ITimerRegistry.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Orleans.Timers.ITimerRegistry.RegisterTimer(Orleans.Grain,Func{System.Object,Task},System.Object,TimeSpan,TimeSpan)
+  commentId: M:Orleans.Timers.ITimerRegistry.RegisterTimer(Orleans.Grain,Func{System.Object,Task},System.Object,TimeSpan,TimeSpan)
+  id: RegisterTimer(Orleans.Grain,Func{System.Object,Task},System.Object,TimeSpan,TimeSpan)
+  parent: Orleans.Timers.ITimerRegistry
+  langs:
+  - csharp
+  - vb
+  name: RegisterTimer(Grain, Func<Object, Task>, Object, TimeSpan, TimeSpan)
+  nameWithType: ITimerRegistry.RegisterTimer(Grain, Func<Object, Task>, Object, TimeSpan, TimeSpan)
+  fullName: Orleans.Timers.ITimerRegistry.RegisterTimer(Orleans.Grain, Func<System.Object, Task>, System.Object, TimeSpan, TimeSpan)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Timers/ITimerRegistry.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: RegisterTimer
+    path: src/Orleans.Core.Abstractions/Timers/ITimerRegistry.cs
+    startLine: 7
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Timers
+  syntax:
+    content: IDisposable RegisterTimer(Grain grain, Func<object, Task> asyncCallback, object state, TimeSpan dueTime, TimeSpan period)
+    parameters:
+    - id: grain
+      type: Orleans.Grain
+    - id: asyncCallback
+      type: Func{System.Object,Task}
+    - id: state
+      type: System.Object
+    - id: dueTime
+      type: TimeSpan
+    - id: period
+      type: TimeSpan
+    return:
+      type: IDisposable
+    content.vb: Function RegisterTimer(grain As Grain, asyncCallback As Func(Of Object, Task), state As Object, dueTime As TimeSpan, period As TimeSpan) As IDisposable
+  overload: Orleans.Timers.ITimerRegistry.RegisterTimer*
+  nameWithType.vb: ITimerRegistry.RegisterTimer(Grain, Func(Of Object, Task), Object, TimeSpan, TimeSpan)
+  fullName.vb: Orleans.Timers.ITimerRegistry.RegisterTimer(Orleans.Grain, Func(Of System.Object, Task), System.Object, TimeSpan, TimeSpan)
+  name.vb: RegisterTimer(Grain, Func(Of Object, Task), Object, TimeSpan, TimeSpan)
+references:
+- uid: Orleans.Timers
+  commentId: N:Orleans.Timers
+  isExternal: false
+  name: Orleans.Timers
+  nameWithType: Orleans.Timers
+  fullName: Orleans.Timers
+- uid: Orleans.Timers.ITimerRegistry.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<ITimerRegistry>()
+  nameWithType: ImmutableExt.AsImmutable<ITimerRegistry>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Timers.ITimerRegistry>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of ITimerRegistry)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Timers.ITimerRegistry)()
+  name.vb: AsImmutable(Of ITimerRegistry)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<ITimerRegistry>
+    nameWithType: ImmutableExt.AsImmutable<ITimerRegistry>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Timers.ITimerRegistry>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of ITimerRegistry)
+    nameWithType: ImmutableExt.AsImmutable(Of ITimerRegistry)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Timers.ITimerRegistry)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Timers.ITimerRegistry.RegisterTimer*
+  commentId: Overload:Orleans.Timers.ITimerRegistry.RegisterTimer
+  isExternal: false
+  name: RegisterTimer
+  nameWithType: ITimerRegistry.RegisterTimer
+  fullName: Orleans.Timers.ITimerRegistry.RegisterTimer
+- uid: Orleans.Grain
+  commentId: T:Orleans.Grain
+  parent: Orleans
+  isExternal: false
+  name: Grain
+  nameWithType: Grain
+  fullName: Orleans.Grain
+- uid: Func{System.Object,Task}
+  commentId: '!:Func{System.Object,Task}'
+  definition: Func`2
+  name: Func<Object, Task>
+  nameWithType: Func<Object, Task>
+  fullName: Func<System.Object, Task>
+  nameWithType.vb: Func(Of Object, Task)
+  fullName.vb: Func(Of System.Object, Task)
+  name.vb: Func(Of Object, Task)
+  spec.csharp:
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: TimeSpan
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: TimeSpan
+- uid: IDisposable
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: IDisposable
+- uid: Orleans
+  commentId: N:Orleans
+  isExternal: false
+  name: Orleans
+  nameWithType: Orleans
+  fullName: Orleans
+- uid: Func`2
+  isExternal: true
+  name: Func<, >
+  nameWithType: Func<, >
+  fullName: Func<, >
+  nameWithType.vb: Func(Of , )
+  fullName.vb: Func(Of , )
+  name.vb: Func(Of , )
+  spec.csharp:
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System

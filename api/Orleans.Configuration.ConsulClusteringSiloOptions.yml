@@ -1,0 +1,194 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Configuration.ConsulClusteringSiloOptions
+  commentId: T:Orleans.Configuration.ConsulClusteringSiloOptions
+  id: ConsulClusteringSiloOptions
+  parent: Orleans.Configuration
+  children:
+  - Orleans.Configuration.ConsulClusteringSiloOptions.Address
+  langs:
+  - csharp
+  - vb
+  name: ConsulClusteringSiloOptions
+  nameWithType: ConsulClusteringSiloOptions
+  fullName: Orleans.Configuration.ConsulClusteringSiloOptions
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Clustering.Consul/Options/ConsulClusteringSiloOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ConsulClusteringSiloOptions
+    path: src/Orleans.Clustering.Consul/Options/ConsulClusteringSiloOptions.cs
+    startLine: 9
+  assemblies:
+  - Orleans.Clustering.Consul
+  namespace: Orleans.Configuration
+  summary: "\nOptions for configuring ConsulBasedMembership\n"
+  example: []
+  syntax:
+    content: 'public class ConsulClusteringSiloOptions : object'
+    content.vb: >-
+      Public Class ConsulClusteringSiloOptions
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.Configuration.ConsulClusteringSiloOptions.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.Configuration.ConsulClusteringSiloOptions.Address
+  commentId: P:Orleans.Configuration.ConsulClusteringSiloOptions.Address
+  id: Address
+  parent: Orleans.Configuration.ConsulClusteringSiloOptions
+  langs:
+  - csharp
+  - vb
+  name: Address
+  nameWithType: ConsulClusteringSiloOptions.Address
+  fullName: Orleans.Configuration.ConsulClusteringSiloOptions.Address
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Clustering.Consul/Options/ConsulClusteringSiloOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Address
+    path: src/Orleans.Clustering.Consul/Options/ConsulClusteringSiloOptions.cs
+    startLine: 14
+  assemblies:
+  - Orleans.Clustering.Consul
+  namespace: Orleans.Configuration
+  summary: "\nAddress for consul client\n"
+  example: []
+  syntax:
+    content: public Uri Address { get; set; }
+    parameters: []
+    return:
+      type: Uri
+    content.vb: Public Property Address As Uri
+  overload: Orleans.Configuration.ConsulClusteringSiloOptions.Address*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans.Configuration
+  commentId: N:Orleans.Configuration
+  isExternal: false
+  name: Orleans.Configuration
+  nameWithType: Orleans.Configuration
+  fullName: Orleans.Configuration
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Configuration.ConsulClusteringSiloOptions.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<ConsulClusteringSiloOptions>()
+  nameWithType: ImmutableExt.AsImmutable<ConsulClusteringSiloOptions>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Configuration.ConsulClusteringSiloOptions>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of ConsulClusteringSiloOptions)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Configuration.ConsulClusteringSiloOptions)()
+  name.vb: AsImmutable(Of ConsulClusteringSiloOptions)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<ConsulClusteringSiloOptions>
+    nameWithType: ImmutableExt.AsImmutable<ConsulClusteringSiloOptions>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Configuration.ConsulClusteringSiloOptions>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of ConsulClusteringSiloOptions)
+    nameWithType: ImmutableExt.AsImmutable(Of ConsulClusteringSiloOptions)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Configuration.ConsulClusteringSiloOptions)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Configuration.ConsulClusteringSiloOptions.Address*
+  commentId: Overload:Orleans.Configuration.ConsulClusteringSiloOptions.Address
+  isExternal: false
+  name: Address
+  nameWithType: ConsulClusteringSiloOptions.Address
+  fullName: Orleans.Configuration.ConsulClusteringSiloOptions.Address
+- uid: Uri
+  isExternal: true
+  name: Uri
+  nameWithType: Uri
+  fullName: Uri

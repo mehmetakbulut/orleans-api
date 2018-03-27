@@ -1,0 +1,336 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Storage.SerializationChoice
+  commentId: T:Orleans.Storage.SerializationChoice
+  id: SerializationChoice
+  parent: Orleans.Storage
+  children:
+  - Orleans.Storage.SerializationChoice.#ctor(System.Boolean,Orleans.Storage.IStorageDeserializer,Orleans.Storage.IStorageSerializer)
+  - Orleans.Storage.SerializationChoice.Deserializer
+  - Orleans.Storage.SerializationChoice.PreferStreaming
+  - Orleans.Storage.SerializationChoice.Serializer
+  langs:
+  - csharp
+  - vb
+  name: SerializationChoice
+  nameWithType: SerializationChoice
+  fullName: Orleans.Storage.SerializationChoice
+  type: Struct
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/IStorageSerializationPicker.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SerializationChoice
+    path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/IStorageSerializationPicker.cs
+    startLine: 10
+  assemblies:
+  - Orleans.Persistence.AdoNet
+  namespace: Orleans.Storage
+  summary: "\nStruct contains choice on streaming, storage deserializer and storage serializer\n"
+  example: []
+  syntax:
+    content: public struct SerializationChoice
+    content.vb: Public Structure SerializationChoice
+  extensionMethods:
+  - Orleans.Storage.SerializationChoice.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: Orleans.Storage.SerializationChoice.PreferStreaming
+  commentId: P:Orleans.Storage.SerializationChoice.PreferStreaming
+  id: PreferStreaming
+  parent: Orleans.Storage.SerializationChoice
+  langs:
+  - csharp
+  - vb
+  name: PreferStreaming
+  nameWithType: SerializationChoice.PreferStreaming
+  fullName: Orleans.Storage.SerializationChoice.PreferStreaming
+  type: Property
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/IStorageSerializationPicker.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: PreferStreaming
+    path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/IStorageSerializationPicker.cs
+    startLine: 15
+  assemblies:
+  - Orleans.Persistence.AdoNet
+  namespace: Orleans.Storage
+  summary: "\n<em>TRUE</em> if streaming is preferred.\n"
+  example: []
+  syntax:
+    content: public bool PreferStreaming { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property PreferStreaming As Boolean
+  overload: Orleans.Storage.SerializationChoice.PreferStreaming*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Storage.SerializationChoice.Deserializer
+  commentId: P:Orleans.Storage.SerializationChoice.Deserializer
+  id: Deserializer
+  parent: Orleans.Storage.SerializationChoice
+  langs:
+  - csharp
+  - vb
+  name: Deserializer
+  nameWithType: SerializationChoice.Deserializer
+  fullName: Orleans.Storage.SerializationChoice.Deserializer
+  type: Property
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/IStorageSerializationPicker.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Deserializer
+    path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/IStorageSerializationPicker.cs
+    startLine: 20
+  assemblies:
+  - Orleans.Persistence.AdoNet
+  namespace: Orleans.Storage
+  summary: "\nThe <xref href=\"Orleans.Storage.IStorageDeserializer\" data-throw-if-not-resolved=\"false\"></xref> that should be used.\n"
+  example: []
+  syntax:
+    content: public IStorageDeserializer Deserializer { get; }
+    parameters: []
+    return:
+      type: Orleans.Storage.IStorageDeserializer
+    content.vb: Public ReadOnly Property Deserializer As IStorageDeserializer
+  overload: Orleans.Storage.SerializationChoice.Deserializer*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Storage.SerializationChoice.Serializer
+  commentId: P:Orleans.Storage.SerializationChoice.Serializer
+  id: Serializer
+  parent: Orleans.Storage.SerializationChoice
+  langs:
+  - csharp
+  - vb
+  name: Serializer
+  nameWithType: SerializationChoice.Serializer
+  fullName: Orleans.Storage.SerializationChoice.Serializer
+  type: Property
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/IStorageSerializationPicker.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Serializer
+    path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/IStorageSerializationPicker.cs
+    startLine: 25
+  assemblies:
+  - Orleans.Persistence.AdoNet
+  namespace: Orleans.Storage
+  summary: "\n/// The <xref href=\"Orleans.Storage.IStorageSerializer\" data-throw-if-not-resolved=\"false\"></xref> that should be used.\n"
+  example: []
+  syntax:
+    content: public IStorageSerializer Serializer { get; }
+    parameters: []
+    return:
+      type: Orleans.Storage.IStorageSerializer
+    content.vb: Public ReadOnly Property Serializer As IStorageSerializer
+  overload: Orleans.Storage.SerializationChoice.Serializer*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Storage.SerializationChoice.#ctor(System.Boolean,Orleans.Storage.IStorageDeserializer,Orleans.Storage.IStorageSerializer)
+  commentId: M:Orleans.Storage.SerializationChoice.#ctor(System.Boolean,Orleans.Storage.IStorageDeserializer,Orleans.Storage.IStorageSerializer)
+  id: '#ctor(System.Boolean,Orleans.Storage.IStorageDeserializer,Orleans.Storage.IStorageSerializer)'
+  parent: Orleans.Storage.SerializationChoice
+  langs:
+  - csharp
+  - vb
+  name: SerializationChoice(Boolean, IStorageDeserializer, IStorageSerializer)
+  nameWithType: SerializationChoice.SerializationChoice(Boolean, IStorageDeserializer, IStorageSerializer)
+  fullName: Orleans.Storage.SerializationChoice.SerializationChoice(System.Boolean, Orleans.Storage.IStorageDeserializer, Orleans.Storage.IStorageSerializer)
+  type: Constructor
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/IStorageSerializationPicker.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/IStorageSerializationPicker.cs
+    startLine: 35
+  assemblies:
+  - Orleans.Persistence.AdoNet
+  namespace: Orleans.Storage
+  summary: "\nImplements &quot;a tuple&quot; that encodes the desired (de)serialization choice and streaming preference.\n"
+  remarks: Note that only one, either <code data-dev-comment-type="paramref" class="paramref">deserializer</code> or <code data-dev-comment-type="paramref" class="paramref">serializer</code> can be defined, not both.
+  example: []
+  syntax:
+    content: public SerializationChoice(bool preferStreaming, IStorageDeserializer deserializer, IStorageSerializer serializer)
+    parameters:
+    - id: preferStreaming
+      type: System.Boolean
+      description: Is streaming to be preferred.
+    - id: deserializer
+      type: Orleans.Storage.IStorageDeserializer
+      description: The <xref href="Orleans.Storage.IStorageDeserializer" data-throw-if-not-resolved="false"></xref> used.
+    - id: serializer
+      type: Orleans.Storage.IStorageSerializer
+      description: <xref href="Orleans.Storage.IStorageSerializer" data-throw-if-not-resolved="false"></xref> used.
+    content.vb: Public Sub New(preferStreaming As Boolean, deserializer As IStorageDeserializer, serializer As IStorageSerializer)
+  overload: Orleans.Storage.SerializationChoice.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans.Storage
+  commentId: N:Orleans.Storage
+  isExternal: false
+  name: Orleans.Storage
+  nameWithType: Orleans.Storage
+  fullName: Orleans.Storage
+- uid: Orleans.Storage.SerializationChoice.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<SerializationChoice>()
+  nameWithType: ImmutableExt.AsImmutable<SerializationChoice>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Storage.SerializationChoice>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of SerializationChoice)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Storage.SerializationChoice)()
+  name.vb: AsImmutable(Of SerializationChoice)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<SerializationChoice>
+    nameWithType: ImmutableExt.AsImmutable<SerializationChoice>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Storage.SerializationChoice>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of SerializationChoice)
+    nameWithType: ImmutableExt.AsImmutable(Of SerializationChoice)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Storage.SerializationChoice)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Storage.SerializationChoice.PreferStreaming*
+  commentId: Overload:Orleans.Storage.SerializationChoice.PreferStreaming
+  isExternal: false
+  name: PreferStreaming
+  nameWithType: SerializationChoice.PreferStreaming
+  fullName: Orleans.Storage.SerializationChoice.PreferStreaming
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Storage.IStorageDeserializer
+  commentId: T:Orleans.Storage.IStorageDeserializer
+  parent: Orleans.Storage
+  isExternal: false
+  name: IStorageDeserializer
+  nameWithType: IStorageDeserializer
+  fullName: Orleans.Storage.IStorageDeserializer
+- uid: Orleans.Storage.SerializationChoice.Deserializer*
+  commentId: Overload:Orleans.Storage.SerializationChoice.Deserializer
+  isExternal: false
+  name: Deserializer
+  nameWithType: SerializationChoice.Deserializer
+  fullName: Orleans.Storage.SerializationChoice.Deserializer
+- uid: Orleans.Storage.IStorageSerializer
+  commentId: T:Orleans.Storage.IStorageSerializer
+  parent: Orleans.Storage
+  isExternal: false
+  name: IStorageSerializer
+  nameWithType: IStorageSerializer
+  fullName: Orleans.Storage.IStorageSerializer
+- uid: Orleans.Storage.SerializationChoice.Serializer*
+  commentId: Overload:Orleans.Storage.SerializationChoice.Serializer
+  isExternal: false
+  name: Serializer
+  nameWithType: SerializationChoice.Serializer
+  fullName: Orleans.Storage.SerializationChoice.Serializer
+- uid: Orleans.Storage.SerializationChoice.#ctor*
+  commentId: Overload:Orleans.Storage.SerializationChoice.#ctor
+  isExternal: false
+  name: SerializationChoice
+  nameWithType: SerializationChoice.SerializationChoice
+  fullName: Orleans.Storage.SerializationChoice.SerializationChoice

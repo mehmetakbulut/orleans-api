@@ -1,0 +1,1007 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1
+  commentId: T:Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1
+  id: PubSubAdapterFactory`1
+  parent: Orleans.Providers.GCP.Streams.PubSub
+  children:
+  - Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1.#ctor(System.String,Orleans.Configuration.PubSubOptions,HashRingStreamQueueMapperOptions,SimpleQueueCacheOptions,IServiceProvider,IOptions{ClusterOptions},SerializationManager,ILoggerFactory)
+  - Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1.Create(IServiceProvider,System.String)
+  - Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1.CreateAdapter
+  - Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1.GetDeliveryFailureHandler(QueueId)
+  - Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1.GetQueueAdapterCache
+  - Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1.GetStreamQueueMapper
+  - Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1.Init
+  - Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1.SerializationManager
+  - Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1.StreamFailureHandlerFactory
+  langs:
+  - csharp
+  - vb
+  name: PubSubAdapterFactory<TDataAdapter>
+  nameWithType: PubSubAdapterFactory<TDataAdapter>
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory<TDataAdapter>
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubAdapterFactory.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: PubSubAdapterFactory
+    path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubAdapterFactory.cs
+    startLine: 12
+  assemblies:
+  - Orleans.Streaming.GCP
+  namespace: Orleans.Providers.GCP.Streams.PubSub
+  syntax:
+    content: 'public class PubSubAdapterFactory<TDataAdapter> : IQueueAdapterFactory where TDataAdapter : IPubSubDataAdapter'
+    typeParameters:
+    - id: TDataAdapter
+    content.vb: >-
+      Public Class PubSubAdapterFactory(Of TDataAdapter As IPubSubDataAdapter)
+
+          Inherits IQueueAdapterFactory
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  nameWithType.vb: PubSubAdapterFactory(Of TDataAdapter)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory(Of TDataAdapter)
+  name.vb: PubSubAdapterFactory(Of TDataAdapter)
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1.SerializationManager
+  commentId: P:Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1.SerializationManager
+  id: SerializationManager
+  parent: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1
+  langs:
+  - csharp
+  - vb
+  name: SerializationManager
+  nameWithType: PubSubAdapterFactory<TDataAdapter>.SerializationManager
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory<TDataAdapter>.SerializationManager
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubAdapterFactory.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SerializationManager
+    path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubAdapterFactory.cs
+    startLine: 26
+  assemblies:
+  - Orleans.Streaming.GCP
+  namespace: Orleans.Providers.GCP.Streams.PubSub
+  summary: "\nGets the serialization manager.\n"
+  example: []
+  syntax:
+    content: public SerializationManager SerializationManager { get; }
+    parameters: []
+    return:
+      type: SerializationManager
+    content.vb: Public ReadOnly Property SerializationManager As SerializationManager
+  overload: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1.SerializationManager*
+  nameWithType.vb: PubSubAdapterFactory(Of TDataAdapter).SerializationManager
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory(Of TDataAdapter).SerializationManager
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1.StreamFailureHandlerFactory
+  commentId: P:Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1.StreamFailureHandlerFactory
+  id: StreamFailureHandlerFactory
+  parent: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1
+  langs:
+  - csharp
+  - vb
+  name: StreamFailureHandlerFactory
+  nameWithType: PubSubAdapterFactory<TDataAdapter>.StreamFailureHandlerFactory
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory<TDataAdapter>.StreamFailureHandlerFactory
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubAdapterFactory.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: StreamFailureHandlerFactory
+    path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubAdapterFactory.cs
+    startLine: 31
+  assemblies:
+  - Orleans.Streaming.GCP
+  namespace: Orleans.Providers.GCP.Streams.PubSub
+  summary: "\nApplication level failure handler override.\n"
+  example: []
+  syntax:
+    content: protected Func<QueueId, Task<IStreamFailureHandler>> StreamFailureHandlerFactory { set; }
+    parameters: []
+    return:
+      type: Func{QueueId,Task{IStreamFailureHandler}}
+    content.vb: Protected WriteOnly Property StreamFailureHandlerFactory As Func(Of QueueId, Task(Of IStreamFailureHandler))
+  overload: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1.StreamFailureHandlerFactory*
+  nameWithType.vb: PubSubAdapterFactory(Of TDataAdapter).StreamFailureHandlerFactory
+  modifiers.csharp:
+  - protected
+  - set
+  modifiers.vb:
+  - Protected
+  - WriteOnly
+  fullName.vb: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory(Of TDataAdapter).StreamFailureHandlerFactory
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1.#ctor(System.String,Orleans.Configuration.PubSubOptions,HashRingStreamQueueMapperOptions,SimpleQueueCacheOptions,IServiceProvider,IOptions{ClusterOptions},SerializationManager,ILoggerFactory)
+  commentId: M:Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1.#ctor(System.String,Orleans.Configuration.PubSubOptions,HashRingStreamQueueMapperOptions,SimpleQueueCacheOptions,IServiceProvider,IOptions{ClusterOptions},SerializationManager,ILoggerFactory)
+  id: '#ctor(System.String,Orleans.Configuration.PubSubOptions,HashRingStreamQueueMapperOptions,SimpleQueueCacheOptions,IServiceProvider,IOptions{ClusterOptions},SerializationManager,ILoggerFactory)'
+  parent: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1
+  langs:
+  - csharp
+  - vb
+  name: PubSubAdapterFactory(String, PubSubOptions, HashRingStreamQueueMapperOptions, SimpleQueueCacheOptions, IServiceProvider, IOptions<ClusterOptions>, SerializationManager, ILoggerFactory)
+  nameWithType: PubSubAdapterFactory<TDataAdapter>.PubSubAdapterFactory(String, PubSubOptions, HashRingStreamQueueMapperOptions, SimpleQueueCacheOptions, IServiceProvider, IOptions<ClusterOptions>, SerializationManager, ILoggerFactory)
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory<TDataAdapter>.PubSubAdapterFactory(System.String, Orleans.Configuration.PubSubOptions, HashRingStreamQueueMapperOptions, SimpleQueueCacheOptions, IServiceProvider, IOptions<ClusterOptions>, SerializationManager, ILoggerFactory)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubAdapterFactory.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubAdapterFactory.cs
+    startLine: 33
+  assemblies:
+  - Orleans.Streaming.GCP
+  namespace: Orleans.Providers.GCP.Streams.PubSub
+  syntax:
+    content: public PubSubAdapterFactory(string name, PubSubOptions options, HashRingStreamQueueMapperOptions queueMapperOptions, SimpleQueueCacheOptions cacheOptions, IServiceProvider serviceProvider, IOptions<ClusterOptions> clusterOptions, SerializationManager serializationManager, ILoggerFactory loggerFactory)
+    parameters:
+    - id: name
+      type: System.String
+    - id: options
+      type: Orleans.Configuration.PubSubOptions
+    - id: queueMapperOptions
+      type: HashRingStreamQueueMapperOptions
+    - id: cacheOptions
+      type: SimpleQueueCacheOptions
+    - id: serviceProvider
+      type: IServiceProvider
+    - id: clusterOptions
+      type: IOptions{ClusterOptions}
+    - id: serializationManager
+      type: SerializationManager
+    - id: loggerFactory
+      type: ILoggerFactory
+    content.vb: Public Sub New(name As String, options As PubSubOptions, queueMapperOptions As HashRingStreamQueueMapperOptions, cacheOptions As SimpleQueueCacheOptions, serviceProvider As IServiceProvider, clusterOptions As IOptions(Of ClusterOptions), serializationManager As SerializationManager, loggerFactory As ILoggerFactory)
+  overload: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1.#ctor*
+  nameWithType.vb: PubSubAdapterFactory(Of TDataAdapter).PubSubAdapterFactory(String, PubSubOptions, HashRingStreamQueueMapperOptions, SimpleQueueCacheOptions, IServiceProvider, IOptions(Of ClusterOptions), SerializationManager, ILoggerFactory)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory(Of TDataAdapter).PubSubAdapterFactory(System.String, Orleans.Configuration.PubSubOptions, HashRingStreamQueueMapperOptions, SimpleQueueCacheOptions, IServiceProvider, IOptions(Of ClusterOptions), SerializationManager, ILoggerFactory)
+  name.vb: PubSubAdapterFactory(String, PubSubOptions, HashRingStreamQueueMapperOptions, SimpleQueueCacheOptions, IServiceProvider, IOptions(Of ClusterOptions), SerializationManager, ILoggerFactory)
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1.Init
+  commentId: M:Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1.Init
+  id: Init
+  parent: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1
+  langs:
+  - csharp
+  - vb
+  name: Init()
+  nameWithType: PubSubAdapterFactory<TDataAdapter>.Init()
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory<TDataAdapter>.Init()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubAdapterFactory.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Init
+    path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubAdapterFactory.cs
+    startLine: 53
+  assemblies:
+  - Orleans.Streaming.GCP
+  namespace: Orleans.Providers.GCP.Streams.PubSub
+  syntax:
+    content: public virtual void Init()
+    content.vb: Public Overridable Sub Init
+  overload: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1.Init*
+  nameWithType.vb: PubSubAdapterFactory(Of TDataAdapter).Init()
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory(Of TDataAdapter).Init()
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1.CreateAdapter
+  commentId: M:Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1.CreateAdapter
+  id: CreateAdapter
+  parent: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1
+  langs:
+  - csharp
+  - vb
+  name: CreateAdapter()
+  nameWithType: PubSubAdapterFactory<TDataAdapter>.CreateAdapter()
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory<TDataAdapter>.CreateAdapter()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubAdapterFactory.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: CreateAdapter
+    path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubAdapterFactory.cs
+    startLine: 63
+  assemblies:
+  - Orleans.Streaming.GCP
+  namespace: Orleans.Providers.GCP.Streams.PubSub
+  syntax:
+    content: public virtual Task<IQueueAdapter> CreateAdapter()
+    return:
+      type: Task{IQueueAdapter}
+    content.vb: Public Overridable Function CreateAdapter As Task(Of IQueueAdapter)
+  overload: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1.CreateAdapter*
+  nameWithType.vb: PubSubAdapterFactory(Of TDataAdapter).CreateAdapter()
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory(Of TDataAdapter).CreateAdapter()
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1.GetDeliveryFailureHandler(QueueId)
+  commentId: M:Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1.GetDeliveryFailureHandler(QueueId)
+  id: GetDeliveryFailureHandler(QueueId)
+  parent: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1
+  langs:
+  - csharp
+  - vb
+  name: GetDeliveryFailureHandler(QueueId)
+  nameWithType: PubSubAdapterFactory<TDataAdapter>.GetDeliveryFailureHandler(QueueId)
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory<TDataAdapter>.GetDeliveryFailureHandler(QueueId)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubAdapterFactory.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetDeliveryFailureHandler
+    path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubAdapterFactory.cs
+    startLine: 70
+  assemblies:
+  - Orleans.Streaming.GCP
+  namespace: Orleans.Providers.GCP.Streams.PubSub
+  syntax:
+    content: public Task<IStreamFailureHandler> GetDeliveryFailureHandler(QueueId queueId)
+    parameters:
+    - id: queueId
+      type: QueueId
+    return:
+      type: Task{IStreamFailureHandler}
+    content.vb: Public Function GetDeliveryFailureHandler(queueId As QueueId) As Task(Of IStreamFailureHandler)
+  overload: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1.GetDeliveryFailureHandler*
+  nameWithType.vb: PubSubAdapterFactory(Of TDataAdapter).GetDeliveryFailureHandler(QueueId)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory(Of TDataAdapter).GetDeliveryFailureHandler(QueueId)
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1.GetQueueAdapterCache
+  commentId: M:Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1.GetQueueAdapterCache
+  id: GetQueueAdapterCache
+  parent: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1
+  langs:
+  - csharp
+  - vb
+  name: GetQueueAdapterCache()
+  nameWithType: PubSubAdapterFactory<TDataAdapter>.GetQueueAdapterCache()
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory<TDataAdapter>.GetQueueAdapterCache()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubAdapterFactory.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetQueueAdapterCache
+    path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubAdapterFactory.cs
+    startLine: 72
+  assemblies:
+  - Orleans.Streaming.GCP
+  namespace: Orleans.Providers.GCP.Streams.PubSub
+  syntax:
+    content: public IQueueAdapterCache GetQueueAdapterCache()
+    return:
+      type: IQueueAdapterCache
+    content.vb: Public Function GetQueueAdapterCache As IQueueAdapterCache
+  overload: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1.GetQueueAdapterCache*
+  nameWithType.vb: PubSubAdapterFactory(Of TDataAdapter).GetQueueAdapterCache()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory(Of TDataAdapter).GetQueueAdapterCache()
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1.GetStreamQueueMapper
+  commentId: M:Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1.GetStreamQueueMapper
+  id: GetStreamQueueMapper
+  parent: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1
+  langs:
+  - csharp
+  - vb
+  name: GetStreamQueueMapper()
+  nameWithType: PubSubAdapterFactory<TDataAdapter>.GetStreamQueueMapper()
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory<TDataAdapter>.GetStreamQueueMapper()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubAdapterFactory.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetStreamQueueMapper
+    path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubAdapterFactory.cs
+    startLine: 74
+  assemblies:
+  - Orleans.Streaming.GCP
+  namespace: Orleans.Providers.GCP.Streams.PubSub
+  syntax:
+    content: public IStreamQueueMapper GetStreamQueueMapper()
+    return:
+      type: IStreamQueueMapper
+    content.vb: Public Function GetStreamQueueMapper As IStreamQueueMapper
+  overload: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1.GetStreamQueueMapper*
+  nameWithType.vb: PubSubAdapterFactory(Of TDataAdapter).GetStreamQueueMapper()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory(Of TDataAdapter).GetStreamQueueMapper()
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1.Create(IServiceProvider,System.String)
+  commentId: M:Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1.Create(IServiceProvider,System.String)
+  id: Create(IServiceProvider,System.String)
+  parent: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1
+  langs:
+  - csharp
+  - vb
+  name: Create(IServiceProvider, String)
+  nameWithType: PubSubAdapterFactory<TDataAdapter>.Create(IServiceProvider, String)
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory<TDataAdapter>.Create(IServiceProvider, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubAdapterFactory.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Create
+    path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubAdapterFactory.cs
+    startLine: 76
+  assemblies:
+  - Orleans.Streaming.GCP
+  namespace: Orleans.Providers.GCP.Streams.PubSub
+  syntax:
+    content: public static PubSubAdapterFactory<TDataAdapter> Create(IServiceProvider services, string name)
+    parameters:
+    - id: services
+      type: IServiceProvider
+    - id: name
+      type: System.String
+    return:
+      type: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1
+    content.vb: Public Shared Function Create(services As IServiceProvider, name As String) As PubSubAdapterFactory(Of TDataAdapter)
+  overload: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1.Create*
+  nameWithType.vb: PubSubAdapterFactory(Of TDataAdapter).Create(IServiceProvider, String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory(Of TDataAdapter).Create(IServiceProvider, System.String)
+references:
+- uid: Orleans.Providers.GCP.Streams.PubSub
+  commentId: N:Orleans.Providers.GCP.Streams.PubSub
+  isExternal: false
+  name: Orleans.Providers.GCP.Streams.PubSub
+  nameWithType: Orleans.Providers.GCP.Streams.PubSub
+  fullName: Orleans.Providers.GCP.Streams.PubSub
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<PubSubAdapterFactory<TDataAdapter>>()
+  nameWithType: ImmutableExt.AsImmutable<PubSubAdapterFactory<TDataAdapter>>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory<TDataAdapter>>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of PubSubAdapterFactory(Of TDataAdapter))()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory(Of TDataAdapter))()
+  name.vb: AsImmutable(Of PubSubAdapterFactory(Of TDataAdapter))()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<PubSubAdapterFactory<TDataAdapter>>
+    nameWithType: ImmutableExt.AsImmutable<PubSubAdapterFactory<TDataAdapter>>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory<TDataAdapter>>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of PubSubAdapterFactory(Of TDataAdapter))
+    nameWithType: ImmutableExt.AsImmutable(Of PubSubAdapterFactory(Of TDataAdapter))
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory(Of TDataAdapter))
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1.SerializationManager*
+  commentId: Overload:Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1.SerializationManager
+  isExternal: false
+  name: SerializationManager
+  nameWithType: PubSubAdapterFactory<TDataAdapter>.SerializationManager
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory<TDataAdapter>.SerializationManager
+  nameWithType.vb: PubSubAdapterFactory(Of TDataAdapter).SerializationManager
+  fullName.vb: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory(Of TDataAdapter).SerializationManager
+- uid: SerializationManager
+  isExternal: true
+  name: SerializationManager
+  nameWithType: SerializationManager
+  fullName: SerializationManager
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1.StreamFailureHandlerFactory*
+  commentId: Overload:Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1.StreamFailureHandlerFactory
+  isExternal: false
+  name: StreamFailureHandlerFactory
+  nameWithType: PubSubAdapterFactory<TDataAdapter>.StreamFailureHandlerFactory
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory<TDataAdapter>.StreamFailureHandlerFactory
+  nameWithType.vb: PubSubAdapterFactory(Of TDataAdapter).StreamFailureHandlerFactory
+  fullName.vb: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory(Of TDataAdapter).StreamFailureHandlerFactory
+- uid: Func{QueueId,Task{IStreamFailureHandler}}
+  commentId: '!:Func{QueueId,Task{IStreamFailureHandler}}'
+  definition: Func`2
+  name: Func<QueueId, Task<IStreamFailureHandler>>
+  nameWithType: Func<QueueId, Task<IStreamFailureHandler>>
+  fullName: Func<QueueId, Task<IStreamFailureHandler>>
+  nameWithType.vb: Func(Of QueueId, Task(Of IStreamFailureHandler))
+  fullName.vb: Func(Of QueueId, Task(Of IStreamFailureHandler))
+  name.vb: Func(Of QueueId, Task(Of IStreamFailureHandler))
+  spec.csharp:
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: QueueId
+    name: QueueId
+    nameWithType: QueueId
+    fullName: QueueId
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: IStreamFailureHandler
+    name: IStreamFailureHandler
+    nameWithType: IStreamFailureHandler
+    fullName: IStreamFailureHandler
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: QueueId
+    name: QueueId
+    nameWithType: QueueId
+    fullName: QueueId
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: IStreamFailureHandler
+    name: IStreamFailureHandler
+    nameWithType: IStreamFailureHandler
+    fullName: IStreamFailureHandler
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Func`2
+  isExternal: true
+  name: Func<, >
+  nameWithType: Func<, >
+  fullName: Func<, >
+  nameWithType.vb: Func(Of , )
+  fullName.vb: Func(Of , )
+  name.vb: Func(Of , )
+  spec.csharp:
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1.#ctor*
+  commentId: Overload:Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1.#ctor
+  isExternal: false
+  name: PubSubAdapterFactory
+  nameWithType: PubSubAdapterFactory<TDataAdapter>.PubSubAdapterFactory
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory<TDataAdapter>.PubSubAdapterFactory
+  nameWithType.vb: PubSubAdapterFactory(Of TDataAdapter).PubSubAdapterFactory
+  fullName.vb: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory(Of TDataAdapter).PubSubAdapterFactory
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Orleans.Configuration.PubSubOptions
+  commentId: T:Orleans.Configuration.PubSubOptions
+  parent: Orleans.Configuration
+  isExternal: false
+  name: PubSubOptions
+  nameWithType: PubSubOptions
+  fullName: Orleans.Configuration.PubSubOptions
+- uid: HashRingStreamQueueMapperOptions
+  isExternal: true
+  name: HashRingStreamQueueMapperOptions
+  nameWithType: HashRingStreamQueueMapperOptions
+  fullName: HashRingStreamQueueMapperOptions
+- uid: SimpleQueueCacheOptions
+  isExternal: true
+  name: SimpleQueueCacheOptions
+  nameWithType: SimpleQueueCacheOptions
+  fullName: SimpleQueueCacheOptions
+- uid: IServiceProvider
+  isExternal: true
+  name: IServiceProvider
+  nameWithType: IServiceProvider
+  fullName: IServiceProvider
+- uid: IOptions{ClusterOptions}
+  commentId: '!:IOptions{ClusterOptions}'
+  definition: IOptions`1
+  name: IOptions<ClusterOptions>
+  nameWithType: IOptions<ClusterOptions>
+  fullName: IOptions<ClusterOptions>
+  nameWithType.vb: IOptions(Of ClusterOptions)
+  fullName.vb: IOptions(Of ClusterOptions)
+  name.vb: IOptions(Of ClusterOptions)
+  spec.csharp:
+  - uid: IOptions`1
+    name: IOptions
+    nameWithType: IOptions
+    fullName: IOptions
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: ClusterOptions
+    name: ClusterOptions
+    nameWithType: ClusterOptions
+    fullName: ClusterOptions
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IOptions`1
+    name: IOptions
+    nameWithType: IOptions
+    fullName: IOptions
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: ClusterOptions
+    name: ClusterOptions
+    nameWithType: ClusterOptions
+    fullName: ClusterOptions
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: ILoggerFactory
+  isExternal: true
+  name: ILoggerFactory
+  nameWithType: ILoggerFactory
+  fullName: ILoggerFactory
+- uid: Orleans.Configuration
+  commentId: N:Orleans.Configuration
+  isExternal: false
+  name: Orleans.Configuration
+  nameWithType: Orleans.Configuration
+  fullName: Orleans.Configuration
+- uid: IOptions`1
+  isExternal: true
+  name: IOptions<>
+  nameWithType: IOptions<>
+  fullName: IOptions<>
+  nameWithType.vb: IOptions(Of )
+  fullName.vb: IOptions(Of )
+  name.vb: IOptions(Of )
+  spec.csharp:
+  - uid: IOptions`1
+    name: IOptions
+    nameWithType: IOptions
+    fullName: IOptions
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IOptions`1
+    name: IOptions
+    nameWithType: IOptions
+    fullName: IOptions
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1.Init*
+  commentId: Overload:Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1.Init
+  isExternal: false
+  name: Init
+  nameWithType: PubSubAdapterFactory<TDataAdapter>.Init
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory<TDataAdapter>.Init
+  nameWithType.vb: PubSubAdapterFactory(Of TDataAdapter).Init
+  fullName.vb: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory(Of TDataAdapter).Init
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1.CreateAdapter*
+  commentId: Overload:Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1.CreateAdapter
+  isExternal: false
+  name: CreateAdapter
+  nameWithType: PubSubAdapterFactory<TDataAdapter>.CreateAdapter
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory<TDataAdapter>.CreateAdapter
+  nameWithType.vb: PubSubAdapterFactory(Of TDataAdapter).CreateAdapter
+  fullName.vb: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory(Of TDataAdapter).CreateAdapter
+- uid: Task{IQueueAdapter}
+  commentId: '!:Task{IQueueAdapter}'
+  definition: Task`1
+  name: Task<IQueueAdapter>
+  nameWithType: Task<IQueueAdapter>
+  fullName: Task<IQueueAdapter>
+  nameWithType.vb: Task(Of IQueueAdapter)
+  fullName.vb: Task(Of IQueueAdapter)
+  name.vb: Task(Of IQueueAdapter)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: IQueueAdapter
+    name: IQueueAdapter
+    nameWithType: IQueueAdapter
+    fullName: IQueueAdapter
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: IQueueAdapter
+    name: IQueueAdapter
+    nameWithType: IQueueAdapter
+    fullName: IQueueAdapter
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1.GetDeliveryFailureHandler*
+  commentId: Overload:Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1.GetDeliveryFailureHandler
+  isExternal: false
+  name: GetDeliveryFailureHandler
+  nameWithType: PubSubAdapterFactory<TDataAdapter>.GetDeliveryFailureHandler
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory<TDataAdapter>.GetDeliveryFailureHandler
+  nameWithType.vb: PubSubAdapterFactory(Of TDataAdapter).GetDeliveryFailureHandler
+  fullName.vb: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory(Of TDataAdapter).GetDeliveryFailureHandler
+- uid: QueueId
+  isExternal: true
+  name: QueueId
+  nameWithType: QueueId
+  fullName: QueueId
+- uid: Task{IStreamFailureHandler}
+  commentId: '!:Task{IStreamFailureHandler}'
+  definition: Task`1
+  name: Task<IStreamFailureHandler>
+  nameWithType: Task<IStreamFailureHandler>
+  fullName: Task<IStreamFailureHandler>
+  nameWithType.vb: Task(Of IStreamFailureHandler)
+  fullName.vb: Task(Of IStreamFailureHandler)
+  name.vb: Task(Of IStreamFailureHandler)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: IStreamFailureHandler
+    name: IStreamFailureHandler
+    nameWithType: IStreamFailureHandler
+    fullName: IStreamFailureHandler
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: IStreamFailureHandler
+    name: IStreamFailureHandler
+    nameWithType: IStreamFailureHandler
+    fullName: IStreamFailureHandler
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1.GetQueueAdapterCache*
+  commentId: Overload:Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1.GetQueueAdapterCache
+  isExternal: false
+  name: GetQueueAdapterCache
+  nameWithType: PubSubAdapterFactory<TDataAdapter>.GetQueueAdapterCache
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory<TDataAdapter>.GetQueueAdapterCache
+  nameWithType.vb: PubSubAdapterFactory(Of TDataAdapter).GetQueueAdapterCache
+  fullName.vb: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory(Of TDataAdapter).GetQueueAdapterCache
+- uid: IQueueAdapterCache
+  isExternal: true
+  name: IQueueAdapterCache
+  nameWithType: IQueueAdapterCache
+  fullName: IQueueAdapterCache
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1.GetStreamQueueMapper*
+  commentId: Overload:Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1.GetStreamQueueMapper
+  isExternal: false
+  name: GetStreamQueueMapper
+  nameWithType: PubSubAdapterFactory<TDataAdapter>.GetStreamQueueMapper
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory<TDataAdapter>.GetStreamQueueMapper
+  nameWithType.vb: PubSubAdapterFactory(Of TDataAdapter).GetStreamQueueMapper
+  fullName.vb: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory(Of TDataAdapter).GetStreamQueueMapper
+- uid: IStreamQueueMapper
+  isExternal: true
+  name: IStreamQueueMapper
+  nameWithType: IStreamQueueMapper
+  fullName: IStreamQueueMapper
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1.Create*
+  commentId: Overload:Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1.Create
+  isExternal: false
+  name: Create
+  nameWithType: PubSubAdapterFactory<TDataAdapter>.Create
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory<TDataAdapter>.Create
+  nameWithType.vb: PubSubAdapterFactory(Of TDataAdapter).Create
+  fullName.vb: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory(Of TDataAdapter).Create
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1
+  commentId: T:Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1
+  parent: Orleans.Providers.GCP.Streams.PubSub
+  isExternal: false
+  name: PubSubAdapterFactory<TDataAdapter>
+  nameWithType: PubSubAdapterFactory<TDataAdapter>
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory<TDataAdapter>
+  nameWithType.vb: PubSubAdapterFactory(Of TDataAdapter)
+  fullName.vb: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory(Of TDataAdapter)
+  name.vb: PubSubAdapterFactory(Of TDataAdapter)
+  spec.csharp:
+  - uid: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1
+    name: PubSubAdapterFactory
+    nameWithType: PubSubAdapterFactory
+    fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDataAdapter
+    nameWithType: TDataAdapter
+    fullName: TDataAdapter
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1
+    name: PubSubAdapterFactory
+    nameWithType: PubSubAdapterFactory
+    fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDataAdapter
+    nameWithType: TDataAdapter
+    fullName: TDataAdapter
+  - name: )
+    nameWithType: )
+    fullName: )

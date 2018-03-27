@@ -1,0 +1,116 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.PublicOrleansTaskExtensions
+  commentId: T:Orleans.PublicOrleansTaskExtensions
+  id: PublicOrleansTaskExtensions
+  parent: Orleans
+  children:
+  - Orleans.PublicOrleansTaskExtensions.Ignore(Task)
+  langs:
+  - csharp
+  - vb
+  name: PublicOrleansTaskExtensions
+  nameWithType: PublicOrleansTaskExtensions
+  fullName: Orleans.PublicOrleansTaskExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Async/PublicOrleansTaskExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: PublicOrleansTaskExtensions
+    path: src/Orleans.Core.Abstractions/Async/PublicOrleansTaskExtensions.cs
+    startLine: 10
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nUtility functions for dealing with Tasks.\n"
+  example: []
+  syntax:
+    content: 'public static class PublicOrleansTaskExtensions : object'
+    content.vb: >-
+      Public Module PublicOrleansTaskExtensions
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Orleans.PublicOrleansTaskExtensions.Ignore(Task)
+  commentId: M:Orleans.PublicOrleansTaskExtensions.Ignore(Task)
+  id: Ignore(Task)
+  isExtensionMethod: true
+  parent: Orleans.PublicOrleansTaskExtensions
+  langs:
+  - csharp
+  - vb
+  name: Ignore(Task)
+  nameWithType: PublicOrleansTaskExtensions.Ignore(Task)
+  fullName: Orleans.PublicOrleansTaskExtensions.Ignore(Task)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Async/PublicOrleansTaskExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Ignore
+    path: src/Orleans.Core.Abstractions/Async/PublicOrleansTaskExtensions.cs
+    startLine: 21
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nObserves and ignores a potential exception on a given Task.\nIf a Task fails and throws an exception which is never observed, it will be caught by the .NET finalizer thread.\nThis function awaits the given task and if the exception is thrown, it observes this exception and simply ignores it.\nThis will prevent the escalation of this exception to the .NET finalizer thread.\n"
+  example: []
+  syntax:
+    content: public static void Ignore(this Task task)
+    parameters:
+    - id: task
+      type: Task
+      description: The task to be ignored.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub Ignore(task As Task)
+  overload: Orleans.PublicOrleansTaskExtensions.Ignore*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Orleans
+  commentId: N:Orleans
+  isExternal: false
+  name: Orleans
+  nameWithType: Orleans
+  fullName: Orleans
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.PublicOrleansTaskExtensions.Ignore*
+  commentId: Overload:Orleans.PublicOrleansTaskExtensions.Ignore
+  isExternal: false
+  name: Ignore
+  nameWithType: PublicOrleansTaskExtensions.Ignore
+  fullName: Orleans.PublicOrleansTaskExtensions.Ignore
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task

@@ -1,0 +1,241 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.CodeGeneration.MethodIdAttribute
+  commentId: T:Orleans.CodeGeneration.MethodIdAttribute
+  id: MethodIdAttribute
+  parent: Orleans.CodeGeneration
+  children:
+  - Orleans.CodeGeneration.MethodIdAttribute.#ctor(System.Int32)
+  - Orleans.CodeGeneration.MethodIdAttribute.MethodId
+  langs:
+  - csharp
+  - vb
+  name: MethodIdAttribute
+  nameWithType: MethodIdAttribute
+  fullName: Orleans.CodeGeneration.MethodIdAttribute
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/CodeGeneration/CodeGenGrainAttributes.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: MethodIdAttribute
+    path: src/Orleans.Core.Abstractions/CodeGeneration/CodeGenGrainAttributes.cs
+    startLine: 29
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.CodeGeneration
+  summary: "\nSpecifies the method id for the interface method which this attribute is declared on.\n"
+  remarks: "\nMethod ids must be unique for all methods in a given interface.\nThis attribute is only applicable for interface method declarations, not for method definitions on classes.\n"
+  example: []
+  syntax:
+    content: 'public sealed class MethodIdAttribute : Attribute'
+    content.vb: >-
+      Public NotInheritable Class MethodIdAttribute
+
+          Inherits Attribute
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.CodeGeneration.MethodIdAttribute.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Orleans.CodeGeneration.MethodIdAttribute.MethodId
+  commentId: P:Orleans.CodeGeneration.MethodIdAttribute.MethodId
+  id: MethodId
+  parent: Orleans.CodeGeneration.MethodIdAttribute
+  langs:
+  - csharp
+  - vb
+  name: MethodId
+  nameWithType: MethodIdAttribute.MethodId
+  fullName: Orleans.CodeGeneration.MethodIdAttribute.MethodId
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/CodeGeneration/CodeGenGrainAttributes.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: MethodId
+    path: src/Orleans.Core.Abstractions/CodeGeneration/CodeGenGrainAttributes.cs
+    startLine: 35
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.CodeGeneration
+  summary: "\nGets the method id for the interface method this attribute is declared on.\n"
+  example: []
+  syntax:
+    content: public int MethodId { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property MethodId As Integer
+  overload: Orleans.CodeGeneration.MethodIdAttribute.MethodId*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.CodeGeneration.MethodIdAttribute.#ctor(System.Int32)
+  commentId: M:Orleans.CodeGeneration.MethodIdAttribute.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: Orleans.CodeGeneration.MethodIdAttribute
+  langs:
+  - csharp
+  - vb
+  name: MethodIdAttribute(Int32)
+  nameWithType: MethodIdAttribute.MethodIdAttribute(Int32)
+  fullName: Orleans.CodeGeneration.MethodIdAttribute.MethodIdAttribute(System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/CodeGeneration/CodeGenGrainAttributes.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Core.Abstractions/CodeGeneration/CodeGenGrainAttributes.cs
+    startLine: 45
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.CodeGeneration
+  summary: "\nSpecifies the method id for the interface method which this attribute is declared on.\n"
+  remarks: "\nMethod ids must be unique for all methods in a given interface.\nThis attribute is only valid only on interface method declarations, not on method definitions.\n"
+  example: []
+  syntax:
+    content: public MethodIdAttribute(int methodId)
+    parameters:
+    - id: methodId
+      type: System.Int32
+      description: The method id.
+    content.vb: Public Sub New(methodId As Integer)
+  overload: Orleans.CodeGeneration.MethodIdAttribute.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans.CodeGeneration
+  commentId: N:Orleans.CodeGeneration
+  isExternal: false
+  name: Orleans.CodeGeneration
+  nameWithType: Orleans.CodeGeneration
+  fullName: Orleans.CodeGeneration
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.CodeGeneration.MethodIdAttribute.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<MethodIdAttribute>()
+  nameWithType: ImmutableExt.AsImmutable<MethodIdAttribute>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.CodeGeneration.MethodIdAttribute>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of MethodIdAttribute)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.CodeGeneration.MethodIdAttribute)()
+  name.vb: AsImmutable(Of MethodIdAttribute)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<MethodIdAttribute>
+    nameWithType: ImmutableExt.AsImmutable<MethodIdAttribute>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.CodeGeneration.MethodIdAttribute>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of MethodIdAttribute)
+    nameWithType: ImmutableExt.AsImmutable(Of MethodIdAttribute)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.CodeGeneration.MethodIdAttribute)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.CodeGeneration.MethodIdAttribute.MethodId*
+  commentId: Overload:Orleans.CodeGeneration.MethodIdAttribute.MethodId
+  isExternal: false
+  name: MethodId
+  nameWithType: MethodIdAttribute.MethodId
+  fullName: Orleans.CodeGeneration.MethodIdAttribute.MethodId
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Orleans.CodeGeneration.MethodIdAttribute.#ctor*
+  commentId: Overload:Orleans.CodeGeneration.MethodIdAttribute.#ctor
+  isExternal: false
+  name: MethodIdAttribute
+  nameWithType: MethodIdAttribute.MethodIdAttribute
+  fullName: Orleans.CodeGeneration.MethodIdAttribute.MethodIdAttribute

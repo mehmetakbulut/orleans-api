@@ -1,0 +1,356 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Serialization.ICopyContext
+  commentId: T:Orleans.Serialization.ICopyContext
+  id: ICopyContext
+  parent: Orleans.Serialization
+  children:
+  - Orleans.Serialization.ICopyContext.CheckObjectWhileCopying(System.Object)
+  - Orleans.Serialization.ICopyContext.DeepCopyInner(System.Object)
+  - Orleans.Serialization.ICopyContext.RecordCopy(System.Object,System.Object)
+  langs:
+  - csharp
+  - vb
+  name: ICopyContext
+  nameWithType: ICopyContext
+  fullName: Orleans.Serialization.ICopyContext
+  type: Interface
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Serialization/ISerializerContext.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ICopyContext
+    path: src/Orleans.Core.Abstractions/Serialization/ISerializerContext.cs
+    startLine: 17
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Serialization
+  syntax:
+    content: 'public interface ICopyContext : ISerializerContext'
+    content.vb: >-
+      Public Interface ICopyContext
+
+          Inherits ISerializerContext
+  inheritedMembers:
+  - Orleans.Serialization.ISerializerContext.ServiceProvider
+  - Orleans.Serialization.ISerializerContext.AdditionalContext
+  extensionMethods:
+  - Orleans.Serialization.ISerializerContext.Orleans.Serialization.SerializerContextExtensions.GetSerializationManager
+  - Orleans.Serialization.ICopyContext.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Orleans.Serialization.ICopyContext.RecordCopy(System.Object,System.Object)
+  commentId: M:Orleans.Serialization.ICopyContext.RecordCopy(System.Object,System.Object)
+  id: RecordCopy(System.Object,System.Object)
+  parent: Orleans.Serialization.ICopyContext
+  langs:
+  - csharp
+  - vb
+  name: RecordCopy(Object, Object)
+  nameWithType: ICopyContext.RecordCopy(Object, Object)
+  fullName: Orleans.Serialization.ICopyContext.RecordCopy(System.Object, System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Serialization/ISerializerContext.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: RecordCopy
+    path: src/Orleans.Core.Abstractions/Serialization/ISerializerContext.cs
+    startLine: 26
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Serialization
+  summary: "\nRecord an object-to-copy mapping into the current serialization context.\nUsed for maintaining the .NET object graph during serialization operations.\nUsed in generated code.\n"
+  example: []
+  syntax:
+    content: void RecordCopy(object original, object copy)
+    parameters:
+    - id: original
+      type: System.Object
+      description: Original object.
+    - id: copy
+      type: System.Object
+      description: Copy object that will be the serialized form of the original.
+    content.vb: Sub RecordCopy(original As Object, copy As Object)
+  overload: Orleans.Serialization.ICopyContext.RecordCopy*
+- uid: Orleans.Serialization.ICopyContext.CheckObjectWhileCopying(System.Object)
+  commentId: M:Orleans.Serialization.ICopyContext.CheckObjectWhileCopying(System.Object)
+  id: CheckObjectWhileCopying(System.Object)
+  parent: Orleans.Serialization.ICopyContext
+  langs:
+  - csharp
+  - vb
+  name: CheckObjectWhileCopying(Object)
+  nameWithType: ICopyContext.CheckObjectWhileCopying(Object)
+  fullName: Orleans.Serialization.ICopyContext.CheckObjectWhileCopying(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Serialization/ISerializerContext.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: CheckObjectWhileCopying
+    path: src/Orleans.Core.Abstractions/Serialization/ISerializerContext.cs
+    startLine: 28
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Serialization
+  syntax:
+    content: object CheckObjectWhileCopying(object raw)
+    parameters:
+    - id: raw
+      type: System.Object
+    return:
+      type: System.Object
+    content.vb: Function CheckObjectWhileCopying(raw As Object) As Object
+  overload: Orleans.Serialization.ICopyContext.CheckObjectWhileCopying*
+- uid: Orleans.Serialization.ICopyContext.DeepCopyInner(System.Object)
+  commentId: M:Orleans.Serialization.ICopyContext.DeepCopyInner(System.Object)
+  id: DeepCopyInner(System.Object)
+  parent: Orleans.Serialization.ICopyContext
+  langs:
+  - csharp
+  - vb
+  name: DeepCopyInner(Object)
+  nameWithType: ICopyContext.DeepCopyInner(Object)
+  fullName: Orleans.Serialization.ICopyContext.DeepCopyInner(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Serialization/ISerializerContext.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: DeepCopyInner
+    path: src/Orleans.Core.Abstractions/Serialization/ISerializerContext.cs
+    startLine: 30
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Serialization
+  syntax:
+    content: object DeepCopyInner(object original)
+    parameters:
+    - id: original
+      type: System.Object
+    return:
+      type: System.Object
+    content.vb: Function DeepCopyInner(original As Object) As Object
+  overload: Orleans.Serialization.ICopyContext.DeepCopyInner*
+references:
+- uid: Orleans.Serialization
+  commentId: N:Orleans.Serialization
+  isExternal: false
+  name: Orleans.Serialization
+  nameWithType: Orleans.Serialization
+  fullName: Orleans.Serialization
+- uid: Orleans.Serialization.ISerializerContext.ServiceProvider
+  commentId: P:Orleans.Serialization.ISerializerContext.ServiceProvider
+  parent: Orleans.Serialization.ISerializerContext
+  isExternal: false
+  name: ServiceProvider
+  nameWithType: ISerializerContext.ServiceProvider
+  fullName: Orleans.Serialization.ISerializerContext.ServiceProvider
+- uid: Orleans.Serialization.ISerializerContext.AdditionalContext
+  commentId: P:Orleans.Serialization.ISerializerContext.AdditionalContext
+  parent: Orleans.Serialization.ISerializerContext
+  isExternal: false
+  name: AdditionalContext
+  nameWithType: ISerializerContext.AdditionalContext
+  fullName: Orleans.Serialization.ISerializerContext.AdditionalContext
+- uid: Orleans.Serialization.ISerializerContext.Orleans.Serialization.SerializerContextExtensions.GetSerializationManager
+  commentId: M:Orleans.Serialization.SerializerContextExtensions.GetSerializationManager(Orleans.Serialization.ISerializerContext)
+  parent: Orleans.Serialization.SerializerContextExtensions
+  definition: Orleans.Serialization.SerializerContextExtensions.GetSerializationManager(Orleans.Serialization.ISerializerContext)
+  name: GetSerializationManager()
+  nameWithType: SerializerContextExtensions.GetSerializationManager()
+  fullName: Orleans.Serialization.SerializerContextExtensions.GetSerializationManager()
+  spec.csharp:
+  - uid: Orleans.Serialization.SerializerContextExtensions.GetSerializationManager
+    name: GetSerializationManager
+    nameWithType: SerializerContextExtensions.GetSerializationManager
+    fullName: Orleans.Serialization.SerializerContextExtensions.GetSerializationManager
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Serialization.SerializerContextExtensions.GetSerializationManager
+    name: GetSerializationManager
+    nameWithType: SerializerContextExtensions.GetSerializationManager
+    fullName: Orleans.Serialization.SerializerContextExtensions.GetSerializationManager
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Serialization.ICopyContext.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<ICopyContext>()
+  nameWithType: ImmutableExt.AsImmutable<ICopyContext>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Serialization.ICopyContext>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of ICopyContext)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Serialization.ICopyContext)()
+  name.vb: AsImmutable(Of ICopyContext)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<ICopyContext>
+    nameWithType: ImmutableExt.AsImmutable<ICopyContext>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Serialization.ICopyContext>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of ICopyContext)
+    nameWithType: ImmutableExt.AsImmutable(Of ICopyContext)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Serialization.ICopyContext)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Serialization.ISerializerContext
+  commentId: T:Orleans.Serialization.ISerializerContext
+  parent: Orleans.Serialization
+  isExternal: false
+  name: ISerializerContext
+  nameWithType: ISerializerContext
+  fullName: Orleans.Serialization.ISerializerContext
+- uid: Orleans.Serialization.SerializerContextExtensions.GetSerializationManager(Orleans.Serialization.ISerializerContext)
+  commentId: M:Orleans.Serialization.SerializerContextExtensions.GetSerializationManager(Orleans.Serialization.ISerializerContext)
+  isExternal: false
+  name: GetSerializationManager(ISerializerContext)
+  nameWithType: SerializerContextExtensions.GetSerializationManager(ISerializerContext)
+  fullName: Orleans.Serialization.SerializerContextExtensions.GetSerializationManager(Orleans.Serialization.ISerializerContext)
+  spec.csharp:
+  - uid: Orleans.Serialization.SerializerContextExtensions.GetSerializationManager(Orleans.Serialization.ISerializerContext)
+    name: GetSerializationManager
+    nameWithType: SerializerContextExtensions.GetSerializationManager
+    fullName: Orleans.Serialization.SerializerContextExtensions.GetSerializationManager
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Serialization.ISerializerContext
+    name: ISerializerContext
+    nameWithType: ISerializerContext
+    fullName: Orleans.Serialization.ISerializerContext
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Serialization.SerializerContextExtensions.GetSerializationManager(Orleans.Serialization.ISerializerContext)
+    name: GetSerializationManager
+    nameWithType: SerializerContextExtensions.GetSerializationManager
+    fullName: Orleans.Serialization.SerializerContextExtensions.GetSerializationManager
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Serialization.ISerializerContext
+    name: ISerializerContext
+    nameWithType: ISerializerContext
+    fullName: Orleans.Serialization.ISerializerContext
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Serialization.SerializerContextExtensions
+  commentId: T:Orleans.Serialization.SerializerContextExtensions
+  parent: Orleans.Serialization
+  isExternal: false
+  name: SerializerContextExtensions
+  nameWithType: SerializerContextExtensions
+  fullName: Orleans.Serialization.SerializerContextExtensions
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Serialization.ICopyContext.RecordCopy*
+  commentId: Overload:Orleans.Serialization.ICopyContext.RecordCopy
+  isExternal: false
+  name: RecordCopy
+  nameWithType: ICopyContext.RecordCopy
+  fullName: Orleans.Serialization.ICopyContext.RecordCopy
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Serialization.ICopyContext.CheckObjectWhileCopying*
+  commentId: Overload:Orleans.Serialization.ICopyContext.CheckObjectWhileCopying
+  isExternal: false
+  name: CheckObjectWhileCopying
+  nameWithType: ICopyContext.CheckObjectWhileCopying
+  fullName: Orleans.Serialization.ICopyContext.CheckObjectWhileCopying
+- uid: Orleans.Serialization.ICopyContext.DeepCopyInner*
+  commentId: Overload:Orleans.Serialization.ICopyContext.DeepCopyInner
+  isExternal: false
+  name: DeepCopyInner
+  nameWithType: ICopyContext.DeepCopyInner
+  fullName: Orleans.Serialization.ICopyContext.DeepCopyInner

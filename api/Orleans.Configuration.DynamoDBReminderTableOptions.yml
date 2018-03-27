@@ -1,0 +1,196 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Configuration.DynamoDBReminderTableOptions
+  commentId: T:Orleans.Configuration.DynamoDBReminderTableOptions
+  id: DynamoDBReminderTableOptions
+  parent: Orleans.Configuration
+  children:
+  - Orleans.Configuration.DynamoDBReminderTableOptions.ConnectionString
+  langs:
+  - csharp
+  - vb
+  name: DynamoDBReminderTableOptions
+  nameWithType: DynamoDBReminderTableOptions
+  fullName: Orleans.Configuration.DynamoDBReminderTableOptions
+  type: Class
+  source:
+    remote:
+      path: src/AWS/Orleans.Reminders.DynamoDB/Reminders/DynamoDbReminderServiceOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: DynamoDBReminderTableOptions
+    path: src/AWS/Orleans.Reminders.DynamoDB/Reminders/DynamoDbReminderServiceOptions.cs
+    startLine: 11
+  assemblies:
+  - Orleans.Reminders.DynamoDB
+  namespace: Orleans.Configuration
+  summary: "\nConfiguration for Amazon DynamoDB reminder storage.\n"
+  example: []
+  syntax:
+    content: 'public class DynamoDBReminderTableOptions : object'
+    content.vb: >-
+      Public Class DynamoDBReminderTableOptions
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.Configuration.DynamoDBReminderTableOptions.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.Configuration.DynamoDBReminderTableOptions.ConnectionString
+  commentId: P:Orleans.Configuration.DynamoDBReminderTableOptions.ConnectionString
+  id: ConnectionString
+  parent: Orleans.Configuration.DynamoDBReminderTableOptions
+  langs:
+  - csharp
+  - vb
+  name: ConnectionString
+  nameWithType: DynamoDBReminderTableOptions.ConnectionString
+  fullName: Orleans.Configuration.DynamoDBReminderTableOptions.ConnectionString
+  type: Property
+  source:
+    remote:
+      path: src/AWS/Orleans.Reminders.DynamoDB/Reminders/DynamoDbReminderServiceOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ConnectionString
+    path: src/AWS/Orleans.Reminders.DynamoDB/Reminders/DynamoDbReminderServiceOptions.cs
+    startLine: 16
+  assemblies:
+  - Orleans.Reminders.DynamoDB
+  namespace: Orleans.Configuration
+  summary: "\nGets or sets the connection string.\n"
+  example: []
+  syntax:
+    content: public string ConnectionString { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ConnectionString As String
+  overload: Orleans.Configuration.DynamoDBReminderTableOptions.ConnectionString*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans.Configuration
+  commentId: N:Orleans.Configuration
+  isExternal: false
+  name: Orleans.Configuration
+  nameWithType: Orleans.Configuration
+  fullName: Orleans.Configuration
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Configuration.DynamoDBReminderTableOptions.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<DynamoDBReminderTableOptions>()
+  nameWithType: ImmutableExt.AsImmutable<DynamoDBReminderTableOptions>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Configuration.DynamoDBReminderTableOptions>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of DynamoDBReminderTableOptions)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Configuration.DynamoDBReminderTableOptions)()
+  name.vb: AsImmutable(Of DynamoDBReminderTableOptions)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<DynamoDBReminderTableOptions>
+    nameWithType: ImmutableExt.AsImmutable<DynamoDBReminderTableOptions>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Configuration.DynamoDBReminderTableOptions>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of DynamoDBReminderTableOptions)
+    nameWithType: ImmutableExt.AsImmutable(Of DynamoDBReminderTableOptions)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Configuration.DynamoDBReminderTableOptions)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Configuration.DynamoDBReminderTableOptions.ConnectionString*
+  commentId: Overload:Orleans.Configuration.DynamoDBReminderTableOptions.ConnectionString
+  isExternal: false
+  name: ConnectionString
+  nameWithType: DynamoDBReminderTableOptions.ConnectionString
+  fullName: Orleans.Configuration.DynamoDBReminderTableOptions.ConnectionString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

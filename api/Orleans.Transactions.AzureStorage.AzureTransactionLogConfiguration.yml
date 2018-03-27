@@ -1,0 +1,234 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Transactions.AzureStorage.AzureTransactionLogConfiguration
+  commentId: T:Orleans.Transactions.AzureStorage.AzureTransactionLogConfiguration
+  id: AzureTransactionLogConfiguration
+  parent: Orleans.Transactions.AzureStorage
+  children:
+  - Orleans.Transactions.AzureStorage.AzureTransactionLogConfiguration.ConnectionString
+  - Orleans.Transactions.AzureStorage.AzureTransactionLogConfiguration.TableName
+  langs:
+  - csharp
+  - vb
+  name: AzureTransactionLogConfiguration
+  nameWithType: AzureTransactionLogConfiguration
+  fullName: Orleans.Transactions.AzureStorage.AzureTransactionLogConfiguration
+  type: Class
+  source:
+    remote:
+      path: src/Azure/Orleans.Transactions.AzureStorage/Storage/AzureTransactionLogConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AzureTransactionLogConfiguration
+    path: src/Azure/Orleans.Transactions.AzureStorage/Storage/AzureTransactionLogConfiguration.cs
+    startLine: 3
+  assemblies:
+  - Orleans.Transactions.AzureStorage
+  namespace: Orleans.Transactions.AzureStorage
+  syntax:
+    content: 'public class AzureTransactionLogConfiguration : object'
+    content.vb: >-
+      Public Class AzureTransactionLogConfiguration
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.Transactions.AzureStorage.AzureTransactionLogConfiguration.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.Transactions.AzureStorage.AzureTransactionLogConfiguration.ConnectionString
+  commentId: P:Orleans.Transactions.AzureStorage.AzureTransactionLogConfiguration.ConnectionString
+  id: ConnectionString
+  parent: Orleans.Transactions.AzureStorage.AzureTransactionLogConfiguration
+  langs:
+  - csharp
+  - vb
+  name: ConnectionString
+  nameWithType: AzureTransactionLogConfiguration.ConnectionString
+  fullName: Orleans.Transactions.AzureStorage.AzureTransactionLogConfiguration.ConnectionString
+  type: Property
+  source:
+    remote:
+      path: src/Azure/Orleans.Transactions.AzureStorage/Storage/AzureTransactionLogConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ConnectionString
+    path: src/Azure/Orleans.Transactions.AzureStorage/Storage/AzureTransactionLogConfiguration.cs
+    startLine: 5
+  assemblies:
+  - Orleans.Transactions.AzureStorage
+  namespace: Orleans.Transactions.AzureStorage
+  syntax:
+    content: public string ConnectionString { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ConnectionString As String
+  overload: Orleans.Transactions.AzureStorage.AzureTransactionLogConfiguration.ConnectionString*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Transactions.AzureStorage.AzureTransactionLogConfiguration.TableName
+  commentId: P:Orleans.Transactions.AzureStorage.AzureTransactionLogConfiguration.TableName
+  id: TableName
+  parent: Orleans.Transactions.AzureStorage.AzureTransactionLogConfiguration
+  langs:
+  - csharp
+  - vb
+  name: TableName
+  nameWithType: AzureTransactionLogConfiguration.TableName
+  fullName: Orleans.Transactions.AzureStorage.AzureTransactionLogConfiguration.TableName
+  type: Property
+  source:
+    remote:
+      path: src/Azure/Orleans.Transactions.AzureStorage/Storage/AzureTransactionLogConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: TableName
+    path: src/Azure/Orleans.Transactions.AzureStorage/Storage/AzureTransactionLogConfiguration.cs
+    startLine: 7
+  assemblies:
+  - Orleans.Transactions.AzureStorage
+  namespace: Orleans.Transactions.AzureStorage
+  syntax:
+    content: public string TableName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property TableName As String
+  overload: Orleans.Transactions.AzureStorage.AzureTransactionLogConfiguration.TableName*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans.Transactions.AzureStorage
+  commentId: N:Orleans.Transactions.AzureStorage
+  isExternal: false
+  name: Orleans.Transactions.AzureStorage
+  nameWithType: Orleans.Transactions.AzureStorage
+  fullName: Orleans.Transactions.AzureStorage
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Transactions.AzureStorage.AzureTransactionLogConfiguration.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<AzureTransactionLogConfiguration>()
+  nameWithType: ImmutableExt.AsImmutable<AzureTransactionLogConfiguration>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Transactions.AzureStorage.AzureTransactionLogConfiguration>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of AzureTransactionLogConfiguration)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Transactions.AzureStorage.AzureTransactionLogConfiguration)()
+  name.vb: AsImmutable(Of AzureTransactionLogConfiguration)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<AzureTransactionLogConfiguration>
+    nameWithType: ImmutableExt.AsImmutable<AzureTransactionLogConfiguration>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Transactions.AzureStorage.AzureTransactionLogConfiguration>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of AzureTransactionLogConfiguration)
+    nameWithType: ImmutableExt.AsImmutable(Of AzureTransactionLogConfiguration)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Transactions.AzureStorage.AzureTransactionLogConfiguration)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Transactions.AzureStorage.AzureTransactionLogConfiguration.ConnectionString*
+  commentId: Overload:Orleans.Transactions.AzureStorage.AzureTransactionLogConfiguration.ConnectionString
+  isExternal: false
+  name: ConnectionString
+  nameWithType: AzureTransactionLogConfiguration.ConnectionString
+  fullName: Orleans.Transactions.AzureStorage.AzureTransactionLogConfiguration.ConnectionString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Orleans.Transactions.AzureStorage.AzureTransactionLogConfiguration.TableName*
+  commentId: Overload:Orleans.Transactions.AzureStorage.AzureTransactionLogConfiguration.TableName
+  isExternal: false
+  name: TableName
+  nameWithType: AzureTransactionLogConfiguration.TableName
+  fullName: Orleans.Transactions.AzureStorage.AzureTransactionLogConfiguration.TableName

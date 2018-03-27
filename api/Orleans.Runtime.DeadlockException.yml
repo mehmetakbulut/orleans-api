@@ -1,0 +1,363 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Runtime.DeadlockException
+  commentId: T:Orleans.Runtime.DeadlockException
+  id: DeadlockException
+  parent: Orleans.Runtime
+  children:
+  - Orleans.Runtime.DeadlockException.#ctor
+  - Orleans.Runtime.DeadlockException.#ctor(SerializationInfo,StreamingContext)
+  - Orleans.Runtime.DeadlockException.#ctor(System.String)
+  - Orleans.Runtime.DeadlockException.#ctor(System.String,Exception)
+  - Orleans.Runtime.DeadlockException.GetObjectData(SerializationInfo,StreamingContext)
+  langs:
+  - csharp
+  - vb
+  name: DeadlockException
+  nameWithType: DeadlockException
+  fullName: Orleans.Runtime.DeadlockException
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Exceptions/DeadlockException.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: DeadlockException
+    path: src/Orleans.Core.Abstractions/Exceptions/DeadlockException.cs
+    startLine: 20
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  summary: "\nSignifies that a silo has detected a deadlock / loop in a call graph.\n"
+  remarks: "\n<p>\nDeadlock detection is not enabled by default in Orleans silos, \nbecause it introduces some extra overhead in call handling.\n</p>\n<p>\nThere are some constraints on the types of deadlock that can currently be detected \nby Orleans silos.\n</p>\n"
+  example: []
+  syntax:
+    content: 'public class DeadlockException : OrleansException'
+    content.vb: >-
+      Public Class DeadlockException
+
+          Inherits OrleansException
+  inheritance:
+  - System.Object
+  - Orleans.Runtime.OrleansException
+  extensionMethods:
+  - Orleans.Runtime.DeadlockException.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.Runtime.DeadlockException.#ctor
+  commentId: M:Orleans.Runtime.DeadlockException.#ctor
+  id: '#ctor'
+  parent: Orleans.Runtime.DeadlockException
+  langs:
+  - csharp
+  - vb
+  name: DeadlockException()
+  nameWithType: DeadlockException.DeadlockException()
+  fullName: Orleans.Runtime.DeadlockException.DeadlockException()
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Exceptions/DeadlockException.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Core.Abstractions/Exceptions/DeadlockException.cs
+    startLine: 25
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  syntax:
+    content: public DeadlockException()
+    content.vb: Public Sub New
+  overload: Orleans.Runtime.DeadlockException.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.DeadlockException.#ctor(System.String)
+  commentId: M:Orleans.Runtime.DeadlockException.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Orleans.Runtime.DeadlockException
+  langs:
+  - csharp
+  - vb
+  name: DeadlockException(String)
+  nameWithType: DeadlockException.DeadlockException(String)
+  fullName: Orleans.Runtime.DeadlockException.DeadlockException(System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Exceptions/DeadlockException.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Core.Abstractions/Exceptions/DeadlockException.cs
+    startLine: 27
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  syntax:
+    content: public DeadlockException(string message)
+    parameters:
+    - id: message
+      type: System.String
+    content.vb: Public Sub New(message As String)
+  overload: Orleans.Runtime.DeadlockException.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.DeadlockException.#ctor(System.String,Exception)
+  commentId: M:Orleans.Runtime.DeadlockException.#ctor(System.String,Exception)
+  id: '#ctor(System.String,Exception)'
+  parent: Orleans.Runtime.DeadlockException
+  langs:
+  - csharp
+  - vb
+  name: DeadlockException(String, Exception)
+  nameWithType: DeadlockException.DeadlockException(String, Exception)
+  fullName: Orleans.Runtime.DeadlockException.DeadlockException(System.String, Exception)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Exceptions/DeadlockException.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Core.Abstractions/Exceptions/DeadlockException.cs
+    startLine: 29
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  syntax:
+    content: public DeadlockException(string message, Exception innerException)
+    parameters:
+    - id: message
+      type: System.String
+    - id: innerException
+      type: Exception
+    content.vb: Public Sub New(message As String, innerException As Exception)
+  overload: Orleans.Runtime.DeadlockException.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.DeadlockException.#ctor(SerializationInfo,StreamingContext)
+  commentId: M:Orleans.Runtime.DeadlockException.#ctor(SerializationInfo,StreamingContext)
+  id: '#ctor(SerializationInfo,StreamingContext)'
+  parent: Orleans.Runtime.DeadlockException
+  langs:
+  - csharp
+  - vb
+  name: DeadlockException(SerializationInfo, StreamingContext)
+  nameWithType: DeadlockException.DeadlockException(SerializationInfo, StreamingContext)
+  fullName: Orleans.Runtime.DeadlockException.DeadlockException(SerializationInfo, StreamingContext)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Exceptions/DeadlockException.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Core.Abstractions/Exceptions/DeadlockException.cs
+    startLine: 37
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  syntax:
+    content: protected DeadlockException(SerializationInfo info, StreamingContext context)
+    parameters:
+    - id: info
+      type: SerializationInfo
+    - id: context
+      type: StreamingContext
+    content.vb: Protected Sub New(info As SerializationInfo, context As StreamingContext)
+  overload: Orleans.Runtime.DeadlockException.#ctor*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Orleans.Runtime.DeadlockException.GetObjectData(SerializationInfo,StreamingContext)
+  commentId: M:Orleans.Runtime.DeadlockException.GetObjectData(SerializationInfo,StreamingContext)
+  id: GetObjectData(SerializationInfo,StreamingContext)
+  parent: Orleans.Runtime.DeadlockException
+  langs:
+  - csharp
+  - vb
+  name: GetObjectData(SerializationInfo, StreamingContext)
+  nameWithType: DeadlockException.GetObjectData(SerializationInfo, StreamingContext)
+  fullName: Orleans.Runtime.DeadlockException.GetObjectData(SerializationInfo, StreamingContext)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Exceptions/DeadlockException.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetObjectData
+    path: src/Orleans.Core.Abstractions/Exceptions/DeadlockException.cs
+    startLine: 46
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  syntax:
+    content: public override void GetObjectData(SerializationInfo info, StreamingContext context)
+    parameters:
+    - id: info
+      type: SerializationInfo
+    - id: context
+      type: StreamingContext
+    content.vb: Public Overrides Sub GetObjectData(info As SerializationInfo, context As StreamingContext)
+  overload: Orleans.Runtime.DeadlockException.GetObjectData*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: Orleans.Runtime
+  commentId: N:Orleans.Runtime
+  isExternal: false
+  name: Orleans.Runtime
+  nameWithType: Orleans.Runtime
+  fullName: Orleans.Runtime
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Runtime.OrleansException
+  commentId: T:Orleans.Runtime.OrleansException
+  parent: Orleans.Runtime
+  isExternal: false
+  name: OrleansException
+  nameWithType: OrleansException
+  fullName: Orleans.Runtime.OrleansException
+- uid: Orleans.Runtime.DeadlockException.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<DeadlockException>()
+  nameWithType: ImmutableExt.AsImmutable<DeadlockException>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.DeadlockException>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of DeadlockException)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.DeadlockException)()
+  name.vb: AsImmutable(Of DeadlockException)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<DeadlockException>
+    nameWithType: ImmutableExt.AsImmutable<DeadlockException>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.DeadlockException>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of DeadlockException)
+    nameWithType: ImmutableExt.AsImmutable(Of DeadlockException)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.DeadlockException)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Runtime.DeadlockException.#ctor*
+  commentId: Overload:Orleans.Runtime.DeadlockException.#ctor
+  isExternal: false
+  name: DeadlockException
+  nameWithType: DeadlockException.DeadlockException
+  fullName: Orleans.Runtime.DeadlockException.DeadlockException
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Exception
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: Exception
+- uid: SerializationInfo
+  isExternal: true
+  name: SerializationInfo
+  nameWithType: SerializationInfo
+  fullName: SerializationInfo
+- uid: StreamingContext
+  isExternal: true
+  name: StreamingContext
+  nameWithType: StreamingContext
+  fullName: StreamingContext
+- uid: Orleans.Runtime.DeadlockException.GetObjectData*
+  commentId: Overload:Orleans.Runtime.DeadlockException.GetObjectData
+  isExternal: false
+  name: GetObjectData
+  nameWithType: DeadlockException.GetObjectData
+  fullName: Orleans.Runtime.DeadlockException.GetObjectData

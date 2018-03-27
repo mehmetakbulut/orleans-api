@@ -1,0 +1,456 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Streams.IStreamProvider
+  commentId: T:Orleans.Streams.IStreamProvider
+  id: IStreamProvider
+  parent: Orleans.Streams
+  children:
+  - Orleans.Streams.IStreamProvider.GetStream``1(Guid,System.String)
+  - Orleans.Streams.IStreamProvider.IsRewindable
+  - Orleans.Streams.IStreamProvider.Name
+  langs:
+  - csharp
+  - vb
+  name: IStreamProvider
+  nameWithType: IStreamProvider
+  fullName: Orleans.Streams.IStreamProvider
+  type: Interface
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Streams/Providers/IStreamProvider.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IStreamProvider
+    path: src/Orleans.Core.Abstractions/Streams/Providers/IStreamProvider.cs
+    startLine: 6
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Streams
+  syntax:
+    content: public interface IStreamProvider
+    content.vb: Public Interface IStreamProvider
+  extensionMethods:
+  - Orleans.Streams.IStreamProvider.Orleans.Streams.PubSub.StreamSubscriptionManagerExtensions.TryGetStreamSubscrptionManager(Orleans.Streams.Core.IStreamSubscriptionManager@)
+  - Orleans.Streams.IStreamProvider.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Orleans.Streams.IStreamProvider.Name
+  commentId: P:Orleans.Streams.IStreamProvider.Name
+  id: Name
+  parent: Orleans.Streams.IStreamProvider
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: IStreamProvider.Name
+  fullName: Orleans.Streams.IStreamProvider.Name
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Streams/Providers/IStreamProvider.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Name
+    path: src/Orleans.Core.Abstractions/Streams/Providers/IStreamProvider.cs
+    startLine: 9
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Streams
+  summary: Name of the stream provider.
+  example: []
+  syntax:
+    content: string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property Name As String
+  overload: Orleans.Streams.IStreamProvider.Name*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Orleans.Streams.IStreamProvider.GetStream``1(Guid,System.String)
+  commentId: M:Orleans.Streams.IStreamProvider.GetStream``1(Guid,System.String)
+  id: GetStream``1(Guid,System.String)
+  parent: Orleans.Streams.IStreamProvider
+  langs:
+  - csharp
+  - vb
+  name: GetStream<T>(Guid, String)
+  nameWithType: IStreamProvider.GetStream<T>(Guid, String)
+  fullName: Orleans.Streams.IStreamProvider.GetStream<T>(Guid, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Streams/Providers/IStreamProvider.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetStream
+    path: src/Orleans.Core.Abstractions/Streams/Providers/IStreamProvider.cs
+    startLine: 11
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Streams
+  syntax:
+    content: IAsyncStream<T> GetStream<T>(Guid streamId, string streamNamespace)
+    parameters:
+    - id: streamId
+      type: Guid
+    - id: streamNamespace
+      type: System.String
+    typeParameters:
+    - id: T
+    return:
+      type: Orleans.Streams.IAsyncStream{{T}}
+    content.vb: Function GetStream(Of T)(streamId As Guid, streamNamespace As String) As IAsyncStream(Of T)
+  overload: Orleans.Streams.IStreamProvider.GetStream*
+  nameWithType.vb: IStreamProvider.GetStream(Of T)(Guid, String)
+  fullName.vb: Orleans.Streams.IStreamProvider.GetStream(Of T)(Guid, System.String)
+  name.vb: GetStream(Of T)(Guid, String)
+- uid: Orleans.Streams.IStreamProvider.IsRewindable
+  commentId: P:Orleans.Streams.IStreamProvider.IsRewindable
+  id: IsRewindable
+  parent: Orleans.Streams.IStreamProvider
+  langs:
+  - csharp
+  - vb
+  name: IsRewindable
+  nameWithType: IStreamProvider.IsRewindable
+  fullName: Orleans.Streams.IStreamProvider.IsRewindable
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Streams/Providers/IStreamProvider.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IsRewindable
+    path: src/Orleans.Core.Abstractions/Streams/Providers/IStreamProvider.cs
+    startLine: 17
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Streams
+  summary: "\nDetermines whether this is a rewindable provider - supports creating rewindable streams \n(streams that allow subscribing from previous point in time).\n"
+  example: []
+  syntax:
+    content: bool IsRewindable { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: True if this is a rewindable provider, false otherwise.
+    content.vb: ReadOnly Property IsRewindable As Boolean
+  overload: Orleans.Streams.IStreamProvider.IsRewindable*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+references:
+- uid: Orleans.Streams
+  commentId: N:Orleans.Streams
+  isExternal: false
+  name: Orleans.Streams
+  nameWithType: Orleans.Streams
+  fullName: Orleans.Streams
+- uid: Orleans.Streams.IStreamProvider.Orleans.Streams.PubSub.StreamSubscriptionManagerExtensions.TryGetStreamSubscrptionManager(Orleans.Streams.Core.IStreamSubscriptionManager@)
+  commentId: M:Orleans.Streams.PubSub.StreamSubscriptionManagerExtensions.TryGetStreamSubscrptionManager(Orleans.Streams.IStreamProvider,Orleans.Streams.Core.IStreamSubscriptionManager@)
+  parent: Orleans.Streams.PubSub.StreamSubscriptionManagerExtensions
+  definition: Orleans.Streams.PubSub.StreamSubscriptionManagerExtensions.TryGetStreamSubscrptionManager(Orleans.Streams.IStreamProvider,Orleans.Streams.Core.IStreamSubscriptionManager@)
+  name: TryGetStreamSubscrptionManager(IStreamSubscriptionManager)
+  nameWithType: StreamSubscriptionManagerExtensions.TryGetStreamSubscrptionManager(IStreamSubscriptionManager)
+  fullName: Orleans.Streams.PubSub.StreamSubscriptionManagerExtensions.TryGetStreamSubscrptionManager(Orleans.Streams.Core.IStreamSubscriptionManager)
+  spec.csharp:
+  - uid: Orleans.Streams.PubSub.StreamSubscriptionManagerExtensions.TryGetStreamSubscrptionManager(Orleans.Streams.Core.IStreamSubscriptionManager@)
+    name: TryGetStreamSubscrptionManager
+    nameWithType: StreamSubscriptionManagerExtensions.TryGetStreamSubscrptionManager
+    fullName: Orleans.Streams.PubSub.StreamSubscriptionManagerExtensions.TryGetStreamSubscrptionManager
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Streams.Core.IStreamSubscriptionManager
+    name: IStreamSubscriptionManager
+    nameWithType: IStreamSubscriptionManager
+    fullName: Orleans.Streams.Core.IStreamSubscriptionManager
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Streams.PubSub.StreamSubscriptionManagerExtensions.TryGetStreamSubscrptionManager(Orleans.Streams.Core.IStreamSubscriptionManager@)
+    name: TryGetStreamSubscrptionManager
+    nameWithType: StreamSubscriptionManagerExtensions.TryGetStreamSubscrptionManager
+    fullName: Orleans.Streams.PubSub.StreamSubscriptionManagerExtensions.TryGetStreamSubscrptionManager
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Streams.Core.IStreamSubscriptionManager
+    name: IStreamSubscriptionManager
+    nameWithType: IStreamSubscriptionManager
+    fullName: Orleans.Streams.Core.IStreamSubscriptionManager
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Streams.IStreamProvider.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<IStreamProvider>()
+  nameWithType: ImmutableExt.AsImmutable<IStreamProvider>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Streams.IStreamProvider>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of IStreamProvider)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Streams.IStreamProvider)()
+  name.vb: AsImmutable(Of IStreamProvider)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<IStreamProvider>
+    nameWithType: ImmutableExt.AsImmutable<IStreamProvider>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Streams.IStreamProvider>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of IStreamProvider)
+    nameWithType: ImmutableExt.AsImmutable(Of IStreamProvider)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Streams.IStreamProvider)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Streams.PubSub.StreamSubscriptionManagerExtensions.TryGetStreamSubscrptionManager(Orleans.Streams.IStreamProvider,Orleans.Streams.Core.IStreamSubscriptionManager@)
+  commentId: M:Orleans.Streams.PubSub.StreamSubscriptionManagerExtensions.TryGetStreamSubscrptionManager(Orleans.Streams.IStreamProvider,Orleans.Streams.Core.IStreamSubscriptionManager@)
+  isExternal: false
+  name: TryGetStreamSubscrptionManager(IStreamProvider, IStreamSubscriptionManager)
+  nameWithType: StreamSubscriptionManagerExtensions.TryGetStreamSubscrptionManager(IStreamProvider, IStreamSubscriptionManager)
+  fullName: Orleans.Streams.PubSub.StreamSubscriptionManagerExtensions.TryGetStreamSubscrptionManager(Orleans.Streams.IStreamProvider, Orleans.Streams.Core.IStreamSubscriptionManager)
+  spec.csharp:
+  - uid: Orleans.Streams.PubSub.StreamSubscriptionManagerExtensions.TryGetStreamSubscrptionManager(Orleans.Streams.IStreamProvider,Orleans.Streams.Core.IStreamSubscriptionManager@)
+    name: TryGetStreamSubscrptionManager
+    nameWithType: StreamSubscriptionManagerExtensions.TryGetStreamSubscrptionManager
+    fullName: Orleans.Streams.PubSub.StreamSubscriptionManagerExtensions.TryGetStreamSubscrptionManager
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Streams.IStreamProvider
+    name: IStreamProvider
+    nameWithType: IStreamProvider
+    fullName: Orleans.Streams.IStreamProvider
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.Streams.Core.IStreamSubscriptionManager
+    name: IStreamSubscriptionManager
+    nameWithType: IStreamSubscriptionManager
+    fullName: Orleans.Streams.Core.IStreamSubscriptionManager
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Streams.PubSub.StreamSubscriptionManagerExtensions.TryGetStreamSubscrptionManager(Orleans.Streams.IStreamProvider,Orleans.Streams.Core.IStreamSubscriptionManager@)
+    name: TryGetStreamSubscrptionManager
+    nameWithType: StreamSubscriptionManagerExtensions.TryGetStreamSubscrptionManager
+    fullName: Orleans.Streams.PubSub.StreamSubscriptionManagerExtensions.TryGetStreamSubscrptionManager
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Orleans.Streams.IStreamProvider
+    name: IStreamProvider
+    nameWithType: IStreamProvider
+    fullName: Orleans.Streams.IStreamProvider
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.Streams.Core.IStreamSubscriptionManager
+    name: IStreamSubscriptionManager
+    nameWithType: IStreamSubscriptionManager
+    fullName: Orleans.Streams.Core.IStreamSubscriptionManager
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Streams.PubSub.StreamSubscriptionManagerExtensions
+  commentId: T:Orleans.Streams.PubSub.StreamSubscriptionManagerExtensions
+  parent: Orleans.Streams.PubSub
+  isExternal: false
+  name: StreamSubscriptionManagerExtensions
+  nameWithType: StreamSubscriptionManagerExtensions
+  fullName: Orleans.Streams.PubSub.StreamSubscriptionManagerExtensions
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Streams.PubSub
+  commentId: N:Orleans.Streams.PubSub
+  isExternal: false
+  name: Orleans.Streams.PubSub
+  nameWithType: Orleans.Streams.PubSub
+  fullName: Orleans.Streams.PubSub
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Streams.IStreamProvider.Name*
+  commentId: Overload:Orleans.Streams.IStreamProvider.Name
+  isExternal: false
+  name: Name
+  nameWithType: IStreamProvider.Name
+  fullName: Orleans.Streams.IStreamProvider.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Streams.IStreamProvider.GetStream*
+  commentId: Overload:Orleans.Streams.IStreamProvider.GetStream
+  isExternal: false
+  name: GetStream
+  nameWithType: IStreamProvider.GetStream
+  fullName: Orleans.Streams.IStreamProvider.GetStream
+- uid: Guid
+  isExternal: true
+  name: Guid
+  nameWithType: Guid
+  fullName: Guid
+- uid: Orleans.Streams.IAsyncStream{{T}}
+  commentId: T:Orleans.Streams.IAsyncStream{``0}
+  parent: Orleans.Streams
+  definition: Orleans.Streams.IAsyncStream`1
+  name: IAsyncStream<T>
+  nameWithType: IAsyncStream<T>
+  fullName: Orleans.Streams.IAsyncStream<T>
+  nameWithType.vb: IAsyncStream(Of T)
+  fullName.vb: Orleans.Streams.IAsyncStream(Of T)
+  name.vb: IAsyncStream(Of T)
+  spec.csharp:
+  - uid: Orleans.Streams.IAsyncStream`1
+    name: IAsyncStream
+    nameWithType: IAsyncStream
+    fullName: Orleans.Streams.IAsyncStream
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Orleans.Streams.IAsyncStream`1
+    name: IAsyncStream
+    nameWithType: IAsyncStream
+    fullName: Orleans.Streams.IAsyncStream
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Streams.IAsyncStream`1
+  commentId: T:Orleans.Streams.IAsyncStream`1
+  isExternal: false
+  name: IAsyncStream<T>
+  nameWithType: IAsyncStream<T>
+  fullName: Orleans.Streams.IAsyncStream<T>
+  nameWithType.vb: IAsyncStream(Of T)
+  fullName.vb: Orleans.Streams.IAsyncStream(Of T)
+  name.vb: IAsyncStream(Of T)
+  spec.csharp:
+  - uid: Orleans.Streams.IAsyncStream`1
+    name: IAsyncStream
+    nameWithType: IAsyncStream
+    fullName: Orleans.Streams.IAsyncStream
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Orleans.Streams.IAsyncStream`1
+    name: IAsyncStream
+    nameWithType: IAsyncStream
+    fullName: Orleans.Streams.IAsyncStream
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Streams.IStreamProvider.IsRewindable*
+  commentId: Overload:Orleans.Streams.IStreamProvider.IsRewindable
+  isExternal: false
+  name: IsRewindable
+  nameWithType: IStreamProvider.IsRewindable
+  fullName: Orleans.Streams.IStreamProvider.IsRewindable
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

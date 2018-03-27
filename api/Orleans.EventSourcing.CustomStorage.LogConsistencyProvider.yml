@@ -1,0 +1,724 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.EventSourcing.CustomStorage.LogConsistencyProvider
+  commentId: T:Orleans.EventSourcing.CustomStorage.LogConsistencyProvider
+  id: LogConsistencyProvider
+  parent: Orleans.EventSourcing.CustomStorage
+  children:
+  - Orleans.EventSourcing.CustomStorage.LogConsistencyProvider.Close
+  - Orleans.EventSourcing.CustomStorage.LogConsistencyProvider.Init(System.String,IProviderRuntime,IProviderConfiguration)
+  - Orleans.EventSourcing.CustomStorage.LogConsistencyProvider.MakeLogViewAdaptor``2(ILogViewAdaptorHost{``0,``1},``0,System.String,IGrainStorage,ILogConsistencyProtocolServices)
+  - Orleans.EventSourcing.CustomStorage.LogConsistencyProvider.Name
+  - Orleans.EventSourcing.CustomStorage.LogConsistencyProvider.PrimaryCluster
+  - Orleans.EventSourcing.CustomStorage.LogConsistencyProvider.UsesStorageProvider
+  langs:
+  - csharp
+  - vb
+  name: LogConsistencyProvider
+  nameWithType: LogConsistencyProvider
+  fullName: Orleans.EventSourcing.CustomStorage.LogConsistencyProvider
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/CustomStorage/LogConsistencyProvider.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: LogConsistencyProvider
+    path: src/Orleans.EventSourcing/CustomStorage/LogConsistencyProvider.cs
+    startLine: 25
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.CustomStorage
+  summary: "\nA log-consistency provider that relies on grain-specific custom code for \nreading states from storage, and appending deltas to storage.\nGrains that wish to use this provider must implement the <xref href=\"Orleans.EventSourcing.CustomStorage.ICustomStorageInterface%602\" data-throw-if-not-resolved=\"false\"></xref>\ninterface, to define how state is read and how deltas are written.\nIf the provider attribute &quot;PrimaryCluster&quot; is supplied in the provider configuration, then only the specified cluster\naccesses storage, and other clusters may not issue updates. \n"
+  example: []
+  syntax:
+    content: 'public class LogConsistencyProvider : ILogConsistencyProvider'
+    content.vb: >-
+      Public Class LogConsistencyProvider
+
+          Inherits ILogConsistencyProvider
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.EventSourcing.CustomStorage.LogConsistencyProvider.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.EventSourcing.CustomStorage.LogConsistencyProvider.Name
+  commentId: P:Orleans.EventSourcing.CustomStorage.LogConsistencyProvider.Name
+  id: Name
+  parent: Orleans.EventSourcing.CustomStorage.LogConsistencyProvider
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: LogConsistencyProvider.Name
+  fullName: Orleans.EventSourcing.CustomStorage.LogConsistencyProvider.Name
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/CustomStorage/LogConsistencyProvider.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Name
+    path: src/Orleans.EventSourcing/CustomStorage/LogConsistencyProvider.cs
+    startLine: 29
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.CustomStorage
+  example: []
+  syntax:
+    content: public string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Name As String
+  overload: Orleans.EventSourcing.CustomStorage.LogConsistencyProvider.Name*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.EventSourcing.CustomStorage.LogConsistencyProvider.PrimaryCluster
+  commentId: P:Orleans.EventSourcing.CustomStorage.LogConsistencyProvider.PrimaryCluster
+  id: PrimaryCluster
+  parent: Orleans.EventSourcing.CustomStorage.LogConsistencyProvider
+  langs:
+  - csharp
+  - vb
+  name: PrimaryCluster
+  nameWithType: LogConsistencyProvider.PrimaryCluster
+  fullName: Orleans.EventSourcing.CustomStorage.LogConsistencyProvider.PrimaryCluster
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/CustomStorage/LogConsistencyProvider.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: PrimaryCluster
+    path: src/Orleans.EventSourcing/CustomStorage/LogConsistencyProvider.cs
+    startLine: 35
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.CustomStorage
+  summary: "\nSpecifies a clusterid of the primary cluster from which to access storage exclusively, null if\nstorage should be accessed direcly from all clusters.\n"
+  example: []
+  syntax:
+    content: public string PrimaryCluster { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property PrimaryCluster As String
+  overload: Orleans.EventSourcing.CustomStorage.LogConsistencyProvider.PrimaryCluster*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.EventSourcing.CustomStorage.LogConsistencyProvider.UsesStorageProvider
+  commentId: P:Orleans.EventSourcing.CustomStorage.LogConsistencyProvider.UsesStorageProvider
+  id: UsesStorageProvider
+  parent: Orleans.EventSourcing.CustomStorage.LogConsistencyProvider
+  langs:
+  - csharp
+  - vb
+  name: UsesStorageProvider
+  nameWithType: LogConsistencyProvider.UsesStorageProvider
+  fullName: Orleans.EventSourcing.CustomStorage.LogConsistencyProvider.UsesStorageProvider
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/CustomStorage/LogConsistencyProvider.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: UsesStorageProvider
+    path: src/Orleans.EventSourcing/CustomStorage/LogConsistencyProvider.cs
+    startLine: 38
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.CustomStorage
+  example: []
+  syntax:
+    content: public bool UsesStorageProvider { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property UsesStorageProvider As Boolean
+  overload: Orleans.EventSourcing.CustomStorage.LogConsistencyProvider.UsesStorageProvider*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.EventSourcing.CustomStorage.LogConsistencyProvider.Init(System.String,IProviderRuntime,IProviderConfiguration)
+  commentId: M:Orleans.EventSourcing.CustomStorage.LogConsistencyProvider.Init(System.String,IProviderRuntime,IProviderConfiguration)
+  id: Init(System.String,IProviderRuntime,IProviderConfiguration)
+  parent: Orleans.EventSourcing.CustomStorage.LogConsistencyProvider
+  langs:
+  - csharp
+  - vb
+  name: Init(String, IProviderRuntime, IProviderConfiguration)
+  nameWithType: LogConsistencyProvider.Init(String, IProviderRuntime, IProviderConfiguration)
+  fullName: Orleans.EventSourcing.CustomStorage.LogConsistencyProvider.Init(System.String, IProviderRuntime, IProviderConfiguration)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/CustomStorage/LogConsistencyProvider.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Init
+    path: src/Orleans.EventSourcing/CustomStorage/LogConsistencyProvider.cs
+    startLine: 46
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.CustomStorage
+  summary: "\nInit function\n"
+  example: []
+  syntax:
+    content: public Task Init(string name, IProviderRuntime providerRuntime, IProviderConfiguration config)
+    parameters:
+    - id: name
+      type: System.String
+      description: provider name
+    - id: providerRuntime
+      type: IProviderRuntime
+      description: provider runtime, see <see cref="!:IProviderRuntime"></see>
+    - id: config
+      type: IProviderConfiguration
+      description: provider configuration
+    return:
+      type: Task
+    content.vb: Public Function Init(name As String, providerRuntime As IProviderRuntime, config As IProviderConfiguration) As Task
+  overload: Orleans.EventSourcing.CustomStorage.LogConsistencyProvider.Init*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.EventSourcing.CustomStorage.LogConsistencyProvider.Close
+  commentId: M:Orleans.EventSourcing.CustomStorage.LogConsistencyProvider.Close
+  id: Close
+  parent: Orleans.EventSourcing.CustomStorage.LogConsistencyProvider
+  langs:
+  - csharp
+  - vb
+  name: Close()
+  nameWithType: LogConsistencyProvider.Close()
+  fullName: Orleans.EventSourcing.CustomStorage.LogConsistencyProvider.Close()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/CustomStorage/LogConsistencyProvider.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Close
+    path: src/Orleans.EventSourcing/CustomStorage/LogConsistencyProvider.cs
+    startLine: 60
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.CustomStorage
+  example: []
+  syntax:
+    content: public Task Close()
+    return:
+      type: Task
+    content.vb: Public Function Close As Task
+  overload: Orleans.EventSourcing.CustomStorage.LogConsistencyProvider.Close*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.EventSourcing.CustomStorage.LogConsistencyProvider.MakeLogViewAdaptor``2(ILogViewAdaptorHost{``0,``1},``0,System.String,IGrainStorage,ILogConsistencyProtocolServices)
+  commentId: M:Orleans.EventSourcing.CustomStorage.LogConsistencyProvider.MakeLogViewAdaptor``2(ILogViewAdaptorHost{``0,``1},``0,System.String,IGrainStorage,ILogConsistencyProtocolServices)
+  id: MakeLogViewAdaptor``2(ILogViewAdaptorHost{``0,``1},``0,System.String,IGrainStorage,ILogConsistencyProtocolServices)
+  parent: Orleans.EventSourcing.CustomStorage.LogConsistencyProvider
+  langs:
+  - csharp
+  - vb
+  name: MakeLogViewAdaptor<TView, TEntry>(ILogViewAdaptorHost<TView, TEntry>, TView, String, IGrainStorage, ILogConsistencyProtocolServices)
+  nameWithType: LogConsistencyProvider.MakeLogViewAdaptor<TView, TEntry>(ILogViewAdaptorHost<TView, TEntry>, TView, String, IGrainStorage, ILogConsistencyProtocolServices)
+  fullName: Orleans.EventSourcing.CustomStorage.LogConsistencyProvider.MakeLogViewAdaptor<TView, TEntry>(ILogViewAdaptorHost<TView, TEntry>, TView, System.String, IGrainStorage, ILogConsistencyProtocolServices)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/CustomStorage/LogConsistencyProvider.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: MakeLogViewAdaptor
+    path: src/Orleans.EventSourcing/CustomStorage/LogConsistencyProvider.cs
+    startLine: 66
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.CustomStorage
+  example: []
+  syntax:
+    content: 'public ILogViewAdaptor<TView, TEntry> MakeLogViewAdaptor<TView, TEntry>(ILogViewAdaptorHost<TView, TEntry> hostgrain, TView initialstate, string graintypename, IGrainStorage grainStorage, ILogConsistencyProtocolServices services)where TView : class, new ()where TEntry : class'
+    parameters:
+    - id: hostgrain
+      type: ILogViewAdaptorHost{{TView},{TEntry}}
+    - id: initialstate
+      type: '{TView}'
+    - id: graintypename
+      type: System.String
+    - id: grainStorage
+      type: IGrainStorage
+    - id: services
+      type: ILogConsistencyProtocolServices
+    typeParameters:
+    - id: TView
+    - id: TEntry
+    return:
+      type: ILogViewAdaptor{{TView},{TEntry}}
+    content.vb: Public Function MakeLogViewAdaptor(Of TView As {Class, New}, TEntry As Class)(hostgrain As ILogViewAdaptorHost(Of TView, TEntry), initialstate As TView, graintypename As String, grainStorage As IGrainStorage, services As ILogConsistencyProtocolServices) As ILogViewAdaptor(Of TView, TEntry)
+  overload: Orleans.EventSourcing.CustomStorage.LogConsistencyProvider.MakeLogViewAdaptor*
+  nameWithType.vb: LogConsistencyProvider.MakeLogViewAdaptor(Of TView, TEntry)(ILogViewAdaptorHost(Of TView, TEntry), TView, String, IGrainStorage, ILogConsistencyProtocolServices)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.EventSourcing.CustomStorage.LogConsistencyProvider.MakeLogViewAdaptor(Of TView, TEntry)(ILogViewAdaptorHost(Of TView, TEntry), TView, System.String, IGrainStorage, ILogConsistencyProtocolServices)
+  name.vb: MakeLogViewAdaptor(Of TView, TEntry)(ILogViewAdaptorHost(Of TView, TEntry), TView, String, IGrainStorage, ILogConsistencyProtocolServices)
+references:
+- uid: Orleans.EventSourcing.CustomStorage.ICustomStorageInterface`2
+  commentId: T:Orleans.EventSourcing.CustomStorage.ICustomStorageInterface`2
+  isExternal: false
+  name: ICustomStorageInterface<TState, TDelta>
+  nameWithType: ICustomStorageInterface<TState, TDelta>
+  fullName: Orleans.EventSourcing.CustomStorage.ICustomStorageInterface<TState, TDelta>
+  nameWithType.vb: ICustomStorageInterface(Of TState, TDelta)
+  fullName.vb: Orleans.EventSourcing.CustomStorage.ICustomStorageInterface(Of TState, TDelta)
+  name.vb: ICustomStorageInterface(Of TState, TDelta)
+  spec.csharp:
+  - uid: Orleans.EventSourcing.CustomStorage.ICustomStorageInterface`2
+    name: ICustomStorageInterface
+    nameWithType: ICustomStorageInterface
+    fullName: Orleans.EventSourcing.CustomStorage.ICustomStorageInterface
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TState
+    nameWithType: TState
+    fullName: TState
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TDelta
+    nameWithType: TDelta
+    fullName: TDelta
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Orleans.EventSourcing.CustomStorage.ICustomStorageInterface`2
+    name: ICustomStorageInterface
+    nameWithType: ICustomStorageInterface
+    fullName: Orleans.EventSourcing.CustomStorage.ICustomStorageInterface
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TState
+    nameWithType: TState
+    fullName: TState
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TDelta
+    nameWithType: TDelta
+    fullName: TDelta
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.CustomStorage
+  commentId: N:Orleans.EventSourcing.CustomStorage
+  isExternal: false
+  name: Orleans.EventSourcing.CustomStorage
+  nameWithType: Orleans.EventSourcing.CustomStorage
+  fullName: Orleans.EventSourcing.CustomStorage
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.EventSourcing.CustomStorage.LogConsistencyProvider.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<LogConsistencyProvider>()
+  nameWithType: ImmutableExt.AsImmutable<LogConsistencyProvider>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.EventSourcing.CustomStorage.LogConsistencyProvider>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of LogConsistencyProvider)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.EventSourcing.CustomStorage.LogConsistencyProvider)()
+  name.vb: AsImmutable(Of LogConsistencyProvider)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<LogConsistencyProvider>
+    nameWithType: ImmutableExt.AsImmutable<LogConsistencyProvider>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.EventSourcing.CustomStorage.LogConsistencyProvider>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of LogConsistencyProvider)
+    nameWithType: ImmutableExt.AsImmutable(Of LogConsistencyProvider)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.EventSourcing.CustomStorage.LogConsistencyProvider)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.EventSourcing.CustomStorage.LogConsistencyProvider.Name*
+  commentId: Overload:Orleans.EventSourcing.CustomStorage.LogConsistencyProvider.Name
+  isExternal: false
+  name: Name
+  nameWithType: LogConsistencyProvider.Name
+  fullName: Orleans.EventSourcing.CustomStorage.LogConsistencyProvider.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Orleans.EventSourcing.CustomStorage.LogConsistencyProvider.PrimaryCluster*
+  commentId: Overload:Orleans.EventSourcing.CustomStorage.LogConsistencyProvider.PrimaryCluster
+  isExternal: false
+  name: PrimaryCluster
+  nameWithType: LogConsistencyProvider.PrimaryCluster
+  fullName: Orleans.EventSourcing.CustomStorage.LogConsistencyProvider.PrimaryCluster
+- uid: Orleans.EventSourcing.CustomStorage.LogConsistencyProvider.UsesStorageProvider*
+  commentId: Overload:Orleans.EventSourcing.CustomStorage.LogConsistencyProvider.UsesStorageProvider
+  isExternal: false
+  name: UsesStorageProvider
+  nameWithType: LogConsistencyProvider.UsesStorageProvider
+  fullName: Orleans.EventSourcing.CustomStorage.LogConsistencyProvider.UsesStorageProvider
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Orleans.EventSourcing.CustomStorage.LogConsistencyProvider.Init*
+  commentId: Overload:Orleans.EventSourcing.CustomStorage.LogConsistencyProvider.Init
+  isExternal: false
+  name: Init
+  nameWithType: LogConsistencyProvider.Init
+  fullName: Orleans.EventSourcing.CustomStorage.LogConsistencyProvider.Init
+- uid: IProviderRuntime
+  isExternal: true
+  name: IProviderRuntime
+  nameWithType: IProviderRuntime
+  fullName: IProviderRuntime
+- uid: IProviderConfiguration
+  isExternal: true
+  name: IProviderConfiguration
+  nameWithType: IProviderConfiguration
+  fullName: IProviderConfiguration
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task
+- uid: Orleans.EventSourcing.CustomStorage.LogConsistencyProvider.Close*
+  commentId: Overload:Orleans.EventSourcing.CustomStorage.LogConsistencyProvider.Close
+  isExternal: false
+  name: Close
+  nameWithType: LogConsistencyProvider.Close
+  fullName: Orleans.EventSourcing.CustomStorage.LogConsistencyProvider.Close
+- uid: Orleans.EventSourcing.CustomStorage.LogConsistencyProvider.MakeLogViewAdaptor*
+  commentId: Overload:Orleans.EventSourcing.CustomStorage.LogConsistencyProvider.MakeLogViewAdaptor
+  isExternal: false
+  name: MakeLogViewAdaptor
+  nameWithType: LogConsistencyProvider.MakeLogViewAdaptor
+  fullName: Orleans.EventSourcing.CustomStorage.LogConsistencyProvider.MakeLogViewAdaptor
+- uid: ILogViewAdaptorHost{{TView},{TEntry}}
+  commentId: '!:ILogViewAdaptorHost{``0,``1}'
+  definition: ILogViewAdaptorHost`2
+  name: ILogViewAdaptorHost<TView, TEntry>
+  nameWithType: ILogViewAdaptorHost<TView, TEntry>
+  fullName: ILogViewAdaptorHost<TView, TEntry>
+  nameWithType.vb: ILogViewAdaptorHost(Of TView, TEntry)
+  fullName.vb: ILogViewAdaptorHost(Of TView, TEntry)
+  name.vb: ILogViewAdaptorHost(Of TView, TEntry)
+  spec.csharp:
+  - uid: ILogViewAdaptorHost`2
+    name: ILogViewAdaptorHost
+    nameWithType: ILogViewAdaptorHost
+    fullName: ILogViewAdaptorHost
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TView
+    nameWithType: TView
+    fullName: TView
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEntry
+    nameWithType: TEntry
+    fullName: TEntry
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ILogViewAdaptorHost`2
+    name: ILogViewAdaptorHost
+    nameWithType: ILogViewAdaptorHost
+    fullName: ILogViewAdaptorHost
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TView
+    nameWithType: TView
+    fullName: TView
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEntry
+    nameWithType: TEntry
+    fullName: TEntry
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: '{TView}'
+  commentId: '!:TView'
+  definition: TView
+  name: TView
+  nameWithType: TView
+  fullName: TView
+- uid: IGrainStorage
+  isExternal: true
+  name: IGrainStorage
+  nameWithType: IGrainStorage
+  fullName: IGrainStorage
+- uid: ILogConsistencyProtocolServices
+  isExternal: true
+  name: ILogConsistencyProtocolServices
+  nameWithType: ILogConsistencyProtocolServices
+  fullName: ILogConsistencyProtocolServices
+- uid: ILogViewAdaptor{{TView},{TEntry}}
+  commentId: '!:ILogViewAdaptor{``0,``1}'
+  definition: ILogViewAdaptor`2
+  name: ILogViewAdaptor<TView, TEntry>
+  nameWithType: ILogViewAdaptor<TView, TEntry>
+  fullName: ILogViewAdaptor<TView, TEntry>
+  nameWithType.vb: ILogViewAdaptor(Of TView, TEntry)
+  fullName.vb: ILogViewAdaptor(Of TView, TEntry)
+  name.vb: ILogViewAdaptor(Of TView, TEntry)
+  spec.csharp:
+  - uid: ILogViewAdaptor`2
+    name: ILogViewAdaptor
+    nameWithType: ILogViewAdaptor
+    fullName: ILogViewAdaptor
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TView
+    nameWithType: TView
+    fullName: TView
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEntry
+    nameWithType: TEntry
+    fullName: TEntry
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ILogViewAdaptor`2
+    name: ILogViewAdaptor
+    nameWithType: ILogViewAdaptor
+    fullName: ILogViewAdaptor
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TView
+    nameWithType: TView
+    fullName: TView
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEntry
+    nameWithType: TEntry
+    fullName: TEntry
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: ILogViewAdaptorHost`2
+  isExternal: true
+  name: ILogViewAdaptorHost<, >
+  nameWithType: ILogViewAdaptorHost<, >
+  fullName: ILogViewAdaptorHost<, >
+  nameWithType.vb: ILogViewAdaptorHost(Of , )
+  fullName.vb: ILogViewAdaptorHost(Of , )
+  name.vb: ILogViewAdaptorHost(Of , )
+  spec.csharp:
+  - uid: ILogViewAdaptorHost`2
+    name: ILogViewAdaptorHost
+    nameWithType: ILogViewAdaptorHost
+    fullName: ILogViewAdaptorHost
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ILogViewAdaptorHost`2
+    name: ILogViewAdaptorHost
+    nameWithType: ILogViewAdaptorHost
+    fullName: ILogViewAdaptorHost
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TView
+  isExternal: false
+  name: TView
+  nameWithType: TView
+  fullName: TView
+- uid: ILogViewAdaptor`2
+  isExternal: true
+  name: ILogViewAdaptor<, >
+  nameWithType: ILogViewAdaptor<, >
+  fullName: ILogViewAdaptor<, >
+  nameWithType.vb: ILogViewAdaptor(Of , )
+  fullName.vb: ILogViewAdaptor(Of , )
+  name.vb: ILogViewAdaptor(Of , )
+  spec.csharp:
+  - uid: ILogViewAdaptor`2
+    name: ILogViewAdaptor
+    nameWithType: ILogViewAdaptor
+    fullName: ILogViewAdaptor
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ILogViewAdaptor`2
+    name: ILogViewAdaptor
+    nameWithType: ILogViewAdaptor
+    fullName: ILogViewAdaptor
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )

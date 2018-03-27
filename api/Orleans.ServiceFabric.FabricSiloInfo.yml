@@ -1,0 +1,580 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.ServiceFabric.FabricSiloInfo
+  commentId: T:Orleans.ServiceFabric.FabricSiloInfo
+  id: FabricSiloInfo
+  parent: Orleans.ServiceFabric
+  children:
+  - Orleans.ServiceFabric.FabricSiloInfo.Gateway
+  - Orleans.ServiceFabric.FabricSiloInfo.GatewayAddress
+  - Orleans.ServiceFabric.FabricSiloInfo.Name
+  - Orleans.ServiceFabric.FabricSiloInfo.OtherEndpoints
+  - Orleans.ServiceFabric.FabricSiloInfo.Silo
+  - Orleans.ServiceFabric.FabricSiloInfo.SiloAddress
+  - Orleans.ServiceFabric.FabricSiloInfo.ToString
+  langs:
+  - csharp
+  - vb
+  name: FabricSiloInfo
+  nameWithType: FabricSiloInfo
+  fullName: Orleans.ServiceFabric.FabricSiloInfo
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Hosting.ServiceFabric/FabricSiloInfo.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: FabricSiloInfo
+    path: src/Orleans.Hosting.ServiceFabric/FabricSiloInfo.cs
+    startLine: 11
+  assemblies:
+  - Orleans.Hosting.ServiceFabric
+  namespace: Orleans.ServiceFabric
+  summary: "\nRepresents silo endpoints.\n"
+  example: []
+  syntax:
+    content: 'public class FabricSiloInfo : object'
+    content.vb: >-
+      Public Class FabricSiloInfo
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.ServiceFabric.FabricSiloInfo.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.ServiceFabric.FabricSiloInfo.Name
+  commentId: P:Orleans.ServiceFabric.FabricSiloInfo.Name
+  id: Name
+  parent: Orleans.ServiceFabric.FabricSiloInfo
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: FabricSiloInfo.Name
+  fullName: Orleans.ServiceFabric.FabricSiloInfo.Name
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Hosting.ServiceFabric/FabricSiloInfo.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Name
+    path: src/Orleans.Hosting.ServiceFabric/FabricSiloInfo.cs
+    startLine: 16
+  assemblies:
+  - Orleans.Hosting.ServiceFabric
+  namespace: Orleans.ServiceFabric
+  summary: "\nGets the name of the silo.\n"
+  example: []
+  syntax:
+    content: public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: Orleans.ServiceFabric.FabricSiloInfo.Name*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.ServiceFabric.FabricSiloInfo.Silo
+  commentId: P:Orleans.ServiceFabric.FabricSiloInfo.Silo
+  id: Silo
+  parent: Orleans.ServiceFabric.FabricSiloInfo
+  langs:
+  - csharp
+  - vb
+  name: Silo
+  nameWithType: FabricSiloInfo.Silo
+  fullName: Orleans.ServiceFabric.FabricSiloInfo.Silo
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Hosting.ServiceFabric/FabricSiloInfo.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Silo
+    path: src/Orleans.Hosting.ServiceFabric/FabricSiloInfo.cs
+    startLine: 22
+  assemblies:
+  - Orleans.Hosting.ServiceFabric
+  namespace: Orleans.ServiceFabric
+  summary: "\nGets the silo address.\n"
+  example: []
+  syntax:
+    content: public string Silo { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Silo As String
+  overload: Orleans.ServiceFabric.FabricSiloInfo.Silo*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.ServiceFabric.FabricSiloInfo.Gateway
+  commentId: P:Orleans.ServiceFabric.FabricSiloInfo.Gateway
+  id: Gateway
+  parent: Orleans.ServiceFabric.FabricSiloInfo
+  langs:
+  - csharp
+  - vb
+  name: Gateway
+  nameWithType: FabricSiloInfo.Gateway
+  fullName: Orleans.ServiceFabric.FabricSiloInfo.Gateway
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Hosting.ServiceFabric/FabricSiloInfo.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Gateway
+    path: src/Orleans.Hosting.ServiceFabric/FabricSiloInfo.cs
+    startLine: 28
+  assemblies:
+  - Orleans.Hosting.ServiceFabric
+  namespace: Orleans.ServiceFabric
+  summary: "\nGets the gateway address.\n"
+  example: []
+  syntax:
+    content: public string Gateway { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Gateway As String
+  overload: Orleans.ServiceFabric.FabricSiloInfo.Gateway*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.ServiceFabric.FabricSiloInfo.OtherEndpoints
+  commentId: P:Orleans.ServiceFabric.FabricSiloInfo.OtherEndpoints
+  id: OtherEndpoints
+  parent: Orleans.ServiceFabric.FabricSiloInfo
+  langs:
+  - csharp
+  - vb
+  name: OtherEndpoints
+  nameWithType: FabricSiloInfo.OtherEndpoints
+  fullName: Orleans.ServiceFabric.FabricSiloInfo.OtherEndpoints
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Hosting.ServiceFabric/FabricSiloInfo.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: OtherEndpoints
+    path: src/Orleans.Hosting.ServiceFabric/FabricSiloInfo.cs
+    startLine: 34
+  assemblies:
+  - Orleans.Hosting.ServiceFabric
+  namespace: Orleans.ServiceFabric
+  summary: "\nGets the collection of other endpoints associated with this silo.\n"
+  example: []
+  syntax:
+    content: public Dictionary<string, string> OtherEndpoints { get; }
+    parameters: []
+    return:
+      type: Dictionary{System.String,System.String}
+    content.vb: Public ReadOnly Property OtherEndpoints As Dictionary(Of String, String)
+  overload: Orleans.ServiceFabric.FabricSiloInfo.OtherEndpoints*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.ServiceFabric.FabricSiloInfo.SiloAddress
+  commentId: P:Orleans.ServiceFabric.FabricSiloInfo.SiloAddress
+  id: SiloAddress
+  parent: Orleans.ServiceFabric.FabricSiloInfo
+  langs:
+  - csharp
+  - vb
+  name: SiloAddress
+  nameWithType: FabricSiloInfo.SiloAddress
+  fullName: Orleans.ServiceFabric.FabricSiloInfo.SiloAddress
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Hosting.ServiceFabric/FabricSiloInfo.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SiloAddress
+    path: src/Orleans.Hosting.ServiceFabric/FabricSiloInfo.cs
+    startLine: 40
+  assemblies:
+  - Orleans.Hosting.ServiceFabric
+  namespace: Orleans.ServiceFabric
+  summary: "\nGets the parsed silo address.\n"
+  example: []
+  syntax:
+    content: public SiloAddress SiloAddress { get; }
+    parameters: []
+    return:
+      type: Orleans.Runtime.SiloAddress
+    content.vb: Public ReadOnly Property SiloAddress As SiloAddress
+  overload: Orleans.ServiceFabric.FabricSiloInfo.SiloAddress*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.ServiceFabric.FabricSiloInfo.GatewayAddress
+  commentId: P:Orleans.ServiceFabric.FabricSiloInfo.GatewayAddress
+  id: GatewayAddress
+  parent: Orleans.ServiceFabric.FabricSiloInfo
+  langs:
+  - csharp
+  - vb
+  name: GatewayAddress
+  nameWithType: FabricSiloInfo.GatewayAddress
+  fullName: Orleans.ServiceFabric.FabricSiloInfo.GatewayAddress
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Hosting.ServiceFabric/FabricSiloInfo.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GatewayAddress
+    path: src/Orleans.Hosting.ServiceFabric/FabricSiloInfo.cs
+    startLine: 46
+  assemblies:
+  - Orleans.Hosting.ServiceFabric
+  namespace: Orleans.ServiceFabric
+  summary: "\nGets the parsed gateway address.\n"
+  example: []
+  syntax:
+    content: public SiloAddress GatewayAddress { get; }
+    parameters: []
+    return:
+      type: Orleans.Runtime.SiloAddress
+    content.vb: Public ReadOnly Property GatewayAddress As SiloAddress
+  overload: Orleans.ServiceFabric.FabricSiloInfo.GatewayAddress*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.ServiceFabric.FabricSiloInfo.ToString
+  commentId: M:Orleans.ServiceFabric.FabricSiloInfo.ToString
+  id: ToString
+  parent: Orleans.ServiceFabric.FabricSiloInfo
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: FabricSiloInfo.ToString()
+  fullName: Orleans.ServiceFabric.FabricSiloInfo.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Hosting.ServiceFabric/FabricSiloInfo.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ToString
+    path: src/Orleans.Hosting.ServiceFabric/FabricSiloInfo.cs
+    startLine: 50
+  assemblies:
+  - Orleans.Hosting.ServiceFabric
+  namespace: Orleans.ServiceFabric
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overload: Orleans.ServiceFabric.FabricSiloInfo.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: Orleans.ServiceFabric
+  commentId: N:Orleans.ServiceFabric
+  isExternal: false
+  name: Orleans.ServiceFabric
+  nameWithType: Orleans.ServiceFabric
+  fullName: Orleans.ServiceFabric
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.ServiceFabric.FabricSiloInfo.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<FabricSiloInfo>()
+  nameWithType: ImmutableExt.AsImmutable<FabricSiloInfo>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.ServiceFabric.FabricSiloInfo>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of FabricSiloInfo)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.ServiceFabric.FabricSiloInfo)()
+  name.vb: AsImmutable(Of FabricSiloInfo)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<FabricSiloInfo>
+    nameWithType: ImmutableExt.AsImmutable<FabricSiloInfo>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.ServiceFabric.FabricSiloInfo>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of FabricSiloInfo)
+    nameWithType: ImmutableExt.AsImmutable(Of FabricSiloInfo)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.ServiceFabric.FabricSiloInfo)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.ServiceFabric.FabricSiloInfo.Name*
+  commentId: Overload:Orleans.ServiceFabric.FabricSiloInfo.Name
+  isExternal: false
+  name: Name
+  nameWithType: FabricSiloInfo.Name
+  fullName: Orleans.ServiceFabric.FabricSiloInfo.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Orleans.ServiceFabric.FabricSiloInfo.Silo*
+  commentId: Overload:Orleans.ServiceFabric.FabricSiloInfo.Silo
+  isExternal: false
+  name: Silo
+  nameWithType: FabricSiloInfo.Silo
+  fullName: Orleans.ServiceFabric.FabricSiloInfo.Silo
+- uid: Orleans.ServiceFabric.FabricSiloInfo.Gateway*
+  commentId: Overload:Orleans.ServiceFabric.FabricSiloInfo.Gateway
+  isExternal: false
+  name: Gateway
+  nameWithType: FabricSiloInfo.Gateway
+  fullName: Orleans.ServiceFabric.FabricSiloInfo.Gateway
+- uid: Orleans.ServiceFabric.FabricSiloInfo.OtherEndpoints*
+  commentId: Overload:Orleans.ServiceFabric.FabricSiloInfo.OtherEndpoints
+  isExternal: false
+  name: OtherEndpoints
+  nameWithType: FabricSiloInfo.OtherEndpoints
+  fullName: Orleans.ServiceFabric.FabricSiloInfo.OtherEndpoints
+- uid: Dictionary{System.String,System.String}
+  commentId: '!:Dictionary{System.String,System.String}'
+  definition: Dictionary`2
+  name: Dictionary<String, String>
+  nameWithType: Dictionary<String, String>
+  fullName: Dictionary<System.String, System.String>
+  nameWithType.vb: Dictionary(Of String, String)
+  fullName.vb: Dictionary(Of System.String, System.String)
+  name.vb: Dictionary(Of String, String)
+  spec.csharp:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Dictionary`2
+  isExternal: true
+  name: Dictionary<, >
+  nameWithType: Dictionary<, >
+  fullName: Dictionary<, >
+  nameWithType.vb: Dictionary(Of , )
+  fullName.vb: Dictionary(Of , )
+  name.vb: Dictionary(Of , )
+  spec.csharp:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.ServiceFabric.FabricSiloInfo.SiloAddress*
+  commentId: Overload:Orleans.ServiceFabric.FabricSiloInfo.SiloAddress
+  isExternal: false
+  name: SiloAddress
+  nameWithType: FabricSiloInfo.SiloAddress
+  fullName: Orleans.ServiceFabric.FabricSiloInfo.SiloAddress
+- uid: Orleans.Runtime.SiloAddress
+  commentId: T:Orleans.Runtime.SiloAddress
+  parent: Orleans.Runtime
+  isExternal: false
+  name: SiloAddress
+  nameWithType: SiloAddress
+  fullName: Orleans.Runtime.SiloAddress
+- uid: Orleans.Runtime
+  commentId: N:Orleans.Runtime
+  isExternal: false
+  name: Orleans.Runtime
+  nameWithType: Orleans.Runtime
+  fullName: Orleans.Runtime
+- uid: Orleans.ServiceFabric.FabricSiloInfo.GatewayAddress*
+  commentId: Overload:Orleans.ServiceFabric.FabricSiloInfo.GatewayAddress
+  isExternal: false
+  name: GatewayAddress
+  nameWithType: FabricSiloInfo.GatewayAddress
+  fullName: Orleans.ServiceFabric.FabricSiloInfo.GatewayAddress
+- uid: Orleans.ServiceFabric.FabricSiloInfo.ToString*
+  commentId: Overload:Orleans.ServiceFabric.FabricSiloInfo.ToString
+  isExternal: false
+  name: ToString
+  nameWithType: FabricSiloInfo.ToString
+  fullName: Orleans.ServiceFabric.FabricSiloInfo.ToString

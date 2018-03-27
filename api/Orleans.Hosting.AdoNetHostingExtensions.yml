@@ -1,0 +1,532 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Hosting.AdoNetHostingExtensions
+  commentId: T:Orleans.Hosting.AdoNetHostingExtensions
+  id: AdoNetHostingExtensions
+  parent: Orleans.Hosting
+  children:
+  - Orleans.Hosting.AdoNetHostingExtensions.UseAdoNetClustering(IClientBuilder,Action{OptionsBuilder{Orleans.Configuration.AdoNetClusteringClientOptions}})
+  - Orleans.Hosting.AdoNetHostingExtensions.UseAdoNetClustering(IClientBuilder,Action{Orleans.Configuration.AdoNetClusteringClientOptions})
+  - Orleans.Hosting.AdoNetHostingExtensions.UseAdoNetClustering(ISiloHostBuilder,Action{OptionsBuilder{Orleans.Configuration.AdoNetClusteringSiloOptions}})
+  - Orleans.Hosting.AdoNetHostingExtensions.UseAdoNetClustering(ISiloHostBuilder,Action{Orleans.Configuration.AdoNetClusteringSiloOptions})
+  langs:
+  - csharp
+  - vb
+  name: AdoNetHostingExtensions
+  nameWithType: AdoNetHostingExtensions
+  fullName: Orleans.Hosting.AdoNetHostingExtensions
+  type: Class
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Clustering.AdoNet/AdoNetHostingExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AdoNetHostingExtensions
+    path: src/AdoNet/Orleans.Clustering.AdoNet/AdoNetHostingExtensions.cs
+    startLine: 12
+  assemblies:
+  - Orleans.Clustering.AdoNet
+  namespace: Orleans.Hosting
+  summary: "\nExtensions for configuring ADO.NET for clustering.\n"
+  example: []
+  syntax:
+    content: 'public static class AdoNetHostingExtensions : object'
+    content.vb: >-
+      Public Module AdoNetHostingExtensions
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Orleans.Hosting.AdoNetHostingExtensions.UseAdoNetClustering(ISiloHostBuilder,Action{Orleans.Configuration.AdoNetClusteringSiloOptions})
+  commentId: M:Orleans.Hosting.AdoNetHostingExtensions.UseAdoNetClustering(ISiloHostBuilder,Action{Orleans.Configuration.AdoNetClusteringSiloOptions})
+  id: UseAdoNetClustering(ISiloHostBuilder,Action{Orleans.Configuration.AdoNetClusteringSiloOptions})
+  isExtensionMethod: true
+  parent: Orleans.Hosting.AdoNetHostingExtensions
+  langs:
+  - csharp
+  - vb
+  name: UseAdoNetClustering(ISiloHostBuilder, Action<AdoNetClusteringSiloOptions>)
+  nameWithType: AdoNetHostingExtensions.UseAdoNetClustering(ISiloHostBuilder, Action<AdoNetClusteringSiloOptions>)
+  fullName: Orleans.Hosting.AdoNetHostingExtensions.UseAdoNetClustering(ISiloHostBuilder, Action<Orleans.Configuration.AdoNetClusteringSiloOptions>)
+  type: Method
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Clustering.AdoNet/AdoNetHostingExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: UseAdoNetClustering
+    path: src/AdoNet/Orleans.Clustering.AdoNet/AdoNetHostingExtensions.cs
+    startLine: 26
+  assemblies:
+  - Orleans.Clustering.AdoNet
+  namespace: Orleans.Hosting
+  summary: "\nConfigures this silo to use ADO.NET for clustering.\n"
+  example: []
+  syntax:
+    content: public static ISiloHostBuilder UseAdoNetClustering(this ISiloHostBuilder builder, Action<AdoNetClusteringSiloOptions> configureOptions)
+    parameters:
+    - id: builder
+      type: ISiloHostBuilder
+      description: "\nThe builder.\n"
+    - id: configureOptions
+      type: Action{Orleans.Configuration.AdoNetClusteringSiloOptions}
+      description: "\nThe configuration delegate.\n"
+    return:
+      type: ISiloHostBuilder
+      description: "\nThe provided <see cref=\"!:ISiloHostBuilder\"></see>.\n"
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function UseAdoNetClustering(builder As ISiloHostBuilder, configureOptions As Action(Of AdoNetClusteringSiloOptions)) As ISiloHostBuilder
+  overload: Orleans.Hosting.AdoNetHostingExtensions.UseAdoNetClustering*
+  nameWithType.vb: AdoNetHostingExtensions.UseAdoNetClustering(ISiloHostBuilder, Action(Of AdoNetClusteringSiloOptions))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.Hosting.AdoNetHostingExtensions.UseAdoNetClustering(ISiloHostBuilder, Action(Of Orleans.Configuration.AdoNetClusteringSiloOptions))
+  name.vb: UseAdoNetClustering(ISiloHostBuilder, Action(Of AdoNetClusteringSiloOptions))
+- uid: Orleans.Hosting.AdoNetHostingExtensions.UseAdoNetClustering(ISiloHostBuilder,Action{OptionsBuilder{Orleans.Configuration.AdoNetClusteringSiloOptions}})
+  commentId: M:Orleans.Hosting.AdoNetHostingExtensions.UseAdoNetClustering(ISiloHostBuilder,Action{OptionsBuilder{Orleans.Configuration.AdoNetClusteringSiloOptions}})
+  id: UseAdoNetClustering(ISiloHostBuilder,Action{OptionsBuilder{Orleans.Configuration.AdoNetClusteringSiloOptions}})
+  isExtensionMethod: true
+  parent: Orleans.Hosting.AdoNetHostingExtensions
+  langs:
+  - csharp
+  - vb
+  name: UseAdoNetClustering(ISiloHostBuilder, Action<OptionsBuilder<AdoNetClusteringSiloOptions>>)
+  nameWithType: AdoNetHostingExtensions.UseAdoNetClustering(ISiloHostBuilder, Action<OptionsBuilder<AdoNetClusteringSiloOptions>>)
+  fullName: Orleans.Hosting.AdoNetHostingExtensions.UseAdoNetClustering(ISiloHostBuilder, Action<OptionsBuilder<Orleans.Configuration.AdoNetClusteringSiloOptions>>)
+  type: Method
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Clustering.AdoNet/AdoNetHostingExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: UseAdoNetClustering
+    path: src/AdoNet/Orleans.Clustering.AdoNet/AdoNetHostingExtensions.cs
+    startLine: 55
+  assemblies:
+  - Orleans.Clustering.AdoNet
+  namespace: Orleans.Hosting
+  summary: "\nConfigures this silo to use ADO.NET for clustering.\n"
+  example: []
+  syntax:
+    content: public static ISiloHostBuilder UseAdoNetClustering(this ISiloHostBuilder builder, Action<OptionsBuilder<AdoNetClusteringSiloOptions>> configureOptions)
+    parameters:
+    - id: builder
+      type: ISiloHostBuilder
+      description: "\nThe builder.\n"
+    - id: configureOptions
+      type: Action{OptionsBuilder{Orleans.Configuration.AdoNetClusteringSiloOptions}}
+      description: "\nThe configuration delegate.\n"
+    return:
+      type: ISiloHostBuilder
+      description: "\nThe provided <see cref=\"!:ISiloHostBuilder\"></see>.\n"
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function UseAdoNetClustering(builder As ISiloHostBuilder, configureOptions As Action(Of OptionsBuilder(Of AdoNetClusteringSiloOptions))) As ISiloHostBuilder
+  overload: Orleans.Hosting.AdoNetHostingExtensions.UseAdoNetClustering*
+  nameWithType.vb: AdoNetHostingExtensions.UseAdoNetClustering(ISiloHostBuilder, Action(Of OptionsBuilder(Of AdoNetClusteringSiloOptions)))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.Hosting.AdoNetHostingExtensions.UseAdoNetClustering(ISiloHostBuilder, Action(Of OptionsBuilder(Of Orleans.Configuration.AdoNetClusteringSiloOptions)))
+  name.vb: UseAdoNetClustering(ISiloHostBuilder, Action(Of OptionsBuilder(Of AdoNetClusteringSiloOptions)))
+- uid: Orleans.Hosting.AdoNetHostingExtensions.UseAdoNetClustering(IClientBuilder,Action{Orleans.Configuration.AdoNetClusteringClientOptions})
+  commentId: M:Orleans.Hosting.AdoNetHostingExtensions.UseAdoNetClustering(IClientBuilder,Action{Orleans.Configuration.AdoNetClusteringClientOptions})
+  id: UseAdoNetClustering(IClientBuilder,Action{Orleans.Configuration.AdoNetClusteringClientOptions})
+  isExtensionMethod: true
+  parent: Orleans.Hosting.AdoNetHostingExtensions
+  langs:
+  - csharp
+  - vb
+  name: UseAdoNetClustering(IClientBuilder, Action<AdoNetClusteringClientOptions>)
+  nameWithType: AdoNetHostingExtensions.UseAdoNetClustering(IClientBuilder, Action<AdoNetClusteringClientOptions>)
+  fullName: Orleans.Hosting.AdoNetHostingExtensions.UseAdoNetClustering(IClientBuilder, Action<Orleans.Configuration.AdoNetClusteringClientOptions>)
+  type: Method
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Clustering.AdoNet/AdoNetHostingExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: UseAdoNetClustering
+    path: src/AdoNet/Orleans.Clustering.AdoNet/AdoNetHostingExtensions.cs
+    startLine: 80
+  assemblies:
+  - Orleans.Clustering.AdoNet
+  namespace: Orleans.Hosting
+  summary: "\nConfigures this client to use ADO.NET for clustering.\n"
+  example: []
+  syntax:
+    content: public static IClientBuilder UseAdoNetClustering(this IClientBuilder builder, Action<AdoNetClusteringClientOptions> configureOptions)
+    parameters:
+    - id: builder
+      type: IClientBuilder
+      description: "\nThe builder.\n"
+    - id: configureOptions
+      type: Action{Orleans.Configuration.AdoNetClusteringClientOptions}
+      description: "\nThe configuration delegate.\n"
+    return:
+      type: IClientBuilder
+      description: "\nThe provided <see cref=\"!:IClientBuilder\"></see>.\n"
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function UseAdoNetClustering(builder As IClientBuilder, configureOptions As Action(Of AdoNetClusteringClientOptions)) As IClientBuilder
+  overload: Orleans.Hosting.AdoNetHostingExtensions.UseAdoNetClustering*
+  nameWithType.vb: AdoNetHostingExtensions.UseAdoNetClustering(IClientBuilder, Action(Of AdoNetClusteringClientOptions))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.Hosting.AdoNetHostingExtensions.UseAdoNetClustering(IClientBuilder, Action(Of Orleans.Configuration.AdoNetClusteringClientOptions))
+  name.vb: UseAdoNetClustering(IClientBuilder, Action(Of AdoNetClusteringClientOptions))
+- uid: Orleans.Hosting.AdoNetHostingExtensions.UseAdoNetClustering(IClientBuilder,Action{OptionsBuilder{Orleans.Configuration.AdoNetClusteringClientOptions}})
+  commentId: M:Orleans.Hosting.AdoNetHostingExtensions.UseAdoNetClustering(IClientBuilder,Action{OptionsBuilder{Orleans.Configuration.AdoNetClusteringClientOptions}})
+  id: UseAdoNetClustering(IClientBuilder,Action{OptionsBuilder{Orleans.Configuration.AdoNetClusteringClientOptions}})
+  isExtensionMethod: true
+  parent: Orleans.Hosting.AdoNetHostingExtensions
+  langs:
+  - csharp
+  - vb
+  name: UseAdoNetClustering(IClientBuilder, Action<OptionsBuilder<AdoNetClusteringClientOptions>>)
+  nameWithType: AdoNetHostingExtensions.UseAdoNetClustering(IClientBuilder, Action<OptionsBuilder<AdoNetClusteringClientOptions>>)
+  fullName: Orleans.Hosting.AdoNetHostingExtensions.UseAdoNetClustering(IClientBuilder, Action<OptionsBuilder<Orleans.Configuration.AdoNetClusteringClientOptions>>)
+  type: Method
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Clustering.AdoNet/AdoNetHostingExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: UseAdoNetClustering
+    path: src/AdoNet/Orleans.Clustering.AdoNet/AdoNetHostingExtensions.cs
+    startLine: 109
+  assemblies:
+  - Orleans.Clustering.AdoNet
+  namespace: Orleans.Hosting
+  summary: "\nConfigures this client to use ADO.NET for clustering.\n"
+  example: []
+  syntax:
+    content: public static IClientBuilder UseAdoNetClustering(this IClientBuilder builder, Action<OptionsBuilder<AdoNetClusteringClientOptions>> configureOptions)
+    parameters:
+    - id: builder
+      type: IClientBuilder
+      description: "\nThe builder.\n"
+    - id: configureOptions
+      type: Action{OptionsBuilder{Orleans.Configuration.AdoNetClusteringClientOptions}}
+      description: "\nThe configuration delegate.\n"
+    return:
+      type: IClientBuilder
+      description: "\nThe provided <see cref=\"!:IClientBuilder\"></see>.\n"
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function UseAdoNetClustering(builder As IClientBuilder, configureOptions As Action(Of OptionsBuilder(Of AdoNetClusteringClientOptions))) As IClientBuilder
+  overload: Orleans.Hosting.AdoNetHostingExtensions.UseAdoNetClustering*
+  nameWithType.vb: AdoNetHostingExtensions.UseAdoNetClustering(IClientBuilder, Action(Of OptionsBuilder(Of AdoNetClusteringClientOptions)))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.Hosting.AdoNetHostingExtensions.UseAdoNetClustering(IClientBuilder, Action(Of OptionsBuilder(Of Orleans.Configuration.AdoNetClusteringClientOptions)))
+  name.vb: UseAdoNetClustering(IClientBuilder, Action(Of OptionsBuilder(Of AdoNetClusteringClientOptions)))
+references:
+- uid: Orleans.Hosting
+  commentId: N:Orleans.Hosting
+  isExternal: false
+  name: Orleans.Hosting
+  nameWithType: Orleans.Hosting
+  fullName: Orleans.Hosting
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Hosting.AdoNetHostingExtensions.UseAdoNetClustering*
+  commentId: Overload:Orleans.Hosting.AdoNetHostingExtensions.UseAdoNetClustering
+  isExternal: false
+  name: UseAdoNetClustering
+  nameWithType: AdoNetHostingExtensions.UseAdoNetClustering
+  fullName: Orleans.Hosting.AdoNetHostingExtensions.UseAdoNetClustering
+- uid: ISiloHostBuilder
+  isExternal: true
+  name: ISiloHostBuilder
+  nameWithType: ISiloHostBuilder
+  fullName: ISiloHostBuilder
+- uid: Action{Orleans.Configuration.AdoNetClusteringSiloOptions}
+  commentId: '!:Action{Orleans.Configuration.AdoNetClusteringSiloOptions}'
+  definition: Action`1
+  name: Action<AdoNetClusteringSiloOptions>
+  nameWithType: Action<AdoNetClusteringSiloOptions>
+  fullName: Action<Orleans.Configuration.AdoNetClusteringSiloOptions>
+  nameWithType.vb: Action(Of AdoNetClusteringSiloOptions)
+  fullName.vb: Action(Of Orleans.Configuration.AdoNetClusteringSiloOptions)
+  name.vb: Action(Of AdoNetClusteringSiloOptions)
+  spec.csharp:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Orleans.Configuration.AdoNetClusteringSiloOptions
+    name: AdoNetClusteringSiloOptions
+    nameWithType: AdoNetClusteringSiloOptions
+    fullName: Orleans.Configuration.AdoNetClusteringSiloOptions
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Orleans.Configuration.AdoNetClusteringSiloOptions
+    name: AdoNetClusteringSiloOptions
+    nameWithType: AdoNetClusteringSiloOptions
+    fullName: Orleans.Configuration.AdoNetClusteringSiloOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Action`1
+  isExternal: true
+  name: Action<>
+  nameWithType: Action<>
+  fullName: Action<>
+  nameWithType.vb: Action(Of )
+  fullName.vb: Action(Of )
+  name.vb: Action(Of )
+  spec.csharp:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Action{OptionsBuilder{Orleans.Configuration.AdoNetClusteringSiloOptions}}
+  commentId: '!:Action{OptionsBuilder{Orleans.Configuration.AdoNetClusteringSiloOptions}}'
+  definition: Action`1
+  name: Action<OptionsBuilder<AdoNetClusteringSiloOptions>>
+  nameWithType: Action<OptionsBuilder<AdoNetClusteringSiloOptions>>
+  fullName: Action<OptionsBuilder<Orleans.Configuration.AdoNetClusteringSiloOptions>>
+  nameWithType.vb: Action(Of OptionsBuilder(Of AdoNetClusteringSiloOptions))
+  fullName.vb: Action(Of OptionsBuilder(Of Orleans.Configuration.AdoNetClusteringSiloOptions))
+  name.vb: Action(Of OptionsBuilder(Of AdoNetClusteringSiloOptions))
+  spec.csharp:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: OptionsBuilder`1
+    name: OptionsBuilder
+    nameWithType: OptionsBuilder
+    fullName: OptionsBuilder
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Orleans.Configuration.AdoNetClusteringSiloOptions
+    name: AdoNetClusteringSiloOptions
+    nameWithType: AdoNetClusteringSiloOptions
+    fullName: Orleans.Configuration.AdoNetClusteringSiloOptions
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: OptionsBuilder`1
+    name: OptionsBuilder
+    nameWithType: OptionsBuilder
+    fullName: OptionsBuilder
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Orleans.Configuration.AdoNetClusteringSiloOptions
+    name: AdoNetClusteringSiloOptions
+    nameWithType: AdoNetClusteringSiloOptions
+    fullName: Orleans.Configuration.AdoNetClusteringSiloOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IClientBuilder
+  isExternal: true
+  name: IClientBuilder
+  nameWithType: IClientBuilder
+  fullName: IClientBuilder
+- uid: Action{Orleans.Configuration.AdoNetClusteringClientOptions}
+  commentId: '!:Action{Orleans.Configuration.AdoNetClusteringClientOptions}'
+  definition: Action`1
+  name: Action<AdoNetClusteringClientOptions>
+  nameWithType: Action<AdoNetClusteringClientOptions>
+  fullName: Action<Orleans.Configuration.AdoNetClusteringClientOptions>
+  nameWithType.vb: Action(Of AdoNetClusteringClientOptions)
+  fullName.vb: Action(Of Orleans.Configuration.AdoNetClusteringClientOptions)
+  name.vb: Action(Of AdoNetClusteringClientOptions)
+  spec.csharp:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Orleans.Configuration.AdoNetClusteringClientOptions
+    name: AdoNetClusteringClientOptions
+    nameWithType: AdoNetClusteringClientOptions
+    fullName: Orleans.Configuration.AdoNetClusteringClientOptions
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Orleans.Configuration.AdoNetClusteringClientOptions
+    name: AdoNetClusteringClientOptions
+    nameWithType: AdoNetClusteringClientOptions
+    fullName: Orleans.Configuration.AdoNetClusteringClientOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Action{OptionsBuilder{Orleans.Configuration.AdoNetClusteringClientOptions}}
+  commentId: '!:Action{OptionsBuilder{Orleans.Configuration.AdoNetClusteringClientOptions}}'
+  definition: Action`1
+  name: Action<OptionsBuilder<AdoNetClusteringClientOptions>>
+  nameWithType: Action<OptionsBuilder<AdoNetClusteringClientOptions>>
+  fullName: Action<OptionsBuilder<Orleans.Configuration.AdoNetClusteringClientOptions>>
+  nameWithType.vb: Action(Of OptionsBuilder(Of AdoNetClusteringClientOptions))
+  fullName.vb: Action(Of OptionsBuilder(Of Orleans.Configuration.AdoNetClusteringClientOptions))
+  name.vb: Action(Of OptionsBuilder(Of AdoNetClusteringClientOptions))
+  spec.csharp:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: OptionsBuilder`1
+    name: OptionsBuilder
+    nameWithType: OptionsBuilder
+    fullName: OptionsBuilder
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Orleans.Configuration.AdoNetClusteringClientOptions
+    name: AdoNetClusteringClientOptions
+    nameWithType: AdoNetClusteringClientOptions
+    fullName: Orleans.Configuration.AdoNetClusteringClientOptions
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: OptionsBuilder`1
+    name: OptionsBuilder
+    nameWithType: OptionsBuilder
+    fullName: OptionsBuilder
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Orleans.Configuration.AdoNetClusteringClientOptions
+    name: AdoNetClusteringClientOptions
+    nameWithType: AdoNetClusteringClientOptions
+    fullName: Orleans.Configuration.AdoNetClusteringClientOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )

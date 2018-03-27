@@ -1,0 +1,202 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Placement.RandomPlacementAttribute
+  commentId: T:Orleans.Placement.RandomPlacementAttribute
+  id: RandomPlacementAttribute
+  parent: Orleans.Placement
+  children:
+  - Orleans.Placement.RandomPlacementAttribute.#ctor
+  langs:
+  - csharp
+  - vb
+  name: RandomPlacementAttribute
+  nameWithType: RandomPlacementAttribute
+  fullName: Orleans.Placement.RandomPlacementAttribute
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Placement/PlacementAttribute.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: RandomPlacementAttribute
+    path: src/Orleans.Core.Abstractions/Placement/PlacementAttribute.cs
+    startLine: 28
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Placement
+  summary: "\nMarks a grain class as using the <code>RandomPlacement</code> policy.\n"
+  remarks: "\nThis is the default placement policy, so this attribute does not need to be used for normal grains.\n"
+  example: []
+  syntax:
+    content: 'public sealed class RandomPlacementAttribute : PlacementAttribute'
+    content.vb: >-
+      Public NotInheritable Class RandomPlacementAttribute
+
+          Inherits PlacementAttribute
+  inheritance:
+  - System.Object
+  - Orleans.Placement.PlacementAttribute
+  inheritedMembers:
+  - Orleans.Placement.PlacementAttribute.PlacementStrategy
+  extensionMethods:
+  - Orleans.Placement.RandomPlacementAttribute.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Orleans.Placement.RandomPlacementAttribute.#ctor
+  commentId: M:Orleans.Placement.RandomPlacementAttribute.#ctor
+  id: '#ctor'
+  parent: Orleans.Placement.RandomPlacementAttribute
+  langs:
+  - csharp
+  - vb
+  name: RandomPlacementAttribute()
+  nameWithType: RandomPlacementAttribute.RandomPlacementAttribute()
+  fullName: Orleans.Placement.RandomPlacementAttribute.RandomPlacementAttribute()
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Placement/PlacementAttribute.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Core.Abstractions/Placement/PlacementAttribute.cs
+    startLine: 31
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Placement
+  syntax:
+    content: public RandomPlacementAttribute()
+    content.vb: Public Sub New
+  overload: Orleans.Placement.RandomPlacementAttribute.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans.Placement
+  commentId: N:Orleans.Placement
+  isExternal: false
+  name: Orleans.Placement
+  nameWithType: Orleans.Placement
+  fullName: Orleans.Placement
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Placement.PlacementAttribute
+  commentId: T:Orleans.Placement.PlacementAttribute
+  parent: Orleans.Placement
+  isExternal: false
+  name: PlacementAttribute
+  nameWithType: PlacementAttribute
+  fullName: Orleans.Placement.PlacementAttribute
+- uid: Orleans.Placement.PlacementAttribute.PlacementStrategy
+  commentId: P:Orleans.Placement.PlacementAttribute.PlacementStrategy
+  parent: Orleans.Placement.PlacementAttribute
+  isExternal: false
+  name: PlacementStrategy
+  nameWithType: PlacementAttribute.PlacementStrategy
+  fullName: Orleans.Placement.PlacementAttribute.PlacementStrategy
+- uid: Orleans.Placement.RandomPlacementAttribute.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<RandomPlacementAttribute>()
+  nameWithType: ImmutableExt.AsImmutable<RandomPlacementAttribute>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Placement.RandomPlacementAttribute>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of RandomPlacementAttribute)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Placement.RandomPlacementAttribute)()
+  name.vb: AsImmutable(Of RandomPlacementAttribute)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<RandomPlacementAttribute>
+    nameWithType: ImmutableExt.AsImmutable<RandomPlacementAttribute>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Placement.RandomPlacementAttribute>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of RandomPlacementAttribute)
+    nameWithType: ImmutableExt.AsImmutable(Of RandomPlacementAttribute)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Placement.RandomPlacementAttribute)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Placement.RandomPlacementAttribute.#ctor*
+  commentId: Overload:Orleans.Placement.RandomPlacementAttribute.#ctor
+  isExternal: false
+  name: RandomPlacementAttribute
+  nameWithType: RandomPlacementAttribute.RandomPlacementAttribute
+  fullName: Orleans.Placement.RandomPlacementAttribute.RandomPlacementAttribute

@@ -1,0 +1,309 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Streams.RegexStreamNamespacePredicate
+  commentId: T:Orleans.Streams.RegexStreamNamespacePredicate
+  id: RegexStreamNamespacePredicate
+  parent: Orleans.Streams
+  children:
+  - Orleans.Streams.RegexStreamNamespacePredicate.#ctor(Regex)
+  - Orleans.Streams.RegexStreamNamespacePredicate.IsMatch(System.String)
+  langs:
+  - csharp
+  - vb
+  name: RegexStreamNamespacePredicate
+  nameWithType: RegexStreamNamespacePredicate
+  fullName: Orleans.Streams.RegexStreamNamespacePredicate
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Streams/Predicates/RegexStreamNamespacePredicate.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: RegexStreamNamespacePredicate
+    path: src/Orleans.Core.Abstractions/Streams/Predicates/RegexStreamNamespacePredicate.cs
+    startLine: 9
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Streams
+  summary: "\n<xref href=\"Orleans.Streams.IStreamNamespacePredicate\" data-throw-if-not-resolved=\"false\"></xref> implementation allowing to filter stream namespaces by regular\nexpression.\n"
+  example: []
+  syntax:
+    content: 'public class RegexStreamNamespacePredicate : object, IStreamNamespacePredicate'
+    content.vb: >-
+      Public Class RegexStreamNamespacePredicate
+
+          Inherits Object
+
+          Implements IStreamNamespacePredicate
+  inheritance:
+  - System.Object
+  implements:
+  - Orleans.Streams.IStreamNamespacePredicate
+  extensionMethods:
+  - Orleans.Streams.RegexStreamNamespacePredicate.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.Streams.RegexStreamNamespacePredicate.#ctor(Regex)
+  commentId: M:Orleans.Streams.RegexStreamNamespacePredicate.#ctor(Regex)
+  id: '#ctor(Regex)'
+  parent: Orleans.Streams.RegexStreamNamespacePredicate
+  langs:
+  - csharp
+  - vb
+  name: RegexStreamNamespacePredicate(Regex)
+  nameWithType: RegexStreamNamespacePredicate.RegexStreamNamespacePredicate(Regex)
+  fullName: Orleans.Streams.RegexStreamNamespacePredicate.RegexStreamNamespacePredicate(Regex)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Streams/Predicates/RegexStreamNamespacePredicate.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Core.Abstractions/Streams/Predicates/RegexStreamNamespacePredicate.cs
+    startLine: 18
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Streams
+  summary: "\nCreates an instance of <xref href=\"Orleans.Streams.RegexStreamNamespacePredicate\" data-throw-if-not-resolved=\"false\"></xref> with the specified regular expression.\n"
+  example: []
+  syntax:
+    content: public RegexStreamNamespacePredicate(Regex regex)
+    parameters:
+    - id: regex
+      type: Regex
+      description: The stream namespace regular expression.
+    content.vb: Public Sub New(regex As Regex)
+  overload: Orleans.Streams.RegexStreamNamespacePredicate.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Streams.RegexStreamNamespacePredicate.IsMatch(System.String)
+  commentId: M:Orleans.Streams.RegexStreamNamespacePredicate.IsMatch(System.String)
+  id: IsMatch(System.String)
+  parent: Orleans.Streams.RegexStreamNamespacePredicate
+  langs:
+  - csharp
+  - vb
+  name: IsMatch(String)
+  nameWithType: RegexStreamNamespacePredicate.IsMatch(String)
+  fullName: Orleans.Streams.RegexStreamNamespacePredicate.IsMatch(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Streams/Predicates/RegexStreamNamespacePredicate.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IsMatch
+    path: src/Orleans.Core.Abstractions/Streams/Predicates/RegexStreamNamespacePredicate.cs
+    startLine: 24
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Streams
+  example: []
+  syntax:
+    content: public bool IsMatch(string streamNameSpace)
+    parameters:
+    - id: streamNameSpace
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsMatch(streamNameSpace As String) As Boolean
+  overload: Orleans.Streams.RegexStreamNamespacePredicate.IsMatch*
+  implements:
+  - Orleans.Streams.IStreamNamespacePredicate.IsMatch(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans.Streams.IStreamNamespacePredicate
+  commentId: T:Orleans.Streams.IStreamNamespacePredicate
+  parent: Orleans.Streams
+  isExternal: false
+  name: IStreamNamespacePredicate
+  nameWithType: IStreamNamespacePredicate
+  fullName: Orleans.Streams.IStreamNamespacePredicate
+- uid: Orleans.Streams
+  commentId: N:Orleans.Streams
+  isExternal: false
+  name: Orleans.Streams
+  nameWithType: Orleans.Streams
+  fullName: Orleans.Streams
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Streams.RegexStreamNamespacePredicate.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<RegexStreamNamespacePredicate>()
+  nameWithType: ImmutableExt.AsImmutable<RegexStreamNamespacePredicate>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Streams.RegexStreamNamespacePredicate>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of RegexStreamNamespacePredicate)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Streams.RegexStreamNamespacePredicate)()
+  name.vb: AsImmutable(Of RegexStreamNamespacePredicate)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<RegexStreamNamespacePredicate>
+    nameWithType: ImmutableExt.AsImmutable<RegexStreamNamespacePredicate>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Streams.RegexStreamNamespacePredicate>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of RegexStreamNamespacePredicate)
+    nameWithType: ImmutableExt.AsImmutable(Of RegexStreamNamespacePredicate)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Streams.RegexStreamNamespacePredicate)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Streams.RegexStreamNamespacePredicate
+  commentId: T:Orleans.Streams.RegexStreamNamespacePredicate
+  isExternal: false
+  name: RegexStreamNamespacePredicate
+  nameWithType: RegexStreamNamespacePredicate
+  fullName: Orleans.Streams.RegexStreamNamespacePredicate
+- uid: Orleans.Streams.RegexStreamNamespacePredicate.#ctor*
+  commentId: Overload:Orleans.Streams.RegexStreamNamespacePredicate.#ctor
+  isExternal: false
+  name: RegexStreamNamespacePredicate
+  nameWithType: RegexStreamNamespacePredicate.RegexStreamNamespacePredicate
+  fullName: Orleans.Streams.RegexStreamNamespacePredicate.RegexStreamNamespacePredicate
+- uid: Regex
+  commentId: '!:Regex'
+  isExternal: true
+  name: Regex
+  nameWithType: Regex
+  fullName: Regex
+- uid: Orleans.Streams.RegexStreamNamespacePredicate.IsMatch*
+  commentId: Overload:Orleans.Streams.RegexStreamNamespacePredicate.IsMatch
+  isExternal: false
+  name: IsMatch
+  nameWithType: RegexStreamNamespacePredicate.IsMatch
+  fullName: Orleans.Streams.RegexStreamNamespacePredicate.IsMatch
+- uid: Orleans.Streams.IStreamNamespacePredicate.IsMatch(System.String)
+  commentId: M:Orleans.Streams.IStreamNamespacePredicate.IsMatch(System.String)
+  parent: Orleans.Streams.IStreamNamespacePredicate
+  isExternal: true
+  name: IsMatch(String)
+  nameWithType: IStreamNamespacePredicate.IsMatch(String)
+  fullName: Orleans.Streams.IStreamNamespacePredicate.IsMatch(System.String)
+  spec.csharp:
+  - uid: Orleans.Streams.IStreamNamespacePredicate.IsMatch(System.String)
+    name: IsMatch
+    nameWithType: IStreamNamespacePredicate.IsMatch
+    fullName: Orleans.Streams.IStreamNamespacePredicate.IsMatch
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Streams.IStreamNamespacePredicate.IsMatch(System.String)
+    name: IsMatch
+    nameWithType: IStreamNamespacePredicate.IsMatch
+    fullName: Orleans.Streams.IStreamNamespacePredicate.IsMatch
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

@@ -1,0 +1,324 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Runtime.KeyedServiceCollectionExtensions
+  commentId: T:Orleans.Runtime.KeyedServiceCollectionExtensions
+  id: KeyedServiceCollectionExtensions
+  parent: Orleans.Runtime
+  children:
+  - Orleans.Runtime.KeyedServiceCollectionExtensions.GetRequiredServiceByKey``2(IServiceProvider,``0)
+  - Orleans.Runtime.KeyedServiceCollectionExtensions.GetRequiredServiceByName``1(IServiceProvider,System.String)
+  - Orleans.Runtime.KeyedServiceCollectionExtensions.GetServiceByKey``2(IServiceProvider,``0)
+  - Orleans.Runtime.KeyedServiceCollectionExtensions.GetServiceByName``1(IServiceProvider,System.String)
+  langs:
+  - csharp
+  - vb
+  name: KeyedServiceCollectionExtensions
+  nameWithType: KeyedServiceCollectionExtensions
+  fullName: Orleans.Runtime.KeyedServiceCollectionExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Utils/IKeyedServiceCollection.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: KeyedServiceCollectionExtensions
+    path: src/Orleans.Core.Abstractions/Utils/IKeyedServiceCollection.cs
+    startLine: 20
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  syntax:
+    content: 'public static class KeyedServiceCollectionExtensions : object'
+    content.vb: >-
+      Public Module KeyedServiceCollectionExtensions
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Orleans.Runtime.KeyedServiceCollectionExtensions.GetServiceByKey``2(IServiceProvider,``0)
+  commentId: M:Orleans.Runtime.KeyedServiceCollectionExtensions.GetServiceByKey``2(IServiceProvider,``0)
+  id: GetServiceByKey``2(IServiceProvider,``0)
+  isExtensionMethod: true
+  parent: Orleans.Runtime.KeyedServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetServiceByKey<TKey, TService>(IServiceProvider, TKey)
+  nameWithType: KeyedServiceCollectionExtensions.GetServiceByKey<TKey, TService>(IServiceProvider, TKey)
+  fullName: Orleans.Runtime.KeyedServiceCollectionExtensions.GetServiceByKey<TKey, TService>(IServiceProvider, TKey)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Utils/IKeyedServiceCollection.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetServiceByKey
+    path: src/Orleans.Core.Abstractions/Utils/IKeyedServiceCollection.cs
+    startLine: 25
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  summary: "\nAcquire a service by key.\n"
+  example: []
+  syntax:
+    content: 'public static TService GetServiceByKey<TKey, TService>(this IServiceProvider services, TKey key)where TService : class'
+    parameters:
+    - id: services
+      type: IServiceProvider
+    - id: key
+      type: '{TKey}'
+    typeParameters:
+    - id: TKey
+    - id: TService
+    return:
+      type: '{TService}'
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetServiceByKey(Of TKey, TService As Class)(services As IServiceProvider, key As TKey) As TService
+  overload: Orleans.Runtime.KeyedServiceCollectionExtensions.GetServiceByKey*
+  nameWithType.vb: KeyedServiceCollectionExtensions.GetServiceByKey(Of TKey, TService)(IServiceProvider, TKey)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.Runtime.KeyedServiceCollectionExtensions.GetServiceByKey(Of TKey, TService)(IServiceProvider, TKey)
+  name.vb: GetServiceByKey(Of TKey, TService)(IServiceProvider, TKey)
+- uid: Orleans.Runtime.KeyedServiceCollectionExtensions.GetRequiredServiceByKey``2(IServiceProvider,``0)
+  commentId: M:Orleans.Runtime.KeyedServiceCollectionExtensions.GetRequiredServiceByKey``2(IServiceProvider,``0)
+  id: GetRequiredServiceByKey``2(IServiceProvider,``0)
+  isExtensionMethod: true
+  parent: Orleans.Runtime.KeyedServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetRequiredServiceByKey<TKey, TService>(IServiceProvider, TKey)
+  nameWithType: KeyedServiceCollectionExtensions.GetRequiredServiceByKey<TKey, TService>(IServiceProvider, TKey)
+  fullName: Orleans.Runtime.KeyedServiceCollectionExtensions.GetRequiredServiceByKey<TKey, TService>(IServiceProvider, TKey)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Utils/IKeyedServiceCollection.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetRequiredServiceByKey
+    path: src/Orleans.Core.Abstractions/Utils/IKeyedServiceCollection.cs
+    startLine: 35
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  summary: "\nAcquire a service by key.  Throws KeyNotFound exception if key is not found.\n"
+  example: []
+  syntax:
+    content: 'public static TService GetRequiredServiceByKey<TKey, TService>(this IServiceProvider services, TKey key)where TService : class'
+    parameters:
+    - id: services
+      type: IServiceProvider
+    - id: key
+      type: '{TKey}'
+    typeParameters:
+    - id: TKey
+    - id: TService
+    return:
+      type: '{TService}'
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetRequiredServiceByKey(Of TKey, TService As Class)(services As IServiceProvider, key As TKey) As TService
+  overload: Orleans.Runtime.KeyedServiceCollectionExtensions.GetRequiredServiceByKey*
+  nameWithType.vb: KeyedServiceCollectionExtensions.GetRequiredServiceByKey(Of TKey, TService)(IServiceProvider, TKey)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.Runtime.KeyedServiceCollectionExtensions.GetRequiredServiceByKey(Of TKey, TService)(IServiceProvider, TKey)
+  name.vb: GetRequiredServiceByKey(Of TKey, TService)(IServiceProvider, TKey)
+- uid: Orleans.Runtime.KeyedServiceCollectionExtensions.GetServiceByName``1(IServiceProvider,System.String)
+  commentId: M:Orleans.Runtime.KeyedServiceCollectionExtensions.GetServiceByName``1(IServiceProvider,System.String)
+  id: GetServiceByName``1(IServiceProvider,System.String)
+  isExtensionMethod: true
+  parent: Orleans.Runtime.KeyedServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetServiceByName<TService>(IServiceProvider, String)
+  nameWithType: KeyedServiceCollectionExtensions.GetServiceByName<TService>(IServiceProvider, String)
+  fullName: Orleans.Runtime.KeyedServiceCollectionExtensions.GetServiceByName<TService>(IServiceProvider, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Utils/IKeyedServiceCollection.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetServiceByName
+    path: src/Orleans.Core.Abstractions/Utils/IKeyedServiceCollection.cs
+    startLine: 44
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  summary: "\nAcquire a service by name.\n"
+  example: []
+  syntax:
+    content: 'public static TService GetServiceByName<TService>(this IServiceProvider services, string name)where TService : class'
+    parameters:
+    - id: services
+      type: IServiceProvider
+    - id: name
+      type: System.String
+    typeParameters:
+    - id: TService
+    return:
+      type: '{TService}'
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetServiceByName(Of TService As Class)(services As IServiceProvider, name As String) As TService
+  overload: Orleans.Runtime.KeyedServiceCollectionExtensions.GetServiceByName*
+  nameWithType.vb: KeyedServiceCollectionExtensions.GetServiceByName(Of TService)(IServiceProvider, String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.Runtime.KeyedServiceCollectionExtensions.GetServiceByName(Of TService)(IServiceProvider, System.String)
+  name.vb: GetServiceByName(Of TService)(IServiceProvider, String)
+- uid: Orleans.Runtime.KeyedServiceCollectionExtensions.GetRequiredServiceByName``1(IServiceProvider,System.String)
+  commentId: M:Orleans.Runtime.KeyedServiceCollectionExtensions.GetRequiredServiceByName``1(IServiceProvider,System.String)
+  id: GetRequiredServiceByName``1(IServiceProvider,System.String)
+  isExtensionMethod: true
+  parent: Orleans.Runtime.KeyedServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetRequiredServiceByName<TService>(IServiceProvider, String)
+  nameWithType: KeyedServiceCollectionExtensions.GetRequiredServiceByName<TService>(IServiceProvider, String)
+  fullName: Orleans.Runtime.KeyedServiceCollectionExtensions.GetRequiredServiceByName<TService>(IServiceProvider, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Utils/IKeyedServiceCollection.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetRequiredServiceByName
+    path: src/Orleans.Core.Abstractions/Utils/IKeyedServiceCollection.cs
+    startLine: 53
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  summary: "\nAcquire a service by name.  Throws KeyNotFound exception if name is not found.\n"
+  example: []
+  syntax:
+    content: 'public static TService GetRequiredServiceByName<TService>(this IServiceProvider services, string name)where TService : class'
+    parameters:
+    - id: services
+      type: IServiceProvider
+    - id: name
+      type: System.String
+    typeParameters:
+    - id: TService
+    return:
+      type: '{TService}'
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetRequiredServiceByName(Of TService As Class)(services As IServiceProvider, name As String) As TService
+  overload: Orleans.Runtime.KeyedServiceCollectionExtensions.GetRequiredServiceByName*
+  nameWithType.vb: KeyedServiceCollectionExtensions.GetRequiredServiceByName(Of TService)(IServiceProvider, String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.Runtime.KeyedServiceCollectionExtensions.GetRequiredServiceByName(Of TService)(IServiceProvider, System.String)
+  name.vb: GetRequiredServiceByName(Of TService)(IServiceProvider, String)
+references:
+- uid: Orleans.Runtime
+  commentId: N:Orleans.Runtime
+  isExternal: false
+  name: Orleans.Runtime
+  nameWithType: Orleans.Runtime
+  fullName: Orleans.Runtime
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Runtime.KeyedServiceCollectionExtensions.GetServiceByKey*
+  commentId: Overload:Orleans.Runtime.KeyedServiceCollectionExtensions.GetServiceByKey
+  isExternal: false
+  name: GetServiceByKey
+  nameWithType: KeyedServiceCollectionExtensions.GetServiceByKey
+  fullName: Orleans.Runtime.KeyedServiceCollectionExtensions.GetServiceByKey
+- uid: IServiceProvider
+  isExternal: true
+  name: IServiceProvider
+  nameWithType: IServiceProvider
+  fullName: IServiceProvider
+- uid: '{TKey}'
+  commentId: '!:TKey'
+  definition: TKey
+  name: TKey
+  nameWithType: TKey
+  fullName: TKey
+- uid: '{TService}'
+  commentId: '!:TService'
+  definition: TService
+  name: TService
+  nameWithType: TService
+  fullName: TService
+- uid: TKey
+  isExternal: false
+  name: TKey
+  nameWithType: TKey
+  fullName: TKey
+- uid: TService
+  isExternal: false
+  name: TService
+  nameWithType: TService
+  fullName: TService
+- uid: Orleans.Runtime.KeyedServiceCollectionExtensions.GetRequiredServiceByKey*
+  commentId: Overload:Orleans.Runtime.KeyedServiceCollectionExtensions.GetRequiredServiceByKey
+  isExternal: false
+  name: GetRequiredServiceByKey
+  nameWithType: KeyedServiceCollectionExtensions.GetRequiredServiceByKey
+  fullName: Orleans.Runtime.KeyedServiceCollectionExtensions.GetRequiredServiceByKey
+- uid: Orleans.Runtime.KeyedServiceCollectionExtensions.GetServiceByName*
+  commentId: Overload:Orleans.Runtime.KeyedServiceCollectionExtensions.GetServiceByName
+  isExternal: false
+  name: GetServiceByName
+  nameWithType: KeyedServiceCollectionExtensions.GetServiceByName
+  fullName: Orleans.Runtime.KeyedServiceCollectionExtensions.GetServiceByName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Orleans.Runtime.KeyedServiceCollectionExtensions.GetRequiredServiceByName*
+  commentId: Overload:Orleans.Runtime.KeyedServiceCollectionExtensions.GetRequiredServiceByName
+  isExternal: false
+  name: GetRequiredServiceByName
+  nameWithType: KeyedServiceCollectionExtensions.GetRequiredServiceByName
+  fullName: Orleans.Runtime.KeyedServiceCollectionExtensions.GetRequiredServiceByName

@@ -1,0 +1,188 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Metadata.IFeaturePopulator`1
+  commentId: T:Orleans.Metadata.IFeaturePopulator`1
+  id: IFeaturePopulator`1
+  parent: Orleans.Metadata
+  children:
+  - Orleans.Metadata.IFeaturePopulator`1.Populate(`0)
+  langs:
+  - csharp
+  - vb
+  name: IFeaturePopulator<TFeature>
+  nameWithType: IFeaturePopulator<TFeature>
+  fullName: Orleans.Metadata.IFeaturePopulator<TFeature>
+  type: Interface
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Metadata/IFeaturePopulator.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IFeaturePopulator
+    path: src/Orleans.Core.Abstractions/Metadata/IFeaturePopulator.cs
+    startLine: 6
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Metadata
+  summary: "\nPopulates a specified kind of feature.\n"
+  example: []
+  syntax:
+    content: public interface IFeaturePopulator<in TFeature>
+    typeParameters:
+    - id: TFeature
+      description: The type of the feature.
+    content.vb: Public Interface IFeaturePopulator(Of In TFeature)
+  extensionMethods:
+  - Orleans.Metadata.IFeaturePopulator`1.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  nameWithType.vb: IFeaturePopulator(Of TFeature)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+  fullName.vb: Orleans.Metadata.IFeaturePopulator(Of TFeature)
+  name.vb: IFeaturePopulator(Of TFeature)
+- uid: Orleans.Metadata.IFeaturePopulator`1.Populate(`0)
+  commentId: M:Orleans.Metadata.IFeaturePopulator`1.Populate(`0)
+  id: Populate(`0)
+  parent: Orleans.Metadata.IFeaturePopulator`1
+  langs:
+  - csharp
+  - vb
+  name: Populate(TFeature)
+  nameWithType: IFeaturePopulator<TFeature>.Populate(TFeature)
+  fullName: Orleans.Metadata.IFeaturePopulator<TFeature>.Populate(TFeature)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Metadata/IFeaturePopulator.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Populate
+    path: src/Orleans.Core.Abstractions/Metadata/IFeaturePopulator.cs
+    startLine: 12
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Metadata
+  summary: "\nPopulates the provided <code data-dev-comment-type=\"paramref\" class=\"paramref\">feature</code>.\n"
+  example: []
+  syntax:
+    content: void Populate(TFeature feature)
+    parameters:
+    - id: feature
+      type: '{TFeature}'
+      description: The feature.
+    content.vb: Sub Populate(feature As TFeature)
+  overload: Orleans.Metadata.IFeaturePopulator`1.Populate*
+  nameWithType.vb: IFeaturePopulator(Of TFeature).Populate(TFeature)
+  fullName.vb: Orleans.Metadata.IFeaturePopulator(Of TFeature).Populate(TFeature)
+references:
+- uid: Orleans.Metadata
+  commentId: N:Orleans.Metadata
+  isExternal: false
+  name: Orleans.Metadata
+  nameWithType: Orleans.Metadata
+  fullName: Orleans.Metadata
+- uid: Orleans.Metadata.IFeaturePopulator`1.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<IFeaturePopulator<TFeature>>()
+  nameWithType: ImmutableExt.AsImmutable<IFeaturePopulator<TFeature>>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Metadata.IFeaturePopulator<TFeature>>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of IFeaturePopulator(Of TFeature))()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Metadata.IFeaturePopulator(Of TFeature))()
+  name.vb: AsImmutable(Of IFeaturePopulator(Of TFeature))()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<IFeaturePopulator<TFeature>>
+    nameWithType: ImmutableExt.AsImmutable<IFeaturePopulator<TFeature>>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Metadata.IFeaturePopulator<TFeature>>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of IFeaturePopulator(Of TFeature))
+    nameWithType: ImmutableExt.AsImmutable(Of IFeaturePopulator(Of TFeature))
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Metadata.IFeaturePopulator(Of TFeature))
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Metadata.IFeaturePopulator`1.Populate*
+  commentId: Overload:Orleans.Metadata.IFeaturePopulator`1.Populate
+  isExternal: false
+  name: Populate
+  nameWithType: IFeaturePopulator<TFeature>.Populate
+  fullName: Orleans.Metadata.IFeaturePopulator<TFeature>.Populate
+  nameWithType.vb: IFeaturePopulator(Of TFeature).Populate
+  fullName.vb: Orleans.Metadata.IFeaturePopulator(Of TFeature).Populate
+- uid: '{TFeature}'
+  commentId: '!:TFeature'
+  definition: TFeature
+  name: TFeature
+  nameWithType: TFeature
+  fullName: TFeature
+- uid: TFeature
+  commentId: '!:TFeature'
+  isExternal: false
+  name: TFeature
+  nameWithType: TFeature
+  fullName: TFeature

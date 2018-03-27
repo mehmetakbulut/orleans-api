@@ -1,0 +1,271 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Logging.Legacy.OrleansLoggingUtils
+  commentId: T:Orleans.Logging.Legacy.OrleansLoggingUtils
+  id: OrleansLoggingUtils
+  parent: Orleans.Logging.Legacy
+  children:
+  - Orleans.Logging.Legacy.OrleansLoggingUtils.FormatLogMessageToLegacyStyle(DateTime,Orleans.Runtime.Severity,Orleans.Runtime.LoggerType,System.String,System.String,IPEndPoint,Exception,System.Int32,System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: OrleansLoggingUtils
+  nameWithType: OrleansLoggingUtils
+  fullName: Orleans.Logging.Legacy.OrleansLoggingUtils
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Logging/OrleansLoggingUtils.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: OrleansLoggingUtils
+    path: src/Orleans.Core.Legacy/Logging/OrleansLoggingUtils.cs
+    startLine: 10
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Logging.Legacy
+  summary: "\nUtility method for OrleansLogging\n"
+  example: []
+  syntax:
+    content: 'public class OrleansLoggingUtils : object'
+    content.vb: >-
+      Public Class OrleansLoggingUtils
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.Logging.Legacy.OrleansLoggingUtils.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.Logging.Legacy.OrleansLoggingUtils.FormatLogMessageToLegacyStyle(DateTime,Orleans.Runtime.Severity,Orleans.Runtime.LoggerType,System.String,System.String,IPEndPoint,Exception,System.Int32,System.Boolean)
+  commentId: M:Orleans.Logging.Legacy.OrleansLoggingUtils.FormatLogMessageToLegacyStyle(DateTime,Orleans.Runtime.Severity,Orleans.Runtime.LoggerType,System.String,System.String,IPEndPoint,Exception,System.Int32,System.Boolean)
+  id: FormatLogMessageToLegacyStyle(DateTime,Orleans.Runtime.Severity,Orleans.Runtime.LoggerType,System.String,System.String,IPEndPoint,Exception,System.Int32,System.Boolean)
+  parent: Orleans.Logging.Legacy.OrleansLoggingUtils
+  langs:
+  - csharp
+  - vb
+  name: FormatLogMessageToLegacyStyle(DateTime, Severity, LoggerType, String, String, IPEndPoint, Exception, Int32, Boolean)
+  nameWithType: OrleansLoggingUtils.FormatLogMessageToLegacyStyle(DateTime, Severity, LoggerType, String, String, IPEndPoint, Exception, Int32, Boolean)
+  fullName: Orleans.Logging.Legacy.OrleansLoggingUtils.FormatLogMessageToLegacyStyle(DateTime, Orleans.Runtime.Severity, Orleans.Runtime.LoggerType, System.String, System.String, IPEndPoint, Exception, System.Int32, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Logging/OrleansLoggingUtils.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: FormatLogMessageToLegacyStyle
+    path: src/Orleans.Core.Legacy/Logging/OrleansLoggingUtils.cs
+    startLine: 26
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Logging.Legacy
+  summary: The method to call during logging to format the log info into a string, which is orleans legacy logging style
+  example: []
+  syntax:
+    content: public static string FormatLogMessageToLegacyStyle(DateTime timestamp, Severity severity, LoggerType loggerType, string caller, string message, IPEndPoint myIPEndPoint, Exception exception, int errorCode, bool includeStackTrace)
+    parameters:
+    - id: timestamp
+      type: DateTime
+      description: Timestamp of the log message.
+    - id: severity
+      type: Orleans.Runtime.Severity
+      description: The severity of the message being traced.
+    - id: loggerType
+      type: Orleans.Runtime.LoggerType
+      description: The type of logger the message is being traced through.
+    - id: caller
+      type: System.String
+      description: The name of the logger tracing the message.
+    - id: message
+      type: System.String
+      description: The message to log.
+    - id: myIPEndPoint
+      type: IPEndPoint
+      description: The <see cref="!:IPEndPoint"></see> of the Orleans client/server if known. May be null.
+    - id: exception
+      type: Exception
+      description: The exception to log. May be null.
+    - id: errorCode
+      type: System.Int32
+      description: Numeric event code for this log entry. May be zero, meaning &apos;Unspecified&apos;.
+    - id: includeStackTrace
+      type: System.Boolean
+      description: determine include stack trace or not
+    return:
+      type: System.String
+      description: ''
+    content.vb: Public Shared Function FormatLogMessageToLegacyStyle(timestamp As DateTime, severity As Severity, loggerType As LoggerType, caller As String, message As String, myIPEndPoint As IPEndPoint, exception As Exception, errorCode As Integer, includeStackTrace As Boolean) As String
+  overload: Orleans.Logging.Legacy.OrleansLoggingUtils.FormatLogMessageToLegacyStyle*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Orleans.Logging.Legacy
+  commentId: N:Orleans.Logging.Legacy
+  isExternal: false
+  name: Orleans.Logging.Legacy
+  nameWithType: Orleans.Logging.Legacy
+  fullName: Orleans.Logging.Legacy
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Logging.Legacy.OrleansLoggingUtils.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<OrleansLoggingUtils>()
+  nameWithType: ImmutableExt.AsImmutable<OrleansLoggingUtils>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Logging.Legacy.OrleansLoggingUtils>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of OrleansLoggingUtils)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Logging.Legacy.OrleansLoggingUtils)()
+  name.vb: AsImmutable(Of OrleansLoggingUtils)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<OrleansLoggingUtils>
+    nameWithType: ImmutableExt.AsImmutable<OrleansLoggingUtils>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Logging.Legacy.OrleansLoggingUtils>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of OrleansLoggingUtils)
+    nameWithType: ImmutableExt.AsImmutable(Of OrleansLoggingUtils)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Logging.Legacy.OrleansLoggingUtils)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Logging.Legacy.OrleansLoggingUtils.FormatLogMessageToLegacyStyle*
+  commentId: Overload:Orleans.Logging.Legacy.OrleansLoggingUtils.FormatLogMessageToLegacyStyle
+  isExternal: false
+  name: FormatLogMessageToLegacyStyle
+  nameWithType: OrleansLoggingUtils.FormatLogMessageToLegacyStyle
+  fullName: Orleans.Logging.Legacy.OrleansLoggingUtils.FormatLogMessageToLegacyStyle
+- uid: DateTime
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: DateTime
+- uid: Orleans.Runtime.Severity
+  commentId: T:Orleans.Runtime.Severity
+  parent: Orleans.Runtime
+  isExternal: false
+  name: Severity
+  nameWithType: Severity
+  fullName: Orleans.Runtime.Severity
+- uid: Orleans.Runtime.LoggerType
+  commentId: T:Orleans.Runtime.LoggerType
+  parent: Orleans.Runtime
+  isExternal: false
+  name: LoggerType
+  nameWithType: LoggerType
+  fullName: Orleans.Runtime.LoggerType
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: IPEndPoint
+  isExternal: true
+  name: IPEndPoint
+  nameWithType: IPEndPoint
+  fullName: IPEndPoint
+- uid: Exception
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: Exception
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Orleans.Runtime
+  commentId: N:Orleans.Runtime
+  isExternal: false
+  name: Orleans.Runtime
+  nameWithType: Orleans.Runtime
+  fullName: Orleans.Runtime

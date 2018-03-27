@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Runtime.MembershipService
+  commentId: N:Orleans.Runtime.MembershipService
+  id: Orleans.Runtime.MembershipService
+  children:
+  - Orleans.Runtime.MembershipService.AdoNetClusteringTable
+  - Orleans.Runtime.MembershipService.LegacyConsulMembershipConfigurator
+  langs:
+  - csharp
+  - vb
+  name: Orleans.Runtime.MembershipService
+  nameWithType: Orleans.Runtime.MembershipService
+  fullName: Orleans.Runtime.MembershipService
+  type: Namespace
+  assemblies:
+  - Orleans.Clustering.AdoNet
+references:
+- uid: Orleans.Runtime.MembershipService.AdoNetClusteringTable
+  commentId: T:Orleans.Runtime.MembershipService.AdoNetClusteringTable
+  isExternal: false
+  name: AdoNetClusteringTable
+  nameWithType: AdoNetClusteringTable
+  fullName: Orleans.Runtime.MembershipService.AdoNetClusteringTable
+- uid: Orleans.Runtime.MembershipService.LegacyConsulMembershipConfigurator
+  commentId: T:Orleans.Runtime.MembershipService.LegacyConsulMembershipConfigurator
+  isExternal: false
+  name: LegacyConsulMembershipConfigurator
+  nameWithType: LegacyConsulMembershipConfigurator
+  fullName: Orleans.Runtime.MembershipService.LegacyConsulMembershipConfigurator

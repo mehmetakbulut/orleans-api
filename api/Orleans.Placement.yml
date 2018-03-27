@@ -1,0 +1,58 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Placement
+  commentId: N:Orleans.Placement
+  id: Orleans.Placement
+  children:
+  - Orleans.Placement.ActivationCountBasedPlacementAttribute
+  - Orleans.Placement.HashBasedPlacementAttribute
+  - Orleans.Placement.PlacementAttribute
+  - Orleans.Placement.PreferLocalPlacementAttribute
+  - Orleans.Placement.RandomPlacementAttribute
+  langs:
+  - csharp
+  - vb
+  name: Orleans.Placement
+  nameWithType: Orleans.Placement
+  fullName: Orleans.Placement
+  type: Namespace
+  assemblies:
+  - Orleans.Core.Abstractions
+references:
+- uid: Orleans.Placement.PlacementAttribute
+  commentId: T:Orleans.Placement.PlacementAttribute
+  parent: Orleans.Placement
+  isExternal: false
+  name: PlacementAttribute
+  nameWithType: PlacementAttribute
+  fullName: Orleans.Placement.PlacementAttribute
+- uid: Orleans.Placement.RandomPlacementAttribute
+  commentId: T:Orleans.Placement.RandomPlacementAttribute
+  isExternal: false
+  name: RandomPlacementAttribute
+  nameWithType: RandomPlacementAttribute
+  fullName: Orleans.Placement.RandomPlacementAttribute
+- uid: Orleans.Placement.HashBasedPlacementAttribute
+  commentId: T:Orleans.Placement.HashBasedPlacementAttribute
+  isExternal: false
+  name: HashBasedPlacementAttribute
+  nameWithType: HashBasedPlacementAttribute
+  fullName: Orleans.Placement.HashBasedPlacementAttribute
+- uid: Orleans.Placement.PreferLocalPlacementAttribute
+  commentId: T:Orleans.Placement.PreferLocalPlacementAttribute
+  isExternal: false
+  name: PreferLocalPlacementAttribute
+  nameWithType: PreferLocalPlacementAttribute
+  fullName: Orleans.Placement.PreferLocalPlacementAttribute
+- uid: Orleans.Placement.ActivationCountBasedPlacementAttribute
+  commentId: T:Orleans.Placement.ActivationCountBasedPlacementAttribute
+  isExternal: false
+  name: ActivationCountBasedPlacementAttribute
+  nameWithType: ActivationCountBasedPlacementAttribute
+  fullName: Orleans.Placement.ActivationCountBasedPlacementAttribute
+- uid: Orleans.Placement
+  commentId: N:Orleans.Placement
+  isExternal: false
+  name: Orleans.Placement
+  nameWithType: Orleans.Placement
+  fullName: Orleans.Placement

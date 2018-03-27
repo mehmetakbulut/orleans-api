@@ -1,0 +1,421 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag`1
+  commentId: T:Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag`1
+  id: LogStateWithMetaDataAndETag`1
+  parent: Orleans.EventSourcing.LogStorage
+  children:
+  - Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag`1.#ctor
+  - Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag`1.ETag
+  - Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag`1.StateAndMetaData
+  - Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag`1.ToString
+  langs:
+  - csharp
+  - vb
+  name: LogStateWithMetaDataAndETag<TEntry>
+  nameWithType: LogStateWithMetaDataAndETag<TEntry>
+  fullName: Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag<TEntry>
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/LogStorage/LogStateWithMetaData.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: LogStateWithMetaDataAndETag
+    path: src/Orleans.EventSourcing/LogStorage/LogStateWithMetaData.cs
+    startLine: 14
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.LogStorage
+  summary: "\nA class that extends grain state with versioning metadata, so that a grain with log-view consistency\ncan use a standard storage provider via <xref href=\"Orleans.EventSourcing.LogStorage.LogViewAdaptor%602\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: 'public class LogStateWithMetaDataAndETag<TEntry> : IGrainState where TEntry : class'
+    typeParameters:
+    - id: TEntry
+      description: The type used for log entries
+    content.vb: >-
+      Public Class LogStateWithMetaDataAndETag(Of TEntry As Class)
+
+          Inherits IGrainState
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag`1.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  nameWithType.vb: LogStateWithMetaDataAndETag(Of TEntry)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag(Of TEntry)
+  name.vb: LogStateWithMetaDataAndETag(Of TEntry)
+- uid: Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag`1.StateAndMetaData
+  commentId: P:Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag`1.StateAndMetaData
+  id: StateAndMetaData
+  parent: Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag`1
+  langs:
+  - csharp
+  - vb
+  name: StateAndMetaData
+  nameWithType: LogStateWithMetaDataAndETag<TEntry>.StateAndMetaData
+  fullName: Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag<TEntry>.StateAndMetaData
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/LogStorage/LogStateWithMetaData.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: StateAndMetaData
+    path: src/Orleans.EventSourcing/LogStorage/LogStateWithMetaData.cs
+    startLine: 20
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.LogStorage
+  summary: "\nGets and Sets StateAndMetaData\n"
+  example: []
+  syntax:
+    content: public LogStateWithMetaData<TEntry> StateAndMetaData { get; set; }
+    parameters: []
+    return:
+      type: Orleans.EventSourcing.LogStorage.LogStateWithMetaData{{TEntry}}
+    content.vb: Public Property StateAndMetaData As LogStateWithMetaData(Of TEntry)
+  overload: Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag`1.StateAndMetaData*
+  nameWithType.vb: LogStateWithMetaDataAndETag(Of TEntry).StateAndMetaData
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag(Of TEntry).StateAndMetaData
+- uid: Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag`1.ETag
+  commentId: P:Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag`1.ETag
+  id: ETag
+  parent: Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag`1
+  langs:
+  - csharp
+  - vb
+  name: ETag
+  nameWithType: LogStateWithMetaDataAndETag<TEntry>.ETag
+  fullName: Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag<TEntry>.ETag
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/LogStorage/LogStateWithMetaData.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ETag
+    path: src/Orleans.EventSourcing/LogStorage/LogStateWithMetaData.cs
+    startLine: 25
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.LogStorage
+  summary: "\nGets and Sets Etag\n"
+  example: []
+  syntax:
+    content: public string ETag { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ETag As String
+  overload: Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag`1.ETag*
+  nameWithType.vb: LogStateWithMetaDataAndETag(Of TEntry).ETag
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag(Of TEntry).ETag
+- uid: Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag`1.#ctor
+  commentId: M:Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag`1.#ctor
+  id: '#ctor'
+  parent: Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag`1
+  langs:
+  - csharp
+  - vb
+  name: LogStateWithMetaDataAndETag()
+  nameWithType: LogStateWithMetaDataAndETag<TEntry>.LogStateWithMetaDataAndETag()
+  fullName: Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag<TEntry>.LogStateWithMetaDataAndETag()
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/LogStorage/LogStateWithMetaData.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.EventSourcing/LogStorage/LogStateWithMetaData.cs
+    startLine: 42
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.LogStorage
+  summary: "\nInitializes a new instance of GrainStateWithMetaDataAndETag class\n"
+  example: []
+  syntax:
+    content: public LogStateWithMetaDataAndETag()
+    content.vb: Public Sub New
+  overload: Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag`1.#ctor*
+  nameWithType.vb: LogStateWithMetaDataAndETag(Of TEntry).LogStateWithMetaDataAndETag()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag(Of TEntry).LogStateWithMetaDataAndETag()
+- uid: Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag`1.ToString
+  commentId: M:Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag`1.ToString
+  id: ToString
+  parent: Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag`1
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: LogStateWithMetaDataAndETag<TEntry>.ToString()
+  fullName: Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag<TEntry>.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/LogStorage/LogStateWithMetaData.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ToString
+    path: src/Orleans.EventSourcing/LogStorage/LogStateWithMetaData.cs
+    startLine: 50
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.LogStorage
+  summary: "\nConvert current GrainStateWithMetaDataAndETag object information to a string\n"
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overload: Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag`1.ToString*
+  nameWithType.vb: LogStateWithMetaDataAndETag(Of TEntry).ToString()
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag(Of TEntry).ToString()
+references:
+- uid: Orleans.EventSourcing.LogStorage.LogViewAdaptor`2
+  commentId: T:Orleans.EventSourcing.LogStorage.LogViewAdaptor`2
+- uid: Orleans.EventSourcing.LogStorage
+  commentId: N:Orleans.EventSourcing.LogStorage
+  isExternal: false
+  name: Orleans.EventSourcing.LogStorage
+  nameWithType: Orleans.EventSourcing.LogStorage
+  fullName: Orleans.EventSourcing.LogStorage
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag`1.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<LogStateWithMetaDataAndETag<TEntry>>()
+  nameWithType: ImmutableExt.AsImmutable<LogStateWithMetaDataAndETag<TEntry>>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag<TEntry>>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of LogStateWithMetaDataAndETag(Of TEntry))()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag(Of TEntry))()
+  name.vb: AsImmutable(Of LogStateWithMetaDataAndETag(Of TEntry))()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<LogStateWithMetaDataAndETag<TEntry>>
+    nameWithType: ImmutableExt.AsImmutable<LogStateWithMetaDataAndETag<TEntry>>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag<TEntry>>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of LogStateWithMetaDataAndETag(Of TEntry))
+    nameWithType: ImmutableExt.AsImmutable(Of LogStateWithMetaDataAndETag(Of TEntry))
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag(Of TEntry))
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag`1.StateAndMetaData*
+  commentId: Overload:Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag`1.StateAndMetaData
+  isExternal: false
+  name: StateAndMetaData
+  nameWithType: LogStateWithMetaDataAndETag<TEntry>.StateAndMetaData
+  fullName: Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag<TEntry>.StateAndMetaData
+  nameWithType.vb: LogStateWithMetaDataAndETag(Of TEntry).StateAndMetaData
+  fullName.vb: Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag(Of TEntry).StateAndMetaData
+- uid: Orleans.EventSourcing.LogStorage.LogStateWithMetaData{{TEntry}}
+  commentId: T:Orleans.EventSourcing.LogStorage.LogStateWithMetaData{`0}
+  parent: Orleans.EventSourcing.LogStorage
+  definition: Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1
+  name: LogStateWithMetaData<TEntry>
+  nameWithType: LogStateWithMetaData<TEntry>
+  fullName: Orleans.EventSourcing.LogStorage.LogStateWithMetaData<TEntry>
+  nameWithType.vb: LogStateWithMetaData(Of TEntry)
+  fullName.vb: Orleans.EventSourcing.LogStorage.LogStateWithMetaData(Of TEntry)
+  name.vb: LogStateWithMetaData(Of TEntry)
+  spec.csharp:
+  - uid: Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1
+    name: LogStateWithMetaData
+    nameWithType: LogStateWithMetaData
+    fullName: Orleans.EventSourcing.LogStorage.LogStateWithMetaData
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEntry
+    nameWithType: TEntry
+    fullName: TEntry
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1
+    name: LogStateWithMetaData
+    nameWithType: LogStateWithMetaData
+    fullName: Orleans.EventSourcing.LogStorage.LogStateWithMetaData
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEntry
+    nameWithType: TEntry
+    fullName: TEntry
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1
+  commentId: T:Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1
+  isExternal: false
+  name: LogStateWithMetaData<TEntry>
+  nameWithType: LogStateWithMetaData<TEntry>
+  fullName: Orleans.EventSourcing.LogStorage.LogStateWithMetaData<TEntry>
+  nameWithType.vb: LogStateWithMetaData(Of TEntry)
+  fullName.vb: Orleans.EventSourcing.LogStorage.LogStateWithMetaData(Of TEntry)
+  name.vb: LogStateWithMetaData(Of TEntry)
+  spec.csharp:
+  - uid: Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1
+    name: LogStateWithMetaData
+    nameWithType: LogStateWithMetaData
+    fullName: Orleans.EventSourcing.LogStorage.LogStateWithMetaData
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEntry
+    nameWithType: TEntry
+    fullName: TEntry
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1
+    name: LogStateWithMetaData
+    nameWithType: LogStateWithMetaData
+    fullName: Orleans.EventSourcing.LogStorage.LogStateWithMetaData
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEntry
+    nameWithType: TEntry
+    fullName: TEntry
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag`1.ETag*
+  commentId: Overload:Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag`1.ETag
+  isExternal: false
+  name: ETag
+  nameWithType: LogStateWithMetaDataAndETag<TEntry>.ETag
+  fullName: Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag<TEntry>.ETag
+  nameWithType.vb: LogStateWithMetaDataAndETag(Of TEntry).ETag
+  fullName.vb: Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag(Of TEntry).ETag
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag`1.#ctor*
+  commentId: Overload:Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag`1.#ctor
+  isExternal: false
+  name: LogStateWithMetaDataAndETag
+  nameWithType: LogStateWithMetaDataAndETag<TEntry>.LogStateWithMetaDataAndETag
+  fullName: Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag<TEntry>.LogStateWithMetaDataAndETag
+  nameWithType.vb: LogStateWithMetaDataAndETag(Of TEntry).LogStateWithMetaDataAndETag
+  fullName.vb: Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag(Of TEntry).LogStateWithMetaDataAndETag
+- uid: Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag`1.ToString*
+  commentId: Overload:Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag`1.ToString
+  isExternal: false
+  name: ToString
+  nameWithType: LogStateWithMetaDataAndETag<TEntry>.ToString
+  fullName: Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag<TEntry>.ToString
+  nameWithType.vb: LogStateWithMetaDataAndETag(Of TEntry).ToString
+  fullName.vb: Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag(Of TEntry).ToString

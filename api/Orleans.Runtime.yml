@@ -1,0 +1,380 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Runtime
+  commentId: N:Orleans.Runtime
+  id: Orleans.Runtime
+  children:
+  - Orleans.Runtime.ClientNotAvailableException
+  - Orleans.Runtime.DeadlockException
+  - Orleans.Runtime.GatewayTooBusyException
+  - Orleans.Runtime.GrainExtensionNotInstalledException
+  - Orleans.Runtime.GrainLifecycleStage
+  - Orleans.Runtime.GrainReference
+  - Orleans.Runtime.GrainReferenceNotBoundException
+  - Orleans.Runtime.GuidId
+  - Orleans.Runtime.IAddressable
+  - Orleans.Runtime.ICloseableLogConsumer
+  - Orleans.Runtime.IFlushableLogConsumer
+  - Orleans.Runtime.IGrainExtension
+  - Orleans.Runtime.IGrainLifecycle
+  - Orleans.Runtime.IGrainReferenceRuntime
+  - Orleans.Runtime.IGrainReminder
+  - Orleans.Runtime.IGrainRuntime
+  - Orleans.Runtime.IKeyedService`2
+  - Orleans.Runtime.IKeyedServiceCollection`2
+  - Orleans.Runtime.ILogConsumer
+  - Orleans.Runtime.KeyedServiceCollectionExtensions
+  - Orleans.Runtime.LimitExceededException
+  - Orleans.Runtime.Logger
+  - Orleans.Runtime.LoggerExtensionMethods
+  - Orleans.Runtime.LoggerExtensions
+  - Orleans.Runtime.LoggerType
+  - Orleans.Runtime.OrleansConfigurationException
+  - Orleans.Runtime.OrleansException
+  - Orleans.Runtime.OrleansLifecycleCanceledException
+  - Orleans.Runtime.OrleansMessageRejectionException
+  - Orleans.Runtime.PlacementStrategy
+  - Orleans.Runtime.ReminderException
+  - Orleans.Runtime.RequestContext
+  - Orleans.Runtime.Severity
+  - Orleans.Runtime.SiloAddress
+  - Orleans.Runtime.SiloUnavailableException
+  - Orleans.Runtime.TickStatus
+  langs:
+  - csharp
+  - vb
+  name: Orleans.Runtime
+  nameWithType: Orleans.Runtime
+  fullName: Orleans.Runtime
+  type: Namespace
+  assemblies:
+  - Orleans.Core.Abstractions
+references:
+- uid: Orleans.Runtime.ClientNotAvailableException
+  commentId: T:Orleans.Runtime.ClientNotAvailableException
+  isExternal: false
+  name: ClientNotAvailableException
+  nameWithType: ClientNotAvailableException
+  fullName: Orleans.Runtime.ClientNotAvailableException
+- uid: Orleans.Runtime.DeadlockException
+  commentId: T:Orleans.Runtime.DeadlockException
+  isExternal: false
+  name: DeadlockException
+  nameWithType: DeadlockException
+  fullName: Orleans.Runtime.DeadlockException
+- uid: Orleans.Runtime.GatewayTooBusyException
+  commentId: T:Orleans.Runtime.GatewayTooBusyException
+  isExternal: false
+  name: GatewayTooBusyException
+  nameWithType: GatewayTooBusyException
+  fullName: Orleans.Runtime.GatewayTooBusyException
+- uid: Orleans.Runtime.GrainExtensionNotInstalledException
+  commentId: T:Orleans.Runtime.GrainExtensionNotInstalledException
+  isExternal: false
+  name: GrainExtensionNotInstalledException
+  nameWithType: GrainExtensionNotInstalledException
+  fullName: Orleans.Runtime.GrainExtensionNotInstalledException
+- uid: Orleans.Runtime.LimitExceededException
+  commentId: T:Orleans.Runtime.LimitExceededException
+  isExternal: false
+  name: LimitExceededException
+  nameWithType: LimitExceededException
+  fullName: Orleans.Runtime.LimitExceededException
+- uid: Orleans.Runtime.OrleansConfigurationException
+  commentId: T:Orleans.Runtime.OrleansConfigurationException
+  isExternal: false
+  name: OrleansConfigurationException
+  nameWithType: OrleansConfigurationException
+  fullName: Orleans.Runtime.OrleansConfigurationException
+- uid: Orleans.Runtime.OrleansException
+  commentId: T:Orleans.Runtime.OrleansException
+  parent: Orleans.Runtime
+  isExternal: false
+  name: OrleansException
+  nameWithType: OrleansException
+  fullName: Orleans.Runtime.OrleansException
+- uid: Orleans.Runtime.OrleansLifecycleCanceledException
+  commentId: T:Orleans.Runtime.OrleansLifecycleCanceledException
+  isExternal: false
+  name: OrleansLifecycleCanceledException
+  nameWithType: OrleansLifecycleCanceledException
+  fullName: Orleans.Runtime.OrleansLifecycleCanceledException
+- uid: Orleans.Runtime.OrleansMessageRejectionException
+  commentId: T:Orleans.Runtime.OrleansMessageRejectionException
+  parent: Orleans.Runtime
+  isExternal: false
+  name: OrleansMessageRejectionException
+  nameWithType: OrleansMessageRejectionException
+  fullName: Orleans.Runtime.OrleansMessageRejectionException
+- uid: Orleans.Runtime.SiloUnavailableException
+  commentId: T:Orleans.Runtime.SiloUnavailableException
+  isExternal: false
+  name: SiloUnavailableException
+  nameWithType: SiloUnavailableException
+  fullName: Orleans.Runtime.SiloUnavailableException
+- uid: Orleans.Runtime.GuidId
+  commentId: T:Orleans.Runtime.GuidId
+  parent: Orleans.Runtime
+  isExternal: false
+  name: GuidId
+  nameWithType: GuidId
+  fullName: Orleans.Runtime.GuidId
+- uid: Orleans.Runtime.SiloAddress
+  commentId: T:Orleans.Runtime.SiloAddress
+  parent: Orleans.Runtime
+  isExternal: false
+  name: SiloAddress
+  nameWithType: SiloAddress
+  fullName: Orleans.Runtime.SiloAddress
+- uid: Orleans.Runtime.IGrainLifecycle
+  commentId: T:Orleans.Runtime.IGrainLifecycle
+  parent: Orleans.Runtime
+  isExternal: false
+  name: IGrainLifecycle
+  nameWithType: IGrainLifecycle
+  fullName: Orleans.Runtime.IGrainLifecycle
+- uid: Orleans.Runtime.Severity
+  commentId: T:Orleans.Runtime.Severity
+  parent: Orleans.Runtime
+  isExternal: false
+  name: Severity
+  nameWithType: Severity
+  fullName: Orleans.Runtime.Severity
+- uid: Orleans.Runtime.PlacementStrategy
+  commentId: T:Orleans.Runtime.PlacementStrategy
+  parent: Orleans.Runtime
+  isExternal: false
+  name: PlacementStrategy
+  nameWithType: PlacementStrategy
+  fullName: Orleans.Runtime.PlacementStrategy
+- uid: Orleans.Runtime.GrainLifecycleStage
+  commentId: T:Orleans.Runtime.GrainLifecycleStage
+  isExternal: false
+  name: GrainLifecycleStage
+  nameWithType: GrainLifecycleStage
+  fullName: Orleans.Runtime.GrainLifecycleStage
+- uid: Orleans.Runtime.GrainReferenceNotBoundException
+  commentId: T:Orleans.Runtime.GrainReferenceNotBoundException
+  isExternal: false
+  name: GrainReferenceNotBoundException
+  nameWithType: GrainReferenceNotBoundException
+  fullName: Orleans.Runtime.GrainReferenceNotBoundException
+- uid: Orleans.Runtime.GrainReference
+  commentId: T:Orleans.Runtime.GrainReference
+  parent: Orleans.Runtime
+  isExternal: false
+  name: GrainReference
+  nameWithType: GrainReference
+  fullName: Orleans.Runtime.GrainReference
+- uid: Orleans.Runtime.IAddressable
+  commentId: T:Orleans.Runtime.IAddressable
+  parent: Orleans.Runtime
+  isExternal: false
+  name: IAddressable
+  nameWithType: IAddressable
+  fullName: Orleans.Runtime.IAddressable
+- uid: Orleans.Runtime.IGrainExtension
+  commentId: T:Orleans.Runtime.IGrainExtension
+  parent: Orleans.Runtime
+  isExternal: false
+  name: IGrainExtension
+  nameWithType: IGrainExtension
+  fullName: Orleans.Runtime.IGrainExtension
+- uid: Orleans.Runtime.IGrainReferenceRuntime
+  commentId: T:Orleans.Runtime.IGrainReferenceRuntime
+  isExternal: false
+  name: IGrainReferenceRuntime
+  nameWithType: IGrainReferenceRuntime
+  fullName: Orleans.Runtime.IGrainReferenceRuntime
+- uid: Orleans.Runtime.IGrainRuntime
+  commentId: T:Orleans.Runtime.IGrainRuntime
+  parent: Orleans.Runtime
+  isExternal: false
+  name: IGrainRuntime
+  nameWithType: IGrainRuntime
+  fullName: Orleans.Runtime.IGrainRuntime
+- uid: Orleans.Runtime.RequestContext
+  commentId: T:Orleans.Runtime.RequestContext
+  isExternal: false
+  name: RequestContext
+  nameWithType: RequestContext
+  fullName: Orleans.Runtime.RequestContext
+- uid: Orleans.Runtime.IGrainReminder
+  commentId: T:Orleans.Runtime.IGrainReminder
+  parent: Orleans.Runtime
+  isExternal: false
+  name: IGrainReminder
+  nameWithType: IGrainReminder
+  fullName: Orleans.Runtime.IGrainReminder
+- uid: Orleans.Runtime.TickStatus
+  commentId: T:Orleans.Runtime.TickStatus
+  parent: Orleans.Runtime
+  isExternal: false
+  name: TickStatus
+  nameWithType: TickStatus
+  fullName: Orleans.Runtime.TickStatus
+- uid: Orleans.Runtime.ReminderException
+  commentId: T:Orleans.Runtime.ReminderException
+  isExternal: false
+  name: ReminderException
+  nameWithType: ReminderException
+  fullName: Orleans.Runtime.ReminderException
+- uid: Orleans.Runtime.IKeyedService`2
+  commentId: T:Orleans.Runtime.IKeyedService`2
+  isExternal: false
+  name: IKeyedService<TKey, TService>
+  nameWithType: IKeyedService<TKey, TService>
+  fullName: Orleans.Runtime.IKeyedService<TKey, TService>
+  nameWithType.vb: IKeyedService(Of TKey, TService)
+  fullName.vb: Orleans.Runtime.IKeyedService(Of TKey, TService)
+  name.vb: IKeyedService(Of TKey, TService)
+  spec.csharp:
+  - uid: Orleans.Runtime.IKeyedService`2
+    name: IKeyedService
+    nameWithType: IKeyedService
+    fullName: Orleans.Runtime.IKeyedService
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TService
+    nameWithType: TService
+    fullName: TService
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Orleans.Runtime.IKeyedService`2
+    name: IKeyedService
+    nameWithType: IKeyedService
+    fullName: Orleans.Runtime.IKeyedService
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TService
+    nameWithType: TService
+    fullName: TService
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.IKeyedServiceCollection`2
+  commentId: T:Orleans.Runtime.IKeyedServiceCollection`2
+  isExternal: false
+  name: IKeyedServiceCollection<TKey, TService>
+  nameWithType: IKeyedServiceCollection<TKey, TService>
+  fullName: Orleans.Runtime.IKeyedServiceCollection<TKey, TService>
+  nameWithType.vb: IKeyedServiceCollection(Of TKey, TService)
+  fullName.vb: Orleans.Runtime.IKeyedServiceCollection(Of TKey, TService)
+  name.vb: IKeyedServiceCollection(Of TKey, TService)
+  spec.csharp:
+  - uid: Orleans.Runtime.IKeyedServiceCollection`2
+    name: IKeyedServiceCollection
+    nameWithType: IKeyedServiceCollection
+    fullName: Orleans.Runtime.IKeyedServiceCollection
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TService
+    nameWithType: TService
+    fullName: TService
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Orleans.Runtime.IKeyedServiceCollection`2
+    name: IKeyedServiceCollection
+    nameWithType: IKeyedServiceCollection
+    fullName: Orleans.Runtime.IKeyedServiceCollection
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TService
+    nameWithType: TService
+    fullName: TService
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.KeyedServiceCollectionExtensions
+  commentId: T:Orleans.Runtime.KeyedServiceCollectionExtensions
+  isExternal: false
+  name: KeyedServiceCollectionExtensions
+  nameWithType: KeyedServiceCollectionExtensions
+  fullName: Orleans.Runtime.KeyedServiceCollectionExtensions
+- uid: Orleans.Runtime.LoggerType
+  commentId: T:Orleans.Runtime.LoggerType
+  parent: Orleans.Runtime
+  isExternal: false
+  name: LoggerType
+  nameWithType: LoggerType
+  fullName: Orleans.Runtime.LoggerType
+- uid: Orleans.Runtime.ILogConsumer
+  commentId: T:Orleans.Runtime.ILogConsumer
+  parent: Orleans.Runtime
+  isExternal: false
+  name: ILogConsumer
+  nameWithType: ILogConsumer
+  fullName: Orleans.Runtime.ILogConsumer
+- uid: Orleans.Runtime.IFlushableLogConsumer
+  commentId: T:Orleans.Runtime.IFlushableLogConsumer
+  parent: Orleans.Runtime
+  isExternal: false
+  name: IFlushableLogConsumer
+  nameWithType: IFlushableLogConsumer
+  fullName: Orleans.Runtime.IFlushableLogConsumer
+- uid: Orleans.Runtime.ICloseableLogConsumer
+  commentId: T:Orleans.Runtime.ICloseableLogConsumer
+  parent: Orleans.Runtime
+  isExternal: false
+  name: ICloseableLogConsumer
+  nameWithType: ICloseableLogConsumer
+  fullName: Orleans.Runtime.ICloseableLogConsumer
+- uid: Orleans.Runtime.Logger
+  commentId: T:Orleans.Runtime.Logger
+  parent: Orleans.Runtime
+  isExternal: false
+  name: Logger
+  nameWithType: Logger
+  fullName: Orleans.Runtime.Logger
+- uid: Orleans.Runtime.LoggerExtensions
+  commentId: T:Orleans.Runtime.LoggerExtensions
+  parent: Orleans.Runtime
+  isExternal: false
+  name: LoggerExtensions
+  nameWithType: LoggerExtensions
+  fullName: Orleans.Runtime.LoggerExtensions
+- uid: Orleans.Runtime.LoggerExtensionMethods
+  commentId: T:Orleans.Runtime.LoggerExtensionMethods
+  parent: Orleans.Runtime
+  isExternal: false
+  name: LoggerExtensionMethods
+  nameWithType: LoggerExtensionMethods
+  fullName: Orleans.Runtime.LoggerExtensionMethods
+- uid: Orleans.Runtime
+  commentId: N:Orleans.Runtime
+  isExternal: false
+  name: Orleans.Runtime
+  nameWithType: Orleans.Runtime
+  fullName: Orleans.Runtime

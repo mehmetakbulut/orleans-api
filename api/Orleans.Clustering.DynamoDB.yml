@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Clustering.DynamoDB
+  commentId: N:Orleans.Clustering.DynamoDB
+  id: Orleans.Clustering.DynamoDB
+  children:
+  - Orleans.Clustering.DynamoDB.LegacyDynamoDBGatewayListProviderConfigurator
+  - Orleans.Clustering.DynamoDB.LegacyDynamoDBMembershipConfigurator
+  langs:
+  - csharp
+  - vb
+  name: Orleans.Clustering.DynamoDB
+  nameWithType: Orleans.Clustering.DynamoDB
+  fullName: Orleans.Clustering.DynamoDB
+  type: Namespace
+  assemblies:
+  - Orleans.Clustering.DynamoDB
+references:
+- uid: Orleans.Clustering.DynamoDB.LegacyDynamoDBGatewayListProviderConfigurator
+  commentId: T:Orleans.Clustering.DynamoDB.LegacyDynamoDBGatewayListProviderConfigurator
+  isExternal: false
+  name: LegacyDynamoDBGatewayListProviderConfigurator
+  nameWithType: LegacyDynamoDBGatewayListProviderConfigurator
+  fullName: Orleans.Clustering.DynamoDB.LegacyDynamoDBGatewayListProviderConfigurator
+- uid: Orleans.Clustering.DynamoDB.LegacyDynamoDBMembershipConfigurator
+  commentId: T:Orleans.Clustering.DynamoDB.LegacyDynamoDBMembershipConfigurator
+  isExternal: false
+  name: LegacyDynamoDBMembershipConfigurator
+  nameWithType: LegacyDynamoDBMembershipConfigurator
+  fullName: Orleans.Clustering.DynamoDB.LegacyDynamoDBMembershipConfigurator

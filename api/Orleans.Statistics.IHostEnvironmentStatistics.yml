@@ -1,0 +1,369 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Statistics.IHostEnvironmentStatistics
+  commentId: T:Orleans.Statistics.IHostEnvironmentStatistics
+  id: IHostEnvironmentStatistics
+  parent: Orleans.Statistics
+  children:
+  - Orleans.Statistics.IHostEnvironmentStatistics.AvailableMemory
+  - Orleans.Statistics.IHostEnvironmentStatistics.CpuUsage
+  - Orleans.Statistics.IHostEnvironmentStatistics.TotalPhysicalMemory
+  langs:
+  - csharp
+  - vb
+  name: IHostEnvironmentStatistics
+  nameWithType: IHostEnvironmentStatistics
+  fullName: Orleans.Statistics.IHostEnvironmentStatistics
+  type: Interface
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Statistics/IHostEnvironmentStatistics.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IHostEnvironmentStatistics
+    path: src/Orleans.Core.Abstractions/Statistics/IHostEnvironmentStatistics.cs
+    startLine: 2
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Statistics
+  syntax:
+    content: public interface IHostEnvironmentStatistics
+    content.vb: Public Interface IHostEnvironmentStatistics
+  extensionMethods:
+  - Orleans.Statistics.IHostEnvironmentStatistics.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Orleans.Statistics.IHostEnvironmentStatistics.TotalPhysicalMemory
+  commentId: P:Orleans.Statistics.IHostEnvironmentStatistics.TotalPhysicalMemory
+  id: TotalPhysicalMemory
+  parent: Orleans.Statistics.IHostEnvironmentStatistics
+  langs:
+  - csharp
+  - vb
+  name: TotalPhysicalMemory
+  nameWithType: IHostEnvironmentStatistics.TotalPhysicalMemory
+  fullName: Orleans.Statistics.IHostEnvironmentStatistics.TotalPhysicalMemory
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Statistics/IHostEnvironmentStatistics.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: TotalPhysicalMemory
+    path: src/Orleans.Core.Abstractions/Statistics/IHostEnvironmentStatistics.cs
+    startLine: 4
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Statistics
+  syntax:
+    content: long? TotalPhysicalMemory { get; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int64}
+    content.vb: ReadOnly Property TotalPhysicalMemory As Long?
+  overload: Orleans.Statistics.IHostEnvironmentStatistics.TotalPhysicalMemory*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Orleans.Statistics.IHostEnvironmentStatistics.CpuUsage
+  commentId: P:Orleans.Statistics.IHostEnvironmentStatistics.CpuUsage
+  id: CpuUsage
+  parent: Orleans.Statistics.IHostEnvironmentStatistics
+  langs:
+  - csharp
+  - vb
+  name: CpuUsage
+  nameWithType: IHostEnvironmentStatistics.CpuUsage
+  fullName: Orleans.Statistics.IHostEnvironmentStatistics.CpuUsage
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Statistics/IHostEnvironmentStatistics.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: CpuUsage
+    path: src/Orleans.Core.Abstractions/Statistics/IHostEnvironmentStatistics.cs
+    startLine: 6
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Statistics
+  syntax:
+    content: float? CpuUsage { get; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Single}
+    content.vb: ReadOnly Property CpuUsage As Single?
+  overload: Orleans.Statistics.IHostEnvironmentStatistics.CpuUsage*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Orleans.Statistics.IHostEnvironmentStatistics.AvailableMemory
+  commentId: P:Orleans.Statistics.IHostEnvironmentStatistics.AvailableMemory
+  id: AvailableMemory
+  parent: Orleans.Statistics.IHostEnvironmentStatistics
+  langs:
+  - csharp
+  - vb
+  name: AvailableMemory
+  nameWithType: IHostEnvironmentStatistics.AvailableMemory
+  fullName: Orleans.Statistics.IHostEnvironmentStatistics.AvailableMemory
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Statistics/IHostEnvironmentStatistics.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AvailableMemory
+    path: src/Orleans.Core.Abstractions/Statistics/IHostEnvironmentStatistics.cs
+    startLine: 8
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Statistics
+  syntax:
+    content: long? AvailableMemory { get; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int64}
+    content.vb: ReadOnly Property AvailableMemory As Long?
+  overload: Orleans.Statistics.IHostEnvironmentStatistics.AvailableMemory*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+references:
+- uid: Orleans.Statistics
+  commentId: N:Orleans.Statistics
+  isExternal: false
+  name: Orleans.Statistics
+  nameWithType: Orleans.Statistics
+  fullName: Orleans.Statistics
+- uid: Orleans.Statistics.IHostEnvironmentStatistics.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<IHostEnvironmentStatistics>()
+  nameWithType: ImmutableExt.AsImmutable<IHostEnvironmentStatistics>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Statistics.IHostEnvironmentStatistics>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of IHostEnvironmentStatistics)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Statistics.IHostEnvironmentStatistics)()
+  name.vb: AsImmutable(Of IHostEnvironmentStatistics)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<IHostEnvironmentStatistics>
+    nameWithType: ImmutableExt.AsImmutable<IHostEnvironmentStatistics>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Statistics.IHostEnvironmentStatistics>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of IHostEnvironmentStatistics)
+    nameWithType: ImmutableExt.AsImmutable(Of IHostEnvironmentStatistics)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Statistics.IHostEnvironmentStatistics)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Statistics.IHostEnvironmentStatistics.TotalPhysicalMemory*
+  commentId: Overload:Orleans.Statistics.IHostEnvironmentStatistics.TotalPhysicalMemory
+  isExternal: false
+  name: TotalPhysicalMemory
+  nameWithType: IHostEnvironmentStatistics.TotalPhysicalMemory
+  fullName: Orleans.Statistics.IHostEnvironmentStatistics.TotalPhysicalMemory
+- uid: System.Nullable{System.Int64}
+  commentId: '!:System.Nullable{System.Int64}'
+  definition: System.Nullable`1
+  name: Nullable<Int64>
+  nameWithType: Nullable<Int64>
+  fullName: System.Nullable<System.Int64>
+  nameWithType.vb: Nullable(Of Int64)
+  fullName.vb: System.Nullable(Of System.Int64)
+  name.vb: Nullable(Of Int64)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  isExternal: true
+  name: Nullable<>
+  nameWithType: Nullable<>
+  fullName: System.Nullable<>
+  nameWithType.vb: Nullable(Of )
+  fullName.vb: System.Nullable(Of )
+  name.vb: Nullable(Of )
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Statistics.IHostEnvironmentStatistics.CpuUsage*
+  commentId: Overload:Orleans.Statistics.IHostEnvironmentStatistics.CpuUsage
+  isExternal: false
+  name: CpuUsage
+  nameWithType: IHostEnvironmentStatistics.CpuUsage
+  fullName: Orleans.Statistics.IHostEnvironmentStatistics.CpuUsage
+- uid: System.Nullable{System.Single}
+  commentId: '!:System.Nullable{System.Single}'
+  definition: System.Nullable`1
+  name: Nullable<Single>
+  nameWithType: Nullable<Single>
+  fullName: System.Nullable<System.Single>
+  nameWithType.vb: Nullable(Of Single)
+  fullName.vb: System.Nullable(Of System.Single)
+  name.vb: Nullable(Of Single)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Statistics.IHostEnvironmentStatistics.AvailableMemory*
+  commentId: Overload:Orleans.Statistics.IHostEnvironmentStatistics.AvailableMemory
+  isExternal: false
+  name: AvailableMemory
+  nameWithType: IHostEnvironmentStatistics.AvailableMemory
+  fullName: Orleans.Statistics.IHostEnvironmentStatistics.AvailableMemory

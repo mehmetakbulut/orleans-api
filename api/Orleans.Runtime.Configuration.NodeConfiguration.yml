@@ -1,0 +1,2056 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Runtime.Configuration.NodeConfiguration
+  commentId: T:Orleans.Runtime.Configuration.NodeConfiguration
+  id: NodeConfiguration
+  parent: Orleans.Runtime.Configuration
+  children:
+  - Orleans.Runtime.Configuration.NodeConfiguration.#ctor
+  - Orleans.Runtime.Configuration.NodeConfiguration.#ctor(Orleans.Runtime.Configuration.NodeConfiguration)
+  - Orleans.Runtime.Configuration.NodeConfiguration.ActivationSchedulingQuantum
+  - Orleans.Runtime.Configuration.NodeConfiguration.AdditionalAssemblyDirectories
+  - Orleans.Runtime.Configuration.NodeConfiguration.AddressType
+  - Orleans.Runtime.Configuration.NodeConfiguration.DefaultConnectionLimit
+  - Orleans.Runtime.Configuration.NodeConfiguration.DelayWarningThreshold
+  - Orleans.Runtime.Configuration.NodeConfiguration.DNSHostName
+  - Orleans.Runtime.Configuration.NodeConfiguration.Endpoint
+  - Orleans.Runtime.Configuration.NodeConfiguration.ExcludedGrainTypes
+  - Orleans.Runtime.Configuration.NodeConfiguration.Expect100Continue
+  - Orleans.Runtime.Configuration.NodeConfiguration.Generation
+  - Orleans.Runtime.Configuration.NodeConfiguration.HostNameOrIPAddress
+  - Orleans.Runtime.Configuration.NodeConfiguration.IsGatewayNode
+  - Orleans.Runtime.Configuration.NodeConfiguration.IsPrimaryNode
+  - Orleans.Runtime.Configuration.NodeConfiguration.IsSeedNode
+  - Orleans.Runtime.Configuration.NodeConfiguration.LimitManager
+  - Orleans.Runtime.Configuration.NodeConfiguration.LoadSheddingEnabled
+  - Orleans.Runtime.Configuration.NodeConfiguration.LoadSheddingLimit
+  - Orleans.Runtime.Configuration.NodeConfiguration.MaxActiveThreads
+  - Orleans.Runtime.Configuration.NodeConfiguration.MinDotNetThreadPoolSize
+  - Orleans.Runtime.Configuration.NodeConfiguration.Port
+  - Orleans.Runtime.Configuration.NodeConfiguration.PropagateActivityId
+  - Orleans.Runtime.Configuration.NodeConfiguration.ProxyGatewayEndpoint
+  - Orleans.Runtime.Configuration.NodeConfiguration.SiloName
+  - Orleans.Runtime.Configuration.NodeConfiguration.SiloShutdownEventName
+  - Orleans.Runtime.Configuration.NodeConfiguration.StartupTypeName
+  - Orleans.Runtime.Configuration.NodeConfiguration.StatisticsCollectionLevel
+  - Orleans.Runtime.Configuration.NodeConfiguration.StatisticsLogWriteInterval
+  - Orleans.Runtime.Configuration.NodeConfiguration.StatisticsMetricsTableWriteInterval
+  - Orleans.Runtime.Configuration.NodeConfiguration.StatisticsPerfCountersWriteInterval
+  - Orleans.Runtime.Configuration.NodeConfiguration.StatisticsProviderName
+  - Orleans.Runtime.Configuration.NodeConfiguration.StatisticsWriteLogStatisticsToTable
+  - Orleans.Runtime.Configuration.NodeConfiguration.Subnet
+  - Orleans.Runtime.Configuration.NodeConfiguration.TelemetryConfiguration
+  - Orleans.Runtime.Configuration.NodeConfiguration.ToString
+  - Orleans.Runtime.Configuration.NodeConfiguration.TurnWarningLengthThreshold
+  - Orleans.Runtime.Configuration.NodeConfiguration.UseNagleAlgorithm
+  langs:
+  - csharp
+  - vb
+  name: NodeConfiguration
+  nameWithType: NodeConfiguration
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: NodeConfiguration
+    path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+    startLine: 16
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nIndividual node-specific silo configuration parameters.\n"
+  example: []
+  syntax:
+    content: 'public class NodeConfiguration : IStatisticsConfiguration'
+    content.vb: >-
+      Public Class NodeConfiguration
+
+          Inherits IStatisticsConfiguration
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.Runtime.Configuration.NodeConfiguration.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.SiloName
+  commentId: P:Orleans.Runtime.Configuration.NodeConfiguration.SiloName
+  id: SiloName
+  parent: Orleans.Runtime.Configuration.NodeConfiguration
+  langs:
+  - csharp
+  - vb
+  name: SiloName
+  nameWithType: NodeConfiguration.SiloName
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.SiloName
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SiloName
+    path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+    startLine: 25
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nThe name of this silo.\n"
+  example: []
+  syntax:
+    content: public string SiloName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property SiloName As String
+  overload: Orleans.Runtime.Configuration.NodeConfiguration.SiloName*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.DNSHostName
+  commentId: P:Orleans.Runtime.Configuration.NodeConfiguration.DNSHostName
+  id: DNSHostName
+  parent: Orleans.Runtime.Configuration.NodeConfiguration
+  langs:
+  - csharp
+  - vb
+  name: DNSHostName
+  nameWithType: NodeConfiguration.DNSHostName
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.DNSHostName
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: DNSHostName
+    path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+    startLine: 38
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nThe DNS host name of this silo.\nThis is a true host name, no IP address. It is NOT settable, equals Dns.GetHostName().\n"
+  example: []
+  syntax:
+    content: public string DNSHostName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property DNSHostName As String
+  overload: Orleans.Runtime.Configuration.NodeConfiguration.DNSHostName*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.HostNameOrIPAddress
+  commentId: P:Orleans.Runtime.Configuration.NodeConfiguration.HostNameOrIPAddress
+  id: HostNameOrIPAddress
+  parent: Orleans.Runtime.Configuration.NodeConfiguration
+  langs:
+  - csharp
+  - vb
+  name: HostNameOrIPAddress
+  nameWithType: NodeConfiguration.HostNameOrIPAddress
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.HostNameOrIPAddress
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: HostNameOrIPAddress
+    path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+    startLine: 44
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nThe host name or IP address of this silo.\nThis is a configurable IP address or Hostname.\n"
+  example: []
+  syntax:
+    content: public string HostNameOrIPAddress { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property HostNameOrIPAddress As String
+  overload: Orleans.Runtime.Configuration.NodeConfiguration.HostNameOrIPAddress*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.Port
+  commentId: P:Orleans.Runtime.Configuration.NodeConfiguration.Port
+  id: Port
+  parent: Orleans.Runtime.Configuration.NodeConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Port
+  nameWithType: NodeConfiguration.Port
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.Port
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Port
+    path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+    startLine: 50
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nThe port this silo uses for silo-to-silo communication.\n"
+  example: []
+  syntax:
+    content: public int Port { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Port As Integer
+  overload: Orleans.Runtime.Configuration.NodeConfiguration.Port*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.Generation
+  commentId: P:Orleans.Runtime.Configuration.NodeConfiguration.Generation
+  id: Generation
+  parent: Orleans.Runtime.Configuration.NodeConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Generation
+  nameWithType: NodeConfiguration.Generation
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.Generation
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Generation
+    path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+    startLine: 55
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nThe epoch generation number for this silo.\n"
+  example: []
+  syntax:
+    content: public int Generation { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Generation As Integer
+  overload: Orleans.Runtime.Configuration.NodeConfiguration.Generation*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.Endpoint
+  commentId: P:Orleans.Runtime.Configuration.NodeConfiguration.Endpoint
+  id: Endpoint
+  parent: Orleans.Runtime.Configuration.NodeConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Endpoint
+  nameWithType: NodeConfiguration.Endpoint
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.Endpoint
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Endpoint
+    path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+    startLine: 60
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nThe IPEndPoint this silo uses for silo-to-silo communication.\n"
+  example: []
+  syntax:
+    content: public IPEndPoint Endpoint { get; }
+    parameters: []
+    return:
+      type: IPEndPoint
+    content.vb: Public ReadOnly Property Endpoint As IPEndPoint
+  overload: Orleans.Runtime.Configuration.NodeConfiguration.Endpoint*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.AddressType
+  commentId: P:Orleans.Runtime.Configuration.NodeConfiguration.AddressType
+  id: AddressType
+  parent: Orleans.Runtime.Configuration.NodeConfiguration
+  langs:
+  - csharp
+  - vb
+  name: AddressType
+  nameWithType: NodeConfiguration.AddressType
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.AddressType
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AddressType
+    path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+    startLine: 67
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nThe AddressFamilyof the IP address of this silo.\n"
+  example: []
+  syntax:
+    content: public AddressFamily AddressType { get; set; }
+    parameters: []
+    return:
+      type: AddressFamily
+    content.vb: Public Property AddressType As AddressFamily
+  overload: Orleans.Runtime.Configuration.NodeConfiguration.AddressType*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.ProxyGatewayEndpoint
+  commentId: P:Orleans.Runtime.Configuration.NodeConfiguration.ProxyGatewayEndpoint
+  id: ProxyGatewayEndpoint
+  parent: Orleans.Runtime.Configuration.NodeConfiguration
+  langs:
+  - csharp
+  - vb
+  name: ProxyGatewayEndpoint
+  nameWithType: NodeConfiguration.ProxyGatewayEndpoint
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.ProxyGatewayEndpoint
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ProxyGatewayEndpoint
+    path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+    startLine: 71
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nThe IPEndPoint this silo uses for (gateway) silo-to-client communication.\n"
+  example: []
+  syntax:
+    content: public IPEndPoint ProxyGatewayEndpoint { get; set; }
+    parameters: []
+    return:
+      type: IPEndPoint
+    content.vb: Public Property ProxyGatewayEndpoint As IPEndPoint
+  overload: Orleans.Runtime.Configuration.NodeConfiguration.ProxyGatewayEndpoint*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.Subnet
+  commentId: P:Orleans.Runtime.Configuration.NodeConfiguration.Subnet
+  id: Subnet
+  parent: Orleans.Runtime.Configuration.NodeConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Subnet
+  nameWithType: NodeConfiguration.Subnet
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.Subnet
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Subnet
+    path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+    startLine: 73
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  syntax:
+    content: public byte[] Subnet { get; set; }
+    parameters: []
+    return:
+      type: System.Byte[]
+    content.vb: Public Property Subnet As Byte()
+  overload: Orleans.Runtime.Configuration.NodeConfiguration.Subnet*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.IsPrimaryNode
+  commentId: P:Orleans.Runtime.Configuration.NodeConfiguration.IsPrimaryNode
+  id: IsPrimaryNode
+  parent: Orleans.Runtime.Configuration.NodeConfiguration
+  langs:
+  - csharp
+  - vb
+  name: IsPrimaryNode
+  nameWithType: NodeConfiguration.IsPrimaryNode
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.IsPrimaryNode
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IsPrimaryNode
+    path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+    startLine: 78
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nWhether this is a primary silo (applies for dev settings only).\n"
+  example: []
+  syntax:
+    content: public bool IsPrimaryNode { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsPrimaryNode As Boolean
+  overload: Orleans.Runtime.Configuration.NodeConfiguration.IsPrimaryNode*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.IsSeedNode
+  commentId: P:Orleans.Runtime.Configuration.NodeConfiguration.IsSeedNode
+  id: IsSeedNode
+  parent: Orleans.Runtime.Configuration.NodeConfiguration
+  langs:
+  - csharp
+  - vb
+  name: IsSeedNode
+  nameWithType: NodeConfiguration.IsSeedNode
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.IsSeedNode
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IsSeedNode
+    path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+    startLine: 82
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nWhether this is one of the seed silos (applies for dev settings only).\n"
+  example: []
+  syntax:
+    content: public bool IsSeedNode { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsSeedNode As Boolean
+  overload: Orleans.Runtime.Configuration.NodeConfiguration.IsSeedNode*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.IsGatewayNode
+  commentId: P:Orleans.Runtime.Configuration.NodeConfiguration.IsGatewayNode
+  id: IsGatewayNode
+  parent: Orleans.Runtime.Configuration.NodeConfiguration
+  langs:
+  - csharp
+  - vb
+  name: IsGatewayNode
+  nameWithType: NodeConfiguration.IsGatewayNode
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.IsGatewayNode
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IsGatewayNode
+    path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+    startLine: 86
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nWhether this is silo is a proxying gateway silo.\n"
+  example: []
+  syntax:
+    content: public bool IsGatewayNode { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsGatewayNode As Boolean
+  overload: Orleans.Runtime.Configuration.NodeConfiguration.IsGatewayNode*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.MaxActiveThreads
+  commentId: P:Orleans.Runtime.Configuration.NodeConfiguration.MaxActiveThreads
+  id: MaxActiveThreads
+  parent: Orleans.Runtime.Configuration.NodeConfiguration
+  langs:
+  - csharp
+  - vb
+  name: MaxActiveThreads
+  nameWithType: NodeConfiguration.MaxActiveThreads
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.MaxActiveThreads
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: MaxActiveThreads
+    path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+    startLine: 93
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nThe MaxActiveThreads attribute specifies the maximum number of simultaneous active threads the scheduler will allow.\nGenerally this number should be roughly equal to the number of cores on the node.\nUsing a value of 0 will look at System.Environment.ProcessorCount to decide the number instead, which is only valid when set from xml config\n"
+  example: []
+  syntax:
+    content: public int MaxActiveThreads { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property MaxActiveThreads As Integer
+  overload: Orleans.Runtime.Configuration.NodeConfiguration.MaxActiveThreads*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.DelayWarningThreshold
+  commentId: P:Orleans.Runtime.Configuration.NodeConfiguration.DelayWarningThreshold
+  id: DelayWarningThreshold
+  parent: Orleans.Runtime.Configuration.NodeConfiguration
+  langs:
+  - csharp
+  - vb
+  name: DelayWarningThreshold
+  nameWithType: NodeConfiguration.DelayWarningThreshold
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.DelayWarningThreshold
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: DelayWarningThreshold
+    path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+    startLine: 100
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nThe DelayWarningThreshold attribute specifies the work item queuing delay threshold, at which a warning log message is written.\nThat is, if the delay between enqueuing the work item and executing the work item is greater than DelayWarningThreshold, a warning log is written.\nThe default value is 10 seconds.\n"
+  example: []
+  syntax:
+    content: public TimeSpan DelayWarningThreshold { get; set; }
+    parameters: []
+    return:
+      type: TimeSpan
+    content.vb: Public Property DelayWarningThreshold As TimeSpan
+  overload: Orleans.Runtime.Configuration.NodeConfiguration.DelayWarningThreshold*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.ActivationSchedulingQuantum
+  commentId: P:Orleans.Runtime.Configuration.NodeConfiguration.ActivationSchedulingQuantum
+  id: ActivationSchedulingQuantum
+  parent: Orleans.Runtime.Configuration.NodeConfiguration
+  langs:
+  - csharp
+  - vb
+  name: ActivationSchedulingQuantum
+  nameWithType: NodeConfiguration.ActivationSchedulingQuantum
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.ActivationSchedulingQuantum
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ActivationSchedulingQuantum
+    path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+    startLine: 107
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nActivationSchedulingQuantum is a soft time limit on the duration of activation macro-turn (a number of micro-turns). \nIf a activation was running its micro-turns longer than this, we will give up the thread.\nIf this is set to zero or a negative number, then the full work queue is drained (MaxWorkItemsPerTurn allowing).\n"
+  example: []
+  syntax:
+    content: public TimeSpan ActivationSchedulingQuantum { get; set; }
+    parameters: []
+    return:
+      type: TimeSpan
+    content.vb: Public Property ActivationSchedulingQuantum As TimeSpan
+  overload: Orleans.Runtime.Configuration.NodeConfiguration.ActivationSchedulingQuantum*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.TurnWarningLengthThreshold
+  commentId: P:Orleans.Runtime.Configuration.NodeConfiguration.TurnWarningLengthThreshold
+  id: TurnWarningLengthThreshold
+  parent: Orleans.Runtime.Configuration.NodeConfiguration
+  langs:
+  - csharp
+  - vb
+  name: TurnWarningLengthThreshold
+  nameWithType: NodeConfiguration.TurnWarningLengthThreshold
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.TurnWarningLengthThreshold
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: TurnWarningLengthThreshold
+    path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+    startLine: 112
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nTurnWarningLengthThreshold is a soft time limit to generate trace warning when the micro-turn executes longer then this period in CPU. \n"
+  example: []
+  syntax:
+    content: public TimeSpan TurnWarningLengthThreshold { get; set; }
+    parameters: []
+    return:
+      type: TimeSpan
+    content.vb: Public Property TurnWarningLengthThreshold As TimeSpan
+  overload: Orleans.Runtime.Configuration.NodeConfiguration.TurnWarningLengthThreshold*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.LoadSheddingEnabled
+  commentId: P:Orleans.Runtime.Configuration.NodeConfiguration.LoadSheddingEnabled
+  id: LoadSheddingEnabled
+  parent: Orleans.Runtime.Configuration.NodeConfiguration
+  langs:
+  - csharp
+  - vb
+  name: LoadSheddingEnabled
+  nameWithType: NodeConfiguration.LoadSheddingEnabled
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.LoadSheddingEnabled
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: LoadSheddingEnabled
+    path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+    startLine: 120
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nThe LoadShedding element specifies the gateway load shedding configuration for the node.\nIf it does not appear, gateway load shedding is disabled.\n"
+  example: []
+  syntax:
+    content: public bool LoadSheddingEnabled { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property LoadSheddingEnabled As Boolean
+  overload: Orleans.Runtime.Configuration.NodeConfiguration.LoadSheddingEnabled*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.LoadSheddingLimit
+  commentId: P:Orleans.Runtime.Configuration.NodeConfiguration.LoadSheddingLimit
+  id: LoadSheddingLimit
+  parent: Orleans.Runtime.Configuration.NodeConfiguration
+  langs:
+  - csharp
+  - vb
+  name: LoadSheddingLimit
+  nameWithType: NodeConfiguration.LoadSheddingLimit
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.LoadSheddingLimit
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: LoadSheddingLimit
+    path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+    startLine: 129
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nThe LoadLimit attribute specifies the system load, in CPU%, at which load begins to be shed.\nNote that this value is in %, so valid values range from 1 to 100, and a reasonable value is\ntypically between 80 and 95.\nThis value is ignored if load shedding is disabled, which is the default.\nIf load shedding is enabled and this attribute does not appear, then the default limit is 95%.\n"
+  example: []
+  syntax:
+    content: public int LoadSheddingLimit { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property LoadSheddingLimit As Integer
+  overload: Orleans.Runtime.Configuration.NodeConfiguration.LoadSheddingLimit*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.LimitManager
+  commentId: P:Orleans.Runtime.Configuration.NodeConfiguration.LimitManager
+  id: LimitManager
+  parent: Orleans.Runtime.Configuration.NodeConfiguration
+  langs:
+  - csharp
+  - vb
+  name: LimitManager
+  nameWithType: NodeConfiguration.LimitManager
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.LimitManager
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: LimitManager
+    path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+    startLine: 134
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nThe values for various silo limits.\n"
+  example: []
+  syntax:
+    content: public LimitManager LimitManager { get; }
+    parameters: []
+    return:
+      type: LimitManager
+    content.vb: Public ReadOnly Property LimitManager As LimitManager
+  overload: Orleans.Runtime.Configuration.NodeConfiguration.LimitManager*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.PropagateActivityId
+  commentId: P:Orleans.Runtime.Configuration.NodeConfiguration.PropagateActivityId
+  id: PropagateActivityId
+  parent: Orleans.Runtime.Configuration.NodeConfiguration
+  langs:
+  - csharp
+  - vb
+  name: PropagateActivityId
+  nameWithType: NodeConfiguration.PropagateActivityId
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.PropagateActivityId
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: PropagateActivityId
+    path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+    startLine: 139
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nWhether Trace.CorrelationManager.ActivityId settings should be propagated into grain calls.\n"
+  example: []
+  syntax:
+    content: public bool PropagateActivityId { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property PropagateActivityId As Boolean
+  overload: Orleans.Runtime.Configuration.NodeConfiguration.PropagateActivityId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.StartupTypeName
+  commentId: P:Orleans.Runtime.Configuration.NodeConfiguration.StartupTypeName
+  id: StartupTypeName
+  parent: Orleans.Runtime.Configuration.NodeConfiguration
+  langs:
+  - csharp
+  - vb
+  name: StartupTypeName
+  nameWithType: NodeConfiguration.StartupTypeName
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.StartupTypeName
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: StartupTypeName
+    path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+    startLine: 144
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nSpecifies the name of the Startup class in the configuration file.\n"
+  example: []
+  syntax:
+    content: public string StartupTypeName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property StartupTypeName As String
+  overload: Orleans.Runtime.Configuration.NodeConfiguration.StartupTypeName*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.StatisticsProviderName
+  commentId: P:Orleans.Runtime.Configuration.NodeConfiguration.StatisticsProviderName
+  id: StatisticsProviderName
+  parent: Orleans.Runtime.Configuration.NodeConfiguration
+  langs:
+  - csharp
+  - vb
+  name: StatisticsProviderName
+  nameWithType: NodeConfiguration.StatisticsProviderName
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.StatisticsProviderName
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: StatisticsProviderName
+    path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+    startLine: 146
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  syntax:
+    content: public string StatisticsProviderName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property StatisticsProviderName As String
+  overload: Orleans.Runtime.Configuration.NodeConfiguration.StatisticsProviderName*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.StatisticsMetricsTableWriteInterval
+  commentId: P:Orleans.Runtime.Configuration.NodeConfiguration.StatisticsMetricsTableWriteInterval
+  id: StatisticsMetricsTableWriteInterval
+  parent: Orleans.Runtime.Configuration.NodeConfiguration
+  langs:
+  - csharp
+  - vb
+  name: StatisticsMetricsTableWriteInterval
+  nameWithType: NodeConfiguration.StatisticsMetricsTableWriteInterval
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.StatisticsMetricsTableWriteInterval
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: StatisticsMetricsTableWriteInterval
+    path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+    startLine: 153
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nThe MetricsTableWriteInterval attribute specifies the frequency of updating the metrics in Azure table.\nThe default is 30 seconds.\n"
+  example: []
+  syntax:
+    content: public TimeSpan StatisticsMetricsTableWriteInterval { get; set; }
+    parameters: []
+    return:
+      type: TimeSpan
+    content.vb: Public Property StatisticsMetricsTableWriteInterval As TimeSpan
+  overload: Orleans.Runtime.Configuration.NodeConfiguration.StatisticsMetricsTableWriteInterval*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.StatisticsPerfCountersWriteInterval
+  commentId: P:Orleans.Runtime.Configuration.NodeConfiguration.StatisticsPerfCountersWriteInterval
+  id: StatisticsPerfCountersWriteInterval
+  parent: Orleans.Runtime.Configuration.NodeConfiguration
+  langs:
+  - csharp
+  - vb
+  name: StatisticsPerfCountersWriteInterval
+  nameWithType: NodeConfiguration.StatisticsPerfCountersWriteInterval
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.StatisticsPerfCountersWriteInterval
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: StatisticsPerfCountersWriteInterval
+    path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+    startLine: 158
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nThe PerfCounterWriteInterval attribute specifies the frequency of updating the windows performance counters.\nThe default is 30 seconds.\n"
+  example: []
+  syntax:
+    content: public TimeSpan StatisticsPerfCountersWriteInterval { get; set; }
+    parameters: []
+    return:
+      type: TimeSpan
+    content.vb: Public Property StatisticsPerfCountersWriteInterval As TimeSpan
+  overload: Orleans.Runtime.Configuration.NodeConfiguration.StatisticsPerfCountersWriteInterval*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.StatisticsLogWriteInterval
+  commentId: P:Orleans.Runtime.Configuration.NodeConfiguration.StatisticsLogWriteInterval
+  id: StatisticsLogWriteInterval
+  parent: Orleans.Runtime.Configuration.NodeConfiguration
+  langs:
+  - csharp
+  - vb
+  name: StatisticsLogWriteInterval
+  nameWithType: NodeConfiguration.StatisticsLogWriteInterval
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.StatisticsLogWriteInterval
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: StatisticsLogWriteInterval
+    path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+    startLine: 163
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nThe LogWriteInterval attribute specifies the frequency of updating the statistics in the log file.\nThe default is 5 minutes.\n"
+  example: []
+  syntax:
+    content: public TimeSpan StatisticsLogWriteInterval { get; set; }
+    parameters: []
+    return:
+      type: TimeSpan
+    content.vb: Public Property StatisticsLogWriteInterval As TimeSpan
+  overload: Orleans.Runtime.Configuration.NodeConfiguration.StatisticsLogWriteInterval*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.StatisticsWriteLogStatisticsToTable
+  commentId: P:Orleans.Runtime.Configuration.NodeConfiguration.StatisticsWriteLogStatisticsToTable
+  id: StatisticsWriteLogStatisticsToTable
+  parent: Orleans.Runtime.Configuration.NodeConfiguration
+  langs:
+  - csharp
+  - vb
+  name: StatisticsWriteLogStatisticsToTable
+  nameWithType: NodeConfiguration.StatisticsWriteLogStatisticsToTable
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.StatisticsWriteLogStatisticsToTable
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: StatisticsWriteLogStatisticsToTable
+    path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+    startLine: 169
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nThe WriteLogStatisticsToTable attribute specifies whether log statistics should also be written into a separate, special Azure table.\nThe default is yes.\n"
+  example: []
+  syntax:
+    content: public bool StatisticsWriteLogStatisticsToTable { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property StatisticsWriteLogStatisticsToTable As Boolean
+  overload: Orleans.Runtime.Configuration.NodeConfiguration.StatisticsWriteLogStatisticsToTable*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.StatisticsCollectionLevel
+  commentId: P:Orleans.Runtime.Configuration.NodeConfiguration.StatisticsCollectionLevel
+  id: StatisticsCollectionLevel
+  parent: Orleans.Runtime.Configuration.NodeConfiguration
+  langs:
+  - csharp
+  - vb
+  name: StatisticsCollectionLevel
+  nameWithType: NodeConfiguration.StatisticsCollectionLevel
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.StatisticsCollectionLevel
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: StatisticsCollectionLevel
+    path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+    startLine: 173
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\n"
+  example: []
+  syntax:
+    content: public StatisticsLevel StatisticsCollectionLevel { get; set; }
+    parameters: []
+    return:
+      type: StatisticsLevel
+    content.vb: Public Property StatisticsCollectionLevel As StatisticsLevel
+  overload: Orleans.Runtime.Configuration.NodeConfiguration.StatisticsCollectionLevel*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.MinDotNetThreadPoolSize
+  commentId: P:Orleans.Runtime.Configuration.NodeConfiguration.MinDotNetThreadPoolSize
+  id: MinDotNetThreadPoolSize
+  parent: Orleans.Runtime.Configuration.NodeConfiguration
+  langs:
+  - csharp
+  - vb
+  name: MinDotNetThreadPoolSize
+  nameWithType: NodeConfiguration.MinDotNetThreadPoolSize
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.MinDotNetThreadPoolSize
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: MinDotNetThreadPoolSize
+    path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+    startLine: 177
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\n"
+  example: []
+  syntax:
+    content: public int MinDotNetThreadPoolSize { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property MinDotNetThreadPoolSize As Integer
+  overload: Orleans.Runtime.Configuration.NodeConfiguration.MinDotNetThreadPoolSize*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.Expect100Continue
+  commentId: P:Orleans.Runtime.Configuration.NodeConfiguration.Expect100Continue
+  id: Expect100Continue
+  parent: Orleans.Runtime.Configuration.NodeConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Expect100Continue
+  nameWithType: NodeConfiguration.Expect100Continue
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.Expect100Continue
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Expect100Continue
+    path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+    startLine: 180
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\n"
+  example: []
+  syntax:
+    content: public bool Expect100Continue { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property Expect100Continue As Boolean
+  overload: Orleans.Runtime.Configuration.NodeConfiguration.Expect100Continue*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.DefaultConnectionLimit
+  commentId: P:Orleans.Runtime.Configuration.NodeConfiguration.DefaultConnectionLimit
+  id: DefaultConnectionLimit
+  parent: Orleans.Runtime.Configuration.NodeConfiguration
+  langs:
+  - csharp
+  - vb
+  name: DefaultConnectionLimit
+  nameWithType: NodeConfiguration.DefaultConnectionLimit
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.DefaultConnectionLimit
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: DefaultConnectionLimit
+    path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+    startLine: 183
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\n"
+  example: []
+  syntax:
+    content: public int DefaultConnectionLimit { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property DefaultConnectionLimit As Integer
+  overload: Orleans.Runtime.Configuration.NodeConfiguration.DefaultConnectionLimit*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.UseNagleAlgorithm
+  commentId: P:Orleans.Runtime.Configuration.NodeConfiguration.UseNagleAlgorithm
+  id: UseNagleAlgorithm
+  parent: Orleans.Runtime.Configuration.NodeConfiguration
+  langs:
+  - csharp
+  - vb
+  name: UseNagleAlgorithm
+  nameWithType: NodeConfiguration.UseNagleAlgorithm
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.UseNagleAlgorithm
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: UseNagleAlgorithm
+    path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+    startLine: 186
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\n"
+  example: []
+  syntax:
+    content: public bool UseNagleAlgorithm { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property UseNagleAlgorithm As Boolean
+  overload: Orleans.Runtime.Configuration.NodeConfiguration.UseNagleAlgorithm*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.TelemetryConfiguration
+  commentId: P:Orleans.Runtime.Configuration.NodeConfiguration.TelemetryConfiguration
+  id: TelemetryConfiguration
+  parent: Orleans.Runtime.Configuration.NodeConfiguration
+  langs:
+  - csharp
+  - vb
+  name: TelemetryConfiguration
+  nameWithType: NodeConfiguration.TelemetryConfiguration
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.TelemetryConfiguration
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: TelemetryConfiguration
+    path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+    startLine: 188
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  syntax:
+    content: public TelemetryConfiguration TelemetryConfiguration { get; }
+    parameters: []
+    return:
+      type: TelemetryConfiguration
+    content.vb: Public ReadOnly Property TelemetryConfiguration As TelemetryConfiguration
+  overload: Orleans.Runtime.Configuration.NodeConfiguration.TelemetryConfiguration*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.AdditionalAssemblyDirectories
+  commentId: P:Orleans.Runtime.Configuration.NodeConfiguration.AdditionalAssemblyDirectories
+  id: AdditionalAssemblyDirectories
+  parent: Orleans.Runtime.Configuration.NodeConfiguration
+  langs:
+  - csharp
+  - vb
+  name: AdditionalAssemblyDirectories
+  nameWithType: NodeConfiguration.AdditionalAssemblyDirectories
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.AdditionalAssemblyDirectories
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AdditionalAssemblyDirectories
+    path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+    startLine: 190
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  syntax:
+    content: public Dictionary<string, SearchOption> AdditionalAssemblyDirectories { get; set; }
+    parameters: []
+    return:
+      type: Dictionary{System.String,SearchOption}
+    content.vb: Public Property AdditionalAssemblyDirectories As Dictionary(Of String, SearchOption)
+  overload: Orleans.Runtime.Configuration.NodeConfiguration.AdditionalAssemblyDirectories*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.ExcludedGrainTypes
+  commentId: P:Orleans.Runtime.Configuration.NodeConfiguration.ExcludedGrainTypes
+  id: ExcludedGrainTypes
+  parent: Orleans.Runtime.Configuration.NodeConfiguration
+  langs:
+  - csharp
+  - vb
+  name: ExcludedGrainTypes
+  nameWithType: NodeConfiguration.ExcludedGrainTypes
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.ExcludedGrainTypes
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ExcludedGrainTypes
+    path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+    startLine: 192
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  syntax:
+    content: public List<string> ExcludedGrainTypes { get; set; }
+    parameters: []
+    return:
+      type: List{System.String}
+    content.vb: Public Property ExcludedGrainTypes As List(Of String)
+  overload: Orleans.Runtime.Configuration.NodeConfiguration.ExcludedGrainTypes*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.SiloShutdownEventName
+  commentId: P:Orleans.Runtime.Configuration.NodeConfiguration.SiloShutdownEventName
+  id: SiloShutdownEventName
+  parent: Orleans.Runtime.Configuration.NodeConfiguration
+  langs:
+  - csharp
+  - vb
+  name: SiloShutdownEventName
+  nameWithType: NodeConfiguration.SiloShutdownEventName
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.SiloShutdownEventName
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SiloShutdownEventName
+    path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+    startLine: 194
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  syntax:
+    content: public string SiloShutdownEventName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property SiloShutdownEventName As String
+  overload: Orleans.Runtime.Configuration.NodeConfiguration.SiloShutdownEventName*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.#ctor
+  commentId: M:Orleans.Runtime.Configuration.NodeConfiguration.#ctor
+  id: '#ctor'
+  parent: Orleans.Runtime.Configuration.NodeConfiguration
+  langs:
+  - csharp
+  - vb
+  name: NodeConfiguration()
+  nameWithType: NodeConfiguration.NodeConfiguration()
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.NodeConfiguration()
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+    startLine: 209
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  syntax:
+    content: public NodeConfiguration()
+    content.vb: Public Sub New
+  overload: Orleans.Runtime.Configuration.NodeConfiguration.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.#ctor(Orleans.Runtime.Configuration.NodeConfiguration)
+  commentId: M:Orleans.Runtime.Configuration.NodeConfiguration.#ctor(Orleans.Runtime.Configuration.NodeConfiguration)
+  id: '#ctor(Orleans.Runtime.Configuration.NodeConfiguration)'
+  parent: Orleans.Runtime.Configuration.NodeConfiguration
+  langs:
+  - csharp
+  - vb
+  name: NodeConfiguration(NodeConfiguration)
+  nameWithType: NodeConfiguration.NodeConfiguration(NodeConfiguration)
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.NodeConfiguration(Orleans.Runtime.Configuration.NodeConfiguration)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+    startLine: 250
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  syntax:
+    content: public NodeConfiguration(NodeConfiguration other)
+    parameters:
+    - id: other
+      type: Orleans.Runtime.Configuration.NodeConfiguration
+    content.vb: Public Sub New(other As NodeConfiguration)
+  overload: Orleans.Runtime.Configuration.NodeConfiguration.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.ToString
+  commentId: M:Orleans.Runtime.Configuration.NodeConfiguration.ToString
+  id: ToString
+  parent: Orleans.Runtime.Configuration.NodeConfiguration
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: NodeConfiguration.ToString()
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ToString
+    path: src/Orleans.Core.Legacy/Configuration/NodeConfiguration.cs
+    startLine: 299
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overload: Orleans.Runtime.Configuration.NodeConfiguration.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: Orleans.Runtime.Configuration
+  commentId: N:Orleans.Runtime.Configuration
+  isExternal: false
+  name: Orleans.Runtime.Configuration
+  nameWithType: Orleans.Runtime.Configuration
+  fullName: Orleans.Runtime.Configuration
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<NodeConfiguration>()
+  nameWithType: ImmutableExt.AsImmutable<NodeConfiguration>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.Configuration.NodeConfiguration>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of NodeConfiguration)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.Configuration.NodeConfiguration)()
+  name.vb: AsImmutable(Of NodeConfiguration)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<NodeConfiguration>
+    nameWithType: ImmutableExt.AsImmutable<NodeConfiguration>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.Configuration.NodeConfiguration>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of NodeConfiguration)
+    nameWithType: ImmutableExt.AsImmutable(Of NodeConfiguration)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.Configuration.NodeConfiguration)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.SiloName*
+  commentId: Overload:Orleans.Runtime.Configuration.NodeConfiguration.SiloName
+  isExternal: false
+  name: SiloName
+  nameWithType: NodeConfiguration.SiloName
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.SiloName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.DNSHostName*
+  commentId: Overload:Orleans.Runtime.Configuration.NodeConfiguration.DNSHostName
+  isExternal: false
+  name: DNSHostName
+  nameWithType: NodeConfiguration.DNSHostName
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.DNSHostName
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.HostNameOrIPAddress*
+  commentId: Overload:Orleans.Runtime.Configuration.NodeConfiguration.HostNameOrIPAddress
+  isExternal: false
+  name: HostNameOrIPAddress
+  nameWithType: NodeConfiguration.HostNameOrIPAddress
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.HostNameOrIPAddress
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.Port*
+  commentId: Overload:Orleans.Runtime.Configuration.NodeConfiguration.Port
+  isExternal: false
+  name: Port
+  nameWithType: NodeConfiguration.Port
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.Port
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.Generation*
+  commentId: Overload:Orleans.Runtime.Configuration.NodeConfiguration.Generation
+  isExternal: false
+  name: Generation
+  nameWithType: NodeConfiguration.Generation
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.Generation
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.Endpoint*
+  commentId: Overload:Orleans.Runtime.Configuration.NodeConfiguration.Endpoint
+  isExternal: false
+  name: Endpoint
+  nameWithType: NodeConfiguration.Endpoint
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.Endpoint
+- uid: IPEndPoint
+  isExternal: true
+  name: IPEndPoint
+  nameWithType: IPEndPoint
+  fullName: IPEndPoint
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.AddressType*
+  commentId: Overload:Orleans.Runtime.Configuration.NodeConfiguration.AddressType
+  isExternal: false
+  name: AddressType
+  nameWithType: NodeConfiguration.AddressType
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.AddressType
+- uid: AddressFamily
+  isExternal: true
+  name: AddressFamily
+  nameWithType: AddressFamily
+  fullName: AddressFamily
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.ProxyGatewayEndpoint*
+  commentId: Overload:Orleans.Runtime.Configuration.NodeConfiguration.ProxyGatewayEndpoint
+  isExternal: false
+  name: ProxyGatewayEndpoint
+  nameWithType: NodeConfiguration.ProxyGatewayEndpoint
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.ProxyGatewayEndpoint
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.Subnet*
+  commentId: Overload:Orleans.Runtime.Configuration.NodeConfiguration.Subnet
+  isExternal: false
+  name: Subnet
+  nameWithType: NodeConfiguration.Subnet
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.Subnet
+- uid: System.Byte[]
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.IsPrimaryNode*
+  commentId: Overload:Orleans.Runtime.Configuration.NodeConfiguration.IsPrimaryNode
+  isExternal: false
+  name: IsPrimaryNode
+  nameWithType: NodeConfiguration.IsPrimaryNode
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.IsPrimaryNode
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.IsSeedNode*
+  commentId: Overload:Orleans.Runtime.Configuration.NodeConfiguration.IsSeedNode
+  isExternal: false
+  name: IsSeedNode
+  nameWithType: NodeConfiguration.IsSeedNode
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.IsSeedNode
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.IsGatewayNode*
+  commentId: Overload:Orleans.Runtime.Configuration.NodeConfiguration.IsGatewayNode
+  isExternal: false
+  name: IsGatewayNode
+  nameWithType: NodeConfiguration.IsGatewayNode
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.IsGatewayNode
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.MaxActiveThreads*
+  commentId: Overload:Orleans.Runtime.Configuration.NodeConfiguration.MaxActiveThreads
+  isExternal: false
+  name: MaxActiveThreads
+  nameWithType: NodeConfiguration.MaxActiveThreads
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.MaxActiveThreads
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.DelayWarningThreshold*
+  commentId: Overload:Orleans.Runtime.Configuration.NodeConfiguration.DelayWarningThreshold
+  isExternal: false
+  name: DelayWarningThreshold
+  nameWithType: NodeConfiguration.DelayWarningThreshold
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.DelayWarningThreshold
+- uid: TimeSpan
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: TimeSpan
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.ActivationSchedulingQuantum*
+  commentId: Overload:Orleans.Runtime.Configuration.NodeConfiguration.ActivationSchedulingQuantum
+  isExternal: false
+  name: ActivationSchedulingQuantum
+  nameWithType: NodeConfiguration.ActivationSchedulingQuantum
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.ActivationSchedulingQuantum
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.TurnWarningLengthThreshold*
+  commentId: Overload:Orleans.Runtime.Configuration.NodeConfiguration.TurnWarningLengthThreshold
+  isExternal: false
+  name: TurnWarningLengthThreshold
+  nameWithType: NodeConfiguration.TurnWarningLengthThreshold
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.TurnWarningLengthThreshold
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.LoadSheddingEnabled*
+  commentId: Overload:Orleans.Runtime.Configuration.NodeConfiguration.LoadSheddingEnabled
+  isExternal: false
+  name: LoadSheddingEnabled
+  nameWithType: NodeConfiguration.LoadSheddingEnabled
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.LoadSheddingEnabled
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.LoadSheddingLimit*
+  commentId: Overload:Orleans.Runtime.Configuration.NodeConfiguration.LoadSheddingLimit
+  isExternal: false
+  name: LoadSheddingLimit
+  nameWithType: NodeConfiguration.LoadSheddingLimit
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.LoadSheddingLimit
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.LimitManager*
+  commentId: Overload:Orleans.Runtime.Configuration.NodeConfiguration.LimitManager
+  isExternal: false
+  name: LimitManager
+  nameWithType: NodeConfiguration.LimitManager
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.LimitManager
+- uid: LimitManager
+  isExternal: true
+  name: LimitManager
+  nameWithType: LimitManager
+  fullName: LimitManager
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.PropagateActivityId*
+  commentId: Overload:Orleans.Runtime.Configuration.NodeConfiguration.PropagateActivityId
+  isExternal: false
+  name: PropagateActivityId
+  nameWithType: NodeConfiguration.PropagateActivityId
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.PropagateActivityId
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.StartupTypeName*
+  commentId: Overload:Orleans.Runtime.Configuration.NodeConfiguration.StartupTypeName
+  isExternal: false
+  name: StartupTypeName
+  nameWithType: NodeConfiguration.StartupTypeName
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.StartupTypeName
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.StatisticsProviderName*
+  commentId: Overload:Orleans.Runtime.Configuration.NodeConfiguration.StatisticsProviderName
+  isExternal: false
+  name: StatisticsProviderName
+  nameWithType: NodeConfiguration.StatisticsProviderName
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.StatisticsProviderName
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.StatisticsMetricsTableWriteInterval*
+  commentId: Overload:Orleans.Runtime.Configuration.NodeConfiguration.StatisticsMetricsTableWriteInterval
+  isExternal: false
+  name: StatisticsMetricsTableWriteInterval
+  nameWithType: NodeConfiguration.StatisticsMetricsTableWriteInterval
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.StatisticsMetricsTableWriteInterval
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.StatisticsPerfCountersWriteInterval*
+  commentId: Overload:Orleans.Runtime.Configuration.NodeConfiguration.StatisticsPerfCountersWriteInterval
+  isExternal: false
+  name: StatisticsPerfCountersWriteInterval
+  nameWithType: NodeConfiguration.StatisticsPerfCountersWriteInterval
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.StatisticsPerfCountersWriteInterval
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.StatisticsLogWriteInterval*
+  commentId: Overload:Orleans.Runtime.Configuration.NodeConfiguration.StatisticsLogWriteInterval
+  isExternal: false
+  name: StatisticsLogWriteInterval
+  nameWithType: NodeConfiguration.StatisticsLogWriteInterval
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.StatisticsLogWriteInterval
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.StatisticsWriteLogStatisticsToTable*
+  commentId: Overload:Orleans.Runtime.Configuration.NodeConfiguration.StatisticsWriteLogStatisticsToTable
+  isExternal: false
+  name: StatisticsWriteLogStatisticsToTable
+  nameWithType: NodeConfiguration.StatisticsWriteLogStatisticsToTable
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.StatisticsWriteLogStatisticsToTable
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.StatisticsCollectionLevel*
+  commentId: Overload:Orleans.Runtime.Configuration.NodeConfiguration.StatisticsCollectionLevel
+  isExternal: false
+  name: StatisticsCollectionLevel
+  nameWithType: NodeConfiguration.StatisticsCollectionLevel
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.StatisticsCollectionLevel
+- uid: StatisticsLevel
+  isExternal: true
+  name: StatisticsLevel
+  nameWithType: StatisticsLevel
+  fullName: StatisticsLevel
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.MinDotNetThreadPoolSize*
+  commentId: Overload:Orleans.Runtime.Configuration.NodeConfiguration.MinDotNetThreadPoolSize
+  isExternal: false
+  name: MinDotNetThreadPoolSize
+  nameWithType: NodeConfiguration.MinDotNetThreadPoolSize
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.MinDotNetThreadPoolSize
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.Expect100Continue*
+  commentId: Overload:Orleans.Runtime.Configuration.NodeConfiguration.Expect100Continue
+  isExternal: false
+  name: Expect100Continue
+  nameWithType: NodeConfiguration.Expect100Continue
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.Expect100Continue
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.DefaultConnectionLimit*
+  commentId: Overload:Orleans.Runtime.Configuration.NodeConfiguration.DefaultConnectionLimit
+  isExternal: false
+  name: DefaultConnectionLimit
+  nameWithType: NodeConfiguration.DefaultConnectionLimit
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.DefaultConnectionLimit
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.UseNagleAlgorithm*
+  commentId: Overload:Orleans.Runtime.Configuration.NodeConfiguration.UseNagleAlgorithm
+  isExternal: false
+  name: UseNagleAlgorithm
+  nameWithType: NodeConfiguration.UseNagleAlgorithm
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.UseNagleAlgorithm
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.TelemetryConfiguration*
+  commentId: Overload:Orleans.Runtime.Configuration.NodeConfiguration.TelemetryConfiguration
+  isExternal: false
+  name: TelemetryConfiguration
+  nameWithType: NodeConfiguration.TelemetryConfiguration
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.TelemetryConfiguration
+- uid: TelemetryConfiguration
+  isExternal: true
+  name: TelemetryConfiguration
+  nameWithType: TelemetryConfiguration
+  fullName: TelemetryConfiguration
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.AdditionalAssemblyDirectories*
+  commentId: Overload:Orleans.Runtime.Configuration.NodeConfiguration.AdditionalAssemblyDirectories
+  isExternal: false
+  name: AdditionalAssemblyDirectories
+  nameWithType: NodeConfiguration.AdditionalAssemblyDirectories
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.AdditionalAssemblyDirectories
+- uid: Dictionary{System.String,SearchOption}
+  commentId: '!:Dictionary{System.String,SearchOption}'
+  definition: Dictionary`2
+  name: Dictionary<String, SearchOption>
+  nameWithType: Dictionary<String, SearchOption>
+  fullName: Dictionary<System.String, SearchOption>
+  nameWithType.vb: Dictionary(Of String, SearchOption)
+  fullName.vb: Dictionary(Of System.String, SearchOption)
+  name.vb: Dictionary(Of String, SearchOption)
+  spec.csharp:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: SearchOption
+    name: SearchOption
+    nameWithType: SearchOption
+    fullName: SearchOption
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: SearchOption
+    name: SearchOption
+    nameWithType: SearchOption
+    fullName: SearchOption
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Dictionary`2
+  isExternal: true
+  name: Dictionary<, >
+  nameWithType: Dictionary<, >
+  fullName: Dictionary<, >
+  nameWithType.vb: Dictionary(Of , )
+  fullName.vb: Dictionary(Of , )
+  name.vb: Dictionary(Of , )
+  spec.csharp:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.ExcludedGrainTypes*
+  commentId: Overload:Orleans.Runtime.Configuration.NodeConfiguration.ExcludedGrainTypes
+  isExternal: false
+  name: ExcludedGrainTypes
+  nameWithType: NodeConfiguration.ExcludedGrainTypes
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.ExcludedGrainTypes
+- uid: List{System.String}
+  commentId: '!:List{System.String}'
+  definition: List`1
+  name: List<String>
+  nameWithType: List<String>
+  fullName: List<System.String>
+  nameWithType.vb: List(Of String)
+  fullName.vb: List(Of System.String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.SiloShutdownEventName*
+  commentId: Overload:Orleans.Runtime.Configuration.NodeConfiguration.SiloShutdownEventName
+  isExternal: false
+  name: SiloShutdownEventName
+  nameWithType: NodeConfiguration.SiloShutdownEventName
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.SiloShutdownEventName
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.#ctor*
+  commentId: Overload:Orleans.Runtime.Configuration.NodeConfiguration.#ctor
+  isExternal: false
+  name: NodeConfiguration
+  nameWithType: NodeConfiguration.NodeConfiguration
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.NodeConfiguration
+- uid: Orleans.Runtime.Configuration.NodeConfiguration
+  commentId: T:Orleans.Runtime.Configuration.NodeConfiguration
+  parent: Orleans.Runtime.Configuration
+  isExternal: false
+  name: NodeConfiguration
+  nameWithType: NodeConfiguration
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration
+- uid: Orleans.Runtime.Configuration.NodeConfiguration.ToString*
+  commentId: Overload:Orleans.Runtime.Configuration.NodeConfiguration.ToString
+  isExternal: false
+  name: ToString
+  nameWithType: NodeConfiguration.ToString
+  fullName: Orleans.Runtime.Configuration.NodeConfiguration.ToString

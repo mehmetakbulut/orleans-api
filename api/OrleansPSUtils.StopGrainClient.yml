@@ -1,0 +1,229 @@
+### YamlMime:ManagedReference
+items:
+- uid: OrleansPSUtils.StopGrainClient
+  commentId: T:OrleansPSUtils.StopGrainClient
+  id: StopGrainClient
+  parent: OrleansPSUtils
+  children:
+  - OrleansPSUtils.StopGrainClient.Client
+  - OrleansPSUtils.StopGrainClient.ProcessRecord
+  langs:
+  - csharp
+  - vb
+  name: StopGrainClient
+  nameWithType: StopGrainClient
+  fullName: OrleansPSUtils.StopGrainClient
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.PowerShell/StopGrainClient.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: StopGrainClient
+    path: src/Orleans.PowerShell/StopGrainClient.cs
+    startLine: 7
+  assemblies:
+  - Orleans.PowerShell
+  namespace: OrleansPSUtils
+  syntax:
+    content: 'public class StopGrainClient : PSCmdlet'
+    content.vb: >-
+      Public Class StopGrainClient
+
+          Inherits PSCmdlet
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - OrleansPSUtils.StopGrainClient.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: OrleansPSUtils.StopGrainClient.Client
+  commentId: P:OrleansPSUtils.StopGrainClient.Client
+  id: Client
+  parent: OrleansPSUtils.StopGrainClient
+  langs:
+  - csharp
+  - vb
+  name: Client
+  nameWithType: StopGrainClient.Client
+  fullName: OrleansPSUtils.StopGrainClient.Client
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.PowerShell/StopGrainClient.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Client
+    path: src/Orleans.PowerShell/StopGrainClient.cs
+    startLine: 10
+  assemblies:
+  - Orleans.PowerShell
+  namespace: OrleansPSUtils
+  syntax:
+    content: public IClusterClient Client { get; set; }
+    parameters: []
+    return:
+      type: IClusterClient
+    content.vb: Public Property Client As IClusterClient
+  overload: OrleansPSUtils.StopGrainClient.Client*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: OrleansPSUtils.StopGrainClient.ProcessRecord
+  commentId: M:OrleansPSUtils.StopGrainClient.ProcessRecord
+  id: ProcessRecord
+  parent: OrleansPSUtils.StopGrainClient
+  langs:
+  - csharp
+  - vb
+  name: ProcessRecord()
+  nameWithType: StopGrainClient.ProcessRecord()
+  fullName: OrleansPSUtils.StopGrainClient.ProcessRecord()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.PowerShell/StopGrainClient.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ProcessRecord
+    path: src/Orleans.PowerShell/StopGrainClient.cs
+    startLine: 13
+  assemblies:
+  - Orleans.PowerShell
+  namespace: OrleansPSUtils
+  syntax:
+    content: protected override void ProcessRecord()
+    content.vb: Protected Overrides Sub ProcessRecord
+  overload: OrleansPSUtils.StopGrainClient.ProcessRecord*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+references:
+- uid: OrleansPSUtils
+  commentId: N:OrleansPSUtils
+  isExternal: false
+  name: OrleansPSUtils
+  nameWithType: OrleansPSUtils
+  fullName: OrleansPSUtils
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: OrleansPSUtils.StopGrainClient.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<StopGrainClient>()
+  nameWithType: ImmutableExt.AsImmutable<StopGrainClient>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<OrleansPSUtils.StopGrainClient>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of StopGrainClient)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of OrleansPSUtils.StopGrainClient)()
+  name.vb: AsImmutable(Of StopGrainClient)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<StopGrainClient>
+    nameWithType: ImmutableExt.AsImmutable<StopGrainClient>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<OrleansPSUtils.StopGrainClient>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of StopGrainClient)
+    nameWithType: ImmutableExt.AsImmutable(Of StopGrainClient)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of OrleansPSUtils.StopGrainClient)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: OrleansPSUtils.StopGrainClient.Client*
+  commentId: Overload:OrleansPSUtils.StopGrainClient.Client
+  isExternal: false
+  name: Client
+  nameWithType: StopGrainClient.Client
+  fullName: OrleansPSUtils.StopGrainClient.Client
+- uid: IClusterClient
+  isExternal: true
+  name: IClusterClient
+  nameWithType: IClusterClient
+  fullName: IClusterClient
+- uid: OrleansPSUtils.StopGrainClient.ProcessRecord*
+  commentId: Overload:OrleansPSUtils.StopGrainClient.ProcessRecord
+  isExternal: false
+  name: ProcessRecord
+  nameWithType: StopGrainClient.ProcessRecord
+  fullName: OrleansPSUtils.StopGrainClient.ProcessRecord

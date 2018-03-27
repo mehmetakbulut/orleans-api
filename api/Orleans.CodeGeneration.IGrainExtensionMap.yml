@@ -1,0 +1,206 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.CodeGeneration.IGrainExtensionMap
+  commentId: T:Orleans.CodeGeneration.IGrainExtensionMap
+  id: IGrainExtensionMap
+  parent: Orleans.CodeGeneration
+  children:
+  - Orleans.CodeGeneration.IGrainExtensionMap.TryGetExtension(System.Int32,Orleans.Runtime.IGrainExtension@)
+  langs:
+  - csharp
+  - vb
+  name: IGrainExtensionMap
+  nameWithType: IGrainExtensionMap
+  fullName: Orleans.CodeGeneration.IGrainExtensionMap
+  type: Interface
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/CodeGeneration/IGrainMethodInvoker.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IGrainExtensionMap
+    path: src/Orleans.Core.Abstractions/CodeGeneration/IGrainMethodInvoker.cs
+    startLine: 42
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.CodeGeneration
+  summary: "\nMethods for querying a collection of grain extensions.\n"
+  example: []
+  syntax:
+    content: public interface IGrainExtensionMap
+    content.vb: Public Interface IGrainExtensionMap
+  extensionMethods:
+  - Orleans.CodeGeneration.IGrainExtensionMap.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Orleans.CodeGeneration.IGrainExtensionMap.TryGetExtension(System.Int32,Orleans.Runtime.IGrainExtension@)
+  commentId: M:Orleans.CodeGeneration.IGrainExtensionMap.TryGetExtension(System.Int32,Orleans.Runtime.IGrainExtension@)
+  id: TryGetExtension(System.Int32,Orleans.Runtime.IGrainExtension@)
+  parent: Orleans.CodeGeneration.IGrainExtensionMap
+  langs:
+  - csharp
+  - vb
+  name: TryGetExtension(Int32, out IGrainExtension)
+  nameWithType: IGrainExtensionMap.TryGetExtension(Int32, out IGrainExtension)
+  fullName: Orleans.CodeGeneration.IGrainExtensionMap.TryGetExtension(System.Int32, out Orleans.Runtime.IGrainExtension)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/CodeGeneration/IGrainMethodInvoker.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: TryGetExtension
+    path: src/Orleans.Core.Abstractions/CodeGeneration/IGrainMethodInvoker.cs
+    startLine: 52
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.CodeGeneration
+  summary: "\nGets the extension from this instance if it is available.\n"
+  example: []
+  syntax:
+    content: bool TryGetExtension(int interfaceId, out IGrainExtension extension)
+    parameters:
+    - id: interfaceId
+      type: System.Int32
+      description: The interface id.
+    - id: extension
+      type: Orleans.Runtime.IGrainExtension
+      description: The extension.
+    return:
+      type: System.Boolean
+      description: "\n<xref uid=\"langword_csharp_true\" name=\"true\" href=\"\"></xref> if the extension is found, <xref uid=\"langword_csharp_false\" name=\"false\" href=\"\"></xref> otherwise.\n"
+    content.vb: Function TryGetExtension(interfaceId As Integer, ByRef extension As IGrainExtension) As Boolean
+  overload: Orleans.CodeGeneration.IGrainExtensionMap.TryGetExtension*
+  nameWithType.vb: IGrainExtensionMap.TryGetExtension(Int32, ByRef IGrainExtension)
+  fullName.vb: Orleans.CodeGeneration.IGrainExtensionMap.TryGetExtension(System.Int32, ByRef Orleans.Runtime.IGrainExtension)
+  name.vb: TryGetExtension(Int32, ByRef IGrainExtension)
+references:
+- uid: Orleans.CodeGeneration
+  commentId: N:Orleans.CodeGeneration
+  isExternal: false
+  name: Orleans.CodeGeneration
+  nameWithType: Orleans.CodeGeneration
+  fullName: Orleans.CodeGeneration
+- uid: Orleans.CodeGeneration.IGrainExtensionMap.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<IGrainExtensionMap>()
+  nameWithType: ImmutableExt.AsImmutable<IGrainExtensionMap>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.CodeGeneration.IGrainExtensionMap>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of IGrainExtensionMap)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.CodeGeneration.IGrainExtensionMap)()
+  name.vb: AsImmutable(Of IGrainExtensionMap)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<IGrainExtensionMap>
+    nameWithType: ImmutableExt.AsImmutable<IGrainExtensionMap>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.CodeGeneration.IGrainExtensionMap>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of IGrainExtensionMap)
+    nameWithType: ImmutableExt.AsImmutable(Of IGrainExtensionMap)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.CodeGeneration.IGrainExtensionMap)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.CodeGeneration.IGrainExtensionMap.TryGetExtension*
+  commentId: Overload:Orleans.CodeGeneration.IGrainExtensionMap.TryGetExtension
+  isExternal: false
+  name: TryGetExtension
+  nameWithType: IGrainExtensionMap.TryGetExtension
+  fullName: Orleans.CodeGeneration.IGrainExtensionMap.TryGetExtension
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Orleans.Runtime.IGrainExtension
+  commentId: T:Orleans.Runtime.IGrainExtension
+  parent: Orleans.Runtime
+  isExternal: false
+  name: IGrainExtension
+  nameWithType: IGrainExtension
+  fullName: Orleans.Runtime.IGrainExtension
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Orleans.Runtime
+  commentId: N:Orleans.Runtime
+  isExternal: false
+  name: Orleans.Runtime
+  nameWithType: Orleans.Runtime
+  fullName: Orleans.Runtime
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System

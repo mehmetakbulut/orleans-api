@@ -1,0 +1,375 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.EventSourcing.Common.PrimaryOperationFailed
+  commentId: T:Orleans.EventSourcing.Common.PrimaryOperationFailed
+  id: PrimaryOperationFailed
+  parent: Orleans.EventSourcing.Common
+  children:
+  - Orleans.EventSourcing.Common.PrimaryOperationFailed.ComputeRetryDelay(System.Nullable{TimeSpan})
+  - Orleans.EventSourcing.Common.PrimaryOperationFailed.Exception
+  langs:
+  - csharp
+  - vb
+  name: PrimaryOperationFailed
+  nameWithType: PrimaryOperationFailed
+  fullName: Orleans.EventSourcing.Common.PrimaryOperationFailed
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/ConnectionIssues.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: PrimaryOperationFailed
+    path: src/Orleans.EventSourcing/Common/ConnectionIssues.cs
+    startLine: 34
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  summary: "\nDescribes a connection issue that occurred when communicating with primary storage.\n"
+  example: []
+  syntax:
+    content: 'public class PrimaryOperationFailed : ConnectionIssue'
+    content.vb: >-
+      Public Class PrimaryOperationFailed
+
+          Inherits ConnectionIssue
+  inheritance:
+  - System.Object
+  - Orleans.LogConsistency.ConnectionIssue
+  inheritedMembers:
+  - Orleans.LogConsistency.ConnectionIssue.TimeStamp
+  - Orleans.LogConsistency.ConnectionIssue.TimeOfFirstFailure
+  - Orleans.LogConsistency.ConnectionIssue.NumberOfConsecutiveFailures
+  - Orleans.LogConsistency.ConnectionIssue.RetryDelay
+  extensionMethods:
+  - Orleans.EventSourcing.Common.PrimaryOperationFailed.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.EventSourcing.Common.PrimaryOperationFailed.Exception
+  commentId: P:Orleans.EventSourcing.Common.PrimaryOperationFailed.Exception
+  id: Exception
+  parent: Orleans.EventSourcing.Common.PrimaryOperationFailed
+  langs:
+  - csharp
+  - vb
+  name: Exception
+  nameWithType: PrimaryOperationFailed.Exception
+  fullName: Orleans.EventSourcing.Common.PrimaryOperationFailed.Exception
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/ConnectionIssues.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Exception
+    path: src/Orleans.EventSourcing/Common/ConnectionIssues.cs
+    startLine: 40
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  summary: "\nThe exception that was caught when communicating with the primary.\n"
+  example: []
+  syntax:
+    content: public Exception Exception { get; set; }
+    parameters: []
+    return:
+      type: Exception
+    content.vb: Public Property Exception As Exception
+  overload: Orleans.EventSourcing.Common.PrimaryOperationFailed.Exception*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.EventSourcing.Common.PrimaryOperationFailed.ComputeRetryDelay(System.Nullable{TimeSpan})
+  commentId: M:Orleans.EventSourcing.Common.PrimaryOperationFailed.ComputeRetryDelay(System.Nullable{TimeSpan})
+  id: ComputeRetryDelay(System.Nullable{TimeSpan})
+  parent: Orleans.EventSourcing.Common.PrimaryOperationFailed
+  langs:
+  - csharp
+  - vb
+  name: ComputeRetryDelay(Nullable<TimeSpan>)
+  nameWithType: PrimaryOperationFailed.ComputeRetryDelay(Nullable<TimeSpan>)
+  fullName: Orleans.EventSourcing.Common.PrimaryOperationFailed.ComputeRetryDelay(System.Nullable<TimeSpan>)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/ConnectionIssues.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ComputeRetryDelay
+    path: src/Orleans.EventSourcing/Common/ConnectionIssues.cs
+    startLine: 43
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  example: []
+  syntax:
+    content: public override TimeSpan ComputeRetryDelay(TimeSpan? previous)
+    parameters:
+    - id: previous
+      type: System.Nullable{TimeSpan}
+    return:
+      type: TimeSpan
+    content.vb: Public Overrides Function ComputeRetryDelay(previous As TimeSpan?) As TimeSpan
+  overload: Orleans.EventSourcing.Common.PrimaryOperationFailed.ComputeRetryDelay*
+  nameWithType.vb: PrimaryOperationFailed.ComputeRetryDelay(Nullable(Of TimeSpan))
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryOperationFailed.ComputeRetryDelay(System.Nullable(Of TimeSpan))
+  name.vb: ComputeRetryDelay(Nullable(Of TimeSpan))
+references:
+- uid: Orleans.EventSourcing.Common
+  commentId: N:Orleans.EventSourcing.Common
+  isExternal: false
+  name: Orleans.EventSourcing.Common
+  nameWithType: Orleans.EventSourcing.Common
+  fullName: Orleans.EventSourcing.Common
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.LogConsistency.ConnectionIssue
+  commentId: T:Orleans.LogConsistency.ConnectionIssue
+  parent: Orleans.LogConsistency
+  isExternal: false
+  name: ConnectionIssue
+  nameWithType: ConnectionIssue
+  fullName: Orleans.LogConsistency.ConnectionIssue
+- uid: Orleans.LogConsistency.ConnectionIssue.TimeStamp
+  commentId: P:Orleans.LogConsistency.ConnectionIssue.TimeStamp
+  parent: Orleans.LogConsistency.ConnectionIssue
+  isExternal: false
+  name: TimeStamp
+  nameWithType: ConnectionIssue.TimeStamp
+  fullName: Orleans.LogConsistency.ConnectionIssue.TimeStamp
+- uid: Orleans.LogConsistency.ConnectionIssue.TimeOfFirstFailure
+  commentId: P:Orleans.LogConsistency.ConnectionIssue.TimeOfFirstFailure
+  parent: Orleans.LogConsistency.ConnectionIssue
+  isExternal: false
+  name: TimeOfFirstFailure
+  nameWithType: ConnectionIssue.TimeOfFirstFailure
+  fullName: Orleans.LogConsistency.ConnectionIssue.TimeOfFirstFailure
+- uid: Orleans.LogConsistency.ConnectionIssue.NumberOfConsecutiveFailures
+  commentId: P:Orleans.LogConsistency.ConnectionIssue.NumberOfConsecutiveFailures
+  parent: Orleans.LogConsistency.ConnectionIssue
+  isExternal: false
+  name: NumberOfConsecutiveFailures
+  nameWithType: ConnectionIssue.NumberOfConsecutiveFailures
+  fullName: Orleans.LogConsistency.ConnectionIssue.NumberOfConsecutiveFailures
+- uid: Orleans.LogConsistency.ConnectionIssue.RetryDelay
+  commentId: P:Orleans.LogConsistency.ConnectionIssue.RetryDelay
+  parent: Orleans.LogConsistency.ConnectionIssue
+  isExternal: false
+  name: RetryDelay
+  nameWithType: ConnectionIssue.RetryDelay
+  fullName: Orleans.LogConsistency.ConnectionIssue.RetryDelay
+- uid: Orleans.EventSourcing.Common.PrimaryOperationFailed.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<PrimaryOperationFailed>()
+  nameWithType: ImmutableExt.AsImmutable<PrimaryOperationFailed>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.EventSourcing.Common.PrimaryOperationFailed>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of PrimaryOperationFailed)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.EventSourcing.Common.PrimaryOperationFailed)()
+  name.vb: AsImmutable(Of PrimaryOperationFailed)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<PrimaryOperationFailed>
+    nameWithType: ImmutableExt.AsImmutable<PrimaryOperationFailed>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.EventSourcing.Common.PrimaryOperationFailed>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of PrimaryOperationFailed)
+    nameWithType: ImmutableExt.AsImmutable(Of PrimaryOperationFailed)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.EventSourcing.Common.PrimaryOperationFailed)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.LogConsistency
+  commentId: N:Orleans.LogConsistency
+  isExternal: false
+  name: Orleans.LogConsistency
+  nameWithType: Orleans.LogConsistency
+  fullName: Orleans.LogConsistency
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.EventSourcing.Common.PrimaryOperationFailed.Exception*
+  commentId: Overload:Orleans.EventSourcing.Common.PrimaryOperationFailed.Exception
+  isExternal: false
+  name: Exception
+  nameWithType: PrimaryOperationFailed.Exception
+  fullName: Orleans.EventSourcing.Common.PrimaryOperationFailed.Exception
+- uid: Exception
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: Exception
+- uid: Orleans.EventSourcing.Common.PrimaryOperationFailed.ComputeRetryDelay*
+  commentId: Overload:Orleans.EventSourcing.Common.PrimaryOperationFailed.ComputeRetryDelay
+  isExternal: false
+  name: ComputeRetryDelay
+  nameWithType: PrimaryOperationFailed.ComputeRetryDelay
+  fullName: Orleans.EventSourcing.Common.PrimaryOperationFailed.ComputeRetryDelay
+- uid: System.Nullable{TimeSpan}
+  commentId: '!:System.Nullable{TimeSpan}'
+  definition: System.Nullable`1
+  name: Nullable<TimeSpan>
+  nameWithType: Nullable<TimeSpan>
+  fullName: System.Nullable<TimeSpan>
+  nameWithType.vb: Nullable(Of TimeSpan)
+  fullName.vb: System.Nullable(Of TimeSpan)
+  name.vb: Nullable(Of TimeSpan)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: TimeSpan
+    name: TimeSpan
+    nameWithType: TimeSpan
+    fullName: TimeSpan
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: TimeSpan
+    name: TimeSpan
+    nameWithType: TimeSpan
+    fullName: TimeSpan
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TimeSpan
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: TimeSpan
+- uid: System.Nullable`1
+  isExternal: true
+  name: Nullable<>
+  nameWithType: Nullable<>
+  fullName: System.Nullable<>
+  nameWithType.vb: Nullable(Of )
+  fullName.vb: System.Nullable(Of )
+  name.vb: Nullable(Of )
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )

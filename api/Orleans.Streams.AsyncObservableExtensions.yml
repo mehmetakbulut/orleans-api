@@ -1,0 +1,1125 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Streams.AsyncObservableExtensions
+  commentId: T:Orleans.Streams.AsyncObservableExtensions
+  id: AsyncObservableExtensions
+  parent: Orleans.Streams
+  children:
+  - Orleans.Streams.AsyncObservableExtensions.SubscribeAsync``1(Orleans.Streams.IAsyncObservable{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task})
+  - Orleans.Streams.AsyncObservableExtensions.SubscribeAsync``1(Orleans.Streams.IAsyncObservable{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task},Func{Exception,Task})
+  - Orleans.Streams.AsyncObservableExtensions.SubscribeAsync``1(Orleans.Streams.IAsyncObservable{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task},Func{Exception,Task},Func{Task})
+  - Orleans.Streams.AsyncObservableExtensions.SubscribeAsync``1(Orleans.Streams.IAsyncObservable{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task},Func{Exception,Task},Func{Task},Orleans.Streams.StreamSequenceToken,Orleans.Streams.StreamFilterPredicate,System.Object)
+  - Orleans.Streams.AsyncObservableExtensions.SubscribeAsync``1(Orleans.Streams.IAsyncObservable{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task},Func{Exception,Task},Orleans.Streams.StreamSequenceToken,Orleans.Streams.StreamFilterPredicate,System.Object)
+  - Orleans.Streams.AsyncObservableExtensions.SubscribeAsync``1(Orleans.Streams.IAsyncObservable{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task},Func{Task})
+  - Orleans.Streams.AsyncObservableExtensions.SubscribeAsync``1(Orleans.Streams.IAsyncObservable{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task},Func{Task},Orleans.Streams.StreamSequenceToken,Orleans.Streams.StreamFilterPredicate,System.Object)
+  - Orleans.Streams.AsyncObservableExtensions.SubscribeAsync``1(Orleans.Streams.IAsyncObservable{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task},Orleans.Streams.StreamSequenceToken,Orleans.Streams.StreamFilterPredicate,System.Object)
+  langs:
+  - csharp
+  - vb
+  name: AsyncObservableExtensions
+  nameWithType: AsyncObservableExtensions
+  fullName: Orleans.Streams.AsyncObservableExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Streams/Extensions/AsyncObservableExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AsyncObservableExtensions
+    path: src/Orleans.Core.Abstractions/Streams/Extensions/AsyncObservableExtensions.cs
+    startLine: 5
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Streams
+  syntax:
+    content: 'public static class AsyncObservableExtensions : object'
+    content.vb: >-
+      Public Module AsyncObservableExtensions
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Orleans.Streams.AsyncObservableExtensions.SubscribeAsync``1(Orleans.Streams.IAsyncObservable{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task},Func{Exception,Task},Func{Task})
+  commentId: M:Orleans.Streams.AsyncObservableExtensions.SubscribeAsync``1(Orleans.Streams.IAsyncObservable{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task},Func{Exception,Task},Func{Task})
+  id: SubscribeAsync``1(Orleans.Streams.IAsyncObservable{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task},Func{Exception,Task},Func{Task})
+  isExtensionMethod: true
+  parent: Orleans.Streams.AsyncObservableExtensions
+  langs:
+  - csharp
+  - vb
+  name: SubscribeAsync<T>(IAsyncObservable<T>, Func<T, StreamSequenceToken, Task>, Func<Exception, Task>, Func<Task>)
+  nameWithType: AsyncObservableExtensions.SubscribeAsync<T>(IAsyncObservable<T>, Func<T, StreamSequenceToken, Task>, Func<Exception, Task>, Func<Task>)
+  fullName: Orleans.Streams.AsyncObservableExtensions.SubscribeAsync<T>(Orleans.Streams.IAsyncObservable<T>, Func<T, Orleans.Streams.StreamSequenceToken, Task>, Func<Exception, Task>, Func<Task>)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Streams/Extensions/AsyncObservableExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SubscribeAsync
+    path: src/Orleans.Core.Abstractions/Streams/Extensions/AsyncObservableExtensions.cs
+    startLine: 23
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Streams
+  summary: "\nSubscribe a consumer to this observable using delegates.\nThis method is a helper for the IAsyncObservable.SubscribeAsync allowing the subscribing class to inline the \nhandler methods instead of requiring an instance of IAsyncObserver.\n"
+  example: []
+  syntax:
+    content: public static Task<StreamSubscriptionHandle<T>> SubscribeAsync<T>(this IAsyncObservable<T> obs, Func<T, StreamSequenceToken, Task> onNextAsync, Func<Exception, Task> onErrorAsync, Func<Task> onCompletedAsync)
+    parameters:
+    - id: obs
+      type: Orleans.Streams.IAsyncObservable{{T}}
+      description: The Observable object.
+    - id: onNextAsync
+      type: Func{{T},Orleans.Streams.StreamSequenceToken,Task}
+      description: Delegte that is called for IAsyncObserver.OnNextAsync.
+    - id: onErrorAsync
+      type: Func{Exception,Task}
+      description: Delegte that is called for IAsyncObserver.OnErrorAsync.
+    - id: onCompletedAsync
+      type: Func{Task}
+      description: Delegte that is called for IAsyncObserver.OnCompletedAsync.
+    typeParameters:
+    - id: T
+      description: The type of object produced by the observable.
+    return:
+      type: Task{Orleans.Streams.StreamSubscriptionHandle{{T}}}
+      description: >-
+        A promise for a StreamSubscriptionHandle that represents the subscription.
+
+        The consumer may unsubscribe by using this handle.
+
+        The subscription remains active for as long as it is not explicitely unsubscribed.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function SubscribeAsync(Of T)(obs As IAsyncObservable(Of T), onNextAsync As Func(Of T, StreamSequenceToken, Task), onErrorAsync As Func(Of Exception, Task), onCompletedAsync As Func(Of Task)) As Task(Of StreamSubscriptionHandle(Of T))
+  overload: Orleans.Streams.AsyncObservableExtensions.SubscribeAsync*
+  nameWithType.vb: AsyncObservableExtensions.SubscribeAsync(Of T)(IAsyncObservable(Of T), Func(Of T, StreamSequenceToken, Task), Func(Of Exception, Task), Func(Of Task))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.Streams.AsyncObservableExtensions.SubscribeAsync(Of T)(Orleans.Streams.IAsyncObservable(Of T), Func(Of T, Orleans.Streams.StreamSequenceToken, Task), Func(Of Exception, Task), Func(Of Task))
+  name.vb: SubscribeAsync(Of T)(IAsyncObservable(Of T), Func(Of T, StreamSequenceToken, Task), Func(Of Exception, Task), Func(Of Task))
+- uid: Orleans.Streams.AsyncObservableExtensions.SubscribeAsync``1(Orleans.Streams.IAsyncObservable{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task},Func{Exception,Task})
+  commentId: M:Orleans.Streams.AsyncObservableExtensions.SubscribeAsync``1(Orleans.Streams.IAsyncObservable{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task},Func{Exception,Task})
+  id: SubscribeAsync``1(Orleans.Streams.IAsyncObservable{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task},Func{Exception,Task})
+  isExtensionMethod: true
+  parent: Orleans.Streams.AsyncObservableExtensions
+  langs:
+  - csharp
+  - vb
+  name: SubscribeAsync<T>(IAsyncObservable<T>, Func<T, StreamSequenceToken, Task>, Func<Exception, Task>)
+  nameWithType: AsyncObservableExtensions.SubscribeAsync<T>(IAsyncObservable<T>, Func<T, StreamSequenceToken, Task>, Func<Exception, Task>)
+  fullName: Orleans.Streams.AsyncObservableExtensions.SubscribeAsync<T>(Orleans.Streams.IAsyncObservable<T>, Func<T, Orleans.Streams.StreamSequenceToken, Task>, Func<Exception, Task>)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Streams/Extensions/AsyncObservableExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SubscribeAsync
+    path: src/Orleans.Core.Abstractions/Streams/Extensions/AsyncObservableExtensions.cs
+    startLine: 44
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Streams
+  summary: "\nSubscribe a consumer to this observable using delegates.\nThis method is a helper for the IAsyncObservable.SubscribeAsync allowing the subscribing class to inline the \nhandler methods instead of requiring an instance of IAsyncObserver.\n"
+  example: []
+  syntax:
+    content: public static Task<StreamSubscriptionHandle<T>> SubscribeAsync<T>(this IAsyncObservable<T> obs, Func<T, StreamSequenceToken, Task> onNextAsync, Func<Exception, Task> onErrorAsync)
+    parameters:
+    - id: obs
+      type: Orleans.Streams.IAsyncObservable{{T}}
+      description: The Observable object.
+    - id: onNextAsync
+      type: Func{{T},Orleans.Streams.StreamSequenceToken,Task}
+      description: Delegte that is called for IAsyncObserver.OnNextAsync.
+    - id: onErrorAsync
+      type: Func{Exception,Task}
+      description: Delegte that is called for IAsyncObserver.OnErrorAsync.
+    typeParameters:
+    - id: T
+      description: The type of object produced by the observable.
+    return:
+      type: Task{Orleans.Streams.StreamSubscriptionHandle{{T}}}
+      description: >-
+        A promise for a StreamSubscriptionHandle that represents the subscription.
+
+        The consumer may unsubscribe by using this handle.
+
+        The subscription remains active for as long as it is not explicitely unsubscribed.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function SubscribeAsync(Of T)(obs As IAsyncObservable(Of T), onNextAsync As Func(Of T, StreamSequenceToken, Task), onErrorAsync As Func(Of Exception, Task)) As Task(Of StreamSubscriptionHandle(Of T))
+  overload: Orleans.Streams.AsyncObservableExtensions.SubscribeAsync*
+  nameWithType.vb: AsyncObservableExtensions.SubscribeAsync(Of T)(IAsyncObservable(Of T), Func(Of T, StreamSequenceToken, Task), Func(Of Exception, Task))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.Streams.AsyncObservableExtensions.SubscribeAsync(Of T)(Orleans.Streams.IAsyncObservable(Of T), Func(Of T, Orleans.Streams.StreamSequenceToken, Task), Func(Of Exception, Task))
+  name.vb: SubscribeAsync(Of T)(IAsyncObservable(Of T), Func(Of T, StreamSequenceToken, Task), Func(Of Exception, Task))
+- uid: Orleans.Streams.AsyncObservableExtensions.SubscribeAsync``1(Orleans.Streams.IAsyncObservable{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task},Func{Task})
+  commentId: M:Orleans.Streams.AsyncObservableExtensions.SubscribeAsync``1(Orleans.Streams.IAsyncObservable{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task},Func{Task})
+  id: SubscribeAsync``1(Orleans.Streams.IAsyncObservable{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task},Func{Task})
+  isExtensionMethod: true
+  parent: Orleans.Streams.AsyncObservableExtensions
+  langs:
+  - csharp
+  - vb
+  name: SubscribeAsync<T>(IAsyncObservable<T>, Func<T, StreamSequenceToken, Task>, Func<Task>)
+  nameWithType: AsyncObservableExtensions.SubscribeAsync<T>(IAsyncObservable<T>, Func<T, StreamSequenceToken, Task>, Func<Task>)
+  fullName: Orleans.Streams.AsyncObservableExtensions.SubscribeAsync<T>(Orleans.Streams.IAsyncObservable<T>, Func<T, Orleans.Streams.StreamSequenceToken, Task>, Func<Task>)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Streams/Extensions/AsyncObservableExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SubscribeAsync
+    path: src/Orleans.Core.Abstractions/Streams/Extensions/AsyncObservableExtensions.cs
+    startLine: 63
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Streams
+  summary: "\nSubscribe a consumer to this observable using delegates.\nThis method is a helper for the IAsyncObservable.SubscribeAsync allowing the subscribing class to inline the \nhandler methods instead of requiring an instance of IAsyncObserver.\n"
+  example: []
+  syntax:
+    content: public static Task<StreamSubscriptionHandle<T>> SubscribeAsync<T>(this IAsyncObservable<T> obs, Func<T, StreamSequenceToken, Task> onNextAsync, Func<Task> onCompletedAsync)
+    parameters:
+    - id: obs
+      type: Orleans.Streams.IAsyncObservable{{T}}
+      description: The Observable object.
+    - id: onNextAsync
+      type: Func{{T},Orleans.Streams.StreamSequenceToken,Task}
+      description: Delegte that is called for IAsyncObserver.OnNextAsync.
+    - id: onCompletedAsync
+      type: Func{Task}
+      description: Delegte that is called for IAsyncObserver.OnCompletedAsync.
+    typeParameters:
+    - id: T
+      description: The type of object produced by the observable.
+    return:
+      type: Task{Orleans.Streams.StreamSubscriptionHandle{{T}}}
+      description: >-
+        A promise for a StreamSubscriptionHandle that represents the subscription.
+
+        The consumer may unsubscribe by using this handle.
+
+        The subscription remains active for as long as it is not explicitely unsubscribed.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function SubscribeAsync(Of T)(obs As IAsyncObservable(Of T), onNextAsync As Func(Of T, StreamSequenceToken, Task), onCompletedAsync As Func(Of Task)) As Task(Of StreamSubscriptionHandle(Of T))
+  overload: Orleans.Streams.AsyncObservableExtensions.SubscribeAsync*
+  nameWithType.vb: AsyncObservableExtensions.SubscribeAsync(Of T)(IAsyncObservable(Of T), Func(Of T, StreamSequenceToken, Task), Func(Of Task))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.Streams.AsyncObservableExtensions.SubscribeAsync(Of T)(Orleans.Streams.IAsyncObservable(Of T), Func(Of T, Orleans.Streams.StreamSequenceToken, Task), Func(Of Task))
+  name.vb: SubscribeAsync(Of T)(IAsyncObservable(Of T), Func(Of T, StreamSequenceToken, Task), Func(Of Task))
+- uid: Orleans.Streams.AsyncObservableExtensions.SubscribeAsync``1(Orleans.Streams.IAsyncObservable{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task})
+  commentId: M:Orleans.Streams.AsyncObservableExtensions.SubscribeAsync``1(Orleans.Streams.IAsyncObservable{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task})
+  id: SubscribeAsync``1(Orleans.Streams.IAsyncObservable{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task})
+  isExtensionMethod: true
+  parent: Orleans.Streams.AsyncObservableExtensions
+  langs:
+  - csharp
+  - vb
+  name: SubscribeAsync<T>(IAsyncObservable<T>, Func<T, StreamSequenceToken, Task>)
+  nameWithType: AsyncObservableExtensions.SubscribeAsync<T>(IAsyncObservable<T>, Func<T, StreamSequenceToken, Task>)
+  fullName: Orleans.Streams.AsyncObservableExtensions.SubscribeAsync<T>(Orleans.Streams.IAsyncObservable<T>, Func<T, Orleans.Streams.StreamSequenceToken, Task>)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Streams/Extensions/AsyncObservableExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SubscribeAsync
+    path: src/Orleans.Core.Abstractions/Streams/Extensions/AsyncObservableExtensions.cs
+    startLine: 81
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Streams
+  summary: "\nSubscribe a consumer to this observable using delegates.\nThis method is a helper for the IAsyncObservable.SubscribeAsync allowing the subscribing class to inline the \nhandler methods instead of requiring an instance of IAsyncObserver.\n"
+  example: []
+  syntax:
+    content: public static Task<StreamSubscriptionHandle<T>> SubscribeAsync<T>(this IAsyncObservable<T> obs, Func<T, StreamSequenceToken, Task> onNextAsync)
+    parameters:
+    - id: obs
+      type: Orleans.Streams.IAsyncObservable{{T}}
+      description: The Observable object.
+    - id: onNextAsync
+      type: Func{{T},Orleans.Streams.StreamSequenceToken,Task}
+      description: Delegte that is called for IAsyncObserver.OnNextAsync.
+    typeParameters:
+    - id: T
+      description: The type of object produced by the observable.
+    return:
+      type: Task{Orleans.Streams.StreamSubscriptionHandle{{T}}}
+      description: >-
+        A promise for a StreamSubscriptionHandle that represents the subscription.
+
+        The consumer may unsubscribe by using this handle.
+
+        The subscription remains active for as long as it is not explicitely unsubscribed.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function SubscribeAsync(Of T)(obs As IAsyncObservable(Of T), onNextAsync As Func(Of T, StreamSequenceToken, Task)) As Task(Of StreamSubscriptionHandle(Of T))
+  overload: Orleans.Streams.AsyncObservableExtensions.SubscribeAsync*
+  nameWithType.vb: AsyncObservableExtensions.SubscribeAsync(Of T)(IAsyncObservable(Of T), Func(Of T, StreamSequenceToken, Task))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.Streams.AsyncObservableExtensions.SubscribeAsync(Of T)(Orleans.Streams.IAsyncObservable(Of T), Func(Of T, Orleans.Streams.StreamSequenceToken, Task))
+  name.vb: SubscribeAsync(Of T)(IAsyncObservable(Of T), Func(Of T, StreamSequenceToken, Task))
+- uid: Orleans.Streams.AsyncObservableExtensions.SubscribeAsync``1(Orleans.Streams.IAsyncObservable{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task},Func{Exception,Task},Func{Task},Orleans.Streams.StreamSequenceToken,Orleans.Streams.StreamFilterPredicate,System.Object)
+  commentId: M:Orleans.Streams.AsyncObservableExtensions.SubscribeAsync``1(Orleans.Streams.IAsyncObservable{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task},Func{Exception,Task},Func{Task},Orleans.Streams.StreamSequenceToken,Orleans.Streams.StreamFilterPredicate,System.Object)
+  id: SubscribeAsync``1(Orleans.Streams.IAsyncObservable{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task},Func{Exception,Task},Func{Task},Orleans.Streams.StreamSequenceToken,Orleans.Streams.StreamFilterPredicate,System.Object)
+  isExtensionMethod: true
+  parent: Orleans.Streams.AsyncObservableExtensions
+  langs:
+  - csharp
+  - vb
+  name: SubscribeAsync<T>(IAsyncObservable<T>, Func<T, StreamSequenceToken, Task>, Func<Exception, Task>, Func<Task>, StreamSequenceToken, StreamFilterPredicate, Object)
+  nameWithType: AsyncObservableExtensions.SubscribeAsync<T>(IAsyncObservable<T>, Func<T, StreamSequenceToken, Task>, Func<Exception, Task>, Func<Task>, StreamSequenceToken, StreamFilterPredicate, Object)
+  fullName: Orleans.Streams.AsyncObservableExtensions.SubscribeAsync<T>(Orleans.Streams.IAsyncObservable<T>, Func<T, Orleans.Streams.StreamSequenceToken, Task>, Func<Exception, Task>, Func<Task>, Orleans.Streams.StreamSequenceToken, Orleans.Streams.StreamFilterPredicate, System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Streams/Extensions/AsyncObservableExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SubscribeAsync
+    path: src/Orleans.Core.Abstractions/Streams/Extensions/AsyncObservableExtensions.cs
+    startLine: 108
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Streams
+  summary: "\nSubscribe a consumer to this observable using delegates.\nThis method is a helper for the IAsyncObservable.SubscribeAsync allowing the subscribing class to inline the \nhandler methods instead of requiring an instance of IAsyncObserver.\n"
+  example: []
+  syntax:
+    content: public static Task<StreamSubscriptionHandle<T>> SubscribeAsync<T>(this IAsyncObservable<T> obs, Func<T, StreamSequenceToken, Task> onNextAsync, Func<Exception, Task> onErrorAsync, Func<Task> onCompletedAsync, StreamSequenceToken token, StreamFilterPredicate filterFunc = null, object filterData = null)
+    parameters:
+    - id: obs
+      type: Orleans.Streams.IAsyncObservable{{T}}
+      description: The Observable object.
+    - id: onNextAsync
+      type: Func{{T},Orleans.Streams.StreamSequenceToken,Task}
+      description: Delegte that is called for IAsyncObserver.OnNextAsync.
+    - id: onErrorAsync
+      type: Func{Exception,Task}
+      description: Delegte that is called for IAsyncObserver.OnErrorAsync.
+    - id: onCompletedAsync
+      type: Func{Task}
+      description: Delegte that is called for IAsyncObserver.OnCompletedAsync.
+    - id: token
+      type: Orleans.Streams.StreamSequenceToken
+      description: The stream sequence to be used as an offset to start the subscription from.
+    - id: filterFunc
+      type: Orleans.Streams.StreamFilterPredicate
+      description: Filter to be applied for this subscription
+    - id: filterData
+      type: System.Object
+      description: >-
+        Data object that will be passed in to the filterFunc.
+
+        This will usually contain any paramaters required by the filterFunc to make it&apos;s filtering decision.
+    typeParameters:
+    - id: T
+      description: The type of object produced by the observable.
+    return:
+      type: Task{Orleans.Streams.StreamSubscriptionHandle{{T}}}
+      description: >
+        A promise for a StreamSubscriptionHandle that represents the subscription.
+
+        The consumer may unsubscribe by using this handle.
+
+        The subscription remains active for as long as it is not explicitely unsubscribed.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function SubscribeAsync(Of T)(obs As IAsyncObservable(Of T), onNextAsync As Func(Of T, StreamSequenceToken, Task), onErrorAsync As Func(Of Exception, Task), onCompletedAsync As Func(Of Task), token As StreamSequenceToken, filterFunc As StreamFilterPredicate = Nothing, filterData As Object = Nothing) As Task(Of StreamSubscriptionHandle(Of T))
+  overload: Orleans.Streams.AsyncObservableExtensions.SubscribeAsync*
+  nameWithType.vb: AsyncObservableExtensions.SubscribeAsync(Of T)(IAsyncObservable(Of T), Func(Of T, StreamSequenceToken, Task), Func(Of Exception, Task), Func(Of Task), StreamSequenceToken, StreamFilterPredicate, Object)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.Streams.AsyncObservableExtensions.SubscribeAsync(Of T)(Orleans.Streams.IAsyncObservable(Of T), Func(Of T, Orleans.Streams.StreamSequenceToken, Task), Func(Of Exception, Task), Func(Of Task), Orleans.Streams.StreamSequenceToken, Orleans.Streams.StreamFilterPredicate, System.Object)
+  name.vb: SubscribeAsync(Of T)(IAsyncObservable(Of T), Func(Of T, StreamSequenceToken, Task), Func(Of Exception, Task), Func(Of Task), StreamSequenceToken, StreamFilterPredicate, Object)
+- uid: Orleans.Streams.AsyncObservableExtensions.SubscribeAsync``1(Orleans.Streams.IAsyncObservable{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task},Func{Exception,Task},Orleans.Streams.StreamSequenceToken,Orleans.Streams.StreamFilterPredicate,System.Object)
+  commentId: M:Orleans.Streams.AsyncObservableExtensions.SubscribeAsync``1(Orleans.Streams.IAsyncObservable{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task},Func{Exception,Task},Orleans.Streams.StreamSequenceToken,Orleans.Streams.StreamFilterPredicate,System.Object)
+  id: SubscribeAsync``1(Orleans.Streams.IAsyncObservable{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task},Func{Exception,Task},Orleans.Streams.StreamSequenceToken,Orleans.Streams.StreamFilterPredicate,System.Object)
+  isExtensionMethod: true
+  parent: Orleans.Streams.AsyncObservableExtensions
+  langs:
+  - csharp
+  - vb
+  name: SubscribeAsync<T>(IAsyncObservable<T>, Func<T, StreamSequenceToken, Task>, Func<Exception, Task>, StreamSequenceToken, StreamFilterPredicate, Object)
+  nameWithType: AsyncObservableExtensions.SubscribeAsync<T>(IAsyncObservable<T>, Func<T, StreamSequenceToken, Task>, Func<Exception, Task>, StreamSequenceToken, StreamFilterPredicate, Object)
+  fullName: Orleans.Streams.AsyncObservableExtensions.SubscribeAsync<T>(Orleans.Streams.IAsyncObservable<T>, Func<T, Orleans.Streams.StreamSequenceToken, Task>, Func<Exception, Task>, Orleans.Streams.StreamSequenceToken, Orleans.Streams.StreamFilterPredicate, System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Streams/Extensions/AsyncObservableExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SubscribeAsync
+    path: src/Orleans.Core.Abstractions/Streams/Extensions/AsyncObservableExtensions.cs
+    startLine: 139
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Streams
+  summary: "\nSubscribe a consumer to this observable using delegates.\nThis method is a helper for the IAsyncObservable.SubscribeAsync allowing the subscribing class to inline the \nhandler methods instead of requiring an instance of IAsyncObserver.\n"
+  example: []
+  syntax:
+    content: public static Task<StreamSubscriptionHandle<T>> SubscribeAsync<T>(this IAsyncObservable<T> obs, Func<T, StreamSequenceToken, Task> onNextAsync, Func<Exception, Task> onErrorAsync, StreamSequenceToken token, StreamFilterPredicate filterFunc = null, object filterData = null)
+    parameters:
+    - id: obs
+      type: Orleans.Streams.IAsyncObservable{{T}}
+      description: The Observable object.
+    - id: onNextAsync
+      type: Func{{T},Orleans.Streams.StreamSequenceToken,Task}
+      description: Delegte that is called for IAsyncObserver.OnNextAsync.
+    - id: onErrorAsync
+      type: Func{Exception,Task}
+      description: Delegte that is called for IAsyncObserver.OnErrorAsync.
+    - id: token
+      type: Orleans.Streams.StreamSequenceToken
+      description: The stream sequence to be used as an offset to start the subscription from.
+    - id: filterFunc
+      type: Orleans.Streams.StreamFilterPredicate
+      description: Filter to be applied for this subscription
+    - id: filterData
+      type: System.Object
+      description: >-
+        Data object that will be passed in to the filterFunc.
+
+        This will usually contain any paramaters required by the filterFunc to make it&apos;s filtering decision.
+    typeParameters:
+    - id: T
+      description: The type of object produced by the observable.
+    return:
+      type: Task{Orleans.Streams.StreamSubscriptionHandle{{T}}}
+      description: >
+        A promise for a StreamSubscriptionHandle that represents the subscription.
+
+        The consumer may unsubscribe by using this handle.
+
+        The subscription remains active for as long as it is not explicitely unsubscribed.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function SubscribeAsync(Of T)(obs As IAsyncObservable(Of T), onNextAsync As Func(Of T, StreamSequenceToken, Task), onErrorAsync As Func(Of Exception, Task), token As StreamSequenceToken, filterFunc As StreamFilterPredicate = Nothing, filterData As Object = Nothing) As Task(Of StreamSubscriptionHandle(Of T))
+  overload: Orleans.Streams.AsyncObservableExtensions.SubscribeAsync*
+  nameWithType.vb: AsyncObservableExtensions.SubscribeAsync(Of T)(IAsyncObservable(Of T), Func(Of T, StreamSequenceToken, Task), Func(Of Exception, Task), StreamSequenceToken, StreamFilterPredicate, Object)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.Streams.AsyncObservableExtensions.SubscribeAsync(Of T)(Orleans.Streams.IAsyncObservable(Of T), Func(Of T, Orleans.Streams.StreamSequenceToken, Task), Func(Of Exception, Task), Orleans.Streams.StreamSequenceToken, Orleans.Streams.StreamFilterPredicate, System.Object)
+  name.vb: SubscribeAsync(Of T)(IAsyncObservable(Of T), Func(Of T, StreamSequenceToken, Task), Func(Of Exception, Task), StreamSequenceToken, StreamFilterPredicate, Object)
+- uid: Orleans.Streams.AsyncObservableExtensions.SubscribeAsync``1(Orleans.Streams.IAsyncObservable{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task},Func{Task},Orleans.Streams.StreamSequenceToken,Orleans.Streams.StreamFilterPredicate,System.Object)
+  commentId: M:Orleans.Streams.AsyncObservableExtensions.SubscribeAsync``1(Orleans.Streams.IAsyncObservable{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task},Func{Task},Orleans.Streams.StreamSequenceToken,Orleans.Streams.StreamFilterPredicate,System.Object)
+  id: SubscribeAsync``1(Orleans.Streams.IAsyncObservable{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task},Func{Task},Orleans.Streams.StreamSequenceToken,Orleans.Streams.StreamFilterPredicate,System.Object)
+  isExtensionMethod: true
+  parent: Orleans.Streams.AsyncObservableExtensions
+  langs:
+  - csharp
+  - vb
+  name: SubscribeAsync<T>(IAsyncObservable<T>, Func<T, StreamSequenceToken, Task>, Func<Task>, StreamSequenceToken, StreamFilterPredicate, Object)
+  nameWithType: AsyncObservableExtensions.SubscribeAsync<T>(IAsyncObservable<T>, Func<T, StreamSequenceToken, Task>, Func<Task>, StreamSequenceToken, StreamFilterPredicate, Object)
+  fullName: Orleans.Streams.AsyncObservableExtensions.SubscribeAsync<T>(Orleans.Streams.IAsyncObservable<T>, Func<T, Orleans.Streams.StreamSequenceToken, Task>, Func<Task>, Orleans.Streams.StreamSequenceToken, Orleans.Streams.StreamFilterPredicate, System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Streams/Extensions/AsyncObservableExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SubscribeAsync
+    path: src/Orleans.Core.Abstractions/Streams/Extensions/AsyncObservableExtensions.cs
+    startLine: 168
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Streams
+  summary: "\nSubscribe a consumer to this observable using delegates.\nThis method is a helper for the IAsyncObservable.SubscribeAsync allowing the subscribing class to inline the \nhandler methods instead of requiring an instance of IAsyncObserver.\n"
+  example: []
+  syntax:
+    content: public static Task<StreamSubscriptionHandle<T>> SubscribeAsync<T>(this IAsyncObservable<T> obs, Func<T, StreamSequenceToken, Task> onNextAsync, Func<Task> onCompletedAsync, StreamSequenceToken token, StreamFilterPredicate filterFunc = null, object filterData = null)
+    parameters:
+    - id: obs
+      type: Orleans.Streams.IAsyncObservable{{T}}
+      description: The Observable object.
+    - id: onNextAsync
+      type: Func{{T},Orleans.Streams.StreamSequenceToken,Task}
+      description: Delegte that is called for IAsyncObserver.OnNextAsync.
+    - id: onCompletedAsync
+      type: Func{Task}
+      description: Delegte that is called for IAsyncObserver.OnCompletedAsync.
+    - id: token
+      type: Orleans.Streams.StreamSequenceToken
+      description: The stream sequence to be used as an offset to start the subscription from.
+    - id: filterFunc
+      type: Orleans.Streams.StreamFilterPredicate
+      description: Filter to be applied for this subscription
+    - id: filterData
+      type: System.Object
+      description: >-
+        Data object that will be passed in to the filterFunc.
+
+        This will usually contain any paramaters required by the filterFunc to make it&apos;s filtering decision.
+    typeParameters:
+    - id: T
+      description: The type of object produced by the observable.
+    return:
+      type: Task{Orleans.Streams.StreamSubscriptionHandle{{T}}}
+      description: >
+        A promise for a StreamSubscriptionHandle that represents the subscription.
+
+        The consumer may unsubscribe by using this handle.
+
+        The subscription remains active for as long as it is not explicitely unsubscribed.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function SubscribeAsync(Of T)(obs As IAsyncObservable(Of T), onNextAsync As Func(Of T, StreamSequenceToken, Task), onCompletedAsync As Func(Of Task), token As StreamSequenceToken, filterFunc As StreamFilterPredicate = Nothing, filterData As Object = Nothing) As Task(Of StreamSubscriptionHandle(Of T))
+  overload: Orleans.Streams.AsyncObservableExtensions.SubscribeAsync*
+  nameWithType.vb: AsyncObservableExtensions.SubscribeAsync(Of T)(IAsyncObservable(Of T), Func(Of T, StreamSequenceToken, Task), Func(Of Task), StreamSequenceToken, StreamFilterPredicate, Object)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.Streams.AsyncObservableExtensions.SubscribeAsync(Of T)(Orleans.Streams.IAsyncObservable(Of T), Func(Of T, Orleans.Streams.StreamSequenceToken, Task), Func(Of Task), Orleans.Streams.StreamSequenceToken, Orleans.Streams.StreamFilterPredicate, System.Object)
+  name.vb: SubscribeAsync(Of T)(IAsyncObservable(Of T), Func(Of T, StreamSequenceToken, Task), Func(Of Task), StreamSequenceToken, StreamFilterPredicate, Object)
+- uid: Orleans.Streams.AsyncObservableExtensions.SubscribeAsync``1(Orleans.Streams.IAsyncObservable{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task},Orleans.Streams.StreamSequenceToken,Orleans.Streams.StreamFilterPredicate,System.Object)
+  commentId: M:Orleans.Streams.AsyncObservableExtensions.SubscribeAsync``1(Orleans.Streams.IAsyncObservable{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task},Orleans.Streams.StreamSequenceToken,Orleans.Streams.StreamFilterPredicate,System.Object)
+  id: SubscribeAsync``1(Orleans.Streams.IAsyncObservable{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task},Orleans.Streams.StreamSequenceToken,Orleans.Streams.StreamFilterPredicate,System.Object)
+  isExtensionMethod: true
+  parent: Orleans.Streams.AsyncObservableExtensions
+  langs:
+  - csharp
+  - vb
+  name: SubscribeAsync<T>(IAsyncObservable<T>, Func<T, StreamSequenceToken, Task>, StreamSequenceToken, StreamFilterPredicate, Object)
+  nameWithType: AsyncObservableExtensions.SubscribeAsync<T>(IAsyncObservable<T>, Func<T, StreamSequenceToken, Task>, StreamSequenceToken, StreamFilterPredicate, Object)
+  fullName: Orleans.Streams.AsyncObservableExtensions.SubscribeAsync<T>(Orleans.Streams.IAsyncObservable<T>, Func<T, Orleans.Streams.StreamSequenceToken, Task>, Orleans.Streams.StreamSequenceToken, Orleans.Streams.StreamFilterPredicate, System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Streams/Extensions/AsyncObservableExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SubscribeAsync
+    path: src/Orleans.Core.Abstractions/Streams/Extensions/AsyncObservableExtensions.cs
+    startLine: 196
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Streams
+  summary: "\nSubscribe a consumer to this observable using delegates.\nThis method is a helper for the IAsyncObservable.SubscribeAsync allowing the subscribing class to inline the \nhandler methods instead of requiring an instance of IAsyncObserver.\n"
+  example: []
+  syntax:
+    content: public static Task<StreamSubscriptionHandle<T>> SubscribeAsync<T>(this IAsyncObservable<T> obs, Func<T, StreamSequenceToken, Task> onNextAsync, StreamSequenceToken token, StreamFilterPredicate filterFunc = null, object filterData = null)
+    parameters:
+    - id: obs
+      type: Orleans.Streams.IAsyncObservable{{T}}
+      description: The Observable object.
+    - id: onNextAsync
+      type: Func{{T},Orleans.Streams.StreamSequenceToken,Task}
+      description: Delegte that is called for IAsyncObserver.OnNextAsync.
+    - id: token
+      type: Orleans.Streams.StreamSequenceToken
+      description: The stream sequence to be used as an offset to start the subscription from.
+    - id: filterFunc
+      type: Orleans.Streams.StreamFilterPredicate
+      description: Filter to be applied for this subscription
+    - id: filterData
+      type: System.Object
+      description: >-
+        Data object that will be passed in to the filterFunc.
+
+        This will usually contain any paramaters required by the filterFunc to make it&apos;s filtering decision.
+    typeParameters:
+    - id: T
+      description: The type of object produced by the observable.
+    return:
+      type: Task{Orleans.Streams.StreamSubscriptionHandle{{T}}}
+      description: >
+        A promise for a StreamSubscriptionHandle that represents the subscription.
+
+        The consumer may unsubscribe by using this handle.
+
+        The subscription remains active for as long as it is not explicitely unsubscribed.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function SubscribeAsync(Of T)(obs As IAsyncObservable(Of T), onNextAsync As Func(Of T, StreamSequenceToken, Task), token As StreamSequenceToken, filterFunc As StreamFilterPredicate = Nothing, filterData As Object = Nothing) As Task(Of StreamSubscriptionHandle(Of T))
+  overload: Orleans.Streams.AsyncObservableExtensions.SubscribeAsync*
+  nameWithType.vb: AsyncObservableExtensions.SubscribeAsync(Of T)(IAsyncObservable(Of T), Func(Of T, StreamSequenceToken, Task), StreamSequenceToken, StreamFilterPredicate, Object)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.Streams.AsyncObservableExtensions.SubscribeAsync(Of T)(Orleans.Streams.IAsyncObservable(Of T), Func(Of T, Orleans.Streams.StreamSequenceToken, Task), Orleans.Streams.StreamSequenceToken, Orleans.Streams.StreamFilterPredicate, System.Object)
+  name.vb: SubscribeAsync(Of T)(IAsyncObservable(Of T), Func(Of T, StreamSequenceToken, Task), StreamSequenceToken, StreamFilterPredicate, Object)
+references:
+- uid: Orleans.Streams
+  commentId: N:Orleans.Streams
+  isExternal: false
+  name: Orleans.Streams
+  nameWithType: Orleans.Streams
+  fullName: Orleans.Streams
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Streams.AsyncObservableExtensions.SubscribeAsync*
+  commentId: Overload:Orleans.Streams.AsyncObservableExtensions.SubscribeAsync
+  isExternal: false
+  name: SubscribeAsync
+  nameWithType: AsyncObservableExtensions.SubscribeAsync
+  fullName: Orleans.Streams.AsyncObservableExtensions.SubscribeAsync
+- uid: Orleans.Streams.IAsyncObservable{{T}}
+  commentId: T:Orleans.Streams.IAsyncObservable{`0}
+  parent: Orleans.Streams
+  definition: Orleans.Streams.IAsyncObservable`1
+  name: IAsyncObservable<T>
+  nameWithType: IAsyncObservable<T>
+  fullName: Orleans.Streams.IAsyncObservable<T>
+  nameWithType.vb: IAsyncObservable(Of T)
+  fullName.vb: Orleans.Streams.IAsyncObservable(Of T)
+  name.vb: IAsyncObservable(Of T)
+  spec.csharp:
+  - uid: Orleans.Streams.IAsyncObservable`1
+    name: IAsyncObservable
+    nameWithType: IAsyncObservable
+    fullName: Orleans.Streams.IAsyncObservable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Orleans.Streams.IAsyncObservable`1
+    name: IAsyncObservable
+    nameWithType: IAsyncObservable
+    fullName: Orleans.Streams.IAsyncObservable
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Func{{T},Orleans.Streams.StreamSequenceToken,Task}
+  commentId: '!:Func{``0,Orleans.Streams.StreamSequenceToken,Task}'
+  definition: Func`3
+  name: Func<T, StreamSequenceToken, Task>
+  nameWithType: Func<T, StreamSequenceToken, Task>
+  fullName: Func<T, Orleans.Streams.StreamSequenceToken, Task>
+  nameWithType.vb: Func(Of T, StreamSequenceToken, Task)
+  fullName.vb: Func(Of T, Orleans.Streams.StreamSequenceToken, Task)
+  name.vb: Func(Of T, StreamSequenceToken, Task)
+  spec.csharp:
+  - uid: Func`3
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.Streams.StreamSequenceToken
+    name: StreamSequenceToken
+    nameWithType: StreamSequenceToken
+    fullName: Orleans.Streams.StreamSequenceToken
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Func`3
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.Streams.StreamSequenceToken
+    name: StreamSequenceToken
+    nameWithType: StreamSequenceToken
+    fullName: Orleans.Streams.StreamSequenceToken
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Func{Exception,Task}
+  commentId: '!:Func{Exception,Task}'
+  definition: Func`2
+  name: Func<Exception, Task>
+  nameWithType: Func<Exception, Task>
+  fullName: Func<Exception, Task>
+  nameWithType.vb: Func(Of Exception, Task)
+  fullName.vb: Func(Of Exception, Task)
+  name.vb: Func(Of Exception, Task)
+  spec.csharp:
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: Exception
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: Exception
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Func{Task}
+  commentId: '!:Func{Task}'
+  definition: Func`1
+  name: Func<Task>
+  nameWithType: Func<Task>
+  fullName: Func<Task>
+  nameWithType.vb: Func(Of Task)
+  fullName.vb: Func(Of Task)
+  name.vb: Func(Of Task)
+  spec.csharp:
+  - uid: Func`1
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Func`1
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task{Orleans.Streams.StreamSubscriptionHandle{{T}}}
+  commentId: '!:Task{Orleans.Streams.StreamSubscriptionHandle{`0}}'
+  definition: Task`1
+  name: Task<StreamSubscriptionHandle<T>>
+  nameWithType: Task<StreamSubscriptionHandle<T>>
+  fullName: Task<Orleans.Streams.StreamSubscriptionHandle<T>>
+  nameWithType.vb: Task(Of StreamSubscriptionHandle(Of T))
+  fullName.vb: Task(Of Orleans.Streams.StreamSubscriptionHandle(Of T))
+  name.vb: Task(Of StreamSubscriptionHandle(Of T))
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Orleans.Streams.StreamSubscriptionHandle`1
+    name: StreamSubscriptionHandle
+    nameWithType: StreamSubscriptionHandle
+    fullName: Orleans.Streams.StreamSubscriptionHandle
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Orleans.Streams.StreamSubscriptionHandle`1
+    name: StreamSubscriptionHandle
+    nameWithType: StreamSubscriptionHandle
+    fullName: Orleans.Streams.StreamSubscriptionHandle
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Streams.IAsyncObservable`1
+  commentId: T:Orleans.Streams.IAsyncObservable`1
+  isExternal: false
+  name: IAsyncObservable<T>
+  nameWithType: IAsyncObservable<T>
+  fullName: Orleans.Streams.IAsyncObservable<T>
+  nameWithType.vb: IAsyncObservable(Of T)
+  fullName.vb: Orleans.Streams.IAsyncObservable(Of T)
+  name.vb: IAsyncObservable(Of T)
+  spec.csharp:
+  - uid: Orleans.Streams.IAsyncObservable`1
+    name: IAsyncObservable
+    nameWithType: IAsyncObservable
+    fullName: Orleans.Streams.IAsyncObservable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Orleans.Streams.IAsyncObservable`1
+    name: IAsyncObservable
+    nameWithType: IAsyncObservable
+    fullName: Orleans.Streams.IAsyncObservable
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Func`3
+  isExternal: true
+  name: Func<, , >
+  nameWithType: Func<, , >
+  fullName: Func<, , >
+  nameWithType.vb: Func(Of , , )
+  fullName.vb: Func(Of , , )
+  name.vb: Func(Of , , )
+  spec.csharp:
+  - uid: Func`3
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Func`3
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Func`2
+  isExternal: true
+  name: Func<, >
+  nameWithType: Func<, >
+  fullName: Func<, >
+  nameWithType.vb: Func(Of , )
+  fullName.vb: Func(Of , )
+  name.vb: Func(Of , )
+  spec.csharp:
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Func`1
+  isExternal: true
+  name: Func<>
+  nameWithType: Func<>
+  fullName: Func<>
+  nameWithType.vb: Func(Of )
+  fullName.vb: Func(Of )
+  name.vb: Func(Of )
+  spec.csharp:
+  - uid: Func`1
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Func`1
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Streams.StreamSequenceToken
+  commentId: T:Orleans.Streams.StreamSequenceToken
+  parent: Orleans.Streams
+  isExternal: false
+  name: StreamSequenceToken
+  nameWithType: StreamSequenceToken
+  fullName: Orleans.Streams.StreamSequenceToken
+- uid: Orleans.Streams.StreamFilterPredicate
+  commentId: T:Orleans.Streams.StreamFilterPredicate
+  parent: Orleans.Streams
+  isExternal: false
+  name: StreamFilterPredicate
+  nameWithType: StreamFilterPredicate
+  fullName: Orleans.Streams.StreamFilterPredicate

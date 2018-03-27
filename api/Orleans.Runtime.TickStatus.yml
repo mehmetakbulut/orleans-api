@@ -1,0 +1,315 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Runtime.TickStatus
+  commentId: T:Orleans.Runtime.TickStatus
+  id: TickStatus
+  parent: Orleans.Runtime
+  children:
+  - Orleans.Runtime.TickStatus.CurrentTickTime
+  - Orleans.Runtime.TickStatus.FirstTickTime
+  - Orleans.Runtime.TickStatus.Period
+  - Orleans.Runtime.TickStatus.ToString
+  langs:
+  - csharp
+  - vb
+  name: TickStatus
+  nameWithType: TickStatus
+  fullName: Orleans.Runtime.TickStatus
+  type: Struct
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Timers/IRemindable.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: TickStatus
+    path: src/Orleans.Core.Abstractions/Timers/IRemindable.cs
+    startLine: 39
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  summary: "\nThe status of a tick when the tick is delivered to the registrar grain.\nIn case of failures, it may happen that a tick is not delivered on time. The app can notice such missed missed ticks as follows.\nUpon receiving a tick, the app can calculate the theoretical number of ticks since start of the reminder as: \ncurCount = (Now - FirstTickTime) / Period\nThe app can keep track of it as &apos;count&apos;. Upon receiving a tick, the number of missed ticks = curCount - count - 1\nThereafter, the app can set count = curCount\n"
+  example: []
+  syntax:
+    content: public struct TickStatus
+    content.vb: Public Structure TickStatus
+  extensionMethods:
+  - Orleans.Runtime.TickStatus.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: Orleans.Runtime.TickStatus.FirstTickTime
+  commentId: P:Orleans.Runtime.TickStatus.FirstTickTime
+  id: FirstTickTime
+  parent: Orleans.Runtime.TickStatus
+  langs:
+  - csharp
+  - vb
+  name: FirstTickTime
+  nameWithType: TickStatus.FirstTickTime
+  fullName: Orleans.Runtime.TickStatus.FirstTickTime
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Timers/IRemindable.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: FirstTickTime
+    path: src/Orleans.Core.Abstractions/Timers/IRemindable.cs
+    startLine: 45
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  summary: "\nThe time at which the first tick of this reminder is due, or was triggered\n"
+  example: []
+  syntax:
+    content: public DateTime FirstTickTime { get; }
+    parameters: []
+    return:
+      type: DateTime
+    content.vb: Public ReadOnly Property FirstTickTime As DateTime
+  overload: Orleans.Runtime.TickStatus.FirstTickTime*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Runtime.TickStatus.Period
+  commentId: P:Orleans.Runtime.TickStatus.Period
+  id: Period
+  parent: Orleans.Runtime.TickStatus
+  langs:
+  - csharp
+  - vb
+  name: Period
+  nameWithType: TickStatus.Period
+  fullName: Orleans.Runtime.TickStatus.Period
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Timers/IRemindable.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Period
+    path: src/Orleans.Core.Abstractions/Timers/IRemindable.cs
+    startLine: 50
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  summary: "\nThe period of the reminder\n"
+  example: []
+  syntax:
+    content: public TimeSpan Period { get; }
+    parameters: []
+    return:
+      type: TimeSpan
+    content.vb: Public ReadOnly Property Period As TimeSpan
+  overload: Orleans.Runtime.TickStatus.Period*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Runtime.TickStatus.CurrentTickTime
+  commentId: P:Orleans.Runtime.TickStatus.CurrentTickTime
+  id: CurrentTickTime
+  parent: Orleans.Runtime.TickStatus
+  langs:
+  - csharp
+  - vb
+  name: CurrentTickTime
+  nameWithType: TickStatus.CurrentTickTime
+  fullName: Orleans.Runtime.TickStatus.CurrentTickTime
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Timers/IRemindable.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: CurrentTickTime
+    path: src/Orleans.Core.Abstractions/Timers/IRemindable.cs
+    startLine: 55
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  summary: "\nThe time on the runtime silo when the silo initiated the delivery of this tick.\n"
+  example: []
+  syntax:
+    content: public DateTime CurrentTickTime { get; }
+    parameters: []
+    return:
+      type: DateTime
+    content.vb: Public ReadOnly Property CurrentTickTime As DateTime
+  overload: Orleans.Runtime.TickStatus.CurrentTickTime*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Runtime.TickStatus.ToString
+  commentId: M:Orleans.Runtime.TickStatus.ToString
+  id: ToString
+  parent: Orleans.Runtime.TickStatus
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: TickStatus.ToString()
+  fullName: Orleans.Runtime.TickStatus.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Timers/IRemindable.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ToString
+    path: src/Orleans.Core.Abstractions/Timers/IRemindable.cs
+    startLine: 68
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Runtime
+  syntax:
+    content: public override String ToString()
+    return:
+      type: String
+    content.vb: Public Overrides Function ToString As String
+  overload: Orleans.Runtime.TickStatus.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: Orleans.Runtime
+  commentId: N:Orleans.Runtime
+  isExternal: false
+  name: Orleans.Runtime
+  nameWithType: Orleans.Runtime
+  fullName: Orleans.Runtime
+- uid: Orleans.Runtime.TickStatus.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<TickStatus>()
+  nameWithType: ImmutableExt.AsImmutable<TickStatus>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.TickStatus>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of TickStatus)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.TickStatus)()
+  name.vb: AsImmutable(Of TickStatus)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<TickStatus>
+    nameWithType: ImmutableExt.AsImmutable<TickStatus>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.TickStatus>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of TickStatus)
+    nameWithType: ImmutableExt.AsImmutable(Of TickStatus)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.TickStatus)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Runtime.TickStatus.FirstTickTime*
+  commentId: Overload:Orleans.Runtime.TickStatus.FirstTickTime
+  isExternal: false
+  name: FirstTickTime
+  nameWithType: TickStatus.FirstTickTime
+  fullName: Orleans.Runtime.TickStatus.FirstTickTime
+- uid: DateTime
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: DateTime
+- uid: Orleans.Runtime.TickStatus.Period*
+  commentId: Overload:Orleans.Runtime.TickStatus.Period
+  isExternal: false
+  name: Period
+  nameWithType: TickStatus.Period
+  fullName: Orleans.Runtime.TickStatus.Period
+- uid: TimeSpan
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: TimeSpan
+- uid: Orleans.Runtime.TickStatus.CurrentTickTime*
+  commentId: Overload:Orleans.Runtime.TickStatus.CurrentTickTime
+  isExternal: false
+  name: CurrentTickTime
+  nameWithType: TickStatus.CurrentTickTime
+  fullName: Orleans.Runtime.TickStatus.CurrentTickTime
+- uid: Orleans.Runtime.TickStatus.ToString*
+  commentId: Overload:Orleans.Runtime.TickStatus.ToString
+  isExternal: false
+  name: ToString
+  nameWithType: TickStatus.ToString
+  fullName: Orleans.Runtime.TickStatus.ToString
+- uid: String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: String

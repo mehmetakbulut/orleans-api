@@ -1,0 +1,196 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Configuration.ZooKeeperClusteringSiloOptions
+  commentId: T:Orleans.Configuration.ZooKeeperClusteringSiloOptions
+  id: ZooKeeperClusteringSiloOptions
+  parent: Orleans.Configuration
+  children:
+  - Orleans.Configuration.ZooKeeperClusteringSiloOptions.ConnectionString
+  langs:
+  - csharp
+  - vb
+  name: ZooKeeperClusteringSiloOptions
+  nameWithType: ZooKeeperClusteringSiloOptions
+  fullName: Orleans.Configuration.ZooKeeperClusteringSiloOptions
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Clustering.ZooKeeper/Options/ZooKeeperClusteringSiloOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ZooKeeperClusteringSiloOptions
+    path: src/Orleans.Clustering.ZooKeeper/Options/ZooKeeperClusteringSiloOptions.cs
+    startLine: 9
+  assemblies:
+  - Orleans.Clustering.ZooKeeper
+  namespace: Orleans.Configuration
+  summary: "\nOption to configure ZooKeeperMembership\n"
+  example: []
+  syntax:
+    content: 'public class ZooKeeperClusteringSiloOptions : object'
+    content.vb: >-
+      Public Class ZooKeeperClusteringSiloOptions
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.Configuration.ZooKeeperClusteringSiloOptions.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.Configuration.ZooKeeperClusteringSiloOptions.ConnectionString
+  commentId: P:Orleans.Configuration.ZooKeeperClusteringSiloOptions.ConnectionString
+  id: ConnectionString
+  parent: Orleans.Configuration.ZooKeeperClusteringSiloOptions
+  langs:
+  - csharp
+  - vb
+  name: ConnectionString
+  nameWithType: ZooKeeperClusteringSiloOptions.ConnectionString
+  fullName: Orleans.Configuration.ZooKeeperClusteringSiloOptions.ConnectionString
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Clustering.ZooKeeper/Options/ZooKeeperClusteringSiloOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ConnectionString
+    path: src/Orleans.Clustering.ZooKeeper/Options/ZooKeeperClusteringSiloOptions.cs
+    startLine: 14
+  assemblies:
+  - Orleans.Clustering.ZooKeeper
+  namespace: Orleans.Configuration
+  summary: "\nConnection string for ZooKeeper Storage\n"
+  example: []
+  syntax:
+    content: public string ConnectionString { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ConnectionString As String
+  overload: Orleans.Configuration.ZooKeeperClusteringSiloOptions.ConnectionString*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans.Configuration
+  commentId: N:Orleans.Configuration
+  isExternal: false
+  name: Orleans.Configuration
+  nameWithType: Orleans.Configuration
+  fullName: Orleans.Configuration
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Configuration.ZooKeeperClusteringSiloOptions.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<ZooKeeperClusteringSiloOptions>()
+  nameWithType: ImmutableExt.AsImmutable<ZooKeeperClusteringSiloOptions>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Configuration.ZooKeeperClusteringSiloOptions>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of ZooKeeperClusteringSiloOptions)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Configuration.ZooKeeperClusteringSiloOptions)()
+  name.vb: AsImmutable(Of ZooKeeperClusteringSiloOptions)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<ZooKeeperClusteringSiloOptions>
+    nameWithType: ImmutableExt.AsImmutable<ZooKeeperClusteringSiloOptions>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Configuration.ZooKeeperClusteringSiloOptions>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of ZooKeeperClusteringSiloOptions)
+    nameWithType: ImmutableExt.AsImmutable(Of ZooKeeperClusteringSiloOptions)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Configuration.ZooKeeperClusteringSiloOptions)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Configuration.ZooKeeperClusteringSiloOptions.ConnectionString*
+  commentId: Overload:Orleans.Configuration.ZooKeeperClusteringSiloOptions.ConnectionString
+  isExternal: false
+  name: ConnectionString
+  nameWithType: ZooKeeperClusteringSiloOptions.ConnectionString
+  fullName: Orleans.Configuration.ZooKeeperClusteringSiloOptions.ConnectionString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

@@ -1,0 +1,73 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.EventSourcing.CustomStorage
+  commentId: N:Orleans.EventSourcing.CustomStorage
+  id: Orleans.EventSourcing.CustomStorage
+  children:
+  - Orleans.EventSourcing.CustomStorage.ICustomStorageInterface`2
+  - Orleans.EventSourcing.CustomStorage.LogConsistencyProvider
+  langs:
+  - csharp
+  - vb
+  name: Orleans.EventSourcing.CustomStorage
+  nameWithType: Orleans.EventSourcing.CustomStorage
+  fullName: Orleans.EventSourcing.CustomStorage
+  type: Namespace
+  assemblies:
+  - Orleans.EventSourcing
+references:
+- uid: Orleans.EventSourcing.CustomStorage.ICustomStorageInterface`2
+  commentId: T:Orleans.EventSourcing.CustomStorage.ICustomStorageInterface`2
+  isExternal: false
+  name: ICustomStorageInterface<TState, TDelta>
+  nameWithType: ICustomStorageInterface<TState, TDelta>
+  fullName: Orleans.EventSourcing.CustomStorage.ICustomStorageInterface<TState, TDelta>
+  nameWithType.vb: ICustomStorageInterface(Of TState, TDelta)
+  fullName.vb: Orleans.EventSourcing.CustomStorage.ICustomStorageInterface(Of TState, TDelta)
+  name.vb: ICustomStorageInterface(Of TState, TDelta)
+  spec.csharp:
+  - uid: Orleans.EventSourcing.CustomStorage.ICustomStorageInterface`2
+    name: ICustomStorageInterface
+    nameWithType: ICustomStorageInterface
+    fullName: Orleans.EventSourcing.CustomStorage.ICustomStorageInterface
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TState
+    nameWithType: TState
+    fullName: TState
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TDelta
+    nameWithType: TDelta
+    fullName: TDelta
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Orleans.EventSourcing.CustomStorage.ICustomStorageInterface`2
+    name: ICustomStorageInterface
+    nameWithType: ICustomStorageInterface
+    fullName: Orleans.EventSourcing.CustomStorage.ICustomStorageInterface
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TState
+    nameWithType: TState
+    fullName: TState
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TDelta
+    nameWithType: TDelta
+    fullName: TDelta
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.CustomStorage.LogConsistencyProvider
+  commentId: T:Orleans.EventSourcing.CustomStorage.LogConsistencyProvider
+  isExternal: false
+  name: LogConsistencyProvider
+  nameWithType: LogConsistencyProvider
+  fullName: Orleans.EventSourcing.CustomStorage.LogConsistencyProvider

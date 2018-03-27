@@ -1,0 +1,227 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Streams.IStreamIdentity
+  commentId: T:Orleans.Streams.IStreamIdentity
+  id: IStreamIdentity
+  parent: Orleans.Streams
+  children:
+  - Orleans.Streams.IStreamIdentity.Guid
+  - Orleans.Streams.IStreamIdentity.Namespace
+  langs:
+  - csharp
+  - vb
+  name: IStreamIdentity
+  nameWithType: IStreamIdentity
+  fullName: Orleans.Streams.IStreamIdentity
+  type: Interface
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Streams/Core/IStreamIdentity.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IStreamIdentity
+    path: src/Orleans.Core.Abstractions/Streams/Core/IStreamIdentity.cs
+    startLine: 4
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Streams
+  syntax:
+    content: public interface IStreamIdentity
+    content.vb: Public Interface IStreamIdentity
+  extensionMethods:
+  - Orleans.Streams.IStreamIdentity.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Orleans.Streams.IStreamIdentity.Guid
+  commentId: P:Orleans.Streams.IStreamIdentity.Guid
+  id: Guid
+  parent: Orleans.Streams.IStreamIdentity
+  langs:
+  - csharp
+  - vb
+  name: Guid
+  nameWithType: IStreamIdentity.Guid
+  fullName: Orleans.Streams.IStreamIdentity.Guid
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Streams/Core/IStreamIdentity.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Guid
+    path: src/Orleans.Core.Abstractions/Streams/Core/IStreamIdentity.cs
+    startLine: 7
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Streams
+  summary: 'Stream primary key guid. '
+  example: []
+  syntax:
+    content: Guid Guid { get; }
+    parameters: []
+    return:
+      type: Guid
+    content.vb: ReadOnly Property Guid As Guid
+  overload: Orleans.Streams.IStreamIdentity.Guid*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Orleans.Streams.IStreamIdentity.Namespace
+  commentId: P:Orleans.Streams.IStreamIdentity.Namespace
+  id: Namespace
+  parent: Orleans.Streams.IStreamIdentity
+  langs:
+  - csharp
+  - vb
+  name: Namespace
+  nameWithType: IStreamIdentity.Namespace
+  fullName: Orleans.Streams.IStreamIdentity.Namespace
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Streams/Core/IStreamIdentity.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Namespace
+    path: src/Orleans.Core.Abstractions/Streams/Core/IStreamIdentity.cs
+    startLine: 10
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Streams
+  summary: 'Stream namespace. '
+  example: []
+  syntax:
+    content: string Namespace { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property Namespace As String
+  overload: Orleans.Streams.IStreamIdentity.Namespace*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+references:
+- uid: Orleans.Streams
+  commentId: N:Orleans.Streams
+  isExternal: false
+  name: Orleans.Streams
+  nameWithType: Orleans.Streams
+  fullName: Orleans.Streams
+- uid: Orleans.Streams.IStreamIdentity.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<IStreamIdentity>()
+  nameWithType: ImmutableExt.AsImmutable<IStreamIdentity>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Streams.IStreamIdentity>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of IStreamIdentity)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Streams.IStreamIdentity)()
+  name.vb: AsImmutable(Of IStreamIdentity)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<IStreamIdentity>
+    nameWithType: ImmutableExt.AsImmutable<IStreamIdentity>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Streams.IStreamIdentity>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of IStreamIdentity)
+    nameWithType: ImmutableExt.AsImmutable(Of IStreamIdentity)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Streams.IStreamIdentity)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Streams.IStreamIdentity.Guid*
+  commentId: Overload:Orleans.Streams.IStreamIdentity.Guid
+  isExternal: false
+  name: Guid
+  nameWithType: IStreamIdentity.Guid
+  fullName: Orleans.Streams.IStreamIdentity.Guid
+- uid: Guid
+  isExternal: true
+  name: Guid
+  nameWithType: Guid
+  fullName: Guid
+- uid: Orleans.Streams.IStreamIdentity.Namespace*
+  commentId: Overload:Orleans.Streams.IStreamIdentity.Namespace
+  isExternal: false
+  name: Namespace
+  nameWithType: IStreamIdentity.Namespace
+  fullName: Orleans.Streams.IStreamIdentity.Namespace
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System

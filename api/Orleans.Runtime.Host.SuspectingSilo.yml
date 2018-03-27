@@ -1,0 +1,239 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Runtime.Host.SuspectingSilo
+  commentId: T:Orleans.Runtime.Host.SuspectingSilo
+  id: SuspectingSilo
+  parent: Orleans.Runtime.Host
+  children:
+  - Orleans.Runtime.Host.SuspectingSilo.Id
+  - Orleans.Runtime.Host.SuspectingSilo.Time
+  langs:
+  - csharp
+  - vb
+  name: SuspectingSilo
+  nameWithType: SuspectingSilo
+  fullName: Orleans.Runtime.Host.SuspectingSilo
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Clustering.Consul/SerializableMembershipTypes.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SuspectingSilo
+    path: src/Orleans.Clustering.Consul/SerializableMembershipTypes.cs
+    startLine: 72
+  assemblies:
+  - Orleans.Clustering.Consul
+  namespace: Orleans.Runtime.Host
+  summary: "\nJSON Serializable Object that when serialized and Base64 encoded, forms each entry in the SuspectingSilos list\n"
+  example: []
+  syntax:
+    content: 'public class SuspectingSilo : object'
+    content.vb: >-
+      Public Class SuspectingSilo
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.Runtime.Host.SuspectingSilo.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.Runtime.Host.SuspectingSilo.Id
+  commentId: P:Orleans.Runtime.Host.SuspectingSilo.Id
+  id: Id
+  parent: Orleans.Runtime.Host.SuspectingSilo
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: SuspectingSilo.Id
+  fullName: Orleans.Runtime.Host.SuspectingSilo.Id
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Clustering.Consul/SerializableMembershipTypes.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Id
+    path: src/Orleans.Clustering.Consul/SerializableMembershipTypes.cs
+    startLine: 75
+  assemblies:
+  - Orleans.Clustering.Consul
+  namespace: Orleans.Runtime.Host
+  syntax:
+    content: public String Id { get; set; }
+    parameters: []
+    return:
+      type: String
+    content.vb: Public Property Id As String
+  overload: Orleans.Runtime.Host.SuspectingSilo.Id*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Host.SuspectingSilo.Time
+  commentId: P:Orleans.Runtime.Host.SuspectingSilo.Time
+  id: Time
+  parent: Orleans.Runtime.Host.SuspectingSilo
+  langs:
+  - csharp
+  - vb
+  name: Time
+  nameWithType: SuspectingSilo.Time
+  fullName: Orleans.Runtime.Host.SuspectingSilo.Time
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Clustering.Consul/SerializableMembershipTypes.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Time
+    path: src/Orleans.Clustering.Consul/SerializableMembershipTypes.cs
+    startLine: 78
+  assemblies:
+  - Orleans.Clustering.Consul
+  namespace: Orleans.Runtime.Host
+  syntax:
+    content: public DateTime Time { get; set; }
+    parameters: []
+    return:
+      type: DateTime
+    content.vb: Public Property Time As DateTime
+  overload: Orleans.Runtime.Host.SuspectingSilo.Time*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans.Runtime.Host
+  commentId: N:Orleans.Runtime.Host
+  isExternal: false
+  name: Orleans.Runtime.Host
+  nameWithType: Orleans.Runtime.Host
+  fullName: Orleans.Runtime.Host
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Runtime.Host.SuspectingSilo.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<SuspectingSilo>()
+  nameWithType: ImmutableExt.AsImmutable<SuspectingSilo>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.Host.SuspectingSilo>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of SuspectingSilo)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.Host.SuspectingSilo)()
+  name.vb: AsImmutable(Of SuspectingSilo)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<SuspectingSilo>
+    nameWithType: ImmutableExt.AsImmutable<SuspectingSilo>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.Host.SuspectingSilo>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of SuspectingSilo)
+    nameWithType: ImmutableExt.AsImmutable(Of SuspectingSilo)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.Host.SuspectingSilo)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Runtime.Host.SuspectingSilo.Id*
+  commentId: Overload:Orleans.Runtime.Host.SuspectingSilo.Id
+  isExternal: false
+  name: Id
+  nameWithType: SuspectingSilo.Id
+  fullName: Orleans.Runtime.Host.SuspectingSilo.Id
+- uid: String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: String
+- uid: Orleans.Runtime.Host.SuspectingSilo.Time*
+  commentId: Overload:Orleans.Runtime.Host.SuspectingSilo.Time
+  isExternal: false
+  name: Time
+  nameWithType: SuspectingSilo.Time
+  fullName: Orleans.Runtime.Host.SuspectingSilo.Time
+- uid: DateTime
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: DateTime

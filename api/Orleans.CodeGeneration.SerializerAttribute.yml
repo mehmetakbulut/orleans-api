@@ -1,0 +1,245 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.CodeGeneration.SerializerAttribute
+  commentId: T:Orleans.CodeGeneration.SerializerAttribute
+  id: SerializerAttribute
+  parent: Orleans.CodeGeneration
+  children:
+  - Orleans.CodeGeneration.SerializerAttribute.#ctor(Type)
+  - Orleans.CodeGeneration.SerializerAttribute.TargetType
+  langs:
+  - csharp
+  - vb
+  name: SerializerAttribute
+  nameWithType: SerializerAttribute
+  fullName: Orleans.CodeGeneration.SerializerAttribute
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/CodeGeneration/ActivationAttribute.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SerializerAttribute
+    path: src/Orleans.Core.Abstractions/CodeGeneration/ActivationAttribute.cs
+    startLine: 62
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.CodeGeneration
+  summary: "\nIdentifies a class that contains all the serializer methods for a type.\n"
+  example: []
+  syntax:
+    content: 'public sealed class SerializerAttribute : Attribute'
+    content.vb: >-
+      Public NotInheritable Class SerializerAttribute
+
+          Inherits Attribute
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.CodeGeneration.SerializerAttribute.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Orleans.CodeGeneration.SerializerAttribute.#ctor(Type)
+  commentId: M:Orleans.CodeGeneration.SerializerAttribute.#ctor(Type)
+  id: '#ctor(Type)'
+  parent: Orleans.CodeGeneration.SerializerAttribute
+  langs:
+  - csharp
+  - vb
+  name: SerializerAttribute(Type)
+  nameWithType: SerializerAttribute.SerializerAttribute(Type)
+  fullName: Orleans.CodeGeneration.SerializerAttribute.SerializerAttribute(Type)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/CodeGeneration/ActivationAttribute.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Core.Abstractions/CodeGeneration/ActivationAttribute.cs
+    startLine: 69
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.CodeGeneration
+  summary: "\nInitializes a new instance of the <xref href=\"Orleans.CodeGeneration.SerializerAttribute\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public SerializerAttribute(Type targetType)
+    parameters:
+    - id: targetType
+      type: Type
+      description: The type that this implementation can serialize.
+    content.vb: Public Sub New(targetType As Type)
+  overload: Orleans.CodeGeneration.SerializerAttribute.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.CodeGeneration.SerializerAttribute.TargetType
+  commentId: P:Orleans.CodeGeneration.SerializerAttribute.TargetType
+  id: TargetType
+  parent: Orleans.CodeGeneration.SerializerAttribute
+  langs:
+  - csharp
+  - vb
+  name: TargetType
+  nameWithType: SerializerAttribute.TargetType
+  fullName: Orleans.CodeGeneration.SerializerAttribute.TargetType
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/CodeGeneration/ActivationAttribute.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: TargetType
+    path: src/Orleans.Core.Abstractions/CodeGeneration/ActivationAttribute.cs
+    startLine: 77
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.CodeGeneration
+  summary: "\nGets the type which this implementation applies to.\n"
+  example: []
+  syntax:
+    content: public Type TargetType { get; }
+    parameters: []
+    return:
+      type: Type
+    content.vb: Public ReadOnly Property TargetType As Type
+  overload: Orleans.CodeGeneration.SerializerAttribute.TargetType*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: Orleans.CodeGeneration
+  commentId: N:Orleans.CodeGeneration
+  isExternal: false
+  name: Orleans.CodeGeneration
+  nameWithType: Orleans.CodeGeneration
+  fullName: Orleans.CodeGeneration
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.CodeGeneration.SerializerAttribute.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<SerializerAttribute>()
+  nameWithType: ImmutableExt.AsImmutable<SerializerAttribute>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.CodeGeneration.SerializerAttribute>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of SerializerAttribute)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.CodeGeneration.SerializerAttribute)()
+  name.vb: AsImmutable(Of SerializerAttribute)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<SerializerAttribute>
+    nameWithType: ImmutableExt.AsImmutable<SerializerAttribute>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.CodeGeneration.SerializerAttribute>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of SerializerAttribute)
+    nameWithType: ImmutableExt.AsImmutable(Of SerializerAttribute)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.CodeGeneration.SerializerAttribute)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.CodeGeneration.SerializerAttribute
+  commentId: T:Orleans.CodeGeneration.SerializerAttribute
+  isExternal: false
+  name: SerializerAttribute
+  nameWithType: SerializerAttribute
+  fullName: Orleans.CodeGeneration.SerializerAttribute
+- uid: Orleans.CodeGeneration.SerializerAttribute.#ctor*
+  commentId: Overload:Orleans.CodeGeneration.SerializerAttribute.#ctor
+  isExternal: false
+  name: SerializerAttribute
+  nameWithType: SerializerAttribute.SerializerAttribute
+  fullName: Orleans.CodeGeneration.SerializerAttribute.SerializerAttribute
+- uid: Type
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: Type
+- uid: Orleans.CodeGeneration.SerializerAttribute.TargetType*
+  commentId: Overload:Orleans.CodeGeneration.SerializerAttribute.TargetType
+  isExternal: false
+  name: TargetType
+  nameWithType: SerializerAttribute.TargetType
+  fullName: Orleans.CodeGeneration.SerializerAttribute.TargetType

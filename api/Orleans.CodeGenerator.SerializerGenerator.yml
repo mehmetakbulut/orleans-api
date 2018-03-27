@@ -1,0 +1,62 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.CodeGenerator.SerializerGenerator
+  commentId: T:Orleans.CodeGenerator.SerializerGenerator
+  id: SerializerGenerator
+  parent: Orleans.CodeGenerator
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: SerializerGenerator
+  nameWithType: SerializerGenerator
+  fullName: Orleans.CodeGenerator.SerializerGenerator
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.CodeGeneration/SerializerGenerator.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SerializerGenerator
+    path: src/Orleans.CodeGeneration/SerializerGenerator.cs
+    startLine: 49
+  assemblies:
+  - Orleans.CodeGeneration
+  namespace: Orleans.CodeGenerator
+  summary: "\nCode generator which generates serializers.\nSample of generated serializer:\n[global::System.CodeDom.Compiler.GeneratedCodeAttribute(&quot;Orleans-CodeGenerator&quot;, &quot;2.0.0.0&quot;), global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute, global::Orleans.CodeGeneration.SerializerAttribute(typeof(global::MyType))]\ninternal sealed class OrleansCodeGenUnitTests_GrainInterfaces_MyTypeSerializer\n{\nprivate readonly global::System.Func&lt;global::MyType, global::System.Int32> getField0;\nprivate readonly global::System.Action&lt;global::MyType, global::System.Int32> setField0;\npublic OrleansCodeGenUnitTests_GrainInterfaces_MyTypeSerializer(global::Orleans.Serialization.IFieldUtils fieldUtils)\n{\n   [...]\n}\n[global::Orleans.CodeGeneration.CopierMethodAttribute]\npublic global::System.Object DeepCopier(global::System.Object original, global::Orleans.Serialization.ICopyContext context)\n{\n       [...]\n}\n[global::Orleans.CodeGeneration.SerializerMethodAttribute]\npublic void Serializer(global::System.Object untypedInput, global::Orleans.Serialization.ISerializationContext context, global::System.Type expected)\n{\n       [...]\n}\n[global::Orleans.CodeGeneration.DeserializerMethodAttribute]\npublic global::System.Object Deserializer(global::System.Type expected, global::Orleans.Serialization.IDeserializationContext context)\n{\n       [...]\n}\n}\n"
+  example: []
+  syntax:
+    content: 'public static class SerializerGenerator : object'
+    content.vb: >-
+      Public Module SerializerGenerator
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+references:
+- uid: Orleans.CodeGenerator
+  commentId: N:Orleans.CodeGenerator
+  isExternal: false
+  name: Orleans.CodeGenerator
+  nameWithType: Orleans.CodeGenerator
+  fullName: Orleans.CodeGenerator
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System

@@ -1,0 +1,350 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.CodeGeneration.KnownAssemblyAttribute
+  commentId: T:Orleans.CodeGeneration.KnownAssemblyAttribute
+  id: KnownAssemblyAttribute
+  parent: Orleans.CodeGeneration
+  children:
+  - Orleans.CodeGeneration.KnownAssemblyAttribute.#ctor(System.String)
+  - Orleans.CodeGeneration.KnownAssemblyAttribute.#ctor(Type)
+  - Orleans.CodeGeneration.KnownAssemblyAttribute.Assembly
+  - Orleans.CodeGeneration.KnownAssemblyAttribute.TreatTypesAsSerializable
+  langs:
+  - csharp
+  - vb
+  name: KnownAssemblyAttribute
+  nameWithType: KnownAssemblyAttribute
+  fullName: Orleans.CodeGeneration.KnownAssemblyAttribute
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/CodeGeneration/KnownAssemblyAttribute.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: KnownAssemblyAttribute
+    path: src/Orleans.Core.Abstractions/CodeGeneration/KnownAssemblyAttribute.cs
+    startLine: 8
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.CodeGeneration
+  summary: "\nThe attribute which informs the code generator that code should be generated an assembly.\n"
+  example: []
+  syntax:
+    content: 'public class KnownAssemblyAttribute : Attribute'
+    content.vb: >-
+      Public Class KnownAssemblyAttribute
+
+          Inherits Attribute
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.CodeGeneration.KnownAssemblyAttribute.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.CodeGeneration.KnownAssemblyAttribute.#ctor(Type)
+  commentId: M:Orleans.CodeGeneration.KnownAssemblyAttribute.#ctor(Type)
+  id: '#ctor(Type)'
+  parent: Orleans.CodeGeneration.KnownAssemblyAttribute
+  langs:
+  - csharp
+  - vb
+  name: KnownAssemblyAttribute(Type)
+  nameWithType: KnownAssemblyAttribute.KnownAssemblyAttribute(Type)
+  fullName: Orleans.CodeGeneration.KnownAssemblyAttribute.KnownAssemblyAttribute(Type)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/CodeGeneration/KnownAssemblyAttribute.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Core.Abstractions/CodeGeneration/KnownAssemblyAttribute.cs
+    startLine: 14
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.CodeGeneration
+  summary: Initializes a new instance of <xref href="Orleans.CodeGeneration.KnownAssemblyAttribute" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public KnownAssemblyAttribute(Type type)
+    parameters:
+    - id: type
+      type: Type
+      description: "A type contained by the target assembly. \nThe type itself is not relevant, and it&apos;s just a way to inrectly identify the assembly."
+    content.vb: Public Sub New(type As Type)
+  overload: Orleans.CodeGeneration.KnownAssemblyAttribute.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.CodeGeneration.KnownAssemblyAttribute.#ctor(System.String)
+  commentId: M:Orleans.CodeGeneration.KnownAssemblyAttribute.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Orleans.CodeGeneration.KnownAssemblyAttribute
+  langs:
+  - csharp
+  - vb
+  name: KnownAssemblyAttribute(String)
+  nameWithType: KnownAssemblyAttribute.KnownAssemblyAttribute(String)
+  fullName: Orleans.CodeGeneration.KnownAssemblyAttribute.KnownAssemblyAttribute(System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/CodeGeneration/KnownAssemblyAttribute.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Core.Abstractions/CodeGeneration/KnownAssemblyAttribute.cs
+    startLine: 21
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.CodeGeneration
+  summary: Initializes a new instance of <xref href="Orleans.CodeGeneration.KnownAssemblyAttribute" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public KnownAssemblyAttribute(string assemblyName)
+    parameters:
+    - id: assemblyName
+      type: System.String
+      description: The target assembly name.
+    content.vb: Public Sub New(assemblyName As String)
+  overload: Orleans.CodeGeneration.KnownAssemblyAttribute.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.CodeGeneration.KnownAssemblyAttribute.Assembly
+  commentId: P:Orleans.CodeGeneration.KnownAssemblyAttribute.Assembly
+  id: Assembly
+  parent: Orleans.CodeGeneration.KnownAssemblyAttribute
+  langs:
+  - csharp
+  - vb
+  name: Assembly
+  nameWithType: KnownAssemblyAttribute.Assembly
+  fullName: Orleans.CodeGeneration.KnownAssemblyAttribute.Assembly
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/CodeGeneration/KnownAssemblyAttribute.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Assembly
+    path: src/Orleans.Core.Abstractions/CodeGeneration/KnownAssemblyAttribute.cs
+    startLine: 29
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.CodeGeneration
+  summary: "\nGets or sets the assembly to include in code generation.\n"
+  example: []
+  syntax:
+    content: public Assembly Assembly { get; set; }
+    parameters: []
+    return:
+      type: Assembly
+    content.vb: Public Property Assembly As Assembly
+  overload: Orleans.CodeGeneration.KnownAssemblyAttribute.Assembly*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.CodeGeneration.KnownAssemblyAttribute.TreatTypesAsSerializable
+  commentId: P:Orleans.CodeGeneration.KnownAssemblyAttribute.TreatTypesAsSerializable
+  id: TreatTypesAsSerializable
+  parent: Orleans.CodeGeneration.KnownAssemblyAttribute
+  langs:
+  - csharp
+  - vb
+  name: TreatTypesAsSerializable
+  nameWithType: KnownAssemblyAttribute.TreatTypesAsSerializable
+  fullName: Orleans.CodeGeneration.KnownAssemblyAttribute.TreatTypesAsSerializable
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/CodeGeneration/KnownAssemblyAttribute.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: TreatTypesAsSerializable
+    path: src/Orleans.Core.Abstractions/CodeGeneration/KnownAssemblyAttribute.cs
+    startLine: 36
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.CodeGeneration
+  summary: "\nGets or sets a value indicating whether or not to assume that all types in the specified assembly are\nserializable.\n"
+  remarks: This is equivalent to specifying <xref href="Orleans.CodeGeneration.KnownTypeAttribute" data-throw-if-not-resolved="false"></xref> for all types.
+  example: []
+  syntax:
+    content: public bool TreatTypesAsSerializable { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property TreatTypesAsSerializable As Boolean
+  overload: Orleans.CodeGeneration.KnownAssemblyAttribute.TreatTypesAsSerializable*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans.CodeGeneration
+  commentId: N:Orleans.CodeGeneration
+  isExternal: false
+  name: Orleans.CodeGeneration
+  nameWithType: Orleans.CodeGeneration
+  fullName: Orleans.CodeGeneration
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.CodeGeneration.KnownAssemblyAttribute.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<KnownAssemblyAttribute>()
+  nameWithType: ImmutableExt.AsImmutable<KnownAssemblyAttribute>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.CodeGeneration.KnownAssemblyAttribute>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of KnownAssemblyAttribute)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.CodeGeneration.KnownAssemblyAttribute)()
+  name.vb: AsImmutable(Of KnownAssemblyAttribute)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<KnownAssemblyAttribute>
+    nameWithType: ImmutableExt.AsImmutable<KnownAssemblyAttribute>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.CodeGeneration.KnownAssemblyAttribute>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of KnownAssemblyAttribute)
+    nameWithType: ImmutableExt.AsImmutable(Of KnownAssemblyAttribute)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.CodeGeneration.KnownAssemblyAttribute)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.CodeGeneration.KnownAssemblyAttribute
+  commentId: T:Orleans.CodeGeneration.KnownAssemblyAttribute
+  isExternal: false
+  name: KnownAssemblyAttribute
+  nameWithType: KnownAssemblyAttribute
+  fullName: Orleans.CodeGeneration.KnownAssemblyAttribute
+- uid: Orleans.CodeGeneration.KnownAssemblyAttribute.#ctor*
+  commentId: Overload:Orleans.CodeGeneration.KnownAssemblyAttribute.#ctor
+  isExternal: false
+  name: KnownAssemblyAttribute
+  nameWithType: KnownAssemblyAttribute.KnownAssemblyAttribute
+  fullName: Orleans.CodeGeneration.KnownAssemblyAttribute.KnownAssemblyAttribute
+- uid: Type
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: Type
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Orleans.CodeGeneration.KnownAssemblyAttribute.Assembly*
+  commentId: Overload:Orleans.CodeGeneration.KnownAssemblyAttribute.Assembly
+  isExternal: false
+  name: Assembly
+  nameWithType: KnownAssemblyAttribute.Assembly
+  fullName: Orleans.CodeGeneration.KnownAssemblyAttribute.Assembly
+- uid: Assembly
+  isExternal: true
+  name: Assembly
+  nameWithType: Assembly
+  fullName: Assembly
+- uid: Orleans.CodeGeneration.KnownTypeAttribute
+  commentId: T:Orleans.CodeGeneration.KnownTypeAttribute
+  isExternal: false
+  name: KnownTypeAttribute
+  nameWithType: KnownTypeAttribute
+  fullName: Orleans.CodeGeneration.KnownTypeAttribute
+- uid: Orleans.CodeGeneration.KnownAssemblyAttribute.TreatTypesAsSerializable*
+  commentId: Overload:Orleans.CodeGeneration.KnownAssemblyAttribute.TreatTypesAsSerializable
+  isExternal: false
+  name: TreatTypesAsSerializable
+  nameWithType: KnownAssemblyAttribute.TreatTypesAsSerializable
+  fullName: Orleans.CodeGeneration.KnownAssemblyAttribute.TreatTypesAsSerializable
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

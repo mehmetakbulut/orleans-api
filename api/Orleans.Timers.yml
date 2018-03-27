@@ -1,0 +1,38 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Timers
+  commentId: N:Orleans.Timers
+  id: Orleans.Timers
+  children:
+  - Orleans.Timers.IReminderRegistry
+  - Orleans.Timers.ITimerRegistry
+  langs:
+  - csharp
+  - vb
+  name: Orleans.Timers
+  nameWithType: Orleans.Timers
+  fullName: Orleans.Timers
+  type: Namespace
+  assemblies:
+  - Orleans.Core.Abstractions
+references:
+- uid: Orleans.Timers.IReminderRegistry
+  commentId: T:Orleans.Timers.IReminderRegistry
+  parent: Orleans.Timers
+  isExternal: false
+  name: IReminderRegistry
+  nameWithType: IReminderRegistry
+  fullName: Orleans.Timers.IReminderRegistry
+- uid: Orleans.Timers.ITimerRegistry
+  commentId: T:Orleans.Timers.ITimerRegistry
+  parent: Orleans.Timers
+  isExternal: false
+  name: ITimerRegistry
+  nameWithType: ITimerRegistry
+  fullName: Orleans.Timers.ITimerRegistry
+- uid: Orleans.Timers
+  commentId: N:Orleans.Timers
+  isExternal: false
+  name: Orleans.Timers
+  nameWithType: Orleans.Timers
+  fullName: Orleans.Timers

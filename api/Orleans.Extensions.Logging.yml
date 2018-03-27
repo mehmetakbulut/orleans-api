@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Extensions.Logging
+  commentId: N:Orleans.Extensions.Logging
+  id: Orleans.Extensions.Logging
+  children:
+  - Orleans.Extensions.Logging.TelemetryLogConsumer
+  langs:
+  - csharp
+  - vb
+  name: Orleans.Extensions.Logging
+  nameWithType: Orleans.Extensions.Logging
+  fullName: Orleans.Extensions.Logging
+  type: Namespace
+  assemblies:
+  - Orleans.Core.Legacy
+references:
+- uid: Orleans.Extensions.Logging.TelemetryLogConsumer
+  commentId: T:Orleans.Extensions.Logging.TelemetryLogConsumer
+  isExternal: false
+  name: TelemetryLogConsumer
+  nameWithType: TelemetryLogConsumer
+  fullName: Orleans.Extensions.Logging.TelemetryLogConsumer

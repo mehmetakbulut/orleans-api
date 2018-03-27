@@ -1,0 +1,734 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver
+  commentId: T:Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver
+  id: PubSubAdapterReceiver
+  parent: Orleans.Providers.GCP.Streams.PubSub
+  children:
+  - Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver.Create(SerializationManager,ILoggerFactory,QueueId,System.String,System.String,System.String,Orleans.Providers.GCP.Streams.PubSub.IPubSubDataAdapter,System.Nullable{TimeSpan},System.String)
+  - Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver.GetQueueMessagesAsync(System.Int32)
+  - Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver.Id
+  - Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver.Initialize(TimeSpan)
+  - Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver.MessagesDeliveredAsync(IList{IBatchContainer})
+  - Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver.Shutdown(TimeSpan)
+  langs:
+  - csharp
+  - vb
+  name: PubSubAdapterReceiver
+  nameWithType: PubSubAdapterReceiver
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubAdapterReceiver.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: PubSubAdapterReceiver
+    path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubAdapterReceiver.cs
+    startLine: 12
+  assemblies:
+  - Orleans.Streaming.GCP
+  namespace: Orleans.Providers.GCP.Streams.PubSub
+  syntax:
+    content: 'public class PubSubAdapterReceiver : IQueueAdapterReceiver'
+    content.vb: >-
+      Public Class PubSubAdapterReceiver
+
+          Inherits IQueueAdapterReceiver
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver.Id
+  commentId: P:Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver.Id
+  id: Id
+  parent: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: PubSubAdapterReceiver.Id
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver.Id
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubAdapterReceiver.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Id
+    path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubAdapterReceiver.cs
+    startLine: 22
+  assemblies:
+  - Orleans.Streaming.GCP
+  namespace: Orleans.Providers.GCP.Streams.PubSub
+  syntax:
+    content: public QueueId Id { get; }
+    parameters: []
+    return:
+      type: QueueId
+    content.vb: Public ReadOnly Property Id As QueueId
+  overload: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver.Id*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver.Create(SerializationManager,ILoggerFactory,QueueId,System.String,System.String,System.String,Orleans.Providers.GCP.Streams.PubSub.IPubSubDataAdapter,System.Nullable{TimeSpan},System.String)
+  commentId: M:Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver.Create(SerializationManager,ILoggerFactory,QueueId,System.String,System.String,System.String,Orleans.Providers.GCP.Streams.PubSub.IPubSubDataAdapter,System.Nullable{TimeSpan},System.String)
+  id: Create(SerializationManager,ILoggerFactory,QueueId,System.String,System.String,System.String,Orleans.Providers.GCP.Streams.PubSub.IPubSubDataAdapter,System.Nullable{TimeSpan},System.String)
+  parent: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver
+  langs:
+  - csharp
+  - vb
+  name: Create(SerializationManager, ILoggerFactory, QueueId, String, String, String, IPubSubDataAdapter, Nullable<TimeSpan>, String)
+  nameWithType: PubSubAdapterReceiver.Create(SerializationManager, ILoggerFactory, QueueId, String, String, String, IPubSubDataAdapter, Nullable<TimeSpan>, String)
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver.Create(SerializationManager, ILoggerFactory, QueueId, System.String, System.String, System.String, Orleans.Providers.GCP.Streams.PubSub.IPubSubDataAdapter, System.Nullable<TimeSpan>, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubAdapterReceiver.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Create
+    path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubAdapterReceiver.cs
+    startLine: 24
+  assemblies:
+  - Orleans.Streaming.GCP
+  namespace: Orleans.Providers.GCP.Streams.PubSub
+  syntax:
+    content: public static IQueueAdapterReceiver Create(SerializationManager serializationManager, ILoggerFactory loggerFactory, QueueId queueId, string projectId, string topicId, string deploymentId, IPubSubDataAdapter dataAdapter, TimeSpan? deadline = null, string customEndpoint = "")
+    parameters:
+    - id: serializationManager
+      type: SerializationManager
+    - id: loggerFactory
+      type: ILoggerFactory
+    - id: queueId
+      type: QueueId
+    - id: projectId
+      type: System.String
+    - id: topicId
+      type: System.String
+    - id: deploymentId
+      type: System.String
+    - id: dataAdapter
+      type: Orleans.Providers.GCP.Streams.PubSub.IPubSubDataAdapter
+    - id: deadline
+      type: System.Nullable{TimeSpan}
+    - id: customEndpoint
+      type: System.String
+    return:
+      type: IQueueAdapterReceiver
+    content.vb: Public Shared Function Create(serializationManager As SerializationManager, loggerFactory As ILoggerFactory, queueId As QueueId, projectId As String, topicId As String, deploymentId As String, dataAdapter As IPubSubDataAdapter, deadline As TimeSpan? = Nothing, customEndpoint As String = "") As IQueueAdapterReceiver
+  overload: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver.Create*
+  nameWithType.vb: PubSubAdapterReceiver.Create(SerializationManager, ILoggerFactory, QueueId, String, String, String, IPubSubDataAdapter, Nullable(Of TimeSpan), String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver.Create(SerializationManager, ILoggerFactory, QueueId, System.String, System.String, System.String, Orleans.Providers.GCP.Streams.PubSub.IPubSubDataAdapter, System.Nullable(Of TimeSpan), System.String)
+  name.vb: Create(SerializationManager, ILoggerFactory, QueueId, String, String, String, IPubSubDataAdapter, Nullable(Of TimeSpan), String)
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver.Initialize(TimeSpan)
+  commentId: M:Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver.Initialize(TimeSpan)
+  id: Initialize(TimeSpan)
+  parent: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver
+  langs:
+  - csharp
+  - vb
+  name: Initialize(TimeSpan)
+  nameWithType: PubSubAdapterReceiver.Initialize(TimeSpan)
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver.Initialize(TimeSpan)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubAdapterReceiver.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Initialize
+    path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubAdapterReceiver.cs
+    startLine: 50
+  assemblies:
+  - Orleans.Streaming.GCP
+  namespace: Orleans.Providers.GCP.Streams.PubSub
+  syntax:
+    content: public Task Initialize(TimeSpan timeout)
+    parameters:
+    - id: timeout
+      type: TimeSpan
+    return:
+      type: Task
+    content.vb: Public Function Initialize(timeout As TimeSpan) As Task
+  overload: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver.Initialize*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver.Shutdown(TimeSpan)
+  commentId: M:Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver.Shutdown(TimeSpan)
+  id: Shutdown(TimeSpan)
+  parent: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver
+  langs:
+  - csharp
+  - vb
+  name: Shutdown(TimeSpan)
+  nameWithType: PubSubAdapterReceiver.Shutdown(TimeSpan)
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver.Shutdown(TimeSpan)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubAdapterReceiver.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Shutdown
+    path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubAdapterReceiver.cs
+    startLine: 57
+  assemblies:
+  - Orleans.Streaming.GCP
+  namespace: Orleans.Providers.GCP.Streams.PubSub
+  syntax:
+    content: public Task Shutdown(TimeSpan timeout)
+    parameters:
+    - id: timeout
+      type: TimeSpan
+    return:
+      type: Task
+    content.vb: Public Function Shutdown(timeout As TimeSpan) As Task
+  overload: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver.Shutdown*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver.GetQueueMessagesAsync(System.Int32)
+  commentId: M:Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver.GetQueueMessagesAsync(System.Int32)
+  id: GetQueueMessagesAsync(System.Int32)
+  parent: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver
+  langs:
+  - csharp
+  - vb
+  name: GetQueueMessagesAsync(Int32)
+  nameWithType: PubSubAdapterReceiver.GetQueueMessagesAsync(Int32)
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver.GetQueueMessagesAsync(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubAdapterReceiver.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetQueueMessagesAsync
+    path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubAdapterReceiver.cs
+    startLine: 72
+  assemblies:
+  - Orleans.Streaming.GCP
+  namespace: Orleans.Providers.GCP.Streams.PubSub
+  syntax:
+    content: public Task<IList<IBatchContainer>> GetQueueMessagesAsync(int maxCount)
+    parameters:
+    - id: maxCount
+      type: System.Int32
+    return:
+      type: Task{IList{IBatchContainer}}
+    content.vb: Public Function GetQueueMessagesAsync(maxCount As Integer) As Task(Of IList(Of IBatchContainer))
+  overload: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver.GetQueueMessagesAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver.MessagesDeliveredAsync(IList{IBatchContainer})
+  commentId: M:Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver.MessagesDeliveredAsync(IList{IBatchContainer})
+  id: MessagesDeliveredAsync(IList{IBatchContainer})
+  parent: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver
+  langs:
+  - csharp
+  - vb
+  name: MessagesDeliveredAsync(IList<IBatchContainer>)
+  nameWithType: PubSubAdapterReceiver.MessagesDeliveredAsync(IList<IBatchContainer>)
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver.MessagesDeliveredAsync(IList<IBatchContainer>)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubAdapterReceiver.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: MessagesDeliveredAsync
+    path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubAdapterReceiver.cs
+    startLine: 99
+  assemblies:
+  - Orleans.Streaming.GCP
+  namespace: Orleans.Providers.GCP.Streams.PubSub
+  syntax:
+    content: public Task MessagesDeliveredAsync(IList<IBatchContainer> messages)
+    parameters:
+    - id: messages
+      type: IList{IBatchContainer}
+    return:
+      type: Task
+    content.vb: Public Function MessagesDeliveredAsync(messages As IList(Of IBatchContainer)) As Task
+  overload: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver.MessagesDeliveredAsync*
+  nameWithType.vb: PubSubAdapterReceiver.MessagesDeliveredAsync(IList(Of IBatchContainer))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver.MessagesDeliveredAsync(IList(Of IBatchContainer))
+  name.vb: MessagesDeliveredAsync(IList(Of IBatchContainer))
+references:
+- uid: Orleans.Providers.GCP.Streams.PubSub
+  commentId: N:Orleans.Providers.GCP.Streams.PubSub
+  isExternal: false
+  name: Orleans.Providers.GCP.Streams.PubSub
+  nameWithType: Orleans.Providers.GCP.Streams.PubSub
+  fullName: Orleans.Providers.GCP.Streams.PubSub
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<PubSubAdapterReceiver>()
+  nameWithType: ImmutableExt.AsImmutable<PubSubAdapterReceiver>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of PubSubAdapterReceiver)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver)()
+  name.vb: AsImmutable(Of PubSubAdapterReceiver)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<PubSubAdapterReceiver>
+    nameWithType: ImmutableExt.AsImmutable<PubSubAdapterReceiver>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of PubSubAdapterReceiver)
+    nameWithType: ImmutableExt.AsImmutable(Of PubSubAdapterReceiver)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver.Id*
+  commentId: Overload:Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver.Id
+  isExternal: false
+  name: Id
+  nameWithType: PubSubAdapterReceiver.Id
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver.Id
+- uid: QueueId
+  isExternal: true
+  name: QueueId
+  nameWithType: QueueId
+  fullName: QueueId
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver.Create*
+  commentId: Overload:Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver.Create
+  isExternal: false
+  name: Create
+  nameWithType: PubSubAdapterReceiver.Create
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver.Create
+- uid: SerializationManager
+  isExternal: true
+  name: SerializationManager
+  nameWithType: SerializationManager
+  fullName: SerializationManager
+- uid: ILoggerFactory
+  isExternal: true
+  name: ILoggerFactory
+  nameWithType: ILoggerFactory
+  fullName: ILoggerFactory
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Orleans.Providers.GCP.Streams.PubSub.IPubSubDataAdapter
+  commentId: T:Orleans.Providers.GCP.Streams.PubSub.IPubSubDataAdapter
+  parent: Orleans.Providers.GCP.Streams.PubSub
+  isExternal: false
+  name: IPubSubDataAdapter
+  nameWithType: IPubSubDataAdapter
+  fullName: Orleans.Providers.GCP.Streams.PubSub.IPubSubDataAdapter
+- uid: System.Nullable{TimeSpan}
+  commentId: '!:System.Nullable{TimeSpan}'
+  definition: System.Nullable`1
+  name: Nullable<TimeSpan>
+  nameWithType: Nullable<TimeSpan>
+  fullName: System.Nullable<TimeSpan>
+  nameWithType.vb: Nullable(Of TimeSpan)
+  fullName.vb: System.Nullable(Of TimeSpan)
+  name.vb: Nullable(Of TimeSpan)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: TimeSpan
+    name: TimeSpan
+    nameWithType: TimeSpan
+    fullName: TimeSpan
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: TimeSpan
+    name: TimeSpan
+    nameWithType: TimeSpan
+    fullName: TimeSpan
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IQueueAdapterReceiver
+  commentId: '!:IQueueAdapterReceiver'
+  isExternal: true
+  name: IQueueAdapterReceiver
+  nameWithType: IQueueAdapterReceiver
+  fullName: IQueueAdapterReceiver
+- uid: System.Nullable`1
+  isExternal: true
+  name: Nullable<>
+  nameWithType: Nullable<>
+  fullName: System.Nullable<>
+  nameWithType.vb: Nullable(Of )
+  fullName.vb: System.Nullable(Of )
+  name.vb: Nullable(Of )
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver.Initialize*
+  commentId: Overload:Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver.Initialize
+  isExternal: false
+  name: Initialize
+  nameWithType: PubSubAdapterReceiver.Initialize
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver.Initialize
+- uid: TimeSpan
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: TimeSpan
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver.Shutdown*
+  commentId: Overload:Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver.Shutdown
+  isExternal: false
+  name: Shutdown
+  nameWithType: PubSubAdapterReceiver.Shutdown
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver.Shutdown
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver.GetQueueMessagesAsync*
+  commentId: Overload:Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver.GetQueueMessagesAsync
+  isExternal: false
+  name: GetQueueMessagesAsync
+  nameWithType: PubSubAdapterReceiver.GetQueueMessagesAsync
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver.GetQueueMessagesAsync
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Task{IList{IBatchContainer}}
+  commentId: '!:Task{IList{IBatchContainer}}'
+  definition: Task`1
+  name: Task<IList<IBatchContainer>>
+  nameWithType: Task<IList<IBatchContainer>>
+  fullName: Task<IList<IBatchContainer>>
+  nameWithType.vb: Task(Of IList(Of IBatchContainer))
+  fullName.vb: Task(Of IList(Of IBatchContainer))
+  name.vb: Task(Of IList(Of IBatchContainer))
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: IList`1
+    name: IList
+    nameWithType: IList
+    fullName: IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: IBatchContainer
+    name: IBatchContainer
+    nameWithType: IBatchContainer
+    fullName: IBatchContainer
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: IList`1
+    name: IList
+    nameWithType: IList
+    fullName: IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: IBatchContainer
+    name: IBatchContainer
+    nameWithType: IBatchContainer
+    fullName: IBatchContainer
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver.MessagesDeliveredAsync*
+  commentId: Overload:Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver.MessagesDeliveredAsync
+  isExternal: false
+  name: MessagesDeliveredAsync
+  nameWithType: PubSubAdapterReceiver.MessagesDeliveredAsync
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver.MessagesDeliveredAsync
+- uid: IList{IBatchContainer}
+  commentId: '!:IList{IBatchContainer}'
+  definition: IList`1
+  name: IList<IBatchContainer>
+  nameWithType: IList<IBatchContainer>
+  fullName: IList<IBatchContainer>
+  nameWithType.vb: IList(Of IBatchContainer)
+  fullName.vb: IList(Of IBatchContainer)
+  name.vb: IList(Of IBatchContainer)
+  spec.csharp:
+  - uid: IList`1
+    name: IList
+    nameWithType: IList
+    fullName: IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: IBatchContainer
+    name: IBatchContainer
+    nameWithType: IBatchContainer
+    fullName: IBatchContainer
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IList`1
+    name: IList
+    nameWithType: IList
+    fullName: IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: IBatchContainer
+    name: IBatchContainer
+    nameWithType: IBatchContainer
+    fullName: IBatchContainer
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IList`1
+  isExternal: true
+  name: IList<>
+  nameWithType: IList<>
+  fullName: IList<>
+  nameWithType.vb: IList(Of )
+  fullName.vb: IList(Of )
+  name.vb: IList(Of )
+  spec.csharp:
+  - uid: IList`1
+    name: IList
+    nameWithType: IList
+    fullName: IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IList`1
+    name: IList
+    nameWithType: IList
+    fullName: IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )

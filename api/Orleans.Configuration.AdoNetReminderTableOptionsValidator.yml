@@ -1,0 +1,311 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Configuration.AdoNetReminderTableOptionsValidator
+  commentId: T:Orleans.Configuration.AdoNetReminderTableOptionsValidator
+  id: AdoNetReminderTableOptionsValidator
+  parent: Orleans.Configuration
+  children:
+  - Orleans.Configuration.AdoNetReminderTableOptionsValidator.#ctor(IOptions{Orleans.Configuration.AdoNetReminderTableOptions})
+  - Orleans.Configuration.AdoNetReminderTableOptionsValidator.ValidateConfiguration
+  langs:
+  - csharp
+  - vb
+  name: AdoNetReminderTableOptionsValidator
+  nameWithType: AdoNetReminderTableOptionsValidator
+  fullName: Orleans.Configuration.AdoNetReminderTableOptionsValidator
+  type: Class
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Reminders.AdoNet/ReminderService/AdoNetReminderTableOptionsValidator.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AdoNetReminderTableOptionsValidator
+    path: src/AdoNet/Orleans.Reminders.AdoNet/ReminderService/AdoNetReminderTableOptionsValidator.cs
+    startLine: 9
+  assemblies:
+  - Orleans.Reminders.AdoNet
+  namespace: Orleans.Configuration
+  summary: "\nValidates <xref href=\"Orleans.Configuration.AdoNetReminderTableOptions\" data-throw-if-not-resolved=\"false\"></xref> configuration.\n"
+  example: []
+  syntax:
+    content: 'public class AdoNetReminderTableOptionsValidator : IConfigurationValidator'
+    content.vb: >-
+      Public Class AdoNetReminderTableOptionsValidator
+
+          Inherits IConfigurationValidator
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.Configuration.AdoNetReminderTableOptionsValidator.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.Configuration.AdoNetReminderTableOptionsValidator.#ctor(IOptions{Orleans.Configuration.AdoNetReminderTableOptions})
+  commentId: M:Orleans.Configuration.AdoNetReminderTableOptionsValidator.#ctor(IOptions{Orleans.Configuration.AdoNetReminderTableOptions})
+  id: '#ctor(IOptions{Orleans.Configuration.AdoNetReminderTableOptions})'
+  parent: Orleans.Configuration.AdoNetReminderTableOptionsValidator
+  langs:
+  - csharp
+  - vb
+  name: AdoNetReminderTableOptionsValidator(IOptions<AdoNetReminderTableOptions>)
+  nameWithType: AdoNetReminderTableOptionsValidator.AdoNetReminderTableOptionsValidator(IOptions<AdoNetReminderTableOptions>)
+  fullName: Orleans.Configuration.AdoNetReminderTableOptionsValidator.AdoNetReminderTableOptionsValidator(IOptions<Orleans.Configuration.AdoNetReminderTableOptions>)
+  type: Constructor
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Reminders.AdoNet/ReminderService/AdoNetReminderTableOptionsValidator.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/AdoNet/Orleans.Reminders.AdoNet/ReminderService/AdoNetReminderTableOptionsValidator.cs
+    startLine: 13
+  assemblies:
+  - Orleans.Reminders.AdoNet
+  namespace: Orleans.Configuration
+  syntax:
+    content: public AdoNetReminderTableOptionsValidator(IOptions<AdoNetReminderTableOptions> options)
+    parameters:
+    - id: options
+      type: IOptions{Orleans.Configuration.AdoNetReminderTableOptions}
+    content.vb: Public Sub New(options As IOptions(Of AdoNetReminderTableOptions))
+  overload: Orleans.Configuration.AdoNetReminderTableOptionsValidator.#ctor*
+  nameWithType.vb: AdoNetReminderTableOptionsValidator.AdoNetReminderTableOptionsValidator(IOptions(Of AdoNetReminderTableOptions))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.Configuration.AdoNetReminderTableOptionsValidator.AdoNetReminderTableOptionsValidator(IOptions(Of Orleans.Configuration.AdoNetReminderTableOptions))
+  name.vb: AdoNetReminderTableOptionsValidator(IOptions(Of AdoNetReminderTableOptions))
+- uid: Orleans.Configuration.AdoNetReminderTableOptionsValidator.ValidateConfiguration
+  commentId: M:Orleans.Configuration.AdoNetReminderTableOptionsValidator.ValidateConfiguration
+  id: ValidateConfiguration
+  parent: Orleans.Configuration.AdoNetReminderTableOptionsValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateConfiguration()
+  nameWithType: AdoNetReminderTableOptionsValidator.ValidateConfiguration()
+  fullName: Orleans.Configuration.AdoNetReminderTableOptionsValidator.ValidateConfiguration()
+  type: Method
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Reminders.AdoNet/ReminderService/AdoNetReminderTableOptionsValidator.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ValidateConfiguration
+    path: src/AdoNet/Orleans.Reminders.AdoNet/ReminderService/AdoNetReminderTableOptionsValidator.cs
+    startLine: 19
+  assemblies:
+  - Orleans.Reminders.AdoNet
+  namespace: Orleans.Configuration
+  example: []
+  syntax:
+    content: public void ValidateConfiguration()
+    content.vb: Public Sub ValidateConfiguration
+  overload: Orleans.Configuration.AdoNetReminderTableOptionsValidator.ValidateConfiguration*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans.Configuration.AdoNetReminderTableOptions
+  commentId: T:Orleans.Configuration.AdoNetReminderTableOptions
+  isExternal: false
+  name: AdoNetReminderTableOptions
+  nameWithType: AdoNetReminderTableOptions
+  fullName: Orleans.Configuration.AdoNetReminderTableOptions
+- uid: Orleans.Configuration
+  commentId: N:Orleans.Configuration
+  isExternal: false
+  name: Orleans.Configuration
+  nameWithType: Orleans.Configuration
+  fullName: Orleans.Configuration
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Configuration.AdoNetReminderTableOptionsValidator.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<AdoNetReminderTableOptionsValidator>()
+  nameWithType: ImmutableExt.AsImmutable<AdoNetReminderTableOptionsValidator>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Configuration.AdoNetReminderTableOptionsValidator>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of AdoNetReminderTableOptionsValidator)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Configuration.AdoNetReminderTableOptionsValidator)()
+  name.vb: AsImmutable(Of AdoNetReminderTableOptionsValidator)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<AdoNetReminderTableOptionsValidator>
+    nameWithType: ImmutableExt.AsImmutable<AdoNetReminderTableOptionsValidator>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Configuration.AdoNetReminderTableOptionsValidator>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of AdoNetReminderTableOptionsValidator)
+    nameWithType: ImmutableExt.AsImmutable(Of AdoNetReminderTableOptionsValidator)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Configuration.AdoNetReminderTableOptionsValidator)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Configuration.AdoNetReminderTableOptionsValidator.#ctor*
+  commentId: Overload:Orleans.Configuration.AdoNetReminderTableOptionsValidator.#ctor
+  isExternal: false
+  name: AdoNetReminderTableOptionsValidator
+  nameWithType: AdoNetReminderTableOptionsValidator.AdoNetReminderTableOptionsValidator
+  fullName: Orleans.Configuration.AdoNetReminderTableOptionsValidator.AdoNetReminderTableOptionsValidator
+- uid: IOptions{Orleans.Configuration.AdoNetReminderTableOptions}
+  commentId: '!:IOptions{Orleans.Configuration.AdoNetReminderTableOptions}'
+  definition: IOptions`1
+  name: IOptions<AdoNetReminderTableOptions>
+  nameWithType: IOptions<AdoNetReminderTableOptions>
+  fullName: IOptions<Orleans.Configuration.AdoNetReminderTableOptions>
+  nameWithType.vb: IOptions(Of AdoNetReminderTableOptions)
+  fullName.vb: IOptions(Of Orleans.Configuration.AdoNetReminderTableOptions)
+  name.vb: IOptions(Of AdoNetReminderTableOptions)
+  spec.csharp:
+  - uid: IOptions`1
+    name: IOptions
+    nameWithType: IOptions
+    fullName: IOptions
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Orleans.Configuration.AdoNetReminderTableOptions
+    name: AdoNetReminderTableOptions
+    nameWithType: AdoNetReminderTableOptions
+    fullName: Orleans.Configuration.AdoNetReminderTableOptions
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IOptions`1
+    name: IOptions
+    nameWithType: IOptions
+    fullName: IOptions
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Orleans.Configuration.AdoNetReminderTableOptions
+    name: AdoNetReminderTableOptions
+    nameWithType: AdoNetReminderTableOptions
+    fullName: Orleans.Configuration.AdoNetReminderTableOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IOptions`1
+  isExternal: true
+  name: IOptions<>
+  nameWithType: IOptions<>
+  fullName: IOptions<>
+  nameWithType.vb: IOptions(Of )
+  fullName.vb: IOptions(Of )
+  name.vb: IOptions(Of )
+  spec.csharp:
+  - uid: IOptions`1
+    name: IOptions
+    nameWithType: IOptions
+    fullName: IOptions
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IOptions`1
+    name: IOptions
+    nameWithType: IOptions
+    fullName: IOptions
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Configuration.AdoNetReminderTableOptionsValidator.ValidateConfiguration*
+  commentId: Overload:Orleans.Configuration.AdoNetReminderTableOptionsValidator.ValidateConfiguration
+  isExternal: false
+  name: ValidateConfiguration
+  nameWithType: AdoNetReminderTableOptionsValidator.ValidateConfiguration
+  fullName: Orleans.Configuration.AdoNetReminderTableOptionsValidator.ValidateConfiguration

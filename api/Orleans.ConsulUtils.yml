@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.ConsulUtils
+  commentId: N:Orleans.ConsulUtils
+  id: Orleans.ConsulUtils
+  children:
+  - Orleans.ConsulUtils.LegacyConsulGatewayListProviderConfigurator
+  langs:
+  - csharp
+  - vb
+  name: Orleans.ConsulUtils
+  nameWithType: Orleans.ConsulUtils
+  fullName: Orleans.ConsulUtils
+  type: Namespace
+  assemblies:
+  - Orleans.Clustering.Consul
+references:
+- uid: Orleans.ConsulUtils.LegacyConsulGatewayListProviderConfigurator
+  commentId: T:Orleans.ConsulUtils.LegacyConsulGatewayListProviderConfigurator
+  isExternal: false
+  name: LegacyConsulGatewayListProviderConfigurator
+  nameWithType: LegacyConsulGatewayListProviderConfigurator
+  fullName: Orleans.ConsulUtils.LegacyConsulGatewayListProviderConfigurator

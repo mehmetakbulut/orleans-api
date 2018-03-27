@@ -1,0 +1,580 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.ObserverSubscriptionManager`1
+  commentId: T:Orleans.ObserverSubscriptionManager`1
+  id: ObserverSubscriptionManager`1
+  parent: Orleans
+  children:
+  - Orleans.ObserverSubscriptionManager`1.#ctor
+  - Orleans.ObserverSubscriptionManager`1.Clear
+  - Orleans.ObserverSubscriptionManager`1.Count
+  - Orleans.ObserverSubscriptionManager`1.IsSubscribed(`0)
+  - Orleans.ObserverSubscriptionManager`1.Notify(Action{`0})
+  - Orleans.ObserverSubscriptionManager`1.Subscribe(`0)
+  - Orleans.ObserverSubscriptionManager`1.Unsubscribe(`0)
+  langs:
+  - csharp
+  - vb
+  name: ObserverSubscriptionManager<T>
+  nameWithType: ObserverSubscriptionManager<T>
+  fullName: Orleans.ObserverSubscriptionManager<T>
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Async/ObserverSubscriptionManager.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ObserverSubscriptionManager
+    path: src/Orleans.Core.Legacy/Async/ObserverSubscriptionManager.cs
+    startLine: 11
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans
+  summary: "\nThe ObserverSubscriptionManager class is a helper class for grains that support observers.\nIt provides methods for tracking subscribing observers and for sending notifications.\n"
+  example: []
+  syntax:
+    content: 'public class ObserverSubscriptionManager<T> : object where T : IGrainObserver'
+    typeParameters:
+    - id: T
+      description: The observer interface type to be managed.
+    content.vb: >-
+      Public Class ObserverSubscriptionManager(Of T As IGrainObserver)
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.ObserverSubscriptionManager`1.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  nameWithType.vb: ObserverSubscriptionManager(Of T)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: Orleans.ObserverSubscriptionManager(Of T)
+  name.vb: ObserverSubscriptionManager(Of T)
+- uid: Orleans.ObserverSubscriptionManager`1.Count
+  commentId: P:Orleans.ObserverSubscriptionManager`1.Count
+  id: Count
+  parent: Orleans.ObserverSubscriptionManager`1
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: ObserverSubscriptionManager<T>.Count
+  fullName: Orleans.ObserverSubscriptionManager<T>.Count
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Async/ObserverSubscriptionManager.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Count
+    path: src/Orleans.Core.Legacy/Async/ObserverSubscriptionManager.cs
+    startLine: 18
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans
+  summary: "\nNumber of subscribers currently registered\n"
+  example: []
+  syntax:
+    content: public int Count { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Count As Integer
+  overload: Orleans.ObserverSubscriptionManager`1.Count*
+  nameWithType.vb: ObserverSubscriptionManager(Of T).Count
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: Orleans.ObserverSubscriptionManager(Of T).Count
+- uid: Orleans.ObserverSubscriptionManager`1.#ctor
+  commentId: M:Orleans.ObserverSubscriptionManager`1.#ctor
+  id: '#ctor'
+  parent: Orleans.ObserverSubscriptionManager`1
+  langs:
+  - csharp
+  - vb
+  name: ObserverSubscriptionManager()
+  nameWithType: ObserverSubscriptionManager<T>.ObserverSubscriptionManager()
+  fullName: Orleans.ObserverSubscriptionManager<T>.ObserverSubscriptionManager()
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Async/ObserverSubscriptionManager.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Core.Legacy/Async/ObserverSubscriptionManager.cs
+    startLine: 33
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans
+  summary: "\nConstructs an empty subscription manager.\n"
+  example: []
+  syntax:
+    content: public ObserverSubscriptionManager()
+    content.vb: Public Sub New
+  overload: Orleans.ObserverSubscriptionManager`1.#ctor*
+  nameWithType.vb: ObserverSubscriptionManager(Of T).ObserverSubscriptionManager()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.ObserverSubscriptionManager(Of T).ObserverSubscriptionManager()
+- uid: Orleans.ObserverSubscriptionManager`1.Subscribe(`0)
+  commentId: M:Orleans.ObserverSubscriptionManager`1.Subscribe(`0)
+  id: Subscribe(`0)
+  parent: Orleans.ObserverSubscriptionManager`1
+  langs:
+  - csharp
+  - vb
+  name: Subscribe(T)
+  nameWithType: ObserverSubscriptionManager<T>.Subscribe(T)
+  fullName: Orleans.ObserverSubscriptionManager<T>.Subscribe(T)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Async/ObserverSubscriptionManager.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Subscribe
+    path: src/Orleans.Core.Legacy/Async/ObserverSubscriptionManager.cs
+    startLine: 45
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans
+  summary: "\nRecords a new subscribing observer.\n"
+  example: []
+  syntax:
+    content: public void Subscribe(T observer)
+    parameters:
+    - id: observer
+      type: '{T}'
+      description: The new subscriber.
+    content.vb: Public Sub Subscribe(observer As T)
+  overload: Orleans.ObserverSubscriptionManager`1.Subscribe*
+  nameWithType.vb: ObserverSubscriptionManager(Of T).Subscribe(T)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.ObserverSubscriptionManager(Of T).Subscribe(T)
+- uid: Orleans.ObserverSubscriptionManager`1.IsSubscribed(`0)
+  commentId: M:Orleans.ObserverSubscriptionManager`1.IsSubscribed(`0)
+  id: IsSubscribed(`0)
+  parent: Orleans.ObserverSubscriptionManager`1
+  langs:
+  - csharp
+  - vb
+  name: IsSubscribed(T)
+  nameWithType: ObserverSubscriptionManager<T>.IsSubscribed(T)
+  fullName: Orleans.ObserverSubscriptionManager<T>.IsSubscribed(T)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Async/ObserverSubscriptionManager.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IsSubscribed
+    path: src/Orleans.Core.Legacy/Async/ObserverSubscriptionManager.cs
+    startLine: 56
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans
+  summary: "\nDetermines if the SubscriptionManager has the input observer\n"
+  example: []
+  syntax:
+    content: public bool IsSubscribed(T observer)
+    parameters:
+    - id: observer
+      type: '{T}'
+      description: True if the the observer is already subscribed, otherwise False.
+    return:
+      type: System.Boolean
+      description: True is the SubscriptionManager has the input observer.
+    content.vb: Public Function IsSubscribed(observer As T) As Boolean
+  overload: Orleans.ObserverSubscriptionManager`1.IsSubscribed*
+  nameWithType.vb: ObserverSubscriptionManager(Of T).IsSubscribed(T)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.ObserverSubscriptionManager(Of T).IsSubscribed(T)
+- uid: Orleans.ObserverSubscriptionManager`1.Unsubscribe(`0)
+  commentId: M:Orleans.ObserverSubscriptionManager`1.Unsubscribe(`0)
+  id: Unsubscribe(`0)
+  parent: Orleans.ObserverSubscriptionManager`1
+  langs:
+  - csharp
+  - vb
+  name: Unsubscribe(T)
+  nameWithType: ObserverSubscriptionManager<T>.Unsubscribe(T)
+  fullName: Orleans.ObserverSubscriptionManager<T>.Unsubscribe(T)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Async/ObserverSubscriptionManager.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Unsubscribe
+    path: src/Orleans.Core.Legacy/Async/ObserverSubscriptionManager.cs
+    startLine: 67
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans
+  summary: "\nRemoves a (former) subscriber.\n"
+  example: []
+  syntax:
+    content: public void Unsubscribe(T observer)
+    parameters:
+    - id: observer
+      type: '{T}'
+      description: The unsubscribing observer.
+    content.vb: Public Sub Unsubscribe(observer As T)
+  overload: Orleans.ObserverSubscriptionManager`1.Unsubscribe*
+  nameWithType.vb: ObserverSubscriptionManager(Of T).Unsubscribe(T)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.ObserverSubscriptionManager(Of T).Unsubscribe(T)
+- uid: Orleans.ObserverSubscriptionManager`1.Clear
+  commentId: M:Orleans.ObserverSubscriptionManager`1.Clear
+  id: Clear
+  parent: Orleans.ObserverSubscriptionManager`1
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: ObserverSubscriptionManager<T>.Clear()
+  fullName: Orleans.ObserverSubscriptionManager<T>.Clear()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Async/ObserverSubscriptionManager.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Clear
+    path: src/Orleans.Core.Legacy/Async/ObserverSubscriptionManager.cs
+    startLine: 76
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans
+  summary: "\nRemoves all subscriptions.\n"
+  example: []
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear
+  overload: Orleans.ObserverSubscriptionManager`1.Clear*
+  nameWithType.vb: ObserverSubscriptionManager(Of T).Clear()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.ObserverSubscriptionManager(Of T).Clear()
+- uid: Orleans.ObserverSubscriptionManager`1.Notify(Action{`0})
+  commentId: M:Orleans.ObserverSubscriptionManager`1.Notify(Action{`0})
+  id: Notify(Action{`0})
+  parent: Orleans.ObserverSubscriptionManager`1
+  langs:
+  - csharp
+  - vb
+  name: Notify(Action<T>)
+  nameWithType: ObserverSubscriptionManager<T>.Notify(Action<T>)
+  fullName: Orleans.ObserverSubscriptionManager<T>.Notify(Action<T>)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Async/ObserverSubscriptionManager.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Notify
+    path: src/Orleans.Core.Legacy/Async/ObserverSubscriptionManager.cs
+    startLine: 86
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans
+  summary: "\nSends a notification to all subscribers.\n"
+  example: []
+  syntax:
+    content: public void Notify(Action<T> notification)
+    parameters:
+    - id: notification
+      type: Action{{T}}
+      description: >-
+        An action that sends the notification by invoking the proper method on the provided subscriber.
+
+        This action is called once for each current subscriber.
+    content.vb: Public Sub Notify(notification As Action(Of T))
+  overload: Orleans.ObserverSubscriptionManager`1.Notify*
+  nameWithType.vb: ObserverSubscriptionManager(Of T).Notify(Action(Of T))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.ObserverSubscriptionManager(Of T).Notify(Action(Of T))
+  name.vb: Notify(Action(Of T))
+references:
+- uid: Orleans
+  commentId: N:Orleans
+  isExternal: false
+  name: Orleans
+  nameWithType: Orleans
+  fullName: Orleans
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.ObserverSubscriptionManager`1.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<ObserverSubscriptionManager<T>>()
+  nameWithType: ImmutableExt.AsImmutable<ObserverSubscriptionManager<T>>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.ObserverSubscriptionManager<T>>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of ObserverSubscriptionManager(Of T))()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.ObserverSubscriptionManager(Of T))()
+  name.vb: AsImmutable(Of ObserverSubscriptionManager(Of T))()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<ObserverSubscriptionManager<T>>
+    nameWithType: ImmutableExt.AsImmutable<ObserverSubscriptionManager<T>>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.ObserverSubscriptionManager<T>>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of ObserverSubscriptionManager(Of T))
+    nameWithType: ImmutableExt.AsImmutable(Of ObserverSubscriptionManager(Of T))
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.ObserverSubscriptionManager(Of T))
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.ObserverSubscriptionManager`1.Count*
+  commentId: Overload:Orleans.ObserverSubscriptionManager`1.Count
+  isExternal: false
+  name: Count
+  nameWithType: ObserverSubscriptionManager<T>.Count
+  fullName: Orleans.ObserverSubscriptionManager<T>.Count
+  nameWithType.vb: ObserverSubscriptionManager(Of T).Count
+  fullName.vb: Orleans.ObserverSubscriptionManager(Of T).Count
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Orleans.ObserverSubscriptionManager`1.#ctor*
+  commentId: Overload:Orleans.ObserverSubscriptionManager`1.#ctor
+  isExternal: false
+  name: ObserverSubscriptionManager
+  nameWithType: ObserverSubscriptionManager<T>.ObserverSubscriptionManager
+  fullName: Orleans.ObserverSubscriptionManager<T>.ObserverSubscriptionManager
+  nameWithType.vb: ObserverSubscriptionManager(Of T).ObserverSubscriptionManager
+  fullName.vb: Orleans.ObserverSubscriptionManager(Of T).ObserverSubscriptionManager
+- uid: Orleans.ObserverSubscriptionManager`1.Subscribe*
+  commentId: Overload:Orleans.ObserverSubscriptionManager`1.Subscribe
+  isExternal: false
+  name: Subscribe
+  nameWithType: ObserverSubscriptionManager<T>.Subscribe
+  fullName: Orleans.ObserverSubscriptionManager<T>.Subscribe
+  nameWithType.vb: ObserverSubscriptionManager(Of T).Subscribe
+  fullName.vb: Orleans.ObserverSubscriptionManager(Of T).Subscribe
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  isExternal: false
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Orleans.ObserverSubscriptionManager`1.IsSubscribed*
+  commentId: Overload:Orleans.ObserverSubscriptionManager`1.IsSubscribed
+  isExternal: false
+  name: IsSubscribed
+  nameWithType: ObserverSubscriptionManager<T>.IsSubscribed
+  fullName: Orleans.ObserverSubscriptionManager<T>.IsSubscribed
+  nameWithType.vb: ObserverSubscriptionManager(Of T).IsSubscribed
+  fullName.vb: Orleans.ObserverSubscriptionManager(Of T).IsSubscribed
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Orleans.ObserverSubscriptionManager`1.Unsubscribe*
+  commentId: Overload:Orleans.ObserverSubscriptionManager`1.Unsubscribe
+  isExternal: false
+  name: Unsubscribe
+  nameWithType: ObserverSubscriptionManager<T>.Unsubscribe
+  fullName: Orleans.ObserverSubscriptionManager<T>.Unsubscribe
+  nameWithType.vb: ObserverSubscriptionManager(Of T).Unsubscribe
+  fullName.vb: Orleans.ObserverSubscriptionManager(Of T).Unsubscribe
+- uid: Orleans.ObserverSubscriptionManager`1.Clear*
+  commentId: Overload:Orleans.ObserverSubscriptionManager`1.Clear
+  isExternal: false
+  name: Clear
+  nameWithType: ObserverSubscriptionManager<T>.Clear
+  fullName: Orleans.ObserverSubscriptionManager<T>.Clear
+  nameWithType.vb: ObserverSubscriptionManager(Of T).Clear
+  fullName.vb: Orleans.ObserverSubscriptionManager(Of T).Clear
+- uid: Orleans.ObserverSubscriptionManager`1.Notify*
+  commentId: Overload:Orleans.ObserverSubscriptionManager`1.Notify
+  isExternal: false
+  name: Notify
+  nameWithType: ObserverSubscriptionManager<T>.Notify
+  fullName: Orleans.ObserverSubscriptionManager<T>.Notify
+  nameWithType.vb: ObserverSubscriptionManager(Of T).Notify
+  fullName.vb: Orleans.ObserverSubscriptionManager(Of T).Notify
+- uid: Action{{T}}
+  commentId: '!:Action{`0}'
+  definition: Action`1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Action`1
+  isExternal: true
+  name: Action<>
+  nameWithType: Action<>
+  fullName: Action<>
+  nameWithType.vb: Action(Of )
+  fullName.vb: Action(Of )
+  name.vb: Action(Of )
+  spec.csharp:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )

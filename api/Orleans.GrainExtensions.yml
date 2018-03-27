@@ -1,0 +1,1066 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.GrainExtensions
+  commentId: T:Orleans.GrainExtensions
+  id: GrainExtensions
+  parent: Orleans
+  children:
+  - Orleans.GrainExtensions.AsReference``1(Orleans.Runtime.IAddressable)
+  - Orleans.GrainExtensions.BindGrainReference(Orleans.Runtime.IAddressable,Orleans.IGrainFactory)
+  - Orleans.GrainExtensions.Cast``1(Orleans.Runtime.IAddressable)
+  - Orleans.GrainExtensions.GetGrainIdentity(Orleans.IGrain)
+  - Orleans.GrainExtensions.GetPrimaryKey(Orleans.IGrain)
+  - Orleans.GrainExtensions.GetPrimaryKey(Orleans.IGrain,System.String@)
+  - Orleans.GrainExtensions.GetPrimaryKey(Orleans.Runtime.IAddressable)
+  - Orleans.GrainExtensions.GetPrimaryKey(Orleans.Runtime.IAddressable,System.String@)
+  - Orleans.GrainExtensions.GetPrimaryKeyLong(Orleans.IGrain)
+  - Orleans.GrainExtensions.GetPrimaryKeyLong(Orleans.IGrain,System.String@)
+  - Orleans.GrainExtensions.GetPrimaryKeyLong(Orleans.Runtime.IAddressable)
+  - Orleans.GrainExtensions.GetPrimaryKeyLong(Orleans.Runtime.IAddressable,System.String@)
+  - Orleans.GrainExtensions.GetPrimaryKeyString(Orleans.IGrainWithStringKey)
+  - Orleans.GrainExtensions.GetPrimaryKeyString(Orleans.Runtime.IAddressable)
+  - Orleans.GrainExtensions.InvokeOneWay``1(``0,Func{``0,Task})
+  - Orleans.GrainExtensions.IsPrimaryKeyBasedOnLong(Orleans.Runtime.IAddressable)
+  langs:
+  - csharp
+  - vb
+  name: GrainExtensions
+  nameWithType: GrainExtensions
+  fullName: Orleans.GrainExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/GrainExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GrainExtensions
+    path: src/Orleans.Core.Abstractions/Core/GrainExtensions.cs
+    startLine: 11
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nExtension methods for grains.\n"
+  example: []
+  syntax:
+    content: 'public static class GrainExtensions : object'
+    content.vb: >-
+      Public Module GrainExtensions
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Orleans.GrainExtensions.AsReference``1(Orleans.Runtime.IAddressable)
+  commentId: M:Orleans.GrainExtensions.AsReference``1(Orleans.Runtime.IAddressable)
+  id: AsReference``1(Orleans.Runtime.IAddressable)
+  isExtensionMethod: true
+  parent: Orleans.GrainExtensions
+  langs:
+  - csharp
+  - vb
+  name: AsReference<TGrainInterface>(IAddressable)
+  nameWithType: GrainExtensions.AsReference<TGrainInterface>(IAddressable)
+  fullName: Orleans.GrainExtensions.AsReference<TGrainInterface>(Orleans.Runtime.IAddressable)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/GrainExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AsReference
+    path: src/Orleans.Core.Abstractions/Core/GrainExtensions.cs
+    startLine: 48
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nConverts this grain to a specific grain interface.\n"
+  example: []
+  syntax:
+    content: public static TGrainInterface AsReference<TGrainInterface>(this IAddressable grain)
+    parameters:
+    - id: grain
+      type: Orleans.Runtime.IAddressable
+      description: The grain to convert.
+    typeParameters:
+    - id: TGrainInterface
+      description: The type of the grain interface.
+    return:
+      type: '{TGrainInterface}'
+      description: A strongly typed <code>GrainReference</code> of grain interface type TGrainInterface.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AsReference(Of TGrainInterface)(grain As IAddressable) As TGrainInterface
+  overload: Orleans.GrainExtensions.AsReference*
+  nameWithType.vb: GrainExtensions.AsReference(Of TGrainInterface)(IAddressable)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.GrainExtensions.AsReference(Of TGrainInterface)(Orleans.Runtime.IAddressable)
+  name.vb: AsReference(Of TGrainInterface)(IAddressable)
+- uid: Orleans.GrainExtensions.Cast``1(Orleans.Runtime.IAddressable)
+  commentId: M:Orleans.GrainExtensions.Cast``1(Orleans.Runtime.IAddressable)
+  id: Cast``1(Orleans.Runtime.IAddressable)
+  isExtensionMethod: true
+  parent: Orleans.GrainExtensions
+  langs:
+  - csharp
+  - vb
+  name: Cast<TGrainInterface>(IAddressable)
+  nameWithType: GrainExtensions.Cast<TGrainInterface>(IAddressable)
+  fullName: Orleans.GrainExtensions.Cast<TGrainInterface>(Orleans.Runtime.IAddressable)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/GrainExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Cast
+    path: src/Orleans.Core.Abstractions/Core/GrainExtensions.cs
+    startLine: 60
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nCasts a grain to a specific grain interface.\n"
+  example: []
+  syntax:
+    content: public static TGrainInterface Cast<TGrainInterface>(this IAddressable grain)
+    parameters:
+    - id: grain
+      type: Orleans.Runtime.IAddressable
+      description: The grain to cast.
+    typeParameters:
+    - id: TGrainInterface
+      description: The type of the grain interface.
+    return:
+      type: '{TGrainInterface}'
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Cast(Of TGrainInterface)(grain As IAddressable) As TGrainInterface
+  overload: Orleans.GrainExtensions.Cast*
+  nameWithType.vb: GrainExtensions.Cast(Of TGrainInterface)(IAddressable)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.GrainExtensions.Cast(Of TGrainInterface)(Orleans.Runtime.IAddressable)
+  name.vb: Cast(Of TGrainInterface)(IAddressable)
+- uid: Orleans.GrainExtensions.BindGrainReference(Orleans.Runtime.IAddressable,Orleans.IGrainFactory)
+  commentId: M:Orleans.GrainExtensions.BindGrainReference(Orleans.Runtime.IAddressable,Orleans.IGrainFactory)
+  id: BindGrainReference(Orleans.Runtime.IAddressable,Orleans.IGrainFactory)
+  isExtensionMethod: true
+  parent: Orleans.GrainExtensions
+  langs:
+  - csharp
+  - vb
+  name: BindGrainReference(IAddressable, IGrainFactory)
+  nameWithType: GrainExtensions.BindGrainReference(IAddressable, IGrainFactory)
+  fullName: Orleans.GrainExtensions.BindGrainReference(Orleans.Runtime.IAddressable, Orleans.IGrainFactory)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/GrainExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: BindGrainReference
+    path: src/Orleans.Core.Abstractions/Core/GrainExtensions.cs
+    startLine: 70
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nBinds the grain reference to the provided <xref href=\"Orleans.IGrainFactory\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public static void BindGrainReference(this IAddressable grain, IGrainFactory grainFactory)
+    parameters:
+    - id: grain
+      type: Orleans.Runtime.IAddressable
+      description: The grain reference.
+    - id: grainFactory
+      type: Orleans.IGrainFactory
+      description: The grain factory.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub BindGrainReference(grain As IAddressable, grainFactory As IGrainFactory)
+  overload: Orleans.GrainExtensions.BindGrainReference*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.GrainExtensions.GetGrainIdentity(Orleans.IGrain)
+  commentId: M:Orleans.GrainExtensions.GetGrainIdentity(Orleans.IGrain)
+  id: GetGrainIdentity(Orleans.IGrain)
+  isExtensionMethod: true
+  parent: Orleans.GrainExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetGrainIdentity(IGrain)
+  nameWithType: GrainExtensions.GetGrainIdentity(IGrain)
+  fullName: Orleans.GrainExtensions.GetGrainIdentity(Orleans.IGrain)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/GrainExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetGrainIdentity
+    path: src/Orleans.Core.Abstractions/Core/GrainExtensions.cs
+    startLine: 100
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  syntax:
+    content: public static IGrainIdentity GetGrainIdentity(this IGrain grain)
+    parameters:
+    - id: grain
+      type: Orleans.IGrain
+    return:
+      type: Orleans.Core.IGrainIdentity
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetGrainIdentity(grain As IGrain) As IGrainIdentity
+  overload: Orleans.GrainExtensions.GetGrainIdentity*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.GrainExtensions.IsPrimaryKeyBasedOnLong(Orleans.Runtime.IAddressable)
+  commentId: M:Orleans.GrainExtensions.IsPrimaryKeyBasedOnLong(Orleans.Runtime.IAddressable)
+  id: IsPrimaryKeyBasedOnLong(Orleans.Runtime.IAddressable)
+  isExtensionMethod: true
+  parent: Orleans.GrainExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsPrimaryKeyBasedOnLong(IAddressable)
+  nameWithType: GrainExtensions.IsPrimaryKeyBasedOnLong(IAddressable)
+  fullName: Orleans.GrainExtensions.IsPrimaryKeyBasedOnLong(Orleans.Runtime.IAddressable)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/GrainExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IsPrimaryKeyBasedOnLong
+    path: src/Orleans.Core.Abstractions/Core/GrainExtensions.cs
+    startLine: 129
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nReturns whether part of the primary key is of type long.\n"
+  example: []
+  syntax:
+    content: public static bool IsPrimaryKeyBasedOnLong(this IAddressable grain)
+    parameters:
+    - id: grain
+      type: Orleans.Runtime.IAddressable
+      description: The target grain.
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsPrimaryKeyBasedOnLong(grain As IAddressable) As Boolean
+  overload: Orleans.GrainExtensions.IsPrimaryKeyBasedOnLong*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.GrainExtensions.GetPrimaryKeyLong(Orleans.Runtime.IAddressable,System.String@)
+  commentId: M:Orleans.GrainExtensions.GetPrimaryKeyLong(Orleans.Runtime.IAddressable,System.String@)
+  id: GetPrimaryKeyLong(Orleans.Runtime.IAddressable,System.String@)
+  isExtensionMethod: true
+  parent: Orleans.GrainExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetPrimaryKeyLong(IAddressable, out String)
+  nameWithType: GrainExtensions.GetPrimaryKeyLong(IAddressable, out String)
+  fullName: Orleans.GrainExtensions.GetPrimaryKeyLong(Orleans.Runtime.IAddressable, out System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/GrainExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetPrimaryKeyLong
+    path: src/Orleans.Core.Abstractions/Core/GrainExtensions.cs
+    startLine: 140
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nReturns the long representation of a grain primary key.\n"
+  example: []
+  syntax:
+    content: public static long GetPrimaryKeyLong(this IAddressable grain, out string keyExt)
+    parameters:
+    - id: grain
+      type: Orleans.Runtime.IAddressable
+      description: The grain to find the primary key for.
+    - id: keyExt
+      type: System.String
+      description: The output paramater to return the extended key part of the grain primary key, if extened primary key was provided for that grain.
+    return:
+      type: System.Int64
+      description: A long representing the primary key for this grain.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetPrimaryKeyLong(grain As IAddressable, ByRef keyExt As String) As Long
+  overload: Orleans.GrainExtensions.GetPrimaryKeyLong*
+  nameWithType.vb: GrainExtensions.GetPrimaryKeyLong(IAddressable, ByRef String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.GrainExtensions.GetPrimaryKeyLong(Orleans.Runtime.IAddressable, ByRef System.String)
+  name.vb: GetPrimaryKeyLong(IAddressable, ByRef String)
+- uid: Orleans.GrainExtensions.GetPrimaryKeyLong(Orleans.Runtime.IAddressable)
+  commentId: M:Orleans.GrainExtensions.GetPrimaryKeyLong(Orleans.Runtime.IAddressable)
+  id: GetPrimaryKeyLong(Orleans.Runtime.IAddressable)
+  isExtensionMethod: true
+  parent: Orleans.GrainExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetPrimaryKeyLong(IAddressable)
+  nameWithType: GrainExtensions.GetPrimaryKeyLong(IAddressable)
+  fullName: Orleans.GrainExtensions.GetPrimaryKeyLong(Orleans.Runtime.IAddressable)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/GrainExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetPrimaryKeyLong
+    path: src/Orleans.Core.Abstractions/Core/GrainExtensions.cs
+    startLine: 150
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nReturns the long representation of a grain primary key.\n"
+  example: []
+  syntax:
+    content: public static long GetPrimaryKeyLong(this IAddressable grain)
+    parameters:
+    - id: grain
+      type: Orleans.Runtime.IAddressable
+      description: The grain to find the primary key for.
+    return:
+      type: System.Int64
+      description: A long representing the primary key for this grain.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetPrimaryKeyLong(grain As IAddressable) As Long
+  overload: Orleans.GrainExtensions.GetPrimaryKeyLong*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.GrainExtensions.GetPrimaryKey(Orleans.Runtime.IAddressable,System.String@)
+  commentId: M:Orleans.GrainExtensions.GetPrimaryKey(Orleans.Runtime.IAddressable,System.String@)
+  id: GetPrimaryKey(Orleans.Runtime.IAddressable,System.String@)
+  isExtensionMethod: true
+  parent: Orleans.GrainExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetPrimaryKey(IAddressable, out String)
+  nameWithType: GrainExtensions.GetPrimaryKey(IAddressable, out String)
+  fullName: Orleans.GrainExtensions.GetPrimaryKey(Orleans.Runtime.IAddressable, out System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/GrainExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetPrimaryKey
+    path: src/Orleans.Core.Abstractions/Core/GrainExtensions.cs
+    startLine: 161
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nReturns the Guid representation of a grain primary key.\n"
+  example: []
+  syntax:
+    content: public static Guid GetPrimaryKey(this IAddressable grain, out string keyExt)
+    parameters:
+    - id: grain
+      type: Orleans.Runtime.IAddressable
+      description: The grain to find the primary key for.
+    - id: keyExt
+      type: System.String
+      description: The output paramater to return the extended key part of the grain primary key, if extened primary key was provided for that grain.
+    return:
+      type: Guid
+      description: A Guid representing the primary key for this grain.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetPrimaryKey(grain As IAddressable, ByRef keyExt As String) As Guid
+  overload: Orleans.GrainExtensions.GetPrimaryKey*
+  nameWithType.vb: GrainExtensions.GetPrimaryKey(IAddressable, ByRef String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.GrainExtensions.GetPrimaryKey(Orleans.Runtime.IAddressable, ByRef System.String)
+  name.vb: GetPrimaryKey(IAddressable, ByRef String)
+- uid: Orleans.GrainExtensions.GetPrimaryKey(Orleans.Runtime.IAddressable)
+  commentId: M:Orleans.GrainExtensions.GetPrimaryKey(Orleans.Runtime.IAddressable)
+  id: GetPrimaryKey(Orleans.Runtime.IAddressable)
+  isExtensionMethod: true
+  parent: Orleans.GrainExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetPrimaryKey(IAddressable)
+  nameWithType: GrainExtensions.GetPrimaryKey(IAddressable)
+  fullName: Orleans.GrainExtensions.GetPrimaryKey(Orleans.Runtime.IAddressable)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/GrainExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetPrimaryKey
+    path: src/Orleans.Core.Abstractions/Core/GrainExtensions.cs
+    startLine: 171
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nReturns the Guid representation of a grain primary key.\n"
+  example: []
+  syntax:
+    content: public static Guid GetPrimaryKey(this IAddressable grain)
+    parameters:
+    - id: grain
+      type: Orleans.Runtime.IAddressable
+      description: The grain to find the primary key for.
+    return:
+      type: Guid
+      description: A Guid representing the primary key for this grain.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetPrimaryKey(grain As IAddressable) As Guid
+  overload: Orleans.GrainExtensions.GetPrimaryKey*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.GrainExtensions.GetPrimaryKeyString(Orleans.Runtime.IAddressable)
+  commentId: M:Orleans.GrainExtensions.GetPrimaryKeyString(Orleans.Runtime.IAddressable)
+  id: GetPrimaryKeyString(Orleans.Runtime.IAddressable)
+  isExtensionMethod: true
+  parent: Orleans.GrainExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetPrimaryKeyString(IAddressable)
+  nameWithType: GrainExtensions.GetPrimaryKeyString(IAddressable)
+  fullName: Orleans.GrainExtensions.GetPrimaryKeyString(Orleans.Runtime.IAddressable)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/GrainExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetPrimaryKeyString
+    path: src/Orleans.Core.Abstractions/Core/GrainExtensions.cs
+    startLine: 181
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nReturns the string primary key of the grain.\n"
+  example: []
+  syntax:
+    content: public static string GetPrimaryKeyString(this IAddressable grain)
+    parameters:
+    - id: grain
+      type: Orleans.Runtime.IAddressable
+      description: The grain to find the primary key for.
+    return:
+      type: System.String
+      description: A string representing the primary key for this grain.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetPrimaryKeyString(grain As IAddressable) As String
+  overload: Orleans.GrainExtensions.GetPrimaryKeyString*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.GrainExtensions.GetPrimaryKeyLong(Orleans.IGrain,System.String@)
+  commentId: M:Orleans.GrainExtensions.GetPrimaryKeyLong(Orleans.IGrain,System.String@)
+  id: GetPrimaryKeyLong(Orleans.IGrain,System.String@)
+  isExtensionMethod: true
+  parent: Orleans.GrainExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetPrimaryKeyLong(IGrain, out String)
+  nameWithType: GrainExtensions.GetPrimaryKeyLong(IGrain, out String)
+  fullName: Orleans.GrainExtensions.GetPrimaryKeyLong(Orleans.IGrain, out System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/GrainExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetPrimaryKeyLong
+    path: src/Orleans.Core.Abstractions/Core/GrainExtensions.cs
+    startLine: 186
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  syntax:
+    content: public static long GetPrimaryKeyLong(this IGrain grain, out string keyExt)
+    parameters:
+    - id: grain
+      type: Orleans.IGrain
+    - id: keyExt
+      type: System.String
+    return:
+      type: System.Int64
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetPrimaryKeyLong(grain As IGrain, ByRef keyExt As String) As Long
+  overload: Orleans.GrainExtensions.GetPrimaryKeyLong*
+  nameWithType.vb: GrainExtensions.GetPrimaryKeyLong(IGrain, ByRef String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.GrainExtensions.GetPrimaryKeyLong(Orleans.IGrain, ByRef System.String)
+  name.vb: GetPrimaryKeyLong(IGrain, ByRef String)
+- uid: Orleans.GrainExtensions.GetPrimaryKeyLong(Orleans.IGrain)
+  commentId: M:Orleans.GrainExtensions.GetPrimaryKeyLong(Orleans.IGrain)
+  id: GetPrimaryKeyLong(Orleans.IGrain)
+  isExtensionMethod: true
+  parent: Orleans.GrainExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetPrimaryKeyLong(IGrain)
+  nameWithType: GrainExtensions.GetPrimaryKeyLong(IGrain)
+  fullName: Orleans.GrainExtensions.GetPrimaryKeyLong(Orleans.IGrain)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/GrainExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetPrimaryKeyLong
+    path: src/Orleans.Core.Abstractions/Core/GrainExtensions.cs
+    startLine: 190
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  syntax:
+    content: public static long GetPrimaryKeyLong(this IGrain grain)
+    parameters:
+    - id: grain
+      type: Orleans.IGrain
+    return:
+      type: System.Int64
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetPrimaryKeyLong(grain As IGrain) As Long
+  overload: Orleans.GrainExtensions.GetPrimaryKeyLong*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.GrainExtensions.GetPrimaryKey(Orleans.IGrain,System.String@)
+  commentId: M:Orleans.GrainExtensions.GetPrimaryKey(Orleans.IGrain,System.String@)
+  id: GetPrimaryKey(Orleans.IGrain,System.String@)
+  isExtensionMethod: true
+  parent: Orleans.GrainExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetPrimaryKey(IGrain, out String)
+  nameWithType: GrainExtensions.GetPrimaryKey(IGrain, out String)
+  fullName: Orleans.GrainExtensions.GetPrimaryKey(Orleans.IGrain, out System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/GrainExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetPrimaryKey
+    path: src/Orleans.Core.Abstractions/Core/GrainExtensions.cs
+    startLine: 194
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  syntax:
+    content: public static Guid GetPrimaryKey(this IGrain grain, out string keyExt)
+    parameters:
+    - id: grain
+      type: Orleans.IGrain
+    - id: keyExt
+      type: System.String
+    return:
+      type: Guid
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetPrimaryKey(grain As IGrain, ByRef keyExt As String) As Guid
+  overload: Orleans.GrainExtensions.GetPrimaryKey*
+  nameWithType.vb: GrainExtensions.GetPrimaryKey(IGrain, ByRef String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.GrainExtensions.GetPrimaryKey(Orleans.IGrain, ByRef System.String)
+  name.vb: GetPrimaryKey(IGrain, ByRef String)
+- uid: Orleans.GrainExtensions.GetPrimaryKey(Orleans.IGrain)
+  commentId: M:Orleans.GrainExtensions.GetPrimaryKey(Orleans.IGrain)
+  id: GetPrimaryKey(Orleans.IGrain)
+  isExtensionMethod: true
+  parent: Orleans.GrainExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetPrimaryKey(IGrain)
+  nameWithType: GrainExtensions.GetPrimaryKey(IGrain)
+  fullName: Orleans.GrainExtensions.GetPrimaryKey(Orleans.IGrain)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/GrainExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetPrimaryKey
+    path: src/Orleans.Core.Abstractions/Core/GrainExtensions.cs
+    startLine: 198
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  syntax:
+    content: public static Guid GetPrimaryKey(this IGrain grain)
+    parameters:
+    - id: grain
+      type: Orleans.IGrain
+    return:
+      type: Guid
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetPrimaryKey(grain As IGrain) As Guid
+  overload: Orleans.GrainExtensions.GetPrimaryKey*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.GrainExtensions.GetPrimaryKeyString(Orleans.IGrainWithStringKey)
+  commentId: M:Orleans.GrainExtensions.GetPrimaryKeyString(Orleans.IGrainWithStringKey)
+  id: GetPrimaryKeyString(Orleans.IGrainWithStringKey)
+  isExtensionMethod: true
+  parent: Orleans.GrainExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetPrimaryKeyString(IGrainWithStringKey)
+  nameWithType: GrainExtensions.GetPrimaryKeyString(IGrainWithStringKey)
+  fullName: Orleans.GrainExtensions.GetPrimaryKeyString(Orleans.IGrainWithStringKey)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/GrainExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetPrimaryKeyString
+    path: src/Orleans.Core.Abstractions/Core/GrainExtensions.cs
+    startLine: 203
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  syntax:
+    content: public static string GetPrimaryKeyString(this IGrainWithStringKey grain)
+    parameters:
+    - id: grain
+      type: Orleans.IGrainWithStringKey
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetPrimaryKeyString(grain As IGrainWithStringKey) As String
+  overload: Orleans.GrainExtensions.GetPrimaryKeyString*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.GrainExtensions.InvokeOneWay``1(``0,Func{``0,Task})
+  commentId: M:Orleans.GrainExtensions.InvokeOneWay``1(``0,Func{``0,Task})
+  id: InvokeOneWay``1(``0,Func{``0,Task})
+  isExtensionMethod: true
+  parent: Orleans.GrainExtensions
+  langs:
+  - csharp
+  - vb
+  name: InvokeOneWay<T>(T, Func<T, Task>)
+  nameWithType: GrainExtensions.InvokeOneWay<T>(T, Func<T, Task>)
+  fullName: Orleans.GrainExtensions.InvokeOneWay<T>(T, Func<T, Task>)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/GrainExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: InvokeOneWay
+    path: src/Orleans.Core.Abstractions/Core/GrainExtensions.cs
+    startLine: 214
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans
+  summary: "\nInvokes a method of a grain interface is one-way fashion so that no response message will be sent to the caller.\n"
+  example: []
+  syntax:
+    content: 'public static void InvokeOneWay<T>(this T grainReference, Func<T, Task> grainMethodInvocation)where T : class, IAddressable'
+    parameters:
+    - id: grainReference
+      type: '{T}'
+      description: Grain reference which will be copied and then a call executed on it
+    - id: grainMethodInvocation
+      type: Func{{T},Task}
+      description: Function that should invoke grain method and return resulting task
+    typeParameters:
+    - id: T
+      description: Grain interface
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub InvokeOneWay(Of T As {Class, IAddressable})(grainReference As T, grainMethodInvocation As Func(Of T, Task))
+  overload: Orleans.GrainExtensions.InvokeOneWay*
+  nameWithType.vb: GrainExtensions.InvokeOneWay(Of T)(T, Func(Of T, Task))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.GrainExtensions.InvokeOneWay(Of T)(T, Func(Of T, Task))
+  name.vb: InvokeOneWay(Of T)(T, Func(Of T, Task))
+references:
+- uid: Orleans
+  commentId: N:Orleans
+  isExternal: false
+  name: Orleans
+  nameWithType: Orleans
+  fullName: Orleans
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.GrainExtensions.AsReference*
+  commentId: Overload:Orleans.GrainExtensions.AsReference
+  isExternal: false
+  name: AsReference
+  nameWithType: GrainExtensions.AsReference
+  fullName: Orleans.GrainExtensions.AsReference
+- uid: Orleans.Runtime.IAddressable
+  commentId: T:Orleans.Runtime.IAddressable
+  parent: Orleans.Runtime
+  isExternal: false
+  name: IAddressable
+  nameWithType: IAddressable
+  fullName: Orleans.Runtime.IAddressable
+- uid: '{TGrainInterface}'
+  commentId: '!:TGrainInterface'
+  definition: TGrainInterface
+  name: TGrainInterface
+  nameWithType: TGrainInterface
+  fullName: TGrainInterface
+- uid: Orleans.Runtime
+  commentId: N:Orleans.Runtime
+  isExternal: false
+  name: Orleans.Runtime
+  nameWithType: Orleans.Runtime
+  fullName: Orleans.Runtime
+- uid: TGrainInterface
+  isExternal: false
+  name: TGrainInterface
+  nameWithType: TGrainInterface
+  fullName: TGrainInterface
+- uid: Orleans.GrainExtensions.Cast*
+  commentId: Overload:Orleans.GrainExtensions.Cast
+  isExternal: false
+  name: Cast
+  nameWithType: GrainExtensions.Cast
+  fullName: Orleans.GrainExtensions.Cast
+- uid: Orleans.IGrainFactory
+  commentId: T:Orleans.IGrainFactory
+  parent: Orleans
+  isExternal: false
+  name: IGrainFactory
+  nameWithType: IGrainFactory
+  fullName: Orleans.IGrainFactory
+- uid: Orleans.GrainExtensions.BindGrainReference*
+  commentId: Overload:Orleans.GrainExtensions.BindGrainReference
+  isExternal: false
+  name: BindGrainReference
+  nameWithType: GrainExtensions.BindGrainReference
+  fullName: Orleans.GrainExtensions.BindGrainReference
+- uid: Orleans.GrainExtensions.GetGrainIdentity*
+  commentId: Overload:Orleans.GrainExtensions.GetGrainIdentity
+  isExternal: false
+  name: GetGrainIdentity
+  nameWithType: GrainExtensions.GetGrainIdentity
+  fullName: Orleans.GrainExtensions.GetGrainIdentity
+- uid: Orleans.IGrain
+  commentId: T:Orleans.IGrain
+  parent: Orleans
+  isExternal: false
+  name: IGrain
+  nameWithType: IGrain
+  fullName: Orleans.IGrain
+- uid: Orleans.Core.IGrainIdentity
+  commentId: T:Orleans.Core.IGrainIdentity
+  parent: Orleans.Core
+  isExternal: false
+  name: IGrainIdentity
+  nameWithType: IGrainIdentity
+  fullName: Orleans.Core.IGrainIdentity
+- uid: Orleans.Core
+  commentId: N:Orleans.Core
+  isExternal: false
+  name: Orleans.Core
+  nameWithType: Orleans.Core
+  fullName: Orleans.Core
+- uid: Orleans.GrainExtensions.IsPrimaryKeyBasedOnLong*
+  commentId: Overload:Orleans.GrainExtensions.IsPrimaryKeyBasedOnLong
+  isExternal: false
+  name: IsPrimaryKeyBasedOnLong
+  nameWithType: GrainExtensions.IsPrimaryKeyBasedOnLong
+  fullName: Orleans.GrainExtensions.IsPrimaryKeyBasedOnLong
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Orleans.GrainExtensions.GetPrimaryKeyLong*
+  commentId: Overload:Orleans.GrainExtensions.GetPrimaryKeyLong
+  isExternal: false
+  name: GetPrimaryKeyLong
+  nameWithType: GrainExtensions.GetPrimaryKeyLong
+  fullName: Orleans.GrainExtensions.GetPrimaryKeyLong
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
+- uid: Orleans.GrainExtensions.GetPrimaryKey*
+  commentId: Overload:Orleans.GrainExtensions.GetPrimaryKey
+  isExternal: false
+  name: GetPrimaryKey
+  nameWithType: GrainExtensions.GetPrimaryKey
+  fullName: Orleans.GrainExtensions.GetPrimaryKey
+- uid: Guid
+  isExternal: true
+  name: Guid
+  nameWithType: Guid
+  fullName: Guid
+- uid: Orleans.GrainExtensions.GetPrimaryKeyString*
+  commentId: Overload:Orleans.GrainExtensions.GetPrimaryKeyString
+  isExternal: false
+  name: GetPrimaryKeyString
+  nameWithType: GrainExtensions.GetPrimaryKeyString
+  fullName: Orleans.GrainExtensions.GetPrimaryKeyString
+- uid: Orleans.IGrainWithStringKey
+  commentId: T:Orleans.IGrainWithStringKey
+  parent: Orleans
+  isExternal: false
+  name: IGrainWithStringKey
+  nameWithType: IGrainWithStringKey
+  fullName: Orleans.IGrainWithStringKey
+- uid: Orleans.GrainExtensions.InvokeOneWay*
+  commentId: Overload:Orleans.GrainExtensions.InvokeOneWay
+  isExternal: false
+  name: InvokeOneWay
+  nameWithType: GrainExtensions.InvokeOneWay
+  fullName: Orleans.GrainExtensions.InvokeOneWay
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Func{{T},Task}
+  commentId: '!:Func{``0,Task}'
+  definition: Func`2
+  name: Func<T, Task>
+  nameWithType: Func<T, Task>
+  fullName: Func<T, Task>
+  nameWithType.vb: Func(Of T, Task)
+  fullName.vb: Func(Of T, Task)
+  name.vb: Func(Of T, Task)
+  spec.csharp:
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: T
+  isExternal: false
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Func`2
+  isExternal: true
+  name: Func<, >
+  nameWithType: Func<, >
+  fullName: Func<, >
+  nameWithType.vb: Func(Of , )
+  fullName.vb: Func(Of , )
+  name.vb: Func(Of , )
+  spec.csharp:
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )

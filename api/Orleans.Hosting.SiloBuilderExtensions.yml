@@ -1,0 +1,455 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Hosting.SiloBuilderExtensions
+  commentId: T:Orleans.Hosting.SiloBuilderExtensions
+  id: SiloBuilderExtensions
+  parent: Orleans.Hosting
+  children:
+  - Orleans.Hosting.SiloBuilderExtensions.AddPubSubStreams``1(ISiloHostBuilder,System.String)
+  - Orleans.Hosting.SiloBuilderExtensions.AddPubSubStreams``1(ISiloHostBuilder,System.String,Action{Orleans.Configuration.PubSubOptions})
+  - Orleans.Hosting.SiloBuilderExtensions.AddPubSubStreams``1(ISiloHostBuilder,System.String,Action{Orleans.Streams.SiloPubSubStreamConfigurator{``0}})
+  langs:
+  - csharp
+  - vb
+  name: SiloBuilderExtensions
+  nameWithType: SiloBuilderExtensions
+  fullName: Orleans.Hosting.SiloBuilderExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Streaming.GCP/Hosting/SiloBuilderExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SiloBuilderExtensions
+    path: src/Orleans.Streaming.GCP/Hosting/SiloBuilderExtensions.cs
+    startLine: 7
+  assemblies:
+  - Orleans.Streaming.GCP
+  namespace: Orleans.Hosting
+  syntax:
+    content: 'public static class SiloBuilderExtensions : object'
+    content.vb: >-
+      Public Module SiloBuilderExtensions
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Orleans.Hosting.SiloBuilderExtensions.AddPubSubStreams``1(ISiloHostBuilder,System.String)
+  commentId: M:Orleans.Hosting.SiloBuilderExtensions.AddPubSubStreams``1(ISiloHostBuilder,System.String)
+  id: AddPubSubStreams``1(ISiloHostBuilder,System.String)
+  isExtensionMethod: true
+  parent: Orleans.Hosting.SiloBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddPubSubStreams<TDataAdapter>(ISiloHostBuilder, String)
+  nameWithType: SiloBuilderExtensions.AddPubSubStreams<TDataAdapter>(ISiloHostBuilder, String)
+  fullName: Orleans.Hosting.SiloBuilderExtensions.AddPubSubStreams<TDataAdapter>(ISiloHostBuilder, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Streaming.GCP/Hosting/SiloBuilderExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AddPubSubStreams
+    path: src/Orleans.Streaming.GCP/Hosting/SiloBuilderExtensions.cs
+    startLine: 12
+  assemblies:
+  - Orleans.Streaming.GCP
+  namespace: Orleans.Hosting
+  summary: "\nConfigure silo to use PubSub persistent streams.\n"
+  example: []
+  syntax:
+    content: 'public static SiloPubSubStreamConfigurator<TDataAdapter> AddPubSubStreams<TDataAdapter>(this ISiloHostBuilder builder, string name)where TDataAdapter : IPubSubDataAdapter'
+    parameters:
+    - id: builder
+      type: ISiloHostBuilder
+    - id: name
+      type: System.String
+    typeParameters:
+    - id: TDataAdapter
+    return:
+      type: Orleans.Streams.SiloPubSubStreamConfigurator{{TDataAdapter}}
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AddPubSubStreams(Of TDataAdapter As IPubSubDataAdapter)(builder As ISiloHostBuilder, name As String) As SiloPubSubStreamConfigurator(Of TDataAdapter)
+  overload: Orleans.Hosting.SiloBuilderExtensions.AddPubSubStreams*
+  nameWithType.vb: SiloBuilderExtensions.AddPubSubStreams(Of TDataAdapter)(ISiloHostBuilder, String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.Hosting.SiloBuilderExtensions.AddPubSubStreams(Of TDataAdapter)(ISiloHostBuilder, System.String)
+  name.vb: AddPubSubStreams(Of TDataAdapter)(ISiloHostBuilder, String)
+- uid: Orleans.Hosting.SiloBuilderExtensions.AddPubSubStreams``1(ISiloHostBuilder,System.String,Action{Orleans.Configuration.PubSubOptions})
+  commentId: M:Orleans.Hosting.SiloBuilderExtensions.AddPubSubStreams``1(ISiloHostBuilder,System.String,Action{Orleans.Configuration.PubSubOptions})
+  id: AddPubSubStreams``1(ISiloHostBuilder,System.String,Action{Orleans.Configuration.PubSubOptions})
+  isExtensionMethod: true
+  parent: Orleans.Hosting.SiloBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddPubSubStreams<TDataAdapter>(ISiloHostBuilder, String, Action<PubSubOptions>)
+  nameWithType: SiloBuilderExtensions.AddPubSubStreams<TDataAdapter>(ISiloHostBuilder, String, Action<PubSubOptions>)
+  fullName: Orleans.Hosting.SiloBuilderExtensions.AddPubSubStreams<TDataAdapter>(ISiloHostBuilder, System.String, Action<Orleans.Configuration.PubSubOptions>)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Streaming.GCP/Hosting/SiloBuilderExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AddPubSubStreams
+    path: src/Orleans.Streaming.GCP/Hosting/SiloBuilderExtensions.cs
+    startLine: 23
+  assemblies:
+  - Orleans.Streaming.GCP
+  namespace: Orleans.Hosting
+  summary: "\nConfigure silo to use PubSub persistent streams.\n"
+  example: []
+  syntax:
+    content: 'public static ISiloHostBuilder AddPubSubStreams<TDataAdapter>(this ISiloHostBuilder builder, string name, Action<PubSubOptions> configurePubSub)where TDataAdapter : IPubSubDataAdapter'
+    parameters:
+    - id: builder
+      type: ISiloHostBuilder
+    - id: name
+      type: System.String
+    - id: configurePubSub
+      type: Action{Orleans.Configuration.PubSubOptions}
+    typeParameters:
+    - id: TDataAdapter
+    return:
+      type: ISiloHostBuilder
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AddPubSubStreams(Of TDataAdapter As IPubSubDataAdapter)(builder As ISiloHostBuilder, name As String, configurePubSub As Action(Of PubSubOptions)) As ISiloHostBuilder
+  overload: Orleans.Hosting.SiloBuilderExtensions.AddPubSubStreams*
+  nameWithType.vb: SiloBuilderExtensions.AddPubSubStreams(Of TDataAdapter)(ISiloHostBuilder, String, Action(Of PubSubOptions))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.Hosting.SiloBuilderExtensions.AddPubSubStreams(Of TDataAdapter)(ISiloHostBuilder, System.String, Action(Of Orleans.Configuration.PubSubOptions))
+  name.vb: AddPubSubStreams(Of TDataAdapter)(ISiloHostBuilder, String, Action(Of PubSubOptions))
+- uid: Orleans.Hosting.SiloBuilderExtensions.AddPubSubStreams``1(ISiloHostBuilder,System.String,Action{Orleans.Streams.SiloPubSubStreamConfigurator{``0}})
+  commentId: M:Orleans.Hosting.SiloBuilderExtensions.AddPubSubStreams``1(ISiloHostBuilder,System.String,Action{Orleans.Streams.SiloPubSubStreamConfigurator{``0}})
+  id: AddPubSubStreams``1(ISiloHostBuilder,System.String,Action{Orleans.Streams.SiloPubSubStreamConfigurator{``0}})
+  isExtensionMethod: true
+  parent: Orleans.Hosting.SiloBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddPubSubStreams<TDataAdapter>(ISiloHostBuilder, String, Action<SiloPubSubStreamConfigurator<TDataAdapter>>)
+  nameWithType: SiloBuilderExtensions.AddPubSubStreams<TDataAdapter>(ISiloHostBuilder, String, Action<SiloPubSubStreamConfigurator<TDataAdapter>>)
+  fullName: Orleans.Hosting.SiloBuilderExtensions.AddPubSubStreams<TDataAdapter>(ISiloHostBuilder, System.String, Action<Orleans.Streams.SiloPubSubStreamConfigurator<TDataAdapter>>)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Streaming.GCP/Hosting/SiloBuilderExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AddPubSubStreams
+    path: src/Orleans.Streaming.GCP/Hosting/SiloBuilderExtensions.cs
+    startLine: 36
+  assemblies:
+  - Orleans.Streaming.GCP
+  namespace: Orleans.Hosting
+  summary: "\nConfigure silo to use PubSub persistent streams.\n"
+  example: []
+  syntax:
+    content: 'public static ISiloHostBuilder AddPubSubStreams<TDataAdapter>(this ISiloHostBuilder builder, string name, Action<SiloPubSubStreamConfigurator<TDataAdapter>> configure)where TDataAdapter : IPubSubDataAdapter'
+    parameters:
+    - id: builder
+      type: ISiloHostBuilder
+    - id: name
+      type: System.String
+    - id: configure
+      type: Action{Orleans.Streams.SiloPubSubStreamConfigurator{{TDataAdapter}}}
+    typeParameters:
+    - id: TDataAdapter
+    return:
+      type: ISiloHostBuilder
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AddPubSubStreams(Of TDataAdapter As IPubSubDataAdapter)(builder As ISiloHostBuilder, name As String, configure As Action(Of SiloPubSubStreamConfigurator(Of TDataAdapter))) As ISiloHostBuilder
+  overload: Orleans.Hosting.SiloBuilderExtensions.AddPubSubStreams*
+  nameWithType.vb: SiloBuilderExtensions.AddPubSubStreams(Of TDataAdapter)(ISiloHostBuilder, String, Action(Of SiloPubSubStreamConfigurator(Of TDataAdapter)))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Orleans.Hosting.SiloBuilderExtensions.AddPubSubStreams(Of TDataAdapter)(ISiloHostBuilder, System.String, Action(Of Orleans.Streams.SiloPubSubStreamConfigurator(Of TDataAdapter)))
+  name.vb: AddPubSubStreams(Of TDataAdapter)(ISiloHostBuilder, String, Action(Of SiloPubSubStreamConfigurator(Of TDataAdapter)))
+references:
+- uid: Orleans.Hosting
+  commentId: N:Orleans.Hosting
+  isExternal: false
+  name: Orleans.Hosting
+  nameWithType: Orleans.Hosting
+  fullName: Orleans.Hosting
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Hosting.SiloBuilderExtensions.AddPubSubStreams*
+  commentId: Overload:Orleans.Hosting.SiloBuilderExtensions.AddPubSubStreams
+  isExternal: false
+  name: AddPubSubStreams
+  nameWithType: SiloBuilderExtensions.AddPubSubStreams
+  fullName: Orleans.Hosting.SiloBuilderExtensions.AddPubSubStreams
+- uid: ISiloHostBuilder
+  isExternal: true
+  name: ISiloHostBuilder
+  nameWithType: ISiloHostBuilder
+  fullName: ISiloHostBuilder
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Orleans.Streams.SiloPubSubStreamConfigurator{{TDataAdapter}}
+  commentId: T:Orleans.Streams.SiloPubSubStreamConfigurator{``0}
+  parent: Orleans.Streams
+  definition: Orleans.Streams.SiloPubSubStreamConfigurator`1
+  name: SiloPubSubStreamConfigurator<TDataAdapter>
+  nameWithType: SiloPubSubStreamConfigurator<TDataAdapter>
+  fullName: Orleans.Streams.SiloPubSubStreamConfigurator<TDataAdapter>
+  nameWithType.vb: SiloPubSubStreamConfigurator(Of TDataAdapter)
+  fullName.vb: Orleans.Streams.SiloPubSubStreamConfigurator(Of TDataAdapter)
+  name.vb: SiloPubSubStreamConfigurator(Of TDataAdapter)
+  spec.csharp:
+  - uid: Orleans.Streams.SiloPubSubStreamConfigurator`1
+    name: SiloPubSubStreamConfigurator
+    nameWithType: SiloPubSubStreamConfigurator
+    fullName: Orleans.Streams.SiloPubSubStreamConfigurator
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDataAdapter
+    nameWithType: TDataAdapter
+    fullName: TDataAdapter
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Orleans.Streams.SiloPubSubStreamConfigurator`1
+    name: SiloPubSubStreamConfigurator
+    nameWithType: SiloPubSubStreamConfigurator
+    fullName: Orleans.Streams.SiloPubSubStreamConfigurator
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDataAdapter
+    nameWithType: TDataAdapter
+    fullName: TDataAdapter
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Streams.SiloPubSubStreamConfigurator`1
+  commentId: T:Orleans.Streams.SiloPubSubStreamConfigurator`1
+  parent: Orleans.Streams
+  isExternal: false
+  name: SiloPubSubStreamConfigurator<TDataAdapter>
+  nameWithType: SiloPubSubStreamConfigurator<TDataAdapter>
+  fullName: Orleans.Streams.SiloPubSubStreamConfigurator<TDataAdapter>
+  nameWithType.vb: SiloPubSubStreamConfigurator(Of TDataAdapter)
+  fullName.vb: Orleans.Streams.SiloPubSubStreamConfigurator(Of TDataAdapter)
+  name.vb: SiloPubSubStreamConfigurator(Of TDataAdapter)
+  spec.csharp:
+  - uid: Orleans.Streams.SiloPubSubStreamConfigurator`1
+    name: SiloPubSubStreamConfigurator
+    nameWithType: SiloPubSubStreamConfigurator
+    fullName: Orleans.Streams.SiloPubSubStreamConfigurator
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDataAdapter
+    nameWithType: TDataAdapter
+    fullName: TDataAdapter
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Orleans.Streams.SiloPubSubStreamConfigurator`1
+    name: SiloPubSubStreamConfigurator
+    nameWithType: SiloPubSubStreamConfigurator
+    fullName: Orleans.Streams.SiloPubSubStreamConfigurator
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDataAdapter
+    nameWithType: TDataAdapter
+    fullName: TDataAdapter
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Streams
+  commentId: N:Orleans.Streams
+  isExternal: false
+  name: Orleans.Streams
+  nameWithType: Orleans.Streams
+  fullName: Orleans.Streams
+- uid: Action{Orleans.Configuration.PubSubOptions}
+  commentId: '!:Action{Orleans.Configuration.PubSubOptions}'
+  definition: Action`1
+  name: Action<PubSubOptions>
+  nameWithType: Action<PubSubOptions>
+  fullName: Action<Orleans.Configuration.PubSubOptions>
+  nameWithType.vb: Action(Of PubSubOptions)
+  fullName.vb: Action(Of Orleans.Configuration.PubSubOptions)
+  name.vb: Action(Of PubSubOptions)
+  spec.csharp:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Orleans.Configuration.PubSubOptions
+    name: PubSubOptions
+    nameWithType: PubSubOptions
+    fullName: Orleans.Configuration.PubSubOptions
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Orleans.Configuration.PubSubOptions
+    name: PubSubOptions
+    nameWithType: PubSubOptions
+    fullName: Orleans.Configuration.PubSubOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Action`1
+  isExternal: true
+  name: Action<>
+  nameWithType: Action<>
+  fullName: Action<>
+  nameWithType.vb: Action(Of )
+  fullName.vb: Action(Of )
+  name.vb: Action(Of )
+  spec.csharp:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Action{Orleans.Streams.SiloPubSubStreamConfigurator{{TDataAdapter}}}
+  commentId: '!:Action{Orleans.Streams.SiloPubSubStreamConfigurator{``0}}'
+  definition: Action`1
+  name: Action<SiloPubSubStreamConfigurator<TDataAdapter>>
+  nameWithType: Action<SiloPubSubStreamConfigurator<TDataAdapter>>
+  fullName: Action<Orleans.Streams.SiloPubSubStreamConfigurator<TDataAdapter>>
+  nameWithType.vb: Action(Of SiloPubSubStreamConfigurator(Of TDataAdapter))
+  fullName.vb: Action(Of Orleans.Streams.SiloPubSubStreamConfigurator(Of TDataAdapter))
+  name.vb: Action(Of SiloPubSubStreamConfigurator(Of TDataAdapter))
+  spec.csharp:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Orleans.Streams.SiloPubSubStreamConfigurator`1
+    name: SiloPubSubStreamConfigurator
+    nameWithType: SiloPubSubStreamConfigurator
+    fullName: Orleans.Streams.SiloPubSubStreamConfigurator
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDataAdapter
+    nameWithType: TDataAdapter
+    fullName: TDataAdapter
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Orleans.Streams.SiloPubSubStreamConfigurator`1
+    name: SiloPubSubStreamConfigurator
+    nameWithType: SiloPubSubStreamConfigurator
+    fullName: Orleans.Streams.SiloPubSubStreamConfigurator
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDataAdapter
+    nameWithType: TDataAdapter
+    fullName: TDataAdapter
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )

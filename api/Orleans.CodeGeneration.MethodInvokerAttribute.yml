@@ -1,0 +1,270 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.CodeGeneration.MethodInvokerAttribute
+  commentId: T:Orleans.CodeGeneration.MethodInvokerAttribute
+  id: MethodInvokerAttribute
+  parent: Orleans.CodeGeneration
+  children:
+  - Orleans.CodeGeneration.MethodInvokerAttribute.#ctor(Type,System.Int32)
+  - Orleans.CodeGeneration.MethodInvokerAttribute.InterfaceId
+  langs:
+  - csharp
+  - vb
+  name: MethodInvokerAttribute
+  nameWithType: MethodInvokerAttribute
+  fullName: Orleans.CodeGeneration.MethodInvokerAttribute
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/CodeGeneration/ActivationAttribute.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: MethodInvokerAttribute
+    path: src/Orleans.Core.Abstractions/CodeGeneration/ActivationAttribute.cs
+    startLine: 29
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.CodeGeneration
+  summary: "\nIdentifies a class that knows how to map the messages targeting a specifies interface ID to a grain (CLR) interface.\n"
+  example: []
+  syntax:
+    content: 'public sealed class MethodInvokerAttribute : GrainSupportClassAttribute'
+    content.vb: >-
+      Public NotInheritable Class MethodInvokerAttribute
+
+          Inherits GrainSupportClassAttribute
+  inheritance:
+  - System.Object
+  - Orleans.CodeGeneration.GrainSupportClassAttribute
+  inheritedMembers:
+  - Orleans.CodeGeneration.GrainSupportClassAttribute.TargetType
+  extensionMethods:
+  - Orleans.CodeGeneration.MethodInvokerAttribute.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Orleans.CodeGeneration.MethodInvokerAttribute.#ctor(Type,System.Int32)
+  commentId: M:Orleans.CodeGeneration.MethodInvokerAttribute.#ctor(Type,System.Int32)
+  id: '#ctor(Type,System.Int32)'
+  parent: Orleans.CodeGeneration.MethodInvokerAttribute
+  langs:
+  - csharp
+  - vb
+  name: MethodInvokerAttribute(Type, Int32)
+  nameWithType: MethodInvokerAttribute.MethodInvokerAttribute(Type, Int32)
+  fullName: Orleans.CodeGeneration.MethodInvokerAttribute.MethodInvokerAttribute(Type, System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/CodeGeneration/ActivationAttribute.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Core.Abstractions/CodeGeneration/ActivationAttribute.cs
+    startLine: 35
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.CodeGeneration
+  summary: Initializes a new instance of the <xref href="Orleans.CodeGeneration.MethodInvokerAttribute" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public MethodInvokerAttribute(Type targetType, int interfaceId)
+    parameters:
+    - id: targetType
+      type: Type
+      description: The grain implementation type
+    - id: interfaceId
+      type: System.Int32
+      description: The ID assigned to the interface by Orleans
+    content.vb: Public Sub New(targetType As Type, interfaceId As Integer)
+  overload: Orleans.CodeGeneration.MethodInvokerAttribute.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.CodeGeneration.MethodInvokerAttribute.InterfaceId
+  commentId: P:Orleans.CodeGeneration.MethodInvokerAttribute.InterfaceId
+  id: InterfaceId
+  parent: Orleans.CodeGeneration.MethodInvokerAttribute
+  langs:
+  - csharp
+  - vb
+  name: InterfaceId
+  nameWithType: MethodInvokerAttribute.InterfaceId
+  fullName: Orleans.CodeGeneration.MethodInvokerAttribute.InterfaceId
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/CodeGeneration/ActivationAttribute.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: InterfaceId
+    path: src/Orleans.Core.Abstractions/CodeGeneration/ActivationAttribute.cs
+    startLine: 42
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.CodeGeneration
+  summary: Gets the ID assigned to the interface by Orleans
+  example: []
+  syntax:
+    content: public int InterfaceId { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property InterfaceId As Integer
+  overload: Orleans.CodeGeneration.MethodInvokerAttribute.InterfaceId*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: Orleans.CodeGeneration
+  commentId: N:Orleans.CodeGeneration
+  isExternal: false
+  name: Orleans.CodeGeneration
+  nameWithType: Orleans.CodeGeneration
+  fullName: Orleans.CodeGeneration
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.CodeGeneration.GrainSupportClassAttribute
+  commentId: T:Orleans.CodeGeneration.GrainSupportClassAttribute
+  parent: Orleans.CodeGeneration
+  isExternal: false
+  name: GrainSupportClassAttribute
+  nameWithType: GrainSupportClassAttribute
+  fullName: Orleans.CodeGeneration.GrainSupportClassAttribute
+- uid: Orleans.CodeGeneration.GrainSupportClassAttribute.TargetType
+  commentId: P:Orleans.CodeGeneration.GrainSupportClassAttribute.TargetType
+  parent: Orleans.CodeGeneration.GrainSupportClassAttribute
+  isExternal: false
+  name: TargetType
+  nameWithType: GrainSupportClassAttribute.TargetType
+  fullName: Orleans.CodeGeneration.GrainSupportClassAttribute.TargetType
+- uid: Orleans.CodeGeneration.MethodInvokerAttribute.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<MethodInvokerAttribute>()
+  nameWithType: ImmutableExt.AsImmutable<MethodInvokerAttribute>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.CodeGeneration.MethodInvokerAttribute>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of MethodInvokerAttribute)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.CodeGeneration.MethodInvokerAttribute)()
+  name.vb: AsImmutable(Of MethodInvokerAttribute)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<MethodInvokerAttribute>
+    nameWithType: ImmutableExt.AsImmutable<MethodInvokerAttribute>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.CodeGeneration.MethodInvokerAttribute>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of MethodInvokerAttribute)
+    nameWithType: ImmutableExt.AsImmutable(Of MethodInvokerAttribute)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.CodeGeneration.MethodInvokerAttribute)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.CodeGeneration.MethodInvokerAttribute
+  commentId: T:Orleans.CodeGeneration.MethodInvokerAttribute
+  isExternal: false
+  name: MethodInvokerAttribute
+  nameWithType: MethodInvokerAttribute
+  fullName: Orleans.CodeGeneration.MethodInvokerAttribute
+- uid: Orleans.CodeGeneration.MethodInvokerAttribute.#ctor*
+  commentId: Overload:Orleans.CodeGeneration.MethodInvokerAttribute.#ctor
+  isExternal: false
+  name: MethodInvokerAttribute
+  nameWithType: MethodInvokerAttribute.MethodInvokerAttribute
+  fullName: Orleans.CodeGeneration.MethodInvokerAttribute.MethodInvokerAttribute
+- uid: Type
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: Type
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Orleans.CodeGeneration.MethodInvokerAttribute.InterfaceId*
+  commentId: Overload:Orleans.CodeGeneration.MethodInvokerAttribute.InterfaceId
+  isExternal: false
+  name: InterfaceId
+  nameWithType: MethodInvokerAttribute.InterfaceId
+  fullName: Orleans.CodeGeneration.MethodInvokerAttribute.InterfaceId

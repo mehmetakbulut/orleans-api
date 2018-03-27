@@ -1,0 +1,99 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.EventSourcing.LogStorage
+  commentId: N:Orleans.EventSourcing.LogStorage
+  id: Orleans.EventSourcing.LogStorage
+  children:
+  - Orleans.EventSourcing.LogStorage.LogConsistencyProvider
+  - Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1
+  - Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag`1
+  langs:
+  - csharp
+  - vb
+  name: Orleans.EventSourcing.LogStorage
+  nameWithType: Orleans.EventSourcing.LogStorage
+  fullName: Orleans.EventSourcing.LogStorage
+  type: Namespace
+  assemblies:
+  - Orleans.EventSourcing
+references:
+- uid: Orleans.EventSourcing.LogStorage.LogConsistencyProvider
+  commentId: T:Orleans.EventSourcing.LogStorage.LogConsistencyProvider
+  isExternal: false
+  name: LogConsistencyProvider
+  nameWithType: LogConsistencyProvider
+  fullName: Orleans.EventSourcing.LogStorage.LogConsistencyProvider
+- uid: Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag`1
+  commentId: T:Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag`1
+  isExternal: false
+  name: LogStateWithMetaDataAndETag<TEntry>
+  nameWithType: LogStateWithMetaDataAndETag<TEntry>
+  fullName: Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag<TEntry>
+  nameWithType.vb: LogStateWithMetaDataAndETag(Of TEntry)
+  fullName.vb: Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag(Of TEntry)
+  name.vb: LogStateWithMetaDataAndETag(Of TEntry)
+  spec.csharp:
+  - uid: Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag`1
+    name: LogStateWithMetaDataAndETag
+    nameWithType: LogStateWithMetaDataAndETag
+    fullName: Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEntry
+    nameWithType: TEntry
+    fullName: TEntry
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag`1
+    name: LogStateWithMetaDataAndETag
+    nameWithType: LogStateWithMetaDataAndETag
+    fullName: Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEntry
+    nameWithType: TEntry
+    fullName: TEntry
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1
+  commentId: T:Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1
+  isExternal: false
+  name: LogStateWithMetaData<TEntry>
+  nameWithType: LogStateWithMetaData<TEntry>
+  fullName: Orleans.EventSourcing.LogStorage.LogStateWithMetaData<TEntry>
+  nameWithType.vb: LogStateWithMetaData(Of TEntry)
+  fullName.vb: Orleans.EventSourcing.LogStorage.LogStateWithMetaData(Of TEntry)
+  name.vb: LogStateWithMetaData(Of TEntry)
+  spec.csharp:
+  - uid: Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1
+    name: LogStateWithMetaData
+    nameWithType: LogStateWithMetaData
+    fullName: Orleans.EventSourcing.LogStorage.LogStateWithMetaData
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEntry
+    nameWithType: TEntry
+    fullName: TEntry
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Orleans.EventSourcing.LogStorage.LogStateWithMetaData`1
+    name: LogStateWithMetaData
+    nameWithType: LogStateWithMetaData
+    fullName: Orleans.EventSourcing.LogStorage.LogStateWithMetaData
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEntry
+    nameWithType: TEntry
+    fullName: TEntry
+  - name: )
+    nameWithType: )
+    fullName: )

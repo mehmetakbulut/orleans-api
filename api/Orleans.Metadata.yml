@@ -1,0 +1,89 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Metadata
+  commentId: N:Orleans.Metadata
+  id: Orleans.Metadata
+  children:
+  - Orleans.Metadata.FeaturePopulatorAttribute
+  - Orleans.Metadata.GrainClassFeature
+  - Orleans.Metadata.GrainClassMetadata
+  - Orleans.Metadata.GrainInterfaceFeature
+  - Orleans.Metadata.GrainInterfaceMetadata
+  - Orleans.Metadata.IFeaturePopulator`1
+  langs:
+  - csharp
+  - vb
+  name: Orleans.Metadata
+  nameWithType: Orleans.Metadata
+  fullName: Orleans.Metadata
+  type: Namespace
+  assemblies:
+  - Orleans.Core.Abstractions
+references:
+- uid: Orleans.Metadata.FeaturePopulatorAttribute
+  commentId: T:Orleans.Metadata.FeaturePopulatorAttribute
+  isExternal: false
+  name: FeaturePopulatorAttribute
+  nameWithType: FeaturePopulatorAttribute
+  fullName: Orleans.Metadata.FeaturePopulatorAttribute
+- uid: Orleans.Metadata.GrainClassFeature
+  commentId: T:Orleans.Metadata.GrainClassFeature
+  isExternal: false
+  name: GrainClassFeature
+  nameWithType: GrainClassFeature
+  fullName: Orleans.Metadata.GrainClassFeature
+- uid: Orleans.Metadata.GrainClassMetadata
+  commentId: T:Orleans.Metadata.GrainClassMetadata
+  isExternal: false
+  name: GrainClassMetadata
+  nameWithType: GrainClassMetadata
+  fullName: Orleans.Metadata.GrainClassMetadata
+- uid: Orleans.Metadata.GrainInterfaceFeature
+  commentId: T:Orleans.Metadata.GrainInterfaceFeature
+  isExternal: false
+  name: GrainInterfaceFeature
+  nameWithType: GrainInterfaceFeature
+  fullName: Orleans.Metadata.GrainInterfaceFeature
+- uid: Orleans.Metadata.GrainInterfaceMetadata
+  commentId: T:Orleans.Metadata.GrainInterfaceMetadata
+  isExternal: false
+  name: GrainInterfaceMetadata
+  nameWithType: GrainInterfaceMetadata
+  fullName: Orleans.Metadata.GrainInterfaceMetadata
+- uid: Orleans.Metadata.IFeaturePopulator`1
+  commentId: T:Orleans.Metadata.IFeaturePopulator`1
+  isExternal: false
+  name: IFeaturePopulator<TFeature>
+  nameWithType: IFeaturePopulator<TFeature>
+  fullName: Orleans.Metadata.IFeaturePopulator<TFeature>
+  nameWithType.vb: IFeaturePopulator(Of TFeature)
+  fullName.vb: Orleans.Metadata.IFeaturePopulator(Of TFeature)
+  name.vb: IFeaturePopulator(Of TFeature)
+  spec.csharp:
+  - uid: Orleans.Metadata.IFeaturePopulator`1
+    name: IFeaturePopulator
+    nameWithType: IFeaturePopulator
+    fullName: Orleans.Metadata.IFeaturePopulator
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TFeature
+    nameWithType: TFeature
+    fullName: TFeature
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Orleans.Metadata.IFeaturePopulator`1
+    name: IFeaturePopulator
+    nameWithType: IFeaturePopulator
+    fullName: Orleans.Metadata.IFeaturePopulator
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TFeature
+    nameWithType: TFeature
+    fullName: TFeature
+  - name: )
+    nameWithType: )
+    fullName: )

@@ -1,0 +1,893 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer
+  commentId: T:Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer
+  id: PubSubBatchContainer
+  parent: Orleans.Providers.GCP.Streams.PubSub
+  children:
+  - Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.#ctor(Guid,String,List{System.Object},Dictionary{System.String,System.Object})
+  - Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.#ctor(Guid,String,List{System.Object},Dictionary{System.String,System.Object},EventSequenceTokenV2)
+  - Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.GetEvents``1
+  - Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.ImportRequestContext
+  - Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.SequenceToken
+  - Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.ShouldDeliver(Orleans.Streams.IStreamIdentity,System.Object,Orleans.Streams.StreamFilterPredicate)
+  - Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.StreamGuid
+  - Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.StreamNamespace
+  - Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.ToString
+  langs:
+  - csharp
+  - vb
+  name: PubSubBatchContainer
+  nameWithType: PubSubBatchContainer
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubBatchContainer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: PubSubBatchContainer
+    path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubBatchContainer.cs
+    startLine: 10
+  assemblies:
+  - Orleans.Streaming.GCP
+  namespace: Orleans.Providers.GCP.Streams.PubSub
+  syntax:
+    content: 'public class PubSubBatchContainer : IBatchContainer'
+    content.vb: >-
+      Public Class PubSubBatchContainer
+
+          Inherits IBatchContainer
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.StreamGuid
+  commentId: P:Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.StreamGuid
+  id: StreamGuid
+  parent: Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer
+  langs:
+  - csharp
+  - vb
+  name: StreamGuid
+  nameWithType: PubSubBatchContainer.StreamGuid
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.StreamGuid
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubBatchContainer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: StreamGuid
+    path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubBatchContainer.cs
+    startLine: 22
+  assemblies:
+  - Orleans.Streaming.GCP
+  namespace: Orleans.Providers.GCP.Streams.PubSub
+  syntax:
+    content: public Guid StreamGuid { get; }
+    parameters: []
+    return:
+      type: Guid
+    content.vb: Public ReadOnly Property StreamGuid As Guid
+  overload: Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.StreamGuid*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.StreamNamespace
+  commentId: P:Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.StreamNamespace
+  id: StreamNamespace
+  parent: Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer
+  langs:
+  - csharp
+  - vb
+  name: StreamNamespace
+  nameWithType: PubSubBatchContainer.StreamNamespace
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.StreamNamespace
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubBatchContainer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: StreamNamespace
+    path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubBatchContainer.cs
+    startLine: 24
+  assemblies:
+  - Orleans.Streaming.GCP
+  namespace: Orleans.Providers.GCP.Streams.PubSub
+  syntax:
+    content: public String StreamNamespace { get; }
+    parameters: []
+    return:
+      type: String
+    content.vb: Public ReadOnly Property StreamNamespace As String
+  overload: Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.StreamNamespace*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.SequenceToken
+  commentId: P:Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.SequenceToken
+  id: SequenceToken
+  parent: Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer
+  langs:
+  - csharp
+  - vb
+  name: SequenceToken
+  nameWithType: PubSubBatchContainer.SequenceToken
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.SequenceToken
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubBatchContainer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SequenceToken
+    path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubBatchContainer.cs
+    startLine: 26
+  assemblies:
+  - Orleans.Streaming.GCP
+  namespace: Orleans.Providers.GCP.Streams.PubSub
+  syntax:
+    content: public StreamSequenceToken SequenceToken { get; }
+    parameters: []
+    return:
+      type: Orleans.Streams.StreamSequenceToken
+    content.vb: Public ReadOnly Property SequenceToken As StreamSequenceToken
+  overload: Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.SequenceToken*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.#ctor(Guid,String,List{System.Object},Dictionary{System.String,System.Object},EventSequenceTokenV2)
+  commentId: M:Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.#ctor(Guid,String,List{System.Object},Dictionary{System.String,System.Object},EventSequenceTokenV2)
+  id: '#ctor(Guid,String,List{System.Object},Dictionary{System.String,System.Object},EventSequenceTokenV2)'
+  parent: Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer
+  langs:
+  - csharp
+  - vb
+  name: PubSubBatchContainer(Guid, String, List<Object>, Dictionary<String, Object>, EventSequenceTokenV2)
+  nameWithType: PubSubBatchContainer.PubSubBatchContainer(Guid, String, List<Object>, Dictionary<String, Object>, EventSequenceTokenV2)
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.PubSubBatchContainer(Guid, String, List<System.Object>, Dictionary<System.String, System.Object>, EventSequenceTokenV2)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubBatchContainer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubBatchContainer.cs
+    startLine: 33
+  assemblies:
+  - Orleans.Streaming.GCP
+  namespace: Orleans.Providers.GCP.Streams.PubSub
+  syntax:
+    content: public PubSubBatchContainer(Guid streamGuid, String streamNamespace, List<object> events, Dictionary<string, object> requestContext, EventSequenceTokenV2 sequenceToken)
+    parameters:
+    - id: streamGuid
+      type: Guid
+    - id: streamNamespace
+      type: String
+    - id: events
+      type: List{System.Object}
+    - id: requestContext
+      type: Dictionary{System.String,System.Object}
+    - id: sequenceToken
+      type: EventSequenceTokenV2
+    content.vb: Public Sub New(streamGuid As Guid, streamNamespace As String, events As List(Of Object), requestContext As Dictionary(Of String, Object), sequenceToken As EventSequenceTokenV2)
+  overload: Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.#ctor*
+  nameWithType.vb: PubSubBatchContainer.PubSubBatchContainer(Guid, String, List(Of Object), Dictionary(Of String, Object), EventSequenceTokenV2)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.PubSubBatchContainer(Guid, String, List(Of System.Object), Dictionary(Of System.String, System.Object), EventSequenceTokenV2)
+  name.vb: PubSubBatchContainer(Guid, String, List(Of Object), Dictionary(Of String, Object), EventSequenceTokenV2)
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.#ctor(Guid,String,List{System.Object},Dictionary{System.String,System.Object})
+  commentId: M:Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.#ctor(Guid,String,List{System.Object},Dictionary{System.String,System.Object})
+  id: '#ctor(Guid,String,List{System.Object},Dictionary{System.String,System.Object})'
+  parent: Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer
+  langs:
+  - csharp
+  - vb
+  name: PubSubBatchContainer(Guid, String, List<Object>, Dictionary<String, Object>)
+  nameWithType: PubSubBatchContainer.PubSubBatchContainer(Guid, String, List<Object>, Dictionary<String, Object>)
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.PubSubBatchContainer(Guid, String, List<System.Object>, Dictionary<System.String, System.Object>)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubBatchContainer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubBatchContainer.cs
+    startLine: 45
+  assemblies:
+  - Orleans.Streaming.GCP
+  namespace: Orleans.Providers.GCP.Streams.PubSub
+  syntax:
+    content: public PubSubBatchContainer(Guid streamGuid, String streamNamespace, List<object> events, Dictionary<string, object> requestContext)
+    parameters:
+    - id: streamGuid
+      type: Guid
+    - id: streamNamespace
+      type: String
+    - id: events
+      type: List{System.Object}
+    - id: requestContext
+      type: Dictionary{System.String,System.Object}
+    content.vb: Public Sub New(streamGuid As Guid, streamNamespace As String, events As List(Of Object), requestContext As Dictionary(Of String, Object))
+  overload: Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.#ctor*
+  nameWithType.vb: PubSubBatchContainer.PubSubBatchContainer(Guid, String, List(Of Object), Dictionary(Of String, Object))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.PubSubBatchContainer(Guid, String, List(Of System.Object), Dictionary(Of System.String, System.Object))
+  name.vb: PubSubBatchContainer(Guid, String, List(Of Object), Dictionary(Of String, Object))
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.GetEvents``1
+  commentId: M:Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.GetEvents``1
+  id: GetEvents``1
+  parent: Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer
+  langs:
+  - csharp
+  - vb
+  name: GetEvents<T>()
+  nameWithType: PubSubBatchContainer.GetEvents<T>()
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.GetEvents<T>()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubBatchContainer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetEvents
+    path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubBatchContainer.cs
+    startLine: 54
+  assemblies:
+  - Orleans.Streaming.GCP
+  namespace: Orleans.Providers.GCP.Streams.PubSub
+  syntax:
+    content: public IEnumerable<Tuple<T, StreamSequenceToken>> GetEvents<T>()
+    typeParameters:
+    - id: T
+    return:
+      type: IEnumerable{Tuple{{T},Orleans.Streams.StreamSequenceToken}}
+    content.vb: Public Function GetEvents(Of T) As IEnumerable(Of Tuple(Of T, StreamSequenceToken))
+  overload: Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.GetEvents*
+  nameWithType.vb: PubSubBatchContainer.GetEvents(Of T)()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.GetEvents(Of T)()
+  name.vb: GetEvents(Of T)()
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.ShouldDeliver(Orleans.Streams.IStreamIdentity,System.Object,Orleans.Streams.StreamFilterPredicate)
+  commentId: M:Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.ShouldDeliver(Orleans.Streams.IStreamIdentity,System.Object,Orleans.Streams.StreamFilterPredicate)
+  id: ShouldDeliver(Orleans.Streams.IStreamIdentity,System.Object,Orleans.Streams.StreamFilterPredicate)
+  parent: Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer
+  langs:
+  - csharp
+  - vb
+  name: ShouldDeliver(IStreamIdentity, Object, StreamFilterPredicate)
+  nameWithType: PubSubBatchContainer.ShouldDeliver(IStreamIdentity, Object, StreamFilterPredicate)
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.ShouldDeliver(Orleans.Streams.IStreamIdentity, System.Object, Orleans.Streams.StreamFilterPredicate)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubBatchContainer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ShouldDeliver
+    path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubBatchContainer.cs
+    startLine: 59
+  assemblies:
+  - Orleans.Streaming.GCP
+  namespace: Orleans.Providers.GCP.Streams.PubSub
+  syntax:
+    content: public bool ShouldDeliver(IStreamIdentity stream, object filterData, StreamFilterPredicate shouldReceiveFunc)
+    parameters:
+    - id: stream
+      type: Orleans.Streams.IStreamIdentity
+    - id: filterData
+      type: System.Object
+    - id: shouldReceiveFunc
+      type: Orleans.Streams.StreamFilterPredicate
+    return:
+      type: System.Boolean
+    content.vb: Public Function ShouldDeliver(stream As IStreamIdentity, filterData As Object, shouldReceiveFunc As StreamFilterPredicate) As Boolean
+  overload: Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.ShouldDeliver*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.ImportRequestContext
+  commentId: M:Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.ImportRequestContext
+  id: ImportRequestContext
+  parent: Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer
+  langs:
+  - csharp
+  - vb
+  name: ImportRequestContext()
+  nameWithType: PubSubBatchContainer.ImportRequestContext()
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.ImportRequestContext()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubBatchContainer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ImportRequestContext
+    path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubBatchContainer.cs
+    startLine: 69
+  assemblies:
+  - Orleans.Streaming.GCP
+  namespace: Orleans.Providers.GCP.Streams.PubSub
+  syntax:
+    content: public bool ImportRequestContext()
+    return:
+      type: System.Boolean
+    content.vb: Public Function ImportRequestContext As Boolean
+  overload: Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.ImportRequestContext*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.ToString
+  commentId: M:Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.ToString
+  id: ToString
+  parent: Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: PubSubBatchContainer.ToString()
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubBatchContainer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ToString
+    path: src/Orleans.Streaming.GCP/Providers/Streams/PubSub/PubSubBatchContainer.cs
+    startLine: 79
+  assemblies:
+  - Orleans.Streaming.GCP
+  namespace: Orleans.Providers.GCP.Streams.PubSub
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overload: Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: Orleans.Providers.GCP.Streams.PubSub
+  commentId: N:Orleans.Providers.GCP.Streams.PubSub
+  isExternal: false
+  name: Orleans.Providers.GCP.Streams.PubSub
+  nameWithType: Orleans.Providers.GCP.Streams.PubSub
+  fullName: Orleans.Providers.GCP.Streams.PubSub
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<PubSubBatchContainer>()
+  nameWithType: ImmutableExt.AsImmutable<PubSubBatchContainer>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of PubSubBatchContainer)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer)()
+  name.vb: AsImmutable(Of PubSubBatchContainer)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<PubSubBatchContainer>
+    nameWithType: ImmutableExt.AsImmutable<PubSubBatchContainer>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of PubSubBatchContainer)
+    nameWithType: ImmutableExt.AsImmutable(Of PubSubBatchContainer)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.StreamGuid*
+  commentId: Overload:Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.StreamGuid
+  isExternal: false
+  name: StreamGuid
+  nameWithType: PubSubBatchContainer.StreamGuid
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.StreamGuid
+- uid: Guid
+  isExternal: true
+  name: Guid
+  nameWithType: Guid
+  fullName: Guid
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.StreamNamespace*
+  commentId: Overload:Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.StreamNamespace
+  isExternal: false
+  name: StreamNamespace
+  nameWithType: PubSubBatchContainer.StreamNamespace
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.StreamNamespace
+- uid: String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: String
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.SequenceToken*
+  commentId: Overload:Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.SequenceToken
+  isExternal: false
+  name: SequenceToken
+  nameWithType: PubSubBatchContainer.SequenceToken
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.SequenceToken
+- uid: Orleans.Streams.StreamSequenceToken
+  commentId: T:Orleans.Streams.StreamSequenceToken
+  parent: Orleans.Streams
+  isExternal: false
+  name: StreamSequenceToken
+  nameWithType: StreamSequenceToken
+  fullName: Orleans.Streams.StreamSequenceToken
+- uid: Orleans.Streams
+  commentId: N:Orleans.Streams
+  isExternal: false
+  name: Orleans.Streams
+  nameWithType: Orleans.Streams
+  fullName: Orleans.Streams
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.#ctor*
+  commentId: Overload:Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.#ctor
+  isExternal: false
+  name: PubSubBatchContainer
+  nameWithType: PubSubBatchContainer.PubSubBatchContainer
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.PubSubBatchContainer
+- uid: List{System.Object}
+  commentId: '!:List{System.Object}'
+  definition: List`1
+  name: List<Object>
+  nameWithType: List<Object>
+  fullName: List<System.Object>
+  nameWithType.vb: List(Of Object)
+  fullName.vb: List(Of System.Object)
+  name.vb: List(Of Object)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Dictionary{System.String,System.Object}
+  commentId: '!:Dictionary{System.String,System.Object}'
+  definition: Dictionary`2
+  name: Dictionary<String, Object>
+  nameWithType: Dictionary<String, Object>
+  fullName: Dictionary<System.String, System.Object>
+  nameWithType.vb: Dictionary(Of String, Object)
+  fullName.vb: Dictionary(Of System.String, System.Object)
+  name.vb: Dictionary(Of String, Object)
+  spec.csharp:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: EventSequenceTokenV2
+  commentId: '!:EventSequenceTokenV2'
+  isExternal: true
+  name: EventSequenceTokenV2
+  nameWithType: EventSequenceTokenV2
+  fullName: EventSequenceTokenV2
+- uid: List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Dictionary`2
+  isExternal: true
+  name: Dictionary<, >
+  nameWithType: Dictionary<, >
+  fullName: Dictionary<, >
+  nameWithType.vb: Dictionary(Of , )
+  fullName.vb: Dictionary(Of , )
+  name.vb: Dictionary(Of , )
+  spec.csharp:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.GetEvents*
+  commentId: Overload:Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.GetEvents
+  isExternal: false
+  name: GetEvents
+  nameWithType: PubSubBatchContainer.GetEvents
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.GetEvents
+- uid: IEnumerable{Tuple{{T},Orleans.Streams.StreamSequenceToken}}
+  commentId: '!:IEnumerable{Tuple{``0,Orleans.Streams.StreamSequenceToken}}'
+  definition: IEnumerable`1
+  name: IEnumerable<Tuple<T, StreamSequenceToken>>
+  nameWithType: IEnumerable<Tuple<T, StreamSequenceToken>>
+  fullName: IEnumerable<Tuple<T, Orleans.Streams.StreamSequenceToken>>
+  nameWithType.vb: IEnumerable(Of Tuple(Of T, StreamSequenceToken))
+  fullName.vb: IEnumerable(Of Tuple(Of T, Orleans.Streams.StreamSequenceToken))
+  name.vb: IEnumerable(Of Tuple(Of T, StreamSequenceToken))
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Tuple`2
+    name: Tuple
+    nameWithType: Tuple
+    fullName: Tuple
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.Streams.StreamSequenceToken
+    name: StreamSequenceToken
+    nameWithType: StreamSequenceToken
+    fullName: Orleans.Streams.StreamSequenceToken
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Tuple`2
+    name: Tuple
+    nameWithType: Tuple
+    fullName: Tuple
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Orleans.Streams.StreamSequenceToken
+    name: StreamSequenceToken
+    nameWithType: StreamSequenceToken
+    fullName: Orleans.Streams.StreamSequenceToken
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IEnumerable`1
+  isExternal: true
+  name: IEnumerable<>
+  nameWithType: IEnumerable<>
+  fullName: IEnumerable<>
+  nameWithType.vb: IEnumerable(Of )
+  fullName.vb: IEnumerable(Of )
+  name.vb: IEnumerable(Of )
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.ShouldDeliver*
+  commentId: Overload:Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.ShouldDeliver
+  isExternal: false
+  name: ShouldDeliver
+  nameWithType: PubSubBatchContainer.ShouldDeliver
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.ShouldDeliver
+- uid: Orleans.Streams.IStreamIdentity
+  commentId: T:Orleans.Streams.IStreamIdentity
+  parent: Orleans.Streams
+  isExternal: false
+  name: IStreamIdentity
+  nameWithType: IStreamIdentity
+  fullName: Orleans.Streams.IStreamIdentity
+- uid: Orleans.Streams.StreamFilterPredicate
+  commentId: T:Orleans.Streams.StreamFilterPredicate
+  parent: Orleans.Streams
+  isExternal: false
+  name: StreamFilterPredicate
+  nameWithType: StreamFilterPredicate
+  fullName: Orleans.Streams.StreamFilterPredicate
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.ImportRequestContext*
+  commentId: Overload:Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.ImportRequestContext
+  isExternal: false
+  name: ImportRequestContext
+  nameWithType: PubSubBatchContainer.ImportRequestContext
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.ImportRequestContext
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.ToString*
+  commentId: Overload:Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.ToString
+  isExternal: false
+  name: ToString
+  nameWithType: PubSubBatchContainer.ToString
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

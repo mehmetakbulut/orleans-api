@@ -1,0 +1,190 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.MultiCluster.GlobalSingleInstanceAttribute
+  commentId: T:Orleans.MultiCluster.GlobalSingleInstanceAttribute
+  id: GlobalSingleInstanceAttribute
+  parent: Orleans.MultiCluster
+  children:
+  - Orleans.MultiCluster.GlobalSingleInstanceAttribute.#ctor
+  langs:
+  - csharp
+  - vb
+  name: GlobalSingleInstanceAttribute
+  nameWithType: GlobalSingleInstanceAttribute
+  fullName: Orleans.MultiCluster.GlobalSingleInstanceAttribute
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/GrainDirectory/MultiClusterGrainAttributes.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GlobalSingleInstanceAttribute
+    path: src/Orleans.Core.Abstractions/GrainDirectory/MultiClusterGrainAttributes.cs
+    startLine: 22
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.MultiCluster
+  summary: "\nThis attribute indicates that instances of the marked grain class will have a single instance across all available clusters. Any requests in any clusters will be forwarded to the single activation instance.\n"
+  example: []
+  syntax:
+    content: 'public class GlobalSingleInstanceAttribute : RegistrationAttribute'
+    content.vb: >-
+      Public Class GlobalSingleInstanceAttribute
+
+          Inherits RegistrationAttribute
+  inheritance:
+  - System.Object
+  - Orleans.MultiCluster.RegistrationAttribute
+  extensionMethods:
+  - Orleans.MultiCluster.GlobalSingleInstanceAttribute.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.MultiCluster.GlobalSingleInstanceAttribute.#ctor
+  commentId: M:Orleans.MultiCluster.GlobalSingleInstanceAttribute.#ctor
+  id: '#ctor'
+  parent: Orleans.MultiCluster.GlobalSingleInstanceAttribute
+  langs:
+  - csharp
+  - vb
+  name: GlobalSingleInstanceAttribute()
+  nameWithType: GlobalSingleInstanceAttribute.GlobalSingleInstanceAttribute()
+  fullName: Orleans.MultiCluster.GlobalSingleInstanceAttribute.GlobalSingleInstanceAttribute()
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/GrainDirectory/MultiClusterGrainAttributes.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Core.Abstractions/GrainDirectory/MultiClusterGrainAttributes.cs
+    startLine: 24
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.MultiCluster
+  syntax:
+    content: public GlobalSingleInstanceAttribute()
+    content.vb: Public Sub New
+  overload: Orleans.MultiCluster.GlobalSingleInstanceAttribute.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans.MultiCluster
+  commentId: N:Orleans.MultiCluster
+  isExternal: false
+  name: Orleans.MultiCluster
+  nameWithType: Orleans.MultiCluster
+  fullName: Orleans.MultiCluster
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.MultiCluster.RegistrationAttribute
+  commentId: T:Orleans.MultiCluster.RegistrationAttribute
+  parent: Orleans.MultiCluster
+  isExternal: false
+  name: RegistrationAttribute
+  nameWithType: RegistrationAttribute
+  fullName: Orleans.MultiCluster.RegistrationAttribute
+- uid: Orleans.MultiCluster.GlobalSingleInstanceAttribute.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<GlobalSingleInstanceAttribute>()
+  nameWithType: ImmutableExt.AsImmutable<GlobalSingleInstanceAttribute>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.MultiCluster.GlobalSingleInstanceAttribute>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of GlobalSingleInstanceAttribute)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.MultiCluster.GlobalSingleInstanceAttribute)()
+  name.vb: AsImmutable(Of GlobalSingleInstanceAttribute)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<GlobalSingleInstanceAttribute>
+    nameWithType: ImmutableExt.AsImmutable<GlobalSingleInstanceAttribute>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.MultiCluster.GlobalSingleInstanceAttribute>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of GlobalSingleInstanceAttribute)
+    nameWithType: ImmutableExt.AsImmutable(Of GlobalSingleInstanceAttribute)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.MultiCluster.GlobalSingleInstanceAttribute)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.MultiCluster.GlobalSingleInstanceAttribute.#ctor*
+  commentId: Overload:Orleans.MultiCluster.GlobalSingleInstanceAttribute.#ctor
+  isExternal: false
+  name: GlobalSingleInstanceAttribute
+  nameWithType: GlobalSingleInstanceAttribute.GlobalSingleInstanceAttribute
+  fullName: Orleans.MultiCluster.GlobalSingleInstanceAttribute.GlobalSingleInstanceAttribute

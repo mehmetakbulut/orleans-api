@@ -1,0 +1,524 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Core.IGrainIdentity
+  commentId: T:Orleans.Core.IGrainIdentity
+  id: IGrainIdentity
+  parent: Orleans.Core
+  children:
+  - Orleans.Core.IGrainIdentity.GetPrimaryKey(System.String@)
+  - Orleans.Core.IGrainIdentity.GetPrimaryKeyLong(System.String@)
+  - Orleans.Core.IGrainIdentity.GetUniformHashCode
+  - Orleans.Core.IGrainIdentity.IdentityString
+  - Orleans.Core.IGrainIdentity.IsClient
+  - Orleans.Core.IGrainIdentity.PrimaryKey
+  - Orleans.Core.IGrainIdentity.PrimaryKeyLong
+  - Orleans.Core.IGrainIdentity.PrimaryKeyString
+  - Orleans.Core.IGrainIdentity.TypeCode
+  langs:
+  - csharp
+  - vb
+  name: IGrainIdentity
+  nameWithType: IGrainIdentity
+  fullName: Orleans.Core.IGrainIdentity
+  type: Interface
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/IGrainIdentity.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IGrainIdentity
+    path: src/Orleans.Core.Abstractions/Core/IGrainIdentity.cs
+    startLine: 4
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Core
+  syntax:
+    content: public interface IGrainIdentity
+    content.vb: Public Interface IGrainIdentity
+  extensionMethods:
+  - Orleans.Core.IGrainIdentity.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Orleans.Core.IGrainIdentity.PrimaryKey
+  commentId: P:Orleans.Core.IGrainIdentity.PrimaryKey
+  id: PrimaryKey
+  parent: Orleans.Core.IGrainIdentity
+  langs:
+  - csharp
+  - vb
+  name: PrimaryKey
+  nameWithType: IGrainIdentity.PrimaryKey
+  fullName: Orleans.Core.IGrainIdentity.PrimaryKey
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/IGrainIdentity.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: PrimaryKey
+    path: src/Orleans.Core.Abstractions/Core/IGrainIdentity.cs
+    startLine: 6
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Core
+  syntax:
+    content: Guid PrimaryKey { get; }
+    parameters: []
+    return:
+      type: Guid
+    content.vb: ReadOnly Property PrimaryKey As Guid
+  overload: Orleans.Core.IGrainIdentity.PrimaryKey*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Orleans.Core.IGrainIdentity.PrimaryKeyLong
+  commentId: P:Orleans.Core.IGrainIdentity.PrimaryKeyLong
+  id: PrimaryKeyLong
+  parent: Orleans.Core.IGrainIdentity
+  langs:
+  - csharp
+  - vb
+  name: PrimaryKeyLong
+  nameWithType: IGrainIdentity.PrimaryKeyLong
+  fullName: Orleans.Core.IGrainIdentity.PrimaryKeyLong
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/IGrainIdentity.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: PrimaryKeyLong
+    path: src/Orleans.Core.Abstractions/Core/IGrainIdentity.cs
+    startLine: 8
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Core
+  syntax:
+    content: long PrimaryKeyLong { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: ReadOnly Property PrimaryKeyLong As Long
+  overload: Orleans.Core.IGrainIdentity.PrimaryKeyLong*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Orleans.Core.IGrainIdentity.PrimaryKeyString
+  commentId: P:Orleans.Core.IGrainIdentity.PrimaryKeyString
+  id: PrimaryKeyString
+  parent: Orleans.Core.IGrainIdentity
+  langs:
+  - csharp
+  - vb
+  name: PrimaryKeyString
+  nameWithType: IGrainIdentity.PrimaryKeyString
+  fullName: Orleans.Core.IGrainIdentity.PrimaryKeyString
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/IGrainIdentity.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: PrimaryKeyString
+    path: src/Orleans.Core.Abstractions/Core/IGrainIdentity.cs
+    startLine: 10
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Core
+  syntax:
+    content: string PrimaryKeyString { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property PrimaryKeyString As String
+  overload: Orleans.Core.IGrainIdentity.PrimaryKeyString*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Orleans.Core.IGrainIdentity.IdentityString
+  commentId: P:Orleans.Core.IGrainIdentity.IdentityString
+  id: IdentityString
+  parent: Orleans.Core.IGrainIdentity
+  langs:
+  - csharp
+  - vb
+  name: IdentityString
+  nameWithType: IGrainIdentity.IdentityString
+  fullName: Orleans.Core.IGrainIdentity.IdentityString
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/IGrainIdentity.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IdentityString
+    path: src/Orleans.Core.Abstractions/Core/IGrainIdentity.cs
+    startLine: 12
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Core
+  syntax:
+    content: string IdentityString { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property IdentityString As String
+  overload: Orleans.Core.IGrainIdentity.IdentityString*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Orleans.Core.IGrainIdentity.IsClient
+  commentId: P:Orleans.Core.IGrainIdentity.IsClient
+  id: IsClient
+  parent: Orleans.Core.IGrainIdentity
+  langs:
+  - csharp
+  - vb
+  name: IsClient
+  nameWithType: IGrainIdentity.IsClient
+  fullName: Orleans.Core.IGrainIdentity.IsClient
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/IGrainIdentity.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IsClient
+    path: src/Orleans.Core.Abstractions/Core/IGrainIdentity.cs
+    startLine: 14
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Core
+  syntax:
+    content: bool IsClient { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsClient As Boolean
+  overload: Orleans.Core.IGrainIdentity.IsClient*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Orleans.Core.IGrainIdentity.TypeCode
+  commentId: P:Orleans.Core.IGrainIdentity.TypeCode
+  id: TypeCode
+  parent: Orleans.Core.IGrainIdentity
+  langs:
+  - csharp
+  - vb
+  name: TypeCode
+  nameWithType: IGrainIdentity.TypeCode
+  fullName: Orleans.Core.IGrainIdentity.TypeCode
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/IGrainIdentity.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: TypeCode
+    path: src/Orleans.Core.Abstractions/Core/IGrainIdentity.cs
+    startLine: 16
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Core
+  syntax:
+    content: int TypeCode { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property TypeCode As Integer
+  overload: Orleans.Core.IGrainIdentity.TypeCode*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Orleans.Core.IGrainIdentity.GetPrimaryKeyLong(System.String@)
+  commentId: M:Orleans.Core.IGrainIdentity.GetPrimaryKeyLong(System.String@)
+  id: GetPrimaryKeyLong(System.String@)
+  parent: Orleans.Core.IGrainIdentity
+  langs:
+  - csharp
+  - vb
+  name: GetPrimaryKeyLong(out String)
+  nameWithType: IGrainIdentity.GetPrimaryKeyLong(out String)
+  fullName: Orleans.Core.IGrainIdentity.GetPrimaryKeyLong(out System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/IGrainIdentity.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetPrimaryKeyLong
+    path: src/Orleans.Core.Abstractions/Core/IGrainIdentity.cs
+    startLine: 18
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Core
+  syntax:
+    content: long GetPrimaryKeyLong(out string keyExt)
+    parameters:
+    - id: keyExt
+      type: System.String
+    return:
+      type: System.Int64
+    content.vb: Function GetPrimaryKeyLong(ByRef keyExt As String) As Long
+  overload: Orleans.Core.IGrainIdentity.GetPrimaryKeyLong*
+  nameWithType.vb: IGrainIdentity.GetPrimaryKeyLong(ByRef String)
+  fullName.vb: Orleans.Core.IGrainIdentity.GetPrimaryKeyLong(ByRef System.String)
+  name.vb: GetPrimaryKeyLong(ByRef String)
+- uid: Orleans.Core.IGrainIdentity.GetPrimaryKey(System.String@)
+  commentId: M:Orleans.Core.IGrainIdentity.GetPrimaryKey(System.String@)
+  id: GetPrimaryKey(System.String@)
+  parent: Orleans.Core.IGrainIdentity
+  langs:
+  - csharp
+  - vb
+  name: GetPrimaryKey(out String)
+  nameWithType: IGrainIdentity.GetPrimaryKey(out String)
+  fullName: Orleans.Core.IGrainIdentity.GetPrimaryKey(out System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/IGrainIdentity.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetPrimaryKey
+    path: src/Orleans.Core.Abstractions/Core/IGrainIdentity.cs
+    startLine: 20
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Core
+  syntax:
+    content: Guid GetPrimaryKey(out string keyExt)
+    parameters:
+    - id: keyExt
+      type: System.String
+    return:
+      type: Guid
+    content.vb: Function GetPrimaryKey(ByRef keyExt As String) As Guid
+  overload: Orleans.Core.IGrainIdentity.GetPrimaryKey*
+  nameWithType.vb: IGrainIdentity.GetPrimaryKey(ByRef String)
+  fullName.vb: Orleans.Core.IGrainIdentity.GetPrimaryKey(ByRef System.String)
+  name.vb: GetPrimaryKey(ByRef String)
+- uid: Orleans.Core.IGrainIdentity.GetUniformHashCode
+  commentId: M:Orleans.Core.IGrainIdentity.GetUniformHashCode
+  id: GetUniformHashCode
+  parent: Orleans.Core.IGrainIdentity
+  langs:
+  - csharp
+  - vb
+  name: GetUniformHashCode()
+  nameWithType: IGrainIdentity.GetUniformHashCode()
+  fullName: Orleans.Core.IGrainIdentity.GetUniformHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Core/IGrainIdentity.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetUniformHashCode
+    path: src/Orleans.Core.Abstractions/Core/IGrainIdentity.cs
+    startLine: 22
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Core
+  syntax:
+    content: uint GetUniformHashCode()
+    return:
+      type: System.UInt32
+    content.vb: Function GetUniformHashCode As UInteger
+  overload: Orleans.Core.IGrainIdentity.GetUniformHashCode*
+references:
+- uid: Orleans.Core
+  commentId: N:Orleans.Core
+  isExternal: false
+  name: Orleans.Core
+  nameWithType: Orleans.Core
+  fullName: Orleans.Core
+- uid: Orleans.Core.IGrainIdentity.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<IGrainIdentity>()
+  nameWithType: ImmutableExt.AsImmutable<IGrainIdentity>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Core.IGrainIdentity>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of IGrainIdentity)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Core.IGrainIdentity)()
+  name.vb: AsImmutable(Of IGrainIdentity)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<IGrainIdentity>
+    nameWithType: ImmutableExt.AsImmutable<IGrainIdentity>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Core.IGrainIdentity>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of IGrainIdentity)
+    nameWithType: ImmutableExt.AsImmutable(Of IGrainIdentity)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Core.IGrainIdentity)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Core.IGrainIdentity.PrimaryKey*
+  commentId: Overload:Orleans.Core.IGrainIdentity.PrimaryKey
+  isExternal: false
+  name: PrimaryKey
+  nameWithType: IGrainIdentity.PrimaryKey
+  fullName: Orleans.Core.IGrainIdentity.PrimaryKey
+- uid: Guid
+  isExternal: true
+  name: Guid
+  nameWithType: Guid
+  fullName: Guid
+- uid: Orleans.Core.IGrainIdentity.PrimaryKeyLong*
+  commentId: Overload:Orleans.Core.IGrainIdentity.PrimaryKeyLong
+  isExternal: false
+  name: PrimaryKeyLong
+  nameWithType: IGrainIdentity.PrimaryKeyLong
+  fullName: Orleans.Core.IGrainIdentity.PrimaryKeyLong
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Core.IGrainIdentity.PrimaryKeyString*
+  commentId: Overload:Orleans.Core.IGrainIdentity.PrimaryKeyString
+  isExternal: false
+  name: PrimaryKeyString
+  nameWithType: IGrainIdentity.PrimaryKeyString
+  fullName: Orleans.Core.IGrainIdentity.PrimaryKeyString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Orleans.Core.IGrainIdentity.IdentityString*
+  commentId: Overload:Orleans.Core.IGrainIdentity.IdentityString
+  isExternal: false
+  name: IdentityString
+  nameWithType: IGrainIdentity.IdentityString
+  fullName: Orleans.Core.IGrainIdentity.IdentityString
+- uid: Orleans.Core.IGrainIdentity.IsClient*
+  commentId: Overload:Orleans.Core.IGrainIdentity.IsClient
+  isExternal: false
+  name: IsClient
+  nameWithType: IGrainIdentity.IsClient
+  fullName: Orleans.Core.IGrainIdentity.IsClient
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Orleans.Core.IGrainIdentity.TypeCode*
+  commentId: Overload:Orleans.Core.IGrainIdentity.TypeCode
+  isExternal: false
+  name: TypeCode
+  nameWithType: IGrainIdentity.TypeCode
+  fullName: Orleans.Core.IGrainIdentity.TypeCode
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Orleans.Core.IGrainIdentity.GetPrimaryKeyLong*
+  commentId: Overload:Orleans.Core.IGrainIdentity.GetPrimaryKeyLong
+  isExternal: false
+  name: GetPrimaryKeyLong
+  nameWithType: IGrainIdentity.GetPrimaryKeyLong
+  fullName: Orleans.Core.IGrainIdentity.GetPrimaryKeyLong
+- uid: Orleans.Core.IGrainIdentity.GetPrimaryKey*
+  commentId: Overload:Orleans.Core.IGrainIdentity.GetPrimaryKey
+  isExternal: false
+  name: GetPrimaryKey
+  nameWithType: IGrainIdentity.GetPrimaryKey
+  fullName: Orleans.Core.IGrainIdentity.GetPrimaryKey
+- uid: Orleans.Core.IGrainIdentity.GetUniformHashCode*
+  commentId: Overload:Orleans.Core.IGrainIdentity.GetUniformHashCode
+  isExternal: false
+  name: GetUniformHashCode
+  nameWithType: IGrainIdentity.GetUniformHashCode
+  fullName: Orleans.Core.IGrainIdentity.GetUniformHashCode
+- uid: System.UInt32
+  isExternal: true
+  name: UInt32
+  nameWithType: UInt32
+  fullName: System.UInt32

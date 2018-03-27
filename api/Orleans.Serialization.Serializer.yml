@@ -1,0 +1,162 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Serialization.Serializer
+  commentId: T:Orleans.Serialization.Serializer
+  id: Serializer
+  parent: Orleans.Serialization
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: Serializer
+  nameWithType: Serializer
+  fullName: Orleans.Serialization.Serializer
+  type: Delegate
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Serialization/SerializerDelegates.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Serializer
+    path: src/Orleans.Core.Abstractions/Serialization/SerializerDelegates.cs
+    startLine: 16
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Serialization
+  summary: 'Serializer function. '
+  example: []
+  syntax:
+    content: public delegate void Serializer(object raw, ISerializationContext context, Type expected);
+    parameters:
+    - id: raw
+      type: System.Object
+      description: Input object to be serialized.
+    - id: context
+      type: Orleans.Serialization.ISerializationContext
+      description: The context under which this object is being serialized.
+    - id: expected
+      type: Type
+      description: Current Type active in this stream.
+    content.vb: Public Delegate Sub Serializer(raw As Object, context As ISerializationContext, expected As Type)
+  extensionMethods:
+  - Orleans.Serialization.Serializer.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - delegate
+  modifiers.vb:
+  - Public
+  - Delegate
+references:
+- uid: Orleans.Serialization
+  commentId: N:Orleans.Serialization
+  isExternal: false
+  name: Orleans.Serialization
+  nameWithType: Orleans.Serialization
+  fullName: Orleans.Serialization
+- uid: Orleans.Serialization.Serializer.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<Serializer>()
+  nameWithType: ImmutableExt.AsImmutable<Serializer>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Serialization.Serializer>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of Serializer)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Serialization.Serializer)()
+  name.vb: AsImmutable(Of Serializer)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<Serializer>
+    nameWithType: ImmutableExt.AsImmutable<Serializer>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Serialization.Serializer>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of Serializer)
+    nameWithType: ImmutableExt.AsImmutable(Of Serializer)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Serialization.Serializer)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Serialization.ISerializationContext
+  commentId: T:Orleans.Serialization.ISerializationContext
+  parent: Orleans.Serialization
+  isExternal: false
+  name: ISerializationContext
+  nameWithType: ISerializationContext
+  fullName: Orleans.Serialization.ISerializationContext
+- uid: Type
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: Type
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency

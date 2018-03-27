@@ -1,0 +1,2919 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3
+  commentId: T:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3
+  id: PrimaryBasedLogViewAdaptor`3
+  parent: Orleans.EventSourcing.Common
+  children:
+  - Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.#ctor(ILogViewAdaptorHost{`0,`1},`0,ILogConsistencyProtocolServices)
+  - Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.BroadcastNotification(Orleans.EventSourcing.Common.INotificationMessage,System.String)
+  - Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.Configuration
+  - Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.ConfirmedVersion
+  - Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.ConfirmedView
+  - Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.ConfirmSubmittedEntries
+  - Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.CopyTentativeState
+  - Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.DisableStatsCollection
+  - Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.EnableStatsCollection
+  - Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.EnsureClusterJoinedAsync
+  - Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.GetCaughtUpWithConfigurationAsync(DateTime)
+  - Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.GetConfirmedVersion
+  - Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.GetCurrentBatchOfUpdates
+  - Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.GetNumberPendingUpdates
+  - Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.GetStats
+  - Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.Host
+  - Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.InitializeConfirmedView(`0)
+  - Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.IsMyClusterJoined
+  - Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.LastConfirmedView
+  - Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.LastPrimaryIssue
+  - Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.MakeSubmissionEntry(`1)
+  - Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.Merge(Orleans.EventSourcing.Common.INotificationMessage,Orleans.EventSourcing.Common.INotificationMessage)
+  - Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.NotifyPromises(System.Int32,System.Boolean)
+  - Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.OnConfigurationChange(MultiClusterConfiguration)
+  - Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.OnMessageReceived(ILogConsistencyProtocolMessage)
+  - Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.OnMultiClusterConfigurationChange(Orleans.MultiCluster.MultiClusterConfiguration)
+  - Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.OnNotificationReceived(Orleans.EventSourcing.Common.INotificationMessage)
+  - Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.OnProtocolMessageReceived(ILogConsistencyProtocolMessage)
+  - Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.PostOnActivate
+  - Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.PostOnDeactivate
+  - Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.PreOnActivate
+  - Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.ProcessNotifications
+  - Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.ReadAsync
+  - Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.RemoveStaleConditionalUpdates
+  - Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.RetrieveLogSegment(System.Int32,System.Int32)
+  - Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.Services
+  - Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.stats
+  - Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.Submit(`1)
+  - Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.SubmitRange(IEnumerable{`1})
+  - Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.SupportSubmissions
+  - Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.Synchronize
+  - Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.TentativeView
+  - Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.TryAppend(`1)
+  - Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.TryAppendRange(IEnumerable{`1})
+  - Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.UnconfirmedSuffix
+  - Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.UnresolvedConnectionIssues
+  - Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.WriteAsync
+  langs:
+  - csharp
+  - vb
+  name: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: PrimaryBasedLogViewAdaptor
+    path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+    startLine: 33
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  summary: "\nA general template for constructing log view adaptors that are based on\na sequentially read and written primary. We use this to construct \na variety of different log-consistency providers, all following the same basic pattern \n(read and write latest view from/to primary, and send notifications after writing).\n<p>\n Note that the log itself is transient, i.e. not actually saved to storage - only the latest view and some \n metadata (the log position, and write flags) is stored in the primary. \n It is safe to interleave calls to this adaptor (using grain scheduler only, of course).\n</p>\n<p>\n Subclasses override ReadAsync and WriteAsync to read from / write to primary.\n Calls to the primary are serialized, i.e. never interleave.\n</p>\n"
+  example: []
+  syntax:
+    content: 'public abstract class PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry> : ILogViewAdaptor<TLogView, TLogEntry> where TLogView : class, new ()where TLogEntry : class where TSubmissionEntry : SubmissionEntry<TLogEntry>'
+    typeParameters:
+    - id: TLogView
+      description: The user-defined view of the log
+    - id: TLogEntry
+      description: The type of the log entries
+    - id: TSubmissionEntry
+      description: The type of submission entries stored in pending queue
+    content.vb: >-
+      Public MustInherit Class PrimaryBasedLogViewAdaptor(Of TLogView As {Class, New}, TLogEntry As Class, TSubmissionEntry As SubmissionEntry(Of TLogEntry))
+
+          Inherits ILogViewAdaptor(Of TLogView, TLogEntry)
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry)
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry)
+  name.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry)
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.InitializeConfirmedView(`0)
+  commentId: M:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.InitializeConfirmedView(`0)
+  id: InitializeConfirmedView(`0)
+  parent: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3
+  langs:
+  - csharp
+  - vb
+  name: InitializeConfirmedView(TLogView)
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.InitializeConfirmedView(TLogView)
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.InitializeConfirmedView(TLogView)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: InitializeConfirmedView
+    path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+    startLine: 45
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  summary: "\nSet confirmed view the initial value (a view of the empty log)\n"
+  example: []
+  syntax:
+    content: protected abstract void InitializeConfirmedView(TLogView initialstate)
+    parameters:
+    - id: initialstate
+      type: '{TLogView}'
+    content.vb: Protected MustOverride Sub InitializeConfirmedView(initialstate As TLogView)
+  overload: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.InitializeConfirmedView*
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).InitializeConfirmedView(TLogView)
+  modifiers.csharp:
+  - protected
+  - abstract
+  modifiers.vb:
+  - Protected
+  - MustOverride
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).InitializeConfirmedView(TLogView)
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.LastConfirmedView
+  commentId: M:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.LastConfirmedView
+  id: LastConfirmedView
+  parent: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3
+  langs:
+  - csharp
+  - vb
+  name: LastConfirmedView()
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.LastConfirmedView()
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.LastConfirmedView()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: LastConfirmedView
+    path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+    startLine: 50
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  summary: "\nRead cached global state.\n"
+  example: []
+  syntax:
+    content: protected abstract TLogView LastConfirmedView()
+    return:
+      type: '{TLogView}'
+    content.vb: Protected MustOverride Function LastConfirmedView As TLogView
+  overload: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.LastConfirmedView*
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).LastConfirmedView()
+  modifiers.csharp:
+  - protected
+  - abstract
+  modifiers.vb:
+  - Protected
+  - MustOverride
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).LastConfirmedView()
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.GetConfirmedVersion
+  commentId: M:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.GetConfirmedVersion
+  id: GetConfirmedVersion
+  parent: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3
+  langs:
+  - csharp
+  - vb
+  name: GetConfirmedVersion()
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.GetConfirmedVersion()
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.GetConfirmedVersion()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetConfirmedVersion
+    path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+    startLine: 55
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  summary: "\nRead version of cached global state.\n"
+  example: []
+  syntax:
+    content: protected abstract int GetConfirmedVersion()
+    return:
+      type: System.Int32
+    content.vb: Protected MustOverride Function GetConfirmedVersion As Integer
+  overload: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.GetConfirmedVersion*
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).GetConfirmedVersion()
+  modifiers.csharp:
+  - protected
+  - abstract
+  modifiers.vb:
+  - Protected
+  - MustOverride
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).GetConfirmedVersion()
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.ReadAsync
+  commentId: M:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.ReadAsync
+  id: ReadAsync
+  parent: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3
+  langs:
+  - csharp
+  - vb
+  name: ReadAsync()
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.ReadAsync()
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.ReadAsync()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ReadAsync
+    path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+    startLine: 62
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  summary: "\nRead the latest primary state. Must block/retry until successful.\nShould not throw exceptions, but record them in <xref href=\"Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor%603.LastPrimaryIssue\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: protected abstract Task ReadAsync()
+    return:
+      type: Task
+      description: ''
+    content.vb: Protected MustOverride Function ReadAsync As Task
+  overload: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.ReadAsync*
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).ReadAsync()
+  modifiers.csharp:
+  - protected
+  - abstract
+  modifiers.vb:
+  - Protected
+  - MustOverride
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).ReadAsync()
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.WriteAsync
+  commentId: M:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.WriteAsync
+  id: WriteAsync
+  parent: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3
+  langs:
+  - csharp
+  - vb
+  name: WriteAsync()
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.WriteAsync()
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.WriteAsync()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: WriteAsync
+    path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+    startLine: 68
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  summary: "\nApply pending entries to the primary. Must block/retry until successful. \nShould not throw exceptions, but record them in <xref href=\"Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor%603.LastPrimaryIssue\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: protected abstract Task<int> WriteAsync()
+    return:
+      type: Task{System.Int32}
+    content.vb: Protected MustOverride Function WriteAsync As Task(Of Integer)
+  overload: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.WriteAsync*
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).WriteAsync()
+  modifiers.csharp:
+  - protected
+  - abstract
+  modifiers.vb:
+  - Protected
+  - MustOverride
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).WriteAsync()
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.MakeSubmissionEntry(`1)
+  commentId: M:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.MakeSubmissionEntry(`1)
+  id: MakeSubmissionEntry(`1)
+  parent: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3
+  langs:
+  - csharp
+  - vb
+  name: MakeSubmissionEntry(TLogEntry)
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.MakeSubmissionEntry(TLogEntry)
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.MakeSubmissionEntry(TLogEntry)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: MakeSubmissionEntry
+    path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+    startLine: 75
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  summary: "\nCreate a submission entry for the submitted log entry. \nUsing a type parameter so we can add protocol-specific info to this class.\n"
+  example: []
+  syntax:
+    content: protected abstract TSubmissionEntry MakeSubmissionEntry(TLogEntry entry)
+    parameters:
+    - id: entry
+      type: '{TLogEntry}'
+    return:
+      type: '{TSubmissionEntry}'
+      description: ''
+    content.vb: Protected MustOverride Function MakeSubmissionEntry(entry As TLogEntry) As TSubmissionEntry
+  overload: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.MakeSubmissionEntry*
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).MakeSubmissionEntry(TLogEntry)
+  modifiers.csharp:
+  - protected
+  - abstract
+  modifiers.vb:
+  - Protected
+  - MustOverride
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).MakeSubmissionEntry(TLogEntry)
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.SupportSubmissions
+  commentId: P:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.SupportSubmissions
+  id: SupportSubmissions
+  parent: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3
+  langs:
+  - csharp
+  - vb
+  name: SupportSubmissions
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.SupportSubmissions
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.SupportSubmissions
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SupportSubmissions
+    path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+    startLine: 80
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  summary: "\nWhether this cluster supports submitting updates\n"
+  example: []
+  syntax:
+    content: protected virtual bool SupportSubmissions { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Protected Overridable ReadOnly Property SupportSubmissions As Boolean
+  overload: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.SupportSubmissions*
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).SupportSubmissions
+  modifiers.csharp:
+  - protected
+  - virtual
+  - get
+  modifiers.vb:
+  - Protected
+  - Overridable
+  - ReadOnly
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).SupportSubmissions
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.OnMessageReceived(ILogConsistencyProtocolMessage)
+  commentId: M:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.OnMessageReceived(ILogConsistencyProtocolMessage)
+  id: OnMessageReceived(ILogConsistencyProtocolMessage)
+  parent: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3
+  langs:
+  - csharp
+  - vb
+  name: OnMessageReceived(ILogConsistencyProtocolMessage)
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.OnMessageReceived(ILogConsistencyProtocolMessage)
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.OnMessageReceived(ILogConsistencyProtocolMessage)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: OnMessageReceived
+    path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+    startLine: 85
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  summary: "\nHandle protocol messages.\n"
+  example: []
+  syntax:
+    content: protected virtual Task<ILogConsistencyProtocolMessage> OnMessageReceived(ILogConsistencyProtocolMessage payload)
+    parameters:
+    - id: payload
+      type: ILogConsistencyProtocolMessage
+    return:
+      type: Task{ILogConsistencyProtocolMessage}
+    content.vb: Protected Overridable Function OnMessageReceived(payload As ILogConsistencyProtocolMessage) As Task(Of ILogConsistencyProtocolMessage)
+  overload: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.OnMessageReceived*
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).OnMessageReceived(ILogConsistencyProtocolMessage)
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).OnMessageReceived(ILogConsistencyProtocolMessage)
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.RetrieveLogSegment(System.Int32,System.Int32)
+  commentId: M:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.RetrieveLogSegment(System.Int32,System.Int32)
+  id: RetrieveLogSegment(System.Int32,System.Int32)
+  parent: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3
+  langs:
+  - csharp
+  - vb
+  name: RetrieveLogSegment(Int32, Int32)
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.RetrieveLogSegment(Int32, Int32)
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.RetrieveLogSegment(System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: RetrieveLogSegment
+    path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+    startLine: 91
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  syntax:
+    content: public virtual Task<IReadOnlyList<TLogEntry>> RetrieveLogSegment(int fromVersion, int length)
+    parameters:
+    - id: fromVersion
+      type: System.Int32
+    - id: length
+      type: System.Int32
+    return:
+      type: Task{IReadOnlyList{{TLogEntry}}}
+    content.vb: Public Overridable Function RetrieveLogSegment(fromVersion As Integer, length As Integer) As Task(Of IReadOnlyList(Of TLogEntry))
+  overload: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.RetrieveLogSegment*
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).RetrieveLogSegment(Int32, Int32)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).RetrieveLogSegment(System.Int32, System.Int32)
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.OnNotificationReceived(Orleans.EventSourcing.Common.INotificationMessage)
+  commentId: M:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.OnNotificationReceived(Orleans.EventSourcing.Common.INotificationMessage)
+  id: OnNotificationReceived(Orleans.EventSourcing.Common.INotificationMessage)
+  parent: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3
+  langs:
+  - csharp
+  - vb
+  name: OnNotificationReceived(INotificationMessage)
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.OnNotificationReceived(INotificationMessage)
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.OnNotificationReceived(Orleans.EventSourcing.Common.INotificationMessage)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: OnNotificationReceived
+    path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+    startLine: 99
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  summary: "\nHandle notification messages. Override this to handle notification subtypes.\n"
+  example: []
+  syntax:
+    content: protected virtual void OnNotificationReceived(INotificationMessage payload)
+    parameters:
+    - id: payload
+      type: Orleans.EventSourcing.Common.INotificationMessage
+    content.vb: Protected Overridable Sub OnNotificationReceived(payload As INotificationMessage)
+  overload: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.OnNotificationReceived*
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).OnNotificationReceived(INotificationMessage)
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).OnNotificationReceived(Orleans.EventSourcing.Common.INotificationMessage)
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.ProcessNotifications
+  commentId: M:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.ProcessNotifications
+  id: ProcessNotifications
+  parent: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3
+  langs:
+  - csharp
+  - vb
+  name: ProcessNotifications()
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.ProcessNotifications()
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.ProcessNotifications()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ProcessNotifications
+    path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+    startLine: 129
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  summary: "\nProcess stored notifications during worker cycle. Override to handle notification subtypes.\n"
+  example: []
+  syntax:
+    content: protected virtual void ProcessNotifications()
+    content.vb: Protected Overridable Sub ProcessNotifications
+  overload: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.ProcessNotifications*
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).ProcessNotifications()
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).ProcessNotifications()
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.Merge(Orleans.EventSourcing.Common.INotificationMessage,Orleans.EventSourcing.Common.INotificationMessage)
+  commentId: M:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.Merge(Orleans.EventSourcing.Common.INotificationMessage,Orleans.EventSourcing.Common.INotificationMessage)
+  id: Merge(Orleans.EventSourcing.Common.INotificationMessage,Orleans.EventSourcing.Common.INotificationMessage)
+  parent: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3
+  langs:
+  - csharp
+  - vb
+  name: Merge(INotificationMessage, INotificationMessage)
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.Merge(INotificationMessage, INotificationMessage)
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.Merge(Orleans.EventSourcing.Common.INotificationMessage, Orleans.EventSourcing.Common.INotificationMessage)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Merge
+    path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+    startLine: 141
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  summary: "\nMerge two notification messages, for batching. Override to handle notification subtypes.\n"
+  example: []
+  syntax:
+    content: protected virtual INotificationMessage Merge(INotificationMessage earliermessage, INotificationMessage latermessage)
+    parameters:
+    - id: earliermessage
+      type: Orleans.EventSourcing.Common.INotificationMessage
+    - id: latermessage
+      type: Orleans.EventSourcing.Common.INotificationMessage
+    return:
+      type: Orleans.EventSourcing.Common.INotificationMessage
+    content.vb: Protected Overridable Function Merge(earliermessage As INotificationMessage, latermessage As INotificationMessage) As INotificationMessage
+  overload: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.Merge*
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).Merge(INotificationMessage, INotificationMessage)
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).Merge(Orleans.EventSourcing.Common.INotificationMessage, Orleans.EventSourcing.Common.INotificationMessage)
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.OnConfigurationChange(MultiClusterConfiguration)
+  commentId: M:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.OnConfigurationChange(MultiClusterConfiguration)
+  id: OnConfigurationChange(MultiClusterConfiguration)
+  parent: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3
+  langs:
+  - csharp
+  - vb
+  name: OnConfigurationChange(MultiClusterConfiguration)
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.OnConfigurationChange(MultiClusterConfiguration)
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.OnConfigurationChange(MultiClusterConfiguration)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: OnConfigurationChange
+    path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+    startLine: 152
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  summary: "\nCalled when configuration of the multicluster is changing.\n"
+  example: []
+  syntax:
+    content: protected virtual Task OnConfigurationChange(MultiClusterConfiguration next)
+    parameters:
+    - id: next
+      type: MultiClusterConfiguration
+    return:
+      type: Task
+    content.vb: Protected Overridable Function OnConfigurationChange(next As MultiClusterConfiguration) As Task
+  overload: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.OnConfigurationChange*
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).OnConfigurationChange(MultiClusterConfiguration)
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).OnConfigurationChange(MultiClusterConfiguration)
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.Host
+  commentId: P:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.Host
+  id: Host
+  parent: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3
+  langs:
+  - csharp
+  - vb
+  name: Host
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.Host
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.Host
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Host
+    path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+    startLine: 161
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  summary: "\nThe grain that is using this adaptor.\n"
+  example: []
+  syntax:
+    content: protected ILogViewAdaptorHost<TLogView, TLogEntry> Host { get; }
+    parameters: []
+    return:
+      type: ILogViewAdaptorHost{{TLogView},{TLogEntry}}
+    content.vb: Protected ReadOnly Property Host As ILogViewAdaptorHost(Of TLogView, TLogEntry)
+  overload: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.Host*
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).Host
+  modifiers.csharp:
+  - protected
+  - get
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).Host
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.Services
+  commentId: P:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.Services
+  id: Services
+  parent: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3
+  langs:
+  - csharp
+  - vb
+  name: Services
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.Services
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.Services
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Services
+    path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+    startLine: 166
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  summary: "\nThe runtime services required for implementing notifications between grain instances in different cluster.\n"
+  example: []
+  syntax:
+    content: protected ILogConsistencyProtocolServices Services { get; }
+    parameters: []
+    return:
+      type: ILogConsistencyProtocolServices
+    content.vb: Protected ReadOnly Property Services As ILogConsistencyProtocolServices
+  overload: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.Services*
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).Services
+  modifiers.csharp:
+  - protected
+  - get
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).Services
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.Configuration
+  commentId: P:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.Configuration
+  id: Configuration
+  parent: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3
+  langs:
+  - csharp
+  - vb
+  name: Configuration
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.Configuration
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.Configuration
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Configuration
+    path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+    startLine: 171
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  summary: "\nThe current multi-cluster configuration for this grain instance.\n"
+  example: []
+  syntax:
+    content: protected MultiClusterConfiguration Configuration { get; set; }
+    parameters: []
+    return:
+      type: MultiClusterConfiguration
+    content.vb: Protected Property Configuration As MultiClusterConfiguration
+  overload: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.Configuration*
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).Configuration
+  modifiers.csharp:
+  - protected
+  - get
+  - set
+  modifiers.vb:
+  - Protected
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).Configuration
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.#ctor(ILogViewAdaptorHost{`0,`1},`0,ILogConsistencyProtocolServices)
+  commentId: M:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.#ctor(ILogViewAdaptorHost{`0,`1},`0,ILogConsistencyProtocolServices)
+  id: '#ctor(ILogViewAdaptorHost{`0,`1},`0,ILogConsistencyProtocolServices)'
+  parent: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3
+  langs:
+  - csharp
+  - vb
+  name: PrimaryBasedLogViewAdaptor(ILogViewAdaptorHost<TLogView, TLogEntry>, TLogView, ILogConsistencyProtocolServices)
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.PrimaryBasedLogViewAdaptor(ILogViewAdaptorHost<TLogView, TLogEntry>, TLogView, ILogConsistencyProtocolServices)
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.PrimaryBasedLogViewAdaptor(ILogViewAdaptorHost<TLogView, TLogEntry>, TLogView, ILogConsistencyProtocolServices)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+    startLine: 183
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  summary: "\nConstruct an instance, for the given parameters.\n"
+  example: []
+  syntax:
+    content: protected PrimaryBasedLogViewAdaptor(ILogViewAdaptorHost<TLogView, TLogEntry> host, TLogView initialstate, ILogConsistencyProtocolServices services)
+    parameters:
+    - id: host
+      type: ILogViewAdaptorHost{{TLogView},{TLogEntry}}
+    - id: initialstate
+      type: '{TLogView}'
+    - id: services
+      type: ILogConsistencyProtocolServices
+    content.vb: Protected Sub New(host As ILogViewAdaptorHost(Of TLogView, TLogEntry), initialstate As TLogView, services As ILogConsistencyProtocolServices)
+  overload: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.#ctor*
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).PrimaryBasedLogViewAdaptor(ILogViewAdaptorHost(Of TLogView, TLogEntry), TLogView, ILogConsistencyProtocolServices)
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).PrimaryBasedLogViewAdaptor(ILogViewAdaptorHost(Of TLogView, TLogEntry), TLogView, ILogConsistencyProtocolServices)
+  name.vb: PrimaryBasedLogViewAdaptor(ILogViewAdaptorHost(Of TLogView, TLogEntry), TLogView, ILogConsistencyProtocolServices)
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.PreOnActivate
+  commentId: M:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.PreOnActivate
+  id: PreOnActivate
+  parent: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3
+  langs:
+  - csharp
+  - vb
+  name: PreOnActivate()
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.PreOnActivate()
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.PreOnActivate()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: PreOnActivate
+    path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+    startLine: 194
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  example: []
+  syntax:
+    content: public virtual Task PreOnActivate()
+    return:
+      type: Task
+    content.vb: Public Overridable Function PreOnActivate As Task
+  overload: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.PreOnActivate*
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).PreOnActivate()
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).PreOnActivate()
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.PostOnActivate
+  commentId: M:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.PostOnActivate
+  id: PostOnActivate
+  parent: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3
+  langs:
+  - csharp
+  - vb
+  name: PostOnActivate()
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.PostOnActivate()
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.PostOnActivate()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: PostOnActivate
+    path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+    startLine: 211
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  syntax:
+    content: public virtual Task PostOnActivate()
+    return:
+      type: Task
+    content.vb: Public Overridable Function PostOnActivate As Task
+  overload: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.PostOnActivate*
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).PostOnActivate()
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).PostOnActivate()
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.PostOnDeactivate
+  commentId: M:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.PostOnDeactivate
+  id: PostOnDeactivate
+  parent: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3
+  langs:
+  - csharp
+  - vb
+  name: PostOnDeactivate()
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.PostOnDeactivate()
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.PostOnDeactivate()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: PostOnDeactivate
+    path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+    startLine: 225
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  example: []
+  syntax:
+    content: public virtual Task PostOnDeactivate()
+    return:
+      type: Task
+    content.vb: Public Overridable Function PostOnDeactivate As Task
+  overload: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.PostOnDeactivate*
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).PostOnDeactivate()
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).PostOnDeactivate()
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.CopyTentativeState
+  commentId: M:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.CopyTentativeState
+  id: CopyTentativeState
+  parent: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3
+  langs:
+  - csharp
+  - vb
+  name: CopyTentativeState()
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.CopyTentativeState()
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.CopyTentativeState()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: CopyTentativeState
+    path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+    startLine: 248
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  example: []
+  syntax:
+    content: protected TLogView CopyTentativeState()
+    return:
+      type: '{TLogView}'
+    content.vb: Protected Function CopyTentativeState As TLogView
+  overload: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.CopyTentativeState*
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).CopyTentativeState()
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).CopyTentativeState()
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.GetCurrentBatchOfUpdates
+  commentId: M:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.GetCurrentBatchOfUpdates
+  id: GetCurrentBatchOfUpdates
+  parent: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3
+  langs:
+  - csharp
+  - vb
+  name: GetCurrentBatchOfUpdates()
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.GetCurrentBatchOfUpdates()
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.GetCurrentBatchOfUpdates()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetCurrentBatchOfUpdates
+    path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+    startLine: 255
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  example: []
+  syntax:
+    content: protected TSubmissionEntry[] GetCurrentBatchOfUpdates()
+    return:
+      type: '{TSubmissionEntry}[]'
+    content.vb: Protected Function GetCurrentBatchOfUpdates As TSubmissionEntry()
+  overload: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.GetCurrentBatchOfUpdates*
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).GetCurrentBatchOfUpdates()
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).GetCurrentBatchOfUpdates()
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.GetNumberPendingUpdates
+  commentId: M:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.GetNumberPendingUpdates
+  id: GetNumberPendingUpdates
+  parent: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3
+  langs:
+  - csharp
+  - vb
+  name: GetNumberPendingUpdates()
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.GetNumberPendingUpdates()
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.GetNumberPendingUpdates()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetNumberPendingUpdates
+    path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+    startLine: 260
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  example: []
+  syntax:
+    content: protected int GetNumberPendingUpdates()
+    return:
+      type: System.Int32
+    content.vb: Protected Function GetNumberPendingUpdates As Integer
+  overload: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.GetNumberPendingUpdates*
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).GetNumberPendingUpdates()
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).GetNumberPendingUpdates()
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.stats
+  commentId: F:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.stats
+  id: stats
+  parent: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3
+  langs:
+  - csharp
+  - vb
+  name: stats
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.stats
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.stats
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: stats
+    path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+    startLine: 290
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  example: []
+  syntax:
+    content: protected LogConsistencyStatistics stats
+    return:
+      type: LogConsistencyStatistics
+    content.vb: Protected stats As LogConsistencyStatistics
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).stats
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).stats
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.IsMyClusterJoined
+  commentId: M:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.IsMyClusterJoined
+  id: IsMyClusterJoined
+  parent: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3
+  langs:
+  - csharp
+  - vb
+  name: IsMyClusterJoined()
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.IsMyClusterJoined()
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.IsMyClusterJoined()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IsMyClusterJoined
+    path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+    startLine: 294
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  example: []
+  syntax:
+    content: protected bool IsMyClusterJoined()
+    return:
+      type: System.Boolean
+    content.vb: Protected Function IsMyClusterJoined As Boolean
+  overload: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.IsMyClusterJoined*
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).IsMyClusterJoined()
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).IsMyClusterJoined()
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.EnsureClusterJoinedAsync
+  commentId: M:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.EnsureClusterJoinedAsync
+  id: EnsureClusterJoinedAsync
+  parent: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3
+  langs:
+  - csharp
+  - vb
+  name: EnsureClusterJoinedAsync()
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.EnsureClusterJoinedAsync()
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.EnsureClusterJoinedAsync()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: EnsureClusterJoinedAsync
+    path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+    startLine: 302
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  summary: "\nBlock until this cluster is joined to the multicluster.\n"
+  example: []
+  syntax:
+    content: protected Task EnsureClusterJoinedAsync()
+    return:
+      type: Task
+    content.vb: Protected Function EnsureClusterJoinedAsync As Task
+  overload: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.EnsureClusterJoinedAsync*
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).EnsureClusterJoinedAsync()
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).EnsureClusterJoinedAsync()
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.GetCaughtUpWithConfigurationAsync(DateTime)
+  commentId: M:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.GetCaughtUpWithConfigurationAsync(DateTime)
+  id: GetCaughtUpWithConfigurationAsync(DateTime)
+  parent: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3
+  langs:
+  - csharp
+  - vb
+  name: GetCaughtUpWithConfigurationAsync(DateTime)
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.GetCaughtUpWithConfigurationAsync(DateTime)
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.GetCaughtUpWithConfigurationAsync(DateTime)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetCaughtUpWithConfigurationAsync
+    path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+    startLine: 313
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  summary: "\nWait until this cluster has received a configuration that is at least as new as timestamp\n"
+  example: []
+  syntax:
+    content: protected Task GetCaughtUpWithConfigurationAsync(DateTime adminTimestamp)
+    parameters:
+    - id: adminTimestamp
+      type: DateTime
+    return:
+      type: Task
+    content.vb: Protected Function GetCaughtUpWithConfigurationAsync(adminTimestamp As DateTime) As Task
+  overload: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.GetCaughtUpWithConfigurationAsync*
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).GetCaughtUpWithConfigurationAsync(DateTime)
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).GetCaughtUpWithConfigurationAsync(DateTime)
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.Submit(`1)
+  commentId: M:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.Submit(`1)
+  id: Submit(`1)
+  parent: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3
+  langs:
+  - csharp
+  - vb
+  name: Submit(TLogEntry)
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.Submit(TLogEntry)
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.Submit(TLogEntry)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Submit
+    path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+    startLine: 330
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  example: []
+  syntax:
+    content: public void Submit(TLogEntry logEntry)
+    parameters:
+    - id: logEntry
+      type: '{TLogEntry}'
+    content.vb: Public Sub Submit(logEntry As TLogEntry)
+  overload: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.Submit*
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).Submit(TLogEntry)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).Submit(TLogEntry)
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.SubmitRange(IEnumerable{`1})
+  commentId: M:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.SubmitRange(IEnumerable{`1})
+  id: SubmitRange(IEnumerable{`1})
+  parent: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3
+  langs:
+  - csharp
+  - vb
+  name: SubmitRange(IEnumerable<TLogEntry>)
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.SubmitRange(IEnumerable<TLogEntry>)
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.SubmitRange(IEnumerable<TLogEntry>)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SubmitRange
+    path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+    startLine: 345
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  example: []
+  syntax:
+    content: public void SubmitRange(IEnumerable<TLogEntry> logEntries)
+    parameters:
+    - id: logEntries
+      type: IEnumerable{{TLogEntry}}
+    content.vb: Public Sub SubmitRange(logEntries As IEnumerable(Of TLogEntry))
+  overload: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.SubmitRange*
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).SubmitRange(IEnumerable(Of TLogEntry))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).SubmitRange(IEnumerable(Of TLogEntry))
+  name.vb: SubmitRange(IEnumerable(Of TLogEntry))
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.TryAppend(`1)
+  commentId: M:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.TryAppend(`1)
+  id: TryAppend(`1)
+  parent: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3
+  langs:
+  - csharp
+  - vb
+  name: TryAppend(TLogEntry)
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.TryAppend(TLogEntry)
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.TryAppend(TLogEntry)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: TryAppend
+    path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+    startLine: 363
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  example: []
+  syntax:
+    content: public Task<bool> TryAppend(TLogEntry logEntry)
+    parameters:
+    - id: logEntry
+      type: '{TLogEntry}'
+    return:
+      type: Task{System.Boolean}
+    content.vb: Public Function TryAppend(logEntry As TLogEntry) As Task(Of Boolean)
+  overload: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.TryAppend*
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).TryAppend(TLogEntry)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).TryAppend(TLogEntry)
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.TryAppendRange(IEnumerable{`1})
+  commentId: M:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.TryAppendRange(IEnumerable{`1})
+  id: TryAppendRange(IEnumerable{`1})
+  parent: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3
+  langs:
+  - csharp
+  - vb
+  name: TryAppendRange(IEnumerable<TLogEntry>)
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.TryAppendRange(IEnumerable<TLogEntry>)
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.TryAppendRange(IEnumerable<TLogEntry>)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: TryAppendRange
+    path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+    startLine: 382
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  example: []
+  syntax:
+    content: public Task<bool> TryAppendRange(IEnumerable<TLogEntry> logEntries)
+    parameters:
+    - id: logEntries
+      type: IEnumerable{{TLogEntry}}
+    return:
+      type: Task{System.Boolean}
+    content.vb: Public Function TryAppendRange(logEntries As IEnumerable(Of TLogEntry)) As Task(Of Boolean)
+  overload: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.TryAppendRange*
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).TryAppendRange(IEnumerable(Of TLogEntry))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).TryAppendRange(IEnumerable(Of TLogEntry))
+  name.vb: TryAppendRange(IEnumerable(Of TLogEntry))
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.TentativeView
+  commentId: P:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.TentativeView
+  id: TentativeView
+  parent: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3
+  langs:
+  - csharp
+  - vb
+  name: TentativeView
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.TentativeView
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.TentativeView
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: TentativeView
+    path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+    startLine: 445
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  example: []
+  syntax:
+    content: public TLogView TentativeView { get; }
+    parameters: []
+    return:
+      type: '{TLogView}'
+    content.vb: Public ReadOnly Property TentativeView As TLogView
+  overload: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.TentativeView*
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).TentativeView
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).TentativeView
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.ConfirmedView
+  commentId: P:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.ConfirmedView
+  id: ConfirmedView
+  parent: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3
+  langs:
+  - csharp
+  - vb
+  name: ConfirmedView
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.ConfirmedView
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.ConfirmedView
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ConfirmedView
+    path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+    startLine: 460
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  example: []
+  syntax:
+    content: public TLogView ConfirmedView { get; }
+    parameters: []
+    return:
+      type: '{TLogView}'
+    content.vb: Public ReadOnly Property ConfirmedView As TLogView
+  overload: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.ConfirmedView*
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).ConfirmedView
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).ConfirmedView
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.ConfirmedVersion
+  commentId: P:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.ConfirmedVersion
+  id: ConfirmedVersion
+  parent: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3
+  langs:
+  - csharp
+  - vb
+  name: ConfirmedVersion
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.ConfirmedVersion
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.ConfirmedVersion
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ConfirmedVersion
+    path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+    startLine: 472
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  example: []
+  syntax:
+    content: public int ConfirmedVersion { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property ConfirmedVersion As Integer
+  overload: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.ConfirmedVersion*
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).ConfirmedVersion
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).ConfirmedVersion
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.OnProtocolMessageReceived(ILogConsistencyProtocolMessage)
+  commentId: M:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.OnProtocolMessageReceived(ILogConsistencyProtocolMessage)
+  id: OnProtocolMessageReceived(ILogConsistencyProtocolMessage)
+  parent: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3
+  langs:
+  - csharp
+  - vb
+  name: OnProtocolMessageReceived(ILogConsistencyProtocolMessage)
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.OnProtocolMessageReceived(ILogConsistencyProtocolMessage)
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.OnProtocolMessageReceived(ILogConsistencyProtocolMessage)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: OnProtocolMessageReceived
+    path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+    startLine: 488
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  summary: "\nCalled from network\n"
+  example: []
+  syntax:
+    content: public Task<ILogConsistencyProtocolMessage> OnProtocolMessageReceived(ILogConsistencyProtocolMessage payLoad)
+    parameters:
+    - id: payLoad
+      type: ILogConsistencyProtocolMessage
+      description: ''
+    return:
+      type: Task{ILogConsistencyProtocolMessage}
+      description: ''
+    content.vb: Public Function OnProtocolMessageReceived(payLoad As ILogConsistencyProtocolMessage) As Task(Of ILogConsistencyProtocolMessage)
+  overload: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.OnProtocolMessageReceived*
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).OnProtocolMessageReceived(ILogConsistencyProtocolMessage)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).OnProtocolMessageReceived(ILogConsistencyProtocolMessage)
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.OnMultiClusterConfigurationChange(Orleans.MultiCluster.MultiClusterConfiguration)
+  commentId: M:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.OnMultiClusterConfigurationChange(Orleans.MultiCluster.MultiClusterConfiguration)
+  id: OnMultiClusterConfigurationChange(Orleans.MultiCluster.MultiClusterConfiguration)
+  parent: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3
+  langs:
+  - csharp
+  - vb
+  name: OnMultiClusterConfigurationChange(MultiClusterConfiguration)
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.OnMultiClusterConfigurationChange(MultiClusterConfiguration)
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.OnMultiClusterConfigurationChange(Orleans.MultiCluster.MultiClusterConfiguration)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: OnMultiClusterConfigurationChange
+    path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+    startLine: 515
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  summary: "\nCalled by MultiClusterOracle when there is a configuration change.\n"
+  example: []
+  syntax:
+    content: public Task OnMultiClusterConfigurationChange(MultiClusterConfiguration newConfig)
+    parameters:
+    - id: newConfig
+      type: Orleans.MultiCluster.MultiClusterConfiguration
+    return:
+      type: Task
+      description: ''
+    content.vb: Public Function OnMultiClusterConfigurationChange(newConfig As MultiClusterConfiguration) As Task
+  overload: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.OnMultiClusterConfigurationChange*
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).OnMultiClusterConfigurationChange(MultiClusterConfiguration)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).OnMultiClusterConfigurationChange(Orleans.MultiCluster.MultiClusterConfiguration)
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.EnableStatsCollection
+  commentId: M:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.EnableStatsCollection
+  id: EnableStatsCollection
+  parent: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3
+  langs:
+  - csharp
+  - vb
+  name: EnableStatsCollection()
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.EnableStatsCollection()
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.EnableStatsCollection()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: EnableStatsCollection
+    path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+    startLine: 554
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  summary: "\nmethod is virtual so subclasses can add their own events\n"
+  example: []
+  syntax:
+    content: public virtual void EnableStatsCollection()
+    content.vb: Public Overridable Sub EnableStatsCollection
+  overload: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.EnableStatsCollection*
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).EnableStatsCollection()
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).EnableStatsCollection()
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.DisableStatsCollection
+  commentId: M:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.DisableStatsCollection
+  id: DisableStatsCollection
+  parent: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3
+  langs:
+  - csharp
+  - vb
+  name: DisableStatsCollection()
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.DisableStatsCollection()
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.DisableStatsCollection()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: DisableStatsCollection
+    path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+    startLine: 581
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  summary: "\nDisable stats collection\n"
+  example: []
+  syntax:
+    content: public void DisableStatsCollection()
+    content.vb: Public Sub DisableStatsCollection
+  overload: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.DisableStatsCollection*
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).DisableStatsCollection()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).DisableStatsCollection()
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.GetStats
+  commentId: M:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.GetStats
+  id: GetStats
+  parent: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3
+  langs:
+  - csharp
+  - vb
+  name: GetStats()
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.GetStats()
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.GetStats()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetStats
+    path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+    startLine: 590
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  summary: "\nGet states\n"
+  example: []
+  syntax:
+    content: public LogConsistencyStatistics GetStats()
+    return:
+      type: LogConsistencyStatistics
+      description: ''
+    content.vb: Public Function GetStats As LogConsistencyStatistics
+  overload: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.GetStats*
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).GetStats()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).GetStats()
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.UnresolvedConnectionIssues
+  commentId: P:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.UnresolvedConnectionIssues
+  id: UnresolvedConnectionIssues
+  parent: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3
+  langs:
+  - csharp
+  - vb
+  name: UnresolvedConnectionIssues
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.UnresolvedConnectionIssues
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.UnresolvedConnectionIssues
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: UnresolvedConnectionIssues
+    path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+    startLine: 758
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  summary: "\nreturns a list of all connection health issues that have not been restored yet.\nSuch issues are observed while communicating with the primary, or while trying to \nnotify other clusters, for example.\n"
+  example: []
+  syntax:
+    content: public IEnumerable<ConnectionIssue> UnresolvedConnectionIssues { get; }
+    parameters: []
+    return:
+      type: IEnumerable{Orleans.LogConsistency.ConnectionIssue}
+    content.vb: Public ReadOnly Property UnresolvedConnectionIssues As IEnumerable(Of ConnectionIssue)
+  overload: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.UnresolvedConnectionIssues*
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).UnresolvedConnectionIssues
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).UnresolvedConnectionIssues
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.LastPrimaryIssue
+  commentId: F:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.LastPrimaryIssue
+  id: LastPrimaryIssue
+  parent: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3
+  langs:
+  - csharp
+  - vb
+  name: LastPrimaryIssue
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.LastPrimaryIssue
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.LastPrimaryIssue
+  type: Field
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: LastPrimaryIssue
+    path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+    startLine: 774
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  summary: "\nStore the last issue that occurred while reading or updating primary.\nIs null if successful.\n"
+  example: []
+  syntax:
+    content: protected RecordedConnectionIssue LastPrimaryIssue
+    return:
+      type: Orleans.EventSourcing.Common.RecordedConnectionIssue
+    content.vb: Protected LastPrimaryIssue As RecordedConnectionIssue
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).LastPrimaryIssue
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).LastPrimaryIssue
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.Synchronize
+  commentId: M:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.Synchronize
+  id: Synchronize
+  parent: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3
+  langs:
+  - csharp
+  - vb
+  name: Synchronize()
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.Synchronize()
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.Synchronize()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Synchronize
+    path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+    startLine: 779
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  example: []
+  syntax:
+    content: public Task Synchronize()
+    return:
+      type: Task
+    content.vb: Public Function Synchronize As Task
+  overload: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.Synchronize*
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).Synchronize()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).Synchronize()
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.UnconfirmedSuffix
+  commentId: P:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.UnconfirmedSuffix
+  id: UnconfirmedSuffix
+  parent: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3
+  langs:
+  - csharp
+  - vb
+  name: UnconfirmedSuffix
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.UnconfirmedSuffix
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.UnconfirmedSuffix
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: UnconfirmedSuffix
+    path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+    startLine: 793
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  example: []
+  syntax:
+    content: public IEnumerable<TLogEntry> UnconfirmedSuffix { get; }
+    parameters: []
+    return:
+      type: IEnumerable{{TLogEntry}}
+    content.vb: Public ReadOnly Property UnconfirmedSuffix As IEnumerable(Of TLogEntry)
+  overload: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.UnconfirmedSuffix*
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).UnconfirmedSuffix
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).UnconfirmedSuffix
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.ConfirmSubmittedEntries
+  commentId: M:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.ConfirmSubmittedEntries
+  id: ConfirmSubmittedEntries
+  parent: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3
+  langs:
+  - csharp
+  - vb
+  name: ConfirmSubmittedEntries()
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.ConfirmSubmittedEntries()
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.ConfirmSubmittedEntries()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ConfirmSubmittedEntries
+    path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+    startLine: 802
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  example: []
+  syntax:
+    content: public Task ConfirmSubmittedEntries()
+    return:
+      type: Task
+    content.vb: Public Function ConfirmSubmittedEntries As Task
+  overload: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.ConfirmSubmittedEntries*
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).ConfirmSubmittedEntries()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).ConfirmSubmittedEntries()
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.NotifyPromises(System.Int32,System.Boolean)
+  commentId: M:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.NotifyPromises(System.Int32,System.Boolean)
+  id: NotifyPromises(System.Int32,System.Boolean)
+  parent: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3
+  langs:
+  - csharp
+  - vb
+  name: NotifyPromises(Int32, Boolean)
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.NotifyPromises(Int32, Boolean)
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.NotifyPromises(System.Int32, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: NotifyPromises
+    path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+    startLine: 818
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  summary: "\nsend failure notifications\n"
+  example: []
+  syntax:
+    content: protected void NotifyPromises(int count, bool success)
+    parameters:
+    - id: count
+      type: System.Int32
+    - id: success
+      type: System.Boolean
+    content.vb: Protected Sub NotifyPromises(count As Integer, success As Boolean)
+  overload: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.NotifyPromises*
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).NotifyPromises(Int32, Boolean)
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).NotifyPromises(System.Int32, System.Boolean)
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.RemoveStaleConditionalUpdates
+  commentId: M:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.RemoveStaleConditionalUpdates
+  id: RemoveStaleConditionalUpdates
+  parent: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3
+  langs:
+  - csharp
+  - vb
+  name: RemoveStaleConditionalUpdates()
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.RemoveStaleConditionalUpdates()
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.RemoveStaleConditionalUpdates()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: RemoveStaleConditionalUpdates
+    path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+    startLine: 831
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  summary: "\ngo through updates and remove all the conditional updates that have already failed\n"
+  example: []
+  syntax:
+    content: protected void RemoveStaleConditionalUpdates()
+    content.vb: Protected Sub RemoveStaleConditionalUpdates
+  overload: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.RemoveStaleConditionalUpdates*
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).RemoveStaleConditionalUpdates()
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).RemoveStaleConditionalUpdates()
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.BroadcastNotification(Orleans.EventSourcing.Common.INotificationMessage,System.String)
+  commentId: M:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.BroadcastNotification(Orleans.EventSourcing.Common.INotificationMessage,System.String)
+  id: BroadcastNotification(Orleans.EventSourcing.Common.INotificationMessage,System.String)
+  parent: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3
+  langs:
+  - csharp
+  - vb
+  name: BroadcastNotification(INotificationMessage, String)
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.BroadcastNotification(INotificationMessage, String)
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.BroadcastNotification(Orleans.EventSourcing.Common.INotificationMessage, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: BroadcastNotification
+    path: src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs
+    startLine: 870
+  assemblies:
+  - Orleans.EventSourcing
+  namespace: Orleans.EventSourcing.Common
+  summary: "\nSend a notification message to all remote instances\n"
+  example: []
+  syntax:
+    content: protected void BroadcastNotification(INotificationMessage msg, string exclude = null)
+    parameters:
+    - id: msg
+      type: Orleans.EventSourcing.Common.INotificationMessage
+      description: the notification message to send
+    - id: exclude
+      type: System.String
+      description: if non-null, exclude this cluster id from the notification
+    content.vb: Protected Sub BroadcastNotification(msg As INotificationMessage, exclude As String = Nothing)
+  overload: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.BroadcastNotification*
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).BroadcastNotification(INotificationMessage, String)
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).BroadcastNotification(Orleans.EventSourcing.Common.INotificationMessage, System.String)
+references:
+- uid: Orleans.EventSourcing.Common
+  commentId: N:Orleans.EventSourcing.Common
+  isExternal: false
+  name: Orleans.EventSourcing.Common
+  nameWithType: Orleans.EventSourcing.Common
+  fullName: Orleans.EventSourcing.Common
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>>()
+  nameWithType: ImmutableExt.AsImmutable<PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry))()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry))()
+  name.vb: AsImmutable(Of PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry))()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>>
+    nameWithType: ImmutableExt.AsImmutable<PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry))
+    nameWithType: ImmutableExt.AsImmutable(Of PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry))
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry))
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.InitializeConfirmedView*
+  commentId: Overload:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.InitializeConfirmedView
+  isExternal: false
+  name: InitializeConfirmedView
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.InitializeConfirmedView
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.InitializeConfirmedView
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).InitializeConfirmedView
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).InitializeConfirmedView
+- uid: '{TLogView}'
+  commentId: '!:TLogView'
+  definition: TLogView
+  name: TLogView
+  nameWithType: TLogView
+  fullName: TLogView
+- uid: TLogView
+  isExternal: false
+  name: TLogView
+  nameWithType: TLogView
+  fullName: TLogView
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.LastConfirmedView*
+  commentId: Overload:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.LastConfirmedView
+  isExternal: false
+  name: LastConfirmedView
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.LastConfirmedView
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.LastConfirmedView
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).LastConfirmedView
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).LastConfirmedView
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.GetConfirmedVersion*
+  commentId: Overload:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.GetConfirmedVersion
+  isExternal: false
+  name: GetConfirmedVersion
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.GetConfirmedVersion
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.GetConfirmedVersion
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).GetConfirmedVersion
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).GetConfirmedVersion
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.LastPrimaryIssue
+  commentId: F:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.LastPrimaryIssue
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.ReadAsync*
+  commentId: Overload:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.ReadAsync
+  isExternal: false
+  name: ReadAsync
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.ReadAsync
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.ReadAsync
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).ReadAsync
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).ReadAsync
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.WriteAsync*
+  commentId: Overload:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.WriteAsync
+  isExternal: false
+  name: WriteAsync
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.WriteAsync
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.WriteAsync
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).WriteAsync
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).WriteAsync
+- uid: Task{System.Int32}
+  commentId: '!:Task{System.Int32}'
+  definition: Task`1
+  name: Task<Int32>
+  nameWithType: Task<Int32>
+  fullName: Task<System.Int32>
+  nameWithType.vb: Task(Of Int32)
+  fullName.vb: Task(Of System.Int32)
+  name.vb: Task(Of Int32)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.MakeSubmissionEntry*
+  commentId: Overload:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.MakeSubmissionEntry
+  isExternal: false
+  name: MakeSubmissionEntry
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.MakeSubmissionEntry
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.MakeSubmissionEntry
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).MakeSubmissionEntry
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).MakeSubmissionEntry
+- uid: '{TLogEntry}'
+  commentId: '!:TLogEntry'
+  definition: TLogEntry
+  name: TLogEntry
+  nameWithType: TLogEntry
+  fullName: TLogEntry
+- uid: '{TSubmissionEntry}'
+  commentId: '!:TSubmissionEntry'
+  definition: TSubmissionEntry
+  name: TSubmissionEntry
+  nameWithType: TSubmissionEntry
+  fullName: TSubmissionEntry
+- uid: TLogEntry
+  isExternal: false
+  name: TLogEntry
+  nameWithType: TLogEntry
+  fullName: TLogEntry
+- uid: TSubmissionEntry
+  commentId: '!:TSubmissionEntry'
+  isExternal: false
+  name: TSubmissionEntry
+  nameWithType: TSubmissionEntry
+  fullName: TSubmissionEntry
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.SupportSubmissions*
+  commentId: Overload:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.SupportSubmissions
+  isExternal: false
+  name: SupportSubmissions
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.SupportSubmissions
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.SupportSubmissions
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).SupportSubmissions
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).SupportSubmissions
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.OnMessageReceived*
+  commentId: Overload:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.OnMessageReceived
+  isExternal: false
+  name: OnMessageReceived
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.OnMessageReceived
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.OnMessageReceived
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).OnMessageReceived
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).OnMessageReceived
+- uid: ILogConsistencyProtocolMessage
+  isExternal: true
+  name: ILogConsistencyProtocolMessage
+  nameWithType: ILogConsistencyProtocolMessage
+  fullName: ILogConsistencyProtocolMessage
+- uid: Task{ILogConsistencyProtocolMessage}
+  commentId: '!:Task{ILogConsistencyProtocolMessage}'
+  definition: Task`1
+  name: Task<ILogConsistencyProtocolMessage>
+  nameWithType: Task<ILogConsistencyProtocolMessage>
+  fullName: Task<ILogConsistencyProtocolMessage>
+  nameWithType.vb: Task(Of ILogConsistencyProtocolMessage)
+  fullName.vb: Task(Of ILogConsistencyProtocolMessage)
+  name.vb: Task(Of ILogConsistencyProtocolMessage)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: ILogConsistencyProtocolMessage
+    name: ILogConsistencyProtocolMessage
+    nameWithType: ILogConsistencyProtocolMessage
+    fullName: ILogConsistencyProtocolMessage
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: ILogConsistencyProtocolMessage
+    name: ILogConsistencyProtocolMessage
+    nameWithType: ILogConsistencyProtocolMessage
+    fullName: ILogConsistencyProtocolMessage
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.RetrieveLogSegment*
+  commentId: Overload:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.RetrieveLogSegment
+  isExternal: false
+  name: RetrieveLogSegment
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.RetrieveLogSegment
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.RetrieveLogSegment
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).RetrieveLogSegment
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).RetrieveLogSegment
+- uid: Task{IReadOnlyList{{TLogEntry}}}
+  commentId: '!:Task{IReadOnlyList{`1}}'
+  definition: Task`1
+  name: Task<IReadOnlyList<TLogEntry>>
+  nameWithType: Task<IReadOnlyList<TLogEntry>>
+  fullName: Task<IReadOnlyList<TLogEntry>>
+  nameWithType.vb: Task(Of IReadOnlyList(Of TLogEntry))
+  fullName.vb: Task(Of IReadOnlyList(Of TLogEntry))
+  name.vb: Task(Of IReadOnlyList(Of TLogEntry))
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: IReadOnlyList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TLogEntry
+    nameWithType: TLogEntry
+    fullName: TLogEntry
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: IReadOnlyList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TLogEntry
+    nameWithType: TLogEntry
+    fullName: TLogEntry
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.OnNotificationReceived*
+  commentId: Overload:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.OnNotificationReceived
+  isExternal: false
+  name: OnNotificationReceived
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.OnNotificationReceived
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.OnNotificationReceived
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).OnNotificationReceived
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).OnNotificationReceived
+- uid: Orleans.EventSourcing.Common.INotificationMessage
+  commentId: T:Orleans.EventSourcing.Common.INotificationMessage
+  parent: Orleans.EventSourcing.Common
+  isExternal: false
+  name: INotificationMessage
+  nameWithType: INotificationMessage
+  fullName: Orleans.EventSourcing.Common.INotificationMessage
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.ProcessNotifications*
+  commentId: Overload:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.ProcessNotifications
+  isExternal: false
+  name: ProcessNotifications
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.ProcessNotifications
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.ProcessNotifications
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).ProcessNotifications
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).ProcessNotifications
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.Merge*
+  commentId: Overload:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.Merge
+  isExternal: false
+  name: Merge
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.Merge
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.Merge
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).Merge
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).Merge
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.OnConfigurationChange*
+  commentId: Overload:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.OnConfigurationChange
+  isExternal: false
+  name: OnConfigurationChange
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.OnConfigurationChange
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.OnConfigurationChange
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).OnConfigurationChange
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).OnConfigurationChange
+- uid: MultiClusterConfiguration
+  isExternal: true
+  name: MultiClusterConfiguration
+  nameWithType: MultiClusterConfiguration
+  fullName: MultiClusterConfiguration
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.Host*
+  commentId: Overload:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.Host
+  isExternal: false
+  name: Host
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.Host
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.Host
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).Host
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).Host
+- uid: ILogViewAdaptorHost{{TLogView},{TLogEntry}}
+  commentId: '!:ILogViewAdaptorHost{`0,`1}'
+  definition: ILogViewAdaptorHost`2
+  name: ILogViewAdaptorHost<TLogView, TLogEntry>
+  nameWithType: ILogViewAdaptorHost<TLogView, TLogEntry>
+  fullName: ILogViewAdaptorHost<TLogView, TLogEntry>
+  nameWithType.vb: ILogViewAdaptorHost(Of TLogView, TLogEntry)
+  fullName.vb: ILogViewAdaptorHost(Of TLogView, TLogEntry)
+  name.vb: ILogViewAdaptorHost(Of TLogView, TLogEntry)
+  spec.csharp:
+  - uid: ILogViewAdaptorHost`2
+    name: ILogViewAdaptorHost
+    nameWithType: ILogViewAdaptorHost
+    fullName: ILogViewAdaptorHost
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TLogView
+    nameWithType: TLogView
+    fullName: TLogView
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TLogEntry
+    nameWithType: TLogEntry
+    fullName: TLogEntry
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ILogViewAdaptorHost`2
+    name: ILogViewAdaptorHost
+    nameWithType: ILogViewAdaptorHost
+    fullName: ILogViewAdaptorHost
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TLogView
+    nameWithType: TLogView
+    fullName: TLogView
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TLogEntry
+    nameWithType: TLogEntry
+    fullName: TLogEntry
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: ILogViewAdaptorHost`2
+  isExternal: true
+  name: ILogViewAdaptorHost<, >
+  nameWithType: ILogViewAdaptorHost<, >
+  fullName: ILogViewAdaptorHost<, >
+  nameWithType.vb: ILogViewAdaptorHost(Of , )
+  fullName.vb: ILogViewAdaptorHost(Of , )
+  name.vb: ILogViewAdaptorHost(Of , )
+  spec.csharp:
+  - uid: ILogViewAdaptorHost`2
+    name: ILogViewAdaptorHost
+    nameWithType: ILogViewAdaptorHost
+    fullName: ILogViewAdaptorHost
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ILogViewAdaptorHost`2
+    name: ILogViewAdaptorHost
+    nameWithType: ILogViewAdaptorHost
+    fullName: ILogViewAdaptorHost
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.Services*
+  commentId: Overload:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.Services
+  isExternal: false
+  name: Services
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.Services
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.Services
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).Services
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).Services
+- uid: ILogConsistencyProtocolServices
+  isExternal: true
+  name: ILogConsistencyProtocolServices
+  nameWithType: ILogConsistencyProtocolServices
+  fullName: ILogConsistencyProtocolServices
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.Configuration*
+  commentId: Overload:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.Configuration
+  isExternal: false
+  name: Configuration
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.Configuration
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.Configuration
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).Configuration
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).Configuration
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.#ctor*
+  commentId: Overload:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.#ctor
+  isExternal: false
+  name: PrimaryBasedLogViewAdaptor
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.PrimaryBasedLogViewAdaptor
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.PrimaryBasedLogViewAdaptor
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).PrimaryBasedLogViewAdaptor
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).PrimaryBasedLogViewAdaptor
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.PreOnActivate*
+  commentId: Overload:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.PreOnActivate
+  isExternal: false
+  name: PreOnActivate
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.PreOnActivate
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.PreOnActivate
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).PreOnActivate
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).PreOnActivate
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.PostOnActivate*
+  commentId: Overload:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.PostOnActivate
+  isExternal: false
+  name: PostOnActivate
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.PostOnActivate
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.PostOnActivate
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).PostOnActivate
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).PostOnActivate
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.PostOnDeactivate*
+  commentId: Overload:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.PostOnDeactivate
+  isExternal: false
+  name: PostOnDeactivate
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.PostOnDeactivate
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.PostOnDeactivate
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).PostOnDeactivate
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).PostOnDeactivate
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.CopyTentativeState*
+  commentId: Overload:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.CopyTentativeState
+  isExternal: false
+  name: CopyTentativeState
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.CopyTentativeState
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.CopyTentativeState
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).CopyTentativeState
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).CopyTentativeState
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.GetCurrentBatchOfUpdates*
+  commentId: Overload:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.GetCurrentBatchOfUpdates
+  isExternal: false
+  name: GetCurrentBatchOfUpdates
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.GetCurrentBatchOfUpdates
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.GetCurrentBatchOfUpdates
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).GetCurrentBatchOfUpdates
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).GetCurrentBatchOfUpdates
+- uid: '{TSubmissionEntry}[]'
+  name: TSubmissionEntry[]
+  nameWithType: TSubmissionEntry[]
+  fullName: TSubmissionEntry[]
+  nameWithType.vb: TSubmissionEntry()
+  fullName.vb: TSubmissionEntry()
+  name.vb: TSubmissionEntry()
+  spec.csharp:
+  - name: TSubmissionEntry
+    nameWithType: TSubmissionEntry
+    fullName: TSubmissionEntry
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - name: TSubmissionEntry
+    nameWithType: TSubmissionEntry
+    fullName: TSubmissionEntry
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.GetNumberPendingUpdates*
+  commentId: Overload:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.GetNumberPendingUpdates
+  isExternal: false
+  name: GetNumberPendingUpdates
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.GetNumberPendingUpdates
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.GetNumberPendingUpdates
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).GetNumberPendingUpdates
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).GetNumberPendingUpdates
+- uid: LogConsistencyStatistics
+  isExternal: true
+  name: LogConsistencyStatistics
+  nameWithType: LogConsistencyStatistics
+  fullName: LogConsistencyStatistics
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.IsMyClusterJoined*
+  commentId: Overload:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.IsMyClusterJoined
+  isExternal: false
+  name: IsMyClusterJoined
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.IsMyClusterJoined
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.IsMyClusterJoined
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).IsMyClusterJoined
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).IsMyClusterJoined
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.EnsureClusterJoinedAsync*
+  commentId: Overload:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.EnsureClusterJoinedAsync
+  isExternal: false
+  name: EnsureClusterJoinedAsync
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.EnsureClusterJoinedAsync
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.EnsureClusterJoinedAsync
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).EnsureClusterJoinedAsync
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).EnsureClusterJoinedAsync
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.GetCaughtUpWithConfigurationAsync*
+  commentId: Overload:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.GetCaughtUpWithConfigurationAsync
+  isExternal: false
+  name: GetCaughtUpWithConfigurationAsync
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.GetCaughtUpWithConfigurationAsync
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.GetCaughtUpWithConfigurationAsync
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).GetCaughtUpWithConfigurationAsync
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).GetCaughtUpWithConfigurationAsync
+- uid: DateTime
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: DateTime
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.Submit*
+  commentId: Overload:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.Submit
+  isExternal: false
+  name: Submit
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.Submit
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.Submit
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).Submit
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).Submit
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.SubmitRange*
+  commentId: Overload:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.SubmitRange
+  isExternal: false
+  name: SubmitRange
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.SubmitRange
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.SubmitRange
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).SubmitRange
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).SubmitRange
+- uid: IEnumerable{{TLogEntry}}
+  commentId: '!:IEnumerable{`1}'
+  definition: IEnumerable`1
+  name: IEnumerable<TLogEntry>
+  nameWithType: IEnumerable<TLogEntry>
+  fullName: IEnumerable<TLogEntry>
+  nameWithType.vb: IEnumerable(Of TLogEntry)
+  fullName.vb: IEnumerable(Of TLogEntry)
+  name.vb: IEnumerable(Of TLogEntry)
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TLogEntry
+    nameWithType: TLogEntry
+    fullName: TLogEntry
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TLogEntry
+    nameWithType: TLogEntry
+    fullName: TLogEntry
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IEnumerable`1
+  isExternal: true
+  name: IEnumerable<>
+  nameWithType: IEnumerable<>
+  fullName: IEnumerable<>
+  nameWithType.vb: IEnumerable(Of )
+  fullName.vb: IEnumerable(Of )
+  name.vb: IEnumerable(Of )
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.TryAppend*
+  commentId: Overload:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.TryAppend
+  isExternal: false
+  name: TryAppend
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.TryAppend
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.TryAppend
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).TryAppend
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).TryAppend
+- uid: Task{System.Boolean}
+  commentId: '!:Task{System.Boolean}'
+  definition: Task`1
+  name: Task<Boolean>
+  nameWithType: Task<Boolean>
+  fullName: Task<System.Boolean>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: Task(Of System.Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.TryAppendRange*
+  commentId: Overload:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.TryAppendRange
+  isExternal: false
+  name: TryAppendRange
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.TryAppendRange
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.TryAppendRange
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).TryAppendRange
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).TryAppendRange
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.TentativeView*
+  commentId: Overload:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.TentativeView
+  isExternal: false
+  name: TentativeView
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.TentativeView
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.TentativeView
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).TentativeView
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).TentativeView
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.ConfirmedView*
+  commentId: Overload:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.ConfirmedView
+  isExternal: false
+  name: ConfirmedView
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.ConfirmedView
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.ConfirmedView
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).ConfirmedView
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).ConfirmedView
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.ConfirmedVersion*
+  commentId: Overload:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.ConfirmedVersion
+  isExternal: false
+  name: ConfirmedVersion
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.ConfirmedVersion
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.ConfirmedVersion
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).ConfirmedVersion
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).ConfirmedVersion
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.OnProtocolMessageReceived*
+  commentId: Overload:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.OnProtocolMessageReceived
+  isExternal: false
+  name: OnProtocolMessageReceived
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.OnProtocolMessageReceived
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.OnProtocolMessageReceived
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).OnProtocolMessageReceived
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).OnProtocolMessageReceived
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.OnMultiClusterConfigurationChange*
+  commentId: Overload:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.OnMultiClusterConfigurationChange
+  isExternal: false
+  name: OnMultiClusterConfigurationChange
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.OnMultiClusterConfigurationChange
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.OnMultiClusterConfigurationChange
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).OnMultiClusterConfigurationChange
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).OnMultiClusterConfigurationChange
+- uid: Orleans.MultiCluster.MultiClusterConfiguration
+  commentId: '!:Orleans.MultiCluster.MultiClusterConfiguration'
+  isExternal: true
+  name: MultiClusterConfiguration
+  nameWithType: MultiClusterConfiguration
+  fullName: Orleans.MultiCluster.MultiClusterConfiguration
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.EnableStatsCollection*
+  commentId: Overload:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.EnableStatsCollection
+  isExternal: false
+  name: EnableStatsCollection
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.EnableStatsCollection
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.EnableStatsCollection
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).EnableStatsCollection
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).EnableStatsCollection
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.DisableStatsCollection*
+  commentId: Overload:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.DisableStatsCollection
+  isExternal: false
+  name: DisableStatsCollection
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.DisableStatsCollection
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.DisableStatsCollection
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).DisableStatsCollection
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).DisableStatsCollection
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.GetStats*
+  commentId: Overload:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.GetStats
+  isExternal: false
+  name: GetStats
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.GetStats
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.GetStats
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).GetStats
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).GetStats
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.UnresolvedConnectionIssues*
+  commentId: Overload:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.UnresolvedConnectionIssues
+  isExternal: false
+  name: UnresolvedConnectionIssues
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.UnresolvedConnectionIssues
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.UnresolvedConnectionIssues
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).UnresolvedConnectionIssues
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).UnresolvedConnectionIssues
+- uid: IEnumerable{Orleans.LogConsistency.ConnectionIssue}
+  commentId: '!:IEnumerable{Orleans.LogConsistency.ConnectionIssue}'
+  definition: IEnumerable`1
+  name: IEnumerable<ConnectionIssue>
+  nameWithType: IEnumerable<ConnectionIssue>
+  fullName: IEnumerable<Orleans.LogConsistency.ConnectionIssue>
+  nameWithType.vb: IEnumerable(Of ConnectionIssue)
+  fullName.vb: IEnumerable(Of Orleans.LogConsistency.ConnectionIssue)
+  name.vb: IEnumerable(Of ConnectionIssue)
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Orleans.LogConsistency.ConnectionIssue
+    name: ConnectionIssue
+    nameWithType: ConnectionIssue
+    fullName: Orleans.LogConsistency.ConnectionIssue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Orleans.LogConsistency.ConnectionIssue
+    name: ConnectionIssue
+    nameWithType: ConnectionIssue
+    fullName: Orleans.LogConsistency.ConnectionIssue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.Common.RecordedConnectionIssue
+  commentId: T:Orleans.EventSourcing.Common.RecordedConnectionIssue
+  parent: Orleans.EventSourcing.Common
+  isExternal: false
+  name: RecordedConnectionIssue
+  nameWithType: RecordedConnectionIssue
+  fullName: Orleans.EventSourcing.Common.RecordedConnectionIssue
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.Synchronize*
+  commentId: Overload:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.Synchronize
+  isExternal: false
+  name: Synchronize
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.Synchronize
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.Synchronize
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).Synchronize
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).Synchronize
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.UnconfirmedSuffix*
+  commentId: Overload:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.UnconfirmedSuffix
+  isExternal: false
+  name: UnconfirmedSuffix
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.UnconfirmedSuffix
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.UnconfirmedSuffix
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).UnconfirmedSuffix
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).UnconfirmedSuffix
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.ConfirmSubmittedEntries*
+  commentId: Overload:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.ConfirmSubmittedEntries
+  isExternal: false
+  name: ConfirmSubmittedEntries
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.ConfirmSubmittedEntries
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.ConfirmSubmittedEntries
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).ConfirmSubmittedEntries
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).ConfirmSubmittedEntries
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.NotifyPromises*
+  commentId: Overload:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.NotifyPromises
+  isExternal: false
+  name: NotifyPromises
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.NotifyPromises
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.NotifyPromises
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).NotifyPromises
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).NotifyPromises
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.RemoveStaleConditionalUpdates*
+  commentId: Overload:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.RemoveStaleConditionalUpdates
+  isExternal: false
+  name: RemoveStaleConditionalUpdates
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.RemoveStaleConditionalUpdates
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.RemoveStaleConditionalUpdates
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).RemoveStaleConditionalUpdates
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).RemoveStaleConditionalUpdates
+- uid: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.BroadcastNotification*
+  commentId: Overload:Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.BroadcastNotification
+  isExternal: false
+  name: BroadcastNotification
+  nameWithType: PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.BroadcastNotification
+  fullName: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor<TLogView, TLogEntry, TSubmissionEntry>.BroadcastNotification
+  nameWithType.vb: PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).BroadcastNotification
+  fullName.vb: Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor(Of TLogView, TLogEntry, TSubmissionEntry).BroadcastNotification
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

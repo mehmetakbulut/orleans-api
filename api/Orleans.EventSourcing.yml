@@ -1,0 +1,104 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.EventSourcing
+  commentId: N:Orleans.EventSourcing
+  id: Orleans.EventSourcing
+  children:
+  - Orleans.EventSourcing.JournaledGrain`1
+  - Orleans.EventSourcing.JournaledGrain`2
+  langs:
+  - csharp
+  - vb
+  name: Orleans.EventSourcing
+  nameWithType: Orleans.EventSourcing
+  fullName: Orleans.EventSourcing
+  type: Namespace
+  assemblies:
+  - Orleans.EventSourcing
+references:
+- uid: Orleans.EventSourcing.JournaledGrain`1
+  commentId: T:Orleans.EventSourcing.JournaledGrain`1
+  isExternal: false
+  name: JournaledGrain<TGrainState>
+  nameWithType: JournaledGrain<TGrainState>
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState>
+  nameWithType.vb: JournaledGrain(Of TGrainState)
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState)
+  name.vb: JournaledGrain(Of TGrainState)
+  spec.csharp:
+  - uid: Orleans.EventSourcing.JournaledGrain`1
+    name: JournaledGrain
+    nameWithType: JournaledGrain
+    fullName: Orleans.EventSourcing.JournaledGrain
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TGrainState
+    nameWithType: TGrainState
+    fullName: TGrainState
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Orleans.EventSourcing.JournaledGrain`1
+    name: JournaledGrain
+    nameWithType: JournaledGrain
+    fullName: Orleans.EventSourcing.JournaledGrain
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TGrainState
+    nameWithType: TGrainState
+    fullName: TGrainState
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.EventSourcing.JournaledGrain`2
+  commentId: T:Orleans.EventSourcing.JournaledGrain`2
+  isExternal: false
+  name: JournaledGrain<TGrainState, TEventBase>
+  nameWithType: JournaledGrain<TGrainState, TEventBase>
+  fullName: Orleans.EventSourcing.JournaledGrain<TGrainState, TEventBase>
+  nameWithType.vb: JournaledGrain(Of TGrainState, TEventBase)
+  fullName.vb: Orleans.EventSourcing.JournaledGrain(Of TGrainState, TEventBase)
+  name.vb: JournaledGrain(Of TGrainState, TEventBase)
+  spec.csharp:
+  - uid: Orleans.EventSourcing.JournaledGrain`2
+    name: JournaledGrain
+    nameWithType: JournaledGrain
+    fullName: Orleans.EventSourcing.JournaledGrain
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TGrainState
+    nameWithType: TGrainState
+    fullName: TGrainState
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEventBase
+    nameWithType: TEventBase
+    fullName: TEventBase
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Orleans.EventSourcing.JournaledGrain`2
+    name: JournaledGrain
+    nameWithType: JournaledGrain
+    fullName: Orleans.EventSourcing.JournaledGrain
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TGrainState
+    nameWithType: TGrainState
+    fullName: TGrainState
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEventBase
+    nameWithType: TEventBase
+    fullName: TEventBase
+  - name: )
+    nameWithType: )
+    fullName: )

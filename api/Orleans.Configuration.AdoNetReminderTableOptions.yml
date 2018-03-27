@@ -1,0 +1,240 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Configuration.AdoNetReminderTableOptions
+  commentId: T:Orleans.Configuration.AdoNetReminderTableOptions
+  id: AdoNetReminderTableOptions
+  parent: Orleans.Configuration
+  children:
+  - Orleans.Configuration.AdoNetReminderTableOptions.ConnectionString
+  - Orleans.Configuration.AdoNetReminderTableOptions.Invariant
+  langs:
+  - csharp
+  - vb
+  name: AdoNetReminderTableOptions
+  nameWithType: AdoNetReminderTableOptions
+  fullName: Orleans.Configuration.AdoNetReminderTableOptions
+  type: Class
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Reminders.AdoNet/ReminderService/AdoNetReminderTableOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AdoNetReminderTableOptions
+    path: src/AdoNet/Orleans.Reminders.AdoNet/ReminderService/AdoNetReminderTableOptions.cs
+    startLine: 9
+  assemblies:
+  - Orleans.Reminders.AdoNet
+  namespace: Orleans.Configuration
+  summary: "\nOptions for ADO.NET reminder storage.\n"
+  example: []
+  syntax:
+    content: 'public class AdoNetReminderTableOptions : object'
+    content.vb: >-
+      Public Class AdoNetReminderTableOptions
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.Configuration.AdoNetReminderTableOptions.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.Configuration.AdoNetReminderTableOptions.Invariant
+  commentId: P:Orleans.Configuration.AdoNetReminderTableOptions.Invariant
+  id: Invariant
+  parent: Orleans.Configuration.AdoNetReminderTableOptions
+  langs:
+  - csharp
+  - vb
+  name: Invariant
+  nameWithType: AdoNetReminderTableOptions.Invariant
+  fullName: Orleans.Configuration.AdoNetReminderTableOptions.Invariant
+  type: Property
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Reminders.AdoNet/ReminderService/AdoNetReminderTableOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Invariant
+    path: src/AdoNet/Orleans.Reminders.AdoNet/ReminderService/AdoNetReminderTableOptions.cs
+    startLine: 14
+  assemblies:
+  - Orleans.Reminders.AdoNet
+  namespace: Orleans.Configuration
+  summary: "\nGets or sets the ADO.NET invariant.\n"
+  example: []
+  syntax:
+    content: public string Invariant { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Invariant As String
+  overload: Orleans.Configuration.AdoNetReminderTableOptions.Invariant*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Configuration.AdoNetReminderTableOptions.ConnectionString
+  commentId: P:Orleans.Configuration.AdoNetReminderTableOptions.ConnectionString
+  id: ConnectionString
+  parent: Orleans.Configuration.AdoNetReminderTableOptions
+  langs:
+  - csharp
+  - vb
+  name: ConnectionString
+  nameWithType: AdoNetReminderTableOptions.ConnectionString
+  fullName: Orleans.Configuration.AdoNetReminderTableOptions.ConnectionString
+  type: Property
+  source:
+    remote:
+      path: src/AdoNet/Orleans.Reminders.AdoNet/ReminderService/AdoNetReminderTableOptions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ConnectionString
+    path: src/AdoNet/Orleans.Reminders.AdoNet/ReminderService/AdoNetReminderTableOptions.cs
+    startLine: 19
+  assemblies:
+  - Orleans.Reminders.AdoNet
+  namespace: Orleans.Configuration
+  summary: "\nGets or sets the connection string.\n"
+  example: []
+  syntax:
+    content: public string ConnectionString { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ConnectionString As String
+  overload: Orleans.Configuration.AdoNetReminderTableOptions.ConnectionString*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans.Configuration
+  commentId: N:Orleans.Configuration
+  isExternal: false
+  name: Orleans.Configuration
+  nameWithType: Orleans.Configuration
+  fullName: Orleans.Configuration
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Configuration.AdoNetReminderTableOptions.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<AdoNetReminderTableOptions>()
+  nameWithType: ImmutableExt.AsImmutable<AdoNetReminderTableOptions>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Configuration.AdoNetReminderTableOptions>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of AdoNetReminderTableOptions)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Configuration.AdoNetReminderTableOptions)()
+  name.vb: AsImmutable(Of AdoNetReminderTableOptions)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<AdoNetReminderTableOptions>
+    nameWithType: ImmutableExt.AsImmutable<AdoNetReminderTableOptions>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Configuration.AdoNetReminderTableOptions>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of AdoNetReminderTableOptions)
+    nameWithType: ImmutableExt.AsImmutable(Of AdoNetReminderTableOptions)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Configuration.AdoNetReminderTableOptions)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Configuration.AdoNetReminderTableOptions.Invariant*
+  commentId: Overload:Orleans.Configuration.AdoNetReminderTableOptions.Invariant
+  isExternal: false
+  name: Invariant
+  nameWithType: AdoNetReminderTableOptions.Invariant
+  fullName: Orleans.Configuration.AdoNetReminderTableOptions.Invariant
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Orleans.Configuration.AdoNetReminderTableOptions.ConnectionString*
+  commentId: Overload:Orleans.Configuration.AdoNetReminderTableOptions.ConnectionString
+  isExternal: false
+  name: ConnectionString
+  nameWithType: AdoNetReminderTableOptions.ConnectionString
+  fullName: Orleans.Configuration.AdoNetReminderTableOptions.ConnectionString

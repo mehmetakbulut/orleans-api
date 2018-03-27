@@ -1,0 +1,174 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Streams.StreamSequenceTokenUtilities
+  commentId: T:Orleans.Streams.StreamSequenceTokenUtilities
+  id: StreamSequenceTokenUtilities
+  parent: Orleans.Streams
+  children:
+  - Orleans.Streams.StreamSequenceTokenUtilities.Newer(Orleans.Streams.StreamSequenceToken,Orleans.Streams.StreamSequenceToken)
+  - Orleans.Streams.StreamSequenceTokenUtilities.Older(Orleans.Streams.StreamSequenceToken,Orleans.Streams.StreamSequenceToken)
+  langs:
+  - csharp
+  - vb
+  name: StreamSequenceTokenUtilities
+  nameWithType: StreamSequenceTokenUtilities
+  fullName: Orleans.Streams.StreamSequenceTokenUtilities
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Streams/Core/StreamSequenceToken.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: StreamSequenceTokenUtilities
+    path: src/Orleans.Core.Abstractions/Streams/Core/StreamSequenceToken.cs
+    startLine: 25
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Streams
+  syntax:
+    content: 'public static class StreamSequenceTokenUtilities : object'
+    content.vb: >-
+      Public Module StreamSequenceTokenUtilities
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Orleans.Streams.StreamSequenceTokenUtilities.Newer(Orleans.Streams.StreamSequenceToken,Orleans.Streams.StreamSequenceToken)
+  commentId: M:Orleans.Streams.StreamSequenceTokenUtilities.Newer(Orleans.Streams.StreamSequenceToken,Orleans.Streams.StreamSequenceToken)
+  id: Newer(Orleans.Streams.StreamSequenceToken,Orleans.Streams.StreamSequenceToken)
+  isExtensionMethod: true
+  parent: Orleans.Streams.StreamSequenceTokenUtilities
+  langs:
+  - csharp
+  - vb
+  name: Newer(StreamSequenceToken, StreamSequenceToken)
+  nameWithType: StreamSequenceTokenUtilities.Newer(StreamSequenceToken, StreamSequenceToken)
+  fullName: Orleans.Streams.StreamSequenceTokenUtilities.Newer(Orleans.Streams.StreamSequenceToken, Orleans.Streams.StreamSequenceToken)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Streams/Core/StreamSequenceToken.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Newer
+    path: src/Orleans.Core.Abstractions/Streams/Core/StreamSequenceToken.cs
+    startLine: 27
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Streams
+  syntax:
+    content: public static bool Newer(this StreamSequenceToken me, StreamSequenceToken other)
+    parameters:
+    - id: me
+      type: Orleans.Streams.StreamSequenceToken
+    - id: other
+      type: Orleans.Streams.StreamSequenceToken
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Newer(me As StreamSequenceToken, other As StreamSequenceToken) As Boolean
+  overload: Orleans.Streams.StreamSequenceTokenUtilities.Newer*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.Streams.StreamSequenceTokenUtilities.Older(Orleans.Streams.StreamSequenceToken,Orleans.Streams.StreamSequenceToken)
+  commentId: M:Orleans.Streams.StreamSequenceTokenUtilities.Older(Orleans.Streams.StreamSequenceToken,Orleans.Streams.StreamSequenceToken)
+  id: Older(Orleans.Streams.StreamSequenceToken,Orleans.Streams.StreamSequenceToken)
+  isExtensionMethod: true
+  parent: Orleans.Streams.StreamSequenceTokenUtilities
+  langs:
+  - csharp
+  - vb
+  name: Older(StreamSequenceToken, StreamSequenceToken)
+  nameWithType: StreamSequenceTokenUtilities.Older(StreamSequenceToken, StreamSequenceToken)
+  fullName: Orleans.Streams.StreamSequenceTokenUtilities.Older(Orleans.Streams.StreamSequenceToken, Orleans.Streams.StreamSequenceToken)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/Streams/Core/StreamSequenceToken.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Older
+    path: src/Orleans.Core.Abstractions/Streams/Core/StreamSequenceToken.cs
+    startLine: 32
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.Streams
+  syntax:
+    content: public static bool Older(this StreamSequenceToken me, StreamSequenceToken other)
+    parameters:
+    - id: me
+      type: Orleans.Streams.StreamSequenceToken
+    - id: other
+      type: Orleans.Streams.StreamSequenceToken
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Older(me As StreamSequenceToken, other As StreamSequenceToken) As Boolean
+  overload: Orleans.Streams.StreamSequenceTokenUtilities.Older*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Orleans.Streams
+  commentId: N:Orleans.Streams
+  isExternal: false
+  name: Orleans.Streams
+  nameWithType: Orleans.Streams
+  fullName: Orleans.Streams
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Streams.StreamSequenceTokenUtilities.Newer*
+  commentId: Overload:Orleans.Streams.StreamSequenceTokenUtilities.Newer
+  isExternal: false
+  name: Newer
+  nameWithType: StreamSequenceTokenUtilities.Newer
+  fullName: Orleans.Streams.StreamSequenceTokenUtilities.Newer
+- uid: Orleans.Streams.StreamSequenceToken
+  commentId: T:Orleans.Streams.StreamSequenceToken
+  parent: Orleans.Streams
+  isExternal: false
+  name: StreamSequenceToken
+  nameWithType: StreamSequenceToken
+  fullName: Orleans.Streams.StreamSequenceToken
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Orleans.Streams.StreamSequenceTokenUtilities.Older*
+  commentId: Overload:Orleans.Streams.StreamSequenceTokenUtilities.Older
+  isExternal: false
+  name: Older
+  nameWithType: StreamSequenceTokenUtilities.Older
+  fullName: Orleans.Streams.StreamSequenceTokenUtilities.Older

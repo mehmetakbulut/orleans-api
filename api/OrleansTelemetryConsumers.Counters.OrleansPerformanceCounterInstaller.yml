@@ -1,0 +1,1541 @@
+### YamlMime:ManagedReference
+items:
+- uid: OrleansTelemetryConsumers.Counters.OrleansPerformanceCounterInstaller
+  commentId: T:OrleansTelemetryConsumers.Counters.OrleansPerformanceCounterInstaller
+  id: OrleansPerformanceCounterInstaller
+  parent: OrleansTelemetryConsumers.Counters
+  children:
+  - OrleansTelemetryConsumers.Counters.OrleansPerformanceCounterInstaller.#ctor
+  - OrleansTelemetryConsumers.Counters.OrleansPerformanceCounterInstaller.Install(System.Collections.IDictionary)
+  - OrleansTelemetryConsumers.Counters.OrleansPerformanceCounterInstaller.Uninstall(System.Collections.IDictionary)
+  langs:
+  - csharp
+  - vb
+  name: OrleansPerformanceCounterInstaller
+  nameWithType: OrleansPerformanceCounterInstaller
+  fullName: OrleansTelemetryConsumers.Counters.OrleansPerformanceCounterInstaller
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.TelemetryConsumers.Counters/OrleansPerformanceCounterInstaller.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: OrleansPerformanceCounterInstaller
+    path: src/Orleans.TelemetryConsumers.Counters/OrleansPerformanceCounterInstaller.cs
+    startLine: 21
+  assemblies:
+  - Orleans.TelemetryConsumers.Counters
+  namespace: OrleansTelemetryConsumers.Counters
+  summary: "\nProviders installer hooks for registering Orleans custom performance counters.\n"
+  example: []
+  syntax:
+    content: 'public class OrleansPerformanceCounterInstaller : Installer, IComponent, IDisposable'
+    content.vb: >-
+      Public Class OrleansPerformanceCounterInstaller
+
+          Inherits Installer
+
+          Implements IComponent, IDisposable
+  inheritance:
+  - System.Object
+  - System.MarshalByRefObject
+  - System.ComponentModel.Component
+  - System.Configuration.Install.Installer
+  implements:
+  - System.ComponentModel.IComponent
+  - System.IDisposable
+  inheritedMembers:
+  - System.Configuration.Install.Installer.Commit(System.Collections.IDictionary)
+  - System.Configuration.Install.Installer.OnCommitted(System.Collections.IDictionary)
+  - System.Configuration.Install.Installer.OnAfterInstall(System.Collections.IDictionary)
+  - System.Configuration.Install.Installer.OnAfterRollback(System.Collections.IDictionary)
+  - System.Configuration.Install.Installer.OnAfterUninstall(System.Collections.IDictionary)
+  - System.Configuration.Install.Installer.OnCommitting(System.Collections.IDictionary)
+  - System.Configuration.Install.Installer.OnBeforeInstall(System.Collections.IDictionary)
+  - System.Configuration.Install.Installer.OnBeforeRollback(System.Collections.IDictionary)
+  - System.Configuration.Install.Installer.OnBeforeUninstall(System.Collections.IDictionary)
+  - System.Configuration.Install.Installer.Rollback(System.Collections.IDictionary)
+  - System.Configuration.Install.Installer.Context
+  - System.Configuration.Install.Installer.HelpText
+  - System.Configuration.Install.Installer.Installers
+  - System.Configuration.Install.Installer.Parent
+  - System.Configuration.Install.Installer.Committed
+  - System.Configuration.Install.Installer.AfterInstall
+  - System.Configuration.Install.Installer.AfterRollback
+  - System.Configuration.Install.Installer.AfterUninstall
+  - System.Configuration.Install.Installer.Committing
+  - System.Configuration.Install.Installer.BeforeInstall
+  - System.Configuration.Install.Installer.BeforeRollback
+  - System.Configuration.Install.Installer.BeforeUninstall
+  - System.ComponentModel.Component.Dispose
+  - System.ComponentModel.Component.Dispose(System.Boolean)
+  - System.ComponentModel.Component.GetService(System.Type)
+  - System.ComponentModel.Component.ToString
+  - System.ComponentModel.Component.CanRaiseEvents
+  - System.ComponentModel.Component.Events
+  - System.ComponentModel.Component.Site
+  - System.ComponentModel.Component.Container
+  - System.ComponentModel.Component.DesignMode
+  - System.ComponentModel.Component.Disposed
+  - System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+  - System.MarshalByRefObject.GetLifetimeService
+  - System.MarshalByRefObject.InitializeLifetimeService
+  - System.MarshalByRefObject.CreateObjRef(System.Type)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  extensionMethods:
+  - OrleansTelemetryConsumers.Counters.OrleansPerformanceCounterInstaller.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: OrleansTelemetryConsumers.Counters.OrleansPerformanceCounterInstaller.#ctor
+  commentId: M:OrleansTelemetryConsumers.Counters.OrleansPerformanceCounterInstaller.#ctor
+  id: '#ctor'
+  parent: OrleansTelemetryConsumers.Counters.OrleansPerformanceCounterInstaller
+  langs:
+  - csharp
+  - vb
+  name: OrleansPerformanceCounterInstaller()
+  nameWithType: OrleansPerformanceCounterInstaller.OrleansPerformanceCounterInstaller()
+  fullName: OrleansTelemetryConsumers.Counters.OrleansPerformanceCounterInstaller.OrleansPerformanceCounterInstaller()
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.TelemetryConsumers.Counters/OrleansPerformanceCounterInstaller.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.TelemetryConsumers.Counters/OrleansPerformanceCounterInstaller.cs
+    startLine: 30
+  assemblies:
+  - Orleans.TelemetryConsumers.Counters
+  namespace: OrleansTelemetryConsumers.Counters
+  summary: "\nConstructors -- Registers Orleans system performance counters, \nplus any grain-specific activation counters that can be detected when this installer is run.\n"
+  example: []
+  syntax:
+    content: public OrleansPerformanceCounterInstaller()
+    content.vb: Public Sub New
+  overload: OrleansTelemetryConsumers.Counters.OrleansPerformanceCounterInstaller.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: OrleansTelemetryConsumers.Counters.OrleansPerformanceCounterInstaller.Install(System.Collections.IDictionary)
+  commentId: M:OrleansTelemetryConsumers.Counters.OrleansPerformanceCounterInstaller.Install(System.Collections.IDictionary)
+  id: Install(System.Collections.IDictionary)
+  parent: OrleansTelemetryConsumers.Counters.OrleansPerformanceCounterInstaller
+  langs:
+  - csharp
+  - vb
+  name: Install(IDictionary)
+  nameWithType: OrleansPerformanceCounterInstaller.Install(IDictionary)
+  fullName: OrleansTelemetryConsumers.Counters.OrleansPerformanceCounterInstaller.Install(System.Collections.IDictionary)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.TelemetryConsumers.Counters/OrleansPerformanceCounterInstaller.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Install
+    path: src/Orleans.TelemetryConsumers.Counters/OrleansPerformanceCounterInstaller.cs
+    startLine: 57
+  assemblies:
+  - Orleans.TelemetryConsumers.Counters
+  namespace: OrleansTelemetryConsumers.Counters
+  summary: "\nInstalls predefined performance counters logged by this telemetry consumer.\n"
+  example: []
+  syntax:
+    content: public override void Install(IDictionary stateSaver)
+    parameters:
+    - id: stateSaver
+      type: System.Collections.IDictionary
+      description: 'An <xref href="System.Collections.IDictionary" data-throw-if-not-resolved="false"></xref> used to save information needed to perform a commit, rollback, or uninstall operation. '
+    content.vb: Public Overrides Sub Install(stateSaver As IDictionary)
+  overridden: System.Configuration.Install.Installer.Install(System.Collections.IDictionary)
+  overload: OrleansTelemetryConsumers.Counters.OrleansPerformanceCounterInstaller.Install*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: OrleansTelemetryConsumers.Counters.OrleansPerformanceCounterInstaller.Uninstall(System.Collections.IDictionary)
+  commentId: M:OrleansTelemetryConsumers.Counters.OrleansPerformanceCounterInstaller.Uninstall(System.Collections.IDictionary)
+  id: Uninstall(System.Collections.IDictionary)
+  parent: OrleansTelemetryConsumers.Counters.OrleansPerformanceCounterInstaller
+  langs:
+  - csharp
+  - vb
+  name: Uninstall(IDictionary)
+  nameWithType: OrleansPerformanceCounterInstaller.Uninstall(IDictionary)
+  fullName: OrleansTelemetryConsumers.Counters.OrleansPerformanceCounterInstaller.Uninstall(System.Collections.IDictionary)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.TelemetryConsumers.Counters/OrleansPerformanceCounterInstaller.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Uninstall
+    path: src/Orleans.TelemetryConsumers.Counters/OrleansPerformanceCounterInstaller.cs
+    startLine: 72
+  assemblies:
+  - Orleans.TelemetryConsumers.Counters
+  namespace: OrleansTelemetryConsumers.Counters
+  summary: "\nRemoves performance counters installed by this telemetry consumers.\n"
+  example: []
+  syntax:
+    content: public override void Uninstall(IDictionary savedState)
+    parameters:
+    - id: savedState
+      type: System.Collections.IDictionary
+      description: 'An <xref href="System.Collections.IDictionary" data-throw-if-not-resolved="false"></xref> that contains the state of the computer after the installation was complete. '
+    content.vb: Public Overrides Sub Uninstall(savedState As IDictionary)
+  overridden: System.Configuration.Install.Installer.Uninstall(System.Collections.IDictionary)
+  overload: OrleansTelemetryConsumers.Counters.OrleansPerformanceCounterInstaller.Uninstall*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: OrleansTelemetryConsumers.Counters
+  commentId: N:OrleansTelemetryConsumers.Counters
+  isExternal: false
+  name: OrleansTelemetryConsumers.Counters
+  nameWithType: OrleansTelemetryConsumers.Counters
+  fullName: OrleansTelemetryConsumers.Counters
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.MarshalByRefObject
+  commentId: T:System.MarshalByRefObject
+  parent: System
+  isExternal: true
+  name: MarshalByRefObject
+  nameWithType: MarshalByRefObject
+  fullName: System.MarshalByRefObject
+- uid: System.ComponentModel.Component
+  commentId: T:System.ComponentModel.Component
+  parent: System.ComponentModel
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: System.ComponentModel.Component
+- uid: System.Configuration.Install.Installer
+  commentId: T:System.Configuration.Install.Installer
+  parent: System.Configuration.Install
+  isExternal: true
+  name: Installer
+  nameWithType: Installer
+  fullName: System.Configuration.Install.Installer
+- uid: System.ComponentModel.IComponent
+  commentId: T:System.ComponentModel.IComponent
+  parent: System.ComponentModel
+  isExternal: true
+  name: IComponent
+  nameWithType: IComponent
+  fullName: System.ComponentModel.IComponent
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Configuration.Install.Installer.Commit(System.Collections.IDictionary)
+  commentId: M:System.Configuration.Install.Installer.Commit(System.Collections.IDictionary)
+  parent: System.Configuration.Install.Installer
+  isExternal: true
+  name: Commit(IDictionary)
+  nameWithType: Installer.Commit(IDictionary)
+  fullName: System.Configuration.Install.Installer.Commit(System.Collections.IDictionary)
+  spec.csharp:
+  - uid: System.Configuration.Install.Installer.Commit(System.Collections.IDictionary)
+    name: Commit
+    nameWithType: Installer.Commit
+    fullName: System.Configuration.Install.Installer.Commit
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.IDictionary
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.IDictionary
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Configuration.Install.Installer.Commit(System.Collections.IDictionary)
+    name: Commit
+    nameWithType: Installer.Commit
+    fullName: System.Configuration.Install.Installer.Commit
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.IDictionary
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.IDictionary
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Configuration.Install.Installer.OnCommitted(System.Collections.IDictionary)
+  commentId: M:System.Configuration.Install.Installer.OnCommitted(System.Collections.IDictionary)
+  parent: System.Configuration.Install.Installer
+  isExternal: true
+  name: OnCommitted(IDictionary)
+  nameWithType: Installer.OnCommitted(IDictionary)
+  fullName: System.Configuration.Install.Installer.OnCommitted(System.Collections.IDictionary)
+  spec.csharp:
+  - uid: System.Configuration.Install.Installer.OnCommitted(System.Collections.IDictionary)
+    name: OnCommitted
+    nameWithType: Installer.OnCommitted
+    fullName: System.Configuration.Install.Installer.OnCommitted
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.IDictionary
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.IDictionary
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Configuration.Install.Installer.OnCommitted(System.Collections.IDictionary)
+    name: OnCommitted
+    nameWithType: Installer.OnCommitted
+    fullName: System.Configuration.Install.Installer.OnCommitted
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.IDictionary
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.IDictionary
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Configuration.Install.Installer.OnAfterInstall(System.Collections.IDictionary)
+  commentId: M:System.Configuration.Install.Installer.OnAfterInstall(System.Collections.IDictionary)
+  parent: System.Configuration.Install.Installer
+  isExternal: true
+  name: OnAfterInstall(IDictionary)
+  nameWithType: Installer.OnAfterInstall(IDictionary)
+  fullName: System.Configuration.Install.Installer.OnAfterInstall(System.Collections.IDictionary)
+  spec.csharp:
+  - uid: System.Configuration.Install.Installer.OnAfterInstall(System.Collections.IDictionary)
+    name: OnAfterInstall
+    nameWithType: Installer.OnAfterInstall
+    fullName: System.Configuration.Install.Installer.OnAfterInstall
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.IDictionary
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.IDictionary
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Configuration.Install.Installer.OnAfterInstall(System.Collections.IDictionary)
+    name: OnAfterInstall
+    nameWithType: Installer.OnAfterInstall
+    fullName: System.Configuration.Install.Installer.OnAfterInstall
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.IDictionary
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.IDictionary
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Configuration.Install.Installer.OnAfterRollback(System.Collections.IDictionary)
+  commentId: M:System.Configuration.Install.Installer.OnAfterRollback(System.Collections.IDictionary)
+  parent: System.Configuration.Install.Installer
+  isExternal: true
+  name: OnAfterRollback(IDictionary)
+  nameWithType: Installer.OnAfterRollback(IDictionary)
+  fullName: System.Configuration.Install.Installer.OnAfterRollback(System.Collections.IDictionary)
+  spec.csharp:
+  - uid: System.Configuration.Install.Installer.OnAfterRollback(System.Collections.IDictionary)
+    name: OnAfterRollback
+    nameWithType: Installer.OnAfterRollback
+    fullName: System.Configuration.Install.Installer.OnAfterRollback
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.IDictionary
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.IDictionary
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Configuration.Install.Installer.OnAfterRollback(System.Collections.IDictionary)
+    name: OnAfterRollback
+    nameWithType: Installer.OnAfterRollback
+    fullName: System.Configuration.Install.Installer.OnAfterRollback
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.IDictionary
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.IDictionary
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Configuration.Install.Installer.OnAfterUninstall(System.Collections.IDictionary)
+  commentId: M:System.Configuration.Install.Installer.OnAfterUninstall(System.Collections.IDictionary)
+  parent: System.Configuration.Install.Installer
+  isExternal: true
+  name: OnAfterUninstall(IDictionary)
+  nameWithType: Installer.OnAfterUninstall(IDictionary)
+  fullName: System.Configuration.Install.Installer.OnAfterUninstall(System.Collections.IDictionary)
+  spec.csharp:
+  - uid: System.Configuration.Install.Installer.OnAfterUninstall(System.Collections.IDictionary)
+    name: OnAfterUninstall
+    nameWithType: Installer.OnAfterUninstall
+    fullName: System.Configuration.Install.Installer.OnAfterUninstall
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.IDictionary
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.IDictionary
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Configuration.Install.Installer.OnAfterUninstall(System.Collections.IDictionary)
+    name: OnAfterUninstall
+    nameWithType: Installer.OnAfterUninstall
+    fullName: System.Configuration.Install.Installer.OnAfterUninstall
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.IDictionary
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.IDictionary
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Configuration.Install.Installer.OnCommitting(System.Collections.IDictionary)
+  commentId: M:System.Configuration.Install.Installer.OnCommitting(System.Collections.IDictionary)
+  parent: System.Configuration.Install.Installer
+  isExternal: true
+  name: OnCommitting(IDictionary)
+  nameWithType: Installer.OnCommitting(IDictionary)
+  fullName: System.Configuration.Install.Installer.OnCommitting(System.Collections.IDictionary)
+  spec.csharp:
+  - uid: System.Configuration.Install.Installer.OnCommitting(System.Collections.IDictionary)
+    name: OnCommitting
+    nameWithType: Installer.OnCommitting
+    fullName: System.Configuration.Install.Installer.OnCommitting
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.IDictionary
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.IDictionary
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Configuration.Install.Installer.OnCommitting(System.Collections.IDictionary)
+    name: OnCommitting
+    nameWithType: Installer.OnCommitting
+    fullName: System.Configuration.Install.Installer.OnCommitting
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.IDictionary
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.IDictionary
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Configuration.Install.Installer.OnBeforeInstall(System.Collections.IDictionary)
+  commentId: M:System.Configuration.Install.Installer.OnBeforeInstall(System.Collections.IDictionary)
+  parent: System.Configuration.Install.Installer
+  isExternal: true
+  name: OnBeforeInstall(IDictionary)
+  nameWithType: Installer.OnBeforeInstall(IDictionary)
+  fullName: System.Configuration.Install.Installer.OnBeforeInstall(System.Collections.IDictionary)
+  spec.csharp:
+  - uid: System.Configuration.Install.Installer.OnBeforeInstall(System.Collections.IDictionary)
+    name: OnBeforeInstall
+    nameWithType: Installer.OnBeforeInstall
+    fullName: System.Configuration.Install.Installer.OnBeforeInstall
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.IDictionary
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.IDictionary
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Configuration.Install.Installer.OnBeforeInstall(System.Collections.IDictionary)
+    name: OnBeforeInstall
+    nameWithType: Installer.OnBeforeInstall
+    fullName: System.Configuration.Install.Installer.OnBeforeInstall
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.IDictionary
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.IDictionary
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Configuration.Install.Installer.OnBeforeRollback(System.Collections.IDictionary)
+  commentId: M:System.Configuration.Install.Installer.OnBeforeRollback(System.Collections.IDictionary)
+  parent: System.Configuration.Install.Installer
+  isExternal: true
+  name: OnBeforeRollback(IDictionary)
+  nameWithType: Installer.OnBeforeRollback(IDictionary)
+  fullName: System.Configuration.Install.Installer.OnBeforeRollback(System.Collections.IDictionary)
+  spec.csharp:
+  - uid: System.Configuration.Install.Installer.OnBeforeRollback(System.Collections.IDictionary)
+    name: OnBeforeRollback
+    nameWithType: Installer.OnBeforeRollback
+    fullName: System.Configuration.Install.Installer.OnBeforeRollback
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.IDictionary
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.IDictionary
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Configuration.Install.Installer.OnBeforeRollback(System.Collections.IDictionary)
+    name: OnBeforeRollback
+    nameWithType: Installer.OnBeforeRollback
+    fullName: System.Configuration.Install.Installer.OnBeforeRollback
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.IDictionary
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.IDictionary
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Configuration.Install.Installer.OnBeforeUninstall(System.Collections.IDictionary)
+  commentId: M:System.Configuration.Install.Installer.OnBeforeUninstall(System.Collections.IDictionary)
+  parent: System.Configuration.Install.Installer
+  isExternal: true
+  name: OnBeforeUninstall(IDictionary)
+  nameWithType: Installer.OnBeforeUninstall(IDictionary)
+  fullName: System.Configuration.Install.Installer.OnBeforeUninstall(System.Collections.IDictionary)
+  spec.csharp:
+  - uid: System.Configuration.Install.Installer.OnBeforeUninstall(System.Collections.IDictionary)
+    name: OnBeforeUninstall
+    nameWithType: Installer.OnBeforeUninstall
+    fullName: System.Configuration.Install.Installer.OnBeforeUninstall
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.IDictionary
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.IDictionary
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Configuration.Install.Installer.OnBeforeUninstall(System.Collections.IDictionary)
+    name: OnBeforeUninstall
+    nameWithType: Installer.OnBeforeUninstall
+    fullName: System.Configuration.Install.Installer.OnBeforeUninstall
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.IDictionary
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.IDictionary
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Configuration.Install.Installer.Rollback(System.Collections.IDictionary)
+  commentId: M:System.Configuration.Install.Installer.Rollback(System.Collections.IDictionary)
+  parent: System.Configuration.Install.Installer
+  isExternal: true
+  name: Rollback(IDictionary)
+  nameWithType: Installer.Rollback(IDictionary)
+  fullName: System.Configuration.Install.Installer.Rollback(System.Collections.IDictionary)
+  spec.csharp:
+  - uid: System.Configuration.Install.Installer.Rollback(System.Collections.IDictionary)
+    name: Rollback
+    nameWithType: Installer.Rollback
+    fullName: System.Configuration.Install.Installer.Rollback
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.IDictionary
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.IDictionary
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Configuration.Install.Installer.Rollback(System.Collections.IDictionary)
+    name: Rollback
+    nameWithType: Installer.Rollback
+    fullName: System.Configuration.Install.Installer.Rollback
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.IDictionary
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.IDictionary
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Configuration.Install.Installer.Context
+  commentId: P:System.Configuration.Install.Installer.Context
+  parent: System.Configuration.Install.Installer
+  isExternal: true
+  name: Context
+  nameWithType: Installer.Context
+  fullName: System.Configuration.Install.Installer.Context
+- uid: System.Configuration.Install.Installer.HelpText
+  commentId: P:System.Configuration.Install.Installer.HelpText
+  parent: System.Configuration.Install.Installer
+  isExternal: true
+  name: HelpText
+  nameWithType: Installer.HelpText
+  fullName: System.Configuration.Install.Installer.HelpText
+- uid: System.Configuration.Install.Installer.Installers
+  commentId: P:System.Configuration.Install.Installer.Installers
+  parent: System.Configuration.Install.Installer
+  isExternal: true
+  name: Installers
+  nameWithType: Installer.Installers
+  fullName: System.Configuration.Install.Installer.Installers
+- uid: System.Configuration.Install.Installer.Parent
+  commentId: P:System.Configuration.Install.Installer.Parent
+  parent: System.Configuration.Install.Installer
+  isExternal: true
+  name: Parent
+  nameWithType: Installer.Parent
+  fullName: System.Configuration.Install.Installer.Parent
+- uid: System.Configuration.Install.Installer.Committed
+  commentId: E:System.Configuration.Install.Installer.Committed
+  parent: System.Configuration.Install.Installer
+  isExternal: true
+  name: Committed
+  nameWithType: Installer.Committed
+  fullName: System.Configuration.Install.Installer.Committed
+- uid: System.Configuration.Install.Installer.AfterInstall
+  commentId: E:System.Configuration.Install.Installer.AfterInstall
+  parent: System.Configuration.Install.Installer
+  isExternal: true
+  name: AfterInstall
+  nameWithType: Installer.AfterInstall
+  fullName: System.Configuration.Install.Installer.AfterInstall
+- uid: System.Configuration.Install.Installer.AfterRollback
+  commentId: E:System.Configuration.Install.Installer.AfterRollback
+  parent: System.Configuration.Install.Installer
+  isExternal: true
+  name: AfterRollback
+  nameWithType: Installer.AfterRollback
+  fullName: System.Configuration.Install.Installer.AfterRollback
+- uid: System.Configuration.Install.Installer.AfterUninstall
+  commentId: E:System.Configuration.Install.Installer.AfterUninstall
+  parent: System.Configuration.Install.Installer
+  isExternal: true
+  name: AfterUninstall
+  nameWithType: Installer.AfterUninstall
+  fullName: System.Configuration.Install.Installer.AfterUninstall
+- uid: System.Configuration.Install.Installer.Committing
+  commentId: E:System.Configuration.Install.Installer.Committing
+  parent: System.Configuration.Install.Installer
+  isExternal: true
+  name: Committing
+  nameWithType: Installer.Committing
+  fullName: System.Configuration.Install.Installer.Committing
+- uid: System.Configuration.Install.Installer.BeforeInstall
+  commentId: E:System.Configuration.Install.Installer.BeforeInstall
+  parent: System.Configuration.Install.Installer
+  isExternal: true
+  name: BeforeInstall
+  nameWithType: Installer.BeforeInstall
+  fullName: System.Configuration.Install.Installer.BeforeInstall
+- uid: System.Configuration.Install.Installer.BeforeRollback
+  commentId: E:System.Configuration.Install.Installer.BeforeRollback
+  parent: System.Configuration.Install.Installer
+  isExternal: true
+  name: BeforeRollback
+  nameWithType: Installer.BeforeRollback
+  fullName: System.Configuration.Install.Installer.BeforeRollback
+- uid: System.Configuration.Install.Installer.BeforeUninstall
+  commentId: E:System.Configuration.Install.Installer.BeforeUninstall
+  parent: System.Configuration.Install.Installer
+  isExternal: true
+  name: BeforeUninstall
+  nameWithType: Installer.BeforeUninstall
+  fullName: System.Configuration.Install.Installer.BeforeUninstall
+- uid: System.ComponentModel.Component.Dispose
+  commentId: M:System.ComponentModel.Component.Dispose
+  parent: System.ComponentModel.Component
+  isExternal: true
+  name: Dispose()
+  nameWithType: Component.Dispose()
+  fullName: System.ComponentModel.Component.Dispose()
+  spec.csharp:
+  - uid: System.ComponentModel.Component.Dispose
+    name: Dispose
+    nameWithType: Component.Dispose
+    fullName: System.ComponentModel.Component.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ComponentModel.Component.Dispose
+    name: Dispose
+    nameWithType: Component.Dispose
+    fullName: System.ComponentModel.Component.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ComponentModel.Component.Dispose(System.Boolean)
+  commentId: M:System.ComponentModel.Component.Dispose(System.Boolean)
+  parent: System.ComponentModel.Component
+  isExternal: true
+  name: Dispose(Boolean)
+  nameWithType: Component.Dispose(Boolean)
+  fullName: System.ComponentModel.Component.Dispose(System.Boolean)
+  spec.csharp:
+  - uid: System.ComponentModel.Component.Dispose(System.Boolean)
+    name: Dispose
+    nameWithType: Component.Dispose
+    fullName: System.ComponentModel.Component.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ComponentModel.Component.Dispose(System.Boolean)
+    name: Dispose
+    nameWithType: Component.Dispose
+    fullName: System.ComponentModel.Component.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ComponentModel.Component.GetService(System.Type)
+  commentId: M:System.ComponentModel.Component.GetService(System.Type)
+  parent: System.ComponentModel.Component
+  isExternal: true
+  name: GetService(Type)
+  nameWithType: Component.GetService(Type)
+  fullName: System.ComponentModel.Component.GetService(System.Type)
+  spec.csharp:
+  - uid: System.ComponentModel.Component.GetService(System.Type)
+    name: GetService
+    nameWithType: Component.GetService
+    fullName: System.ComponentModel.Component.GetService
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ComponentModel.Component.GetService(System.Type)
+    name: GetService
+    nameWithType: Component.GetService
+    fullName: System.ComponentModel.Component.GetService
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ComponentModel.Component.ToString
+  commentId: M:System.ComponentModel.Component.ToString
+  parent: System.ComponentModel.Component
+  isExternal: true
+  name: ToString()
+  nameWithType: Component.ToString()
+  fullName: System.ComponentModel.Component.ToString()
+  spec.csharp:
+  - uid: System.ComponentModel.Component.ToString
+    name: ToString
+    nameWithType: Component.ToString
+    fullName: System.ComponentModel.Component.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ComponentModel.Component.ToString
+    name: ToString
+    nameWithType: Component.ToString
+    fullName: System.ComponentModel.Component.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ComponentModel.Component.CanRaiseEvents
+  commentId: P:System.ComponentModel.Component.CanRaiseEvents
+  parent: System.ComponentModel.Component
+  isExternal: true
+  name: CanRaiseEvents
+  nameWithType: Component.CanRaiseEvents
+  fullName: System.ComponentModel.Component.CanRaiseEvents
+- uid: System.ComponentModel.Component.Events
+  commentId: P:System.ComponentModel.Component.Events
+  parent: System.ComponentModel.Component
+  isExternal: true
+  name: Events
+  nameWithType: Component.Events
+  fullName: System.ComponentModel.Component.Events
+- uid: System.ComponentModel.Component.Site
+  commentId: P:System.ComponentModel.Component.Site
+  parent: System.ComponentModel.Component
+  isExternal: true
+  name: Site
+  nameWithType: Component.Site
+  fullName: System.ComponentModel.Component.Site
+- uid: System.ComponentModel.Component.Container
+  commentId: P:System.ComponentModel.Component.Container
+  parent: System.ComponentModel.Component
+  isExternal: true
+  name: Container
+  nameWithType: Component.Container
+  fullName: System.ComponentModel.Component.Container
+- uid: System.ComponentModel.Component.DesignMode
+  commentId: P:System.ComponentModel.Component.DesignMode
+  parent: System.ComponentModel.Component
+  isExternal: true
+  name: DesignMode
+  nameWithType: Component.DesignMode
+  fullName: System.ComponentModel.Component.DesignMode
+- uid: System.ComponentModel.Component.Disposed
+  commentId: E:System.ComponentModel.Component.Disposed
+  parent: System.ComponentModel.Component
+  isExternal: true
+  name: Disposed
+  nameWithType: Component.Disposed
+  fullName: System.ComponentModel.Component.Disposed
+- uid: System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+  commentId: M:System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+  parent: System.MarshalByRefObject
+  isExternal: true
+  name: MemberwiseClone(Boolean)
+  nameWithType: MarshalByRefObject.MemberwiseClone(Boolean)
+  fullName: System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+  spec.csharp:
+  - uid: System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+    name: MemberwiseClone
+    nameWithType: MarshalByRefObject.MemberwiseClone
+    fullName: System.MarshalByRefObject.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+    name: MemberwiseClone
+    nameWithType: MarshalByRefObject.MemberwiseClone
+    fullName: System.MarshalByRefObject.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.MarshalByRefObject.GetLifetimeService
+  commentId: M:System.MarshalByRefObject.GetLifetimeService
+  parent: System.MarshalByRefObject
+  isExternal: true
+  name: GetLifetimeService()
+  nameWithType: MarshalByRefObject.GetLifetimeService()
+  fullName: System.MarshalByRefObject.GetLifetimeService()
+  spec.csharp:
+  - uid: System.MarshalByRefObject.GetLifetimeService
+    name: GetLifetimeService
+    nameWithType: MarshalByRefObject.GetLifetimeService
+    fullName: System.MarshalByRefObject.GetLifetimeService
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.MarshalByRefObject.GetLifetimeService
+    name: GetLifetimeService
+    nameWithType: MarshalByRefObject.GetLifetimeService
+    fullName: System.MarshalByRefObject.GetLifetimeService
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.MarshalByRefObject.InitializeLifetimeService
+  commentId: M:System.MarshalByRefObject.InitializeLifetimeService
+  parent: System.MarshalByRefObject
+  isExternal: true
+  name: InitializeLifetimeService()
+  nameWithType: MarshalByRefObject.InitializeLifetimeService()
+  fullName: System.MarshalByRefObject.InitializeLifetimeService()
+  spec.csharp:
+  - uid: System.MarshalByRefObject.InitializeLifetimeService
+    name: InitializeLifetimeService
+    nameWithType: MarshalByRefObject.InitializeLifetimeService
+    fullName: System.MarshalByRefObject.InitializeLifetimeService
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.MarshalByRefObject.InitializeLifetimeService
+    name: InitializeLifetimeService
+    nameWithType: MarshalByRefObject.InitializeLifetimeService
+    fullName: System.MarshalByRefObject.InitializeLifetimeService
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.MarshalByRefObject.CreateObjRef(System.Type)
+  commentId: M:System.MarshalByRefObject.CreateObjRef(System.Type)
+  parent: System.MarshalByRefObject
+  isExternal: true
+  name: CreateObjRef(Type)
+  nameWithType: MarshalByRefObject.CreateObjRef(Type)
+  fullName: System.MarshalByRefObject.CreateObjRef(System.Type)
+  spec.csharp:
+  - uid: System.MarshalByRefObject.CreateObjRef(System.Type)
+    name: CreateObjRef
+    nameWithType: MarshalByRefObject.CreateObjRef
+    fullName: System.MarshalByRefObject.CreateObjRef
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.MarshalByRefObject.CreateObjRef(System.Type)
+    name: CreateObjRef
+    nameWithType: MarshalByRefObject.CreateObjRef
+    fullName: System.MarshalByRefObject.CreateObjRef
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: OrleansTelemetryConsumers.Counters.OrleansPerformanceCounterInstaller.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<OrleansPerformanceCounterInstaller>()
+  nameWithType: ImmutableExt.AsImmutable<OrleansPerformanceCounterInstaller>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<OrleansTelemetryConsumers.Counters.OrleansPerformanceCounterInstaller>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of OrleansPerformanceCounterInstaller)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of OrleansTelemetryConsumers.Counters.OrleansPerformanceCounterInstaller)()
+  name.vb: AsImmutable(Of OrleansPerformanceCounterInstaller)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<OrleansPerformanceCounterInstaller>
+    nameWithType: ImmutableExt.AsImmutable<OrleansPerformanceCounterInstaller>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<OrleansTelemetryConsumers.Counters.OrleansPerformanceCounterInstaller>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of OrleansPerformanceCounterInstaller)
+    nameWithType: ImmutableExt.AsImmutable(Of OrleansPerformanceCounterInstaller)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of OrleansTelemetryConsumers.Counters.OrleansPerformanceCounterInstaller)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: false
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+- uid: System.Configuration.Install
+  commentId: N:System.Configuration.Install
+  isExternal: false
+  name: System.Configuration.Install
+  nameWithType: System.Configuration.Install
+  fullName: System.Configuration.Install
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: OrleansTelemetryConsumers.Counters.OrleansPerformanceCounterInstaller.#ctor*
+  commentId: Overload:OrleansTelemetryConsumers.Counters.OrleansPerformanceCounterInstaller.#ctor
+  isExternal: false
+  name: OrleansPerformanceCounterInstaller
+  nameWithType: OrleansPerformanceCounterInstaller.OrleansPerformanceCounterInstaller
+  fullName: OrleansTelemetryConsumers.Counters.OrleansPerformanceCounterInstaller.OrleansPerformanceCounterInstaller
+- uid: System.Collections.IDictionary
+  commentId: T:System.Collections.IDictionary
+  parent: System.Collections
+  isExternal: true
+  name: IDictionary
+  nameWithType: IDictionary
+  fullName: System.Collections.IDictionary
+- uid: System.Configuration.Install.Installer.Install(System.Collections.IDictionary)
+  commentId: M:System.Configuration.Install.Installer.Install(System.Collections.IDictionary)
+  parent: System.Configuration.Install.Installer
+  isExternal: true
+  name: Install(IDictionary)
+  nameWithType: Installer.Install(IDictionary)
+  fullName: System.Configuration.Install.Installer.Install(System.Collections.IDictionary)
+  spec.csharp:
+  - uid: System.Configuration.Install.Installer.Install(System.Collections.IDictionary)
+    name: Install
+    nameWithType: Installer.Install
+    fullName: System.Configuration.Install.Installer.Install
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.IDictionary
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.IDictionary
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Configuration.Install.Installer.Install(System.Collections.IDictionary)
+    name: Install
+    nameWithType: Installer.Install
+    fullName: System.Configuration.Install.Installer.Install
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.IDictionary
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.IDictionary
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: OrleansTelemetryConsumers.Counters.OrleansPerformanceCounterInstaller.Install*
+  commentId: Overload:OrleansTelemetryConsumers.Counters.OrleansPerformanceCounterInstaller.Install
+  isExternal: false
+  name: Install
+  nameWithType: OrleansPerformanceCounterInstaller.Install
+  fullName: OrleansTelemetryConsumers.Counters.OrleansPerformanceCounterInstaller.Install
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: false
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+- uid: System.Configuration.Install.Installer.Uninstall(System.Collections.IDictionary)
+  commentId: M:System.Configuration.Install.Installer.Uninstall(System.Collections.IDictionary)
+  parent: System.Configuration.Install.Installer
+  isExternal: true
+  name: Uninstall(IDictionary)
+  nameWithType: Installer.Uninstall(IDictionary)
+  fullName: System.Configuration.Install.Installer.Uninstall(System.Collections.IDictionary)
+  spec.csharp:
+  - uid: System.Configuration.Install.Installer.Uninstall(System.Collections.IDictionary)
+    name: Uninstall
+    nameWithType: Installer.Uninstall
+    fullName: System.Configuration.Install.Installer.Uninstall
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.IDictionary
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.IDictionary
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Configuration.Install.Installer.Uninstall(System.Collections.IDictionary)
+    name: Uninstall
+    nameWithType: Installer.Uninstall
+    fullName: System.Configuration.Install.Installer.Uninstall
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.IDictionary
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.IDictionary
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: OrleansTelemetryConsumers.Counters.OrleansPerformanceCounterInstaller.Uninstall*
+  commentId: Overload:OrleansTelemetryConsumers.Counters.OrleansPerformanceCounterInstaller.Uninstall
+  isExternal: false
+  name: Uninstall
+  nameWithType: OrleansPerformanceCounterInstaller.Uninstall
+  fullName: OrleansTelemetryConsumers.Counters.OrleansPerformanceCounterInstaller.Uninstall

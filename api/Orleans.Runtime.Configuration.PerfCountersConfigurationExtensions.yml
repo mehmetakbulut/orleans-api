@@ -1,0 +1,116 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Runtime.Configuration.PerfCountersConfigurationExtensions
+  commentId: T:Orleans.Runtime.Configuration.PerfCountersConfigurationExtensions
+  id: PerfCountersConfigurationExtensions
+  parent: Orleans.Runtime.Configuration
+  children:
+  - Orleans.Runtime.Configuration.PerfCountersConfigurationExtensions.AddPerfCountersTelemetryConsumer(Orleans.Runtime.Configuration.ClusterConfiguration)
+  langs:
+  - csharp
+  - vb
+  name: PerfCountersConfigurationExtensions
+  nameWithType: PerfCountersConfigurationExtensions
+  fullName: Orleans.Runtime.Configuration.PerfCountersConfigurationExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Runtime.Legacy/Configuration/PerfCountersConfigurationExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: PerfCountersConfigurationExtensions
+    path: src/Orleans.Runtime.Legacy/Configuration/PerfCountersConfigurationExtensions.cs
+    startLine: 4
+  assemblies:
+  - Orleans.Runtime.Legacy
+  namespace: Orleans.Runtime.Configuration
+  syntax:
+    content: 'public static class PerfCountersConfigurationExtensions : object'
+    content.vb: >-
+      Public Module PerfCountersConfigurationExtensions
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Orleans.Runtime.Configuration.PerfCountersConfigurationExtensions.AddPerfCountersTelemetryConsumer(Orleans.Runtime.Configuration.ClusterConfiguration)
+  commentId: M:Orleans.Runtime.Configuration.PerfCountersConfigurationExtensions.AddPerfCountersTelemetryConsumer(Orleans.Runtime.Configuration.ClusterConfiguration)
+  id: AddPerfCountersTelemetryConsumer(Orleans.Runtime.Configuration.ClusterConfiguration)
+  isExtensionMethod: true
+  parent: Orleans.Runtime.Configuration.PerfCountersConfigurationExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddPerfCountersTelemetryConsumer(ClusterConfiguration)
+  nameWithType: PerfCountersConfigurationExtensions.AddPerfCountersTelemetryConsumer(ClusterConfiguration)
+  fullName: Orleans.Runtime.Configuration.PerfCountersConfigurationExtensions.AddPerfCountersTelemetryConsumer(Orleans.Runtime.Configuration.ClusterConfiguration)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Runtime.Legacy/Configuration/PerfCountersConfigurationExtensions.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AddPerfCountersTelemetryConsumer
+    path: src/Orleans.Runtime.Legacy/Configuration/PerfCountersConfigurationExtensions.cs
+    startLine: 10
+  assemblies:
+  - Orleans.Runtime.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nAdds a metrics telemetric consumer provider./>.\n"
+  example: []
+  syntax:
+    content: public static void AddPerfCountersTelemetryConsumer(this ClusterConfiguration config)
+    parameters:
+    - id: config
+      type: Orleans.Runtime.Configuration.ClusterConfiguration
+      description: The cluster configuration object to add the telemetry consumer to.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub AddPerfCountersTelemetryConsumer(config As ClusterConfiguration)
+  overload: Orleans.Runtime.Configuration.PerfCountersConfigurationExtensions.AddPerfCountersTelemetryConsumer*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Orleans.Runtime.Configuration
+  commentId: N:Orleans.Runtime.Configuration
+  isExternal: false
+  name: Orleans.Runtime.Configuration
+  nameWithType: Orleans.Runtime.Configuration
+  fullName: Orleans.Runtime.Configuration
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Runtime.Configuration.PerfCountersConfigurationExtensions.AddPerfCountersTelemetryConsumer*
+  commentId: Overload:Orleans.Runtime.Configuration.PerfCountersConfigurationExtensions.AddPerfCountersTelemetryConsumer
+  isExternal: false
+  name: AddPerfCountersTelemetryConsumer
+  nameWithType: PerfCountersConfigurationExtensions.AddPerfCountersTelemetryConsumer
+  fullName: Orleans.Runtime.Configuration.PerfCountersConfigurationExtensions.AddPerfCountersTelemetryConsumer
+- uid: Orleans.Runtime.Configuration.ClusterConfiguration
+  commentId: T:Orleans.Runtime.Configuration.ClusterConfiguration
+  parent: Orleans.Runtime.Configuration
+  isExternal: false
+  name: ClusterConfiguration
+  nameWithType: ClusterConfiguration
+  fullName: Orleans.Runtime.Configuration.ClusterConfiguration

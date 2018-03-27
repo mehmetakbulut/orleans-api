@@ -1,0 +1,2149 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Runtime.Configuration.ClientConfiguration
+  commentId: T:Orleans.Runtime.Configuration.ClientConfiguration
+  id: ClientConfiguration
+  parent: Orleans.Runtime.Configuration
+  children:
+  - Orleans.Runtime.Configuration.ClientConfiguration.#ctor
+  - Orleans.Runtime.Configuration.ClientConfiguration.AdoInvariant
+  - Orleans.Runtime.Configuration.ClientConfiguration.ClientName
+  - Orleans.Runtime.Configuration.ClientConfiguration.ClusterId
+  - Orleans.Runtime.Configuration.ClientConfiguration.CustomGatewayProviderAssemblyName
+  - Orleans.Runtime.Configuration.ClientConfiguration.DataConnectionString
+  - Orleans.Runtime.Configuration.ClientConfiguration.DeploymentId
+  - Orleans.Runtime.Configuration.ClientConfiguration.DNSHostName
+  - Orleans.Runtime.Configuration.ClientConfiguration.GatewayListRefreshPeriod
+  - Orleans.Runtime.Configuration.ClientConfiguration.GatewayProvider
+  - Orleans.Runtime.Configuration.ClientConfiguration.Gateways
+  - Orleans.Runtime.Configuration.ClientConfiguration.GetAllProviderConfigurations
+  - Orleans.Runtime.Configuration.ClientConfiguration.LimitManager
+  - Orleans.Runtime.Configuration.ClientConfiguration.Load(TextReader)
+  - Orleans.Runtime.Configuration.ClientConfiguration.LoadFromFile(System.String)
+  - Orleans.Runtime.Configuration.ClientConfiguration.LocalhostSilo(System.Int32)
+  - Orleans.Runtime.Configuration.ClientConfiguration.NetInterface
+  - Orleans.Runtime.Configuration.ClientConfiguration.Port
+  - Orleans.Runtime.Configuration.ClientConfiguration.PreferedGatewayIndex
+  - Orleans.Runtime.Configuration.ClientConfiguration.PreferredFamily
+  - Orleans.Runtime.Configuration.ClientConfiguration.PropagateActivityId
+  - Orleans.Runtime.Configuration.ClientConfiguration.ProviderConfigurations
+  - Orleans.Runtime.Configuration.ClientConfiguration.RegisterStreamProvider(System.String,System.String,IDictionary{System.String,System.String})
+  - Orleans.Runtime.Configuration.ClientConfiguration.RegisterStreamProvider``1(System.String,IDictionary{System.String,System.String})
+  - Orleans.Runtime.Configuration.ClientConfiguration.SourceFile
+  - Orleans.Runtime.Configuration.ClientConfiguration.StandardLoad
+  - Orleans.Runtime.Configuration.ClientConfiguration.StatisticsCollectionLevel
+  - Orleans.Runtime.Configuration.ClientConfiguration.StatisticsLogWriteInterval
+  - Orleans.Runtime.Configuration.ClientConfiguration.StatisticsPerfCountersWriteInterval
+  - Orleans.Runtime.Configuration.ClientConfiguration.StatisticsProviderName
+  - Orleans.Runtime.Configuration.ClientConfiguration.StatisticsWriteLogStatisticsToTable
+  - Orleans.Runtime.Configuration.ClientConfiguration.TelemetryConfiguration
+  - Orleans.Runtime.Configuration.ClientConfiguration.ToString
+  - Orleans.Runtime.Configuration.ClientConfiguration.TryGetProviderConfiguration(System.String,System.String,IProviderConfiguration@)
+  - Orleans.Runtime.Configuration.ClientConfiguration.UseAdoNetSystemStore
+  - Orleans.Runtime.Configuration.ClientConfiguration.UseAzureSystemStore
+  langs:
+  - csharp
+  - vb
+  name: ClientConfiguration
+  nameWithType: ClientConfiguration
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ClientConfiguration
+    path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+    startLine: 18
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nOrleans client configuration parameters.\n"
+  example: []
+  syntax:
+    content: 'public class ClientConfiguration : MessagingConfiguration, IStatisticsConfiguration'
+    content.vb: >-
+      Public Class ClientConfiguration
+
+          Inherits MessagingConfiguration
+
+          Implements IStatisticsConfiguration
+  inheritance:
+  - System.Object
+  implements:
+  - IStatisticsConfiguration
+  extensionMethods:
+  - Orleans.Runtime.Configuration.ClientConfiguration.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.ClientName
+  commentId: P:Orleans.Runtime.Configuration.ClientConfiguration.ClientName
+  id: ClientName
+  parent: Orleans.Runtime.Configuration.ClientConfiguration
+  langs:
+  - csharp
+  - vb
+  name: ClientName
+  nameWithType: ClientConfiguration.ClientName
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.ClientName
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ClientName
+    path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+    startLine: 48
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nThe name of this client.\n"
+  example: []
+  syntax:
+    content: public string ClientName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ClientName As String
+  overload: Orleans.Runtime.Configuration.ClientConfiguration.ClientName*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.SourceFile
+  commentId: P:Orleans.Runtime.Configuration.ClientConfiguration.SourceFile
+  id: SourceFile
+  parent: Orleans.Runtime.Configuration.ClientConfiguration
+  langs:
+  - csharp
+  - vb
+  name: SourceFile
+  nameWithType: ClientConfiguration.SourceFile
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.SourceFile
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SourceFile
+    path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+    startLine: 51
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: Gets the configuration source file path
+  example: []
+  syntax:
+    content: public string SourceFile { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property SourceFile As String
+  overload: Orleans.Runtime.Configuration.ClientConfiguration.SourceFile*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.Gateways
+  commentId: P:Orleans.Runtime.Configuration.ClientConfiguration.Gateways
+  id: Gateways
+  parent: Orleans.Runtime.Configuration.ClientConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Gateways
+  nameWithType: ClientConfiguration.Gateways
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.Gateways
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Gateways
+    path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+    startLine: 60
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nThe list fo the gateways to use.\nEach GatewayNode element specifies an outside grain client gateway node.\nIf outside (non-Orleans) clients are to connect to the Orleans system, then at least one gateway node must be specified.\nAdditional gateway nodes may be specified if desired, and will add some failure resilience and scalability.\nIf multiple gateways are specified, then each client will select one from the list at random.\n"
+  example: []
+  syntax:
+    content: public IList<IPEndPoint> Gateways { get; set; }
+    parameters: []
+    return:
+      type: IList{IPEndPoint}
+    content.vb: Public Property Gateways As IList(Of IPEndPoint)
+  overload: Orleans.Runtime.Configuration.ClientConfiguration.Gateways*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.PreferedGatewayIndex
+  commentId: P:Orleans.Runtime.Configuration.ClientConfiguration.PreferedGatewayIndex
+  id: PreferedGatewayIndex
+  parent: Orleans.Runtime.Configuration.ClientConfiguration
+  langs:
+  - csharp
+  - vb
+  name: PreferedGatewayIndex
+  nameWithType: ClientConfiguration.PreferedGatewayIndex
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.PreferedGatewayIndex
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: PreferedGatewayIndex
+    path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+    startLine: 63
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\n"
+  example: []
+  syntax:
+    content: public int PreferedGatewayIndex { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property PreferedGatewayIndex As Integer
+  overload: Orleans.Runtime.Configuration.ClientConfiguration.PreferedGatewayIndex*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.GatewayProvider
+  commentId: P:Orleans.Runtime.Configuration.ClientConfiguration.GatewayProvider
+  id: GatewayProvider
+  parent: Orleans.Runtime.Configuration.ClientConfiguration
+  langs:
+  - csharp
+  - vb
+  name: GatewayProvider
+  nameWithType: ClientConfiguration.GatewayProvider
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.GatewayProvider
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GatewayProvider
+    path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+    startLine: 66
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\n"
+  example: []
+  syntax:
+    content: public ClientConfiguration.GatewayProviderType GatewayProvider { get; set; }
+    parameters: []
+    return:
+      type: Orleans.Runtime.Configuration.ClientConfiguration.GatewayProviderType
+    content.vb: Public Property GatewayProvider As ClientConfiguration.GatewayProviderType
+  overload: Orleans.Runtime.Configuration.ClientConfiguration.GatewayProvider*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.ClusterId
+  commentId: P:Orleans.Runtime.Configuration.ClientConfiguration.ClusterId
+  id: ClusterId
+  parent: Orleans.Runtime.Configuration.ClientConfiguration
+  langs:
+  - csharp
+  - vb
+  name: ClusterId
+  nameWithType: ClientConfiguration.ClusterId
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.ClusterId
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ClusterId
+    path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+    startLine: 75
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nSpecifies a unique identifier for this cluster.\nIf the silos are deployed on Azure (run as workers roles), deployment id is set automatically by Azure runtime, \naccessible to the role via RoleEnvironment.DeploymentId static variable and is passed to the silo automatically by the role via config. \nSo if the silos are run as Azure roles this variable should not be specified in the OrleansConfiguration.xml (it will be overwritten if specified).\nIf the silos are deployed on the cluster and not as Azure roles, this variable should be set by a deployment script in the OrleansConfiguration.xml file.\n"
+  example: []
+  syntax:
+    content: public string ClusterId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ClusterId As String
+  overload: Orleans.Runtime.Configuration.ClientConfiguration.ClusterId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.DeploymentId
+  commentId: P:Orleans.Runtime.Configuration.ClientConfiguration.DeploymentId
+  id: DeploymentId
+  parent: Orleans.Runtime.Configuration.ClientConfiguration
+  langs:
+  - csharp
+  - vb
+  name: DeploymentId
+  nameWithType: ClientConfiguration.DeploymentId
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.DeploymentId
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: DeploymentId
+    path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+    startLine: 80
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nDeployment Id. This is the same as ClusterId and has been deprecated in favor of it.\n"
+  example: []
+  syntax:
+    content: public string DeploymentId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DeploymentId As String
+  overload: Orleans.Runtime.Configuration.ClientConfiguration.DeploymentId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.DataConnectionString
+  commentId: P:Orleans.Runtime.Configuration.ClientConfiguration.DataConnectionString
+  id: DataConnectionString
+  parent: Orleans.Runtime.Configuration.ClientConfiguration
+  langs:
+  - csharp
+  - vb
+  name: DataConnectionString
+  nameWithType: ClientConfiguration.DataConnectionString
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.DataConnectionString
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: DataConnectionString
+    path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+    startLine: 96
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nSpecifies the connection string for the gateway provider.\nIf the silos are deployed on Azure (run as workers roles), DataConnectionString may be specified via RoleEnvironment.GetConfigurationSettingValue(&quot;DataConnectionString&quot;);\nIn such a case it is taken from there and passed to the silo automatically by the role via config.\nSo if the silos are run as Azure roles and this config is specified via RoleEnvironment, \nthis variable should not be specified in the OrleansConfiguration.xml (it will be overwritten if specified).\nIf the silos are deployed on the cluster and not as Azure roles,  this variable should be set in the OrleansConfiguration.xml file.\nIf not set at all, DevelopmentStorageAccount will be used.\n"
+  example: []
+  syntax:
+    content: public string DataConnectionString { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DataConnectionString As String
+  overload: Orleans.Runtime.Configuration.ClientConfiguration.DataConnectionString*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.AdoInvariant
+  commentId: P:Orleans.Runtime.Configuration.ClientConfiguration.AdoInvariant
+  id: AdoInvariant
+  parent: Orleans.Runtime.Configuration.ClientConfiguration
+  langs:
+  - csharp
+  - vb
+  name: AdoInvariant
+  nameWithType: ClientConfiguration.AdoInvariant
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.AdoInvariant
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AdoInvariant
+    path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+    startLine: 103
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nWhen using ADO, identifies the underlying data provider for the gateway provider. This three-part naming syntax is also used when creating a new factory \nand for identifying the provider in an application configuration file so that the provider name, along with its associated \nconnection string, can be retrieved at run time. https://msdn.microsoft.com/en-us/library/dd0w4a2z%28v=vs.110%29.aspx\n"
+  example: []
+  syntax:
+    content: public string AdoInvariant { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property AdoInvariant As String
+  overload: Orleans.Runtime.Configuration.ClientConfiguration.AdoInvariant*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.CustomGatewayProviderAssemblyName
+  commentId: P:Orleans.Runtime.Configuration.ClientConfiguration.CustomGatewayProviderAssemblyName
+  id: CustomGatewayProviderAssemblyName
+  parent: Orleans.Runtime.Configuration.ClientConfiguration
+  langs:
+  - csharp
+  - vb
+  name: CustomGatewayProviderAssemblyName
+  nameWithType: ClientConfiguration.CustomGatewayProviderAssemblyName
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.CustomGatewayProviderAssemblyName
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: CustomGatewayProviderAssemblyName
+    path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+    startLine: 105
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  syntax:
+    content: public string CustomGatewayProviderAssemblyName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CustomGatewayProviderAssemblyName As String
+  overload: Orleans.Runtime.Configuration.ClientConfiguration.CustomGatewayProviderAssemblyName*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.PropagateActivityId
+  commentId: P:Orleans.Runtime.Configuration.ClientConfiguration.PropagateActivityId
+  id: PropagateActivityId
+  parent: Orleans.Runtime.Configuration.ClientConfiguration
+  langs:
+  - csharp
+  - vb
+  name: PropagateActivityId
+  nameWithType: ClientConfiguration.PropagateActivityId
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.PropagateActivityId
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: PropagateActivityId
+    path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+    startLine: 110
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nWhether Trace.CorrelationManager.ActivityId settings should be propagated into grain calls.\n"
+  example: []
+  syntax:
+    content: public bool PropagateActivityId { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property PropagateActivityId As Boolean
+  overload: Orleans.Runtime.Configuration.ClientConfiguration.PropagateActivityId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.PreferredFamily
+  commentId: P:Orleans.Runtime.Configuration.ClientConfiguration.PreferredFamily
+  id: PreferredFamily
+  parent: Orleans.Runtime.Configuration.ClientConfiguration
+  langs:
+  - csharp
+  - vb
+  name: PreferredFamily
+  nameWithType: ClientConfiguration.PreferredFamily
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.PreferredFamily
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: PreferredFamily
+    path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+    startLine: 114
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\n"
+  example: []
+  syntax:
+    content: public AddressFamily PreferredFamily { get; set; }
+    parameters: []
+    return:
+      type: AddressFamily
+    content.vb: Public Property PreferredFamily As AddressFamily
+  overload: Orleans.Runtime.Configuration.ClientConfiguration.PreferredFamily*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.NetInterface
+  commentId: P:Orleans.Runtime.Configuration.ClientConfiguration.NetInterface
+  id: NetInterface
+  parent: Orleans.Runtime.Configuration.ClientConfiguration
+  langs:
+  - csharp
+  - vb
+  name: NetInterface
+  nameWithType: ClientConfiguration.NetInterface
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.NetInterface
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: NetInterface
+    path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+    startLine: 118
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nThe Interface attribute specifies the name of the network interface to use to work out an IP address for this machine.\n"
+  example: []
+  syntax:
+    content: public string NetInterface { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property NetInterface As String
+  overload: Orleans.Runtime.Configuration.ClientConfiguration.NetInterface*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.Port
+  commentId: P:Orleans.Runtime.Configuration.ClientConfiguration.Port
+  id: Port
+  parent: Orleans.Runtime.Configuration.ClientConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Port
+  nameWithType: ClientConfiguration.Port
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.Port
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Port
+    path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+    startLine: 123
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nThe Port attribute specifies the specific listen port for this client machine.\nIf value is zero, then a random machine-assigned port number will be used.\n"
+  example: []
+  syntax:
+    content: public int Port { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Port As Integer
+  overload: Orleans.Runtime.Configuration.ClientConfiguration.Port*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.DNSHostName
+  commentId: P:Orleans.Runtime.Configuration.ClientConfiguration.DNSHostName
+  id: DNSHostName
+  parent: Orleans.Runtime.Configuration.ClientConfiguration
+  langs:
+  - csharp
+  - vb
+  name: DNSHostName
+  nameWithType: ClientConfiguration.DNSHostName
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.DNSHostName
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: DNSHostName
+    path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+    startLine: 125
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: Gets the true host name, no IP address. It equals Dns.GetHostName()
+  example: []
+  syntax:
+    content: public string DNSHostName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property DNSHostName As String
+  overload: Orleans.Runtime.Configuration.ClientConfiguration.DNSHostName*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.GatewayListRefreshPeriod
+  commentId: P:Orleans.Runtime.Configuration.ClientConfiguration.GatewayListRefreshPeriod
+  id: GatewayListRefreshPeriod
+  parent: Orleans.Runtime.Configuration.ClientConfiguration
+  langs:
+  - csharp
+  - vb
+  name: GatewayListRefreshPeriod
+  nameWithType: ClientConfiguration.GatewayListRefreshPeriod
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.GatewayListRefreshPeriod
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GatewayListRefreshPeriod
+    path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+    startLine: 128
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\n"
+  example: []
+  syntax:
+    content: public TimeSpan GatewayListRefreshPeriod { get; set; }
+    parameters: []
+    return:
+      type: TimeSpan
+    content.vb: Public Property GatewayListRefreshPeriod As TimeSpan
+  overload: Orleans.Runtime.Configuration.ClientConfiguration.GatewayListRefreshPeriod*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.StatisticsProviderName
+  commentId: P:Orleans.Runtime.Configuration.ClientConfiguration.StatisticsProviderName
+  id: StatisticsProviderName
+  parent: Orleans.Runtime.Configuration.ClientConfiguration
+  langs:
+  - csharp
+  - vb
+  name: StatisticsProviderName
+  nameWithType: ClientConfiguration.StatisticsProviderName
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.StatisticsProviderName
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: StatisticsProviderName
+    path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+    startLine: 130
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  syntax:
+    content: public string StatisticsProviderName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property StatisticsProviderName As String
+  overload: Orleans.Runtime.Configuration.ClientConfiguration.StatisticsProviderName*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.StatisticsPerfCountersWriteInterval
+  commentId: P:Orleans.Runtime.Configuration.ClientConfiguration.StatisticsPerfCountersWriteInterval
+  id: StatisticsPerfCountersWriteInterval
+  parent: Orleans.Runtime.Configuration.ClientConfiguration
+  langs:
+  - csharp
+  - vb
+  name: StatisticsPerfCountersWriteInterval
+  nameWithType: ClientConfiguration.StatisticsPerfCountersWriteInterval
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.StatisticsPerfCountersWriteInterval
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: StatisticsPerfCountersWriteInterval
+    path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+    startLine: 131
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  syntax:
+    content: public TimeSpan StatisticsPerfCountersWriteInterval { get; set; }
+    parameters: []
+    return:
+      type: TimeSpan
+    content.vb: Public Property StatisticsPerfCountersWriteInterval As TimeSpan
+  overload: Orleans.Runtime.Configuration.ClientConfiguration.StatisticsPerfCountersWriteInterval*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.StatisticsLogWriteInterval
+  commentId: P:Orleans.Runtime.Configuration.ClientConfiguration.StatisticsLogWriteInterval
+  id: StatisticsLogWriteInterval
+  parent: Orleans.Runtime.Configuration.ClientConfiguration
+  langs:
+  - csharp
+  - vb
+  name: StatisticsLogWriteInterval
+  nameWithType: ClientConfiguration.StatisticsLogWriteInterval
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.StatisticsLogWriteInterval
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: StatisticsLogWriteInterval
+    path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+    startLine: 132
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  syntax:
+    content: public TimeSpan StatisticsLogWriteInterval { get; set; }
+    parameters: []
+    return:
+      type: TimeSpan
+    content.vb: Public Property StatisticsLogWriteInterval As TimeSpan
+  overload: Orleans.Runtime.Configuration.ClientConfiguration.StatisticsLogWriteInterval*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.StatisticsWriteLogStatisticsToTable
+  commentId: P:Orleans.Runtime.Configuration.ClientConfiguration.StatisticsWriteLogStatisticsToTable
+  id: StatisticsWriteLogStatisticsToTable
+  parent: Orleans.Runtime.Configuration.ClientConfiguration
+  langs:
+  - csharp
+  - vb
+  name: StatisticsWriteLogStatisticsToTable
+  nameWithType: ClientConfiguration.StatisticsWriteLogStatisticsToTable
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.StatisticsWriteLogStatisticsToTable
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: StatisticsWriteLogStatisticsToTable
+    path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+    startLine: 134
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  syntax:
+    content: public bool StatisticsWriteLogStatisticsToTable { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property StatisticsWriteLogStatisticsToTable As Boolean
+  overload: Orleans.Runtime.Configuration.ClientConfiguration.StatisticsWriteLogStatisticsToTable*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.StatisticsCollectionLevel
+  commentId: P:Orleans.Runtime.Configuration.ClientConfiguration.StatisticsCollectionLevel
+  id: StatisticsCollectionLevel
+  parent: Orleans.Runtime.Configuration.ClientConfiguration
+  langs:
+  - csharp
+  - vb
+  name: StatisticsCollectionLevel
+  nameWithType: ClientConfiguration.StatisticsCollectionLevel
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.StatisticsCollectionLevel
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: StatisticsCollectionLevel
+    path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+    startLine: 136
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  syntax:
+    content: public StatisticsLevel StatisticsCollectionLevel { get; set; }
+    parameters: []
+    return:
+      type: StatisticsLevel
+    content.vb: Public Property StatisticsCollectionLevel As StatisticsLevel
+  overload: Orleans.Runtime.Configuration.ClientConfiguration.StatisticsCollectionLevel*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.TelemetryConfiguration
+  commentId: P:Orleans.Runtime.Configuration.ClientConfiguration.TelemetryConfiguration
+  id: TelemetryConfiguration
+  parent: Orleans.Runtime.Configuration.ClientConfiguration
+  langs:
+  - csharp
+  - vb
+  name: TelemetryConfiguration
+  nameWithType: ClientConfiguration.TelemetryConfiguration
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.TelemetryConfiguration
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: TelemetryConfiguration
+    path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+    startLine: 138
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  syntax:
+    content: public TelemetryConfiguration TelemetryConfiguration { get; }
+    parameters: []
+    return:
+      type: TelemetryConfiguration
+    content.vb: Public ReadOnly Property TelemetryConfiguration As TelemetryConfiguration
+  overload: Orleans.Runtime.Configuration.ClientConfiguration.TelemetryConfiguration*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.LimitManager
+  commentId: P:Orleans.Runtime.Configuration.ClientConfiguration.LimitManager
+  id: LimitManager
+  parent: Orleans.Runtime.Configuration.ClientConfiguration
+  langs:
+  - csharp
+  - vb
+  name: LimitManager
+  nameWithType: ClientConfiguration.LimitManager
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.LimitManager
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: LimitManager
+    path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+    startLine: 140
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  syntax:
+    content: public LimitManager LimitManager { get; }
+    parameters: []
+    return:
+      type: LimitManager
+    content.vb: Public ReadOnly Property LimitManager As LimitManager
+  overload: Orleans.Runtime.Configuration.ClientConfiguration.LimitManager*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.UseAzureSystemStore
+  commentId: P:Orleans.Runtime.Configuration.ClientConfiguration.UseAzureSystemStore
+  id: UseAzureSystemStore
+  parent: Orleans.Runtime.Configuration.ClientConfiguration
+  langs:
+  - csharp
+  - vb
+  name: UseAzureSystemStore
+  nameWithType: ClientConfiguration.UseAzureSystemStore
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.UseAzureSystemStore
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: UseAzureSystemStore
+    path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+    startLine: 146
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\n"
+  example: []
+  syntax:
+    content: public bool UseAzureSystemStore { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property UseAzureSystemStore As Boolean
+  overload: Orleans.Runtime.Configuration.ClientConfiguration.UseAzureSystemStore*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.UseAdoNetSystemStore
+  commentId: P:Orleans.Runtime.Configuration.ClientConfiguration.UseAdoNetSystemStore
+  id: UseAdoNetSystemStore
+  parent: Orleans.Runtime.Configuration.ClientConfiguration
+  langs:
+  - csharp
+  - vb
+  name: UseAdoNetSystemStore
+  nameWithType: ClientConfiguration.UseAdoNetSystemStore
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.UseAdoNetSystemStore
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: UseAdoNetSystemStore
+    path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+    startLine: 157
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\n"
+  example: []
+  syntax:
+    content: public bool UseAdoNetSystemStore { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property UseAdoNetSystemStore As Boolean
+  overload: Orleans.Runtime.Configuration.ClientConfiguration.UseAdoNetSystemStore*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.ProviderConfigurations
+  commentId: P:Orleans.Runtime.Configuration.ClientConfiguration.ProviderConfigurations
+  id: ProviderConfigurations
+  parent: Orleans.Runtime.Configuration.ClientConfiguration
+  langs:
+  - csharp
+  - vb
+  name: ProviderConfigurations
+  nameWithType: ClientConfiguration.ProviderConfigurations
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.ProviderConfigurations
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ProviderConfigurations
+    path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+    startLine: 170
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\n"
+  example: []
+  syntax:
+    content: public IDictionary<string, ProviderCategoryConfiguration> ProviderConfigurations { get; set; }
+    parameters: []
+    return:
+      type: IDictionary{System.String,ProviderCategoryConfiguration}
+    content.vb: Public Property ProviderConfigurations As IDictionary(Of String, ProviderCategoryConfiguration)
+  overload: Orleans.Runtime.Configuration.ClientConfiguration.ProviderConfigurations*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.#ctor
+  commentId: M:Orleans.Runtime.Configuration.ClientConfiguration.#ctor
+  id: '#ctor'
+  parent: Orleans.Runtime.Configuration.ClientConfiguration
+  langs:
+  - csharp
+  - vb
+  name: ClientConfiguration()
+  nameWithType: ClientConfiguration.ClientConfiguration()
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.ClientConfiguration()
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+    startLine: 173
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: Initializes a new instance of <xref href="Orleans.Runtime.Configuration.ClientConfiguration" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public ClientConfiguration()
+    content.vb: Public Sub New
+  overload: Orleans.Runtime.Configuration.ClientConfiguration.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.Load(TextReader)
+  commentId: M:Orleans.Runtime.Configuration.ClientConfiguration.Load(TextReader)
+  id: Load(TextReader)
+  parent: Orleans.Runtime.Configuration.ClientConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Load(TextReader)
+  nameWithType: ClientConfiguration.Load(TextReader)
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.Load(TextReader)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Load
+    path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+    startLine: 200
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  syntax:
+    content: public void Load(TextReader input)
+    parameters:
+    - id: input
+      type: TextReader
+    content.vb: Public Sub Load(input As TextReader)
+  overload: Orleans.Runtime.Configuration.ClientConfiguration.Load*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.LoadFromFile(System.String)
+  commentId: M:Orleans.Runtime.Configuration.ClientConfiguration.LoadFromFile(System.String)
+  id: LoadFromFile(System.String)
+  parent: Orleans.Runtime.Configuration.ClientConfiguration
+  langs:
+  - csharp
+  - vb
+  name: LoadFromFile(String)
+  nameWithType: ClientConfiguration.LoadFromFile(String)
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.LoadFromFile(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: LoadFromFile
+    path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+    startLine: 331
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\n"
+  example: []
+  syntax:
+    content: public static ClientConfiguration LoadFromFile(string fileName)
+    parameters:
+    - id: fileName
+      type: System.String
+    return:
+      type: Orleans.Runtime.Configuration.ClientConfiguration
+    content.vb: Public Shared Function LoadFromFile(fileName As String) As ClientConfiguration
+  overload: Orleans.Runtime.Configuration.ClientConfiguration.LoadFromFile*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.RegisterStreamProvider``1(System.String,IDictionary{System.String,System.String})
+  commentId: M:Orleans.Runtime.Configuration.ClientConfiguration.RegisterStreamProvider``1(System.String,IDictionary{System.String,System.String})
+  id: RegisterStreamProvider``1(System.String,IDictionary{System.String,System.String})
+  parent: Orleans.Runtime.Configuration.ClientConfiguration
+  langs:
+  - csharp
+  - vb
+  name: RegisterStreamProvider<T>(String, IDictionary<String, String>)
+  nameWithType: ClientConfiguration.RegisterStreamProvider<T>(String, IDictionary<String, String>)
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.RegisterStreamProvider<T>(System.String, IDictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: RegisterStreamProvider
+    path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+    startLine: 352
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nRegisters a given type of <code data-dev-comment-type=\"typeparamref\" class=\"typeparamref\">T</code> where <code data-dev-comment-type=\"typeparamref\" class=\"typeparamref\">T</code> is stream provider\n"
+  example: []
+  syntax:
+    content: 'public void RegisterStreamProvider<T>(string providerName, IDictionary<string, string> properties = null)where T : IStreamProvider'
+    parameters:
+    - id: providerName
+      type: System.String
+      description: Name of the stream provider
+    - id: properties
+      type: IDictionary{System.String,System.String}
+      description: Properties that will be passed to stream provider upon initialization
+    typeParameters:
+    - id: T
+      description: Non-abstract type which implements <xref href="Orleans.Streams.IStreamProvider" data-throw-if-not-resolved="false"></xref> stream
+    content.vb: Public Sub RegisterStreamProvider(Of T As IStreamProvider)(providerName As String, properties As IDictionary(Of String, String) = Nothing)
+  overload: Orleans.Runtime.Configuration.ClientConfiguration.RegisterStreamProvider*
+  nameWithType.vb: ClientConfiguration.RegisterStreamProvider(Of T)(String, IDictionary(Of String, String))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.Runtime.Configuration.ClientConfiguration.RegisterStreamProvider(Of T)(System.String, IDictionary(Of System.String, System.String))
+  name.vb: RegisterStreamProvider(Of T)(String, IDictionary(Of String, String))
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.RegisterStreamProvider(System.String,System.String,IDictionary{System.String,System.String})
+  commentId: M:Orleans.Runtime.Configuration.ClientConfiguration.RegisterStreamProvider(System.String,System.String,IDictionary{System.String,System.String})
+  id: RegisterStreamProvider(System.String,System.String,IDictionary{System.String,System.String})
+  parent: Orleans.Runtime.Configuration.ClientConfiguration
+  langs:
+  - csharp
+  - vb
+  name: RegisterStreamProvider(String, String, IDictionary<String, String>)
+  nameWithType: ClientConfiguration.RegisterStreamProvider(String, String, IDictionary<String, String>)
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.RegisterStreamProvider(System.String, System.String, IDictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: RegisterStreamProvider
+    path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+    startLine: 369
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nRegisters a given stream provider.\n"
+  example: []
+  syntax:
+    content: public void RegisterStreamProvider(string providerTypeFullName, string providerName, IDictionary<string, string> properties = null)
+    parameters:
+    - id: providerTypeFullName
+      type: System.String
+      description: Full name of the stream provider type
+    - id: providerName
+      type: System.String
+      description: Name of the stream provider
+    - id: properties
+      type: IDictionary{System.String,System.String}
+      description: 'Properties that will be passed to the stream provider upon initialization '
+    content.vb: Public Sub RegisterStreamProvider(providerTypeFullName As String, providerName As String, properties As IDictionary(Of String, String) = Nothing)
+  overload: Orleans.Runtime.Configuration.ClientConfiguration.RegisterStreamProvider*
+  nameWithType.vb: ClientConfiguration.RegisterStreamProvider(String, String, IDictionary(Of String, String))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.Runtime.Configuration.ClientConfiguration.RegisterStreamProvider(System.String, System.String, IDictionary(Of System.String, System.String))
+  name.vb: RegisterStreamProvider(String, String, IDictionary(Of String, String))
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.TryGetProviderConfiguration(System.String,System.String,IProviderConfiguration@)
+  commentId: M:Orleans.Runtime.Configuration.ClientConfiguration.TryGetProviderConfiguration(System.String,System.String,IProviderConfiguration@)
+  id: TryGetProviderConfiguration(System.String,System.String,IProviderConfiguration@)
+  parent: Orleans.Runtime.Configuration.ClientConfiguration
+  langs:
+  - csharp
+  - vb
+  name: TryGetProviderConfiguration(String, String, out IProviderConfiguration)
+  nameWithType: ClientConfiguration.TryGetProviderConfiguration(String, String, out IProviderConfiguration)
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.TryGetProviderConfiguration(System.String, System.String, out IProviderConfiguration)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: TryGetProviderConfiguration
+    path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+    startLine: 381
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nRetrieves an existing provider configuration\n"
+  example: []
+  syntax:
+    content: public bool TryGetProviderConfiguration(string providerTypeFullName, string providerName, out IProviderConfiguration config)
+    parameters:
+    - id: providerTypeFullName
+      type: System.String
+      description: Full name of the stream provider type
+    - id: providerName
+      type: System.String
+      description: Name of the stream provider
+    - id: config
+      type: IProviderConfiguration
+      description: The provider configuration, if exists
+    return:
+      type: System.Boolean
+      description: True if a configuration for this provider already exists, false otherwise.
+    content.vb: Public Function TryGetProviderConfiguration(providerTypeFullName As String, providerName As String, ByRef config As IProviderConfiguration) As Boolean
+  overload: Orleans.Runtime.Configuration.ClientConfiguration.TryGetProviderConfiguration*
+  nameWithType.vb: ClientConfiguration.TryGetProviderConfiguration(String, String, ByRef IProviderConfiguration)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.Runtime.Configuration.ClientConfiguration.TryGetProviderConfiguration(System.String, System.String, ByRef IProviderConfiguration)
+  name.vb: TryGetProviderConfiguration(String, String, ByRef IProviderConfiguration)
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.GetAllProviderConfigurations
+  commentId: M:Orleans.Runtime.Configuration.ClientConfiguration.GetAllProviderConfigurations
+  id: GetAllProviderConfigurations
+  parent: Orleans.Runtime.Configuration.ClientConfiguration
+  langs:
+  - csharp
+  - vb
+  name: GetAllProviderConfigurations()
+  nameWithType: ClientConfiguration.GetAllProviderConfigurations()
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.GetAllProviderConfigurations()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetAllProviderConfigurations
+    path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+    startLine: 390
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nRetrieves an enumeration of all currently configured provider configurations.\n"
+  example: []
+  syntax:
+    content: public IEnumerable<IProviderConfiguration> GetAllProviderConfigurations()
+    return:
+      type: IEnumerable{IProviderConfiguration}
+      description: An enumeration of all currently configured provider configurations.
+    content.vb: Public Function GetAllProviderConfigurations As IEnumerable(Of IProviderConfiguration)
+  overload: Orleans.Runtime.Configuration.ClientConfiguration.GetAllProviderConfigurations*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.StandardLoad
+  commentId: M:Orleans.Runtime.Configuration.ClientConfiguration.StandardLoad
+  id: StandardLoad
+  parent: Orleans.Runtime.Configuration.ClientConfiguration
+  langs:
+  - csharp
+  - vb
+  name: StandardLoad()
+  nameWithType: ClientConfiguration.StandardLoad()
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.StandardLoad()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: StandardLoad
+    path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+    startLine: 400
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nLoads the configuration from the standard paths, looking up the directory hierarchy\n"
+  example: []
+  syntax:
+    content: public static ClientConfiguration StandardLoad()
+    return:
+      type: Orleans.Runtime.Configuration.ClientConfiguration
+      description: Client configuration data if a configuration file was found.
+    content.vb: Public Shared Function StandardLoad As ClientConfiguration
+  overload: Orleans.Runtime.Configuration.ClientConfiguration.StandardLoad*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.ToString
+  commentId: M:Orleans.Runtime.Configuration.ClientConfiguration.ToString
+  id: ToString
+  parent: Orleans.Runtime.Configuration.ClientConfiguration
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: ClientConfiguration.ToString()
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ToString
+    path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+    startLine: 407
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: Returns a detailed human readable string that represents the current configuration. It does not contain every single configuration knob.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overload: Orleans.Runtime.Configuration.ClientConfiguration.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.LocalhostSilo(System.Int32)
+  commentId: M:Orleans.Runtime.Configuration.ClientConfiguration.LocalhostSilo(System.Int32)
+  id: LocalhostSilo(System.Int32)
+  parent: Orleans.Runtime.Configuration.ClientConfiguration
+  langs:
+  - csharp
+  - vb
+  name: LocalhostSilo(Int32)
+  nameWithType: ClientConfiguration.LocalhostSilo(Int32)
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.LocalhostSilo(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: LocalhostSilo
+    path: src/Orleans.Core.Legacy/Configuration/ClientConfiguration.cs
+    startLine: 521
+  assemblies:
+  - Orleans.Core.Legacy
+  namespace: Orleans.Runtime.Configuration
+  summary: "\nReturns a ClientConfiguration object for connecting to a local silo (for testing).\n"
+  example: []
+  syntax:
+    content: public static ClientConfiguration LocalhostSilo(int gatewayPort = 40000)
+    parameters:
+    - id: gatewayPort
+      type: System.Int32
+      description: Client gateway TCP port
+    return:
+      type: Orleans.Runtime.Configuration.ClientConfiguration
+      description: ClientConfiguration object that can be passed to GrainClient class for initialization
+    content.vb: Public Shared Function LocalhostSilo(gatewayPort As Integer = 40000) As ClientConfiguration
+  overload: Orleans.Runtime.Configuration.ClientConfiguration.LocalhostSilo*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Orleans.Runtime.Configuration
+  commentId: N:Orleans.Runtime.Configuration
+  isExternal: false
+  name: Orleans.Runtime.Configuration
+  nameWithType: Orleans.Runtime.Configuration
+  fullName: Orleans.Runtime.Configuration
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: IStatisticsConfiguration
+  commentId: '!:IStatisticsConfiguration'
+  isExternal: true
+  name: IStatisticsConfiguration
+  nameWithType: IStatisticsConfiguration
+  fullName: IStatisticsConfiguration
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<ClientConfiguration>()
+  nameWithType: ImmutableExt.AsImmutable<ClientConfiguration>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.Configuration.ClientConfiguration>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of ClientConfiguration)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.Configuration.ClientConfiguration)()
+  name.vb: AsImmutable(Of ClientConfiguration)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<ClientConfiguration>
+    nameWithType: ImmutableExt.AsImmutable<ClientConfiguration>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.Configuration.ClientConfiguration>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of ClientConfiguration)
+    nameWithType: ImmutableExt.AsImmutable(Of ClientConfiguration)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.Configuration.ClientConfiguration)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.ClientName*
+  commentId: Overload:Orleans.Runtime.Configuration.ClientConfiguration.ClientName
+  isExternal: false
+  name: ClientName
+  nameWithType: ClientConfiguration.ClientName
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.ClientName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.SourceFile*
+  commentId: Overload:Orleans.Runtime.Configuration.ClientConfiguration.SourceFile
+  isExternal: false
+  name: SourceFile
+  nameWithType: ClientConfiguration.SourceFile
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.SourceFile
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.Gateways*
+  commentId: Overload:Orleans.Runtime.Configuration.ClientConfiguration.Gateways
+  isExternal: false
+  name: Gateways
+  nameWithType: ClientConfiguration.Gateways
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.Gateways
+- uid: IList{IPEndPoint}
+  commentId: '!:IList{IPEndPoint}'
+  definition: IList`1
+  name: IList<IPEndPoint>
+  nameWithType: IList<IPEndPoint>
+  fullName: IList<IPEndPoint>
+  nameWithType.vb: IList(Of IPEndPoint)
+  fullName.vb: IList(Of IPEndPoint)
+  name.vb: IList(Of IPEndPoint)
+  spec.csharp:
+  - uid: IList`1
+    name: IList
+    nameWithType: IList
+    fullName: IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: IPEndPoint
+    name: IPEndPoint
+    nameWithType: IPEndPoint
+    fullName: IPEndPoint
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IList`1
+    name: IList
+    nameWithType: IList
+    fullName: IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: IPEndPoint
+    name: IPEndPoint
+    nameWithType: IPEndPoint
+    fullName: IPEndPoint
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IList`1
+  isExternal: true
+  name: IList<>
+  nameWithType: IList<>
+  fullName: IList<>
+  nameWithType.vb: IList(Of )
+  fullName.vb: IList(Of )
+  name.vb: IList(Of )
+  spec.csharp:
+  - uid: IList`1
+    name: IList
+    nameWithType: IList
+    fullName: IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IList`1
+    name: IList
+    nameWithType: IList
+    fullName: IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.PreferedGatewayIndex*
+  commentId: Overload:Orleans.Runtime.Configuration.ClientConfiguration.PreferedGatewayIndex
+  isExternal: false
+  name: PreferedGatewayIndex
+  nameWithType: ClientConfiguration.PreferedGatewayIndex
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.PreferedGatewayIndex
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.GatewayProvider*
+  commentId: Overload:Orleans.Runtime.Configuration.ClientConfiguration.GatewayProvider
+  isExternal: false
+  name: GatewayProvider
+  nameWithType: ClientConfiguration.GatewayProvider
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.GatewayProvider
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.GatewayProviderType
+  commentId: T:Orleans.Runtime.Configuration.ClientConfiguration.GatewayProviderType
+  parent: Orleans.Runtime.Configuration
+  isExternal: false
+  name: ClientConfiguration.GatewayProviderType
+  nameWithType: ClientConfiguration.GatewayProviderType
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.GatewayProviderType
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.ClusterId*
+  commentId: Overload:Orleans.Runtime.Configuration.ClientConfiguration.ClusterId
+  isExternal: false
+  name: ClusterId
+  nameWithType: ClientConfiguration.ClusterId
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.ClusterId
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.DeploymentId*
+  commentId: Overload:Orleans.Runtime.Configuration.ClientConfiguration.DeploymentId
+  isExternal: false
+  name: DeploymentId
+  nameWithType: ClientConfiguration.DeploymentId
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.DeploymentId
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.DataConnectionString*
+  commentId: Overload:Orleans.Runtime.Configuration.ClientConfiguration.DataConnectionString
+  isExternal: false
+  name: DataConnectionString
+  nameWithType: ClientConfiguration.DataConnectionString
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.DataConnectionString
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.AdoInvariant*
+  commentId: Overload:Orleans.Runtime.Configuration.ClientConfiguration.AdoInvariant
+  isExternal: false
+  name: AdoInvariant
+  nameWithType: ClientConfiguration.AdoInvariant
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.AdoInvariant
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.CustomGatewayProviderAssemblyName*
+  commentId: Overload:Orleans.Runtime.Configuration.ClientConfiguration.CustomGatewayProviderAssemblyName
+  isExternal: false
+  name: CustomGatewayProviderAssemblyName
+  nameWithType: ClientConfiguration.CustomGatewayProviderAssemblyName
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.CustomGatewayProviderAssemblyName
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.PropagateActivityId*
+  commentId: Overload:Orleans.Runtime.Configuration.ClientConfiguration.PropagateActivityId
+  isExternal: false
+  name: PropagateActivityId
+  nameWithType: ClientConfiguration.PropagateActivityId
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.PropagateActivityId
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.PreferredFamily*
+  commentId: Overload:Orleans.Runtime.Configuration.ClientConfiguration.PreferredFamily
+  isExternal: false
+  name: PreferredFamily
+  nameWithType: ClientConfiguration.PreferredFamily
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.PreferredFamily
+- uid: AddressFamily
+  isExternal: true
+  name: AddressFamily
+  nameWithType: AddressFamily
+  fullName: AddressFamily
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.NetInterface*
+  commentId: Overload:Orleans.Runtime.Configuration.ClientConfiguration.NetInterface
+  isExternal: false
+  name: NetInterface
+  nameWithType: ClientConfiguration.NetInterface
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.NetInterface
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.Port*
+  commentId: Overload:Orleans.Runtime.Configuration.ClientConfiguration.Port
+  isExternal: false
+  name: Port
+  nameWithType: ClientConfiguration.Port
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.Port
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.DNSHostName*
+  commentId: Overload:Orleans.Runtime.Configuration.ClientConfiguration.DNSHostName
+  isExternal: false
+  name: DNSHostName
+  nameWithType: ClientConfiguration.DNSHostName
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.DNSHostName
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.GatewayListRefreshPeriod*
+  commentId: Overload:Orleans.Runtime.Configuration.ClientConfiguration.GatewayListRefreshPeriod
+  isExternal: false
+  name: GatewayListRefreshPeriod
+  nameWithType: ClientConfiguration.GatewayListRefreshPeriod
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.GatewayListRefreshPeriod
+- uid: TimeSpan
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: TimeSpan
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.StatisticsProviderName*
+  commentId: Overload:Orleans.Runtime.Configuration.ClientConfiguration.StatisticsProviderName
+  isExternal: false
+  name: StatisticsProviderName
+  nameWithType: ClientConfiguration.StatisticsProviderName
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.StatisticsProviderName
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.StatisticsPerfCountersWriteInterval*
+  commentId: Overload:Orleans.Runtime.Configuration.ClientConfiguration.StatisticsPerfCountersWriteInterval
+  isExternal: false
+  name: StatisticsPerfCountersWriteInterval
+  nameWithType: ClientConfiguration.StatisticsPerfCountersWriteInterval
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.StatisticsPerfCountersWriteInterval
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.StatisticsLogWriteInterval*
+  commentId: Overload:Orleans.Runtime.Configuration.ClientConfiguration.StatisticsLogWriteInterval
+  isExternal: false
+  name: StatisticsLogWriteInterval
+  nameWithType: ClientConfiguration.StatisticsLogWriteInterval
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.StatisticsLogWriteInterval
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.StatisticsWriteLogStatisticsToTable*
+  commentId: Overload:Orleans.Runtime.Configuration.ClientConfiguration.StatisticsWriteLogStatisticsToTable
+  isExternal: false
+  name: StatisticsWriteLogStatisticsToTable
+  nameWithType: ClientConfiguration.StatisticsWriteLogStatisticsToTable
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.StatisticsWriteLogStatisticsToTable
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.StatisticsCollectionLevel*
+  commentId: Overload:Orleans.Runtime.Configuration.ClientConfiguration.StatisticsCollectionLevel
+  isExternal: false
+  name: StatisticsCollectionLevel
+  nameWithType: ClientConfiguration.StatisticsCollectionLevel
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.StatisticsCollectionLevel
+- uid: StatisticsLevel
+  isExternal: true
+  name: StatisticsLevel
+  nameWithType: StatisticsLevel
+  fullName: StatisticsLevel
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.TelemetryConfiguration*
+  commentId: Overload:Orleans.Runtime.Configuration.ClientConfiguration.TelemetryConfiguration
+  isExternal: false
+  name: TelemetryConfiguration
+  nameWithType: ClientConfiguration.TelemetryConfiguration
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.TelemetryConfiguration
+- uid: TelemetryConfiguration
+  isExternal: true
+  name: TelemetryConfiguration
+  nameWithType: TelemetryConfiguration
+  fullName: TelemetryConfiguration
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.LimitManager*
+  commentId: Overload:Orleans.Runtime.Configuration.ClientConfiguration.LimitManager
+  isExternal: false
+  name: LimitManager
+  nameWithType: ClientConfiguration.LimitManager
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.LimitManager
+- uid: LimitManager
+  isExternal: true
+  name: LimitManager
+  nameWithType: LimitManager
+  fullName: LimitManager
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.UseAzureSystemStore*
+  commentId: Overload:Orleans.Runtime.Configuration.ClientConfiguration.UseAzureSystemStore
+  isExternal: false
+  name: UseAzureSystemStore
+  nameWithType: ClientConfiguration.UseAzureSystemStore
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.UseAzureSystemStore
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.UseAdoNetSystemStore*
+  commentId: Overload:Orleans.Runtime.Configuration.ClientConfiguration.UseAdoNetSystemStore
+  isExternal: false
+  name: UseAdoNetSystemStore
+  nameWithType: ClientConfiguration.UseAdoNetSystemStore
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.UseAdoNetSystemStore
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.ProviderConfigurations*
+  commentId: Overload:Orleans.Runtime.Configuration.ClientConfiguration.ProviderConfigurations
+  isExternal: false
+  name: ProviderConfigurations
+  nameWithType: ClientConfiguration.ProviderConfigurations
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.ProviderConfigurations
+- uid: IDictionary{System.String,ProviderCategoryConfiguration}
+  commentId: '!:IDictionary{System.String,ProviderCategoryConfiguration}'
+  definition: IDictionary`2
+  name: IDictionary<String, ProviderCategoryConfiguration>
+  nameWithType: IDictionary<String, ProviderCategoryConfiguration>
+  fullName: IDictionary<System.String, ProviderCategoryConfiguration>
+  nameWithType.vb: IDictionary(Of String, ProviderCategoryConfiguration)
+  fullName.vb: IDictionary(Of System.String, ProviderCategoryConfiguration)
+  name.vb: IDictionary(Of String, ProviderCategoryConfiguration)
+  spec.csharp:
+  - uid: IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: ProviderCategoryConfiguration
+    name: ProviderCategoryConfiguration
+    nameWithType: ProviderCategoryConfiguration
+    fullName: ProviderCategoryConfiguration
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: ProviderCategoryConfiguration
+    name: ProviderCategoryConfiguration
+    nameWithType: ProviderCategoryConfiguration
+    fullName: ProviderCategoryConfiguration
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IDictionary`2
+  isExternal: true
+  name: IDictionary<, >
+  nameWithType: IDictionary<, >
+  fullName: IDictionary<, >
+  nameWithType.vb: IDictionary(Of , )
+  fullName.vb: IDictionary(Of , )
+  name.vb: IDictionary(Of , )
+  spec.csharp:
+  - uid: IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.Configuration.ClientConfiguration
+  commentId: T:Orleans.Runtime.Configuration.ClientConfiguration
+  parent: Orleans.Runtime.Configuration
+  isExternal: false
+  name: ClientConfiguration
+  nameWithType: ClientConfiguration
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.#ctor*
+  commentId: Overload:Orleans.Runtime.Configuration.ClientConfiguration.#ctor
+  isExternal: false
+  name: ClientConfiguration
+  nameWithType: ClientConfiguration.ClientConfiguration
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.ClientConfiguration
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.Load*
+  commentId: Overload:Orleans.Runtime.Configuration.ClientConfiguration.Load
+  isExternal: false
+  name: Load
+  nameWithType: ClientConfiguration.Load
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.Load
+- uid: TextReader
+  isExternal: true
+  name: TextReader
+  nameWithType: TextReader
+  fullName: TextReader
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.LoadFromFile*
+  commentId: Overload:Orleans.Runtime.Configuration.ClientConfiguration.LoadFromFile
+  isExternal: false
+  name: LoadFromFile
+  nameWithType: ClientConfiguration.LoadFromFile
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.LoadFromFile
+- uid: Orleans.Streams.IStreamProvider
+  commentId: T:Orleans.Streams.IStreamProvider
+  parent: Orleans.Streams
+  isExternal: false
+  name: IStreamProvider
+  nameWithType: IStreamProvider
+  fullName: Orleans.Streams.IStreamProvider
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.RegisterStreamProvider*
+  commentId: Overload:Orleans.Runtime.Configuration.ClientConfiguration.RegisterStreamProvider
+  isExternal: false
+  name: RegisterStreamProvider
+  nameWithType: ClientConfiguration.RegisterStreamProvider
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.RegisterStreamProvider
+- uid: IDictionary{System.String,System.String}
+  commentId: '!:IDictionary{System.String,System.String}'
+  definition: IDictionary`2
+  name: IDictionary<String, String>
+  nameWithType: IDictionary<String, String>
+  fullName: IDictionary<System.String, System.String>
+  nameWithType.vb: IDictionary(Of String, String)
+  fullName.vb: IDictionary(Of System.String, System.String)
+  name.vb: IDictionary(Of String, String)
+  spec.csharp:
+  - uid: IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Streams
+  commentId: N:Orleans.Streams
+  isExternal: false
+  name: Orleans.Streams
+  nameWithType: Orleans.Streams
+  fullName: Orleans.Streams
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.TryGetProviderConfiguration*
+  commentId: Overload:Orleans.Runtime.Configuration.ClientConfiguration.TryGetProviderConfiguration
+  isExternal: false
+  name: TryGetProviderConfiguration
+  nameWithType: ClientConfiguration.TryGetProviderConfiguration
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.TryGetProviderConfiguration
+- uid: IProviderConfiguration
+  isExternal: true
+  name: IProviderConfiguration
+  nameWithType: IProviderConfiguration
+  fullName: IProviderConfiguration
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.GetAllProviderConfigurations*
+  commentId: Overload:Orleans.Runtime.Configuration.ClientConfiguration.GetAllProviderConfigurations
+  isExternal: false
+  name: GetAllProviderConfigurations
+  nameWithType: ClientConfiguration.GetAllProviderConfigurations
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.GetAllProviderConfigurations
+- uid: IEnumerable{IProviderConfiguration}
+  commentId: '!:IEnumerable{IProviderConfiguration}'
+  definition: IEnumerable`1
+  name: IEnumerable<IProviderConfiguration>
+  nameWithType: IEnumerable<IProviderConfiguration>
+  fullName: IEnumerable<IProviderConfiguration>
+  nameWithType.vb: IEnumerable(Of IProviderConfiguration)
+  fullName.vb: IEnumerable(Of IProviderConfiguration)
+  name.vb: IEnumerable(Of IProviderConfiguration)
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: IProviderConfiguration
+    name: IProviderConfiguration
+    nameWithType: IProviderConfiguration
+    fullName: IProviderConfiguration
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: IProviderConfiguration
+    name: IProviderConfiguration
+    nameWithType: IProviderConfiguration
+    fullName: IProviderConfiguration
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IEnumerable`1
+  isExternal: true
+  name: IEnumerable<>
+  nameWithType: IEnumerable<>
+  fullName: IEnumerable<>
+  nameWithType.vb: IEnumerable(Of )
+  fullName.vb: IEnumerable(Of )
+  name.vb: IEnumerable(Of )
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.StandardLoad*
+  commentId: Overload:Orleans.Runtime.Configuration.ClientConfiguration.StandardLoad
+  isExternal: false
+  name: StandardLoad
+  nameWithType: ClientConfiguration.StandardLoad
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.StandardLoad
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.ToString*
+  commentId: Overload:Orleans.Runtime.Configuration.ClientConfiguration.ToString
+  isExternal: false
+  name: ToString
+  nameWithType: ClientConfiguration.ToString
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.ToString
+- uid: Orleans.Runtime.Configuration.ClientConfiguration.LocalhostSilo*
+  commentId: Overload:Orleans.Runtime.Configuration.ClientConfiguration.LocalhostSilo
+  isExternal: false
+  name: LocalhostSilo
+  nameWithType: ClientConfiguration.LocalhostSilo
+  fullName: Orleans.Runtime.Configuration.ClientConfiguration.LocalhostSilo

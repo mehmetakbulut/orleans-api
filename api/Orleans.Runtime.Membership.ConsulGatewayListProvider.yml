@@ -1,0 +1,717 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Runtime.Membership.ConsulGatewayListProvider
+  commentId: T:Orleans.Runtime.Membership.ConsulGatewayListProvider
+  id: ConsulGatewayListProvider
+  parent: Orleans.Runtime.Membership
+  children:
+  - Orleans.Runtime.Membership.ConsulGatewayListProvider.#ctor(ILogger{Orleans.Runtime.Membership.ConsulGatewayListProvider},IOptions{Orleans.Configuration.ConsulClusteringClientOptions},IOptions{GatewayOptions},IOptions{ClusterOptions})
+  - Orleans.Runtime.Membership.ConsulGatewayListProvider.GetGateways
+  - Orleans.Runtime.Membership.ConsulGatewayListProvider.InitializeGatewayListProvider
+  - Orleans.Runtime.Membership.ConsulGatewayListProvider.IsUpdatable
+  - Orleans.Runtime.Membership.ConsulGatewayListProvider.MaxStaleness
+  langs:
+  - csharp
+  - vb
+  name: ConsulGatewayListProvider
+  nameWithType: ConsulGatewayListProvider
+  fullName: Orleans.Runtime.Membership.ConsulGatewayListProvider
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Clustering.Consul/ConsulGatewayListProvider.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ConsulGatewayListProvider
+    path: src/Orleans.Clustering.Consul/ConsulGatewayListProvider.cs
+    startLine: 13
+  assemblies:
+  - Orleans.Clustering.Consul
+  namespace: Orleans.Runtime.Membership
+  syntax:
+    content: 'public class ConsulGatewayListProvider : IGatewayListProvider'
+    content.vb: >-
+      Public Class ConsulGatewayListProvider
+
+          Inherits IGatewayListProvider
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.Runtime.Membership.ConsulGatewayListProvider.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.Runtime.Membership.ConsulGatewayListProvider.#ctor(ILogger{Orleans.Runtime.Membership.ConsulGatewayListProvider},IOptions{Orleans.Configuration.ConsulClusteringClientOptions},IOptions{GatewayOptions},IOptions{ClusterOptions})
+  commentId: M:Orleans.Runtime.Membership.ConsulGatewayListProvider.#ctor(ILogger{Orleans.Runtime.Membership.ConsulGatewayListProvider},IOptions{Orleans.Configuration.ConsulClusteringClientOptions},IOptions{GatewayOptions},IOptions{ClusterOptions})
+  id: '#ctor(ILogger{Orleans.Runtime.Membership.ConsulGatewayListProvider},IOptions{Orleans.Configuration.ConsulClusteringClientOptions},IOptions{GatewayOptions},IOptions{ClusterOptions})'
+  parent: Orleans.Runtime.Membership.ConsulGatewayListProvider
+  langs:
+  - csharp
+  - vb
+  name: ConsulGatewayListProvider(ILogger<ConsulGatewayListProvider>, IOptions<ConsulClusteringClientOptions>, IOptions<GatewayOptions>, IOptions<ClusterOptions>)
+  nameWithType: ConsulGatewayListProvider.ConsulGatewayListProvider(ILogger<ConsulGatewayListProvider>, IOptions<ConsulClusteringClientOptions>, IOptions<GatewayOptions>, IOptions<ClusterOptions>)
+  fullName: Orleans.Runtime.Membership.ConsulGatewayListProvider.ConsulGatewayListProvider(ILogger<Orleans.Runtime.Membership.ConsulGatewayListProvider>, IOptions<Orleans.Configuration.ConsulClusteringClientOptions>, IOptions<GatewayOptions>, IOptions<ClusterOptions>)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Clustering.Consul/ConsulGatewayListProvider.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Clustering.Consul/ConsulGatewayListProvider.cs
+    startLine: 21
+  assemblies:
+  - Orleans.Clustering.Consul
+  namespace: Orleans.Runtime.Membership
+  syntax:
+    content: public ConsulGatewayListProvider(ILogger<ConsulGatewayListProvider> logger, IOptions<ConsulClusteringClientOptions> options, IOptions<GatewayOptions> gatewayOptions, IOptions<ClusterOptions> clusterOptions)
+    parameters:
+    - id: logger
+      type: ILogger{Orleans.Runtime.Membership.ConsulGatewayListProvider}
+    - id: options
+      type: IOptions{Orleans.Configuration.ConsulClusteringClientOptions}
+    - id: gatewayOptions
+      type: IOptions{GatewayOptions}
+    - id: clusterOptions
+      type: IOptions{ClusterOptions}
+    content.vb: Public Sub New(logger As ILogger(Of ConsulGatewayListProvider), options As IOptions(Of ConsulClusteringClientOptions), gatewayOptions As IOptions(Of GatewayOptions), clusterOptions As IOptions(Of ClusterOptions))
+  overload: Orleans.Runtime.Membership.ConsulGatewayListProvider.#ctor*
+  nameWithType.vb: ConsulGatewayListProvider.ConsulGatewayListProvider(ILogger(Of ConsulGatewayListProvider), IOptions(Of ConsulClusteringClientOptions), IOptions(Of GatewayOptions), IOptions(Of ClusterOptions))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.Runtime.Membership.ConsulGatewayListProvider.ConsulGatewayListProvider(ILogger(Of Orleans.Runtime.Membership.ConsulGatewayListProvider), IOptions(Of Orleans.Configuration.ConsulClusteringClientOptions), IOptions(Of GatewayOptions), IOptions(Of ClusterOptions))
+  name.vb: ConsulGatewayListProvider(ILogger(Of ConsulGatewayListProvider), IOptions(Of ConsulClusteringClientOptions), IOptions(Of GatewayOptions), IOptions(Of ClusterOptions))
+- uid: Orleans.Runtime.Membership.ConsulGatewayListProvider.MaxStaleness
+  commentId: P:Orleans.Runtime.Membership.ConsulGatewayListProvider.MaxStaleness
+  id: MaxStaleness
+  parent: Orleans.Runtime.Membership.ConsulGatewayListProvider
+  langs:
+  - csharp
+  - vb
+  name: MaxStaleness
+  nameWithType: ConsulGatewayListProvider.MaxStaleness
+  fullName: Orleans.Runtime.Membership.ConsulGatewayListProvider.MaxStaleness
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Clustering.Consul/ConsulGatewayListProvider.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: MaxStaleness
+    path: src/Orleans.Clustering.Consul/ConsulGatewayListProvider.cs
+    startLine: 33
+  assemblies:
+  - Orleans.Clustering.Consul
+  namespace: Orleans.Runtime.Membership
+  syntax:
+    content: public TimeSpan MaxStaleness { get; }
+    parameters: []
+    return:
+      type: TimeSpan
+    content.vb: Public ReadOnly Property MaxStaleness As TimeSpan
+  overload: Orleans.Runtime.Membership.ConsulGatewayListProvider.MaxStaleness*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Runtime.Membership.ConsulGatewayListProvider.IsUpdatable
+  commentId: P:Orleans.Runtime.Membership.ConsulGatewayListProvider.IsUpdatable
+  id: IsUpdatable
+  parent: Orleans.Runtime.Membership.ConsulGatewayListProvider
+  langs:
+  - csharp
+  - vb
+  name: IsUpdatable
+  nameWithType: ConsulGatewayListProvider.IsUpdatable
+  fullName: Orleans.Runtime.Membership.ConsulGatewayListProvider.IsUpdatable
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Clustering.Consul/ConsulGatewayListProvider.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IsUpdatable
+    path: src/Orleans.Clustering.Consul/ConsulGatewayListProvider.cs
+    startLine: 38
+  assemblies:
+  - Orleans.Clustering.Consul
+  namespace: Orleans.Runtime.Membership
+  syntax:
+    content: public Boolean IsUpdatable { get; }
+    parameters: []
+    return:
+      type: Boolean
+    content.vb: Public ReadOnly Property IsUpdatable As Boolean
+  overload: Orleans.Runtime.Membership.ConsulGatewayListProvider.IsUpdatable*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Orleans.Runtime.Membership.ConsulGatewayListProvider.InitializeGatewayListProvider
+  commentId: M:Orleans.Runtime.Membership.ConsulGatewayListProvider.InitializeGatewayListProvider
+  id: InitializeGatewayListProvider
+  parent: Orleans.Runtime.Membership.ConsulGatewayListProvider
+  langs:
+  - csharp
+  - vb
+  name: InitializeGatewayListProvider()
+  nameWithType: ConsulGatewayListProvider.InitializeGatewayListProvider()
+  fullName: Orleans.Runtime.Membership.ConsulGatewayListProvider.InitializeGatewayListProvider()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Clustering.Consul/ConsulGatewayListProvider.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: InitializeGatewayListProvider
+    path: src/Orleans.Clustering.Consul/ConsulGatewayListProvider.cs
+    startLine: 42
+  assemblies:
+  - Orleans.Clustering.Consul
+  namespace: Orleans.Runtime.Membership
+  syntax:
+    content: public Task InitializeGatewayListProvider()
+    return:
+      type: Task
+    content.vb: Public Function InitializeGatewayListProvider As Task
+  overload: Orleans.Runtime.Membership.ConsulGatewayListProvider.InitializeGatewayListProvider*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Membership.ConsulGatewayListProvider.GetGateways
+  commentId: M:Orleans.Runtime.Membership.ConsulGatewayListProvider.GetGateways
+  id: GetGateways
+  parent: Orleans.Runtime.Membership.ConsulGatewayListProvider
+  langs:
+  - csharp
+  - vb
+  name: GetGateways()
+  nameWithType: ConsulGatewayListProvider.GetGateways()
+  fullName: Orleans.Runtime.Membership.ConsulGatewayListProvider.GetGateways()
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Clustering.Consul/ConsulGatewayListProvider.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: GetGateways
+    path: src/Orleans.Clustering.Consul/ConsulGatewayListProvider.cs
+    startLine: 50
+  assemblies:
+  - Orleans.Clustering.Consul
+  namespace: Orleans.Runtime.Membership
+  syntax:
+    content: public Task<IList<Uri>> GetGateways()
+    return:
+      type: Task{IList{Uri}}
+    content.vb: Public Function GetGateways As Task(Of IList(Of Uri))
+  overload: Orleans.Runtime.Membership.ConsulGatewayListProvider.GetGateways*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans.Runtime.Membership
+  commentId: N:Orleans.Runtime.Membership
+  isExternal: false
+  name: Orleans.Runtime.Membership
+  nameWithType: Orleans.Runtime.Membership
+  fullName: Orleans.Runtime.Membership
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Runtime.Membership.ConsulGatewayListProvider.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<ConsulGatewayListProvider>()
+  nameWithType: ImmutableExt.AsImmutable<ConsulGatewayListProvider>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.Membership.ConsulGatewayListProvider>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of ConsulGatewayListProvider)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.Membership.ConsulGatewayListProvider)()
+  name.vb: AsImmutable(Of ConsulGatewayListProvider)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<ConsulGatewayListProvider>
+    nameWithType: ImmutableExt.AsImmutable<ConsulGatewayListProvider>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.Membership.ConsulGatewayListProvider>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of ConsulGatewayListProvider)
+    nameWithType: ImmutableExt.AsImmutable(Of ConsulGatewayListProvider)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.Membership.ConsulGatewayListProvider)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Runtime.Membership.ConsulGatewayListProvider.#ctor*
+  commentId: Overload:Orleans.Runtime.Membership.ConsulGatewayListProvider.#ctor
+  isExternal: false
+  name: ConsulGatewayListProvider
+  nameWithType: ConsulGatewayListProvider.ConsulGatewayListProvider
+  fullName: Orleans.Runtime.Membership.ConsulGatewayListProvider.ConsulGatewayListProvider
+- uid: ILogger{Orleans.Runtime.Membership.ConsulGatewayListProvider}
+  commentId: '!:ILogger{Orleans.Runtime.Membership.ConsulGatewayListProvider}'
+  definition: ILogger`1
+  name: ILogger<ConsulGatewayListProvider>
+  nameWithType: ILogger<ConsulGatewayListProvider>
+  fullName: ILogger<Orleans.Runtime.Membership.ConsulGatewayListProvider>
+  nameWithType.vb: ILogger(Of ConsulGatewayListProvider)
+  fullName.vb: ILogger(Of Orleans.Runtime.Membership.ConsulGatewayListProvider)
+  name.vb: ILogger(Of ConsulGatewayListProvider)
+  spec.csharp:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Orleans.Runtime.Membership.ConsulGatewayListProvider
+    name: ConsulGatewayListProvider
+    nameWithType: ConsulGatewayListProvider
+    fullName: Orleans.Runtime.Membership.ConsulGatewayListProvider
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Orleans.Runtime.Membership.ConsulGatewayListProvider
+    name: ConsulGatewayListProvider
+    nameWithType: ConsulGatewayListProvider
+    fullName: Orleans.Runtime.Membership.ConsulGatewayListProvider
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IOptions{Orleans.Configuration.ConsulClusteringClientOptions}
+  commentId: '!:IOptions{Orleans.Configuration.ConsulClusteringClientOptions}'
+  definition: IOptions`1
+  name: IOptions<ConsulClusteringClientOptions>
+  nameWithType: IOptions<ConsulClusteringClientOptions>
+  fullName: IOptions<Orleans.Configuration.ConsulClusteringClientOptions>
+  nameWithType.vb: IOptions(Of ConsulClusteringClientOptions)
+  fullName.vb: IOptions(Of Orleans.Configuration.ConsulClusteringClientOptions)
+  name.vb: IOptions(Of ConsulClusteringClientOptions)
+  spec.csharp:
+  - uid: IOptions`1
+    name: IOptions
+    nameWithType: IOptions
+    fullName: IOptions
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Orleans.Configuration.ConsulClusteringClientOptions
+    name: ConsulClusteringClientOptions
+    nameWithType: ConsulClusteringClientOptions
+    fullName: Orleans.Configuration.ConsulClusteringClientOptions
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IOptions`1
+    name: IOptions
+    nameWithType: IOptions
+    fullName: IOptions
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Orleans.Configuration.ConsulClusteringClientOptions
+    name: ConsulClusteringClientOptions
+    nameWithType: ConsulClusteringClientOptions
+    fullName: Orleans.Configuration.ConsulClusteringClientOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IOptions{GatewayOptions}
+  commentId: '!:IOptions{GatewayOptions}'
+  definition: IOptions`1
+  name: IOptions<GatewayOptions>
+  nameWithType: IOptions<GatewayOptions>
+  fullName: IOptions<GatewayOptions>
+  nameWithType.vb: IOptions(Of GatewayOptions)
+  fullName.vb: IOptions(Of GatewayOptions)
+  name.vb: IOptions(Of GatewayOptions)
+  spec.csharp:
+  - uid: IOptions`1
+    name: IOptions
+    nameWithType: IOptions
+    fullName: IOptions
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: GatewayOptions
+    name: GatewayOptions
+    nameWithType: GatewayOptions
+    fullName: GatewayOptions
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IOptions`1
+    name: IOptions
+    nameWithType: IOptions
+    fullName: IOptions
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: GatewayOptions
+    name: GatewayOptions
+    nameWithType: GatewayOptions
+    fullName: GatewayOptions
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IOptions{ClusterOptions}
+  commentId: '!:IOptions{ClusterOptions}'
+  definition: IOptions`1
+  name: IOptions<ClusterOptions>
+  nameWithType: IOptions<ClusterOptions>
+  fullName: IOptions<ClusterOptions>
+  nameWithType.vb: IOptions(Of ClusterOptions)
+  fullName.vb: IOptions(Of ClusterOptions)
+  name.vb: IOptions(Of ClusterOptions)
+  spec.csharp:
+  - uid: IOptions`1
+    name: IOptions
+    nameWithType: IOptions
+    fullName: IOptions
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: ClusterOptions
+    name: ClusterOptions
+    nameWithType: ClusterOptions
+    fullName: ClusterOptions
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IOptions`1
+    name: IOptions
+    nameWithType: IOptions
+    fullName: IOptions
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: ClusterOptions
+    name: ClusterOptions
+    nameWithType: ClusterOptions
+    fullName: ClusterOptions
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: ILogger`1
+  isExternal: true
+  name: ILogger<>
+  nameWithType: ILogger<>
+  fullName: ILogger<>
+  nameWithType.vb: ILogger(Of )
+  fullName.vb: ILogger(Of )
+  name.vb: ILogger(Of )
+  spec.csharp:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IOptions`1
+  isExternal: true
+  name: IOptions<>
+  nameWithType: IOptions<>
+  fullName: IOptions<>
+  nameWithType.vb: IOptions(Of )
+  fullName.vb: IOptions(Of )
+  name.vb: IOptions(Of )
+  spec.csharp:
+  - uid: IOptions`1
+    name: IOptions
+    nameWithType: IOptions
+    fullName: IOptions
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IOptions`1
+    name: IOptions
+    nameWithType: IOptions
+    fullName: IOptions
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Runtime.Membership.ConsulGatewayListProvider.MaxStaleness*
+  commentId: Overload:Orleans.Runtime.Membership.ConsulGatewayListProvider.MaxStaleness
+  isExternal: false
+  name: MaxStaleness
+  nameWithType: ConsulGatewayListProvider.MaxStaleness
+  fullName: Orleans.Runtime.Membership.ConsulGatewayListProvider.MaxStaleness
+- uid: TimeSpan
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: TimeSpan
+- uid: Orleans.Runtime.Membership.ConsulGatewayListProvider.IsUpdatable*
+  commentId: Overload:Orleans.Runtime.Membership.ConsulGatewayListProvider.IsUpdatable
+  isExternal: false
+  name: IsUpdatable
+  nameWithType: ConsulGatewayListProvider.IsUpdatable
+  fullName: Orleans.Runtime.Membership.ConsulGatewayListProvider.IsUpdatable
+- uid: Boolean
+  commentId: '!:Boolean'
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: Boolean
+- uid: Orleans.Runtime.Membership.ConsulGatewayListProvider.InitializeGatewayListProvider*
+  commentId: Overload:Orleans.Runtime.Membership.ConsulGatewayListProvider.InitializeGatewayListProvider
+  isExternal: false
+  name: InitializeGatewayListProvider
+  nameWithType: ConsulGatewayListProvider.InitializeGatewayListProvider
+  fullName: Orleans.Runtime.Membership.ConsulGatewayListProvider.InitializeGatewayListProvider
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task
+- uid: Orleans.Runtime.Membership.ConsulGatewayListProvider.GetGateways*
+  commentId: Overload:Orleans.Runtime.Membership.ConsulGatewayListProvider.GetGateways
+  isExternal: false
+  name: GetGateways
+  nameWithType: ConsulGatewayListProvider.GetGateways
+  fullName: Orleans.Runtime.Membership.ConsulGatewayListProvider.GetGateways
+- uid: Task{IList{Uri}}
+  commentId: '!:Task{IList{Uri}}'
+  definition: Task`1
+  name: Task<IList<Uri>>
+  nameWithType: Task<IList<Uri>>
+  fullName: Task<IList<Uri>>
+  nameWithType.vb: Task(Of IList(Of Uri))
+  fullName.vb: Task(Of IList(Of Uri))
+  name.vb: Task(Of IList(Of Uri))
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: IList`1
+    name: IList
+    nameWithType: IList
+    fullName: IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Uri
+    name: Uri
+    nameWithType: Uri
+    fullName: Uri
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: IList`1
+    name: IList
+    nameWithType: IList
+    fullName: IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Uri
+    name: Uri
+    nameWithType: Uri
+    fullName: Uri
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )

@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Clustering.AdoNet.Storage
+  commentId: N:Orleans.Clustering.AdoNet.Storage
+  id: Orleans.Clustering.AdoNet.Storage
+  children:
+  - Orleans.Clustering.AdoNet.Storage.OrleansRelationalDownloadStream
+  langs:
+  - csharp
+  - vb
+  name: Orleans.Clustering.AdoNet.Storage
+  nameWithType: Orleans.Clustering.AdoNet.Storage
+  fullName: Orleans.Clustering.AdoNet.Storage
+  type: Namespace
+  assemblies:
+  - Orleans.Clustering.AdoNet
+references:
+- uid: Orleans.Clustering.AdoNet.Storage.OrleansRelationalDownloadStream
+  commentId: T:Orleans.Clustering.AdoNet.Storage.OrleansRelationalDownloadStream
+  isExternal: false
+  name: OrleansRelationalDownloadStream
+  nameWithType: OrleansRelationalDownloadStream
+  fullName: Orleans.Clustering.AdoNet.Storage.OrleansRelationalDownloadStream

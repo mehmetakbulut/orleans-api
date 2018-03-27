@@ -1,0 +1,498 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Runtime.Host.ConsulSiloRegistration
+  commentId: T:Orleans.Runtime.Host.ConsulSiloRegistration
+  id: ConsulSiloRegistration
+  parent: Orleans.Runtime.Host
+  children:
+  - Orleans.Runtime.Host.ConsulSiloRegistration.Hostname
+  - Orleans.Runtime.Host.ConsulSiloRegistration.ProxyPort
+  - Orleans.Runtime.Host.ConsulSiloRegistration.SiloName
+  - Orleans.Runtime.Host.ConsulSiloRegistration.StartTime
+  - Orleans.Runtime.Host.ConsulSiloRegistration.Status
+  - Orleans.Runtime.Host.ConsulSiloRegistration.SuspectingSilos
+  langs:
+  - csharp
+  - vb
+  name: ConsulSiloRegistration
+  nameWithType: ConsulSiloRegistration
+  fullName: Orleans.Runtime.Host.ConsulSiloRegistration
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Clustering.Consul/SerializableMembershipTypes.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ConsulSiloRegistration
+    path: src/Orleans.Clustering.Consul/SerializableMembershipTypes.cs
+    startLine: 12
+  assemblies:
+  - Orleans.Clustering.Consul
+  namespace: Orleans.Runtime.Host
+  summary: "\nJSON Serializable Object that when serialized and Base64 encoded, forms the Value part of a Silo&apos;s Consul KVPair\n"
+  example: []
+  syntax:
+    content: 'public class ConsulSiloRegistration : object'
+    content.vb: >-
+      Public Class ConsulSiloRegistration
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.Runtime.Host.ConsulSiloRegistration.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.Runtime.Host.ConsulSiloRegistration.Hostname
+  commentId: P:Orleans.Runtime.Host.ConsulSiloRegistration.Hostname
+  id: Hostname
+  parent: Orleans.Runtime.Host.ConsulSiloRegistration
+  langs:
+  - csharp
+  - vb
+  name: Hostname
+  nameWithType: ConsulSiloRegistration.Hostname
+  fullName: Orleans.Runtime.Host.ConsulSiloRegistration.Hostname
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Clustering.Consul/SerializableMembershipTypes.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Hostname
+    path: src/Orleans.Clustering.Consul/SerializableMembershipTypes.cs
+    startLine: 44
+  assemblies:
+  - Orleans.Clustering.Consul
+  namespace: Orleans.Runtime.Host
+  syntax:
+    content: public String Hostname { get; set; }
+    parameters: []
+    return:
+      type: String
+    content.vb: Public Property Hostname As String
+  overload: Orleans.Runtime.Host.ConsulSiloRegistration.Hostname*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Host.ConsulSiloRegistration.ProxyPort
+  commentId: P:Orleans.Runtime.Host.ConsulSiloRegistration.ProxyPort
+  id: ProxyPort
+  parent: Orleans.Runtime.Host.ConsulSiloRegistration
+  langs:
+  - csharp
+  - vb
+  name: ProxyPort
+  nameWithType: ConsulSiloRegistration.ProxyPort
+  fullName: Orleans.Runtime.Host.ConsulSiloRegistration.ProxyPort
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Clustering.Consul/SerializableMembershipTypes.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: ProxyPort
+    path: src/Orleans.Clustering.Consul/SerializableMembershipTypes.cs
+    startLine: 47
+  assemblies:
+  - Orleans.Clustering.Consul
+  namespace: Orleans.Runtime.Host
+  syntax:
+    content: public Int32 ProxyPort { get; set; }
+    parameters: []
+    return:
+      type: Int32
+    content.vb: Public Property ProxyPort As Int32
+  overload: Orleans.Runtime.Host.ConsulSiloRegistration.ProxyPort*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Host.ConsulSiloRegistration.StartTime
+  commentId: P:Orleans.Runtime.Host.ConsulSiloRegistration.StartTime
+  id: StartTime
+  parent: Orleans.Runtime.Host.ConsulSiloRegistration
+  langs:
+  - csharp
+  - vb
+  name: StartTime
+  nameWithType: ConsulSiloRegistration.StartTime
+  fullName: Orleans.Runtime.Host.ConsulSiloRegistration.StartTime
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Clustering.Consul/SerializableMembershipTypes.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: StartTime
+    path: src/Orleans.Clustering.Consul/SerializableMembershipTypes.cs
+    startLine: 50
+  assemblies:
+  - Orleans.Clustering.Consul
+  namespace: Orleans.Runtime.Host
+  syntax:
+    content: public DateTime StartTime { get; set; }
+    parameters: []
+    return:
+      type: DateTime
+    content.vb: Public Property StartTime As DateTime
+  overload: Orleans.Runtime.Host.ConsulSiloRegistration.StartTime*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Host.ConsulSiloRegistration.Status
+  commentId: P:Orleans.Runtime.Host.ConsulSiloRegistration.Status
+  id: Status
+  parent: Orleans.Runtime.Host.ConsulSiloRegistration
+  langs:
+  - csharp
+  - vb
+  name: Status
+  nameWithType: ConsulSiloRegistration.Status
+  fullName: Orleans.Runtime.Host.ConsulSiloRegistration.Status
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Clustering.Consul/SerializableMembershipTypes.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Status
+    path: src/Orleans.Clustering.Consul/SerializableMembershipTypes.cs
+    startLine: 53
+  assemblies:
+  - Orleans.Clustering.Consul
+  namespace: Orleans.Runtime.Host
+  syntax:
+    content: public SiloStatus Status { get; set; }
+    parameters: []
+    return:
+      type: SiloStatus
+    content.vb: Public Property Status As SiloStatus
+  overload: Orleans.Runtime.Host.ConsulSiloRegistration.Status*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Host.ConsulSiloRegistration.SiloName
+  commentId: P:Orleans.Runtime.Host.ConsulSiloRegistration.SiloName
+  id: SiloName
+  parent: Orleans.Runtime.Host.ConsulSiloRegistration
+  langs:
+  - csharp
+  - vb
+  name: SiloName
+  nameWithType: ConsulSiloRegistration.SiloName
+  fullName: Orleans.Runtime.Host.ConsulSiloRegistration.SiloName
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Clustering.Consul/SerializableMembershipTypes.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SiloName
+    path: src/Orleans.Clustering.Consul/SerializableMembershipTypes.cs
+    startLine: 56
+  assemblies:
+  - Orleans.Clustering.Consul
+  namespace: Orleans.Runtime.Host
+  syntax:
+    content: public String SiloName { get; set; }
+    parameters: []
+    return:
+      type: String
+    content.vb: Public Property SiloName As String
+  overload: Orleans.Runtime.Host.ConsulSiloRegistration.SiloName*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Orleans.Runtime.Host.ConsulSiloRegistration.SuspectingSilos
+  commentId: P:Orleans.Runtime.Host.ConsulSiloRegistration.SuspectingSilos
+  id: SuspectingSilos
+  parent: Orleans.Runtime.Host.ConsulSiloRegistration
+  langs:
+  - csharp
+  - vb
+  name: SuspectingSilos
+  nameWithType: ConsulSiloRegistration.SuspectingSilos
+  fullName: Orleans.Runtime.Host.ConsulSiloRegistration.SuspectingSilos
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Clustering.Consul/SerializableMembershipTypes.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: SuspectingSilos
+    path: src/Orleans.Clustering.Consul/SerializableMembershipTypes.cs
+    startLine: 59
+  assemblies:
+  - Orleans.Clustering.Consul
+  namespace: Orleans.Runtime.Host
+  syntax:
+    content: public List<SuspectingSilo> SuspectingSilos { get; set; }
+    parameters: []
+    return:
+      type: List{Orleans.Runtime.Host.SuspectingSilo}
+    content.vb: Public Property SuspectingSilos As List(Of SuspectingSilo)
+  overload: Orleans.Runtime.Host.ConsulSiloRegistration.SuspectingSilos*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans.Runtime.Host
+  commentId: N:Orleans.Runtime.Host
+  isExternal: false
+  name: Orleans.Runtime.Host
+  nameWithType: Orleans.Runtime.Host
+  fullName: Orleans.Runtime.Host
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Runtime.Host.ConsulSiloRegistration.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<ConsulSiloRegistration>()
+  nameWithType: ImmutableExt.AsImmutable<ConsulSiloRegistration>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.Host.ConsulSiloRegistration>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of ConsulSiloRegistration)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.Host.ConsulSiloRegistration)()
+  name.vb: AsImmutable(Of ConsulSiloRegistration)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<ConsulSiloRegistration>
+    nameWithType: ImmutableExt.AsImmutable<ConsulSiloRegistration>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Runtime.Host.ConsulSiloRegistration>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of ConsulSiloRegistration)
+    nameWithType: ImmutableExt.AsImmutable(Of ConsulSiloRegistration)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Runtime.Host.ConsulSiloRegistration)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Runtime.Host.ConsulSiloRegistration.Hostname*
+  commentId: Overload:Orleans.Runtime.Host.ConsulSiloRegistration.Hostname
+  isExternal: false
+  name: Hostname
+  nameWithType: ConsulSiloRegistration.Hostname
+  fullName: Orleans.Runtime.Host.ConsulSiloRegistration.Hostname
+- uid: String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: String
+- uid: Orleans.Runtime.Host.ConsulSiloRegistration.ProxyPort*
+  commentId: Overload:Orleans.Runtime.Host.ConsulSiloRegistration.ProxyPort
+  isExternal: false
+  name: ProxyPort
+  nameWithType: ConsulSiloRegistration.ProxyPort
+  fullName: Orleans.Runtime.Host.ConsulSiloRegistration.ProxyPort
+- uid: Int32
+  commentId: '!:Int32'
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: Int32
+- uid: Orleans.Runtime.Host.ConsulSiloRegistration.StartTime*
+  commentId: Overload:Orleans.Runtime.Host.ConsulSiloRegistration.StartTime
+  isExternal: false
+  name: StartTime
+  nameWithType: ConsulSiloRegistration.StartTime
+  fullName: Orleans.Runtime.Host.ConsulSiloRegistration.StartTime
+- uid: DateTime
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: DateTime
+- uid: Orleans.Runtime.Host.ConsulSiloRegistration.Status*
+  commentId: Overload:Orleans.Runtime.Host.ConsulSiloRegistration.Status
+  isExternal: false
+  name: Status
+  nameWithType: ConsulSiloRegistration.Status
+  fullName: Orleans.Runtime.Host.ConsulSiloRegistration.Status
+- uid: SiloStatus
+  commentId: '!:SiloStatus'
+  isExternal: true
+  name: SiloStatus
+  nameWithType: SiloStatus
+  fullName: SiloStatus
+- uid: Orleans.Runtime.Host.ConsulSiloRegistration.SiloName*
+  commentId: Overload:Orleans.Runtime.Host.ConsulSiloRegistration.SiloName
+  isExternal: false
+  name: SiloName
+  nameWithType: ConsulSiloRegistration.SiloName
+  fullName: Orleans.Runtime.Host.ConsulSiloRegistration.SiloName
+- uid: Orleans.Runtime.Host.ConsulSiloRegistration.SuspectingSilos*
+  commentId: Overload:Orleans.Runtime.Host.ConsulSiloRegistration.SuspectingSilos
+  isExternal: false
+  name: SuspectingSilos
+  nameWithType: ConsulSiloRegistration.SuspectingSilos
+  fullName: Orleans.Runtime.Host.ConsulSiloRegistration.SuspectingSilos
+- uid: List{Orleans.Runtime.Host.SuspectingSilo}
+  commentId: '!:List{Orleans.Runtime.Host.SuspectingSilo}'
+  definition: List`1
+  name: List<SuspectingSilo>
+  nameWithType: List<SuspectingSilo>
+  fullName: List<Orleans.Runtime.Host.SuspectingSilo>
+  nameWithType.vb: List(Of SuspectingSilo)
+  fullName.vb: List(Of Orleans.Runtime.Host.SuspectingSilo)
+  name.vb: List(Of SuspectingSilo)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Orleans.Runtime.Host.SuspectingSilo
+    name: SuspectingSilo
+    nameWithType: SuspectingSilo
+    fullName: Orleans.Runtime.Host.SuspectingSilo
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Orleans.Runtime.Host.SuspectingSilo
+    name: SuspectingSilo
+    nameWithType: SuspectingSilo
+    fullName: Orleans.Runtime.Host.SuspectingSilo
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )

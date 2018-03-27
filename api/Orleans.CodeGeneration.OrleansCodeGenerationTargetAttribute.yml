@@ -1,0 +1,245 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.CodeGeneration.OrleansCodeGenerationTargetAttribute
+  commentId: T:Orleans.CodeGeneration.OrleansCodeGenerationTargetAttribute
+  id: OrleansCodeGenerationTargetAttribute
+  parent: Orleans.CodeGeneration
+  children:
+  - Orleans.CodeGeneration.OrleansCodeGenerationTargetAttribute.#ctor(System.String)
+  - Orleans.CodeGeneration.OrleansCodeGenerationTargetAttribute.AssemblyName
+  langs:
+  - csharp
+  - vb
+  name: OrleansCodeGenerationTargetAttribute
+  nameWithType: OrleansCodeGenerationTargetAttribute
+  fullName: Orleans.CodeGeneration.OrleansCodeGenerationTargetAttribute
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/CodeGeneration/OrleansCodeGenerationTargetAttribute.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: OrleansCodeGenerationTargetAttribute
+    path: src/Orleans.Core.Abstractions/CodeGeneration/OrleansCodeGenerationTargetAttribute.cs
+    startLine: 7
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.CodeGeneration
+  summary: "\nThe attribute which informs the code generator which assemblies an assembly contains generated code for.\n"
+  example: []
+  syntax:
+    content: 'public class OrleansCodeGenerationTargetAttribute : Attribute'
+    content.vb: >-
+      Public Class OrleansCodeGenerationTargetAttribute
+
+          Inherits Attribute
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.CodeGeneration.OrleansCodeGenerationTargetAttribute.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.CodeGeneration.OrleansCodeGenerationTargetAttribute.#ctor(System.String)
+  commentId: M:Orleans.CodeGeneration.OrleansCodeGenerationTargetAttribute.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Orleans.CodeGeneration.OrleansCodeGenerationTargetAttribute
+  langs:
+  - csharp
+  - vb
+  name: OrleansCodeGenerationTargetAttribute(String)
+  nameWithType: OrleansCodeGenerationTargetAttribute.OrleansCodeGenerationTargetAttribute(String)
+  fullName: Orleans.CodeGeneration.OrleansCodeGenerationTargetAttribute.OrleansCodeGenerationTargetAttribute(System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/CodeGeneration/OrleansCodeGenerationTargetAttribute.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Core.Abstractions/CodeGeneration/OrleansCodeGenerationTargetAttribute.cs
+    startLine: 12
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.CodeGeneration
+  summary: Initializes a new instance of <xref href="Orleans.CodeGeneration.OrleansCodeGenerationTargetAttribute" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public OrleansCodeGenerationTargetAttribute(string assemblyName)
+    parameters:
+    - id: assemblyName
+      type: System.String
+      description: The target assembly name.
+    content.vb: Public Sub New(assemblyName As String)
+  overload: Orleans.CodeGeneration.OrleansCodeGenerationTargetAttribute.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.CodeGeneration.OrleansCodeGenerationTargetAttribute.AssemblyName
+  commentId: P:Orleans.CodeGeneration.OrleansCodeGenerationTargetAttribute.AssemblyName
+  id: AssemblyName
+  parent: Orleans.CodeGeneration.OrleansCodeGenerationTargetAttribute
+  langs:
+  - csharp
+  - vb
+  name: AssemblyName
+  nameWithType: OrleansCodeGenerationTargetAttribute.AssemblyName
+  fullName: Orleans.CodeGeneration.OrleansCodeGenerationTargetAttribute.AssemblyName
+  type: Property
+  source:
+    remote:
+      path: src/Orleans.Core.Abstractions/CodeGeneration/OrleansCodeGenerationTargetAttribute.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: AssemblyName
+    path: src/Orleans.Core.Abstractions/CodeGeneration/OrleansCodeGenerationTargetAttribute.cs
+    startLine: 20
+  assemblies:
+  - Orleans.Core.Abstractions
+  namespace: Orleans.CodeGeneration
+  summary: "\nThe target assembly name that the generated code is for.\n"
+  example: []
+  syntax:
+    content: public string AssemblyName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property AssemblyName As String
+  overload: Orleans.CodeGeneration.OrleansCodeGenerationTargetAttribute.AssemblyName*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans.CodeGeneration
+  commentId: N:Orleans.CodeGeneration
+  isExternal: false
+  name: Orleans.CodeGeneration
+  nameWithType: Orleans.CodeGeneration
+  fullName: Orleans.CodeGeneration
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.CodeGeneration.OrleansCodeGenerationTargetAttribute.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<OrleansCodeGenerationTargetAttribute>()
+  nameWithType: ImmutableExt.AsImmutable<OrleansCodeGenerationTargetAttribute>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.CodeGeneration.OrleansCodeGenerationTargetAttribute>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of OrleansCodeGenerationTargetAttribute)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.CodeGeneration.OrleansCodeGenerationTargetAttribute)()
+  name.vb: AsImmutable(Of OrleansCodeGenerationTargetAttribute)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<OrleansCodeGenerationTargetAttribute>
+    nameWithType: ImmutableExt.AsImmutable<OrleansCodeGenerationTargetAttribute>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.CodeGeneration.OrleansCodeGenerationTargetAttribute>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of OrleansCodeGenerationTargetAttribute)
+    nameWithType: ImmutableExt.AsImmutable(Of OrleansCodeGenerationTargetAttribute)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.CodeGeneration.OrleansCodeGenerationTargetAttribute)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.CodeGeneration.OrleansCodeGenerationTargetAttribute
+  commentId: T:Orleans.CodeGeneration.OrleansCodeGenerationTargetAttribute
+  isExternal: false
+  name: OrleansCodeGenerationTargetAttribute
+  nameWithType: OrleansCodeGenerationTargetAttribute
+  fullName: Orleans.CodeGeneration.OrleansCodeGenerationTargetAttribute
+- uid: Orleans.CodeGeneration.OrleansCodeGenerationTargetAttribute.#ctor*
+  commentId: Overload:Orleans.CodeGeneration.OrleansCodeGenerationTargetAttribute.#ctor
+  isExternal: false
+  name: OrleansCodeGenerationTargetAttribute
+  nameWithType: OrleansCodeGenerationTargetAttribute.OrleansCodeGenerationTargetAttribute
+  fullName: Orleans.CodeGeneration.OrleansCodeGenerationTargetAttribute.OrleansCodeGenerationTargetAttribute
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Orleans.CodeGeneration.OrleansCodeGenerationTargetAttribute.AssemblyName*
+  commentId: Overload:Orleans.CodeGeneration.OrleansCodeGenerationTargetAttribute.AssemblyName
+  isExternal: false
+  name: AssemblyName
+  nameWithType: OrleansCodeGenerationTargetAttribute.AssemblyName
+  fullName: Orleans.CodeGeneration.OrleansCodeGenerationTargetAttribute.AssemblyName

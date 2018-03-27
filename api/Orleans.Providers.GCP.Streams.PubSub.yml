@@ -1,0 +1,97 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Providers.GCP.Streams.PubSub
+  commentId: N:Orleans.Providers.GCP.Streams.PubSub
+  id: Orleans.Providers.GCP.Streams.PubSub
+  children:
+  - Orleans.Providers.GCP.Streams.PubSub.IPubSubDataAdapter
+  - Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1
+  - Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver
+  - Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer
+  - Orleans.Providers.GCP.Streams.PubSub.PubSubDataAdapter
+  - Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager
+  langs:
+  - csharp
+  - vb
+  name: Orleans.Providers.GCP.Streams.PubSub
+  nameWithType: Orleans.Providers.GCP.Streams.PubSub
+  fullName: Orleans.Providers.GCP.Streams.PubSub
+  type: Namespace
+  assemblies:
+  - Orleans.Streaming.GCP
+references:
+- uid: Orleans.Providers.GCP.Streams.PubSub.IPubSubDataAdapter
+  commentId: T:Orleans.Providers.GCP.Streams.PubSub.IPubSubDataAdapter
+  parent: Orleans.Providers.GCP.Streams.PubSub
+  isExternal: false
+  name: IPubSubDataAdapter
+  nameWithType: IPubSubDataAdapter
+  fullName: Orleans.Providers.GCP.Streams.PubSub.IPubSubDataAdapter
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubDataAdapter
+  commentId: T:Orleans.Providers.GCP.Streams.PubSub.PubSubDataAdapter
+  isExternal: false
+  name: PubSubDataAdapter
+  nameWithType: PubSubDataAdapter
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubDataAdapter
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1
+  commentId: T:Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1
+  parent: Orleans.Providers.GCP.Streams.PubSub
+  isExternal: false
+  name: PubSubAdapterFactory<TDataAdapter>
+  nameWithType: PubSubAdapterFactory<TDataAdapter>
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory<TDataAdapter>
+  nameWithType.vb: PubSubAdapterFactory(Of TDataAdapter)
+  fullName.vb: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory(Of TDataAdapter)
+  name.vb: PubSubAdapterFactory(Of TDataAdapter)
+  spec.csharp:
+  - uid: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1
+    name: PubSubAdapterFactory
+    nameWithType: PubSubAdapterFactory
+    fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDataAdapter
+    nameWithType: TDataAdapter
+    fullName: TDataAdapter
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory`1
+    name: PubSubAdapterFactory
+    nameWithType: PubSubAdapterFactory
+    fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDataAdapter
+    nameWithType: TDataAdapter
+    fullName: TDataAdapter
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver
+  commentId: T:Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver
+  isExternal: false
+  name: PubSubAdapterReceiver
+  nameWithType: PubSubAdapterReceiver
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer
+  commentId: T:Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer
+  isExternal: false
+  name: PubSubBatchContainer
+  nameWithType: PubSubBatchContainer
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer
+- uid: Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager
+  commentId: T:Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager
+  isExternal: false
+  name: PubSubDataManager
+  nameWithType: PubSubDataManager
+  fullName: Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager
+- uid: Orleans.Providers.GCP.Streams.PubSub
+  commentId: N:Orleans.Providers.GCP.Streams.PubSub
+  isExternal: false
+  name: Orleans.Providers.GCP.Streams.PubSub
+  nameWithType: Orleans.Providers.GCP.Streams.PubSub
+  fullName: Orleans.Providers.GCP.Streams.PubSub

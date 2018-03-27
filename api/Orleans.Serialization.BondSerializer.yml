@@ -1,0 +1,478 @@
+### YamlMime:ManagedReference
+items:
+- uid: Orleans.Serialization.BondSerializer
+  commentId: T:Orleans.Serialization.BondSerializer
+  id: BondSerializer
+  parent: Orleans.Serialization
+  children:
+  - Orleans.Serialization.BondSerializer.#ctor(ILogger{Orleans.Serialization.BondSerializer})
+  - Orleans.Serialization.BondSerializer.DeepCopy(System.Object,ICopyContext)
+  - Orleans.Serialization.BondSerializer.Deserialize(Type,IDeserializationContext)
+  - Orleans.Serialization.BondSerializer.IsSupportedType(Type)
+  - Orleans.Serialization.BondSerializer.Serialize(System.Object,ISerializationContext,Type)
+  langs:
+  - csharp
+  - vb
+  name: BondSerializer
+  nameWithType: BondSerializer
+  fullName: Orleans.Serialization.BondSerializer
+  type: Class
+  source:
+    remote:
+      path: src/Orleans.Serialization.Bond/BondSerializer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: BondSerializer
+    path: src/Orleans.Serialization.Bond/BondSerializer.cs
+    startLine: 19
+  assemblies:
+  - Orleans.Serialization.Bond
+  namespace: Orleans.Serialization
+  summary: "\nAn implementation of IExternalSerializer for usage with Bond types.\n"
+  example: []
+  syntax:
+    content: 'public class BondSerializer : IExternalSerializer'
+    content.vb: >-
+      Public Class BondSerializer
+
+          Inherits IExternalSerializer
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Orleans.Serialization.BondSerializer.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Orleans.Serialization.BondSerializer.#ctor(ILogger{Orleans.Serialization.BondSerializer})
+  commentId: M:Orleans.Serialization.BondSerializer.#ctor(ILogger{Orleans.Serialization.BondSerializer})
+  id: '#ctor(ILogger{Orleans.Serialization.BondSerializer})'
+  parent: Orleans.Serialization.BondSerializer
+  langs:
+  - csharp
+  - vb
+  name: BondSerializer(ILogger<BondSerializer>)
+  nameWithType: BondSerializer.BondSerializer(ILogger<BondSerializer>)
+  fullName: Orleans.Serialization.BondSerializer.BondSerializer(ILogger<Orleans.Serialization.BondSerializer>)
+  type: Constructor
+  source:
+    remote:
+      path: src/Orleans.Serialization.Bond/BondSerializer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: .ctor
+    path: src/Orleans.Serialization.Bond/BondSerializer.cs
+    startLine: 31
+  assemblies:
+  - Orleans.Serialization.Bond
+  namespace: Orleans.Serialization
+  summary: "\nConstructor\n"
+  example: []
+  syntax:
+    content: public BondSerializer(ILogger<BondSerializer> logger)
+    parameters:
+    - id: logger
+      type: ILogger{Orleans.Serialization.BondSerializer}
+      description: ''
+    content.vb: Public Sub New(logger As ILogger(Of BondSerializer))
+  overload: Orleans.Serialization.BondSerializer.#ctor*
+  nameWithType.vb: BondSerializer.BondSerializer(ILogger(Of BondSerializer))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Orleans.Serialization.BondSerializer.BondSerializer(ILogger(Of Orleans.Serialization.BondSerializer))
+  name.vb: BondSerializer(ILogger(Of BondSerializer))
+- uid: Orleans.Serialization.BondSerializer.IsSupportedType(Type)
+  commentId: M:Orleans.Serialization.BondSerializer.IsSupportedType(Type)
+  id: IsSupportedType(Type)
+  parent: Orleans.Serialization.BondSerializer
+  langs:
+  - csharp
+  - vb
+  name: IsSupportedType(Type)
+  nameWithType: BondSerializer.IsSupportedType(Type)
+  fullName: Orleans.Serialization.BondSerializer.IsSupportedType(Type)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Serialization.Bond/BondSerializer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: IsSupportedType
+    path: src/Orleans.Serialization.Bond/BondSerializer.cs
+    startLine: 44
+  assemblies:
+  - Orleans.Serialization.Bond
+  namespace: Orleans.Serialization
+  summary: "\nDetermines whether this serializer has the ability to serialize a particular type.\n"
+  example: []
+  syntax:
+    content: public bool IsSupportedType(Type itemType)
+    parameters:
+    - id: itemType
+      type: Type
+      description: The type of the item to be serialized
+    return:
+      type: System.Boolean
+      description: A value indicating whether the type can be serialized
+    content.vb: Public Function IsSupportedType(itemType As Type) As Boolean
+  overload: Orleans.Serialization.BondSerializer.IsSupportedType*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Serialization.BondSerializer.DeepCopy(System.Object,ICopyContext)
+  commentId: M:Orleans.Serialization.BondSerializer.DeepCopy(System.Object,ICopyContext)
+  id: DeepCopy(System.Object,ICopyContext)
+  parent: Orleans.Serialization.BondSerializer
+  langs:
+  - csharp
+  - vb
+  name: DeepCopy(Object, ICopyContext)
+  nameWithType: BondSerializer.DeepCopy(Object, ICopyContext)
+  fullName: Orleans.Serialization.BondSerializer.DeepCopy(System.Object, ICopyContext)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Serialization.Bond/BondSerializer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: DeepCopy
+    path: src/Orleans.Serialization.Bond/BondSerializer.cs
+    startLine: 67
+  assemblies:
+  - Orleans.Serialization.Bond
+  namespace: Orleans.Serialization
+  example: []
+  syntax:
+    content: public object DeepCopy(object source, ICopyContext context)
+    parameters:
+    - id: source
+      type: System.Object
+    - id: context
+      type: ICopyContext
+    return:
+      type: System.Object
+    content.vb: Public Function DeepCopy(source As Object, context As ICopyContext) As Object
+  overload: Orleans.Serialization.BondSerializer.DeepCopy*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Serialization.BondSerializer.Deserialize(Type,IDeserializationContext)
+  commentId: M:Orleans.Serialization.BondSerializer.Deserialize(Type,IDeserializationContext)
+  id: Deserialize(Type,IDeserializationContext)
+  parent: Orleans.Serialization.BondSerializer
+  langs:
+  - csharp
+  - vb
+  name: Deserialize(Type, IDeserializationContext)
+  nameWithType: BondSerializer.Deserialize(Type, IDeserializationContext)
+  fullName: Orleans.Serialization.BondSerializer.Deserialize(Type, IDeserializationContext)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Serialization.Bond/BondSerializer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Deserialize
+    path: src/Orleans.Serialization.Bond/BondSerializer.cs
+    startLine: 85
+  assemblies:
+  - Orleans.Serialization.Bond
+  namespace: Orleans.Serialization
+  example: []
+  syntax:
+    content: public object Deserialize(Type expectedType, IDeserializationContext context)
+    parameters:
+    - id: expectedType
+      type: Type
+    - id: context
+      type: IDeserializationContext
+    return:
+      type: System.Object
+    content.vb: Public Function Deserialize(expectedType As Type, context As IDeserializationContext) As Object
+  overload: Orleans.Serialization.BondSerializer.Deserialize*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Orleans.Serialization.BondSerializer.Serialize(System.Object,ISerializationContext,Type)
+  commentId: M:Orleans.Serialization.BondSerializer.Serialize(System.Object,ISerializationContext,Type)
+  id: Serialize(System.Object,ISerializationContext,Type)
+  parent: Orleans.Serialization.BondSerializer
+  langs:
+  - csharp
+  - vb
+  name: Serialize(Object, ISerializationContext, Type)
+  nameWithType: BondSerializer.Serialize(Object, ISerializationContext, Type)
+  fullName: Orleans.Serialization.BondSerializer.Serialize(System.Object, ISerializationContext, Type)
+  type: Method
+  source:
+    remote:
+      path: src/Orleans.Serialization.Bond/BondSerializer.cs
+      branch: api-reference
+      repo: https://github.com/mehmetakbulut/orleans.git
+    id: Serialize
+    path: src/Orleans.Serialization.Bond/BondSerializer.cs
+    startLine: 111
+  assemblies:
+  - Orleans.Serialization.Bond
+  namespace: Orleans.Serialization
+  example: []
+  syntax:
+    content: public void Serialize(object item, ISerializationContext context, Type expectedType)
+    parameters:
+    - id: item
+      type: System.Object
+    - id: context
+      type: ISerializationContext
+    - id: expectedType
+      type: Type
+    content.vb: Public Sub Serialize(item As Object, context As ISerializationContext, expectedType As Type)
+  overload: Orleans.Serialization.BondSerializer.Serialize*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Orleans.Serialization
+  commentId: N:Orleans.Serialization
+  isExternal: false
+  name: Orleans.Serialization
+  nameWithType: Orleans.Serialization
+  fullName: Orleans.Serialization
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Orleans.Serialization.BondSerializer.Orleans.Concurrency.ImmutableExt.AsImmutable``1
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  parent: Orleans.Concurrency.ImmutableExt
+  definition: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  name: AsImmutable<BondSerializer>()
+  nameWithType: ImmutableExt.AsImmutable<BondSerializer>()
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Serialization.BondSerializer>()
+  nameWithType.vb: ImmutableExt.AsImmutable(Of BondSerializer)()
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Serialization.BondSerializer)()
+  name.vb: AsImmutable(Of BondSerializer)()
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable<BondSerializer>
+    nameWithType: ImmutableExt.AsImmutable<BondSerializer>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<Orleans.Serialization.BondSerializer>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1
+    name: AsImmutable(Of BondSerializer)
+    nameWithType: ImmutableExt.AsImmutable(Of BondSerializer)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of Orleans.Serialization.BondSerializer)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  commentId: M:Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+  isExternal: false
+  name: AsImmutable<T>(T)
+  nameWithType: ImmutableExt.AsImmutable<T>(T)
+  fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>(T)
+  nameWithType.vb: ImmutableExt.AsImmutable(Of T)(T)
+  fullName.vb: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)(T)
+  name.vb: AsImmutable(Of T)(T)
+  spec.csharp:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable<T>
+    nameWithType: ImmutableExt.AsImmutable<T>
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Orleans.Concurrency.ImmutableExt.AsImmutable``1(``0)
+    name: AsImmutable(Of T)
+    nameWithType: ImmutableExt.AsImmutable(Of T)
+    fullName: Orleans.Concurrency.ImmutableExt.AsImmutable(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Concurrency.ImmutableExt
+  commentId: T:Orleans.Concurrency.ImmutableExt
+  parent: Orleans.Concurrency
+  isExternal: false
+  name: ImmutableExt
+  nameWithType: ImmutableExt
+  fullName: Orleans.Concurrency.ImmutableExt
+- uid: Orleans.Concurrency
+  commentId: N:Orleans.Concurrency
+  isExternal: false
+  name: Orleans.Concurrency
+  nameWithType: Orleans.Concurrency
+  fullName: Orleans.Concurrency
+- uid: Orleans.Serialization.BondSerializer.#ctor*
+  commentId: Overload:Orleans.Serialization.BondSerializer.#ctor
+  isExternal: false
+  name: BondSerializer
+  nameWithType: BondSerializer.BondSerializer
+  fullName: Orleans.Serialization.BondSerializer.BondSerializer
+- uid: ILogger{Orleans.Serialization.BondSerializer}
+  commentId: '!:ILogger{Orleans.Serialization.BondSerializer}'
+  definition: ILogger`1
+  name: ILogger<BondSerializer>
+  nameWithType: ILogger<BondSerializer>
+  fullName: ILogger<Orleans.Serialization.BondSerializer>
+  nameWithType.vb: ILogger(Of BondSerializer)
+  fullName.vb: ILogger(Of Orleans.Serialization.BondSerializer)
+  name.vb: ILogger(Of BondSerializer)
+  spec.csharp:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Orleans.Serialization.BondSerializer
+    name: BondSerializer
+    nameWithType: BondSerializer
+    fullName: Orleans.Serialization.BondSerializer
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Orleans.Serialization.BondSerializer
+    name: BondSerializer
+    nameWithType: BondSerializer
+    fullName: Orleans.Serialization.BondSerializer
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: ILogger`1
+  isExternal: true
+  name: ILogger<>
+  nameWithType: ILogger<>
+  fullName: ILogger<>
+  nameWithType.vb: ILogger(Of )
+  fullName.vb: ILogger(Of )
+  name.vb: ILogger(Of )
+  spec.csharp:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Orleans.Serialization.BondSerializer.IsSupportedType*
+  commentId: Overload:Orleans.Serialization.BondSerializer.IsSupportedType
+  isExternal: false
+  name: IsSupportedType
+  nameWithType: BondSerializer.IsSupportedType
+  fullName: Orleans.Serialization.BondSerializer.IsSupportedType
+- uid: Type
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: Type
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Orleans.Serialization.BondSerializer.DeepCopy*
+  commentId: Overload:Orleans.Serialization.BondSerializer.DeepCopy
+  isExternal: false
+  name: DeepCopy
+  nameWithType: BondSerializer.DeepCopy
+  fullName: Orleans.Serialization.BondSerializer.DeepCopy
+- uid: ICopyContext
+  isExternal: true
+  name: ICopyContext
+  nameWithType: ICopyContext
+  fullName: ICopyContext
+- uid: Orleans.Serialization.BondSerializer.Deserialize*
+  commentId: Overload:Orleans.Serialization.BondSerializer.Deserialize
+  isExternal: false
+  name: Deserialize
+  nameWithType: BondSerializer.Deserialize
+  fullName: Orleans.Serialization.BondSerializer.Deserialize
+- uid: IDeserializationContext
+  isExternal: true
+  name: IDeserializationContext
+  nameWithType: IDeserializationContext
+  fullName: IDeserializationContext
+- uid: Orleans.Serialization.BondSerializer.Serialize*
+  commentId: Overload:Orleans.Serialization.BondSerializer.Serialize
+  isExternal: false
+  name: Serialize
+  nameWithType: BondSerializer.Serialize
+  fullName: Orleans.Serialization.BondSerializer.Serialize
+- uid: ISerializationContext
+  isExternal: true
+  name: ISerializationContext
+  nameWithType: ISerializationContext
+  fullName: ISerializationContext
