@@ -1,0 +1,4862 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Code/orleans",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "README.md",
+      "output": {
+        ".html": {
+          "relative_path": "README.html",
+          "hash": "lRVBkPoP+jsV6UgqSrTi8w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.AdoNet.LegacyAdoNetClusteringConfigurator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.AdoNet.LegacyAdoNetClusteringConfigurator.html",
+          "hash": "SAaG6JsISY6YpHUD7PreWA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.AdoNet.Messaging.LegacyAdoNetGatewayListProviderConfigurator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.AdoNet.Messaging.LegacyAdoNetGatewayListProviderConfigurator.html",
+          "hash": "JKpWUqvdD5j9glQny2gW4g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.AdoNet.Messaging.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.AdoNet.Messaging.html",
+          "hash": "DdCEkvBYlW0sNQ++rJGm9Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.AdoNet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.AdoNet.html",
+          "hash": "lm7CfzVDshh92Hl/EcGJag=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.ClientBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.ClientBuilderExtensions.html",
+          "hash": "n+7kqmYpyrwG5HDXQ6HCJg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Clustering.AdoNet.Storage.OrleansRelationalDownloadStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Clustering.AdoNet.Storage.OrleansRelationalDownloadStream.html",
+          "hash": "HV6Ytns38lvnXcE++oMe0w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Clustering.AdoNet.Storage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Clustering.AdoNet.Storage.html",
+          "hash": "MdrVWbIxj00KDGsXyT2Y1A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Clustering.DynamoDB.LegacyDynamoDBGatewayListProviderConfigurator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Clustering.DynamoDB.LegacyDynamoDBGatewayListProviderConfigurator.html",
+          "hash": "WIrUR2wBnb4xZEWbJuZbzg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Clustering.DynamoDB.LegacyDynamoDBMembershipConfigurator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Clustering.DynamoDB.LegacyDynamoDBMembershipConfigurator.html",
+          "hash": "vohQ4uBZB+KGhnFYnsLvEQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Clustering.DynamoDB.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Clustering.DynamoDB.html",
+          "hash": "jDuR4yD1z9oXBto7CmiIcw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Clustering.ServiceFabric.OrleansServiceFabricExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Clustering.ServiceFabric.OrleansServiceFabricExtensions.html",
+          "hash": "gx4k2HaiZ/rgjzZhLpMhxw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Clustering.ServiceFabric.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Clustering.ServiceFabric.html",
+          "hash": "+l0epc8mTQ2RI1cxNqQx3Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.CodeGeneration.ConsiderForCodeGenerationAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.CodeGeneration.ConsiderForCodeGenerationAttribute.html",
+          "hash": "RgknNoDjMgSuhfd5BUCoIg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.CodeGeneration.CopierMethodAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.CodeGeneration.CopierMethodAttribute.html",
+          "hash": "uWKMTIe5eP/LrdEXwQlt/w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.CodeGeneration.DeserializerMethodAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.CodeGeneration.DeserializerMethodAttribute.html",
+          "hash": "JR3h02noJ2vGf7krxKLzrA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.CodeGeneration.GenerateSerializerAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.CodeGeneration.GenerateSerializerAttribute.html",
+          "hash": "hgNpvAhmPXFxwX1Cn3NPWQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.CodeGeneration.GrainFactoryBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.CodeGeneration.GrainFactoryBase.html",
+          "hash": "YfJrI2Te6Zqm2YdaGiFh0w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.CodeGeneration.GrainReferenceAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.CodeGeneration.GrainReferenceAttribute.html",
+          "hash": "KM910+VRbu6ArKmgtFLNSQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.CodeGeneration.GrainSupportClassAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.CodeGeneration.GrainSupportClassAttribute.html",
+          "hash": "Bb6hUUAywsMRRaQKoibRIQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.CodeGeneration.IGrainExtensionMap.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.CodeGeneration.IGrainExtensionMap.html",
+          "hash": "9hn86pbtx3lo0p1nt8I6nA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.CodeGeneration.IGrainExtensionMethodInvoker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.CodeGeneration.IGrainExtensionMethodInvoker.html",
+          "hash": "n+BwV4nO6Iq8JiCnZ0WN1A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.CodeGeneration.IGrainMethodInvoker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.CodeGeneration.IGrainMethodInvoker.html",
+          "hash": "7eTirslmxn/AXfUKQihYkg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.CodeGeneration.InvokeMethodOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.CodeGeneration.InvokeMethodOptions.html",
+          "hash": "ryZdUJH3Wu0ymAAlzKgvAw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.CodeGeneration.InvokeMethodRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.CodeGeneration.InvokeMethodRequest.html",
+          "hash": "rDQ1PAXRDAlnxMZxfKatAQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.CodeGeneration.KnownAssemblyAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.CodeGeneration.KnownAssemblyAttribute.html",
+          "hash": "CVR26bphvxooTJt5woFfMQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.CodeGeneration.KnownBaseTypeAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.CodeGeneration.KnownBaseTypeAttribute.html",
+          "hash": "nujzm37RQyqcXrky5AYttw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.CodeGeneration.KnownTypeAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.CodeGeneration.KnownTypeAttribute.html",
+          "hash": "/jkyqGKC71Y9kVTIyW/r0w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.CodeGeneration.MethodIdAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.CodeGeneration.MethodIdAttribute.html",
+          "hash": "1ne13xu9C/RMtEN0vNbn0w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.CodeGeneration.MethodInvokerAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.CodeGeneration.MethodInvokerAttribute.html",
+          "hash": "BG37ijZgCF8QH7UdX2TSuA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.CodeGeneration.OrleansCodeGenerationTargetAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.CodeGeneration.OrleansCodeGenerationTargetAttribute.html",
+          "hash": "Bql3YUUl8qVYk3LbwGiQvQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.CodeGeneration.SerializerAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.CodeGeneration.SerializerAttribute.html",
+          "hash": "2mWk6EsQIiqyzrlR55OEpw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.CodeGeneration.SerializerMethodAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.CodeGeneration.SerializerMethodAttribute.html",
+          "hash": "WafKFTwdKY8izV5ZJLumAQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.CodeGeneration.SkipCodeGenerationAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.CodeGeneration.SkipCodeGenerationAttribute.html",
+          "hash": "zFvS+GXx/cHoWE3bvwy9rA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.CodeGeneration.TypeCodeOverrideAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.CodeGeneration.TypeCodeOverrideAttribute.html",
+          "hash": "eMVv3iAG/TBIorDq90yudA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.CodeGeneration.VersionAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.CodeGeneration.VersionAttribute.html",
+          "hash": "YG9tUB1jasr6o22J/ODoJg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.CodeGeneration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.CodeGeneration.html",
+          "hash": "5R55Lx8sxumOPPpqALTDIQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.CodeGenerator.CodeGenerationException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.CodeGenerator.CodeGenerationException.html",
+          "hash": "HMmhAa3NlysEyuNUuYRRcQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.CodeGenerator.KnownTypeDescription.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.CodeGenerator.KnownTypeDescription.html",
+          "hash": "VwoHuvutFtrAExzM9rxXFw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.CodeGenerator.RoslynCodeGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.CodeGenerator.RoslynCodeGenerator.html",
+          "hash": "DLQp+DtTzhp4SblQShEUNg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.CodeGenerator.SerializerGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.CodeGenerator.SerializerGenerator.html",
+          "hash": "1aDE0bTWfsuTzo1O+htlww=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.CodeGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.CodeGenerator.html",
+          "hash": "G2uz5cIuvh/Az+KrLAw5WQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Concurrency.AlwaysInterleaveAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Concurrency.AlwaysInterleaveAttribute.html",
+          "hash": "RhsWK+tUOVT5BjxxnV6qcA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Concurrency.Immutable-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Concurrency.Immutable-1.html",
+          "hash": "ePxEo8dsUJ0czbp7nFi4Hw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Concurrency.ImmutableAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Concurrency.ImmutableAttribute.html",
+          "hash": "YIr5RAcXrxm6koWTjJwtgg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Concurrency.ImmutableExt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Concurrency.ImmutableExt.html",
+          "hash": "flIDi1MyJX97W7GOy2Mnbg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Concurrency.MayInterleaveAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Concurrency.MayInterleaveAttribute.html",
+          "hash": "VV+09pqpY2DERPPrUF2cbw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Concurrency.OneWayAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Concurrency.OneWayAttribute.html",
+          "hash": "nnbmGfw3ltGXnMHN8juZ1g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Concurrency.ReentrantAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Concurrency.ReentrantAttribute.html",
+          "hash": "7aDzfhLpon9AYO9wXlF90A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Concurrency.StatelessWorkerAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Concurrency.StatelessWorkerAttribute.html",
+          "hash": "3nIAQFReqbjzsa5DriqEmg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Concurrency.UnorderedAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Concurrency.UnorderedAttribute.html",
+          "hash": "3iJr7KjxBrdGlRVtGYOn4Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Concurrency.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Concurrency.html",
+          "hash": "jwQGcTE/xDSJoYvkqX/pYw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Configuration.AdoNetClusteringClientOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Configuration.AdoNetClusteringClientOptions.html",
+          "hash": "yxEjzMhocxbhlaaftc/AMQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Configuration.AdoNetClusteringClientOptionsValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Configuration.AdoNetClusteringClientOptionsValidator.html",
+          "hash": "51Ok6dJVO977bbTz5Yjaag=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Configuration.AdoNetClusteringSiloOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Configuration.AdoNetClusteringSiloOptions.html",
+          "hash": "pUhCsqJsf4UfVK1jqW8D6A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Configuration.AdoNetClusteringSiloOptionsValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Configuration.AdoNetClusteringSiloOptionsValidator.html",
+          "hash": "Z+jyUqDzWfqBZEKTathdWw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Configuration.AdoNetGrainStorageOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Configuration.AdoNetGrainStorageOptions.html",
+          "hash": "pZ4bpMTvgDaco+Yhq5qAKg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Configuration.AdoNetGrainStorageOptionsValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Configuration.AdoNetGrainStorageOptionsValidator.html",
+          "hash": "7ElvYVBYXObviQS2TzCvvQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Configuration.AdoNetReminderTableOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Configuration.AdoNetReminderTableOptions.html",
+          "hash": "lRYQ+G3VndPvbCwpbWKDkQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Configuration.AdoNetReminderTableOptionsValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Configuration.AdoNetReminderTableOptionsValidator.html",
+          "hash": "ZgFZBMOG//ucQrte0VWIlw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Configuration.ApplicationInsightsTelemetryConsumerOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Configuration.ApplicationInsightsTelemetryConsumerOptions.html",
+          "hash": "hed6TkZFStC0t6RSDIr9oQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Configuration.AzureTransactionLogOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Configuration.AzureTransactionLogOptions.html",
+          "hash": "F/XBZkSnQ0sYaIpatuqFYQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Configuration.AzureTransactionLogOptionsValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Configuration.AzureTransactionLogOptionsValidator.html",
+          "hash": "wPB/5Vj+qKmitWc3VSZKwQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Configuration.ConsulClusteringClientOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Configuration.ConsulClusteringClientOptions.html",
+          "hash": "zGC3NhDFWW9titrmbezmNw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Configuration.ConsulClusteringSiloOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Configuration.ConsulClusteringSiloOptions.html",
+          "hash": "r32baKznRhIw1H0BRQJVNA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Configuration.DynamoDBClusteringOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Configuration.DynamoDBClusteringOptions.html",
+          "hash": "7e5ShLqZFHrpMbFWwAOhtQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Configuration.DynamoDBClusteringSiloOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Configuration.DynamoDBClusteringSiloOptions.html",
+          "hash": "AAYfWYC+OiCgdlXa5Hd4sQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Configuration.DynamoDBGatewayOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Configuration.DynamoDBGatewayOptions.html",
+          "hash": "L/tRTG/b2w2h22AMRhCQkA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Configuration.DynamoDBGrainStorageOptionsValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Configuration.DynamoDBGrainStorageOptionsValidator.html",
+          "hash": "yQCUNDYuUFShfnD6TBye3A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Configuration.DynamoDBReminderStorageOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Configuration.DynamoDBReminderStorageOptions.html",
+          "hash": "prIt40cm28sHcVOwXTsbRg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Configuration.DynamoDBReminderTableOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Configuration.DynamoDBReminderTableOptions.html",
+          "hash": "s7BbD6d0sESYmwF4EEd6iA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Configuration.DynamoDBStorageOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Configuration.DynamoDBStorageOptions.html",
+          "hash": "7fmHt21Xnfq+WQNzo9WZdg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Configuration.LegacyConfigurationExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Configuration.LegacyConfigurationExtensions.html",
+          "hash": "W6RIxuTKmhwNKUftdgd+hA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Configuration.NewRelicTelemetryConsumerOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Configuration.NewRelicTelemetryConsumerOptions.html",
+          "hash": "TiAhPuWHOzoHlM9Uf7Pw3w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Configuration.PubSubOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Configuration.PubSubOptions.html",
+          "hash": "i3fEyifPSAkCIzUpTKDsXg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Configuration.ServiceFabricClusteringOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Configuration.ServiceFabricClusteringOptions.html",
+          "hash": "FJcBbZ2ByGyJcql2HtD5hg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Configuration.SqsOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Configuration.SqsOptions.html",
+          "hash": "IPj/d/8Nz0ahZm0ZgcZ1Iw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Configuration.ZooKeeperClusteringSiloOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Configuration.ZooKeeperClusteringSiloOptions.html",
+          "hash": "o6iiQ5jCXVd4z+rHI2vg6w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Configuration.ZooKeeperGatewayListProviderOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Configuration.ZooKeeperGatewayListProviderOptions.html",
+          "hash": "MSIrHjIYHuMLV4PKR290HQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Configuration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Configuration.html",
+          "hash": "ldQx17oVfYzTejLtn5/CJA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.ConsulUtils.LegacyConsulGatewayListProviderConfigurator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.ConsulUtils.LegacyConsulGatewayListProviderConfigurator.html",
+          "hash": "S0ZGK7WF1NMWZPQlcP3wtw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.ConsulUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.ConsulUtils.html",
+          "hash": "c9Ybl6u3kZ/VsZKn2zs0RA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Core.IGrainIdentity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Core.IGrainIdentity.html",
+          "hash": "vH08WQQRDYI/ovJuw8Rgmg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Core.IStorage-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Core.IStorage-1.html",
+          "hash": "xT1AnJ2R9TsLl430FnIdLg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Core.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Core.html",
+          "hash": "HUhxBt34+Zu2u1J7SAPxAQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.EventSourcing.Common.BatchedNotificationMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.EventSourcing.Common.BatchedNotificationMessage.html",
+          "hash": "DtU7lDO4xPZuFZa/kklnNg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.EventSourcing.Common.INotificationMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.EventSourcing.Common.INotificationMessage.html",
+          "hash": "JaKLMFVToyqQJZH5nZtS6Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.EventSourcing.Common.NotificationFailed.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.EventSourcing.Common.NotificationFailed.html",
+          "hash": "ikR5AjyzeFrLRl3lFrw/Rw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor-3.html",
+          "hash": "5RXehWU/fwc2fxF7tVAlgg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.EventSourcing.Common.PrimaryOperationFailed.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.EventSourcing.Common.PrimaryOperationFailed.html",
+          "hash": "F2rPKGRVrjfevOhQwQbwwg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.EventSourcing.Common.RecordedConnectionIssue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.EventSourcing.Common.RecordedConnectionIssue.html",
+          "hash": "Ukm4FVaPs5tvS8C3nm0STA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.EventSourcing.Common.StringEncodedWriteVector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.EventSourcing.Common.StringEncodedWriteVector.html",
+          "hash": "x4lddU7UXvt5QzVEOic0Tg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.EventSourcing.Common.SubmissionEntry-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.EventSourcing.Common.SubmissionEntry-1.html",
+          "hash": "Gjv40v4CfhGKT8LUNvcaOQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.EventSourcing.Common.VersionNotificationMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.EventSourcing.Common.VersionNotificationMessage.html",
+          "hash": "jGsHHBcI0WT/A2sPLOA9Gg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.EventSourcing.Common.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.EventSourcing.Common.html",
+          "hash": "s88bgvtfRbBxLhbPYXquIg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.EventSourcing.CustomStorage.ICustomStorageInterface-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.EventSourcing.CustomStorage.ICustomStorageInterface-2.html",
+          "hash": "mDiyczZwiR/4/YGQhVCiTA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.EventSourcing.CustomStorage.LogConsistencyProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.EventSourcing.CustomStorage.LogConsistencyProvider.html",
+          "hash": "6Q+29WY14Wy52lLUZUhfFQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.EventSourcing.CustomStorage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.EventSourcing.CustomStorage.html",
+          "hash": "IM5zkNjyCT8WCn5DBILaXA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.EventSourcing.JournaledGrain-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.EventSourcing.JournaledGrain-1.html",
+          "hash": "Veo91Ipg00UMbebE5kX//Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.EventSourcing.JournaledGrain-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.EventSourcing.JournaledGrain-2.html",
+          "hash": "MsdeoELG0u/HyJtVGc1wHA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.EventSourcing.LogStorage.LogConsistencyProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.EventSourcing.LogStorage.LogConsistencyProvider.html",
+          "hash": "kxN3RFeEvrJ6+4uU0U5YYQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.EventSourcing.LogStorage.LogStateWithMetaData-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.EventSourcing.LogStorage.LogStateWithMetaData-1.html",
+          "hash": "FqL2iPzanQ7XhREzhvRpyA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.EventSourcing.LogStorage.LogStateWithMetaDataAndETag-1.html",
+          "hash": "Ro+CgATWq7Cb+87KuAHPxA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.EventSourcing.LogStorage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.EventSourcing.LogStorage.html",
+          "hash": "cDbpcw/dxyJtMLEvaVXRUQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.EventSourcing.StateStorage.GrainStateWithMetaData-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.EventSourcing.StateStorage.GrainStateWithMetaData-1.html",
+          "hash": "NcAcTXB6QOKOHLoXQaLIxA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.EventSourcing.StateStorage.GrainStateWithMetaDataAndETag-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.EventSourcing.StateStorage.GrainStateWithMetaDataAndETag-1.html",
+          "hash": "ySfRARclh6B6wXYhBHdfNA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.EventSourcing.StateStorage.LogConsistencyProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.EventSourcing.StateStorage.LogConsistencyProvider.html",
+          "hash": "IxPDaikkwUAZ3QPF3g+m+A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.EventSourcing.StateStorage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.EventSourcing.StateStorage.html",
+          "hash": "KX3ihBpBAARPt2EZzk2/xQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.EventSourcing.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.EventSourcing.html",
+          "hash": "oyrjfKGKg3IlRCgnbJb9mg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Extensions.Logging.TelemetryLogConsumer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Extensions.Logging.TelemetryLogConsumer.html",
+          "hash": "v0qmm5cBicyftIattJmPIw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Extensions.Logging.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Extensions.Logging.html",
+          "hash": "PyShtfzRMwmTK30/I9ddTg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Grain-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Grain-1.html",
+          "hash": "2q0PZpQc8dms8EGch80+bw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Grain.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Grain.html",
+          "hash": "Y9bIMlbBinjtmes4hkDHyg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.GrainCallFilterDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.GrainCallFilterDelegate.html",
+          "hash": "uMCX+I3JFzjbzmk9tWaPQQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.GrainCancellationToken.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.GrainCancellationToken.html",
+          "hash": "p6cyvLHZJEeGKgUpqmAJBg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.GrainCancellationTokenSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.GrainCancellationTokenSource.html",
+          "hash": "f0z0bIhrSWmX0S/4FV0kqA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.GrainClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.GrainClient.html",
+          "hash": "f3tqKM1zt4eGVszuRUX7Ew=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.GrainDirectory.IMultiClusterRegistrationStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.GrainDirectory.IMultiClusterRegistrationStrategy.html",
+          "hash": "6HV/PbwrY5yEmCXWTSjweA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.GrainDirectory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.GrainDirectory.html",
+          "hash": "smYT4sw1C9sX3E+KtFhWIQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.GrainExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.GrainExtensions.html",
+          "hash": "wIqmSX48Ls6XU0J6FEwo7w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Hosting.AITelemetryConsumerConfigurationExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Hosting.AITelemetryConsumerConfigurationExtensions.html",
+          "hash": "HcNlv7NZGaBk8nhJd25WEQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Hosting.AdoNetHostingExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Hosting.AdoNetHostingExtensions.html",
+          "hash": "gHMKKrq3698NWw6pK9NSGg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Hosting.ApplicationPartManagerCodeGenExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Hosting.ApplicationPartManagerCodeGenExtensions.html",
+          "hash": "dkCOTICw0iG3SKnsqy/4uw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Hosting.AwsUtilsHostingExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Hosting.AwsUtilsHostingExtensions.html",
+          "hash": "VTaqBsRdiJ275Cg0RRMY0w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Hosting.ClientBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Hosting.ClientBuilderExtensions.html",
+          "hash": "Q1O77r1sAReEEpDGKlN0oA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Hosting.ConsulUtilsHostingExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Hosting.ConsulUtilsHostingExtensions.html",
+          "hash": "eg3rYaCasdLpGyqUkweStA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Hosting.DynamoDBSiloBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Hosting.DynamoDBSiloBuilderExtensions.html",
+          "hash": "90HcDPDU6oo4FLOUY9sqdg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Hosting.LegacyClusterConfigurationExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Hosting.LegacyClusterConfigurationExtensions.html",
+          "hash": "CPcWDSEeErnpm5SjQvajIQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Hosting.NRTelemetryConsumerConfigurationExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Hosting.NRTelemetryConsumerConfigurationExtensions.html",
+          "hash": "6BPqZeLPIOOCiW3IXPHIaQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Hosting.PerfCountersConfigurationExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Hosting.PerfCountersConfigurationExtensions.html",
+          "hash": "dlGUyJebXV3lGEIWVu476Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Hosting.ServiceFabric.OrleansCommunicationListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Hosting.ServiceFabric.OrleansCommunicationListener.html",
+          "hash": "kgdjPTmTpjqGuYmTozt5zA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Hosting.ServiceFabric.OrleansServiceListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Hosting.ServiceFabric.OrleansServiceListener.html",
+          "hash": "b/EWSbYHEknEHBgucYtk/g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Hosting.ServiceFabric.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Hosting.ServiceFabric.html",
+          "hash": "HPDuh005q3RTCOtV6NpiEA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Hosting.ServiceFabricConfigurationExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Hosting.ServiceFabricConfigurationExtensions.html",
+          "hash": "Aq5fRrEa7hKXese84b/WwQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Hosting.SiloBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Hosting.SiloBuilderExtensions.html",
+          "hash": "I7i3gkyeYz2cqV7QjBMqQw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Hosting.SiloHostBuilderReminderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Hosting.SiloHostBuilderReminderExtensions.html",
+          "hash": "w9+Jx47QrISKdkeJwp2hLg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Hosting.ZooKeeperHostingExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Hosting.ZooKeeperHostingExtensions.html",
+          "hash": "dJ6XPzl/2//HDtm0BPYhrQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Hosting.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Hosting.html",
+          "hash": "8V/lqyFLzWa4PSZVz8jriA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.IGrain.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.IGrain.html",
+          "hash": "y5eKhCsyICADqj86BlS8GA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.IGrainCallContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.IGrainCallContext.html",
+          "hash": "UdvCSMwtgxLC2XkO54+mAQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.IGrainCallFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.IGrainCallFilter.html",
+          "hash": "15gx7UWGlXX9xIcjzxmq5g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.IGrainFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.IGrainFactory.html",
+          "hash": "CLOxGNZDW+y4OFlGBlLW7Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.IGrainObserver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.IGrainObserver.html",
+          "hash": "mDgrX3Rs4k2Yydz/tEqKDw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.IGrainWithGuidCompoundKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.IGrainWithGuidCompoundKey.html",
+          "hash": "cIGjHcFE8tDHqPuwpYcbYQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.IGrainWithGuidKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.IGrainWithGuidKey.html",
+          "hash": "0nH0sgRzVxnm6GnFItbopQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.IGrainWithIntegerCompoundKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.IGrainWithIntegerCompoundKey.html",
+          "hash": "sfAkXQM+x5TShvoOAlP7SQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.IGrainWithIntegerKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.IGrainWithIntegerKey.html",
+          "hash": "NYe68+cY1G5Whiz6GsWIUQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.IGrainWithStringKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.IGrainWithStringKey.html",
+          "hash": "cnf20BdOASwRFJJhc/oQJw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.IIncomingGrainCallFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.IIncomingGrainCallFilter.html",
+          "hash": "EA2hIgTzsdpmU8fOPQ4l5A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.ILifecycleObservable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.ILifecycleObservable.html",
+          "hash": "0IIlC1JBhpJoKYCzGqXw0w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.ILifecycleObserver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.ILifecycleObserver.html",
+          "hash": "prNFGMc4Foyefyb0YT/YZA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.ILifecycleParticipant-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.ILifecycleParticipant-1.html",
+          "hash": "5ohFBgbIzBcSMcysrL5Lvw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.ILifecycleSubject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.ILifecycleSubject.html",
+          "hash": "sW9/O+YakjcHbwiK+mCs0w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.IOutgoingGrainCallFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.IOutgoingGrainCallFilter.html",
+          "hash": "FMEo/ygM1OPq41v9TAyOyQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.IRemindable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.IRemindable.html",
+          "hash": "+ESw3CB+YNPh3GwZ3bxUpQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.IReminderService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.IReminderService.html",
+          "hash": "U4YL5Dl41gsxNiIJlmo9LQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.ISystemTarget.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.ISystemTarget.html",
+          "hash": "ndI9YkeOk8JoJEtWF6L+TQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.IVersionManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.IVersionManager.html",
+          "hash": "dl45NcsKaNxYwUu3OpkXng=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.ImplicitStreamSubscriptionAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.ImplicitStreamSubscriptionAttribute.html",
+          "hash": "v7Z1kSyktmnRx6XGbI9S+A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.JenkinsHash.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.JenkinsHash.html",
+          "hash": "lPEFoMTKdClwmZNxwV5r4g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.LifecycleExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.LifecycleExtensions.html",
+          "hash": "4KverXBL7LRC6z89aleV7Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.LogConsistency.ConnectionIssue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.LogConsistency.ConnectionIssue.html",
+          "hash": "DJcFT3HhlEJHbQXusxqFcg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.LogConsistency.NotificationFailed.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.LogConsistency.NotificationFailed.html",
+          "hash": "LWY9o23B1CWvrTO4lelIWQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.LogConsistency.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.LogConsistency.html",
+          "hash": "d/qq4IisBR2GfIyLpKeNhA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Logging.Legacy.EventBulkingDecoratorLogger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Logging.Legacy.EventBulkingDecoratorLogger.html",
+          "hash": "TC4BgjvN3Bl54B6ydYm6uA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Logging.Legacy.EventBulkingLoggerProvider-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Logging.Legacy.EventBulkingLoggerProvider-1.html",
+          "hash": "L1AmCLgUyXF0xp3n95rhkg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Logging.Legacy.EventBulkingOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Logging.Legacy.EventBulkingOptions.html",
+          "hash": "7p/koXdZ2jPhAdSUfzuNfQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Logging.Legacy.LegacyFileLogConsumer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Logging.Legacy.LegacyFileLogConsumer.html",
+          "hash": "gZVJuzHnSaXBeLLsEvqFKQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Logging.Legacy.LegacyOrleansLogger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Logging.Legacy.LegacyOrleansLogger.html",
+          "hash": "bT7hIc0VuB7xrL2byYzltA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Logging.Legacy.LegacyOrleansLoggerProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Logging.Legacy.LegacyOrleansLoggerProvider.html",
+          "hash": "a1qxu83itjd9vnE1pnz7QA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Logging.Legacy.LegacyOrleansLoggingFactoryExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Logging.Legacy.LegacyOrleansLoggingFactoryExtensions.html",
+          "hash": "0iNiOEj6ok1CoPEAoMzoVQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Logging.Legacy.OrleansLoggerSeverityOverrides.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Logging.Legacy.OrleansLoggerSeverityOverrides.html",
+          "hash": "ScK4pQy8P9nnIw98Fdt8AA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Logging.Legacy.OrleansLoggingUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Logging.Legacy.OrleansLoggingUtils.html",
+          "hash": "OhN9K+9oWIC0AEsy39EgXw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Logging.Legacy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Logging.Legacy.html",
+          "hash": "A4VMSbgWwFNPU5tlWzH8eA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Metadata.FeaturePopulatorAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Metadata.FeaturePopulatorAttribute.html",
+          "hash": "2gu8b6NkUnBtJN+8yY9MPA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Metadata.GrainClassFeature.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Metadata.GrainClassFeature.html",
+          "hash": "fg/Cp6ZrElhkO9nGKuo+Dw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Metadata.GrainClassMetadata.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Metadata.GrainClassMetadata.html",
+          "hash": "LniOP3bNSsWdxmkSYdt0sQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Metadata.GrainInterfaceFeature.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Metadata.GrainInterfaceFeature.html",
+          "hash": "c1XXXmH2OG2oh50tXe45Nw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Metadata.GrainInterfaceMetadata.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Metadata.GrainInterfaceMetadata.html",
+          "hash": "BbfZE9kGweewfFix4GGP1g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Metadata.IFeaturePopulator-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Metadata.IFeaturePopulator-1.html",
+          "hash": "/BHlVFUqgC88UzGcnfSjeg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Metadata.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Metadata.html",
+          "hash": "gQ3JhXOi6DzBtvnEAzYimg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.MultiCluster.GlobalSingleInstanceAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.MultiCluster.GlobalSingleInstanceAttribute.html",
+          "hash": "lLhbxcIDIKN8gKyjnv8WtQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.MultiCluster.OneInstancePerClusterAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.MultiCluster.OneInstancePerClusterAttribute.html",
+          "hash": "n7cm2gsinveyNwF6UUlSDg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.MultiCluster.RegistrationAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.MultiCluster.RegistrationAttribute.html",
+          "hash": "WnKqrLjCz4rx6FfFMPHTkQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.MultiCluster.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.MultiCluster.html",
+          "hash": "evcX1Y4PS6BmklE6rgFusw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.ObserverSubscriptionManager-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.ObserverSubscriptionManager-1.html",
+          "hash": "1d/WxpaR7AIteNxN1pZzzQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Persistence.AdoNet.Storage.OrleansRelationalDownloadStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Persistence.AdoNet.Storage.OrleansRelationalDownloadStream.html",
+          "hash": "A/U9a9263iu7M5QvHYWhCA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Persistence.AdoNet.Storage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Persistence.AdoNet.Storage.html",
+          "hash": "nn4vCUFwh60kap8ncSIeaA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Placement.ActivationCountBasedPlacementAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Placement.ActivationCountBasedPlacementAttribute.html",
+          "hash": "BSUnbcDi/1Fp/sKoV+w67w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Placement.HashBasedPlacementAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Placement.HashBasedPlacementAttribute.html",
+          "hash": "EO5z7vsTgXfpJedR4maR7w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Placement.PlacementAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Placement.PlacementAttribute.html",
+          "hash": "UVvyqVuVUiR69VUGKIgS3w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Placement.PreferLocalPlacementAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Placement.PreferLocalPlacementAttribute.html",
+          "hash": "EWV4Ng7xsNiDvUXF6zWcfw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Placement.RandomPlacementAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Placement.RandomPlacementAttribute.html",
+          "hash": "Q1FxpoPpqdOvQuQ0sntOWw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Placement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Placement.html",
+          "hash": "hWMqJ5smN3DjhBnavLyvNA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Providers.GCP.Streams.PubSub.IPubSubDataAdapter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Providers.GCP.Streams.PubSub.IPubSubDataAdapter.html",
+          "hash": "L8437Pg+eReFNWDVRmZ7Ng=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterFactory-1.html",
+          "hash": "YmNN1Vrcctjp8eSIj0k/7g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Providers.GCP.Streams.PubSub.PubSubAdapterReceiver.html",
+          "hash": "dm1iKWlP5F/wNh3WHz9eJg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Providers.GCP.Streams.PubSub.PubSubBatchContainer.html",
+          "hash": "lQRHU/B04ZTLVzp19HofLg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Providers.GCP.Streams.PubSub.PubSubDataAdapter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Providers.GCP.Streams.PubSub.PubSubDataAdapter.html",
+          "hash": "m5wH8Joiavsr9usq4zmANg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Providers.GCP.Streams.PubSub.PubSubDataManager.html",
+          "hash": "AJ9bY+XdjKcMRKe6l/2dsg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Providers.GCP.Streams.PubSub.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Providers.GCP.Streams.PubSub.html",
+          "hash": "BUNQnBiNvKMSk07CDGdKhw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Providers.IBootstrapProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Providers.IBootstrapProvider.html",
+          "hash": "Z+wnETdPsTgKNlViFZ/qqw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Providers.LogConsistencyProviderAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Providers.LogConsistencyProviderAttribute.html",
+          "hash": "Eh53MQ12r2/ciYwNDve8Nw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Providers.ProviderConstants.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Providers.ProviderConstants.html",
+          "hash": "9qTTMlyMY2lsbhLZ/PL3CA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Providers.StorageProviderAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Providers.StorageProviderAttribute.html",
+          "hash": "TLP+l2BBLiNbDeVsWVbGjQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Providers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Providers.html",
+          "hash": "r6zHDP99sXU5NjG7X1TIag=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.PublicOrleansTaskExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.PublicOrleansTaskExtensions.html",
+          "hash": "4IDbDWUqy3a0AlGkFqOinw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.RegexImplicitStreamSubscriptionAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.RegexImplicitStreamSubscriptionAttribute.html",
+          "hash": "82wtvnFmO0tM6vJpDbOqDw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Reminders.AdoNet.Storage.OrleansRelationalDownloadStream.html",
+          "hash": "/AMblgNDEA3VJ42D3U69hQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Reminders.AdoNet.Storage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Reminders.AdoNet.Storage.html",
+          "hash": "xAxG2jVn996PyKF6WfMb8w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.ClientNotAvailableException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.ClientNotAvailableException.html",
+          "hash": "GHNGRGwN1fiHlFyjHRBSzg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.Configuration.ApplicationConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.Configuration.ApplicationConfiguration.html",
+          "hash": "pfsW26TiCdZW8C6KuGgfTQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.Configuration.BootstrapProviderConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.Configuration.BootstrapProviderConfiguration.html",
+          "hash": "Wo0vTx6AdDi9vTs3tOAiww=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.Configuration.ClientConfiguration.GatewayProviderType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.Configuration.ClientConfiguration.GatewayProviderType.html",
+          "hash": "8UVWiyAckCBbmOk5KZtiyQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.Configuration.ClientConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.Configuration.ClientConfiguration.html",
+          "hash": "nttP9Uxwtx5EX1GsxxLaiQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.Configuration.ClusterConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.Configuration.ClusterConfiguration.html",
+          "hash": "wvVeLQKIXpgy/fwMVgw6lw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.Configuration.ConfigurationExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.Configuration.ConfigurationExtensions.html",
+          "hash": "lOIkdso2UZ97HFmkhcIYKQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.Configuration.GlobalConfiguration.DirectoryCachingStrategyType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.Configuration.GlobalConfiguration.DirectoryCachingStrategyType.html",
+          "hash": "FeDBInuiQURmc9AYPqjkQQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelConfiguration.html",
+          "hash": "RIfLHqMdtCuu/8sGE1p85Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.Configuration.GlobalConfiguration.GossipChannelType.html",
+          "hash": "oWgy4UXKn53Uj7kAiLPbug=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType.html",
+          "hash": "WJwSlG1d2zny4elLDD0+YA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType.html",
+          "hash": "Jg3EylN2m2GJSnhQXOFCdw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.Configuration.GlobalConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.Configuration.GlobalConfiguration.html",
+          "hash": "Cpr6xD1D5l7vqcyrpfl7jA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.Configuration.GrainServiceConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.Configuration.GrainServiceConfiguration.html",
+          "hash": "JNA3zzzhayFT89jieXW2kg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.Configuration.GrainServiceConfigurations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.Configuration.GrainServiceConfigurations.html",
+          "hash": "cviZQXdrOTPhpw7IWDMySA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.Configuration.GrainTypeConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.Configuration.GrainTypeConfiguration.html",
+          "hash": "ZvGecTNuLciMDO8wxFZKkA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.Configuration.IGrainServiceConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.Configuration.IGrainServiceConfiguration.html",
+          "hash": "GkrMPwvUTQPfa/kxDCGyqw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.Configuration.LogConsistencyConfigurationExtensions.html",
+          "hash": "SweCWkTGHslKE3YNw+zNyg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.Configuration.NodeConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.Configuration.NodeConfiguration.html",
+          "hash": "rvRIEakZqR8SkmsDghUhwQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.Configuration.PerfCountersConfigurationExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.Configuration.PerfCountersConfigurationExtensions.html",
+          "hash": "KmGp+fcu/jL13hgEvlfV6g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.Configuration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.Configuration.html",
+          "hash": "CN4jEUloQq1XotO3unLC8A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.DeadlockException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.DeadlockException.html",
+          "hash": "NvBAGczJKITcckGKQRs/0w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.GatewayTooBusyException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.GatewayTooBusyException.html",
+          "hash": "OnRNtnYll0b9stAxkhvedw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.GrainExtensionNotInstalledException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.GrainExtensionNotInstalledException.html",
+          "hash": "KQlyrk9IVrSkvuFt3mQ/Iw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.GrainLifecycleStage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.GrainLifecycleStage.html",
+          "hash": "/peYWx4ZKg+15K+6M9bVbQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.GrainReference.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.GrainReference.html",
+          "hash": "GlYnpIDvBd/GF/EK5bxBTg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.GrainReferenceNotBoundException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.GrainReferenceNotBoundException.html",
+          "hash": "UNQfxZQCL1xQnnSxxcLzjw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.GuidId.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.GuidId.html",
+          "hash": "Pma7YGJdalpVbgJg/hOGfg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.Host.ConsulSiloRegistration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.Host.ConsulSiloRegistration.html",
+          "hash": "mWbRn4V2UGaSdXI6/JxhDw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.Host.SiloHost.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.Host.SiloHost.html",
+          "hash": "XAWfvtQXxEoeq73yM1mZiw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.Host.SuspectingSilo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.Host.SuspectingSilo.html",
+          "hash": "/1f5VMliREMVUylZZBqTbQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.Host.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.Host.html",
+          "hash": "awbUo5AsPXb6iRQ8ncty5w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.IAddressable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.IAddressable.html",
+          "hash": "G9WKTYnHjwdFkivH4BI+3A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.ICloseableLogConsumer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.ICloseableLogConsumer.html",
+          "hash": "XxRYkkLtiTnD0XcNAp3vcg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.IFlushableLogConsumer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.IFlushableLogConsumer.html",
+          "hash": "uTv0/l8xK5F6Vc6rENarPQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.IGrainExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.IGrainExtension.html",
+          "hash": "YT0HxxI7mGk959Pil5RaJg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.IGrainLifecycle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.IGrainLifecycle.html",
+          "hash": "Fba/hjRcGtgT7SKG+SvBTg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.IGrainReferenceRuntime.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.IGrainReferenceRuntime.html",
+          "hash": "P+zEyA+a3CKb2CqHcH2Zlw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.IGrainReminder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.IGrainReminder.html",
+          "hash": "hziKNt6GQNSKAEZ3szjG1Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.IGrainRuntime.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.IGrainRuntime.html",
+          "hash": "ROdu2+sWg7dL0giqvOMdgw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.IKeyedService-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.IKeyedService-2.html",
+          "hash": "e57pvmBa1AQKLkjLCGBRDQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.IKeyedServiceCollection-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.IKeyedServiceCollection-2.html",
+          "hash": "wHfdxI9d7BCtAnnjQwWBkw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.ILogConsumer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.ILogConsumer.html",
+          "hash": "DvT0InadHaqXxnkcdED+zw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.KeyedServiceCollectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.KeyedServiceCollectionExtensions.html",
+          "hash": "GVIY5RLXqPovsE4MhD5e4w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.LimitExceededException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.LimitExceededException.html",
+          "hash": "Tp+N+8IvJpc7sXJTEDzEmA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.Logger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.Logger.html",
+          "hash": "nYJX4P0s7mSclyDf17LIuQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.LoggerExtensionMethods.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.LoggerExtensionMethods.html",
+          "hash": "MUyLB+HU02Be5N+q76R9vw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.LoggerExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.LoggerExtensions.html",
+          "hash": "KagnMWHoCaYqEJsvsQF/1w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.LoggerType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.LoggerType.html",
+          "hash": "nu0nzygRK0gvRAop5LGkjQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.Membership.AdoNetGatewayListProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.Membership.AdoNetGatewayListProvider.html",
+          "hash": "iu7m+xoAguszc2lW85Uxlg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.Membership.ConsulBasedMembershipTable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.Membership.ConsulBasedMembershipTable.html",
+          "hash": "x1Lr0aicIUZCX0p9vSRWoQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.Membership.ConsulGatewayListProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.Membership.ConsulGatewayListProvider.html",
+          "hash": "YWDtkucH3fUVQRse/wc6cQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.Membership.ZooKeeperBasedMembershipTable.html",
+          "hash": "rFrzRgQ3dYQmfIUFdPHReA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.Membership.ZooKeeperClusteringClientOptions.html",
+          "hash": "RItCYPE3HFsxMy+RmfLxlg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.Membership.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.Membership.html",
+          "hash": "+Jow6QhcUDb/ROblJmGiwQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.MembershipService.AdoNetClusteringTable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.MembershipService.AdoNetClusteringTable.html",
+          "hash": "Y12TkHszNj/gosIp8exoyA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.MembershipService.LegacyConsulMembershipConfigurator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.MembershipService.LegacyConsulMembershipConfigurator.html",
+          "hash": "erxvXVpthPmgem0DXxLhSw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.MembershipService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.MembershipService.html",
+          "hash": "BY6jNk1oJoQ0/Vb/o6IZpw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.OrleansConfigurationException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.OrleansConfigurationException.html",
+          "hash": "vVfYQbluuwMj+o1l/Ic5UQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.OrleansException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.OrleansException.html",
+          "hash": "KpHjXC/Ku7jnblc+gwhjaA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.OrleansLifecycleCanceledException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.OrleansLifecycleCanceledException.html",
+          "hash": "luYavXZHYuq3RZlLYmwcUg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.OrleansMessageRejectionException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.OrleansMessageRejectionException.html",
+          "hash": "dgt5pBCvcsm1VZIMqHlw7g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.PlacementStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.PlacementStrategy.html",
+          "hash": "f4FJgRon0PeecoEiKa8+Iw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.ReminderException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.ReminderException.html",
+          "hash": "9f5wgN1ab8czGhHPn/BTjw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.RequestContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.RequestContext.html",
+          "hash": "FH3RjXIYzNkHltEe1bOq8g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.Severity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.Severity.html",
+          "hash": "XPh4OXsidcV8/CaIqbxiZA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.SiloAddress.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.SiloAddress.html",
+          "hash": "yKKRYVyYyFoIWl1VqkpZow=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.SiloUnavailableException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.SiloUnavailableException.html",
+          "hash": "l5RyqV09oi+neleOLeDolA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.TickStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.TickStatus.html",
+          "hash": "CxwrfCzg5HascW4F+YN69w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Runtime.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Runtime.html",
+          "hash": "qBYUNFJpBITOAOJWmqwMcA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Serialization.BondSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Serialization.BondSerializer.html",
+          "hash": "V5bRfxr9jcv1Lax5Iq+MWQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Serialization.DeepCopier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Serialization.DeepCopier.html",
+          "hash": "E+mVw/6lJxd9f9+qtCJ+zA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Serialization.Deserializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Serialization.Deserializer.html",
+          "hash": "Q9+PAqxqe3rr0v3cehoFPQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Serialization.IBinaryTokenStreamReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Serialization.IBinaryTokenStreamReader.html",
+          "hash": "dLxOT2I2DwlJ/wVCOZ3AJA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Serialization.IBinaryTokenStreamWriter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Serialization.IBinaryTokenStreamWriter.html",
+          "hash": "aRUaXNUmcoivhKl1dErnBA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Serialization.ICopyContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Serialization.ICopyContext.html",
+          "hash": "FhNZuWHU5qunETz0nOjvlQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Serialization.IDeserializationContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Serialization.IDeserializationContext.html",
+          "hash": "YCTx00RwXGCc8ojBvIpbNg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Serialization.IFieldUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Serialization.IFieldUtils.html",
+          "hash": "yhvC8apVGvvAP8oqFYzw+Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Serialization.IOnDeserialized.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Serialization.IOnDeserialized.html",
+          "hash": "xXn2G/VXq///xVVS4gWUHg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Serialization.ISerializationContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Serialization.ISerializationContext.html",
+          "hash": "/HWzTJ/CoBJ29beG20+EkA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Serialization.ISerializerContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Serialization.ISerializerContext.html",
+          "hash": "yiq32J5glO/5TsuWbEoSbQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Serialization.ProtobufSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Serialization.ProtobufSerializer.html",
+          "hash": "P9bqZPBit7nYiskErBMxeQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Serialization.Serializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Serialization.Serializer.html",
+          "hash": "RjfhycXj/3dkj+FmYnLiaQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Serialization.SerializerDelegateMetadata.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Serialization.SerializerDelegateMetadata.html",
+          "hash": "SzqK94uhGxtIJ8nVxswPlA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Serialization.SerializerFeature.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Serialization.SerializerFeature.html",
+          "hash": "qp4dQFGXLeyUQhr+zaLL7w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Serialization.SerializerKnownTypeMetadata.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Serialization.SerializerKnownTypeMetadata.html",
+          "hash": "30bOZNMDuf0NcyyGT5XZiQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Serialization.SerializerMethods.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Serialization.SerializerMethods.html",
+          "hash": "k7PCslt01mbNpGOY9SxbAQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Serialization.SerializerTypeMetadata.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Serialization.SerializerTypeMetadata.html",
+          "hash": "j/Fk8OvaChKFStgXHXduRg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Serialization.ValueTypeSetter-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Serialization.ValueTypeSetter-2.html",
+          "hash": "XBR+ckbJBKEfSG9riGyhRg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Serialization.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Serialization.html",
+          "hash": "YNs4U/AG0CurQ/SIy8erwA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.ServiceFabric.FabricSiloInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.ServiceFabric.FabricSiloInfo.html",
+          "hash": "W92lzIZaEwpXt6AZgwAB8w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.ServiceFabric.ServiceFabricConstants.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.ServiceFabric.ServiceFabricConstants.html",
+          "hash": "d44YE9Gn78S9cfaahyNM+Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.ServiceFabric.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.ServiceFabric.html",
+          "hash": "UrV1XFheDGFn2Mxc7IJ0kw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Services.IGrainService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Services.IGrainService.html",
+          "hash": "YFCzQM+MBu6Ig0D+C3Y4EA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Services.IGrainServiceClient-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Services.IGrainServiceClient-1.html",
+          "hash": "NPwg+IIVG5ptgITJEDs9DA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Services.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Services.html",
+          "hash": "UdOXgeu9vsEKoIA6reVVZg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Statistics.ClientBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Statistics.ClientBuilderExtensions.html",
+          "hash": "QQ3TDbhvDPzgP9c2vKP/sQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Statistics.IAppEnvironmentStatistics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Statistics.IAppEnvironmentStatistics.html",
+          "hash": "vwXeg7Mg06G+TpCOklbdHg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Statistics.IHostEnvironmentStatistics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Statistics.IHostEnvironmentStatistics.html",
+          "hash": "kTJiGXIUZT1YRHCV0XH0FA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Statistics.SiloHostBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Statistics.SiloHostBuilderExtensions.html",
+          "hash": "5G6915bVNi0u1vVOF1d8oQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Statistics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Statistics.html",
+          "hash": "GuldvNw1wgZ8lUjoQzqLrg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Storage.AdoNetGrainStorage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Storage.AdoNetGrainStorage.html",
+          "hash": "W5gCsnGxB7UkNNSKpbwRHQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Storage.AdoNetGrainStorageFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Storage.AdoNetGrainStorageFactory.html",
+          "hash": "WAhssUyF6Yhnxy1LoM45lw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Storage.DefaultRelationalStoragePicker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Storage.DefaultRelationalStoragePicker.html",
+          "hash": "5beMsM53gPicgUXirBZ0ow=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Storage.DynamoDBGrainStorage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Storage.DynamoDBGrainStorage.html",
+          "hash": "CdUo4SftsqWGIfuQ0n4Z1w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Storage.DynamoDBGrainStorageFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Storage.DynamoDBGrainStorageFactory.html",
+          "hash": "fTQ2c0nhnHmezSw2xTNQig=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Storage.IHasher.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Storage.IHasher.html",
+          "hash": "3L242sCi0VUG/0E3UJ96Vg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Storage.IStorageDeserializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Storage.IStorageDeserializer.html",
+          "hash": "/V79ToWmJ/vHBOGxRImXDQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Storage.IStorageHasherPicker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Storage.IStorageHasherPicker.html",
+          "hash": "7M8c4FTe7TKQ/a+oVkyUzg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Storage.IStorageSerializationPicker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Storage.IStorageSerializationPicker.html",
+          "hash": "YkMRCq0vGDZOQ8vKH03gnQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Storage.IStorageSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Storage.IStorageSerializer.html",
+          "hash": "InENMvRc3Gj7TUSgIADLig=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Storage.OrleansDefaultHasher.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Storage.OrleansDefaultHasher.html",
+          "hash": "2pAxUAr9P3PKlYaFfKk5ig=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Storage.OrleansStorageDefaultBinaryDeserializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Storage.OrleansStorageDefaultBinaryDeserializer.html",
+          "hash": "LkDN7sjkuBn+hrZ0ymiy6w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Storage.OrleansStorageDefaultBinarySerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Storage.OrleansStorageDefaultBinarySerializer.html",
+          "hash": "ySgcqfNuJQYkiapo0ZYM8w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Storage.OrleansStorageDefaultJsonDeserializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Storage.OrleansStorageDefaultJsonDeserializer.html",
+          "hash": "x2XvKivP60wwk7v0gIZMqA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Storage.OrleansStorageDefaultJsonSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Storage.OrleansStorageDefaultJsonSerializer.html",
+          "hash": "LWYdTR3I24/+9cQuC/8SAw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Storage.OrleansStorageDefaultXmlDeserializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Storage.OrleansStorageDefaultXmlDeserializer.html",
+          "hash": "+8vXM2i5Tb3YieQ/WdVF5w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Storage.OrleansStorageDefaultXmlSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Storage.OrleansStorageDefaultXmlSerializer.html",
+          "hash": "vMtb02Igr0ufUj+Bb/5mgQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Storage.RelationalStorageProviderQueries.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Storage.RelationalStorageProviderQueries.html",
+          "hash": "//OKC/jnQrS65ynSR6FHng=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Storage.SerializationChoice.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Storage.SerializationChoice.html",
+          "hash": "ehunZ/r9qMAnTFK8YahInQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Storage.StorageHasherPicker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Storage.StorageHasherPicker.html",
+          "hash": "m8fuOfo83LPrPjve6QOHfw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Storage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Storage.html",
+          "hash": "TEbWg/z+ap4lEJ/PMGImaw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Streams.AsyncObservableExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Streams.AsyncObservableExtensions.html",
+          "hash": "WpD18GSc6EG3LzYWL4DIcw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Streams.ClusterClientPubSubStreamConfigurator-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Streams.ClusterClientPubSubStreamConfigurator-1.html",
+          "hash": "E9WfvjN+O8A7H7RN8jT4cQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Streams.ClusterClientSqsStreamConfigurator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Streams.ClusterClientSqsStreamConfigurator.html",
+          "hash": "aBFrzb5bMq+jl+Fo0sAyzw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Streams.Core.IStreamSubscriptionHandleFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Streams.Core.IStreamSubscriptionHandleFactory.html",
+          "hash": "wrsyeGu5X3+IbzoDOQ7yEw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Streams.Core.IStreamSubscriptionObserver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Streams.Core.IStreamSubscriptionObserver.html",
+          "hash": "7tI36JN82tYk097LRNP8Yw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Streams.Core.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Streams.Core.html",
+          "hash": "2sWOSlA1d+cbkxsPV3sfqg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Streams.IAsyncBatchObserver-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Streams.IAsyncBatchObserver-1.html",
+          "hash": "RuR5ZxB59X0Nb7hOMzCrAQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Streams.IAsyncObservable-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Streams.IAsyncObservable-1.html",
+          "hash": "OUfc9UAbfM46Rb/DjzGmWg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Streams.IAsyncObserver-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Streams.IAsyncObserver-1.html",
+          "hash": "5lZAmuji00+XedYvRYHiuQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Streams.IAsyncStream-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Streams.IAsyncStream-1.html",
+          "hash": "l/Py9G2h9biUSZqLCmvHzw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Streams.IStreamIdentity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Streams.IStreamIdentity.html",
+          "hash": "mCLzFmQr++4Txm0JJfAEXQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Streams.IStreamNamespacePredicate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Streams.IStreamNamespacePredicate.html",
+          "hash": "Jqmu6H6CzUCwGylWC3v2NQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Streams.IStreamProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Streams.IStreamProvider.html",
+          "hash": "xqjfiVkRZxATtEHJbXYzRA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Streams.RegexStreamNamespacePredicate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Streams.RegexStreamNamespacePredicate.html",
+          "hash": "cQIq8vkqotbNjM4t5lpKKw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Streams.SiloPubSubStreamConfigurator-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Streams.SiloPubSubStreamConfigurator-1.html",
+          "hash": "VJdyHoxQXv1X6VIy6MdmgQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Streams.SiloSqsStreamConfigurator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Streams.SiloSqsStreamConfigurator.html",
+          "hash": "gCUu2NF0SDzzOFtjVrx9MQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Streams.StreamFilterPredicate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Streams.StreamFilterPredicate.html",
+          "hash": "t2rYIXIjbFpqRW6cXeL2dA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Streams.StreamSequenceToken.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Streams.StreamSequenceToken.html",
+          "hash": "4SRW7uYxMueGQxXXSU0VAw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Streams.StreamSequenceTokenUtilities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Streams.StreamSequenceTokenUtilities.html",
+          "hash": "wI5il3cd/ja5E8mpJ7KVHg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Streams.StreamSubscriptionHandle-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Streams.StreamSubscriptionHandle-1.html",
+          "hash": "1i9Uxw+L9zzdr+Fmc7S/6g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Streams.StreamSubscriptionHandleExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Streams.StreamSubscriptionHandleExtensions.html",
+          "hash": "eBOxJFfZc6UwlO0C8M14Fg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Streams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Streams.html",
+          "hash": "lVePdT2jbpJo/kyUgBLL6w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.TelemetryConsumers.AI.AITelemetryConsumer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.TelemetryConsumers.AI.AITelemetryConsumer.html",
+          "hash": "bK1PB9V9XdFRV1ZAHK5Q5g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.TelemetryConsumers.AI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.TelemetryConsumers.AI.html",
+          "hash": "Nh+hiUyDQgYo2zXClMg6mg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.TelemetryConsumers.NewRelic.NRTelemetryConsumer.html",
+          "hash": "0GYCN+HOFSkWmuX/A+8WMA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.TelemetryConsumers.NewRelic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.TelemetryConsumers.NewRelic.html",
+          "hash": "/JB2lPH3foJe+d+yAgFhng=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Timers.IReminderRegistry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Timers.IReminderRegistry.html",
+          "hash": "K8ekQsNBpphe4rxQuCWrnQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Timers.ITimerRegistry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Timers.ITimerRegistry.html",
+          "hash": "7pP/J8ny2i0Ml5GtwmnqVQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Timers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Timers.html",
+          "hash": "d46Ogw7CMqHnKjCQQz6PVA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.TransactionAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.TransactionAttribute.html",
+          "hash": "4DMzFDCIg0XMSJ/e/QxPBg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.TransactionOption.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.TransactionOption.html",
+          "hash": "AiJCSjxzIY8VJeri87GNgA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Transactions.AzureStorage.AzureTransactionLogConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Transactions.AzureStorage.AzureTransactionLogConfiguration.html",
+          "hash": "dTkiiESJ7Ssbw8szCTFoXQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.html",
+          "hash": "K/1F3R6GKJKNC15JK+iyHw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Transactions.AzureStorage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Transactions.AzureStorage.html",
+          "hash": "h2TR5vJr26kg50X1GXyhBw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Versions.Compatibility.AllVersionsCompatible.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Versions.Compatibility.AllVersionsCompatible.html",
+          "hash": "t14H8cMpv43FyiwWsXVeeQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Versions.Compatibility.BackwardCompatible.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Versions.Compatibility.BackwardCompatible.html",
+          "hash": "/PIgnlHtR0VSu9HMPdiqmA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Versions.Compatibility.CompatibilityStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Versions.Compatibility.CompatibilityStrategy.html",
+          "hash": "7NhEKDdzJkYd9Ca7Yo4L0A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Versions.Compatibility.ICompatibilityDirector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Versions.Compatibility.ICompatibilityDirector.html",
+          "hash": "U+EgJ6S9pG3EU1gxur+DJg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Versions.Compatibility.StrictVersionCompatible.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Versions.Compatibility.StrictVersionCompatible.html",
+          "hash": "+KgEsfViQxp9MmH0yLIlFQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Versions.Compatibility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Versions.Compatibility.html",
+          "hash": "y5GFrabGcAbO2GqEBAAe/A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Versions.IVersionStore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Versions.IVersionStore.html",
+          "hash": "2evQwBPqrTX0MqMPPUNmAA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Versions.Selector.AllCompatibleVersions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Versions.Selector.AllCompatibleVersions.html",
+          "hash": "VxjI3oYNe7b7dY4Bkysyhg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Versions.Selector.IVersionSelector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Versions.Selector.IVersionSelector.html",
+          "hash": "wKNK7oQe21I/kUd8E1LwVQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Versions.Selector.LatestVersion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Versions.Selector.LatestVersion.html",
+          "hash": "HpgmftnjyUoseh/VKT/M1Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Versions.Selector.MinimumVersion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Versions.Selector.MinimumVersion.html",
+          "hash": "Fafose2CixzwGrpePA3hEQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Versions.Selector.VersionSelectorStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Versions.Selector.VersionSelectorStrategy.html",
+          "hash": "ElUe/5uF2wECy2nGT8MTDw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Versions.Selector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Versions.Selector.html",
+          "hash": "7JZaU/XSQKPXciw7B+YiuA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.Versions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.Versions.html",
+          "hash": "P7kmzoJ7Mpte1I9GDvgA2Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Orleans.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Orleans.html",
+          "hash": "VlM6a4GIcbQbiT/FxAgYwA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OrleansAWSUtils.Streams.SQSAdapterFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OrleansAWSUtils.Streams.SQSAdapterFactory.html",
+          "hash": "+olVCGLSTxiseCono0fLlw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OrleansAWSUtils.Streams.SQSStreamProviderUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OrleansAWSUtils.Streams.SQSStreamProviderUtils.html",
+          "hash": "xs7F5qPw64Y3sSNCaj3pmA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OrleansAWSUtils.Streams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OrleansAWSUtils.Streams.html",
+          "hash": "AMZkAuEN8AGXvWmCnIbmLA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OrleansPSUtils.GetGrain.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OrleansPSUtils.GetGrain.html",
+          "hash": "KVdOsLzYXTvioM2d8z9Huw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OrleansPSUtils.StartGrainClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OrleansPSUtils.StartGrainClient.html",
+          "hash": "balIw8rL7OD1yj44j7mGmg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OrleansPSUtils.StopGrainClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OrleansPSUtils.StopGrainClient.html",
+          "hash": "cgjAZa+rr+pN9jFj6VIN9A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OrleansPSUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OrleansPSUtils.html",
+          "hash": "MhMMeuYke2j7ZrsjuYMKJQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OrleansTelemetryConsumers.Counters.OrleansPerfCounterTelemetryConsumer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OrleansTelemetryConsumers.Counters.OrleansPerfCounterTelemetryConsumer.html",
+          "hash": "GDhCYJSHuuUk3LvOq3boqA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OrleansTelemetryConsumers.Counters.OrleansPerformanceCounterInstaller.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OrleansTelemetryConsumers.Counters.OrleansPerformanceCounterInstaller.html",
+          "hash": "HDdqMwVIWs0cYH61Ri9h7Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OrleansTelemetryConsumers.Counters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OrleansTelemetryConsumers.Counters.html",
+          "hash": "67BRJmaFWcYsAdQR4SCxTQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OrleansZooKeeperUtils.LegacyZooKeeperGatewayListProviderConfigurator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OrleansZooKeeperUtils.LegacyZooKeeperGatewayListProviderConfigurator.html",
+          "hash": "Q+IFgaK4MFfDAFAtWxFN3A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OrleansZooKeeperUtils.LegacyZooKeeperMembershipConfigurator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OrleansZooKeeperUtils.LegacyZooKeeperMembershipConfigurator.html",
+          "hash": "vjUK54IMJH2T1ms5M4FEJA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OrleansZooKeeperUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OrleansZooKeeperUtils.html",
+          "hash": "g+pk5T2/IlUGIydzutkP4A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "0t8rzsF45bOwQ17dDPUBEg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "a7TZrypP69lhdx8TO/4qbg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "x6W9oJwJ1+kgE5lljJleuQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "xVlQaX7Tk85omoiWv3O+Ag=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "changelog.md",
+      "output": {
+        ".html": {
+          "relative_path": "changelog.html",
+          "hash": "4+WGRMms+lE2qn+gNBnhLQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "So/31+4MNqVm2lFCzRxdtA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "zUEcqxeC8MmPdFio0fKEQA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build"
+      },
+      "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build"
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build"
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing"
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

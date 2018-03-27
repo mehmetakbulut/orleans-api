@@ -1,0 +1,430 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IReminderService
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IReminderService
+   ">
+    <meta name="generator" content="docfx 2.33.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Orleans.IReminderService">
+  
+  
+  <h1 id="Orleans_IReminderService" data-uid="Orleans.IReminderService" class="text-break">Interface IReminderService
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Orleans.html">Orleans</a></h6>
+  <h6><strong>Assembly</strong>: Orleans.Core.Abstractions.dll</h6>
+  <h5 id="Orleans_IReminderService_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IReminderService : IGrainService, ISystemTarget, IAddressable</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_IReminderService_GetReminder_Orleans_Runtime_GrainReference_System_String_.md&amp;value=---%0Auid%3A%20Orleans.IReminderService.GetReminder(Orleans.Runtime.GrainReference%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Abstractions/SystemTargetInterfaces/IReminderService.cs/#L26">View Source</a>
+  </span>
+  <a id="Orleans_IReminderService_GetReminder_" data-uid="Orleans.IReminderService.GetReminder*"></a>
+  <h4 id="Orleans_IReminderService_GetReminder_Orleans_Runtime_GrainReference_System_String_" data-uid="Orleans.IReminderService.GetReminder(Orleans.Runtime.GrainReference,System.String)">GetReminder(GrainReference, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IGrainReminder&gt; GetReminder(GrainReference grainRef, string reminderName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.Runtime.GrainReference.html">GrainReference</a></td>
+        <td><span class="parametername">grainRef</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">reminderName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Orleans.Runtime.IGrainReminder.html">IGrainReminder</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_IReminderService_GetReminders_Orleans_Runtime_GrainReference_.md&amp;value=---%0Auid%3A%20Orleans.IReminderService.GetReminders(Orleans.Runtime.GrainReference)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Abstractions/SystemTargetInterfaces/IReminderService.cs/#L28">View Source</a>
+  </span>
+  <a id="Orleans_IReminderService_GetReminders_" data-uid="Orleans.IReminderService.GetReminders*"></a>
+  <h4 id="Orleans_IReminderService_GetReminders_Orleans_Runtime_GrainReference_" data-uid="Orleans.IReminderService.GetReminders(Orleans.Runtime.GrainReference)">GetReminders(GrainReference)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;List&lt;IGrainReminder&gt;&gt; GetReminders(GrainReference grainRef)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.Runtime.GrainReference.html">GrainReference</a></td>
+        <td><span class="parametername">grainRef</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">List</span>&lt;<a class="xref" href="Orleans.Runtime.IGrainReminder.html">IGrainReminder</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_IReminderService_RegisterOrUpdateReminder_Orleans_Runtime_GrainReference_System_String_TimeSpan_TimeSpan_.md&amp;value=---%0Auid%3A%20Orleans.IReminderService.RegisterOrUpdateReminder(Orleans.Runtime.GrainReference%2CSystem.String%2CTimeSpan%2CTimeSpan)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Abstractions/SystemTargetInterfaces/IReminderService.cs/#L22">View Source</a>
+  </span>
+  <a id="Orleans_IReminderService_RegisterOrUpdateReminder_" data-uid="Orleans.IReminderService.RegisterOrUpdateReminder*"></a>
+  <h4 id="Orleans_IReminderService_RegisterOrUpdateReminder_Orleans_Runtime_GrainReference_System_String_TimeSpan_TimeSpan_" data-uid="Orleans.IReminderService.RegisterOrUpdateReminder(Orleans.Runtime.GrainReference,System.String,TimeSpan,TimeSpan)">RegisterOrUpdateReminder(GrainReference, String, TimeSpan, TimeSpan)</h4>
+  <div class="markdown level1 summary"><p>Registers a new reminder or updates an existing one</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IGrainReminder&gt; RegisterOrUpdateReminder(GrainReference grainRef, string reminderName, TimeSpan dueTime, TimeSpan period)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.Runtime.GrainReference.html">GrainReference</a></td>
+        <td><span class="parametername">grainRef</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">reminderName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="parametername">dueTime</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="parametername">period</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Orleans.Runtime.IGrainReminder.html">IGrainReminder</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_IReminderService_Start.md&amp;value=---%0Auid%3A%20Orleans.IReminderService.Start%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Abstractions/SystemTargetInterfaces/IReminderService.cs/#L11">View Source</a>
+  </span>
+  <a id="Orleans_IReminderService_Start_" data-uid="Orleans.IReminderService.Start*"></a>
+  <h4 id="Orleans_IReminderService_Start" data-uid="Orleans.IReminderService.Start">Start()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task Start()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_IReminderService_Stop.md&amp;value=---%0Auid%3A%20Orleans.IReminderService.Stop%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Abstractions/SystemTargetInterfaces/IReminderService.cs/#L12">View Source</a>
+  </span>
+  <a id="Orleans_IReminderService_Stop_" data-uid="Orleans.IReminderService.Stop*"></a>
+  <h4 id="Orleans_IReminderService_Stop" data-uid="Orleans.IReminderService.Stop">Stop()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task Stop()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_IReminderService_UnregisterReminder_Orleans_Runtime_IGrainReminder_.md&amp;value=---%0Auid%3A%20Orleans.IReminderService.UnregisterReminder(Orleans.Runtime.IGrainReminder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Abstractions/SystemTargetInterfaces/IReminderService.cs/#L24">View Source</a>
+  </span>
+  <a id="Orleans_IReminderService_UnregisterReminder_" data-uid="Orleans.IReminderService.UnregisterReminder*"></a>
+  <h4 id="Orleans_IReminderService_UnregisterReminder_Orleans_Runtime_IGrainReminder_" data-uid="Orleans.IReminderService.UnregisterReminder(Orleans.Runtime.IGrainReminder)">UnregisterReminder(IGrainReminder)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task UnregisterReminder(IGrainReminder reminder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.Runtime.IGrainReminder.html">IGrainReminder</a></td>
+        <td><span class="parametername">reminder</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Orleans.GrainExtensions.html#Orleans_GrainExtensions_AsReference__1_Orleans_Runtime_IAddressable_">GrainExtensions.AsReference&lt;TGrainInterface&gt;(IAddressable)</a>
+  </div>
+  <div>
+      <a class="xref" href="Orleans.GrainExtensions.html#Orleans_GrainExtensions_Cast__1_Orleans_Runtime_IAddressable_">GrainExtensions.Cast&lt;TGrainInterface&gt;(IAddressable)</a>
+  </div>
+  <div>
+      <a class="xref" href="Orleans.GrainExtensions.html#Orleans_GrainExtensions_BindGrainReference_Orleans_Runtime_IAddressable_Orleans_IGrainFactory_">GrainExtensions.BindGrainReference(IAddressable, IGrainFactory)</a>
+  </div>
+  <div>
+      <a class="xref" href="Orleans.GrainExtensions.html#Orleans_GrainExtensions_IsPrimaryKeyBasedOnLong_Orleans_Runtime_IAddressable_">GrainExtensions.IsPrimaryKeyBasedOnLong(IAddressable)</a>
+  </div>
+  <div>
+      <a class="xref" href="Orleans.GrainExtensions.html#Orleans_GrainExtensions_GetPrimaryKeyLong_Orleans_Runtime_IAddressable_System_String__">GrainExtensions.GetPrimaryKeyLong(IAddressable, out String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Orleans.GrainExtensions.html#Orleans_GrainExtensions_GetPrimaryKeyLong_Orleans_Runtime_IAddressable_">GrainExtensions.GetPrimaryKeyLong(IAddressable)</a>
+  </div>
+  <div>
+      <a class="xref" href="Orleans.GrainExtensions.html#Orleans_GrainExtensions_GetPrimaryKey_Orleans_Runtime_IAddressable_System_String__">GrainExtensions.GetPrimaryKey(IAddressable, out String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Orleans.GrainExtensions.html#Orleans_GrainExtensions_GetPrimaryKey_Orleans_Runtime_IAddressable_">GrainExtensions.GetPrimaryKey(IAddressable)</a>
+  </div>
+  <div>
+      <a class="xref" href="Orleans.GrainExtensions.html#Orleans_GrainExtensions_GetPrimaryKeyString_Orleans_Runtime_IAddressable_">GrainExtensions.GetPrimaryKeyString(IAddressable)</a>
+  </div>
+  <div>
+      <a class="xref" href="Orleans.GrainExtensions.html#Orleans_GrainExtensions_InvokeOneWay__1___0_Func___0_Task__">GrainExtensions.InvokeOneWay&lt;T&gt;(T, Func&lt;T, Task&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Orleans.Concurrency.ImmutableExt.html#Orleans_Concurrency_ImmutableExt_AsImmutable__1___0_">ImmutableExt.AsImmutable&lt;T&gt;(T)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_IReminderService.md&amp;value=---%0Auid%3A%20Orleans.IReminderService%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Abstractions/SystemTargetInterfaces/IReminderService.cs/#L9" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

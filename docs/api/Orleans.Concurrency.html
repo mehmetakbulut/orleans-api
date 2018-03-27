@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace Orleans.Concurrency
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace Orleans.Concurrency
+   ">
+    <meta name="generator" content="docfx 2.33.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Orleans.Concurrency">
+  
+  <h1 id="Orleans_Concurrency" data-uid="Orleans.Concurrency" class="text-break">Namespace Orleans.Concurrency
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="Orleans.Concurrency.AlwaysInterleaveAttribute.html">AlwaysInterleaveAttribute</a></h4>
+      <section><p>The AlwaysInterleaveAttribute attribute is used to mark methods that can interleave with any other method type, including write (non ReadOnly) requests.</p>
+</section>
+      <h4><a class="xref" href="Orleans.Concurrency.ImmutableAttribute.html">ImmutableAttribute</a></h4>
+      <section><p>The Immutable attribute indicates that instances of the marked class or struct are never modified
+after they are created.</p>
+</section>
+      <h4><a class="xref" href="Orleans.Concurrency.ImmutableExt.html">ImmutableExt</a></h4>
+      <section><p>Utility class to add the .AsImmutable method to all objects.</p>
+</section>
+      <h4><a class="xref" href="Orleans.Concurrency.MayInterleaveAttribute.html">MayInterleaveAttribute</a></h4>
+      <section><p>The MayInterleaveAttribute attribute is used to mark classes
+that want to control request interleaving via supplied method callback.</p>
+</section>
+      <h4><a class="xref" href="Orleans.Concurrency.OneWayAttribute.html">OneWayAttribute</a></h4>
+      <section><p>Indicates that a method on a grain interface is one-way and that no response message will be sent to the caller.</p>
+</section>
+      <h4><a class="xref" href="Orleans.Concurrency.ReentrantAttribute.html">ReentrantAttribute</a></h4>
+      <section><p>The Reentrant attribute is used to mark grain implementation classes that allow request interleaving within a task.
+<p>
+This is an advanced feature and should not be used unless the implications are fully understood.
+That said, allowing request interleaving allows the run-time system to perform a number of optimizations
+that may significantly improve the performance of your application.
+</p></p>
+</section>
+      <h4><a class="xref" href="Orleans.Concurrency.StatelessWorkerAttribute.html">StatelessWorkerAttribute</a></h4>
+      <section><p>The StatelessWorker attribute is used to mark grain class in which there is no expectation
+of preservation of grain state between requests and where multiple activations of the same grain are allowed to be created by the runtime.</p>
+</section>
+      <h4><a class="xref" href="Orleans.Concurrency.UnorderedAttribute.html">UnorderedAttribute</a></h4>
+      <section><p>The Unordered attribute is used to mark grain interface in which the delivery order of
+messages is not significant.</p>
+</section>
+    <h3 id="structs">Structs
+  </h3>
+      <h4><a class="xref" href="Orleans.Concurrency.Immutable-1.html">Immutable&lt;T&gt;</a></h4>
+      <section><p>Wrapper class for carrying immutable data.</p>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

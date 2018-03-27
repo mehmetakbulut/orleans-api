@@ -1,0 +1,450 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Grain&lt;TGrainState&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Grain&lt;TGrainState&gt;
+   ">
+    <meta name="generator" content="docfx 2.33.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Orleans.Grain`1">
+  
+  
+  <h1 id="Orleans_Grain_1" data-uid="Orleans.Grain`1" class="text-break">Class Grain&lt;TGrainState&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>Base class for a Grain with declared persistent state.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Orleans.Grain.html">Grain</a></div>
+    <div class="level2"><span class="xref">Grain&lt;TGrainState&gt;</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Orleans.Runtime.IAddressable.html">IAddressable</a></div>
+    <div><a class="xref" href="Orleans.ILifecycleParticipant-1.html">ILifecycleParticipant</a>&lt;<a class="xref" href="Orleans.Runtime.IGrainLifecycle.html">IGrainLifecycle</a>&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Orleans.Grain.html#Orleans_Grain_GrainReference">Grain.GrainReference</a>
+    </div>
+    <div>
+      <a class="xref" href="Orleans.Grain.html#Orleans_Grain_GrainFactory">Grain.GrainFactory</a>
+    </div>
+    <div>
+      <a class="xref" href="Orleans.Grain.html#Orleans_Grain_ServiceProvider">Grain.ServiceProvider</a>
+    </div>
+    <div>
+      <a class="xref" href="Orleans.Grain.html#Orleans_Grain_IdentityString">Grain.IdentityString</a>
+    </div>
+    <div>
+      <a class="xref" href="Orleans.Grain.html#Orleans_Grain_RuntimeIdentity">Grain.RuntimeIdentity</a>
+    </div>
+    <div>
+      <a class="xref" href="Orleans.Grain.html#Orleans_Grain_RegisterTimer_Func_System_Object_Task__System_Object_TimeSpan_TimeSpan_">Grain.RegisterTimer(Func&lt;Object, Task&gt;, Object, TimeSpan, TimeSpan)</a>
+    </div>
+    <div>
+      <a class="xref" href="Orleans.Grain.html#Orleans_Grain_RegisterOrUpdateReminder_System_String_TimeSpan_TimeSpan_">Grain.RegisterOrUpdateReminder(String, TimeSpan, TimeSpan)</a>
+    </div>
+    <div>
+      <a class="xref" href="Orleans.Grain.html#Orleans_Grain_UnregisterReminder_Orleans_Runtime_IGrainReminder_">Grain.UnregisterReminder(IGrainReminder)</a>
+    </div>
+    <div>
+      <a class="xref" href="Orleans.Grain.html#Orleans_Grain_GetReminder_System_String_">Grain.GetReminder(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Orleans.Grain.html#Orleans_Grain_GetReminders">Grain.GetReminders()</a>
+    </div>
+    <div>
+      <a class="xref" href="Orleans.Grain.html#Orleans_Grain_GetStreamProvider_System_String_">Grain.GetStreamProvider(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Orleans.Grain.html#Orleans_Grain_DeactivateOnIdle">Grain.DeactivateOnIdle()</a>
+    </div>
+    <div>
+      <a class="xref" href="Orleans.Grain.html#Orleans_Grain_DelayDeactivation_TimeSpan_">Grain.DelayDeactivation(TimeSpan)</a>
+    </div>
+    <div>
+      <a class="xref" href="Orleans.Grain.html#Orleans_Grain_OnActivateAsync">Grain.OnActivateAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="Orleans.Grain.html#Orleans_Grain_OnDeactivateAsync">Grain.OnDeactivateAsync()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Orleans.html">Orleans</a></h6>
+  <h6><strong>Assembly</strong>: Orleans.Core.Abstractions.dll</h6>
+  <h5 id="Orleans_Grain_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Grain&lt;TGrainState&gt; : Grain, IAddressable, ILifecycleParticipant&lt;IGrainLifecycle&gt; where TGrainState : new ()</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TGrainState</span></td>
+        <td><p>The class of the persistent state object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Grain_1__ctor.md&amp;value=---%0Auid%3A%20Orleans.Grain%601.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Abstractions/Core/Grain.cs/#L259">View Source</a>
+  </span>
+  <a id="Orleans_Grain_1__ctor_" data-uid="Orleans.Grain`1.#ctor*"></a>
+  <h4 id="Orleans_Grain_1__ctor" data-uid="Orleans.Grain`1.#ctor">Grain()</h4>
+  <div class="markdown level1 summary"><p>This constructor should never be invoked. We expose it so that client code (subclasses of this class) do not have to add a constructor.
+Client code should use the GrainFactory to get a reference to a Grain.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Grain()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Grain_1__ctor_Orleans_Core_IGrainIdentity_Orleans_Runtime_IGrainRuntime_Orleans_Core_IStorage__0__.md&amp;value=---%0Auid%3A%20Orleans.Grain%601.%23ctor(Orleans.Core.IGrainIdentity%2COrleans.Runtime.IGrainRuntime%2COrleans.Core.IStorage%7B%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Abstractions/Core/Grain.cs/#L268">View Source</a>
+  </span>
+  <a id="Orleans_Grain_1__ctor_" data-uid="Orleans.Grain`1.#ctor*"></a>
+  <h4 id="Orleans_Grain_1__ctor_Orleans_Core_IGrainIdentity_Orleans_Runtime_IGrainRuntime_Orleans_Core_IStorage__0__" data-uid="Orleans.Grain`1.#ctor(Orleans.Core.IGrainIdentity,Orleans.Runtime.IGrainRuntime,Orleans.Core.IStorage{`0})">Grain(IGrainIdentity, IGrainRuntime, IStorage&lt;TGrainState&gt;)</h4>
+  <div class="markdown level1 summary"><p>Grain implementers do NOT have to expose this constructor but can choose to do so.
+This constructor is particularly useful for unit testing where test code can create a Grain and replace
+the IGrainIdentity, IGrainRuntime and State with test doubles (mocks/stubs).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Grain(IGrainIdentity identity, IGrainRuntime runtime, IStorage&lt;TGrainState&gt; storage)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.Core.IGrainIdentity.html">IGrainIdentity</a></td>
+        <td><span class="parametername">identity</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Orleans.Runtime.IGrainRuntime.html">IGrainRuntime</a></td>
+        <td><span class="parametername">runtime</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Orleans.Core.IStorage-1.html">IStorage</a>&lt;TGrainState&gt;</td>
+        <td><span class="parametername">storage</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Grain_1_State.md&amp;value=---%0Auid%3A%20Orleans.Grain%601.State%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Abstractions/Core/Grain.cs/#L277">View Source</a>
+  </span>
+  <a id="Orleans_Grain_1_State_" data-uid="Orleans.Grain`1.State*"></a>
+  <h4 id="Orleans_Grain_1_State" data-uid="Orleans.Grain`1.State">State</h4>
+  <div class="markdown level1 summary"><p>Strongly typed accessor for the grain state </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TGrainState State { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TGrainState</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Grain_1_ClearStateAsync.md&amp;value=---%0Auid%3A%20Orleans.Grain%601.ClearStateAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Abstractions/Core/Grain.cs/#L284">View Source</a>
+  </span>
+  <a id="Orleans_Grain_1_ClearStateAsync_" data-uid="Orleans.Grain`1.ClearStateAsync*"></a>
+  <h4 id="Orleans_Grain_1_ClearStateAsync" data-uid="Orleans.Grain`1.ClearStateAsync">ClearStateAsync()</h4>
+  <div class="markdown level1 summary"><p>Clear the current grain state data from backing store.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task ClearStateAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Grain_1_Participate_Orleans_Runtime_IGrainLifecycle_.md&amp;value=---%0Auid%3A%20Orleans.Grain%601.Participate(Orleans.Runtime.IGrainLifecycle)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Abstractions/Core/Grain.cs/#L302">View Source</a>
+  </span>
+  <a id="Orleans_Grain_1_Participate_" data-uid="Orleans.Grain`1.Participate*"></a>
+  <h4 id="Orleans_Grain_1_Participate_Orleans_Runtime_IGrainLifecycle_" data-uid="Orleans.Grain`1.Participate(Orleans.Runtime.IGrainLifecycle)">Participate(IGrainLifecycle)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Participate(IGrainLifecycle lifecycle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.Runtime.IGrainLifecycle.html">IGrainLifecycle</a></td>
+        <td><span class="parametername">lifecycle</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Orleans.Grain.html#Orleans_Grain_Participate_Orleans_Runtime_IGrainLifecycle_">Grain.Participate(IGrainLifecycle)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Grain_1_ReadStateAsync.md&amp;value=---%0Auid%3A%20Orleans.Grain%601.ReadStateAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Abstractions/Core/Grain.cs/#L297">View Source</a>
+  </span>
+  <a id="Orleans_Grain_1_ReadStateAsync_" data-uid="Orleans.Grain`1.ReadStateAsync*"></a>
+  <h4 id="Orleans_Grain_1_ReadStateAsync" data-uid="Orleans.Grain`1.ReadStateAsync">ReadStateAsync()</h4>
+  <div class="markdown level1 summary"><p>Read the current grain state data from backing store.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task ReadStateAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Orleans_Grain_1_ReadStateAsync_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Any previous contents of the grain state data will be overwritten.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Grain_1_WriteStateAsync.md&amp;value=---%0Auid%3A%20Orleans.Grain%601.WriteStateAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Abstractions/Core/Grain.cs/#L290">View Source</a>
+  </span>
+  <a id="Orleans_Grain_1_WriteStateAsync_" data-uid="Orleans.Grain`1.WriteStateAsync*"></a>
+  <h4 id="Orleans_Grain_1_WriteStateAsync" data-uid="Orleans.Grain`1.WriteStateAsync">WriteStateAsync()</h4>
+  <div class="markdown level1 summary"><p>Write of the current grain state data into backing store.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task WriteStateAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Orleans.Runtime.IAddressable.html">IAddressable</a>
+  </div>
+  <div>
+      <a class="xref" href="Orleans.ILifecycleParticipant-1.html">ILifecycleParticipant&lt;TLifecycleObservable&gt;</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Orleans.Runtime.LoggerExtensionMethods.html#Orleans_Runtime_LoggerExtensionMethods_GetLogger_Orleans_Grain_System_String_">LoggerExtensionMethods.GetLogger(Grain, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Orleans.Runtime.LoggerExtensionMethods.html#Orleans_Runtime_LoggerExtensionMethods_GetLogger_Orleans_Grain_">LoggerExtensionMethods.GetLogger(Grain)</a>
+  </div>
+  <div>
+      <span class="xref">Orleans.Storage.GrainStorageExtensions.GetGrainStorage(Orleans.Grain, IServiceProvider)</span>
+  </div>
+  <div>
+      <a class="xref" href="Orleans.Concurrency.ImmutableExt.html#Orleans_Concurrency_ImmutableExt_AsImmutable__1___0_">ImmutableExt.AsImmutable&lt;T&gt;(T)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Grain_1.md&amp;value=---%0Auid%3A%20Orleans.Grain%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Abstractions/Core/Grain.cs/#L251" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

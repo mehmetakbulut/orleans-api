@@ -1,0 +1,634 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class GrainClient
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class GrainClient
+   ">
+    <meta name="generator" content="docfx 2.33.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Orleans.GrainClient">
+  
+  
+  <h1 id="Orleans_GrainClient" data-uid="Orleans.GrainClient" class="text-break">Class GrainClient
+  </h1>
+  <div class="markdown level0 summary"><p>Client runtime for connecting to Orleans system</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">GrainClient</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Orleans.html">Orleans</a></h6>
+  <h6><strong>Assembly</strong>: Orleans.Core.Legacy.dll</h6>
+  <h5 id="Orleans_GrainClient_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class GrainClient : object</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_GrainClient_ClientInvokeCallback.md&amp;value=---%0Auid%3A%20Orleans.GrainClient.ClientInvokeCallback%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Legacy/Core/GrainClient.cs/#L328">View Source</a>
+  </span>
+  <a id="Orleans_GrainClient_ClientInvokeCallback_" data-uid="Orleans.GrainClient.ClientInvokeCallback*"></a>
+  <h4 id="Orleans_GrainClient_ClientInvokeCallback" data-uid="Orleans.GrainClient.ClientInvokeCallback">ClientInvokeCallback</h4>
+  <div class="markdown level1 summary"><p>Global pre-call interceptor function
+Synchronous callback made just before a message is about to be constructed and sent by a client to a grain.
+This call will be made from the same thread that constructs the message to be sent, so any thread-local settings
+such as <code>Orleans.RequestContext</code> will be picked up.
+The action receives an InvokeMethodRequest with details of the method to be invoked, including InterfaceId and MethodId,
+and a <a class="xref" href="Orleans.IGrain.html">IGrain</a> which is the GrainReference this request is being sent through</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ClientInvokeCallback ClientInvokeCallback { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ClientInvokeCallback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Orleans_GrainClient_ClientInvokeCallback_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This callback method should return promptly and do a minimum of work, to avoid blocking calling thread or impacting throughput.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_GrainClient_ConfigureLoggingDelegate.md&amp;value=---%0Auid%3A%20Orleans.GrainClient.ConfigureLoggingDelegate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Legacy/Core/GrainClient.cs/#L46">View Source</a>
+  </span>
+  <a id="Orleans_GrainClient_ConfigureLoggingDelegate_" data-uid="Orleans.GrainClient.ConfigureLoggingDelegate*"></a>
+  <h4 id="Orleans_GrainClient_ConfigureLoggingDelegate" data-uid="Orleans.GrainClient.ConfigureLoggingDelegate">ConfigureLoggingDelegate</h4>
+  <div class="markdown level1 summary"><p>delegate to configure logging, default to none logger configured</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Action&lt;ILoggingBuilder&gt; ConfigureLoggingDelegate { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<span class="xref">ILoggingBuilder</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_GrainClient_GrainFactory.md&amp;value=---%0Auid%3A%20Orleans.GrainClient.GrainFactory%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Legacy/Core/GrainClient.cs/#L42">View Source</a>
+  </span>
+  <a id="Orleans_GrainClient_GrainFactory_" data-uid="Orleans.GrainClient.GrainFactory*"></a>
+  <h4 id="Orleans_GrainClient_GrainFactory" data-uid="Orleans.GrainClient.GrainFactory">GrainFactory</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IGrainFactory GrainFactory { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.IGrainFactory.html">IGrainFactory</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_GrainClient_Instance.md&amp;value=---%0Auid%3A%20Orleans.GrainClient.Instance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Legacy/Core/GrainClient.cs/#L39">View Source</a>
+  </span>
+  <a id="Orleans_GrainClient_Instance_" data-uid="Orleans.GrainClient.Instance*"></a>
+  <h4 id="Orleans_GrainClient_Instance" data-uid="Orleans.GrainClient.Instance">Instance</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IClusterClient Instance { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IClusterClient</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_GrainClient_IsInitialized.md&amp;value=---%0Auid%3A%20Orleans.GrainClient.IsInitialized%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Legacy/Core/GrainClient.cs/#L27">View Source</a>
+  </span>
+  <a id="Orleans_GrainClient_IsInitialized_" data-uid="Orleans.GrainClient.IsInitialized*"></a>
+  <h4 id="Orleans_GrainClient_IsInitialized" data-uid="Orleans.GrainClient.IsInitialized">IsInitialized</h4>
+  <div class="markdown level1 summary"><p>Whether the client runtime has already been initialized</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsInitialized { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if client runtime is already initialized</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_GrainClient_GetResponseTimeout.md&amp;value=---%0Auid%3A%20Orleans.GrainClient.GetResponseTimeout%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Legacy/Core/GrainClient.cs/#L312">View Source</a>
+  </span>
+  <a id="Orleans_GrainClient_GetResponseTimeout_" data-uid="Orleans.GrainClient.GetResponseTimeout*"></a>
+  <h4 id="Orleans_GrainClient_GetResponseTimeout" data-uid="Orleans.GrainClient.GetResponseTimeout">GetResponseTimeout()</h4>
+  <div class="markdown level1 summary"><p>Get a timeout of responses on this Orleans client.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TimeSpan GetResponseTimeout()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TimeSpan</span></td>
+        <td><p>The response timeout.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_GrainClient_GetStreamProvider_System_String_.md&amp;value=---%0Auid%3A%20Orleans.GrainClient.GetStreamProvider(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Legacy/Core/GrainClient.cs/#L352">View Source</a>
+  </span>
+  <a id="Orleans_GrainClient_GetStreamProvider_" data-uid="Orleans.GrainClient.GetStreamProvider*"></a>
+  <h4 id="Orleans_GrainClient_GetStreamProvider_System_String_" data-uid="Orleans.GrainClient.GetStreamProvider(System.String)">GetStreamProvider(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IStreamProvider GetStreamProvider(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.Streams.IStreamProvider.html">IStreamProvider</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_GrainClient_HardKill.md&amp;value=---%0Auid%3A%20Orleans.GrainClient.HardKill%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Legacy/Core/GrainClient.cs/#L242">View Source</a>
+  </span>
+  <a id="Orleans_GrainClient_HardKill_" data-uid="Orleans.GrainClient.HardKill*"></a>
+  <h4 id="Orleans_GrainClient_HardKill" data-uid="Orleans.GrainClient.HardKill">HardKill()</h4>
+  <div class="markdown level1 summary"><p>Test hook to uninitialize client without cleanup</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void HardKill()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_GrainClient_Initialize.md&amp;value=---%0Auid%3A%20Orleans.GrainClient.Initialize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Legacy/Core/GrainClient.cs/#L61">View Source</a>
+  </span>
+  <a id="Orleans_GrainClient_Initialize_" data-uid="Orleans.GrainClient.Initialize*"></a>
+  <h4 id="Orleans_GrainClient_Initialize" data-uid="Orleans.GrainClient.Initialize">Initialize()</h4>
+  <div class="markdown level1 summary"><p>Initializes the client runtime from the standard client configuration file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Initialize()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_GrainClient_Initialize_FileInfo_.md&amp;value=---%0Auid%3A%20Orleans.GrainClient.Initialize(FileInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Legacy/Core/GrainClient.cs/#L94">View Source</a>
+  </span>
+  <a id="Orleans_GrainClient_Initialize_" data-uid="Orleans.GrainClient.Initialize*"></a>
+  <h4 id="Orleans_GrainClient_Initialize_FileInfo_" data-uid="Orleans.GrainClient.Initialize(FileInfo)">Initialize(FileInfo)</h4>
+  <div class="markdown level1 summary"><p>Initializes the client runtime from the provided client configuration file.
+If an error occurs reading the specified configuration file, the initialization fails.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Initialize(FileInfo configFile)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">FileInfo</span></td>
+        <td><span class="parametername">configFile</span></td>
+        <td><p>The client configuration file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_GrainClient_Initialize_IPEndPoint_System_Boolean_.md&amp;value=---%0Auid%3A%20Orleans.GrainClient.Initialize(IPEndPoint%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Legacy/Core/GrainClient.cs/#L148">View Source</a>
+  </span>
+  <a id="Orleans_GrainClient_Initialize_" data-uid="Orleans.GrainClient.Initialize*"></a>
+  <h4 id="Orleans_GrainClient_Initialize_IPEndPoint_System_Boolean_" data-uid="Orleans.GrainClient.Initialize(IPEndPoint,System.Boolean)">Initialize(IPEndPoint, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Initializes the client runtime from the standard client configuration file using the provided gateway address.
+Any gateway addresses specified in the config file will be ignored and the provided gateway address wil be used instead.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Initialize(IPEndPoint gatewayAddress, bool overrideConfig = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IPEndPoint</span></td>
+        <td><span class="parametername">gatewayAddress</span></td>
+        <td><p>IP address and port of the gateway silo</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">overrideConfig</span></td>
+        <td><p>Whether the specified gateway endpoint should override / replace the values from config file, or be additive</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_GrainClient_Initialize_Orleans_Runtime_Configuration_ClientConfiguration_.md&amp;value=---%0Auid%3A%20Orleans.GrainClient.Initialize(Orleans.Runtime.Configuration.ClientConfiguration)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Legacy/Core/GrainClient.cs/#L126">View Source</a>
+  </span>
+  <a id="Orleans_GrainClient_Initialize_" data-uid="Orleans.GrainClient.Initialize*"></a>
+  <h4 id="Orleans_GrainClient_Initialize_Orleans_Runtime_Configuration_ClientConfiguration_" data-uid="Orleans.GrainClient.Initialize(Orleans.Runtime.Configuration.ClientConfiguration)">Initialize(ClientConfiguration)</h4>
+  <div class="markdown level1 summary"><p>Initializes the client runtime from the provided client configuration object.
+If the configuration object is null, the initialization fails.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Initialize(ClientConfiguration config)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.Runtime.Configuration.ClientConfiguration.html">ClientConfiguration</a></td>
+        <td><span class="parametername">config</span></td>
+        <td><p>A ClientConfiguration object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_GrainClient_Initialize_System_String_.md&amp;value=---%0Auid%3A%20Orleans.GrainClient.Initialize(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Legacy/Core/GrainClient.cs/#L83">View Source</a>
+  </span>
+  <a id="Orleans_GrainClient_Initialize_" data-uid="Orleans.GrainClient.Initialize*"></a>
+  <h4 id="Orleans_GrainClient_Initialize_System_String_" data-uid="Orleans.GrainClient.Initialize(System.String)">Initialize(String)</h4>
+  <div class="markdown level1 summary"><p>Initializes the client runtime from the provided client configuration file.
+If an error occurs reading the specified configuration file, the initialization fails.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Initialize(string configFilePath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">configFilePath</span></td>
+        <td><p>A relative or absolute pathname for the client configuration file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_GrainClient_SetResponseTimeout_TimeSpan_.md&amp;value=---%0Auid%3A%20Orleans.GrainClient.SetResponseTimeout(TimeSpan)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Legacy/Core/GrainClient.cs/#L300">View Source</a>
+  </span>
+  <a id="Orleans_GrainClient_SetResponseTimeout_" data-uid="Orleans.GrainClient.SetResponseTimeout*"></a>
+  <h4 id="Orleans_GrainClient_SetResponseTimeout_TimeSpan_" data-uid="Orleans.GrainClient.SetResponseTimeout(TimeSpan)">SetResponseTimeout(TimeSpan)</h4>
+  <div class="markdown level1 summary"><p>Set a timeout for responses on this Orleans client.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetResponseTimeout(TimeSpan timeout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="parametername">timeout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_GrainClient_Uninitialize.md&amp;value=---%0Auid%3A%20Orleans.GrainClient.Uninitialize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Legacy/Core/GrainClient.cs/#L230">View Source</a>
+  </span>
+  <a id="Orleans_GrainClient_Uninitialize_" data-uid="Orleans.GrainClient.Uninitialize*"></a>
+  <h4 id="Orleans_GrainClient_Uninitialize" data-uid="Orleans.GrainClient.Uninitialize">Uninitialize()</h4>
+  <div class="markdown level1 summary"><p>Uninitializes client runtime.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Uninitialize()</code></pre>
+  </div>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_GrainClient_ClusterConnectionLost.md&amp;value=---%0Auid%3A%20Orleans.GrainClient.ClusterConnectionLost%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Legacy/Core/GrainClient.cs/#L359">View Source</a>
+  </span>
+  <h4 id="Orleans_GrainClient_ClusterConnectionLost" data-uid="Orleans.GrainClient.ClusterConnectionLost">ClusterConnectionLost</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event ConnectionToClusterLostHandler ClusterConnectionLost</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ConnectionToClusterLostHandler</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_GrainClient.md&amp;value=---%0Auid%3A%20Orleans.GrainClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Legacy/Core/GrainClient.cs/#L18" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1779 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PrimaryBasedLogViewAdaptor&lt;TLogView, TLogEntry, TSubmissionEntry&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PrimaryBasedLogViewAdaptor&lt;TLogView, TLogEntry, TSubmissionEntry&gt;
+   ">
+    <meta name="generator" content="docfx 2.33.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3">
+  
+  
+  <h1 id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3" class="text-break">Class PrimaryBasedLogViewAdaptor&lt;TLogView, TLogEntry, TSubmissionEntry&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>A general template for constructing log view adaptors that are based on
+a sequentially read and written primary. We use this to construct 
+a variety of different log-consistency providers, all following the same basic pattern 
+(read and write latest view from/to primary, and send notifications after writing).
+<p>
+ Note that the log itself is transient, i.e. not actually saved to storage - only the latest view and some 
+ metadata (the log position, and write flags) is stored in the primary. 
+ It is safe to interleave calls to this adaptor (using grain scheduler only, of course).
+</p>
+<p>
+ Subclasses override ReadAsync and WriteAsync to read from / write to primary.
+ Calls to the primary are serialized, i.e. never interleave.
+</p></p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">PrimaryBasedLogViewAdaptor&lt;TLogView, TLogEntry, TSubmissionEntry&gt;</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Orleans.EventSourcing.Common.html">Orleans.EventSourcing.Common</a></h6>
+  <h6><strong>Assembly</strong>: Orleans.EventSourcing.dll</h6>
+  <h5 id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class PrimaryBasedLogViewAdaptor&lt;TLogView, TLogEntry, TSubmissionEntry&gt; : ILogViewAdaptor&lt;TLogView, TLogEntry&gt; where TLogView : class, new ()where TLogEntry : class where TSubmissionEntry : SubmissionEntry&lt;TLogEntry&gt;</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TLogView</span></td>
+        <td><p>The user-defined view of the log</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TLogEntry</span></td>
+        <td><p>The type of the log entries</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TSubmissionEntry</span></td>
+        <td><p>The type of submission entries stored in pending queue</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3__ctor_ILogViewAdaptorHost__0__1___0_ILogConsistencyProtocolServices_.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor%603.%23ctor(ILogViewAdaptorHost%7B%600%2C%601%7D%2C%600%2CILogConsistencyProtocolServices)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs/#L184">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3__ctor_" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.#ctor*"></a>
+  <h4 id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3__ctor_ILogViewAdaptorHost__0__1___0_ILogConsistencyProtocolServices_" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.#ctor(ILogViewAdaptorHost{`0,`1},`0,ILogConsistencyProtocolServices)">PrimaryBasedLogViewAdaptor(ILogViewAdaptorHost&lt;TLogView, TLogEntry&gt;, TLogView, ILogConsistencyProtocolServices)</h4>
+  <div class="markdown level1 summary"><p>Construct an instance, for the given parameters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected PrimaryBasedLogViewAdaptor(ILogViewAdaptorHost&lt;TLogView, TLogEntry&gt; host, TLogView initialstate, ILogConsistencyProtocolServices services)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogViewAdaptorHost</span>&lt;TLogView, TLogEntry&gt;</td>
+        <td><span class="parametername">host</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TLogView</span></td>
+        <td><span class="parametername">initialstate</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ILogConsistencyProtocolServices</span></td>
+        <td><span class="parametername">services</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_LastPrimaryIssue.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor%603.LastPrimaryIssue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs/#L775">View Source</a>
+  </span>
+  <h4 id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_LastPrimaryIssue" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.LastPrimaryIssue">LastPrimaryIssue</h4>
+  <div class="markdown level1 summary"><p>Store the last issue that occurred while reading or updating primary.
+Is null if successful.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected RecordedConnectionIssue LastPrimaryIssue</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.EventSourcing.Common.RecordedConnectionIssue.html">RecordedConnectionIssue</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_stats.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor%603.stats%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs/#L291">View Source</a>
+  </span>
+  <h4 id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_stats" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.stats">stats</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected LogConsistencyStatistics stats</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">LogConsistencyStatistics</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_Configuration.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor%603.Configuration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs/#L172">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_Configuration_" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.Configuration*"></a>
+  <h4 id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_Configuration" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.Configuration">Configuration</h4>
+  <div class="markdown level1 summary"><p>The current multi-cluster configuration for this grain instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected MultiClusterConfiguration Configuration { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">MultiClusterConfiguration</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_ConfirmedVersion.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor%603.ConfirmedVersion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs/#L473">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_ConfirmedVersion_" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.ConfirmedVersion*"></a>
+  <h4 id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_ConfirmedVersion" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.ConfirmedVersion">ConfirmedVersion</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ConfirmedVersion { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_ConfirmedView.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor%603.ConfirmedView%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs/#L461">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_ConfirmedView_" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.ConfirmedView*"></a>
+  <h4 id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_ConfirmedView" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.ConfirmedView">ConfirmedView</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TLogView ConfirmedView { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TLogView</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_Host.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor%603.Host%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs/#L162">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_Host_" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.Host*"></a>
+  <h4 id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_Host" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.Host">Host</h4>
+  <div class="markdown level1 summary"><p>The grain that is using this adaptor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ILogViewAdaptorHost&lt;TLogView, TLogEntry&gt; Host { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogViewAdaptorHost</span>&lt;TLogView, TLogEntry&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_Services.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor%603.Services%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs/#L167">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_Services_" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.Services*"></a>
+  <h4 id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_Services" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.Services">Services</h4>
+  <div class="markdown level1 summary"><p>The runtime services required for implementing notifications between grain instances in different cluster.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ILogConsistencyProtocolServices Services { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogConsistencyProtocolServices</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_SupportSubmissions.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor%603.SupportSubmissions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs/#L81">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_SupportSubmissions_" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.SupportSubmissions*"></a>
+  <h4 id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_SupportSubmissions" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.SupportSubmissions">SupportSubmissions</h4>
+  <div class="markdown level1 summary"><p>Whether this cluster supports submitting updates</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool SupportSubmissions { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_TentativeView.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor%603.TentativeView%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs/#L446">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_TentativeView_" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.TentativeView*"></a>
+  <h4 id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_TentativeView" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.TentativeView">TentativeView</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TLogView TentativeView { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TLogView</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_UnconfirmedSuffix.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor%603.UnconfirmedSuffix%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs/#L794">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_UnconfirmedSuffix_" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.UnconfirmedSuffix*"></a>
+  <h4 id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_UnconfirmedSuffix" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.UnconfirmedSuffix">UnconfirmedSuffix</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;TLogEntry&gt; UnconfirmedSuffix { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;TLogEntry&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_UnresolvedConnectionIssues.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor%603.UnresolvedConnectionIssues%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs/#L759">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_UnresolvedConnectionIssues_" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.UnresolvedConnectionIssues*"></a>
+  <h4 id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_UnresolvedConnectionIssues" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.UnresolvedConnectionIssues">UnresolvedConnectionIssues</h4>
+  <div class="markdown level1 summary"><p>returns a list of all connection health issues that have not been restored yet.
+Such issues are observed while communicating with the primary, or while trying to 
+notify other clusters, for example.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;ConnectionIssue&gt; UnresolvedConnectionIssues { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Orleans.LogConsistency.ConnectionIssue.html">ConnectionIssue</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_BroadcastNotification_Orleans_EventSourcing_Common_INotificationMessage_System_String_.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor%603.BroadcastNotification(Orleans.EventSourcing.Common.INotificationMessage%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs/#L871">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_BroadcastNotification_" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.BroadcastNotification*"></a>
+  <h4 id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_BroadcastNotification_Orleans_EventSourcing_Common_INotificationMessage_System_String_" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.BroadcastNotification(Orleans.EventSourcing.Common.INotificationMessage,System.String)">BroadcastNotification(INotificationMessage, String)</h4>
+  <div class="markdown level1 summary"><p>Send a notification message to all remote instances</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void BroadcastNotification(INotificationMessage msg, string exclude = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.EventSourcing.Common.INotificationMessage.html">INotificationMessage</a></td>
+        <td><span class="parametername">msg</span></td>
+        <td><p>the notification message to send</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">exclude</span></td>
+        <td><p>if non-null, exclude this cluster id from the notification</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_ConfirmSubmittedEntries.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor%603.ConfirmSubmittedEntries%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs/#L803">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_ConfirmSubmittedEntries_" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.ConfirmSubmittedEntries*"></a>
+  <h4 id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_ConfirmSubmittedEntries" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.ConfirmSubmittedEntries">ConfirmSubmittedEntries()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task ConfirmSubmittedEntries()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_CopyTentativeState.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor%603.CopyTentativeState%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs/#L249">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_CopyTentativeState_" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.CopyTentativeState*"></a>
+  <h4 id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_CopyTentativeState" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.CopyTentativeState">CopyTentativeState()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TLogView CopyTentativeState()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TLogView</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_DisableStatsCollection.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor%603.DisableStatsCollection%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs/#L582">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_DisableStatsCollection_" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.DisableStatsCollection*"></a>
+  <h4 id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_DisableStatsCollection" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.DisableStatsCollection">DisableStatsCollection()</h4>
+  <div class="markdown level1 summary"><p>Disable stats collection</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DisableStatsCollection()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_EnableStatsCollection.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor%603.EnableStatsCollection%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs/#L555">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_EnableStatsCollection_" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.EnableStatsCollection*"></a>
+  <h4 id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_EnableStatsCollection" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.EnableStatsCollection">EnableStatsCollection()</h4>
+  <div class="markdown level1 summary"><p>method is virtual so subclasses can add their own events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void EnableStatsCollection()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_EnsureClusterJoinedAsync.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor%603.EnsureClusterJoinedAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs/#L303">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_EnsureClusterJoinedAsync_" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.EnsureClusterJoinedAsync*"></a>
+  <h4 id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_EnsureClusterJoinedAsync" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.EnsureClusterJoinedAsync">EnsureClusterJoinedAsync()</h4>
+  <div class="markdown level1 summary"><p>Block until this cluster is joined to the multicluster.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task EnsureClusterJoinedAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_GetCaughtUpWithConfigurationAsync_DateTime_.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor%603.GetCaughtUpWithConfigurationAsync(DateTime)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs/#L314">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_GetCaughtUpWithConfigurationAsync_" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.GetCaughtUpWithConfigurationAsync*"></a>
+  <h4 id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_GetCaughtUpWithConfigurationAsync_DateTime_" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.GetCaughtUpWithConfigurationAsync(DateTime)">GetCaughtUpWithConfigurationAsync(DateTime)</h4>
+  <div class="markdown level1 summary"><p>Wait until this cluster has received a configuration that is at least as new as timestamp</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task GetCaughtUpWithConfigurationAsync(DateTime adminTimestamp)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DateTime</span></td>
+        <td><span class="parametername">adminTimestamp</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_GetConfirmedVersion.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor%603.GetConfirmedVersion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs/#L56">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_GetConfirmedVersion_" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.GetConfirmedVersion*"></a>
+  <h4 id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_GetConfirmedVersion" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.GetConfirmedVersion">GetConfirmedVersion()</h4>
+  <div class="markdown level1 summary"><p>Read version of cached global state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract int GetConfirmedVersion()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_GetCurrentBatchOfUpdates.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor%603.GetCurrentBatchOfUpdates%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs/#L256">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_GetCurrentBatchOfUpdates_" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.GetCurrentBatchOfUpdates*"></a>
+  <h4 id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_GetCurrentBatchOfUpdates" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.GetCurrentBatchOfUpdates">GetCurrentBatchOfUpdates()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TSubmissionEntry[] GetCurrentBatchOfUpdates()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>TSubmissionEntry[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_GetNumberPendingUpdates.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor%603.GetNumberPendingUpdates%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs/#L261">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_GetNumberPendingUpdates_" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.GetNumberPendingUpdates*"></a>
+  <h4 id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_GetNumberPendingUpdates" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.GetNumberPendingUpdates">GetNumberPendingUpdates()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int GetNumberPendingUpdates()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_GetStats.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor%603.GetStats%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs/#L591">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_GetStats_" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.GetStats*"></a>
+  <h4 id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_GetStats" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.GetStats">GetStats()</h4>
+  <div class="markdown level1 summary"><p>Get states</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LogConsistencyStatistics GetStats()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">LogConsistencyStatistics</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_InitializeConfirmedView__0_.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor%603.InitializeConfirmedView(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs/#L46">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_InitializeConfirmedView_" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.InitializeConfirmedView*"></a>
+  <h4 id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_InitializeConfirmedView__0_" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.InitializeConfirmedView(`0)">InitializeConfirmedView(TLogView)</h4>
+  <div class="markdown level1 summary"><p>Set confirmed view the initial value (a view of the empty log)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void InitializeConfirmedView(TLogView initialstate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TLogView</span></td>
+        <td><span class="parametername">initialstate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_IsMyClusterJoined.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor%603.IsMyClusterJoined%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs/#L295">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_IsMyClusterJoined_" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.IsMyClusterJoined*"></a>
+  <h4 id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_IsMyClusterJoined" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.IsMyClusterJoined">IsMyClusterJoined()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool IsMyClusterJoined()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_LastConfirmedView.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor%603.LastConfirmedView%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs/#L51">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_LastConfirmedView_" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.LastConfirmedView*"></a>
+  <h4 id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_LastConfirmedView" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.LastConfirmedView">LastConfirmedView()</h4>
+  <div class="markdown level1 summary"><p>Read cached global state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract TLogView LastConfirmedView()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TLogView</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_MakeSubmissionEntry__1_.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor%603.MakeSubmissionEntry(%601)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs/#L76">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_MakeSubmissionEntry_" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.MakeSubmissionEntry*"></a>
+  <h4 id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_MakeSubmissionEntry__1_" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.MakeSubmissionEntry(`1)">MakeSubmissionEntry(TLogEntry)</h4>
+  <div class="markdown level1 summary"><p>Create a submission entry for the submitted log entry. 
+Using a type parameter so we can add protocol-specific info to this class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract TSubmissionEntry MakeSubmissionEntry(TLogEntry entry)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TLogEntry</span></td>
+        <td><span class="parametername">entry</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TSubmissionEntry</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_Merge_Orleans_EventSourcing_Common_INotificationMessage_Orleans_EventSourcing_Common_INotificationMessage_.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor%603.Merge(Orleans.EventSourcing.Common.INotificationMessage%2COrleans.EventSourcing.Common.INotificationMessage)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs/#L142">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_Merge_" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.Merge*"></a>
+  <h4 id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_Merge_Orleans_EventSourcing_Common_INotificationMessage_Orleans_EventSourcing_Common_INotificationMessage_" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.Merge(Orleans.EventSourcing.Common.INotificationMessage,Orleans.EventSourcing.Common.INotificationMessage)">Merge(INotificationMessage, INotificationMessage)</h4>
+  <div class="markdown level1 summary"><p>Merge two notification messages, for batching. Override to handle notification subtypes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual INotificationMessage Merge(INotificationMessage earliermessage, INotificationMessage latermessage)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.EventSourcing.Common.INotificationMessage.html">INotificationMessage</a></td>
+        <td><span class="parametername">earliermessage</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Orleans.EventSourcing.Common.INotificationMessage.html">INotificationMessage</a></td>
+        <td><span class="parametername">latermessage</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.EventSourcing.Common.INotificationMessage.html">INotificationMessage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_NotifyPromises_System_Int32_System_Boolean_.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor%603.NotifyPromises(System.Int32%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs/#L819">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_NotifyPromises_" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.NotifyPromises*"></a>
+  <h4 id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_NotifyPromises_System_Int32_System_Boolean_" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.NotifyPromises(System.Int32,System.Boolean)">NotifyPromises(Int32, Boolean)</h4>
+  <div class="markdown level1 summary"><p>send failure notifications</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void NotifyPromises(int count, bool success)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">count</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">success</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_OnConfigurationChange_MultiClusterConfiguration_.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor%603.OnConfigurationChange(MultiClusterConfiguration)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs/#L153">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_OnConfigurationChange_" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.OnConfigurationChange*"></a>
+  <h4 id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_OnConfigurationChange_MultiClusterConfiguration_" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.OnConfigurationChange(MultiClusterConfiguration)">OnConfigurationChange(MultiClusterConfiguration)</h4>
+  <div class="markdown level1 summary"><p>Called when configuration of the multicluster is changing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task OnConfigurationChange(MultiClusterConfiguration next)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">MultiClusterConfiguration</span></td>
+        <td><span class="parametername">next</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_OnMessageReceived_ILogConsistencyProtocolMessage_.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor%603.OnMessageReceived(ILogConsistencyProtocolMessage)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs/#L86">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_OnMessageReceived_" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.OnMessageReceived*"></a>
+  <h4 id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_OnMessageReceived_ILogConsistencyProtocolMessage_" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.OnMessageReceived(ILogConsistencyProtocolMessage)">OnMessageReceived(ILogConsistencyProtocolMessage)</h4>
+  <div class="markdown level1 summary"><p>Handle protocol messages.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task&lt;ILogConsistencyProtocolMessage&gt; OnMessageReceived(ILogConsistencyProtocolMessage payload)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogConsistencyProtocolMessage</span></td>
+        <td><span class="parametername">payload</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">ILogConsistencyProtocolMessage</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_OnMultiClusterConfigurationChange_Orleans_MultiCluster_MultiClusterConfiguration_.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor%603.OnMultiClusterConfigurationChange(Orleans.MultiCluster.MultiClusterConfiguration)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs/#L516">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_OnMultiClusterConfigurationChange_" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.OnMultiClusterConfigurationChange*"></a>
+  <h4 id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_OnMultiClusterConfigurationChange_Orleans_MultiCluster_MultiClusterConfiguration_" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.OnMultiClusterConfigurationChange(Orleans.MultiCluster.MultiClusterConfiguration)">OnMultiClusterConfigurationChange(MultiClusterConfiguration)</h4>
+  <div class="markdown level1 summary"><p>Called by MultiClusterOracle when there is a configuration change.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task OnMultiClusterConfigurationChange(MultiClusterConfiguration newConfig)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Orleans.MultiCluster.MultiClusterConfiguration</span></td>
+        <td><span class="parametername">newConfig</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_OnNotificationReceived_Orleans_EventSourcing_Common_INotificationMessage_.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor%603.OnNotificationReceived(Orleans.EventSourcing.Common.INotificationMessage)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs/#L100">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_OnNotificationReceived_" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.OnNotificationReceived*"></a>
+  <h4 id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_OnNotificationReceived_Orleans_EventSourcing_Common_INotificationMessage_" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.OnNotificationReceived(Orleans.EventSourcing.Common.INotificationMessage)">OnNotificationReceived(INotificationMessage)</h4>
+  <div class="markdown level1 summary"><p>Handle notification messages. Override this to handle notification subtypes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnNotificationReceived(INotificationMessage payload)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.EventSourcing.Common.INotificationMessage.html">INotificationMessage</a></td>
+        <td><span class="parametername">payload</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_OnProtocolMessageReceived_ILogConsistencyProtocolMessage_.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor%603.OnProtocolMessageReceived(ILogConsistencyProtocolMessage)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs/#L489">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_OnProtocolMessageReceived_" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.OnProtocolMessageReceived*"></a>
+  <h4 id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_OnProtocolMessageReceived_ILogConsistencyProtocolMessage_" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.OnProtocolMessageReceived(ILogConsistencyProtocolMessage)">OnProtocolMessageReceived(ILogConsistencyProtocolMessage)</h4>
+  <div class="markdown level1 summary"><p>Called from network</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ILogConsistencyProtocolMessage&gt; OnProtocolMessageReceived(ILogConsistencyProtocolMessage payLoad)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogConsistencyProtocolMessage</span></td>
+        <td><span class="parametername">payLoad</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">ILogConsistencyProtocolMessage</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_PostOnActivate.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor%603.PostOnActivate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs/#L212">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_PostOnActivate_" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.PostOnActivate*"></a>
+  <h4 id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_PostOnActivate" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.PostOnActivate">PostOnActivate()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task PostOnActivate()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_PostOnDeactivate.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor%603.PostOnDeactivate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs/#L226">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_PostOnDeactivate_" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.PostOnDeactivate*"></a>
+  <h4 id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_PostOnDeactivate" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.PostOnDeactivate">PostOnDeactivate()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task PostOnDeactivate()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_PreOnActivate.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor%603.PreOnActivate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs/#L195">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_PreOnActivate_" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.PreOnActivate*"></a>
+  <h4 id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_PreOnActivate" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.PreOnActivate">PreOnActivate()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task PreOnActivate()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_ProcessNotifications.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor%603.ProcessNotifications%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs/#L130">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_ProcessNotifications_" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.ProcessNotifications*"></a>
+  <h4 id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_ProcessNotifications" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.ProcessNotifications">ProcessNotifications()</h4>
+  <div class="markdown level1 summary"><p>Process stored notifications during worker cycle. Override to handle notification subtypes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ProcessNotifications()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_ReadAsync.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor%603.ReadAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs/#L63">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_ReadAsync_" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.ReadAsync*"></a>
+  <h4 id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_ReadAsync" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.ReadAsync">ReadAsync()</h4>
+  <div class="markdown level1 summary"><p>Read the latest primary state. Must block/retry until successful.
+Should not throw exceptions, but record them in <a class="xref" href="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor-3.html#Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_LastPrimaryIssue">LastPrimaryIssue</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract Task ReadAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_RemoveStaleConditionalUpdates.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor%603.RemoveStaleConditionalUpdates%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs/#L832">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_RemoveStaleConditionalUpdates_" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.RemoveStaleConditionalUpdates*"></a>
+  <h4 id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_RemoveStaleConditionalUpdates" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.RemoveStaleConditionalUpdates">RemoveStaleConditionalUpdates()</h4>
+  <div class="markdown level1 summary"><p>go through updates and remove all the conditional updates that have already failed</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void RemoveStaleConditionalUpdates()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_RetrieveLogSegment_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor%603.RetrieveLogSegment(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs/#L92">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_RetrieveLogSegment_" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.RetrieveLogSegment*"></a>
+  <h4 id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_RetrieveLogSegment_System_Int32_System_Int32_" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.RetrieveLogSegment(System.Int32,System.Int32)">RetrieveLogSegment(Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;IReadOnlyList&lt;TLogEntry&gt;&gt; RetrieveLogSegment(int fromVersion, int length)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">fromVersion</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">length</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IReadOnlyList</span>&lt;TLogEntry&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_Submit__1_.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor%603.Submit(%601)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs/#L331">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_Submit_" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.Submit*"></a>
+  <h4 id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_Submit__1_" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.Submit(`1)">Submit(TLogEntry)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Submit(TLogEntry logEntry)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TLogEntry</span></td>
+        <td><span class="parametername">logEntry</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_SubmitRange_IEnumerable__1__.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor%603.SubmitRange(IEnumerable%7B%601%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs/#L346">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_SubmitRange_" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.SubmitRange*"></a>
+  <h4 id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_SubmitRange_IEnumerable__1__" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.SubmitRange(IEnumerable{`1})">SubmitRange(IEnumerable&lt;TLogEntry&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SubmitRange(IEnumerable&lt;TLogEntry&gt; logEntries)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;TLogEntry&gt;</td>
+        <td><span class="parametername">logEntries</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_Synchronize.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor%603.Synchronize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs/#L780">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_Synchronize_" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.Synchronize*"></a>
+  <h4 id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_Synchronize" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.Synchronize">Synchronize()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task Synchronize()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_TryAppend__1_.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor%603.TryAppend(%601)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs/#L364">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_TryAppend_" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.TryAppend*"></a>
+  <h4 id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_TryAppend__1_" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.TryAppend(`1)">TryAppend(TLogEntry)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; TryAppend(TLogEntry logEntry)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TLogEntry</span></td>
+        <td><span class="parametername">logEntry</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_TryAppendRange_IEnumerable__1__.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor%603.TryAppendRange(IEnumerable%7B%601%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs/#L383">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_TryAppendRange_" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.TryAppendRange*"></a>
+  <h4 id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_TryAppendRange_IEnumerable__1__" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.TryAppendRange(IEnumerable{`1})">TryAppendRange(IEnumerable&lt;TLogEntry&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; TryAppendRange(IEnumerable&lt;TLogEntry&gt; logEntries)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;TLogEntry&gt;</td>
+        <td><span class="parametername">logEntries</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_WriteAsync.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor%603.WriteAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs/#L69">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_WriteAsync_" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.WriteAsync*"></a>
+  <h4 id="Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_WriteAsync" data-uid="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor`3.WriteAsync">WriteAsync()</h4>
+  <div class="markdown level1 summary"><p>Apply pending entries to the primary. Must block/retry until successful. 
+Should not throw exceptions, but record them in <a class="xref" href="Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor-3.html#Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3_LastPrimaryIssue">LastPrimaryIssue</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract Task&lt;int&gt; WriteAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Orleans.Concurrency.ImmutableExt.html#Orleans_Concurrency_ImmutableExt_AsImmutable__1___0_">ImmutableExt.AsImmutable&lt;T&gt;(T)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_Common_PrimaryBasedLogViewAdaptor_3.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.Common.PrimaryBasedLogViewAdaptor%603%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/Common/PrimaryBasedLogViewAdaptor.cs/#L34" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

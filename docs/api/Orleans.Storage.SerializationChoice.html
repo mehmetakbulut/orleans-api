@@ -1,0 +1,276 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Struct SerializationChoice
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Struct SerializationChoice
+   ">
+    <meta name="generator" content="docfx 2.33.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Orleans.Storage.SerializationChoice">
+  
+  
+  <h1 id="Orleans_Storage_SerializationChoice" data-uid="Orleans.Storage.SerializationChoice" class="text-break">Struct SerializationChoice
+  </h1>
+  <div class="markdown level0 summary"><p>Struct contains choice on streaming, storage deserializer and storage serializer</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Orleans.Storage.html">Orleans.Storage</a></h6>
+  <h6><strong>Assembly</strong>: Orleans.Persistence.AdoNet.dll</h6>
+  <h5 id="Orleans_Storage_SerializationChoice_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public struct SerializationChoice</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Storage_SerializationChoice__ctor_System_Boolean_Orleans_Storage_IStorageDeserializer_Orleans_Storage_IStorageSerializer_.md&amp;value=---%0Auid%3A%20Orleans.Storage.SerializationChoice.%23ctor(System.Boolean%2COrleans.Storage.IStorageDeserializer%2COrleans.Storage.IStorageSerializer)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/IStorageSerializationPicker.cs/#L36">View Source</a>
+  </span>
+  <a id="Orleans_Storage_SerializationChoice__ctor_" data-uid="Orleans.Storage.SerializationChoice.#ctor*"></a>
+  <h4 id="Orleans_Storage_SerializationChoice__ctor_System_Boolean_Orleans_Storage_IStorageDeserializer_Orleans_Storage_IStorageSerializer_" data-uid="Orleans.Storage.SerializationChoice.#ctor(System.Boolean,Orleans.Storage.IStorageDeserializer,Orleans.Storage.IStorageSerializer)">SerializationChoice(Boolean, IStorageDeserializer, IStorageSerializer)</h4>
+  <div class="markdown level1 summary"><p>Implements &quot;a tuple&quot; that encodes the desired (de)serialization choice and streaming preference.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SerializationChoice(bool preferStreaming, IStorageDeserializer deserializer, IStorageSerializer serializer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">preferStreaming</span></td>
+        <td><p>Is streaming to be preferred.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Orleans.Storage.IStorageDeserializer.html">IStorageDeserializer</a></td>
+        <td><span class="parametername">deserializer</span></td>
+        <td><p>The <a class="xref" href="Orleans.Storage.IStorageDeserializer.html">IStorageDeserializer</a> used.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Orleans.Storage.IStorageSerializer.html">IStorageSerializer</a></td>
+        <td><span class="parametername">serializer</span></td>
+        <td><p><a class="xref" href="Orleans.Storage.IStorageSerializer.html">IStorageSerializer</a> used.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Orleans_Storage_SerializationChoice__ctor_System_Boolean_Orleans_Storage_IStorageDeserializer_Orleans_Storage_IStorageSerializer__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Note that only one, either <code data-dev-comment-type="paramref" class="paramref">deserializer</code> or <code data-dev-comment-type="paramref" class="paramref">serializer</code> can be defined, not both.</p>
+</div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Storage_SerializationChoice_Deserializer.md&amp;value=---%0Auid%3A%20Orleans.Storage.SerializationChoice.Deserializer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/IStorageSerializationPicker.cs/#L21">View Source</a>
+  </span>
+  <a id="Orleans_Storage_SerializationChoice_Deserializer_" data-uid="Orleans.Storage.SerializationChoice.Deserializer*"></a>
+  <h4 id="Orleans_Storage_SerializationChoice_Deserializer" data-uid="Orleans.Storage.SerializationChoice.Deserializer">Deserializer</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Orleans.Storage.IStorageDeserializer.html">IStorageDeserializer</a> that should be used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IStorageDeserializer Deserializer { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.Storage.IStorageDeserializer.html">IStorageDeserializer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Storage_SerializationChoice_PreferStreaming.md&amp;value=---%0Auid%3A%20Orleans.Storage.SerializationChoice.PreferStreaming%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/IStorageSerializationPicker.cs/#L16">View Source</a>
+  </span>
+  <a id="Orleans_Storage_SerializationChoice_PreferStreaming_" data-uid="Orleans.Storage.SerializationChoice.PreferStreaming*"></a>
+  <h4 id="Orleans_Storage_SerializationChoice_PreferStreaming" data-uid="Orleans.Storage.SerializationChoice.PreferStreaming">PreferStreaming</h4>
+  <div class="markdown level1 summary"><p><em>TRUE</em> if streaming is preferred.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool PreferStreaming { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Storage_SerializationChoice_Serializer.md&amp;value=---%0Auid%3A%20Orleans.Storage.SerializationChoice.Serializer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/IStorageSerializationPicker.cs/#L26">View Source</a>
+  </span>
+  <a id="Orleans_Storage_SerializationChoice_Serializer_" data-uid="Orleans.Storage.SerializationChoice.Serializer*"></a>
+  <h4 id="Orleans_Storage_SerializationChoice_Serializer" data-uid="Orleans.Storage.SerializationChoice.Serializer">Serializer</h4>
+  <div class="markdown level1 summary"><p>/// The <a class="xref" href="Orleans.Storage.IStorageSerializer.html">IStorageSerializer</a> that should be used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IStorageSerializer Serializer { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.Storage.IStorageSerializer.html">IStorageSerializer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Orleans.Concurrency.ImmutableExt.html#Orleans_Concurrency_ImmutableExt_AsImmutable__1___0_">ImmutableExt.AsImmutable&lt;T&gt;(T)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Storage_SerializationChoice.md&amp;value=---%0Auid%3A%20Orleans.Storage.SerializationChoice%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/IStorageSerializationPicker.cs/#L11" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

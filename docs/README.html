@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Installation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Installation ">
+    <meta name="generator" content="docfx 2.33.1.0">
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/docfx.vendor.css">
+    <link rel="stylesheet" href="styles/docfx.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <meta property="docfx:navrel" content="toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+
+<p align="center">
+  <img src="https://github.com/dotnet/orleans/blob/gh-pages/assets/logo_full.png" alt="Orleans logo" width="600px"> 
+</p>
+
+<p><a href="http://ci.dot.net/job/dotnet_orleans/job/master/"><img src="https://ci.dot.net/job/dotnet_orleans/job/master/job/netfx-bvt/badge/icon" alt="Build status"></a>
+<a href="http://www.nuget.org/profiles/Orleans"><img src="https://img.shields.io/nuget/v/Microsoft.Orleans.Core.svg?style=flat" alt="NuGet"></a>
+<a href="https://gitter.im/dotnet/orleans?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge"><img src="https://badges.gitter.im/Join%20Chat.svg" alt="Gitter"></a>
+<a href="http://waffle.io/dotnet/orleans"><img src="https://badge.waffle.io/dotnet/orleans.svg?label=up-for-grabs&amp;title=Help%20Wanted%20Issues" alt="Help Wanted Issues"></a></p>
+<p>Orleans is a framework that provides a straight-forward approach to building distributed high-scale computing applications, without the need to learn and apply complex concurrency or other scaling patterns. </p>
+<p>It was created by <a href="http://research.microsoft.com/projects/orleans/">Microsoft Research</a> 
+implementing the <a href="http://research.microsoft.com/apps/pubs/default.aspx?id=210931">Virtual Actor Model</a> 
+and designed for use in the cloud. </p>
+<p>Orleans has been used extensively running in Microsoft Azure by several Microsoft product groups, most notably by <a href="https://www.halowaypoint.com/">343 Industries</a> as a platform for all of Halo 4 and Halo 5 cloud services, as well as by <a href="http://dotnet.github.io/orleans/Community/Who-Is-Using-Orleans.html">a number of other projects and companies</a>.</p>
+<h1 id="installation">Installation</h1>
+<p>Installation is performed via <a href="https://www.nuget.org/packages?q=orleans">NuGet</a>. 
+There are several packages, one for each different project type (interfaces, grains, silo, and client).</p>
+<p>In the grain interfaces project:</p>
+<pre><code>PM&gt; Install-Package Microsoft.Orleans.OrleansCodeGenerator.Build
+</code></pre><p>In the grain implementations project:</p>
+<pre><code>PM&gt; Install-Package Microsoft.Orleans.OrleansCodeGenerator.Build
+</code></pre><p>In the server (silo) project:</p>
+<pre><code>PM&gt; Install-Package Microsoft.Orleans.Server
+</code></pre><p>In the client project:</p>
+<pre><code>PM&gt; Install-Package Microsoft.Orleans.Client
+</code></pre><h3 id="official-builds">Official Builds</h3>
+<p>The stable production-quality release is located <a href="https://github.com/dotnet/orleans/releases/latest">here</a>.</p>
+<p>The latest clean development branch build from CI is located: <a href="https://ci.dot.net/job/dotnet_orleans/job/master/job/netfx-bvt/lastStableBuild/artifact/">here</a></p>
+<p>Nightly builds are published to <a href="https://dotnet.myget.org/gallery/orleans-ci">https://dotnet.myget.org/gallery/orleans-ci</a> . These builds pass all functional tests, but are not thoroughly tested as the stable builds or pre-release builds we push to NuGet.org</p>
+<h3 id="building-from-source">Building from source</h3>
+<p>Clone the sources from the GitHub <a href="https://github.com/dotnet/orleans">repo</a> </p>
+<p>Run the <code>Build.cmd</code> script to build the nuget packages locally,
+then reference the required NuGet packages from <code>/Artifacts/Release/*</code>.
+You can run <code>Test.cmd</code> to run all BVT tests, and <code>TestAll.cmd</code> to also run Functional tests (which take much longer)</p>
+<h3 id="building-and-running-tests-in-visual-studio-2017">Building and running tests in Visual Studio 2017</h3>
+<p>.NET Core 2.0 SDK is a pre-requisite to build Orleans.sln.</p>
+<p>There might be errors trying to build from Visual Studio because of conflicts with the test discovery engine (error says could not copy <code>xunit.abstractions.dll</code>).
+The reason for that error is that you need to configure the test runner in VS like so (after opening the solution):</p>
+<ul>
+<li><code>Test</code> -&gt; <code>Test Settings</code> -&gt; Uncheck <code>Keep Test Execution Engine running</code></li>
+<li><code>Test</code> -&gt; <code>Test Settings</code> -&gt; <code>Default Processor Architecture</code> -&gt; Check <code>X64</code></li>
+</ul>
+<p>Then either restart VS, or go to the task manager and kill the processes that starts with <code>vstest.</code>. Then build once again and it should succeed and tests should appear in the <code>Test Explorer</code> window.</p>
+<h1 id="documentation">Documentation</h1>
+<p>Documentation is located <a href="http://dotnet.github.io/orleans/">here</a></p>
+<h1 id="code-examples">Code Examples</h1>
+<p>Create an interface for your grain:</p>
+<pre><code class="lang-c#">public interface IHello : Orleans.IGrainWithIntegerKey
+{
+  Task&lt;string&gt; SayHello(string greeting);
+}
+</code></pre><p>Provide an implementation of that interface:</p>
+<pre><code class="lang-c#">public class HelloGrain : Orleans.Grain, IHello
+{
+  Task&lt;string&gt; SayHello(string greeting)
+  {
+    return Task.FromResult($&quot;You said: &#39;{greeting}&#39;, I say: Hello!&quot;);
+  }
+}
+</code></pre><p>Call the grain from your Web service (or anywhere else):</p>
+<pre><code class="lang-c#">// Get a reference to the IHello grain with id &#39;0&#39;.
+var friend = GrainClient.GrainFactory.GetGrain&lt;IHello&gt;(0);
+
+// Send a greeting to the grain and await the response.
+Console.WriteLine(await friend.SayHello(&quot;Good morning, my friend!&quot;));
+</code></pre><h1 id="blog">Blog</h1>
+<p><a href="https://blogs.msdn.microsoft.com/orleans/">Orleans Blog</a> is a place to share our thoughts, plans, learnings, tips and tricks, and ideas, crazy and otherwise, which don’t easily fit the documentation format. We would also like to see here posts from the community members, sharing their experiences, ideas, and wisdom. 
+So, welcome to Orleans Blog, both as a reader and as a blogger!</p>
+<h1 id="community">Community</h1>
+<ul>
+<li><p>Ask questions by <a href="https://github.com/dotnet/orleans/issues">opening an issue on GitHub</a> or on <a href="https://stackoverflow.com/questions/ask?tags=orleans">Stack Overflow</a></p>
+</li>
+<li><p><a href="https://gitter.im/dotnet/orleans">Chat on Gitter</a></p>
+</li>
+<li><p>Follow the <a href="https://twitter.com/MSFTOrleans">@MSFTOrleans</a> Twitter account for Orleans announcements.</p>
+</li>
+<li><p><a href="https://github.com/OrleansContrib/">OrleansContrib - Repository of community add-ons to Orleans</a> Various community projects, including Orleans Monitoring, Design Patterns, Storage Provider, etc.</p>
+</li>
+<li><p>Guidelines for developers wanting to <a href="http://dotnet.github.io/orleans/Community/Contributing.html">contribute code changes to Orleans</a>.</p>
+</li>
+<li><p>You are also encouraged to report bugs or start a technical discussion by starting a new <a href="https://github.com/dotnet/orleans/issues">thread</a> on GitHub.</p>
+</li>
+</ul>
+<h1 id="license">License</h1>
+<p>This project is licensed under the <a href="https://github.com/dotnet/orleans/blob/master/LICENSE">MIT license</a>.</p>
+<h1 id="quick-links">Quick Links</h1>
+<ul>
+<li><a href="http://research.microsoft.com/projects/orleans/">MSR-ProjectOrleans</a></li>
+<li>Orleans Tech Report - <a href="http://research.microsoft.com/apps/pubs/default.aspx?id=210931">Distributed Virtual Actors for Programmability and Scalability</a></li>
+<li><a href="https://github.com/dotnet/orleans">Orleans-GitHub</a></li>
+<li><a href="http://dotnet.github.io/orleans/">Orleans Documentation</a></li>
+<li><a href="http://dotnet.github.io/orleans/Community/Contributing.html">Contributing</a></li>
+</ul>
+<p>This project has adopted the <a href="https://opensource.microsoft.com/codeofconduct/">Microsoft Open Source Code of Conduct</a>. For more information see the <a href="https://opensource.microsoft.com/codeofconduct/faq/">Code of Conduct FAQ</a> or contact <a href="mailto:opencode@microsoft.com">opencode@microsoft.com</a> with any additional questions or comments.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/README.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
+</html>

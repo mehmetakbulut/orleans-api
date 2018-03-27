@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace Orleans.Streams
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace Orleans.Streams
+   ">
+    <meta name="generator" content="docfx 2.33.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Orleans.Streams">
+  
+  <h1 id="Orleans_Streams" data-uid="Orleans.Streams" class="text-break">Namespace Orleans.Streams
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="Orleans.Streams.AsyncObservableExtensions.html">AsyncObservableExtensions</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Orleans.Streams.ClusterClientPubSubStreamConfigurator-1.html">ClusterClientPubSubStreamConfigurator&lt;TDataAdapter&gt;</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Orleans.Streams.ClusterClientSqsStreamConfigurator.html">ClusterClientSqsStreamConfigurator</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Orleans.Streams.RegexStreamNamespacePredicate.html">RegexStreamNamespacePredicate</a></h4>
+      <section><p><a class="xref" href="Orleans.Streams.IStreamNamespacePredicate.html">IStreamNamespacePredicate</a> implementation allowing to filter stream namespaces by regular
+expression.</p>
+</section>
+      <h4><a class="xref" href="Orleans.Streams.SiloPubSubStreamConfigurator-1.html">SiloPubSubStreamConfigurator&lt;TDataAdapter&gt;</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Orleans.Streams.SiloSqsStreamConfigurator.html">SiloSqsStreamConfigurator</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Orleans.Streams.StreamSequenceToken.html">StreamSequenceToken</a></h4>
+      <section><p>Handle representing stream sequence number/token.
+Consumer may subsribe to the stream while specifying the start of the subsription sequence token.
+That means that the stream infarstructure will deliver stream events starting from this sequence token.</p>
+</section>
+      <h4><a class="xref" href="Orleans.Streams.StreamSequenceTokenUtilities.html">StreamSequenceTokenUtilities</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Orleans.Streams.StreamSubscriptionHandle-1.html">StreamSubscriptionHandle&lt;T&gt;</a></h4>
+      <section><p>Handle representing this subsription.
+Consumer may serialize and store the handle in order to unsubsribe later, for example
+in another activation on this grain.</p>
+</section>
+      <h4><a class="xref" href="Orleans.Streams.StreamSubscriptionHandleExtensions.html">StreamSubscriptionHandleExtensions</a></h4>
+      <section></section>
+    <h3 id="interfaces">Interfaces
+  </h3>
+      <h4><a class="xref" href="Orleans.Streams.IAsyncBatchObserver-1.html">IAsyncBatchObserver&lt;T&gt;</a></h4>
+      <section><p>This interface generalizes the IAsyncObserver interface to allow production and consumption of batches of items.
+<p>
+Note that this interface is implemented by item consumers and invoked (used) by item producers.
+This means that the consumer endpoint of a stream implements this interface.
+</p></p>
+</section>
+      <h4><a class="xref" href="Orleans.Streams.IAsyncObservable-1.html">IAsyncObservable&lt;T&gt;</a></h4>
+      <section><p>This interface generalizes the standard .NET IObserveable interface to allow asynchronous consumption of items.
+Asynchronous here means that the consumer can process items asynchronously and signal item completion to the 
+producer by completing the returned Task.
+<p>
+Note that this interface is invoked (used) by item consumers and implemented by item producers.
+This means that the producer endpoint of a stream implements this interface.
+</p></p>
+</section>
+      <h4><a class="xref" href="Orleans.Streams.IAsyncObserver-1.html">IAsyncObserver&lt;T&gt;</a></h4>
+      <section><p>This interface generalizes the standard .NET IObserver interface to allow asynchronous production of items.
+<p>
+Note that this interface is implemented by item consumers and invoked (used) by item producers.
+This means that the consumer endpoint of a stream implements this interface.
+</p></p>
+</section>
+      <h4><a class="xref" href="Orleans.Streams.IAsyncStream-1.html">IAsyncStream&lt;T&gt;</a></h4>
+      <section><p>This interface represents an object that serves as a distributed rendevous between producers and consumers.
+It is similar to a Reactive Framework <pre><code>Subject</code></pre> and implements</p>
+<pre><code>IObserver</code></pre> nor <pre><code>IObservable</code></pre> interfaces.
+</section>
+      <h4><a class="xref" href="Orleans.Streams.IStreamIdentity.html">IStreamIdentity</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Orleans.Streams.IStreamNamespacePredicate.html">IStreamNamespacePredicate</a></h4>
+      <section><p>Stream namespace predicate used for filtering implicit subscriptions using 
+<a class="xref" href="Orleans.ImplicitStreamSubscriptionAttribute.html">ImplicitStreamSubscriptionAttribute</a>.</p>
+</section>
+      <h4><a class="xref" href="Orleans.Streams.IStreamProvider.html">IStreamProvider</a></h4>
+      <section></section>
+    <h3 id="delegates">Delegates
+  </h3>
+      <h4><a class="xref" href="Orleans.Streams.StreamFilterPredicate.html">StreamFilterPredicate</a></h4>
+      <section></section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

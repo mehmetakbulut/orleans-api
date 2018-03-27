@@ -1,0 +1,864 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class AsyncObservableExtensions
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class AsyncObservableExtensions
+   ">
+    <meta name="generator" content="docfx 2.33.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Orleans.Streams.AsyncObservableExtensions">
+  
+  
+  <h1 id="Orleans_Streams_AsyncObservableExtensions" data-uid="Orleans.Streams.AsyncObservableExtensions" class="text-break">Class AsyncObservableExtensions
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">AsyncObservableExtensions</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Orleans.Streams.html">Orleans.Streams</a></h6>
+  <h6><strong>Assembly</strong>: Orleans.Core.Abstractions.dll</h6>
+  <h5 id="Orleans_Streams_AsyncObservableExtensions_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class AsyncObservableExtensions : object</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Streams_AsyncObservableExtensions_SubscribeAsync__1_Orleans_Streams_IAsyncObservable___0__Func___0_Orleans_Streams_StreamSequenceToken_Task__.md&amp;value=---%0Auid%3A%20Orleans.Streams.AsyncObservableExtensions.SubscribeAsync%60%601(Orleans.Streams.IAsyncObservable%7B%60%600%7D%2CFunc%7B%60%600%2COrleans.Streams.StreamSequenceToken%2CTask%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Abstractions/Streams/Extensions/AsyncObservableExtensions.cs/#L82">View Source</a>
+  </span>
+  <a id="Orleans_Streams_AsyncObservableExtensions_SubscribeAsync_" data-uid="Orleans.Streams.AsyncObservableExtensions.SubscribeAsync*"></a>
+  <h4 id="Orleans_Streams_AsyncObservableExtensions_SubscribeAsync__1_Orleans_Streams_IAsyncObservable___0__Func___0_Orleans_Streams_StreamSequenceToken_Task__" data-uid="Orleans.Streams.AsyncObservableExtensions.SubscribeAsync``1(Orleans.Streams.IAsyncObservable{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task})">SubscribeAsync&lt;T&gt;(IAsyncObservable&lt;T&gt;, Func&lt;T, StreamSequenceToken, Task&gt;)</h4>
+  <div class="markdown level1 summary"><p>Subscribe a consumer to this observable using delegates.
+This method is a helper for the IAsyncObservable.SubscribeAsync allowing the subscribing class to inline the 
+handler methods instead of requiring an instance of IAsyncObserver.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;StreamSubscriptionHandle&lt;T&gt;&gt; SubscribeAsync&lt;T&gt;(this IAsyncObservable&lt;T&gt; obs, Func&lt;T, StreamSequenceToken, Task&gt; onNextAsync)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.Streams.IAsyncObservable-1.html">IAsyncObservable</a>&lt;T&gt;</td>
+        <td><span class="parametername">obs</span></td>
+        <td><p>The Observable object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;T, <a class="xref" href="Orleans.Streams.StreamSequenceToken.html">StreamSequenceToken</a>, <span class="xref">Task</span>&gt;</td>
+        <td><span class="parametername">onNextAsync</span></td>
+        <td><p>Delegte that is called for IAsyncObserver.OnNextAsync.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Orleans.Streams.StreamSubscriptionHandle-1.html">StreamSubscriptionHandle</a>&lt;T&gt;&gt;</td>
+        <td><p>A promise for a StreamSubscriptionHandle that represents the subscription.
+The consumer may unsubscribe by using this handle.
+The subscription remains active for as long as it is not explicitely unsubscribed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of object produced by the observable.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Streams_AsyncObservableExtensions_SubscribeAsync__1_Orleans_Streams_IAsyncObservable___0__Func___0_Orleans_Streams_StreamSequenceToken_Task__Func_Exception_Task__.md&amp;value=---%0Auid%3A%20Orleans.Streams.AsyncObservableExtensions.SubscribeAsync%60%601(Orleans.Streams.IAsyncObservable%7B%60%600%7D%2CFunc%7B%60%600%2COrleans.Streams.StreamSequenceToken%2CTask%7D%2CFunc%7BException%2CTask%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Abstractions/Streams/Extensions/AsyncObservableExtensions.cs/#L45">View Source</a>
+  </span>
+  <a id="Orleans_Streams_AsyncObservableExtensions_SubscribeAsync_" data-uid="Orleans.Streams.AsyncObservableExtensions.SubscribeAsync*"></a>
+  <h4 id="Orleans_Streams_AsyncObservableExtensions_SubscribeAsync__1_Orleans_Streams_IAsyncObservable___0__Func___0_Orleans_Streams_StreamSequenceToken_Task__Func_Exception_Task__" data-uid="Orleans.Streams.AsyncObservableExtensions.SubscribeAsync``1(Orleans.Streams.IAsyncObservable{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task},Func{Exception,Task})">SubscribeAsync&lt;T&gt;(IAsyncObservable&lt;T&gt;, Func&lt;T, StreamSequenceToken, Task&gt;, Func&lt;Exception, Task&gt;)</h4>
+  <div class="markdown level1 summary"><p>Subscribe a consumer to this observable using delegates.
+This method is a helper for the IAsyncObservable.SubscribeAsync allowing the subscribing class to inline the 
+handler methods instead of requiring an instance of IAsyncObserver.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;StreamSubscriptionHandle&lt;T&gt;&gt; SubscribeAsync&lt;T&gt;(this IAsyncObservable&lt;T&gt; obs, Func&lt;T, StreamSequenceToken, Task&gt; onNextAsync, Func&lt;Exception, Task&gt; onErrorAsync)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.Streams.IAsyncObservable-1.html">IAsyncObservable</a>&lt;T&gt;</td>
+        <td><span class="parametername">obs</span></td>
+        <td><p>The Observable object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;T, <a class="xref" href="Orleans.Streams.StreamSequenceToken.html">StreamSequenceToken</a>, <span class="xref">Task</span>&gt;</td>
+        <td><span class="parametername">onNextAsync</span></td>
+        <td><p>Delegte that is called for IAsyncObserver.OnNextAsync.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<span class="xref">Exception</span>, <span class="xref">Task</span>&gt;</td>
+        <td><span class="parametername">onErrorAsync</span></td>
+        <td><p>Delegte that is called for IAsyncObserver.OnErrorAsync.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Orleans.Streams.StreamSubscriptionHandle-1.html">StreamSubscriptionHandle</a>&lt;T&gt;&gt;</td>
+        <td><p>A promise for a StreamSubscriptionHandle that represents the subscription.
+The consumer may unsubscribe by using this handle.
+The subscription remains active for as long as it is not explicitely unsubscribed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of object produced by the observable.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Streams_AsyncObservableExtensions_SubscribeAsync__1_Orleans_Streams_IAsyncObservable___0__Func___0_Orleans_Streams_StreamSequenceToken_Task__Func_Exception_Task__Func_Task__.md&amp;value=---%0Auid%3A%20Orleans.Streams.AsyncObservableExtensions.SubscribeAsync%60%601(Orleans.Streams.IAsyncObservable%7B%60%600%7D%2CFunc%7B%60%600%2COrleans.Streams.StreamSequenceToken%2CTask%7D%2CFunc%7BException%2CTask%7D%2CFunc%7BTask%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Abstractions/Streams/Extensions/AsyncObservableExtensions.cs/#L24">View Source</a>
+  </span>
+  <a id="Orleans_Streams_AsyncObservableExtensions_SubscribeAsync_" data-uid="Orleans.Streams.AsyncObservableExtensions.SubscribeAsync*"></a>
+  <h4 id="Orleans_Streams_AsyncObservableExtensions_SubscribeAsync__1_Orleans_Streams_IAsyncObservable___0__Func___0_Orleans_Streams_StreamSequenceToken_Task__Func_Exception_Task__Func_Task__" data-uid="Orleans.Streams.AsyncObservableExtensions.SubscribeAsync``1(Orleans.Streams.IAsyncObservable{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task},Func{Exception,Task},Func{Task})">SubscribeAsync&lt;T&gt;(IAsyncObservable&lt;T&gt;, Func&lt;T, StreamSequenceToken, Task&gt;, Func&lt;Exception, Task&gt;, Func&lt;Task&gt;)</h4>
+  <div class="markdown level1 summary"><p>Subscribe a consumer to this observable using delegates.
+This method is a helper for the IAsyncObservable.SubscribeAsync allowing the subscribing class to inline the 
+handler methods instead of requiring an instance of IAsyncObserver.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;StreamSubscriptionHandle&lt;T&gt;&gt; SubscribeAsync&lt;T&gt;(this IAsyncObservable&lt;T&gt; obs, Func&lt;T, StreamSequenceToken, Task&gt; onNextAsync, Func&lt;Exception, Task&gt; onErrorAsync, Func&lt;Task&gt; onCompletedAsync)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.Streams.IAsyncObservable-1.html">IAsyncObservable</a>&lt;T&gt;</td>
+        <td><span class="parametername">obs</span></td>
+        <td><p>The Observable object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;T, <a class="xref" href="Orleans.Streams.StreamSequenceToken.html">StreamSequenceToken</a>, <span class="xref">Task</span>&gt;</td>
+        <td><span class="parametername">onNextAsync</span></td>
+        <td><p>Delegte that is called for IAsyncObserver.OnNextAsync.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<span class="xref">Exception</span>, <span class="xref">Task</span>&gt;</td>
+        <td><span class="parametername">onErrorAsync</span></td>
+        <td><p>Delegte that is called for IAsyncObserver.OnErrorAsync.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<span class="xref">Task</span>&gt;</td>
+        <td><span class="parametername">onCompletedAsync</span></td>
+        <td><p>Delegte that is called for IAsyncObserver.OnCompletedAsync.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Orleans.Streams.StreamSubscriptionHandle-1.html">StreamSubscriptionHandle</a>&lt;T&gt;&gt;</td>
+        <td><p>A promise for a StreamSubscriptionHandle that represents the subscription.
+The consumer may unsubscribe by using this handle.
+The subscription remains active for as long as it is not explicitely unsubscribed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of object produced by the observable.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Streams_AsyncObservableExtensions_SubscribeAsync__1_Orleans_Streams_IAsyncObservable___0__Func___0_Orleans_Streams_StreamSequenceToken_Task__Func_Exception_Task__Func_Task__Orleans_Streams_StreamSequenceToken_Orleans_Streams_StreamFilterPredicate_System_Object_.md&amp;value=---%0Auid%3A%20Orleans.Streams.AsyncObservableExtensions.SubscribeAsync%60%601(Orleans.Streams.IAsyncObservable%7B%60%600%7D%2CFunc%7B%60%600%2COrleans.Streams.StreamSequenceToken%2CTask%7D%2CFunc%7BException%2CTask%7D%2CFunc%7BTask%7D%2COrleans.Streams.StreamSequenceToken%2COrleans.Streams.StreamFilterPredicate%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Abstractions/Streams/Extensions/AsyncObservableExtensions.cs/#L109">View Source</a>
+  </span>
+  <a id="Orleans_Streams_AsyncObservableExtensions_SubscribeAsync_" data-uid="Orleans.Streams.AsyncObservableExtensions.SubscribeAsync*"></a>
+  <h4 id="Orleans_Streams_AsyncObservableExtensions_SubscribeAsync__1_Orleans_Streams_IAsyncObservable___0__Func___0_Orleans_Streams_StreamSequenceToken_Task__Func_Exception_Task__Func_Task__Orleans_Streams_StreamSequenceToken_Orleans_Streams_StreamFilterPredicate_System_Object_" data-uid="Orleans.Streams.AsyncObservableExtensions.SubscribeAsync``1(Orleans.Streams.IAsyncObservable{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task},Func{Exception,Task},Func{Task},Orleans.Streams.StreamSequenceToken,Orleans.Streams.StreamFilterPredicate,System.Object)">SubscribeAsync&lt;T&gt;(IAsyncObservable&lt;T&gt;, Func&lt;T, StreamSequenceToken, Task&gt;, Func&lt;Exception, Task&gt;, Func&lt;Task&gt;, StreamSequenceToken, StreamFilterPredicate, Object)</h4>
+  <div class="markdown level1 summary"><p>Subscribe a consumer to this observable using delegates.
+This method is a helper for the IAsyncObservable.SubscribeAsync allowing the subscribing class to inline the 
+handler methods instead of requiring an instance of IAsyncObserver.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;StreamSubscriptionHandle&lt;T&gt;&gt; SubscribeAsync&lt;T&gt;(this IAsyncObservable&lt;T&gt; obs, Func&lt;T, StreamSequenceToken, Task&gt; onNextAsync, Func&lt;Exception, Task&gt; onErrorAsync, Func&lt;Task&gt; onCompletedAsync, StreamSequenceToken token, StreamFilterPredicate filterFunc = null, object filterData = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.Streams.IAsyncObservable-1.html">IAsyncObservable</a>&lt;T&gt;</td>
+        <td><span class="parametername">obs</span></td>
+        <td><p>The Observable object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;T, <a class="xref" href="Orleans.Streams.StreamSequenceToken.html">StreamSequenceToken</a>, <span class="xref">Task</span>&gt;</td>
+        <td><span class="parametername">onNextAsync</span></td>
+        <td><p>Delegte that is called for IAsyncObserver.OnNextAsync.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<span class="xref">Exception</span>, <span class="xref">Task</span>&gt;</td>
+        <td><span class="parametername">onErrorAsync</span></td>
+        <td><p>Delegte that is called for IAsyncObserver.OnErrorAsync.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<span class="xref">Task</span>&gt;</td>
+        <td><span class="parametername">onCompletedAsync</span></td>
+        <td><p>Delegte that is called for IAsyncObserver.OnCompletedAsync.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Orleans.Streams.StreamSequenceToken.html">StreamSequenceToken</a></td>
+        <td><span class="parametername">token</span></td>
+        <td><p>The stream sequence to be used as an offset to start the subscription from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Orleans.Streams.StreamFilterPredicate.html">StreamFilterPredicate</a></td>
+        <td><span class="parametername">filterFunc</span></td>
+        <td><p>Filter to be applied for this subscription</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">filterData</span></td>
+        <td><p>Data object that will be passed in to the filterFunc.
+This will usually contain any paramaters required by the filterFunc to make it&apos;s filtering decision.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Orleans.Streams.StreamSubscriptionHandle-1.html">StreamSubscriptionHandle</a>&lt;T&gt;&gt;</td>
+        <td><p>A promise for a StreamSubscriptionHandle that represents the subscription.
+The consumer may unsubscribe by using this handle.
+The subscription remains active for as long as it is not explicitely unsubscribed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of object produced by the observable.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Streams_AsyncObservableExtensions_SubscribeAsync__1_Orleans_Streams_IAsyncObservable___0__Func___0_Orleans_Streams_StreamSequenceToken_Task__Func_Exception_Task__Orleans_Streams_StreamSequenceToken_Orleans_Streams_StreamFilterPredicate_System_Object_.md&amp;value=---%0Auid%3A%20Orleans.Streams.AsyncObservableExtensions.SubscribeAsync%60%601(Orleans.Streams.IAsyncObservable%7B%60%600%7D%2CFunc%7B%60%600%2COrleans.Streams.StreamSequenceToken%2CTask%7D%2CFunc%7BException%2CTask%7D%2COrleans.Streams.StreamSequenceToken%2COrleans.Streams.StreamFilterPredicate%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Abstractions/Streams/Extensions/AsyncObservableExtensions.cs/#L140">View Source</a>
+  </span>
+  <a id="Orleans_Streams_AsyncObservableExtensions_SubscribeAsync_" data-uid="Orleans.Streams.AsyncObservableExtensions.SubscribeAsync*"></a>
+  <h4 id="Orleans_Streams_AsyncObservableExtensions_SubscribeAsync__1_Orleans_Streams_IAsyncObservable___0__Func___0_Orleans_Streams_StreamSequenceToken_Task__Func_Exception_Task__Orleans_Streams_StreamSequenceToken_Orleans_Streams_StreamFilterPredicate_System_Object_" data-uid="Orleans.Streams.AsyncObservableExtensions.SubscribeAsync``1(Orleans.Streams.IAsyncObservable{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task},Func{Exception,Task},Orleans.Streams.StreamSequenceToken,Orleans.Streams.StreamFilterPredicate,System.Object)">SubscribeAsync&lt;T&gt;(IAsyncObservable&lt;T&gt;, Func&lt;T, StreamSequenceToken, Task&gt;, Func&lt;Exception, Task&gt;, StreamSequenceToken, StreamFilterPredicate, Object)</h4>
+  <div class="markdown level1 summary"><p>Subscribe a consumer to this observable using delegates.
+This method is a helper for the IAsyncObservable.SubscribeAsync allowing the subscribing class to inline the 
+handler methods instead of requiring an instance of IAsyncObserver.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;StreamSubscriptionHandle&lt;T&gt;&gt; SubscribeAsync&lt;T&gt;(this IAsyncObservable&lt;T&gt; obs, Func&lt;T, StreamSequenceToken, Task&gt; onNextAsync, Func&lt;Exception, Task&gt; onErrorAsync, StreamSequenceToken token, StreamFilterPredicate filterFunc = null, object filterData = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.Streams.IAsyncObservable-1.html">IAsyncObservable</a>&lt;T&gt;</td>
+        <td><span class="parametername">obs</span></td>
+        <td><p>The Observable object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;T, <a class="xref" href="Orleans.Streams.StreamSequenceToken.html">StreamSequenceToken</a>, <span class="xref">Task</span>&gt;</td>
+        <td><span class="parametername">onNextAsync</span></td>
+        <td><p>Delegte that is called for IAsyncObserver.OnNextAsync.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<span class="xref">Exception</span>, <span class="xref">Task</span>&gt;</td>
+        <td><span class="parametername">onErrorAsync</span></td>
+        <td><p>Delegte that is called for IAsyncObserver.OnErrorAsync.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Orleans.Streams.StreamSequenceToken.html">StreamSequenceToken</a></td>
+        <td><span class="parametername">token</span></td>
+        <td><p>The stream sequence to be used as an offset to start the subscription from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Orleans.Streams.StreamFilterPredicate.html">StreamFilterPredicate</a></td>
+        <td><span class="parametername">filterFunc</span></td>
+        <td><p>Filter to be applied for this subscription</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">filterData</span></td>
+        <td><p>Data object that will be passed in to the filterFunc.
+This will usually contain any paramaters required by the filterFunc to make it&apos;s filtering decision.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Orleans.Streams.StreamSubscriptionHandle-1.html">StreamSubscriptionHandle</a>&lt;T&gt;&gt;</td>
+        <td><p>A promise for a StreamSubscriptionHandle that represents the subscription.
+The consumer may unsubscribe by using this handle.
+The subscription remains active for as long as it is not explicitely unsubscribed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of object produced by the observable.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Streams_AsyncObservableExtensions_SubscribeAsync__1_Orleans_Streams_IAsyncObservable___0__Func___0_Orleans_Streams_StreamSequenceToken_Task__Func_Task__.md&amp;value=---%0Auid%3A%20Orleans.Streams.AsyncObservableExtensions.SubscribeAsync%60%601(Orleans.Streams.IAsyncObservable%7B%60%600%7D%2CFunc%7B%60%600%2COrleans.Streams.StreamSequenceToken%2CTask%7D%2CFunc%7BTask%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Abstractions/Streams/Extensions/AsyncObservableExtensions.cs/#L64">View Source</a>
+  </span>
+  <a id="Orleans_Streams_AsyncObservableExtensions_SubscribeAsync_" data-uid="Orleans.Streams.AsyncObservableExtensions.SubscribeAsync*"></a>
+  <h4 id="Orleans_Streams_AsyncObservableExtensions_SubscribeAsync__1_Orleans_Streams_IAsyncObservable___0__Func___0_Orleans_Streams_StreamSequenceToken_Task__Func_Task__" data-uid="Orleans.Streams.AsyncObservableExtensions.SubscribeAsync``1(Orleans.Streams.IAsyncObservable{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task},Func{Task})">SubscribeAsync&lt;T&gt;(IAsyncObservable&lt;T&gt;, Func&lt;T, StreamSequenceToken, Task&gt;, Func&lt;Task&gt;)</h4>
+  <div class="markdown level1 summary"><p>Subscribe a consumer to this observable using delegates.
+This method is a helper for the IAsyncObservable.SubscribeAsync allowing the subscribing class to inline the 
+handler methods instead of requiring an instance of IAsyncObserver.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;StreamSubscriptionHandle&lt;T&gt;&gt; SubscribeAsync&lt;T&gt;(this IAsyncObservable&lt;T&gt; obs, Func&lt;T, StreamSequenceToken, Task&gt; onNextAsync, Func&lt;Task&gt; onCompletedAsync)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.Streams.IAsyncObservable-1.html">IAsyncObservable</a>&lt;T&gt;</td>
+        <td><span class="parametername">obs</span></td>
+        <td><p>The Observable object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;T, <a class="xref" href="Orleans.Streams.StreamSequenceToken.html">StreamSequenceToken</a>, <span class="xref">Task</span>&gt;</td>
+        <td><span class="parametername">onNextAsync</span></td>
+        <td><p>Delegte that is called for IAsyncObserver.OnNextAsync.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<span class="xref">Task</span>&gt;</td>
+        <td><span class="parametername">onCompletedAsync</span></td>
+        <td><p>Delegte that is called for IAsyncObserver.OnCompletedAsync.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Orleans.Streams.StreamSubscriptionHandle-1.html">StreamSubscriptionHandle</a>&lt;T&gt;&gt;</td>
+        <td><p>A promise for a StreamSubscriptionHandle that represents the subscription.
+The consumer may unsubscribe by using this handle.
+The subscription remains active for as long as it is not explicitely unsubscribed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of object produced by the observable.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Streams_AsyncObservableExtensions_SubscribeAsync__1_Orleans_Streams_IAsyncObservable___0__Func___0_Orleans_Streams_StreamSequenceToken_Task__Func_Task__Orleans_Streams_StreamSequenceToken_Orleans_Streams_StreamFilterPredicate_System_Object_.md&amp;value=---%0Auid%3A%20Orleans.Streams.AsyncObservableExtensions.SubscribeAsync%60%601(Orleans.Streams.IAsyncObservable%7B%60%600%7D%2CFunc%7B%60%600%2COrleans.Streams.StreamSequenceToken%2CTask%7D%2CFunc%7BTask%7D%2COrleans.Streams.StreamSequenceToken%2COrleans.Streams.StreamFilterPredicate%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Abstractions/Streams/Extensions/AsyncObservableExtensions.cs/#L169">View Source</a>
+  </span>
+  <a id="Orleans_Streams_AsyncObservableExtensions_SubscribeAsync_" data-uid="Orleans.Streams.AsyncObservableExtensions.SubscribeAsync*"></a>
+  <h4 id="Orleans_Streams_AsyncObservableExtensions_SubscribeAsync__1_Orleans_Streams_IAsyncObservable___0__Func___0_Orleans_Streams_StreamSequenceToken_Task__Func_Task__Orleans_Streams_StreamSequenceToken_Orleans_Streams_StreamFilterPredicate_System_Object_" data-uid="Orleans.Streams.AsyncObservableExtensions.SubscribeAsync``1(Orleans.Streams.IAsyncObservable{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task},Func{Task},Orleans.Streams.StreamSequenceToken,Orleans.Streams.StreamFilterPredicate,System.Object)">SubscribeAsync&lt;T&gt;(IAsyncObservable&lt;T&gt;, Func&lt;T, StreamSequenceToken, Task&gt;, Func&lt;Task&gt;, StreamSequenceToken, StreamFilterPredicate, Object)</h4>
+  <div class="markdown level1 summary"><p>Subscribe a consumer to this observable using delegates.
+This method is a helper for the IAsyncObservable.SubscribeAsync allowing the subscribing class to inline the 
+handler methods instead of requiring an instance of IAsyncObserver.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;StreamSubscriptionHandle&lt;T&gt;&gt; SubscribeAsync&lt;T&gt;(this IAsyncObservable&lt;T&gt; obs, Func&lt;T, StreamSequenceToken, Task&gt; onNextAsync, Func&lt;Task&gt; onCompletedAsync, StreamSequenceToken token, StreamFilterPredicate filterFunc = null, object filterData = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.Streams.IAsyncObservable-1.html">IAsyncObservable</a>&lt;T&gt;</td>
+        <td><span class="parametername">obs</span></td>
+        <td><p>The Observable object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;T, <a class="xref" href="Orleans.Streams.StreamSequenceToken.html">StreamSequenceToken</a>, <span class="xref">Task</span>&gt;</td>
+        <td><span class="parametername">onNextAsync</span></td>
+        <td><p>Delegte that is called for IAsyncObserver.OnNextAsync.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<span class="xref">Task</span>&gt;</td>
+        <td><span class="parametername">onCompletedAsync</span></td>
+        <td><p>Delegte that is called for IAsyncObserver.OnCompletedAsync.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Orleans.Streams.StreamSequenceToken.html">StreamSequenceToken</a></td>
+        <td><span class="parametername">token</span></td>
+        <td><p>The stream sequence to be used as an offset to start the subscription from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Orleans.Streams.StreamFilterPredicate.html">StreamFilterPredicate</a></td>
+        <td><span class="parametername">filterFunc</span></td>
+        <td><p>Filter to be applied for this subscription</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">filterData</span></td>
+        <td><p>Data object that will be passed in to the filterFunc.
+This will usually contain any paramaters required by the filterFunc to make it&apos;s filtering decision.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Orleans.Streams.StreamSubscriptionHandle-1.html">StreamSubscriptionHandle</a>&lt;T&gt;&gt;</td>
+        <td><p>A promise for a StreamSubscriptionHandle that represents the subscription.
+The consumer may unsubscribe by using this handle.
+The subscription remains active for as long as it is not explicitely unsubscribed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of object produced by the observable.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Streams_AsyncObservableExtensions_SubscribeAsync__1_Orleans_Streams_IAsyncObservable___0__Func___0_Orleans_Streams_StreamSequenceToken_Task__Orleans_Streams_StreamSequenceToken_Orleans_Streams_StreamFilterPredicate_System_Object_.md&amp;value=---%0Auid%3A%20Orleans.Streams.AsyncObservableExtensions.SubscribeAsync%60%601(Orleans.Streams.IAsyncObservable%7B%60%600%7D%2CFunc%7B%60%600%2COrleans.Streams.StreamSequenceToken%2CTask%7D%2COrleans.Streams.StreamSequenceToken%2COrleans.Streams.StreamFilterPredicate%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Abstractions/Streams/Extensions/AsyncObservableExtensions.cs/#L197">View Source</a>
+  </span>
+  <a id="Orleans_Streams_AsyncObservableExtensions_SubscribeAsync_" data-uid="Orleans.Streams.AsyncObservableExtensions.SubscribeAsync*"></a>
+  <h4 id="Orleans_Streams_AsyncObservableExtensions_SubscribeAsync__1_Orleans_Streams_IAsyncObservable___0__Func___0_Orleans_Streams_StreamSequenceToken_Task__Orleans_Streams_StreamSequenceToken_Orleans_Streams_StreamFilterPredicate_System_Object_" data-uid="Orleans.Streams.AsyncObservableExtensions.SubscribeAsync``1(Orleans.Streams.IAsyncObservable{``0},Func{``0,Orleans.Streams.StreamSequenceToken,Task},Orleans.Streams.StreamSequenceToken,Orleans.Streams.StreamFilterPredicate,System.Object)">SubscribeAsync&lt;T&gt;(IAsyncObservable&lt;T&gt;, Func&lt;T, StreamSequenceToken, Task&gt;, StreamSequenceToken, StreamFilterPredicate, Object)</h4>
+  <div class="markdown level1 summary"><p>Subscribe a consumer to this observable using delegates.
+This method is a helper for the IAsyncObservable.SubscribeAsync allowing the subscribing class to inline the 
+handler methods instead of requiring an instance of IAsyncObserver.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;StreamSubscriptionHandle&lt;T&gt;&gt; SubscribeAsync&lt;T&gt;(this IAsyncObservable&lt;T&gt; obs, Func&lt;T, StreamSequenceToken, Task&gt; onNextAsync, StreamSequenceToken token, StreamFilterPredicate filterFunc = null, object filterData = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.Streams.IAsyncObservable-1.html">IAsyncObservable</a>&lt;T&gt;</td>
+        <td><span class="parametername">obs</span></td>
+        <td><p>The Observable object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;T, <a class="xref" href="Orleans.Streams.StreamSequenceToken.html">StreamSequenceToken</a>, <span class="xref">Task</span>&gt;</td>
+        <td><span class="parametername">onNextAsync</span></td>
+        <td><p>Delegte that is called for IAsyncObserver.OnNextAsync.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Orleans.Streams.StreamSequenceToken.html">StreamSequenceToken</a></td>
+        <td><span class="parametername">token</span></td>
+        <td><p>The stream sequence to be used as an offset to start the subscription from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Orleans.Streams.StreamFilterPredicate.html">StreamFilterPredicate</a></td>
+        <td><span class="parametername">filterFunc</span></td>
+        <td><p>Filter to be applied for this subscription</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">filterData</span></td>
+        <td><p>Data object that will be passed in to the filterFunc.
+This will usually contain any paramaters required by the filterFunc to make it&apos;s filtering decision.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Orleans.Streams.StreamSubscriptionHandle-1.html">StreamSubscriptionHandle</a>&lt;T&gt;&gt;</td>
+        <td><p>A promise for a StreamSubscriptionHandle that represents the subscription.
+The consumer may unsubscribe by using this handle.
+The subscription remains active for as long as it is not explicitely unsubscribed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of object produced by the observable.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Streams_AsyncObservableExtensions.md&amp;value=---%0Auid%3A%20Orleans.Streams.AsyncObservableExtensions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Abstractions/Streams/Extensions/AsyncObservableExtensions.cs/#L6" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

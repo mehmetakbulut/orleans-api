@@ -1,0 +1,492 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class OrleansPerfCounterTelemetryConsumer
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class OrleansPerfCounterTelemetryConsumer
+   ">
+    <meta name="generator" content="docfx 2.33.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OrleansTelemetryConsumers.Counters.OrleansPerfCounterTelemetryConsumer">
+  
+  
+  <h1 id="OrleansTelemetryConsumers_Counters_OrleansPerfCounterTelemetryConsumer" data-uid="OrleansTelemetryConsumers.Counters.OrleansPerfCounterTelemetryConsumer" class="text-break">Class OrleansPerfCounterTelemetryConsumer
+  </h1>
+  <div class="markdown level0 summary"><p>Telemetry consumer that writes metrics to predefined performance counters.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">OrleansPerfCounterTelemetryConsumer</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OrleansTelemetryConsumers.Counters.html">OrleansTelemetryConsumers.Counters</a></h6>
+  <h6><strong>Assembly</strong>: Orleans.TelemetryConsumers.Counters.dll</h6>
+  <h5 id="OrleansTelemetryConsumers_Counters_OrleansPerfCounterTelemetryConsumer_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class OrleansPerfCounterTelemetryConsumer : IMetricTelemetryConsumer</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=OrleansTelemetryConsumers_Counters_OrleansPerfCounterTelemetryConsumer__ctor_ILoggerFactory_.md&amp;value=---%0Auid%3A%20OrleansTelemetryConsumers.Counters.OrleansPerfCounterTelemetryConsumer.%23ctor(ILoggerFactory)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.TelemetryConsumers.Counters/OrleansPerfCounterTelemetryConsumer.cs/#L30">View Source</a>
+  </span>
+  <a id="OrleansTelemetryConsumers_Counters_OrleansPerfCounterTelemetryConsumer__ctor_" data-uid="OrleansTelemetryConsumers.Counters.OrleansPerfCounterTelemetryConsumer.#ctor*"></a>
+  <h4 id="OrleansTelemetryConsumers_Counters_OrleansPerfCounterTelemetryConsumer__ctor_ILoggerFactory_" data-uid="OrleansTelemetryConsumers.Counters.OrleansPerfCounterTelemetryConsumer.#ctor(ILoggerFactory)">OrleansPerfCounterTelemetryConsumer(ILoggerFactory)</h4>
+  <div class="markdown level1 summary"><p>Default constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OrleansPerfCounterTelemetryConsumer(ILoggerFactory loggerFactory)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILoggerFactory</span></td>
+        <td><span class="parametername">loggerFactory</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=OrleansTelemetryConsumers_Counters_OrleansPerfCounterTelemetryConsumer_AreWindowsPerfCountersAvailable_ILogger_.md&amp;value=---%0Auid%3A%20OrleansTelemetryConsumers.Counters.OrleansPerfCounterTelemetryConsumer.AreWindowsPerfCountersAvailable(ILogger)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.TelemetryConsumers.Counters/OrleansPerfCounterTelemetryConsumer.cs/#L46">View Source</a>
+  </span>
+  <a id="OrleansTelemetryConsumers_Counters_OrleansPerfCounterTelemetryConsumer_AreWindowsPerfCountersAvailable_" data-uid="OrleansTelemetryConsumers.Counters.OrleansPerfCounterTelemetryConsumer.AreWindowsPerfCountersAvailable*"></a>
+  <h4 id="OrleansTelemetryConsumers_Counters_OrleansPerfCounterTelemetryConsumer_AreWindowsPerfCountersAvailable_ILogger_" data-uid="OrleansTelemetryConsumers.Counters.OrleansPerfCounterTelemetryConsumer.AreWindowsPerfCountersAvailable(ILogger)">AreWindowsPerfCountersAvailable(ILogger)</h4>
+  <div class="markdown level1 summary"><p>Checks to see if windows perf counters as supported by OS.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool AreWindowsPerfCountersAvailable(ILogger logger)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=OrleansTelemetryConsumers_Counters_OrleansPerfCounterTelemetryConsumer_Close.md&amp;value=---%0Auid%3A%20OrleansTelemetryConsumers.Counters.OrleansPerfCounterTelemetryConsumer.Close%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.TelemetryConsumers.Counters/OrleansPerfCounterTelemetryConsumer.cs/#L182">View Source</a>
+  </span>
+  <a id="OrleansTelemetryConsumers_Counters_OrleansPerfCounterTelemetryConsumer_Close_" data-uid="OrleansTelemetryConsumers.Counters.OrleansPerfCounterTelemetryConsumer.Close*"></a>
+  <h4 id="OrleansTelemetryConsumers_Counters_OrleansPerfCounterTelemetryConsumer_Close" data-uid="OrleansTelemetryConsumers.Counters.OrleansPerfCounterTelemetryConsumer.Close">Close()</h4>
+  <div class="markdown level1 summary"><p>Close telemetry consumer</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Close()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=OrleansTelemetryConsumers_Counters_OrleansPerfCounterTelemetryConsumer_DecrementMetric_System_String_.md&amp;value=---%0Auid%3A%20OrleansTelemetryConsumers.Counters.OrleansPerfCounterTelemetryConsumer.DecrementMetric(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.TelemetryConsumers.Counters/OrleansPerfCounterTelemetryConsumer.cs/#L165">View Source</a>
+  </span>
+  <a id="OrleansTelemetryConsumers_Counters_OrleansPerfCounterTelemetryConsumer_DecrementMetric_" data-uid="OrleansTelemetryConsumers.Counters.OrleansPerfCounterTelemetryConsumer.DecrementMetric*"></a>
+  <h4 id="OrleansTelemetryConsumers_Counters_OrleansPerfCounterTelemetryConsumer_DecrementMetric_System_String_" data-uid="OrleansTelemetryConsumers.Counters.OrleansPerfCounterTelemetryConsumer.DecrementMetric(System.String)">DecrementMetric(String)</h4>
+  <div class="markdown level1 summary"><p>Decrement metric</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DecrementMetric(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>metric name</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=OrleansTelemetryConsumers_Counters_OrleansPerfCounterTelemetryConsumer_DecrementMetric_System_String_System_Double_.md&amp;value=---%0Auid%3A%20OrleansTelemetryConsumers.Counters.OrleansPerfCounterTelemetryConsumer.DecrementMetric(System.String%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.TelemetryConsumers.Counters/OrleansPerfCounterTelemetryConsumer.cs/#L172">View Source</a>
+  </span>
+  <a id="OrleansTelemetryConsumers_Counters_OrleansPerfCounterTelemetryConsumer_DecrementMetric_" data-uid="OrleansTelemetryConsumers.Counters.OrleansPerfCounterTelemetryConsumer.DecrementMetric*"></a>
+  <h4 id="OrleansTelemetryConsumers_Counters_OrleansPerfCounterTelemetryConsumer_DecrementMetric_System_String_System_Double_" data-uid="OrleansTelemetryConsumers.Counters.OrleansPerfCounterTelemetryConsumer.DecrementMetric(System.String,System.Double)">DecrementMetric(String, Double)</h4>
+  <div class="markdown level1 summary"><p>Decrement metric by value</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DecrementMetric(string name, double value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>metric name</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>metric value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=OrleansTelemetryConsumers_Counters_OrleansPerfCounterTelemetryConsumer_Flush.md&amp;value=---%0Auid%3A%20OrleansTelemetryConsumers.Counters.OrleansPerfCounterTelemetryConsumer.Flush%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.TelemetryConsumers.Counters/OrleansPerfCounterTelemetryConsumer.cs/#L177">View Source</a>
+  </span>
+  <a id="OrleansTelemetryConsumers_Counters_OrleansPerfCounterTelemetryConsumer_Flush_" data-uid="OrleansTelemetryConsumers.Counters.OrleansPerfCounterTelemetryConsumer.Flush*"></a>
+  <h4 id="OrleansTelemetryConsumers_Counters_OrleansPerfCounterTelemetryConsumer_Flush" data-uid="OrleansTelemetryConsumers.Counters.OrleansPerfCounterTelemetryConsumer.Flush">Flush()</h4>
+  <div class="markdown level1 summary"><p>Write all pending metrics</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Flush()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=OrleansTelemetryConsumers_Counters_OrleansPerfCounterTelemetryConsumer_IncrementMetric_System_String_.md&amp;value=---%0Auid%3A%20OrleansTelemetryConsumers.Counters.OrleansPerfCounterTelemetryConsumer.IncrementMetric(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.TelemetryConsumers.Counters/OrleansPerfCounterTelemetryConsumer.cs/#L136">View Source</a>
+  </span>
+  <a id="OrleansTelemetryConsumers_Counters_OrleansPerfCounterTelemetryConsumer_IncrementMetric_" data-uid="OrleansTelemetryConsumers.Counters.OrleansPerfCounterTelemetryConsumer.IncrementMetric*"></a>
+  <h4 id="OrleansTelemetryConsumers_Counters_OrleansPerfCounterTelemetryConsumer_IncrementMetric_System_String_" data-uid="OrleansTelemetryConsumers.Counters.OrleansPerfCounterTelemetryConsumer.IncrementMetric(System.String)">IncrementMetric(String)</h4>
+  <div class="markdown level1 summary"><p>Increment metric.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void IncrementMetric(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>metric name</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=OrleansTelemetryConsumers_Counters_OrleansPerfCounterTelemetryConsumer_IncrementMetric_System_String_System_Double_.md&amp;value=---%0Auid%3A%20OrleansTelemetryConsumers.Counters.OrleansPerfCounterTelemetryConsumer.IncrementMetric(System.String%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.TelemetryConsumers.Counters/OrleansPerfCounterTelemetryConsumer.cs/#L143">View Source</a>
+  </span>
+  <a id="OrleansTelemetryConsumers_Counters_OrleansPerfCounterTelemetryConsumer_IncrementMetric_" data-uid="OrleansTelemetryConsumers.Counters.OrleansPerfCounterTelemetryConsumer.IncrementMetric*"></a>
+  <h4 id="OrleansTelemetryConsumers_Counters_OrleansPerfCounterTelemetryConsumer_IncrementMetric_System_String_System_Double_" data-uid="OrleansTelemetryConsumers.Counters.OrleansPerfCounterTelemetryConsumer.IncrementMetric(System.String,System.Double)">IncrementMetric(String, Double)</h4>
+  <div class="markdown level1 summary"><p>Increment metric by value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void IncrementMetric(string name, double value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>metric name</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>metric value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=OrleansTelemetryConsumers_Counters_OrleansPerfCounterTelemetryConsumer_TrackMetric_System_String_System_Double_System_Collections_Generic_IDictionary_System_String_System_String__.md&amp;value=---%0Auid%3A%20OrleansTelemetryConsumers.Counters.OrleansPerfCounterTelemetryConsumer.TrackMetric(System.String%2CSystem.Double%2CSystem.Collections.Generic.IDictionary%7BSystem.String%2CSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.TelemetryConsumers.Counters/OrleansPerfCounterTelemetryConsumer.cs/#L151">View Source</a>
+  </span>
+  <a id="OrleansTelemetryConsumers_Counters_OrleansPerfCounterTelemetryConsumer_TrackMetric_" data-uid="OrleansTelemetryConsumers.Counters.OrleansPerfCounterTelemetryConsumer.TrackMetric*"></a>
+  <h4 id="OrleansTelemetryConsumers_Counters_OrleansPerfCounterTelemetryConsumer_TrackMetric_System_String_System_Double_System_Collections_Generic_IDictionary_System_String_System_String__" data-uid="OrleansTelemetryConsumers.Counters.OrleansPerfCounterTelemetryConsumer.TrackMetric(System.String,System.Double,System.Collections.Generic.IDictionary{System.String,System.String})">TrackMetric(String, Double, IDictionary&lt;String, String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Track metric value</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TrackMetric(string name, double value, IDictionary&lt;string, string&gt; properties = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>metric name</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>metric value</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IDictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">properties</span></td>
+        <td><p>related properties</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=OrleansTelemetryConsumers_Counters_OrleansPerfCounterTelemetryConsumer_TrackMetric_System_String_System_TimeSpan_System_Collections_Generic_IDictionary_System_String_System_String__.md&amp;value=---%0Auid%3A%20OrleansTelemetryConsumers.Counters.OrleansPerfCounterTelemetryConsumer.TrackMetric(System.String%2CSystem.TimeSpan%2CSystem.Collections.Generic.IDictionary%7BSystem.String%2CSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.TelemetryConsumers.Counters/OrleansPerfCounterTelemetryConsumer.cs/#L159">View Source</a>
+  </span>
+  <a id="OrleansTelemetryConsumers_Counters_OrleansPerfCounterTelemetryConsumer_TrackMetric_" data-uid="OrleansTelemetryConsumers.Counters.OrleansPerfCounterTelemetryConsumer.TrackMetric*"></a>
+  <h4 id="OrleansTelemetryConsumers_Counters_OrleansPerfCounterTelemetryConsumer_TrackMetric_System_String_System_TimeSpan_System_Collections_Generic_IDictionary_System_String_System_String__" data-uid="OrleansTelemetryConsumers.Counters.OrleansPerfCounterTelemetryConsumer.TrackMetric(System.String,System.TimeSpan,System.Collections.Generic.IDictionary{System.String,System.String})">TrackMetric(String, TimeSpan, IDictionary&lt;String, String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Track metric value</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TrackMetric(string name, TimeSpan value, IDictionary&lt;string, string&gt; properties = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>metric name</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.TimeSpan</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>metric value</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IDictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">properties</span></td>
+        <td><p>related properties</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Orleans.Concurrency.ImmutableExt.html#Orleans_Concurrency_ImmutableExt_AsImmutable__1___0_">ImmutableExt.AsImmutable&lt;T&gt;(T)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=OrleansTelemetryConsumers_Counters_OrleansPerfCounterTelemetryConsumer.md&amp;value=---%0Auid%3A%20OrleansTelemetryConsumers.Counters.OrleansPerfCounterTelemetryConsumer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.TelemetryConsumers.Counters/OrleansPerfCounterTelemetryConsumer.cs/#L14" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

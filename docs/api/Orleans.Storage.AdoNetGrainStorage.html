@@ -1,0 +1,638 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class AdoNetGrainStorage
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class AdoNetGrainStorage
+   ">
+    <meta name="generator" content="docfx 2.33.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Orleans.Storage.AdoNetGrainStorage">
+  
+  
+  <h1 id="Orleans_Storage_AdoNetGrainStorage" data-uid="Orleans.Storage.AdoNetGrainStorage" class="text-break">Class AdoNetGrainStorage
+  </h1>
+  <div class="markdown level0 summary"><p>A storage provider for writing grain state data to relational storage.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">AdoNetGrainStorage</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Orleans.ILifecycleParticipant-1.html">ILifecycleParticipant</a>&lt;<span class="xref">ISiloLifecycle</span>&gt;</div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Orleans.Storage.html">Orleans.Storage</a></h6>
+  <h6><strong>Assembly</strong>: Orleans.Persistence.AdoNet.dll</h6>
+  <h5 id="Orleans_Storage_AdoNetGrainStorage_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AdoNetGrainStorage : IGrainStorage, ILifecycleParticipant&lt;ISiloLifecycle&gt;</code></pre>
+  </div>
+  <h5 id="Orleans_Storage_AdoNetGrainStorage_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>
+Required configuration params: <code>DataConnectionString</code>
+</p>
+<p>
+Optional configuration params:
+<code>AdoInvariant</code> -- defaults to <code>System.Data.SqlClient</code>
+<code>UseJsonFormat</code> -- defaults to <code>false</code>
+<code>UseXmlFormat</code> -- defaults to <code>false</code>
+<code>UseBinaryFormat</code> -- defaults to <code>true</code>
+</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Storage_AdoNetGrainStorage__ctor_ILogger_Orleans_Storage_AdoNetGrainStorage__IProviderRuntime_IOptions_Orleans_Configuration_AdoNetGrainStorageOptions__IOptions_ClusterOptions__System_String_.md&amp;value=---%0Auid%3A%20Orleans.Storage.AdoNetGrainStorage.%23ctor(ILogger%7BOrleans.Storage.AdoNetGrainStorage%7D%2CIProviderRuntime%2CIOptions%7BOrleans.Configuration.AdoNetGrainStorageOptions%7D%2CIOptions%7BClusterOptions%7D%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/AdoNetGrainStorage.cs/#L134">View Source</a>
+  </span>
+  <a id="Orleans_Storage_AdoNetGrainStorage__ctor_" data-uid="Orleans.Storage.AdoNetGrainStorage.#ctor*"></a>
+  <h4 id="Orleans_Storage_AdoNetGrainStorage__ctor_ILogger_Orleans_Storage_AdoNetGrainStorage__IProviderRuntime_IOptions_Orleans_Configuration_AdoNetGrainStorageOptions__IOptions_ClusterOptions__System_String_" data-uid="Orleans.Storage.AdoNetGrainStorage.#ctor(ILogger{Orleans.Storage.AdoNetGrainStorage},IProviderRuntime,IOptions{Orleans.Configuration.AdoNetGrainStorageOptions},IOptions{ClusterOptions},System.String)">AdoNetGrainStorage(ILogger&lt;AdoNetGrainStorage&gt;, IProviderRuntime, IOptions&lt;AdoNetGrainStorageOptions&gt;, IOptions&lt;ClusterOptions&gt;, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AdoNetGrainStorage(ILogger&lt;AdoNetGrainStorage&gt; logger, IProviderRuntime providerRuntime, IOptions&lt;AdoNetGrainStorageOptions&gt; options, IOptions&lt;ClusterOptions&gt; clusterOptions, string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span>&lt;<a class="xref" href="Orleans.Storage.AdoNetGrainStorage.html">AdoNetGrainStorage</a>&gt;</td>
+        <td><span class="parametername">logger</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IProviderRuntime</span></td>
+        <td><span class="parametername">providerRuntime</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IOptions</span>&lt;<a class="xref" href="Orleans.Configuration.AdoNetGrainStorageOptions.html">AdoNetGrainStorageOptions</a>&gt;</td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IOptions</span>&lt;<span class="xref">ClusterOptions</span>&gt;</td>
+        <td><span class="parametername">clusterOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Storage_AdoNetGrainStorage_BinaryFormatSerializerTag.md&amp;value=---%0Auid%3A%20Orleans.Storage.AdoNetGrainStorage.BinaryFormatSerializerTag%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/AdoNetGrainStorage.cs/#L78">View Source</a>
+  </span>
+  <h4 id="Orleans_Storage_AdoNetGrainStorage_BinaryFormatSerializerTag" data-uid="Orleans.Storage.AdoNetGrainStorage.BinaryFormatSerializerTag">BinaryFormatSerializerTag</h4>
+  <div class="markdown level1 summary"><p>Tag for BinaryFormatSerializer</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string BinaryFormatSerializerTag = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Storage_AdoNetGrainStorage_DefaultInitializationQuery.md&amp;value=---%0Auid%3A%20Orleans.Storage.AdoNetGrainStorage.DefaultInitializationQuery%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/AdoNetGrainStorage.cs/#L109">View Source</a>
+  </span>
+  <h4 id="Orleans_Storage_AdoNetGrainStorage_DefaultInitializationQuery" data-uid="Orleans.Storage.AdoNetGrainStorage.DefaultInitializationQuery">DefaultInitializationQuery</h4>
+  <div class="markdown level1 summary"><p>The default query to initialize this structure from the Orleans database.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string DefaultInitializationQuery = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Storage_AdoNetGrainStorage_JsonFormatSerializerTag.md&amp;value=---%0Auid%3A%20Orleans.Storage.AdoNetGrainStorage.JsonFormatSerializerTag%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/AdoNetGrainStorage.cs/#L82">View Source</a>
+  </span>
+  <h4 id="Orleans_Storage_AdoNetGrainStorage_JsonFormatSerializerTag" data-uid="Orleans.Storage.AdoNetGrainStorage.JsonFormatSerializerTag">JsonFormatSerializerTag</h4>
+  <div class="markdown level1 summary"><p>Tag for JsonFormatSerializer</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string JsonFormatSerializerTag = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Storage_AdoNetGrainStorage_XmlFormatSerializerTag.md&amp;value=---%0Auid%3A%20Orleans.Storage.AdoNetGrainStorage.XmlFormatSerializerTag%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/AdoNetGrainStorage.cs/#L86">View Source</a>
+  </span>
+  <h4 id="Orleans_Storage_AdoNetGrainStorage_XmlFormatSerializerTag" data-uid="Orleans.Storage.AdoNetGrainStorage.XmlFormatSerializerTag">XmlFormatSerializerTag</h4>
+  <div class="markdown level1 summary"><p>Tag for XmlFormatSerializer</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string XmlFormatSerializerTag = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Storage_AdoNetGrainStorage_CurrentOperationalQueries.md&amp;value=---%0Auid%3A%20Orleans.Storage.AdoNetGrainStorage.CurrentOperationalQueries%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/AdoNetGrainStorage.cs/#L114">View Source</a>
+  </span>
+  <a id="Orleans_Storage_AdoNetGrainStorage_CurrentOperationalQueries_" data-uid="Orleans.Storage.AdoNetGrainStorage.CurrentOperationalQueries*"></a>
+  <h4 id="Orleans_Storage_AdoNetGrainStorage_CurrentOperationalQueries" data-uid="Orleans.Storage.AdoNetGrainStorage.CurrentOperationalQueries">CurrentOperationalQueries</h4>
+  <div class="markdown level1 summary"><p>The queries currently used. When this is updated, the new queries will take effect immediately.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RelationalStorageProviderQueries CurrentOperationalQueries { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.Storage.RelationalStorageProviderQueries.html">RelationalStorageProviderQueries</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Storage_AdoNetGrainStorage_HashPicker.md&amp;value=---%0Auid%3A%20Orleans.Storage.AdoNetGrainStorage.HashPicker%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/AdoNetGrainStorage.cs/#L128">View Source</a>
+  </span>
+  <a id="Orleans_Storage_AdoNetGrainStorage_HashPicker_" data-uid="Orleans.Storage.AdoNetGrainStorage.HashPicker*"></a>
+  <h4 id="Orleans_Storage_AdoNetGrainStorage_HashPicker" data-uid="Orleans.Storage.AdoNetGrainStorage.HashPicker">HashPicker</h4>
+  <div class="markdown level1 summary"><p>The hash generator used to hash natural keys, grain ID and grain type to a more narrow index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IStorageHasherPicker HashPicker { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.Storage.IStorageHasherPicker.html">IStorageHasherPicker</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Storage_AdoNetGrainStorage_StorageSerializationPicker.md&amp;value=---%0Auid%3A%20Orleans.Storage.AdoNetGrainStorage.StorageSerializationPicker%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/AdoNetGrainStorage.cs/#L123">View Source</a>
+  </span>
+  <a id="Orleans_Storage_AdoNetGrainStorage_StorageSerializationPicker_" data-uid="Orleans.Storage.AdoNetGrainStorage.StorageSerializationPicker*"></a>
+  <h4 id="Orleans_Storage_AdoNetGrainStorage_StorageSerializationPicker" data-uid="Orleans.Storage.AdoNetGrainStorage.StorageSerializationPicker">StorageSerializationPicker</h4>
+  <div class="markdown level1 summary"><p>A strategy to pick a serializer or a deserializer for storage operations. This can be used to:
+1) Add a custom serializer or deserializer for use in storage provider operations.
+2) In combination with serializer or deserializer to update stored object version.
+3) Per-grain storage format selection
+4) Switch storage format first by reading using the save format and then writing in the new format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IStorageSerializationPicker StorageSerializationPicker { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.Storage.IStorageSerializationPicker.html">IStorageSerializationPicker</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Storage_AdoNetGrainStorage_ClearStateAsync_System_String_Orleans_Runtime_GrainReference_IGrainState_.md&amp;value=---%0Auid%3A%20Orleans.Storage.AdoNetGrainStorage.ClearStateAsync(System.String%2COrleans.Runtime.GrainReference%2CIGrainState)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/AdoNetGrainStorage.cs/#L154">View Source</a>
+  </span>
+  <a id="Orleans_Storage_AdoNetGrainStorage_ClearStateAsync_" data-uid="Orleans.Storage.AdoNetGrainStorage.ClearStateAsync*"></a>
+  <h4 id="Orleans_Storage_AdoNetGrainStorage_ClearStateAsync_System_String_Orleans_Runtime_GrainReference_IGrainState_" data-uid="Orleans.Storage.AdoNetGrainStorage.ClearStateAsync(System.String,Orleans.Runtime.GrainReference,IGrainState)">ClearStateAsync(String, GrainReference, IGrainState)</h4>
+  <div class="markdown level1 summary"><p>Clear state data function for this storage provider.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task ClearStateAsync(string grainType, GrainReference grainReference, IGrainState grainState)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">grainType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Orleans.Runtime.GrainReference.html">GrainReference</a></td>
+        <td><span class="parametername">grainReference</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IGrainState</span></td>
+        <td><span class="parametername">grainState</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Storage_AdoNetGrainStorage_Participate_ISiloLifecycle_.md&amp;value=---%0Auid%3A%20Orleans.Storage.AdoNetGrainStorage.Participate(ISiloLifecycle)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/AdoNetGrainStorage.cs/#L148">View Source</a>
+  </span>
+  <a id="Orleans_Storage_AdoNetGrainStorage_Participate_" data-uid="Orleans.Storage.AdoNetGrainStorage.Participate*"></a>
+  <h4 id="Orleans_Storage_AdoNetGrainStorage_Participate_ISiloLifecycle_" data-uid="Orleans.Storage.AdoNetGrainStorage.Participate(ISiloLifecycle)">Participate(ISiloLifecycle)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Participate(ISiloLifecycle lifecycle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ISiloLifecycle</span></td>
+        <td><span class="parametername">lifecycle</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Storage_AdoNetGrainStorage_ReadStateAsync_System_String_Orleans_Runtime_GrainReference_IGrainState_.md&amp;value=---%0Auid%3A%20Orleans.Storage.AdoNetGrainStorage.ReadStateAsync(System.String%2COrleans.Runtime.GrainReference%2CIGrainState)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/AdoNetGrainStorage.cs/#L207">View Source</a>
+  </span>
+  <a id="Orleans_Storage_AdoNetGrainStorage_ReadStateAsync_" data-uid="Orleans.Storage.AdoNetGrainStorage.ReadStateAsync*"></a>
+  <h4 id="Orleans_Storage_AdoNetGrainStorage_ReadStateAsync_System_String_Orleans_Runtime_GrainReference_IGrainState_" data-uid="Orleans.Storage.AdoNetGrainStorage.ReadStateAsync(System.String,Orleans.Runtime.GrainReference,IGrainState)">ReadStateAsync(String, GrainReference, IGrainState)</h4>
+  <div class="markdown level1 summary"><p>Read state data function for this storage provider.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task ReadStateAsync(string grainType, GrainReference grainReference, IGrainState grainState)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">grainType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Orleans.Runtime.GrainReference.html">GrainReference</a></td>
+        <td><span class="parametername">grainReference</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IGrainState</span></td>
+        <td><span class="parametername">grainState</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Storage_AdoNetGrainStorage_WriteStateAsync_System_String_Orleans_Runtime_GrainReference_IGrainState_.md&amp;value=---%0Auid%3A%20Orleans.Storage.AdoNetGrainStorage.WriteStateAsync(System.String%2COrleans.Runtime.GrainReference%2CIGrainState)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/AdoNetGrainStorage.cs/#L332">View Source</a>
+  </span>
+  <a id="Orleans_Storage_AdoNetGrainStorage_WriteStateAsync_" data-uid="Orleans.Storage.AdoNetGrainStorage.WriteStateAsync*"></a>
+  <h4 id="Orleans_Storage_AdoNetGrainStorage_WriteStateAsync_System_String_Orleans_Runtime_GrainReference_IGrainState_" data-uid="Orleans.Storage.AdoNetGrainStorage.WriteStateAsync(System.String,Orleans.Runtime.GrainReference,IGrainState)">WriteStateAsync(String, GrainReference, IGrainState)</h4>
+  <div class="markdown level1 summary"><p>Write state data function for this storage provider.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task WriteStateAsync(string grainType, GrainReference grainReference, IGrainState grainState)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">grainType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Orleans.Runtime.GrainReference.html">GrainReference</a></td>
+        <td><span class="parametername">grainReference</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IGrainState</span></td>
+        <td><span class="parametername">grainState</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Orleans.ILifecycleParticipant-1.html">ILifecycleParticipant&lt;TLifecycleObservable&gt;</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Orleans.Concurrency.ImmutableExt.html#Orleans_Concurrency_ImmutableExt_AsImmutable__1___0_">ImmutableExt.AsImmutable&lt;T&gt;(T)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Storage_AdoNetGrainStorage.md&amp;value=---%0Auid%3A%20Orleans.Storage.AdoNetGrainStorage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/AdoNetGrainStorage.cs/#L70" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

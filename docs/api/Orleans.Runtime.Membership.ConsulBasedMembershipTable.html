@@ -1,0 +1,602 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ConsulBasedMembershipTable
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ConsulBasedMembershipTable
+   ">
+    <meta name="generator" content="docfx 2.33.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Orleans.Runtime.Membership.ConsulBasedMembershipTable">
+  
+  
+  <h1 id="Orleans_Runtime_Membership_ConsulBasedMembershipTable" data-uid="Orleans.Runtime.Membership.ConsulBasedMembershipTable" class="text-break">Class ConsulBasedMembershipTable
+  </h1>
+  <div class="markdown level0 summary"><p>A Membership Table implementation using Consul 0.6.0  <a href="https://consul.io/">https://consul.io/</a></p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ConsulBasedMembershipTable</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Orleans.Runtime.Membership.html">Orleans.Runtime.Membership</a></h6>
+  <h6><strong>Assembly</strong>: Orleans.Clustering.Consul.dll</h6>
+  <h5 id="Orleans_Runtime_Membership_ConsulBasedMembershipTable_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ConsulBasedMembershipTable : IMembershipTable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_Membership_ConsulBasedMembershipTable__ctor_ILogger_Orleans_Runtime_Membership_ConsulBasedMembershipTable__IOptions_Orleans_Configuration_ConsulClusteringSiloOptions__IOptions_ClusterOptions__.md&amp;value=---%0Auid%3A%20Orleans.Runtime.Membership.ConsulBasedMembershipTable.%23ctor(ILogger%7BOrleans.Runtime.Membership.ConsulBasedMembershipTable%7D%2CIOptions%7BOrleans.Configuration.ConsulClusteringSiloOptions%7D%2CIOptions%7BClusterOptions%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Clustering.Consul/ConsulBasedMembershipTable.cs/#L26">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_Membership_ConsulBasedMembershipTable__ctor_" data-uid="Orleans.Runtime.Membership.ConsulBasedMembershipTable.#ctor*"></a>
+  <h4 id="Orleans_Runtime_Membership_ConsulBasedMembershipTable__ctor_ILogger_Orleans_Runtime_Membership_ConsulBasedMembershipTable__IOptions_Orleans_Configuration_ConsulClusteringSiloOptions__IOptions_ClusterOptions__" data-uid="Orleans.Runtime.Membership.ConsulBasedMembershipTable.#ctor(ILogger{Orleans.Runtime.Membership.ConsulBasedMembershipTable},IOptions{Orleans.Configuration.ConsulClusteringSiloOptions},IOptions{ClusterOptions})">ConsulBasedMembershipTable(ILogger&lt;ConsulBasedMembershipTable&gt;, IOptions&lt;ConsulClusteringSiloOptions&gt;, IOptions&lt;ClusterOptions&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConsulBasedMembershipTable(ILogger&lt;ConsulBasedMembershipTable&gt; logger, IOptions&lt;ConsulClusteringSiloOptions&gt; membershipTableOptions, IOptions&lt;ClusterOptions&gt; clusterOptions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span>&lt;<a class="xref" href="Orleans.Runtime.Membership.ConsulBasedMembershipTable.html">ConsulBasedMembershipTable</a>&gt;</td>
+        <td><span class="parametername">logger</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IOptions</span>&lt;<a class="xref" href="Orleans.Configuration.ConsulClusteringSiloOptions.html">ConsulClusteringSiloOptions</a>&gt;</td>
+        <td><span class="parametername">membershipTableOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IOptions</span>&lt;<span class="xref">ClusterOptions</span>&gt;</td>
+        <td><span class="parametername">clusterOptions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_Membership_ConsulBasedMembershipTable__tableVersion.md&amp;value=---%0Auid%3A%20Orleans.Runtime.Membership.ConsulBasedMembershipTable._tableVersion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Clustering.Consul/ConsulBasedMembershipTable.cs/#L19">View Source</a>
+  </span>
+  <h4 id="Orleans_Runtime_Membership_ConsulBasedMembershipTable__tableVersion" data-uid="Orleans.Runtime.Membership.ConsulBasedMembershipTable._tableVersion">_tableVersion</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly TableVersion _tableVersion</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TableVersion</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_Membership_ConsulBasedMembershipTable_DeleteMembershipTableEntries_String_.md&amp;value=---%0Auid%3A%20Orleans.Runtime.Membership.ConsulBasedMembershipTable.DeleteMembershipTableEntries(String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Clustering.Consul/ConsulBasedMembershipTable.cs/#L142">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_Membership_ConsulBasedMembershipTable_DeleteMembershipTableEntries_" data-uid="Orleans.Runtime.Membership.ConsulBasedMembershipTable.DeleteMembershipTableEntries*"></a>
+  <h4 id="Orleans_Runtime_Membership_ConsulBasedMembershipTable_DeleteMembershipTableEntries_String_" data-uid="Orleans.Runtime.Membership.ConsulBasedMembershipTable.DeleteMembershipTableEntries(String)">DeleteMembershipTableEntries(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task DeleteMembershipTableEntries(String clusterId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">String</span></td>
+        <td><span class="parametername">clusterId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_Membership_ConsulBasedMembershipTable_InitializeMembershipTable_System_Boolean_.md&amp;value=---%0Auid%3A%20Orleans.Runtime.Membership.ConsulBasedMembershipTable.InitializeMembershipTable(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Clustering.Consul/ConsulBasedMembershipTable.cs/#L47">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_Membership_ConsulBasedMembershipTable_InitializeMembershipTable_" data-uid="Orleans.Runtime.Membership.ConsulBasedMembershipTable.InitializeMembershipTable*"></a>
+  <h4 id="Orleans_Runtime_Membership_ConsulBasedMembershipTable_InitializeMembershipTable_System_Boolean_" data-uid="Orleans.Runtime.Membership.ConsulBasedMembershipTable.InitializeMembershipTable(System.Boolean)">InitializeMembershipTable(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Initializes the Consul based membership table.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task InitializeMembershipTable(bool tryInitTableVersion)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">tryInitTableVersion</span></td>
+        <td><p>Will be ignored: Consul does not support the extended Membership Protocol TableVersion</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Orleans_Runtime_Membership_ConsulBasedMembershipTable_InitializeMembershipTable_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Consul Membership Provider does not support the extended Membership Protocol,
+therefore there is no MembershipTable to Initialise</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_Membership_ConsulBasedMembershipTable_InsertRow_MembershipEntry_TableVersion_.md&amp;value=---%0Auid%3A%20Orleans.Runtime.Membership.ConsulBasedMembershipTable.InsertRow(MembershipEntry%2CTableVersion)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Clustering.Consul/ConsulBasedMembershipTable.cs/#L86">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_Membership_ConsulBasedMembershipTable_InsertRow_" data-uid="Orleans.Runtime.Membership.ConsulBasedMembershipTable.InsertRow*"></a>
+  <h4 id="Orleans_Runtime_Membership_ConsulBasedMembershipTable_InsertRow_MembershipEntry_TableVersion_" data-uid="Orleans.Runtime.Membership.ConsulBasedMembershipTable.InsertRow(MembershipEntry,TableVersion)">InsertRow(MembershipEntry, TableVersion)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Boolean&gt; InsertRow(MembershipEntry entry, TableVersion tableVersion)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">MembershipEntry</span></td>
+        <td><span class="parametername">entry</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TableVersion</span></td>
+        <td><span class="parametername">tableVersion</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_Membership_ConsulBasedMembershipTable_ReadAll.md&amp;value=---%0Auid%3A%20Orleans.Runtime.Membership.ConsulBasedMembershipTable.ReadAll%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Clustering.Consul/ConsulBasedMembershipTable.cs/#L60">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_Membership_ConsulBasedMembershipTable_ReadAll_" data-uid="Orleans.Runtime.Membership.ConsulBasedMembershipTable.ReadAll*"></a>
+  <h4 id="Orleans_Runtime_Membership_ConsulBasedMembershipTable_ReadAll" data-uid="Orleans.Runtime.Membership.ConsulBasedMembershipTable.ReadAll">ReadAll()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;MembershipTableData&gt; ReadAll()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">MembershipTableData</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_Membership_ConsulBasedMembershipTable_ReadAll_ConsulClient_System_String_ILogger_.md&amp;value=---%0Auid%3A%20Orleans.Runtime.Membership.ConsulBasedMembershipTable.ReadAll(ConsulClient%2CSystem.String%2CILogger)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Clustering.Consul/ConsulBasedMembershipTable.cs/#L65">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_Membership_ConsulBasedMembershipTable_ReadAll_" data-uid="Orleans.Runtime.Membership.ConsulBasedMembershipTable.ReadAll*"></a>
+  <h4 id="Orleans_Runtime_Membership_ConsulBasedMembershipTable_ReadAll_ConsulClient_System_String_ILogger_" data-uid="Orleans.Runtime.Membership.ConsulBasedMembershipTable.ReadAll(ConsulClient,System.String,ILogger)">ReadAll(ConsulClient, String, ILogger)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;MembershipTableData&gt; ReadAll(ConsulClient consulClient, string clusterId, ILogger logger)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ConsulClient</span></td>
+        <td><span class="parametername">consulClient</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">clusterId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">MembershipTableData</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_Membership_ConsulBasedMembershipTable_ReadRow_Orleans_Runtime_SiloAddress_.md&amp;value=---%0Auid%3A%20Orleans.Runtime.Membership.ConsulBasedMembershipTable.ReadRow(Orleans.Runtime.SiloAddress)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Clustering.Consul/ConsulBasedMembershipTable.cs/#L53">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_Membership_ConsulBasedMembershipTable_ReadRow_" data-uid="Orleans.Runtime.Membership.ConsulBasedMembershipTable.ReadRow*"></a>
+  <h4 id="Orleans_Runtime_Membership_ConsulBasedMembershipTable_ReadRow_Orleans_Runtime_SiloAddress_" data-uid="Orleans.Runtime.Membership.ConsulBasedMembershipTable.ReadRow(Orleans.Runtime.SiloAddress)">ReadRow(SiloAddress)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;MembershipTableData&gt; ReadRow(SiloAddress siloAddress)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.Runtime.SiloAddress.html">SiloAddress</a></td>
+        <td><span class="parametername">siloAddress</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">MembershipTableData</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_Membership_ConsulBasedMembershipTable_UpdateIAmAlive_MembershipEntry_.md&amp;value=---%0Auid%3A%20Orleans.Runtime.Membership.ConsulBasedMembershipTable.UpdateIAmAlive(MembershipEntry)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Clustering.Consul/ConsulBasedMembershipTable.cs/#L136">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_Membership_ConsulBasedMembershipTable_UpdateIAmAlive_" data-uid="Orleans.Runtime.Membership.ConsulBasedMembershipTable.UpdateIAmAlive*"></a>
+  <h4 id="Orleans_Runtime_Membership_ConsulBasedMembershipTable_UpdateIAmAlive_MembershipEntry_" data-uid="Orleans.Runtime.Membership.ConsulBasedMembershipTable.UpdateIAmAlive(MembershipEntry)">UpdateIAmAlive(MembershipEntry)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task UpdateIAmAlive(MembershipEntry entry)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">MembershipEntry</span></td>
+        <td><span class="parametername">entry</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_Membership_ConsulBasedMembershipTable_UpdateRow_MembershipEntry_String_TableVersion_.md&amp;value=---%0Auid%3A%20Orleans.Runtime.Membership.ConsulBasedMembershipTable.UpdateRow(MembershipEntry%2CString%2CTableVersion)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Clustering.Consul/ConsulBasedMembershipTable.cs/#L110">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_Membership_ConsulBasedMembershipTable_UpdateRow_" data-uid="Orleans.Runtime.Membership.ConsulBasedMembershipTable.UpdateRow*"></a>
+  <h4 id="Orleans_Runtime_Membership_ConsulBasedMembershipTable_UpdateRow_MembershipEntry_String_TableVersion_" data-uid="Orleans.Runtime.Membership.ConsulBasedMembershipTable.UpdateRow(MembershipEntry,String,TableVersion)">UpdateRow(MembershipEntry, String, TableVersion)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Boolean&gt; UpdateRow(MembershipEntry entry, String etag, TableVersion tableVersion)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">MembershipEntry</span></td>
+        <td><span class="parametername">entry</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">String</span></td>
+        <td><span class="parametername">etag</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TableVersion</span></td>
+        <td><span class="parametername">tableVersion</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Orleans.Concurrency.ImmutableExt.html#Orleans_Concurrency_ImmutableExt_AsImmutable__1___0_">ImmutableExt.AsImmutable&lt;T&gt;(T)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_Membership_ConsulBasedMembershipTable.md&amp;value=---%0Auid%3A%20Orleans.Runtime.Membership.ConsulBasedMembershipTable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Clustering.Consul/ConsulBasedMembershipTable.cs/#L16" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

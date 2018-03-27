@@ -1,0 +1,228 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IAsyncBatchObserver&lt;T&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IAsyncBatchObserver&lt;T&gt;
+   ">
+    <meta name="generator" content="docfx 2.33.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Orleans.Streams.IAsyncBatchObserver`1">
+  
+  
+  <h1 id="Orleans_Streams_IAsyncBatchObserver_1" data-uid="Orleans.Streams.IAsyncBatchObserver`1" class="text-break">Interface IAsyncBatchObserver&lt;T&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>This interface generalizes the IAsyncObserver interface to allow production and consumption of batches of items.
+<p>
+Note that this interface is implemented by item consumers and invoked (used) by item producers.
+This means that the consumer endpoint of a stream implements this interface.
+</p></p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Orleans.Streams.IAsyncObserver-1.html#Orleans_Streams_IAsyncObserver_1_OnNextAsync__0_Orleans_Streams_StreamSequenceToken_">IAsyncObserver&lt;T&gt;.OnNextAsync(T, StreamSequenceToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Orleans.Streams.IAsyncObserver-1.html#Orleans_Streams_IAsyncObserver_1_OnCompletedAsync">IAsyncObserver&lt;T&gt;.OnCompletedAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="Orleans.Streams.IAsyncObserver-1.html#Orleans_Streams_IAsyncObserver_1_OnErrorAsync_Exception_">IAsyncObserver&lt;T&gt;.OnErrorAsync(Exception)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Orleans.Streams.html">Orleans.Streams</a></h6>
+  <h6><strong>Assembly</strong>: Orleans.Core.Abstractions.dll</h6>
+  <h5 id="Orleans_Streams_IAsyncBatchObserver_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IAsyncBatchObserver&lt;in T&gt; : IAsyncObserver&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of object consumed by the observer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Streams_IAsyncBatchObserver_1_OnNextBatchAsync_IEnumerable__0__Orleans_Streams_StreamSequenceToken_.md&amp;value=---%0Auid%3A%20Orleans.Streams.IAsyncBatchObserver%601.OnNextBatchAsync(IEnumerable%7B%600%7D%2COrleans.Streams.StreamSequenceToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Abstractions/Streams/Core/IAsyncObserver.cs/#L85">View Source</a>
+  </span>
+  <a id="Orleans_Streams_IAsyncBatchObserver_1_OnNextBatchAsync_" data-uid="Orleans.Streams.IAsyncBatchObserver`1.OnNextBatchAsync*"></a>
+  <h4 id="Orleans_Streams_IAsyncBatchObserver_1_OnNextBatchAsync_IEnumerable__0__Orleans_Streams_StreamSequenceToken_" data-uid="Orleans.Streams.IAsyncBatchObserver`1.OnNextBatchAsync(IEnumerable{`0},Orleans.Streams.StreamSequenceToken)">OnNextBatchAsync(IEnumerable&lt;T&gt;, StreamSequenceToken)</h4>
+  <div class="markdown level1 summary"><p>Passes the next batch of items to the consumer.
+<p>
+The Task returned from this method should be completed when all items in the batch have been
+sufficiently processed by the consumer to meet any behavioral guarantees.
+</p>
+<p>
+That is, the semantics of the returned Task is the same as for <pre><code>OnNextAsync</code></pre>,
+extended for all items in the batch.
+</p></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task OnNextBatchAsync(IEnumerable&lt;T&gt; batch, StreamSequenceToken token = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;T&gt;</td>
+        <td><span class="parametername">batch</span></td>
+        <td><p>The items to be passed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Orleans.Streams.StreamSequenceToken.html">StreamSequenceToken</a></td>
+        <td><span class="parametername">token</span></td>
+        <td><p>The stream sequence token of this batch of items.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>A Task that is completed when the batch has been accepted.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Orleans.Concurrency.ImmutableExt.html#Orleans_Concurrency_ImmutableExt_AsImmutable__1___0_">ImmutableExt.AsImmutable&lt;T&gt;(T)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Streams_IAsyncBatchObserver_1.md&amp;value=---%0Auid%3A%20Orleans.Streams.IAsyncBatchObserver%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Abstractions/Streams/Core/IAsyncObserver.cs/#L69" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

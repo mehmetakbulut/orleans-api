@@ -1,0 +1,293 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class JournaledGrain&lt;TGrainState&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class JournaledGrain&lt;TGrainState&gt;
+   ">
+    <meta name="generator" content="docfx 2.33.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Orleans.EventSourcing.JournaledGrain`1">
+  
+  
+  <h1 id="Orleans_EventSourcing_JournaledGrain_1" data-uid="Orleans.EventSourcing.JournaledGrain`1" class="text-break">Class JournaledGrain&lt;TGrainState&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>A base class for log-consistent grains using standard event-sourcing terminology.
+All operations are reentrancy-safe.
+<typeparam name="TGrainState">The type for the grain state, i.e. the aggregate view of the event log.</typeparam></p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Orleans.EventSourcing.JournaledGrain-2.html">JournaledGrain</a>&lt;TGrainState, <span class="xref">System.Object</span>&gt;</div>
+    <div class="level2"><span class="xref">JournaledGrain&lt;TGrainState&gt;</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">ILogConsistencyProtocolParticipant</span></div>
+    <div><span class="xref">ILogViewAdaptorHost</span>&lt;TGrainState, <span class="xref">System.Object</span>&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Orleans.EventSourcing.JournaledGrain-2.html#Orleans_EventSourcing_JournaledGrain_2_RaiseEvent__1___0_">JournaledGrain&lt;TGrainState, Object&gt;.RaiseEvent&lt;TEvent&gt;(TEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Orleans.EventSourcing.JournaledGrain-2.html#Orleans_EventSourcing_JournaledGrain_2_RaiseEvents__1_IEnumerable___0__">JournaledGrain&lt;TGrainState, Object&gt;.RaiseEvents&lt;TEvent&gt;(IEnumerable&lt;TEvent&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Orleans.EventSourcing.JournaledGrain-2.html#Orleans_EventSourcing_JournaledGrain_2_RaiseConditionalEvent__1___0_">JournaledGrain&lt;TGrainState, Object&gt;.RaiseConditionalEvent&lt;TEvent&gt;(TEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Orleans.EventSourcing.JournaledGrain-2.html#Orleans_EventSourcing_JournaledGrain_2_RaiseConditionalEvents__1_IEnumerable___0__">JournaledGrain&lt;TGrainState, Object&gt;.RaiseConditionalEvents&lt;TEvent&gt;(IEnumerable&lt;TEvent&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Orleans.EventSourcing.JournaledGrain-2.html#Orleans_EventSourcing_JournaledGrain_2_State">JournaledGrain&lt;TGrainState, Object&gt;.State</a>
+    </div>
+    <div>
+      <a class="xref" href="Orleans.EventSourcing.JournaledGrain-2.html#Orleans_EventSourcing_JournaledGrain_2_Version">JournaledGrain&lt;TGrainState, Object&gt;.Version</a>
+    </div>
+    <div>
+      <a class="xref" href="Orleans.EventSourcing.JournaledGrain-2.html#Orleans_EventSourcing_JournaledGrain_2_OnTentativeStateChanged">JournaledGrain&lt;TGrainState, Object&gt;.OnTentativeStateChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="Orleans.EventSourcing.JournaledGrain-2.html#Orleans_EventSourcing_JournaledGrain_2_TentativeState">JournaledGrain&lt;TGrainState, Object&gt;.TentativeState</a>
+    </div>
+    <div>
+      <a class="xref" href="Orleans.EventSourcing.JournaledGrain-2.html#Orleans_EventSourcing_JournaledGrain_2_OnStateChanged">JournaledGrain&lt;TGrainState, Object&gt;.OnStateChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="Orleans.EventSourcing.JournaledGrain-2.html#Orleans_EventSourcing_JournaledGrain_2_ConfirmEvents">JournaledGrain&lt;TGrainState, Object&gt;.ConfirmEvents()</a>
+    </div>
+    <div>
+      <a class="xref" href="Orleans.EventSourcing.JournaledGrain-2.html#Orleans_EventSourcing_JournaledGrain_2_RefreshNow">JournaledGrain&lt;TGrainState, Object&gt;.RefreshNow()</a>
+    </div>
+    <div>
+      <a class="xref" href="Orleans.EventSourcing.JournaledGrain-2.html#Orleans_EventSourcing_JournaledGrain_2_UnconfirmedEvents">JournaledGrain&lt;TGrainState, Object&gt;.UnconfirmedEvents</a>
+    </div>
+    <div>
+      <a class="xref" href="Orleans.EventSourcing.JournaledGrain-2.html#Orleans_EventSourcing_JournaledGrain_2_OnActivateAsync">JournaledGrain&lt;TGrainState, Object&gt;.OnActivateAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="Orleans.EventSourcing.JournaledGrain-2.html#Orleans_EventSourcing_JournaledGrain_2_RetrieveConfirmedEvents_System_Int32_System_Int32_">JournaledGrain&lt;TGrainState, Object&gt;.RetrieveConfirmedEvents(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Orleans.EventSourcing.JournaledGrain-2.html#Orleans_EventSourcing_JournaledGrain_2_OnConnectionIssue_Orleans_LogConsistency_ConnectionIssue_">JournaledGrain&lt;TGrainState, Object&gt;.OnConnectionIssue(ConnectionIssue)</a>
+    </div>
+    <div>
+      <a class="xref" href="Orleans.EventSourcing.JournaledGrain-2.html#Orleans_EventSourcing_JournaledGrain_2_OnConnectionIssueResolved_Orleans_LogConsistency_ConnectionIssue_">JournaledGrain&lt;TGrainState, Object&gt;.OnConnectionIssueResolved(ConnectionIssue)</a>
+    </div>
+    <div>
+      <a class="xref" href="Orleans.EventSourcing.JournaledGrain-2.html#Orleans_EventSourcing_JournaledGrain_2_UnresolvedConnectionIssues">JournaledGrain&lt;TGrainState, Object&gt;.UnresolvedConnectionIssues</a>
+    </div>
+    <div>
+      <a class="xref" href="Orleans.EventSourcing.JournaledGrain-2.html#Orleans_EventSourcing_JournaledGrain_2_EnableStatsCollection">JournaledGrain&lt;TGrainState, Object&gt;.EnableStatsCollection()</a>
+    </div>
+    <div>
+      <a class="xref" href="Orleans.EventSourcing.JournaledGrain-2.html#Orleans_EventSourcing_JournaledGrain_2_DisableStatsCollection">JournaledGrain&lt;TGrainState, Object&gt;.DisableStatsCollection()</a>
+    </div>
+    <div>
+      <a class="xref" href="Orleans.EventSourcing.JournaledGrain-2.html#Orleans_EventSourcing_JournaledGrain_2_GetStats">JournaledGrain&lt;TGrainState, Object&gt;.GetStats()</a>
+    </div>
+    <div>
+      <a class="xref" href="Orleans.EventSourcing.JournaledGrain-2.html#Orleans_EventSourcing_JournaledGrain_2_TransitionState__0__1_">JournaledGrain&lt;TGrainState, Object&gt;.TransitionState(TGrainState, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Orleans.EventSourcing.JournaledGrain-2.html#Orleans_EventSourcing_JournaledGrain_2_InstallAdaptor_ILogViewAdaptorFactory_System_Object_System_String_IGrainStorage_ILogConsistencyProtocolServices_">JournaledGrain&lt;TGrainState, Object&gt;.InstallAdaptor(ILogViewAdaptorFactory, Object, String, IGrainStorage, ILogConsistencyProtocolServices)</a>
+    </div>
+    <div>
+      <a class="xref" href="Orleans.EventSourcing.JournaledGrain-2.html#Orleans_EventSourcing_JournaledGrain_2_DefaultAdaptorFactory">JournaledGrain&lt;TGrainState, Object&gt;.DefaultAdaptorFactory</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Orleans.EventSourcing.html">Orleans.EventSourcing</a></h6>
+  <h6><strong>Assembly</strong>: Orleans.EventSourcing.dll</h6>
+  <h5 id="Orleans_EventSourcing_JournaledGrain_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class JournaledGrain&lt;TGrainState&gt; : JournaledGrain&lt;TGrainState, object&gt;, ILogConsistencyProtocolParticipant, ILogViewAdaptorHost&lt;TGrainState, object&gt; where TGrainState : class, new ()</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TGrainState</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_JournaledGrain_1__ctor.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.JournaledGrain%601.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/JournaledGrain.cs/#L21">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_JournaledGrain_1__ctor_" data-uid="Orleans.EventSourcing.JournaledGrain`1.#ctor*"></a>
+  <h4 id="Orleans_EventSourcing_JournaledGrain_1__ctor" data-uid="Orleans.EventSourcing.JournaledGrain`1.#ctor">JournaledGrain()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected JournaledGrain()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_JournaledGrain_1__ctor_Orleans_Core_IGrainIdentity_Orleans_Runtime_IGrainRuntime_.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.JournaledGrain%601.%23ctor(Orleans.Core.IGrainIdentity%2COrleans.Runtime.IGrainRuntime)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/JournaledGrain.cs/#L27">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_JournaledGrain_1__ctor_" data-uid="Orleans.EventSourcing.JournaledGrain`1.#ctor*"></a>
+  <h4 id="Orleans_EventSourcing_JournaledGrain_1__ctor_Orleans_Core_IGrainIdentity_Orleans_Runtime_IGrainRuntime_" data-uid="Orleans.EventSourcing.JournaledGrain`1.#ctor(Orleans.Core.IGrainIdentity,Orleans.Runtime.IGrainRuntime)">JournaledGrain(IGrainIdentity, IGrainRuntime)</h4>
+  <div class="markdown level1 summary"><p>This constructor is particularly useful for unit testing where test code can create a Grain and replace
+the IGrainIdentity, IGrainRuntime and State with test doubles (mocks/stubs).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected JournaledGrain(IGrainIdentity identity, IGrainRuntime runtime)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.Core.IGrainIdentity.html">IGrainIdentity</a></td>
+        <td><span class="parametername">identity</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Orleans.Runtime.IGrainRuntime.html">IGrainRuntime</a></td>
+        <td><span class="parametername">runtime</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">ILogConsistencyProtocolParticipant</span>
+  </div>
+  <div>
+      <span class="xref">ILogViewAdaptorHost&lt;, &gt;</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Orleans.Concurrency.ImmutableExt.html#Orleans_Concurrency_ImmutableExt_AsImmutable__1___0_">ImmutableExt.AsImmutable&lt;T&gt;(T)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_JournaledGrain_1.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.JournaledGrain%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/JournaledGrain.cs/#L18" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

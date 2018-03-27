@@ -1,0 +1,1310 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SiloHost
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SiloHost
+   ">
+    <meta name="generator" content="docfx 2.33.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Orleans.Runtime.Host.SiloHost">
+  
+  
+  <h1 id="Orleans_Runtime_Host_SiloHost" data-uid="Orleans.Runtime.Host.SiloHost" class="text-break">Class SiloHost
+  </h1>
+  <div class="markdown level0 summary"><p>Allows programmatically hosting an Orleans silo in the curent app domain.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">SiloHost</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">IDisposable</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Orleans.Runtime.Host.html">Orleans.Runtime.Host</a></h6>
+  <h6><strong>Assembly</strong>: Orleans.Runtime.Legacy.dll</h6>
+  <h5 id="Orleans_Runtime_Host_SiloHost_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SiloHost : MarshalByRefObject, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_Host_SiloHost__ctor_System_String_.md&amp;value=---%0Auid%3A%20Orleans.Runtime.Host.SiloHost.%23ctor(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs/#L67">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_Host_SiloHost__ctor_" data-uid="Orleans.Runtime.Host.SiloHost.#ctor*"></a>
+  <h4 id="Orleans_Runtime_Host_SiloHost__ctor_System_String_" data-uid="Orleans.Runtime.Host.SiloHost.#ctor(System.String)">SiloHost(String)</h4>
+  <div class="markdown level1 summary"><p>Constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SiloHost(string siloName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">siloName</span></td>
+        <td><p>Name of this silo.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_Host_SiloHost__ctor_System_String_FileInfo_.md&amp;value=---%0Auid%3A%20Orleans.Runtime.Host.SiloHost.%23ctor(System.String%2CFileInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs/#L88">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_Host_SiloHost__ctor_" data-uid="Orleans.Runtime.Host.SiloHost.#ctor*"></a>
+  <h4 id="Orleans_Runtime_Host_SiloHost__ctor_System_String_FileInfo_" data-uid="Orleans.Runtime.Host.SiloHost.#ctor(System.String,FileInfo)">SiloHost(String, FileInfo)</h4>
+  <div class="markdown level1 summary"><p>Constructor </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SiloHost(string siloName, FileInfo configFile)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">siloName</span></td>
+        <td><p>Name of this silo.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">FileInfo</span></td>
+        <td><span class="parametername">configFile</span></td>
+        <td><p>Silo config file that will be used to initialize this silo.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_Host_SiloHost__ctor_System_String_Orleans_Runtime_Configuration_ClusterConfiguration_.md&amp;value=---%0Auid%3A%20Orleans.Runtime.Host.SiloHost.%23ctor(System.String%2COrleans.Runtime.Configuration.ClusterConfiguration)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs/#L80">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_Host_SiloHost__ctor_" data-uid="Orleans.Runtime.Host.SiloHost.#ctor*"></a>
+  <h4 id="Orleans_Runtime_Host_SiloHost__ctor_System_String_Orleans_Runtime_Configuration_ClusterConfiguration_" data-uid="Orleans.Runtime.Host.SiloHost.#ctor(System.String,Orleans.Runtime.Configuration.ClusterConfiguration)">SiloHost(String, ClusterConfiguration)</h4>
+  <div class="markdown level1 summary"><p>Constructor </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SiloHost(string siloName, ClusterConfiguration config)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">siloName</span></td>
+        <td><p>Name of this silo.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Orleans.Runtime.Configuration.ClusterConfiguration.html">ClusterConfiguration</a></td>
+        <td><span class="parametername">config</span></td>
+        <td><p>Silo config that will be used to initialize this silo.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_Host_SiloHost_Config.md&amp;value=---%0Auid%3A%20Orleans.Runtime.Host.SiloHost.Config%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs/#L37">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_Host_SiloHost_Config_" data-uid="Orleans.Runtime.Host.SiloHost.Config*"></a>
+  <h4 id="Orleans_Runtime_Host_SiloHost_Config" data-uid="Orleans.Runtime.Host.SiloHost.Config">Config</h4>
+  <div class="markdown level1 summary"><p>Configuration data for the Orleans system. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ClusterConfiguration Config { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.Runtime.Configuration.ClusterConfiguration.html">ClusterConfiguration</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_Host_SiloHost_ConfigFileName.md&amp;value=---%0Auid%3A%20Orleans.Runtime.Host.SiloHost.ConfigFileName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs/#L34">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_Host_SiloHost_ConfigFileName_" data-uid="Orleans.Runtime.Host.SiloHost.ConfigFileName*"></a>
+  <h4 id="Orleans_Runtime_Host_SiloHost_ConfigFileName" data-uid="Orleans.Runtime.Host.SiloHost.ConfigFileName">ConfigFileName</h4>
+  <div class="markdown level1 summary"><p>Configuration file used for this silo.
+Changing this after the silo has started (when <code>ConfigLoaded == true</code>) will have no effect.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ConfigFileName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_Host_SiloHost_ConfigLoaded.md&amp;value=---%0Auid%3A%20Orleans.Runtime.Host.SiloHost.ConfigLoaded%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs/#L48">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_Host_SiloHost_ConfigLoaded_" data-uid="Orleans.Runtime.Host.SiloHost.ConfigLoaded*"></a>
+  <h4 id="Orleans_Runtime_Host_SiloHost_ConfigLoaded" data-uid="Orleans.Runtime.Host.SiloHost.ConfigLoaded">ConfigLoaded</h4>
+  <div class="markdown level1 summary"><p>Whether the silo config has been loaded and initializing it&apos;s runtime config.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ConfigLoaded { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Orleans_Runtime_Host_SiloHost_ConfigLoaded_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Changes to silo config properties will be ignored after <code>ConfigLoaded == true</code>.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_Host_SiloHost_DeploymentId.md&amp;value=---%0Auid%3A%20Orleans.Runtime.Host.SiloHost.DeploymentId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs/#L51">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_Host_SiloHost_DeploymentId_" data-uid="Orleans.Runtime.Host.SiloHost.DeploymentId*"></a>
+  <h4 id="Orleans_Runtime_Host_SiloHost_DeploymentId" data-uid="Orleans.Runtime.Host.SiloHost.DeploymentId">DeploymentId</h4>
+  <div class="markdown level1 summary"><p>Cluster Id (if any) for the cluster this silo is running in. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string DeploymentId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_Host_SiloHost_IsStarted.md&amp;value=---%0Auid%3A%20Orleans.Runtime.Host.SiloHost.IsStarted%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs/#L54">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_Host_SiloHost_IsStarted_" data-uid="Orleans.Runtime.Host.SiloHost.IsStarted*"></a>
+  <h4 id="Orleans_Runtime_Host_SiloHost_IsStarted" data-uid="Orleans.Runtime.Host.SiloHost.IsStarted">IsStarted</h4>
+  <div class="markdown level1 summary"><p>Whether this silo started successfully and is currently running. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsStarted { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_Host_SiloHost_Name.md&amp;value=---%0Auid%3A%20Orleans.Runtime.Host.SiloHost.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs/#L25">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_Host_SiloHost_Name_" data-uid="Orleans.Runtime.Host.SiloHost.Name*"></a>
+  <h4 id="Orleans_Runtime_Host_SiloHost_Name" data-uid="Orleans.Runtime.Host.SiloHost.Name">Name</h4>
+  <div class="markdown level1 summary"><p>Name of this silo. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_Host_SiloHost_NodeConfig.md&amp;value=---%0Auid%3A%20Orleans.Runtime.Host.SiloHost.NodeConfig%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs/#L40">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_Host_SiloHost_NodeConfig_" data-uid="Orleans.Runtime.Host.SiloHost.NodeConfig*"></a>
+  <h4 id="Orleans_Runtime_Host_SiloHost_NodeConfig" data-uid="Orleans.Runtime.Host.SiloHost.NodeConfig">NodeConfig</h4>
+  <div class="markdown level1 summary"><p>Configuration data for this silo. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NodeConfiguration NodeConfig { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.Runtime.Configuration.NodeConfiguration.html">NodeConfiguration</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_Host_SiloHost_Type.md&amp;value=---%0Auid%3A%20Orleans.Runtime.Host.SiloHost.Type%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs/#L28">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_Host_SiloHost_Type_" data-uid="Orleans.Runtime.Host.SiloHost.Type*"></a>
+  <h4 id="Orleans_Runtime_Host_SiloHost_Type" data-uid="Orleans.Runtime.Host.SiloHost.Type">Type</h4>
+  <div class="markdown level1 summary"><p>Type of this silo - either <code>Primary</code> or <code>Secondary</code>. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Silo.SiloType Type { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Silo.SiloType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_Host_SiloHost_Dispose.md&amp;value=---%0Auid%3A%20Orleans.Runtime.Host.SiloHost.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs/#L588">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_Host_SiloHost_Dispose_" data-uid="Orleans.Runtime.Host.SiloHost.Dispose*"></a>
+  <h4 id="Orleans_Runtime_Host_SiloHost_Dispose" data-uid="Orleans.Runtime.Host.SiloHost.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Called when this silo is being Disposed by .NET runtime.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_Host_SiloHost_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20Orleans.Runtime.Host.SiloHost.Dispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs/#L596">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_Host_SiloHost_Dispose_" data-uid="Orleans.Runtime.Host.SiloHost.Dispose*"></a>
+  <h4 id="Orleans_Runtime_Host_SiloHost_Dispose_System_Boolean_" data-uid="Orleans.Runtime.Host.SiloHost.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Perform the Dispose / cleanup operation. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool disposing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">disposing</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_Host_SiloHost_InitializeOrleansSilo.md&amp;value=---%0Auid%3A%20Orleans.Runtime.Host.SiloHost.InitializeOrleansSilo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs/#L100">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_Host_SiloHost_InitializeOrleansSilo_" data-uid="Orleans.Runtime.Host.SiloHost.InitializeOrleansSilo*"></a>
+  <h4 id="Orleans_Runtime_Host_SiloHost_InitializeOrleansSilo" data-uid="Orleans.Runtime.Host.SiloHost.InitializeOrleansSilo">InitializeOrleansSilo()</h4>
+  <div class="markdown level1 summary"><p>Initialize this silo.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InitializeOrleansSilo()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_Host_SiloHost_LoadOrleansConfig.md&amp;value=---%0Auid%3A%20Orleans.Runtime.Host.SiloHost.LoadOrleansConfig%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs/#L505">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_Host_SiloHost_LoadOrleansConfig_" data-uid="Orleans.Runtime.Host.SiloHost.LoadOrleansConfig*"></a>
+  <h4 id="Orleans_Runtime_Host_SiloHost_LoadOrleansConfig" data-uid="Orleans.Runtime.Host.SiloHost.LoadOrleansConfig">LoadOrleansConfig()</h4>
+  <div class="markdown level1 summary"><p>Search for and load the config file for this silo.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadOrleansConfig()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_Host_SiloHost_ReportStartupError_Exception_.md&amp;value=---%0Auid%3A%20Orleans.Runtime.Host.SiloHost.ReportStartupError(Exception)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs/#L478">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_Host_SiloHost_ReportStartupError_" data-uid="Orleans.Runtime.Host.SiloHost.ReportStartupError*"></a>
+  <h4 id="Orleans_Runtime_Host_SiloHost_ReportStartupError_Exception_" data-uid="Orleans.Runtime.Host.SiloHost.ReportStartupError(Exception)">ReportStartupError(Exception)</h4>
+  <div class="markdown level1 summary"><p>Report an error during silo startup.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReportStartupError(Exception exc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Exception</span></td>
+        <td><span class="parametername">exc</span></td>
+        <td><p>Exception which caused the silo startup issue.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Orleans_Runtime_Host_SiloHost_ReportStartupError_Exception__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Information on the silo startup issue will be logged to any attached Loggers,
+then a timestamped StartupError text file will be written to 
+the current working directory (if possible).</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_Host_SiloHost_SetDeploymentId_System_String_System_String_.md&amp;value=---%0Auid%3A%20Orleans.Runtime.Host.SiloHost.SetDeploymentId(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs/#L357">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_Host_SiloHost_SetDeploymentId_" data-uid="Orleans.Runtime.Host.SiloHost.SetDeploymentId*"></a>
+  <h4 id="Orleans_Runtime_Host_SiloHost_SetDeploymentId_System_String_System_String_" data-uid="Orleans.Runtime.Host.SiloHost.SetDeploymentId(System.String,System.String)">SetDeploymentId(String, String)</h4>
+  <div class="markdown level1 summary"><p>Set the ClusterId for this silo, 
+as well as the connection string to use the silo system data, 
+such as the cluster membership table..</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDeploymentId(string clusterId, string connectionString)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">clusterId</span></td>
+        <td><p>ClusterId this silo is part of.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">connectionString</span></td>
+        <td><p>Azure connection string to use the silo system data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_Host_SiloHost_SetExpectedClusterSize_System_Int32_.md&amp;value=---%0Auid%3A%20Orleans.Runtime.Host.SiloHost.SetExpectedClusterSize(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs/#L463">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_Host_SiloHost_SetExpectedClusterSize_" data-uid="Orleans.Runtime.Host.SiloHost.SetExpectedClusterSize*"></a>
+  <h4 id="Orleans_Runtime_Host_SiloHost_SetExpectedClusterSize_System_Int32_" data-uid="Orleans.Runtime.Host.SiloHost.SetExpectedClusterSize(System.Int32)">SetExpectedClusterSize(Int32)</h4>
+  <div class="markdown level1 summary"><p>Set expected deployment size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetExpectedClusterSize(int size)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>The expected deployment size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_Host_SiloHost_SetPrimaryNodeEndpoint_IPEndPoint_.md&amp;value=---%0Auid%3A%20Orleans.Runtime.Host.SiloHost.SetPrimaryNodeEndpoint(IPEndPoint)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs/#L423">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_Host_SiloHost_SetPrimaryNodeEndpoint_" data-uid="Orleans.Runtime.Host.SiloHost.SetPrimaryNodeEndpoint*"></a>
+  <h4 id="Orleans_Runtime_Host_SiloHost_SetPrimaryNodeEndpoint_IPEndPoint_" data-uid="Orleans.Runtime.Host.SiloHost.SetPrimaryNodeEndpoint(IPEndPoint)">SetPrimaryNodeEndpoint(IPEndPoint)</h4>
+  <div class="markdown level1 summary"><p>Set the endpoint addresses for the Primary silo (if any).
+This silo may be Primary, in which case this address should match 
+this silo&apos;s inter-silo connection socket address.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPrimaryNodeEndpoint(IPEndPoint endpoint)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IPEndPoint</span></td>
+        <td><span class="parametername">endpoint</span></td>
+        <td><p>The IP address for the inter-silo connection socket on the Primary silo.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_Host_SiloHost_SetProxyEndpoint_IPEndPoint_.md&amp;value=---%0Auid%3A%20Orleans.Runtime.Host.SiloHost.SetProxyEndpoint(IPEndPoint)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs/#L385">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_Host_SiloHost_SetProxyEndpoint_" data-uid="Orleans.Runtime.Host.SiloHost.SetProxyEndpoint*"></a>
+  <h4 id="Orleans_Runtime_Host_SiloHost_SetProxyEndpoint_IPEndPoint_" data-uid="Orleans.Runtime.Host.SiloHost.SetProxyEndpoint(IPEndPoint)">SetProxyEndpoint(IPEndPoint)</h4>
+  <div class="markdown level1 summary"><p>Set the gateway proxy endpoint address for this silo.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetProxyEndpoint(IPEndPoint endpoint)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IPEndPoint</span></td>
+        <td><span class="parametername">endpoint</span></td>
+        <td><p>IP address of the gateway socket connection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_Host_SiloHost_SetReminderServiceType_Orleans_Runtime_Configuration_GlobalConfiguration_ReminderServiceProviderType_.md&amp;value=---%0Auid%3A%20Orleans.Runtime.Host.SiloHost.SetReminderServiceType(Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs/#L453">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_Host_SiloHost_SetReminderServiceType_" data-uid="Orleans.Runtime.Host.SiloHost.SetReminderServiceType*"></a>
+  <h4 id="Orleans_Runtime_Host_SiloHost_SetReminderServiceType_Orleans_Runtime_Configuration_GlobalConfiguration_ReminderServiceProviderType_" data-uid="Orleans.Runtime.Host.SiloHost.SetReminderServiceType(Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType)">SetReminderServiceType(GlobalConfiguration.ReminderServiceProviderType)</h4>
+  <div class="markdown level1 summary"><p>Set the reminder service type to be used by this silo.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetReminderServiceType(GlobalConfiguration.ReminderServiceProviderType reminderType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.Runtime.Configuration.GlobalConfiguration.ReminderServiceProviderType.html">GlobalConfiguration.ReminderServiceProviderType</a></td>
+        <td><span class="parametername">reminderType</span></td>
+        <td><p>Reminder service type for this silo</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_Host_SiloHost_SetSeedNodeEndpoint_IPEndPoint_.md&amp;value=---%0Auid%3A%20Orleans.Runtime.Host.SiloHost.SetSeedNodeEndpoint(IPEndPoint)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs/#L395">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_Host_SiloHost_SetSeedNodeEndpoint_" data-uid="Orleans.Runtime.Host.SiloHost.SetSeedNodeEndpoint*"></a>
+  <h4 id="Orleans_Runtime_Host_SiloHost_SetSeedNodeEndpoint_IPEndPoint_" data-uid="Orleans.Runtime.Host.SiloHost.SetSeedNodeEndpoint(IPEndPoint)">SetSeedNodeEndpoint(IPEndPoint)</h4>
+  <div class="markdown level1 summary"><p>Set the seed node endpoint address to be used by silo.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSeedNodeEndpoint(IPEndPoint endpoint)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IPEndPoint</span></td>
+        <td><span class="parametername">endpoint</span></td>
+        <td><p>IP address of the inter-silo connection socket on the seed node silo.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_Host_SiloHost_SetSeedNodeEndpoints_IPEndPoint___.md&amp;value=---%0Auid%3A%20Orleans.Runtime.Host.SiloHost.SetSeedNodeEndpoints(IPEndPoint%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs/#L406">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_Host_SiloHost_SetSeedNodeEndpoints_" data-uid="Orleans.Runtime.Host.SiloHost.SetSeedNodeEndpoints*"></a>
+  <h4 id="Orleans_Runtime_Host_SiloHost_SetSeedNodeEndpoints_IPEndPoint___" data-uid="Orleans.Runtime.Host.SiloHost.SetSeedNodeEndpoints(IPEndPoint[])">SetSeedNodeEndpoints(IPEndPoint[])</h4>
+  <div class="markdown level1 summary"><p>Set the set of seed node endpoint addresses to be used by silo.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSeedNodeEndpoints(IPEndPoint[] endpoints)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IPEndPoint</span>[]</td>
+        <td><span class="parametername">endpoints</span></td>
+        <td><p>IP addresses of the inter-silo connection socket on the seed node silos.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_Host_SiloHost_SetSiloEndpoint_IPEndPoint_System_Int32_.md&amp;value=---%0Auid%3A%20Orleans.Runtime.Host.SiloHost.SetSiloEndpoint(IPEndPoint%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs/#L373">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_Host_SiloHost_SetSiloEndpoint_" data-uid="Orleans.Runtime.Host.SiloHost.SetSiloEndpoint*"></a>
+  <h4 id="Orleans_Runtime_Host_SiloHost_SetSiloEndpoint_IPEndPoint_System_Int32_" data-uid="Orleans.Runtime.Host.SiloHost.SetSiloEndpoint(IPEndPoint,System.Int32)">SetSiloEndpoint(IPEndPoint, Int32)</h4>
+  <div class="markdown level1 summary"><p>Set the main endpoint address for this silo,
+plus the silo generation value to be used to distinguish this silo instance
+from any previous silo instances previously running on this endpoint.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSiloEndpoint(IPEndPoint endpoint, int generation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IPEndPoint</span></td>
+        <td><span class="parametername">endpoint</span></td>
+        <td><p>IP address and port of the main inter-silo socket connection.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">generation</span></td>
+        <td><p>Generation number for this silo.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_Host_SiloHost_SetSiloLivenessType_Orleans_Runtime_Configuration_GlobalConfiguration_LivenessProviderType_.md&amp;value=---%0Auid%3A%20Orleans.Runtime.Host.SiloHost.SetSiloLivenessType(Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs/#L443">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_Host_SiloHost_SetSiloLivenessType_" data-uid="Orleans.Runtime.Host.SiloHost.SetSiloLivenessType*"></a>
+  <h4 id="Orleans_Runtime_Host_SiloHost_SetSiloLivenessType_Orleans_Runtime_Configuration_GlobalConfiguration_LivenessProviderType_" data-uid="Orleans.Runtime.Host.SiloHost.SetSiloLivenessType(Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType)">SetSiloLivenessType(GlobalConfiguration.LivenessProviderType)</h4>
+  <div class="markdown level1 summary"><p>Set the membership liveness type to be used by this silo.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSiloLivenessType(GlobalConfiguration.LivenessProviderType livenessType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.Runtime.Configuration.GlobalConfiguration.LivenessProviderType.html">GlobalConfiguration.LivenessProviderType</a></td>
+        <td><span class="parametername">livenessType</span></td>
+        <td><p>Liveness type for this silo</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_Host_SiloHost_SetSiloType_Silo_SiloType_.md&amp;value=---%0Auid%3A%20Orleans.Runtime.Host.SiloHost.SetSiloType(Silo.SiloType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs/#L433">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_Host_SiloHost_SetSiloType_" data-uid="Orleans.Runtime.Host.SiloHost.SetSiloType*"></a>
+  <h4 id="Orleans_Runtime_Host_SiloHost_SetSiloType_Silo_SiloType_" data-uid="Orleans.Runtime.Host.SiloHost.SetSiloType(Silo.SiloType)">SetSiloType(Silo.SiloType)</h4>
+  <div class="markdown level1 summary"><p>Set the type of this silo. Default is Secondary.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSiloType(Silo.SiloType siloType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Silo.SiloType</span></td>
+        <td><span class="parametername">siloType</span></td>
+        <td><p>Type of this silo.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_Host_SiloHost_ShutdownOrleansSilo.md&amp;value=---%0Auid%3A%20Orleans.Runtime.Host.SiloHost.ShutdownOrleansSilo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs/#L248">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_Host_SiloHost_ShutdownOrleansSilo_" data-uid="Orleans.Runtime.Host.SiloHost.ShutdownOrleansSilo*"></a>
+  <h4 id="Orleans_Runtime_Host_SiloHost_ShutdownOrleansSilo" data-uid="Orleans.Runtime.Host.SiloHost.ShutdownOrleansSilo">ShutdownOrleansSilo()</h4>
+  <div class="markdown level1 summary"><p>Gracefully shutdown this silo.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShutdownOrleansSilo()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_Host_SiloHost_ShutdownOrleansSiloAsync_CancellationToken_.md&amp;value=---%0Auid%3A%20Orleans.Runtime.Host.SiloHost.ShutdownOrleansSiloAsync(CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs/#L285">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_Host_SiloHost_ShutdownOrleansSiloAsync_" data-uid="Orleans.Runtime.Host.SiloHost.ShutdownOrleansSiloAsync*"></a>
+  <h4 id="Orleans_Runtime_Host_SiloHost_ShutdownOrleansSiloAsync_CancellationToken_" data-uid="Orleans.Runtime.Host.SiloHost.ShutdownOrleansSiloAsync(CancellationToken)">ShutdownOrleansSiloAsync(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>/// Returns a task that will resolve when the silo has finished shutting down, or the cancellation token is cancelled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task ShutdownOrleansSiloAsync(CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Token that cancels waiting for shutdown.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_Host_SiloHost_ShutdownOrleansSiloAsync_System_Int32_CancellationToken_.md&amp;value=---%0Auid%3A%20Orleans.Runtime.Host.SiloHost.ShutdownOrleansSiloAsync(System.Int32%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs/#L260">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_Host_SiloHost_ShutdownOrleansSiloAsync_" data-uid="Orleans.Runtime.Host.SiloHost.ShutdownOrleansSiloAsync*"></a>
+  <h4 id="Orleans_Runtime_Host_SiloHost_ShutdownOrleansSiloAsync_System_Int32_CancellationToken_" data-uid="Orleans.Runtime.Host.SiloHost.ShutdownOrleansSiloAsync(System.Int32,CancellationToken)">ShutdownOrleansSiloAsync(Int32, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Returns a task that will resolve when the silo has finished shutting down, or the cancellation token is cancelled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task ShutdownOrleansSiloAsync(int millisecondsTimeout, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">millisecondsTimeout</span></td>
+        <td><p>Timeout, or -1 for infinite.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Token that cancels waiting for shutdown.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_Host_SiloHost_StartOrleansSilo_System_Boolean_.md&amp;value=---%0Auid%3A%20Orleans.Runtime.Host.SiloHost.StartOrleansSilo(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs/#L141">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_Host_SiloHost_StartOrleansSilo_" data-uid="Orleans.Runtime.Host.SiloHost.StartOrleansSilo*"></a>
+  <h4 id="Orleans_Runtime_Host_SiloHost_StartOrleansSilo_System_Boolean_" data-uid="Orleans.Runtime.Host.SiloHost.StartOrleansSilo(System.Boolean)">StartOrleansSilo(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Start this silo.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool StartOrleansSilo(bool catchExceptions = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">catchExceptions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_Host_SiloHost_StopOrleansSilo.md&amp;value=---%0Auid%3A%20Orleans.Runtime.Host.SiloHost.StopOrleansSilo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs/#L239">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_Host_SiloHost_StopOrleansSilo_" data-uid="Orleans.Runtime.Host.SiloHost.StopOrleansSilo*"></a>
+  <h4 id="Orleans_Runtime_Host_SiloHost_StopOrleansSilo" data-uid="Orleans.Runtime.Host.SiloHost.StopOrleansSilo">StopOrleansSilo()</h4>
+  <div class="markdown level1 summary"><p>Stop this silo.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopOrleansSilo()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_Host_SiloHost_UnInitializeOrleansSilo.md&amp;value=---%0Auid%3A%20Orleans.Runtime.Host.SiloHost.UnInitializeOrleansSilo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs/#L132">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_Host_SiloHost_UnInitializeOrleansSilo_" data-uid="Orleans.Runtime.Host.SiloHost.UnInitializeOrleansSilo*"></a>
+  <h4 id="Orleans_Runtime_Host_SiloHost_UnInitializeOrleansSilo" data-uid="Orleans.Runtime.Host.SiloHost.UnInitializeOrleansSilo">UnInitializeOrleansSilo()</h4>
+  <div class="markdown level1 summary"><p>Uninitialize this silo.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnInitializeOrleansSilo()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_Host_SiloHost_WaitForOrleansSiloShutdown.md&amp;value=---%0Auid%3A%20Orleans.Runtime.Host.SiloHost.WaitForOrleansSiloShutdown%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs/#L297">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_Host_SiloHost_WaitForOrleansSiloShutdown_" data-uid="Orleans.Runtime.Host.SiloHost.WaitForOrleansSiloShutdown*"></a>
+  <h4 id="Orleans_Runtime_Host_SiloHost_WaitForOrleansSiloShutdown" data-uid="Orleans.Runtime.Host.SiloHost.WaitForOrleansSiloShutdown">WaitForOrleansSiloShutdown()</h4>
+  <div class="markdown level1 summary"><p>Wait for this silo to shutdown.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WaitForOrleansSiloShutdown()</code></pre>
+  </div>
+  <h5 id="Orleans_Runtime_Host_SiloHost_WaitForOrleansSiloShutdown_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Note: This method call will block execution of current thread, 
+and will not return control back to the caller until the silo is shutdown.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_Host_SiloHost_WaitForOrleansSiloShutdown_CancellationToken_.md&amp;value=---%0Auid%3A%20Orleans.Runtime.Host.SiloHost.WaitForOrleansSiloShutdown(CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs/#L311">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_Host_SiloHost_WaitForOrleansSiloShutdown_" data-uid="Orleans.Runtime.Host.SiloHost.WaitForOrleansSiloShutdown*"></a>
+  <h4 id="Orleans_Runtime_Host_SiloHost_WaitForOrleansSiloShutdown_CancellationToken_" data-uid="Orleans.Runtime.Host.SiloHost.WaitForOrleansSiloShutdown(CancellationToken)">WaitForOrleansSiloShutdown(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Wait for this silo to shutdown or to be stopped with provided cancellation token.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WaitForOrleansSiloShutdown(CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Orleans_Runtime_Host_SiloHost_WaitForOrleansSiloShutdown_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Note: This method call will block execution of current thread, 
+and will not return control back to the caller until the silo is shutdown or 
+an external request for cancellation has been issued.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_Host_SiloHost_WaitForOrleansSiloShutdownAsync_System_Int32_CancellationToken_.md&amp;value=---%0Auid%3A%20Orleans.Runtime.Host.SiloHost.WaitForOrleansSiloShutdownAsync(System.Int32%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs/#L324">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_Host_SiloHost_WaitForOrleansSiloShutdownAsync_" data-uid="Orleans.Runtime.Host.SiloHost.WaitForOrleansSiloShutdownAsync*"></a>
+  <h4 id="Orleans_Runtime_Host_SiloHost_WaitForOrleansSiloShutdownAsync_System_Int32_CancellationToken_" data-uid="Orleans.Runtime.Host.SiloHost.WaitForOrleansSiloShutdownAsync(System.Int32,CancellationToken)">WaitForOrleansSiloShutdownAsync(Int32, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Waits for the SiloTerminatedEvent to fire or cancellation token to be cancelled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; WaitForOrleansSiloShutdownAsync(int millisecondsTimeout, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">millisecondsTimeout</span></td>
+        <td><p>Timeout, or -1 for infinite.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Token that cancels waiting for shutdown.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Orleans_Runtime_Host_SiloHost_WaitForOrleansSiloShutdownAsync_System_Int32_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This is essentially an async version of WaitForOrleansSiloShutdown.</p>
+</div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">IDisposable</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Orleans.Concurrency.ImmutableExt.html#Orleans_Concurrency_ImmutableExt_AsImmutable__1___0_">ImmutableExt.AsImmutable&lt;T&gt;(T)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_Host_SiloHost.md&amp;value=---%0Auid%3A%20Orleans.Runtime.Host.SiloHost%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Runtime.Legacy/Hosting/SiloHost.cs/#L20" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

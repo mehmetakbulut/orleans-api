@@ -1,0 +1,1066 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class JournaledGrain&lt;TGrainState, TEventBase&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class JournaledGrain&lt;TGrainState, TEventBase&gt;
+   ">
+    <meta name="generator" content="docfx 2.33.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Orleans.EventSourcing.JournaledGrain`2">
+  
+  
+  <h1 id="Orleans_EventSourcing_JournaledGrain_2" data-uid="Orleans.EventSourcing.JournaledGrain`2" class="text-break">Class JournaledGrain&lt;TGrainState, TEventBase&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>A base class for log-consistent grains using standard event-sourcing terminology.
+All operations are reentrancy-safe.
+<typeparam name="TGrainState">The type for the grain state, i.e. the aggregate view of the event log.</typeparam>
+<typeparam name="TEventBase">The common base class for the events</typeparam></p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">JournaledGrain&lt;TGrainState, TEventBase&gt;</span></div>
+      <div class="level2"><a class="xref" href="Orleans.EventSourcing.JournaledGrain-1.html">JournaledGrain&lt;TGrainState&gt;</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">ILogConsistencyProtocolParticipant</span></div>
+    <div><span class="xref">ILogViewAdaptorHost</span>&lt;TGrainState, TEventBase&gt;</div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Orleans.EventSourcing.html">Orleans.EventSourcing</a></h6>
+  <h6><strong>Assembly</strong>: Orleans.EventSourcing.dll</h6>
+  <h5 id="Orleans_EventSourcing_JournaledGrain_2_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class JournaledGrain&lt;TGrainState, TEventBase&gt; : LogConsistentGrain&lt;TGrainState&gt;, ILogConsistencyProtocolParticipant, ILogViewAdaptorHost&lt;TGrainState, TEventBase&gt; where TGrainState : class, new ()where TEventBase : class</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TGrainState</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TEventBase</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_JournaledGrain_2__ctor.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.JournaledGrain%602.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/JournaledGrain.cs/#L47">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_JournaledGrain_2__ctor_" data-uid="Orleans.EventSourcing.JournaledGrain`2.#ctor*"></a>
+  <h4 id="Orleans_EventSourcing_JournaledGrain_2__ctor" data-uid="Orleans.EventSourcing.JournaledGrain`2.#ctor">JournaledGrain()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected JournaledGrain()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_JournaledGrain_2__ctor_Orleans_Core_IGrainIdentity_Orleans_Runtime_IGrainRuntime_.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.JournaledGrain%602.%23ctor(Orleans.Core.IGrainIdentity%2COrleans.Runtime.IGrainRuntime)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/JournaledGrain.cs/#L53">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_JournaledGrain_2__ctor_" data-uid="Orleans.EventSourcing.JournaledGrain`2.#ctor*"></a>
+  <h4 id="Orleans_EventSourcing_JournaledGrain_2__ctor_Orleans_Core_IGrainIdentity_Orleans_Runtime_IGrainRuntime_" data-uid="Orleans.EventSourcing.JournaledGrain`2.#ctor(Orleans.Core.IGrainIdentity,Orleans.Runtime.IGrainRuntime)">JournaledGrain(IGrainIdentity, IGrainRuntime)</h4>
+  <div class="markdown level1 summary"><p>This constructor is particularly useful for unit testing where test code can create a Grain and replace
+the IGrainIdentity, IGrainRuntime and State with test doubles (mocks/stubs).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected JournaledGrain(IGrainIdentity identity, IGrainRuntime runtime)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.Core.IGrainIdentity.html">IGrainIdentity</a></td>
+        <td><span class="parametername">identity</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Orleans.Runtime.IGrainRuntime.html">IGrainRuntime</a></td>
+        <td><span class="parametername">runtime</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_JournaledGrain_2_DefaultAdaptorFactory.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.JournaledGrain%602.DefaultAdaptorFactory%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/JournaledGrain.cs/#L306">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_JournaledGrain_2_DefaultAdaptorFactory_" data-uid="Orleans.EventSourcing.JournaledGrain`2.DefaultAdaptorFactory*"></a>
+  <h4 id="Orleans_EventSourcing_JournaledGrain_2_DefaultAdaptorFactory" data-uid="Orleans.EventSourcing.JournaledGrain`2.DefaultAdaptorFactory">DefaultAdaptorFactory</h4>
+  <div class="markdown level1 summary"><p>If there is no log-consistency provider specified, store versioned state using default storage provider</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override ILogViewAdaptorFactory DefaultAdaptorFactory { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogViewAdaptorFactory</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_JournaledGrain_2_State.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.JournaledGrain%602.State%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/JournaledGrain.cs/#L117">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_JournaledGrain_2_State_" data-uid="Orleans.EventSourcing.JournaledGrain`2.State*"></a>
+  <h4 id="Orleans_EventSourcing_JournaledGrain_2_State" data-uid="Orleans.EventSourcing.JournaledGrain`2.State">State</h4>
+  <div class="markdown level1 summary"><p>The current confirmed state. 
+Includes only confirmed events.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TGrainState State { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TGrainState</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_JournaledGrain_2_TentativeState.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.JournaledGrain%602.TentativeState%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/JournaledGrain.cs/#L143">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_JournaledGrain_2_TentativeState_" data-uid="Orleans.EventSourcing.JournaledGrain`2.TentativeState*"></a>
+  <h4 id="Orleans_EventSourcing_JournaledGrain_2_TentativeState" data-uid="Orleans.EventSourcing.JournaledGrain`2.TentativeState">TentativeState</h4>
+  <div class="markdown level1 summary"><p>The current tentative state.
+Includes both confirmed and unconfirmed events.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TGrainState TentativeState { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TGrainState</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_JournaledGrain_2_UnconfirmedEvents.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.JournaledGrain%602.UnconfirmedEvents%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/JournaledGrain.cs/#L184">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_JournaledGrain_2_UnconfirmedEvents_" data-uid="Orleans.EventSourcing.JournaledGrain`2.UnconfirmedEvents*"></a>
+  <h4 id="Orleans_EventSourcing_JournaledGrain_2_UnconfirmedEvents" data-uid="Orleans.EventSourcing.JournaledGrain`2.UnconfirmedEvents">UnconfirmedEvents</h4>
+  <div class="markdown level1 summary"><p>Returns the current queue of unconfirmed events.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;TEventBase&gt; UnconfirmedEvents { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;TEventBase&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_JournaledGrain_2_UnresolvedConnectionIssues.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.JournaledGrain%602.UnresolvedConnectionIssues%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/JournaledGrain.cs/#L240">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_JournaledGrain_2_UnresolvedConnectionIssues_" data-uid="Orleans.EventSourcing.JournaledGrain`2.UnresolvedConnectionIssues*"></a>
+  <h4 id="Orleans_EventSourcing_JournaledGrain_2_UnresolvedConnectionIssues" data-uid="Orleans.EventSourcing.JournaledGrain`2.UnresolvedConnectionIssues">UnresolvedConnectionIssues</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IEnumerable&lt;ConnectionIssue&gt; UnresolvedConnectionIssues { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Orleans.LogConsistency.ConnectionIssue.html">ConnectionIssue</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_JournaledGrain_2_Version.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.JournaledGrain%602.Version%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/JournaledGrain.cs/#L126">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_JournaledGrain_2_Version_" data-uid="Orleans.EventSourcing.JournaledGrain`2.Version*"></a>
+  <h4 id="Orleans_EventSourcing_JournaledGrain_2_Version" data-uid="Orleans.EventSourcing.JournaledGrain`2.Version">Version</h4>
+  <div class="markdown level1 summary"><p>The version of the current confirmed state. 
+Equals the total number of confirmed events.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int Version { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_JournaledGrain_2_ConfirmEvents.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.JournaledGrain%602.ConfirmEvents%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/JournaledGrain.cs/#L163">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_JournaledGrain_2_ConfirmEvents_" data-uid="Orleans.EventSourcing.JournaledGrain`2.ConfirmEvents*"></a>
+  <h4 id="Orleans_EventSourcing_JournaledGrain_2_ConfirmEvents" data-uid="Orleans.EventSourcing.JournaledGrain`2.ConfirmEvents">ConfirmEvents()</h4>
+  <div class="markdown level1 summary"><p>Waits until all previously raised events have been confirmed. 
+<p>await this after raising one or more events, to ensure events are persisted before proceeding, or to guarantee strong consistency (linearizability) even if there are multiple instances of this grain</p></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task ConfirmEvents()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>a task that completes once the events have been confirmed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_JournaledGrain_2_DisableStatsCollection.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.JournaledGrain%602.DisableStatsCollection%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/JournaledGrain.cs/#L255">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_JournaledGrain_2_DisableStatsCollection_" data-uid="Orleans.EventSourcing.JournaledGrain`2.DisableStatsCollection*"></a>
+  <h4 id="Orleans_EventSourcing_JournaledGrain_2_DisableStatsCollection" data-uid="Orleans.EventSourcing.JournaledGrain`2.DisableStatsCollection">DisableStatsCollection()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void DisableStatsCollection()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_JournaledGrain_2_EnableStatsCollection.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.JournaledGrain%602.EnableStatsCollection%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/JournaledGrain.cs/#L249">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_JournaledGrain_2_EnableStatsCollection_" data-uid="Orleans.EventSourcing.JournaledGrain`2.EnableStatsCollection*"></a>
+  <h4 id="Orleans_EventSourcing_JournaledGrain_2_EnableStatsCollection" data-uid="Orleans.EventSourcing.JournaledGrain`2.EnableStatsCollection">EnableStatsCollection()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void EnableStatsCollection()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_JournaledGrain_2_GetStats.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.JournaledGrain%602.GetStats%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/JournaledGrain.cs/#L261">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_JournaledGrain_2_GetStats_" data-uid="Orleans.EventSourcing.JournaledGrain`2.GetStats*"></a>
+  <h4 id="Orleans_EventSourcing_JournaledGrain_2_GetStats" data-uid="Orleans.EventSourcing.JournaledGrain`2.GetStats">GetStats()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected LogConsistencyStatistics GetStats()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">LogConsistencyStatistics</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_JournaledGrain_2_InstallAdaptor_ILogViewAdaptorFactory_System_Object_System_String_IGrainStorage_ILogConsistencyProtocolServices_.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.JournaledGrain%602.InstallAdaptor(ILogViewAdaptorFactory%2CSystem.Object%2CSystem.String%2CIGrainStorage%2CILogConsistencyProtocolServices)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/JournaledGrain.cs/#L297">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_JournaledGrain_2_InstallAdaptor_" data-uid="Orleans.EventSourcing.JournaledGrain`2.InstallAdaptor*"></a>
+  <h4 id="Orleans_EventSourcing_JournaledGrain_2_InstallAdaptor_ILogViewAdaptorFactory_System_Object_System_String_IGrainStorage_ILogConsistencyProtocolServices_" data-uid="Orleans.EventSourcing.JournaledGrain`2.InstallAdaptor(ILogViewAdaptorFactory,System.Object,System.String,IGrainStorage,ILogConsistencyProtocolServices)">InstallAdaptor(ILogViewAdaptorFactory, Object, String, IGrainStorage, ILogConsistencyProtocolServices)</h4>
+  <div class="markdown level1 summary"><p>Called right after grain is constructed, to install the adaptor.
+The log-consistency provider contains a factory method that constructs the adaptor with chosen types for this grain</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void InstallAdaptor(ILogViewAdaptorFactory factory, object initialState, string graintypename, IGrainStorage grainStorage, ILogConsistencyProtocolServices services)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogViewAdaptorFactory</span></td>
+        <td><span class="parametername">factory</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">initialState</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">graintypename</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IGrainStorage</span></td>
+        <td><span class="parametername">grainStorage</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ILogConsistencyProtocolServices</span></td>
+        <td><span class="parametername">services</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_JournaledGrain_2_OnActivateAsync.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.JournaledGrain%602.OnActivateAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/JournaledGrain.cs/#L195">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_JournaledGrain_2_OnActivateAsync_" data-uid="Orleans.EventSourcing.JournaledGrain`2.OnActivateAsync*"></a>
+  <h4 id="Orleans_EventSourcing_JournaledGrain_2_OnActivateAsync" data-uid="Orleans.EventSourcing.JournaledGrain`2.OnActivateAsync">OnActivateAsync()</h4>
+  <div class="markdown level1 summary"><p>By default, upon activation, the journaled grain waits until it has loaded the latest
+view from storage. Subclasses can override this behavior,
+and skip the wait if desired.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task OnActivateAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_JournaledGrain_2_OnConnectionIssue_Orleans_LogConsistency_ConnectionIssue_.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.JournaledGrain%602.OnConnectionIssue(Orleans.LogConsistency.ConnectionIssue)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/JournaledGrain.cs/#L225">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_JournaledGrain_2_OnConnectionIssue_" data-uid="Orleans.EventSourcing.JournaledGrain`2.OnConnectionIssue*"></a>
+  <h4 id="Orleans_EventSourcing_JournaledGrain_2_OnConnectionIssue_Orleans_LogConsistency_ConnectionIssue_" data-uid="Orleans.EventSourcing.JournaledGrain`2.OnConnectionIssue(Orleans.LogConsistency.ConnectionIssue)">OnConnectionIssue(ConnectionIssue)</h4>
+  <div class="markdown level1 summary"><p>Called when the underlying persistence or replication protocol is running into some sort of connection trouble.
+<p>Override this to monitor the health of the log-consistency protocol and/or
+to customize retry delays.
+Any exceptions thrown are caught and logged by the <see cref="!:ILogConsistencyProvider"></see>.</p></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnConnectionIssue(ConnectionIssue issue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.LogConsistency.ConnectionIssue.html">ConnectionIssue</a></td>
+        <td><span class="parametername">issue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_JournaledGrain_2_OnConnectionIssueResolved_Orleans_LogConsistency_ConnectionIssue_.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.JournaledGrain%602.OnConnectionIssueResolved(Orleans.LogConsistency.ConnectionIssue)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/JournaledGrain.cs/#L234">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_JournaledGrain_2_OnConnectionIssueResolved_" data-uid="Orleans.EventSourcing.JournaledGrain`2.OnConnectionIssueResolved*"></a>
+  <h4 id="Orleans_EventSourcing_JournaledGrain_2_OnConnectionIssueResolved_Orleans_LogConsistency_ConnectionIssue_" data-uid="Orleans.EventSourcing.JournaledGrain`2.OnConnectionIssueResolved(Orleans.LogConsistency.ConnectionIssue)">OnConnectionIssueResolved(ConnectionIssue)</h4>
+  <div class="markdown level1 summary"><p>Called when a previously reported connection issue has been resolved.
+<p>Override this to monitor the health of the log-consistency protocol. 
+Any exceptions thrown are caught and logged by the <see cref="!:ILogConsistencyProvider"></see>.</p></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnConnectionIssueResolved(ConnectionIssue issue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.LogConsistency.ConnectionIssue.html">ConnectionIssue</a></td>
+        <td><span class="parametername">issue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_JournaledGrain_2_OnStateChanged.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.JournaledGrain%602.OnStateChanged%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/JournaledGrain.cs/#L152">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_JournaledGrain_2_OnStateChanged_" data-uid="Orleans.EventSourcing.JournaledGrain`2.OnStateChanged*"></a>
+  <h4 id="Orleans_EventSourcing_JournaledGrain_2_OnStateChanged" data-uid="Orleans.EventSourcing.JournaledGrain`2.OnStateChanged">OnStateChanged()</h4>
+  <div class="markdown level1 summary"><p>Called after the confirmed state may have changed (i.e. the confirmed version number is larger).
+<p>Override this to react to changes of the confirmed state.</p></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnStateChanged()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_JournaledGrain_2_OnTentativeStateChanged.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.JournaledGrain%602.OnTentativeStateChanged%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/JournaledGrain.cs/#L135">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_JournaledGrain_2_OnTentativeStateChanged_" data-uid="Orleans.EventSourcing.JournaledGrain`2.OnTentativeStateChanged*"></a>
+  <h4 id="Orleans_EventSourcing_JournaledGrain_2_OnTentativeStateChanged" data-uid="Orleans.EventSourcing.JournaledGrain`2.OnTentativeStateChanged">OnTentativeStateChanged()</h4>
+  <div class="markdown level1 summary"><p>Called whenever the tentative state may have changed due to local or remote events.
+<p>Override this to react to changes of the state.</p></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnTentativeStateChanged()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_JournaledGrain_2_RaiseConditionalEvent__1___0_.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.JournaledGrain%602.RaiseConditionalEvent%60%601(%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/JournaledGrain.cs/#L91">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_JournaledGrain_2_RaiseConditionalEvent_" data-uid="Orleans.EventSourcing.JournaledGrain`2.RaiseConditionalEvent*"></a>
+  <h4 id="Orleans_EventSourcing_JournaledGrain_2_RaiseConditionalEvent__1___0_" data-uid="Orleans.EventSourcing.JournaledGrain`2.RaiseConditionalEvent``1(``0)">RaiseConditionalEvent&lt;TEvent&gt;(TEvent)</h4>
+  <div class="markdown level1 summary"><p>Raise an event conditionally. 
+Succeeds only if there are no conflicts, that is, no other events were raised in the meantime.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task&lt;bool&gt; RaiseConditionalEvent&lt;TEvent&gt;(TEvent event)where TEvent : TEventBase</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TEvent</span></td>
+        <td><span class="parametername">event</span></td>
+        <td><p>Event to raise</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p>true if successful, false if there was a conflict.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TEvent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_JournaledGrain_2_RaiseConditionalEvents__1_IEnumerable___0__.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.JournaledGrain%602.RaiseConditionalEvents%60%601(IEnumerable%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/JournaledGrain.cs/#L106">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_JournaledGrain_2_RaiseConditionalEvents_" data-uid="Orleans.EventSourcing.JournaledGrain`2.RaiseConditionalEvents*"></a>
+  <h4 id="Orleans_EventSourcing_JournaledGrain_2_RaiseConditionalEvents__1_IEnumerable___0__" data-uid="Orleans.EventSourcing.JournaledGrain`2.RaiseConditionalEvents``1(IEnumerable{``0})">RaiseConditionalEvents&lt;TEvent&gt;(IEnumerable&lt;TEvent&gt;)</h4>
+  <div class="markdown level1 summary"><p>Raise multiple events, as an atomic sequence, conditionally. 
+Succeeds only if there are no conflicts, that is, no other events were raised in the meantime.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task&lt;bool&gt; RaiseConditionalEvents&lt;TEvent&gt;(IEnumerable&lt;TEvent&gt; events)where TEvent : TEventBase</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;TEvent&gt;</td>
+        <td><span class="parametername">events</span></td>
+        <td><p>Events to raise</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p>true if successful, false if there was a conflict.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TEvent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_JournaledGrain_2_RaiseEvent__1___0_.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.JournaledGrain%602.RaiseEvent%60%601(%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/JournaledGrain.cs/#L63">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_JournaledGrain_2_RaiseEvent_" data-uid="Orleans.EventSourcing.JournaledGrain`2.RaiseEvent*"></a>
+  <h4 id="Orleans_EventSourcing_JournaledGrain_2_RaiseEvent__1___0_" data-uid="Orleans.EventSourcing.JournaledGrain`2.RaiseEvent``1(``0)">RaiseEvent&lt;TEvent&gt;(TEvent)</h4>
+  <div class="markdown level1 summary"><p>Raise an event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void RaiseEvent&lt;TEvent&gt;(TEvent event)where TEvent : TEventBase</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TEvent</span></td>
+        <td><span class="parametername">event</span></td>
+        <td><p>Event to raise</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TEvent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_JournaledGrain_2_RaiseEvents__1_IEnumerable___0__.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.JournaledGrain%602.RaiseEvents%60%601(IEnumerable%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/JournaledGrain.cs/#L76">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_JournaledGrain_2_RaiseEvents_" data-uid="Orleans.EventSourcing.JournaledGrain`2.RaiseEvents*"></a>
+  <h4 id="Orleans_EventSourcing_JournaledGrain_2_RaiseEvents__1_IEnumerable___0__" data-uid="Orleans.EventSourcing.JournaledGrain`2.RaiseEvents``1(IEnumerable{``0})">RaiseEvents&lt;TEvent&gt;(IEnumerable&lt;TEvent&gt;)</h4>
+  <div class="markdown level1 summary"><p>Raise multiple events, as an atomic sequence.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void RaiseEvents&lt;TEvent&gt;(IEnumerable&lt;TEvent&gt; events)where TEvent : TEventBase</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;TEvent&gt;</td>
+        <td><span class="parametername">events</span></td>
+        <td><p>Events to raise</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TEvent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_JournaledGrain_2_RefreshNow.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.JournaledGrain%602.RefreshNow%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/JournaledGrain.cs/#L175">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_JournaledGrain_2_RefreshNow_" data-uid="Orleans.EventSourcing.JournaledGrain`2.RefreshNow*"></a>
+  <h4 id="Orleans_EventSourcing_JournaledGrain_2_RefreshNow" data-uid="Orleans.EventSourcing.JournaledGrain`2.RefreshNow">RefreshNow()</h4>
+  <div class="markdown level1 summary"><p>Retrieves the latest state now, and confirms all previously raised events. 
+Effectively, this enforces synchronization with the global state.
+<p>Await this before reading the state to ensure strong consistency (linearizability) even if there are multiple instances of this grain</p></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task RefreshNow()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>a task that completes once the log has been refreshed and the events have been confirmed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_JournaledGrain_2_RetrieveConfirmedEvents_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.JournaledGrain%602.RetrieveConfirmedEvents(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/JournaledGrain.cs/#L208">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_JournaledGrain_2_RetrieveConfirmedEvents_" data-uid="Orleans.EventSourcing.JournaledGrain`2.RetrieveConfirmedEvents*"></a>
+  <h4 id="Orleans_EventSourcing_JournaledGrain_2_RetrieveConfirmedEvents_System_Int32_System_Int32_" data-uid="Orleans.EventSourcing.JournaledGrain`2.RetrieveConfirmedEvents(System.Int32,System.Int32)">RetrieveConfirmedEvents(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Retrieves a segment of the confirmed event sequence, possibly from storage. 
+Throws <see cref="!:NotSupportedException"></see> if the events are not available to read.
+Whether events are available, and for how long, depends on the providers used and how they are configured.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task&lt;IReadOnlyList&lt;TEventBase&gt;&gt; RetrieveConfirmedEvents(int fromVersion, int toVersion)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">fromVersion</span></td>
+        <td><p>the position of the event sequence from which to start</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">toVersion</span></td>
+        <td><p>the position of the event sequence on which to end</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IReadOnlyList</span>&lt;TEventBase&gt;&gt;</td>
+        <td><p>a task which returns the sequence of events between the two versions</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_JournaledGrain_2_TransitionState__0__1_.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.JournaledGrain%602.TransitionState(%600%2C%601)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/JournaledGrain.cs/#L276">View Source</a>
+  </span>
+  <a id="Orleans_EventSourcing_JournaledGrain_2_TransitionState_" data-uid="Orleans.EventSourcing.JournaledGrain`2.TransitionState*"></a>
+  <h4 id="Orleans_EventSourcing_JournaledGrain_2_TransitionState__0__1_" data-uid="Orleans.EventSourcing.JournaledGrain`2.TransitionState(`0,`1)">TransitionState(TGrainState, TEventBase)</h4>
+  <div class="markdown level1 summary"><p>Defines how to apply events to the state. Unless it is overridden in the subclass, it calls
+a dynamic &quot;Apply&quot; function on the state, with the event as a parameter.
+All exceptions thrown by this method are caught and logged by the log view provider.
+<p>Override this to customize how to transition the state for a given event.</p></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void TransitionState(TGrainState state, TEventBase event)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TGrainState</span></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TEventBase</span></td>
+        <td><span class="parametername">event</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">ILogConsistencyProtocolParticipant</span>
+  </div>
+  <div>
+      <span class="xref">ILogViewAdaptorHost&lt;, &gt;</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Orleans.Concurrency.ImmutableExt.html#Orleans_Concurrency_ImmutableExt_AsImmutable__1___0_">ImmutableExt.AsImmutable&lt;T&gt;(T)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_EventSourcing_JournaledGrain_2.md&amp;value=---%0Auid%3A%20Orleans.EventSourcing.JournaledGrain%602%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.EventSourcing/JournaledGrain.cs/#L40" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

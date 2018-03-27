@@ -1,0 +1,484 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IGrainRuntime
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IGrainRuntime
+   ">
+    <meta name="generator" content="docfx 2.33.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Orleans.Runtime.IGrainRuntime">
+  
+  
+  <h1 id="Orleans_Runtime_IGrainRuntime" data-uid="Orleans.Runtime.IGrainRuntime" class="text-break">Interface IGrainRuntime
+  </h1>
+  <div class="markdown level0 summary"><p>The gateway of the <a class="xref" href="Orleans.Grain.html">Grain</a> to the Orleans runtime. The <a class="xref" href="Orleans.Grain.html">Grain</a> should only interact with the runtime through this interface.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Orleans.Runtime.html">Orleans.Runtime</a></h6>
+  <h6><strong>Assembly</strong>: Orleans.Core.Abstractions.dll</h6>
+  <h5 id="Orleans_Runtime_IGrainRuntime_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IGrainRuntime</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_IGrainRuntime_GrainFactory.md&amp;value=---%0Auid%3A%20Orleans.Runtime.IGrainRuntime.GrainFactory%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Abstractions/Runtime/IGrainRuntime.cs/#L29">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_IGrainRuntime_GrainFactory_" data-uid="Orleans.Runtime.IGrainRuntime.GrainFactory*"></a>
+  <h4 id="Orleans_Runtime_IGrainRuntime_GrainFactory" data-uid="Orleans.Runtime.IGrainRuntime.GrainFactory">GrainFactory</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IGrainFactory GrainFactory { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.IGrainFactory.html">IGrainFactory</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_IGrainRuntime_ReminderRegistry.md&amp;value=---%0Auid%3A%20Orleans.Runtime.IGrainRuntime.ReminderRegistry%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Abstractions/Runtime/IGrainRuntime.cs/#L33">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_IGrainRuntime_ReminderRegistry_" data-uid="Orleans.Runtime.IGrainRuntime.ReminderRegistry*"></a>
+  <h4 id="Orleans_Runtime_IGrainRuntime_ReminderRegistry" data-uid="Orleans.Runtime.IGrainRuntime.ReminderRegistry">ReminderRegistry</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IReminderRegistry ReminderRegistry { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.Timers.IReminderRegistry.html">IReminderRegistry</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_IGrainRuntime_ServiceId.md&amp;value=---%0Auid%3A%20Orleans.Runtime.IGrainRuntime.ServiceId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Abstractions/Runtime/IGrainRuntime.cs/#L19">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_IGrainRuntime_ServiceId_" data-uid="Orleans.Runtime.IGrainRuntime.ServiceId*"></a>
+  <h4 id="Orleans_Runtime_IGrainRuntime_ServiceId" data-uid="Orleans.Runtime.IGrainRuntime.ServiceId">ServiceId</h4>
+  <div class="markdown level1 summary"><p>Provides the ServiceId this cluster is running as.
+ServiceId&apos;s are intended to be long lived Id values for a particular service which will remain constant 
+even if the service is started / redeployed multiple times during its operations life.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Guid ServiceId { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Guid</span></td>
+        <td><p>ServiceID Guid for this service.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_IGrainRuntime_ServiceProvider.md&amp;value=---%0Auid%3A%20Orleans.Runtime.IGrainRuntime.ServiceProvider%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Abstractions/Runtime/IGrainRuntime.cs/#L35">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_IGrainRuntime_ServiceProvider_" data-uid="Orleans.Runtime.IGrainRuntime.ServiceProvider*"></a>
+  <h4 id="Orleans_Runtime_IGrainRuntime_ServiceProvider" data-uid="Orleans.Runtime.IGrainRuntime.ServiceProvider">ServiceProvider</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IServiceProvider ServiceProvider { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IServiceProvider</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_IGrainRuntime_SiloAddress.md&amp;value=---%0Auid%3A%20Orleans.Runtime.IGrainRuntime.SiloAddress%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Abstractions/Runtime/IGrainRuntime.cs/#L27">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_IGrainRuntime_SiloAddress_" data-uid="Orleans.Runtime.IGrainRuntime.SiloAddress*"></a>
+  <h4 id="Orleans_Runtime_IGrainRuntime_SiloAddress" data-uid="Orleans.Runtime.IGrainRuntime.SiloAddress">SiloAddress</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">SiloAddress SiloAddress { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.Runtime.SiloAddress.html">SiloAddress</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_IGrainRuntime_SiloIdentity.md&amp;value=---%0Auid%3A%20Orleans.Runtime.IGrainRuntime.SiloIdentity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Abstractions/Runtime/IGrainRuntime.cs/#L25">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_IGrainRuntime_SiloIdentity_" data-uid="Orleans.Runtime.IGrainRuntime.SiloIdentity*"></a>
+  <h4 id="Orleans_Runtime_IGrainRuntime_SiloIdentity" data-uid="Orleans.Runtime.IGrainRuntime.SiloIdentity">SiloIdentity</h4>
+  <div class="markdown level1 summary"><p>A unique identifier for the current silo.
+There is no semantic content to this string, but it may be useful for logging.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string SiloIdentity { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_IGrainRuntime_TimerRegistry.md&amp;value=---%0Auid%3A%20Orleans.Runtime.IGrainRuntime.TimerRegistry%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Abstractions/Runtime/IGrainRuntime.cs/#L31">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_IGrainRuntime_TimerRegistry_" data-uid="Orleans.Runtime.IGrainRuntime.TimerRegistry*"></a>
+  <h4 id="Orleans_Runtime_IGrainRuntime_TimerRegistry" data-uid="Orleans.Runtime.IGrainRuntime.TimerRegistry">TimerRegistry</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ITimerRegistry TimerRegistry { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.Timers.ITimerRegistry.html">ITimerRegistry</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_IGrainRuntime_DeactivateOnIdle_Orleans_Grain_.md&amp;value=---%0Auid%3A%20Orleans.Runtime.IGrainRuntime.DeactivateOnIdle(Orleans.Grain)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Abstractions/Runtime/IGrainRuntime.cs/#L37">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_IGrainRuntime_DeactivateOnIdle_" data-uid="Orleans.Runtime.IGrainRuntime.DeactivateOnIdle*"></a>
+  <h4 id="Orleans_Runtime_IGrainRuntime_DeactivateOnIdle_Orleans_Grain_" data-uid="Orleans.Runtime.IGrainRuntime.DeactivateOnIdle(Orleans.Grain)">DeactivateOnIdle(Grain)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void DeactivateOnIdle(Grain grain)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.Grain.html">Grain</a></td>
+        <td><span class="parametername">grain</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_IGrainRuntime_DelayDeactivation_Orleans_Grain_TimeSpan_.md&amp;value=---%0Auid%3A%20Orleans.Runtime.IGrainRuntime.DelayDeactivation(Orleans.Grain%2CTimeSpan)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Abstractions/Runtime/IGrainRuntime.cs/#L39">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_IGrainRuntime_DelayDeactivation_" data-uid="Orleans.Runtime.IGrainRuntime.DelayDeactivation*"></a>
+  <h4 id="Orleans_Runtime_IGrainRuntime_DelayDeactivation_Orleans_Grain_TimeSpan_" data-uid="Orleans.Runtime.IGrainRuntime.DelayDeactivation(Orleans.Grain,TimeSpan)">DelayDeactivation(Grain, TimeSpan)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void DelayDeactivation(Grain grain, TimeSpan timeSpan)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.Grain.html">Grain</a></td>
+        <td><span class="parametername">grain</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="parametername">timeSpan</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_IGrainRuntime_GetStorage__1_Orleans_Grain_.md&amp;value=---%0Auid%3A%20Orleans.Runtime.IGrainRuntime.GetStorage%60%601(Orleans.Grain)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Abstractions/Runtime/IGrainRuntime.cs/#L41">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_IGrainRuntime_GetStorage_" data-uid="Orleans.Runtime.IGrainRuntime.GetStorage*"></a>
+  <h4 id="Orleans_Runtime_IGrainRuntime_GetStorage__1_Orleans_Grain_" data-uid="Orleans.Runtime.IGrainRuntime.GetStorage``1(Orleans.Grain)">GetStorage&lt;TGrainState&gt;(Grain)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IStorage&lt;TGrainState&gt; GetStorage&lt;TGrainState&gt;(Grain grain)where TGrainState : new ()</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.Grain.html">Grain</a></td>
+        <td><span class="parametername">grain</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.Core.IStorage-1.html">IStorage</a>&lt;TGrainState&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TGrainState</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Orleans.Runtime.LoggerExtensionMethods.html#Orleans_Runtime_LoggerExtensionMethods_GetLogger_Orleans_Runtime_IGrainRuntime_System_String_">LoggerExtensionMethods.GetLogger(IGrainRuntime, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Orleans.Concurrency.ImmutableExt.html#Orleans_Concurrency_ImmutableExt_AsImmutable__1___0_">ImmutableExt.AsImmutable&lt;T&gt;(T)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_IGrainRuntime.md&amp;value=---%0Auid%3A%20Orleans.Runtime.IGrainRuntime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Abstractions/Runtime/IGrainRuntime.cs/#L11" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,403 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DefaultRelationalStoragePicker
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DefaultRelationalStoragePicker
+   ">
+    <meta name="generator" content="docfx 2.33.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Orleans.Storage.DefaultRelationalStoragePicker">
+  
+  
+  <h1 id="Orleans_Storage_DefaultRelationalStoragePicker" data-uid="Orleans.Storage.DefaultRelationalStoragePicker" class="text-break">Class DefaultRelationalStoragePicker
+  </h1>
+  <div class="markdown level0 summary"><p>A strategy to pick a serializer or a deserializer for storage operations. This can be used to:
+1) Add a custom serializer or deserializer for use in storage provider operations.
+2) In combination with serializer or deserializer to update stored object version.
+3) Per-grain storage format selection
+4) Switch storage format first by reading using the save format and then writing in the new format.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">DefaultRelationalStoragePicker</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Orleans.Storage.IStorageSerializationPicker.html">IStorageSerializationPicker</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Orleans.Storage.html">Orleans.Storage</a></h6>
+  <h6><strong>Assembly</strong>: Orleans.Persistence.AdoNet.dll</h6>
+  <h5 id="Orleans_Storage_DefaultRelationalStoragePicker_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DefaultRelationalStoragePicker : object, IStorageSerializationPicker</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Storage_DefaultRelationalStoragePicker__ctor_IEnumerable_Orleans_Storage_IStorageDeserializer__IEnumerable_Orleans_Storage_IStorageSerializer__.md&amp;value=---%0Auid%3A%20Orleans.Storage.DefaultRelationalStoragePicker.%23ctor(IEnumerable%7BOrleans.Storage.IStorageDeserializer%7D%2CIEnumerable%7BOrleans.Storage.IStorageSerializer%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/StorageSerializationPicker.cs/#L35">View Source</a>
+  </span>
+  <a id="Orleans_Storage_DefaultRelationalStoragePicker__ctor_" data-uid="Orleans.Storage.DefaultRelationalStoragePicker.#ctor*"></a>
+  <h4 id="Orleans_Storage_DefaultRelationalStoragePicker__ctor_IEnumerable_Orleans_Storage_IStorageDeserializer__IEnumerable_Orleans_Storage_IStorageSerializer__" data-uid="Orleans.Storage.DefaultRelationalStoragePicker.#ctor(IEnumerable{Orleans.Storage.IStorageDeserializer},IEnumerable{Orleans.Storage.IStorageSerializer})">DefaultRelationalStoragePicker(IEnumerable&lt;IStorageDeserializer&gt;, IEnumerable&lt;IStorageSerializer&gt;)</h4>
+  <div class="markdown level1 summary"><p>Constructs the serializers from the given configuration properties.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DefaultRelationalStoragePicker(IEnumerable&lt;IStorageDeserializer&gt; deserializers, IEnumerable&lt;IStorageSerializer&gt; serializers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Orleans.Storage.IStorageDeserializer.html">IStorageDeserializer</a>&gt;</td>
+        <td><span class="parametername">deserializers</span></td>
+        <td><p>The deserializers to be used.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Orleans.Storage.IStorageSerializer.html">IStorageSerializer</a>&gt;</td>
+        <td><span class="parametername">serializers</span></td>
+        <td><p>The serializers to be used.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Storage_DefaultRelationalStoragePicker_Deserializers.md&amp;value=---%0Auid%3A%20Orleans.Storage.DefaultRelationalStoragePicker.Deserializers%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/StorageSerializationPicker.cs/#L22">View Source</a>
+  </span>
+  <a id="Orleans_Storage_DefaultRelationalStoragePicker_Deserializers_" data-uid="Orleans.Storage.DefaultRelationalStoragePicker.Deserializers*"></a>
+  <h4 id="Orleans_Storage_DefaultRelationalStoragePicker_Deserializers" data-uid="Orleans.Storage.DefaultRelationalStoragePicker.Deserializers">Deserializers</h4>
+  <div class="markdown level1 summary"><p>The configured deserializers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ICollection&lt;IStorageDeserializer&gt; Deserializers { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ICollection</span>&lt;<a class="xref" href="Orleans.Storage.IStorageDeserializer.html">IStorageDeserializer</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Storage_DefaultRelationalStoragePicker_Serializers.md&amp;value=---%0Auid%3A%20Orleans.Storage.DefaultRelationalStoragePicker.Serializers%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/StorageSerializationPicker.cs/#L27">View Source</a>
+  </span>
+  <a id="Orleans_Storage_DefaultRelationalStoragePicker_Serializers_" data-uid="Orleans.Storage.DefaultRelationalStoragePicker.Serializers*"></a>
+  <h4 id="Orleans_Storage_DefaultRelationalStoragePicker_Serializers" data-uid="Orleans.Storage.DefaultRelationalStoragePicker.Serializers">Serializers</h4>
+  <div class="markdown level1 summary"><p>The configured serializers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ICollection&lt;IStorageSerializer&gt; Serializers { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ICollection</span>&lt;<a class="xref" href="Orleans.Storage.IStorageSerializer.html">IStorageSerializer</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Storage_DefaultRelationalStoragePicker_PickDeserializer_System_String_System_String_System_String_Orleans_Runtime_GrainReference_IGrainState_System_String_.md&amp;value=---%0Auid%3A%20Orleans.Storage.DefaultRelationalStoragePicker.PickDeserializer(System.String%2CSystem.String%2CSystem.String%2COrleans.Runtime.GrainReference%2CIGrainState%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/StorageSerializationPicker.cs/#L56">View Source</a>
+  </span>
+  <a id="Orleans_Storage_DefaultRelationalStoragePicker_PickDeserializer_" data-uid="Orleans.Storage.DefaultRelationalStoragePicker.PickDeserializer*"></a>
+  <h4 id="Orleans_Storage_DefaultRelationalStoragePicker_PickDeserializer_System_String_System_String_System_String_Orleans_Runtime_GrainReference_IGrainState_System_String_" data-uid="Orleans.Storage.DefaultRelationalStoragePicker.PickDeserializer(System.String,System.String,System.String,Orleans.Runtime.GrainReference,IGrainState,System.String)">PickDeserializer(String, String, String, GrainReference, IGrainState, String)</h4>
+  <div class="markdown level1 summary"><p>Picks a deserializer using the given parameters.
+<a class="xref" href="Orleans.Storage.IStorageSerializationPicker.html#Orleans_Storage_IStorageSerializationPicker_PickDeserializer_System_String_System_String_System_String_Orleans_Runtime_GrainReference_IGrainState_System_String_">PickDeserializer(String, String, String, GrainReference, IGrainState, String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SerializationChoice PickDeserializer(string serviceId, string storageProviderInstanceName, string grainType, GrainReference grainReference, IGrainState grainState, string tag = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">serviceId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">storageProviderInstanceName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">grainType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Orleans.Runtime.GrainReference.html">GrainReference</a></td>
+        <td><span class="parametername">grainReference</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IGrainState</span></td>
+        <td><span class="parametername">grainState</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">tag</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.Storage.SerializationChoice.html">SerializationChoice</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Storage_DefaultRelationalStoragePicker_PickSerializer_System_String_System_String_System_String_Orleans_Runtime_GrainReference_IGrainState_System_String_.md&amp;value=---%0Auid%3A%20Orleans.Storage.DefaultRelationalStoragePicker.PickSerializer(System.String%2CSystem.String%2CSystem.String%2COrleans.Runtime.GrainReference%2CIGrainState%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/StorageSerializationPicker.cs/#L68">View Source</a>
+  </span>
+  <a id="Orleans_Storage_DefaultRelationalStoragePicker_PickSerializer_" data-uid="Orleans.Storage.DefaultRelationalStoragePicker.PickSerializer*"></a>
+  <h4 id="Orleans_Storage_DefaultRelationalStoragePicker_PickSerializer_System_String_System_String_System_String_Orleans_Runtime_GrainReference_IGrainState_System_String_" data-uid="Orleans.Storage.DefaultRelationalStoragePicker.PickSerializer(System.String,System.String,System.String,Orleans.Runtime.GrainReference,IGrainState,System.String)">PickSerializer(String, String, String, GrainReference, IGrainState, String)</h4>
+  <div class="markdown level1 summary"><p>Picks a serializer using the given parameters.
+<a class="xref" href="Orleans.Storage.IStorageSerializationPicker.html#Orleans_Storage_IStorageSerializationPicker_PickSerializer_System_String_System_String_System_String_Orleans_Runtime_GrainReference_IGrainState_System_String_">PickSerializer(String, String, String, GrainReference, IGrainState, String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SerializationChoice PickSerializer(string servideId, string storageProviderInstanceName, string grainType, GrainReference grainReference, IGrainState grainState, string tag = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">servideId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">storageProviderInstanceName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">grainType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Orleans.Runtime.GrainReference.html">GrainReference</a></td>
+        <td><span class="parametername">grainReference</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IGrainState</span></td>
+        <td><span class="parametername">grainState</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">tag</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.Storage.SerializationChoice.html">SerializationChoice</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Orleans.Storage.IStorageSerializationPicker.html">IStorageSerializationPicker</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Orleans.Concurrency.ImmutableExt.html#Orleans_Concurrency_ImmutableExt_AsImmutable__1___0_">ImmutableExt.AsImmutable&lt;T&gt;(T)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Storage_DefaultRelationalStoragePicker.md&amp;value=---%0Auid%3A%20Orleans.Storage.DefaultRelationalStoragePicker%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/AdoNet/Orleans.Persistence.AdoNet/Storage/Provider/StorageSerializationPicker.cs/#L17" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

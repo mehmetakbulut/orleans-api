@@ -1,0 +1,519 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Logger
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Logger
+   ">
+    <meta name="generator" content="docfx 2.33.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Orleans.Runtime.Logger">
+  
+  
+  <h1 id="Orleans_Runtime_Logger" data-uid="Orleans.Runtime.Logger" class="text-break">Class Logger
+  </h1>
+  <div class="markdown level0 summary"><p>Interface of Orleans runtime for logging services. </p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Logger</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Orleans.Runtime.html">Orleans.Runtime</a></h6>
+  <h6><strong>Assembly</strong>: Orleans.Core.Legacy.dll</h6>
+  <h5 id="Orleans_Runtime_Logger_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class Logger : object</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_Logger_IsInfo.md&amp;value=---%0Auid%3A%20Orleans.Runtime.Logger.IsInfo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Legacy/Logging/LegacyClass/Logger.cs/#L44">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_Logger_IsInfo_" data-uid="Orleans.Runtime.Logger.IsInfo*"></a>
+  <h4 id="Orleans_Runtime_Logger_IsInfo" data-uid="Orleans.Runtime.Logger.IsInfo">IsInfo</h4>
+  <div class="markdown level1 summary"><p>Whether the current SeverityLevel would output <code>Info</code> messages for this logger. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInfo { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_Logger_IsVerbose.md&amp;value=---%0Auid%3A%20Orleans.Runtime.Logger.IsVerbose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Legacy/Logging/LegacyClass/Logger.cs/#L48">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_Logger_IsVerbose_" data-uid="Orleans.Runtime.Logger.IsVerbose*"></a>
+  <h4 id="Orleans_Runtime_Logger_IsVerbose" data-uid="Orleans.Runtime.Logger.IsVerbose">IsVerbose</h4>
+  <div class="markdown level1 summary"><p>Whether the current SeverityLevel would output <code>Verbose</code> messages for this logger. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsVerbose { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_Logger_IsVerbose2.md&amp;value=---%0Auid%3A%20Orleans.Runtime.Logger.IsVerbose2%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Legacy/Logging/LegacyClass/Logger.cs/#L52">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_Logger_IsVerbose2_" data-uid="Orleans.Runtime.Logger.IsVerbose2*"></a>
+  <h4 id="Orleans_Runtime_Logger_IsVerbose2" data-uid="Orleans.Runtime.Logger.IsVerbose2">IsVerbose2</h4>
+  <div class="markdown level1 summary"><p>Whether the current SeverityLevel would output <code>Verbose2</code> messages for this logger. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsVerbose2 { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_Logger_IsVerbose3.md&amp;value=---%0Auid%3A%20Orleans.Runtime.Logger.IsVerbose3%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Legacy/Logging/LegacyClass/Logger.cs/#L56">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_Logger_IsVerbose3_" data-uid="Orleans.Runtime.Logger.IsVerbose3*"></a>
+  <h4 id="Orleans_Runtime_Logger_IsVerbose3" data-uid="Orleans.Runtime.Logger.IsVerbose3">IsVerbose3</h4>
+  <div class="markdown level1 summary"><p>Whether the current SeverityLevel would output <code>Verbose3</code> messages for this logger. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsVerbose3 { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_Logger_IsWarning.md&amp;value=---%0Auid%3A%20Orleans.Runtime.Logger.IsWarning%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Legacy/Logging/LegacyClass/Logger.cs/#L40">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_Logger_IsWarning_" data-uid="Orleans.Runtime.Logger.IsWarning*"></a>
+  <h4 id="Orleans_Runtime_Logger_IsWarning" data-uid="Orleans.Runtime.Logger.IsWarning">IsWarning</h4>
+  <div class="markdown level1 summary"><p>Whether the current SeverityLevel would output <code>Warning</code> messages for this logger. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsWarning { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_Logger_Name.md&amp;value=---%0Auid%3A%20Orleans.Runtime.Logger.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Legacy/Logging/LegacyClass/Logger.cs/#L20">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_Logger_Name_" data-uid="Orleans.Runtime.Logger.Name*"></a>
+  <h4 id="Orleans_Runtime_Logger_Name" data-uid="Orleans.Runtime.Logger.Name">Name</h4>
+  <div class="markdown level1 summary"><p>Name of logger instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract string Name { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_Logger_SeverityLevel.md&amp;value=---%0Auid%3A%20Orleans.Runtime.Logger.SeverityLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Legacy/Logging/LegacyClass/Logger.cs/#L15">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_Logger_SeverityLevel_" data-uid="Orleans.Runtime.Logger.SeverityLevel*"></a>
+  <h4 id="Orleans_Runtime_Logger_SeverityLevel" data-uid="Orleans.Runtime.Logger.SeverityLevel">SeverityLevel</h4>
+  <div class="markdown level1 summary"><p>Current SeverityLevel set for this logger. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract Severity SeverityLevel { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.Runtime.Severity.html">Severity</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_Logger_GetLogger_System_String_.md&amp;value=---%0Auid%3A%20Orleans.Runtime.Logger.GetLogger(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Legacy/Logging/LegacyClass/Logger.cs/#L27">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_Logger_GetLogger_" data-uid="Orleans.Runtime.Logger.GetLogger*"></a>
+  <h4 id="Orleans_Runtime_Logger_GetLogger_System_String_" data-uid="Orleans.Runtime.Logger.GetLogger(System.String)">GetLogger(String)</h4>
+  <div class="markdown level1 summary"><p>Find existing or create new Logger with the specified name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract Logger GetLogger(string loggerName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">loggerName</span></td>
+        <td><p>Name of the Logger to find or create</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.Runtime.Logger.html">Logger</a></td>
+        <td><p>Logger associated with the specified name</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_Logger_Log_System_Int32_Orleans_Runtime_Severity_System_String_System_Object___Exception_.md&amp;value=---%0Auid%3A%20Orleans.Runtime.Logger.Log(System.Int32%2COrleans.Runtime.Severity%2CSystem.String%2CSystem.Object%5B%5D%2CException)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Legacy/Logging/LegacyClass/Logger.cs/#L37">View Source</a>
+  </span>
+  <a id="Orleans_Runtime_Logger_Log_" data-uid="Orleans.Runtime.Logger.Log*"></a>
+  <h4 id="Orleans_Runtime_Logger_Log_System_Int32_Orleans_Runtime_Severity_System_String_System_Object___Exception_" data-uid="Orleans.Runtime.Logger.Log(System.Int32,Orleans.Runtime.Severity,System.String,System.Object[],Exception)">Log(Int32, Severity, String, Object[], Exception)</h4>
+  <div class="markdown level1 summary"><p>Log message</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void Log(int errorCode, Severity sev, string format, object[] args, Exception exception)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">errorCode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Orleans.Runtime.Severity.html">Severity</a></td>
+        <td><span class="parametername">sev</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">format</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Exception</span></td>
+        <td><span class="parametername">exception</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Orleans.Runtime.LoggerExtensions.html#Orleans_Runtime_LoggerExtensions_GetSubLogger_Orleans_Runtime_Logger_System_String_System_String_">LoggerExtensions.GetSubLogger(Logger, String, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Orleans.Runtime.LoggerExtensions.html#Orleans_Runtime_LoggerExtensions_Verbose_Orleans_Runtime_Logger_System_String_System_Object___">LoggerExtensions.Verbose(Logger, String, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Orleans.Runtime.LoggerExtensions.html#Orleans_Runtime_LoggerExtensions_Verbose_Orleans_Runtime_Logger_System_String_">LoggerExtensions.Verbose(Logger, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Orleans.Runtime.LoggerExtensions.html#Orleans_Runtime_LoggerExtensions_Verbose2_Orleans_Runtime_Logger_System_String_System_Object___">LoggerExtensions.Verbose2(Logger, String, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Orleans.Runtime.LoggerExtensions.html#Orleans_Runtime_LoggerExtensions_Verbose2_Orleans_Runtime_Logger_System_String_">LoggerExtensions.Verbose2(Logger, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Orleans.Runtime.LoggerExtensions.html#Orleans_Runtime_LoggerExtensions_Verbose3_Orleans_Runtime_Logger_System_String_System_Object___">LoggerExtensions.Verbose3(Logger, String, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Orleans.Runtime.LoggerExtensions.html#Orleans_Runtime_LoggerExtensions_Verbose3_Orleans_Runtime_Logger_System_String_">LoggerExtensions.Verbose3(Logger, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Orleans.Runtime.LoggerExtensions.html#Orleans_Runtime_LoggerExtensions_Info_Orleans_Runtime_Logger_System_String_System_Object___">LoggerExtensions.Info(Logger, String, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Orleans.Runtime.LoggerExtensions.html#Orleans_Runtime_LoggerExtensions_Info_Orleans_Runtime_Logger_System_String_">LoggerExtensions.Info(Logger, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Orleans.Runtime.LoggerExtensions.html#Orleans_Runtime_LoggerExtensions_Verbose_Orleans_Runtime_Logger_System_Int32_System_String_System_Object___">LoggerExtensions.Verbose(Logger, Int32, String, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Orleans.Runtime.LoggerExtensions.html#Orleans_Runtime_LoggerExtensions_Verbose_Orleans_Runtime_Logger_System_Int32_System_String_">LoggerExtensions.Verbose(Logger, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Orleans.Runtime.LoggerExtensions.html#Orleans_Runtime_LoggerExtensions_Verbose2_Orleans_Runtime_Logger_System_Int32_System_String_System_Object___">LoggerExtensions.Verbose2(Logger, Int32, String, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Orleans.Runtime.LoggerExtensions.html#Orleans_Runtime_LoggerExtensions_Verbose2_Orleans_Runtime_Logger_System_Int32_System_String_">LoggerExtensions.Verbose2(Logger, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Orleans.Runtime.LoggerExtensions.html#Orleans_Runtime_LoggerExtensions_Verbose3_Orleans_Runtime_Logger_System_Int32_System_String_System_Object___">LoggerExtensions.Verbose3(Logger, Int32, String, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Orleans.Runtime.LoggerExtensions.html#Orleans_Runtime_LoggerExtensions_Verbose3_Orleans_Runtime_Logger_System_Int32_System_String_">LoggerExtensions.Verbose3(Logger, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Orleans.Runtime.LoggerExtensions.html#Orleans_Runtime_LoggerExtensions_Info_Orleans_Runtime_Logger_System_Int32_System_String_System_Object___">LoggerExtensions.Info(Logger, Int32, String, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Orleans.Runtime.LoggerExtensions.html#Orleans_Runtime_LoggerExtensions_Info_Orleans_Runtime_Logger_System_Int32_System_String_">LoggerExtensions.Info(Logger, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Orleans.Runtime.LoggerExtensions.html#Orleans_Runtime_LoggerExtensions_Warn_Orleans_Runtime_Logger_System_Int32_System_String_System_Object___">LoggerExtensions.Warn(Logger, Int32, String, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Orleans.Runtime.LoggerExtensions.html#Orleans_Runtime_LoggerExtensions_Warn_Orleans_Runtime_Logger_System_Int32_System_String_Exception_">LoggerExtensions.Warn(Logger, Int32, String, Exception)</a>
+  </div>
+  <div>
+      <a class="xref" href="Orleans.Runtime.LoggerExtensions.html#Orleans_Runtime_LoggerExtensions_Error_Orleans_Runtime_Logger_System_Int32_System_String_Exception_">LoggerExtensions.Error(Logger, Int32, String, Exception)</a>
+  </div>
+  <div>
+      <a class="xref" href="Orleans.Concurrency.ImmutableExt.html#Orleans_Concurrency_ImmutableExt_AsImmutable__1___0_">ImmutableExt.AsImmutable&lt;T&gt;(T)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Runtime_Logger.md&amp;value=---%0Auid%3A%20Orleans.Runtime.Logger%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Legacy/Logging/LegacyClass/Logger.cs/#L10" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

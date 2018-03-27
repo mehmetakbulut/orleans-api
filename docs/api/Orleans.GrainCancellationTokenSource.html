@@ -1,0 +1,327 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class GrainCancellationTokenSource
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class GrainCancellationTokenSource
+   ">
+    <meta name="generator" content="docfx 2.33.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Orleans.GrainCancellationTokenSource">
+  
+  
+  <h1 id="Orleans_GrainCancellationTokenSource" data-uid="Orleans.GrainCancellationTokenSource" class="text-break">Class GrainCancellationTokenSource
+  </h1>
+  <div class="markdown level0 summary"><p>Distributed version of the CancellationTokenSource</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">GrainCancellationTokenSource</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Orleans.html">Orleans</a></h6>
+  <h6><strong>Assembly</strong>: Orleans.Core.Abstractions.dll</h6>
+  <h5 id="Orleans_GrainCancellationTokenSource_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class GrainCancellationTokenSource : IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_GrainCancellationTokenSource__ctor.md&amp;value=---%0Auid%3A%20Orleans.GrainCancellationTokenSource.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Abstractions/Cancellation/GrainCancellationTokenSource.cs/#L18">View Source</a>
+  </span>
+  <a id="Orleans_GrainCancellationTokenSource__ctor_" data-uid="Orleans.GrainCancellationTokenSource.#ctor*"></a>
+  <h4 id="Orleans_GrainCancellationTokenSource__ctor" data-uid="Orleans.GrainCancellationTokenSource.#ctor">GrainCancellationTokenSource()</h4>
+  <div class="markdown level1 summary"><p>Initializes the <a class="xref" href="Orleans.GrainCancellationTokenSource.html">GrainCancellationTokenSource</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GrainCancellationTokenSource()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_GrainCancellationTokenSource_IsCancellationRequested.md&amp;value=---%0Auid%3A%20Orleans.GrainCancellationTokenSource.IsCancellationRequested%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Abstractions/Cancellation/GrainCancellationTokenSource.cs/#L54">View Source</a>
+  </span>
+  <a id="Orleans_GrainCancellationTokenSource_IsCancellationRequested_" data-uid="Orleans.GrainCancellationTokenSource.IsCancellationRequested*"></a>
+  <h4 id="Orleans_GrainCancellationTokenSource_IsCancellationRequested" data-uid="Orleans.GrainCancellationTokenSource.IsCancellationRequested">IsCancellationRequested</h4>
+  <div class="markdown level1 summary"><p>Gets whether cancellation has been requested for this <a class="xref" href="Orleans.GrainCancellationTokenSource.html">GrainCancellationTokenSource</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsCancellationRequested { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Whether cancellation has been requested for this <a class="xref" href="Orleans.GrainCancellationTokenSource.html">GrainCancellationTokenSource</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Orleans_GrainCancellationTokenSource_IsCancellationRequested_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>
+This property indicates whether cancellation has been requested for this token source, such as
+due to a call to its
+<a class="xref" href="Orleans.GrainCancellationTokenSource.html#Orleans_GrainCancellationTokenSource_Cancel">Cancel()</a> method.
+</p>
+<p>
+If this property returns true, it only guarantees that cancellation has been requested. It does not
+guarantee that every handler registered with the corresponding token has finished executing, nor
+that cancellation requests have finished propagating to all registered handlers and remote targets. Additional
+synchronization may be required, particularly in situations where related objects are being
+canceled concurrently.
+</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_GrainCancellationTokenSource_Token.md&amp;value=---%0Auid%3A%20Orleans.GrainCancellationTokenSource.Token%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Abstractions/Cancellation/GrainCancellationTokenSource.cs/#L29">View Source</a>
+  </span>
+  <a id="Orleans_GrainCancellationTokenSource_Token_" data-uid="Orleans.GrainCancellationTokenSource.Token*"></a>
+  <h4 id="Orleans_GrainCancellationTokenSource_Token" data-uid="Orleans.GrainCancellationTokenSource.Token">Token</h4>
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="Orleans.GrainCancellationTokenSource.html">GrainCancellationTokenSource</a>
+associated with this <a class="xref" href="Orleans.GrainCancellationTokenSource.html">GrainCancellationTokenSource</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GrainCancellationToken Token { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.GrainCancellationToken.html">GrainCancellationToken</a></td>
+        <td><p>The <a class="xref" href="Orleans.GrainCancellationToken.html">GrainCancellationToken</a>
+associated with this <a class="xref" href="Orleans.GrainCancellationToken.html">GrainCancellationToken</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_GrainCancellationTokenSource_Cancel.md&amp;value=---%0Auid%3A%20Orleans.GrainCancellationTokenSource.Cancel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Abstractions/Cancellation/GrainCancellationTokenSource.cs/#L84">View Source</a>
+  </span>
+  <a id="Orleans_GrainCancellationTokenSource_Cancel_" data-uid="Orleans.GrainCancellationTokenSource.Cancel*"></a>
+  <h4 id="Orleans_GrainCancellationTokenSource_Cancel" data-uid="Orleans.GrainCancellationTokenSource.Cancel">Cancel()</h4>
+  <div class="markdown level1 summary"><p>Communicates a request for cancellation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task Cancel()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Orleans_GrainCancellationTokenSource_Cancel_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>
+The associated <span class="xref">Orleans.Async.GrainCancellationToken</span> will be
+notified of the cancellation and will transition to a state where
+<a class="xref" href="Orleans.GrainCancellationToken.html#Orleans_GrainCancellationToken_CancellationToken">CancellationToken</a> returns true.
+Any callbacks or cancelable operations
+registered with the <span class="xref">Orleans.Threading.CancellationToken</span>  will be executed.
+</p>
+<p>
+Cancelable operations and callbacks registered with the token should not throw exceptions.
+However, this overload of Cancel will aggregate any exceptions thrown into a <see cref="!:AggregateException"></see>,
+such that one callback throwing an exception will not prevent other registered callbacks from being executed.
+</p>
+<p>
+The <span class="xref">System.Threading.ExecutionContext</span> that was captured when each callback was registered
+will be reestablished when the callback is invoked.
+</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.AggregateException</span></td>
+        <td><p>An aggregate exception containing all the exceptions thrown
+by the registered callbacks on the associated <span class="xref">Orleans.Async.GrainCancellationToken</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>This <span class="xref">Orleans.Async.GrainCancellationTokenSource</span> has been disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_GrainCancellationTokenSource_Dispose.md&amp;value=---%0Auid%3A%20Orleans.GrainCancellationTokenSource.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Abstractions/Cancellation/GrainCancellationTokenSource.cs/#L95">View Source</a>
+  </span>
+  <a id="Orleans_GrainCancellationTokenSource_Dispose_" data-uid="Orleans.GrainCancellationTokenSource.Dispose*"></a>
+  <h4 id="Orleans_GrainCancellationTokenSource_Dispose" data-uid="Orleans.GrainCancellationTokenSource.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Releases the resources used by this <span class="xref">Orleans.Async.GrainCancellationTokenSource</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <h5 id="Orleans_GrainCancellationTokenSource_Dispose_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is not thread-safe for any other concurrent calls.</p>
+</div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Orleans.Concurrency.ImmutableExt.html#Orleans_Concurrency_ImmutableExt_AsImmutable__1___0_">ImmutableExt.AsImmutable&lt;T&gt;(T)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_GrainCancellationTokenSource.md&amp;value=---%0Auid%3A%20Orleans.GrainCancellationTokenSource%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Abstractions/Cancellation/GrainCancellationTokenSource.cs/#L11" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

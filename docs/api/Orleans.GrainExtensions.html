@@ -1,0 +1,963 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class GrainExtensions
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class GrainExtensions
+   ">
+    <meta name="generator" content="docfx 2.33.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Orleans.GrainExtensions">
+  
+  
+  <h1 id="Orleans_GrainExtensions" data-uid="Orleans.GrainExtensions" class="text-break">Class GrainExtensions
+  </h1>
+  <div class="markdown level0 summary"><p>Extension methods for grains.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">GrainExtensions</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Orleans.html">Orleans</a></h6>
+  <h6><strong>Assembly</strong>: Orleans.Core.Abstractions.dll</h6>
+  <h5 id="Orleans_GrainExtensions_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class GrainExtensions : object</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_GrainExtensions_AsReference__1_Orleans_Runtime_IAddressable_.md&amp;value=---%0Auid%3A%20Orleans.GrainExtensions.AsReference%60%601(Orleans.Runtime.IAddressable)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Abstractions/Core/GrainExtensions.cs/#L49">View Source</a>
+  </span>
+  <a id="Orleans_GrainExtensions_AsReference_" data-uid="Orleans.GrainExtensions.AsReference*"></a>
+  <h4 id="Orleans_GrainExtensions_AsReference__1_Orleans_Runtime_IAddressable_" data-uid="Orleans.GrainExtensions.AsReference``1(Orleans.Runtime.IAddressable)">AsReference&lt;TGrainInterface&gt;(IAddressable)</h4>
+  <div class="markdown level1 summary"><p>Converts this grain to a specific grain interface.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TGrainInterface AsReference&lt;TGrainInterface&gt;(this IAddressable grain)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.Runtime.IAddressable.html">IAddressable</a></td>
+        <td><span class="parametername">grain</span></td>
+        <td><p>The grain to convert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TGrainInterface</span></td>
+        <td><p>A strongly typed <code>GrainReference</code> of grain interface type TGrainInterface.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TGrainInterface</span></td>
+        <td><p>The type of the grain interface.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_GrainExtensions_BindGrainReference_Orleans_Runtime_IAddressable_Orleans_IGrainFactory_.md&amp;value=---%0Auid%3A%20Orleans.GrainExtensions.BindGrainReference(Orleans.Runtime.IAddressable%2COrleans.IGrainFactory)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Abstractions/Core/GrainExtensions.cs/#L71">View Source</a>
+  </span>
+  <a id="Orleans_GrainExtensions_BindGrainReference_" data-uid="Orleans.GrainExtensions.BindGrainReference*"></a>
+  <h4 id="Orleans_GrainExtensions_BindGrainReference_Orleans_Runtime_IAddressable_Orleans_IGrainFactory_" data-uid="Orleans.GrainExtensions.BindGrainReference(Orleans.Runtime.IAddressable,Orleans.IGrainFactory)">BindGrainReference(IAddressable, IGrainFactory)</h4>
+  <div class="markdown level1 summary"><p>Binds the grain reference to the provided <a class="xref" href="Orleans.IGrainFactory.html">IGrainFactory</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void BindGrainReference(this IAddressable grain, IGrainFactory grainFactory)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.Runtime.IAddressable.html">IAddressable</a></td>
+        <td><span class="parametername">grain</span></td>
+        <td><p>The grain reference.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Orleans.IGrainFactory.html">IGrainFactory</a></td>
+        <td><span class="parametername">grainFactory</span></td>
+        <td><p>The grain factory.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_GrainExtensions_Cast__1_Orleans_Runtime_IAddressable_.md&amp;value=---%0Auid%3A%20Orleans.GrainExtensions.Cast%60%601(Orleans.Runtime.IAddressable)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Abstractions/Core/GrainExtensions.cs/#L61">View Source</a>
+  </span>
+  <a id="Orleans_GrainExtensions_Cast_" data-uid="Orleans.GrainExtensions.Cast*"></a>
+  <h4 id="Orleans_GrainExtensions_Cast__1_Orleans_Runtime_IAddressable_" data-uid="Orleans.GrainExtensions.Cast``1(Orleans.Runtime.IAddressable)">Cast&lt;TGrainInterface&gt;(IAddressable)</h4>
+  <div class="markdown level1 summary"><p>Casts a grain to a specific grain interface.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TGrainInterface Cast&lt;TGrainInterface&gt;(this IAddressable grain)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.Runtime.IAddressable.html">IAddressable</a></td>
+        <td><span class="parametername">grain</span></td>
+        <td><p>The grain to cast.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TGrainInterface</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TGrainInterface</span></td>
+        <td><p>The type of the grain interface.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_GrainExtensions_GetGrainIdentity_Orleans_IGrain_.md&amp;value=---%0Auid%3A%20Orleans.GrainExtensions.GetGrainIdentity(Orleans.IGrain)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Abstractions/Core/GrainExtensions.cs/#L101">View Source</a>
+  </span>
+  <a id="Orleans_GrainExtensions_GetGrainIdentity_" data-uid="Orleans.GrainExtensions.GetGrainIdentity*"></a>
+  <h4 id="Orleans_GrainExtensions_GetGrainIdentity_Orleans_IGrain_" data-uid="Orleans.GrainExtensions.GetGrainIdentity(Orleans.IGrain)">GetGrainIdentity(IGrain)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IGrainIdentity GetGrainIdentity(this IGrain grain)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.IGrain.html">IGrain</a></td>
+        <td><span class="parametername">grain</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.Core.IGrainIdentity.html">IGrainIdentity</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_GrainExtensions_GetPrimaryKey_Orleans_IGrain_.md&amp;value=---%0Auid%3A%20Orleans.GrainExtensions.GetPrimaryKey(Orleans.IGrain)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Abstractions/Core/GrainExtensions.cs/#L199">View Source</a>
+  </span>
+  <a id="Orleans_GrainExtensions_GetPrimaryKey_" data-uid="Orleans.GrainExtensions.GetPrimaryKey*"></a>
+  <h4 id="Orleans_GrainExtensions_GetPrimaryKey_Orleans_IGrain_" data-uid="Orleans.GrainExtensions.GetPrimaryKey(Orleans.IGrain)">GetPrimaryKey(IGrain)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Guid GetPrimaryKey(this IGrain grain)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.IGrain.html">IGrain</a></td>
+        <td><span class="parametername">grain</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_GrainExtensions_GetPrimaryKey_Orleans_IGrain_System_String__.md&amp;value=---%0Auid%3A%20Orleans.GrainExtensions.GetPrimaryKey(Orleans.IGrain%2CSystem.String%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Abstractions/Core/GrainExtensions.cs/#L195">View Source</a>
+  </span>
+  <a id="Orleans_GrainExtensions_GetPrimaryKey_" data-uid="Orleans.GrainExtensions.GetPrimaryKey*"></a>
+  <h4 id="Orleans_GrainExtensions_GetPrimaryKey_Orleans_IGrain_System_String__" data-uid="Orleans.GrainExtensions.GetPrimaryKey(Orleans.IGrain,System.String@)">GetPrimaryKey(IGrain, out String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Guid GetPrimaryKey(this IGrain grain, out string keyExt)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.IGrain.html">IGrain</a></td>
+        <td><span class="parametername">grain</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">keyExt</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_GrainExtensions_GetPrimaryKey_Orleans_Runtime_IAddressable_.md&amp;value=---%0Auid%3A%20Orleans.GrainExtensions.GetPrimaryKey(Orleans.Runtime.IAddressable)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Abstractions/Core/GrainExtensions.cs/#L172">View Source</a>
+  </span>
+  <a id="Orleans_GrainExtensions_GetPrimaryKey_" data-uid="Orleans.GrainExtensions.GetPrimaryKey*"></a>
+  <h4 id="Orleans_GrainExtensions_GetPrimaryKey_Orleans_Runtime_IAddressable_" data-uid="Orleans.GrainExtensions.GetPrimaryKey(Orleans.Runtime.IAddressable)">GetPrimaryKey(IAddressable)</h4>
+  <div class="markdown level1 summary"><p>Returns the Guid representation of a grain primary key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Guid GetPrimaryKey(this IAddressable grain)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.Runtime.IAddressable.html">IAddressable</a></td>
+        <td><span class="parametername">grain</span></td>
+        <td><p>The grain to find the primary key for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Guid</span></td>
+        <td><p>A Guid representing the primary key for this grain.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_GrainExtensions_GetPrimaryKey_Orleans_Runtime_IAddressable_System_String__.md&amp;value=---%0Auid%3A%20Orleans.GrainExtensions.GetPrimaryKey(Orleans.Runtime.IAddressable%2CSystem.String%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Abstractions/Core/GrainExtensions.cs/#L162">View Source</a>
+  </span>
+  <a id="Orleans_GrainExtensions_GetPrimaryKey_" data-uid="Orleans.GrainExtensions.GetPrimaryKey*"></a>
+  <h4 id="Orleans_GrainExtensions_GetPrimaryKey_Orleans_Runtime_IAddressable_System_String__" data-uid="Orleans.GrainExtensions.GetPrimaryKey(Orleans.Runtime.IAddressable,System.String@)">GetPrimaryKey(IAddressable, out String)</h4>
+  <div class="markdown level1 summary"><p>Returns the Guid representation of a grain primary key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Guid GetPrimaryKey(this IAddressable grain, out string keyExt)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.Runtime.IAddressable.html">IAddressable</a></td>
+        <td><span class="parametername">grain</span></td>
+        <td><p>The grain to find the primary key for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">keyExt</span></td>
+        <td><p>The output paramater to return the extended key part of the grain primary key, if extened primary key was provided for that grain.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Guid</span></td>
+        <td><p>A Guid representing the primary key for this grain.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_GrainExtensions_GetPrimaryKeyLong_Orleans_IGrain_.md&amp;value=---%0Auid%3A%20Orleans.GrainExtensions.GetPrimaryKeyLong(Orleans.IGrain)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Abstractions/Core/GrainExtensions.cs/#L191">View Source</a>
+  </span>
+  <a id="Orleans_GrainExtensions_GetPrimaryKeyLong_" data-uid="Orleans.GrainExtensions.GetPrimaryKeyLong*"></a>
+  <h4 id="Orleans_GrainExtensions_GetPrimaryKeyLong_Orleans_IGrain_" data-uid="Orleans.GrainExtensions.GetPrimaryKeyLong(Orleans.IGrain)">GetPrimaryKeyLong(IGrain)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long GetPrimaryKeyLong(this IGrain grain)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.IGrain.html">IGrain</a></td>
+        <td><span class="parametername">grain</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_GrainExtensions_GetPrimaryKeyLong_Orleans_IGrain_System_String__.md&amp;value=---%0Auid%3A%20Orleans.GrainExtensions.GetPrimaryKeyLong(Orleans.IGrain%2CSystem.String%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Abstractions/Core/GrainExtensions.cs/#L187">View Source</a>
+  </span>
+  <a id="Orleans_GrainExtensions_GetPrimaryKeyLong_" data-uid="Orleans.GrainExtensions.GetPrimaryKeyLong*"></a>
+  <h4 id="Orleans_GrainExtensions_GetPrimaryKeyLong_Orleans_IGrain_System_String__" data-uid="Orleans.GrainExtensions.GetPrimaryKeyLong(Orleans.IGrain,System.String@)">GetPrimaryKeyLong(IGrain, out String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long GetPrimaryKeyLong(this IGrain grain, out string keyExt)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.IGrain.html">IGrain</a></td>
+        <td><span class="parametername">grain</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">keyExt</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_GrainExtensions_GetPrimaryKeyLong_Orleans_Runtime_IAddressable_.md&amp;value=---%0Auid%3A%20Orleans.GrainExtensions.GetPrimaryKeyLong(Orleans.Runtime.IAddressable)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Abstractions/Core/GrainExtensions.cs/#L151">View Source</a>
+  </span>
+  <a id="Orleans_GrainExtensions_GetPrimaryKeyLong_" data-uid="Orleans.GrainExtensions.GetPrimaryKeyLong*"></a>
+  <h4 id="Orleans_GrainExtensions_GetPrimaryKeyLong_Orleans_Runtime_IAddressable_" data-uid="Orleans.GrainExtensions.GetPrimaryKeyLong(Orleans.Runtime.IAddressable)">GetPrimaryKeyLong(IAddressable)</h4>
+  <div class="markdown level1 summary"><p>Returns the long representation of a grain primary key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long GetPrimaryKeyLong(this IAddressable grain)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.Runtime.IAddressable.html">IAddressable</a></td>
+        <td><span class="parametername">grain</span></td>
+        <td><p>The grain to find the primary key for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><p>A long representing the primary key for this grain.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_GrainExtensions_GetPrimaryKeyLong_Orleans_Runtime_IAddressable_System_String__.md&amp;value=---%0Auid%3A%20Orleans.GrainExtensions.GetPrimaryKeyLong(Orleans.Runtime.IAddressable%2CSystem.String%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Abstractions/Core/GrainExtensions.cs/#L141">View Source</a>
+  </span>
+  <a id="Orleans_GrainExtensions_GetPrimaryKeyLong_" data-uid="Orleans.GrainExtensions.GetPrimaryKeyLong*"></a>
+  <h4 id="Orleans_GrainExtensions_GetPrimaryKeyLong_Orleans_Runtime_IAddressable_System_String__" data-uid="Orleans.GrainExtensions.GetPrimaryKeyLong(Orleans.Runtime.IAddressable,System.String@)">GetPrimaryKeyLong(IAddressable, out String)</h4>
+  <div class="markdown level1 summary"><p>Returns the long representation of a grain primary key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long GetPrimaryKeyLong(this IAddressable grain, out string keyExt)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.Runtime.IAddressable.html">IAddressable</a></td>
+        <td><span class="parametername">grain</span></td>
+        <td><p>The grain to find the primary key for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">keyExt</span></td>
+        <td><p>The output paramater to return the extended key part of the grain primary key, if extened primary key was provided for that grain.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><p>A long representing the primary key for this grain.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_GrainExtensions_GetPrimaryKeyString_Orleans_IGrainWithStringKey_.md&amp;value=---%0Auid%3A%20Orleans.GrainExtensions.GetPrimaryKeyString(Orleans.IGrainWithStringKey)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Abstractions/Core/GrainExtensions.cs/#L204">View Source</a>
+  </span>
+  <a id="Orleans_GrainExtensions_GetPrimaryKeyString_" data-uid="Orleans.GrainExtensions.GetPrimaryKeyString*"></a>
+  <h4 id="Orleans_GrainExtensions_GetPrimaryKeyString_Orleans_IGrainWithStringKey_" data-uid="Orleans.GrainExtensions.GetPrimaryKeyString(Orleans.IGrainWithStringKey)">GetPrimaryKeyString(IGrainWithStringKey)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetPrimaryKeyString(this IGrainWithStringKey grain)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.IGrainWithStringKey.html">IGrainWithStringKey</a></td>
+        <td><span class="parametername">grain</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_GrainExtensions_GetPrimaryKeyString_Orleans_Runtime_IAddressable_.md&amp;value=---%0Auid%3A%20Orleans.GrainExtensions.GetPrimaryKeyString(Orleans.Runtime.IAddressable)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Abstractions/Core/GrainExtensions.cs/#L182">View Source</a>
+  </span>
+  <a id="Orleans_GrainExtensions_GetPrimaryKeyString_" data-uid="Orleans.GrainExtensions.GetPrimaryKeyString*"></a>
+  <h4 id="Orleans_GrainExtensions_GetPrimaryKeyString_Orleans_Runtime_IAddressable_" data-uid="Orleans.GrainExtensions.GetPrimaryKeyString(Orleans.Runtime.IAddressable)">GetPrimaryKeyString(IAddressable)</h4>
+  <div class="markdown level1 summary"><p>Returns the string primary key of the grain.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetPrimaryKeyString(this IAddressable grain)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.Runtime.IAddressable.html">IAddressable</a></td>
+        <td><span class="parametername">grain</span></td>
+        <td><p>The grain to find the primary key for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>A string representing the primary key for this grain.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_GrainExtensions_InvokeOneWay__1___0_Func___0_Task__.md&amp;value=---%0Auid%3A%20Orleans.GrainExtensions.InvokeOneWay%60%601(%60%600%2CFunc%7B%60%600%2CTask%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Abstractions/Core/GrainExtensions.cs/#L215">View Source</a>
+  </span>
+  <a id="Orleans_GrainExtensions_InvokeOneWay_" data-uid="Orleans.GrainExtensions.InvokeOneWay*"></a>
+  <h4 id="Orleans_GrainExtensions_InvokeOneWay__1___0_Func___0_Task__" data-uid="Orleans.GrainExtensions.InvokeOneWay``1(``0,Func{``0,Task})">InvokeOneWay&lt;T&gt;(T, Func&lt;T, Task&gt;)</h4>
+  <div class="markdown level1 summary"><p>Invokes a method of a grain interface is one-way fashion so that no response message will be sent to the caller.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void InvokeOneWay&lt;T&gt;(this T grainReference, Func&lt;T, Task&gt; grainMethodInvocation)where T : class, IAddressable</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">grainReference</span></td>
+        <td><p>Grain reference which will be copied and then a call executed on it</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;T, <span class="xref">Task</span>&gt;</td>
+        <td><span class="parametername">grainMethodInvocation</span></td>
+        <td><p>Function that should invoke grain method and return resulting task</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Grain interface</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_GrainExtensions_IsPrimaryKeyBasedOnLong_Orleans_Runtime_IAddressable_.md&amp;value=---%0Auid%3A%20Orleans.GrainExtensions.IsPrimaryKeyBasedOnLong(Orleans.Runtime.IAddressable)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Abstractions/Core/GrainExtensions.cs/#L130">View Source</a>
+  </span>
+  <a id="Orleans_GrainExtensions_IsPrimaryKeyBasedOnLong_" data-uid="Orleans.GrainExtensions.IsPrimaryKeyBasedOnLong*"></a>
+  <h4 id="Orleans_GrainExtensions_IsPrimaryKeyBasedOnLong_Orleans_Runtime_IAddressable_" data-uid="Orleans.GrainExtensions.IsPrimaryKeyBasedOnLong(Orleans.Runtime.IAddressable)">IsPrimaryKeyBasedOnLong(IAddressable)</h4>
+  <div class="markdown level1 summary"><p>Returns whether part of the primary key is of type long.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsPrimaryKeyBasedOnLong(this IAddressable grain)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Orleans.Runtime.IAddressable.html">IAddressable</a></td>
+        <td><span class="parametername">grain</span></td>
+        <td><p>The target grain.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_GrainExtensions.md&amp;value=---%0Auid%3A%20Orleans.GrainExtensions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Orleans.Core.Abstractions/Core/GrainExtensions.cs/#L12" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

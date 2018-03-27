@@ -1,0 +1,243 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace Orleans.Runtime
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace Orleans.Runtime
+   ">
+    <meta name="generator" content="docfx 2.33.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Orleans.Runtime">
+  
+  <h1 id="Orleans_Runtime" data-uid="Orleans.Runtime" class="text-break">Namespace Orleans.Runtime
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="Orleans.Runtime.ClientNotAvailableException.html">ClientNotAvailableException</a></h4>
+      <section><p>Indicates that a client is not longer reachable.</p>
+</section>
+      <h4><a class="xref" href="Orleans.Runtime.DeadlockException.html">DeadlockException</a></h4>
+      <section><p>Signifies that a silo has detected a deadlock / loop in a call graph.</p>
+</section>
+      <h4><a class="xref" href="Orleans.Runtime.GatewayTooBusyException.html">GatewayTooBusyException</a></h4>
+      <section><p>Signifies that a gateway silo is currently in overloaded / load shedding state 
+and is unable to currently accept this message being sent.</p>
+</section>
+      <h4><a class="xref" href="Orleans.Runtime.GrainExtensionNotInstalledException.html">GrainExtensionNotInstalledException</a></h4>
+      <section><p>Signifies that an attempt was made to invoke a grain extension method on a grain where that extension was not installed.</p>
+</section>
+      <h4><a class="xref" href="Orleans.Runtime.GrainLifecycleStage.html">GrainLifecycleStage</a></h4>
+      <section><p>Stages of a grains lifecycle.
+TODO: Add more later, see ActivationInitializationStage
+Full grain lifecycle, including register, state setup, and 
+stream cleanup should all eventually be triggered by the 
+grain lifecycle.</p>
+</section>
+      <h4><a class="xref" href="Orleans.Runtime.GrainReference.html">GrainReference</a></h4>
+      <section><p>This is the base class for all typed grain references.</p>
+</section>
+      <h4><a class="xref" href="Orleans.Runtime.GrainReferenceNotBoundException.html">GrainReferenceNotBoundException</a></h4>
+      <section><p>Indicates that a <a class="xref" href="Orleans.Runtime.GrainReference.html">GrainReference</a> was not bound to the runtime before being used.</p>
+</section>
+      <h4><a class="xref" href="Orleans.Runtime.GuidId.html">GuidId</a></h4>
+      <section><p>Wrapper object around Guid.
+Can be used in places where Guid is optional and in those cases it can be set to null and will not use the storage of an empty Guid struct.</p>
+</section>
+      <h4><a class="xref" href="Orleans.Runtime.KeyedServiceCollectionExtensions.html">KeyedServiceCollectionExtensions</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Orleans.Runtime.LimitExceededException.html">LimitExceededException</a></h4>
+      <section><p>Signifies that a silo is in an overloaded state where some 
+runtime limit setting is currently being exceeded, 
+and so that silo is unable to currently accept this message being sent.</p>
+</section>
+      <h4><a class="xref" href="Orleans.Runtime.Logger.html">Logger</a></h4>
+      <section><p>Interface of Orleans runtime for logging services. </p>
+</section>
+      <h4><a class="xref" href="Orleans.Runtime.LoggerExtensionMethods.html">LoggerExtensionMethods</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Orleans.Runtime.LoggerExtensions.html">LoggerExtensions</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Orleans.Runtime.OrleansConfigurationException.html">OrleansConfigurationException</a></h4>
+      <section><p>Represents a configuration exception.</p>
+</section>
+      <h4><a class="xref" href="Orleans.Runtime.OrleansException.html">OrleansException</a></h4>
+      <section><p>An exception class used by the Orleans runtime for reporting errors.</p>
+</section>
+      <h4><a class="xref" href="Orleans.Runtime.OrleansLifecycleCanceledException.html">OrleansLifecycleCanceledException</a></h4>
+      <section><p>Indicates a lifecycle was canceled, either by request or due to observer error.</p>
+</section>
+      <h4><a class="xref" href="Orleans.Runtime.OrleansMessageRejectionException.html">OrleansMessageRejectionException</a></h4>
+      <section><p>Indicates that an Orleans message was rejected.</p>
+</section>
+      <h4><a class="xref" href="Orleans.Runtime.PlacementStrategy.html">PlacementStrategy</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Orleans.Runtime.ReminderException.html">ReminderException</a></h4>
+      <section><p>Exception related to Orleans Reminder functions or Reminder service.</p>
+</section>
+      <h4><a class="xref" href="Orleans.Runtime.RequestContext.html">RequestContext</a></h4>
+      <section><p>This class holds information regarding the request currently being processed.
+It is explicitly intended to be available to application code.</p>
+</section>
+      <h4><a class="xref" href="Orleans.Runtime.SiloAddress.html">SiloAddress</a></h4>
+      <section><p>Data class encapsulating the details of silo addresses.</p>
+</section>
+      <h4><a class="xref" href="Orleans.Runtime.SiloUnavailableException.html">SiloUnavailableException</a></h4>
+      <section><p>Signifies that an request was cancelled due to target silo unavailability.</p>
+</section>
+    <h3 id="structs">Structs
+  </h3>
+      <h4><a class="xref" href="Orleans.Runtime.TickStatus.html">TickStatus</a></h4>
+      <section><p>The status of a tick when the tick is delivered to the registrar grain.
+In case of failures, it may happen that a tick is not delivered on time. The app can notice such missed missed ticks as follows.
+Upon receiving a tick, the app can calculate the theoretical number of ticks since start of the reminder as: 
+curCount = (Now - FirstTickTime) / Period
+The app can keep track of it as &apos;count&apos;. Upon receiving a tick, the number of missed ticks = curCount - count - 1
+Thereafter, the app can set count = curCount</p>
+</section>
+    <h3 id="interfaces">Interfaces
+  </h3>
+      <h4><a class="xref" href="Orleans.Runtime.IAddressable.html">IAddressable</a></h4>
+      <section><p>Marker interface for addressable endpoints, such as grains, observers, and other system-internal addressable endpoints</p>
+</section>
+      <h4><a class="xref" href="Orleans.Runtime.ICloseableLogConsumer.html">ICloseableLogConsumer</a></h4>
+      <section><p>An interface used to consume log entries, when a Close function is also supported. </p>
+</section>
+      <h4><a class="xref" href="Orleans.Runtime.IFlushableLogConsumer.html">IFlushableLogConsumer</a></h4>
+      <section><p>An interface used to consume log entries, when a Flush function is also supported. </p>
+</section>
+      <h4><a class="xref" href="Orleans.Runtime.IGrainExtension.html">IGrainExtension</a></h4>
+      <section><p>Marker interface for grain extensions, used by internal runtime extension endpoints</p>
+</section>
+      <h4><a class="xref" href="Orleans.Runtime.IGrainLifecycle.html">IGrainLifecycle</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Orleans.Runtime.IGrainReferenceRuntime.html">IGrainReferenceRuntime</a></h4>
+      <section><p>Runtime logic for <a class="xref" href="Orleans.Runtime.GrainReference.html">GrainReference</a>s to be usable.
+This service is not meant to be used directly by user code.</p>
+</section>
+      <h4><a class="xref" href="Orleans.Runtime.IGrainReminder.html">IGrainReminder</a></h4>
+      <section><p>Handle for a persistent Reminder.</p>
+</section>
+      <h4><a class="xref" href="Orleans.Runtime.IGrainRuntime.html">IGrainRuntime</a></h4>
+      <section><p>The gateway of the <a class="xref" href="Orleans.Grain.html">Grain</a> to the Orleans runtime. The <a class="xref" href="Orleans.Grain.html">Grain</a> should only interact with the runtime through this interface.</p>
+</section>
+      <h4><a class="xref" href="Orleans.Runtime.IKeyedService-2.html">IKeyedService&lt;TKey, TService&gt;</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Orleans.Runtime.IKeyedServiceCollection-2.html">IKeyedServiceCollection&lt;TKey, TService&gt;</a></h4>
+      <section><p>Collection of services that can be disambiguated by key</p>
+</section>
+      <h4><a class="xref" href="Orleans.Runtime.ILogConsumer.html">ILogConsumer</a></h4>
+      <section><p>An interface used to consume log entries. </p>
+</section>
+    <h3 id="enums">Enums
+  </h3>
+      <h4><a class="xref" href="Orleans.Runtime.LoggerType.html">LoggerType</a></h4>
+      <section><p>The ILogConsumer distinguishes between four categories of logs:
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td>Runtime</td><td>Logs that are written by the Orleans run-time itself.
+This category should not be used by application code.</td></tr><tr><td>Grain</td><td>Logs that are written by application grains.
+This category should be used by code that runs as Orleans grains in a silo.</td></tr><tr><td>Application</td><td>Logs that are written by the client application.
+This category should be used by client-side application code.</td></tr><tr><td>Provider</td><td>Logs that are written by providers.
+This category should be used by provider code.</td></tr></tbody></table></p>
+</section>
+      <h4><a class="xref" href="Orleans.Runtime.Severity.html">Severity</a></h4>
+      <section><p>Severity levels for log messages. </p>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

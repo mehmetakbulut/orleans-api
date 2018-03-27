@@ -1,0 +1,484 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class AzureTransactionLogStorage
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class AzureTransactionLogStorage
+   ">
+    <meta name="generator" content="docfx 2.33.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Orleans.Transactions.AzureStorage.AzureTransactionLogStorage">
+  
+  
+  <h1 id="Orleans_Transactions_AzureStorage_AzureTransactionLogStorage" data-uid="Orleans.Transactions.AzureStorage.AzureTransactionLogStorage" class="text-break">Class AzureTransactionLogStorage
+  </h1>
+  <div class="markdown level0 summary"><p>TransactionLog ported from research.  Placeholder, is being rewritten.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">AzureTransactionLogStorage</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Orleans.Transactions.AzureStorage.html">Orleans.Transactions.AzureStorage</a></h6>
+  <h6><strong>Assembly</strong>: Orleans.Transactions.AzureStorage.dll</h6>
+  <h5 id="Orleans_Transactions_AzureStorage_AzureTransactionLogStorage_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AzureTransactionLogStorage : ITransactionLogStorage</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Transactions_AzureStorage_AzureTransactionLogStorage__ctor_SerializationManager_IOptions_Orleans_Configuration_AzureTransactionLogOptions__.md&amp;value=---%0Auid%3A%20Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.%23ctor(SerializationManager%2CIOptions%7BOrleans.Configuration.AzureTransactionLogOptions%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Azure/Orleans.Transactions.AzureStorage/Storage/AzureTransactionLogStorage.cs/#L47">View Source</a>
+  </span>
+  <a id="Orleans_Transactions_AzureStorage_AzureTransactionLogStorage__ctor_" data-uid="Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.#ctor*"></a>
+  <h4 id="Orleans_Transactions_AzureStorage_AzureTransactionLogStorage__ctor_SerializationManager_IOptions_Orleans_Configuration_AzureTransactionLogOptions__" data-uid="Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.#ctor(SerializationManager,IOptions{Orleans.Configuration.AzureTransactionLogOptions})">AzureTransactionLogStorage(SerializationManager, IOptions&lt;AzureTransactionLogOptions&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AzureTransactionLogStorage(SerializationManager serializationManager, IOptions&lt;AzureTransactionLogOptions&gt; configurationOptions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SerializationManager</span></td>
+        <td><span class="parametername">serializationManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IOptions</span>&lt;<a class="xref" href="Orleans.Configuration.AzureTransactionLogOptions.html">AzureTransactionLogOptions</a>&gt;</td>
+        <td><span class="parametername">configurationOptions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Transactions_AzureStorage_AzureTransactionLogStorage_Append_IEnumerable_CommitRecord__.md&amp;value=---%0Auid%3A%20Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.Append(IEnumerable%7BCommitRecord%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Azure/Orleans.Transactions.AzureStorage/Storage/AzureTransactionLogStorage.cs/#L183">View Source</a>
+  </span>
+  <a id="Orleans_Transactions_AzureStorage_AzureTransactionLogStorage_Append_" data-uid="Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.Append*"></a>
+  <h4 id="Orleans_Transactions_AzureStorage_AzureTransactionLogStorage_Append_IEnumerable_CommitRecord__" data-uid="Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.Append(IEnumerable{CommitRecord})">Append(IEnumerable&lt;CommitRecord&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task Append(IEnumerable&lt;CommitRecord&gt; transactions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">CommitRecord</span>&gt;</td>
+        <td><span class="parametername">transactions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Transactions_AzureStorage_AzureTransactionLogStorage_Create_IServiceProvider_.md&amp;value=---%0Auid%3A%20Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.Create(IServiceProvider)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Azure/Orleans.Transactions.AzureStorage/Storage/AzureTransactionLogStorage.cs/#L263">View Source</a>
+  </span>
+  <a id="Orleans_Transactions_AzureStorage_AzureTransactionLogStorage_Create_" data-uid="Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.Create*"></a>
+  <h4 id="Orleans_Transactions_AzureStorage_AzureTransactionLogStorage_Create_IServiceProvider_" data-uid="Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.Create(IServiceProvider)">Create(IServiceProvider)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Factory&lt;Task&lt;ITransactionLogStorage&gt;&gt; Create(IServiceProvider serviceProvider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IServiceProvider</span></td>
+        <td><span class="parametername">serviceProvider</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Factory</span>&lt;<span class="xref">Task</span>&lt;<span class="xref">ITransactionLogStorage</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Transactions_AzureStorage_AzureTransactionLogStorage_GetFirstCommitRecord.md&amp;value=---%0Auid%3A%20Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.GetFirstCommitRecord%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Azure/Orleans.Transactions.AzureStorage/Storage/AzureTransactionLogStorage.cs/#L103">View Source</a>
+  </span>
+  <a id="Orleans_Transactions_AzureStorage_AzureTransactionLogStorage_GetFirstCommitRecord_" data-uid="Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.GetFirstCommitRecord*"></a>
+  <h4 id="Orleans_Transactions_AzureStorage_AzureTransactionLogStorage_GetFirstCommitRecord" data-uid="Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.GetFirstCommitRecord">GetFirstCommitRecord()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;CommitRecord&gt; GetFirstCommitRecord()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">CommitRecord</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Transactions_AzureStorage_AzureTransactionLogStorage_GetNextCommitRecord.md&amp;value=---%0Auid%3A%20Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.GetNextCommitRecord%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Azure/Orleans.Transactions.AzureStorage/Storage/AzureTransactionLogStorage.cs/#L128">View Source</a>
+  </span>
+  <a id="Orleans_Transactions_AzureStorage_AzureTransactionLogStorage_GetNextCommitRecord_" data-uid="Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.GetNextCommitRecord*"></a>
+  <h4 id="Orleans_Transactions_AzureStorage_AzureTransactionLogStorage_GetNextCommitRecord" data-uid="Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.GetNextCommitRecord">GetNextCommitRecord()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;CommitRecord&gt; GetNextCommitRecord()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">CommitRecord</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Transactions_AzureStorage_AzureTransactionLogStorage_GetStartRecord.md&amp;value=---%0Auid%3A%20Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.GetStartRecord%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Azure/Orleans.Transactions.AzureStorage/Storage/AzureTransactionLogStorage.cs/#L169">View Source</a>
+  </span>
+  <a id="Orleans_Transactions_AzureStorage_AzureTransactionLogStorage_GetStartRecord_" data-uid="Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.GetStartRecord*"></a>
+  <h4 id="Orleans_Transactions_AzureStorage_AzureTransactionLogStorage_GetStartRecord" data-uid="Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.GetStartRecord">GetStartRecord()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;long&gt; GetStartRecord()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Transactions_AzureStorage_AzureTransactionLogStorage_Initialize.md&amp;value=---%0Auid%3A%20Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.Initialize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Azure/Orleans.Transactions.AzureStorage/Storage/AzureTransactionLogStorage.cs/#L53">View Source</a>
+  </span>
+  <a id="Orleans_Transactions_AzureStorage_AzureTransactionLogStorage_Initialize_" data-uid="Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.Initialize*"></a>
+  <h4 id="Orleans_Transactions_AzureStorage_AzureTransactionLogStorage_Initialize" data-uid="Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.Initialize">Initialize()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task Initialize()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Transactions_AzureStorage_AzureTransactionLogStorage_TruncateLog_System_Int64_.md&amp;value=---%0Auid%3A%20Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.TruncateLog(System.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Azure/Orleans.Transactions.AzureStorage/Storage/AzureTransactionLogStorage.cs/#L219">View Source</a>
+  </span>
+  <a id="Orleans_Transactions_AzureStorage_AzureTransactionLogStorage_TruncateLog_" data-uid="Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.TruncateLog*"></a>
+  <h4 id="Orleans_Transactions_AzureStorage_AzureTransactionLogStorage_TruncateLog_System_Int64_" data-uid="Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.TruncateLog(System.Int64)">TruncateLog(Int64)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task TruncateLog(long lsn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">lsn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Transactions_AzureStorage_AzureTransactionLogStorage_UpdateStartRecord_System_Int64_.md&amp;value=---%0Auid%3A%20Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.UpdateStartRecord(System.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Azure/Orleans.Transactions.AzureStorage/Storage/AzureTransactionLogStorage.cs/#L174">View Source</a>
+  </span>
+  <a id="Orleans_Transactions_AzureStorage_AzureTransactionLogStorage_UpdateStartRecord_" data-uid="Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.UpdateStartRecord*"></a>
+  <h4 id="Orleans_Transactions_AzureStorage_AzureTransactionLogStorage_UpdateStartRecord_System_Int64_" data-uid="Orleans.Transactions.AzureStorage.AzureTransactionLogStorage.UpdateStartRecord(System.Int64)">UpdateStartRecord(Int64)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task UpdateStartRecord(long transactionId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">transactionId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Orleans.Concurrency.ImmutableExt.html#Orleans_Concurrency_ImmutableExt_AsImmutable__1___0_">ImmutableExt.AsImmutable&lt;T&gt;(T)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/mehmetakbulut/orleans/new/api-reference/apiSpec/new?filename=Orleans_Transactions_AzureStorage_AzureTransactionLogStorage.md&amp;value=---%0Auid%3A%20Orleans.Transactions.AzureStorage.AzureTransactionLogStorage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/mehmetakbulut/orleans/blob/api-reference/src/Azure/Orleans.Transactions.AzureStorage/Storage/AzureTransactionLogStorage.cs/#L18" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
