@@ -207,3 +207,11 @@ src/SetupTestScriptOutput.txt
 
 # Binary MSBuild Log files
 *.binlog
+
+# DOCFX
+/**/DROP/
+/**/TEMP/
+/**/packages/
+/**/bin/
+/**/obj/
+_site
